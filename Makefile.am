@@ -5,6 +5,7 @@
 RELEASE=0.1
 VERSION=0.1.0
 LANG1=oci
+LANG1b=oci@aran
 BASENAME=apertium-$(LANG1)
 
 TARGETS_COMMON =			\
@@ -27,8 +28,7 @@ TARGETS_COMMON =			\
 ## Occitan transducer
 ###############################################################################
 
-
-.deps/$(LANG1).metadix: $(BASENAME).$(LANG1).metadix
+.deps/$(LANG1).metadix: $(BASENAME).$(LANG1).metadix .deps/.d
 	xsltproc --stringparam alt $(LANG1) alt.xsl $(BASENAME).$(LANG1).metadix >$@
 
 .deps/$(LANG1).dix: .deps/$(LANG1).metadix 
@@ -56,13 +56,13 @@ $(LANG1b).automorf.bin: .deps/$(LANG1b).dix
 	apertium-validate-dictionary .deps/$(LANG1b).dix
 	lt-comp lr .deps/$(LANG1b).dix $@
 
-$(LANG1).autogen.bin: .deps/$(LANG2).dix
-	apertium-validate-dictionary .deps/$(LANG2).dix
-	lt-comp rl .deps/$(LANG2).dix $@
+$(LANG1).autogen.bin: .deps/$(LANG1).dix
+	apertium-validate-dictionary .deps/$(LANG1).dix
+	lt-comp rl .deps/$(LANG1).dix $@
 
-$(LANG1b).autogen.bin: .deps/$(LANG2b).dix
-	apertium-validate-dictionary .deps/$(LANG2b).dix
-	lt-comp rl .deps/$(LANG2b).dix $@
+$(LANG1b).autogen.bin: .deps/$(LANG1b).dix
+	apertium-validate-dictionary .deps/$(LANG1b).dix
+	lt-comp rl .deps/$(LANG1b).dix $@
 
 $(LANG1).autogen.att.gz: $(LANG1).autogen.bin
 	lt-print $< | gzip -9 -c > $@
