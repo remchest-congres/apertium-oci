@@ -40,5 +40,88 @@
     </pipeline>
   </mode>
 
+  <!-- -->
+
+  <mode name="oci_aran-morph">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="oci@aran.automorf.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="oci_aran-gener">
+    <pipeline>
+      <program name="lt-proc -g">
+        <file name="oci@aran.autogen.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="oci_aran-tagger">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="oci@aran.automorf.bin"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="oci.rlx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="oci_aran-disam">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="oci@aran.automorf.bin"/>
+      </program>
+      <program name="cg-conv -a -l" />
+      <program name="vislcg3 --trace -g">
+        <file name="apertium-oci.oci.rlx"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <!-- -->
+
+  <mode name="oci_gascon-morph">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="oci@gascon.automorf.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="oci_gascon-gener">
+    <pipeline>
+      <program name="lt-proc -g">
+        <file name="oci@gascon.autogen.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="oci_gascon-tagger">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="oci@gascon.automorf.bin"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="oci.rlx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="oci_gascon-disam">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="oci@gascon.automorf.bin"/>
+      </program>
+      <program name="cg-conv -a -l" />
+      <program name="vislcg3 --trace -g">
+        <file name="apertium-oci.oci.rlx"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
 </modes>
 
