@@ -17,3 +17,7 @@
 /modes.xml -text
 /oci.prob -text svneol=unset#unset
 /principal.xsl -text
+speller/editdist.default.txt -text
+speller/index.xml -text
+speller/strings.default.txt -text
+speller/words.default.txt -text

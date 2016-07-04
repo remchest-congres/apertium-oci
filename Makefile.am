@@ -20,13 +20,12 @@ TARGETS_COMMON =			\
 	$(LANG1b).autogen.bin		\
 	$(LANG1b).autogen.att.gz		\
 	$(LANG1b).autopgen.bin		\
+	$(LANG1c).automorf.bin		\
+	$(LANG1c).automorf.att.gz	\
+	$(LANG1c).autogen.bin		\
+	$(LANG1c).autogen.att.gz		\
+	$(LANG1c).autopgen.bin		\
 	$(LANG1).rlx.bin
-
-#	$(LANG1c).automorf.bin		\
-#	$(LANG1c).automorf.att.gz	\
-#	$(LANG1c).autogen.bin		\
-#	$(LANG1c).autogen.att.gz		\
-#	$(LANG1c).autopgen.bin		
 
 # Use this goal for creating .deps, otherwise make -j2 will give problems:
 @ap_include@
