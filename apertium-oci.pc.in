@@ -1,0 +1,10 @@
+prefix=@prefix@
+exec_prefix=${prefix}
+libdir=@libdir@
+dir=@libdir@/apertium/apertium-oci
+srcdir=@datarootdir@/apertium/apertium-oci
+
+Name: apertium-oci
+Description: Finite-state morphological transducer and constraint grammar for Occitan 
+Version: @VERSION@
+
