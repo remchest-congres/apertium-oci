@@ -113,5 +113,4 @@
 
 ## Transition pairs + weight:
 @@
-a	o	0.9
-u	o	0.9
+c	ç	0.9

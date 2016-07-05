@@ -149,7 +149,7 @@ $(LANG1).zhfst: .deps/acceptor.default.hfst .deps/errmodel.default.hfst
 .deps/anystar.hfst:
 	echo "?*;" | hfst-regexp2fst -S -o $@
 
-.deps/$(LANG1).autogen.bin: .deps/$(LANG1).dix
+.deps/$(LANG1).autogen.bin: .deps/spell.$(LANG1).dix
 	lt-comp rl $< $@
 
 .deps/acceptor.default.hfst: .deps/$(LANG1).autogen.bin 
