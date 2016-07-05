@@ -40,6 +40,24 @@
     </pipeline>
   </mode>
 
+  <mode name="oci-spell" install="yes">
+    <pipeline>
+      <program name="hfst-ospell -S -n 10">
+        <file name="oci.zhfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="oci-tokenise">
+    <pipeline>
+      <program name="hfst-proc">
+        <file name=".deps/acceptor.default.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
+
   <!-- -->
 
   <mode name="oci_aran-morph">
