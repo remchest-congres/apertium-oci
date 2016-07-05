@@ -3,7 +3,7 @@
   <info>
     <locale>oc</locale>
     <title>Apertium morphological analyser-based speller (Occitan)</title>
-    <description>
+    <description>Apertium morphological analyser-based speller for Occitan.
     </description>
     <version vcsrev="GT_REVISION">GT_VERSION</version>
     <date>DATE</date>
