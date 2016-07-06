@@ -21759,16 +21759,19 @@
       <e r="LR" lm="lo nòstre" alt="oci@aran"><par n="/lo_nòstre__det"/></e>
       <e r="LR" lm="lo nòstre" alt="oci@gascon"><par n="/lo_nòstre__det"/></e>
     <e lm="lo nòstre" alt="oci"><par n="/lo_nòstre__det"/></e>
+
 <!-- TAGGER
     <e lm="eth" alt="oci" r="LR"><i>e</i><par n="e/th__det"/></e>-->
     <e lm="eth" alt="oci@aran" r="LR"><i>e</i><par n="e/th__det"/></e>        
     <e lm="eth" alt="oci@gascon" r="LR"><i>e</i><par n="e/th__det"/></e>        
     <e lm="eth" alt="oci@aran" r="RL"><p><l><a/>e</l><r>e</r></p><par n="e/th__det"/></e>        
-    <e lm="eth" alt="oci@gascon" r="RL"><p><l><a/>e</l><r>e</r></p><par n="e/th__det"/></e>        
+
     <e lm="lo" alt="oci@aran" r="LR"><i>l</i><par n="l/o__det"/></e>
     <e lm="lo" alt="oci@gascon" r="LR"><i>l</i><par n="l/o__det"/></e>
     <e lm="lo" alt="oci" r="LR"><i>l</i><par n="l/o__det"/></e>        
     <e lm="lo" alt="oci" r="RL"><p><l><a/>detl</l><r>l</r></p><par n="l/o__det"/></e>
+    <e lm="lo" alt="oci@gascon" r="RL"><p><l><a/>detl</l><r>l</r></p><par n="l/o__det"/></e>
+
 <!--
       <e r="LR" lm="en" alt="oci@aran"><i/><par n="/en__det"/></e>
       <e r="LR" lm="en" alt="oci@gascon"><i/><par n="/en__det"/></e>
@@ -25765,13 +25768,15 @@
     <e lm="sorça" r="LR"><i>sor</i><par n="seden/ça__n"/></e>        
     <e lm="ressorsa" r="LR"><i>ressors</i><par n="jornad/a__n"/></e>        
     <e lm="ressorça" r="LR"><i>ressor</i><par n="seden/ça__n"/></e>        
-      <e r="LR" lm="lenga" alt="oci@aran"><i>leng</i><par n="hormig/a__n"/></e>
-      <e r="LR" lm="lenga" alt="oci@gascon"><i>leng</i><par n="hormig/a__n"/></e>
+
+    <e r="LR" lm="lenga" alt="oci@aran"><i>leng</i><par n="hormig/a__n"/></e>
+    <e lm="lenga" alt="oci@gascon"><i>leng</i><par n="hormig/a__n"/></e>
     <e lm="lenga" alt="oci"><i>leng</i><par n="hormig/a__n"/></e>        
-      <e r="LR" lm="lengua" alt="oci"><i>leng</i><par n="leng/ua__n"/></e>
+    <e r="LR" lm="lengua" alt="oci"><i>leng</i><par n="leng/ua__n"/></e>
     <e lm="lengua" alt="oci@aran"><i>leng</i><par n="leng/ua__n"/></e>        
-    <e lm="lengua" alt="oci@gascon"><i>leng</i><par n="leng/ua__n"/></e>        
-      <e r="LR" lm="lenguatge" alt="oci"><i>lenguatge</i><par n="conselh__n"/></e>
+    <e r="LR" lm="lengua" alt="oci@gascon"><i>leng</i><par n="leng/ua__n"/></e>        
+
+    <e r="LR" lm="lenguatge" alt="oci"><i>lenguatge</i><par n="conselh__n"/></e>
     <e lm="lenguatge" alt="oci@aran"><i>lenguatge</i><par n="conselh__n"/></e>        
     <e lm="lenguatge" alt="oci@gascon"><i>lenguatge</i><par n="conselh__n"/></e>        
       <e r="LR" lm="lengatge" alt="oci@aran"><i>lengatge</i><par n="conselh__n"/></e>
