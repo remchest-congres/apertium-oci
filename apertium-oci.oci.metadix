@@ -4379,12 +4379,22 @@
       <e><p><l>es</l><r>i<s n="prn"/><s n="tn"/><s n="p1"/><s n="f"/><s n="pl"/></r></p></e>                 
       <e><p><l>i</l><r>i<s n="prn"/><s n="tn"/><s n="p1"/><s n="m"/><s n="pl"/></r></p></e>    
     </pardef>
-                  
+                   
+        <pardef n="nosaut/s__prn">                 
+      <e><p><l>s</l><r>s<s n="prn"/><s n="tn"/><s n="p1"/><s n="m"/><s n="pl"/></r></p></e>                 
+      <e><p><l>as</l><r>s<s n="prn"/><s n="tn"/><s n="p1"/><s n="f"/><s n="pl"/></r></p></e>    
+    </pardef>
+
         <pardef n="nosautr/es__prn">                 
       <e><p><l>es</l><r>es<s n="prn"/><s n="tn"/><s n="p1"/><s n="m"/><s n="pl"/></r></p></e>                 
       <e><p><l>as</l><r>es<s n="prn"/><s n="tn"/><s n="p1"/><s n="f"/><s n="pl"/></r></p></e>    
     </pardef>
-         
+          
+        <pardef n="vosaut/s__prn">                 
+      <e><p><l>s</l><r>s<s n="prn"/><s n="tn"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>                 
+      <e><p><l>as</l><r>s<s n="prn"/><s n="tn"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>         
+    </pardef>
+
         <pardef n="vosautr/es__prn">                 
       <e><p><l>es</l><r>es<s n="prn"/><s n="tn"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>                 
       <e><p><l>as</l><r>es<s n="prn"/><s n="tn"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>         
@@ -30904,18 +30914,23 @@
     <e lm="nos" alt="oci@gascon" r="LR"><i>nos</i><par n="mos__prn"/></e>
     <e lm="nos" alt="oci" r="LR"><i>nos</i><par n="mos__prn"/></e>        
     <e lm="nos" alt="oci" r="RL"><p><l><a/>nos</l><r>nos</r></p><par n="mos__prn"/></e>        
-      <e r="LR" lm="nosati" alt="oci"><i>nosat</i><par n="nosat/i__prn"/></e>
+    <e r="LR" lm="nosati" alt="oci"><i>nosat</i><par n="nosat/i__prn"/></e>
     <e lm="nosati" alt="oci@aran"><i>nosat</i><par n="nosat/i__prn"/></e>        
     <e lm="nosati" alt="oci@gascon"><i>nosat</i><par n="nosat/i__prn"/></e>        
-      <e r="LR" lm="nosautres" alt="oci@aran"><i>nosautr</i><par n="nosautr/es__prn"/></e>
-      <e r="LR" lm="nosautres" alt="oci@gascon"><i>nosautr</i><par n="nosautr/es__prn"/></e>
+
+    <e r="LR" lm="nosautres" alt="oci@aran"><i>nosautr</i><par n="nosautr/es__prn"/></e>
+    <e r="LR" lm="nosautres" alt="oci@gascon"><i>nosautr</i><par n="nosautr/es__prn"/></e>
     <e lm="nosautres" alt="oci"><i>nosautr</i><par n="nosautr/es__prn"/></e>        
+    <e lm="nosauts" alt="oci@gascon"><i>nosaut</i><par n="nosaut/s__prn"/></e>        
     <e lm="nos" r="LR"><i>nos</i><par n="nos__prn"/></e>        
-      <e r="LR" lm="vosautres" alt="oci@aran"><i>vosautr</i><par n="vosautr/es__prn"/></e>
-      <e r="LR" lm="vosautres" alt="oci@gascon"><i>vosautr</i><par n="vosautr/es__prn"/></e>
+
+    <e r="LR" lm="vosautres" alt="oci@aran"><i>vosautr</i><par n="vosautr/es__prn"/></e>
+    <e r="LR" lm="vosautres" alt="oci@gascon"><i>vosautr</i><par n="vosautr/es__prn"/></e>
     <e lm="vosautres" alt="oci"><i>vosautr</i><par n="vosautr/es__prn"/></e>        
+    <e lm="vosauts" alt="oci@gascon"><i>vosaut</i><par n="vosaut/s__prn"/></e>        
     <e lm="vos"><p><l>vos</l><r>vos<s n="prn"/><s n="tn"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>        
-      <e r="LR" lm="pòc" alt="oci"><i>pò</i><par n="pò/c__prn"/></e>
+
+    <e r="LR" lm="pòc" alt="oci"><i>pò</i><par n="pò/c__prn"/></e>
     <e lm="pòc" alt="oci@aran"><i>pò</i><par n="pò/c__prn"/></e>        
     <e lm="pòc" alt="oci@gascon"><i>pò</i><par n="pò/c__prn"/></e>        
       <e r="LR" lm="pòc" alt="oci"><i>pò</i><par n="pò/c__adj"/></e>

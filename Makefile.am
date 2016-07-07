@@ -66,9 +66,9 @@ TARGETS_COMMON =			\
 
 ###############################################################################
 
-$(LANG1).automorf.bin: .deps/$(LANG1).dix
-	apertium-validate-dictionary .deps/$(LANG1).dix
-	lt-comp lr .deps/$(LANG1).dix $@
+$(LANG1).automorf.bin: .deps/$(LANG1).dix $(BASENAME).$(LANG1).acx
+	apertium-validate-dictionary .deps/$(LANG1).dix 
+	lt-comp lr .deps/$(LANG1).dix $@ $(BASENAME).$(LANG1).acx
 
 $(LANG1).autogen.bin: .deps/$(LANG1).dix
 	apertium-validate-dictionary .deps/$(LANG1).dix
@@ -85,9 +85,9 @@ $(LANG1).autopgen.bin: .deps/$(LANG1).post.dix
 
 ###############################################################################
 
-$(LANG1b).automorf.bin: .deps/$(LANG1b).dix
-	apertium-validate-dictionary .deps/$(LANG1b).dix
-	lt-comp lr .deps/$(LANG1b).dix $@
+$(LANG1b).automorf.bin: .deps/$(LANG1b).dix $(BASENAME).$(LANG1).acx
+	apertium-validate-dictionary .deps/$(LANG1b).dix 
+	lt-comp lr .deps/$(LANG1b).dix $@ $(BASENAME).$(LANG1).acx
 
 $(LANG1b).autogen.bin: .deps/$(LANG1b).dix
 	apertium-validate-dictionary .deps/$(LANG1b).dix
@@ -104,9 +104,9 @@ $(LANG1b).autopgen.bin: .deps/$(LANG1b).post.dix
 
 ###############################################################################
 
-$(LANG1c).automorf.bin: .deps/$(LANG1c).dix
-	apertium-validate-dictionary .deps/$(LANG1c).dix
-	lt-comp lr .deps/$(LANG1c).dix $@
+$(LANG1c).automorf.bin: .deps/$(LANG1c).dix $(BASENAME).$(LANG1).acx
+	apertium-validate-dictionary .deps/$(LANG1c).dix 
+	lt-comp lr .deps/$(LANG1c).dix $@ $(BASENAME).$(LANG1).acx
 
 $(LANG1c).autogen.bin: .deps/$(LANG1c).dix
 	apertium-validate-dictionary .deps/$(LANG1c).dix
