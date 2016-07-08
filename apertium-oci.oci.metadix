@@ -24,6 +24,7 @@
     <sdef n="sg"       c="Singular"/>    
     <sdef n="pl"       c="Plural"/>    
     <sdef n="adv"      c="Adverb"/>    
+    <sdef n="enon"     c="Enonciatif"/>    
     <sdef n="preadv"   c="Preadverb (muy)"/>    
     <sdef n="pr"       c="Preposition"/>    
     <sdef n="prn"      c="Pronoun"/>    
@@ -1558,12 +1559,12 @@
     </pardef>
                   
         <pardef n="content__adj">                                  
-    <e alt="oci@aran"><p><l>es</l><r><s n="adj"/><s n="f"/><s n="pl"/></r></p></e>                 
-    <e alt="oci@gascon"><p><l>es</l><r><s n="adj"/><s n="f"/><s n="pl"/></r></p></e>                 
+    <e alt="oci@aran"><p><l>es</l><r><s n="adj"/><s n="f"/><s n="pl"/></r></p></e>                  
     <e alt="oci"><p><l>as</l><r><s n="adj"/><s n="f"/><s n="pl"/></r></p></e>                                 
       <e><p><l>a</l><r><s n="adj"/><s n="f"/><s n="sg"/></r></p></e>                                  
     <e alt="oci@aran"><p><l>i</l><r><s n="adj"/><s n="m"/><s n="pl"/></r></p></e>                 
-    <e alt="oci@gascon"><p><l>i</l><r><s n="adj"/><s n="m"/><s n="pl"/></r></p></e>                 
+    <e alt="oci@gascon"><p><l>i</l><r><s n="adj"/><s n="m"/><s n="pl"/></r></p></e>                       
+    <e alt="oci@gascon"><p><l>s</l><r><s n="adj"/><s n="m"/><s n="pl"/></r></p></e>          
     <e alt="oci"><p><l>es</l><r><s n="adj"/><s n="m"/><s n="pl"/></r></p></e>                  
       <e r="LR"><p><l>s</l><r><s n="adj"/><s n="m"/><s n="pl"/></r></p></e>                  
       <e r="LR"><p><l>is</l><r><s n="adj"/><s n="m"/><s n="pl"/></r></p></e>                  
@@ -3714,7 +3715,7 @@
          
         <pardef n="jornad/a__n">                 
     <e alt="oci@aran"><p><l>es</l><r>a<s n="n"/><s n="f"/><s n="pl"/></r></p></e>                 
-    <e alt="oci@gascon"><p><l>es</l><r>a<s n="n"/><s n="f"/><s n="pl"/></r></p></e>                 
+    <e alt="oci@gascon"><p><l>as</l><r>a<s n="n"/><s n="f"/><s n="pl"/></r></p></e>                 
     <e alt="oci"><p><l>as</l><r>a<s n="n"/><s n="f"/><s n="pl"/></r></p></e>                                  
       <e><p><l>a</l><r>a<s n="n"/><s n="f"/><s n="sg"/></r></p></e>    
     </pardef>
@@ -17613,9 +17614,31 @@
         <pardef n="s/o[NH]ar__vblex" alt="oci">        
       <e><i>o<prm/></i><par n="cambi/avas__vblex"/></e>        
       <e><p><l>uè</l><r>o</r></p><i><prm/></i><par n="càmbi/as__vblex"/></e>
+    </pardef>    
+    <pardef n="/be_enon">
+      <e r="LR"><p><l>be</l><r>be<s n="adv" /><s n="enon" /></r></p></e>
+      <e r="RL"><p><l><a/>be</l><r>be<s n="adv" /><s n="enon" /></r></p></e>
+    </pardef>
+    <pardef n="/que_enon">
+      <e r="LR"><p><l>que</l><r>que<s n="adv" /><s n="enon" /></r></p></e>
+      <e r="RL"><p><l><a/>que</l><r>que<s n="adv" /><s n="enon" /></r></p></e>
+    </pardef>
+    <pardef n="/ne_enon">
+      <e r="LR"><p><l>ne</l><r>ne<s n="adv" /><s n="enon" /></r></p></e>
+      <e r="RL"><p><l><a/>ne</l><r>ne<s n="adv" /><s n="enon" /></r></p></e>
+    </pardef>
+    <pardef n="e_enon">
+      <e><p><l></l><r><s n="adv" /><s n="enon" /></r></p></e>
     </pardef>
 </pardefs>
   <section id="main" type="standard">
+
+    <e lm="morfèma"><i>morfèma</i><par n="conselh__n"/></e>
+    <e lm="balisa"><i>balis</i><par n="jornad/a__n"/></e>
+    <e lm="uman"><i>uman</i><par n="content__adj"/></e>
+    <e lm="maquina"><i>maquin</i><par n="jornad/a__n"/></e>
+    <e lm="sciéncia"><i>sciénci</i><par n="jornad/a__n"/></e>
+
     <e lm="e de" r="LR"><p><l>e<b/>de</l><r>e<s n="cnjcoo"/><j/>de<s n="pr"/></r></p></e>        
     <e lm="i a" alt="oci" r="LR"><p><l>i<b/>a</l><r>i<s n="prn"/><s n="pro"/><s n="adv"/><j/>auer<s n="vbhaver"/><s n="pri"/><s n="p3"/><s n="sg"/></r></p></e>
     <e lm="i a" alt="oci@aran" r="LR"><p><l>i<b/>a</l><r>i<s n="prn"/><s n="pro"/><s n="adv"/><j/>auer<s n="vbhaver"/><s n="pri"/><s n="p3"/><s n="sg"/></r></p></e>        
@@ -18069,7 +18092,7 @@
       <e r="LR" lm="audiovisual" alt="oci@aran"><i>audiovisual</i><par n="content__adj"/></e>
       <e r="LR" lm="audiovisual" alt="oci@gascon"><i>audiovisual</i><par n="content__adj"/></e>
     <e lm="audiovisual" alt="oci"><i>audiovisual</i><par n="content__adj"/></e>        
-    <e lm="au"><i/><par n="/au__adj"/></e>        
+    <!-- <e lm="au"><i/><par n="/au__adj"/></e> -->       
       <e r="LR" lm="aunorific" alt="oci"><i>aunorifi</i><par n="tecni/c__adj"/></e>
     <e lm="aunorific" alt="oci@aran"><i>aunorifi</i><par n="tecni/c__adj"/></e>        
     <e lm="aunorific" alt="oci@gascon"><i>aunorifi</i><par n="tecni/c__adj"/></e>        
@@ -19013,7 +19036,11 @@
       <e r="LR" lm="leugièrament" alt="oci@aran"><i>leugièrament</i><par n="ager__adv"/></e>
       <e r="LR" lm="leugièrament" alt="oci@gascon"><i>leugièrament</i><par n="ager__adv"/></e>
     <e lm="leugièrament" alt="oci"><i>leugièrament</i><par n="ager__adv"/></e>        
-    <e lm="lexic" r="LR"><i>lexi</i><par n="tecni/c__adj"/></e>        
+    <e lm="lexic" r="LR"><i>lexi</i><par n="tecni/c__adj"/></e>   
+    <e lm="be" alt="oci@gascon"><i></i><par n="/be_enon"/></e>         
+    <e lm="que" alt="oci@gascon"><i></i><par n="/que_enon"/></e>        
+    <e lm="ne" alt="oci@gascon"><i></i><par n="/ne_enon"/></e>          
+    <e lm="e" alt="oci@gascon"><i>e</i><par n="e_enon"/></e>      
       <e r="LR" lm="liberau" alt="oci"><i>liberau</i><par n="generau__adj"/></e>
     <e lm="liberau" alt="oci@aran"><i>liberau</i><par n="generau__adj"/></e>        
     <e lm="liberau" alt="oci@gascon"><i>liberau</i><par n="generau__adj"/></e>        
@@ -43049,7 +43076,10 @@
     <e lm="Zug"><i>Zug</i><par n="Aran__np"/></e>        
 </section>
   <section id="apostrophes" type="postblank">        
-    <e lm="d'" r="LR"><p><l>d'</l><r>de</r></p><par n="a__pr"/></e>         
+    <e lm="d'" r="LR"><p><l>d'</l><r>de</r></p><par n="a__pr"/></e>    
+    <e lm="b'" r="LR"><p><l>b'</l><r>be</r></p><par n="e_enon"/></e>   
+    <e lm="qu'" r="LR"><p><l>qu'</l><r>que</r></p><par n="e_enon"/></e>    
+    <e lm="n'" r="LR"><p><l>n'</l><r>ne</r></p><par n="e_enon"/></e>         
     <e lm="òm se" r="LR"><p><l>òm<b/>s'</l><r>se<s n="prn"/><s n="pro"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sp"/></r></p></e>         
     <e lm="damb mès de" alt="oci@aran" r="LR"><p><l>damb<b/>mès<b/>d'</l><r>damb<b/>mès<b/>de</r></p><par n="a__pr"/></e>         
     <e lm="damb mès de" alt="oci@gascon" r="LR"><p><l>damb<b/>mès<b/>d'</l><r>damb<b/>mès<b/>de</r></p><par n="a__pr"/></e>         

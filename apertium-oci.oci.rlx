@@ -1,20 +1,97 @@
 # Firstly, we need to define what tags should be considered sentence delimiters. For this example, only full stop is set as delimiter.
 DELIMITERS = "<.>" ;
 
-# We can define sets for common tag clusters
-LIST Case = (n s) (n p) ; # A set that matches either a Noun Singular or a Noun Plural
+LIST BOS = (>>>) ;
+LIST EOS = (<<<) ;
+
+#Categorias
+LIST V = vblex vbser vbhaver vbaux vbmod ;
+LIST Conjco = cnjcoo ;
+LIST Conjsub = cnjsub ;
+LIST Enon = enon ;
+LIST Rel = rel ;
+LIST N = n ;
+LIST NP = np ;
+LIST AJ = adj ;
+LIST DET = det ;
+LIST NUM = num ;
+LIST PREP = pr ;
+LIST PRON = prn ;
+LIST PERS = pers ;
+LIST AV = adv ;
+LIST Pers = (prn p1) (prn p2) (prn p3); 
+LIST IJ = ij ;
+LIST PREDET = predet ;
+LIST PRONpos = pos ;
+LIST SENT = sent ;
+
+
+#Jos=categorias
+LIST Pro = pro ;
+LIST VBger = ger ;
+LIST VBimp = imp ;
+LIST PRencl = enc ;
+LIST VBinf = inf ;
+LIST Npl = (n pl);
+LIST AJpl = (adj pl);
+LIST Ns = (n s);
+LIST AJs = (adj s);
+LIST Nm = (n m);
+LIST AJm = (adj m);
+LIST Nf = (n f);
+LIST AJf = (adj f);
+LIST Vconj = pri prs pii pis imp fti ifi cni ;
+LIST Itg = itg ;
+
+#Listas
+SET intrprop = Conjco OR Itg ; #cnjcoo cnjsub rel itg "," ";" sent adv;
+LIST motsdetpl = (det pl) (pr pl);
+LIST motsdetsg = (det sg) (pr sg);
+LIST motsdetf = (det f) (pr f);
+LIST motsdetm = (det m) (pr m);
+
+#Mots
+LIST En = ("en" prn);
+
 
 SECTION
-# If there is a singular noun to the right, I cannot be a verb or noun.
-REMOVE (n) OR (v) IF (1 (n s)) ;
 
-# If there is a conjunction followed by a certain cohort of the same CASE as me, choose me.
-SELECT $$Case IF (1 (cnjcoo) LINK 1C $$Case) ;
+#Un pronom proclitic est totjorn davant un vèrb o un autre pronom
+REMOVE Pro IF (NOT 1 V OR Pro);
 
-# Resources:
-# http://visl.sdu.dk/cg3.html
-# http://groups.google.com/group/constraint-grammar
-# http://kevindonnelly.org.uk/2010/05/constraint-grammar-tutorial/
-# http://wiki.apertium.org/wiki/Constraint_Grammar
-# http://wiki.apertium.org/wiki/Apertium_and_Constraint_Grammar
+#En es pas un pronom s'es abans un gerondiu (amb possibilitat de pronoms entre los dos)
+REMOVE En IF (1* VBger BARRIER (*) - Pro) ;
+
+#Una conjonccion o un pronom relatiu se podon pas trobar en debuta de frasa
+REMOVE Conjco IF (-1 BOS OR SENT);
+REMOVE Conjsub IF (-1 BOS OR SENT);
+REMOVE Rel IF (-1 BOS OR SENT);
+
+#Un imperatiu seguis pas una conjonccion, un relatiu o un pronom personal
+REMOVE VBimp IF (-1 Enon OR Conjco OR Conjsub OR Rel OR Pers);
+
+#Un nom pot pas seguir qu'un vèrbe, un adjectiu, un determinant, un numeral, una prepausicion o un pronom (levat los personals)
+REMOVE N IF (NOT -1 V OR AJ OR DET OR NUM OR PREP OR PRON - Pers);
+
+#Un predeterminant es pas seguit que per un determinant
+REMOVE PREDET IF (NOT 1 DET);
+
+#Los pronoms possessius son totjorn seguits per un nom, un adjectiu, un advèrb o un numeral
+REMOVE PRONpos IF (NOT 1 N OR AJ OR AV OR NUM OR NP);
+
+# L'enonciatiu es totjorn seguit d'un vèrb o d'un enclitic
+REMOVE Enon IF (NOT 1 V OR PRencl);
+
+#Una prepausicion es totjorn seguida d'un nom, pronom, adverb, numeral, infinitiu, determinant o adjectiu
+REMOVE PREP IF (NOT 1 N OR PRON OR AV OR NUM OR NP OR VBinf OR DET OR AJ);
+
+#Es pas un vèrbe se, dempuèi lo darrièr vèrbe conjugat, avèm pas agut de novèla proposicion
+REMOVE Vconj IF (NOT -1* intrprop BARRIER Vconj) ;
+
+#Un determinant es pas plural se lo nom/adjectiu que seguis es singular (o masculin feminin...)
+REMOVE motsdetpl IF (1 Ns OR AJs);
+REMOVE motsdetsg IF (1 Npl OR AJpl);
+REMOVE motsdetf IF (1 Nm OR AJm);
+REMOVE motsdetm IF (1 Nf OR AJf);
+
 
