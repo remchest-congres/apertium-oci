@@ -13,6 +13,7 @@
     <sdef n="tn"       c="Tonic (stressed)"/>    
     <sdef n="acr"      c="Acronym"/>    
     <sdef n="loc"      c="Location (toponym)"/>    
+    <sdef n="top"      c="Toponym"/>    
     <sdef n="ant"      c="Anthroponym"/>    
     <sdef n="al"       c="Other"/>    
     <sdef n="n"        c="Noun"/>    
@@ -3998,19 +3999,33 @@
         <pardef n="Ferrari__np">
       <e><p><l/><r><s n="np"/><s n="al"/></r></p></e>
       <e><p><l/><r><s n="np"/><s n="ant"/></r></p></e>    
+      <e r="RL"><p><l/><r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></r></p></e>    
+      <e r="RL"><p><l/><r><s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></r></p></e>    
     </pardef>
     
         <pardef n="Abad__np">
       <e><p><l/><r><s n="np"/><s n="ant"/></r></p></e>    
+      <e r="RL"><p><l/><r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></r></p></e>    
+      <e r="RL"><p><l/><r><s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></r></p></e>    
     </pardef>
     
         <pardef n="Pau__np">
       <e><p><l/><r><s n="np"/><s n="ant"/></r></p></e>
+      <e r="RL"><p><l/><r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></r></p></e>    
+      <e r="RL"><p><l/><r><s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></r></p></e>    
       <e><p><l/><r><s n="np"/><s n="loc"/></r></p></e>    
+      <e r="RL"><p><l/><r><s n="np"/><s n="top"/><s n="m"/><s n="sg"/></r></p></e>    
+      <e r="RL"><p><l/><r><s n="np"/><s n="top"/><s n="f"/><s n="sg"/></r></p></e>    
+      <e r="RL"><p><l/><r><s n="np"/><s n="top"/><s n="m"/><s n="pl"/></r></p></e>    
+      <e r="RL"><p><l/><r><s n="np"/><s n="top"/><s n="f"/><s n="pl"/></r></p></e>    
     </pardef>
     
         <pardef n="Aran__np">
       <e><p><l/><r><s n="np"/><s n="loc"/></r></p></e>    
+      <e r="RL"><p><l/><r><s n="np"/><s n="top"/><s n="m"/><s n="sg"/></r></p></e>    
+      <e r="RL"><p><l/><r><s n="np"/><s n="top"/><s n="f"/><s n="sg"/></r></p></e>    
+      <e r="RL"><p><l/><r><s n="np"/><s n="top"/><s n="m"/><s n="pl"/></r></p></e>    
+      <e r="RL"><p><l/><r><s n="np"/><s n="top"/><s n="f"/><s n="pl"/></r></p></e>    
     </pardef>
 <!-- PARADIGMES DE NUMERAL DE L'AR-->
 <!-- menys el primer i el segon (nums romans), inclouen els ordinals -->
