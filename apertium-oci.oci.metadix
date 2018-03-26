@@ -23173,6 +23173,7 @@
     <e lm="carbon"><i>carbon</i><par n="conselh__n"/></e>        
     <e lm="carcums"><i>tarcums</i><par n="entorns__n"/></e>        
     <e lm="cardet"><i>cardet</i><par n="conselh__n"/></e>        
+    <e lm="cardonilha" alt="oci"><i>cardonilh</i><par n="jornad/a__n"/></e>        
     <e lm="carga"><i>carg</i><par n="hormig/a__n"/></e>        
     <e lm="cargue" alt="oci@aran"><i>cargue</i><par n="conselh__n"/></e>        
     <e lm="cargue" alt="oci@gascon"><i>cargue</i><par n="conselh__n"/></e>        
@@ -32184,7 +32185,7 @@
     <e lm="interessar"><i>inter</i><par n="cap/e[R]ar__vblex" prm="ss"/></e>        
     <e lm="interpausar"><i>interp</i><par n="c/a[NT]ar__vblex" prm="us"/></e>        
     <e lm="interpretar"><i>interpr</i><par n="lid/e[R]ar__vblex" prm="t"/></e>        
-    <e lm="isolar"><i>is</i><par n="p/o[RT]ar__vblex" prm="l"/></e>        
+    <e lm="isolar"><i>is</i><par n="p/o[RT]ar__vblex" prm="l"/></e>     
     <e lm="jogar"><i>j</i><par n="j/ogar__vblex"/></e>        
     <e lm="interrogar"><i>interr</i><par n="j/ogar__vblex"/></e>        
     <e lm="jurar"><i>j</i><par n="ab/u[S]ar__vblex" prm="r"/></e>        
