@@ -3357,12 +3357,26 @@
       <e><p><l/><r><s n="n"/><s n="m"/><s n="sg"/></r></p></e>    
     </pardef>
      
-        <pardef n="conselh__n">
+   <pardef n="conselh__n">
       <e><p><l>s</l><r><s n="n"/><s n="m"/><s n="pl"/></r></p></e>
       <e><p><l/><r><s n="n"/><s n="m"/><s n="sg"/></r></p></e>    
     </pardef>
          
-        <pardef n="contrast__n">                                  
+   <pardef n="castè/l__n">
+      <e alt="oci"><p><l>l</l>                   <r>l</r></p><par n="conselh__n"/></e>
+      <e alt="oci@aran" r="LR"><p><l>l</l>       <r>l</r></p><par n="conselh__n"/></e>
+      <e alt="oci@gascon" r="LR"><p><l>l</l>     <r>l</r></p><par n="conselh__n"/></e>
+
+      <e alt="oci" r="LR"><p><l>th</l>           <r>l</r></p><par n="conselh__n"/></e>
+      <e alt="oci@aran"><p><l>th</l>             <r>l</r></p><par n="conselh__n"/></e>
+      <e alt="oci@gascon"><p><l>th</l>           <r>l</r></p><par n="conselh__n"/></e>
+
+      <e alt="oci" r="LR"><p><l>u</l>            <r>l</r></p><par n="conselh__n"/></e>
+      <e alt="oci@aran" r="LR"><p><l>u</l>       <r>l</r></p><par n="conselh__n"/></e>
+      <e alt="oci@gascon" r="LR"><p><l>u</l>     <r>l</r></p><par n="conselh__n"/></e>
+    </pardef>
+         
+   <pardef n="contrast__n">                                  
       <e><p><l>es</l><r><s n="n"/><s n="m"/><s n="pl"/></r></p></e>                                  
       <e><p><l/><r><s n="n"/><s n="m"/><s n="sg"/></r></p></e>         
     </pardef>
@@ -23332,12 +23346,15 @@
       <e r="LR" lm="castanhièr" alt="oci@aran"><i>castanhièr</i><par n="conselh__n"/></e>
       <e r="LR" lm="castanhièr" alt="oci@gascon"><i>castanhièr</i><par n="conselh__n"/></e>
     <e lm="castanhièr" alt="oci"><i>castanhièr</i><par n="conselh__n"/></e>        
+    <e lm="castè"><i>castè</i><par n="castè/l__n"/></e>        
+<!--
       <e r="LR" lm="castèth" alt="oci"><i>castèth</i><par n="conselh__n"/></e>
     <e lm="castèth" alt="oci@aran"><i>castèth</i><par n="conselh__n"/></e>        
     <e lm="castèth" alt="oci@gascon"><i>castèth</i><par n="conselh__n"/></e>        
       <e r="LR" lm="castèl" alt="oci@aran"><i>castèl</i><par n="conselh__n"/></e>
       <e r="LR" lm="castèl" alt="oci@gascon"><i>castèl</i><par n="conselh__n"/></e>
     <e lm="castèl" alt="oci"><i>castèl</i><par n="conselh__n"/></e>        
+-->
     <e lm="catalan"><i>catalan</i><par n="conselhèr__n"/></e>        
     <e lm="catalòg" a="carmentano"><i>catalòg</i><par n="conselh__n"/></e>        
     <e lm="catalogacion"><i>catalogacion</i><par n="part__n"/></e>        
