@@ -240,6 +240,7 @@
       <e><p><l>-les</l><r>vos<s n="prn"/><s n="enc"/><s n="p2"/><s n="mf"/><s n="pl"/><j/></r></p><p><l>-vos</l><r>lo<s n="prn"/><s n="enc"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>        
       <e r="RL"><p><l>-les</l><r>vos<s n="prn"/><s n="enc"/><s n="p2"/><s n="mf"/><s n="pl"/><j/></r></p><p><l>-vos</l><r>li<s n="prn"/><s n="enc"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
     </pardef>
+
         <pardef n="S__cantar" alt="oci">                
       <e><p><l>-las</l><r>lo<s n="prn"/><s n="enc"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>                
       <e><p><l>-las</l><r>lo<s n="prn"/><s n="enc"/><s n="p3"/><s n="f"/><s n="pl"/><j/></r></p><par n="S__cantant-les"/></e>                
@@ -378,6 +379,7 @@
       <e><p><l>-les</l><r>vos<s n="prn"/><s n="enc"/><s n="p2"/><s n="mf"/><s n="pl"/><j/></r></p><p><l>-vos</l><r>lo<s n="prn"/><s n="enc"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>        
       <e r="RL"><p><l>-les</l><r>vos<s n="prn"/><s n="enc"/><s n="p2"/><s n="mf"/><s n="pl"/><j/></r></p><p><l>-vos</l><r>li<s n="prn"/><s n="enc"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
     </pardef>
+
         <pardef n="S__cantar" alt="oci">                
       <e><p><l>-las</l><r>lo<s n="prn"/><s n="enc"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>                
       <e><p><l>-las</l><r>lo<s n="prn"/><s n="enc"/><s n="p3"/><s n="f"/><s n="pl"/><j/></r></p><par n="S__cantant-les"/></e>                
@@ -465,6 +467,7 @@
       <e><p><l>-vos-lor</l><r>vos<s n="prn"/><s n="enc"/><s n="p2"/><s n="mf"/><s n="pl"/><j/>li<s n="prn"/><s n="enc"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>        
       <e><p><l>-vos-li</l><r>vos<s n="prn"/><s n="enc"/><s n="p2"/><s n="mf"/><s n="pl"/><j/>li<s n="prn"/><s n="enc"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>        
     </pardef>
+
 <!-- paradigma general, per al gerundi i 3eres persones (sg i pl)-->
         <pardef n="S__cantant" alt="oci@aran">                
       <e><p><l>-les</l><r>lo<s n="prn"/><s n="enc"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>                
@@ -843,6 +846,7 @@
       <e><p><l>-vos-lor</l><r>vos<s n="prn"/><s n="enc"/><s n="p2"/><s n="mf"/><s n="pl"/><j/>li<s n="prn"/><s n="enc"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>        
       <e><p><l>-vos-li</l><r>vos<s n="prn"/><s n="enc"/><s n="p2"/><s n="mf"/><s n="pl"/><j/>li<s n="prn"/><s n="enc"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>        
     </pardef>
+
 <!-- com cantant, però sense el "se" (imp 1 pl, 2 pl) fet 1 enc per a oc. falta el doble enc (començat)-->
         <pardef n="S__cantem" alt="oci@aran">                
       <e><p><l>-les</l><r>lo<s n="prn"/><s n="enc"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>        
@@ -892,6 +896,7 @@
       <e><p><l>-les</l><r>vos<s n="prn"/><s n="enc"/><s n="p2"/><s n="mf"/><s n="pl"/><j/></r></p><p><l>-vos</l><r>lo<s n="prn"/><s n="enc"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>        
       <e r="RL"><p><l>-les</l><r>vos<s n="prn"/><s n="enc"/><s n="p2"/><s n="mf"/><s n="pl"/><j/></r></p><p><l>-vos</l><r>li<s n="prn"/><s n="enc"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
     </pardef>
+
         <pardef n="S__cantem" alt="oci">                
       <e><p><l>-las</l><r>lo<s n="prn"/><s n="enc"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>                
       <e><p><l>-las</l><r>lo<s n="prn"/><s n="enc"/><s n="p3"/><s n="f"/><s n="pl"/><j/></r></p><par n="S__cantant-les"/></e>                
@@ -1020,6 +1025,7 @@
       <e><p><l>-les</l><r>vos<s n="prn"/><s n="enc"/><s n="p2"/><s n="mf"/><s n="pl"/><j/></r></p><p><l>-vos</l><r>lo<s n="prn"/><s n="enc"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>        
       <e r="RL"><p><l>-les</l><r>vos<s n="prn"/><s n="enc"/><s n="p2"/><s n="mf"/><s n="pl"/><j/></r></p><p><l>-vos</l><r>li<s n="prn"/><s n="enc"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
     </pardef>
+
         <pardef n="S__cantem" alt="oci">                
       <e><p><l>-las</l><r>lo<s n="prn"/><s n="enc"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>                
       <e><p><l>-las</l><r>lo<s n="prn"/><s n="enc"/><s n="p3"/><s n="f"/><s n="pl"/><j/></r></p><par n="S__cantant-les"/></e>                
@@ -1099,6 +1105,7 @@
       <e r="RL"><p><l>-vos</l><r>vos<s n="prn"/><s n="enc"/><s n="p2"/><s n="mf"/><s n="pl"/><j/>vos<s n="prn"/><s n="enc"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>        
       <e r="RL"><p><l>-vos</l><r>vos<s n="prn"/><s n="enc"/><s n="p2"/><s n="mf"/><s n="pl"/><j/>te<s n="prn"/><s n="enc"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
     </pardef>
+
 <!-- com "cantem", però sense el "vos" (per a l'imp 2 sg acabat en consonant) -->
         <pardef n="S__sigues" alt="oci@aran">                
       <e><p><l>-les</l><r>lo<s n="prn"/><s n="enc"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>        
@@ -1511,7 +1518,41 @@
     </pardef>
 -->
 <!--PARADIGMES D'ADJECTIUS DE L'AR-->         
-        <pardef n="generau__adj">                                  
+
+    <!-- aquest paradigma inclou les definicions de addicionau (mf) i addicional (m/f) com dos lemes -->
+    <pardef n="addiciona/l_u__adj">                                  
+      <e alt="oci"><p><l>l</l>                  <r>l<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>l</l>      <r>l<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>l</l>    <r>l<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
+
+      <e alt="oci"><p><l>la</l>                 <r>l<s n="adj"/><s n="f"/><s n="sg"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>la</l>     <r>l<s n="adj"/><s n="f"/><s n="sg"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>la</l>   <r>l<s n="adj"/><s n="f"/><s n="sg"/></r></p></e>
+
+      <e alt="oci"><p><l>les</l>                <r>l<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci" r="LR"><p><l>ls</l>          <r>l<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci" r="LR"><p><l>lis</l>         <r>l<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>les</l>    <r>l<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>ls</l>     <r>l<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>lis</l>    <r>l<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>les</l>  <r>l<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>ls</l>   <r>l<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>lis</l>  <r>l<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
+
+      <e alt="oci"><p><l>las</l>                <r>l<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>las</l>    <r>l<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>las</l>  <r>l<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
+
+      <e alt="oci@aran"><p><l>u</l>             <r>u<s n="adj"/><s n="mf"/><s n="sg"/></r></p></e>
+      <e alt="oci@gascon"><p><l>u</l>           <r>u<s n="adj"/><s n="mf"/><s n="sg"/></r></p></e>
+      <e alt="oci" r="LR"><p><l>u</l>           <r>u<s n="adj"/><s n="mf"/><s n="sg"/></r></p></e>
+
+      <e alt="oci@aran"><p><l>us</l>            <r>u<s n="adj"/><s n="mf"/><s n="pl"/></r></p></e>
+      <e alt="oci@gascon"><p><l>us</l>          <r>u<s n="adj"/><s n="mf"/><s n="pl"/></r></p></e>
+      <e alt="oci" r="LR"><p><l>us</l>          <r>u<s n="adj"/><s n="mf"/><s n="pl"/></r></p></e>
+    </pardef>
+                         
+    <pardef n="generau__adj">                                  
       <e><p><l>s</l><r><s n="adj"/><s n="mf"/><s n="pl"/></r></p></e>                 
       <e><p><l/><r><s n="adj"/><s n="mf"/><s n="sg"/></r></p></e>    
     </pardef>
@@ -19402,12 +19443,15 @@
       <e r="LR" lm="oficial" alt="oci@gascon"><i>oficial</i><par n="content__adj"/></e>
     <e lm="oficial" alt="oci"><i>oficial</i><par n="content__adj"/></e>        
     <e lm="olimpic"><i>olimpi</i><par n="tecni/c__adj"/></e>        
+    <e lm="omosexual"><i>omosexua</i><par n="addiciona/l_u__adj"/></e>
+<!--
       <e r="LR" lm="omosexuau" alt="oci" a="carmentano"><i>omosexuau</i><par n="generau__adj"/></e>
     <e lm="omosexuau" alt="oci@aran" a="carmentano"><i>omosexuau</i><par n="generau__adj"/></e>        
     <e lm="omosexuau" alt="oci@gascon" a="carmentano"><i>omosexuau</i><par n="generau__adj"/></e>        
       <e r="LR" lm="omosexual" alt="oci@aran" a="carmentano"><i>omosexual</i><par n="content__adj"/></e>
       <e r="LR" lm="omosexual" alt="oci@gascon" a="carmentano"><i>omosexual</i><par n="content__adj"/></e>
     <e lm="omosexual" alt="oci" a="carmentano"><i>omosexual</i><par n="content__adj"/></e>                
+-->
       <e r="LR" lm="neutrau" alt="oci" a="carmentano"><i>neutrau</i><par n="generau__adj"/></e>        
     <e lm="neutrau" alt="oci@aran" a="carmentano"><i>neutrau</i><par n="generau__adj"/></e>                        
     <e lm="neutrau" alt="oci@gascon" a="carmentano"><i>neutrau</i><par n="generau__adj"/></e>                        
