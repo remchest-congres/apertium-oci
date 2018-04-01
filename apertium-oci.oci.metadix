@@ -18255,6 +18255,7 @@
       <e r="LR" lm="flac" alt="oci@gascon"><i>fla</i><par n="tecni/c__adj"/></e>
     <e lm="flac" alt="oci"><i>fla</i><par n="tecni/c__adj"/></e>
     <e lm="feble"><i>febl</i><par n="ampl/e__adj"/></e>
+    <e lm="cap"><i>cap</i><par n="conselh__n"/></e>
     <e lm="caracteristic"><i>caracteristi</i><par n="tecni/c__adj"/></e>
       <e r="LR" lm="cardinau" alt="oci"><i>cardinau</i><par n="generau__adj"/></e>
     <e lm="cardinau" alt="oci@aran"><i>cardinau</i><par n="generau__adj"/></e>
@@ -20618,7 +20619,7 @@
     <e lm="Albèrt"><i>Albèrt</i><par n="Abad__np"/></e>
     <e lm="Loïs"><i>Loïs</i><par n="Abad__np"/></e>
     <e lm="alavetz"><i>alavetz</i><par n="ager__adv"/></e>
-    <e lm="alara" r="LR"><i>alara</i><par n="ager__adv"/></e>
+    <e lm="alara"><i>alara</i><par n="ager__adv"/></e>
     <e lm="alèra" r="LR"><i>alèra</i><par n="ager__adv"/></e>
     <e lm="amassa"><i>amassa</i><par n="ager__adv"/></e>
       <e r="LR" lm="amb jo" alt="oci"><i>amb<b/>jo</i><par n="ager__adv"/></e>
@@ -25060,6 +25061,7 @@
       <e r="LR" lm="genièr" alt="oci@aran"><i>genièr</i><par n="conselh__n"/></e>
       <e r="LR" lm="genièr" alt="oci@gascon"><i>genièr</i><par n="conselh__n"/></e>
     <e lm="genièr" alt="oci"><i>genièr</i><par n="conselh__n"/></e>
+    <e lm="gent"><i>gent</i><par n="conselh__n"/></e>
     <e lm="gèrla"><i>gèrl</i><par n="jornad/a__n"/></e>
       <e r="LR" lm="gessuda" alt="oci"><i>gessud</i><par n="jornad/a__n"/></e>
     <e lm="gessuda" alt="oci@aran"><i>gessud</i><par n="jornad/a__n"/></e>
@@ -31497,6 +31499,7 @@
     <e lm="acuélher" alt="oci@aran"><i>acu</i><par n="m/é[T]er__vblex" prm="lh"/></e>
     <e lm="acuélher" alt="oci@gascon"><i>acu</i><par n="m/é[T]er__vblex" prm="lh"/></e>
     <e lm="aculhir" alt="oci"><i>ac</i><par n="c/u[LH]ir__vblex" prm="lh"/></e>
+    <e lm="adorar"><i>ad</i><par n="p/o[RT]ar__vblex" prm="r"/></e>
     <e lm="descéner"><i>desc</i><par n="m/é[T]er__vblex" prm="n"/></e>
       <e r="LR" lm="sénter" alt="oci"><i>s</i><par n="m/é[T]er__vblex" prm="nt"/></e>
     <e lm="sénter" alt="oci@aran"><i>s</i><par n="m/é[T]er__vblex" prm="nt"/></e>
@@ -34842,7 +34845,7 @@
     <e lm="mantèl"><i>mantèl</i><par n="conselh__n"/></e>
     <e lm="saile" r="LR"><i>saile</i><par n="conselh__n"/></e>
     <e lm="còlportaire"><i>còlportair</i><par n="ministr/e__n"/></e>
-    <e lm="aucèl" r="LR"><i>aucèl</i><par n="conselh__n"/></e>
+    <e lm="aucèl" alt="oci"><i>aucèl</i><par n="conselh__n"/></e>
     <e lm="trasmeteire"><i>trasmeteir</i><par n="ministr/e__n"/></e>
       <e r="LR" lm="ausèl" alt="oci@aran"><i>ausèl</i><par n="conselh__n"/></e>
       <e r="LR" lm="ausèl" alt="oci@gascon"><i>ausèl</i><par n="conselh__n"/></e>
@@ -35162,6 +35165,7 @@
       <e r="LR" lm="fòrtament" alt="oci@aran"><i>fòrtament</i><par n="ager__adv"/></e>
       <e r="LR" lm="fòrtament" alt="oci@gascon"><i>fòrtament</i><par n="ager__adv"/></e>
     <e lm="fòrtament" alt="oci"><i>fòrtament</i><par n="ager__adv"/></e>
+    <e lm="atentivament" alt="oci"><i>atentivament</i><par n="ager__adv"/></e>
       <e r="LR" lm="darrèr" alt="oci"><i>darrèr</i><par n="ager__adv"/></e>
     <e lm="darrèr" alt="oci@aran"><i>darrèr</i><par n="ager__adv"/></e>
     <e lm="darrèr" alt="oci@gascon"><i>darrèr</i><par n="ager__adv"/></e>
@@ -35222,7 +35226,7 @@
       <e r="LR" lm="lentament" alt="oci@gascon"><i>lentament</i><par n="ager__adv"/></e>
     <e lm="lentament" alt="oci"><i>lentament</i><par n="ager__adv"/></e>
     <e lm="de nonent" r="LR"><i>de<b/>nonent</i><par n="ager__adv"/></e>
-    <e lm="dapasset" r="LR"><i>dapasset</i><par n="ager__adv"/></e>
+    <e lm="dapasset" alt="oci"><i>dapasset</i><par n="ager__adv"/></e>
     <e lm="mentretant"><i>mentretant</i><par n="ager__adv"/></e>
     <e lm="çaquelà" r="LR"><i>çaquelà</i><par n="donc__cnjadv"/></e>
     <e lm="pasmens" r="LR"><i>pasmens</i><par n="donc__cnjadv"/></e>
@@ -35267,6 +35271,7 @@
     <e lm="tornamai" r="LR"><i>tornamai</i><par n="ager__adv"/></e>
     <e lm="tornarmai" r="LR"><i>tornarmai</i><par n="ager__adv"/></e>
     <e lm="apelar"><i>ap</i><par n="cap/e[R]ar__vblex" prm="l"/></e>
+    <e lm="assetar" alt="oci"><i>ass</i><par n="s/èire__vblex" prm="t"/></e>
     <e lm="bailinar"><i>bail</i><par n="ab/i[T]ar__vblex" prm="n"/></e>
     <e lm="angoishar"><i>ang</i><par n="aband/o[N]ar__vblex" prm="ish"/></e>
     <e lm="acontentar" r="LR"><i>acont</i><par n="lid/e[R]ar__vblex" prm="nt"/></e>
