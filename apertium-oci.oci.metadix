@@ -4520,6 +4520,7 @@
 
         <pardef n="açò__prn">
       <e><p><l/><r><s n="prn"/><s n="tn"/><s n="p3"/><s n="nt"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="prn"/><s n="tn"/><s n="nt"/></r></p></e>
     </pardef>
 
         <pardef n="and/ús__prn">
@@ -30891,6 +30892,7 @@
     <e lm="aqueth" alt="oci@aran" r="RL"><p><l><a/>aque</l><r>aque</r></p><par n="aque/th__prn"/></e>
     <e lm="aqueth" alt="oci@gascon" r="RL"><p><l><a/>aque</l><r>aque</r></p><par n="aque/th__prn"/></e>
     <e lm="arren" alt="oci" r="LR"><i>arren</i><par n="açò__prn"/></e>
+    <e lm="res" alt="oci"><i>res</i><par n="açò__prn"/></e>
     <e lm="arren" alt="oci@aran" r="LR"><i>arren</i><par n="açò__prn"/></e>
     <e lm="arren" alt="oci@gascon" r="LR"><i>arren</i><par n="açò__prn"/></e>
     <e lm="arren" alt="oci@aran" r="RL"><p><l><a/>arren</l><r>arren</r></p><par n="açò__prn"/></e>
