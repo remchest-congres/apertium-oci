@@ -31139,6 +31139,7 @@
       <e r="LR" lm="ont" alt="oci@aran"><i>ont</i><par n="quan__rel"/></e>
       <e r="LR" lm="ont" alt="oci@gascon"><i>ont</i><par n="quan__rel"/></e>
     <e lm="ont" alt="oci"><i>ont</i><par n="quan__rel"/></e>
+    <e lm="quant" alt="oci"><i>quant</i><par n="quan__rel"/></e>
     <e lm="entà per'mor que" alt="oci@aran" r="RL"><p><l>entà<b/>per'mor<b/><a/>que</l><r>entà<b/>per'mor<b/>que</r></p><par n="que__rel"/></e>
     <e lm="entà per'mor que" alt="oci@gascon" r="RL"><p><l>entà<b/>per'mor<b/><a/>que</l><r>entà<b/>per'mor<b/>que</r></p><par n="que__rel"/></e>
     <e lm="eth quau"><par n="/eth_quau__rel"/></e>
@@ -31183,6 +31184,7 @@
       <e r="LR" lm="quand" alt="oci@aran"><i>quand</i><par n="quan__rel"/></e>
       <e r="LR" lm="quand" alt="oci@gascon"><i>quand</i><par n="quan__rel"/></e>
     <e lm="quand" alt="oci"><i>quand</i><par n="quan__rel"/></e>
+      <e lm="quand" alt="oci"><i>quand</i><par n="donc__cnjadv"/></e>
       <e r="LR" lm="atau coma" alt="oci"><i>atau<b/>coma</i><par n="donc__cnjadv"/></e>
     <e lm="atau coma" alt="oci@aran"><i>atau<b/>coma</i><par n="donc__cnjadv"/></e>
     <e lm="atau coma" alt="oci@gascon"><i>atau<b/>coma</i><par n="donc__cnjadv"/></e>
