@@ -1628,6 +1628,36 @@
       <e alt="oci@gascon"><p><l>es</l><r><s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
     </pardef>
 
+    <pardef n="genera/l__adj">
+      <e alt="oci"><p><l>l</l><r>l<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
+      <e alt="oci@gascon r="LR""><p><l>l</l><r>l<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>l</l><r>l<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
+
+      <e alt="oci"><p><l>la</l><r>l<s n="adj"/><s n="f"/><s n="sg"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>la</l><r>l<s n="adj"/><s n="f"/><s n="sg"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>la</l><r>l<s n="adj"/><s n="f"/><s n="sg"/></r></p></e>
+
+      <e alt="oci"><p><l>ls</l><r>l<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>ls</l><r>l<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>ls</l><r>l<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
+
+      <e alt="oci"><p><l>las</l><r>l<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>las</l><r>l<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>las</l><r>l<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
+      <e alt="oci" r="LR"><p><l>les</l><r>l<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>les</l><r>l<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>les</l><r>l<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
+
+
+      <e alt="oci@gascon"><p><l>u</l><r>u<s n="adj"/><s n="mf"/><s n="sg"/></r></p></e>
+      <e alt="oci@aran"><p><l>u</l><r>u<s n="adj"/><s n="mf"/><s n="sg"/></r></p></e>
+      <e alt="oci" r="LR"><p><l>u</l><r>u<s n="adj"/><s n="mf"/><s n="sg"/></r></p></e>
+
+      <e alt="oci@gascon"><p><l>us</l><r>u<s n="adj"/><s n="mf"/><s n="pl"/></r></p></e>
+      <e alt="oci@aran"><p><l>us</l><r>u<s n="adj"/><s n="mf"/><s n="pl"/></r></p></e>
+      <e alt="oci" r="LR"><p><l>us</l><r>u<s n="adj"/><s n="mf"/><s n="pl"/></r></p></e>
+    </pardef>
+
 <!-- no l'he posat al fitxer de forms-->
         <pardef n="ar/abi__adj">
     <e alt="oci@aran"><p><l>àbies</l><r>abi<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
@@ -4244,7 +4274,7 @@
     <e alt="oci"><p><l>ens</l><r>a<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
     </pardef>
 
-        <pardef n="cin/c__num">
+    <pardef n="cin/c__num">
       <e><p><l>c</l><r>c<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
     <e alt="oci@aran"><p><l>cau</l><r>c<s n="adj"/><s n="f"/><s n="sg"/></r></p></e>
     <e alt="oci@gascon"><p><l>cau</l><r>c<s n="adj"/><s n="f"/><s n="sg"/></r></p></e>
@@ -4268,7 +4298,7 @@
     <e alt="oci"><p><l>ovens</l><r>òu<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
     </pardef>
 
-        <pardef n="n/òu__num">
+    <pardef n="n/òu__num">
       <e><p><l>òu</l><r>òu<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
       <e><p><l>ovena</l><r>oven<s n="adj"/><s n="f"/><s n="sg"/></r></p></e>
       <e><p><l>oven</l><r>oven<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
@@ -4280,14 +4310,14 @@
       <e><p><l/><r><s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
     </pardef>
 <!-- no l'he posat al fitxer de forms-->
-        <pardef n="nau/au__adj">
+    <pardef n="nau/au__adj">
       <e><p><l>au</l><r>au<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
       <e><p><l>au</l><r>au<s n="adj"/><s n="f"/><s n="sg"/></r></p></e>
       <e><p><l>aus</l><r>au<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
       <e><p><l>aus</l><r>au<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
     </pardef>
 <!-- no l'he posat al fitxer de forms-->
-        <pardef n="s/èt__num">
+    <pardef n="s/èt__num">
       <e><p><l>èt</l><r>èt<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
     <e alt="oci@aran"><p><l>etau</l><r>èt<s n="adj"/><s n="f"/><s n="sg"/></r></p></e>
     <e alt="oci@gascon"><p><l>etau</l><r>èt<s n="adj"/><s n="f"/><s n="sg"/></r></p></e>
@@ -17943,18 +17973,8 @@
     <e lm="texan"><i>texan</i><par n="trabalhador__adj"/></e>
     <e lm="texan"><i>texan</i><par n="conselhèr__n"/></e>
     <e lm="ideològ"><i>ideològ</i><par n="conselhèr__n"/></e>
-      <e r="LR" lm="abituau" alt="oci"><i>abituau</i><par n="generau__adj"/></e>
-    <e lm="abituau" alt="oci@aran"><i>abituau</i><par n="generau__adj"/></e>
-    <e lm="abituau" alt="oci@gascon"><i>abituau</i><par n="generau__adj"/></e>
-      <e r="LR" lm="abitual" alt="oci@aran"><i>abitual</i><par n="trabalhador__adj"/></e>
-      <e r="LR" lm="abitual" alt="oci@gascon"><i>abitual</i><par n="trabalhador__adj"/></e>
-    <e lm="abitual" alt="oci"><i>abitual</i><par n="trabalhador__adj"/></e>
-      <e r="LR" lm="serviciau" alt="oci"><i>serviciau</i><par n="generau__adj"/></e>
-    <e lm="serviciau" alt="oci@aran"><i>serviciau</i><par n="generau__adj"/></e>
-    <e lm="serviciau" alt="oci@gascon"><i>serviciau</i><par n="generau__adj"/></e>
-      <e r="LR" lm="servicial" alt="oci@aran"><i>servicial</i><par n="trabalhador__adj"/></e>
-      <e r="LR" lm="servicial" alt="oci@gascon"><i>servicial</i><par n="trabalhador__adj"/></e>
-    <e lm="servicial" alt="oci"><i>servicial</i><par n="trabalhador__adj"/></e>
+    <e lm="abitual"><i>abitua</i><par n="genera/l__adj"/></e>
+    <e lm="servicial"><i>servicia</i><par n="genera/l__adj"/></e>
     <e lm="abondiu"><i>abondiu</i><par n="trabalhador__adj"/></e>
     <e lm="absent"><i>absent</i><par n="content__adj"/></e>
     <e lm="proscrit" alt="oci@aran"><i>proscrit</i><par n="content__adj"/></e>
@@ -18007,12 +18027,7 @@
     <e lm="imperfècte"><i>imperfèct</i><par n="ampl/e__adj"/></e>
     <e lm="imperfièch" r="LR"><i>imperfièch</i><par n="content__adj"/></e>
     <e lm="imperfièit" r="LR"><i>imperfièit</i><par n="content__adj"/></e>
-      <e r="LR" lm="accidentau" a="carmentano" alt="oci"><i>accidentau</i><par n="generau__adj"/></e>
-    <e lm="accidentau" a="carmentano" alt="oci@aran"><i>accidentau</i><par n="generau__adj"/></e>
-    <e lm="accidentau" a="carmentano" alt="oci@gascon"><i>accidentau</i><par n="generau__adj"/></e>
-      <e r="LR" lm="accidental" a="carmentano" alt="oci@aran"><i>accidental</i><par n="content__adj"/></e>
-      <e r="LR" lm="accidental" a="carmentano" alt="oci@gascon"><i>accidental</i><par n="content__adj"/></e>
-    <e lm="accidental" a="carmentano" alt="oci"><i>accidental</i><par n="content__adj"/></e>
+    <e lm="accidental"><i>accidenta</i><par n="genera/l__adj"/></e>
     <e lm="mexican"><i>mexican</i><par n="content__adj"/></e>
     <e lm="australian"><i>australian</i><par n="content__adj"/></e>
     <e lm="actiu"><i>acti</i><par n="representati/u__adj"/></e>
@@ -18020,18 +18035,8 @@
     <e lm="orientatiu"><i>orientati</i><par n="representati/u__adj"/></e>
     <e lm="natiu"><i>nati</i><par n="representati/u__adj"/></e>
     <e lm="ombriu"><i>ombri</i><par n="representati/u__adj"/></e>
-      <e r="LR" lm="actuau" alt="oci"><i>actuau</i><par n="generau__adj"/></e>
-    <e lm="actuau" alt="oci@aran"><i>actuau</i><par n="generau__adj"/></e>
-    <e lm="actuau" alt="oci@gascon"><i>actuau</i><par n="generau__adj"/></e>
-      <e r="LR" lm="actual" alt="oci@aran"><i>actual</i><par n="content__adj"/></e>
-      <e r="LR" lm="actual" alt="oci@gascon"><i>actual</i><par n="content__adj"/></e>
-    <e lm="actual" alt="oci"><i>actual</i><par n="content__adj"/></e>
-      <e r="LR" lm="addicionau" alt="oci"><i>addicionau</i><par n="generau__adj"/></e>
-    <e lm="addicionau" alt="oci@aran"><i>addicionau</i><par n="generau__adj"/></e>
-    <e lm="addicionau" alt="oci@gascon"><i>addicionau</i><par n="generau__adj"/></e>
-      <e r="LR" lm="addicional" alt="oci@aran"><i>addicional</i><par n="content__adj"/></e>
-      <e r="LR" lm="addicional" alt="oci@gascon"><i>addicional</i><par n="content__adj"/></e>
-    <e lm="addicional" alt="oci"><i>addicional</i><par n="content__adj"/></e>
+    <e lm="actual"><i>actua</i><par n="genera/l__adj"/></e>
+    <e lm="addicional"><i>addiciona</i><par n="genera/l__adj"/></e>
     <e lm="administratiu"><i>administrati</i><par n="representati/u__adj"/></e>
     <e lm="adolescent" a="carmentano"><i>adolescent</i><par n="generau__adj"/></e>
     <e lm="afectuos"><i>afectuos</i><par n="content__adj"/></e>
