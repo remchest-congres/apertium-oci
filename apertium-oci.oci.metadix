@@ -3277,17 +3277,120 @@
     </pardef>
 
    <pardef n="castè/l__n">
-      <e alt="oci"><p><l>l</l>                   <r>l</r></p><par n="conselh__n"/></e>
-      <e alt="oci@aran" r="LR"><p><l>l</l>       <r>l</r></p><par n="conselh__n"/></e>
-      <e alt="oci@gascon" r="LR"><p><l>l</l>     <r>l</r></p><par n="conselh__n"/></e>
+      <e alt="oci"><p><l>l</l>                   <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>l</l>       <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>l</l>     <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
 
-      <e alt="oci" r="LR"><p><l>th</l>           <r>l</r></p><par n="conselh__n"/></e>
-      <e alt="oci@aran"><p><l>th</l>             <r>l</r></p><par n="conselh__n"/></e>
-      <e alt="oci@gascon"><p><l>th</l>           <r>l</r></p><par n="conselh__n"/></e>
+      <e alt="oci" r="LR"><p><l>th</l>           <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+      <e alt="oci@aran"><p><l>th</l>             <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+      <e alt="oci@gascon"><p><l>th</l>           <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
 
-      <e alt="oci" r="LR"><p><l>u</l>            <r>l</r></p><par n="conselh__n"/></e>
-      <e alt="oci@aran" r="LR"><p><l>u</l>       <r>l</r></p><par n="conselh__n"/></e>
-      <e alt="oci@gascon" r="LR"><p><l>u</l>     <r>l</r></p><par n="conselh__n"/></e>
+      <e alt="oci" r="LR"><p><l>u</l>            <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>u</l>       <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>u</l>     <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+
+      <e alt="oci"><p><l>ls</l>                  <r>l<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>ls</l>      <r>l<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>ls</l>    <r>l<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+
+      <e alt="oci" r="LR"><p><l>ths</l>          <r>l<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci@aran"><p><l>ths</l>            <r>l<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci@gascon"><p><l>ths</l>          <r>l<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+
+      <e alt="oci" r="LR"><p><l>us</l>           <r>l<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>us</l>      <r>l<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>us</l>    <r>l<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+    </pardef>
+
+   <pardef n="cè/l__n">
+      <e alt="oci"><p><l>l</l>                   <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>l</l>       <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>l</l>     <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+
+      <e alt="oci" r="LR"><p><l>u</l>            <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>u</l>       <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>u</l>     <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+
+      <e alt="oci"><p><l>ls</l>                  <r>l<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>ls</l>      <r>l<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>ls</l>    <r>l<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+
+      <e alt="oci" r="LR"><p><l>us</l>           <r>l<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>us</l>      <r>l<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>us</l>    <r>l<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+    </pardef>
+
+   <pardef n="mè/l__n">
+      <e alt="oci"><p><l>l</l>                   <r>l<s n="n"/><s n="f"/><s n="sg"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>l</l>       <r>l<s n="n"/><s n="f"/><s n="sg"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>l</l>     <r>l<s n="n"/><s n="f"/><s n="sg"/></r></p></e>
+
+      <e alt="oci" r="LR"><p><l>u</l>            <r>l<s n="n"/><s n="f"/><s n="sg"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>u</l>       <r>l<s n="n"/><s n="f"/><s n="sg"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>u</l>     <r>l<s n="n"/><s n="f"/><s n="sg"/></r></p></e>
+
+      <e alt="oci"><p><l>ls</l>                  <r>l<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>ls</l>      <r>l<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>ls</l>    <r>l<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+
+      <e alt="oci" r="LR"><p><l>us</l>           <r>l<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>us</l>      <r>l<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>us</l>    <r>l<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+    </pardef>
+
+   <pardef n="pè/l__n">
+      <e alt="oci"><p><l>l</l>                   <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>l</l>       <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>l</l>     <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+
+      <e alt="oci" r="LR"><p><l>th</l>           <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>th</l>      <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>th</l>    <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+
+      <e alt="oci"><p><l>ls</l>                  <r>l<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>ls</l>      <r>l<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>ls</l>    <r>l<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+
+      <e alt="oci" r="LR"><p><l>ths</l>          <r>l<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>ths</l>     <r>l<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>ths</l>   <r>l<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+    </pardef>
+
+   <pardef n="persona/l__n">
+      <e alt="oci"><p><l>l</l>                   <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>l</l>       <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>l</l>     <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+
+      <e alt="oci" r="LR"><p><l>u</l>            <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>u</l>       <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>u</l>     <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>us</l>    <r>l<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+    </pardef>
+
+   <pardef n="espanhò/l__n">
+      <e alt="oci"><p><l>l</l>                   <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>l</l>       <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>l</l>     <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+
+      <e alt="oci"><p><l>la</l>                  <r>l<s n="n"/><s n="f"/><s n="sg"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>la</l>      <r>l<s n="n"/><s n="f"/><s n="sg"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>la</l>    <r>l<s n="n"/><s n="f"/><s n="sg"/></r></p></e>
+
+      <e alt="oci"><p><l>ls</l>                  <r>l<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>ls</l>      <r>l<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>ls</l>    <r>l<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+
+      <e alt="oci" r="LR"><p><l>las</l>          <r>l<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>las</l>     <r>l<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>las</l>   <r>l<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+
+      <e alt="oci" r="LR"><p><l>u</l>            <r>u<s n="n"/><s n="mf"/><s n="sg"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>u</l>       <r>u<s n="n"/><s n="mf"/><s n="sg"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>u</l>     <r>u<s n="n"/><s n="mf"/><s n="sg"/></r></p></e>
+
+      <e alt="oci" r="LR"><p><l>us</l>           <r>u<s n="n"/><s n="mf"/><s n="pl"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>us</l>      <r>u<s n="n"/><s n="mf"/><s n="pl"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>us</l>    <r>u<s n="n"/><s n="mf"/><s n="pl"/></r></p></e>
     </pardef>
 
    <pardef n="contrast__n">
@@ -17610,6 +17713,13 @@
     <pardef n="e_enon">
       <e><p><l></l><r><s n="adv" /><s n="enon" /></r></p></e>
     </pardef>
+<!--
+    <pardef n="OCI_gsc_arn">
+      <e alt="oci"><p><l></l><r></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l></l><r></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l></l><r></r></p></e>
+    </pardef>
+-->
 </pardefs>
   <section id="main" type="standard">
 
@@ -18191,12 +18301,8 @@
     <e lm="eròi"><i>er</i><par n="er/òi__n"/></e>
     <e lm="supereròi"><i>superer</i><par n="er/òi__n"/></e>
     <e lm="escolar"><i>escolar</i><par n="trabalhador__adj"/></e>
-      <e r="LR" lm="espanhòu" alt="oci"><i>espanhò</i><par n="espanhò/u__adj"/></e>
-    <e lm="espanhòu" alt="oci@aran"><i>espanhò</i><par n="espanhò/u__adj"/></e>
-    <e lm="espanhòu" alt="oci@gascon"><i>espanhò</i><par n="espanhò/u__adj"/></e>
-      <e r="LR" lm="espanhòl" alt="oci@aran"><i>espanhòl</i><par n="trabalhador__adj"/></e>
-      <e r="LR" lm="espanhòl" alt="oci@gascon"><i>espanhòl</i><par n="trabalhador__adj"/></e>
-    <e lm="espanhòl" alt="oci"><i>espanhòl</i><par n="trabalhador__adj"/></e>
+    <e lm="espanhòl"><i>espanhò</i><par n="genera/l__adj"/></e>
+    <e lm="espanhòl"><i>espanhò</i><par n="espanhò/l__n"/></e>
     <e lm="especializat"><i>especializa</i><par n="estima/t__adj"/></e>
     <e lm="especific"><i>especifi</i><par n="tecni/c__adj"/></e>
     <e lm="espitalari"><i>espital</i><par n="priorit/ari__adj"/></e>
@@ -20276,12 +20382,7 @@
     <e lm="abonatge" alt="oci@aran"><i>abonatge</i><par n="conselh__n"/></e>
     <e lm="abonatge" alt="oci@gascon"><i>abonatge</i><par n="conselh__n"/></e>
     <e lm="abreujament"><i>abreujament</i><par n="conselh__n"/></e>
-      <e r="LR" lm="logicial" alt="oci@aran"><i>logicial</i><par n="conselh__n"/></e>
-      <e r="LR" lm="logicial" alt="oci@gascon"><i>logicial</i><par n="conselh__n"/></e>
-    <e lm="logicial" alt="oci"><i>logicial</i><par n="conselh__n"/></e>
-      <e r="LR" lm="logiciau" alt="oci"><i>logiciau</i><par n="conselh__n"/></e>
-    <e lm="logiciau" alt="oci@aran"><i>logiciau</i><par n="conselh__n"/></e>
-    <e lm="logiciau" alt="oci@gascon"><i>logiciau</i><par n="conselh__n"/></e>
+    <e lm="logicial"><i>logicia</i><par n="cè/l__n"/></e>
     <e lm="abreviacion"><i>abreviacion</i><par n="part__n"/></e>
     <e lm="semafòr"><i>semafòr</i><par n="conselh__n"/></e>
     <e lm="abric"><i>abric</i><par n="conselh__n"/></e>
@@ -20516,12 +20617,7 @@
       <e r="LR" lm="aigat" alt="oci@gascon"><i>aigat</i><par n="conselh__n"/></e>
     <e lm="aigat" alt="oci"><i>aigat</i><par n="conselh__n"/></e>
     <e lm="aimant" r="LR"><i>aimant</i><par n="agent__n"/></e>
-      <e r="LR" lm="airau" alt="oci"><i>airau</i><par n="conselh__n"/></e>
-    <e lm="airau" alt="oci@aran"><i>airau</i><par n="conselh__n"/></e>
-    <e lm="airau" alt="oci@gascon"><i>airau</i><par n="conselh__n"/></e>
-      <e r="LR" lm="airal" alt="oci@aran"><i>airal</i><par n="conselh__n"/></e>
-      <e r="LR" lm="airal" alt="oci@gascon"><i>airal</i><par n="conselh__n"/></e>
-    <e lm="airal" alt="oci"><i>airal</i><par n="conselh__n"/></e>
+    <e lm="airal"><i>aira</i><par n="cè/l__n"/></e>
     <e lm="aira" r="LR"><i>air</i><par n="jornad/a__n"/></e>
     <e lm="aire"><i>aire</i><par n="conselh__n"/></e>
       <e r="LR" lm="airina" alt="oci"><i>airin</i><par n="jornad/a__n"/></e>
@@ -20620,29 +20716,15 @@
     <e lm="andàs"><i>andàs</i><par n="mes__n"/></e>
     <e lm="sufix"><i>sufix</i><par n="mes__n"/></e>
     <e lm="indèx"><i>indèx</i><par n="mes__n"/></e>
-      <e r="LR" lm="anèth" alt="oci"><i>anèth</i><par n="conselh__n"/></e>
-    <e lm="anèth" alt="oci@aran"><i>anèth</i><par n="conselh__n"/></e>
-    <e lm="anèth" alt="oci@gascon"><i>anèth</i><par n="conselh__n"/></e>
-      <e r="LR" lm="anèl" alt="oci@aran"><i>anèl</i><par n="conselh__n"/></e>
-      <e r="LR" lm="anèl" alt="oci@gascon"><i>anèl</i><par n="conselh__n"/></e>
-    <e lm="anèl" alt="oci"><i>anèl</i><par n="conselh__n"/></e>
+    <e lm="anèl"><i>anè</i><par n="castè/l__n"/></e>
     <e lm="angel"><i>angel</i><par n="conselh__n"/></e>
     <e lm="angoisha"><i>angoish</i><par n="jornad/a__n"/></e>
     <e lm="angónia" r="LR"><i>angóni</i><par n="jornad/a__n"/></e>
-      <e r="LR" lm="anhèth" a="carmentano" alt="oci"><i>anhèth</i><par n="conselh__n"/></e>
-    <e lm="anhèth" a="carmentano" alt="oci@aran"><i>anhèth</i><par n="conselh__n"/></e>
-    <e lm="anhèth" a="carmentano" alt="oci@gascon"><i>anhèth</i><par n="conselh__n"/></e>
-      <e r="LR" lm="anhèl" a="carmentano" alt="oci@aran"><i>anhèl</i><par n="conselh__n"/></e>
-      <e r="LR" lm="anhèl" a="carmentano" alt="oci@gascon"><i>anhèl</i><par n="conselh__n"/></e>
-    <e lm="anhèl" a="carmentano" alt="oci"><i>anhèl</i><par n="conselh__n"/></e>
+    <e lm="anhèl"><i>anhè</i><par n="castè/l__n"/></e>
     <e lm="an"><i>an</i><par n="conselh__n"/></e>
     <e lm="animacion"><i>animacion</i><par n="part__n"/></e>
-      <e r="LR" lm="animau" alt="oci"><i>animau</i><par n="conselh__n"/></e>
-    <e lm="animau" alt="oci@aran"><i>animau</i><par n="conselh__n"/></e>
-    <e lm="animau" alt="oci@gascon"><i>animau</i><par n="conselh__n"/></e>
-      <e r="LR" lm="animal" alt="oci@aran"><i>animal</i><par n="conselh__n"/></e>
-      <e r="LR" lm="animal" alt="oci@gascon"><i>animal</i><par n="conselh__n"/></e>
-    <e lm="animal" alt="oci"><i>animal</i><par n="conselh__n"/></e>
+    <e lm="animal"><i>anima</i><par n="cè/l__n"/></e>
+    <e lm="mineral"><i>minera</i><par n="cè/l__n"/></e>
     <e lm="ànim"><i>ànim</i><par n="conselh__n"/></e>
     <e lm="aninòs"><i>aninòs</i><par n="mes__n"/></e>
     <e lm="anís"><i>an</i><par n="perm/ís__n"/></e>
@@ -21258,12 +21340,7 @@
     <e lm="burèu"><i>burèu</i><par n="conselh__n"/></e>
     <e lm="bus" r="LR"><i>bus</i><par n="mes__n"/></e>
     <e lm="cabana" a="carmentano"><i>caban</i><par n="jornad/a__n"/></e>
-      <e r="LR" lm="cabau" alt="oci"><i>cabau</i><par n="conselh__n"/></e>
-    <e lm="cabau" alt="oci@aran"><i>cabau</i><par n="conselh__n"/></e>
-    <e lm="cabau" alt="oci@gascon"><i>cabau</i><par n="conselh__n"/></e>
-      <e r="LR" lm="cabal" alt="oci@aran"><i>cabal</i><par n="conselh__n"/></e>
-      <e r="LR" lm="cabal" alt="oci@gascon"><i>cabal</i><par n="conselh__n"/></e>
-    <e lm="cabal" alt="oci"><i>cabal</i><par n="conselh__n"/></e>
+    <e lm="cabal"><i>caba</i><par n="cè/l__n"/></e>
     <e lm="cabelh"><i>cabelh</i><par n="conselh__n"/></e>
     <e lm="cabeste"><i>cabeste</i><par n="conselh__n"/></e>
     <e lm="caça"><i>ca</i><par n="seden/ça__n"/></e>
@@ -21277,12 +21354,7 @@
     <e lm="veuse" r="LR"><i>veus</i><par n="ministr/e__n"/></e>
     <e lm="cacilha" r="LR"><i>cacilh</i><par n="jornad/a__n"/></e>
     <e lm="caçum"><i>caçum</i><par n="part__n"/></e>
-      <e r="LR" lm="cadèth" alt="oci"><i>cadèth</i><par n="conselh__n"/></e>
-    <e lm="cadèth" alt="oci@aran"><i>cadèth</i><par n="conselh__n"/></e>
-    <e lm="cadèth" alt="oci@gascon"><i>cadèth</i><par n="conselh__n"/></e>
-      <e r="LR" lm="cadèl" alt="oci@aran"><i>cadèl</i><par n="conselh__n"/></e>
-      <e r="LR" lm="cadèl" alt="oci@gascon"><i>cadèl</i><par n="conselh__n"/></e>
-    <e lm="cadèl" alt="oci"><i>cadèl</i><par n="conselh__n"/></e>
+    <e lm="cadèl"><i>cadè</i><par n="castè/l__n"/></e>
     <e lm="CAEI"><i>CAEI</i><par n="BBVA__n"/></e>
     <e lm="cafè"><i>cafè</i><par n="conselh__n"/></e>
     <e lm="café" r="LR"><i>café</i><par n="conselh__n"/></e>
@@ -21328,12 +21400,7 @@
     <e lm="camion"><i>camion</i><par n="conselh__n"/></e>
     <e lm="campament"><i>campament</i><par n="conselh__n"/></e>
     <e lm="campana"><i>campan</i><par n="jornad/a__n"/></e>
-      <e r="LR" lm="campanau" alt="oci"><i>campanau</i><par n="conselh__n"/></e>
-    <e lm="campanau" alt="oci@aran"><i>campanau</i><par n="conselh__n"/></e>
-    <e lm="campanau" alt="oci@gascon"><i>campanau</i><par n="conselh__n"/></e>
-      <e r="LR" lm="campanal" alt="oci@aran"><i>campanal</i><par n="conselh__n"/></e>
-      <e r="LR" lm="campanal" alt="oci@gascon"><i>campanal</i><par n="conselh__n"/></e>
-    <e lm="campanal" alt="oci"><i>campanal</i><par n="conselh__n"/></e>
+    <e lm="campanal"><i>campana</i><par n="cè/l__n"/></e>
     <e lm="campanha"><i>campanh</i><par n="jornad/a__n"/></e>
       <e r="LR" lm="camparòu" alt="oci"><i>camparò</i><par n="camparò/u__n"/></e>
     <e lm="camparòu" alt="oci@aran"><i>camparò</i><par n="camparò/u__n"/></e>
@@ -21348,12 +21415,7 @@
     <e lm="campion"><i>campion</i><par n="conselhèr__n"/></e>
     <e lm="campulament"><i>campulament</i><par n="conselh__n"/></e>
     <e lm="canabàs" a="carmentano"><i>canabàs</i><par n="personau__n"/></e>
-      <e r="LR" lm="canal" alt="oci@aran"><i>canal</i><par n="conselh__n"/></e>
-      <e r="LR" lm="canal" alt="oci@gascon"><i>canal</i><par n="conselh__n"/></e>
-    <e lm="canal" alt="oci"><i>canal</i><par n="conselh__n"/></e>
-      <e r="LR" lm="canau" alt="oci"><i>canau</i><par n="conselh__n"/></e>
-    <e lm="canau" alt="oci@aran"><i>canau</i><par n="conselh__n"/></e>
-    <e lm="canau" alt="oci@gascon"><i>canau</i><par n="conselh__n"/></e>
+    <e lm="canal"><i>cana</i><par n="cè/l__n"/></e>
     <e lm="cancellacion"><i>cancellacion</i><par n="part__n"/></e>
     <e lm="càncer" a="carmentano"><i>càncer</i><par n="conselh__n"/></e>
     <e lm="cançon"><i>cançon</i><par n="part__n"/></e>
@@ -21397,12 +21459,7 @@
     <e lm="morre"><i>morre</i><par n="conselh__n"/></e>
     <e lm="caperader"><i>caperader</i><par n="conselh__n"/></e>
     <e lm="cap"><i>cap</i><par n="agent__n"/></e>
-      <e r="LR" lm="capitau" alt="oci"><i>capitau</i><par n="conselh__n"/></e>
-    <e lm="capitau" alt="oci@aran"><i>capitau</i><par n="conselh__n"/></e>
-    <e lm="capitau" alt="oci@gascon"><i>capitau</i><par n="conselh__n"/></e>
-      <e r="LR" lm="capital" alt="oci@aran"><i>capital</i><par n="conselh__n"/></e>
-      <e r="LR" lm="capital" alt="oci@gascon"><i>capital</i><par n="conselh__n"/></e>
-    <e lm="capital" alt="oci"><i>capital</i><par n="conselh__n"/></e>
+    <e lm="capital"><i>capita</i><par n="cè/l__n"/></e>
       <e r="LR" lm="capitala" alt="oci@aran"><i>capital</i><par n="jornad/a__n"/></e>
       <e r="LR" lm="capitala" alt="oci@gascon"><i>capital</i><par n="jornad/a__n"/></e>
     <e lm="capitala" alt="oci"><i>capital</i><par n="jornad/a__n"/></e>
@@ -21468,16 +21525,13 @@
     <e lm="mesa en valor"><i>mes</i><par n="jornad/a__n"/><p><l><b/>en<b/>valor</l><r><g><b/>en<b/>valor</g></r></p></e>
     <e lm="valorizacion" r="LR"><i>valorizacion</i><par n="part__n"/></e>
     <e lm="carton" a="carmentano"><i>carton</i><par n="conselh__n"/></e>
-      <e r="LR" lm="ostal" alt="oci@aran"><i>ostal</i><par n="conselh__n"/></e>
-      <e r="LR" lm="ostal" alt="oci@gascon"><i>ostal</i><par n="conselh__n"/></e>
-    <e lm="ostal" alt="oci"><i>ostal</i><par n="conselh__n"/></e>
+    <e lm="ostal"><i>osta</i><par n="cè/l__n"/></e>
       <e r="LR" lm="ostal d'empenhament" alt="oci@aran"><i>ostal</i><par n="conselh__n"/><p><l><b/>d'empenhament</l><r><g><b/>d'empenhament</g></r></p></e>
       <e r="LR" lm="ostal d'empenhament" alt="oci@gascon"><i>ostal</i><par n="conselh__n"/><p><l><b/>d'empenhament</l><r><g><b/>d'empenhament</g></r></p></e>
     <e lm="ostal d'empenhament" alt="oci"><i>ostal</i><par n="conselh__n"/><p><l><b/>d'empenhament</l><r><g><b/>d'empenhament</g></r></p></e>
       <e r="LR" lm="ostal de prèstes" alt="oci@aran"><i>ostal</i><par n="conselh__n"/><p><l><b/>de<b/>prèstes</l><r><g><b/>de<b/>prèstes</g></r></p></e>
       <e r="LR" lm="ostal de prèstes" alt="oci@gascon"><i>ostal</i><par n="conselh__n"/><p><l><b/>de<b/>prèstes</l><r><g><b/>de<b/>prèstes</g></r></p></e>
     <e lm="ostal de prèstes" alt="oci"><i>ostal</i><par n="conselh__n"/><p><l><b/>de<b/>prèstes</l><r><g><b/>de<b/>prèstes</g></r></p></e>
-    <e lm="ostau" r="LR"><i>ostau</i><par n="conselh__n"/></e>
       <e r="LR" lm="casa" alt="oci"><i>cas</i><par n="jornad/a__n"/></e>
     <e lm="casa" alt="oci@aran"><i>cas</i><par n="jornad/a__n"/></e>
     <e lm="casa" alt="oci@gascon"><i>cas</i><par n="jornad/a__n"/></e>
@@ -21537,15 +21591,7 @@
       <e r="LR" lm="castanhièr" alt="oci@aran"><i>castanhièr</i><par n="conselh__n"/></e>
       <e r="LR" lm="castanhièr" alt="oci@gascon"><i>castanhièr</i><par n="conselh__n"/></e>
     <e lm="castanhièr" alt="oci"><i>castanhièr</i><par n="conselh__n"/></e>
-    <e lm="castè"><i>castè</i><par n="castè/l__n"/></e>
-<!--
-      <e r="LR" lm="castèth" alt="oci"><i>castèth</i><par n="conselh__n"/></e>
-    <e lm="castèth" alt="oci@aran"><i>castèth</i><par n="conselh__n"/></e>
-    <e lm="castèth" alt="oci@gascon"><i>castèth</i><par n="conselh__n"/></e>
-      <e r="LR" lm="castèl" alt="oci@aran"><i>castèl</i><par n="conselh__n"/></e>
-      <e r="LR" lm="castèl" alt="oci@gascon"><i>castèl</i><par n="conselh__n"/></e>
-    <e lm="castèl" alt="oci"><i>castèl</i><par n="conselh__n"/></e>
--->
+    <e lm="castèl"><i>castè</i><par n="castè/l__n"/></e>
     <e lm="catalan"><i>catalan</i><par n="conselhèr__n"/></e>
     <e lm="catalòg" a="carmentano"><i>catalòg</i><par n="conselh__n"/></e>
     <e lm="catalogacion"><i>catalogacion</i><par n="part__n"/></e>
@@ -21627,21 +21673,11 @@
     <e lm="cerièra" alt="oci"><i>cerièr</i><par n="jornad/a__n"/></e>
     <e lm="certamen"><i>certamen</i><par n="conselh__n"/></e>
     <e lm="certificacion"><i>certificacion</i><par n="part__n"/></e>
-      <e r="LR" lm="cervèth" alt="oci"><i>cervèth</i><par n="conselh__n"/></e>
-    <e lm="cervèth" alt="oci@aran"><i>cervèth</i><par n="conselh__n"/></e>
-    <e lm="cervèth" alt="oci@gascon"><i>cervèth</i><par n="conselh__n"/></e>
-      <e r="LR" lm="cervèl" alt="oci@aran"><i>cervèl</i><par n="conselh__n"/></e>
-      <e r="LR" lm="cervèl" alt="oci@gascon"><i>cervèl</i><par n="conselh__n"/></e>
-    <e lm="cervèl" alt="oci"><i>cervèl</i><par n="conselh__n"/></e>
+    <e lm="cervèl"><i>cervè</i><par n="castè/l__n"/></e>
     <e lm="cèrvi"><i>cèrvi</i><par n="conselh__n"/></e>
     <e lm="cessament"><i>cessament</i><par n="conselh__n"/></e>
     <e lm="cession"><i>cession</i><par n="part__n"/></e>
-      <e r="LR" lm="cèu" alt="oci"><i>cèu</i><par n="conselh__n"/></e>
-    <e lm="cèu" alt="oci@aran"><i>cèu</i><par n="conselh__n"/></e>
-    <e lm="cèu" alt="oci@gascon"><i>cèu</i><par n="conselh__n"/></e>
-      <e r="LR" lm="cèl" alt="oci@aran"><i>cèl</i><par n="conselh__n"/></e>
-      <e r="LR" lm="cèl" alt="oci@gascon"><i>cèl</i><par n="conselh__n"/></e>
-    <e lm="cèl" alt="oci"><i>cèl</i><par n="conselh__n"/></e>
+    <e lm="cèl"><i>cè</i><par n="cè/l__n"/></e>
     <e lm="CEVA" a="carmentano"><i>CEVA</i><par n="BBVA__n"/></e>
     <e lm="CF" a="carmentano"><i>CF</i><par n="BBVA__n"/></e>
     <e lm="chai"><i>chai</i><par n="conselh__n"/></e>
@@ -22088,12 +22124,7 @@
     <e lm="corporacion"><i>corporacion</i><par n="part__n"/></e>
     <e lm="corpus" a="carmentano" r="LR"><i>corpus</i><par n="deluns__n"/></e>
     <e lm="còrpus" a="carmentano"><i>còrpus</i><par n="deluns__n"/></e>
-      <e r="LR" lm="corrau" alt="oci"><i>corrau</i><par n="conselh__n"/></e>
-    <e lm="corrau" alt="oci@aran"><i>corrau</i><par n="conselh__n"/></e>
-    <e lm="corrau" alt="oci@gascon"><i>corrau</i><par n="conselh__n"/></e>
-      <e r="LR" lm="corral" alt="oci@aran"><i>corral</i><par n="conselh__n"/></e>
-      <e r="LR" lm="corral" alt="oci@gascon"><i>corral</i><par n="conselh__n"/></e>
-    <e lm="corral" alt="oci"><i>corral</i><par n="conselh__n"/></e>
+    <e lm="corral"><i>corra</i><par n="cè/l__n"/></e>
     <e lm="correccion"><i>correccion</i><par n="part__n"/></e>
     <e lm="correder"><i>correder</i><par n="conselh__n"/></e>
     <e lm="corredor"><i>corredor</i><par n="conselhèr__n"/></e>
@@ -22379,11 +22410,7 @@
     <e lm="desir"><i>desir</i><par n="conselh__n"/></e>
     <e lm="deslotjament" a="carmentano"><i>deslotjament</i><par n="conselh__n"/></e>
       <e r="LR" lm="desnivèu" alt="oci"><i>desnivèu</i><par n="conselh__n"/></e>
-    <e lm="desnivèu" alt="oci@aran"><i>desnivèu</i><par n="conselh__n"/></e>
-    <e lm="desnivèu" alt="oci@gascon"><i>desnivèu</i><par n="conselh__n"/></e>
-      <e r="LR" lm="desnivèl" alt="oci@aran"><i>desnivèl</i><par n="conselh__n"/></e>
-      <e r="LR" lm="desnivèl" alt="oci@gascon"><i>desnivèl</i><par n="conselh__n"/></e>
-    <e lm="desnivèl" alt="oci"><i>desnivèl</i><par n="conselh__n"/></e>
+    <e lm="desnivèl"><i>desnivè</i><par n="cè/l__n"/></e>
     <e lm="desocupacion"><i>desocupacion</i><par n="part__n"/></e>
     <e lm="desparicion" r="LR"><i>desparicion</i><par n="part__n"/></e>
       <e r="LR" lm="a part" alt="oci"><i>a<b/>part</i><par n="ager__adv"/></e>
@@ -22579,12 +22606,7 @@
     <e lm="donada"><i>donad</i><par n="jornad/a__n"/></e>
     <e lm="don"><i>don</i><par n="conselh__n"/></e>
     <e lm="dorneta" r="LR"><i>dornet</i><par n="jornad/a__n"/></e>
-      <e r="LR" lm="dorsau" alt="oci"><i>dorsau</i><par n="conselh__n"/></e>
-    <e lm="dorsau" alt="oci@aran"><i>dorsau</i><par n="conselh__n"/></e>
-    <e lm="dorsau" alt="oci@gascon"><i>dorsau</i><par n="conselh__n"/></e>
-      <e r="LR" lm="dorsal" alt="oci@aran"><i>dorsal</i><par n="conselh__n"/></e>
-      <e r="LR" lm="dorsal" alt="oci@gascon"><i>dorsal</i><par n="conselh__n"/></e>
-    <e lm="dorsal" alt="oci"><i>dorsal</i><par n="conselh__n"/></e>
+    <e lm="dorsal"><i>dorsa</i><par n="cè/l__n"/></e>
     <e lm="dossièr"><i>dossièr</i><par n="conselh__n"/></e>
     <e lm="dotacion"><i>dotacion</i><par n="part__n"/></e>
     <e lm="drapèu" a="carmentano" r="LR"><i>drapèu</i><par n="conselh__n"/></e>
@@ -22879,12 +22901,7 @@
     <e lm="agach" alt="oci"><i>agach</i><par n="mes__n"/></e>
     <e lm="espisament" r="LR"><i>espisament</i><par n="conselh__n"/></e>
     <e lm="espitalizacion"><i>espitalizacion</i><par n="part__n"/></e>
-      <e r="LR" lm="espitau" alt="oci"><i>espitau</i><par n="conselh__n"/></e>
-    <e lm="espitau" alt="oci@aran"><i>espitau</i><par n="conselh__n"/></e>
-    <e lm="espitau" alt="oci@gascon"><i>espitau</i><par n="conselh__n"/></e>
-      <e r="LR" lm="espital" alt="oci@aran"><i>espital</i><par n="conselh__n"/></e>
-      <e r="LR" lm="espital" alt="oci@gascon"><i>espital</i><par n="conselh__n"/></e>
-    <e lm="espital" alt="oci"><i>espital</i><par n="conselh__n"/></e>
+    <e lm="espital"><i>espita</i><par n="cè/l__n"/></e>
     <e lm="espleita" a="carmentano" r="LR"><i>espleit</i><par n="jornad/a__n"/></e>
     <e lm="esplinga"><i>espling</i><par n="hormig/a__n"/></e>
     <e lm="espòrt"><i>espòrt</i><par n="conselh__n"/></e>
@@ -23047,12 +23064,7 @@
     <e lm="Michel"><i>Michel</i><par n="Abad__np"/></e>
     <e lm="familiarisacion" r="LR"><i>familiarisacion</i><par n="part__n"/></e>
     <e lm="familiarizacion"><i>familiarizacion</i><par n="part__n"/></e>
-      <e r="LR" lm="fanau" alt="oci"><i>fanau</i><par n="conselh__n"/></e>
-    <e lm="fanau" alt="oci@aran"><i>fanau</i><par n="conselh__n"/></e>
-    <e lm="fanau" alt="oci@gascon"><i>fanau</i><par n="conselh__n"/></e>
-      <e r="LR" lm="fanal" alt="oci@aran"><i>fanal</i><par n="conselh__n"/></e>
-      <e r="LR" lm="fanal" alt="oci@gascon"><i>fanal</i><par n="conselh__n"/></e>
-    <e lm="fanal" alt="oci"><i>fanal</i><par n="conselh__n"/></e>
+    <e lm="fanal"><i>fana</i><par n="cè/l__n"/></e>
     <e lm="fasa"><i>fas</i><par n="jornad/a__n"/></e>
     <e lm="fauna"><i>faun</i><par n="jornad/a__n"/></e>
     <e lm="faussada"><i>faussad</i><par n="jornad/a__n"/></e>
@@ -23253,12 +23265,7 @@
     <e lm="sortida" alt="oci"><i>sortid</i><par n="jornad/a__n"/></e>
     <e lm="gestion"><i>gestion</i><par n="part__n"/></e>
     <e lm="gestor"><i>gestor</i><par n="conselhèr__n"/></e>
-      <e r="LR" lm="gèu" alt="oci"><i>gèu</i><par n="conselh__n"/></e>
-    <e lm="gèu" alt="oci@aran"><i>gèu</i><par n="conselh__n"/></e>
-    <e lm="gèu" alt="oci@gascon"><i>gèu</i><par n="conselh__n"/></e>
-      <e r="LR" lm="gèl" alt="oci@aran"><i>gèl</i><par n="conselh__n"/></e>
-      <e r="LR" lm="gèl" alt="oci@gascon"><i>gèl</i><par n="conselh__n"/></e>
-    <e lm="gèl" alt="oci"><i>gèl</i><par n="conselh__n"/></e>
+    <e lm="gèl"><i>gè</i><par n="cè/l__n"/></e>
     <e lm="gibrelh"><i>gibrelh</i><par n="conselh__n"/></e>
     <e lm="g"><i>g</i><par n="q__n"/></e>
     <e lm="gimbro"><i>gimbro</i><par n="conselh__n"/></e>
@@ -23302,12 +23309,7 @@
     <e lm="granatge"><i>granatge</i><par n="conselh__n"/></e>
     <e lm="granhoèr"><i>granhoèr</i><par n="conselh__n"/></e>
     <e lm="granja" a="carmentano"><i>gran</i><par n="aubèr/ja__n"/></e>
-      <e r="LR" lm="gratacèu" alt="oci"><i>gratacèu</i><par n="conselh__n"/></e>
-    <e lm="gratacèu" alt="oci@aran"><i>gratacèu</i><par n="conselh__n"/></e>
-    <e lm="gratacèu" alt="oci@gascon"><i>gratacèu</i><par n="conselh__n"/></e>
-      <e r="LR" lm="gratacèl" alt="oci@aran"><i>gratacèl</i><par n="conselh__n"/></e>
-      <e r="LR" lm="gratacèl" alt="oci@gascon"><i>gratacèl</i><par n="conselh__n"/></e>
-    <e lm="gratacèl" alt="oci"><i>gratacèl</i><par n="conselh__n"/></e>
+    <e lm="gratacèl"><i>gratacè</i><par n="cè/l__n"/></e>
     <e lm="greda"><i>gred</i><par n="jornad/a__n"/></e>
     <e lm="grèish"><i>grèish</i><par n="mes__n"/></e>
     <e lm="grèmi"><i>grèmi</i><par n="conselh__n"/></e>
@@ -23864,12 +23866,7 @@
     <e lm="internèt" r="LR"><i>internèt</i><par n="part__n"/></e>
     <e lm="interpretacion"><i>interpretacion</i><par n="part__n"/></e>
     <e lm="interrupcion"><i>interrupcion</i><par n="part__n"/></e>
-      <e r="LR" lm="intervau" alt="oci"><i>intervau</i><par n="conselh__n"/></e>
-    <e lm="intervau" alt="oci@aran"><i>intervau</i><par n="conselh__n"/></e>
-    <e lm="intervau" alt="oci@gascon"><i>intervau</i><par n="conselh__n"/></e>
-      <e r="LR" lm="interval" alt="oci@aran"><i>interval</i><par n="conselh__n"/></e>
-      <e r="LR" lm="interval" alt="oci@gascon"><i>interval</i><par n="conselh__n"/></e>
-    <e lm="interval" alt="oci"><i>interval</i><par n="conselh__n"/></e>
+    <e lm="interval"><i>interva</i><par n="cè/l__n"/></e>
     <e lm="intervencion"><i>intervencion</i><par n="part__n"/></e>
     <e lm="introduccion"><i>introduccion</i><par n="part__n"/></e>
     <e lm="inventari"><i>inventari</i><par n="conselh__n"/></e>
@@ -23889,12 +23886,7 @@
     <e lm="iscla" a="carmentano" alt="oci"><i>iscl</i><par n="jornad/a__n"/></e>
     <e lm="isènda"><i>isènd</i><par n="jornad/a__n"/></e>
     <e lm="istòria"><i>istòri</i><par n="jornad/a__n"/></e>
-      <e r="LR" lm="istoriau" alt="oci"><i>istoriau</i><par n="conselh__n"/></e>
-    <e lm="istoriau" alt="oci@aran"><i>istoriau</i><par n="conselh__n"/></e>
-    <e lm="istoriau" alt="oci@gascon"><i>istoriau</i><par n="conselh__n"/></e>
-      <e r="LR" lm="istorial" alt="oci@aran"><i>istorial</i><par n="conselh__n"/></e>
-      <e r="LR" lm="istorial" alt="oci@gascon"><i>istorial</i><par n="conselh__n"/></e>
-    <e lm="istorial" alt="oci"><i>istorial</i><par n="conselh__n"/></e>
+    <e lm="istorial"><i>istoria</i><par n="cè/l__n"/></e>
     <e lm="itinerari"><i>itinerari</i><par n="conselh__n"/></e>
       <e r="LR" lm="iuèrn" alt="oci"><i>iuèrn</i><par n="conselh__n"/></e>
     <e lm="iuèrn" alt="oci@aran"><i>iuèrn</i><par n="conselh__n"/></e>
@@ -23979,12 +23971,7 @@
     <e lm="braçada" r="LR"><i>braçad</i><par n="jornad/a__n"/></e>
     <e lm="embraçada" r="LR"><i>embraçad</i><par n="jornad/a__n"/></e>
     <e lm="jornalista" a="carmentano"><i>jornalist</i><par n="guardi/a__n"/></e>
-      <e r="LR" lm="jornau" alt="oci"><i>jornau</i><par n="conselh__n"/></e>
-    <e lm="jornau" alt="oci@aran"><i>jornau</i><par n="conselh__n"/></e>
-    <e lm="jornau" alt="oci@gascon"><i>jornau</i><par n="conselh__n"/></e>
-      <e r="LR" lm="jornal" alt="oci@aran"><i>jornal</i><par n="conselh__n"/></e>
-      <e r="LR" lm="jornal" alt="oci@gascon"><i>jornal</i><par n="conselh__n"/></e>
-    <e lm="jornal" alt="oci"><i>jornal</i><par n="conselh__n"/></e>
+    <e lm="jornal"><i>jorna</i><par n="cè/l__n"/></e>
     <e lm="quotidian" r="LR"><i>quotidian</i><par n="conselh__n"/></e>
     <e lm="joventut" r="LR"><i>joventut</i><par n="part__n"/></e>
     <e lm="jubilacion"><i>jubilacion</i><par n="part__n"/></e>
@@ -24134,12 +24121,7 @@
     <e lm="limitacion"><i>limitacion</i><par n="part__n"/></e>
     <e lm="limit"><i>limit</i><par n="conselh__n"/></e>
     <e lm="limpiesa" a="carmentano" r="LR"><i>limpies</i><par n="jornad/a__n"/></e>
-      <e r="LR" lm="lindau" alt="oci"><i>lindau</i><par n="conselh__n"/></e>
-    <e lm="lindau" alt="oci@aran"><i>lindau</i><par n="conselh__n"/></e>
-    <e lm="lindau" alt="oci@gascon"><i>lindau</i><par n="conselh__n"/></e>
-      <e r="LR" lm="lindal" alt="oci@aran"><i>lindal</i><par n="conselh__n"/></e>
-      <e r="LR" lm="lindal" alt="oci@gascon"><i>lindal</i><par n="conselh__n"/></e>
-    <e lm="lindal" alt="oci"><i>lindal</i><par n="conselh__n"/></e>
+    <e lm="lindal"><i>linda</i><par n="cè/l__n"/></e>
     <e lm="linha"><i>linh</i><par n="jornad/a__n"/></e>
     <e lm="linhatge"><i>linhatge</i><par n="conselh__n"/></e>
     <e lm="liquidacion"><i>liquidacion</i><par n="part__n"/></e>
@@ -24364,22 +24346,12 @@
     <e lm="massificacion"><i>massificacion</i><par n="part__n"/></e>
     <e lm="masurca"><i>masur</i><par n="va/ca__n"/></e>
     <e lm="matèria"><i>matèri</i><par n="jornad/a__n"/></e>
-      <e r="LR" lm="materiau" alt="oci"><i>materiau</i><par n="conselh__n"/></e>
-    <e lm="materiau" alt="oci@aran"><i>materiau</i><par n="conselh__n"/></e>
-    <e lm="materiau" alt="oci@gascon"><i>materiau</i><par n="conselh__n"/></e>
-      <e r="LR" lm="material" alt="oci@aran"><i>material</i><par n="conselh__n"/></e>
-      <e r="LR" lm="material" alt="oci@gascon"><i>material</i><par n="conselh__n"/></e>
-    <e lm="material" alt="oci"><i>material</i><par n="conselh__n"/></e>
+    <e lm="material"><i>materia</i><par n="cè/l__n"/></e>
     <e lm="maternitat" a="carmentano"><i>maternitat</i><par n="part__n"/></e>
     <e lm="matís"><i>mat</i><par n="perm/ís__n"/></e>
     <e lm="matriculacion"><i>matriculacion</i><par n="part__n"/></e>
     <e lm="matrimòni" a="carmentano"><i>matrimòni</i><par n="conselh__n"/></e>
-      <e r="LR" lm="mau" alt="oci"><i>mau</i><par n="conselh__n"/></e>
-    <e lm="mau" alt="oci@aran"><i>mau</i><par n="conselh__n"/></e>
-    <e lm="mau" alt="oci@gascon"><i>mau</i><par n="conselh__n"/></e>
-      <e r="LR" lm="mal" alt="oci@aran"><i>mal</i><par n="conselh__n"/></e>
-      <e r="LR" lm="mal" alt="oci@gascon"><i>mal</i><par n="conselh__n"/></e>
-    <e lm="mal" alt="oci"><i>mal</i><par n="conselh__n"/></e>
+    <e lm="mal"><i>ma</i><par n="cè/l__n"/></e>
       <e r="LR" lm="mautractament" a="carmentano" alt="oci"><i>mautractament</i><par n="conselh__n"/></e>
     <e lm="mautractament" a="carmentano" alt="oci@aran"><i>mautractament</i><par n="conselh__n"/></e>
     <e lm="mautractament" a="carmentano" alt="oci@gascon"><i>mautractament</i><par n="conselh__n"/></e>
@@ -24447,23 +24419,13 @@
     <e lm="mestreg" a="carmentano" r="LR"><i>mestreg</i><par n="mes__n"/></e>
     <e lm="mèstre"><i>mèstr</i><par n="ministr/e__n"/></e>
     <e lm="mesura"><i>mesur</i><par n="jornad/a__n"/></e>
-      <e r="LR" lm="metau" alt="oci"><i>metau</i><par n="conselh__n"/></e>
-    <e lm="metau" alt="oci@aran"><i>metau</i><par n="conselh__n"/></e>
-    <e lm="metau" alt="oci@gascon"><i>metau</i><par n="conselh__n"/></e>
-      <e r="LR" lm="metal" alt="oci@aran"><i>metal</i><par n="conselh__n"/></e>
-      <e r="LR" lm="metal" alt="oci@gascon"><i>metal</i><par n="conselh__n"/></e>
-    <e lm="metal" alt="oci"><i>metal</i><par n="conselh__n"/></e>
+    <e lm="metal"><i>meta</i><par n="cè/l__n"/></e>
     <e lm="mètge"><i>m</i><par n="m/ètge__n"/></e>
     <e lm="metòde"><i>metòde</i><par n="conselh__n"/></e>
     <e lm="metodologia"><i>metodologi</i><par n="jornad/a__n"/></e>
     <e lm="mètre"><i>mètre</i><par n="conselh__n"/></e>
     <e lm="mètro" a="carmentano"><i>mètro</i><par n="conselh__n"/></e>
-      <e r="LR" lm="mèu" alt="oci"><i>mèu</i><par n="part__n"/></e>
-    <e lm="mèu" alt="oci@aran"><i>mèu</i><par n="part__n"/></e>
-    <e lm="mèu" alt="oci@gascon"><i>mèu</i><par n="part__n"/></e>
-      <e r="LR" lm="mèl" alt="oci@aran"><i>mèl</i><par n="part__n"/></e>
-      <e r="LR" lm="mèl" alt="oci@gascon"><i>mèl</i><par n="part__n"/></e>
-    <e lm="mèl" alt="oci"><i>mèl</i><par n="part__n"/></e>
+    <e lm="mèl"><i>mè</i><par n="mè/l__n"/></e>
     <e lm="michon"><i>michon</i><par n="conselh__n"/></e>
     <e lm="medalha"><i>medalh</i><par n="jornad/a__n"/></e>
       <e r="LR" lm="miei ambient" alt="oci"><i>miei<b/>ambient</i><par n="personau__n"/></e>
@@ -24527,12 +24489,7 @@
       <e r="LR" lm="messa" alt="oci@gascon"><i>mess</i><par n="jornad/a__n"/></e>
     <e lm="messa" alt="oci"><i>mess</i><par n="jornad/a__n"/></e>
     <e lm="mirga" alt="oci"><i>mirg</i><par n="hormig/a__n"/></e>
-      <e r="LR" lm="missau" alt="oci"><i>missau</i><par n="conselh__n"/></e>
-    <e lm="missau" alt="oci@aran"><i>missau</i><par n="conselh__n"/></e>
-    <e lm="missau" alt="oci@gascon"><i>missau</i><par n="conselh__n"/></e>
-      <e r="LR" lm="missal" alt="oci@aran"><i>missal</i><par n="conselh__n"/></e>
-      <e r="LR" lm="missal" alt="oci@gascon"><i>missal</i><par n="conselh__n"/></e>
-    <e lm="missal" alt="oci"><i>missal</i><par n="conselh__n"/></e>
+    <e lm="nissal"><i>nissa</i><par n="cè/l__n"/></e>
     <e lm="mn"><i>mn</i><par n="personau__n"/></e>
     <e lm="plus"><i>plus</i><par n="personau__n"/></e>
     <e lm="mobiliari"><i>mobiliari</i><par n="conselh__n"/></e>
@@ -24644,12 +24601,7 @@
     <e lm="nacionalizacion"><i>nacionalizacion</i><par n="part__n"/></e>
     <e lm="nacion"><i>nacion</i><par n="part__n"/></e>
     <e lm="nadalet" a="carmentano"><i>nadalet</i><par n="conselh__n"/></e>
-      <e r="LR" lm="nadau" alt="oci"><i>nadau</i><par n="conselh__n"/></e>
-    <e lm="nadau" alt="oci@aran"><i>nadau</i><par n="conselh__n"/></e>
-    <e lm="nadau" alt="oci@gascon"><i>nadau</i><par n="conselh__n"/></e>
-      <e r="LR" lm="nadal" alt="oci@aran"><i>nadal</i><par n="conselh__n"/></e>
-      <e r="LR" lm="nadal" alt="oci@gascon"><i>nadal</i><par n="conselh__n"/></e>
-    <e lm="nadal" alt="oci"><i>nadal</i><par n="conselh__n"/></e>
+    <e lm="nadal"><i>nada</i><par n="cè/l__n"/></e>
     <e lm="naishement" r="LR"><i>naishement</i><par n="conselh__n"/></e>
     <e lm="neishement" r="LR"><i>neishement</i><par n="conselh__n"/></e>
     <e lm="naric"><i>nari</i><par n="ris/c__n"/></e>
@@ -24722,12 +24674,7 @@
     <e lm="nèu" alt="oci"><i>nèu</i><par n="part__n"/></e>
     <e lm="nin"><i>nin</i><par n="conselh__n"/></e>
     <e lm="n"><i>n</i><par n="q__n"/></e>
-      <e r="LR" lm="nivèu" alt="oci"><i>nivèu</i><par n="conselh__n"/></e>
-    <e lm="nivèu" alt="oci@aran"><i>nivèu</i><par n="conselh__n"/></e>
-    <e lm="nivèu" alt="oci@gascon"><i>nivèu</i><par n="conselh__n"/></e>
-      <e r="LR" lm="nivèl" alt="oci@aran"><i>nivèl</i><par n="conselh__n"/></e>
-      <e r="LR" lm="nivèl" alt="oci@gascon"><i>nivèl</i><par n="conselh__n"/></e>
-    <e lm="nivèl" alt="oci"><i>nivèl</i><par n="conselh__n"/></e>
+    <e lm="nivèl"><i>nivè</i><par n="cè/l__n"/></e>
     <e lm="nocion"><i>nocion</i><par n="part__n"/></e>
     <e lm="nombre"><i>nombre</i><par n="conselh__n"/></e>
     <e lm="nomenclator" a="carmentano"><i>nomenclator</i><par n="conselh__n"/></e>
@@ -24758,12 +24705,7 @@
     <e lm="novembre" alt="oci"><i>novembre</i><par n="conselh__n"/></e>
     <e lm="nuclèu"><i>nuclèu</i><par n="conselh__n"/></e>
     <e lm="nud"><i>nud</i><par n="conselh__n"/></e>
-      <e r="LR" lm="numerau" alt="oci"><i>numerau</i><par n="conselh__n"/></e>
-    <e lm="numerau" alt="oci@aran"><i>numerau</i><par n="conselh__n"/></e>
-    <e lm="numerau" alt="oci@gascon"><i>numerau</i><par n="conselh__n"/></e>
-      <e r="LR" lm="numeral" alt="oci@aran"><i>numeral</i><par n="conselh__n"/></e>
-      <e r="LR" lm="numeral" alt="oci@gascon"><i>numeral</i><par n="conselh__n"/></e>
-    <e lm="numeral" alt="oci"><i>numeral</i><par n="conselh__n"/></e>
+    <e lm="numeral"><i>numera</i><par n="cè/l__n"/></e>
     <e lm="numerò" r="LR"><i>numerò</i><par n="conselh__n"/></e>
     <e lm="numèro"><i>numèro</i><par n="conselh__n"/></e>
     <e lm="numèro de còdi"><i>numèro</i><par n="conselh__n"/><p><l><b/>de<b/>còdi</l><r><g><b/>de<b/>còdi</g></r></p></e>
@@ -24938,11 +24880,8 @@
     <e lm="pana"><i>pan</i><par n="jornad/a__n"/></e>
     <e lm="panatòri"><i>panatòri</i><par n="conselh__n"/></e>
     <e lm="pancarta"><i>pancart</i><par n="jornad/a__n"/></e>
-    <e lm="panèl" a="carmentano"><i>panèl</i><par n="conselh__n"/></e>
+    <e lm="panèl"><i>panè</i><par n="cè/l__n"/></e>
     <e lm="pan"><i>pan</i><par n="conselh__n"/></e>
-      <e r="LR" lm="pannèu" alt="oci"><i>pannèu</i><par n="conselh__n"/></e>
-    <e lm="pannèu" alt="oci@aran"><i>pannèu</i><par n="conselh__n"/></e>
-    <e lm="pannèu" alt="oci@gascon"><i>pannèu</i><par n="conselh__n"/></e>
       <e r="LR" lm="aficha" alt="oci@aran"><i>afich</i><par n="di/a__n"/></e>
       <e r="LR" lm="aficha" alt="oci@gascon"><i>afich</i><par n="di/a__n"/></e>
     <e lm="aficha" alt="oci"><i>afich</i><par n="di/a__n"/></e>
@@ -25117,12 +25056,7 @@
     <e lm="persona"><i>person</i><par n="jornad/a__n"/></e>
     <e lm="personalitat"><i>personalitat</i><par n="part__n"/></e>
     <e lm="personatge"><i>personatge</i><par n="conselh__n"/></e>
-      <e r="LR" lm="personau" alt="oci"><i>personau</i><par n="personau__n"/></e>
-    <e lm="personau" alt="oci@aran"><i>personau</i><par n="personau__n"/></e>
-    <e lm="personau" alt="oci@gascon"><i>personau</i><par n="personau__n"/></e>
-      <e r="LR" lm="personal" alt="oci@aran"><i>personal</i><par n="personau__n"/></e>
-      <e r="LR" lm="personal" alt="oci@gascon"><i>personal</i><par n="personau__n"/></e>
-    <e lm="personal" alt="oci"><i>personal</i><par n="personau__n"/></e>
+    <e lm="personal"><i>persona</i><par n="cè/l__n"/></e>
     <e lm="apartheid"><i>apartheid</i><par n="personau__n"/></e>
     <e lm="agressor"><i>agressor</i><par n="conselhèr__n"/></e>
     <e lm="benzina"><i>benzin</i><par n="jornad/a__n"/></e>
@@ -25142,17 +25076,9 @@
     <e lm="pesseta"><i>pesset</i><par n="jornad/a__n"/></e>
     <e lm="pèsta"><i>pèst</i><par n="jornad/a__n"/></e>
     <e lm="petanca"><i>petan</i><par n="va/ca__n"/></e>
-      <e r="LR" lm="pèth" alt="oci"><i>pèth</i><par n="part__n"/></e>
-    <e lm="pèth" alt="oci@aran"><i>pèth</i><par n="part__n"/></e>
-    <e lm="pèth" alt="oci@gascon"><i>pèth</i><par n="part__n"/></e>
-      <e r="LR" lm="pèl" alt="oci@aran"><i>pèl</i><par n="part__n"/></e>
-      <e r="LR" lm="pèl" alt="oci@gascon"><i>pèl</i><par n="part__n"/></e>
-    <e lm="pèl" alt="oci"><i>pèl</i><par n="part__n"/></e>
+    <e lm="pèl"><i>pè</i><par n="mè/l__n"/></e>
     <e lm="peticion"><i>peticion</i><par n="part__n"/></e>
-      <e r="LR" lm="peu" alt="oci"><i>peu</i><par n="conselh__n"/></e>
-    <e lm="peu" alt="oci@aran"><i>peu</i><par n="conselh__n"/></e>
-    <e lm="peu" alt="oci@gascon"><i>peu</i><par n="conselh__n"/></e>
-    <e lm="pel" r="RL" alt="oci"><p><l>pel</l><r>pel<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+    <e lm="pel"><i>pe</i><par n="cè/l__n"/></e>
     <e lm="pel" r="LR" alt="oci@aran"><p><l>lo<b/>pel</l><r>lo<s n="det"/><s n="def"/><s n="m"/><s n="sg"/><j/>pel<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
     <e lm="pel" r="LR" alt="oci@gascon"><p><l>lo<b/>pel</l><r>lo<s n="det"/><s n="def"/><s n="m"/><s n="sg"/><j/>pel<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
     <e lm="pel" r="LR" alt="oci"><p><l>lo<b/>pel</l><r>lo<s n="det"/><s n="def"/><s n="m"/><s n="sg"/><j/>pel<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
@@ -25178,12 +25104,7 @@
     <e lm="pientòla" alt="oci@gascon"><i>pientòl</i><par n="jornad/a__n"/></e>
     <e lm="pietat"><i>pietat</i><par n="part__n"/></e>
     <e lm="pilòta"><i>pilòt</i><par n="jornad/a__n"/></e>
-      <e r="LR" lm="pincèu" alt="oci"><i>pincèu</i><par n="conselh__n"/></e>
-    <e lm="pincèu" alt="oci@aran"><i>pincèu</i><par n="conselh__n"/></e>
-    <e lm="pincèu" alt="oci@gascon"><i>pincèu</i><par n="conselh__n"/></e>
-      <e r="LR" lm="pincèl" alt="oci@aran"><i>pincèl</i><par n="conselh__n"/></e>
-      <e r="LR" lm="pincèl" alt="oci@gascon"><i>pincèl</i><par n="conselh__n"/></e>
-    <e lm="pincèl" alt="oci"><i>pincèl</i><par n="conselh__n"/></e>
+    <e lm="pincèl"><i>pincè</i><par n="cè/l__n"/></e>
     <e lm="pinson"><i>pinson</i><par n="part__n"/></e>
     <e lm="pintor" a="carmentano"><i>pintor</i><par n="conselhèr__n"/></e>
       <e r="LR" lm="pintura" alt="oci@aran"><i>pintur</i><par n="jornad/a__n"/></e>
@@ -25325,12 +25246,7 @@
       <e r="LR" lm="pòrre" a="carmentano" alt="oci@gascon"><i>pòrre</i><par n="conselh__n"/></e>
     <e lm="pòrre" a="carmentano" alt="oci"><i>pòrre</i><par n="conselh__n"/></e>
     <e lm="pòrta"><i>pòrt</i><par n="jornad/a__n"/></e>
-      <e r="LR" lm="portau" alt="oci"><i>portau</i><par n="conselh__n"/></e>
-    <e lm="portau" alt="oci@aran"><i>portau</i><par n="conselh__n"/></e>
-    <e lm="portau" alt="oci@gascon"><i>portau</i><par n="conselh__n"/></e>
-      <e r="LR" lm="portal" alt="oci@aran"><i>portal</i><par n="conselh__n"/></e>
-      <e r="LR" lm="portal" alt="oci@gascon"><i>portal</i><par n="conselh__n"/></e>
-    <e lm="portal" alt="oci"><i>portal</i><par n="conselh__n"/></e>
+    <e lm="portal"><i>porta</i><par n="cè/l__n"/></e>
     <e lm="pòrtavotz"><i>pòrtavo</i><par n="pòrtavo/tz__n"/></e>
     <e lm="portavotz" r="LR"><i>portavo</i><par n="pòrtavo/tz__n"/></e>
     <e lm="portièr" a="carmentano"><i>portiè</i><par n="presoniè/r__n"/></e>
@@ -25468,12 +25384,7 @@
     <e lm="patac" r="LR"><i>patac</i><par n="conselh__n"/></e>
     <e lm="productor"><i>productor</i><par n="conselhèr__n"/></e>
     <e lm="profecia"><i>profeci</i><par n="jornad/a__n"/></e>
-      <e r="LR" lm="professionau" alt="oci"><i>professionau</i><par n="agent__n"/></e>
-    <e lm="professionau" alt="oci@aran"><i>professionau</i><par n="agent__n"/></e>
-    <e lm="professionau" alt="oci@gascon"><i>professionau</i><par n="agent__n"/></e>
-      <e r="LR" lm="professional" alt="oci@aran"><i>professional</i><par n="conselhèr__n"/></e>
-      <e r="LR" lm="professional" alt="oci@gascon"><i>professional</i><par n="conselhèr__n"/></e>
-    <e lm="professional" alt="oci"><i>professional</i><par n="conselhèr__n"/></e>
+    <e lm="professional"><i>professiona</i><par n="cè/l__n"/></e>
     <e lm="profession"><i>profession</i><par n="part__n"/></e>
     <e lm="professorat"><i>professorat</i><par n="conselh__n"/></e>
     <e lm="professor"><i>professor</i><par n="conselhèr__n"/></e>
@@ -25676,12 +25587,7 @@
     <e lm="encencha" alt="oci"><i>encench</i><par n="jornad/a__n"/></e>
     <e lm="recipient"><i>recipient</i><par n="conselh__n"/></e>
     <e lm="recitacion"><i>recitacion</i><par n="part__n"/></e>
-      <e r="LR" lm="recitau" alt="oci"><i>recitau</i><par n="conselh__n"/></e>
-    <e lm="recitau" alt="oci@aran"><i>recitau</i><par n="conselh__n"/></e>
-    <e lm="recitau" alt="oci@gascon"><i>recitau</i><par n="conselh__n"/></e>
-      <e r="LR" lm="recital" alt="oci@aran"><i>recital</i><par n="conselh__n"/></e>
-      <e r="LR" lm="recital" alt="oci@gascon"><i>recital</i><par n="conselh__n"/></e>
-    <e lm="recital" alt="oci"><i>recital</i><par n="conselh__n"/></e>
+    <e lm="recital"><i>recita</i><par n="cè/l__n"/></e>
     <e lm="reclam" a="carmentano"><i>reclam</i><par n="conselh__n"/></e>
     <e lm="reclamacion"><i>reclamacion</i><par n="part__n"/></e>
     <e lm="recodina"><i>recodin</i><par n="jornad/a__n"/></e>
@@ -25758,24 +25664,9 @@
     <e lm="reglamentacion"><i>reglamentacion</i><par n="part__n"/></e>
     <e lm="reglament"><i>reglament</i><par n="conselh__n"/></e>
     <e lm="regne" a="carmentano"><i>règne</i><par n="conselh__n"/></e>
-      <e r="LR" lm="règne animal" a="carmentano" alt="oci@aran"><i>règne<b/>animal</i><par n="personau__n"/></e>
-      <e r="LR" lm="règne animal" a="carmentano" alt="oci@gascon"><i>règne<b/>animal</i><par n="personau__n"/></e>
-    <e lm="règne animal" a="carmentano" alt="oci"><i>règne<b/>animal</i><par n="personau__n"/></e>
-      <e r="LR" lm="règne vegetal" a="carmentano" alt="oci@aran"><i>règne<b/>vegetal</i><par n="personau__n"/></e>
-      <e r="LR" lm="règne vegetal" a="carmentano" alt="oci@gascon"><i>règne<b/>vegetal</i><par n="personau__n"/></e>
-    <e lm="règne vegetal" a="carmentano" alt="oci"><i>règne<b/>vegetal</i><par n="personau__n"/></e>
-      <e r="LR" lm="règne mineral" a="carmentano" alt="oci@aran"><i>règne<b/>mineral</i><par n="personau__n"/></e>
-      <e r="LR" lm="règne mineral" a="carmentano" alt="oci@gascon"><i>règne<b/>mineral</i><par n="personau__n"/></e>
-    <e lm="règne mineral" a="carmentano" alt="oci"><i>règne<b/>mineral</i><par n="personau__n"/></e>
-      <e r="LR" lm="règne animau" a="carmentano" alt="oci"><i>règne<b/>animau</i><par n="personau__n"/></e>
-    <e lm="règne animau" a="carmentano" alt="oci@aran"><i>règne<b/>animau</i><par n="personau__n"/></e>
-    <e lm="règne animau" a="carmentano" alt="oci@gascon"><i>règne<b/>animau</i><par n="personau__n"/></e>
-      <e r="LR" lm="règne vegetau" a="carmentano" alt="oci"><i>règne<b/>vegetau</i><par n="personau__n"/></e>
-    <e lm="règne vegetau" a="carmentano" alt="oci@aran"><i>règne<b/>vegetau</i><par n="personau__n"/></e>
-    <e lm="règne vegetau" a="carmentano" alt="oci@gascon"><i>règne<b/>vegetau</i><par n="personau__n"/></e>
-      <e r="LR" lm="règne minerau" a="carmentano" alt="oci"><i>règne<b/>minerau</i><par n="personau__n"/></e>
-    <e lm="règne minerau" a="carmentano" alt="oci@aran"><i>règne<b/>minerau</i><par n="personau__n"/></e>
-    <e lm="règne minerau" a="carmentano" alt="oci@gascon"><i>règne<b/>minerau</i><par n="personau__n"/></e>
+    <e lm="règne animal"><i>règne<b/>anima</i><par n="persona/l__n"/></e>
+    <e lm="règne vegetal"><i>règne<b/>vegeta</i><par n="persona/l__n"/></e>
+    <e lm="règne mineral"><i>règne<b/>minera</i><par n="persona/l__n"/></e>
     <e lm="regne" a="carmentano" r="LR"><i>regne</i><par n="conselh__n"/></e>
     <e lm="renhe" a="carmentano" r="LR"><i>renhe</i><par n="conselh__n"/></e>
     <e lm="susrègne" a="carmentano"><i>susrègne</i><par n="conselh__n"/></e>
@@ -25967,12 +25858,7 @@
     <e lm="sason"><i>sason</i><par n="part__n"/></e>
     <e lm="satisfaccion"><i>satisfaccion</i><par n="part__n"/></e>
     <e lm="saturacion"><i>saturacion</i><par n="part__n"/></e>
-      <e r="LR" lm="sau" alt="oci"><i>sau</i><par n="part__n"/></e>
-    <e lm="sau" alt="oci@aran"><i>sau</i><par n="part__n"/></e>
-    <e lm="sau" alt="oci@gascon"><i>sau</i><par n="part__n"/></e>
-      <e r="LR" lm="sal" alt="oci@aran"><i>sal</i><par n="part__n"/></e>
-      <e r="LR" lm="sal" alt="oci@gascon"><i>sal</i><par n="part__n"/></e>
-    <e lm="sal" alt="oci"><i>sal</i><par n="part__n"/></e>
+    <e lm="sal"><i>sa</i><par n="mè/l__n"/></e>
     <e lm="saumetada" r="LR"><i>saumetad</i><par n="jornad/a__n"/></e>
     <e lm="saüquèr"><i>saüquèr</i><par n="conselh__n"/></e>
       <e r="LR" lm="saussa" alt="oci"><i>sauss</i><par n="jornad/a__n"/></e>
@@ -26013,12 +25899,7 @@
     <e lm="senat"><i>senat</i><par n="conselh__n"/></e>
     <e lm="senderisme"><i>senderisme</i><par n="conselh__n"/></e>
     <e lm="senhalisacion" r="LR"><i>senhalisacion</i><par n="part__n"/></e>
-    <e lm="senhalizacion"><i>senhalizacion</i><par n="part__n"/></e>
-      <e r="LR" lm="senhal" alt="oci@aran"><i>senhal</i><par n="conselh__n"/></e>
-      <e r="LR" lm="senhal" alt="oci@gascon"><i>senhal</i><par n="conselh__n"/></e>
-    <e lm="senhal" alt="oci"><i>senhal</i><par n="conselh__n"/></e>
-      <e r="LR" lm="senhau" alt="oci"><i>senhau</i><par n="part__n"/></e>
-    <e lm="senhau" alt="oci@aran"><i>senhau</i><par n="part__n"/></e>
+    <e lm="senhal"><i>senha</i><par n="cè/l__n"/></e>
     <e lm="senhau" alt="oci@gascon"><i>senhau</i><par n="part__n"/></e>
     <e lm="senhor"><i>senhor</i><par n="conselhèr__n"/></e>
     <e lm="sénher" r="LR"><i>sénher</i><par n="conselh__n"/></e>
@@ -26434,12 +26315,7 @@
     <e lm="trentena" a="carmentano" alt="oci"><i>trenten</i><par n="jornad/a__n"/></e>
     <e lm="trial" a="carmentano"><i>trial</i><par n="personau__n"/></e>
     <e lm="tribu"><i>tribu</i><par n="part__n"/></e>
-      <e r="LR" lm="tribunau" alt="oci"><i>tribunau</i><par n="conselh__n"/></e>
-    <e lm="tribunau" alt="oci@aran"><i>tribunau</i><par n="conselh__n"/></e>
-    <e lm="tribunau" alt="oci@gascon"><i>tribunau</i><par n="conselh__n"/></e>
-      <e r="LR" lm="tribunal" alt="oci@aran"><i>tribunal</i><par n="conselh__n"/></e>
-      <e r="LR" lm="tribunal" alt="oci@gascon"><i>tribunal</i><par n="conselh__n"/></e>
-    <e lm="tribunal" alt="oci"><i>tribunal</i><par n="conselh__n"/></e>
+    <e lm="tribunal"><i>tribuna</i><par n="cè/l__n"/></e>
     <e lm="tricòt"><i>tricòt</i><par n="conselh__n"/></e>
     <e lm="triènni" a="carmentano"><i>triènni</i><par n="conselh__n"/></e>
     <e lm="trinc"><i>trin</i><par n="ris/c__n"/></e>
@@ -26615,12 +26491,7 @@
     <e lm="vedèla" a="carmentano" alt="oci"><i>vedèl</i><par n="jornad/a__n"/></e>
     <e lm="vegada"><i>vegad</i><par n="jornad/a__n"/></e>
     <e lm="vegetacion"><i>vegetacion</i><par n="part__n"/></e>
-      <e r="LR" lm="vegetau" alt="oci"><i>vegetau</i><par n="conselh__n"/></e>
-    <e lm="vegetau" alt="oci@aran"><i>vegetau</i><par n="conselh__n"/></e>
-    <e lm="vegetau" alt="oci@gascon"><i>vegetau</i><par n="conselh__n"/></e>
-      <e r="LR" lm="vegetal" alt="oci@aran"><i>vegetal</i><par n="conselh__n"/></e>
-      <e r="LR" lm="vegetal" alt="oci@gascon"><i>vegetal</i><par n="conselh__n"/></e>
-    <e lm="vegetal" alt="oci"><i>vegetal</i><par n="conselh__n"/></e>
+    <e lm="vegetal"><i>vegeta</i><par n="cè/l__n"/></e>
     <e lm="veïcul"><i>veïcul</i><par n="conselh__n"/></e>
     <e lm="veire"><i>veire</i><par n="conselh__n"/></e>
     <e lm="veirina"><i>veirin</i><par n="jornad/a__n"/></e>
@@ -32910,7 +32781,6 @@
     <e lm="amarum" r="LR"><i>amarum</i><par n="conselh__n"/></e>
     <e lm="destrau" r="LR"><i>destrau</i><par n="part__n"/></e>
     <e lm="destral" r="LR"><i>destral</i><par n="part__n"/></e>
-    <e lm="manaira" r="LR"><i>manaira</i><par n="part__n"/></e>
     <e lm="pigassa"><i>pigass</i><par n="jornad/a__n"/></e>
     <e lm="pica" r="LR"><i>pi</i><par n="va/ca__n"/></e>
       <e r="LR" lm="sospècha"  alt="oci@aran"><i>sospèch</i><par n="jornad/a__n"/></e>
@@ -32931,6 +32801,7 @@
     <e lm="cran"><i>cran</i><par n="conselh__n"/></e>
     <e lm="canton"><i>canton</i><par n="conselh__n"/></e>
     <e lm="brancatge"><i>brancatge</i><par n="conselh__n"/></e>
+    <e lm="manaira" r="LR"><i>manaira</i><par n="part__n"/></e>
       <e r="LR" lm="devantau" alt="oci"><i>devantau</i><par n="conselh__n"/></e>
     <e lm="devantau" alt="oci@aran"><i>devantau</i><par n="conselh__n"/></e>
     <e lm="devantau" alt="oci@gascon"><i>devantau</i><par n="conselh__n"/></e>
@@ -36662,21 +36533,21 @@
       <e r="LR" lm="agir" a="carmentano" alt="oci@aran"><i>ag</i><par n="magr/èrem__vblex"/></e>
       <e r="LR" lm="agir" a="carmentano" alt="oci@gascon"><i>ag</i><par n="magr/èrem__vblex"/></e>
     <e lm="agir" a="carmentano" alt="oci"><i>ag</i><par n="magr/èrem__vblex"/></e>
-    <e lm="amb" a="carmentano" alt="oci" r="LR"><i>amb</i><par n="a__pr"/></e>
-    <e lm="amb" a="carmentano" alt="oci@aran" r="LR"><i>amb</i><par n="a__pr"/></e>
-    <e lm="amb" a="carmentano" alt="oci@gascon" r="LR"><i>amb</i><par n="a__pr"/></e>
+    <e lm="ambe" a="carmentano" alt="oci"><i>ambe</i><par n="a__pr"/></e>
+    <e lm="ambe" a="carmentano" alt="oci@aran" r="LR"><i>ambe</i><par n="a__pr"/></e>
+    <e lm="ambe" a="carmentano" alt="oci@gascon" r="LR"><i>ambe</i><par n="a__pr"/></e>
       <e r="LR" lm="amb" a="carmentano" alt="oci@aran"><i>amb</i><par n="a__pr"/></e>
       <e r="LR" lm="amb" a="carmentano" alt="oci@gascon"><i>amb</i><par n="a__pr"/></e>
     <e lm="amb" a="carmentano" alt="oci"><i>amb</i><par n="a__pr"/></e>
       <e r="LR" lm="amassa amb" a="carmentano" alt="oci@aran"><i>amassa<b/>amb</i><par n="a__pr"/></e>
       <e r="LR" lm="amassa amb" a="carmentano" alt="oci@gascon"><i>amassa<b/>amb</i><par n="a__pr"/></e>
     <e lm="amassa amb" a="carmentano" alt="oci"><i>amassa<b/>amb</i><par n="a__pr"/></e>
-    <e lm="ambe" r="LR"><i>ambe</i><par n="a__pr"/></e>
     <e lm="embe" r="LR"><i>embe</i><par n="a__pr"/></e>
     <e lm="emb" r="LR"><i>emb</i><par n="a__pr"/></e>
-    <e lm="dab" r="LR"><i>dab</i><par n="a__pr"/></e>
+    <e lm="dab" alt="oci@gascon"><i>dab</i><par n="a__pr"/></e>
+    <e lm="dab" alt="oci@aran" r="LR"><i>dab</i><par n="a__pr"/></e>
+    <e lm="dab" alt="oci" r="LR"><i>dab</i><par n="a__pr"/></e>
     <e lm="frairesa" a="carmentano"><i>fraires</i><par n="jornad/a__n"/></e>
-    <e lm="dab" a="carmentano" r="LR"><i>dab</i><par n="a__pr"/></e>
     <e lm="armonizacion" a="carmentano"><i>armonizacion</i><par n="part__n"/></e>
     <e lm="ensemble" a="carmentano"><i>ensemble</i><par n="conselh__n"/></e>
     <e lm="utilitat" a="carmentano"><i>utilitat</i><par n="part__n"/></e>
@@ -36838,7 +36709,7 @@
     <e lm="impecable" a="carmentano"><i>impecabl</i><par n="ampl/e__adj"/></e>
     <e lm="Stanley" a="carmentano"><i>Stanley</i><par n="Abad__np"/></e>
     <e lm="chapèu" a="carmentano" r="LR"><i>chapèu</i><par n="conselh__n"/></e>
-    <e lm="capèl" a="carmentano"><i>capèl</i><par n="conselh__n"/></e>
+    <e lm="capèl"><i>capè</i><par n="castè/l__n"/></e>
     <e lm="bagueta" a="carmentano"><i>baguet</i><par n="jornad/a__n"/></e>
     <e lm="embromat" a="carmentano"><i>embroma</i><par n="apropria/t__adj"/></e>
     <e lm="CDU" a="carmentano"><i>CDU</i><par n="BBC__n"/></e>
@@ -38989,6 +38860,9 @@
     <e lm="Bassa Cerdanha" alt="oci"><i>Bassa<b/>Cerdanha</i><par n="Aran__np"/></e>
     <e lm="Bassa Cerdanha" alt="oci@aran" r="LR"><i>Bassa<b/>Cerdanha</i><par n="Aran__np"/></e>
     <e lm="Bassa Cerdanha" alt="oci@gascon" r="LR"><i>Bassa<b/>Cerdanha</i><par n="Aran__np"/></e>
+<!--
+    <e lm="Bassa Cerdanha"><i>Bassa<b/>Cerdanha</i><par n="Aran__np"/><par n="OCI_gsc_arn"/></e>
+-->
     <e lm="Baisha Cerdanha" alt="oci@aran"><i>Baisha<b/>Cerdanha</i><par n="Aran__np"/></e>
     <e lm="Baisha Cerdanha" alt="oci@gascon"><i>Baisha<b/>Cerdanha</i><par n="Aran__np"/></e>
     <e lm="Baisha Cerdanha" alt="oci" r="LR"><i>Baisha<b/>Cerdanha</i><par n="Aran__np"/></e>
@@ -39811,7 +39685,7 @@
     <e lm="Nauta Normandia"><i>Nauta<b/>Normandia</i><par n="Aran__np"/></e>
     <e lm="Nauta Ribagòrça"><i>Nauta<b/>Ribagòrça</i><par n="Aran__np"/></e>
     <e lm="Naut Camp"><i>Naut<b/>Camp</i><par n="Aran__np"/></e>
-    <e lm="Naut Empordanm"><i>Naut<b/>Empordanm</i><par n="Aran__np"/></e>
+    <e lm="Naut Empordan"><i>Naut<b/>Empordan</i><par n="Aran__np"/></e>
     <e lm="Naut Karabagh"><i>Naut<b/>Karabagh</i><par n="Aran__np"/></e>
     <e lm="Naut Maestrat"><i>Naut<b/>Maestrat</i><par n="Aran__np"/></e>
     <e lm="Naut Millars"><i>Naut<b/>Millars</i><par n="Aran__np"/></e>
