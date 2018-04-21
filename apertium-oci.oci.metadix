@@ -17720,7 +17720,23 @@
       <e alt="oci@aran" r="LR"><p><l></l><r></r></p></e>
     </pardef>
 -->
+
+<pardef n="iss/ish">
+      <e alt="oci">                <p><l>iss</l><r>iss</r></p></e>
+      <e alt="oci@gascon" r="LR">  <p><l>iss</l><r>iss</r></p></e>
+      <e alt="oci@aran" r="LR">    <p><l>iss</l><r>iss</r></p></e>
+      <e alt="oci" r="LR">         <p><l>ish</l><r>iss</r></p></e>
+      <e alt="oci@gascon">         <p><l>ish</l><r>iss</r></p></e>
+      <e alt="oci@aran">           <p><l>ish</l><r>iss</r></p></e>
+</pardef>
+
+<pardef n="u/ü">
+  <e>       <p><l>u</l>         <r>u</r></p></e>
+  <e r="LR"><p><l>ü</l>         <r>u</r></p></e>
+</pardef>
+
 </pardefs>
+
   <section id="main" type="standard">
 
     <e lm="morfèma"><i>morfèma</i><par n="conselh__n"/></e>
@@ -18421,7 +18437,7 @@
       <e r="LR" lm="gratuit" alt="oci@aran"><i>gratuit</i><par n="trabalhador__adj"/></e>
       <e r="LR" lm="gratuit" alt="oci@gascon"><i>gratuit</i><par n="trabalhador__adj"/></e>
     <e lm="gratuit" alt="oci"><i>gratuit</i><par n="trabalhador__adj"/></e>
-    <e lm="graüt"><i>graü</i><par n="apropria/t__adj"/></e>
+    <e lm="graut"><i>gra</i><par n="u/ü"/><i></i><par n="apropria/t__adj"/></e>
     <e lm="grèc"><i>grè</i><par n="anti/c__adj"/></e>
     <e lm="grèu"><i>grèu</i><par n="generau__adj"/></e>
     <e lm="gròs"><i>gròs</i><par n="faus__adj"/></e>
@@ -18645,7 +18661,7 @@
     <e lm="molt"><i>molt</i><par n="cèrt__det"/></e>
     <e lm="montanhut"><i>montanhu</i><par n="estima/t__adj"/></e>
     <e lm="insensat"><i>insensa</i><par n="estima/t__adj"/></e>
-    <e lm="adeqüat" r="LR"><i>adeqüa</i><par n="estima/t__adj"/></e>
+    <e lm="adeqüat" r="LR"><i>adeq</i><par n="u/ü"/><i>a</i><par n="estima/t__adj"/></e>
     <e lm="morfologic"><i>morfologi</i><par n="tecni/c__adj"/></e>
     <e lm="multilingüe"><i>multiling</i><par n="biling/üe__adj"/></e>
     <e lm="museïstic" a="carmentano" r="LR"><i>museïsti</i><par n="blan/c__adj"/></e>
@@ -19286,10 +19302,7 @@
       <e r="LR" lm="ara ora d'ara" alt="oci"><i>ara<b/>ora<b/>d'ara</i><par n="ager__adv"/></e>
     <e lm="ara ora d'ara" alt="oci@aran"><i>ara<b/>ora<b/>d'ara</i><par n="ager__adv"/></e>
     <e lm="ara ora d'ara" alt="oci@gascon"><i>ara<b/>ora<b/>d'ara</i><par n="ager__adv"/></e>
-    <e lm="adequadament"><i>adequadament</i><par n="adequadament__adv"/></e>
-      <e r="LR" lm="adeqüatament" alt="oci@aran"><i>adeqüatament</i><par n="adequadament__adv"/></e>
-      <e r="LR" lm="adeqüatament" alt="oci@gascon"><i>adeqüatament</i><par n="adequadament__adv"/></e>
-    <e lm="adeqüatament" alt="oci"><i>adeqüatament</i><par n="adequadament__adv"/></e>
+    <e lm="adequadament"><i>adeq</i><par n="u/ü"/><i>adament</i><par n="adequadament__adv"/></e>
     <e lm="demest"><i>demest</i><par n="ager__adv"/></e>
     <e lm="entremièg" r="LR"><i>entremièg</i><par n="ager__adv"/></e>
       <e r="LR" lm="ager" alt="oci"><i>ager</i><par n="ager__adv"/></e>
@@ -20502,8 +20515,7 @@
     <e lm="adaptacion"><i>adaptacion</i><par n="part__n"/></e>
     <e lm="ADDA" a="carmentano"><i>ADDA</i><par n="BBC__n"/></e>
     <e lm="ISO"><i>ISO</i><par n="BBC__n"/></e>
-    <e lm="adequacion" r="LR"><i>adequacion</i><par n="part__n"/></e>
-    <e lm="adeqüacion"><i>adeqüacion</i><par n="part__n"/></e>
+    <e lm="adequacion"><i>adeq</i><par n="u/ü"/><i>acion</i><par n="part__n"/></e>
     <e lm="adesion"><i>adesion</i><par n="part__n"/></e>
     <e lm="addicion"><i>addicion</i><par n="part__n"/></e>
     <e lm="adiu" r="LR"><i>adiu</i><par n="conselh__n"/></e>
@@ -21371,12 +21383,15 @@
       <e r="LR" lm="caissa de resson" alt="oci@aran"><i>caiss</i><par n="caish/a_de_resson__n"/></e>
       <e r="LR" lm="caissa de resson" alt="oci@gascon"><i>caiss</i><par n="caish/a_de_resson__n"/></e>
     <e lm="caissa de resson" alt="oci"><i>caiss</i><par n="caish/a_de_resson__n"/></e>
+<!--
       <e r="LR" lm="caisha" alt="oci"><i>caish</i><par n="jornad/a__n"/></e>
     <e lm="caisha" alt="oci@aran"><i>caish</i><par n="jornad/a__n"/></e>
     <e lm="caisha" alt="oci@gascon"><i>caish</i><par n="jornad/a__n"/></e>
       <e r="LR" lm="caissa" alt="oci@aran"><i>caiss</i><par n="jornad/a__n"/></e>
       <e r="LR" lm="caissa" alt="oci@gascon"><i>caiss</i><par n="jornad/a__n"/></e>
     <e lm="caissa" alt="oci"><i>caiss</i><par n="jornad/a__n"/></e>
+-->
+    <e lm="caissa"><i>ca</i><par n="iss/ish"/><i></i><par n="jornad/a__n"/></e>
     <e lm="caishòla"><i>caishòl</i><par n="jornad/a__n"/></e>
     <e lm="cajada"><i>cajad</i><par n="jornad/a__n"/></e>
       <e r="LR" lm="calaish" alt="oci"><i>calaish</i><par n="mes__n"/></e>
@@ -22249,7 +22264,6 @@
     <e lm="cubèrta" r="LR"><i>cubèrt</i><par n="jornad/a__n"/></e>
     <e lm="tampa"><i>tamp</i><par n="jornad/a__n"/></e>
     <e lm="cobèrt"><i>cobèrt</i><par n="conselh__n"/></e>
-    <e lm="cueisha"><i>cueish</i><par n="jornad/a__n"/></e>
     <e lm="cuèr"><i>cuèr</i><par n="conselh__n"/></e>
     <e lm="cuic"><i>cui</i><par n="ris/c__n"/></e>
       <e r="LR" lm="culhèra" alt="oci"><i>culhèr</i><par n="jornad/a__n"/></e>
@@ -22628,7 +22642,7 @@
     <e lm="dubertura"><i>dubertur</i><par n="jornad/a__n"/></e>
     <e lm="dobertura" r="LR"><i>dobertur</i><par n="jornad/a__n"/></e>
     <e lm="obertura" r="LR"><i>obertur</i><par n="jornad/a__n"/></e>
-    <e lm="düèl"><i>düèl</i><par n="conselh__n"/></e>
+    <e lm="duèl"><i>d</i><par n="u/ü"/><i>èl</i><par n="conselh__n"/></e>
     <e lm="duoden"><i>duoden</i><par n="conselh__n"/></e>
     <e lm="durada"><i>durad</i><par n="jornad/a__n"/></e>
     <e lm="ecomusèu" a="carmentano"><i>ecomusèu</i><par n="conselh__n"/></e>
@@ -25860,7 +25874,7 @@
     <e lm="saturacion"><i>saturacion</i><par n="part__n"/></e>
     <e lm="sal"><i>sa</i><par n="mè/l__n"/></e>
     <e lm="saumetada" r="LR"><i>saumetad</i><par n="jornad/a__n"/></e>
-    <e lm="saüquèr"><i>saüquèr</i><par n="conselh__n"/></e>
+    <e lm="sauquèr"><i>sa</i><par n="u/ü"/><i>quèr</i><par n="conselh__n"/></e>
       <e r="LR" lm="saussa" alt="oci"><i>sauss</i><par n="jornad/a__n"/></e>
     <e lm="saussa" alt="oci@aran"><i>sauss</i><par n="jornad/a__n"/></e>
     <e lm="saussa" alt="oci@gascon"><i>sauss</i><par n="jornad/a__n"/></e>
@@ -30995,7 +31009,7 @@
     <e lm="resumir"><i>resum</i><par n="magr/èrem__vblex"/></e>
     <e lm="arretronir"><i>arretron</i><par n="magr/èrem__vblex"/></e>
     <e lm="retronir"><i>retron</i><par n="magr/èrem__vblex"/></e>
-    <e lm="reünir"><i>reün</i><par n="magr/èrem__vblex"/></e>
+    <e lm="reunir"><i>re</i><par n="u/ü"/><i>n</i><par n="magr/èrem__vblex"/></e>
     <e lm="conseguir"><i>consegu</i><par n="magr/èrem__vblex"/></e>
     <e lm="perseguir"><i>persegu</i><par n="magr/èrem__vblex"/></e>
     <e lm="seguir"><i>segu</i><par n="magr/èrem__vblex"/></e>
@@ -32831,7 +32845,8 @@
     <e lm="resplendor"><i>resplendor</i><par n="part__n"/></e>
     <e lm="suggestion"><i>suggestion</i><par n="part__n"/></e>
     <e lm="grapada" r="LR"><i>grapad</i><par n="jornad/a__n"/></e>
-    <e lm="cuèissa" r="LR"><i>cuèiss</i><par n="jornad/a__n"/></e>
+    <e lm="cuèissa"><i>cuèiss</i><par n="jornad/a__n"/></e>
+    <e lm="cueisha"><i>cueish</i><par n="jornad/a__n"/></e>
       <e r="LR" lm="cuèisha" alt="oci"><i>cuèish</i><par n="jornad/a__n"/></e>
     <e lm="cuèisha" alt="oci@aran"><i>cuèish</i><par n="jornad/a__n"/></e>
     <e lm="cuèisha" alt="oci@gascon"><i>cuèish</i><par n="jornad/a__n"/></e>
@@ -33086,7 +33101,7 @@
     <e lm="adequat"><i>adequa</i><par n="apropria/t__adj"/></e>
     <e lm="estable"><i>establ</i><par n="ampl/e__adj"/></e>
     <e lm="urós" r="LR"><i>ur</i><par n="perilh/ós__adj"/></e>
-    <e lm="aürós" r="LR"><i>aür</i><par n="perilh/ós__adj"/></e>
+    <e lm="aurós" r="LR"><i>a</i><par n="u/ü"/><i>r</i><par n="perilh/ós__adj"/></e>
     <e lm="erós"><i>er</i><par n="perilh/ós__adj"/></e>
     <e lm="misteriós"><i>misteri</i><par n="perilh/ós__adj"/></e>
     <e lm="nerviós"><i>nervi</i><par n="perilh/ós__adj"/></e>
@@ -35007,7 +35022,7 @@
     <e lm="marroquin" a="carmentano"><i>marroquin</i><par n="content__adj"/></e>
     <e lm="exministre" a="carmentano"><i>exministr</i><par n="ministr/e__n"/></e>
     <e lm="usura" a="carmentano"><i>usur</i><par n="jornad/a__n"/></e>
-    <e lm="aqüari" a="carmentano"><i>aqüari</i><par n="conselh__n"/></e>
+    <e lm="aquari" a="carmentano"><i>aq</i><par n="u/ü"/><i>ari</i><par n="conselh__n"/></e>
     <e lm="replicar" a="carmentano"><i>repl</i><par n="revl/i[N]car__vblex" prm=""/></e>
     <e lm="diagnosticar" a="carmentano"><i>diagnost</i><par n="revl/i[N]car__vblex" prm=""/></e>
     <e lm="prostitucion" a="carmentano"><i>prostitucion</i><par n="part__n"/></e>
@@ -35488,7 +35503,7 @@
     <e lm="Jan" a="carmentano"><i>Jan</i><par n="Abad__np"/></e>
     <e lm="Flores" a="carmentano"><i>Flores</i><par n="Abad__np"/></e>
     <e lm="prim" a="carmentano"><i>prim</i><par n="content__adj"/></e>
-    <e lm="reünion" a="carmentano"><i>reünion</i><par n="part__n"/></e>
+    <e lm="reunion" a="carmentano"><i>re</i><par n="u/ü"/><i>nion</i><par n="part__n"/></e>
     <e lm="postguèrra" a=" mmonge"><i>postguèrr</i><par n="jornad/a__n"/></e>
     <e lm="tramontana" a=" mmonge"><i>tramontan</i><par n="jornad/a__n"/></e>
     <e lm="integrant" a=" mmonge"><i>integrant</i><par n="trabalhador__adj"/></e>
@@ -35682,7 +35697,7 @@
     <e lm="Francesca" a="carmentano"><i>Francesca</i><par n="Abad__np"/></e>
     <e lm="Julie" a="carmentano"><i>Julie</i><par n="Abad__np"/></e>
     <e lm="Folch" a="carmentano"><i>Folch</i><par n="Abad__np"/></e>
-    <e lm="qüadratura" a="carmentano"><i>qüadratur</i><par n="jornad/a__n"/></e>
+    <e lm="quadratura" a="carmentano"><i>q</i><par n="u/ü"/><i>adratur</i><par n="jornad/a__n"/></e>
     <e lm="Hilary" a="carmentano"><i>Hilary</i><par n="Abad__np"/></e>
     <e lm="Simó" a="carmentano"><i>Simó</i><par n="Abad__np"/></e>
     <e lm="Paquistan" a="carmentano"><i>Paquistan</i><par n="Aran__np"/></e>
@@ -36156,7 +36171,7 @@
       <e r="LR" lm="aisseta" a="mmonge" alt="oci@aran"><i>aisset</i><par n="jornad/a__n"/></e>
       <e r="LR" lm="aisseta" a="mmonge" alt="oci@gascon"><i>aisset</i><par n="jornad/a__n"/></e>
     <e lm="aisseta" a="mmonge" alt="oci"><i>aisset</i><par n="jornad/a__n"/></e>
-    <e lm="reüsir" a="mmonge"><i>reüs</i><par n="magr/èrem__vblex"/></e>
+    <e lm="reusir"><i>re</i><par n="u/ü"/><i>s</i><par n="magr/èrem__vblex"/></e>
     <e lm="provedidor" a="mmonge"><i>provedidor</i><par n="conselhèr__n"/></e>
     <e lm="escrutinh" a="mmonge"><i>escrutinh</i><par n="conselh__n"/></e>
     <e lm="ressuscitar" a="mmonge"><i>ressusc</i><par n="ab/i[T]ar__vblex" prm="t"/></e>
@@ -36225,8 +36240,7 @@
     <e lm="opacitat" a="mmonge"><i>opacitat</i><par n="part__n"/></e>
     <e lm="plaçar" a="mmonge"><i>pl</i><par n="d/a[N]çar__vblex" prm=""/></e>
     <e lm="automedicacion" a="mmonge"><i>automedicacion</i><par n="part__n"/></e>
-    <e lm="inadeqüat" a="mmonge" r="LR"><i>inadeqüa</i><par n="apropria/t__adj"/></e>
-    <e lm="inadequat" a="dgimeno"><i>inadequa</i><par n="apropria/t__adj"/></e>
+    <e lm="inadequat" a="dgimeno"><i>inadeq</i><par n="u/ü"/><i>a</i><par n="apropria/t__adj"/></e>
     <e lm="bacterian" a="mmonge"><i>bacterian</i><par n="trabalhador__adj"/></e>
     <e lm="idonèu" a="mmonge"><i>idonè</i><par n="europè/u__adj"/></e>
     <e lm="separadament"><i>separadament</i><par n="adequadament__adv"/></e>
@@ -36370,7 +36384,7 @@
     <e lm="dauancèr" r="LR" a="mmonge"><i>dauancèr</i><par n="conselh__n"/></e>
     <e lm="avaria" r="LR" a="mmonge"><i>avari</i><par n="jornad/a__n"/></e>
     <e lm="camèra" r="LR" a="mmonge"><i>camèr</i><par n="jornad/a__n"/></e>
-    <e lm="reünion" r="LR" a="mmonge"><i>reünion</i><par n="part__n"/></e>
+    <e lm="reunion"><i>re</i><par n="u/ü"/><i>nion</i><par n="part__n"/></e>
     <e lm="impossibilitar" r="LR" a="mmonge"><i>impossibil</i><par n="ab/i[T]ar__vblex" prm="t"/></e>
     <e lm="decim"><i>decim</i><par n="conselh__n"/></e>
     <e lm="tocar" r="LR" a="mmonge"><i>t</i><par n="s/o[S]car__vblex" prm=""/></e>
@@ -36634,8 +36648,7 @@
     <e lm="Agnès" a="carmentano"><i>Agnès</i><par n="Abad__np"/></e>
     <e lm="Rosario" a="carmentano"><i>Rosario</i><par n="Abad__np"/></e>
     <e lm="Niro" a="carmentano"><i>Niro</i><par n="Abad__np"/></e>
-    <e lm="Eqüator" a="carmentano"><i>Eqüator</i><par n="Aran__np"/></e>
-    <e lm="Equator" a="carmentano" r="LR"><i>Equator</i><par n="Aran__np"/></e>
+    <e lm="Equator" a="carmentano"><i>Eq</i><par n="u/ü"/><i>ator</i><par n="Aran__np"/></e>
     <e lm="Carreras" a="carmentano"><i>Carreras</i><par n="Abad__np"/></e>
     <e lm="Albertis" a="carmentano"><i>Albertis</i><par n="Abad__np"/></e>
     <e lm="Monica" a="carmentano"><i>Monica</i><par n="Abad__np"/></e>
@@ -36645,7 +36658,7 @@
     <e lm="malastre"><i>malastre</i><par n="conselh__n"/></e>
     <e lm="astrada" a="carmentano" r="LR"><i>astrad</i><par n="jornad/a__n"/></e>
     <e lm="bonur" r="LR"><i>bonur</i><par n="conselh__n"/></e>
-    <e lm="bonaür" r="LR"><i>bonaür</i><par n="conselh__n"/></e>
+    <e lm="bonaur" r="LR"><i>bona</i><par n="u/ü"/><i>r</i><par n="conselh__n"/></e>
     <e lm="chança" r="LR"><i>chan</i><par n="seden/ça__n"/></e>
     <e lm="privadança"><i>privadan</i><par n="seden/ça__n"/></e>
     <e lm="pornografia"><i>pornografi</i><par n="jornad/a__n"/></e>
@@ -37049,7 +37062,7 @@
     <e lm="austriac" a="carmentano" r="LR"><i>austria</i><par n="tecni/c__adj"/></e>
     <e lm="perdurar" a="carmentano"><i>perd</i><par n="ab/u[S]ar__vblex" prm="r"/></e>
     <e lm="malur" a="carmentano"><i>malur</i><par n="conselh__n"/></e>
-    <e lm="malaür" a="carmentano" r="LR"><i>malaür</i><par n="conselh__n"/></e>
+    <e lm="malaur" a="carmentano" r="LR"><i>mala</i><par n="u/ü"/><i>r</i><par n="conselh__n"/></e>
     <e lm="mala sòrt" alt="oci@aran"><i>mala<b/>sòrt</i><par n="q__n"/></e>
     <e lm="mala sòrt" alt="oci@gascon"><i>mala<b/>sòrt</i><par n="q__n"/></e>
       <e r="LR" lm="males sòrts" alt="oci"><p><l>males<b/>sòrts</l><r>mala<b/>sòrt</r></p><par n="vacances__n"/></e>
@@ -37607,7 +37620,7 @@
     <e lm="drac" r="LR"><i>drac</i><par n="conselh__n"/></e>
     <e lm="cartografia" a="carmentano"><i>cartografi</i><par n="jornad/a__n"/></e>
     <e lm="vòlta" a="carmentano"><i>vòlt</i><par n="jornad/a__n"/></e>
-    <e lm="flaüta" a="carmentano"><i>flaüt</i><par n="jornad/a__n"/></e>
+    <e lm="flauta" a="carmentano"><i>fla</i><par n="u/ü"/><i>t</i><par n="jornad/a__n"/></e>
     <e lm="clicar" a="carmentano"><i>cl</i><par n="revl/i[N]car__vblex" prm=""/></e>
     <e lm="prevaricacion" a="carmentano"><i>prevaricacion</i><par n="part__n"/></e>
     <e lm="anticorrupcion" a="carmentano"><i>anticorrupcion</i><par n="part__n"/></e>
@@ -37688,7 +37701,7 @@
     <e lm="Turin" a="carmentano"><i>Turin</i><par n="Aran__np"/></e>
     <e lm="Russell" a="carmentano"><i>Russell</i><par n="Abad__np"/></e>
     <e lm="Romea" a="carmentano"><i>Romea</i><par n="ABC__np"/></e>
-    <e lm="eqüatorian" a="carmentano"><i>eqüatorian</i><par n="trabalhador__adj"/></e>
+    <e lm="equatorian"><i>eq</i><par n="u/ü"/><i>atorian</i><par n="trabalhador__adj"/></e>
     <e lm="pincelada" a="carmentano"><i>pincelad</i><par n="jornad/a__n"/></e>
     <e lm="obsessionar" a="carmentano"><i>obsessi</i><par n="aband/o[N]ar__vblex" prm="n"/></e>
     <e lm="elegància" a="carmentano"><i>elegànci</i><par n="jornad/a__n"/></e>
@@ -38024,9 +38037,9 @@
       <e r="LR" lm="Guinèa Equatoriau" a="dgimeno" alt="oci"><i>Guinèa<b/>Equatoriau</i><par n="Aran__np"/></e>
     <e lm="Guinèa Equatoriau" a="dgimeno" alt="oci@aran"><i>Guinèa<b/>Equatoriau</i><par n="Aran__np"/></e>
     <e lm="Guinèa Equatoriau" a="dgimeno" alt="oci@gascon"><i>Guinèa<b/>Equatoriau</i><par n="Aran__np"/></e>
-      <e r="LR" lm="Guinèa Eqüatoriala" a="dgimeno" alt="oci@aran"><i>Guinèa<b/>Eqüatoriala</i><par n="Aran__np"/></e>
-      <e r="LR" lm="Guinèa Eqüatoriala" a="dgimeno" alt="oci@gascon"><i>Guinèa<b/>Eqüatoriala</i><par n="Aran__np"/></e>
-    <e lm="Guinèa Eqüatoriala" a="dgimeno" alt="oci"><i>Guinèa<b/>Eqüatoriala</i><par n="Aran__np"/></e>
+      <e r="LR" lm="Guinèa Equatoriala" a="dgimeno" alt="oci@aran"><i>Guinèa<b/>Equatoriala</i><par n="Aran__np"/></e>
+      <e r="LR" lm="Guinèa Equatoriala" a="dgimeno" alt="oci@gascon"><i>Guinèa<b/>Equatoriala</i><par n="Aran__np"/></e>
+    <e lm="Guinèa Equatoriala" a="dgimeno" alt="oci"><i>Guinèa<b/>Equatoriala</i><par n="Aran__np"/></e>
     <e lm="Guam" a="dgimeno"><i>Guam</i><par n="Aran__np"/></e>
     <e lm="Guinèa-Bissau" a="dgimeno"><i>Guinèa-Bissau</i><par n="Aran__np"/></e>
     <e lm="Guyana" a="dgimeno"><i>Guyana</i><par n="Aran__np"/></e>
@@ -39027,8 +39040,7 @@
     <e lm="Cipre"><i>Cipre</i><par n="Aran__np"/></e>
     <e lm="Cirenaïca"><i>Cirenaïca</i><par n="Aran__np"/></e>
     <e lm="Citèra"><i>Citèra</i><par n="Aran__np"/></e>
-    <e lm="Ciutat de Guatemala"><i>Ciutat<b/>de<b/>Guatemala</i><par n="Aran__np"/></e>
-    <e lm="Ciutat de Güatemala"><i>Ciutat<b/>de<b/>Güatemala</i><par n="Aran__np"/></e>
+    <e lm="Ciutat de Guatemala"><i>Ciutat<b/>de<b/>G</i><par n="u/ü"/><i>atemala</i><par n="Aran__np"/></e>
     <e lm="Ciutat de Kowait"><i>Ciutat<b/>de<b/>Kowait</i><par n="Aran__np"/></e>
     <e lm="Ciutat de Malhòrca"><i>Ciutat<b/>de<b/>Malhòrca</i><par n="Aran__np"/></e>
     <e lm="Ciutat de Mexic"><i>Ciutat<b/>de<b/>Mexic</i><par n="Aran__np"/></e>
@@ -39173,8 +39185,7 @@
     <e lm="Eolia"><i>Eolia</i><par n="Aran__np"/></e>
     <e lm="Eolida"><i>Eolida</i><par n="Aran__np"/></e>
     <e lm="Epir"><i>Epir</i><par n="Aran__np"/></e>
-    <e lm="Equator"><i>Equator</i><par n="Aran__np"/></e>
-    <e lm="Eqüator"><i>Eqüator</i><par n="Aran__np"/></e>
+    <e lm="Equator"><i>Eq</i><par n="u/ü"/><i>ator</i><par n="Aran__np"/></e>
     <e lm="Erevan"><i>Erevan</i><par n="Aran__np"/></e>
     <e lm="Ertis"><i>Ertis</i><par n="Aran__np"/></e>
     <e lm="Escalda"><i>Escalda</i><par n="Aran__np"/></e>
@@ -39284,19 +39295,15 @@
     <e lm="Grisons"><i>Grisons</i><par n="Aran__np"/></e>
     <e lm="Groenlàndia"><i>Groenlàndia</i><par n="Aran__np"/></e>
     <e lm="Groninga"><i>Groninga</i><par n="Aran__np"/></e>
-    <e lm="Guadalope"><i>Guadalope</i><par n="Aran__np"/></e>
-    <e lm="Güadalope"><i>Güadalope</i><par n="Aran__np"/></e>
-    <e lm="Guadalquivir"><i>Guadalquivir</i><par n="Aran__np"/></e>
-    <e lm="Güadalquivir"><i>Güadalquivir</i><par n="Aran__np"/></e>
-    <e lm="Guadiana"><i>Guadiana</i><par n="Aran__np"/></e>
-    <e lm="Güadiana"><i>Güadiana</i><par n="Aran__np"/></e>
-    <e lm="Güaiana"><i>Güaiana</i><par n="Aran__np"/></e>
-    <e lm="Guaiana Francesa"><i>Guaiana<b/>Francesa</i><par n="Aran__np"/></e>
-    <e lm="Güaiana Francesa"><i>Güaiana<b/>Francesa</i><par n="Aran__np"/></e>
+    <e lm="Guadalope"><i>G</i><par n="u/ü"/><i>adalope</i><par n="Aran__np"/></e>
+    <e lm="Guadalquivir"><i>G</i><par n="u/ü"/><i>adalquivir</i><par n="Aran__np"/></e>
+    <e lm="Guadiana"><i>G</i><par n="u/ü"/><i>adiana</i><par n="Aran__np"/></e>
+    <e lm="Guaiana"><i>G</i><par n="u/ü"/><i>aiana</i><par n="Aran__np"/></e>
+    <e lm="Guaiana Francesa"><i>G</i><par n="u/ü"/><i>aiana<b/>Francesa</i><par n="Aran__np"/></e>
     <e lm="Guaianas"><i>Guaianas</i><par n="Aran__np"/></e>
-    <e lm="Güam"><i>Güam</i><par n="Aran__np"/></e>
-    <e lm="Güatemala"><i>Güatemala</i><par n="Aran__np"/></e>
-    <e lm="Guayaquil"><i>Guayaquil</i><par n="Aran__np"/></e>
+    <e lm="Guam"><i>G</i><par n="u/ü"/><i>am</i><par n="Aran__np"/></e>
+    <e lm="Guatemala"><i>G</i><par n="u/ü"/><i>atemala</i><par n="Aran__np"/></e>
+    <e lm="Guayaquil"><i>G</i><par n="u/ü"/><i>ayaquil</i><par n="Aran__np"/></e>
     <e lm="Guèldres"><i>Guèldres</i><par n="Aran__np"/></e>
     <e lm="Guinèa Bissau"><i>Guinèa<b/>Bissau</i><par n="Aran__np"/></e>
     <e lm="Guinèa Equatoriala"><i>Guinèa<b/>Equatoriala</i><par n="Aran__np"/></e>
@@ -39700,7 +39707,7 @@
     <e lm="Nevada"><i>Nevada</i><par n="Aran__np"/></e>
     <e lm="Ngwane"><i>Ngwane</i><par n="Aran__np"/></e>
     <e lm="Niamey"><i>Niamey</i><par n="Aran__np"/></e>
-    <e lm="Nicaragüa"><i>Nicaragüa</i><par n="Aran__np"/></e>
+    <e lm="Nicaragua"><i>Nicarag</i><par n="u/ü"/><i>a</i><par n="Aran__np"/></e>
     <e lm="Nicobar"><i>Nicobar</i><par n="Aran__np"/></e>
     <e lm="Nicomèdia"><i>Nicomèdia</i><par n="Aran__np"/></e>
     <e lm="Nicosia"><i>Nicosia</i><par n="Aran__np"/></e>
@@ -39807,7 +39814,7 @@
     <e lm="Papoa Nòva Guinèa"><i>Papoa<b/>Nòva<b/>Guinèa</i><par n="Aran__np"/></e>
     <e lm="Papoasia"><i>Papoasia</i><par n="Aran__np"/></e>
     <e lm="Paquistan"><i>Paquistan</i><par n="Aran__np"/></e>
-    <e lm="Paragüai"><i>Paragüai</i><par n="Aran__np"/></e>
+    <e lm="Paraguai"><i>Parag</i><par n="u/ü"/><i>ai</i><par n="Aran__np"/></e>
     <e lm="Paramaribo"><i>Paramaribo</i><par n="Aran__np"/></e>
     <e lm="Paranà"><i>Paranà</i><par n="Aran__np"/></e>
     <e lm="Parma"><i>Parma</i><par n="Aran__np"/></e>
@@ -39919,7 +39926,7 @@
     <e lm="Republica de Còngo"><i>Republica<b/>de<b/>Còngo</i><par n="Aran__np"/></e>
     <e lm="Republica dels Còmis"><i>Republica<b/>dels<b/>Còmis</i><par n="Aran__np"/></e>
     <e lm="Republica Democratica de Còngo"><i>Republica<b/>Democratica<b/>de<b/>Còngo</i><par n="Aran__np"/></e>
-    <e lm="Reünion"><i>Reünion</i><par n="Aran__np"/></e>
+    <e lm="Reunion"><i>Re</i><par n="u/ü"/><i>nion</i><par n="Aran__np"/></e>
     <e lm="Reykjavík"><i>Reykjavík</i><par n="Aran__np"/></e>
     <e lm="Rhode Island"><i>Rhode<b/>Island</i><par n="Aran__np"/></e>
     <e lm="Ribagòrça"><i>Ribagòrça</i><par n="Aran__np"/></e>
@@ -40197,7 +40204,7 @@
     <e lm="Ulm"><i>Ulm</i><par n="Aran__np"/></e>
     <e lm="Unterwalden"><i>Unterwalden</i><par n="Aran__np"/></e>
     <e lm="Urgèl"><i>Urgèl</i><par n="Aran__np"/></e>
-    <e lm="Urugüai"><i>Urugüai</i><par n="Aran__np"/></e>
+    <e lm="Uruguai"><i>Urug</i><par n="u/ü"/><i>ai</i><par n="Aran__np"/></e>
     <e lm="Ürümchi"><i>Ürümchi</i><par n="Aran__np"/></e>
     <e lm="USA"><i>USA</i><par n="Aran__np"/></e>
     <e lm="Utah"><i>Utah</i><par n="Aran__np"/></e>
@@ -40353,8 +40360,7 @@
     <e lm="emocional"><i>emociona</i><par n="genera/l__adj"/></e>
     <e lm="empresarial"><i>empresaria</i><par n="genera/l__adj"/></e>
     <e lm="episcopal"><i>episcopa</i><par n="genera/l__adj"/></e>
-    <e lm="equatorial"><i>equatoria</i><par n="genera/l__adj"/></e>
-    <e lm="eqüatorial"><i>eqüatoria</i><par n="genera/l__adj"/></e>
+    <e lm="equatorial"><i>eq</i><par n="u/ü"/><i>atoria</i><par n="genera/l__adj"/></e>
     <e lm="espacial"><i>espacia</i><par n="genera/l__adj"/></e>
     <e lm="especial"><i>especia</i><par n="genera/l__adj"/></e>
     <e lm="esperital"><i>esperita</i><par n="genera/l__adj"/></e>
