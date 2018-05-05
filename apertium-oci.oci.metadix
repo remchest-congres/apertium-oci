@@ -3449,7 +3449,7 @@
       <e><p><l>òs</l><r>òs<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
     </pardef>
 
-        <pardef n="vindiv/idu__n">
+        <pardef n="indiv/idu__n">
     <e alt="oci@aran"><p><l>ídues</l><r>idu<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
     <e alt="oci@gascon"><p><l>ídues</l><r>idu<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
     <e alt="oci"><p><l>íduas</l><r>idu<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
@@ -17698,19 +17698,19 @@
       <e><i>o<prm/></i><par n="cambi/avas__vblex"/></e>
       <e><p><l>uè</l><r>o</r></p><i><prm/></i><par n="càmbi/as__vblex"/></e>
     </pardef>
-    <pardef n="/be_enon">
+    <pardef n="/be__enon">
       <e r="LR"><p><l>be</l><r>be<s n="adv" /><s n="enon" /></r></p></e>
       <e r="RL"><p><l><a/>be</l><r>be<s n="adv" /><s n="enon" /></r></p></e>
     </pardef>
-    <pardef n="/que_enon">
+    <pardef n="/que__enon">
       <e r="LR"><p><l>que</l><r>que<s n="adv" /><s n="enon" /></r></p></e>
       <e r="RL"><p><l><a/>que</l><r>que<s n="adv" /><s n="enon" /></r></p></e>
     </pardef>
-    <pardef n="/ne_enon">
+    <pardef n="/ne__enon">
       <e r="LR"><p><l>ne</l><r>ne<s n="adv" /><s n="enon" /></r></p></e>
       <e r="RL"><p><l><a/>ne</l><r>ne<s n="adv" /><s n="enon" /></r></p></e>
     </pardef>
-    <pardef n="e_enon">
+    <pardef n="e__enon">
       <e><p><l></l><r><s n="adv" /><s n="enon" /></r></p></e>
     </pardef>
 <!--
@@ -18544,10 +18544,10 @@
     <e lm="arribar e engranar" alt="oci"><i>arribar<b/>e<b/>engranar</i><par n="ager__adv"/></e>
     <e lm="leugièrament"><i>leugièrament</i><par n="adequadament__adv"/></e>
     <e lm="lexic" r="LR"><i>lexi</i><par n="tecni/c__adj"/></e>
-    <e lm="be" alt="oci@gascon"><i></i><par n="/be_enon"/></e>
-    <e lm="que" alt="oci@gascon"><i></i><par n="/que_enon"/></e>
-    <e lm="ne" alt="oci@gascon"><i></i><par n="/ne_enon"/></e>
-    <e lm="e" alt="oci@gascon"><i>e</i><par n="e_enon"/></e>
+    <e lm="be" alt="oci@gascon"><i></i><par n="/be__enon"/></e>
+    <e lm="que" alt="oci@gascon"><i></i><par n="/que__enon"/></e>
+    <e lm="ne" alt="oci@gascon"><i></i><par n="/ne__enon"/></e>
+    <e lm="e" alt="oci@gascon"><i>e</i><par n="e__enon"/></e>
     <e lm="lingüistic"><i>lingüisti</i><par n="tecni/c__adj"/></e>
     <e lm="linguistic" r="LR"><i>linguisti</i><par n="tecni/c__adj"/></e>
     <e lm="lingüístic" r="LR"><i>lingüísti</i><par n="tecni/c__adj"/></e>
@@ -36293,7 +36293,7 @@
       <e r="LR" lm="funeralhas" a="mmonge" alt="oci@gascon"><i>funeralhas</i><par n="vacances__n"/></e>
     <e lm="funeralhas" a="mmonge" alt="oci"><i>funeralhas</i><par n="vacances__n"/></e>
     <e lm="ganes"><i>ganes</i><par n="vacances__n"/></e>
-    <e lm="individu" a="mmonge"><i>indiv</i><par n="vindiv/idu__n"/></e>
+    <e lm="individu" a="mmonge"><i>indiv</i><par n="indiv/idu__n"/></e>
     <e lm="pressumptament"><i>pressumptament</i><par n="adequadament__adv"/></e>
     <e lm="desen" a="mmonge"><i>desen</i><par n="trabalhador__adj"/></e>
       <e r="LR" lm="continu" a="mmonge" alt="oci"><i>cont</i><par n="cont/inu__adj"/></e>
@@ -38873,9 +38873,7 @@
     <e lm="Bassa Cerdanha" alt="oci"><i>Bassa<b/>Cerdanha</i><par n="Aran__np"/></e>
     <e lm="Bassa Cerdanha" alt="oci@aran" r="LR"><i>Bassa<b/>Cerdanha</i><par n="Aran__np"/></e>
     <e lm="Bassa Cerdanha" alt="oci@gascon" r="LR"><i>Bassa<b/>Cerdanha</i><par n="Aran__np"/></e>
-<!--
-    <e lm="Bassa Cerdanha"><i>Bassa<b/>Cerdanha</i><par n="Aran__np"/><par n="OCI_gsc_arn"/></e>
--->
+<!-- <e lm="Bassa Cerdanha"><i>Bassa<b/>Cerdanha</i><par n="Aran__np"/><par n="OCI_gsc_arn"/></e> -->
     <e lm="Baisha Cerdanha" alt="oci@aran"><i>Baisha<b/>Cerdanha</i><par n="Aran__np"/></e>
     <e lm="Baisha Cerdanha" alt="oci@gascon"><i>Baisha<b/>Cerdanha</i><par n="Aran__np"/></e>
     <e lm="Baisha Cerdanha" alt="oci" r="LR"><i>Baisha<b/>Cerdanha</i><par n="Aran__np"/></e>
@@ -40578,9 +40576,9 @@
 </section>
   <section id="apostrophes" type="postblank">
     <e lm="d'" r="LR"><p><l>d'</l><r>de</r></p><par n="a__pr"/></e>
-    <e lm="b'" r="LR"><p><l>b'</l><r>be</r></p><par n="e_enon"/></e>
-    <e lm="qu'" r="LR"><p><l>qu'</l><r>que</r></p><par n="e_enon"/></e>
-    <e lm="n'" r="LR"><p><l>n'</l><r>ne</r></p><par n="e_enon"/></e>
+    <e lm="b'" r="LR"><p><l>b'</l><r>be</r></p><par n="e__enon"/></e>
+    <e lm="qu'" r="LR"><p><l>qu'</l><r>que</r></p><par n="e__enon"/></e>
+    <e lm="n'" r="LR"><p><l>n'</l><r>ne</r></p><par n="e__enon"/></e>
     <e lm="òm se" r="LR"><p><l>òm<b/>s'</l><r>se<s n="prn"/><s n="pro"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sp"/></r></p></e>
     <e lm="damb mès de" alt="oci@aran" r="LR"><p><l>damb<b/>mès<b/>d'</l><r>damb<b/>mès<b/>de</r></p><par n="a__pr"/></e>
     <e lm="damb mès de" alt="oci@gascon" r="LR"><p><l>damb<b/>mès<b/>d'</l><r>damb<b/>mès<b/>de</r></p><par n="a__pr"/></e>
