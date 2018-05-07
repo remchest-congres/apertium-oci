@@ -1370,14 +1370,14 @@
       <e alt="oci@aran" r="LR"><p><l>la</l>     <r>l<s n="adj"/><s n="f"/><s n="sg"/></r></p></e>
       <e alt="oci@gascon" r="LR"><p><l>la</l>   <r>l<s n="adj"/><s n="f"/><s n="sg"/></r></p></e>
 
-      <e alt="oci"><p><l>les</l>                <r>l<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
-      <e alt="oci" r="LR"><p><l>ls</l>          <r>l<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci"><p><l>ls</l>                 <r>l<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci" r="LR"><p><l>les</l>         <r>l<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
       <e alt="oci" r="LR"><p><l>lis</l>         <r>l<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
-      <e alt="oci@aran" r="LR"><p><l>les</l>    <r>l<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
       <e alt="oci@aran" r="LR"><p><l>ls</l>     <r>l<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>les</l>    <r>l<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
       <e alt="oci@aran" r="LR"><p><l>lis</l>    <r>l<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
-      <e alt="oci@gascon" r="LR"><p><l>les</l>  <r>l<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
       <e alt="oci@gascon" r="LR"><p><l>ls</l>   <r>l<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>les</l>  <r>l<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
       <e alt="oci@gascon" r="LR"><p><l>lis</l>  <r>l<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
 
       <e alt="oci"><p><l>las</l>                <r>l<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
@@ -1458,36 +1458,6 @@
       <e alt="oci"><p><l>as</l><r><s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
       <e alt="oci@aran"><p><l>es</l><r><s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
       <e alt="oci@gascon"><p><l>es</l><r><s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
-    </pardef>
-
-    <pardef n="genera/l__adj">
-      <e alt="oci"><p><l>l</l><r>l<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
-      <e alt="oci@gascon" r="LR"><p><l>l</l><r>l<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
-      <e alt="oci@aran" r="LR"><p><l>l</l><r>l<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
-
-      <e alt="oci"><p><l>la</l><r>l<s n="adj"/><s n="f"/><s n="sg"/></r></p></e>
-      <e alt="oci@gascon" r="LR"><p><l>la</l><r>l<s n="adj"/><s n="f"/><s n="sg"/></r></p></e>
-      <e alt="oci@aran" r="LR"><p><l>la</l><r>l<s n="adj"/><s n="f"/><s n="sg"/></r></p></e>
-
-      <e alt="oci"><p><l>ls</l><r>l<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
-      <e alt="oci@gascon" r="LR"><p><l>ls</l><r>l<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
-      <e alt="oci@aran" r="LR"><p><l>ls</l><r>l<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
-
-      <e alt="oci"><p><l>las</l><r>l<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
-      <e alt="oci@gascon" r="LR"><p><l>las</l><r>l<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
-      <e alt="oci@aran" r="LR"><p><l>las</l><r>l<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
-      <e alt="oci" r="LR"><p><l>les</l><r>l<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
-      <e alt="oci@gascon" r="LR"><p><l>les</l><r>l<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
-      <e alt="oci@aran" r="LR"><p><l>les</l><r>l<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
-
-
-      <e alt="oci@gascon"><p><l>u</l><r>u<s n="adj"/><s n="mf"/><s n="sg"/></r></p></e>
-      <e alt="oci@aran"><p><l>u</l><r>u<s n="adj"/><s n="mf"/><s n="sg"/></r></p></e>
-      <e alt="oci" r="LR"><p><l>u</l><r>u<s n="adj"/><s n="mf"/><s n="sg"/></r></p></e>
-
-      <e alt="oci@gascon"><p><l>us</l><r>u<s n="adj"/><s n="mf"/><s n="pl"/></r></p></e>
-      <e alt="oci@aran"><p><l>us</l><r>u<s n="adj"/><s n="mf"/><s n="pl"/></r></p></e>
-      <e alt="oci" r="LR"><p><l>us</l><r>u<s n="adj"/><s n="mf"/><s n="pl"/></r></p></e>
     </pardef>
 
 <!-- no l'he posat al fitxer de forms-->
@@ -4266,13 +4236,6 @@
       <e><p><l/><r><s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
     </pardef>
 <!-- no l'he posat al fitxer de forms-->
-    <pardef n="nau/au__adj">
-      <e><p><l>au</l><r>au<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
-      <e><p><l>au</l><r>au<s n="adj"/><s n="f"/><s n="sg"/></r></p></e>
-      <e><p><l>aus</l><r>au<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
-      <e><p><l>aus</l><r>au<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
-    </pardef>
-<!-- no l'he posat al fitxer de forms-->
     <pardef n="s/èt__num">
       <e><p><l>èt</l><r>èt<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
     <e alt="oci@aran"><p><l>etau</l><r>èt<s n="adj"/><s n="f"/><s n="sg"/></r></p></e>
@@ -4605,20 +4568,41 @@
       <e><p><l>th<b/>d'aquiu<b/>delà</l><r>th<b/>d'aquiu<b/>delà<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
     </pardef>
 
-        <pardef n="quauqu/'un__prn">
-    <e alt="oci@aran"><p><l>es<b/>ues</l><r>'un<s n="prn"/><s n="tn"/><s n="f"/><s n="pl"/></r></p></e>
-    <e alt="oci@gascon"><p><l>es<b/>ues</l><r>'un<s n="prn"/><s n="tn"/><s n="f"/><s n="pl"/></r></p></e>
-    <e alt="oci"><p><l>es<b/>unas</l><r>'un<s n="prn"/><s n="tn"/><s n="f"/><s n="pl"/></r></p></e>
-    <e alt="oci@aran"><p><l>'ua</l><r>'un<s n="prn"/><s n="tn"/><s n="f"/><s n="sg"/></r></p></e>
-    <e alt="oci@gascon"><p><l>'ua</l><r>'un<s n="prn"/><s n="tn"/><s n="f"/><s n="sg"/></r></p></e>
-    <e alt="oci"><p><l>'una</l><r>'un<s n="prn"/><s n="tn"/><s n="f"/><s n="sg"/></r></p></e>
-    <e alt="oci@aran"><p><l>i<b/>uns</l><r>'un<s n="prn"/><s n="tn"/><s n="m"/><s n="pl"/></r></p></e>
-    <e alt="oci@gascon"><p><l>i<b/>uns</l><r>'un<s n="prn"/><s n="tn"/><s n="m"/><s n="pl"/></r></p></e>
-    <e alt="oci"><p><l>'uns</l><r>'un<s n="prn"/><s n="tn"/><s n="m"/><s n="pl"/></r></p></e>
+    <pardef n="quauqu/'un__prn">
       <e><p><l>'un</l><r>'un<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
+
+      <e alt="oci"><p><l>'una</l><r>'un<s n="prn"/><s n="tn"/><s n="f"/><s n="sg"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>'una</l><r>'un<s n="prn"/><s n="tn"/><s n="f"/><s n="sg"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>'una</l><r>'un<s n="prn"/><s n="tn"/><s n="f"/><s n="sg"/></r></p></e>
+      <e alt="oci" r="LR"><p><l>'ua</l><r>'un<s n="prn"/><s n="tn"/><s n="f"/><s n="sg"/></r></p></e>
+      <e alt="oci@aran"><p><l>'ua</l><r>'un<s n="prn"/><s n="tn"/><s n="f"/><s n="sg"/></r></p></e>
+      <e alt="oci@gascon"><p><l>'ua</l><r>'un<s n="prn"/><s n="tn"/><s n="f"/><s n="sg"/></r></p></e>
+
+      <e alt="oci"><p><l>'uns</l><r>'un<s n="prn"/><s n="tn"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>'uns</l><r>'un<s n="prn"/><s n="tn"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>'uns</l><r>'un<s n="prn"/><s n="tn"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci" r="LR"><p><l>i<b/>uns</l><r>'un<s n="prn"/><s n="tn"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci@aran"><p><l>i<b/>uns</l><r>'un<s n="prn"/><s n="tn"/><s n="m"/><s n="pl"/></r></p></e>
+      <e alt="oci@gascon"><p><l>i<b/>uns</l><r>'un<s n="prn"/><s n="tn"/><s n="m"/><s n="pl"/></r></p></e>
+
+      <e alt="oci"><p><l>es<b/>unas</l><r>'un<s n="prn"/><s n="tn"/><s n="f"/><s n="pl"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>es<b/>unas</l><r>'un<s n="prn"/><s n="tn"/><s n="f"/><s n="pl"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>es<b/>unas</l><r>'un<s n="prn"/><s n="tn"/><s n="f"/><s n="pl"/></r></p></e>
+      <e alt="oci" r="LR"><p><l>es<b/>ues</l><r>'un<s n="prn"/><s n="tn"/><s n="f"/><s n="pl"/></r></p></e>
+      <e alt="oci@aran"><p><l>es<b/>ues</l><r>'un<s n="prn"/><s n="tn"/><s n="f"/><s n="pl"/></r></p></e>
+      <e alt="oci@gascon"><p><l>es<b/>ues</l><r>'un<s n="prn"/><s n="tn"/><s n="f"/><s n="pl"/></r></p></e>
+
+      <e><p><l>'un</l><r>'un<s n="prn"/><s n="tn"/><s n="mf"/><s n="sg"/></r></p></e>
+
+      <e alt="oci"><p><l>'uns</l><r>'un<s n="prn"/><s n="tn"/><s n="mf"/><s n="pl"/></r></p></e>
+      <e alt="oci@aran" r="LR"><p><l>'uns</l><r>'un<s n="prn"/><s n="tn"/><s n="mf"/><s n="pl"/></r></p></e>
+      <e alt="oci@gascon" r="LR"><p><l>'uns</l><r>'un<s n="prn"/><s n="tn"/><s n="mf"/><s n="pl"/></r></p></e>
+      <e alt="oci" r="LR"><p><l>i<b/>uns</l><r>'un<s n="prn"/><s n="tn"/><s n="mf"/><s n="pl"/></r></p></e>
+      <e alt="oci@aran"><p><l>i<b/>uns</l><r>'un<s n="prn"/><s n="tn"/><s n="mf"/><s n="pl"/></r></p></e>
+      <e alt="oci@gascon"><p><l>i<b/>uns</l><r>'un<s n="prn"/><s n="tn"/><s n="mf"/><s n="pl"/></r></p></e>
     </pardef>
 
-        <pardef n="bè/th_un__prn">
+    <pardef n="bè/th_un__prn">
       <e><p><l>res<b/>ues</l><r>th<b/>un<s n="prn"/><s n="tn"/><s n="f"/><s n="pl"/></r></p></e>
       <e><p><l>ra<b/>ua</l><r>th<b/>un<s n="prn"/><s n="tn"/><s n="f"/><s n="sg"/></r></p></e>
       <e><p><l>i<b/>uns</l><r>th<b/>un<s n="prn"/><s n="tn"/><s n="m"/><s n="pl"/></r></p></e>
@@ -17762,7 +17746,6 @@
 
     <e lm="morfèma"><i>morfèma</i><par n="conselh__n"/></e>
     <e lm="balisa"><i>balis</i><par n="jornad/a__n"/></e>
-    <e lm="uman"><i>uman</i><par n="content__adj"/></e>
     <e lm="maquina"><i>maquin</i><par n="jornad/a__n"/></e>
     <e lm="sciéncia"><i>sciénci</i><par n="jornad/a__n"/></e>
 
@@ -17946,8 +17929,8 @@
     <e lm="texan"><i>texan</i><par n="trabalhador__adj"/></e>
     <e lm="texan"><i>texan</i><par n="conselhèr__n"/></e>
     <e lm="ideològ"><i>ideològ</i><par n="conselhèr__n"/></e>
-    <e lm="abitual"><i>abitua</i><par n="genera/l__adj"/></e>
-    <e lm="servicial"><i>servicia</i><par n="genera/l__adj"/></e>
+    <e lm="abitual"><i>abitua</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="servicial"><i>servicia</i><par n="addiciona/l_u__adj"/></e>
     <e lm="abondiu"><i>abondiu</i><par n="trabalhador__adj"/></e>
     <e lm="absent"><i>absent</i><par n="content__adj"/></e>
     <e lm="proscrit" alt="oci@aran"><i>proscrit</i><par n="content__adj"/></e>
@@ -18000,7 +17983,7 @@
     <e lm="imperfècte"><i>imperfèct</i><par n="ampl/e__adj"/></e>
     <e lm="imperfièch" r="LR"><i>imperfièch</i><par n="content__adj"/></e>
     <e lm="imperfièit" r="LR"><i>imperfièit</i><par n="content__adj"/></e>
-    <e lm="accidental"><i>accidenta</i><par n="genera/l__adj"/></e>
+    <e lm="accidental"><i>accidenta</i><par n="addiciona/l_u__adj"/></e>
     <e lm="mexican"><i>mexican</i><par n="content__adj"/></e>
     <e lm="australian"><i>australian</i><par n="content__adj"/></e>
     <e lm="actiu"><i>acti</i><par n="representati/u__adj"/></e>
@@ -18008,8 +17991,8 @@
     <e lm="orientatiu"><i>orientati</i><par n="representati/u__adj"/></e>
     <e lm="natiu"><i>nati</i><par n="representati/u__adj"/></e>
     <e lm="ombriu"><i>ombri</i><par n="representati/u__adj"/></e>
-    <e lm="actual"><i>actua</i><par n="genera/l__adj"/></e>
-    <e lm="addicional"><i>addiciona</i><par n="genera/l__adj"/></e>
+    <e lm="actual"><i>actua</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="addicional"><i>addiciona</i><par n="addiciona/l_u__adj"/></e>
     <e lm="administratiu"><i>administrati</i><par n="representati/u__adj"/></e>
     <e lm="adolescent" a="carmentano"><i>adolescent</i><par n="generau__adj"/></e>
     <e lm="afectuos"><i>afectuos</i><par n="content__adj"/></e>
@@ -18338,7 +18321,7 @@
     <e lm="eròi"><i>er</i><par n="er/òi__n"/></e>
     <e lm="supereròi"><i>superer</i><par n="er/òi__n"/></e>
     <e lm="escolar"><i>escolar</i><par n="trabalhador__adj"/></e>
-    <e lm="espanhòl"><i>espanhò</i><par n="genera/l__adj"/></e>
+    <e lm="espanhòl"><i>espanhò</i><par n="addiciona/l_u__adj"/></e>
     <e lm="espanhòl"><i>espanhò</i><par n="espanhò/l__n"/></e>
     <e lm="especializat"><i>especializa</i><par n="estima/t__adj"/></e>
     <e lm="especific"><i>especifi</i><par n="tecni/c__adj"/></e>
@@ -18462,12 +18445,6 @@
     <e lm="grèc"><i>grè</i><par n="anti/c__adj"/></e>
     <e lm="grèu"><i>grèu</i><par n="generau__adj"/></e>
     <e lm="gròs"><i>gròs</i><par n="faus__adj"/></e>
-      <e r="LR" lm="guaire" alt="oci"><i>guair</i><par n="quair/e__adj"/></e>
-    <e lm="guaire" alt="oci@aran"><i>guair</i><par n="quair/e__adj"/></e>
-    <e lm="guaire" alt="oci@gascon"><i>guair</i><par n="quair/e__adj"/></e>
-      <e r="LR" lm="guaire" alt="oci"><i>guair</i><par n="quair/e__prn"/></e>
-    <e lm="guaire" alt="oci@aran"><i>guair</i><par n="quair/e__prn"/></e>
-    <e lm="guaire" alt="oci@gascon"><i>guair</i><par n="quair/e__prn"/></e>
       <e r="LR" lm="guaire" alt="oci"><i>guair</i><par n="guair/e__adj"/></e>
     <e lm="guaire" alt="oci@aran"><i>guair</i><par n="guair/e__adj"/></e>
     <e lm="guaire" alt="oci@gascon"><i>guair</i><par n="guair/e__adj"/></e>
@@ -18693,9 +18670,9 @@
     <e lm="trincat" alt="oci@aran"><i>trinca</i><par n="apropria/t__adj"/></e>
     <e lm="trincat" alt="oci@gascon"><i>trinca</i><par n="apropria/t__adj"/></e>
     <e lm="nacionalista"><i>nacionalist</i><par n="agricòl/a__adj"/></e>
-      <e r="LR" lm="nauau" alt="oci"><i>nau</i><par n="nau/au__adj"/></e>
-    <e lm="nauau" alt="oci@aran"><i>nau</i><par n="nau/au__adj"/></e>
-    <e lm="nauau" alt="oci@gascon"><i>nau</i><par n="nau/au__adj"/></e>
+      <e r="LR" lm="nauau" alt="oci"><i>nauau</i><par n="generau__adj"/></e>
+    <e lm="nauau" alt="oci@aran"><i>nauau</i><par n="generau__adj"/></e>
+    <e lm="nauau" alt="oci@gascon"><i>nauau</i><par n="generau__adj"/></e>
       <e r="LR" lm="nòu" alt="oci@aran"><i>n</i><par n="n/òu__num"/></e>
       <e r="LR" lm="nòu" alt="oci@gascon"><i>n</i><par n="n/òu__num"/></e>
     <e lm="nòu" alt="oci"><i>n</i><par n="n/òu__num"/></e>
@@ -18735,8 +18712,6 @@
     <e lm="occitanocatalan"><i>occitanocatalan</i><par n="trabalhador__adj"/></e>
     <e lm="olimpic"><i>olimpi</i><par n="tecni/c__adj"/></e>
     <e lm="omosexual"><i>omosexua</i><par n="addiciona/l_u__adj"/></e>
-<!--
--->
     <e lm="onomastic"><i>onomasti</i><par n="tecni/c__adj"/></e>
     <e lm="oportun" a="carmentano"><i>oportun</i><par n="trabalhador__adj"/></e>
     <e lm="ordinari"><i>ordin</i><par n="priorit/ari__adj"/></e>
@@ -19159,9 +19134,6 @@
       <e r="LR" lm="vièlh" alt="oci@gascon"><i>vièlh</i><par n="trabalhador__adj"/></e>
     <e lm="vièlh" alt="oci"><i>vièlh</i><par n="trabalhador__adj"/></e>
     <e lm="vigent"><i>vigent</i><par n="content__adj"/></e>
-      <e r="LR" lm="viu" a="carmentano" alt="oci"><i>viu</i><par n="content__adj"/></e>
-    <e lm="viu" a="carmentano" alt="oci@aran"><i>viu</i><par n="content__adj"/></e>
-    <e lm="viu" a="carmentano" alt="oci@gascon"><i>viu</i><par n="content__adj"/></e>
       <e r="LR" lm="viu" a="carmentano" alt="oci@aran"><i>vi</i><par n="representati/u__adj"/></e>
       <e r="LR" lm="viu" a="carmentano" alt="oci@gascon"><i>vi</i><par n="representati/u__adj"/></e>
     <e lm="viu" a="carmentano" alt="oci"><i>vi</i><par n="representati/u__adj"/></e>
@@ -24559,7 +24531,7 @@
     <e lm="mòrt"><i>mòrt</i><par n="content__adj"/></e>
     <e lm="mòrt"><i>mòrt</i><par n="part__n"/></e>
     <e lm="turbulent"><i>turbulent</i><par n="content__adj"/></e>
-    <e lm="egipcian"><i>egipcian</i><par n="content__adj"/></e>
+    <e lm="egipcian"><i>egipcian</i><par n="trabalhador__adj"/></e>
     <e lm="mosca"><i>mos</i><par n="va/ca__n"/></e>
     <e lm="moscatelh"><i>moscatelh</i><par n="conselh__n"/></e>
     <e lm="mòs"><i>mòs</i><par n="mes__n"/></e>
@@ -40292,291 +40264,291 @@
     <e lm="Zhengzhou"><i>Zhengzhou</i><par n="Aran__np"/></e>
     <e lm="Zug"><i>Zug</i><par n="Aran__np"/></e>
 
-    <e lm="ambiental"><i>ambienta</i><par n="genera/l__adj"/></e>
-    <e lm="ancestral"><i>ancestra</i><par n="genera/l__adj"/></e>
-    <e lm="annal"><i>anna</i><par n="genera/l__adj"/></e>
-    <e lm="anomal"><i>anoma</i><par n="genera/l__adj"/></e>
-    <e lm="anormal"><i>anorma</i><par n="genera/l__adj"/></e>
-    <e lm="antisocial"><i>antisocia</i><par n="genera/l__adj"/></e>
-    <e lm="anual"><i>anua</i><par n="genera/l__adj"/></e>
-    <e lm="argumental"><i>argumenta</i><par n="genera/l__adj"/></e>
-    <e lm="artesanal"><i>artesana</i><par n="genera/l__adj"/></e>
-    <e lm="artificial"><i>artificia</i><par n="genera/l__adj"/></e>
-    <e lm="assistencial"><i>assistencia</i><par n="genera/l__adj"/></e>
-    <e lm="aucupacional"><i>aucupaciona</i><par n="genera/l__adj"/></e>
-    <e lm="audiovisual"><i>audiovisua</i><par n="genera/l__adj"/></e>
-    <e lm="austral"><i>austra</i><par n="genera/l__adj"/></e>
+    <e lm="ambiental"><i>ambienta</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="ancestral"><i>ancestra</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="annal"><i>anna</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="anomal"><i>anoma</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="anormal"><i>anorma</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="antisocial"><i>antisocia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="anual"><i>anua</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="argumental"><i>argumenta</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="artesanal"><i>artesana</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="artificial"><i>artificia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="assistencial"><i>assistencia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="aucupacional"><i>aucupaciona</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="audiovisual"><i>audiovisua</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="austral"><i>austra</i><par n="addiciona/l_u__adj"/></e>
     <e r="LR" lm="baishmedievau" alt="oci"><i>baishmedievau</i><par n="generau__adj"/></e>
     <e lm="baishmedievau" alt="oci@aran"><i>baishmedievau</i><par n="generau__adj"/></e>
     <e lm="baishmedievau" alt="oci@gascon"><i>baishmedievau</i><par n="generau__adj"/></e>
     <e r="LR" lm="basmedieval" alt="oci@aran"><i>basmedieval</i><par n="content__adj"/></e>
     <e r="LR" lm="basmedieval" alt="oci@gascon"><i>basmedieval</i><par n="content__adj"/></e>
     <e lm="basmedieval" alt="oci"><i>basmedieval</i><par n="content__adj"/></e>
-    <e lm="banal"><i>bana</i><par n="genera/l__adj"/></e>
-    <e lm="basilical"><i>basilica</i><par n="genera/l__adj"/></e>
-    <e lm="biannal"><i>bianna</i><par n="genera/l__adj"/></e>
-    <e lm="biennal"><i>bienna</i><par n="genera/l__adj"/></e>
-    <e lm="bilateral"><i>bilatera</i><par n="genera/l__adj"/></e>
-    <e lm="binomial"><i>binomia</i><par n="genera/l__adj"/></e>
-    <e lm="brutal"><i>bruta</i><par n="genera/l__adj"/></e>
-    <e lm="cadastral"><i>cadastra</i><par n="genera/l__adj"/></e>
-    <e lm="cardinal"><i>cardina</i><par n="genera/l__adj"/></e>
-    <e lm="central"><i>centra</i><par n="genera/l__adj"/></e>
-    <e lm="circonstancial"><i>circonstancia</i><par n="genera/l__adj"/></e>
+    <e lm="banal"><i>bana</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="basilical"><i>basilica</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="biannal"><i>bianna</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="biennal"><i>bienna</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="bilateral"><i>bilatera</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="binomial"><i>binomia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="brutal"><i>bruta</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="cadastral"><i>cadastra</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="cardinal"><i>cardina</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="central"><i>centra</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="circonstancial"><i>circonstancia</i><par n="addiciona/l_u__adj"/></e>
     <e lm="clau"><i>clau</i><par n="generau__adj"/></e>
-    <e lm="collateral"><i>collatera</i><par n="genera/l__adj"/></e>
-    <e lm="colloquial"><i>colloquia</i><par n="genera/l__adj"/></e>
-    <e lm="colonial"><i>colonia</i><par n="genera/l__adj"/></e>
-    <e lm="colossal"><i>colossa</i><par n="genera/l__adj"/></e>
-    <e lm="comarcal"><i>comarca</i><par n="genera/l__adj"/></e>
-    <e lm="comercial"><i>comercia</i><par n="genera/l__adj"/></e>
-    <e lm="competencial"><i>competencia</i><par n="genera/l__adj"/></e>
-    <e lm="comtal"><i>comta</i><par n="genera/l__adj"/></e>
-    <e lm="comunal"><i>comuna</i><par n="genera/l__adj"/></e>
-    <e lm="conceptual"><i>conceptua</i><par n="genera/l__adj"/></e>
-    <e lm="consistorial"><i>consistoria</i><par n="genera/l__adj"/></e>
-    <e lm="constitucional"><i>constituciona</i><par n="genera/l__adj"/></e>
-    <e lm="continental"><i>continenta</i><par n="genera/l__adj"/></e>
-    <e lm="contractual"><i>contractua</i><par n="genera/l__adj"/></e>
-    <e lm="convencional"><i>convenciona</i><par n="genera/l__adj"/></e>
-    <e lm="conversacional"><i>conversaciona</i><par n="genera/l__adj"/></e>
-    <e lm="cooficial"><i>cooficia</i><par n="genera/l__adj"/></e>
-    <e lm="corporal"><i>corpora</i><par n="genera/l__adj"/></e>
-    <e lm="criminal"><i>crimina</i><par n="genera/l__adj"/></e>
-    <e lm="crucial"><i>crucia</i><par n="genera/l__adj"/></e>
-    <e lm="cultural"><i>cultura</i><par n="genera/l__adj"/></e>
-    <e lm="dental"><i>denta</i><par n="genera/l__adj"/></e>
-    <e lm="departamental"><i>departamenta</i><par n="genera/l__adj"/></e>
-    <e lm="desleal"><i>deslea</i><par n="genera/l__adj"/></e>
-    <e lm="desleial"><i>desleia</i><par n="genera/l__adj"/></e>
-    <e lm="diagonal"><i>diagona</i><par n="genera/l__adj"/></e>
-    <e lm="dialectal"><i>dialecta</i><par n="genera/l__adj"/></e>
-    <e lm="diferencial"><i>diferencia</i><par n="genera/l__adj"/></e>
-    <e lm="digital"><i>digita</i><par n="genera/l__adj"/></e>
-    <e lm="doctoral"><i>doctora</i><par n="genera/l__adj"/></e>
-    <e lm="dominical"><i>dominica</i><par n="genera/l__adj"/></e>
-    <e lm="editorial"><i>editoria</i><par n="genera/l__adj"/></e>
-    <e lm="egal"><i>ega</i><par n="genera/l__adj"/></e>
-    <e lm="electoral"><i>electora</i><par n="genera/l__adj"/></e>
-    <e lm="elemental"><i>elementa</i><par n="genera/l__adj"/></e>
-    <e lm="emocional"><i>emociona</i><par n="genera/l__adj"/></e>
-    <e lm="empresarial"><i>empresaria</i><par n="genera/l__adj"/></e>
-    <e lm="episcopal"><i>episcopa</i><par n="genera/l__adj"/></e>
-    <e lm="equatorial"><i>eq</i><par n="u/ü"/><i>atoria</i><par n="genera/l__adj"/></e>
-    <e lm="espacial"><i>espacia</i><par n="genera/l__adj"/></e>
-    <e lm="especial"><i>especia</i><par n="genera/l__adj"/></e>
-    <e lm="esperital"><i>esperita</i><par n="genera/l__adj"/></e>
-    <e lm="espiritual"><i>espiritua</i><par n="genera/l__adj"/></e>
-    <e lm="essencial"><i>essencia</i><par n="genera/l__adj"/></e>
-    <e lm="estamental"><i>estamenta</i><par n="genera/l__adj"/></e>
-    <e lm="estatal"><i>estata</i><par n="genera/l__adj"/></e>
-    <e lm="estructural"><i>estructura</i><par n="genera/l__adj"/></e>
-    <e lm="esturmental"><i>esturmenta</i><par n="genera/l__adj"/></e>
-    <e lm="eternal"><i>eterna</i><par n="genera/l__adj"/></e>
-    <e lm="eventual"><i>eventua</i><par n="genera/l__adj"/></e>
-    <e lm="excepcional"><i>excepciona</i><par n="genera/l__adj"/></e>
-    <e lm="experimental"><i>experimenta</i><par n="genera/l__adj"/></e>
+    <e lm="collateral"><i>collatera</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="colloquial"><i>colloquia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="colonial"><i>colonia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="colossal"><i>colossa</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="comarcal"><i>comarca</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="comercial"><i>comercia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="competencial"><i>competencia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="comtal"><i>comta</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="comunal"><i>comuna</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="conceptual"><i>conceptua</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="consistorial"><i>consistoria</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="constitucional"><i>constituciona</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="continental"><i>continenta</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="contractual"><i>contractua</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="convencional"><i>convenciona</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="conversacional"><i>conversaciona</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="cooficial"><i>cooficia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="corporal"><i>corpora</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="criminal"><i>crimina</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="crucial"><i>crucia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="cultural"><i>cultura</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="dental"><i>denta</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="departamental"><i>departamenta</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="desleal"><i>deslea</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="desleial"><i>desleia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="diagonal"><i>diagona</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="dialectal"><i>dialecta</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="diferencial"><i>diferencia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="digital"><i>digita</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="doctoral"><i>doctora</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="dominical"><i>dominica</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="editorial"><i>editoria</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="egal"><i>ega</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="electoral"><i>electora</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="elemental"><i>elementa</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="emocional"><i>emociona</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="empresarial"><i>empresaria</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="episcopal"><i>episcopa</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="equatorial"><i>eq</i><par n="u/ü"/><i>atoria</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="espacial"><i>espacia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="especial"><i>especia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="esperital"><i>esperita</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="espiritual"><i>espiritua</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="essencial"><i>essencia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="estamental"><i>estamenta</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="estatal"><i>estata</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="estructural"><i>estructura</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="esturmental"><i>esturmenta</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="eternal"><i>eterna</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="eventual"><i>eventua</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="excepcional"><i>excepciona</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="experimental"><i>experimenta</i><par n="addiciona/l_u__adj"/></e>
     <e r="LR" lm="familhau" alt="oci"><i>familhau</i><par n="generau__adj"/></e>
     <e lm="familhau" alt="oci@aran"><i>familhau</i><par n="generau__adj"/></e>
     <e lm="familhau" alt="oci@gascon"><i>familhau</i><par n="generau__adj"/></e>
     <e lm="familiar" r="LR"><i>familiar</i><par n="content__adj"/></e>
     <e r="LR" lm="familial" alt="oci@aran"><i>familial</i><par n="content__adj"/></e>
     <e r="LR" lm="familial" alt="oci@gascon"><i>familial</i><par n="content__adj"/></e>
-    <e lm="federal"><i>federa</i><par n="genera/l__adj"/></e>
-    <e lm="feudal"><i>feuda</i><par n="genera/l__adj"/></e>
-    <e lm="filial"><i>filia</i><par n="genera/l__adj"/></e>
-    <e lm="final"><i>fina</i><par n="genera/l__adj"/></e>
-    <e lm="fiscal"><i>fisca</i><par n="genera/l__adj"/></e>
-    <e lm="floral"><i>flora</i><par n="genera/l__adj"/></e>
-    <e lm="fluvial"><i>fluvia</i><par n="genera/l__adj"/></e>
-    <e lm="fonamental"><i>fonamenta</i><par n="genera/l__adj"/></e>
-    <e lm="foncional"><i>fonciona</i><par n="genera/l__adj"/></e>
-    <e lm="fondamental"><i>fondamenta</i><par n="genera/l__adj"/></e>
-    <e lm="forestal"><i>foresta</i><par n="genera/l__adj"/></e>
-    <e lm="formal"><i>forma</i><par n="genera/l__adj"/></e>
-    <e lm="frontal"><i>fronta</i><par n="genera/l__adj"/></e>
-    <e lm="general"><i>genera</i><par n="genera/l__adj"/></e>
-    <e lm="genial"><i>genia</i><par n="genera/l__adj"/></e>
-    <e lm="genital"><i>genita</i><par n="genera/l__adj"/></e>
-    <e lm="global"><i>globa</i><par n="genera/l__adj"/></e>
-    <e lm="governamental"><i>governamenta</i><par n="genera/l__adj"/></e>
-    <e lm="gradual"><i>gradua</i><par n="genera/l__adj"/></e>
-    <e lm="gramatical"><i>gramatica</i><par n="genera/l__adj"/></e>
-    <e lm="ideal"><i>idea</i><par n="genera/l__adj"/></e>
-    <e lm="illegal"><i>illega</i><par n="genera/l__adj"/></e>
-    <e lm="immoral"><i>immora</i><par n="genera/l__adj"/></e>
-    <e lm="imparcial"><i>imparcia</i><par n="genera/l__adj"/></e>
-    <e lm="imperial"><i>imperia</i><par n="genera/l__adj"/></e>
-    <e lm="inaugural"><i>inaugura</i><par n="genera/l__adj"/></e>
-    <e lm="incondicional"><i>incondiciona</i><par n="genera/l__adj"/></e>
-    <e lm="inconstitucional"><i>inconstituciona</i><par n="genera/l__adj"/></e>
-    <e lm="individual"><i>individua</i><par n="genera/l__adj"/></e>
-    <e lm="industrial"><i>industria</i><par n="genera/l__adj"/></e>
-    <e lm="informal"><i>informa</i><par n="genera/l__adj"/></e>
-    <e lm="inicial"><i>inicia</i><par n="genera/l__adj"/></e>
-    <e lm="inquisitorial"><i>inquisitoria</i><par n="genera/l__adj"/></e>
-    <e lm="institucional"><i>instituciona</i><par n="genera/l__adj"/></e>
-    <e lm="instrumental"><i>instrumenta</i><par n="genera/l__adj"/></e>
-    <e lm="integral"><i>integra</i><par n="genera/l__adj"/></e>
-    <e lm="intellectual"><i>intellectua</i><par n="genera/l__adj"/></e>
-    <e lm="intemporal"><i>intempora</i><par n="genera/l__adj"/></e>
-    <e lm="interannal"><i>interanna</i><par n="genera/l__adj"/></e>
-    <e lm="intercultural"><i>intercultura</i><par n="genera/l__adj"/></e>
-    <e lm="interdepartamental"><i>interdepartamenta</i><par n="genera/l__adj"/></e>
-    <e lm="internacional"><i>internaciona</i><par n="genera/l__adj"/></e>
-    <e lm="irreal"><i>irrea</i><par n="genera/l__adj"/></e>
-    <e lm="iuernal"><i>iuerna</i><par n="genera/l__adj"/></e>
-    <e lm="judicial"><i>judicia</i><par n="genera/l__adj"/></e>
-    <e lm="juridicoinstitucional"><i>juridicoinstituciona</i><par n="genera/l__adj"/></e>
-    <e lm="juridicolaboral"><i>juridicolabora</i><par n="genera/l__adj"/></e>
-    <e lm="laboral"><i>labora</i><par n="genera/l__adj"/></e>
-    <e lm="lateral"><i>latera</i><par n="genera/l__adj"/></e>
-    <e lm="legal"><i>lega</i><par n="genera/l__adj"/></e>
-    <e lm="leial"><i>leia</i><par n="genera/l__adj"/></e>
-    <e lm="letal"><i>leta</i><par n="genera/l__adj"/></e>
-    <e lm="lexical"><i>lexica</i><par n="genera/l__adj"/></e>
-    <e lm="liberal"><i>libera</i><par n="genera/l__adj"/></e>
-    <e lm="literal"><i>litera</i><par n="genera/l__adj"/></e>
-    <e lm="litoral"><i>litora</i><par n="genera/l__adj"/></e>
-    <e lm="local"><i>loca</i><par n="genera/l__adj"/></e>
-    <e lm="magistral"><i>magistra</i><par n="genera/l__adj"/></e>
-    <e lm="mairal"><i>maira</i><par n="genera/l__adj"/></e>
-    <e lm="maitial"><i>maitia</i><par n="genera/l__adj"/></e>
+    <e lm="federal"><i>federa</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="feudal"><i>feuda</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="filial"><i>filia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="final"><i>fina</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="fiscal"><i>fisca</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="floral"><i>flora</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="fluvial"><i>fluvia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="fonamental"><i>fonamenta</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="foncional"><i>fonciona</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="fondamental"><i>fondamenta</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="forestal"><i>foresta</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="formal"><i>forma</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="frontal"><i>fronta</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="general"><i>genera</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="genial"><i>genia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="genital"><i>genita</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="global"><i>globa</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="governamental"><i>governamenta</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="gradual"><i>gradua</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="gramatical"><i>gramatica</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="ideal"><i>idea</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="illegal"><i>illega</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="immoral"><i>immora</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="imparcial"><i>imparcia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="imperial"><i>imperia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="inaugural"><i>inaugura</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="incondicional"><i>incondiciona</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="inconstitucional"><i>inconstituciona</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="individual"><i>individua</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="industrial"><i>industria</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="informal"><i>informa</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="inicial"><i>inicia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="inquisitorial"><i>inquisitoria</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="institucional"><i>instituciona</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="instrumental"><i>instrumenta</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="integral"><i>integra</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="intellectual"><i>intellectua</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="intemporal"><i>intempora</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="interannal"><i>interanna</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="intercultural"><i>intercultura</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="interdepartamental"><i>interdepartamenta</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="internacional"><i>internaciona</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="irreal"><i>irrea</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="iuernal"><i>iuerna</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="judicial"><i>judicia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="juridicoinstitucional"><i>juridicoinstituciona</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="juridicolaboral"><i>juridicolabora</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="laboral"><i>labora</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="lateral"><i>latera</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="legal"><i>lega</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="leial"><i>leia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="letal"><i>leta</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="lexical"><i>lexica</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="liberal"><i>libera</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="literal"><i>litera</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="litoral"><i>litora</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="local"><i>loca</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="magistral"><i>magistra</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="mairal"><i>maira</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="maitial"><i>maitia</i><par n="addiciona/l_u__adj"/></e>
     <e r="LR" lm="mau" alt="oci" a="carmentano"><i>ma</i><par n="espanhò/u__adj"/></e>
     <e lm="mau" alt="oci@aran" a="carmentano"><i>ma</i><par n="espanhò/u__adj"/></e>
     <e lm="mau" alt="oci@gascon" a="carmentano"><i>ma</i><par n="espanhò/u__adj"/></e>
     <e r="LR" lm="mal" alt="oci@aran" a="carmentano"><i>mal</i><par n="content__adj"/></e>
     <e r="LR" lm="mal" alt="oci@gascon" a="carmentano"><i>mal</i><par n="content__adj"/></e>
     <e lm="mal" alt="oci" a="carmentano"><i>mal</i><par n="content__adj"/></e>
-    <e lm="manual"><i>manua</i><par n="genera/l__adj"/></e>
-    <e lm="marginal"><i>margina</i><par n="genera/l__adj"/></e>
-    <e lm="material"><i>materia</i><par n="genera/l__adj"/></e>
-    <e lm="matrimonial"><i>matrimonia</i><par n="genera/l__adj"/></e>
-    <e lm="maximal"><i>maxima</i><par n="genera/l__adj"/></e>
-    <e lm="medical"><i>medica</i><par n="genera/l__adj"/></e>
-    <e lm="medieval"><i>medieva</i><par n="genera/l__adj"/></e>
-    <e lm="mensual"><i>mensua</i><par n="genera/l__adj"/></e>
-    <e lm="mental"><i>menta</i><par n="genera/l__adj"/></e>
-    <e lm="meridional"><i>meridiona</i><par n="genera/l__adj"/></e>
-    <e lm="mestieral"><i>mestiera</i><par n="genera/l__adj"/></e>
-    <e lm="mieiambiental"><i>mieiambienta</i><par n="genera/l__adj"/></e>
-    <e lm="mineral"><i>minera</i><par n="genera/l__adj"/></e>
-    <e lm="minimal"><i>minima</i><par n="genera/l__adj"/></e>
-    <e lm="ministerial"><i>ministeria</i><par n="genera/l__adj"/></e>
-    <e lm="mondial"><i>mondia</i><par n="genera/l__adj"/></e>
-    <e lm="monumental"><i>monumenta</i><par n="genera/l__adj"/></e>
-    <e lm="moral"><i>mora</i><par n="genera/l__adj"/></e>
-    <e lm="mortal"><i>morta</i><par n="genera/l__adj"/></e>
-    <e lm="multinacional"><i>multinaciona</i><par n="genera/l__adj"/></e>
-    <e lm="multiracial"><i>multiracia</i><par n="genera/l__adj"/></e>
-    <e lm="municipal"><i>municipa</i><par n="genera/l__adj"/></e>
-    <e lm="musical"><i>musica</i><par n="genera/l__adj"/></e>
-    <e lm="mutual"><i>mutua</i><par n="genera/l__adj"/></e>
-    <e lm="nacional"><i>naciona</i><par n="genera/l__adj"/></e>
-    <e lm="natal"><i>nata</i><par n="genera/l__adj"/></e>
-    <e lm="natural"><i>natura</i><par n="genera/l__adj"/></e>
-    <e lm="neoliberal"><i>neolibera</i><par n="genera/l__adj"/></e>
-    <e lm="neutral"><i>neutra</i><par n="genera/l__adj"/></e>
-    <e lm="normal"><i>norma</i><par n="genera/l__adj"/></e>
-    <e lm="novial"><i>novia</i><par n="genera/l__adj"/></e>
-    <e lm="ocasional"><i>ocasiona</i><par n="genera/l__adj"/></e>
-    <e lm="occidental"><i>occidenta</i><par n="genera/l__adj"/></e>
-    <e lm="ocupacional"><i>ocupaciona</i><par n="genera/l__adj"/></e>
-    <e lm="oficial"><i>oficia</i><par n="genera/l__adj"/></e>
-    <e lm="omosexual"><i>omosexua</i><par n="genera/l__adj"/></e>
-    <e lm="oral"><i>ora</i><par n="genera/l__adj"/></e>
-    <e lm="oriental"><i>orienta</i><par n="genera/l__adj"/></e>
-    <e lm="original"><i>origina</i><par n="genera/l__adj"/></e>
-    <e lm="orizontal"><i>orizonta</i><par n="genera/l__adj"/></e>
-    <e lm="ornamental"><i>ornamenta</i><par n="genera/l__adj"/></e>
-    <e lm="parcial"><i>parcia</i><par n="genera/l__adj"/></e>
-    <e lm="paredal"><i>pareda</i><par n="genera/l__adj"/></e>
-    <e lm="parroquial"><i>parroquia</i><par n="genera/l__adj"/></e>
-    <e lm="pastoral"><i>pastora</i><par n="genera/l__adj"/></e>
-    <e lm="patrimonial"><i>patrimonia</i><par n="genera/l__adj"/></e>
-    <e lm="patronal"><i>patrona</i><par n="genera/l__adj"/></e>
-    <e lm="penal"><i>pena</i><par n="genera/l__adj"/></e>
-    <e lm="perjudicial"><i>perjudicia</i><par n="genera/l__adj"/></e>
-    <e lm="personal"><i>persona</i><par n="genera/l__adj"/></e>
-    <e lm="piramidal"><i>piramida</i><par n="genera/l__adj"/></e>
-    <e lm="plural"><i>plura</i><par n="genera/l__adj"/></e>
-    <e lm="plurinacional"><i>plurinaciona</i><par n="genera/l__adj"/></e>
-    <e lm="postal"><i>posta</i><par n="genera/l__adj"/></e>
-    <e lm="potencial"><i>potencia</i><par n="genera/l__adj"/></e>
-    <e lm="preferencial"><i>preferencia</i><par n="genera/l__adj"/></e>
-    <e lm="prenatal"><i>prenata</i><par n="genera/l__adj"/></e>
-    <e lm="presencial"><i>presencia</i><par n="genera/l__adj"/></e>
-    <e lm="presidencial"><i>presidencia</i><par n="genera/l__adj"/></e>
-    <e lm="preverbal"><i>preverba</i><par n="genera/l__adj"/></e>
-    <e lm="primordial"><i>primordia</i><par n="genera/l__adj"/></e>
-    <e lm="principal"><i>principa</i><par n="genera/l__adj"/></e>
-    <e lm="procedimental"><i>procedimenta</i><par n="genera/l__adj"/></e>
-    <e lm="professional"><i>professiona</i><par n="genera/l__adj"/></e>
-    <e lm="promocional"><i>promociona</i><par n="genera/l__adj"/></e>
-    <e lm="pronominal"><i>pronomina</i><par n="genera/l__adj"/></e>
-    <e lm="proporcional"><i>proporciona</i><par n="genera/l__adj"/></e>
-    <e lm="provençal"><i>provença</i><par n="genera/l__adj"/></e>
-    <e lm="providencial"><i>providencia</i><par n="genera/l__adj"/></e>
-    <e lm="provincial"><i>provincia</i><par n="genera/l__adj"/></e>
-    <e lm="provisional"><i>provisiona</i><par n="genera/l__adj"/></e>
-    <e lm="puntual"><i>puntua</i><par n="genera/l__adj"/></e>
-    <e lm="racial"><i>racia</i><par n="genera/l__adj"/></e>
-    <e lm="racional"><i>raciona</i><par n="genera/l__adj"/></e>
-    <e lm="radical"><i>radica</i><par n="genera/l__adj"/></e>
-    <e lm="real"><i>rea</i><par n="genera/l__adj"/></e>
-    <e lm="referencial"><i>referencia</i><par n="genera/l__adj"/></e>
-    <e lm="regional"><i>regiona</i><par n="genera/l__adj"/></e>
-    <e lm="reial"><i>reia</i><par n="genera/l__adj"/></e>
-    <e lm="residencial"><i>residencia</i><par n="genera/l__adj"/></e>
-    <e lm="residual"><i>residua</i><par n="genera/l__adj"/></e>
-    <e lm="ritual"><i>ritua</i><par n="genera/l__adj"/></e>
-    <e lm="rival"><i>riva</i><par n="genera/l__adj"/></e>
-    <e lm="rural"><i>rura</i><par n="genera/l__adj"/></e>
-    <e lm="salarial"><i>salaria</i><par n="genera/l__adj"/></e>
-    <e lm="sectorial"><i>sectoria</i><par n="genera/l__adj"/></e>
-    <e lm="semestral"><i>semestra</i><par n="genera/l__adj"/></e>
-    <e lm="senhorial"><i>senhoria</i><par n="genera/l__adj"/></e>
-    <e lm="sensorial"><i>sensoria</i><par n="genera/l__adj"/></e>
-    <e lm="sensual"><i>sensua</i><par n="genera/l__adj"/></e>
-    <e lm="sentimental"><i>sentimenta</i><par n="genera/l__adj"/></e>
-    <e lm="septentrional"><i>septentriona</i><par n="genera/l__adj"/></e>
-    <e lm="setmanal"><i>setmana</i><par n="genera/l__adj"/></e>
-    <e lm="sexual"><i>sexua</i><par n="genera/l__adj"/></e>
-    <e lm="sindical"><i>sindica</i><par n="genera/l__adj"/></e>
-    <e lm="social"><i>socia</i><par n="genera/l__adj"/></e>
-    <e lm="sociocultural"><i>sociocultura</i><par n="genera/l__adj"/></e>
-    <e lm="sociolaboral"><i>sociolabora</i><par n="genera/l__adj"/></e>
-    <e lm="subliminal"><i>sublimina</i><par n="genera/l__adj"/></e>
-    <e lm="sublingual"><i>sublingua</i><par n="genera/l__adj"/></e>
-    <e lm="substancial"><i>substancia</i><par n="genera/l__adj"/></e>
-    <e lm="superficial"><i>superficia</i><par n="genera/l__adj"/></e>
-    <e lm="supramunicipal"><i>supramunicipa</i><par n="genera/l__adj"/></e>
-    <e lm="tal"><i>ta</i><par n="genera/l__adj"/></e>
-    <e lm="teatral"><i>teatra</i><par n="genera/l__adj"/></e>
-    <e lm="temporal"><i>tempora</i><par n="genera/l__adj"/></e>
-    <e lm="termal"><i>terma</i><par n="genera/l__adj"/></e>
-    <e lm="terminal"><i>termina</i><par n="genera/l__adj"/></e>
-    <e lm="terrenal"><i>terrena</i><par n="genera/l__adj"/></e>
-    <e lm="territorial"><i>territoria</i><par n="genera/l__adj"/></e>
-    <e lm="testimonial"><i>testimonia</i><par n="genera/l__adj"/></e>
-    <e lm="textual"><i>textua</i><par n="genera/l__adj"/></e>
-    <e lm="total"><i>tota</i><par n="genera/l__adj"/></e>
-    <e lm="tradicional"><i>tradiciona</i><par n="genera/l__adj"/></e>
-    <e lm="transnacional"><i>transnaciona</i><par n="genera/l__adj"/></e>
-    <e lm="transversal"><i>transversa</i><par n="genera/l__adj"/></e>
-    <e lm="trapezoidal"><i>trapezoida</i><par n="genera/l__adj"/></e>
-    <e lm="trascendental"><i>trascendenta</i><par n="genera/l__adj"/></e>
-    <e lm="troncal"><i>tronca</i><par n="genera/l__adj"/></e>
-    <e lm="unilateral"><i>unilatera</i><par n="genera/l__adj"/></e>
-    <e lm="universal"><i>universa</i><par n="genera/l__adj"/></e>
-    <e lm="vegetal"><i>vegeta</i><par n="genera/l__adj"/></e>
-    <e lm="verbal"><i>verba</i><par n="genera/l__adj"/></e>
-    <e lm="vertical"><i>vertica</i><par n="genera/l__adj"/></e>
-    <e lm="vesial"><i>vesia</i><par n="genera/l__adj"/></e>
-    <e lm="virtual"><i>virtua</i><par n="genera/l__adj"/></e>
-    <e lm="visceral"><i>viscera</i><par n="genera/l__adj"/></e>
-    <e lm="visual"><i>visua</i><par n="genera/l__adj"/></e>
-    <e lm="vital"><i>vita</i><par n="genera/l__adj"/></e>
+    <e lm="manual"><i>manua</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="marginal"><i>margina</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="material"><i>materia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="matrimonial"><i>matrimonia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="maximal"><i>maxima</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="medical"><i>medica</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="medieval"><i>medieva</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="mensual"><i>mensua</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="mental"><i>menta</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="meridional"><i>meridiona</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="mestieral"><i>mestiera</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="mieiambiental"><i>mieiambienta</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="mineral"><i>minera</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="minimal"><i>minima</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="ministerial"><i>ministeria</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="mondial"><i>mondia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="monumental"><i>monumenta</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="moral"><i>mora</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="mortal"><i>morta</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="multinacional"><i>multinaciona</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="multiracial"><i>multiracia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="municipal"><i>municipa</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="musical"><i>musica</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="mutual"><i>mutua</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="nacional"><i>naciona</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="natal"><i>nata</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="natural"><i>natura</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="neoliberal"><i>neolibera</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="neutral"><i>neutra</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="normal"><i>norma</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="novial"><i>novia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="ocasional"><i>ocasiona</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="occidental"><i>occidenta</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="ocupacional"><i>ocupaciona</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="oficial"><i>oficia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="omosexual"><i>omosexua</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="oral"><i>ora</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="oriental"><i>orienta</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="original"><i>origina</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="orizontal"><i>orizonta</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="ornamental"><i>ornamenta</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="parcial"><i>parcia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="paredal"><i>pareda</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="parroquial"><i>parroquia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="pastoral"><i>pastora</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="patrimonial"><i>patrimonia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="patronal"><i>patrona</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="penal"><i>pena</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="perjudicial"><i>perjudicia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="personal"><i>persona</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="piramidal"><i>piramida</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="plural"><i>plura</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="plurinacional"><i>plurinaciona</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="postal"><i>posta</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="potencial"><i>potencia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="preferencial"><i>preferencia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="prenatal"><i>prenata</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="presencial"><i>presencia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="presidencial"><i>presidencia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="preverbal"><i>preverba</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="primordial"><i>primordia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="principal"><i>principa</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="procedimental"><i>procedimenta</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="professional"><i>professiona</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="promocional"><i>promociona</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="pronominal"><i>pronomina</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="proporcional"><i>proporciona</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="provençal"><i>provença</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="providencial"><i>providencia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="provincial"><i>provincia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="provisional"><i>provisiona</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="puntual"><i>puntua</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="racial"><i>racia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="racional"><i>raciona</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="radical"><i>radica</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="real"><i>rea</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="referencial"><i>referencia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="regional"><i>regiona</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="reial"><i>reia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="residencial"><i>residencia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="residual"><i>residua</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="ritual"><i>ritua</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="rival"><i>riva</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="rural"><i>rura</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="salarial"><i>salaria</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="sectorial"><i>sectoria</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="semestral"><i>semestra</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="senhorial"><i>senhoria</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="sensorial"><i>sensoria</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="sensual"><i>sensua</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="sentimental"><i>sentimenta</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="septentrional"><i>septentriona</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="setmanal"><i>setmana</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="sexual"><i>sexua</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="sindical"><i>sindica</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="social"><i>socia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="sociocultural"><i>sociocultura</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="sociolaboral"><i>sociolabora</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="subliminal"><i>sublimina</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="sublingual"><i>sublingua</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="substancial"><i>substancia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="superficial"><i>superficia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="supramunicipal"><i>supramunicipa</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="tal"><i>ta</i><par n="addiciona/l_u__adj"/></e> <!-- VERIFICAR -->
+    <e lm="teatral"><i>teatra</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="temporal"><i>tempora</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="termal"><i>terma</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="terminal"><i>termina</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="terrenal"><i>terrena</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="territorial"><i>territoria</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="testimonial"><i>testimonia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="textual"><i>textua</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="total"><i>tota</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="tradicional"><i>tradiciona</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="transnacional"><i>transnaciona</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="transversal"><i>transversa</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="trapezoidal"><i>trapezoida</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="trascendental"><i>trascendenta</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="troncal"><i>tronca</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="unilateral"><i>unilatera</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="universal"><i>universa</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="vegetal"><i>vegeta</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="verbal"><i>verba</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="vertical"><i>vertica</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="vesial"><i>vesia</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="virtual"><i>virtua</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="visceral"><i>viscera</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="visual"><i>visua</i><par n="addiciona/l_u__adj"/></e>
+    <e lm="vital"><i>vita</i><par n="addiciona/l_u__adj"/></e>
 </section>
   <section id="apostrophes" type="postblank">
     <e lm="d'" r="LR"><p><l>d'</l><r>de</r></p><par n="a__pr"/></e>
