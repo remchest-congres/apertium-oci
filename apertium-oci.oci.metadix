@@ -18159,7 +18159,6 @@
       <e r="LR" lm="flac" alt="oci@gascon"><i>fla</i><par n="tecni/c__adj"/></e>
     <e lm="flac" alt="oci"><i>fla</i><par n="tecni/c__adj"/></e>
     <e lm="feble"><i>febl</i><par n="ampl/e__adj"/></e>
-    <e lm="cap"><i>cap</i><par n="conselh__n"/></e>
     <e lm="caracteristic"><i>caracteristi</i><par n="tecni/c__adj"/></e>
     <e lm="caritatiu" a="carmentano"><i>caritatiu</i><par n="trabalhador__adj"/></e>
     <e lm="castelhan"><i>castelhan</i><par n="trabalhador__adj"/></e>
@@ -21458,6 +21457,7 @@
     <e lm="prèire" r="LR"><i>prèire</i><par n="conselh__n"/></e>
     <e lm="morre"><i>morre</i><par n="conselh__n"/></e>
     <e lm="caperader"><i>caperader</i><par n="conselh__n"/></e>
+    <e lm="cap"><i>cap</i><par n="conselh__n"/></e>
     <e lm="cap"><i>cap</i><par n="agent__n"/></e>
     <e lm="capital"><i>capita</i><par n="cè/l__n"/></e>
       <e r="LR" lm="capitala" alt="oci@aran"><i>capital</i><par n="jornad/a__n"/></e>
@@ -23800,9 +23800,9 @@
     <e lm="industria" r="LR"><i>industri</i><par n="jornad/a__n"/></e>
     <e lm="indústria"><i>indústri</i><par n="jornad/a__n"/></e>
     <e lm="INEM" a="carmentano"><i>INEM</i><par n="BBVA__n"/></e>
-      <e r="LR" lm="enfant" a="carmentano" alt="oci@aran"><i>enfant</i><par n="conselh__n"/></e>
-      <e r="LR" lm="enfant" a="carmentano" alt="oci@gascon"><i>enfant</i><par n="conselh__n"/></e>
-    <e lm="enfant" a="carmentano" alt="oci"><i>enfant</i><par n="conselh__n"/></e>
+      <e r="LR" lm="enfant" a="carmentano" alt="oci@aran"><i>enfant</i><par n="agent__n"/></e>
+      <e r="LR" lm="enfant" a="carmentano" alt="oci@gascon"><i>enfant</i><par n="agent__n"/></e>
+    <e lm="enfant" a="carmentano" alt="oci"><i>enfant</i><par n="agent__n"/></e>
     <e lm="infant" a="carmentano" r="LR"><i>infant</i><par n="conselh__n"/></e>
     <e lm="manit" a="carmentano" r="LR"><i>manit</i><par n="conselh__n"/></e>
     <e lm="infart"><i>infart</i><par n="conselh__n"/></e>
