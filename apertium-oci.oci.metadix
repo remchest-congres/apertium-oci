@@ -19652,6 +19652,12 @@
     <e lm="gens"><i>gens</i><par n="ager__adv"/></e>
     <e lm="globalament"><i>globa</i><par n="accidenta/lament__adv"/></e>
     <e lm="gratuïtament"><i>gratuïtament</i><par n="adequadament__adv"/></e>
+      <e r="LR" lm="guaire" alt="oci"><i>guaire</i><par n="ben__preadv"/></e>
+    <e lm="guaire" alt="oci@aran"><i>guaire</i><par n="ben__preadv"/></e>
+    <e lm="guaire" alt="oci@gascon"><i>guaire</i><par n="ben__preadv"/></e>
+      <e r="LR" lm="gaire" alt="oci@aran"><i>gaire</i><par n="ben__preadv"/></e>
+      <e r="LR" lm="gaire" alt="oci@gascon"><i>gaire</i><par n="ben__preadv"/></e>
+    <e lm="gaire" alt="oci"><i>gaire</i><par n="ben__preadv"/></e>
       <e r="LR" lm="guaire" alt="oci"><i>guaire</i><par n="ager__adv"/></e>
     <e lm="guaire" alt="oci@aran"><i>guaire</i><par n="ager__adv"/></e>
     <e lm="guaire" alt="oci@gascon"><i>guaire</i><par n="ager__adv"/></e>
@@ -28985,7 +28991,8 @@
       <e r="LR" lm="brica" alt="oci@aran"><i>brica</i><par n="ager__adv"/></e>
       <e r="LR" lm="brica" alt="oci@gascon"><i>brica</i><par n="ager__adv"/></e>
     <e lm="brica" alt="oci"><i>brica</i><par n="ager__adv"/></e>
-    <e lm="ges" r="LR"><i>ges</i><par n="ager__adv"/></e>
+    <e lm="ges"><i>ges</i><par n="ager__adv"/></e>
+    <e lm="de còps que i a"><i>de<b/>còps<b/>que<b/>i<b/>a</i><par n="ager__adv"/></e>
       <e r="LR" lm="ath cap d'un an" alt="oci"><i>ath<b/>cap<b/>d'un<b/>an</i><par n="ager__adv"/></e>
     <e lm="ath cap d'un an" alt="oci@aran"><i>ath<b/>cap<b/>d'un<b/>an</i><par n="ager__adv"/></e>
     <e lm="ath cap d'un an" alt="oci@gascon"><i>ath<b/>cap<b/>d'un<b/>an</i><par n="ager__adv"/></e>
@@ -40549,6 +40556,8 @@
     <e lm="visceral"><i>viscera</i><par n="addiciona/l_u__adj"/></e>
     <e lm="visual"><i>visua</i><par n="addiciona/l_u__adj"/></e>
     <e lm="vital"><i>vita</i><par n="addiciona/l_u__adj"/></e>
+
+<!-- xxxx -->
 </section>
   <section id="apostrophes" type="postblank">
     <e lm="d'" r="LR"><p><l>d'</l><r>de</r></p><par n="a__pr"/></e>
