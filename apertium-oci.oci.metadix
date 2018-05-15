@@ -26324,9 +26324,9 @@
       <e r="LR" lm="trionf" a="carmentano" alt="oci"><i>trionf</i><par n="paragraf__n"/></e>
     <e lm="trionf" a="carmentano" alt="oci@aran"><i>trionf</i><par n="paragraf__n"/></e>
     <e lm="trionf" a="carmentano" alt="oci@gascon"><i>trionf</i><par n="paragraf__n"/></e>
-      <e r="LR" lm="triomfe" a="carmentano" alt="oci@aran"><i>triomfe</i><par n="paragraf__n"/></e>
-      <e r="LR" lm="triomfe" a="carmentano" alt="oci@gascon"><i>triomfe</i><par n="paragraf__n"/></e>
-    <e lm="triomfe" a="carmentano" alt="oci"><i>triomfe</i><par n="paragraf__n"/></e>
+      <e r="LR" lm="triomfe" a="carmentano" alt="oci@aran"><i>triomfe</i><par n="conselh__n"/></e>
+      <e r="LR" lm="triomfe" a="carmentano" alt="oci@gascon"><i>triomfe</i><par n="conselh__n"/></e>
+    <e lm="triomfe" a="carmentano" alt="oci"><i>triomfe</i><par n="conselh__n"/></e>
     <e lm="tripartit" a="carmentano"><i>tripartit</i><par n="conselh__n"/></e>
     <e lm="tròca"><i>trò</i><par n="va/ca__n"/></e>
     <e lm="tròç"><i>trò</i><par n="tra/ç__n"/></e>
