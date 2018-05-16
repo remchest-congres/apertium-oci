@@ -40654,6 +40654,48 @@
 <e lm="universalament"><i>universa</i><par n="accidenta/lament__adv"/></e>
 <e lm="verticalament"><i>vertica</i><par n="accidenta/lament__adv"/></e>
 
+<e lm="abans que"><i>abans<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="a condicion que"><i>a<b/>condicion<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="al ponch que"><i>al<b/>ponch<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="a partir del moment que"><i>a<b/>partir<b/>del<b/>moment<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="aprèp que"><i>aprèp<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="ara que"><i>ara<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="a tal ponch que"><i>a<b/>tal<b/>ponch<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="baste que"><i>baste<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="coma del temps que"><i>coma<b/>del<b/>temps<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="coma"><i>coma</i><par n="donc__cnjadv"/></e>
+<e lm="d'abòrd que"><i>d'abòrd<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="d'autant mai que"><i>d'autant<b/>mai<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="del fach que"><i>del<b/>fach<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="del mai luènh que"><i>del<b/>mai<b/>luènh<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="de paur que"><i>de<b/>paur<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="de tal biais que"><i>de<b/>tal<b/>biais<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="e mai que"><i>e<b/>mai<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="en admetent que"><i>en<b/>admetent<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="en cas que"><i>en<b/>cas<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="en consequéncia"><i>en<b/>consequéncia</i><par n="donc__cnjadv"/></e>
+<e lm="en supausant que"><i>en<b/>supausant<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="es aital que"><i>es<b/>aital<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="es per aquò que"><i>es<b/>per<b/>aquò<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="exceptat que"><i>exceptat<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="jol pretèxt que"><i>jol<b/>pretèxt<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="levat se"><i>levat<b/>se</i><par n="donc__cnjadv"/></e>
+<e lm="maldespièch"><i>maldespièch</i><par n="donc__cnjadv"/></e>
+<e lm="malgrat lo fach que"><i>malgrat<b/>lo<b/>fach<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="mentre que"><i>mentre<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="per pauc que"><i>per<b/>pauc<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="per tal que"><i>per<b/>tal<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="puslèu que"><i>puslèu<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="que"><i>que</i><par n="donc__cnjadv"/></e>
+<e lm="qué que siá"><i>qué<b/>que<b/>siá</i><par n="donc__cnjadv"/></e>
+<e lm="segon que"><i>segon<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="subretot que"><i>subretot<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="supausat que"><i>supausat<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="tal coma"><i>tal<b/>coma</i><par n="donc__cnjadv"/></e>
+<e lm="tant que"><i>tant<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="tre lo moment que"><i>tre<b/>lo<b/>moment<b/>que</i><par n="donc__cnjadv"/></e>
+<e lm="vist que"><i>vist<b/>que</i><par n="donc__cnjadv"/></e>
+
 <!-- xxxx -->
 </section>
   <section id="apostrophes" type="postblank">
@@ -40839,7 +40881,44 @@
     <e lm="lor me" alt="oci" r="LR"><p><l>lor<b/>m'</l><r>me<s n="prn"/><s n="pro"/><s n="p1"/><s n="mf"/><s n="sg"/><j/>li<s n="prn"/><s n="pro"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
     <e lm="lor te" alt="oci" r="LR"><p><l>lor<b/>t'</l><r>te<s n="prn"/><s n="pro"/><s n="p2"/><s n="mf"/><s n="sg"/><j/>li<s n="prn"/><s n="pro"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
     <e lm="lor se" alt="oci" r="LR"><p><l>lor<b/>s'</l><r>se<s n="prn"/><s n="pro"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sp"/><j/>li<s n="prn"/><s n="pro"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
+
+<e lm="abans que" r="LR"><p><l>abans<b/>qu'</l><r>abans<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="a condicion que" r="LR"><p><l>a<b/>condicion<b/>qu'</l><r>a<b/>condicion<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="al ponch que" r="LR"><p><l>al<b/>ponch<b/>qu'</l><r>al<b/>ponch<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="a partir del moment que" r="LR"><p><l>a<b/>partir<b/>del<b/>moment<b/>qu'</l><r>a<b/>partir<b/>del<b/>moment<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="aprèp que" r="LR"><p><l>aprèp<b/>qu'</l><r>aprèp<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="ara que" r="LR"><p><l>ara<b/>qu'</l><r>ara<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="a tal ponch que" r="LR"><p><l>a<b/>tal<b/>ponch<b/>qu'</l><r>a<b/>tal<b/>ponch<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="baste que" r="LR"><p><l>baste<b/>qu'</l><r>baste<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="coma del temps que" r="LR"><p><l>coma<b/>del<b/>temps<b/>qu'</l><r>coma<b/>del<b/>temps<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="d'abòrd que" r="LR"><p><l>d'abòrd<b/>qu'</l><r>d'abòrd<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="d'autant mai que" r="LR"><p><l>d'autant<b/>mai<b/>qu'</l><r>d'autant<b/>mai<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="del fach que" r="LR"><p><l>del<b/>fach<b/>qu'</l><r>del<b/>fach<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="del mai luènh que" r="LR"><p><l>del<b/>mai<b/>luènh<b/>qu'</l><r>del<b/>mai<b/>luènh<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="de paur que" r="LR"><p><l>de<b/>paur<b/>qu'</l><r>de<b/>paur<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="de tal biais que" r="LR"><p><l>de<b/>tal<b/>biais<b/>qu'</l><r>de<b/>tal<b/>biais<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="e mai que" r="LR"><p><l>e<b/>mai<b/>qu'</l><r>e<b/>mai<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="en admetent que" r="LR"><p><l>en<b/>admetent<b/>qu'</l><r>en<b/>admetent<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="en cas que" r="LR"><p><l>en<b/>cas<b/>qu'</l><r>en<b/>cas<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="en supausant que" r="LR"><p><l>en<b/>supausant<b/>qu'</l><r>en<b/>supausant<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="es aital que" r="LR"><p><l>es<b/>aital<b/>qu'</l><r>es<b/>aital<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="es per aquò que" r="LR"><p><l>es<b/>per<b/>aquò<b/>qu'</l><r>es<b/>per<b/>aquò<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="exceptat que" r="LR"><p><l>exceptat<b/>qu'</l><r>exceptat<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="jol pretèxt que" r="LR"><p><l>jol<b/>pretèxt<b/>qu'</l><r>jol<b/>pretèxt<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="malgrat lo fach que" r="LR"><p><l>malgrat<b/>lo<b/>fach<b/>qu'</l><r>malgrat<b/>lo<b/>fach<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="mentre que" r="LR"><p><l>mentre<b/>qu'</l><r>mentre<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="per pauc que" r="LR"><p><l>per<b/>pauc<b/>qu'</l><r>per<b/>pauc<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="per tal que" r="LR"><p><l>per<b/>tal<b/>qu'</l><r>per<b/>tal<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="puslèu que" r="LR"><p><l>puslèu<b/>qu'</l><r>puslèu<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="segon que" r="LR"><p><l>segon<b/>qu'</l><r>segon<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="subretot que" r="LR"><p><l>subretot<b/>qu'</l><r>subretot<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="supausat que" r="LR"><p><l>supausat<b/>qu'</l><r>supausat<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="tant que" r="LR"><p><l>tant<b/>qu'</l><r>tant<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="tre lo moment que" r="LR"><p><l>tre<b/>lo<b/>moment<b/>qu'</l><r>tre<b/>lo<b/>moment<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="vist que" r="LR"><p><l>vist<b/>qu'</l><r>vist<b/>que</r></p><par n="donc__cnjadv"/></e>
+
 </section>
+
   <section id="final" type="inconditional">
       <e><par n="separa"/></e>
       <e><par n="numeros"/></e>
