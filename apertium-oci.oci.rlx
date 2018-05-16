@@ -42,6 +42,7 @@ LIST Nf = (n f);
 LIST AJf = (adj f);
 LIST Vconj = pri prs pii pis imp fti ifi cni ;
 LIST Itg = itg ;
+LIST DETind = (det ind);
 
 #Listas
 SET intrprop = Conjco OR Itg ; #cnjcoo cnjsub rel itg "," ";" sent adv;
@@ -50,8 +51,14 @@ LIST motsdetsg = (det sg) (pr sg);
 LIST motsdetf = (det f) (pr f);
 LIST motsdetm = (det m) (pr m);
 
+SET MascSg = (m sg) OR (m sp) OR (mf sg) OR (mf sp) ;
+SET MascPl = (m pl) OR (m sp) OR (mf pl) OR (mf sp) ;
+SET FemSg = (f sg) OR (f sp) OR (mf sg) OR (mf sp) ;
+SET FemPl = (f pl) OR (f sp) OR (mf pl) OR (mf sp) ;
+
 #Mots
 LIST En = ("en" prn);
+LIST Un = "un" ;
 
 
 SECTION
@@ -94,4 +101,20 @@ REMOVE motsdetsg IF (1 Npl OR AJpl);
 REMOVE motsdetf IF (1 Nm OR AJm);
 REMOVE motsdetm IF (1 Nf OR AJf);
 
+
+# DET
+
+SELECT DET IF (0 DETind + MascSg) (1 N + MascSg) ;
+SELECT DET IF (0 DETind + FemSg) (1 N + FemSg) ;
+SELECT DET IF (0 DETind + MascPl) (1 N + MascPl) ;
+SELECT DET IF (0 DETind + FemPl) (1 N + FemPl) ;
+  ## un enfant
+SELECT DET IF (0 DETind + MascSg) (1 AJ + MascSg) ;
+SELECT DET IF (0 DETind + FemSg) (1 AJ + FemSg) ;
+SELECT DET IF (0 DETind + MascPl) (1 AJ + MascPl) ;
+SELECT DET IF (0 DETind + FemPl) (1 AJ + FemPl) ;
+  ## un jaune
+
+SELECT NUM IF (-1 ("numéro")) (0 Un); 
+REMOVE NUM IF (NOT -1 ("numéro")) (0 Un); 
 
