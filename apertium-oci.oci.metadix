@@ -3742,6 +3742,24 @@
       <e><p><l>ís</l><r>ís<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
     </pardef>
 
+        <pardef n="tap/ís__n">
+    <e alt="oci@aran"><p><l>issi</l><r>ís<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+    <e alt="oci@gascon"><p><l>ís</l><r>ís<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+    <e alt="oci"><p><l>isses</l><r>ís<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l>ís</l><r>ís<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+    </pardef>
+
+ <pardef n="so/ís__n">
+   <e alt="oci@aran"><p><l>ïsses</l><r><s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci@gascon"><p><l>ïssas</l><r><s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci@aran"><p><l>ïssi</l><r>ís<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+    <e alt="oci@gascon"><p><l>ís</l><r>ís<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l>ïssa</l><r><s n="n"/><s n="f"/><s n="sg"/></r></p></e>
+    <e alt="oci"><p><l>ïssas</l><r><s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci"><p><l>ïsses</l><r>ís<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l>ís</l><r>ís<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+    </pardef>
+
         <pardef n="tra/ç__n">
     <e alt="oci@aran"><p><l>ci</l><r>ç<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
     <e alt="oci@gascon"><p><l>ci</l><r>ç<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
@@ -34294,7 +34312,7 @@
     <e lm="fusada" a="carmentano"><i>fusad</i><par n="jornad/a__n"/></e>
     <e lm="climat" a="carmentano"><i>climat</i><par n="conselh__n"/></e>
     <e lm="clima" a="carmentano" r="LR"><i>clima</i><par n="conselh__n"/></e>
-    <e lm="tapís" a="carmentano"><i>tap</i><par n="perm/ís__n"/></e>
+    <e lm="tapís" a="carmentano"><i>tap</i><par n="tap/ís__n"/></e>
     <e lm="legitim" a="carmentano"><i>legitim</i><par n="content__adj"/></e>
     <e lm="rasonable" a="carmentano"><i>rasonabl</i><par n="ampl/e__adj"/></e>
     <e lm="junt" a="carmentano"><i>junt</i><par n="content__adj"/></e>
