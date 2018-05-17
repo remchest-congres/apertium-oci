@@ -1571,6 +1571,17 @@
       <e><p><l>ís</l><r>ís<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
     </pardef>
 
+        <pardef n="so/ís__n">
+    <e alt="oci@aran"><p><l>ïsses</l><r>ís<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci@gascon"><p><l>ïsses</l><r>ís<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci"><p><l>ïssas</l><r>ís<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+      <e><p><l>ïssa</l><r>ís<s n="n"/><s n="f"/><s n="sg"/></r></p></e>
+    <e alt="oci@aran"><p><l>ïssi</l><r>ís<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+    <e alt="oci@gascon"><p><l>ïssi</l><r>ís<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+    <e alt="oci"><p><l>ïsses</l><r>ís<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l>ís</l><r>ís<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+    </pardef>
+
         <pardef n="so/ís__adj">
     <e alt="oci@aran"><p><l>ïsses</l><r>ís<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
     <e alt="oci@gascon"><p><l>ïsses</l><r>ís<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
@@ -18602,6 +18613,7 @@
     <e lm="masculin"><i>masculin</i><par n="trabalhador__adj"/></e>
     <e lm="massís"><i>mass</i><par n="prec/ís__adj"/></e>
     <e lm="soís"><i>so</i><par n="so/ís__adj"/></e>
+    <e lm="soís"><i>so</i><par n="so/ís__n"/></e>
     <e lm="matematic"><i>matemati</i><par n="tecni/c__adj"/></e>
       <e r="LR" lm="mau" alt="oci" a="carmentano"><i>ma</i><par n="espanhò/u__adj"/></e>
     <e lm="mau" alt="oci@aran" a="carmentano"><i>ma</i><par n="espanhò/u__adj"/></e>
