@@ -1571,17 +1571,6 @@
       <e><p><l>ís</l><r>ís<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
     </pardef>
 
-        <pardef n="so/ís__n">
-    <e alt="oci@aran"><p><l>ïsses</l><r>ís<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
-    <e alt="oci@gascon"><p><l>ïsses</l><r>ís<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
-    <e alt="oci"><p><l>ïssas</l><r>ís<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
-      <e><p><l>ïssa</l><r>ís<s n="n"/><s n="f"/><s n="sg"/></r></p></e>
-    <e alt="oci@aran"><p><l>ïssi</l><r>ís<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
-    <e alt="oci@gascon"><p><l>ïssi</l><r>ís<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
-    <e alt="oci"><p><l>ïsses</l><r>ís<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
-      <e><p><l>ís</l><r>ís<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
-    </pardef>
-
         <pardef n="so/ís__adj">
     <e alt="oci@aran"><p><l>ïsses</l><r>ís<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
     <e alt="oci@gascon"><p><l>ïsses</l><r>ís<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
@@ -3760,13 +3749,13 @@
       <e><p><l>ís</l><r>ís<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
     </pardef>
 
- <pardef n="so/ís__n">
-   <e alt="oci@aran"><p><l>ïsses</l><r><s n="n"/><s n="f"/><s n="pl"/></r></p></e>
-    <e alt="oci@gascon"><p><l>ïssas</l><r><s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+        <pardef n="so/ís__n">
+    <e alt="oci@aran"><p><l>ïsses</l><r>ís<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci@gascon"><p><l>ïsses</l><r>ís<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci"><p><l>ïssas</l><r>ís<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+      <e><p><l>ïssa</l><r>ís<s n="n"/><s n="f"/><s n="sg"/></r></p></e>
     <e alt="oci@aran"><p><l>ïssi</l><r>ís<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
-    <e alt="oci@gascon"><p><l>ís</l><r>ís<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
-      <e><p><l>ïssa</l><r><s n="n"/><s n="f"/><s n="sg"/></r></p></e>
-    <e alt="oci"><p><l>ïssas</l><r><s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci@gascon"><p><l>ïssi</l><r>ís<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
     <e alt="oci"><p><l>ïsses</l><r>ís<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
       <e><p><l>ís</l><r>ís<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
     </pardef>
