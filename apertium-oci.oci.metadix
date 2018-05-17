@@ -19542,7 +19542,6 @@
       <e r="LR" lm="per lo dessús" alt="oci@aran"><i>per<b/>lo<b/>dessús</i><par n="ager__adv"/></e>
       <e r="LR" lm="per lo dessús" alt="oci@gascon"><i>per<b/>lo<b/>dessús</i><par n="ager__adv"/></e>
     <e lm="per lo dessús" alt="oci"><i>per<b/>lo<b/>dessús</i><par n="ager__adv"/></e>
-    <e lm="aprèp" r="LR"><i>aprèp</i><par n="ager__adv"/></e>
     <e lm="avant" r="LR"><i>avant</i><par n="ager__adv"/></e>
     <e lm="dessús"><i>dessús</i><par n="ager__adv"/></e>
     <e lm="d'ua auta faiçon" r="LR"><i>d'ua<b/>auta<b/>faiçon</i><par n="ager__adv"/></e>
@@ -36100,7 +36099,6 @@
     <e lm="salutacion" a="carmentano"><i>salutacion</i><par n="part__n"/></e>
     <e lm="monografic" a="carmentano"><i>monografi</i><par n="tecni/c__adj"/></e>
     <e lm="incentivacion" a="carmentano"><i>incentivacion</i><par n="part__n"/></e>
-    <e lm="abans" a="carmentano"><i>abans</i><par n="ager__adv"/></e>
       <e r="LR" lm="la net d'abans" alt="oci"><i>la<b/>net<b/>d'abans</i><par n="ager__adv"/></e>
     <e lm="la net d'abans" alt="oci@aran"><i>la<b/>net<b/>d'abans</i><par n="ager__adv"/></e>
     <e lm="la net d'abans" alt="oci@gascon"><i>la<b/>net<b/>d'abans</i><par n="ager__adv"/></e>
