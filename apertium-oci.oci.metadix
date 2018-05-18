@@ -2106,6 +2106,19 @@
       <e><p><l>n</l><r>n<s n="det"/><s n="ind"/><s n="m"/><s n="sg"/></r></p></e>
     </pardef>
 
+        <pardef n="u/n__prn">
+    <e alt="oci@aran"><p><l>es</l><r>n<s n="prn"/><s n="tn"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci@gascon"><p><l>es</l><r>n<s n="prn"/><s n="tn"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci@aran"><p><l>a</l><r>n<s n="prn"/><s n="tn"/><s n="f"/><s n="sg"/></r></p></e>
+    <e alt="oci@gascon"><p><l>a</l><r>n<s n="prn"/><s n="tn"/><s n="f"/><s n="sg"/></r></p></e>
+    <e alt="oci"><p><l>nas</l><r>n<s n="prn"/><s n="tn"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci"><p><l>na</l><r>n<s n="prn"/><s n="tn"/><s n="f"/><s n="sg"/></r></p></e>
+    <e alt="oci@aran"><p><l>ns</l><r>n<s n="prn"/><s n="tn"/><s n="m"/><s n="pl"/></r></p></e>
+    <e alt="oci@gascon"><p><l>ns</l><r>n<s n="prn"/><s n="tn"/><s n="m"/><s n="pl"/></r></p></e>
+    <e alt="oci"><p><l>nes</l><r>n<s n="prn"/><s n="tn"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l>n</l><r>n<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
+    </pardef>
+
         <pardef n="quauqu/e__det">
       <e><p><l>es</l><r>e<s n="det"/><s n="ind"/><s n="f"/><s n="pl"/></r></p></e>
       <e><p><l>a</l><r>e<s n="det"/><s n="ind"/><s n="f"/><s n="sg"/></r></p></e>
@@ -19695,9 +19708,6 @@
       <e r="LR" lm="laguens" alt="oci"><i>laguens</i><par n="ager__adv"/></e>
     <e lm="laguens" alt="oci@aran"><i>laguens</i><par n="ager__adv"/></e>
     <e lm="laguens" alt="oci@gascon"><i>laguens</i><par n="ager__adv"/></e>
-    <e lm="dins" alt="oci" r="LR"><i>dins</i><par n="ager__adv"/></e>
-    <e lm="dins" alt="oci@aran" r="LR"><i>dins</i><par n="ager__adv"/></e>
-    <e lm="dins" alt="oci@gascon" r="LR"><i>dins</i><par n="ager__adv"/></e>
       <e r="LR" lm="dins" alt="oci@aran"><i>dins</i><par n="ager__adv"/></e>
       <e r="LR" lm="dins" alt="oci@gascon"><i>dins</i><par n="ager__adv"/></e>
     <e lm="dins" alt="oci"><i>dins</i><par n="ager__adv"/></e>
@@ -20271,6 +20281,7 @@
     <e lm="ta" alt="oci@aran" r="LR"><i>t</i><par n="s/a__det"/></e>
     <e lm="ta" alt="oci@gascon" r="LR"><i>t</i><par n="s/a__det"/></e>
     <e lm="un"><i>u</i><par n="u/n__det"/></e>
+    <e lm="un"><i>u</i><par n="u/n__prn"/></e>
     <e lm="mantun"><i>mantu</i><par n="u/n__det"/></e>
     <e lm="ce" r="LR"><i>ce</i><par n="çòdemès__detnt"/></e>
     <e lm="çò de mès"><i>çò<b/>de<b/>mès</i><par n="çòdemès__detnt"/></e>
@@ -28607,6 +28618,9 @@
       <e r="LR" lm="a travèrs de" alt="oci@aran"><i>a<b/>travèrs<b/></i><par n="/de__pr"/></e>
       <e r="LR" lm="a travèrs de" alt="oci@gascon"><i>a<b/>travèrs<b/></i><par n="/de__pr"/></e>
     <e lm="a travèrs de" alt="oci"><i>a<b/>travèrs<b/></i><par n="/de__pr"/></e>
+      <e r="LR" lm="dins" alt="oci@aran"><i>dins</i><par n="a__pr"/></e>
+      <e r="LR" lm="dins" alt="oci@gascon"><i>dins</i><par n="a__pr"/></e>
+    <e lm="dins" alt="oci"><i>dins</i><par n="a__pr"/></e>
       <e r="LR" lm="dins de" alt="oci@aran"><i>dins<b/></i><par n="/de__pr"/></e>
       <e r="LR" lm="dins de" alt="oci@gascon"><i>dins<b/></i><par n="/de__pr"/></e>
     <e lm="dins de" alt="oci"><i>dins<b/></i><par n="/de__pr"/></e>
