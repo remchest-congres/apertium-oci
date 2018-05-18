@@ -3979,6 +3979,16 @@
     <e alt="oci"><p><l>ques</l><r>c<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
       <e><p><l>c</l><r>c<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
     </pardef>
+
+        <pardef n="bau/g__n">
+    <e alt="oci@aran"><p><l>ges</l><r>g<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci@gascon"><p><l>ges</l><r>g<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci"><p><l>jas</l><r>g<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+      <e><p><l>ja</l><r>g<s n="n"/><s n="f"/><s n="sg"/></r></p></e>
+      <e><p><l>gs</l><r>g<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l>g</l><r>g<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+    </pardef>
+
 <!-- no en fitxer forms          -->
         <pardef n="joen__n">
     <e alt="oci@aran"><p><l>es</l><r><s n="n"/><s n="f"/><s n="pl"/></r></p></e>
@@ -4009,6 +4019,15 @@
       <e><p><l>ària</l><r>ari<s n="n"/><s n="f"/><s n="sg"/></r></p></e>
       <e><p><l>aris</l><r>ari<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
       <e><p><l>ari</l><r>ari<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+    </pardef>
+
+        <pardef n="ar/abi__n">
+    <e alt="oci@aran"><p><l>àbies</l><r>abi<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci@gascon"><p><l>àbies</l><r>abi<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci"><p><l>àbias</l><r>abi<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+      <e><p><l>àbia</l><r>abi<s n="n"/><s n="f"/><s n="sg"/></r></p></e>
+      <e><p><l>abis</l><r>abi<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l>abi</l><r>abi<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
     </pardef>
 
         <pardef n="ministr/e__n">
@@ -40803,6 +40822,9 @@
 <e lm="un chic mai de" r="LR"><i>un<b/>chic<b/>mai<b/></i><par n="/de__pr"/></e>
 <e lm="un bricon mai de" r="LR"><i>un<b/>bricon<b/>mai<b/></i><par n="/de__pr"/></e>
 
+    <e lm="baug"><i>bau</i><par n="bau/g__n"/></e>
+    <e lm="lag"><i>la</i><par n="bau/g__n"/></e>
+    <e lm="arabi"><i>ar</i><par n="ar/abi__n"/></e>
 <!-- xxxx -->
 </section>
 
