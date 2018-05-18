@@ -40825,6 +40825,12 @@
     <e lm="baug"><i>bau</i><par n="bau/g__n"/></e>
     <e lm="lag"><i>la</i><par n="bau/g__n"/></e>
     <e lm="arabi"><i>ar</i><par n="ar/abi__n"/></e>
+
+    <e lm="après que" alt="oci"><i>après<b/>que</i><par n="donc__cnjadv"/></e>
+    <e lm="après que" r="LR" alt="oci@aran"><i>après<b/>que</i><par n="donc__cnjadv"/></e>
+    <e lm="après que" r="LR" alt="oci@gascon"><i>après<b/>que</i><par n="donc__cnjadv"/></e>
+    <e lm="aprèp que" alt="oci"><i>aprèp<b/>que</i><par n="donc__cnjadv"/></e>
+
 <!-- xxxx -->
 </section>
 
@@ -41046,6 +41052,8 @@
 <e lm="tant que" r="LR"><p><l>tant<b/>qu'</l><r>tant<b/>que</r></p><par n="donc__cnjadv"/></e>
 <e lm="tre lo moment que" r="LR"><p><l>tre<b/>lo<b/>moment<b/>qu'</l><r>tre<b/>lo<b/>moment<b/>que</r></p><par n="donc__cnjadv"/></e>
 <e lm="vist que" r="LR"><p><l>vist<b/>qu'</l><r>vist<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="après que" r="LR"><p><l>après<b/>qu'</l><r>après<b/>que</r></p><par n="donc__cnjadv"/></e>
+<e lm="aprèp que" r="LR"><p><l>aprèp<b/>qu'</l><r>aprèp<b/>que</r></p><par n="donc__cnjadv"/></e>
 
 <e lm="a cargue de" r="LR"><p><l>a<b/>cargue<b/>d'</l><r>a<b/>cargue<b/>de</r></p><par n="a__pr"/></e>
 <e lm="a fòrça de" r="LR"><p><l>a<b/>fòrça<b/>d'</l><r>a<b/>fòrça<b/>de</r></p><par n="a__pr"/></e>
