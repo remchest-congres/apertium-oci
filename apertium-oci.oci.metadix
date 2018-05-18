@@ -18254,7 +18254,7 @@
       <e r="LR" lm="conjunt" alt="oci"><i>conjunt</i><par n="trabalhador__adj"/></e>
     <e lm="conjunt" alt="oci@aran"><i>conjunt</i><par n="trabalhador__adj"/></e>
     <e lm="conjunt" alt="oci@gascon"><i>conjunt</i><par n="trabalhador__adj"/></e>
-    <e lm="conjonch" r="LR"><i>conjonch</i><par n="conselh__n"/></e>
+    <e lm="conjonch" r="LR"><i>conjonch</i><par n="mes__n"/></e>
     <e lm="conscient"><i>conscient</i><par n="content__adj"/></e>
     <e lm="consecutiu" a="carmentano"><i>consecuti</i><par n="representati/u__adj"/></e>
     <e lm="conservador" a="carmentano"><i>conservador</i><par n="content__adj"/></e>
@@ -18494,6 +18494,7 @@
     <e lm="grèc"><i>grè</i><par n="anti/c__adj"/></e>
     <e lm="grèu"><i>grèu</i><par n="generau__adj"/></e>
     <e lm="gròs"><i>gròs</i><par n="faus__adj"/></e>
+    <e lm="gròs"><i>gròs</i><par n="pas__n"/></e>
       <e r="LR" lm="guaire" alt="oci"><i>guair</i><par n="guair/e__adj"/></e>
     <e lm="guaire" alt="oci@aran"><i>guair</i><par n="guair/e__adj"/></e>
     <e lm="guaire" alt="oci@gascon"><i>guair</i><par n="guair/e__adj"/></e>
@@ -20607,7 +20608,7 @@
     <e lm="agost"><i>agost</i><par n="conselh__n"/></e>
     <e lm="agraniment" r="LR"><i>agraniment</i><par n="conselh__n"/></e>
     <e lm="agression" a="carmentano"><i>agression</i><par n="part__n"/></e>
-    <e lm="agricultor"><i>agricultor</i><par n="conselhèr__n"/></e>
+    <e lm="agricultor"><i>agricult</i><par n="dictat/or__n"/></e>
     <e lm="agricultura"><i>agricultur</i><par n="jornad/a__n"/></e>
     <e lm="agropacion"><i>agropacion</i><par n="part__n"/></e>
     <e lm="agrupacion" r="LR"><i>agrupacion</i><par n="part__n"/></e>
@@ -21309,9 +21310,9 @@
     <e lm="blaga" r="LR"><i>blag</i><par n="hormig/a__n"/></e>
     <e lm="bòla"><i>bòl</i><par n="jornad/a__n"/></e>
     <e lm="bola" r="LR"><i>bol</i><par n="jornad/a__n"/></e>
-      <e r="LR" lm="blat" alt="oci@aran"><i>blat</i><par n="personau__n"/></e>
-      <e r="LR" lm="blat" alt="oci@gascon"><i>blat</i><par n="personau__n"/></e>
-    <e lm="blat" alt="oci"><i>blat</i><par n="personau__n"/></e>
+      <e r="LR" lm="blat" alt="oci@aran"><i>blat</i><par n="conselh__n"/></e>
+      <e r="LR" lm="blat" alt="oci@gascon"><i>blat</i><par n="conselh__n"/></e>
+    <e lm="blat" alt="oci"><i>blat</i><par n="conselh__n"/></e>
     <e lm="blòc"><i>blòc</i><par n="conselh__n"/></e>
     <e lm="boca"><i>bo</i><par n="va/ca__n"/></e>
     <e lm="bocai"><i>bocai</i><par n="conselh__n"/></e>
@@ -21357,7 +21358,7 @@
     <e lm="brac" r="LR"><i>brac</i><par n="conselh__n"/></e>
     <e lm="brandida" r="LR"><i>brandid</i><par n="jornad/a__n"/></e>
     <e lm="braulon"><i>braulon</i><par n="conselh__n"/></e>
-    <e lm="bren"><i>bren</i><par n="personau__n"/></e>
+    <e lm="bren"><i>bren</i><par n="conselh__n"/></e>
     <e lm="brèu"><i>brèu</i><par n="conselh__n"/></e>
     <e lm="brigand" r="LR"><i>brigand</i><par n="conselhèr__n"/></e>
     <e lm="bròc"><i>brò</i><par n="ris/c__n"/></e>
@@ -21788,12 +21789,12 @@
     <e lm="clausula"><i>clausul</i><par n="jornad/a__n"/></e>
     <e lm="client"><i>client</i><par n="conselhèr__n"/></e>
     <e lm="clinica" a="carmentano"><i>clini</i><par n="va/ca__n"/></e>
-    <e lm="cloquièr" alt="oci"><i>cloquiè</i><par n="presoniè/r__n"/></e>
+    <e lm="cloquièr" alt="oci"><i>cloquièr</i><par n="conselh__n"/></e>
     <e lm="club"><i>club</i><par n="conselh__n"/></e>
     <e lm="coalicion"><i>coalicion</i><par n="part__n"/></e>
     <e lm="cobertura"><i>cobertur</i><par n="jornad/a__n"/></e>
     <e lm="coble"><i>coble</i><par n="conselh__n"/></e>
-    <e lm="còca"><i>còc</i><par n="jornad/a__n"/></e>
+    <e lm="còca"><i>cò</i><par n="va/ca__n"/></e>
     <e lm="cocaïna" a="carmentano"><i>cocaïn</i><par n="jornad/a__n"/></e>
     <e lm="cocha"><i>coch</i><par n="jornad/a__n"/></e>
     <e lm="veitura" alt="oci"><i>veitur</i><par n="jornad/a__n"/></e>
@@ -22205,7 +22206,7 @@
     <e lm="cort"><i>cort</i><par n="part__n"/></e>
     <e lm="cort suprèma"><i>cort</i><par n="cort/_suprèma__n"/></e>
     <e lm="còs" r="LR"><i>còs</i><par n="pas__n"/></e>
-    <e lm="còrs"><i>còrs</i><par n="pas__n"/></e>
+    <e lm="còrs"><i>còrs</i><par n="mes__n"/></e>
     <e lm="cosin"><i>cosi</i><par n="cosi/n__n"/></e>
       <e r="LR" lm="còsso" alt="oci"><i>còss</i><par n="Moss/o__n"/></e>
     <e lm="còsso" alt="oci@aran"><i>còss</i><par n="Moss/o__n"/></e>
@@ -22372,7 +22373,7 @@
     <e lm="denegacion"><i>denegacion</i><par n="part__n"/></e>
     <e lm="denominacion"><i>denominacion</i><par n="part__n"/></e>
     <e lm="denóncia"><i>denónci</i><par n="jornad/a__n"/></e>
-    <e lm="dent"><i>dent</i><par n="conselh__n"/></e>
+    <e lm="dent"><i>dent</i><par n="part__n"/></e>
       <e r="LR" lm="dentilha" alt="oci"><i>dentilh</i><par n="jornad/a__n"/></e>
     <e lm="dentilha" alt="oci@aran"><i>dentilh</i><par n="jornad/a__n"/></e>
     <e lm="dentilha" alt="oci@gascon"><i>dentilh</i><par n="jornad/a__n"/></e>
@@ -22645,7 +22646,9 @@
     <e lm="document"><i>document</i><par n="conselh__n"/></e>
     <e lm="DOGC"><i>DOGC</i><par n="BBVA__n"/></e>
     <e lm="dolar"><i>dolar</i><par n="conselh__n"/></e>
-    <e lm="dolor" a="carmentano"><i>dolor</i><par n="conselh__n"/></e>
+    <e lm="dolor" a="carmentano" alt="oci@aran"><i>dolor</i><par n="conselh__n"/></e>
+    <e lm="dolor" alt="oci@gascon"><i>dolor</i><par n="part__n"/></e>
+    <e lm="dolor" alt="oci"><i>dolor</i><par n="part__n"/></e>
     <e lm="domeni"><i>domeni</i><par n="conselh__n"/></e>
     <e lm="domèni" r="LR"><i>domèni</i><par n="conselh__n"/></e>
     <e lm="domiciliacion"><i>domiciliacion</i><par n="part__n"/></e>
@@ -22776,10 +22779,10 @@
     <e lm="encoratjament"><i>encoratjament</i><par n="conselh__n"/></e>
     <e lm="endret" alt="oci@aran"><i>endret</i><par n="conselh__n"/></e>
     <e lm="endret" alt="oci@gascon"><i>endret</i><par n="conselh__n"/></e>
-    <e lm="endrech" alt="oci"><i>endrech</i><par n="conselh__n"/></e>
+    <e lm="endrech" alt="oci"><i>endrech</i><par n="mes__n"/></e>
     <e lm="endret" alt="oci" r="LR"><i>endret</i><par n="conselh__n"/></e>
-    <e lm="endrech" alt="oci@aran" r="LR"><i>endrech</i><par n="conselh__n"/></e>
-    <e lm="endrech" alt="oci@gascon" r="LR"><i>endrech</i><par n="conselh__n"/></e>
+    <e lm="endrech" alt="oci@aran" r="LR"><i>endrech</i><par n="mes__n"/></e>
+    <e lm="endrech" alt="oci@gascon" r="LR"><i>endrech</i><par n="mes__n"/></e>
     <e lm="endreit" r="LR"><i>endreit</i><par n="conselh__n"/></e>
     <e lm="energia"><i>energi</i><par n="jornad/a__n"/></e>
       <e r="LR" lm="enganha" alt="oci"><i>enganh</i><par n="jornad/a__n"/></e>
@@ -22859,7 +22862,9 @@
     <e lm="ermitatge"><i>ermitatge</i><par n="conselh__n"/></e>
     <e lm="imam"><i>imam</i><par n="conselh__n"/></e>
     <e lm="errança"><i>erran</i><par n="seden/ça__n"/></e>
-    <e lm="error" a="carmentano"><i>error</i><par n="conselh__n"/></e>
+    <e lm="error" a="carmentano" alt="oci@aran"><i>error</i><par n="conselh__n"/></e>
+    <e lm="error" alt="oci@gascon"><i>error</i><par n="part__n"/></e>
+    <e lm="error" alt="oci"><i>error</i><par n="part__n"/></e>
     <e lm="esbaus"><i>esbaus</i><par n="mes__n"/></e>
     <e lm="esbaussament" a="carmentano"><i>esbaussament</i><par n="conselh__n"/></e>
     <e lm="esbòç" r="LR"><i>esbò</i><par n="tra/ç__n"/></e>
@@ -23006,7 +23011,7 @@
     <e lm="èst"><i>èst</i><par n="personau__n"/></e>
     <e lm="estil"><i>estil</i><par n="conselh__n"/></e>
     <e lm="estimacion"><i>estimacion</i><par n="part__n"/></e>
-    <e lm="estomac"><i>estoma</i><par n="ris/c__n"/></e>
+    <e lm="estomac"><i>estomac</i><par n="conselh__n"/></e>
     <e lm="estona"><i>eston</i><par n="jornad/a__n"/></e>
     <e lm="estonament"><i>estonament</i><par n="conselh__n"/></e>
     <e lm="estossegadera"><i>estossegader</i><par n="jornad/a__n"/></e>
@@ -23096,7 +23101,7 @@
     <e lm="extincion" r="LR"><i>extincion</i><par n="part__n"/></e>
     <e lm="extradicion" a="carmentano"><i>extradicion</i><par n="part__n"/></e>
     <e lm="fabricacion"><i>fabricacion</i><par n="part__n"/></e>
-    <e lm="fabrica"><i>fabric</i><par n="jornad/a__n"/></e>
+    <e lm="fabrica"><i>fabri</i><par n="va/ca__n"/></e>
     <e lm="capa"><i>cap</i><par n="jornad/a__n"/></e>
     <e lm="façada"><i>façad</i><par n="jornad/a__n"/></e>
     <e lm="facilitacion"><i>facilitacion</i><par n="part__n"/></e>
@@ -23117,7 +23122,9 @@
     <e lm="fauna"><i>faun</i><par n="jornad/a__n"/></e>
     <e lm="faussada"><i>faussad</i><par n="jornad/a__n"/></e>
     <e lm="fauta"><i>faut</i><par n="jornad/a__n"/></e>
-    <e lm="favor"><i>favor</i><par n="conselh__n"/></e>
+    <e lm="favor" alt="oci"><i>favor</i><par n="part__n"/></e>
+    <e lm="favor" alt="oci@gascon"><i>favor</i><par n="part__n"/></e>
+    <e lm="favor" alt="oci@aran"><i>favor</i><par n="conselh__n"/></e>
     <e lm="fe" a="carmentano"><i>fe</i><par n="part__n"/></e>
     <e lm="federacion"><i>federacion</i><par n="part__n"/></e>
     <e lm="federalisme" a="carmentano"><i>federalisme</i><par n="conselh__n"/></e>
@@ -23227,16 +23234,16 @@
       <e r="LR" lm="frut" alt="oci"><i>frut</i><par n="conselh__n"/></e>
     <e lm="frut" alt="oci@aran"><i>frut</i><par n="conselh__n"/></e>
     <e lm="frut" alt="oci@gascon"><i>frut</i><par n="conselh__n"/></e>
-      <e r="LR" lm="fruch" alt="oci@aran"><i>fruch</i><par n="conselh__n"/></e>
-      <e r="LR" lm="fruch" alt="oci@gascon"><i>fruch</i><par n="conselh__n"/></e>
-    <e lm="fruch" alt="oci"><i>fruch</i><par n="conselh__n"/></e>
+      <e r="LR" lm="fruch" alt="oci@aran"><i>fruch</i><par n="mes__n"/></e>
+      <e r="LR" lm="fruch" alt="oci@gascon"><i>fruch</i><par n="mes__n"/></e>
+    <e lm="fruch" alt="oci"><i>fruch</i><par n="mes__n"/></e>
     <e lm="funerària"><i>funeràri</i><par n="jornad/a__n"/></e>
     <e lm="futur"><i>futur</i><par n="conselh__n"/></e>
     <e lm="gàbia"><i>gàbi</i><par n="jornad/a__n"/></e>
     <e lm="gabia" r="LR"><i>gabi</i><par n="jornad/a__n"/></e>
     <e lm="gabinet"><i>gabinet</i><par n="conselh__n"/></e>
     <e lm="gachet"><i>gachet</i><par n="conselh__n"/></e>
-    <e lm="gach"><i>gach</i><par n="conselh__n"/></e>
+    <e lm="gach"><i>gach</i><par n="mes__n"/></e>
     <e lm="gahús" r="LR"><i>gah</i><par n="autob/ús__n"/></e>
     <e lm="gai"><i>gai</i><par n="conselh__n"/></e>
     <e lm="galapian"><i>galapian</i><par n="conselhèr__n"/></e>
@@ -24106,9 +24113,9 @@
       <e r="LR" lm="lèit" a="carmentano" alt="oci"><i>lèit</i><par n="part__n"/></e>
     <e lm="lèit" a="carmentano" alt="oci@aran"><i>lèit</i><par n="part__n"/></e>
     <e lm="lèit" a="carmentano" alt="oci@gascon"><i>lèit</i><par n="part__n"/></e>
-      <e r="LR" lm="lach" a="carmentano" alt="oci@aran"><i>lach</i><par n="conselh__n"/></e>
-      <e r="LR" lm="lach" a="carmentano" alt="oci@gascon"><i>lach</i><par n="conselh__n"/></e>
-    <e lm="lach" a="carmentano" alt="oci"><i>lach</i><par n="conselh__n"/></e>
+      <e r="LR" lm="lach" a="carmentano" alt="oci@aran"><i>lach</i><par n="mes__n"/></e>
+      <e r="LR" lm="lach" a="carmentano" alt="oci@gascon"><i>lach</i><par n="mes__n"/></e>
+    <e lm="lach" a="carmentano" alt="oci"><i>lach</i><par n="mes__n"/></e>
     <e lm="lait" r="LR"><i>lait</i><par n="part__n"/></e>
     <e lm="leitaria"><i>leitari</i><par n="jornad/a__n"/></e>
     <e lm="lèma"><i>lèm</i><par n="di/a__n"/></e>
@@ -24149,9 +24156,9 @@
       <e r="LR" lm="lhet" alt="oci"><i>lhet</i><par n="conselh__n"/></e>
     <e lm="lhet" alt="oci@aran"><i>lhet</i><par n="conselh__n"/></e>
     <e lm="lhet" alt="oci@gascon"><i>lhet</i><par n="conselh__n"/></e>
-      <e r="LR" lm="lièch" alt="oci@aran"><i>lièch</i><par n="conselh__n"/></e>
-      <e r="LR" lm="lièch" alt="oci@gascon"><i>lièch</i><par n="conselh__n"/></e>
-    <e lm="lièch" alt="oci"><i>lièch</i><par n="conselh__n"/></e>
+      <e r="LR" lm="lièch" alt="oci@aran"><i>lièch</i><par n="mes__n"/></e>
+      <e r="LR" lm="lièch" alt="oci@gascon"><i>lièch</i><par n="mes__n"/></e>
+    <e lm="lièch" alt="oci"><i>lièch</i><par n="mes__n"/></e>
     <e lm="libertat"><i>libertat</i><par n="part__n"/></e>
     <e lm="libre"><i>libre</i><par n="conselh__n"/></e>
     <e lm="libe" r="LR"><i>libe</i><par n="conselh__n"/></e>
@@ -25108,7 +25115,7 @@
     <e lm="personatge"><i>personatge</i><par n="conselh__n"/></e>
     <e lm="personal"><i>persona</i><par n="cè/l__n"/></e>
     <e lm="apartheid"><i>apartheid</i><par n="personau__n"/></e>
-    <e lm="agressor"><i>agressor</i><par n="conselhèr__n"/></e>
+    <e lm="agressor"><i>agresso</i><par n="operado/r__n"/></e>
     <e lm="benzina"><i>benzin</i><par n="jornad/a__n"/></e>
     <e lm="perspectiua" r="LR"><i>perspectiu</i><par n="jornad/a__n"/></e>
     <e lm="perspectiva" a="carmentano"><i>perspectiv</i><par n="jornad/a__n"/></e>
@@ -25427,9 +25434,9 @@
       <e r="LR" lm="producte" alt="oci"><i>producte</i><par n="conselh__n"/></e>
     <e lm="producte" alt="oci@aran"><i>producte</i><par n="conselh__n"/></e>
     <e lm="producte" alt="oci@gascon"><i>producte</i><par n="conselh__n"/></e>
-      <e r="LR" lm="produch" alt="oci@aran"><i>produch</i><par n="conselh__n"/></e>
-      <e r="LR" lm="produch" alt="oci@gascon"><i>produch</i><par n="conselh__n"/></e>
-    <e lm="produch" alt="oci"><i>produch</i><par n="conselh__n"/></e>
+      <e r="LR" lm="produch" alt="oci@aran"><i>produch</i><par n="mes__n"/></e>
+      <e r="LR" lm="produch" alt="oci@gascon"><i>produch</i><par n="mes__n"/></e>
+    <e lm="produch" alt="oci"><i>produch</i><par n="mes__n"/></e>
     <e lm="produit" r="LR"><i>produit</i><par n="conselh__n"/></e>
     <e lm="patac" r="LR"><i>patac</i><par n="conselh__n"/></e>
     <e lm="productor"><i>productor</i><par n="conselhèr__n"/></e>
@@ -25726,7 +25733,7 @@
     <e lm="rei"><i>rei</i><par n="rei__n"/></e>
     <e lm="arrei" r="LR"><i>arrei</i><par n="rei__n"/></e>
     <e lm="reinatge"><i>reinatge</i><par n="conselh__n"/></e>
-    <e lm="esplech" r="LR"><i>esplech</i><par n="conselh__n"/></e>
+    <e lm="esplech" r="LR"><i>esplech</i><par n="mes__n"/></e>
     <e lm="espleit" r="LR"><i>espleit</i><par n="conselh__n"/></e>
     <e lm="reïncidéncia"><i>reïncidénci</i><par n="jornad/a__n"/></e>
     <e lm="reinstauracion"><i>reinstauracion</i><par n="part__n"/></e>
@@ -32950,11 +32957,9 @@
     <e lm="mantèl"><i>mantèl</i><par n="conselh__n"/></e>
     <e lm="saile" r="LR"><i>saile</i><par n="conselh__n"/></e>
     <e lm="còlportaire"><i>còlportair</i><par n="ministr/e__n"/></e>
-    <e lm="aucèl" alt="oci"><i>aucèl</i><par n="conselh__n"/></e>
     <e lm="trasmeteire"><i>trasmeteir</i><par n="ministr/e__n"/></e>
-      <e r="LR" lm="ausèl" alt="oci@aran"><i>ausèl</i><par n="conselh__n"/></e>
-      <e r="LR" lm="ausèl" alt="oci@gascon"><i>ausèl</i><par n="conselh__n"/></e>
-    <e lm="ausèl" alt="oci"><i>ausèl</i><par n="conselh__n"/></e>
+    <e lm="aucèl"><i>aucè</i><par n="castè/l__n"/></e>
+    <e lm="ausèl"><i>ausè</i><par n="castè/l__n"/></e>
       <e r="LR" lm="audèth" alt="oci"><i>audèth</i><par n="conselh__n"/></e>
     <e lm="audèth" alt="oci@aran"><i>audèth</i><par n="conselh__n"/></e>
     <e lm="audèth" alt="oci@gascon"><i>audèth</i><par n="conselh__n"/></e>
@@ -33936,7 +33941,7 @@
     <e lm="encharir" r="LR"><i>enchar</i><par n="magr/èrem__vblex"/></e>
     <e lm="sufisença"><i>sufisen</i><par n="seden/ça__n"/></e>
     <e lm="abduccion"><i>abduccion</i><par n="part__n"/></e>
-    <e lm="abelhaire"><i>abelhaire</i><par n="conselh__n"/></e>
+    <e lm="abelhaire"><i>abelhair</i><par n="ministr/e__n"/></e>
     <e lm="abestit"><i>abesti</i><par n="estima/t__adj"/></e>
     <e lm="abrutit"><i>abruti</i><par n="estima/t__adj"/></e>
     <e lm="ornar"><i/><par n="aband/o[N]ar__vblex" prm="rn"/></e>
@@ -34698,7 +34703,7 @@
     <e lm="Jerusalem" a="carmentano"><i>Jerusalem</i><par n="Aran__np"/></e>
     <e lm="incertitud" a="carmentano"><i>incertitud</i><par n="part__n"/></e>
     <e lm="intelligent" a="carmentano"><i>intelligent</i><par n="content__adj"/></e>
-    <e lm="flamenc" a="carmentano"><i>flamenc</i><par n="conselh__n"/></e>
+    <e lm="flamenc" a="carmentano"><i>flamenc</i><par n="conselhèr__n"/></e>
     <e lm="malhorquin" a="carmentano"><i>malhorquin</i><par n="content__adj"/></e>
     <e lm="debutar" a="carmentano"><i>deb</i><par n="ab/u[S]ar__vblex" prm="t"/></e>
     <e lm="allusion" a="carmentano"><i>allusion</i><par n="part__n"/></e>
@@ -34817,54 +34822,54 @@
     <e lm="Shin-Chan" a="carmentano"><i>Shin-Chan</i><par n="Abad__np"/></e>
     <e lm="jazz" a="carmentano"><i>jazz</i><par n="personau__n"/></e>
     <e lm="tv3" a="carmentano"><i>tv3</i><par n="ABC__np"/></e>
-    <e lm="setmanèr" a=" mmonge"><i>setmanèr</i><par n="conselh__n"/></e>
-    <e lm="televisiu" a=" mmonge"><i>televisi</i><par n="representati/u__adj"/></e>
+    <e lm="setmanèr" a="mmonge"><i>setmanèr</i><par n="conselh__n"/></e>
+    <e lm="televisiu" a="mmonge"><i>televisi</i><par n="representati/u__adj"/></e>
     <e lm="expressiu"><i>expressi</i><par n="representati/u__adj"/></e>
-    <e lm="reclassament" a=" mmonge" c="també podem trobar la paraula reclassificacion"><i>reclassament</i><par n="conselh__n"/></e>
+    <e lm="reclassament" a="mmonge" c="també podem trobar la paraula reclassificacion"><i>reclassament</i><par n="conselh__n"/></e>
     <e lm="reclassificacion" a="carmentano" r="LR"><i>reclassificacion</i><par n="part__n"/></e>
-    <e lm="especulador" a=" mmonge"><i>especulador</i><par n="conselhèr__n"/></e>
-    <e lm="insostenible" a=" mmonge"><i>insostenibl</i><par n="ampl/e__adj"/></e>
-    <e lm="inviable" a=" mmonge"><i>inviable</i><par n="generau__adj"/></e>
+    <e lm="especulador" a="mmonge"><i>especulador</i><par n="conselhèr__n"/></e>
+    <e lm="insostenible" a="mmonge"><i>insostenibl</i><par n="ampl/e__adj"/></e>
+    <e lm="inviable" a="mmonge"><i>inviable</i><par n="generau__adj"/></e>
     <e lm="predador" a="carmentano"><i>predador</i><par n="content__adj"/></e>
-    <e lm="delinqüent" a=" mmonge"><i>delinqüent</i><par n="conselhèr__n"/></e>
-    <e lm="demagogia" a=" mmonge"><i>demagogi</i><par n="jornad/a__n"/></e>
-    <e lm="cautelar" a=" mmonge"><i>cautelar</i><par n="generau__adj"/></e>
-    <e lm="magne" a=" mmonge"><i>magn</i><par n="ampl/e__adj"/></e>
-    <e lm="irreversible" a=" mmonge"><i>irreversibl</i><par n="ampl/e__adj"/></e>
-    <e lm="pedriatre" a=" mmonge"><i>pedriatr</i><par n="ministr/e__n"/></e>
+    <e lm="delinqüent" a="mmonge"><i>delinqüent</i><par n="conselhèr__n"/></e>
+    <e lm="demagogia" a="mmonge"><i>demagogi</i><par n="jornad/a__n"/></e>
+    <e lm="cautelar" a="mmonge"><i>cautelar</i><par n="generau__adj"/></e>
+    <e lm="magne" a="mmonge"><i>magn</i><par n="ampl/e__adj"/></e>
+    <e lm="irreversible" a="mmonge"><i>irreversibl</i><par n="ampl/e__adj"/></e>
+    <e lm="pedriatre" a="mmonge"><i>pedriatr</i><par n="ministr/e__n"/></e>
     <e lm="antifranquista" a="carmentano"><i>antifranquist</i><par n="agricòl/a__adj"/></e>
-    <e lm="legitimitat" a=" mmonge"><i>legitimitat</i><par n="part__n"/></e>
-    <e lm="contenciós" a=" mmonge"><i>contenci</i><par n="perilh/ós__adj"/></e>
+    <e lm="legitimitat" a="mmonge"><i>legitimitat</i><par n="part__n"/></e>
+    <e lm="contenciós" a="mmonge"><i>contenci</i><par n="perilh/ós__adj"/></e>
     <e lm="criptic" a="carmentano"><i>cripti</i><par n="tecni/c__adj"/></e>
-    <e lm="disputa" a=" mmonge" c="sinònims: altercacion, litigi, batalha"><i>disput</i><par n="jornad/a__n"/></e>
+    <e lm="disputa" a="mmonge" c="sinònims: altercacion, litigi, batalha"><i>disput</i><par n="jornad/a__n"/></e>
     <e lm="intèrnament"><i>intèrnament</i><par n="conselh__n"/></e>
-    <e lm="ambicion" a=" mmonge"><i>ambicion</i><par n="part__n"/></e>
-    <e lm="altercacion" a=" mmonge"><i>altercacion</i><par n="part__n"/></e>
-    <e lm="confluéncia" a=" mmonge"><i>confluénci</i><par n="jornad/a__n"/></e>
+    <e lm="ambicion" a="mmonge"><i>ambicion</i><par n="part__n"/></e>
+    <e lm="altercacion" a="mmonge"><i>altercacion</i><par n="part__n"/></e>
+    <e lm="confluéncia" a="mmonge"><i>confluénci</i><par n="jornad/a__n"/></e>
     <e lm="deméncia"><i>deménci</i><par n="jornad/a__n"/></e>
     <e lm="categoric" a="carmentano"><i>categori</i><par n="tecni/c__adj"/></e>
     <e lm="analgesic" a="carmentano"><i>analgesi</i><par n="tecni/c__adj"/></e>
     <e lm="magnetic"  a="dgimeno"><i>magneti</i><par n="tecni/c__adj"/></e>
-    <e lm="cercaire" a=" mmonge"><i>cercair</i><par n="ministr/e__n"/></e>
-    <e lm="directòri" a=" mmonge"><i>directòri</i><par n="conselh__n"/></e>
-    <e lm="orror" a=" mmonge"><i>orror</i><par n="conselh__n"/></e>
-    <e lm="complicacion" a=" mmonge"><i>complicacion</i><par n="part__n"/></e>
-    <e lm="simplicitat" a=" mmonge" r="RL"><i>simplicitat</i><par n="part__n"/></e>
+    <e lm="cercaire" a="mmonge"><i>cercair</i><par n="ministr/e__n"/></e>
+    <e lm="directòri" a="mmonge"><i>directòri</i><par n="conselh__n"/></e>
+    <e lm="orror" a="mmonge"><i>orror</i><par n="conselh__n"/></e>
+    <e lm="complicacion" a="mmonge"><i>complicacion</i><par n="part__n"/></e>
+    <e lm="simplicitat" a="mmonge" r="RL"><i>simplicitat</i><par n="part__n"/></e>
     <e lm="simplicitat" a="carmentano"><i>simplicitat</i><par n="part__n"/></e>
-    <e lm="preistoric" a=" mmonge"><i>preistori</i><par n="tecni/c__adj"/></e>
-    <e lm="primigèni" a=" mmonge"><i>primigèni</i><par n="trabalhador__adj"/></e>
-    <e lm="innovador" a=" mmonge"><i>innovador</i><par n="trabalhador__adj"/></e>
-    <e lm="extraterrèstre" a=" mmonge"><i>extraterrèstr</i><par n="ministr/e__n"/></e>
-    <e lm="programatic" a=" mmonge"><i>programati</i><par n="tecni/c__adj"/></e>
-    <e lm="globalitat" a=" mmonge"><i>globalitat</i><par n="part__n"/></e>
-    <e lm="protagonisme" a=" mmonge"><i>protagonisme</i><par n="conselh__n"/></e>
-    <e lm="expectativa" a=" mmonge"><i>expectativ</i><par n="jornad/a__n"/></e>
-    <e lm="relat" a=" mmonge"><i>relat</i><par n="conselh__n"/></e>
-    <e lm="factor" a=" mmonge"><i>factor</i><par n="conselh__n"/></e>
-    <e lm="lideratge" a=" mmonge"><i>lideratge</i><par n="conselh__n"/></e>
-    <e lm="protagonizar" a=" mmonge"><i>protagon</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
-    <e lm="escandalizar" a=" mmonge"><i>escandal</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
-    <e lm="mercador" a=" mmonge"><i>mercador</i><par n="conselhèr__n"/></e>
+    <e lm="preistoric" a="mmonge"><i>preistori</i><par n="tecni/c__adj"/></e>
+    <e lm="primigèni" a="mmonge"><i>primigèni</i><par n="trabalhador__adj"/></e>
+    <e lm="innovador" a="mmonge"><i>innovador</i><par n="trabalhador__adj"/></e>
+    <e lm="extraterrèstre" a="mmonge"><i>extraterrèstr</i><par n="ministr/e__n"/></e>
+    <e lm="programatic" a="mmonge"><i>programati</i><par n="tecni/c__adj"/></e>
+    <e lm="globalitat" a="mmonge"><i>globalitat</i><par n="part__n"/></e>
+    <e lm="protagonisme" a="mmonge"><i>protagonisme</i><par n="conselh__n"/></e>
+    <e lm="expectativa" a="mmonge"><i>expectativ</i><par n="jornad/a__n"/></e>
+    <e lm="relat" a="mmonge"><i>relat</i><par n="conselh__n"/></e>
+    <e lm="factor" a="mmonge"><i>factor</i><par n="conselh__n"/></e>
+    <e lm="lideratge" a="mmonge"><i>lideratge</i><par n="conselh__n"/></e>
+    <e lm="protagonizar" a="mmonge"><i>protagon</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+    <e lm="escandalizar" a="mmonge"><i>escandal</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+    <e lm="mercador" a="mmonge"><i>mercador</i><par n="conselhèr__n"/></e>
     <e lm="Corèa" a="carmentano"><i>Corèa</i><par n="Aran__np"/></e>
     <e lm="Provença" a="carmentano"><i>Provença</i><par n="Aran__np"/></e>
     <e lm="relativament"><i>relati</i><par n="acti/vament__adv"/></e>
@@ -35373,7 +35378,7 @@
     <e lm="comoditat" a="carmentano"><i>comoditat</i><par n="part__n"/></e>
     <e lm="blindatge" a="carmentano"><i>blindatge</i><par n="conselh__n"/></e>
     <e lm="anecdòta" a="carmentano"><i>anecdòt</i><par n="jornad/a__n"/></e>
-    <e lm="chèc" a="carmentano"><i>chèc</i><par n="conselh__n"/></e>
+    <e lm="chèc"><i>chè</i><par n="sindi/c__n"/></e>
     <e lm="sintèsi" a="carmentano"><i>sintèsi</i><par n="part__n"/></e>
     <e lm="continualament"><i>continua</i><par n="accidenta/lament__adv"/></e>
     <e lm="aparença" a="carmentano" r="LR"><i>aparen</i><par n="seden/ça__n"/></e>
@@ -35543,12 +35548,12 @@
     <e lm="Flores" a="carmentano"><i>Flores</i><par n="Abad__np"/></e>
     <e lm="prim" a="carmentano"><i>prim</i><par n="content__adj"/></e>
     <e lm="reunion" a="carmentano"><i>re</i><par n="u/ü"/><i>nion</i><par n="part__n"/></e>
-    <e lm="postguèrra" a=" mmonge"><i>postguèrr</i><par n="jornad/a__n"/></e>
-    <e lm="tramontana" a=" mmonge"><i>tramontan</i><par n="jornad/a__n"/></e>
-    <e lm="integrant" a=" mmonge"><i>integrant</i><par n="trabalhador__adj"/></e>
-    <e lm="rosigar" a=" mmonge"><i>ros</i><par n="esl/i[N]gar__vblex" prm=""/></e>
-    <e lm="marqueting" a=" mmonge"><i>marqueting</i><par n="personau__n"/></e>
-    <e lm="retratar" a=" mmonge"><i>retr</i><par n="c/a[NT]ar__vblex" prm="t"/></e>
+    <e lm="postguèrra" a="mmonge"><i>postguèrr</i><par n="jornad/a__n"/></e>
+    <e lm="tramontana" a="mmonge"><i>tramontan</i><par n="jornad/a__n"/></e>
+    <e lm="integrant" a="mmonge"><i>integrant</i><par n="trabalhador__adj"/></e>
+    <e lm="rosigar" a="mmonge"><i>ros</i><par n="esl/i[N]gar__vblex" prm=""/></e>
+    <e lm="marqueting" a="mmonge"><i>marqueting</i><par n="personau__n"/></e>
+    <e lm="retratar" a="mmonge"><i>retr</i><par n="c/a[NT]ar__vblex" prm="t"/></e>
     <e lm="catastròfa" a="carmentano"><i>catastròf</i><par n="jornad/a__n"/></e>
     <e lm="Tele-5" a="carmentano"><i>Tele-5</i><par n="ABC__np"/></e>
     <e lm="Danny" a="carmentano"><i>Danny</i><par n="Abad__np"/></e>
@@ -35805,68 +35810,68 @@
     <e lm="Belgrad" a="carmentano"><i>Belgrad</i><par n="Aran__np"/></e>
     <e lm="Tèxas" a="carmentano"><i>Tèxas</i><par n="Aran__np"/></e>
     <e lm="paquistanés" a="carmentano"><i>paquistan</i><par n="aran/és__adj"/></e>
-    <e lm="campus" a=" mmonge"><i>campus</i><par n="deluns__n"/></e>
-    <e lm="cm" a=" mmonge"><i>cm</i><par n="deluns__n"/></e>
+    <e lm="campus" a="mmonge"><i>campus</i><par n="deluns__n"/></e>
+    <e lm="cm" a="mmonge"><i>cm</i><par n="deluns__n"/></e>
     <e lm="collapsus" r="LR"><i>collapsus</i><par n="deluns__n"/></e>
     <e lm="escrancament"><i>escrancament</i><par n="conselh__n"/></e>
-    <e lm="amonestar" a=" mmonge"><i>amonest</i><par n="ami/ar__vblex"/></e>
-    <e lm="beneficiar" a=" mmonge"><i>benefici</i><par n="ami/ar__vblex"/></e>
-    <e lm="longmetratge" a=" mmonge"><i>longmetratge</i><par n="conselh__n"/></e>
-    <e lm="greujar" a=" mmonge"><i>gr</i><par n="agr/e[U]jar__vblex" prm="u"/></e>
-    <e lm="etarra" a=" mmonge"><i>etarr</i><par n="guardi/a__n"/></e>
-    <e lm="contrarestar" a=" mmonge"><i>contrar</i><par n="lid/e[R]ar__vblex" prm="st"/></e>
-    <e lm="rambalh" a=" mmonge"><i>rambalh</i><par n="conselh__n"/></e>
-      <e r="LR" lm="redaurir" a=" mmonge" alt="oci"><i>redaur</i><par n="magr/èrem__vblex"/></e>
-    <e lm="redaurir" a=" mmonge" alt="oci@aran"><i>redaur</i><par n="magr/èrem__vblex"/></e>
-    <e lm="redaurir" a=" mmonge" alt="oci@gascon"><i>redaur</i><par n="magr/èrem__vblex"/></e>
+    <e lm="amonestar" a="mmonge"><i>amonest</i><par n="ami/ar__vblex"/></e>
+    <e lm="beneficiar" a="mmonge"><i>benefici</i><par n="ami/ar__vblex"/></e>
+    <e lm="longmetratge" a="mmonge"><i>longmetratge</i><par n="conselh__n"/></e>
+    <e lm="greujar" a="mmonge"><i>gr</i><par n="agr/e[U]jar__vblex" prm="u"/></e>
+    <e lm="etarra" a="mmonge"><i>etarr</i><par n="guardi/a__n"/></e>
+    <e lm="contrarestar" a="mmonge"><i>contrar</i><par n="lid/e[R]ar__vblex" prm="st"/></e>
+    <e lm="rambalh" a="mmonge"><i>rambalh</i><par n="conselh__n"/></e>
+      <e r="LR" lm="redaurir" a="mmonge" alt="oci"><i>redaur</i><par n="magr/èrem__vblex"/></e>
+    <e lm="redaurir" a="mmonge" alt="oci@aran"><i>redaur</i><par n="magr/èrem__vblex"/></e>
+    <e lm="redaurir" a="mmonge" alt="oci@gascon"><i>redaur</i><par n="magr/èrem__vblex"/></e>
       <e r="LR" lm="redobrir" alt="oci@aran"><i>redobr</i><par n="magr/èrem__vblex"/></e>
       <e r="LR" lm="redobrir" alt="oci@gascon"><i>redobr</i><par n="magr/èrem__vblex"/></e>
     <e lm="redobrir" alt="oci"><i>redobr</i><par n="magr/èrem__vblex"/></e>
     <e lm="redubrir" r="LR"><i>redubr</i><par n="magr/èrem__vblex"/></e>
     <e lm="reobrir" r="LR"><i>reobr</i><par n="magr/èrem__vblex"/></e>
-    <e lm="subsaarian" a=" mmonge"><i>subsaarian</i><par n="trabalhador__adj"/></e>
-    <e lm="alcaldia" a=" mmonge"><i>alcaldi</i><par n="jornad/a__n"/></e>
-    <e lm="vencedor" a=" mmonge"><i>vencedor</i><par n="conselhèr__n"/></e>
-    <e lm="reng" a=" mmonge"><i>reng</i><par n="conselh__n"/></e>
-    <e lm="licenciat" a=" mmonge"><i>licencia</i><par n="apropria/t__adj"/></e>
-    <e lm="activar" a=" mmonge"><i>act</i><par n="ab/i[T]ar__vblex" prm="v"/></e>
+    <e lm="subsaarian" a="mmonge"><i>subsaarian</i><par n="trabalhador__adj"/></e>
+    <e lm="alcaldia" a="mmonge"><i>alcaldi</i><par n="jornad/a__n"/></e>
+    <e lm="vencedor" a="mmonge"><i>vencedor</i><par n="conselhèr__n"/></e>
+    <e lm="reng" a="mmonge"><i>reng</i><par n="conselh__n"/></e>
+    <e lm="licenciat" a="mmonge"><i>licencia</i><par n="apropria/t__adj"/></e>
+    <e lm="activar" a="mmonge"><i>act</i><par n="ab/i[T]ar__vblex" prm="v"/></e>
     <e lm="reactivar"><i>react</i><par n="ab/i[T]ar__vblex" prm="v"/></e>
     <e lm="inactivar"><i>inact</i><par n="ab/i[T]ar__vblex" prm="v"/></e>
-      <e r="LR" lm="actuar" a=" mmonge" alt="oci"><i>actu</i><par n="ami/ar__vblex"/></e>
-    <e lm="actuar" a=" mmonge" alt="oci@aran"><i>actu</i><par n="ami/ar__vblex"/></e>
-    <e lm="actuar" a=" mmonge" alt="oci@gascon"><i>actu</i><par n="ami/ar__vblex"/></e>
-    <e lm="alebar" a=" mmonge"><i>al</i><par n="lid/e[R]ar__vblex" prm="b"/></e>
-    <e lm="gala" a=" mmonge"><i>gal</i><par n="jornad/a__n"/></e>
-    <e lm="humarau" a=" mmonge"><i>humarau</i><par n="conselh__n"/></e>
+      <e r="LR" lm="actuar" a="mmonge" alt="oci"><i>actu</i><par n="ami/ar__vblex"/></e>
+    <e lm="actuar" a="mmonge" alt="oci@aran"><i>actu</i><par n="ami/ar__vblex"/></e>
+    <e lm="actuar" a="mmonge" alt="oci@gascon"><i>actu</i><par n="ami/ar__vblex"/></e>
+    <e lm="alebar" a="mmonge"><i>al</i><par n="lid/e[R]ar__vblex" prm="b"/></e>
+    <e lm="gala" a="mmonge"><i>gal</i><par n="jornad/a__n"/></e>
+    <e lm="humarau" a="mmonge"><i>humarau</i><par n="conselh__n"/></e>
     <e lm="endarrieratge"><i>endarrieratge</i><par n="conselh__n"/></e>
-    <e lm="camèra" a=" mmonge"><i>camèra</i><par n="part__n"/></e>
-    <e lm="camerà" a=" mmonge" r="LR"><i>camerà</i><par n="part__n"/></e>
-    <e lm="seguida" a=" mmonge"><i>seguid</i><par n="jornad/a__n"/></e>
+    <e lm="camèra" a="mmonge"><i>camèr</i><par n="jornad/a__n"/></e>
+    <e lm="camerà" a="mmonge" r="LR"><i>camerà</i><par n="part__n"/></e>
+    <e lm="seguida" a="mmonge"><i>seguid</i><par n="jornad/a__n"/></e>
     <e lm="entorns"><i>entorns</i><par n="entorns__n"/></e>
-    <e lm="Mart" a=" mmonge"><i>Mart</i><par n="Aran__np"/></e>
-    <e lm="manifestant" a=" mmonge"><i>manifestant</i><par n="conselhèr__n"/></e>
-    <e lm="banqueta" a=" mmonge"><i>banquet</i><par n="jornad/a__n"/></e>
-    <e lm="inversor" a=" mmonge"><i>inversor</i><par n="conselhèr__n"/></e>
-    <e lm="mancar" a=" mmonge"><i>m</i><par n="arr/a[N]car__vblex" prm="n"/></e>
+    <e lm="Mart" a="mmonge"><i>Mart</i><par n="Aran__np"/></e>
+    <e lm="manifestant" a="mmonge"><i>manifestant</i><par n="conselhèr__n"/></e>
+    <e lm="banqueta" a="mmonge"><i>banquet</i><par n="jornad/a__n"/></e>
+    <e lm="inversor" a="mmonge"><i>inversor</i><par n="conselhèr__n"/></e>
+    <e lm="mancar" a="mmonge"><i>m</i><par n="arr/a[N]car__vblex" prm="n"/></e>
     <e lm="Manchester" a="carmentano"><i>Manchester</i><par n="Abad__np"/></e>
-    <e lm="filosòf" a=" mmonge"><i>filosòf</i><par n="filosòf__n"/></e>
+    <e lm="filosòf" a="mmonge"><i>filosòf</i><par n="filosòf__n"/></e>
     <e lm="Natalie" a="carmentano"><i>Natalie</i><par n="Abad__np"/></e>
-    <e lm="diboishet" a=" mmonge"><i>diboishet</i><par n="conselh__n"/></e>
-    <e lm="trufar" a=" mmonge"><i>tr</i><par n="ab/u[S]ar__vblex" prm="f"/></e>
-    <e lm="connotacion" a=" mmonge"><i>connotacion</i><par n="part__n"/></e>
-    <e lm="dolorós" a=" mmonge"><i>dolor</i><par n="perilh/ós__adj"/></e>
-    <e lm="anagrama" a=" mmonge"><i>anagram</i><par n="di/a__n"/></e>
+    <e lm="diboishet" a="mmonge"><i>diboishet</i><par n="conselh__n"/></e>
+    <e lm="trufar" a="mmonge"><i>tr</i><par n="ab/u[S]ar__vblex" prm="f"/></e>
+    <e lm="connotacion" a="mmonge"><i>connotacion</i><par n="part__n"/></e>
+    <e lm="dolorós" a="mmonge"><i>dolor</i><par n="perilh/ós__adj"/></e>
+    <e lm="anagrama" a="mmonge"><i>anagram</i><par n="di/a__n"/></e>
     <e lm="oportunament"><i>oportunament</i><par n="adequadament__adv"/></e>
-    <e lm="tipografic" a=" mmonge"><i>tipografi</i><par n="tecni/c__adj"/></e>
-    <e lm="reconeishible" a=" mmonge"><i>reconeishible</i><par n="generau__adj"/></e>
-    <e lm="divulgador" a=" mmonge"><i>divulgador</i><par n="conselhèr__n"/></e>
+    <e lm="tipografic" a="mmonge"><i>tipografi</i><par n="tecni/c__adj"/></e>
+    <e lm="reconeishible" a="mmonge"><i>reconeishible</i><par n="generau__adj"/></e>
+    <e lm="divulgador" a="mmonge"><i>divulgador</i><par n="conselhèr__n"/></e>
     <e lm="Empordan" a="carmentano"><i>Empordan</i><par n="Aran__np"/></e>
-    <e lm="chat" a=" mmonge"><i>chat</i><par n="conselh__n"/></e>
-    <e lm="periodistic" a=" mmonge" r="LR"><i>periodisti</i><par n="tecni/c__adj"/></e>
+    <e lm="chat" a="mmonge"><i>chat</i><par n="conselh__n"/></e>
+    <e lm="periodistic" a="mmonge" r="LR"><i>periodisti</i><par n="tecni/c__adj"/></e>
     <e lm="jornalistic"><i>jornalisti</i><par n="tecni/c__adj"/></e>
-    <e lm="internauta" a=" mmonge"><i>internaut</i><par n="guardi/a__n"/></e>
-    <e lm="internautic" a=" mmonge"><i>internauti</i><par n="tecni/c__adj"/></e>
-    <e lm="internautic" a=" mmonge"><i>internauti</i><par n="tecni/c__adj"/></e>
+    <e lm="internauta" a="mmonge"><i>internaut</i><par n="guardi/a__n"/></e>
+    <e lm="internautic" a="mmonge"><i>internauti</i><par n="tecni/c__adj"/></e>
+    <e lm="internautic" a="mmonge"><i>internauti</i><par n="tecni/c__adj"/></e>
     <e lm="impacientament"><i>impacientament</i><par n="adequadament__adv"/></e>
     <e lm="utopic" a="carmentano"><i>utopi</i><par n="tecni/c__adj"/></e>
     <e lm="Intermón" a="carmentano"><i>Intermón</i><par n="ABC__np"/></e>
@@ -36473,76 +36478,76 @@
     <e lm="renaishença" a="carmentano" r="LR"><i>renaishen</i><par n="seden/ça__n"/></e>
     <e lm="moviment" a="carmentano" r="LR"><i>moviment</i><par n="conselh__n"/></e>
     <e lm="règim" a="carmentano" r="LR"><i>règim</i><par n="conselh__n"/></e>
-    <e lm="videojòc" a=" mmonge"><i>videojòc</i><par n="conselh__n"/></e>
-    <e lm="innovar" a=" mmonge"><i>inn</i><par n="aband/o[N]ar__vblex" prm="v"/></e>
-    <e lm="temps" a=" mmonge" c="mal temps = temporau"><i>temps</i><par n="mes__n"/></e>
-    <e lm="privatizar" a=" mmonge"><i>privat</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
-    <e lm="Prepirenèu" a=" mmonge"><i>Prepirenèu</i><par n="Aran__np"/></e>
+    <e lm="videojòc" a="mmonge"><i>videojòc</i><par n="conselh__n"/></e>
+    <e lm="innovar" a="mmonge"><i>inn</i><par n="aband/o[N]ar__vblex" prm="v"/></e>
+    <e lm="temps" a="mmonge" c="mal temps = temporau"><i>temps</i><par n="mes__n"/></e>
+    <e lm="privatizar" a="mmonge"><i>privat</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+    <e lm="Prepirenèu" a="mmonge"><i>Prepirenèu</i><par n="Aran__np"/></e>
     <e lm="Prepirenèus" r="LR"><i>Prepirenèus</i><par n="Aran__np"/></e>
-    <e lm="eca" a=" mmonge"><i>eca</i><par n="ager__adv"/></e>
-    <e lm="radicalizar" a=" mmonge"><i>radical</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
-    <e lm="radicalizacion" a=" mmonge"><i>radicalizacion</i><par n="part__n"/></e>
-    <e lm="exaustiu" a=" mmonge"><i>exausti</i><par n="representati/u__adj"/></e>
+    <e lm="eca" a="mmonge"><i>eca</i><par n="ager__adv"/></e>
+    <e lm="radicalizar" a="mmonge"><i>radical</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+    <e lm="radicalizacion" a="mmonge"><i>radicalizacion</i><par n="part__n"/></e>
+    <e lm="exaustiu" a="mmonge"><i>exausti</i><par n="representati/u__adj"/></e>
     <e lm="insistentament"><i>insistentament</i><par n="adequadament__adv"/></e>
-    <e lm="Saturn" a=" mmonge"><i>Saturn</i><par n="ABC__np"/></e>
-    <e lm="multitudinari" a=" mmonge"><i>multitudin</i><par n="priorit/ari__adj"/></e>
-    <e lm="activar" a=" mmonge"><i>act</i><par n="ab/i[T]ar__vblex" prm="v"/></e>
-    <e lm="participatiu" a=" mmonge"><i>participati</i><par n="representati/u__adj"/></e>
-    <e lm="engodronar" a=" mmonge"><i>engodr</i><par n="aband/o[N]ar__vblex" prm="n"/></e>
-    <e lm="Mart" a=" mmonge"><i>Mart</i><par n="ABC__np"/></e>
-    <e lm="ralli" a=" mmonge"><i>ralli</i><par n="conselh__n"/></e>
-    <e lm="ciutadanetat" a=" mmonge" r="LR"><i>ciutadanetat</i><par n="part__n"/></e>
-    <e lm="congressiste" a=" mmonge"><i>congressist</i><par n="ministr/e__n"/></e>
+    <e lm="Saturn" a="mmonge"><i>Saturn</i><par n="ABC__np"/></e>
+    <e lm="multitudinari" a="mmonge"><i>multitudin</i><par n="priorit/ari__adj"/></e>
+    <e lm="activar" a="mmonge"><i>act</i><par n="ab/i[T]ar__vblex" prm="v"/></e>
+    <e lm="participatiu" a="mmonge"><i>participati</i><par n="representati/u__adj"/></e>
+    <e lm="engodronar" a="mmonge"><i>engodr</i><par n="aband/o[N]ar__vblex" prm="n"/></e>
+    <e lm="Mart" a="mmonge"><i>Mart</i><par n="ABC__np"/></e>
+    <e lm="ralli" a="mmonge"><i>ralli</i><par n="conselh__n"/></e>
+    <e lm="ciutadanetat" a="mmonge" r="LR"><i>ciutadanetat</i><par n="part__n"/></e>
+    <e lm="congressiste" a="mmonge"><i>congressist</i><par n="ministr/e__n"/></e>
     <e lm="repetidament"><i>repetidament</i><par n="adequadament__adv"/></e>
-    <e lm="cobejar" a=" mmonge"><i>cob</i><par n="p/e[N]jar__vblex" prm=""/></e>
-    <e lm="immunitat" a=" mmonge"><i>immunitat</i><par n="part__n"/></e>
-      <e r="LR" lm="pastorau" a=" mmonge" alt="oci"><i>pastora</i><par n="espanhò/u__adj"/></e>
-    <e lm="pastorau" a=" mmonge" alt="oci@aran"><i>pastora</i><par n="espanhò/u__adj"/></e>
-    <e lm="pastorau" a=" mmonge" alt="oci@gascon"><i>pastora</i><par n="espanhò/u__adj"/></e>
-    <e lm="apellacion" a=" mmonge"><i>apellacion</i><par n="part__n"/></e>
-    <e lm="domiciliari" a=" mmonge"><i>domicili</i><par n="priorit/ari__adj"/></e>
-    <e lm="soscriptor" a=" mmonge"><i>soscript</i><par n="dictat/or__n"/></e>
-    <e lm="lucre" a=" mmonge"><i>lucre</i><par n="conselh__n"/></e>
-    <e lm="divulgar" a=" mmonge"><i>div</i><par n="p/u[R]gar__vblex" prm="l"/></e>
-    <e lm="analfabetisme" a=" mmonge"><i>analfabetisme</i><par n="conselh__n"/></e>
-    <e lm="inspeccionar" a=" mmonge"><i>inspecci</i><par n="aband/o[N]ar__vblex" prm="n"/></e>
-    <e lm="enfocar" a=" mmonge"><i>enf</i><par n="s/o[S]car__vblex" prm=""/></e>
-    <e lm="palmera" a=" mmonge"><i>palmer</i><par n="jornad/a__n"/></e>
-    <e lm="rambla" a=" mmonge"><i>rambl</i><par n="jornad/a__n"/></e>
-    <e lm="desaforar" a=" mmonge"><i>desaf</i><par n="p/o[RT]ar__vblex" prm="r"/></e>
-    <e lm="estudiós" a=" mmonge"><i>estudi</i><par n="esp/ós__n"/></e>
-    <e lm="perilhar" a=" mmonge"><i>per</i><par n="ab/i[T]ar__vblex" prm="lh"/></e>
-    <e lm="cooficilitat" a=" mmonge"><i>cooficilitat</i><par n="part__n"/></e>
-    <e lm="doblador" a=" mmonge"><i>doblador</i><par n="conselhèr__n"/></e>
-    <e lm="idiomatic" a=" mmonge"><i>idiomati</i><par n="tecni/c__adj"/></e>
-    <e lm="prescripcion" a=" mmonge"><i>prescripcion</i><par n="part__n"/></e>
-    <e lm="licitador" a=" mmonge"><i>licitador</i><par n="conselhèr__n"/></e>
-    <e lm="innegable" a=" mmonge"><i>innegabl</i><par n="ampl/e__adj"/></e>
-    <e lm="ardit" a=" mmonge"><i>ardi</i><par n="estima/t__adj"/></e>
-    <e lm="inutilitat" a=" mmonge"><i>inutilitat</i><par n="part__n"/></e>
-    <e lm="ilerdenc" a=" mmonge"><i>ilerden</i><par n="tecni/c__adj"/></e>
-    <e lm="lheidatan" a=" mmonge"><i>lheidatan</i><par n="trabalhador__adj"/></e>
-      <e r="LR" lm="cooficiau" a=" mmonge" alt="oci"><i>cooficia</i><par n="espanhò/u__adj"/></e>
-    <e lm="cooficiau" a=" mmonge" alt="oci@aran"><i>cooficia</i><par n="espanhò/u__adj"/></e>
-    <e lm="cooficiau" a=" mmonge" alt="oci@gascon"><i>cooficia</i><par n="espanhò/u__adj"/></e>
-    <e lm="Suïls" a=" mmonge"><i>Suïls</i><par n="ABC__np"/></e>
-    <e lm="dinamizador" a=" mmonge"><i>dinamizador</i><par n="conselhèr__n"/></e>
-    <e lm="pronosticar" a=" mmonge"><i>pronost</i><par n="revl/i[N]car__vblex" prm=""/></e>
-    <e lm="sigla" a=" mmonge"><i>sigl</i><par n="jornad/a__n"/></e>
-    <e lm="rotonditat" a=" mmonge"><i>rotonditat</i><par n="part__n"/></e>
-    <e lm="multiplex" a=" mmonge"><i>multiplex</i><par n="ABC__np"/></e>
-    <e lm="Jovita" a=" mmonge"><i>Jovita</i><par n="Abad__np"/></e>
-    <e lm="Ané" a=" mmonge"><i>Ané</i><par n="Abad__np"/></e>
+    <e lm="cobejar" a="mmonge"><i>cob</i><par n="p/e[N]jar__vblex" prm=""/></e>
+    <e lm="immunitat" a="mmonge"><i>immunitat</i><par n="part__n"/></e>
+      <e r="LR" lm="pastorau" a="mmonge" alt="oci"><i>pastora</i><par n="espanhò/u__adj"/></e>
+    <e lm="pastorau" a="mmonge" alt="oci@aran"><i>pastora</i><par n="espanhò/u__adj"/></e>
+    <e lm="pastorau" a="mmonge" alt="oci@gascon"><i>pastora</i><par n="espanhò/u__adj"/></e>
+    <e lm="apellacion" a="mmonge"><i>apellacion</i><par n="part__n"/></e>
+    <e lm="domiciliari" a="mmonge"><i>domicili</i><par n="priorit/ari__adj"/></e>
+    <e lm="soscriptor" a="mmonge"><i>soscript</i><par n="dictat/or__n"/></e>
+    <e lm="lucre" a="mmonge"><i>lucre</i><par n="conselh__n"/></e>
+    <e lm="divulgar" a="mmonge"><i>div</i><par n="p/u[R]gar__vblex" prm="l"/></e>
+    <e lm="analfabetisme" a="mmonge"><i>analfabetisme</i><par n="conselh__n"/></e>
+    <e lm="inspeccionar" a="mmonge"><i>inspecci</i><par n="aband/o[N]ar__vblex" prm="n"/></e>
+    <e lm="enfocar" a="mmonge"><i>enf</i><par n="s/o[S]car__vblex" prm=""/></e>
+    <e lm="palmera" a="mmonge"><i>palmer</i><par n="jornad/a__n"/></e>
+    <e lm="rambla" a="mmonge"><i>rambl</i><par n="jornad/a__n"/></e>
+    <e lm="desaforar" a="mmonge"><i>desaf</i><par n="p/o[RT]ar__vblex" prm="r"/></e>
+    <e lm="estudiós" a="mmonge"><i>estudi</i><par n="esp/ós__n"/></e>
+    <e lm="perilhar" a="mmonge"><i>per</i><par n="ab/i[T]ar__vblex" prm="lh"/></e>
+    <e lm="cooficilitat" a="mmonge"><i>cooficilitat</i><par n="part__n"/></e>
+    <e lm="doblador" a="mmonge"><i>doblador</i><par n="conselhèr__n"/></e>
+    <e lm="idiomatic" a="mmonge"><i>idiomati</i><par n="tecni/c__adj"/></e>
+    <e lm="prescripcion" a="mmonge"><i>prescripcion</i><par n="part__n"/></e>
+    <e lm="licitador" a="mmonge"><i>licitador</i><par n="conselhèr__n"/></e>
+    <e lm="innegable" a="mmonge"><i>innegabl</i><par n="ampl/e__adj"/></e>
+    <e lm="ardit" a="mmonge"><i>ardi</i><par n="estima/t__adj"/></e>
+    <e lm="inutilitat" a="mmonge"><i>inutilitat</i><par n="part__n"/></e>
+    <e lm="ilerdenc" a="mmonge"><i>ilerden</i><par n="tecni/c__adj"/></e>
+    <e lm="lheidatan" a="mmonge"><i>lheidatan</i><par n="trabalhador__adj"/></e>
+      <e r="LR" lm="cooficiau" a="mmonge" alt="oci"><i>cooficia</i><par n="espanhò/u__adj"/></e>
+    <e lm="cooficiau" a="mmonge" alt="oci@aran"><i>cooficia</i><par n="espanhò/u__adj"/></e>
+    <e lm="cooficiau" a="mmonge" alt="oci@gascon"><i>cooficia</i><par n="espanhò/u__adj"/></e>
+    <e lm="Suïls" a="mmonge"><i>Suïls</i><par n="ABC__np"/></e>
+    <e lm="dinamizador" a="mmonge"><i>dinamizador</i><par n="conselhèr__n"/></e>
+    <e lm="pronosticar" a="mmonge"><i>pronost</i><par n="revl/i[N]car__vblex" prm=""/></e>
+    <e lm="sigla" a="mmonge"><i>sigl</i><par n="jornad/a__n"/></e>
+    <e lm="rotonditat" a="mmonge"><i>rotonditat</i><par n="part__n"/></e>
+    <e lm="multiplex" a="mmonge"><i>multiplex</i><par n="ABC__np"/></e>
+    <e lm="Jovita" a="mmonge"><i>Jovita</i><par n="Abad__np"/></e>
+    <e lm="Ané" a="mmonge"><i>Ané</i><par n="Abad__np"/></e>
     <e lm="favorablament"><i>favorablament</i><par n="adequadament__adv"/></e>
-    <e lm="burocratic" a=" mmonge"><i>burocrati</i><par n="tecni/c__adj"/></e>
+    <e lm="burocratic" a="mmonge"><i>burocrati</i><par n="tecni/c__adj"/></e>
     <e lm="moderadament"><i>moderadament</i><par n="adequadament__adv"/></e>
-    <e lm="Puigcerdà" a=" mmonge"><i>Puigcerdà</i><par n="Aran__np"/></e>
-    <e lm="avalar" a=" mmonge"><i>av</i><par n="c/a[NT]ar__vblex" prm="l"/></e>
-    <e lm="escrupulós" a=" mmonge"><i>escrupul</i><par n="perilh/ós__adj"/></e>
-    <e lm="reducte" a=" mmonge"><i>reducte</i><par n="conselh__n"/></e>
-    <e lm="casting" a=" mmonge"><i>casting</i><par n="conselh__n"/></e>
-    <e lm="illustrador" a=" mmonge"><i>illustrador</i><par n="conselhèr__n"/></e>
-    <e lm="Capdevila" a=" mmonge"><i>Capdevila</i><par n="Abad__np"/></e>
+    <e lm="Puigcerdà" a="mmonge"><i>Puigcerdà</i><par n="Aran__np"/></e>
+    <e lm="avalar" a="mmonge"><i>av</i><par n="c/a[NT]ar__vblex" prm="l"/></e>
+    <e lm="escrupulós" a="mmonge"><i>escrupul</i><par n="perilh/ós__adj"/></e>
+    <e lm="reducte" a="mmonge"><i>reducte</i><par n="conselh__n"/></e>
+    <e lm="casting" a="mmonge"><i>casting</i><par n="conselh__n"/></e>
+    <e lm="illustrador" a="mmonge"><i>illustrador</i><par n="conselhèr__n"/></e>
+    <e lm="Capdevila" a="mmonge"><i>Capdevila</i><par n="Abad__np"/></e>
     <e lm="superordinador" a="carmentano"><i>superordinador</i><par n="conselh__n"/></e>
     <e lm="Puyal" a="carmentano"><i>Puyal</i><par n="Abad__np"/></e>
     <e lm="Subirada" a="carmentano"><i>Subirada</i><par n="Abad__np"/></e>
@@ -37395,231 +37400,231 @@
     <e lm="apoderar" a="carmentano"><i>apod</i><par n="lid/e[R]ar__vblex" prm="r"/></e>
     <e lm="cabecièr" a="carmentano"><i>cabeciè</i><par n="primiè/r__adj"/></e>
     <e lm="Siemens" a="carmentano"><i>Siemens</i><par n="ABC__np"/></e>
-    <e lm="olocaust" a=" mmonge"><i>olocaust</i><par n="conselh__n"/></e>
-    <e lm="Douglas" a=" mmonge"><i>Douglas</i><par n="Abad__np"/></e>
-    <e lm="detractor" a=" mmonge"><i>detract</i><par n="dictat/or__n"/></e>
-    <e lm="coreografia" a=" mmonge"><i>coreografi</i><par n="jornad/a__n"/></e>
-    <e lm="consultor" a=" mmonge"><i>consultor</i><par n="conselhèr__n"/></e>
-    <e lm="CNE" a=" mmonge"><i>CNE</i><par n="ABC__np"/></e>
-    <e lm="Portland" a=" mmonge"><i>Portland</i><par n="Aran__np"/></e>
-    <e lm="CCRTV" a=" mmonge"><i>CCRTV</i><par n="ABC__np"/></e>
-    <e lm="Vinci" a=" mmonge"><i>Vinci</i><par n="Abad__np"/></e>
-    <e lm="sequestrador" a=" mmonge"><i>sequestrador</i><par n="conselhèr__n"/></e>
-    <e lm="ras" a=" mmonge" r="RL"><i>ras</i><par n="content__adj"/></e>
-    <e lm="cronica" a=" mmonge"><i>croni</i><par n="va/ca__n"/></e>
+    <e lm="olocaust" a="mmonge"><i>olocaust</i><par n="conselh__n"/></e>
+    <e lm="Douglas" a="mmonge"><i>Douglas</i><par n="Abad__np"/></e>
+    <e lm="detractor" a="mmonge"><i>detract</i><par n="dictat/or__n"/></e>
+    <e lm="coreografia" a="mmonge"><i>coreografi</i><par n="jornad/a__n"/></e>
+    <e lm="consultor" a="mmonge"><i>consultor</i><par n="conselhèr__n"/></e>
+    <e lm="CNE" a="mmonge"><i>CNE</i><par n="ABC__np"/></e>
+    <e lm="Portland" a="mmonge"><i>Portland</i><par n="Aran__np"/></e>
+    <e lm="CCRTV" a="mmonge"><i>CCRTV</i><par n="ABC__np"/></e>
+    <e lm="Vinci" a="mmonge"><i>Vinci</i><par n="Abad__np"/></e>
+    <e lm="sequestrador" a="mmonge"><i>sequestrador</i><par n="conselhèr__n"/></e>
+    <e lm="ras" a="mmonge" r="RL"><i>ras</i><par n="content__adj"/></e>
+    <e lm="cronica" a="mmonge"><i>croni</i><par n="va/ca__n"/></e>
     <e lm="botanica"><i>botani</i><par n="va/ca__n"/></e>
     <e lm="volontàriament"><i>volontàriament</i><par n="adequadament__adv"/></e>
-    <e lm="Roche" a=" mmonge"><i>Roche</i><par n="Abad__np"/></e>
-    <e lm="Revis" a=" mmonge"><i>Revis</i><par n="Abad__np"/></e>
-    <e lm="Unicaja" a=" mmonge"><i>Unicaja</i><par n="ABC__np"/></e>
-    <e lm="maritim" a=" mmonge"><i>maritim</i><par n="trabalhador__adj"/></e>
-    <e lm="Laurence" a=" mmonge"><i>Laurence</i><par n="Abad__np"/></e>
-    <e lm="guerrilhèr" a=" mmonge"><i>guerrilhèr</i><par n="conselhèr__n"/></e>
-    <e lm="Disney" a=" mmonge"><i>Disney</i><par n="ABC__np"/></e>
-    <e lm="Belletti" a=" mmonge"><i>Belletti</i><par n="Abad__np"/></e>
-    <e lm="Renault" a=" mmonge"><i>Renault</i><par n="ABC__np"/></e>
-    <e lm="Cesc" a=" mmonge"><i>Cesc</i><par n="Abad__np"/></e>
-    <e lm="blindar" a=" mmonge"><i>bl</i><par n="ab/i[T]ar__vblex" prm="nd"/></e>
-    <e lm="prostrar" a=" mmonge"><i>pr</i><par n="p/o[RT]ar__vblex" prm="str"/></e>
-    <e lm="idilli" a=" mmonge"><i>idilli</i><par n="conselh__n"/></e>
-    <e lm="Valentino" a=" mmonge"><i>Valentino</i><par n="Abad__np"/></e>
+    <e lm="Roche" a="mmonge"><i>Roche</i><par n="Abad__np"/></e>
+    <e lm="Revis" a="mmonge"><i>Revis</i><par n="Abad__np"/></e>
+    <e lm="Unicaja" a="mmonge"><i>Unicaja</i><par n="ABC__np"/></e>
+    <e lm="maritim" a="mmonge"><i>maritim</i><par n="trabalhador__adj"/></e>
+    <e lm="Laurence" a="mmonge"><i>Laurence</i><par n="Abad__np"/></e>
+    <e lm="guerrilhèr" a="mmonge"><i>guerrilhèr</i><par n="conselhèr__n"/></e>
+    <e lm="Disney" a="mmonge"><i>Disney</i><par n="ABC__np"/></e>
+    <e lm="Belletti" a="mmonge"><i>Belletti</i><par n="Abad__np"/></e>
+    <e lm="Renault" a="mmonge"><i>Renault</i><par n="ABC__np"/></e>
+    <e lm="Cesc" a="mmonge"><i>Cesc</i><par n="Abad__np"/></e>
+    <e lm="blindar" a="mmonge"><i>bl</i><par n="ab/i[T]ar__vblex" prm="nd"/></e>
+    <e lm="prostrar" a="mmonge"><i>pr</i><par n="p/o[RT]ar__vblex" prm="str"/></e>
+    <e lm="idilli" a="mmonge"><i>idilli</i><par n="conselh__n"/></e>
+    <e lm="Valentino" a="mmonge"><i>Valentino</i><par n="Abad__np"/></e>
     <e lm="pròpriament"><i>pròpriament</i><par n="adequadament__adv"/></e>
-    <e lm="plenitud" a=" mmonge"><i>plenitud</i><par n="part__n"/></e>
-    <e lm="ostatge" a=" mmonge"><i>ostatge</i><par n="agent__n"/></e>
-    <e lm="Inter" a=" mmonge"><i>Inter</i><par n="ABC__np"/></e>
-      <e r="LR" lm="en·honsament" a=" mmonge" alt="oci"><i>en·honsament</i><par n="conselh__n"/></e>
-    <e lm="en·honsament" a=" mmonge" alt="oci@aran"><i>en·honsament</i><par n="conselh__n"/></e>
-    <e lm="en·honsament" a=" mmonge" alt="oci@gascon"><i>en·honsament</i><par n="conselh__n"/></e>
-      <e r="LR" lm="enfonzament" a=" mmonge" alt="oci@aran"><i>enfonzament</i><par n="conselh__n"/></e>
-      <e r="LR" lm="enfonzament" a=" mmonge" alt="oci@gascon"><i>enfonzament</i><par n="conselh__n"/></e>
-    <e lm="enfonzament" a=" mmonge" alt="oci"><i>enfonzament</i><par n="conselh__n"/></e>
-    <e lm="CEOE" a=" mmonge"><i>CEOE</i><par n="ABC__np"/></e>
-    <e lm="Castellar" a=" mmonge"><i>Castellar</i><par n="Aran__np"/></e>
-    <e lm="sosdirector" a=" mmonge"><i>sosdirector</i><par n="conselhèr__n"/></e>
-    <e lm="rebellion" a=" mmonge" c="sinònims: suslhèua, susmauta, suslhèuament"><i>rebellion</i><par n="part__n"/></e>
-    <e lm="Numància" a=" mmonge"><i>Numància</i><par n="Aran__np"/></e>
-    <e lm="sahumat" a=" mmonge"><i>sahuma</i><par n="estima/t__adj"/></e>
-    <e lm="catalanitat" a=" mmonge"><i>catalanitat</i><par n="part__n"/></e>
-    <e lm="terren" a=" mmonge"><i>terren</i><par n="conselh__n"/></e>
-    <e lm="Justin" a=" mmonge"><i>Justin</i><par n="Abad__np"/></e>
-    <e lm="Iker" a=" mmonge"><i>Iker</i><par n="Abad__np"/></e>
-      <e r="LR" lm="herotge" a=" mmonge" alt="oci"><i>herot</i><par n="sauvat/ge__adj"/></e>
-    <e lm="herotge" a=" mmonge" alt="oci@aran"><i>herot</i><par n="sauvat/ge__adj"/></e>
-    <e lm="herotge" a=" mmonge" alt="oci@gascon"><i>herot</i><par n="sauvat/ge__adj"/></e>
-      <e r="LR" lm="ferotge" a=" mmonge" alt="oci@aran"><i>ferot</i><par n="sauvat/ge__adj"/></e>
-      <e r="LR" lm="ferotge" a=" mmonge" alt="oci@gascon"><i>ferot</i><par n="sauvat/ge__adj"/></e>
-    <e lm="ferotge" a=" mmonge" alt="oci"><i>ferot</i><par n="sauvat/ge__adj"/></e>
-    <e lm="Christina" a=" mmonge"><i>Christina</i><par n="Abad__np"/></e>
-    <e lm="vinicòla" a=" mmonge"><i>vinicòl</i><par n="agricòl/a__adj"/></e>
-    <e lm="trauèrs" a=" mmonge" r="LR"><i>trauèrs</i><par n="mes__n"/></e>
-      <e r="LR" lm="trauès" a=" mmonge" alt="oci"><i>trauès</i><par n="mes__n"/></e>
-    <e lm="trauès" a=" mmonge" alt="oci@aran"><i>trauès</i><par n="mes__n"/></e>
-    <e lm="trauès" a=" mmonge" alt="oci@gascon"><i>trauès</i><par n="mes__n"/></e>
-      <e r="LR" lm="travèrs" a=" mmonge" alt="oci@aran"><i>travèrs</i><par n="mes__n"/></e>
-      <e r="LR" lm="travèrs" a=" mmonge" alt="oci@gascon"><i>travèrs</i><par n="mes__n"/></e>
-    <e lm="travèrs" a=" mmonge" alt="oci"><i>travèrs</i><par n="mes__n"/></e>
-    <e lm="Ridley" a=" mmonge"><i>Ridley</i><par n="Abad__np"/></e>
-    <e lm="Fontana" a=" mmonge"><i>Fontana</i><par n="Aran__np"/></e>
-    <e lm="boicotar" a=" mmonge"><i>boic</i><par n="p/o[RT]ar__vblex" prm="t"/></e>
-    <e lm="bagatge" a=" mmonge"><i>bagatge</i><par n="conselh__n"/></e>
-    <e lm="Arthur" a=" mmonge"><i>Arthur</i><par n="Abad__np"/></e>
-    <e lm="Maccabi" a=" mmonge"><i>Maccabi</i><par n="Abad__np"/></e>
-    <e lm="Kameni" a=" mmonge"><i>Kameni</i><par n="Abad__np"/></e>
-    <e lm="Juventus" a=" mmonge"><i>Juventus</i><par n="ABC__np"/></e>
-    <e lm="adusir" a=" mmonge"><i>adus</i><par n="magr/èrem__vblex"/></e>
-    <e lm="aduire" a=" mmonge" r="LR"><i>adu</i><par n="produ/ire__vblex"/></e>
-      <e r="LR" lm="sorrealista" a=" mmonge" alt="oci"><i>sorrealist</i><par n="agricòl/a__adj"/></e>
-    <e lm="sorrealista" a=" mmonge" alt="oci@aran"><i>sorrealist</i><par n="agricòl/a__adj"/></e>
-    <e lm="sorrealista" a=" mmonge" alt="oci@gascon"><i>sorrealist</i><par n="agricòl/a__adj"/></e>
-      <e r="LR" lm="surrealista" a=" mmonge" alt="oci@aran"><i>surrealist</i><par n="agricòl/a__adj"/></e>
-      <e r="LR" lm="surrealista" a=" mmonge" alt="oci@gascon"><i>surrealist</i><par n="agricòl/a__adj"/></e>
-    <e lm="surrealista" a=" mmonge" alt="oci"><i>surrealist</i><par n="agricòl/a__adj"/></e>
-    <e lm="supèr" a=" mmonge"><i>supèr</i><par n="ager__adv"/></e>
-    <e lm="Harvey" a=" mmonge"><i>Harvey</i><par n="Abad__np"/></e>
-    <e lm="gèsta" a=" mmonge"><i>gèst</i><par n="jornad/a__n"/></e>
-    <e lm="dramaturgia" a=" mmonge"><i>dramaturgi</i><par n="jornad/a__n"/></e>
-    <e lm="Caixaforum" a=" mmonge"><i>Caixaforum</i><par n="ABC__np"/></e>
-    <e lm="BCE" a=" mmonge"><i>BCE</i><par n="ABC__np"/></e>
-    <e lm="Raymond" a=" mmonge"><i>Raymond</i><par n="Abad__np"/></e>
-    <e lm="MNAC" a=" mmonge"><i>MNAC</i><par n="ABC__np"/></e>
-    <e lm="gong" a=" mmonge"><i>gong</i><par n="conselh__n"/></e>
-      <e r="LR" lm="heiregada" a=" mmonge" alt="oci"><i>heiregad</i><par n="jornad/a__n"/></e>
-    <e lm="heiregada" a=" mmonge" alt="oci@aran"><i>heiregad</i><par n="jornad/a__n"/></e>
-    <e lm="heiregada" a=" mmonge" alt="oci@gascon"><i>heiregad</i><par n="jornad/a__n"/></e>
-      <e r="LR" lm="fregadís" a=" mmonge" alt="oci@aran"><i>fregad</i><par n="perm/ís__n"/></e>
-      <e r="LR" lm="fregadís" a=" mmonge" alt="oci@gascon"><i>fregad</i><par n="perm/ís__n"/></e>
-    <e lm="fregadís" a=" mmonge" alt="oci"><i>fregad</i><par n="perm/ís__n"/></e>
-    <e lm="Bordeta" a=" mmonge"><i>Bordeta</i><par n="Aran__np"/></e>
-    <e lm="Barcino" a=" mmonge"><i>Barcino</i><par n="Aran__np"/></e>
-      <e r="LR" lm="barat" a=" mmonge" alt="oci"><i>barat</i><par n="content__adj"/></e>
-    <e lm="barat" a=" mmonge" alt="oci@aran"><i>barat</i><par n="content__adj"/></e>
-    <e lm="barat" a=" mmonge" alt="oci@gascon"><i>barat</i><par n="content__adj"/></e>
-      <e r="LR" lm="bon mercat" a=" mmonge" alt="oci@aran"><i>bon<b/>mercat</i><par n="post__adj"/></e>
-      <e r="LR" lm="bon mercat" a=" mmonge" alt="oci@gascon"><i>bon<b/>mercat</i><par n="post__adj"/></e>
-    <e lm="bon mercat" a=" mmonge" alt="oci"><i>bon<b/>mercat</i><par n="post__adj"/></e>
-    <e lm="telefilm" a=" mmonge"><i>telefilm</i><par n="conselh__n"/></e>
-    <e lm="Rupert" a=" mmonge"><i>Rupert</i><par n="Abad__np"/></e>
-    <e lm="Miller" a=" mmonge"><i>Miller</i><par n="Abad__np"/></e>
-    <e lm="ocean" a=" mmonge"><i>ocean</i><par n="conselh__n"/></e>
-    <e lm="libretèr" a=" mmonge"><i>libretèr</i><par n="conselhèr__n"/></e>
-    <e lm="conversion" a=" mmonge"><i>conversion</i><par n="part__n"/></e>
-    <e lm="Annette" a=" mmonge"><i>Annette</i><par n="Abad__np"/></e>
-    <e lm="sovietic" a=" mmonge"><i>sovieti</i><par n="tecni/c__adj"/></e>
-    <e lm="serenitat" a=" mmonge"><i>serenitat</i><par n="part__n"/></e>
-    <e lm="salvacion" a=" mmonge"><i>salvacion</i><par n="part__n"/></e>
-    <e lm="poemari" a=" mmonge"><i>poemari</i><par n="conselh__n"/></e>
-    <e lm="partidista" a=" mmonge"><i>partidist</i><par n="agricòl/a__adj"/></e>
-    <e lm="Mollet" a=" mmonge"><i>Mollet</i><par n="Aran__np"/></e>
-    <e lm="mastèr" a=" mmonge"><i>mastèr</i><par n="conselh__n"/></e>
-    <e lm="màster" a=" mmonge" r="LR"><i>màster</i><par n="conselh__n"/></e>
-    <e lm="evacuacion" a=" mmonge"><i>evacuacion</i><par n="part__n"/></e>
-    <e lm="far" a=" mmonge"><i>far</i><par n="conselh__n"/></e>
-    <e lm="delinquéncia" a=" mmonge"><i>delinquénci</i><par n="jornad/a__n"/></e>
-    <e lm="potestat" a=" mmonge"><i>potestat</i><par n="part__n"/></e>
-    <e lm="damnatjat" a=" mmonge"><i>damnatja</i><par n="afilia/t__n"/></e>
-    <e lm="conclau" a=" mmonge"><i>conclau</i><par n="conselh__n"/></e>
-      <e r="LR" lm="partitura" a=" mmonge" alt="oci"><i>partitur</i><par n="jornad/a__n"/></e>
-    <e lm="partitura" a=" mmonge" alt="oci@aran"><i>partitur</i><par n="jornad/a__n"/></e>
-    <e lm="partitura" a=" mmonge" alt="oci@gascon"><i>partitur</i><par n="jornad/a__n"/></e>
+    <e lm="plenitud" a="mmonge"><i>plenitud</i><par n="part__n"/></e>
+    <e lm="ostatge" a="mmonge"><i>ostatge</i><par n="agent__n"/></e>
+    <e lm="Inter" a="mmonge"><i>Inter</i><par n="ABC__np"/></e>
+      <e r="LR" lm="en·honsament" a="mmonge" alt="oci"><i>en·honsament</i><par n="conselh__n"/></e>
+    <e lm="en·honsament" a="mmonge" alt="oci@aran"><i>en·honsament</i><par n="conselh__n"/></e>
+    <e lm="en·honsament" a="mmonge" alt="oci@gascon"><i>en·honsament</i><par n="conselh__n"/></e>
+      <e r="LR" lm="enfonzament" a="mmonge" alt="oci@aran"><i>enfonzament</i><par n="conselh__n"/></e>
+      <e r="LR" lm="enfonzament" a="mmonge" alt="oci@gascon"><i>enfonzament</i><par n="conselh__n"/></e>
+    <e lm="enfonzament" a="mmonge" alt="oci"><i>enfonzament</i><par n="conselh__n"/></e>
+    <e lm="CEOE" a="mmonge"><i>CEOE</i><par n="ABC__np"/></e>
+    <e lm="Castellar" a="mmonge"><i>Castellar</i><par n="Aran__np"/></e>
+    <e lm="sosdirector" a="mmonge"><i>sosdirector</i><par n="conselhèr__n"/></e>
+    <e lm="rebellion" a="mmonge" c="sinònims: suslhèua, susmauta, suslhèuament"><i>rebellion</i><par n="part__n"/></e>
+    <e lm="Numància" a="mmonge"><i>Numància</i><par n="Aran__np"/></e>
+    <e lm="sahumat" a="mmonge"><i>sahuma</i><par n="estima/t__adj"/></e>
+    <e lm="catalanitat" a="mmonge"><i>catalanitat</i><par n="part__n"/></e>
+    <e lm="terren" a="mmonge"><i>terren</i><par n="conselh__n"/></e>
+    <e lm="Justin" a="mmonge"><i>Justin</i><par n="Abad__np"/></e>
+    <e lm="Iker" a="mmonge"><i>Iker</i><par n="Abad__np"/></e>
+      <e r="LR" lm="herotge" a="mmonge" alt="oci"><i>herot</i><par n="sauvat/ge__adj"/></e>
+    <e lm="herotge" a="mmonge" alt="oci@aran"><i>herot</i><par n="sauvat/ge__adj"/></e>
+    <e lm="herotge" a="mmonge" alt="oci@gascon"><i>herot</i><par n="sauvat/ge__adj"/></e>
+      <e r="LR" lm="ferotge" a="mmonge" alt="oci@aran"><i>ferot</i><par n="sauvat/ge__adj"/></e>
+      <e r="LR" lm="ferotge" a="mmonge" alt="oci@gascon"><i>ferot</i><par n="sauvat/ge__adj"/></e>
+    <e lm="ferotge" a="mmonge" alt="oci"><i>ferot</i><par n="sauvat/ge__adj"/></e>
+    <e lm="Christina" a="mmonge"><i>Christina</i><par n="Abad__np"/></e>
+    <e lm="vinicòla" a="mmonge"><i>vinicòl</i><par n="agricòl/a__adj"/></e>
+    <e lm="trauèrs" a="mmonge" r="LR"><i>trauèrs</i><par n="mes__n"/></e>
+      <e r="LR" lm="trauès" a="mmonge" alt="oci"><i>trauès</i><par n="mes__n"/></e>
+    <e lm="trauès" a="mmonge" alt="oci@aran"><i>trauès</i><par n="mes__n"/></e>
+    <e lm="trauès" a="mmonge" alt="oci@gascon"><i>trauès</i><par n="mes__n"/></e>
+      <e r="LR" lm="travèrs" a="mmonge" alt="oci@aran"><i>travèrs</i><par n="mes__n"/></e>
+      <e r="LR" lm="travèrs" a="mmonge" alt="oci@gascon"><i>travèrs</i><par n="mes__n"/></e>
+    <e lm="travèrs" a="mmonge" alt="oci"><i>travèrs</i><par n="mes__n"/></e>
+    <e lm="Ridley" a="mmonge"><i>Ridley</i><par n="Abad__np"/></e>
+    <e lm="Fontana" a="mmonge"><i>Fontana</i><par n="Aran__np"/></e>
+    <e lm="boicotar" a="mmonge"><i>boic</i><par n="p/o[RT]ar__vblex" prm="t"/></e>
+    <e lm="bagatge" a="mmonge"><i>bagatge</i><par n="conselh__n"/></e>
+    <e lm="Arthur" a="mmonge"><i>Arthur</i><par n="Abad__np"/></e>
+    <e lm="Maccabi" a="mmonge"><i>Maccabi</i><par n="Abad__np"/></e>
+    <e lm="Kameni" a="mmonge"><i>Kameni</i><par n="Abad__np"/></e>
+    <e lm="Juventus" a="mmonge"><i>Juventus</i><par n="ABC__np"/></e>
+    <e lm="adusir" a="mmonge"><i>adus</i><par n="magr/èrem__vblex"/></e>
+    <e lm="aduire" a="mmonge" r="LR"><i>adu</i><par n="produ/ire__vblex"/></e>
+      <e r="LR" lm="sorrealista" a="mmonge" alt="oci"><i>sorrealist</i><par n="agricòl/a__adj"/></e>
+    <e lm="sorrealista" a="mmonge" alt="oci@aran"><i>sorrealist</i><par n="agricòl/a__adj"/></e>
+    <e lm="sorrealista" a="mmonge" alt="oci@gascon"><i>sorrealist</i><par n="agricòl/a__adj"/></e>
+      <e r="LR" lm="surrealista" a="mmonge" alt="oci@aran"><i>surrealist</i><par n="agricòl/a__adj"/></e>
+      <e r="LR" lm="surrealista" a="mmonge" alt="oci@gascon"><i>surrealist</i><par n="agricòl/a__adj"/></e>
+    <e lm="surrealista" a="mmonge" alt="oci"><i>surrealist</i><par n="agricòl/a__adj"/></e>
+    <e lm="supèr" a="mmonge"><i>supèr</i><par n="ager__adv"/></e>
+    <e lm="Harvey" a="mmonge"><i>Harvey</i><par n="Abad__np"/></e>
+    <e lm="gèsta" a="mmonge"><i>gèst</i><par n="jornad/a__n"/></e>
+    <e lm="dramaturgia" a="mmonge"><i>dramaturgi</i><par n="jornad/a__n"/></e>
+    <e lm="Caixaforum" a="mmonge"><i>Caixaforum</i><par n="ABC__np"/></e>
+    <e lm="BCE" a="mmonge"><i>BCE</i><par n="ABC__np"/></e>
+    <e lm="Raymond" a="mmonge"><i>Raymond</i><par n="Abad__np"/></e>
+    <e lm="MNAC" a="mmonge"><i>MNAC</i><par n="ABC__np"/></e>
+    <e lm="gong" a="mmonge"><i>gong</i><par n="conselh__n"/></e>
+      <e r="LR" lm="heiregada" a="mmonge" alt="oci"><i>heiregad</i><par n="jornad/a__n"/></e>
+    <e lm="heiregada" a="mmonge" alt="oci@aran"><i>heiregad</i><par n="jornad/a__n"/></e>
+    <e lm="heiregada" a="mmonge" alt="oci@gascon"><i>heiregad</i><par n="jornad/a__n"/></e>
+      <e r="LR" lm="fregadís" a="mmonge" alt="oci@aran"><i>fregad</i><par n="tap/ís__n"/></e>
+      <e r="LR" lm="fregadís" a="mmonge" alt="oci@gascon"><i>fregad</i><par n="tap/ís__n"/></e>
+    <e lm="fregadís" a="mmonge" alt="oci"><i>fregad</i><par n="tap/ís__n"/></e>
+    <e lm="Bordeta" a="mmonge"><i>Bordeta</i><par n="Aran__np"/></e>
+    <e lm="Barcino" a="mmonge"><i>Barcino</i><par n="Aran__np"/></e>
+      <e r="LR" lm="barat" a="mmonge" alt="oci"><i>barat</i><par n="content__adj"/></e>
+    <e lm="barat" a="mmonge" alt="oci@aran"><i>barat</i><par n="content__adj"/></e>
+    <e lm="barat" a="mmonge" alt="oci@gascon"><i>barat</i><par n="content__adj"/></e>
+      <e r="LR" lm="bon mercat" a="mmonge" alt="oci@aran"><i>bon<b/>mercat</i><par n="post__adj"/></e>
+      <e r="LR" lm="bon mercat" a="mmonge" alt="oci@gascon"><i>bon<b/>mercat</i><par n="post__adj"/></e>
+    <e lm="bon mercat" a="mmonge" alt="oci"><i>bon<b/>mercat</i><par n="post__adj"/></e>
+    <e lm="telefilm" a="mmonge"><i>telefilm</i><par n="conselh__n"/></e>
+    <e lm="Rupert" a="mmonge"><i>Rupert</i><par n="Abad__np"/></e>
+    <e lm="Miller" a="mmonge"><i>Miller</i><par n="Abad__np"/></e>
+    <e lm="ocean" a="mmonge"><i>ocean</i><par n="conselh__n"/></e>
+    <e lm="libretèr" a="mmonge"><i>libretèr</i><par n="conselhèr__n"/></e>
+    <e lm="conversion" a="mmonge"><i>conversion</i><par n="part__n"/></e>
+    <e lm="Annette" a="mmonge"><i>Annette</i><par n="Abad__np"/></e>
+    <e lm="sovietic" a="mmonge"><i>sovieti</i><par n="tecni/c__adj"/></e>
+    <e lm="serenitat" a="mmonge"><i>serenitat</i><par n="part__n"/></e>
+    <e lm="salvacion" a="mmonge"><i>salvacion</i><par n="part__n"/></e>
+    <e lm="poemari" a="mmonge"><i>poemari</i><par n="conselh__n"/></e>
+    <e lm="partidista" a="mmonge"><i>partidist</i><par n="agricòl/a__adj"/></e>
+    <e lm="Mollet" a="mmonge"><i>Mollet</i><par n="Aran__np"/></e>
+    <e lm="mastèr" a="mmonge"><i>mastèr</i><par n="conselh__n"/></e>
+    <e lm="màster" a="mmonge" r="LR"><i>màster</i><par n="conselh__n"/></e>
+    <e lm="evacuacion" a="mmonge"><i>evacuacion</i><par n="part__n"/></e>
+    <e lm="far" a="mmonge"><i>far</i><par n="conselh__n"/></e>
+    <e lm="delinquéncia" a="mmonge"><i>delinquénci</i><par n="jornad/a__n"/></e>
+    <e lm="potestat" a="mmonge"><i>potestat</i><par n="part__n"/></e>
+    <e lm="damnatjat" a="mmonge"><i>damnatja</i><par n="afilia/t__n"/></e>
+    <e lm="conclau" a="mmonge"><i>conclau</i><par n="conselh__n"/></e>
+      <e r="LR" lm="partitura" a="mmonge" alt="oci"><i>partitur</i><par n="jornad/a__n"/></e>
+    <e lm="partitura" a="mmonge" alt="oci@aran"><i>partitur</i><par n="jornad/a__n"/></e>
+    <e lm="partitura" a="mmonge" alt="oci@gascon"><i>partitur</i><par n="jornad/a__n"/></e>
     <e lm="particion"><i>particion</i><par n="part__n"/></e>
-    <e lm="Kelly" a=" mmonge"><i>Kelly</i><par n="Abad__np"/></e>
-    <e lm="flòta" a=" mmonge"><i>flòt</i><par n="jornad/a__n"/></e>
-    <e lm="sinceritat" a=" mmonge"><i>sinceritat</i><par n="part__n"/></e>
-    <e lm="prelitorau" a=" mmonge"><i>prelitorau</i><par n="agent__n"/></e>
-    <e lm="periple" a=" mmonge"><i>periple</i><par n="conselh__n"/></e>
-    <e lm="auditor" a=" mmonge"><i>audit</i><par n="dictat/or__n"/></e>
-      <e r="LR" lm="interin" a=" mmonge" alt="oci"><i>interin</i><par n="trabalhador__adj"/></e>
-    <e lm="interin" a=" mmonge" alt="oci@aran"><i>interin</i><par n="trabalhador__adj"/></e>
-    <e lm="interin" a=" mmonge" alt="oci@gascon"><i>interin</i><par n="trabalhador__adj"/></e>
+    <e lm="Kelly" a="mmonge"><i>Kelly</i><par n="Abad__np"/></e>
+    <e lm="flòta" a="mmonge"><i>flòt</i><par n="jornad/a__n"/></e>
+    <e lm="sinceritat" a="mmonge"><i>sinceritat</i><par n="part__n"/></e>
+    <e lm="prelitorau" a="mmonge"><i>prelitorau</i><par n="agent__n"/></e>
+    <e lm="periple" a="mmonge"><i>periple</i><par n="conselh__n"/></e>
+    <e lm="auditor" a="mmonge"><i>audit</i><par n="dictat/or__n"/></e>
+      <e r="LR" lm="interin" a="mmonge" alt="oci"><i>interin</i><par n="trabalhador__adj"/></e>
+    <e lm="interin" a="mmonge" alt="oci@aran"><i>interin</i><par n="trabalhador__adj"/></e>
+    <e lm="interin" a="mmonge" alt="oci@gascon"><i>interin</i><par n="trabalhador__adj"/></e>
       <e r="LR" lm="interimari" a="carmentano" alt="oci@aran"><i>interim</i><par n="priorit/ari__adj"/></e>
       <e r="LR" lm="interimari" a="carmentano" alt="oci@gascon"><i>interim</i><par n="priorit/ari__adj"/></e>
     <e lm="interimari" a="carmentano" alt="oci"><i>interim</i><par n="priorit/ari__adj"/></e>
     <e lm="embrionari"><i>embrion</i><par n="priorit/ari__adj"/></e>
-    <e lm="Tarantino" a=" mmonge"><i>Tarantino</i><par n="Abad__np"/></e>
-    <e lm="libret" a=" mmonge"><i>libret</i><par n="conselh__n"/></e>
-    <e lm="injeccion" a=" mmonge"><i>injeccion</i><par n="part__n"/></e>
-    <e lm="dissimular" a=" mmonge"><i>dissim</i><par n="ab/u[S]ar__vblex" prm="l"/></e>
-    <e lm="Angeles" a=" mmonge"><i>Angeles</i><par n="Abad__np"/></e>
-    <e lm="Zambrano" a=" mmonge"><i>Zambrano</i><par n="Abad__np"/></e>
-    <e lm="taliban" a=" mmonge"><i>taliban</i><par n="agent__n"/></e>
-    <e lm="Ricci" a=" mmonge"><i>Ricci</i><par n="Abad__np"/></e>
-    <e lm="IVA" a=" mmonge"><i>IVA</i><par n="IRPF__n"/></e>
-    <e lm="Corsega" a=" mmonge"><i>Corsega</i><par n="Aran__np"/></e>
+    <e lm="Tarantino" a="mmonge"><i>Tarantino</i><par n="Abad__np"/></e>
+    <e lm="libret" a="mmonge"><i>libret</i><par n="conselh__n"/></e>
+    <e lm="injeccion" a="mmonge"><i>injeccion</i><par n="part__n"/></e>
+    <e lm="dissimular" a="mmonge"><i>dissim</i><par n="ab/u[S]ar__vblex" prm="l"/></e>
+    <e lm="Angeles" a="mmonge"><i>Angeles</i><par n="Abad__np"/></e>
+    <e lm="Zambrano" a="mmonge"><i>Zambrano</i><par n="Abad__np"/></e>
+    <e lm="taliban" a="mmonge"><i>taliban</i><par n="agent__n"/></e>
+    <e lm="Ricci" a="mmonge"><i>Ricci</i><par n="Abad__np"/></e>
+    <e lm="IVA" a="mmonge"><i>IVA</i><par n="IRPF__n"/></e>
+    <e lm="Corsega" a="mmonge"><i>Corsega</i><par n="Aran__np"/></e>
     <e lm="erosament"><i>erosament</i><par n="adequadament__adv"/></e>
     <e lm="urosament"><i>urosament</i><par n="adequadament__adv"/></e>
-    <e lm="somari" a=" mmonge"><i>somari</i><par n="conselh__n"/></e>
-    <e lm="solfègi" a=" mmonge"><i>solfègi</i><par n="conselh__n"/></e>
-    <e lm="Eugeni" a=" mmonge"><i>Eugeni</i><par n="Abad__np"/></e>
-    <e lm="subsidi" a=" mmonge"><i>subsidi</i><par n="conselh__n"/></e>
-    <e lm="Saviola" a=" mmonge"><i>Saviola</i><par n="Abad__np"/></e>
-    <e lm="pèrla" a=" mmonge"><i>pèrl</i><par n="jornad/a__n"/></e>
-    <e lm="Alexis" a=" mmonge"><i>Alexis</i><par n="Abad__np"/></e>
-    <e lm="coproduccion" a=" mmonge"><i>coproduccion</i><par n="part__n"/></e>
-    <e lm="canari" a=" mmonge"><i>can</i><par n="priorit/ari__adj"/></e>
-    <e lm="Chipre" a=" mmonge"><i>Chipre</i><par n="Aran__np"/></e>
-    <e lm="cirurgian" a=" mmonge"><i>cirurgian</i><par n="conselhèr__n"/></e>
-    <e lm="embarcar" a=" mmonge"><i>emb</i><par n="arr/a[N]car__vblex" prm="r"/></e>
-    <e lm="Marilyn" a=" mmonge"><i>Marilyn</i><par n="Abad__np"/></e>
-    <e lm="vetar" a=" mmonge"><i>v</i><par n="lid/e[R]ar__vblex" prm="t"/></e>
-    <e lm="Stamford" a=" mmonge"><i>Stamford</i><par n="Abad__np"/></e>
-    <e lm="Pierce" a=" mmonge"><i>Pierce</i><par n="Abad__np"/></e>
-    <e lm="pacificacion" a=" mmonge"><i>pacificacion</i><par n="part__n"/></e>
-    <e lm="Margaret" a=" mmonge"><i>Margaret</i><par n="Abad__np"/></e>
-    <e lm="Manhattan" a=" mmonge"><i>Manhattan</i><par n="Aran__np"/></e>
-    <e lm="Francesco" a=" mmonge"><i>Francesco</i><par n="Abad__np"/></e>
-    <e lm="coreograf" a=" mmonge"><i>coreograf</i><par n="filosòf__n"/></e>
-    <e lm="Boris" a=" mmonge"><i>Boris</i><par n="Abad__np"/></e>
-    <e lm="anticipar" a=" mmonge"><i>antic</i><par n="ab/i[T]ar__vblex" prm="p"/></e>
-    <e lm="emancipar" a=" mmonge"><i>emanc</i><par n="ab/i[T]ar__vblex" prm="p"/></e>
-    <e lm="tanc" a=" mmonge"><i>tanc</i><par n="conselh__n"/></e>
-    <e lm="saudita" a=" mmonge"><i>saudit</i><par n="agricòl/a__adj"/></e>
-    <e lm="avantgarda" a=" mmonge"><i>avantgard</i><par n="jornad/a__n"/></e>
-    <e lm="Cruyff" a=" mmonge"><i>Cruyff</i><par n="Abad__np"/></e>
-    <e lm="comando" a=" mmonge"><i>comando</i><par n="conselh__n"/></e>
-    <e lm="tele" a=" mmonge"><i>tele</i><par n="part__n"/></e>
-    <e lm="Stephane" a=" mmonge"><i>Stephane</i><par n="Abad__np"/></e>
-    <e lm="Romain" a=" mmonge"><i>Romain</i><par n="Abad__np"/></e>
-    <e lm="Politecnica" a=" mmonge"><i>Politecnica</i><par n="ABC__np"/></e>
-    <e lm="excap" a=" mmonge"><i>excap</i><par n="agent__n"/></e>
-    <e lm="Leslie" a=" mmonge"><i>Leslie</i><par n="Abad__np"/></e>
-    <e lm="Kurdistan" a=" mmonge"><i>Kurdistan</i><par n="Aran__np"/></e>
-    <e lm="eradicar" a=" mmonge"><i>erad</i><par n="revl/i[N]car__vblex" prm=""/></e>
-    <e lm="crac" a=" mmonge"><i>crac</i><par n="conselh__n"/></e>
-    <e lm="Scorsese" a=" mmonge"><i>Scorsese</i><par n="Abad__np"/></e>
-    <e lm="redactor" a=" mmonge"><i>redact</i><par n="dictat/or__n"/></e>
-    <e lm="Elias" a=" mmonge"><i>Elias</i><par n="Abad__np"/></e>
-    <e lm="Edmilson" a=" mmonge"><i>Edmilson</i><par n="Abad__np"/></e>
-    <e lm="Domènech" a=" mmonge"><i>Domènech</i><par n="Abad__np"/></e>
-    <e lm="diversificacion" a=" mmonge"><i>diversificacion</i><par n="part__n"/></e>
-    <e lm="diürn" a=" mmonge"><i>diürn</i><par n="content__adj"/></e>
-    <e lm="dialectica" a=" mmonge"><i>dialecti</i><par n="va/ca__n"/></e>
-    <e lm="dialectic" a=" mmonge"><i>dialecti</i><par n="tecni/c__adj"/></e>
-    <e lm="clam" a=" mmonge"><i>clam</i><par n="conselh__n"/></e>
-    <e lm="Bulgaria" a=" mmonge"><i>Bulgaria</i><par n="Aran__np"/></e>
-    <e lm="excedent" a=" mmonge"><i>excedent</i><par n="conselh__n"/></e>
-    <e lm="Peralada" a=" mmonge"><i>Peralada</i><par n="Aran__np"/></e>
-    <e lm="Neil" a=" mmonge"><i>Neil</i><par n="Abad__np"/></e>
-    <e lm="Luxemborg" a=" mmonge"><i>Luxemborg</i><par n="Aran__np"/></e>
-    <e lm="Jimmy" a=" mmonge"><i>Jimmy</i><par n="Abad__np"/></e>
-    <e lm="fatal" a=" mmonge"><i>fatal</i><par n="generau__adj"/></e>
-    <e lm="Dakòta" a=" mmonge"><i>Dakòta</i><par n="Aran__np"/></e>
-    <e lm="Berga" a=" mmonge"><i>Berga</i><par n="Aran__np"/></e>
-    <e lm="Senegal" a=" mmonge"><i>Senegal</i><par n="Aran__np"/></e>
-    <e lm="rememoriar" a=" mmonge"><i>remem</i><par n="p/o[RT]ar__vblex" prm="ri"/></e>
-    <e lm="Lotina" a=" mmonge"><i>Lotina</i><par n="Abad__np"/></e>
-    <e lm="agarrar" a=" mmonge"><i>ag</i><par n="c/a[NT]ar__vblex" prm="rr"/></e>
-    <e lm="consisténcia" a=" mmonge"><i>consisténci</i><par n="jornad/a__n"/></e>
-    <e lm="Campos" a=" mmonge"><i>Campos</i><par n="Abad__np"/></e>
-    <e lm="Caine" a=" mmonge"><i>Caine</i><par n="Abad__np"/></e>
-    <e lm="Balsells" a=" mmonge"><i>Balsells</i><par n="Abad__np"/></e>
-    <e lm="assautar" a=" mmonge"><i>assa</i><par n="ab/u[S]ar__vblex" prm="t"/></e>
-    <e lm="Samantha" a=" mmonge"><i>Samantha</i><par n="Abad__np"/></e>
-    <e lm="sacrificar" a=" mmonge"><i>sacrif</i><par n="revl/i[N]car__vblex" prm=""/></e>
-    <e lm="restant" a=" mmonge"><i>restant</i><par n="generau__adj"/></e>
-    <e lm="nomina" a=" mmonge"><i>nomin</i><par n="jornad/a__n"/></e>
-    <e lm="exigent" a=" mmonge"><i>exigent</i><par n="content__adj"/></e>
-    <e lm="locutor" a=" mmonge"><i>locut</i><par n="dictat/or__n"/></e>
-    <e lm="pelejar" a=" mmonge"><i>pel</i><par n="p/e[N]jar__vblex" prm=""/></e>
+    <e lm="somari" a="mmonge"><i>somari</i><par n="conselh__n"/></e>
+    <e lm="solfègi" a="mmonge"><i>solfègi</i><par n="conselh__n"/></e>
+    <e lm="Eugeni" a="mmonge"><i>Eugeni</i><par n="Abad__np"/></e>
+    <e lm="subsidi" a="mmonge"><i>subsidi</i><par n="conselh__n"/></e>
+    <e lm="Saviola" a="mmonge"><i>Saviola</i><par n="Abad__np"/></e>
+    <e lm="pèrla" a="mmonge"><i>pèrl</i><par n="jornad/a__n"/></e>
+    <e lm="Alexis" a="mmonge"><i>Alexis</i><par n="Abad__np"/></e>
+    <e lm="coproduccion" a="mmonge"><i>coproduccion</i><par n="part__n"/></e>
+    <e lm="canari" a="mmonge"><i>can</i><par n="priorit/ari__adj"/></e>
+    <e lm="Chipre" a="mmonge"><i>Chipre</i><par n="Aran__np"/></e>
+    <e lm="cirurgian" a="mmonge"><i>cirurgian</i><par n="conselhèr__n"/></e>
+    <e lm="embarcar" a="mmonge"><i>emb</i><par n="arr/a[N]car__vblex" prm="r"/></e>
+    <e lm="Marilyn" a="mmonge"><i>Marilyn</i><par n="Abad__np"/></e>
+    <e lm="vetar" a="mmonge"><i>v</i><par n="lid/e[R]ar__vblex" prm="t"/></e>
+    <e lm="Stamford" a="mmonge"><i>Stamford</i><par n="Abad__np"/></e>
+    <e lm="Pierce" a="mmonge"><i>Pierce</i><par n="Abad__np"/></e>
+    <e lm="pacificacion" a="mmonge"><i>pacificacion</i><par n="part__n"/></e>
+    <e lm="Margaret" a="mmonge"><i>Margaret</i><par n="Abad__np"/></e>
+    <e lm="Manhattan" a="mmonge"><i>Manhattan</i><par n="Aran__np"/></e>
+    <e lm="Francesco" a="mmonge"><i>Francesco</i><par n="Abad__np"/></e>
+    <e lm="coreograf" a="mmonge"><i>coreograf</i><par n="filosòf__n"/></e>
+    <e lm="Boris" a="mmonge"><i>Boris</i><par n="Abad__np"/></e>
+    <e lm="anticipar" a="mmonge"><i>antic</i><par n="ab/i[T]ar__vblex" prm="p"/></e>
+    <e lm="emancipar" a="mmonge"><i>emanc</i><par n="ab/i[T]ar__vblex" prm="p"/></e>
+    <e lm="tanc" a="mmonge"><i>tanc</i><par n="conselh__n"/></e>
+    <e lm="saudita" a="mmonge"><i>saudit</i><par n="agricòl/a__adj"/></e>
+    <e lm="avantgarda" a="mmonge"><i>avantgard</i><par n="jornad/a__n"/></e>
+    <e lm="Cruyff" a="mmonge"><i>Cruyff</i><par n="Abad__np"/></e>
+    <e lm="comando" a="mmonge"><i>comando</i><par n="conselh__n"/></e>
+    <e lm="tele" a="mmonge"><i>tele</i><par n="part__n"/></e>
+    <e lm="Stephane" a="mmonge"><i>Stephane</i><par n="Abad__np"/></e>
+    <e lm="Romain" a="mmonge"><i>Romain</i><par n="Abad__np"/></e>
+    <e lm="Politecnica" a="mmonge"><i>Politecnica</i><par n="ABC__np"/></e>
+    <e lm="excap" a="mmonge"><i>excap</i><par n="agent__n"/></e>
+    <e lm="Leslie" a="mmonge"><i>Leslie</i><par n="Abad__np"/></e>
+    <e lm="Kurdistan" a="mmonge"><i>Kurdistan</i><par n="Aran__np"/></e>
+    <e lm="eradicar" a="mmonge"><i>erad</i><par n="revl/i[N]car__vblex" prm=""/></e>
+    <e lm="crac" a="mmonge"><i>crac</i><par n="conselh__n"/></e>
+    <e lm="Scorsese" a="mmonge"><i>Scorsese</i><par n="Abad__np"/></e>
+    <e lm="redactor" a="mmonge"><i>redact</i><par n="dictat/or__n"/></e>
+    <e lm="Elias" a="mmonge"><i>Elias</i><par n="Abad__np"/></e>
+    <e lm="Edmilson" a="mmonge"><i>Edmilson</i><par n="Abad__np"/></e>
+    <e lm="Domènech" a="mmonge"><i>Domènech</i><par n="Abad__np"/></e>
+    <e lm="diversificacion" a="mmonge"><i>diversificacion</i><par n="part__n"/></e>
+    <e lm="diürn" a="mmonge"><i>diürn</i><par n="content__adj"/></e>
+    <e lm="dialectica" a="mmonge"><i>dialecti</i><par n="va/ca__n"/></e>
+    <e lm="dialectic" a="mmonge"><i>dialecti</i><par n="tecni/c__adj"/></e>
+    <e lm="clam" a="mmonge"><i>clam</i><par n="conselh__n"/></e>
+    <e lm="Bulgaria" a="mmonge"><i>Bulgaria</i><par n="Aran__np"/></e>
+    <e lm="excedent" a="mmonge"><i>excedent</i><par n="conselh__n"/></e>
+    <e lm="Peralada" a="mmonge"><i>Peralada</i><par n="Aran__np"/></e>
+    <e lm="Neil" a="mmonge"><i>Neil</i><par n="Abad__np"/></e>
+    <e lm="Luxemborg" a="mmonge"><i>Luxemborg</i><par n="Aran__np"/></e>
+    <e lm="Jimmy" a="mmonge"><i>Jimmy</i><par n="Abad__np"/></e>
+    <e lm="fatal" a="mmonge"><i>fatal</i><par n="generau__adj"/></e>
+    <e lm="Dakòta" a="mmonge"><i>Dakòta</i><par n="Aran__np"/></e>
+    <e lm="Berga" a="mmonge"><i>Berga</i><par n="Aran__np"/></e>
+    <e lm="Senegal" a="mmonge"><i>Senegal</i><par n="Aran__np"/></e>
+    <e lm="rememoriar" a="mmonge"><i>remem</i><par n="p/o[RT]ar__vblex" prm="ri"/></e>
+    <e lm="Lotina" a="mmonge"><i>Lotina</i><par n="Abad__np"/></e>
+    <e lm="agarrar" a="mmonge"><i>ag</i><par n="c/a[NT]ar__vblex" prm="rr"/></e>
+    <e lm="consisténcia" a="mmonge"><i>consisténci</i><par n="jornad/a__n"/></e>
+    <e lm="Campos" a="mmonge"><i>Campos</i><par n="Abad__np"/></e>
+    <e lm="Caine" a="mmonge"><i>Caine</i><par n="Abad__np"/></e>
+    <e lm="Balsells" a="mmonge"><i>Balsells</i><par n="Abad__np"/></e>
+    <e lm="assautar" a="mmonge"><i>assa</i><par n="ab/u[S]ar__vblex" prm="t"/></e>
+    <e lm="Samantha" a="mmonge"><i>Samantha</i><par n="Abad__np"/></e>
+    <e lm="sacrificar" a="mmonge"><i>sacrif</i><par n="revl/i[N]car__vblex" prm=""/></e>
+    <e lm="restant" a="mmonge"><i>restant</i><par n="generau__adj"/></e>
+    <e lm="nomina" a="mmonge"><i>nomin</i><par n="jornad/a__n"/></e>
+    <e lm="exigent" a="mmonge"><i>exigent</i><par n="content__adj"/></e>
+    <e lm="locutor" a="mmonge"><i>locut</i><par n="dictat/or__n"/></e>
+    <e lm="pelejar" a="mmonge"><i>pel</i><par n="p/e[N]jar__vblex" prm=""/></e>
     <e lm="chèc" a="carmentano"><i>chè</i><par n="blan/c__adj"/></e>
     <e lm="suslhèuament" a="carmentano"><i>suslhèuament</i><par n="conselh__n"/></e>
     <e lm="adjunh" a="carmentano" r="LR"><i>adjunh</i><par n="content__adj"/></e>
@@ -37749,67 +37754,67 @@
     <e lm="suggeréncia" a="carmentano" alt="oci@aran"><i>suggerénci</i><par n="jornad/a__n"/></e>
     <e lm="suggeréncia" a="carmentano" alt="oci@gascon"><i>suggerénci</i><par n="jornad/a__n"/></e>
     <e lm="filatelic" a="carmentano"><i>filateli</i><par n="tecni/c__adj"/></e>
-    <e lm="cristianodemocrata" a=" mmonge"><i>cristianodemocrat</i><par n="guardi/a__n"/></e>
-      <e r="LR" lm="hòl" a=" mmonge" alt="oci"><i>hòl</i><par n="trabalhador__adj"/></e>
-    <e lm="hòl" a=" mmonge" alt="oci@aran"><i>hòl</i><par n="trabalhador__adj"/></e>
-    <e lm="hòl" a=" mmonge" alt="oci@gascon"><i>hòl</i><par n="trabalhador__adj"/></e>
-      <e r="LR" lm="fòl" a=" mmonge" alt="oci@aran"><i>fòl</i><par n="trabalhador__adj"/></e>
-      <e r="LR" lm="fòl" a=" mmonge" alt="oci@gascon"><i>fòl</i><par n="trabalhador__adj"/></e>
-    <e lm="fòl" a=" mmonge" alt="oci"><i>fòl</i><par n="trabalhador__adj"/></e>
-    <e lm="baug" a=" mmonge" r="LR"><i>bau</i><par n="lè/g__adj"/></e>
-    <e lm="plusvalua" a=" mmonge"><i>plusvalu</i><par n="jornad/a__n"/></e>
-    <e lm="sinistralitat" a=" mmonge"><i>sinistralitat</i><par n="part__n"/></e>
-    <e lm="contrapunt" a=" mmonge"><i>contrapunt</i><par n="conselh__n"/></e>
-    <e lm="desafiar" a=" mmonge"><i>desafi</i><par n="ami/ar__vblex"/></e>
-    <e lm="Galles" a=" mmonge"><i>Galles</i><par n="Aran__np"/></e>
-    <e lm="mansion" a=" mmonge"><i>mansion</i><par n="part__n"/></e>
-    <e lm="tactica" a=" mmonge"><i>tacti</i><par n="va/ca__n"/></e>
-    <e lm="aval" a=" mmonge"><i>aval</i><par n="conselh__n"/></e>
-      <e r="LR" lm="centrequèrra" a=" mmonge" alt="oci"><i>centrequèrr</i><par n="jornad/a__n"/></e>
-    <e lm="centrequèrra" a=" mmonge" alt="oci@aran"><i>centrequèrr</i><par n="jornad/a__n"/></e>
-    <e lm="centrequèrra" a=" mmonge" alt="oci@gascon"><i>centrequèrr</i><par n="jornad/a__n"/></e>
-      <e r="LR" lm="centresquèrra" a=" mmonge" alt="oci@aran"><i>centresquèrr</i><par n="jornad/a__n"/></e>
-      <e r="LR" lm="centresquèrra" a=" mmonge" alt="oci@gascon"><i>centresquèrr</i><par n="jornad/a__n"/></e>
-    <e lm="centresquèrra" a=" mmonge" alt="oci"><i>centresquèrr</i><par n="jornad/a__n"/></e>
-      <e r="LR" lm="centredreta" a=" mmonge" alt="oci"><i>centredret</i><par n="jornad/a__n"/></e>
-    <e lm="centredreta" a=" mmonge" alt="oci@aran"><i>centredret</i><par n="jornad/a__n"/></e>
-    <e lm="centredreta" a=" mmonge" alt="oci@gascon"><i>centredret</i><par n="jornad/a__n"/></e>
-      <e r="LR" lm="centredrecha" a=" mmonge" alt="oci@aran"><i>centredrech</i><par n="jornad/a__n"/></e>
-      <e r="LR" lm="centredrecha" a=" mmonge" alt="oci@gascon"><i>centredrech</i><par n="jornad/a__n"/></e>
-    <e lm="centredrecha" a=" mmonge" alt="oci"><i>centredrech</i><par n="jornad/a__n"/></e>
+    <e lm="cristianodemocrata" a="mmonge"><i>cristianodemocrat</i><par n="guardi/a__n"/></e>
+      <e r="LR" lm="hòl" a="mmonge" alt="oci"><i>hòl</i><par n="trabalhador__adj"/></e>
+    <e lm="hòl" a="mmonge" alt="oci@aran"><i>hòl</i><par n="trabalhador__adj"/></e>
+    <e lm="hòl" a="mmonge" alt="oci@gascon"><i>hòl</i><par n="trabalhador__adj"/></e>
+      <e r="LR" lm="fòl" a="mmonge" alt="oci@aran"><i>fòl</i><par n="trabalhador__adj"/></e>
+      <e r="LR" lm="fòl" a="mmonge" alt="oci@gascon"><i>fòl</i><par n="trabalhador__adj"/></e>
+    <e lm="fòl" a="mmonge" alt="oci"><i>fòl</i><par n="trabalhador__adj"/></e>
+    <e lm="baug" a="mmonge" r="LR"><i>bau</i><par n="lè/g__adj"/></e>
+    <e lm="plusvalua" a="mmonge"><i>plusvalu</i><par n="jornad/a__n"/></e>
+    <e lm="sinistralitat" a="mmonge"><i>sinistralitat</i><par n="part__n"/></e>
+    <e lm="contrapunt" a="mmonge"><i>contrapunt</i><par n="conselh__n"/></e>
+    <e lm="desafiar" a="mmonge"><i>desafi</i><par n="ami/ar__vblex"/></e>
+    <e lm="Galles" a="mmonge"><i>Galles</i><par n="Aran__np"/></e>
+    <e lm="mansion" a="mmonge"><i>mansion</i><par n="part__n"/></e>
+    <e lm="tactica" a="mmonge"><i>tacti</i><par n="va/ca__n"/></e>
+    <e lm="aval" a="mmonge"><i>aval</i><par n="conselh__n"/></e>
+      <e r="LR" lm="centrequèrra" a="mmonge" alt="oci"><i>centrequèrr</i><par n="jornad/a__n"/></e>
+    <e lm="centrequèrra" a="mmonge" alt="oci@aran"><i>centrequèrr</i><par n="jornad/a__n"/></e>
+    <e lm="centrequèrra" a="mmonge" alt="oci@gascon"><i>centrequèrr</i><par n="jornad/a__n"/></e>
+      <e r="LR" lm="centresquèrra" a="mmonge" alt="oci@aran"><i>centresquèrr</i><par n="jornad/a__n"/></e>
+      <e r="LR" lm="centresquèrra" a="mmonge" alt="oci@gascon"><i>centresquèrr</i><par n="jornad/a__n"/></e>
+    <e lm="centresquèrra" a="mmonge" alt="oci"><i>centresquèrr</i><par n="jornad/a__n"/></e>
+      <e r="LR" lm="centredreta" a="mmonge" alt="oci"><i>centredret</i><par n="jornad/a__n"/></e>
+    <e lm="centredreta" a="mmonge" alt="oci@aran"><i>centredret</i><par n="jornad/a__n"/></e>
+    <e lm="centredreta" a="mmonge" alt="oci@gascon"><i>centredret</i><par n="jornad/a__n"/></e>
+      <e r="LR" lm="centredrecha" a="mmonge" alt="oci@aran"><i>centredrech</i><par n="jornad/a__n"/></e>
+      <e r="LR" lm="centredrecha" a="mmonge" alt="oci@gascon"><i>centredrech</i><par n="jornad/a__n"/></e>
+    <e lm="centredrecha" a="mmonge" alt="oci"><i>centredrech</i><par n="jornad/a__n"/></e>
     <e lm="centredrieta" r="LR"><i>centredreit</i><par n="jornad/a__n"/></e>
-    <e lm="grèuge" a=" mmonge"><i>grèuge</i><par n="conselh__n"/></e>
-    <e lm="gironin" a=" mmonge"><i>gironin</i><par n="trabalhador__adj"/></e>
-    <e lm="Màlaga" a=" mmonge"><i>Màlaga</i><par n="Aran__np"/></e>
+    <e lm="grèuge" a="mmonge"><i>grèuge</i><par n="conselh__n"/></e>
+    <e lm="gironin" a="mmonge"><i>gironin</i><par n="trabalhador__adj"/></e>
+    <e lm="Màlaga" a="mmonge"><i>Màlaga</i><par n="Aran__np"/></e>
     <e lm="puntualament"><i>puntua</i><par n="accidenta/lament__adv"/></e>
-    <e lm="croat" a=" mmonge"><i>croat</i><par n="trabalhador__adj"/></e>
-      <e r="LR" lm="exconselhèr" alt="oci" a=" mmonge"><i>exconselhèr</i><par n="conselhèr__n"/></e>
-    <e lm="exconselhèr" alt="oci@aran" a=" mmonge"><i>exconselhèr</i><par n="conselhèr__n"/></e>
-    <e lm="exconselhèr" alt="oci@gascon" a=" mmonge"><i>exconselhèr</i><par n="conselhèr__n"/></e>
-      <e r="LR" lm="exconselhièr" alt="oci@aran" a=" mmonge"><i>exconselhiè</i><par n="presoniè/r__n"/></e>
-      <e r="LR" lm="exconselhièr" alt="oci@gascon" a=" mmonge"><i>exconselhiè</i><par n="presoniè/r__n"/></e>
-    <e lm="exconselhièr" alt="oci" a=" mmonge"><i>exconselhiè</i><par n="presoniè/r__n"/></e>
+    <e lm="croat" a="mmonge"><i>croat</i><par n="trabalhador__adj"/></e>
+      <e r="LR" lm="exconselhèr" alt="oci" a="mmonge"><i>exconselhèr</i><par n="conselhèr__n"/></e>
+    <e lm="exconselhèr" alt="oci@aran" a="mmonge"><i>exconselhèr</i><par n="conselhèr__n"/></e>
+    <e lm="exconselhèr" alt="oci@gascon" a="mmonge"><i>exconselhèr</i><par n="conselhèr__n"/></e>
+      <e r="LR" lm="exconselhièr" alt="oci@aran" a="mmonge"><i>exconselhiè</i><par n="presoniè/r__n"/></e>
+      <e r="LR" lm="exconselhièr" alt="oci@gascon" a="mmonge"><i>exconselhiè</i><par n="presoniè/r__n"/></e>
+    <e lm="exconselhièr" alt="oci" a="mmonge"><i>exconselhiè</i><par n="presoniè/r__n"/></e>
     <e lm="pudor" a="carmentano"><i>pudor</i><par n="part__n"/></e>
-    <e lm="marginalizacion" a=" mmonge"><i>marginalizacion</i><par n="part__n"/></e>
-    <e lm="telenovèla" a=" mmonge"><i>telenovèl</i><par n="jornad/a__n"/></e>
-    <e lm="pastisson" a=" mmonge"><i>pastisson</i><par n="conselh__n"/></e>
-    <e lm="radiotelevision" a=" mmonge"><i>radiotelevision</i><par n="part__n"/></e>
-    <e lm="faccion" a=" mmonge"><i>faccion</i><par n="part__n"/></e>
+    <e lm="marginalizacion" a="mmonge"><i>marginalizacion</i><par n="part__n"/></e>
+    <e lm="telenovèla" a="mmonge"><i>telenovèl</i><par n="jornad/a__n"/></e>
+    <e lm="pastisson" a="mmonge"><i>pastisson</i><par n="conselh__n"/></e>
+    <e lm="radiotelevision" a="mmonge"><i>radiotelevision</i><par n="part__n"/></e>
+    <e lm="faccion" a="mmonge"><i>faccion</i><par n="part__n"/></e>
     <e lm="afeccion"><i>afeccion</i><par n="part__n"/></e>
-    <e lm="monològ" a=" mmonge"><i>monològ</i><par n="conselh__n"/></e>
-    <e lm="trobalha" a=" mmonge"><i>trobalh</i><par n="jornad/a__n"/></e>
-    <e lm="cubertadèr" a=" mmonge"><i>cubertadèr</i><par n="conselh__n"/></e>
+    <e lm="monològ" a="mmonge"><i>monològ</i><par n="conselh__n"/></e>
+    <e lm="trobalha" a="mmonge"><i>trobalh</i><par n="jornad/a__n"/></e>
+    <e lm="cubertadèr" a="mmonge"><i>cubertadèr</i><par n="conselh__n"/></e>
     <e lm="presomptament"><i>presomptament</i><par n="adequadament__adv"/></e>
-    <e lm="fòlc" a=" mmonge"><i>fòlc</i><par n="deluns__n"/></e>
-    <e lm="Poblenou" a=" mmonge"><i>Poblenou</i><par n="Aran__np"/></e>
-    <e lm="elogiar" a=" mmonge"><i>el</i><par n="p/o[RT]ar__vblex" prm="gi"/></e>
-    <e lm="Poblet" a=" mmonge"><i>Poblet</i><par n="Aran__np"/></e>
-    <e lm="poblet" a=" mmonge"><i>poblet</i><par n="conselh__n"/></e>
-    <e lm="comissionat" a=" mmonge"><i>comissionat</i><par n="conselh__n"/></e>
+    <e lm="fòlc" a="mmonge"><i>fòlc</i><par n="deluns__n"/></e>
+    <e lm="Poblenou" a="mmonge"><i>Poblenou</i><par n="Aran__np"/></e>
+    <e lm="elogiar" a="mmonge"><i>el</i><par n="p/o[RT]ar__vblex" prm="gi"/></e>
+    <e lm="Poblet" a="mmonge"><i>Poblet</i><par n="Aran__np"/></e>
+    <e lm="poblet" a="mmonge"><i>poblet</i><par n="conselh__n"/></e>
+    <e lm="comissionat" a="mmonge"><i>comissionat</i><par n="conselh__n"/></e>
     <e lm="substancialament"><i>substancia</i><par n="accidenta/lament__adv"/></e>
-    <e lm="mas" a=" mmonge"><i>mas</i><par n="mes__n"/></e>
-    <e lm="masia" a=" mmonge"><i>masi</i><par n="jornad/a__n"/></e>
-    <e lm="pursèra" a=" mmonge"><i>pursèr</i><par n="jornad/a__n"/></e>
+    <e lm="mas" a="mmonge"><i>mas</i><par n="mes__n"/></e>
+    <e lm="masia" a="mmonge"><i>masi</i><par n="jornad/a__n"/></e>
+    <e lm="pursèra" a="mmonge"><i>pursèr</i><par n="jornad/a__n"/></e>
     <e lm="pudor" a="carmentano"><i>pudor</i><par n="conselh__n"/></e>
     <e lm="tenebrós" a="carmentano"><i>tenebr</i><par n="perilh/ós__adj"/></e>
     <e lm="antologic" a="carmentano"><i>antologi</i><par n="tecni/c__adj"/></e>
@@ -37851,74 +37856,74 @@
     <e lm="topònim" a="carmentano" r="LR"><i>topònim</i><par n="conselh__n"/></e>
     <e lm="mont"><i>mont</i><par n="conselh__n"/><p><l><b/>de<b/>pietat</l><r><g><b/>de<b/>pietat</g></r></p></e>
     <e lm="fragmentacion" a="carmentano"><i>fragmentacion</i><par n="part__n"/></e>
-    <e lm="Neptun" a=" mmonge"><i>Neptun</i><par n="Abad__np"/></e>
+    <e lm="Neptun" a="mmonge"><i>Neptun</i><par n="Abad__np"/></e>
     <e lm="Neptun" a="carmentano"><i>Neptun</i><par n="Aran__np"/></e>
-    <e lm="trava" a=" mmonge" c="posar traves = méter traves"><i>trav</i><par n="jornad/a__n"/></e>
-    <e lm="fabla" a=" mmonge" c="també es pot dir FAULA"><i>fabl</i><par n="jornad/a__n"/></e>
+    <e lm="trava" a="mmonge" c="posar traves = méter traves"><i>trav</i><par n="jornad/a__n"/></e>
+    <e lm="fabla" a="mmonge" c="també es pot dir FAULA"><i>fabl</i><par n="jornad/a__n"/></e>
     <e lm="faula" a="carmentano" r="LR"><i>faul</i><par n="jornad/a__n"/></e>
-    <e lm="mèr" a=" mmonge"><i>mèr</i><par n="trabalhador__adj"/></e>
-    <e lm="esfaçar" a=" mmonge" r="LR"><i>esf</i><par n="d/a[N]çar__vblex" prm=""/></e>
-      <e r="LR" lm="hormigon" a=" mmonge" alt="oci"><i>hormigon</i><par n="conselh__n"/></e>
-    <e lm="hormigon" a=" mmonge" alt="oci@aran"><i>hormigon</i><par n="conselh__n"/></e>
-    <e lm="hormigon" a=" mmonge" alt="oci@gascon"><i>hormigon</i><par n="conselh__n"/></e>
-      <e r="LR" lm="beton" a=" mmonge" alt="oci@aran"><i>beton</i><par n="conselh__n"/></e>
-      <e r="LR" lm="beton" a=" mmonge" alt="oci@gascon"><i>beton</i><par n="conselh__n"/></e>
-    <e lm="beton" a=" mmonge" alt="oci"><i>beton</i><par n="conselh__n"/></e>
-    <e lm="subsòu" a=" mmonge"><i>subsòu</i><par n="conselh__n"/></e>
-    <e lm="esboçar" a=" mmonge"><i>esb</i><par n="arr/o[N]çar__vblex" prm=""/></e>
-    <e lm="reafirmar" a=" mmonge"><i>reaf</i><par n="ab/i[T]ar__vblex" prm="rm"/></e>
-    <e lm="evocar" a=" mmonge"><i>ev</i><par n="s/o[S]car__vblex" prm=""/></e>
-    <e lm="pistòla" a=" mmonge" r="LR"><i>pistòl</i><par n="jornad/a__n"/></e>
-      <e r="LR" lm="irrómper" a=" mmonge" alt="oci"><i>irr</i><par n="corresp/ó[N]er__vblex" prm="mp"/></e>
-    <e lm="irrómper" a=" mmonge" alt="oci@aran"><i>irr</i><par n="corresp/ó[N]er__vblex" prm="mp"/></e>
-    <e lm="irrómper" a=" mmonge" alt="oci@gascon"><i>irr</i><par n="corresp/ó[N]er__vblex" prm="mp"/></e>
-      <e r="LR" lm="irrompre" a=" mmonge" alt="oci@aran"><i>irromp</i><par n="bat/re__vblex"/></e>
-      <e r="LR" lm="irrompre" a=" mmonge" alt="oci@gascon"><i>irromp</i><par n="bat/re__vblex"/></e>
-    <e lm="irrompre" a=" mmonge" alt="oci"><i>irromp</i><par n="bat/re__vblex"/></e>
-    <e lm="desaprofitar" a=" mmonge"><i>desaprof</i><par n="ab/i[T]ar__vblex" prm="t"/></e>
-    <e lm="allicient" a=" mmonge"><i>allicient</i><par n="conselh__n"/></e>
-    <e lm="temible" a=" mmonge"><i>temibl</i><par n="ampl/e__adj"/></e>
-    <e lm="imparable" a=" mmonge"><i>imparabl</i><par n="ampl/e__adj"/></e>
-    <e lm="mèta" a=" mmonge"><i>mèt</i><par n="jornad/a__n"/></e>
-    <e lm="destronar" a=" mmonge"><i>destr</i><par n="p/o[RT]ar__vblex" prm="n"/></e>
-    <e lm="illustre" a=" mmonge"><i>illustr</i><par n="ampl/e__adj"/></e>
-    <e lm="exculpar" a=" mmonge"><i>exc</i><par n="ab/u[S]ar__vblex" prm="lp"/></e>
-    <e lm="martirizar" a=" mmonge"><i>martir</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
-      <e r="LR" lm="arranguilh" a=" mmonge" alt="oci"><i>arranguilh</i><par n="conselh__n"/></e>
-    <e lm="arranguilh" a=" mmonge" alt="oci@aran"><i>arranguilh</i><par n="conselh__n"/></e>
-    <e lm="arranguilh" a=" mmonge" alt="oci@gascon"><i>arranguilh</i><par n="conselh__n"/></e>
-      <e r="LR" lm="ranguilh" a=" mmonge" alt="oci@aran"><i>ranguilh</i><par n="conselh__n"/></e>
-      <e r="LR" lm="ranguilh" a=" mmonge" alt="oci@gascon"><i>ranguilh</i><par n="conselh__n"/></e>
-    <e lm="ranguilh" a=" mmonge" alt="oci"><i>ranguilh</i><par n="conselh__n"/></e>
-    <e lm="distraccion" a=" mmonge"><i>distraccion</i><par n="part__n"/></e>
-    <e lm="penar" a=" mmonge"><i>p</i><par n="lid/e[R]ar__vblex" prm="n"/></e>
-    <e lm="neutralizar" a=" mmonge"><i>neutral</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
-    <e lm="epilòg" a=" mmonge"><i>epilòg</i><par n="conselh__n"/></e>
-    <e lm="miratge" a=" mmonge"><i>miratge</i><par n="conselh__n"/></e>
-    <e lm="insurreccion" a=" mmonge"><i>insurreccion</i><par n="part__n"/></e>
-    <e lm="ovacionar" a=" mmonge"><i>ovaci</i><par n="p/o[RT]ar__vblex" prm="n"/></e>
-    <e lm="Midi" a=" mmonge"><i>Midi</i><par n="Aran__np"/></e>
-    <e lm="pelegrin" a=" mmonge"><i>pelegrin</i><par n="conselhèr__n"/></e>
-    <e lm="indulgéncia" a=" mmonge"><i>indulgénci</i><par n="jornad/a__n"/></e>
-    <e lm="jubilèu" a=" mmonge"><i>jubilèu</i><par n="conselh__n"/></e>
-    <e lm="bust" a=" mmonge"><i>bust</i><par n="conselh__n"/></e>
-    <e lm="mitificacion" a=" mmonge"><i>mitificacion</i><par n="part__n"/></e>
-    <e lm="convulsat" a=" mmonge"><i>convulsa</i><par n="apropria/t__adj"/></e>
-    <e lm="malastrós" a=" mmonge"><i>malastr</i><par n="perilh/ós__adj"/></e>
-    <e lm="delator" a=" mmonge"><i>delator</i><par n="conselhèr__n"/></e>
-    <e lm="sordid" a=" mmonge"><i>sordid</i><par n="trabalhador__adj"/></e>
-    <e lm="sabotatge" a=" mmonge"><i>sabotatge</i><par n="conselh__n"/></e>
-    <e lm="legion" a=" mmonge"><i>legion</i><par n="part__n"/></e>
-    <e lm="eroïc" a=" mmonge"><i>eroï</i><par n="tecni/c__adj"/></e>
-    <e lm="illusionat" a=" mmonge"><i>illusiona</i><par n="apropria/t__adj"/></e>
-    <e lm="temeritat" a=" mmonge"><i>temeritat</i><par n="part__n"/></e>
+    <e lm="mèr" a="mmonge"><i>mèr</i><par n="trabalhador__adj"/></e>
+    <e lm="esfaçar" a="mmonge" r="LR"><i>esf</i><par n="d/a[N]çar__vblex" prm=""/></e>
+      <e r="LR" lm="hormigon" a="mmonge" alt="oci"><i>hormigon</i><par n="conselh__n"/></e>
+    <e lm="hormigon" a="mmonge" alt="oci@aran"><i>hormigon</i><par n="conselh__n"/></e>
+    <e lm="hormigon" a="mmonge" alt="oci@gascon"><i>hormigon</i><par n="conselh__n"/></e>
+      <e r="LR" lm="beton" a="mmonge" alt="oci@aran"><i>beton</i><par n="conselh__n"/></e>
+      <e r="LR" lm="beton" a="mmonge" alt="oci@gascon"><i>beton</i><par n="conselh__n"/></e>
+    <e lm="beton" a="mmonge" alt="oci"><i>beton</i><par n="conselh__n"/></e>
+    <e lm="subsòu" a="mmonge"><i>subsòu</i><par n="conselh__n"/></e>
+    <e lm="esboçar" a="mmonge"><i>esb</i><par n="arr/o[N]çar__vblex" prm=""/></e>
+    <e lm="reafirmar" a="mmonge"><i>reaf</i><par n="ab/i[T]ar__vblex" prm="rm"/></e>
+    <e lm="evocar" a="mmonge"><i>ev</i><par n="s/o[S]car__vblex" prm=""/></e>
+    <e lm="pistòla" a="mmonge" r="LR"><i>pistòl</i><par n="jornad/a__n"/></e>
+      <e r="LR" lm="irrómper" a="mmonge" alt="oci"><i>irr</i><par n="corresp/ó[N]er__vblex" prm="mp"/></e>
+    <e lm="irrómper" a="mmonge" alt="oci@aran"><i>irr</i><par n="corresp/ó[N]er__vblex" prm="mp"/></e>
+    <e lm="irrómper" a="mmonge" alt="oci@gascon"><i>irr</i><par n="corresp/ó[N]er__vblex" prm="mp"/></e>
+      <e r="LR" lm="irrompre" a="mmonge" alt="oci@aran"><i>irromp</i><par n="bat/re__vblex"/></e>
+      <e r="LR" lm="irrompre" a="mmonge" alt="oci@gascon"><i>irromp</i><par n="bat/re__vblex"/></e>
+    <e lm="irrompre" a="mmonge" alt="oci"><i>irromp</i><par n="bat/re__vblex"/></e>
+    <e lm="desaprofitar" a="mmonge"><i>desaprof</i><par n="ab/i[T]ar__vblex" prm="t"/></e>
+    <e lm="allicient" a="mmonge"><i>allicient</i><par n="conselh__n"/></e>
+    <e lm="temible" a="mmonge"><i>temibl</i><par n="ampl/e__adj"/></e>
+    <e lm="imparable" a="mmonge"><i>imparabl</i><par n="ampl/e__adj"/></e>
+    <e lm="mèta" a="mmonge"><i>mèt</i><par n="jornad/a__n"/></e>
+    <e lm="destronar" a="mmonge"><i>destr</i><par n="p/o[RT]ar__vblex" prm="n"/></e>
+    <e lm="illustre" a="mmonge"><i>illustr</i><par n="ampl/e__adj"/></e>
+    <e lm="exculpar" a="mmonge"><i>exc</i><par n="ab/u[S]ar__vblex" prm="lp"/></e>
+    <e lm="martirizar" a="mmonge"><i>martir</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+      <e r="LR" lm="arranguilh" a="mmonge" alt="oci"><i>arranguilh</i><par n="conselh__n"/></e>
+    <e lm="arranguilh" a="mmonge" alt="oci@aran"><i>arranguilh</i><par n="conselh__n"/></e>
+    <e lm="arranguilh" a="mmonge" alt="oci@gascon"><i>arranguilh</i><par n="conselh__n"/></e>
+      <e r="LR" lm="ranguilh" a="mmonge" alt="oci@aran"><i>ranguilh</i><par n="conselh__n"/></e>
+      <e r="LR" lm="ranguilh" a="mmonge" alt="oci@gascon"><i>ranguilh</i><par n="conselh__n"/></e>
+    <e lm="ranguilh" a="mmonge" alt="oci"><i>ranguilh</i><par n="conselh__n"/></e>
+    <e lm="distraccion" a="mmonge"><i>distraccion</i><par n="part__n"/></e>
+    <e lm="penar" a="mmonge"><i>p</i><par n="lid/e[R]ar__vblex" prm="n"/></e>
+    <e lm="neutralizar" a="mmonge"><i>neutral</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+    <e lm="epilòg" a="mmonge"><i>epilòg</i><par n="conselh__n"/></e>
+    <e lm="miratge" a="mmonge"><i>miratge</i><par n="conselh__n"/></e>
+    <e lm="insurreccion" a="mmonge"><i>insurreccion</i><par n="part__n"/></e>
+    <e lm="ovacionar" a="mmonge"><i>ovaci</i><par n="p/o[RT]ar__vblex" prm="n"/></e>
+    <e lm="Midi" a="mmonge"><i>Midi</i><par n="Aran__np"/></e>
+    <e lm="pelegrin" a="mmonge"><i>pelegrin</i><par n="conselhèr__n"/></e>
+    <e lm="indulgéncia" a="mmonge"><i>indulgénci</i><par n="jornad/a__n"/></e>
+    <e lm="jubilèu" a="mmonge"><i>jubilèu</i><par n="conselh__n"/></e>
+    <e lm="bust" a="mmonge"><i>bust</i><par n="conselh__n"/></e>
+    <e lm="mitificacion" a="mmonge"><i>mitificacion</i><par n="part__n"/></e>
+    <e lm="convulsat" a="mmonge"><i>convulsa</i><par n="apropria/t__adj"/></e>
+    <e lm="malastrós" a="mmonge"><i>malastr</i><par n="perilh/ós__adj"/></e>
+    <e lm="delator" a="mmonge"><i>delator</i><par n="conselhèr__n"/></e>
+    <e lm="sordid" a="mmonge"><i>sordid</i><par n="trabalhador__adj"/></e>
+    <e lm="sabotatge" a="mmonge"><i>sabotatge</i><par n="conselh__n"/></e>
+    <e lm="legion" a="mmonge"><i>legion</i><par n="part__n"/></e>
+    <e lm="eroïc" a="mmonge"><i>eroï</i><par n="tecni/c__adj"/></e>
+    <e lm="illusionat" a="mmonge"><i>illusiona</i><par n="apropria/t__adj"/></e>
+    <e lm="temeritat" a="mmonge"><i>temeritat</i><par n="part__n"/></e>
     <e lm="còrs" a="carmentano"><i>còrs</i><par n="divèrs__adj"/></e>
-    <e lm="destacable" a=" mmonge"><i>destacabl</i><par n="ampl/e__adj"/></e>
-    <e lm="enigmatic" a=" mmonge"><i>enigmati</i><par n="tecni/c__adj"/></e>
-    <e lm="penetracion" a=" mmonge"><i>penetracion</i><par n="part__n"/></e>
-    <e lm="rebellion" a=" mmonge"><i>rebellion</i><par n="part__n"/></e>
-    <e lm="enrotlar" a=" mmonge"><i>enr</i><par n="p/o[RT]ar__vblex" prm="tl"/></e>
-    <e lm="inibicion" a=" mmonge"><i>inibicion</i><par n="part__n"/></e>
+    <e lm="destacable" a="mmonge"><i>destacabl</i><par n="ampl/e__adj"/></e>
+    <e lm="enigmatic" a="mmonge"><i>enigmati</i><par n="tecni/c__adj"/></e>
+    <e lm="penetracion" a="mmonge"><i>penetracion</i><par n="part__n"/></e>
+    <e lm="rebellion" a="mmonge"><i>rebellion</i><par n="part__n"/></e>
+    <e lm="enrotlar" a="mmonge"><i>enr</i><par n="p/o[RT]ar__vblex" prm="tl"/></e>
+    <e lm="inibicion" a="mmonge"><i>inibicion</i><par n="part__n"/></e>
     <e lm="targeta" a="carmentano" r="LR"><i>target</i><par n="jornad/a__n"/></e>
     <e lm="amàs" a="carmentano"><i>am</i><par n="trasp/às__n"/></e>
     <e lm="titularitat" a="carmentano" r="LR"><i>titularitat</i><par n="part__n"/></e>
@@ -37951,11 +37956,11 @@
       <e r="LR" lm="empoisonament" a="carmentano" alt="oci@gascon"><i>empoisonament</i><par n="conselh__n"/></e>
     <e lm="empoisonament" a="carmentano" alt="oci"><i>empoisonament</i><par n="conselh__n"/></e>
     <e lm="Talgo" a="carmentano"><i>Talgo</i><par n="ABC__np"/></e>
-    <e lm="batalhon" a=" mmonge"><i>batalhon</i><par n="conselh__n"/></e>
-    <e lm="purga" a=" mmonge"><i>purg</i><par n="hormig/a__n"/></e>
-    <e lm="incomòde" a=" mmonge"><i>incomòd</i><par n="ampl/e__adj"/></e>
-    <e lm="escalabrar" a=" mmonge"><i>escal</i><par n="c/a[NT]ar__vblex" prm="br"/></e>
-    <e lm="camoflatge" a=" mmonge"><i>camoflatge</i><par n="conselh__n"/></e>
+    <e lm="batalhon" a="mmonge"><i>batalhon</i><par n="conselh__n"/></e>
+    <e lm="purga" a="mmonge"><i>purg</i><par n="hormig/a__n"/></e>
+    <e lm="incomòde" a="mmonge"><i>incomòd</i><par n="ampl/e__adj"/></e>
+    <e lm="escalabrar" a="mmonge"><i>escal</i><par n="c/a[NT]ar__vblex" prm="br"/></e>
+    <e lm="camoflatge" a="mmonge"><i>camoflatge</i><par n="conselh__n"/></e>
     <e lm="saturar" a="carmentano"><i>s</i><par n="c/a[NT]ar__vblex" prm="tur"/></e>
     <e lm="UPV" a="carmentano"><i>UPV</i><par n="BBC__n"/></e>
     <e lm="absòlver" a="carmentano" alt="oci@aran"><i>abs</i><par n="res/ò[LV]er__vblex" prm="lv"/></e>
@@ -37980,23 +37985,23 @@
     <e lm="individualisme" a="carmentano"><i>individualisme</i><par n="conselh__n"/></e>
     <e lm="neutralitat" a="carmentano"><i>neutralitat</i><par n="part__n"/></e>
     <e lm="Bachelet" a="carmentano"><i>Bachelet</i><par n="Abad__np"/></e>
-    <e lm="polòni" a=" mmonge"><i>polòni</i><par n="conselh__n"/></e>
-    <e lm="Amborg" a=" mmonge"><i>Amborg</i><par n="Aran__np"/></e>
-    <e lm="exespia" a=" mmonge"><i>exespi</i><par n="guardi/a__n"/></e>
-    <e lm="exhemna" a=" mmonge"><i>exhemn</i><par n="jornad/a__n"/></e>
-    <e lm="transvasar" a=" mmonge"><i>transv</i><par n="c/a[NT]ar__vblex" prm="s"/></e>
-    <e lm="radioactivitat" a=" mmonge"><i>radioactivitat</i><par n="part__n"/></e>
-    <e lm="esclariment" a=" mmonge"><i>esclariment</i><par n="conselh__n"/></e>
-    <e lm="vessament" a=" mmonge"><i>vessament</i><par n="conselh__n"/></e>
-    <e lm="vessar" a=" mmonge" r="LR"><i>v</i><par n="lid/e[R]ar__vblex" prm="ss"/></e>
-    <e lm="restanca" a=" mmonge"><i>restan</i><par n="va/ca__n"/></e>
-    <e lm="sarcofag" a=" mmonge"><i>sarcofag</i><par n="conselh__n"/></e>
-    <e lm="apostòl" a=" mmonge"><i>apostòl</i><par n="conselh__n"/></e>
-    <e lm="catacion" a=" mmonge"><i>catacion</i><par n="part__n"/></e>
-    <e lm="incomplet" a=" mmonge" r="LR"><i>incomplet</i><par n="content__adj"/></e>
+    <e lm="polòni" a="mmonge"><i>polòni</i><par n="conselh__n"/></e>
+    <e lm="Amborg" a="mmonge"><i>Amborg</i><par n="Aran__np"/></e>
+    <e lm="exespia" a="mmonge"><i>exespi</i><par n="guardi/a__n"/></e>
+    <e lm="exhemna" a="mmonge"><i>exhemn</i><par n="jornad/a__n"/></e>
+    <e lm="transvasar" a="mmonge"><i>transv</i><par n="c/a[NT]ar__vblex" prm="s"/></e>
+    <e lm="radioactivitat" a="mmonge"><i>radioactivitat</i><par n="part__n"/></e>
+    <e lm="esclariment" a="mmonge"><i>esclariment</i><par n="conselh__n"/></e>
+    <e lm="vessament" a="mmonge"><i>vessament</i><par n="conselh__n"/></e>
+    <e lm="vessar" a="mmonge" r="LR"><i>v</i><par n="lid/e[R]ar__vblex" prm="ss"/></e>
+    <e lm="restanca" a="mmonge"><i>restan</i><par n="va/ca__n"/></e>
+    <e lm="sarcofag" a="mmonge"><i>sarcofag</i><par n="conselh__n"/></e>
+    <e lm="apostòl" a="mmonge"><i>apostòl</i><par n="conselh__n"/></e>
+    <e lm="catacion" a="mmonge"><i>catacion</i><par n="part__n"/></e>
+    <e lm="incomplet" a="mmonge" r="LR"><i>incomplet</i><par n="content__adj"/></e>
     <e lm="incomplèt" a="dgimeno"><i>incomplèt</i><par n="content__adj"/></e>
-    <e lm="sacerdòt" a=" mmonge"><i>sacerdòt</i><par n="baron__n"/></e>
-    <e lm="corroborar" a=" mmonge"><i>corrob</i><par n="aband/o[N]ar__vblex" prm="r"/></e>
+    <e lm="sacerdòt" a="mmonge"><i>sacerdòt</i><par n="baron__n"/></e>
+    <e lm="corroborar" a="mmonge"><i>corrob</i><par n="aband/o[N]ar__vblex" prm="r"/></e>
     <e lm="Andratx" a="carmentano"><i>Andratx</i><par n="Aran__np"/></e>
     <e lm="pistolet" a="carmentano"><i>pistolet</i><par n="conselh__n"/></e>
     <e lm="videoclip" a="carmentano"><i>videoclip</i><par n="conselh__n"/></e>
@@ -38288,7 +38293,7 @@
     <e lm="Charantas"><i>Charantas</i><par n="Aran__np"/></e>
     <e lm="Còsta d'Azur"><i>Còsta<b/>d'Azur</i><par n="Aran__np"/></e>
     <e lm="Siegbahn"><i>Siegbahn</i><par n="Abad__np"/></e>
-    <e lm="ecologia"><i>ecologia</i><par n="q__n"/></e>
+    <e lm="ecologia"><i>ecologi</i><par n="jornad/a__n"/></e>
     <e lm="Bardeen"><i>Bardeen</i><par n="Abad__np"/></e>
     <e lm="Sherlock"><i>Sherlock</i><par n="Abad__np"/></e>
     <e lm="Cantal"><i>Cantal</i><par n="Aran__np"/></e>
@@ -38304,7 +38309,6 @@
     <e lm="mamifèr"><i>mamifèr</i><par n="conselh__n"/></e>
     <e lm="Jensen"><i>Jensen</i><par n="Abad__np"/></e>
     <e lm="Escòcia"><i>Escòcia</i><par n="Aran__np"/></e>
-    <e lm="Calàbria"><i>Calàbria</i><par n="Aran__np"/></e>
     <e lm="Calàbria"><i>Calàbria</i><par n="Aran__np"/></e>
     <e lm="aglomeracion"><i>aglomeracion</i><par n="part__n"/></e>
     <e lm="Alèir"><i>Alèir</i><par n="Aran__np"/></e>
@@ -38733,7 +38737,7 @@
     <e lm="soscomission"><i>soscomission</i><par n="part__n"/></e>
     <e lm="soscripcion"><i>soscripcion</i><par n="part__n"/></e>
     <e lm="instantanèu"><i>instantanè</i><par n="europè/u__adj"/></e>
-    <e lm="extrach"><i>extrach</i><par n="conselh__n"/></e>
+    <e lm="extrach"><i>extrach</i><par n="mes__n"/></e>
     <e lm="extrait" r="LR"><i>extrait</i><par n="conselh__n"/></e>
     <e lm="soscutanèu"><i>soscutanè</i><par n="europè/u__adj"/></e>
     <e lm="cutanèu"><i>cutanè</i><par n="europè/u__adj"/></e>
