@@ -19987,6 +19987,7 @@
       <e r="LR" lm="un pauc" alt="oci@aran"><i>un<b/>pauc</i><par n="ager__adv"/></e>
       <e r="LR" lm="un pauc" alt="oci@gascon"><i>un<b/>pauc</i><par n="ager__adv"/></e>
     <e lm="un pauc" alt="oci"><i>un<b/>pauc</i><par n="ager__adv"/></e>
+    <e r="LR" lm="un chic"><i>un<b/>chic</i><par n="ager__adv"/></e>
       <e r="LR" lm="un shinhau" alt="oci"><i>un<b/>shinhau</i><par n="ager__adv"/></e>
     <e lm="un shinhau" alt="oci@aran"><i>un<b/>shinhau</i><par n="ager__adv"/></e>
     <e lm="un shinhau" alt="oci@gascon"><i>un<b/>shinhau</i><par n="ager__adv"/></e>
@@ -40727,8 +40728,84 @@
 <e lm="tre lo moment que"><i>tre<b/>lo<b/>moment<b/>que</i><par n="donc__cnjadv"/></e>
 <e lm="vist que"><i>vist<b/>que</i><par n="donc__cnjadv"/></e>
 
+<e lm="a cargue de"><i>a<b/>cargue<b/></i><par n="/de__pr"/></e>
+<e lm="a fòrça de"><i>a<b/>fòrça<b/></i><par n="/de__pr"/></e>
+<e lm="a la contra de"><i>a<b/>la<b/>contra<b/></i><par n="/de__pr"/></e>
+<e lm="a la debuta de"><i>a<b/>la<b/>debuta<b/></i><par n="/de__pr"/></e>
+<e lm="a la fin de"><i>a<b/>la<b/>fin<b/></i><par n="/de__pr"/></e>
+<e lm="a l'agrat de"><i>a<b/>l'agrat<b/></i><par n="/de__pr"/></e>
+<e lm="al cap de"><i>al<b/>cap<b/></i><par n="/de__pr"/></e>
+<e lm="al detriment de"><i>al<b/>detriment<b/></i><par n="/de__pr"/></e>
+<e lm="a l'epòca de"><i>a<b/>l'epòca<b/></i><par n="/de__pr"/></e>
+<e lm="a l'exemple de"><i>a<b/>l'exemple<b/></i><par n="/de__pr"/></e>
+<e lm="al luòc de"><i>al<b/>luòc<b/></i><par n="/de__pr"/></e>
+<e lm="al mièg de"><i>al<b/>mièg<b/></i><par n="/de__pr"/></e>
+<e lm="al moment de"><i>al<b/>moment<b/></i><par n="/de__pr"/></e>
+<e lm="al profièch de"><i>al<b/>profièch<b/></i><par n="/de__pr"/></e>
+<e lm="al ras de"><i>al<b/>ras<b/></i><par n="/de__pr"/></e>
+<e lm="al respècte de"><i>al<b/>respècte<b/></i><par n="/de__pr"/></e>
+<e lm="a mand de"><i>a<b/>mand<b/></i><par n="/de__pr"/></e>
+<e lm="amb la tòca de"><i>amb<b/>la<b/>tòca<b/></i><par n="/de__pr"/></e>
+<e lm="amb lo pretèxt de"><i>amb<b/>lo<b/>pretèxt<b/></i><par n="/de__pr"/></e>
+<e lm="a mens de"><i>a<b/>mens<b/></i><par n="/de__pr"/></e>
+<e lm="a prepaus de"><i>a<b/>prepaus<b/></i><par n="/de__pr"/></e>
+<e lm="a títol de"><i>a<b/>títol<b/></i><par n="/de__pr"/></e>
+<e lm="confòrmament a"><i>confòrmament<b/></i><par n="/a__pr"/></e>
+<e lm="contràriament a"><i>contràriament<b/></i><par n="/a__pr"/></e>
+<e lm="de cap a"><i>de<b/>cap<b/></i><par n="/a__pr"/></e>
+<e lm="del ponch de vista de"><i>del<b/>ponch<b/>de<b/>vista<b/></i><par n="/de__pr"/></e>
+<e lm="demest"><i>demest</i><par n="a__pr"/></e>
+<e lm="denquia"><i>denquia</i><par n="a__pr"/></e>
+<e lm="dins l'encastre de"><i>dins<b/>l'encastre<b/></i><par n="/de__pr"/></e>
+<e lm="dins l'entorn de"><i>dins<b/>l'entorn<b/></i><par n="/de__pr"/></e>
+<e lm="dins lo corrent de"><i>dins<b/>lo<b/>corrent<b/></i><par n="/de__pr"/></e>
+<e lm="durant"><i>durant</i><par n="a__pr"/></e>
+<e lm="en acòrd amb"><i>en<b/>acòrd<b/>amb</i><par n="a__pr"/></e>
+<e lm="en cas de"><i>en<b/>cas<b/></i><par n="/de__pr"/></e>
+<e lm="en defòra de"><i>en<b/>defòra<b/></i><par n="/de__pr"/></e>
+<e lm="en despièch de"><i>en<b/>despièch<b/></i><par n="/de__pr"/></e>
+<e lm="en fàcia de"><i>en<b/>fàcia<b/></i><par n="/de__pr"/></e>
+<e lm="en plaça de"><i>en<b/>plaça<b/></i><par n="/de__pr"/></e>
+<e lm="en prejudici de"><i>en<b/>prejudici<b/></i><par n="/de__pr"/></e>
+<e lm="en rason de"><i>en<b/>rason<b/></i><par n="/de__pr"/></e>
+<e lm="envers"><i>envers</i><par n="a__pr"/></e>
+<e lm="en vertut de"><i>en<b/>vertut<b/></i><par n="/de__pr"/></e>
+<e lm="fauta de"><i>fauta<b/></i><par n="/de__pr"/></e>
+<e lm="gràcias a"><i>gràcias<b/></i><par n="/a__pr"/></e>
+<e lm="jos la proteccion de"><i>jos<b/>la<b/>proteccion<b/></i><par n="/de__pr"/></e>
+<e lm="jos l'efièch de"><i>jos<b/>l'efièch<b/></i><par n="/de__pr"/></e>
+<e lm="levat de"><i>levat<b/></i><par n="/de__pr"/></e>
+<e lm="otra"><i>otra</i><par n="a__pr"/></e>
+<e lm="per medi de"><i>per<b/>medi<b/></i><par n="/de__pr"/></e>
+<e lm="per mejan de"><i>per<b/>mejan<b/></i><par n="/de__pr"/></e>
+<e lm="per tal de"><i>per<b/>tal<b/></i><par n="/de__pr"/></e>
+<e lm="pertocant"><i>pertocant</i><par n="a__pr"/></e>
+<e lm="quiti a"><i>quiti<b/></i><par n="/a__pr"/></e>
+<e lm="segon los dires de"><i>segon<b/>los<b/>dires<b/></i><par n="/de__pr"/></e>
+<e lm="tenent compte de"><i>tenent<b/>compte<b/></i><par n="/de__pr"/></e>
+<e lm="tocant a"><i>tocant<b/></i><par n="/a__pr"/></e>
+<e lm="un pauc abans"><i>un<b/>pauc<b/>abans</i><par n="a__pr"/></e>
+<e lm="un pauc aprèp" r="LR"><i>un<b/>pauc<b/>aprèp</i><par n="a__pr"/></e>
+<e lm="un pauc après"><i>un<b/>pauc<b/>après</i><par n="a__pr"/></e>
+<e lm="un pauc abans"><i>un<b/>pauc<b/>abans</i><par n="ager__adv"/></e>
+<e lm="un pauc aprèp" r="LR"><i>un<b/>pauc<b/>aprèp</i><par n="ager__adv"/></e>
+<e lm="un pauc après"><i>un<b/>pauc<b/>après</i><par n="ager__adv"/></e>
+<e lm="un chic abans" r="LR"><i>un<b/>chic<b/>abans</i><par n="a__pr"/></e>
+<e lm="un chic aprèp" r="LR"><i>un<b/>chic<b/>aprèp</i><par n="a__pr"/></e>
+<e lm="un chic après" r="LR"><i>un<b/>chic<b/>après</i><par n="a__pr"/></e>
+<e lm="un chic abans" r="LR"><i>un<b/>chic<b/>abans</i><par n="ager__adv"/></e>
+<e lm="un chic aprèp" r="LR"><i>un<b/>chic<b/>aprèp</i><par n="ager__adv"/></e>
+<e lm="un chic après" r="LR"><i>un<b/>chic<b/>après</i><par n="ager__adv"/></e>
+<e lm="un pauc mens de"><i>un<b/>pauc<b/>mens<b/></i><par n="/de__pr"/></e>
+<e lm="un chic mens de" r="LR"><i>un<b/>chic<b/>mens<b/></i><par n="/de__pr"/></e>
+<e lm="un bricon mens de" r="LR"><i>un<b/>bricon<b/>mens<b/></i><par n="/de__pr"/></e>
+<e lm="un pauc mai de"><i>un<b/>pauc<b/>mai<b/></i><par n="/de__pr"/></e>
+<e lm="un chic mai de" r="LR"><i>un<b/>chic<b/>mai<b/></i><par n="/de__pr"/></e>
+<e lm="un bricon mai de" r="LR"><i>un<b/>bricon<b/>mai<b/></i><par n="/de__pr"/></e>
+
 <!-- xxxx -->
 </section>
+
   <section id="apostrophes" type="postblank">
     <e lm="d'" r="LR"><p><l>d'</l><r>de</r></p><par n="a__pr"/></e>
     <e lm="b'" r="LR"><p><l>b'</l><r>be</r></p><par n="e__enon"/></e>
@@ -40947,6 +41024,56 @@
 <e lm="tant que" r="LR"><p><l>tant<b/>qu'</l><r>tant<b/>que</r></p><par n="donc__cnjadv"/></e>
 <e lm="tre lo moment que" r="LR"><p><l>tre<b/>lo<b/>moment<b/>qu'</l><r>tre<b/>lo<b/>moment<b/>que</r></p><par n="donc__cnjadv"/></e>
 <e lm="vist que" r="LR"><p><l>vist<b/>qu'</l><r>vist<b/>que</r></p><par n="donc__cnjadv"/></e>
+
+<e lm="a cargue de" r="LR"><p><l>a<b/>cargue<b/>d'</l><r>a<b/>cargue<b/>de</r></p><par n="a__pr"/></e>
+<e lm="a fòrça de" r="LR"><p><l>a<b/>fòrça<b/>d'</l><r>a<b/>fòrça<b/>de</r></p><par n="a__pr"/></e>
+<e lm="a la contra de" r="LR"><p><l>a<b/>la<b/>contra<b/>d'</l><r>a<b/>la<b/>contra<b/>de</r></p><par n="a__pr"/></e>
+<e lm="a la debuta de" r="LR"><p><l>a<b/>la<b/>debuta<b/>d'</l><r>a<b/>la<b/>debuta<b/>de</r></p><par n="a__pr"/></e>
+<e lm="a la fin de" r="LR"><p><l>a<b/>la<b/>fin<b/>d'</l><r>a<b/>la<b/>fin<b/>de</r></p><par n="a__pr"/></e>
+<e lm="a l'agrat de" r="LR"><p><l>a<b/>l'agrat<b/>d'</l><r>a<b/>l'agrat<b/>de</r></p><par n="a__pr"/></e>
+<e lm="al cap de" r="LR"><p><l>al<b/>cap<b/>d'</l><r>al<b/>cap<b/>de</r></p><par n="a__pr"/></e>
+<e lm="al detriment de" r="LR"><p><l>al<b/>detriment<b/>d'</l><r>al<b/>detriment<b/>de</r></p><par n="a__pr"/></e>
+<e lm="a l'epòca de" r="LR"><p><l>a<b/>l'epòca<b/>d'</l><r>a<b/>l'epòca<b/>de</r></p><par n="a__pr"/></e>
+<e lm="a l'exemple de" r="LR"><p><l>a<b/>l'exemple<b/>d'</l><r>a<b/>l'exemple<b/>de</r></p><par n="a__pr"/></e>
+<e lm="al luòc de" r="LR"><p><l>al<b/>luòc<b/>d'</l><r>al<b/>luòc<b/>de</r></p><par n="a__pr"/></e>
+<e lm="al mièg de" r="LR"><p><l>al<b/>mièg<b/>d'</l><r>al<b/>mièg<b/>de</r></p><par n="a__pr"/></e>
+<e lm="al moment de" r="LR"><p><l>al<b/>moment<b/>d'</l><r>al<b/>moment<b/>de</r></p><par n="a__pr"/></e>
+<e lm="al profièch de" r="LR"><p><l>al<b/>profièch<b/>d'</l><r>al<b/>profièch<b/>de</r></p><par n="a__pr"/></e>
+<e lm="al ras de" r="LR"><p><l>al<b/>ras<b/>d'</l><r>al<b/>ras<b/>de</r></p><par n="a__pr"/></e>
+<e lm="al respècte de" r="LR"><p><l>al<b/>respècte<b/>d'</l><r>al<b/>respècte<b/>de</r></p><par n="a__pr"/></e>
+<e lm="a mand de" r="LR"><p><l>a<b/>mand<b/>d'</l><r>a<b/>mand<b/>de</r></p><par n="a__pr"/></e>
+<e lm="amb la tòca de" r="LR"><p><l>amb<b/>la<b/>tòca<b/>d'</l><r>amb<b/>la<b/>tòca<b/>de</r></p><par n="a__pr"/></e>
+<e lm="amb lo pretèxt de" r="LR"><p><l>amb<b/>lo<b/>pretèxt<b/>d'</l><r>amb<b/>lo<b/>pretèxt<b/>de</r></p><par n="a__pr"/></e>
+<e lm="a mens de" r="LR"><p><l>a<b/>mens<b/>d'</l><r>a<b/>mens<b/>de</r></p><par n="a__pr"/></e>
+<e lm="a prepaus de" r="LR"><p><l>a<b/>prepaus<b/>d'</l><r>a<b/>prepaus<b/>de</r></p><par n="a__pr"/></e>
+<e lm="a títol de" r="LR"><p><l>a<b/>títol<b/>d'</l><r>a<b/>títol<b/>de</r></p><par n="a__pr"/></e>
+<e lm="del ponch de vista de" r="LR"><p><l>del<b/>ponch<b/>de<b/>vista<b/>d'</l><r>del<b/>ponch<b/>de<b/>vista<b/>de</r></p><par n="a__pr"/></e>
+<e lm="dins l'encastre de" r="LR"><p><l>dins<b/>l'encastre<b/>d'</l><r>dins<b/>l'encastre<b/>de</r></p><par n="a__pr"/></e>
+<e lm="dins l'entorn de" r="LR"><p><l>dins<b/>l'entorn<b/>d'</l><r>dins<b/>l'entorn<b/>de</r></p><par n="a__pr"/></e>
+<e lm="dins lo corrent de" r="LR"><p><l>dins<b/>lo<b/>corrent<b/>d'</l><r>dins<b/>lo<b/>corrent<b/>de</r></p><par n="a__pr"/></e>
+<e lm="en cas de" r="LR"><p><l>en<b/>cas<b/>d'</l><r>en<b/>cas<b/>de</r></p><par n="a__pr"/></e>
+<e lm="en defòra de" r="LR"><p><l>en<b/>defòra<b/>d'</l><r>en<b/>defòra<b/>de</r></p><par n="a__pr"/></e>
+<e lm="en despièch de" r="LR"><p><l>en<b/>despièch<b/>d'</l><r>en<b/>despièch<b/>de</r></p><par n="a__pr"/></e>
+<e lm="en fàcia de" r="LR"><p><l>en<b/>fàcia<b/>d'</l><r>en<b/>fàcia<b/>de</r></p><par n="a__pr"/></e>
+<e lm="en plaça de" r="LR"><p><l>en<b/>plaça<b/>d'</l><r>en<b/>plaça<b/>de</r></p><par n="a__pr"/></e>
+<e lm="en prejudici de" r="LR"><p><l>en<b/>prejudici<b/>d'</l><r>en<b/>prejudici<b/>de</r></p><par n="a__pr"/></e>
+<e lm="en rason de" r="LR"><p><l>en<b/>rason<b/>d'</l><r>en<b/>rason<b/>de</r></p><par n="a__pr"/></e>
+<e lm="en vertut de" r="LR"><p><l>en<b/>vertut<b/>d'</l><r>en<b/>vertut<b/>de</r></p><par n="a__pr"/></e>
+<e lm="fauta de" r="LR"><p><l>fauta<b/>d'</l><r>fauta<b/>de</r></p><par n="a__pr"/></e>
+<e lm="jos la proteccion de" r="LR"><p><l>jos<b/>la<b/>proteccion<b/>d'</l><r>jos<b/>la<b/>proteccion<b/>de</r></p><par n="a__pr"/></e>
+<e lm="jos l'efièch de" r="LR"><p><l>jos<b/>l'efièch<b/>d'</l><r>jos<b/>l'efièch<b/>de</r></p><par n="a__pr"/></e>
+<e lm="levat de" r="LR"><p><l>levat<b/>d'</l><r>levat<b/>de</r></p><par n="a__pr"/></e>
+<e lm="per medi de" r="LR"><p><l>per<b/>medi<b/>d'</l><r>per<b/>medi<b/>de</r></p><par n="a__pr"/></e>
+<e lm="per mejan de" r="LR"><p><l>per<b/>mejan<b/>d'</l><r>per<b/>mejan<b/>de</r></p><par n="a__pr"/></e>
+<e lm="per tal de" r="LR"><p><l>per<b/>tal<b/>d'</l><r>per<b/>tal<b/>de</r></p><par n="a__pr"/></e>
+<e lm="segon los dires de" r="LR"><p><l>segon<b/>los<b/>dires<b/>d'</l><r>segon<b/>los<b/>dires<b/>de</r></p><par n="a__pr"/></e>
+<e lm="tenent compte de" r="LR"><p><l>tenent<b/>compte<b/>d'</l><r>tenent<b/>compte<b/>de</r></p><par n="a__pr"/></e>
+<e lm="un pauc mens de" r="LR"><p><l>un<b/>pauc<b/>mens<b/>d'</l><r>un<b/>pauc<b/>mens<b/>de</r></p><par n="a__pr"/></e>
+<e lm="un chic mens de" r="LR"><p><l>un<b/>chic<b/>mens<b/>d'</l><r>un<b/>chic<b/>mens<b/>de</r></p><par n="a__pr"/></e>
+<e lm="un bricon mens de" r="LR"><p><l>un<b/>bricon<b/>mens<b/>d'</l><r>un<b/>bricon<b/>mens<b/>de</r></p><par n="a__pr"/></e>
+<e lm="un pauc mai de" r="LR"><p><l>un<b/>pauc<b/>mai<b/>d'</l><r>un<b/>pauc<b/>mai<b/>de</r></p><par n="a__pr"/></e>
+<e lm="un chic mai de" r="LR"><p><l>un<b/>chic<b/>mai<b/>d'</l><r>un<b/>chic<b/>mai<b/>de</r></p><par n="a__pr"/></e>
+<e lm="un bricon mai de" r="LR"><p><l>un<b/>bricon<b/>mai<b/>d'</l><r>un<b/>bricon<b/>mai<b/>de</r></p><par n="a__pr"/></e>
 
 </section>
 
