@@ -1987,6 +1987,11 @@
       <e><p><l>es</l><r>e<s n="adj"/><s n="pos"/><s n="m"/><s n="pl"/></r></p></e>
       <e><p><l>e</l><r>e<s n="adj"/><s n="pos"/><s n="m"/><s n="sg"/></r></p></e>
     </pardef>
+        <pardef n="lor__adj">
+      <e><p><l>s</l><r><s n="adj"/><s n="pos"/><s n="mf"/><s n="pl"/></r></p></e>
+      <e><p><l/><r><s n="adj"/><s n="pos"/><s n="mf"/><s n="sg"/></r></p></e>
+    </pardef>
+
 <!-- PARADIGMES D'ADVERBI DE L'AR-->
     <pardef n="ager__adv">
       <e><p><l/><r><s n="adv"/></r></p></e>
@@ -2325,6 +2330,13 @@
       <e r="RL"><p><l><a/>era<b/>vòsta</l><r>eth<b/>vòste<s n="det"/><s n="pos"/><s n="f"/><s n="sg"/></r></p></e>
       <e r="RL"><p><l><a/>es<b/>vòsti</l><r>eth<b/>vòste<s n="det"/><s n="pos"/><s n="m"/><s n="pl"/></r></p></e>
       <e r="RL"><p><l><a/>eth<b/>vòste</l><r>eth<b/>vòste<s n="det"/><s n="pos"/><s n="m"/><s n="sg"/></r></p></e>
+    </pardef>
+
+        <pardef n="nòstr/e__det">
+      <e><p><l>as</l><r>e<s n="det"/><s n="pos"/><s n="f"/><s n="pl"/></r></p></e>
+      <e><p><l>a</l><r>e<s n="det"/><s n="pos"/><s n="f"/><s n="sg"/></r></p></e>
+      <e><p><l>es</l><r>e<s n="det"/><s n="pos"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l>e</l><r>e<s n="det"/><s n="pos"/><s n="m"/><s n="sg"/></r></p></e>
     </pardef>
 
         <pardef n="m/on__det">
@@ -4910,6 +4922,13 @@
     <e alt="oci@gascon" r="RL"><p><l>çò<b/><a/>que</l><r>eth<b/>que<s n="rel"/><s n="nn"/><s n="nt"/></r></p></e>
     <e alt="oci@aran" r="LR"><p><l>çò<b/>que</l><r>eth<b/>que<s n="rel"/><s n="nn"/><s n="nt"/></r></p></e>
     <e alt="oci@gascon" r="LR"><p><l>çò<b/>que</l><r>eth<b/>que<s n="rel"/><s n="nn"/><s n="nt"/></r></p></e>
+    </pardef>
+
+        <pardef n="/lo_qual__rel">
+      <e><p><l>las<b/>quals</l><r>lo<b/>qual<s n="rel"/><s n="an"/><s n="f"/><s n="pl"/></r></p></e>
+      <e><p><l>la<b/>qual</l><r>lo<b/>qual<s n="rel"/><s n="an"/><s n="f"/><s n="sg"/></r></p></e>
+      <e><p><l>los<b/>quals</l><r>lo<b/>qual<s n="rel"/><s n="an"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l>lo<b/>qual</l><r>lo<b/>qual<s n="rel"/><s n="an"/><s n="m"/><s n="sg"/></r></p></e>
     </pardef>
 
         <pardef n="/eth_quau__rel">
@@ -20191,6 +20210,9 @@
       <e r="LR" lm="lor" alt="oci@aran"><i>lor</i><par n="lor__prn"/></e>
       <e r="LR" lm="lor" alt="oci@gascon"><i>lor</i><par n="lor__prn"/></e>
     <e lm="lor" alt="oci"><i>lor</i><par n="lor__prn"/></e>
+      <e r="LR" lm="lor" alt="oci@aran"><i>lor</i><par n="lor__adj"/></e>
+      <e r="LR" lm="lor" alt="oci@gascon"><i>lor</i><par n="lor__adj"/></e>
+    <e lm="lor" alt="oci"><i>lor</i><par n="lor__adj"/></e>
     <e lm="aqueth d'aquiu delà" r="LR"><i>aque</i><par n="aque/th_d'aquiu__det"/></e>
     <e lm="aqueth" alt="oci" r="LR"><i>aque</i><par n="aque/th__det"/></e>
     <e lm="aqueth" alt="oci@aran" r="LR"><i>aque</i><par n="aque/th__det"/></e>
@@ -20222,8 +20244,7 @@
       <e r="LR" lm="lo nòstre" alt="oci@gascon"><par n="/lo_nòstre__det"/></e>
     <e lm="lo nòstre" alt="oci"><par n="/lo_nòstre__det"/></e>
 
-<!-- TAGGER
-    <e lm="eth" alt="oci" r="LR"><i>e</i><par n="e/th__det"/></e>-->
+    <e lm="eth" alt="oci" r="LR"><i>e</i><par n="e/th__det"/></e> <!-- estava comentat amb la indicació TAGGER -->
     <e lm="eth" alt="oci@aran" r="LR"><i>e</i><par n="e/th__det"/></e>
     <e lm="eth" alt="oci@gascon" r="LR"><i>e</i><par n="e/th__det"/></e>
     <e lm="eth" alt="oci@aran" r="RL"><p><l><a/>e</l><r>e</r></p><par n="e/th__det"/></e>
@@ -20270,6 +20291,12 @@
     <e lm="son" alt="oci@gascon" r="LR"><i>s</i><par n="m/on__det"/></e>
     <e lm="son" alt="oci" r="LR"><i>s</i><par n="m/on__det"/></e>
     <e lm="son" alt="oci" r="RL"><p><l><a/>s</l><r>s</r></p><par n="m/on__det"/></e>
+      <e r="LR" lm="nòstre" alt="oci@aran"><i>nòstr</i><par n="nòstr/e__det"/></e>
+      <e r="LR" lm="nòstre" alt="oci@gascon"><i>nòstr</i><par n="nòstr/e__det"/></e>
+    <e lm="nòstre" alt="oci"><i>nòstr</i><par n="nòstr/e__det"/></e>
+      <e r="LR" lm="vòstre" alt="oci@aran"><i>vòstr</i><par n="nòstr/e__det"/></e>
+      <e r="LR" lm="vòstre" alt="oci@gascon"><i>vòstr</i><par n="nòstr/e__det"/></e>
+    <e lm="vòstre" alt="oci"><i>vòstr</i><par n="nòstr/e__det"/></e>
       <e r="LR" lm="quauque" alt="oci"><i>quauqu</i><par n="quauqu/e__det"/></e>
     <e lm="quauque" alt="oci@aran"><i>quauqu</i><par n="quauqu/e__det"/></e>
     <e lm="quauque" alt="oci@gascon"><i>quauqu</i><par n="quauqu/e__det"/></e>
@@ -29178,7 +29205,7 @@
     <e lm="pòc" alt="oci@aran"><i>pò</i><par n="pò/c__adj"/></e>
     <e lm="pòc" alt="oci@gascon"><i>pò</i><par n="pò/c__adj"/></e>
     <e lm="quauquadegun" r="LR"><i>quauquadegun</i><par n="quauquarrés__prn"/></e>
-    <e lm="òm" r="LR"><p><l>òm</l><r>òm<s n="prn"/><s n="pro"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sp"/></r></p></e>
+    <e lm="òm"><p><l>òm</l><r>òm<s n="prn"/><s n="pro"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sp"/></r></p></e>
 <!-- xapuça per evitar dos "se" seguits         -->
     <e lm="òm se" r="LR"><p><l>òm<b/>se</l><r>se<s n="prn"/><s n="pro"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sp"/></r></p></e>
     <e lm="òm" r="RL"><p><l><a/>òm</l><r>òm</r></p><par n="açò__prn"/></e>
@@ -29255,6 +29282,9 @@
     <e lm="quant" alt="oci"><i>quant</i><par n="quan__rel"/></e>
     <e lm="entà per'mor que" alt="oci@aran" r="RL"><p><l>entà<b/>per'mor<b/><a/>que</l><r>entà<b/>per'mor<b/>que</r></p><par n="que__rel"/></e>
     <e lm="entà per'mor que" alt="oci@gascon" r="RL"><p><l>entà<b/>per'mor<b/><a/>que</l><r>entà<b/>per'mor<b/>que</r></p><par n="que__rel"/></e>
+    <e lm="lo qual"><par n="/lo_qual__rel"/></e>
+    <e lm="a lo qual"><i>a<b/></i><par n="/lo_qual__rel"/></e>
+    <e lm="de lo qual"><i>de<b/></i><par n="/lo_qual__rel"/></e>
     <e lm="eth quau"><par n="/eth_quau__rel"/></e>
     <e lm="lo que"><par n="/lo_que__rel"/></e>
     <e lm="lo qui"><par n="/lo_qui__rel"/></e>

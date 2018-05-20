@@ -1,3 +1,7 @@
+# Problemes especialment complexos de la desambiguació
+#	- son: pos o vbser o nom
+#	- es: det (aran) o vbser
+
 # Firstly, we need to define what tags should be considered sentence delimiters. For this example, only full stop is set as delimiter.
 DELIMITERS = "<.>" ;
 
@@ -6,6 +10,7 @@ LIST EOS = (<<<) ;
 
 #Categorias
 LIST V = vblex vbser vbhaver vbaux vbmod ;
+LIST Ser = vbser ;
 LIST Conjco = cnjcoo ;
 LIST Conjsub = cnjsub ;
 LIST Enon = enon ;
@@ -22,7 +27,8 @@ LIST AV = adv ;
 LIST Pers = (prn p1) (prn p2) (prn p3); 
 LIST IJ = ij ;
 LIST PREDET = predet ;
-LIST PRONpos = pos ;
+LIST Pos = pos ;
+LIST DETPos = (det pos);
 LIST SENT = sent ;
 
 
@@ -59,6 +65,11 @@ SET FemPl = (f pl) OR (f sp) OR (mf pl) OR (mf sp) ;
 #Mots
 LIST En = ("en" prn);
 LIST Un = "un" ;
+LIST Nostre = "nòstre" "nòste" ;
+LIST Vostre = "vòstre" "vòste" ;
+
+LIST unknown = ("\\*.*"r) ;
+LIST unknownMajIni = ("\\*[A-ZÀÁÈÉíÒÓÚÜÇ].*"r) ;
 
 
 SECTION
@@ -84,7 +95,7 @@ REMOVE N IF (NOT -1 V OR AJ OR DET OR NUM OR PREP OR PRON - Pers);
 REMOVE PREDET IF (NOT 1 DET);
 
 #Los pronoms possessius son totjorn seguits per un nom, un adjectiu, un advèrb o un numeral
-REMOVE PRONpos IF (NOT 1 N OR AJ OR AV OR NUM OR NP);
+REMOVE DETPos IF (NOT 1 N OR AJ OR AV OR NUM OR NP OR unknown);
 
 # L'enonciatiu es totjorn seguit d'un vèrb o d'un enclitic
 REMOVE Enon IF (NOT 1 V OR PRencl);
@@ -115,6 +126,11 @@ SELECT DET IF (0 DETind + MascPl) (1 AJ + MascPl) ;
 SELECT DET IF (0 DETind + FemPl) (1 AJ + FemPl) ;
   ## un jaune
 
+# NUM
+
 SELECT NUM IF (-1 ("numéro")) (0 Un); 
 REMOVE NUM IF (NOT -1 ("numéro")) (0 Un); 
 
+# ADJ POS
+
+REMOVE AJ IF (NOT -1 Ser) (0 AJ + Pos) ;
