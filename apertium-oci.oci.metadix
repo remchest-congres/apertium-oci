@@ -33265,12 +33265,6 @@
     <e lm="antan" r="LR"><i>antan</i><par n="ager__adv"/></e>
     <e lm="araiguan" r="LR"><i>araiguan</i><par n="ager__adv"/></e>
     <e lm="egalament"><i>ega</i><par n="accidenta/lament__adv"/></e>
-      <e r="LR" lm="fòrtaments" alt="oci"><i>fòrtaments</i><par n="ager__adv"/></e>
-    <e lm="fòrtaments" alt="oci@aran"><i>fòrtaments</i><par n="ager__adv"/></e>
-    <e lm="fòrtaments" alt="oci@gascon"><i>fòrtaments</i><par n="ager__adv"/></e>
-      <e r="LR" lm="fòrtament" alt="oci@aran"><i>fòrtament</i><par n="ager__adv"/></e>
-      <e r="LR" lm="fòrtament" alt="oci@gascon"><i>fòrtament</i><par n="ager__adv"/></e>
-    <e lm="fòrtament" alt="oci"><i>fòrtament</i><par n="ager__adv"/></e>
     <e lm="atentivament"><i>atenti</i><par n="acti/vament__adv"/></e>
       <e r="LR" lm="darrèr" alt="oci"><i>darrèr</i><par n="ager__adv"/></e>
     <e lm="darrèr" alt="oci@aran"><i>darrèr</i><par n="ager__adv"/></e>
@@ -43425,6 +43419,10 @@
 <e lm="zèro"><i>zèro</i><par n="conselh__n"/></e>
 <e lm="zinc"><i>zinc</i><par n="conselh__n"/></e>
 <e lm="zoo"><i>zoo</i><par n="conselh__n"/></e>
+
+    <e lm="pesca"><i>pes</i><par n="va/ca__n"/></e>
+    <e lm="cacilha"><i>cacilh</i><par n="jornad/a__n"/></e>
+    <e lm="sit"><i>sit</i><par n="conselh__n"/></e>
 <!-- xxxx -->
 </section>
 
