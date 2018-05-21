@@ -3359,7 +3359,6 @@
       <e alt="oci" r="LR"><p><l>u</l>            <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
       <e alt="oci@aran" r="LR"><p><l>u</l>       <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
       <e alt="oci@gascon" r="LR"><p><l>u</l>     <r>l<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
-      <e alt="oci@gascon" r="LR"><p><l>us</l>    <r>l<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
     </pardef>
 
    <pardef n="camparò/l__n">
@@ -41553,7 +41552,9 @@
 <e lm="chimpanzé"><i>chimpanzé</i><par n="conselh__n"/></e>
 <e lm="chin"><i>chi</i><par n="cosi/n__n"/></e>
 <e lm="chipriòta"><i>chipriòt</i><par n="guardi/a__n"/></e>
-<e lm="chivau"><i>chivau</i><par n="conselh__n"/></e>
+<e lm="chivau" alt="oci@gascon"><i>chivau</i><par n="conselh__n"/></e>
+<e lm="chivau" alt="oci@ran" r="LR"><i>chivau</i><par n="conselh__n"/></e>
+<e lm="chivau" alt="oci" r="LR"><i>chivau</i><par n="conselh__n"/></e>
 <e lm="chòpa"><i>chòp</i><par n="jornad/a__n"/></e>
 <e lm="chòt"><i>chòt</i><par n="conselh__n"/></e>
 <e lm="cicatritz"><i>cicatri</i><par n="prè/tz__n"/></e>
