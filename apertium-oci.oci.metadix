@@ -2187,6 +2187,7 @@
       <e r="LR"><p><l>es</l><r>o<s n="det"/><s n="def"/><s n="m"/><s n="pl"/></r></p></e>
       <e r="LR"><p><l>ei</l><r>o<s n="det"/><s n="def"/><s n="mf"/><s n="pl"/></r></p></e>
       <e r="LR"><p><l>eis</l><r>o<s n="det"/><s n="def"/><s n="mf"/><s n="pl"/></r></p></e>
+      <e r="LR"><p><l>hi</l><r>o<s n="det"/><s n="def"/><s n="mf"/><s n="pl"/></r></p></e>
       <e r="LR"><p><l>'</l><r>o<s n="det"/><s n="def"/><s n="mf"/><s n="sg"/></r></p></e>
     </pardef>
 
@@ -19919,8 +19920,8 @@
     <e lm="soent" alt="oci@aran"><i>soent</i><par n="ager__adv"/></e>
     <e lm="soent" alt="oci@gascon"><i>soent</i><par n="ager__adv"/></e>
     <e lm="solidàriament"><i>solidàriament</i><par n="adequadament__adv"/></e>
-    <e lm="solament"><i>solament</i><par n="ager__adv"/></e>
-    <e lm="non solaments" r="LR"><i>non<b/>solaments</i><par n="ager__adv"/></e>
+    <e lm="solament"><i>solament</i><par n="adequadament__adv"/></e>
+    <e lm="non solament"><i>non<b/>solament</i><par n="adequadament__adv"/></e>
     <e lm="fen"><i>fen</i><par n="conselh__n"/></e>
     <e lm="ciclon"><i>ciclon</i><par n="conselh__n"/></e>
     <e lm="Apollina"><i>Apollina</i><par n="Abad__np"/></e>
@@ -20431,6 +20432,7 @@
     <e lm="acamp"><i>acamp</i><par n="conselh__n"/></e>
     <e lm="reglatge"><i>reglatge</i><par n="conselh__n"/></e>
     <e lm="abelha"><i>abelh</i><par n="jornad/a__n"/></e>
+    <e lm="abelha de mèl"><i>abelh</i><par n="jornad/a__n"/><p><l><b/>de<b/>mèl</l><r><g><b/>de<b/>mèl</g></r></p></e>
     <e lm="cleda"><i>cled</i><par n="jornad/a__n"/></e>
     <e lm="barralha"><i>barralh</i><par n="jornad/a__n"/></e>
     <e lm="divergéncia"><i>divergénci</i><par n="jornad/a__n"/></e>
@@ -29062,9 +29064,6 @@
       <e r="LR" lm="sense dobte" alt="oci"><i>sense<b/>dobte</i><par n="ager__adv"/></e>
     <e lm="sense dobte" alt="oci@aran"><i>sense<b/>dobte</i><par n="ager__adv"/></e>
     <e lm="sense dobte" alt="oci@gascon"><i>sense<b/>dobte</i><par n="ager__adv"/></e>
-    <e lm="non solament" alt="oci"><i>non<b/>solament</i><par n="ager__adv"/></e>
-    <e lm="non solaments" alt="oci@aran"><i>non<b/>solaments</i><par n="ager__adv"/></e>
-    <e lm="non solaments" alt="oci@gascon"><i>non<b/>solaments</i><par n="ager__adv"/></e>
       <e r="LR" lm="sens dobte" alt="oci@aran"><i>sens<b/>dobte</i><par n="ager__adv"/></e>
       <e r="LR" lm="sens dobte" alt="oci@gascon"><i>sens<b/>dobte</i><par n="ager__adv"/></e>
     <e lm="sens dobte" alt="oci"><i>sens<b/>dobte</i><par n="ager__adv"/></e>
@@ -33277,12 +33276,7 @@
     <e lm="arreu"><i>arreu</i><par n="ager__adv"/></e>
     <e lm="Clamenç"><i>Clamenç</i><par n="Abad__np"/></e>
     <e lm="Alan"><i>Alan</i><par n="Abad__np"/></e>
-      <e r="LR" lm="doçaments" alt="oci"><i>doçaments</i><par n="ager__adv"/></e>
-    <e lm="doçaments" alt="oci@aran"><i>doçaments</i><par n="ager__adv"/></e>
-    <e lm="doçaments" alt="oci@gascon"><i>doçaments</i><par n="ager__adv"/></e>
-      <e r="LR" lm="doçament" alt="oci@aran"><i>doçament</i><par n="ager__adv"/></e>
-      <e r="LR" lm="doçament" alt="oci@gascon"><i>doçament</i><par n="ager__adv"/></e>
-    <e lm="doçament" alt="oci"><i>doçament</i><par n="ager__adv"/></e>
+    <e lm="doçament"><i>doçament</i><par n="adequadament__adv"/></e>
     <e lm="docetament" r="LR"><i>docetament</i><par n="ager__adv"/></e>
     <e lm="endedins"><i>endedins</i><par n="ager__adv"/></e>
     <e lm="estranhament"><i>estranhament</i><par n="adequadament__adv"/></e>
@@ -34762,7 +34756,7 @@
     <e lm="fichar" a="carmentano"><i>f</i><par n="ab/i[T]ar__vblex" prm="ch"/></e>
     <e lm="decretar" a="carmentano"><i>decr</i><par n="cap/e[R]ar__vblex" prm="t"/></e>
     <e lm="Raval" a="carmentano"><i>Raval</i><par n="Aran__np"/></e>
-    <e lm="brèvament"><i>brèvament</i><par n="adequadament__adv"/></e>
+    <e lm="brèvament"><i>brè</i><par n="acti/vament__adv"/></e>
     <e lm="USB" a="carmentano"><i>USB</i><par n="BBVA__n"/></e>
     <e lm="salat" a="carmentano"><i>sala</i><par n="estima/t__adj"/></e>
     <e lm="absolucion" a="carmentano"><i>absolucion</i><par n="part__n"/></e>
@@ -35063,7 +35057,7 @@
     <e lm="Liverpool" a="carmentano"><i>Liverpool</i><par n="Aran__np"/></e>
     <e lm="radicalament"><i>radica</i><par n="accidenta/lament__adv"/></e>
     <e lm="plancarda" a="carmentano"><i>plancard</i><par n="jornad/a__n"/></e>
-    <e lm="enfasi" a="carmentano"><i>enfasi</i><par n="part__n"/></e>
+    <e lm="enfasi" a="carmentano" alt="oci@aran"><i>enfasi</i><par n="part__n"/></e>
     <e lm="productivitat" a="carmentano"><i>productivitat</i><par n="part__n"/></e>
     <e lm="ambaissada" a="carmentano"><i>ambaissad</i><par n="jornad/a__n"/></e>
     <e lm="combustible" a="carmentano"><i>combustible</i><par n="conselh__n"/></e>
@@ -38384,7 +38378,6 @@
     <e lm="falha"><i>falh</i><par n="jornad/a__n"/></e>
     <e lm="Lombardia"><i>Lombardia</i><par n="Aran__np"/></e>
     <e lm="Planck"><i>Planck</i><par n="Abad__np"/></e>
-    <e lm="piramida"><i>piramida</i><par n="part__n"/></e>
     <e lm="Caledònia"><i>Caledònia</i><par n="Aran__np"/></e>
     <e lm="Cruesa"><i>Cruesa</i><par n="Aran__np"/></e>
     <e lm="Limòtges"><i>Limòtges</i><par n="Aran__np"/></e>
@@ -41293,7 +41286,6 @@
 <e lm="batifuòc" a="capsot"><i>batifuòc</i><par n="conselh__n"/></e>
 <e lm="bauca" a="capsot"><i>bau</i><par n="va/ca__n"/></e>
 <e lm="baudròia" a="capsot"><i>baudròi</i><par n="jornad/a__n"/></e>
-<e lm="baug" a="capsot"><i>baug</i><par n="dramaturg__n"/></e>
 <e lm="baujariá" a="capsot"><i>baujariá</i><par n="part__n"/></e>
 <e lm="bauma" a="capsot"><i>baum</i><par n="jornad/a__n"/></e>
 <e lm="bearnés" a="capsot"><i>bearn</i><par n="pag/és__n"/></e>
@@ -41886,7 +41878,8 @@
 <e lm="embotelhatge" a="capsot"><i>embotelhatge</i><par n="conselh__n"/></e>
 <e lm="embuc" a="capsot"><i>embuc</i><par n="conselh__n"/></e>
 <e lm="emenda" a="capsot"><i>emend</i><par n="jornad/a__n"/></e>
-<e lm="enfasi" a="capsot"><i>enfasi</i><par n="conselh__n"/></e>
+<e lm="enfasi" a="capsot" alt="oci"><i>enfasi</i><par n="conselh__n"/></e>
+<e lm="enfasi" a="capsot" alt="oci@gascon"><i>enfasi</i><par n="conselh__n"/></e>
 <e lm="emisfèri" a="capsot"><i>emisfèri</i><par n="conselh__n"/></e>
 <e lm="empatia" a="capsot"><i>empati</i><par n="jornad/a__n"/></e>
 <e lm="empèut" a="capsot"><i>empèut</i><par n="conselh__n"/></e>
@@ -42190,6 +42183,7 @@
 <e lm="galejada" a="capsot"><i>galejad</i><par n="jornad/a__n"/></e>
 <e lm="galèra" a="capsot"><i>galèr</i><par n="jornad/a__n"/></e>
 <e lm="galineta" a="capsot"><i>galinet</i><par n="jornad/a__n"/></e>
+<e lm="galinèla del bon Dieu"><i>galinèl</i><par n="jornad/a__n"/><p><l><b/>del<b/>bon<b/>Dieu</l><r><g><b/>del<b/>bon<b/>Dieu</g></r></p></e>
 <e lm="galinièr" a="capsot"><i>galinièr</i><par n="conselh__n"/></e>
 <e lm="galli" a="capsot"><i>galli</i><par n="conselh__n"/></e>
 <e lm="gant" a="capsot"><i>gant</i><par n="conselh__n"/></e>
@@ -42297,7 +42291,6 @@
 <e lm="gropa" a="capsot"><i>grop</i><par n="jornad/a__n"/></e>
 <e lm="grosèla" a="capsot"><i>grosèl</i><par n="jornad/a__n"/></e>
 <e lm="groselha" a="capsot"><i>groselh</i><par n="jornad/a__n"/></e>
-<e lm="gròs" a="capsot"><i>grò</i><par n="jornad/a__n"/></e>
 <e lm="grossesa" a="capsot"><i>grosses</i><par n="jornad/a__n"/></e>
 <e lm="grum" a="capsot"><i>grum</i><par n="conselh__n"/></e>
 <e lm="grun" a="capsot"><i>grun</i><par n="conselh__n"/></e>
@@ -42410,7 +42403,6 @@
 <e lm="labor" a="capsot"><i>labor</i><par n="part__n"/></e>
 <e lm="laca" a="capsot"><i>la</i><par n="va/ca__n"/></e>
 <e lm="lacuna" a="capsot"><i>lacun</i><par n="jornad/a__n"/></e>
-<e lm="lag" a="capsot"><i>lag</i><par n="dramaturg__n"/></e>
 <e lm="lagrema" a="capsot"><i>lagrem</i><par n="jornad/a__n"/></e>
 <e lm="laguna" a="capsot"><i>lagun</i><par n="jornad/a__n"/></e>
 <e lm="laid" a="capsot"><i>laid</i><par n="conselhèr__n"/></e>
@@ -42609,7 +42601,6 @@
 <e lm="mieidia" alt="aran" r="LR" a="capsot"><i>mieidi</i><par n="jornad/a__n"/></e>
 <e lm="mièjanuèch" a="capsot"><i>mièjanuèch</i><par n="mes__n"/></e>
 <e lm="mièjanuèit" a="capsot"><i>mièjanuèit</i><par n="conselh__n"/></e>
-<e lm="mila" a="capsot"><i>mil</i><par n="di/a__n"/></e>
 <e lm="milen" a="capsot"><i>milen</i><par n="conselh__n"/></e>
 <e lm="milhauca" a="capsot"><i>milhau</i><par n="va/ca__n"/></e>
 <e lm="milhòca" a="capsot"><i>milhò</i><par n="va/ca__n"/></e>
