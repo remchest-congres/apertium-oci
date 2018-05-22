@@ -19697,10 +19697,9 @@
     <e lm="obscenitat"><i>obscenitat</i><par n="part__n"/></e>
     <e lm="juridicament"><i>juridicament</i><par n="adequadament__adv"/></e>
     <e lm="extraordinàriament"><i>extraordinàriament</i><par n="adequadament__adv"/></e>
-    <e lm="facilament"><i>facilament</i><par n="adequadament__adv"/></e>
+    <e lm="facilament"><i>faci</i><par n="accidenta/lament__adv"/></e>
     <e lm="aisidament"><i>aisidament</i><par n="adequadament__adv"/></e>
-    <e lm="fidèlament"><i>fidèlament</i><par n="adequadament__adv"/></e>
-    <e lm="fisèlament"><i>fisèlament</i><par n="adequadament__adv"/></e>
+    <e lm="fidèlament"><i>fidè</i><par n="accidenta/lament__adv"/></e>
     <e lm="tractor"><i>tractor</i><par n="conselh__n"/></e>
     <e lm="enfin" r="LR"><i>enfin</i><par n="ager__adv"/></e>
       <e r="LR" lm="fin finala" alt="oci@aran"><i>fin<b/>finala</i><par n="ager__adv"/></e>
@@ -19843,10 +19842,10 @@
     <e lm="pas"><i>pas</i><par n="ager__adv"/></e>
     <e lm="per contra"><i>per<b/>contra</i><par n="ager__adv"/></e>
     <e lm="perfèctament"><i>perfèctament</i><par n="adequadament__adv"/></e>
-      <e r="LR" lm="perfièchament" alt="oci@aran"><i>perfièchament</i><par n="ager__adv"/></e>
-      <e r="LR" lm="perfièchament" alt="oci@gascon"><i>perfièchament</i><par n="ager__adv"/></e>
-    <e lm="perfièchament" alt="oci"><i>perfièchament</i><par n="ager__adv"/></e>
-    <e lm="perfièitament" r="LR"><i>perfièitament</i><par n="ager__adv"/></e>
+      <e r="LR" lm="perfièchament" alt="oci@aran"><i>perfièchament</i><par n="adequadament__adv"/></e>
+      <e r="LR" lm="perfièchament" alt="oci@gascon"><i>perfièchament</i><par n="adequadament__adv"/></e>
+    <e lm="perfièchament" alt="oci"><i>perfièchament</i><par n="adequadament__adv"/></e>
+    <e lm="perfièitament" r="LR"><i>perfièitament</i><par n="adequadament__adv"/></e>
     <e lm="per jo" r="LR"><i>per<b/>jo</i><par n="ager__adv"/></e>
     <e lm="per ieu" r="LR"><i>per<b/>ieu</i><par n="ager__adv"/></e>
     <e lm="per ièu" r="LR"><i>per<b/>ièu</i><par n="ager__adv"/></e>
@@ -34633,7 +34632,6 @@
     <e lm="clòt" a="carmentano"><i>clòt</i><par n="conselh__n"/></e>
     <e lm="El Clot" a="carmentano"><i>El<b/>Clot</i><par n="Aran__np"/></e>
     <e lm="Otegi" a="carmentano"><i>Otegi</i><par n="Abad__np"/></e>
-    <e lm="dificilament"><i>dificilament</i><par n="adequadament__adv"/></e>
     <e lm="vestiari" a="carmentano"><i>vestiari</i><par n="conselh__n"/></e>
     <e lm="sunnita" a="carmentano"><i>sunnit</i><par n="agricòl/a__adj"/></e>
     <e lm="cardenal" a="carmentano"><i>cardenal</i><par n="conselh__n"/></e>
@@ -40725,7 +40723,6 @@
 <e lm="subretot"><i>subretot</i><par n="ager__adv"/></e>
 <e lm="sulcòp"><i>sulcòp</i><par n="ager__adv"/></e>
 <e lm="tendrament"><i>tendrament</i><par n="adequadament__adv"/></e>
-<e lm="terriblament"><i>terriblament</i><par n="ager__adv"/></e>
 <e lm="tornarmai"><i>tornarmai</i><par n="ager__adv"/></e>
 <e lm="tot comptat e debatut"><i>tot<b/>comptat<b/>e<b/>debatut</i><par n="ager__adv"/></e>
 <e lm="umanament"><i>umanament</i><par n="adequadament__adv"/></e>
@@ -41320,7 +41317,7 @@
 <e lm="blachin" a="capsot"><i>blachin</i><par n="conselh__n"/></e>
 <e lm="blanc" a="capsot"><i>blan</i><par n="sindi/c__n"/></e>
 <e lm="blanquetat" a="capsot"><i>blanquetat</i><par n="part__n"/></e>
-<e lm="blat negre" a="capsot"><i>blat negre</i><par n="conselh__n"/></e>
+<e lm="blat negre" a="capsot"><i>blat<b/>negre</i><par n="conselh__n"/></e>
 <e lm="blau" a="capsot"><i>blau</i><par n="conselh__n"/></e>
 <e lm="bleçat" a="capsot"><i>bleça</i><par n="afilia/t__n"/></e>
 <e lm="blesta" a="capsot"><i>blest</i><par n="jornad/a__n"/></e>
@@ -42527,9 +42524,6 @@
 <e lm="marchon" a="capsot"><i>marchon</i><par n="conselh__n"/></e>
 <e lm="marga" a="capsot"><i>marg</i><par n="hormig/a__n"/></e>
 <e lm="margarida" a="capsot"><i>margarid</i><par n="jornad/a__n"/></e>
-<e lm="mar grana" alt="gascon" a="capsot"><i>mar gran</i><par n="jornad/a__n"/></e>
-<e lm="mar grana" alt="oci" r="LR" a="capsot"><i>mar gran</i><par n="jornad/a__n"/></e>
-<e lm="mar grana" alt="aran" r="LR" a="capsot"><i>mar gran</i><par n="jornad/a__n"/></e>
 <e lm="margue" a="capsot"><i>margue</i><par n="conselh__n"/></e>
 <e lm="marin" a="capsot"><i>mari</i><par n="cosi/n__n"/></e>
 <e lm="marketing" a="capsot"><i>marketing</i><par n="conselh__n"/></e>
@@ -43415,6 +43409,191 @@
     <e lm="pesca"><i>pes</i><par n="va/ca__n"/></e>
     <e lm="cacilha"><i>cacilh</i><par n="jornad/a__n"/></e>
     <e lm="sit"><i>sit</i><par n="conselh__n"/></e>
+
+<e lm="abans ièr" a="capsot"><i>abans<b/>ièr</i><par n="ager__adv"/></e>
+<e lm="abusivament" a="capsot"><i>abusi</i><par n="acti/vament__adv"/></e>
+<e lm="accessòriament" a="capsot"><i>accessòriament</i><par n="adequadament__adv"/></e>
+<e lm="a de bon" a="capsot"><i>a<b/>de<b/>bon</i><par n="ager__adv"/></e>
+<e lm="agrament" a="capsot"><i>agrament</i><par n="adequadament__adv"/></e>
+<e lm="a gratis" a="capsot"><i>a<b/>gratis</i><par n="ager__adv"/></e>
+<e lm="aigrament" a="capsot"><i>aigrament</i><par n="adequadament__adv"/></e>
+<e lm="al brutle" a="capsot"><i>al<b/>brutle</i><par n="ager__adv"/></e>
+<e lm="al delai" a="capsot"><i>al<b/>delai</i><par n="ager__adv"/></e>
+<e lm="alègrament" a="capsot"><i>alègrament</i><par n="adequadament__adv"/></e>
+<e lm="a l'entorn de" a="capsot"><i>a<b/>l'entorn<b/>de</i><par n="ager__adv"/></e>
+<e lm="alhors" a="capsot"><i>alhors</i><par n="ager__adv"/></e>
+<e lm="amarament" a="capsot"><i>amarament</i><par n="adequadament__adv"/></e>
+<e lm="apaticament" a="capsot"><i>apaticament</i><par n="adequadament__adv"/></e>
+<e lm="a pauc près" a="capsot"><i>a<b/>pauc<b/>près</i><par n="ager__adv"/></e>
+<e lm="arbitràriament" a="capsot"><i>arbitràriament</i><par n="adequadament__adv"/></e>
+<e lm="atal" a="capsot"><i>atal</i><par n="ager__adv"/></e>
+<e lm="autant" a="capsot"><i>autant</i><par n="ager__adv"/></e>
+<e lm="avant" a="capsot"><i>avant</i><par n="ager__adv"/></e>
+<e lm="aviat" a="capsot"><i>aviat</i><par n="ager__adv"/></e>
+<e lm="banalament" a="capsot"><i>bana</i><par n="accidenta/lament__adv"/></e>
+<e lm="ben" a="capsot"><i>ben</i><par n="ager__adv"/></e>
+<e lm="benignament" a="capsot"><i>benignament</i><par n="adequadament__adv"/></e>
+<e lm="bensai" a="capsot"><i>bensai</i><par n="ager__adv"/></e>
+<e lm="bestialament" a="capsot"><i>bestia</i><par n="accidenta/lament__adv"/></e>
+<e lm="brèu" a="capsot"><i>brèu</i><par n="ager__adv"/></e>
+<e lm="certanament" a="capsot"><i>certanament</i><par n="adequadament__adv"/></e>
+<e lm="circularament" a="capsot"><i>circularament</i><par n="adequadament__adv"/></e>
+<e lm="coma aquò" a="capsot"><i>coma<b/>aquò</i><par n="ager__adv"/></e>
+<e lm="condicionalament" a="capsot"><i>condiciona</i><par n="accidenta/lament__adv"/></e>
+<e lm="conjonchament" a="capsot"><i>conjonchament</i><par n="adequadament__adv"/></e>
+<e lm="continuament" a="capsot"><i>continuament</i><par n="adequadament__adv"/></e>
+<e lm="contràriament" a="capsot"><i>contràriament</i><par n="adequadament__adv"/></e>
+<e lm="convenablament" a="capsot"><i>convenablament</i><par n="adequadament__adv"/></e>
+<e lm="copiosament" a="capsot"><i>copiosament</i><par n="adequadament__adv"/></e>
+<e lm="coratjosament" a="capsot"><i>coratjosament</i><par n="adequadament__adv"/></e>
+<e lm="cortesament" a="capsot"><i>cortesament</i><par n="adequadament__adv"/></e>
+<e lm="criminalament" a="capsot"><i>crimina</i><par n="accidenta/lament__adv"/></e>
+<e lm="crudèlament" a="capsot"><i>crudè</i><par n="accidenta/lament__adv"/></e>
+<e lm="curiosament" a="capsot"><i>curiosament</i><par n="adequadament__adv"/></e>
+<e lm="debàs" a="capsot"><i>debàs</i><par n="ager__adv"/></e>
+<e lm="de bon" a="capsot"><i>de<b/>bon</i><par n="ager__adv"/></e>
+<e lm="de delà" a="capsot"><i>de<b/>delà</i><par n="ager__adv"/></e>
+<e lm="defectuosament" a="capsot"><i>defectuosament</i><par n="adequadament__adv"/></e>
+<e lm="delai" a="capsot"><i>delai</i><par n="ager__adv"/></e>
+<e lm="deliberadament" a="capsot"><i>deliberadament</i><par n="adequadament__adv"/></e>
+<e lm="delicadament" a="capsot"><i>delicadament</i><par n="adequadament__adv"/></e>
+<e lm="deliciosament" a="capsot"><i>deliciosament</i><par n="adequadament__adv"/></e>
+<e lm="dempuèi" a="capsot"><i>dempuèi</i><par n="ager__adv"/></e>
+<e lm="de pè" a="capsot"><i>de<b/>pè</i><par n="ager__adv"/></e>
+<e lm="de pès" a="capsot"><i>de<b/>pès</i><par n="ager__adv"/></e>
+<e lm="desenant" a="capsot"><i>desenant</i><par n="ager__adv"/></e>
+<e lm="desleialament" a="capsot"><i>desleia</i><par n="accidenta/lament__adv"/></e>
+<e lm="despuòi" a="capsot"><i>despuòi</i><par n="ager__adv"/></e>
+<e lm="devath" a="capsot" alt="gascon"><i>devath</i><par n="ager__adv"/></e>
+<e lm="devath" a="capsot" alt="oci" r="LR"><i>devath</i><par n="ager__adv"/></e>
+<e lm="devath" a="capsot" alt="aran" r="LR"><i>devath</i><par n="ager__adv"/></e>
+<e lm="dificilament" a="capsot"><i>difici</i><par n="accidenta/lament__adv"/></e>
+<e lm="diligentament" a="capsot"><i>diligentament</i><par n="adequadament__adv"/></e>
+<e lm="dimenge" a="capsot"><i>dimenge</i><par n="ager__adv"/></e>
+<e lm="dintre" a="capsot"><i>dintre</i><par n="ager__adv"/></e>
+<e lm="dirèctament" a="capsot"><i>dirèctament</i><par n="adequadament__adv"/></e>
+<e lm="discretament" a="capsot"><i>discretament</i><par n="adequadament__adv"/></e>
+<e lm="distintament" a="capsot"><i>distintament</i><par n="adequadament__adv"/></e>
+<e lm="doblament" a="capsot"><i>doblament</i><par n="adequadament__adv"/></e>
+<e lm="doç" a="capsot"><i>doç</i><par n="ager__adv"/></e>
+<e lm="dolorosament" a="capsot"><i>dolorosament</i><par n="adequadament__adv"/></e>
+<e lm="doncas" a="capsot"><i>doncas</i><par n="ager__adv"/></e>
+<e lm="drech" a="capsot"><i>drech</i><par n="ager__adv"/></e>
+<e lm="drechament" a="capsot"><i>drechament</i><par n="adequadament__adv"/></e>
+<e lm="dreit" a="capsot"><i>dreit</i><par n="ager__adv"/></e>
+<e lm="dur" a="capsot"><i>dur</i><par n="ager__adv"/></e>
+<e lm="infinidament" a="capsot"><i>infinidament</i><par n="adequadament__adv"/></e>
+<e lm="ensemble" a="capsot"><i>ensemble</i><par n="ager__adv"/></e>
+<e lm="ensems" a="capsot"><i>ensems</i><par n="ager__adv"/></e>
+<e lm="environ" a="capsot"><i>environ</i><par n="ager__adv"/></e>
+<e lm="espaventablament" a="capsot"><i>espaventablament</i><par n="adequadament__adv"/></e>
+<e lm="espiritualament" a="capsot"><i>espiritua</i><par n="accidenta/lament__adv"/></e>
+<e lm="essencialament" a="capsot"><i>essencia</i><par n="accidenta/lament__adv"/></e>
+<e lm="estranhament" a="capsot"><i>estranhament</i><par n="adequadament__adv"/></e>
+<e lm="estrechament" a="capsot"><i>estrechament</i><par n="adequadament__adv"/></e>
+<e lm="eternalament" a="capsot"><i>eterna</i><par n="accidenta/lament__adv"/></e>
+<e lm="exprèssament" a="capsot"><i>exprèssament</i><par n="adequadament__adv"/></e>
+<e lm="falsament" a="capsot"><i>falsament</i><par n="adequadament__adv"/></e>
+<e lm="familiarament" a="capsot"><i>familiarament</i><par n="adequadament__adv"/></e>
+<e lm="fèrm" a="capsot"><i>fèrm</i><par n="ager__adv"/></e>
+<e lm="fisèlament" a="capsot"><i>fisè</i><par n="accidenta/lament__adv"/></e>
+<e lm="fin" a="capsot"><i>fin</i><par n="ager__adv"/></e>
+<e lm="fòrt" a="capsot"><i>fòrt</i><par n="ager__adv"/></e>
+<e lm="franchament" a="capsot"><i>franchament</i><par n="adequadament__adv"/></e>
+<e lm="fraternalament" a="capsot"><i>fraterna</i><par n="accidenta/lament__adv"/></e>
+<e lm="fresc" a="capsot"><i>fresc</i><par n="ager__adv"/></e>
+<e lm="graciosament" a="capsot"><i>graciosament</i><par n="adequadament__adv"/></e>
+<e lm="grassament" a="capsot"><i>grassament</i><par n="adequadament__adv"/></e>
+<e lm="gratis" a="capsot"><i>gratis</i><par n="ager__adv"/></e>
+<e lm="gratuitament" a="capsot"><i>gratuitament</i><par n="adequadament__adv"/></e>
+<e lm="grèu" a="capsot"><i>grèu</i><par n="ager__adv"/></e>
+<e lm="onèstament" a="capsot"><i>onèstament</i><par n="adequadament__adv"/></e>
+<e lm="orriblament" a="capsot"><i>orriblament</i><par n="adequadament__adv"/></e>
+<e lm="ièr delai" a="capsot"><i>ièr<b/>delai</i><par n="ager__adv"/></e>
+<e lm="igienicament" a="capsot"><i>igienicament</i><par n="adequadament__adv"/></e>
+<e lm="impròpriament" a="capsot"><i>impròpriament</i><par n="ager__adv"/></e>
+<e lm="individualament" a="capsot"><i>individua</i><par n="accidenta/lament__adv"/></e>
+<e lm="infinidament" a="capsot"><i>infinidament</i><par n="adequadament__adv"/></e>
+<e lm="injustament" a="capsot"><i>injustament</i><par n="adequadament__adv"/></e>
+<e lm="jornalament" a="capsot"><i>jorna</i><par n="accidenta/lament__adv"/></e>
+<e lm="jos" a="capsot"><i>jos</i><par n="ager__adv"/></e>
+<e lm="joiosament" a="capsot"><i>joiosament</i><par n="adequadament__adv"/></e>
+<e lm="largament" a="capsot"><i>largament</i><par n="adequadament__adv"/></e>
+<e lm="legitimament" a="capsot"><i>legitimament</i><par n="adequadament__adv"/></e>
+<e lm="leialament" a="capsot"><i>leia</i><par n="accidenta/lament__adv"/></e>
+<e lm="leugièrament" a="capsot"><i>leugièrament</i><par n="adequadament__adv"/></e>
+<e lm="liberalament" a="capsot"><i>liberalament</i><par n="adequadament__adv"/></e>
+<e lm="mai o mens" a="capsot"><i>mai<b/>o<b/>mens</i><par n="ager__adv"/></e>
+<e lm="malaürosament" a="capsot"><i>malaürosament</i><par n="adequadament__adv"/></e>
+<e lm="malgrat" a="capsot"><i>malgrat</i><par n="ager__adv"/></e>
+<e lm="manco" a="capsot"><i>manco</i><par n="ager__adv"/></e>
+<e lm="manualament" a="capsot"><i>manua</i><par n="accidenta/lament__adv"/></e>
+<e lm="mas" a="capsot"><i>mas</i><par n="ager__adv"/></e>
+<e lm="materialament" a="capsot"><i>materialament</i><par n="adequadament__adv"/></e>
+<e lm="medeish" a="capsot" alt="gascon"><i>medeish</i><par n="ager__adv"/></e>
+<e lm="medeish" a="capsot" alt="oci" r="LR"><i>medeish</i><par n="ager__adv"/></e>
+<e lm="medeish" a="capsot" alt="aran" r="LR"><i>medeish</i><par n="ager__adv"/></e>
+<e lm="medish" a="capsot" alt="gascon"><i>medish</i><par n="ager__adv"/></e>
+<e lm="medish" a="capsot" alt="oci" r="LR"><i>medish</i><par n="ager__adv"/></e>
+<e lm="medish" a="capsot" alt="aran" r="LR"><i>medish</i><par n="ager__adv"/></e>
+<e lm="mentalament" a="capsot"><i>mentalament</i><par n="adequadament__adv"/></e>
+<e lm="meravilhosament" a="capsot"><i>meravilhosament</i><par n="adequadament__adv"/></e>
+<e lm="mièjanuèch" a="capsot"><i>mièjanuèch</i><par n="ager__adv"/></e>
+<e lm="mièjanuèit" a="capsot"><i>mièjanuèit</i><par n="ager__adv"/></e>
+<e lm="mièlhs" a="capsot"><i>mièlhs</i><par n="ager__adv"/></e>
+<e lm="molt" a="capsot" alt="aran"><i>molt</i><par n="ager__adv"/></e>
+<e lm="molt" a="capsot" alt="oci" r="LR"><i>molt</i><par n="ager__adv"/></e>
+<e lm="molt" a="capsot" alt="gascon" r="LR"><i>molt</i><par n="ager__adv"/></e>
+<e lm="mortalament" a="capsot"><i>morta</i><par n="accidenta/lament__adv"/></e>
+<e lm="naturalament" a="capsot"><i>natura</i><par n="accidenta/lament__adv"/></e>
+<e lm="nonmàs" a="capsot"><i>nonmàs</i><par n="ager__adv"/></e>
+<e lm="nòvament" a="capsot"><i>nò</i><par n="acti/vament__adv"/></e>
+<e lm="novèlament" a="capsot"><i>novè</i><par n="accidenta/lament__adv"/></e>
+<e lm="originalament" a="capsot"><i>origina</i><par n="accidenta/lament__adv"/></e>
+<e lm="pacificament" a="capsot"><i>pacificament</i><par n="adequadament__adv"/></e>
+<e lm="peresosament" a="capsot"><i>peresosament</i><par n="adequadament__adv"/></e>
+<e lm="parcimoniosament" a="capsot"><i>parcimoniosament</i><par n="adequadament__adv"/></e>
+<e lm="particularament" a="capsot"><i>particularament</i><par n="adequadament__adv"/></e>
+<e lm="pacientament" a="capsot"><i>pacientament</i><par n="adequadament__adv"/></e>
+<e lm="paurament" a="capsot"><i>paurament</i><par n="adequadament__adv"/></e>
+<e lm="pasiblament" a="capsot"><i>pasiblament</i><par n="adequadament__adv"/></e>
+<e lm="perpetualament" a="capsot"><i>perpetua</i><par n="accidenta/lament__adv"/></e>
+<e lm="plasentament" a="capsot"><i>plasentament</i><par n="adequadament__adv"/></e>
+<e lm="plus" a="capsot"><i>plus</i><par n="ager__adv"/></e>
+<e lm="pontualament" a="capsot"><i>pontua</i><par n="accidenta/lament__adv"/></e>
+<e lm="potencialament" a="capsot"><i>potencia</i><par n="accidenta/lament__adv"/></e>
+<e lm="precipitadament" a="capsot"><i>precipitadament</i><par n="adequadament__adv"/></e>
+<e lm="primièrament" a="capsot"><i>primièrament</i><par n="adequadament__adv"/></e>
+<e lm="primitivament" a="capsot"><i>primitivament</i><par n="adequadament__adv"/></e>
+<e lm="prompte" a="capsot"><i>prompte</i><par n="ager__adv"/></e>
+<e lm="pròpriament" a="capsot"><i>pròpriament</i><par n="adequadament__adv"/></e>
+<e lm="publicament" a="capsot"><i>publicament</i><par n="adequadament__adv"/></e>
+<e lm="quand" a="capsot"><i>quand</i><par n="ager__adv"/></e>
+<e lm="quasi" a="capsot"><i>quasi</i><par n="ager__adv"/></e>
+<e lm="quicòm coma" a="capsot"><i>quicòm<b/>coma</i><par n="ager__adv"/></e>
+<e lm="religiosament" a="capsot"><i>religiosament</i><par n="adequadament__adv"/></e>
+<e lm="repetitivament" a="capsot"><i>repetiti</i><par n="acti/vament__adv"/></e>
+<e lm="salvatjament" a="capsot"><i>salvatjament</i><par n="adequadament__adv"/></e>
+<e lm="santament" a="capsot"><i>santament</i><par n="adequadament__adv"/></e>
+<e lm="secretament" a="capsot"><i>secretament</i><par n="adequadament__adv"/></e>
+<e lm="segon" a="capsot"><i>segon</i><par n="ager__adv"/></e>
+<e lm="separadament" a="capsot"><i>separadament</i><par n="adequadament__adv"/></e>
+<e lm="significativament" a="capsot"><i>significativament</i><par n="adequadament__adv"/></e>
+<e lm="singularament" a="capsot"><i>singularament</i><par n="adequadament__adv"/></e>
+<e lm="solid" a="capsot"><i>solid</i><par n="ager__adv"/></e>
+<e lm="sobtament" a="capsot"><i>sobtament</i><par n="adequadament__adv"/></e>
+<e lm="subtilament" a="capsot"><i>subti</i><par n="accidenta/lament__adv"/></e>
+<e lm="temporalament" a="capsot"><i>tempora</i><par n="accidenta/lament__adv"/></e>
+<e lm="terriblament" a="capsot"><i>terriblament</i><par n="adequadament__adv"/></e>
+<e lm="universalament" a="capsot"><i>universa</i><par n="accidenta/lament__adv"/></e>
+<e lm="variablament" a="capsot"><i>variablament</i><par n="adequadament__adv"/></e>
+<e lm="visiblament" a="capsot"><i>visiblament</i><par n="adequadament__adv"/></e>
+<e lm="vigorosament" a="capsot"><i>vigorosament</i><par n="adequadament__adv"/></e>
+<e lm="violentament" a="capsot"><i>violentament</i><par n="adequadament__adv"/></e>
+<e lm="virtualament" a="capsot"><i>virtua</i><par n="accidenta/lament__adv"/></e>
+<e lm="vitament" a="capsot"><i>vitament</i><par n="adequadament__adv"/></e>
+<e lm="volontièr" a="capsot"><i>volontièr</i><par n="ager__adv"/></e>
+<e lm="volontosament" a="capsot"><i>volontosament</i><par n="adequadament__adv"/></e>
 <!-- xxxx -->
 </section>
 
