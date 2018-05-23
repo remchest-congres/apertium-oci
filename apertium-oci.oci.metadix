@@ -19267,6 +19267,9 @@
       <e r="LR" lm="vòstre" alt="oci@aran"><i>vòstr</i><par n="nòstr/e__adj"/></e>
       <e r="LR" lm="vòstre" alt="oci@gascon"><i>vòstr</i><par n="nòstr/e__adj"/></e>
     <e lm="vòstre" alt="oci"><i>vòstr</i><par n="nòstr/e__adj"/></e>
+      <e r="LR" lm="tròp" alt="oci@aran"><i>tròp</i><par n="ben__preadv"/></e>
+      <e r="LR" lm="tròp" alt="oci@gascon"><i>tròp</i><par n="ben__preadv"/></e>
+    <e lm="tròp" alt="oci"><i>tròp</i><par n="ben__preadv"/></e>
       <e r="LR" lm="tròp" alt="oci@aran"><i>tròp</i><par n="ager__adv"/></e>
       <e r="LR" lm="tròp" alt="oci@gascon"><i>tròp</i><par n="ager__adv"/></e>
     <e lm="tròp" alt="oci"><i>tròp</i><par n="ager__adv"/></e>
@@ -24908,7 +24911,7 @@
     <e lm="ombrèr"><i>ombrèr</i><par n="conselh__n"/></e>
     <e lm="ombrilha"><i>ombrilh</i><par n="jornad/a__n"/></e>
     <e lm="òme"><i>òme</i><par n="conselh__n"/></e>
-    <e lm="omenatge" r="LR"><i>omenatge</i><par n="conselh__n"/></e>
+    <e lm="omenatge"><i>omenatge</i><par n="conselh__n"/></e>
     <e lm="omicidi"><i>omicidi</i><par n="conselh__n"/></e>
     <e lm="omission"><i>omission</i><par n="part__n"/></e>
     <e lm="oncle"><i>oncle</i><par n="conselh__n"/></e>
@@ -30106,7 +30109,7 @@
       <e r="LR" lm="daissar estar" alt="oci@aran"><i>d</i><par n="c/a[NT]ar__vblex" prm="iss"/><p><l><b/>estar</l><r><g><b/>estar</g></r></p></e>
       <e r="LR" lm="daissar estar" alt="oci@gascon"><i>d</i><par n="c/a[NT]ar__vblex" prm="iss"/><p><l><b/>estar</l><r><g><b/>estar</g></r></p></e>
     <e lm="daissar estar" alt="oci"><i>d</i><par n="c/a[NT]ar__vblex" prm="iss"/><p><l><b/>estar</l><r><g><b/>estar</g></r></p></e>
-    <e lm="laissar" r="LR"><i>l</i><par n="c/a[NT]ar__vblex" prm="iss"/></e>
+    <e lm="laissar"><i>l</i><par n="c/a[NT]ar__vblex" prm="iss"/></e>
     <e lm="delegar"><i>del</i><par n="all/e[]gar__vblex" prm=""/></e>
     <e lm="delimitar"><i>delim</i><par n="ab/i[T]ar__vblex" prm="t"/></e>
       <e r="LR" lm="demanar" alt="oci"><i>dem</i><par n="c/a[NT]ar__vblex" prm="n"/></e>
@@ -42262,7 +42265,7 @@
 <e lm="gemèc" a="capsot"><i>gemèc</i><par n="conselh__n"/></e>
 <e lm="gemiment" a="capsot"><i>gemiment</i><par n="conselh__n"/></e>
 <e lm="general" a="capsot"><i>general</i><par n="conselhèr__n"/></e>
-<e lm="genèsi" a="capsot"><i>genèsi</i><par n="conselh__n"/></e>
+<e lm="genèsi" a="capsot"><i>genèsi</i><par n="part__n"/></e>
 <e lm="genèsta" a="capsot"><i>genèst</i><par n="jornad/a__n"/></e>
 <e lm="genetician" a="capsot"><i>genetician</i><par n="conselhèr__n"/></e>
 <e lm="gengiva" a="capsot"><i>gengiv</i><par n="jornad/a__n"/></e>
@@ -43659,6 +43662,7 @@
 <e lm="d’abitud"><i>d’abitud</i><par n="ager__adv"/></e>
 <e lm="presa"><i>pres</i><par n="jornad/a__n"/></e>
 <e lm="tasca"><i>tas</i><par n="va/ca__n"/></e>
+<e lm="tractat"><i>tractat</i><par n="conselh__n"/></e>
 
 <!-- xxxx -->
 </section>
