@@ -24834,13 +24834,8 @@
     <e lm="obtencion"><i>obtencion</i><par n="part__n"/></e>
     <e lm="ocasion"><i>ocasion</i><par n="part__n"/></e>
     <e lm="òci" a="carmentano"><i>òci</i><par n="personau__n"/></e>
-      <e r="LR" lm="octobre" alt="oci"><i>octobre</i><par n="conselh__n"/></e>
-    <e lm="octobre" alt="oci@aran"><i>octobre</i><par n="conselh__n"/></e>
-    <e lm="octobre" alt="oci@gascon"><i>octobre</i><par n="conselh__n"/></e>
-    <e lm="octubre" r="LR"><i>octubre</i><par n="conselh__n"/></e>
-      <e r="LR" lm="octòbre" alt="oci@aran"><i>octòbre</i><par n="conselh__n"/></e>
-      <e r="LR" lm="octòbre" alt="oci@gascon"><i>octòbre</i><par n="conselh__n"/></e>
-    <e lm="octòbre" alt="oci"><i>octòbre</i><par n="conselh__n"/></e>
+    <e lm="octobre"><i>octobre</i><par n="conselh__n"/></e>
+    <e lm="octòbre" r="LR"><i>octòbre</i><par n="conselh__n"/></e>
     <e lm="ocupacion" r="LR"><i>ocupacion</i><par n="part__n"/></e>
     <e lm="ocupant" a="carmentano"><i>ocupant</i><par n="conselhèr__n"/></e>
     <e lm="òdi"><i>òdi</i><par n="conselh__n"/></e>
@@ -43617,6 +43612,7 @@
 
 <e lm="d’abitud"><i>d’abitud</i><par n="ager__adv"/></e>
 <e lm="presa"><i>pres</i><par n="jornad/a__n"/></e>
+<e lm="tasca"><i>tas</i><par n="va/ca__n"/></e>
 
 <!-- xxxx -->
 </section>
