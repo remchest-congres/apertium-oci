@@ -1538,6 +1538,15 @@
       <e><p><l>ari</l><r>ari<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
     </pardef>
 
+        <pardef n="/ebri__adj">
+    <e alt="oci@aran"><p><l>ébries</l><r>ebri<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci@gascon"><p><l>ébries</l><r>ebri<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci"><p><l>ébrias</l><r>ebri<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
+      <e><p><l>ébria</l><r>ebri<s n="adj"/><s n="f"/><s n="sg"/></r></p></e>
+      <e><p><l>ebris</l><r>ebri<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l>ebri</l><r>ebri<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
+    </pardef>
+
         <pardef n="perilh/ós__adj">
     <e alt="oci@aran"><p><l>oses</l><r>ós<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
     <e alt="oci@gascon"><p><l>oses</l><r>ós<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
@@ -1674,6 +1683,17 @@
       <e><p><l>c</l><r>c<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
     </pardef>
 
+        <pardef n="bas/c__adj">
+    <e alt="oci@aran"><p><l>ques</l><r>c<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci@gascon"><p><l>ques</l><r>c<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci"><p><l>cas</l><r>c<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
+      <e><p><l>ca</l><r>c<s n="adj"/><s n="f"/><s n="sg"/></r></p></e>
+    <e alt="oci@aran"><p><l>qui</l><r>c<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
+    <e alt="oci@gascon"><p><l>qui</l><r>c<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
+    <e alt="oci"><p><l>ques</l><r>c<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l>c</l><r>c<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
+    </pardef>
+
         <pardef n="blan/c__adj">
     <e alt="oci@aran"><p><l>ques</l><r>c<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
     <e alt="oci@gascon"><p><l>ques</l><r>c<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
@@ -1709,6 +1729,15 @@
     <e alt="oci@gascon"><p><l>qui</l><r>c<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
     <e alt="oci"><p><l>cs</l><r>c<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
       <e><p><l>c</l><r>c<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
+    </pardef>
+
+        <pardef n="vag/ue__adj">
+    <e alt="oci@aran"><p><l>ues</l><r>ue<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci@gascon"><p><l>ues</l><r>ue<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci"><p><l>as</l><r>ue<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
+    <e><p><l>a</l><r>ue<s n="adj"/><s n="f"/><s n="sg"/></r></p></e>
+    <e><p><l>ues</l><r>ue<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l>ue</l><r>ue<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
     </pardef>
 
         <pardef n="aran/és__adj">
@@ -3995,6 +4024,17 @@
     </pardef>
 
         <pardef n="ris/c__n">
+    <e alt="oci@aran"><p><l>qui</l><r>c<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+    <e alt="oci@gascon"><p><l>qui</l><r>c<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+    <e alt="oci"><p><l>ques</l><r>c<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l>c</l><r>c<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+    </pardef>
+
+        <pardef n="bas/c__n">
+    <e alt="oci@aran"><p><l>ques</l><r>c<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci@gascon"><p><l>ques</l><r>c<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci"><p><l>cas</l><r>c<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+      <e><p><l>ca</l><r>c<s n="n"/><s n="f"/><s n="sg"/></r></p></e>
     <e alt="oci@aran"><p><l>qui</l><r>c<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
     <e alt="oci@gascon"><p><l>qui</l><r>c<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
     <e alt="oci"><p><l>ques</l><r>c<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
@@ -18214,7 +18254,7 @@
     <e lm="barbar"><i>barbar</i><par n="trabalhador__adj"/></e>
     <e lm="barcelonés" a="carmentano"><i>barcelon</i><par n="aran/és__adj"/></e>
     <e lm="barlòca"><i>barlò</i><par n="barlò/ca__adj"/></e>
-    <e lm="basc"><i>bas</i><par n="tecni/c__adj"/></e>
+    <e lm="basc"><i>bas</i><par n="bas/c__adj"/></e>
     <e lm="basic"><i>basi</i><par n="tecni/c__adj"/></e>
     <e lm="belic" a="carmentano"><i>beli</i><par n="tecni/c__adj"/></e>
     <e lm="benvengut"><i>benvengu</i><par n="apropria/t__adj"/></e>
@@ -22525,6 +22565,7 @@
     <e lm="destitucion"><i>destitucion</i><par n="part__n"/></e>
     <e lm="desvelopament" r="LR"><i>desvelopament</i><par n="conselh__n"/></e>
     <e lm="desvolopament"><i>desvolopament</i><par n="conselh__n"/></e>
+    <e lm="desvolupament" r="LR"><i>desvolupament</i><par n="conselh__n"/></e>
     <e lm="detalh"><i>detalh</i><par n="conselh__n"/></e>
     <e lm="deteccion"><i>deteccion</i><par n="part__n"/></e>
     <e lm="detencion"><i>detencion</i><par n="part__n"/></e>
@@ -35538,7 +35579,12 @@
     <e lm="conget" a="dgimeno" r="LR"><i>conget</i><par n="conselh__n"/></e>
     <e lm="Segre" a="carmentano"><i>Segre</i><par n="Aran__np"/></e>
     <e lm="endurziment" a="carmentano"><i>endurziment</i><par n="conselh__n"/></e>
-    <e lm="reagropament" a="carmentano"><i>reagropament</i><par n="conselh__n"/></e>
+    <e lm="reagropament" alt="oci@aran" a="carmentano"><i>reagropament</i><par n="conselh__n"/></e>
+    <e r="LR" lm="reagropament" alt="oci@gascon" a="carmentano"><i>reagropament</i><par n="conselh__n"/></e>
+    <e r="LR" lm="reagropament" alt="oci" a="carmentano"><i>reagropament</i><par n="conselh__n"/></e>
+    <e lm="regropament" alt="oci@gascon"><i>regropament</i><par n="conselh__n"/></e>
+    <e lm="regropament" alt="oci"><i>regropament</i><par n="conselh__n"/></e>
+    <e r="LR" lm="regropament" alt="oci@aran"><i>regropament</i><par n="conselh__n"/></e>
     <e lm="Polítkovskaia" a="carmentano"><i>Polítkovskaia</i><par n="Abad__np"/></e>
     <e lm="policièr" a="carmentano"><i>policiè</i><par n="primiè/r__adj"/></e>
     <e lm="Chechenia" a="carmentano"><i>Chechenia</i><par n="Aran__np"/></e>
@@ -41107,7 +41153,7 @@
 <e lm="amorèu" a="capsot"><i>amorèu</i><par n="conselh__n"/></e>
 <e lm="anacolut" a="capsot"><i>anacolut</i><par n="conselh__n"/></e>
 <e lm="anacorèta" a="capsot"><i>anacorèt</i><par n="di/a__n"/></e>
-<e lm="anadiplòsi" a="capsot"><i>anadiplòsi</i><par n="conselh__n"/></e>
+<e lm="anadiplòsi" a="capsot"><i>anadiplòsi</i><par n="part__n"/></e>
 <e lm="anafòra" a="capsot"><i>anafòr</i><par n="jornad/a__n"/></e>
 <e lm="analècta" a="capsot"><i>analèct</i><par n="jornad/a__n"/></e>
 <e lm="analogia" a="capsot"><i>analogi</i><par n="jornad/a__n"/></e>
@@ -41276,7 +41322,7 @@
 <e lm="barrièra" a="capsot"><i>barrièr</i><par n="jornad/a__n"/></e>
 <e lm="bartàs" a="capsot"><i>bart</i><par n="trasp/às__n"/></e>
 <e lm="bas" a="capsot"><i>bas</i><par n="pas__n"/></e>
-<e lm="basc" a="capsot"><i>bas</i><par n="ris/c__n"/></e>
+<e lm="basc" a="capsot"><i>bas</i><par n="bas/c__n"/></e>
 <e lm="basèli" a="capsot"><i>basèli</i><par n="conselh__n"/></e>
 <e lm="baselic" a="capsot"><i>baselic</i><par n="conselh__n"/></e>
 <e lm="basquet" a="capsot"><i>basquet</i><par n="conselh__n"/></e>
