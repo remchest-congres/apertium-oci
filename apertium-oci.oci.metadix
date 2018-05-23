@@ -43458,12 +43458,23 @@
 <e lm="deliberadament" a="capsot"><i>deliberadament</i><par n="adequadament__adv"/></e>
 <e lm="delicadament" a="capsot"><i>delicadament</i><par n="adequadament__adv"/></e>
 <e lm="deliciosament" a="capsot"><i>deliciosament</i><par n="adequadament__adv"/></e>
-<e lm="dempuèi" a="capsot"><i>dempuèi</i><par n="ager__adv"/></e>
 <e lm="de pè" a="capsot"><i>de<b/>pè</i><par n="ager__adv"/></e>
 <e lm="de pès" a="capsot"><i>de<b/>pès</i><par n="ager__adv"/></e>
 <e lm="desenant" a="capsot"><i>desenant</i><par n="ager__adv"/></e>
 <e lm="desleialament" a="capsot"><i>desleia</i><par n="accidenta/lament__adv"/></e>
+<e r="LR" lm="dempús" alt="oci"><i>dempús</i><par n="ager__adv"/></e>
+<e lm="dempús" alt="oci@aran"><i>dempús</i><par n="ager__adv"/></e>
+<e lm="dempús" alt="oci@gascon"><i>dempús</i><par n="ager__adv"/></e>
+<e lm="despús" r="LR"><i>despús</i><par n="ager__adv"/></e>
+<e lm="puèi" r="LR"><i>puèi</i><par n="ager__adv"/></e>
+<e r="LR" lm="dempuèi" alt="oci@aran"><i>dempuèi</i><par n="ager__adv"/></e>
+<e r="LR" lm="dempuèi" alt="oci@gascon"><i>dempuèi</i><par n="ager__adv"/></e>
+<e lm="dempuèi" alt="oci" a="capsot"><i>dempuèi</i><par n="ager__adv"/></e>
 <e lm="despuòi" a="capsot"><i>despuòi</i><par n="ager__adv"/></e>
+<e lm="despuèi" r="LR"><i>despuèi</i><par n="ager__adv"/></e>
+<e lm="desempuèi" r="LR"><i>desempuèi</i><par n="ager__adv"/></e>
+<e lm="dempuòi" r="LR"><i>dempuòi</i><par n="ager__adv"/></e>
+<e lm="desespuèi" r="LR"><i>desespuèi</i><par n="ager__adv"/></e>
 <e lm="devath" a="capsot" alt="gascon"><i>devath</i><par n="ager__adv"/></e>
 <e lm="devath" a="capsot" alt="oci" r="LR"><i>devath</i><par n="ager__adv"/></e>
 <e lm="devath" a="capsot" alt="aran" r="LR"><i>devath</i><par n="ager__adv"/></e>

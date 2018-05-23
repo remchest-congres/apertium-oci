@@ -1,5 +1,6 @@
 # Problemes especialment complexos de la desambiguació
 #	- son: pos o vbser o nom
+#	- an: vbhaver o nom
 #	- es: det (aran) o vbser
 
 # Firstly, we need to define what tags should be considered sentence delimiters. For this example, only full stop is set as delimiter.
