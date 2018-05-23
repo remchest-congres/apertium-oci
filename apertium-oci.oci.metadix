@@ -22636,7 +22636,7 @@
     <e lm="discotèca" a="carmentano"><i>discotè</i><par n="va/ca__n"/></e>
     <e lm="discriminacion"><i>discriminacion</i><par n="part__n"/></e>
     <e lm="discussion"><i>discussion</i><par n="part__n"/></e>
-    <e lm="disminucion" r="LR"><i>disminucion</i><par n="part__n"/></e>
+    <e lm="disminucion"><i>disminucion</i><par n="part__n"/></e>
     <e lm="diminucion"><i>diminucion</i><par n="part__n"/></e>
     <e lm="dispausicion" r="LR"><i>dispausicion</i><par n="part__n"/></e>
     <e lm="dispensari"><i>dispensari</i><par n="conselh__n"/></e>
@@ -24159,7 +24159,7 @@
     <e lm="lait" r="LR"><i>lait</i><par n="part__n"/></e>
     <e lm="leitaria"><i>leitari</i><par n="jornad/a__n"/></e>
     <e lm="lèma"><i>lèm</i><par n="di/a__n"/></e>
-    <e lm="sorsa" r="LR"><i>sors</i><par n="jornad/a__n"/></e>
+    <e lm="sorsa"><i>sors</i><par n="jornad/a__n"/></e>
     <e lm="sorça" r="LR"><i>sor</i><par n="seden/ça__n"/></e>
     <e lm="ressorsa" r="LR"><i>ressors</i><par n="jornad/a__n"/></e>
     <e lm="ressorça" r="LR"><i>ressor</i><par n="seden/ça__n"/></e>
@@ -43616,6 +43616,7 @@
 <e lm="volontosament" a="capsot"><i>volontosament</i><par n="adequadament__adv"/></e>
 
 <e lm="d’abitud"><i>d’abitud</i><par n="ager__adv"/></e>
+<e lm="presa"><i>pres</i><par n="jornad/a__n"/></e>
 
 <!-- xxxx -->
 </section>
