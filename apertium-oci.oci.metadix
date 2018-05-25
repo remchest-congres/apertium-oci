@@ -18843,7 +18843,6 @@
     <e lm="occitan"><i>occitan</i><par n="trabalhador__adj"/></e>
     <e lm="occitanocatalan"><i>occitanocatalan</i><par n="trabalhador__adj"/></e>
     <e lm="olimpic"><i>olimpi</i><par n="tecni/c__adj"/></e>
-    <e lm="omosexual"><i>omosexua</i><par n="addiciona/l_u__adj"/></e>
     <e lm="onomastic"><i>onomasti</i><par n="tecni/c__adj"/></e>
     <e lm="oportun" a="carmentano"><i>oportun</i><par n="trabalhador__adj"/></e>
     <e lm="ordinari"><i>ordin</i><par n="priorit/ari__adj"/></e>
@@ -19062,6 +19061,9 @@
     <e lm="quilometric"><i>quilometri</i><par n="tecni/c__adj"/></e>
     <e lm="quimic" a="carmentano"><i>quimi</i><par n="tecni/c__adj"/></e>
     <e lm="quin"><i>quin</i><par n="quant__adj"/></e>
+    <e lm="qual"><i>qual</i><par n="quant__adj"/></e>
+    <e lm="quau" r="LR"><p><l>quau</l><r>quau<s n="adj"/><s n="itg"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e lm="quau" r="LR"><p><l>quau</l><r>quau<s n="adj"/><s n="itg"/><s n="mf"/><s n="pl"/></r></p></e>
     <e lm="quirnòcha"><i>quirnòch</i><par n="agricòl/a__adj"/></e>
     <e lm="radiofonic"><i>radiofoni</i><par n="tecni/c__adj"/></e>
     <e lm="rapid"><i>rapid</i><par n="trabalhador__adj"/></e>
@@ -21024,7 +21026,7 @@
     <e lm="provèrbi" a="carmentano" alt="oci"><i>provèrbi</i><par n="conselh__n"/></e>
     <e lm="arrèst"><i>arrèst</i><par n="conselh__n"/></e>
     <e lm="arrevirada" r="LR"><i>arrevirad</i><par n="jornad/a__n"/></e>
-    <e lm="revirada" r="LR"><i>revirad</i><par n="jornad/a__n"/></e>
+    <e lm="revirada"><i>revirad</i><par n="jornad/a__n"/></e>
       <e r="LR" lm="arrevirador" alt="oci"><i>arrevirador</i><par n="conselhèr__n"/></e>
     <e lm="arrevirador" alt="oci@aran"><i>arrevirador</i><par n="conselhèr__n"/></e>
     <e lm="arrevirador" alt="oci@gascon"><i>arrevirador</i><par n="conselhèr__n"/></e>
@@ -23647,6 +23649,7 @@
       <e r="LR" lm="hestivitat" alt="oci"><i>hestivitat</i><par n="part__n"/></e>
     <e lm="hestivitat" alt="oci@aran"><i>hestivitat</i><par n="part__n"/></e>
     <e lm="hestivitat" alt="oci@gascon"><i>hestivitat</i><par n="part__n"/></e>
+    <e lm="festenal" alt="oci"><i>festenal</i><par n="conselh__n"/></e>
       <e r="LR" lm="hèu" alt="oci"><i>hèu</i><par n="conselh__n"/></e>
     <e lm="hèu" alt="oci@aran"><i>hèu</i><par n="conselh__n"/></e>
     <e lm="hèu" alt="oci@gascon"><i>hèu</i><par n="conselh__n"/></e>
@@ -29040,9 +29043,7 @@
     <e lm="o" alt="oci" r="RL"><p><l><a/>o</l><r>o</r></p><par n="ac__prn"/></e>
     <e lm="aguest" alt="oci@aran" r="RL"><p><l><a/>aguest</l><r>aguest</r></p><par n="aguest__prn"/></e>
     <e lm="aguest" alt="oci@gascon" r="RL"><p><l><a/>aguest</l><r>aguest</r></p><par n="aguest__prn"/></e>
-    <e lm="aguest" alt="oci" r="LR"><i>aguest</i><par n="aguest__prn"/></e>
-    <e lm="aguest" alt="oci@aran" r="LR"><i>aguest</i><par n="aguest__prn"/></e>
-    <e lm="aguest" alt="oci@gascon" r="LR"><i>aguest</i><par n="aguest__prn"/></e>
+    <e lm="aguest" r="LR"><i>aguest</i><par n="aguest__prn"/></e>
       <e r="LR" lm="aiceste"><i>aicest</i><par n="aquest/e__prn"/></e>
       <e r="LR" lm="aqueste" alt="oci@aran"><i>aquest</i><par n="aquest/e__prn"/></e>
       <e r="LR" lm="aqueste" alt="oci@gascon"><i>aquest</i><par n="aquest/e__prn"/></e>
@@ -33495,7 +33496,7 @@
     <e lm="estirar"><i>est</i><par n="ab/i[T]ar__vblex" prm="r"/></e>
     <e lm="excusar" r="LR"><i>exc</i><par n="ab/u[S]ar__vblex" prm="s"/></e>
     <e lm="desencusar"><i>desenc</i><par n="ab/u[S]ar__vblex" prm="s"/></e>
-    <e lm="felicitar"><i>felic</i><par n="ab/i[T]ar__vblex" prm="t"/></e>
+    <e lm="felicitar" a="capsot"><i>felic</i><par n="ab/i[T]ar__vblex" prm="t"/></e>
     <e lm="gibrar"><i>g</i><par n="ab/i[T]ar__vblex" prm="br"/></e>
     <e lm="gelar"><i>g</i><par n="cap/e[R]ar__vblex" prm="l"/></e>
     <e lm="congelar"><i>cong</i><par n="cap/e[R]ar__vblex" prm="l"/></e>
@@ -34388,10 +34389,10 @@
     <e lm="CIA" a="carmentano"><i>CIA</i><par n="BBC__n"/></e>
     <e lm="autopista" a="carmentano"><i>autopist</i><par n="jornad/a__n"/></e>
       <e r="LR" lm="titolar" a="carmentano" alt="oci"><i>tit</i><par n="aband/o[N]ar__vblex" prm="l"/></e>
+      <e r="LR" lm="titolar" a="carmentano" alt="oci@gascon"><i>tit</i><par n="aband/o[N]ar__vblex" prm="l"/></e>
     <e lm="titolar" a="carmentano" alt="oci@aran"><i>tit</i><par n="aband/o[N]ar__vblex" prm="l"/></e>
-    <e lm="titolar" a="carmentano" alt="oci@gascon"><i>tit</i><par n="aband/o[N]ar__vblex" prm="l"/></e>
       <e r="LR" lm="intitular" alt="oci@aran"><i>intit</i><par n="ab/u[S]ar__vblex" prm="l"/></e>
-      <e r="LR" lm="intitular" alt="oci@gascon"><i>intit</i><par n="ab/u[S]ar__vblex" prm="l"/></e>
+    <e lm="intitular" alt="oci@gascon"><i>intit</i><par n="ab/u[S]ar__vblex" prm="l"/></e>
     <e lm="intitular" alt="oci"><i>intit</i><par n="ab/u[S]ar__vblex" prm="l"/></e>
     <e lm="trèva" a="carmentano"><i>trèv</i><par n="jornad/a__n"/></e>
     <e lm="Timòr" a="carmentano"><i>Timòr</i><par n="Aran__np"/></e>
@@ -35402,6 +35403,7 @@
     <e lm="March"><i>March</i><par n="Abad__np"/></e>
     <e lm="masturbacion"><i>masturbacion</i><par n="part__n"/></e>
     <e lm="omosexualitat"><i>omosexualitat</i><par n="part__n"/></e>
+    <e lm="bisexualitat"><i>bisexualitat</i><par n="part__n"/></e>
     <e lm="inibir" a="carmentano"><i>inib</i><par n="magr/èrem__vblex"/></e>
     <e lm="desinibir" a="carmentano"><i>desinib</i><par n="magr/èrem__vblex"/></e>
     <e lm="apocalipsi"><i>apocalipsi</i><par n="part__n"/></e>
@@ -36664,7 +36666,7 @@
     <e lm="aproximadament"><i>aproximadament</i><par n="adequadament__adv"/></e>
     <e lm="Carcassona" a="carmentano"><i>Carcassona</i><par n="Aran__np"/></e>
     <e lm="novetat" a="carmentano" r="LR"><i>novetat</i><par n="part__n"/></e>
-    <e lm="nòva" a="carmentano" r="LR"><i>nòv</i><par n="jornad/a__n"/></e>
+    <e lm="nòva" a="carmentano"><i>nòv</i><par n="jornad/a__n"/></e>
       <e r="LR" lm="reculh" a="carmentano" alt="oci"><i>reculh</i><par n="conselh__n"/></e>
     <e lm="reculh" a="carmentano" alt="oci@aran"><i>reculh</i><par n="conselh__n"/></e>
     <e lm="reculh" a="carmentano" alt="oci@gascon"><i>reculh</i><par n="conselh__n"/></e>
@@ -37040,6 +37042,7 @@
     <e lm="cordelada" a="carmentano"><i>cordelad</i><par n="jornad/a__n"/></e>
     <e lm="oceanografic" a="carmentano"><i>oceanografi</i><par n="tecni/c__adj"/></e>
     <e lm="liberalisme" a="carmentano"><i>liberalisme</i><par n="personau__n"/></e>
+    <e lm="neoliberalisme" a="hector"><i>neoliberalisme</i><par n="personau__n"/></e>
     <e lm="Kennedy" a="carmentano"><i>Kennedy</i><par n="Abad__np"/></e>
       <e r="LR" lm="espirau" a="carmentano" alt="oci"><i>espirau</i><par n="part__n"/></e>
     <e lm="espirau" a="carmentano" alt="oci@aran"><i>espirau</i><par n="part__n"/></e>
@@ -40614,7 +40617,6 @@
     <e lm="occidental"><i>occidenta</i><par n="addiciona/l_u__adj"/></e>
     <e lm="ocupacional"><i>ocupaciona</i><par n="addiciona/l_u__adj"/></e>
     <e lm="oficial"><i>oficia</i><par n="addiciona/l_u__adj"/></e>
-    <e lm="omosexual"><i>omosexua</i><par n="addiciona/l_u__adj"/></e>
     <e lm="oral"><i>ora</i><par n="addiciona/l_u__adj"/></e>
     <e lm="oriental"><i>orienta</i><par n="addiciona/l_u__adj"/></e>
     <e lm="original"><i>origina</i><par n="addiciona/l_u__adj"/></e>
@@ -42820,6 +42822,7 @@
 <e lm="omoplat" a="capsot"><i>omoplat</i><par n="conselh__n"/></e>
 <e lm="omoplata" a="capsot"><i>omoplat</i><par n="jornad/a__n"/></e>
 <e lm="omosexual" a="capsot"><i>omosexua</i><par n="espanhò/l__n"/></e>
+<e lm="bisexual"><i>bisexua</i><par n="espanhò/l__n"/></e>
 <e lm="ondradura" a="capsot"><i>ondradur</i><par n="jornad/a__n"/></e>
 <e lm="onestat" a="capsot"><i>onestat</i><par n="part__n"/></e>
 <e lm="onomastica" a="capsot"><i>onomasti</i><par n="va/ca__n"/></e>
@@ -43291,8 +43294,8 @@
 <e lm="substantiu" a="capsot"><i>substantiu</i><par n="conselh__n"/></e>
 <e lm="subterfugi" a="capsot"><i>subterfugi</i><par n="conselh__n"/></e>
 <e lm="sucrariá" a="capsot"><i>sucrariá</i><par n="part__n"/></e>
-<e lm="sud-èst" a="capsot"><i>sud-èst</i><par n="personau__n"/></e>
-<e lm="sud-oèst" a="capsot"><i>sud-oèst</i><par n="personau__n"/></e>
+<e lm="sud-èst"><i>sud-èst</i><par n="personau__n"/></e>
+<e lm="sud-oèst"><i>sud-oèst</i><par n="personau__n"/></e>
 <e lm="suèja" a="capsot"><i>suè</i><par n="aubèr/ja__n"/></e>
 <e lm="suènh" a="capsot"><i>suènh</i><par n="conselh__n"/></e>
 <e lm="suja" a="capsot"><i>su</i><par n="aubèr/ja__n"/></e>
@@ -44077,7 +44080,7 @@
 <e lm="espepidaire" a="capsot"><i>espepidair</i><par n="ampl/e__adj"/></e>
 <e lm="espertat" a="capsot"><i>esperta</i><par n="apropria/t__adj"/></e>
 <e lm="esquerròt" a="capsot"><i>esquerròt</i><par n="trabalhador__adj"/></e>
-<e lm="èst" a="capsot"><i>èst</i><par n="generau__adj"/></e>
+<e lm="èst"><i>èst</i><par n="post__adj"/></e>
 <e lm="estanc" a="capsot"><i>estan</i><par n="blan/c__adj"/></e>
 <e lm="estatsunidenc" a="capsot"><i>estatsuniden</i><par n="blan/c__adj"/></e>
 <e lm="estimat" a="capsot"><i>estima</i><par n="apropria/t__adj"/></e>
@@ -44354,6 +44357,7 @@
 <e lm="omniscient" a="capsot"><i>omniscient</i><par n="trabalhador__adj"/></e>
 <e lm="omograf" a="capsot"><i>omograf</i><par n="divèrs__adj"/></e>
 <e lm="omosexual" a="capsot"><i>omosexua</i><par n="addiciona/l_u__adj"/></e>
+<e lm="bisexual" a="capsot"><i>bisexua</i><par n="addiciona/l_u__adj"/></e>
 <e lm="oniric" a="capsot"><i>oniri</i><par n="tecni/c__adj"/></e>
 <e lm="onomatopeïc" a="capsot"><i>onomatopeï</i><par n="blan/c__adj"/></e>
 <e lm="onzau" a="capsot" alt="gascon"><i>onza</i><par n="representati/u__adj"/></e>
@@ -44463,7 +44467,6 @@
 <e lm="pusillanime" a="capsot"><i>pusillanim</i><par n="ampl/e__adj"/></e>
 <e lm="putassièr" a="capsot"><i>putassiè</i><par n="primiè/r__adj"/></e>
 <e lm="qüadratic" a="capsot"><i>qüadrati</i><par n="tecni/c__adj"/></e>
-<e lm="qual" a="capsot"><i>q</i><par n="addiciona/l_u__adj"/></e>
 <e lm="quarantau" a="capsot" alt="gascon"><i>quaranta</i><par n="representati/u__adj"/></e>
 <e lm="quarantau" a="capsot" alt="oci" r="LR"><i>quaranta</i><par n="representati/u__adj"/></e>
 <e lm="quarantau" a="capsot" alt="aran" r="LR"><i>quaranta</i><par n="representati/u__adj"/></e>
@@ -44555,8 +44558,8 @@
 <e lm="subjontiu" a="capsot"><i>subjonti</i><par n="representati/u__adj"/></e>
 <e lm="substantiu" a="capsot"><i>substanti</i><par n="representati/u__adj"/></e>
 <e lm="substitutiu" a="capsot"><i>substituti</i><par n="representati/u__adj"/></e>
-<e lm="sud-èst" a="capsot"><i>sud-èst</i><par n="generau__adj"/></e>
-<e lm="sud-oèst" a="capsot"><i>sud-oèst</i><par n="generau__adj"/></e>
+<e lm="sud-èst"><i>sud-èst</i><par n="post__adj"/></e>
+<e lm="sud-oèst"><i>sud-oèst</i><par n="post__adj"/></e>
 <e lm="susprés" a="capsot"><i>suspr</i><par n="aran/és__adj"/></e>
 <e lm="tabó" a="capsot"><i>tabó</i><par n="generau__adj"/></e>
 <e lm="tahitian" a="capsot"><i>tahitian</i><par n="trabalhador__adj"/></e>
@@ -44627,6 +44630,8 @@
 <e lm="vocal" a="capsot"><i>vo</i><par n="addiciona/l_u__adj"/></e>
 <e lm="void" a="capsot"><i>void</i><par n="content__adj"/></e>
 <e lm="zincifèr" a="capsot"><i>zincifèr</i><par n="prumèr__adj"/></e>
+
+<e lm="decoracion"><i>decoracion</i><par n="part__n"/></e>
 
 <!-- xxxx -->
 </section>
