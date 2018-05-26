@@ -41427,7 +41427,7 @@
 <e lm="bòria" a="capsot"><i>bòri</i><par n="jornad/a__n"/></e>
 <e lm="bòrlhe" a="capsot"><i>bòrlhe</i><par n="conselh__n"/></e>
 <e lm="bornhon" a="capsot"><i>bornhon</i><par n="conselh__n"/></e>
-<e lm="bòrni" a="capsot"><i>bòrni</i><par n="conselh__n"/></e>
+<e lm="bòrni" a="capsot"><i>bòrni</i><par n="conselhèr__n"/></e>
 <e lm="borratge" a="capsot"><i>borratge</i><par n="conselh__n"/></e>
 <e lm="borratja" a="capsot"><i>borrat</i><par n="aubèr/ja__n"/></e>
 <e lm="borrèl" a="capsot"><i>borrè</i><par n="cè/l__n"/></e>
@@ -41596,9 +41596,9 @@
 <e lm="celibatari" a="capsot"><i>celibat</i><par n="propriet/ari__n"/></e>
 <e lm="cencha" a="capsot"><i>cench</i><par n="jornad/a__n"/></e>
 <e lm="cent" a="capsot"><i>cent</i><par n="conselh__n"/></e>
-<e lm="centau" alt="gascon" a="capsot"><i>centau</i><par n="personau__n"/></e>
-<e lm="centau" alt="oci" r="LR" a="capsot"><i>centau</i><par n="personau__n"/></e>
-<e lm="centau" alt="aran" r="LR" a="capsot"><i>centau</i><par n="personau__n"/></e>
+<e lm="centau" alt="gascon" a="capsot"><i>centau</i><par n="conselhèr__n"/></e>
+<e lm="centau" alt="oci" r="LR" a="capsot"><i>centau</i><par n="conselhèr__n"/></e>
+<e lm="centau" alt="aran" a="capsot"><i>centau</i><par n="conselhèr__n"/></e>
 <e lm="centen" a="capsot"><i>centen</i><par n="conselhèr__n"/></e>
 <e lm="centena" a="capsot"><i>centen</i><par n="jornad/a__n"/></e>
 <e lm="central" a="capsot"><i>centra</i><par n="cè/l__n"/></e>
@@ -41635,9 +41635,9 @@
 <e lm="cindra" a="capsot"><i>cindr</i><par n="jornad/a__n"/></e>
 <e lm="cindre" a="capsot"><i>cindre</i><par n="conselh__n"/></e>
 <e lm="cingle" a="capsot"><i>cingle</i><par n="conselh__n"/></e>
-<e lm="cinquantau" alt="gascon" a="capsot"><i>cinquantau</i><par n="personau__n"/></e>
-<e lm="cinquantau" alt="oci" r="LR" a="capsot"><i>cinquantau</i><par n="personau__n"/></e>
-<e lm="cinquantau" alt="aran" r="LR" a="capsot"><i>cinquantau</i><par n="personau__n"/></e>
+<e lm="cinquantau" alt="gascon" a="capsot"><i>cinquantau</i><par n="conselhèr__n"/></e>
+<e lm="cinquantau" alt="oci" r="LR" a="capsot"><i>cinquantau</i><par n="conselhèr__n"/></e>
+<e lm="cinquantau" alt="aran" a="capsot"><i>cinquantau</i><par n="conselhèr__n"/></e>
 <e lm="cinquanten" a="capsot"><i>cinquanten</i><par n="conselhèr__n"/></e>
 <e lm="cinquantenari" a="capsot"><i>cinquanten</i><par n="propriet/ari__n"/></e>
 <e lm="cinquau" alt="gascon" a="capsot"><i>cinquau</i><par n="personau__n"/></e>
@@ -41910,9 +41910,9 @@
 <e lm="dòna" a="capsot"><i>dòn</i><par n="jornad/a__n"/></e>
 <e lm="dorna" a="capsot"><i>dorn</i><par n="jornad/a__n"/></e>
 <e lm="dorsièr" a="capsot"><i>dorsiè</i><par n="presoniè/r__n"/></e>
-<e lm="dotzau" alt="gascon" a="capsot"><i>dotzau</i><par n="personau__n"/></e>
-<e lm="dotzau" alt="oci" r="LR" a="capsot"><i>dotzau</i><par n="personau__n"/></e>
-<e lm="dotzau" alt="aran" r="LR" a="capsot"><i>dotzau</i><par n="personau__n"/></e>
+<e lm="dotzau" alt="gascon" a="capsot"><i>dotzau</i><par n="conselhèr__n"/></e>
+<e lm="dotzau" alt="oci" r="LR" a="capsot"><i>dotzau</i><par n="conselhèr__n"/></e>
+<e lm="dotzau" alt="aran" a="capsot"><i>dotzau</i><par n="conselhèr__n"/></e>
 <e lm="dotzen" a="capsot"><i>dotzen</i><par n="conselhèr__n"/></e>
 <e lm="dragèa" a="capsot"><i>dragè</i><par n="jornad/a__n"/></e>
 <e lm="draguet" a="capsot"><i>draguet</i><par n="conselh__n"/></e>
@@ -41923,18 +41923,18 @@
 <e lm="duna" a="capsot"><i>dun</i><par n="jornad/a__n"/></e>
 <e lm="duplicat" a="capsot"><i>duplicat</i><par n="conselh__n"/></e>
 <e lm="dur" a="capsot"><i>dur</i><par n="conselhèr__n"/></e>
-<e lm="dusau" alt="gascon" a="capsot"><i>dusau</i><par n="personau__n"/></e>
-<e lm="dusau" alt="oci" r="LR" a="capsot"><i>dusau</i><par n="personau__n"/></e>
-<e lm="dusau" alt="aran" r="LR" a="capsot"><i>dusau</i><par n="personau__n"/></e>
+<e lm="dusau" alt="gascon" a="capsot"><i>dusau</i><par n="conselhèr__n"/></e>
+<e lm="dusau" alt="oci" r="LR" a="capsot"><i>dusau</i><par n="conselhèr__n"/></e>
+<e lm="dusau" alt="aran" a="capsot"><i>dusau</i><par n="conselhèr__n"/></e>
 <e lm="ebenista" a="capsot"><i>ebenist</i><par n="guardi/a__n"/></e>
 <e lm="èdra" a="capsot"><i>èdr</i><par n="jornad/a__n"/></e>
 <e lm="efèit" a="capsot"><i>efèit</i><par n="conselh__n"/></e>
 <e lm="efièit" a="capsot"><i>efièit</i><par n="conselh__n"/></e>
 <e lm="èga" a="capsot"><i>èg</i><par n="hormig/a__n"/></e>
-<e lm="eissalòc" a="capsot"><i>eissalòc</i><par n="conselh__n"/></e>
+<e lm="eissalòc" a="capsot"><i>eissalòc</i><par n="personau__n"/></e>
 <e lm="eissarpa" a="capsot"><i>eissarp</i><par n="jornad/a__n"/></e>
-<e lm="eisseròc" a="capsot"><i>eisseròc</i><par n="conselh__n"/></e>
-<e lm="eissiròc" a="capsot"><i>eissiròc</i><par n="conselh__n"/></e>
+<e lm="eisseròc" a="capsot"><i>eisseròc</i><par n="personau__n"/></e>
+<e lm="eissiròc" a="capsot"><i>eissiròc</i><par n="personau__n"/></e>
 <e lm="eissugament" a="capsot"><i>eissugament</i><par n="conselh__n"/></e>
 <e lm="electrician" a="capsot"><i>electrician</i><par n="conselhèr__n"/></e>
 <e lm="electronica" a="capsot"><i>electroni</i><par n="va/ca__n"/></e>
@@ -42236,7 +42236,7 @@
 <e lm="fraisse" a="capsot"><i>fraisse</i><par n="conselh__n"/></e>
 <e lm="frambuèlh" a="capsot"><i>frambuèlh</i><par n="conselh__n"/></e>
 <e lm="franc" a="capsot"><i>franc</i><par n="conselh__n"/></e>
-<e lm="francofòn" a="capsot"><i>francofòn</i><par n="conselh__n"/></e>
+<e lm="francofòn" a="capsot"><i>francofòn</i><par n="conselhèr__n"/></e>
 <e lm="fragosta" a="capsot"><i>fragost</i><par n="jornad/a__n"/></e>
 <e lm="franquista" a="capsot"><i>franquist</i><par n="guardi/a__n"/></e>
 <e lm="freg" a="capsot"><i>freg</i><par n="mes__n"/></e>
@@ -42273,7 +42273,7 @@
 <e lm="gant" a="capsot"><i>gant</i><par n="conselh__n"/></e>
 <e lm="garança" a="capsot"><i>garan</i><par n="seden/ça__n"/></e>
 <e lm="garba" a="capsot"><i>garb</i><par n="jornad/a__n"/></e>
-<e lm="garbin" a="capsot"><i>garbi</i><par n="cosi/n__n"/></e>
+<e lm="garbin" a="capsot"><i>garbi</i><par n="personau__n"/></e>
 <e lm="garçon" a="capsot"><i>garçon</i><par n="conselh__n"/></e>
 <e lm="garda" a="capsot"><i>gard</i><par n="jornad/a__n"/></e>
 <e lm="gardanenon" a="capsot"><i>gardanenon</i><par n="part__n"/></e>
@@ -42484,7 +42484,7 @@
 <e lm="justa" a="capsot"><i>just</i><par n="jornad/a__n"/></e>
 <e lm="kelvin" a="capsot"><i>kelvin</i><par n="conselh__n"/></e>
 <e lm="kiwi" a="capsot"><i>kiwi</i><par n="conselh__n"/></e>
-<e lm="labech" a="capsot"><i>labech</i><par n="mes__n"/></e>
+<e lm="labech" a="capsot"><i>labech</i><par n="personau__n"/></e>
 <e lm="labor" a="capsot"><i>labor</i><par n="part__n"/></e>
 <e lm="laca" a="capsot"><i>la</i><par n="va/ca__n"/></e>
 <e lm="lacuna" a="capsot"><i>lacun</i><par n="jornad/a__n"/></e>
@@ -43199,7 +43199,7 @@
 <e lm="rugbi" a="capsot"><i>rugbi</i><par n="conselh__n"/></e>
 <e lm="rupicabra" a="capsot"><i>rupicabr</i><par n="jornad/a__n"/></e>
 <e lm="rus" a="capsot"><i>rus</i><par n="os__n"/></e>
-<e lm="sabat" a="capsot"><i>saba</i><par n="afilia/t__n"/></e>
+<e lm="sabat" a="capsot"><i>saba</i><par n="conselh__n"/></e>
 <e lm="saber" a="capsot"><i>saber</i><par n="conselh__n"/></e>
 <e lm="saberut" a="capsot"><i>saberu</i><par n="afilia/t__n"/></e>
 <e lm="sacrestan" a="capsot"><i>sacrestan</i><par n="conselhèr__n"/></e>
@@ -43264,7 +43264,7 @@
 <e lm="sincòpi" a="capsot"><i>sincòpi</i><par n="part__n"/></e>
 <e lm="sinecdòca" a="capsot"><i>sinecdò</i><par n="va/ca__n"/></e>
 <e lm="sirèna" a="capsot"><i>sirèn</i><par n="jornad/a__n"/></e>
-<e lm="siròc" a="capsot"><i>siròc</i><par n="conselh__n"/></e>
+<e lm="siròc" a="capsot"><i>siròc</i><par n="personau__n"/></e>
 <e lm="siure" a="capsot"><i>siure</i><par n="conselh__n"/></e>
 <e lm="sobeiran" a="capsot"><i>sobeiran</i><par n="conselhèr__n"/></e>
 <e lm="soca" a="capsot"><i>so</i><par n="va/ca__n"/></e>
@@ -43406,11 +43406,11 @@
 <e lm="tubet" a="capsot"><i>tubet</i><par n="conselh__n"/></e>
 <e lm="ucrainés" a="capsot"><i>ucrain</i><par n="pag/és__n"/></e>
 <e lm="ucraïnian" a="capsot"><i>ucraïnian</i><par n="conselhèr__n"/></e>
-<e lm="uechen" a="capsot"><i>uechen</i><par n="conselh__n"/></e>
-<e lm="ueitau" alt="gascon" a="capsot"><i>ueitau</i><par n="personau__n"/></e>
-<e lm="ueitau" alt="oci" r="LR" a="capsot"><i>ueitau</i><par n="personau__n"/></e>
-<e lm="ueitau" alt="aran" r="LR" a="capsot"><i>ueitau</i><par n="personau__n"/></e>
-<e lm="ultim" a="capsot"><i>ultim</i><par n="conselh__n"/></e>
+<e lm="uechen" a="capsot"><i>uechen</i><par n="conselhèr__n"/></e>
+<e lm="ueitau" alt="gascon" a="capsot"><i>ueitau</i><par n="conselhèr__n"/></e>
+<e lm="ueitau" alt="oci" r="LR" a="capsot"><i>ueitau</i><par n="conselhèr__n"/></e>
+<e lm="ueitau" alt="aran" a="capsot"><i>ueitau</i><par n="conselhèr__n"/></e>
+<e lm="ultim" a="capsot"><i>ultim</i><par n="conselhèr__n"/></e>
 <e lm="uman" a="capsot"><i>uman</i><par n="conselhèr__n"/></e>
 <e lm="umanisme" a="capsot"><i>umanisme</i><par n="conselh__n"/></e>
 <e lm="umerús" a="capsot"><i>umer</i><par n="autob/ús__n"/></e>
@@ -43428,7 +43428,7 @@
 <e lm="valat" a="capsot"><i>valat</i><par n="conselh__n"/></e>
 <e lm="valencian" a="capsot"><i>valencian</i><par n="conselhèr__n"/></e>
 <e lm="valon" a="capsot"><i>valon</i><par n="conselhèr__n"/></e>
-<e lm="vampir" a="capsot"><i>vampir</i><par n="conselhèr__n"/></e>
+<e lm="vampir" a="capsot"><i>vampir</i><par n="conselh__n"/></e>
 <e lm="vanèl" a="capsot"><i>vanè</i><par n="castè/l__n"/></e>
 <e lm="variabla" a="capsot"><i>variabl</i><par n="jornad/a__n"/></e>
 <e lm="varrolh" a="capsot"><i>varrolh</i><par n="conselh__n"/></e>
@@ -43453,7 +43453,7 @@
 <e lm="vertèx" a="capsot"><i>vertèx</i><par n="mes__n"/></e>
 <e lm="vescomte" a="capsot"><i>vescomte</i><par n="alcalde__n"/></e>
 <e lm="vesog" a="capsot"><i>vesog</i><par n="mes__n"/></e>
-<e lm="vespertin" a="capsot"><i>vesperti</i><par n="cosi/n__n"/></e>
+<e lm="vespertin" a="capsot"><i>vespertin</i><par n="conselh__n"/></e>
 <e lm="vespralh" a="capsot"><i>vespralh</i><par n="conselh__n"/></e>
 <e lm="vestit" a="capsot"><i>vestit</i><par n="conselh__n"/></e>
 <e lm="veus" a="capsot"><i>veus</i><par n="conselhèr__n"/></e>
@@ -43461,7 +43461,7 @@
 <e lm="vial" a="capsot"><i>via</i><par n="cè/l__n"/></e>
 <e lm="vianda" a="capsot"><i>viand</i><par n="jornad/a__n"/></e>
 <e lm="vibre" a="capsot"><i>vibre</i><par n="conselh__n"/></e>
-<e lm="vicepresident" a="capsot"><i>vicepresident</i><par n="conselh__n"/></e>
+<e lm="vicepresident" a="capsot"><i>vicepresident</i><par n="conselhèr__n"/></e>
 <e lm="vièlh" a="capsot"><i>vièlh</i><par n="conselhèr__n"/></e>
 <e lm="vielhesa" a="capsot"><i>vielhes</i><par n="jornad/a__n"/></e>
 <e lm="vielhum" a="capsot"><i>vielhum</i><par n="conselh__n"/></e>
@@ -43483,7 +43483,7 @@
 <e lm="viston" a="capsot"><i>viston</i><par n="conselh__n"/></e>
 <e lm="viu" a="capsot"><i>viu</i><par n="conselh__n"/></e>
 <e lm="volcan" a="capsot"><i>volcan</i><par n="conselh__n"/></e>
-<e lm="voltor" a="capsot"><i>volt</i><par n="dictat/or__n"/></e>
+<e lm="voltor" a="capsot"><i>volt</i><par n="conselh__n"/></e>
 <e lm="vomidura" a="capsot"><i>vomidur</i><par n="jornad/a__n"/></e>
 <e lm="vòmit" a="capsot"><i>vòmit</i><par n="conselh__n"/></e>
 <e lm="vuèg" a="capsot"><i>vuèg</i><par n="mes__n"/></e>
@@ -44037,7 +44037,7 @@
 <e lm="dur# d'aurelha" a="capsot"><i>dur#<b/>d'aurelh</i><par n="agricòl/a__adj"/></e>
 <e lm="dusau" a="capsot" alt="gascon"><i>dusa</i><par n="representati/u__adj"/></e>
 <e lm="dusau" a="capsot" alt="oci" r="LR"><i>dusa</i><par n="representati/u__adj"/></e>
-<e lm="dusau" a="capsot" alt="aran" r="LR"><i>dusa</i><par n="representati/u__adj"/></e>
+<e lm="dusau" a="capsot" alt="aran"><i>dusa</i><par n="representati/u__adj"/></e>
 <e lm="ebri" a="capsot"><i></i><par n="/ebri__adj"/></e>
 <e lm="edulcorat" a="capsot"><i>edulcora</i><par n="apropria/t__adj"/></e>
 <e lm="efemèr" a="capsot"><i>efemèr</i><par n="trabalhador__adj"/></e>
@@ -44891,7 +44891,7 @@
 <e lm="efemèra" a="capsot"><i>efemèr</i><par n="jornad/a__n"/></e>
 <e lm="egal" a="capsot"><i>ega</i><par n="espanhò/l__n"/></e>
 <e lm="egotisme" a="capsot"><i>egotisme</i><par n="conselh__n"/></e>
-<e lm="eissaloc" a="capsot"><i>eissaloc</i><par n="conselh__n"/></e>
+<e lm="eissaloc" a="capsot"><i>eissaloc</i><par n="personau__n"/></e>
 <e lm="eissordament" a="capsot"><i>eissordament</i><par n="conselh__n"/></e>
 <e lm="electrosensibilitat" a="capsot"><i>electrosensibilitat</i><par n="part__n"/></e>
 <e lm="electrosensible" a="capsot"><i>electrosensibl</i><par n="ministr/e__n"/></e>
@@ -45270,19 +45270,19 @@
 <e lm="pusillanime" a="capsot"><i>pusillanime</i><par n="conselh__n"/></e>
 <e lm="quadrilha" a="capsot"><i>quadrilh</i><par n="jornad/a__n"/></e>
 <e lm="quadrilh" a="capsot"><i>quadrilh</i><par n="conselh__n"/></e>
-<e lm="quarantau" a="capsot" alt="gascon"><i>quarantau</i><par n="personau__n"/></e>
-<e lm="quarantau" a="capsot" alt="oci" r="LR"><i>quarantau</i><par n="personau__n"/></e>
-<e lm="quarantau" a="capsot" alt="aran" r="LR"><i>quarantau</i><par n="personau__n"/></e>
+<e lm="quarantau" a="capsot" alt="gascon"><i>quarantau</i><par n="conselh__n"/></e>
+<e lm="quarantau" a="capsot" alt="oci" r="LR"><i>quarantau</i><par n="conselh__n"/></e>
+<e lm="quarantau" a="capsot" alt="aran" r="LR"><i>quarantau</i><par n="conselh__n"/></e>
 <e lm="quaranten" a="capsot"><i>quaranten</i><par n="conselhèr__n"/></e>
-<e lm="quatau" a="capsot" alt="gascon"><i>quatau</i><par n="personau__n"/></e>
-<e lm="quatau" a="capsot" alt="oci" r="LR"><i>quatau</i><par n="personau__n"/></e>
-<e lm="quatau" a="capsot" alt="aran" r="LR"><i>quatau</i><par n="personau__n"/></e>
+<e lm="quatau" a="capsot" alt="gascon"><i>quatau</i><par n="conselh__n"/></e>
+<e lm="quatau" a="capsot" alt="oci" r="LR"><i>quatau</i><par n="conselh__n"/></e>
+<e lm="quatau" a="capsot" alt="aran" r="LR"><i>quatau</i><par n="conselh__n"/></e>
 <e lm="quatren" a="capsot"><i>quatren</i><par n="conselhèr__n"/></e>
 <e lm="quidditat" a="capsot"><i>quidditat</i><par n="part__n"/></e>
 <e lm="quiditat" a="capsot"><i>quiditat</i><par n="part__n"/></e>
-<e lm="quinzau" a="capsot" alt="gascon"><i>quinzau</i><par n="personau__n"/></e>
-<e lm="quinzau" a="capsot" alt="oci" r="LR"><i>quinzau</i><par n="personau__n"/></e>
-<e lm="quinzau" a="capsot" alt="aran" r="LR"><i>quinzau</i><par n="personau__n"/></e>
+<e lm="quinzau" a="capsot" alt="gascon"><i>quinzau</i><par n="conselh__n"/></e>
+<e lm="quinzau" a="capsot" alt="oci" r="LR"><i>quinzau</i><par n="conselh__n"/></e>
+<e lm="quinzau" a="capsot" alt="aran" r="LR"><i>quinzau</i><par n="conselh__n"/></e>
 <e lm="quinzen" a="capsot"><i>quinzen</i><par n="conselhèr__n"/></e>
 <e lm="quiroptèr" a="capsot"><i>quiroptèr</i><par n="conselh__n"/></e>
 <e lm="rabassa" a="capsot"><i>rabass</i><par n="jornad/a__n"/></e>
@@ -45328,9 +45328,9 @@
 <e lm="scissiparitat" a="capsot"><i>scissiparitat</i><par n="part__n"/></e>
 <e lm="sedacion" a="capsot"><i>sedacion</i><par n="part__n"/></e>
 <e lm="seguent" a="capsot"><i>seguent</i><par n="conselhèr__n"/></e>
-<e lm="seishantau" a="capsot" alt="gascon"><i>seishantau</i><par n="personau__n"/></e>
-<e lm="seishantau" a="capsot" alt="oci" r="LR"><i>seishantau</i><par n="personau__n"/></e>
-<e lm="seishantau" a="capsot" alt="aran" r="LR"><i>seishantau</i><par n="personau__n"/></e>
+<e lm="seishantau" a="capsot" alt="gascon"><i>seishantau</i><par n="conselhèr__n"/></e>
+<e lm="seishantau" a="capsot" alt="oci" r="LR"><i>seishantau</i><par n="conselhèr__n"/></e>
+<e lm="seishantau" a="capsot" alt="aran"><i>seishantau</i><par n="conselhèr__n"/></e>
 <e lm="seissanten" a="capsot"><i>seissanten</i><par n="conselhèr__n"/></e>
 <e lm="semasiologia" a="capsot"><i>semasiologi</i><par n="jornad/a__n"/></e>
 <e lm="semiologia" a="capsot"><i>semiologi</i><par n="jornad/a__n"/></e>
@@ -45343,13 +45343,13 @@
 <e lm="serpelhèira" a="capsot"><i>serpelhèir</i><par n="jornad/a__n"/></e>
 <e lm="serpelhièra" a="capsot"><i>serpelhièr</i><par n="jornad/a__n"/></e>
 <e lm="sextian" a="capsot"><i>sextian</i><par n="conselhèr__n"/></e>
-<e lm="setau" a="capsot" alt="gascon"><i>setau</i><par n="personau__n"/></e>
-<e lm="setau" a="capsot" alt="oci" r="LR"><i>setau</i><par n="personau__n"/></e>
-<e lm="setau" a="capsot" alt="aran" r="LR"><i>setau</i><par n="personau__n"/></e>
+<e lm="setau" a="capsot" alt="gascon"><i>setau</i><par n="conselhèr__n"/></e>
+<e lm="setau" a="capsot" alt="oci" r="LR"><i>setau</i><par n="conselhèr__n"/></e>
+<e lm="setau" a="capsot" alt="aran"><i>setau</i><par n="conselhèr__n"/></e>
 <e lm="seten" a="capsot"><i>seten</i><par n="conselhèr__n"/></e>
-<e lm="setzau" a="capsot" alt="gascon"><i>setzau</i><par n="personau__n"/></e>
-<e lm="setzau" a="capsot" alt="oci" r="LR"><i>setzau</i><par n="personau__n"/></e>
-<e lm="setzau" a="capsot" alt="aran" r="LR"><i>setzau</i><par n="personau__n"/></e>
+<e lm="setzau" a="capsot" alt="gascon"><i>setzau</i><par n="conselhèr__n"/></e>
+<e lm="setzau" a="capsot" alt="oci" r="LR"><i>setzau</i><par n="conselhèr__n"/></e>
+<e lm="setzau" a="capsot" alt="aran"><i>setzau</i><par n="conselhèr__n"/></e>
 <e lm="setzen" a="capsot"><i>setzen</i><par n="conselhèr__n"/></e>
 <e lm="Shabbat" a="capsot"><i>Shabbat</i><par n="personau__n"/></e>
 <e lm="shacó" a="capsot"><i>shacó</i><par n="conselh__n"/></e>
@@ -45388,7 +45388,7 @@
 <e lm="tantal" a="capsot"><i>tanta</i><par n="castè/l__n"/></e>
 <e lm="tarsièr" a="capsot"><i>tarsiè</i><par n="presoniè/r__n"/></e>
 <e lm="tatà" a="capsot"><i>tatà</i><par n="part__n"/></e>
-<e lm="tausin" a="capsot"><i>tausi</i><par n="cosi/n__n"/></e>
+<e lm="tausin" a="capsot"><i>tausin</i><par n="conselh__n"/></e>
 <e lm="tautologia" a="capsot"><i>tautologi</i><par n="jornad/a__n"/></e>
 <e lm="tavèla" a="capsot"><i>tavèl</i><par n="jornad/a__n"/></e>
 <e lm="tecnicalitat" a="capsot"><i>tecnicalitat</i><par n="part__n"/></e>
@@ -45478,9 +45478,9 @@
 <e lm="viminièra" a="capsot"><i>viminièr</i><par n="jornad/a__n"/></e>
 <e lm="vimotièr" a="capsot"><i>vimotièr</i><par n="conselh__n"/></e>
 <e lm="vinagreta" a="capsot"><i>vinagret</i><par n="jornad/a__n"/></e>
-<e lm="vintau" a="capsot" alt="gascon"><i>vintau</i><par n="personau__n"/></e>
-<e lm="vintau" a="capsot" alt="oci" r="LR"><i>vintau</i><par n="personau__n"/></e>
-<e lm="vintau" a="capsot" alt="aran" r="LR"><i>vintau</i><par n="personau__n"/></e>
+<e lm="vintau" a="capsot" alt="gascon"><i>vintau</i><par n="conselhèr__n"/></e>
+<e lm="vintau" a="capsot" alt="oci" r="LR"><i>vintau</i><par n="conselhèr__n"/></e>
+<e lm="vintau" a="capsot" alt="aran" r="LR"><i>vintau</i><par n="conselhèr__n"/></e>
 <e lm="vinten" a="capsot"><i>vinten</i><par n="conselhèr__n"/></e>
 <e lm="viure" a="capsot"><i>viure</i><par n="conselh__n"/></e>
 <e lm="víver" a="capsot" alt="gascon"><i>víver</i><par n="conselh__n"/></e>
