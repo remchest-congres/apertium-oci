@@ -25812,7 +25812,7 @@
     <e lm="regionalizacion"><i>regionalizacion</i><par n="part__n"/></e>
     <e lm="region"><i>region</i><par n="part__n"/></e>
     <e lm="registre"><i>registre</i><par n="conselh__n"/></e>
-    <e lm="règla" a="carmentano" r="LR"><i>règl</i><par n="jornad/a__n"/></e>
+    <e lm="règla" a="carmentano"><i>règl</i><par n="jornad/a__n"/></e>
     <e lm="reglamentacion"><i>reglamentacion</i><par n="part__n"/></e>
     <e lm="reglament"><i>reglament</i><par n="conselh__n"/></e>
     <e lm="regne" a="carmentano"><i>règne</i><par n="conselh__n"/></e>
@@ -44632,6 +44632,7 @@
 <e lm="zincifèr" a="capsot"><i>zincifèr</i><par n="prumèr__adj"/></e>
 
 <e lm="decoracion"><i>decoracion</i><par n="part__n"/></e>
+<e lm="d'habitud"><i>d'habitud</i><par n="ager__adv"/></e>
 
 <!-- xxxx -->
 </section>
