@@ -18146,7 +18146,7 @@
     <e lm="ajornament"><i>ajornament</i><par n="conselh__n"/></e>
     <e lm="occitanista"><i>occitanist</i><par n="agricòl/a__adj"/></e>
     <e lm="alap"><i>alap</i><par n="trabalhador__adj"/></e>
-    <e lm="van" r="LR"><i>van</i><par n="trabalhador__adj"/></e>
+    <e lm="van"><i>van</i><par n="trabalhador__adj"/></e>
     <e lm="alemand"><i>alemand</i><par n="trabalhador__adj"/></e>
     <e lm="franchimand"><i>franchimand</i><par n="trabalhador__adj"/></e>
     <e lm="alfabetic"><i>alfabeti</i><par n="tecni/c__adj"/></e>
@@ -28996,8 +28996,7 @@
     <e lm="dins" alt="oci"><i>dins</i><par n="a__pr"/></e>
     <e lm="ben"><i>ben</i><par n="ben__preadv"/></e>
     <e lm="autan"><i>autan</i><par n="ben__preadv"/></e>
-<!--
-    <e lm="fòrça"><i>fòrça</i><par n="ben__preadv"/></e>-->
+    <e lm="fòrça"><i>fòrça</i><par n="ben__preadv"/></e>
     <e lm="fòrça"><i>fòrça</i><par n="ager__adv"/></e>
     <e lm="a pena"><i>a<b/>pena</i><par n="ager__adv"/></e>
     <e lm="prèp"><i>prèp</i><par n="ager__adv"/></e>
@@ -38548,17 +38547,26 @@
     <e lm="inventoriar"><i>invent</i><par n="p/o[RT]ar__vblex" prm="ri"/></e>
     <e lm="repertoriar" r="LR"><i>repert</i><par n="p/o[RT]ar__vblex" prm="ri"/></e>
     <e lm="molecula"><i>molecul</i><par n="jornad/a__n"/></e>
-    <e lm="çai jos" r="LR"><i>çai<b/>jos</i><par n="ager__adv"/></e>
-    <e lm="çai jos" r="LR"><i>çai<b/>jos</i><par n="ager__adv"/></e>
-    <e lm="çai-jos" r="LR"><i>çai-jos</i><par n="ager__adv"/></e>
-    <e lm="çaijós" r="LR"><i>çaijós</i><par n="ager__adv"/></e>
-    <e lm="çai sota" r="LR"><i>çai<b/>sota</i><par n="ager__adv"/></e>
+    <e lm="çai contra"><i>çai<b/>contra</i><par n="ager__adv"/></e>
+    <e r="LR" lm="çai contra"><p><l>çai-contra</l><r>çai<b/>contra</r></p><par n="ager__adv"/></e>
+    <e r="LR" lm="çai contra"><p><l>çaicontra</l><r>çai<b/>contra</r></p><par n="ager__adv"/></e>
+    <e lm="çai jonch"><i>çai<b/>jonch</i><par n="ager__adv"/></e>
+    <e r="LR" lm="çai jonch"><p><l>çai-jonch</l><r>çai<b/>jonch</r></p><par n="ager__adv"/></e>
+    <e r="LR" lm="çai jonch"><p><l>çaijonch</l><r>çai<b/>jonch</r></p><par n="ager__adv"/></e>
+    <e lm="çai jos"><i>çai<b/>jos</i><par n="ager__adv"/></e>
+    <e r="LR" lm="çai jos"><p><l>çai-jos</l><r>çai<b/>jos</r></p><par n="ager__adv"/></e>
+    <e r="LR" lm="çai jos"><p><l>çaijos</l><r>çai<b/>jos</r></p><par n="ager__adv"/></e>
+    <e lm="çai sus"><i>çai<b/>sus</i><par n="ager__adv"/></e>
+    <e r="LR" lm="çai sus"><p><l>çai-sus</l><r>çai<b/>sus</r></p><par n="ager__adv"/></e>
+    <e r="LR" lm="çai sus"><p><l>çaisus</l><r>çai<b/>sus</r></p><par n="ager__adv"/></e>
+    <e r="LR" lm="çai sota"><i>çai<b/>sota</i><par n="ager__adv"/></e>
+    <e r="LR" lm="çai sota"><p><l>çai-sota</l><r>çai<b/>sota</r></p><par n="ager__adv"/></e>
+    <e r="LR" lm="çai sota"><p><l>çaisota</l><r>çai<b/>sota</r></p><par n="ager__adv"/></e>
+    <e r="LR" lm="çai sobre"><i>çai<b/>sobre</i><par n="ager__adv"/></e>
+    <e r="LR" lm="çai sobre"><p><l>çai-sobre</l><r>çai<b/>sobre</r></p><par n="ager__adv"/></e>
+    <e r="LR" lm="çai sobre"><p><l>çaisobre</l><r>çai<b/>sobre</r></p><par n="ager__adv"/></e>
     <e lm="aquí dejós"><i>aquí<b/>dejós</i><par n="ager__adv"/></e>
     <e lm="aquí dessús"><i>aquí<b/>dessús</i><par n="ager__adv"/></e>
-    <e lm="çai sus" r="LR"><i>çai<b/>sus</i><par n="ager__adv"/></e>
-    <e lm="çai-sus" r="LR"><i>çai-sus</i><par n="ager__adv"/></e>
-    <e lm="çaisús" r="LR"><i>çaisús</i><par n="ager__adv"/></e>
-    <e lm="çai sobre" r="LR"><i>çai<b/>sobre</i><par n="ager__adv"/></e>
     <e lm="ailamont"><i>ailamont</i><par n="ager__adv"/></e>
     <e lm="ailabàs"><i>ailabàs</i><par n="ager__adv"/></e>
       <e r="LR" lm="a l'ostal" alt="oci@aran"><i>a<b/>l'ostal</i><par n="ager__adv"/></e>
@@ -45496,6 +45504,8 @@
 <e lm="zigazaga" a="capsot"><i>zigazag</i><par n="hormig/a__n"/></e>
 <e lm="zincatge" a="capsot"><i>zincatge</i><par n="conselh__n"/></e>
 <e lm="zòmbi" a="capsot"><i>zòmbi</i><par n="conselh__n"/></e>
+
+<e lm="en van"><i>en<b/>van</i><par n="ager__adv"/></e>
 
 <!-- xxxx -->
 </section>
