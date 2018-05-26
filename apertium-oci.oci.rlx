@@ -25,6 +25,7 @@ LIST PREP = pr ;
 LIST PRON = prn ;
 LIST PERS = pers ;
 LIST AV = adv ;
+LIST PREAV = preadv ;
 LIST Pers = (prn p1) (prn p2) (prn p3); 
 LIST IJ = ij ;
 LIST PREDET = predet ;
@@ -131,6 +132,13 @@ SELECT DET IF (0 DETind + FemPl) (1 AJ + FemPl) ;
 
 SELECT NUM IF (-1 ("numéro")) (0 Un); 
 REMOVE NUM IF (NOT -1 ("numéro")) (0 Un); 
+
+# PREAV
+
+SELECT PREAV IF (0 ("fòrça")) (1C AJ) ;
+REMOVE AV IF (0 PREAV) (0 AV) (1C AJ OR AV) ;
+REMOVE PREAV IF (0 PREAV) (0 AV) (1C V) ;
+REMOVE PREAV IF (0 PREAV) (0 AV) (NOT 1 AJ OR AV) ;
 
 # ADJ POS
 
