@@ -15,6 +15,7 @@
     <sdef n="loc"      c="Location (toponym)"/>
     <sdef n="top"      c="Toponym"/>
     <sdef n="ant"      c="Anthroponym"/>
+    <sdef n="cog"      c="Cognomen"/>
     <sdef n="al"       c="Other"/>
     <sdef n="n"        c="Noun"/>
     <sdef n="np"       c="Nom propi"/>
@@ -87,11 +88,11 @@
     </pardef>
 
         <pardef n="paresq">
-      <e><re>[\(\[]</re><p><l/><r><s n="lpar"/></r></p></e>
+      <e><re>[«\(\[]</re><p><l/><r><s n="lpar"/></r></p></e>
     </pardef>
 
         <pardef n="pardret">
-      <e><re>[\)\]]</re><p><l/><r><s n="rpar"/></r></p></e>
+      <e><re>[»\)\]]</re><p><l/><r><s n="rpar"/></r></p></e>
     </pardef>
 
         <pardef n="emails">
@@ -4177,14 +4178,22 @@
 <!-- ELS NP TAMBÉ S'APROFITEN -->
         <pardef n="ABC__np">
       <e><p><l/><r><s n="np"/><s n="al"/></r></p></e>
+      <e r="RL"><p><l></l>          <r><s n="np"/><s n="al"/><s n="m"/><s n="sg"/></r></p></e>
+      <e r="RL"><p><l></l>          <r><s n="np"/><s n="al"/><s n="f"/><s n="sg"/></r></p></e>
+      <e r="RL"><p><l></l>          <r><s n="np"/><s n="al"/><s n="m"/><s n="pl"/></r></p></e>
     </pardef>
 
-        <pardef n="Ferrari__np">
-      <e><p><l/><r><s n="np"/><s n="al"/></r></p></e>
-      <e><p><l/><r><s n="np"/><s n="ant"/></r></p></e>
-      <e r="RL"><p><l/><r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></r></p></e>
-      <e r="RL"><p><l/><r><s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></r></p></e>
-    </pardef>
+<pardef n="Linux__np">
+  <e>       <p><l></l>          <r><s n="np"/><s n="al"/><s n="m"/><s n="sg"/></r></p></e>
+</pardef>
+
+<pardef n="Wikipedia__np">
+  <e>       <p><l></l>          <r><s n="np"/><s n="al"/><s n="f"/><s n="sg"/></r></p></e>
+</pardef>
+
+<pardef n="Jeux_olympiques__np">
+  <e>       <p><l></l>          <r><s n="np"/><s n="al"/><s n="m"/><s n="pl"/></r></p></e>
+</pardef>
 
         <pardef n="Abad__np">
       <e><p><l/><r><s n="np"/><s n="ant"/></r></p></e>
@@ -4192,16 +4201,17 @@
       <e r="RL"><p><l/><r><s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></r></p></e>
     </pardef>
 
-        <pardef n="Pau__np">
-      <e><p><l/><r><s n="np"/><s n="ant"/></r></p></e>
-      <e r="RL"><p><l/><r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></r></p></e>
-      <e r="RL"><p><l/><r><s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></r></p></e>
-      <e><p><l/><r><s n="np"/><s n="loc"/></r></p></e>
-      <e r="RL"><p><l/><r><s n="np"/><s n="top"/><s n="m"/><s n="sg"/></r></p></e>
-      <e r="RL"><p><l/><r><s n="np"/><s n="top"/><s n="f"/><s n="sg"/></r></p></e>
-      <e r="RL"><p><l/><r><s n="np"/><s n="top"/><s n="m"/><s n="pl"/></r></p></e>
-      <e r="RL"><p><l/><r><s n="np"/><s n="top"/><s n="f"/><s n="pl"/></r></p></e>
-    </pardef>
+<pardef n="Antòni__np">
+  <e>       <p><l></l>          <r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></r></p></e>
+</pardef>
+
+<pardef n="Aitana__np">
+  <e>       <p><l></l>          <r><s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></r></p></e>
+</pardef>
+
+<pardef n="Saussure__np">
+  <e>       <p><l></l>          <r><s n="np"/><s n="cog"/><s n="mf"/><s n="sp"/></r></p></e>
+</pardef>
 
         <pardef n="Aran__np">
       <e><p><l/><r><s n="np"/><s n="loc"/></r></p></e>
@@ -4210,6 +4220,23 @@
       <e r="RL"><p><l/><r><s n="np"/><s n="top"/><s n="m"/><s n="pl"/></r></p></e>
       <e r="RL"><p><l/><r><s n="np"/><s n="top"/><s n="f"/><s n="pl"/></r></p></e>
     </pardef>
+
+<pardef n="Bulgaria__np">
+  <e>       <p><l></l>          <r><s n="np"/><s n="top"/><s n="f"/><s n="sg"/></r></p></e>
+</pardef>
+
+<pardef n="Bahamas__np">
+  <e>       <p><l></l>          <r><s n="np"/><s n="top"/><s n="f"/><s n="pl"/></r></p></e>
+</pardef>
+
+<pardef n="Iran__np">
+  <e>       <p><l></l>          <r><s n="np"/><s n="top"/><s n="m"/><s n="sg"/></r></p></e>
+</pardef>
+
+<pardef n="Estats_Units__np">
+  <e>       <p><l></l>          <r><s n="np"/><s n="top"/><s n="m"/><s n="pl"/></r></p></e>
+</pardef>
+
 <!-- PARADIGMES DE NUMERAL DE L'AR-->
 <!-- menys el primer i el segon (nums romans), inclouen els ordinals -->
         <pardef n="u/n__num">
@@ -18699,7 +18726,6 @@
       <e r="LR" lm="madeish" alt="oci"><i>madeish</i><par n="content__adj"/></e>
     <e lm="madeish" alt="oci@aran"><i>madeish</i><par n="content__adj"/></e>
     <e lm="madeish" alt="oci@gascon"><i>madeish</i><par n="content__adj"/></e>
-    <e lm="màger" r="LR"><i>màger</i><par n="generau__adj"/></e>
     <e lm="magnific"><i>magnifi</i><par n="tecni/c__adj"/></e>
       <e lm="major" alt="oci"><i>major</i><par n="trabalhador__adj"/></e>
     <e lm="major" alt="oci@aran"><i>major</i><par n="generau__adj"/></e>
@@ -19444,6 +19470,7 @@
     <e lm="Loïs"><i>Loïs</i><par n="Abad__np"/></e>
     <e lm="alavetz"><i>alavetz</i><par n="ager__adv"/></e>
     <e lm="alara"><i>alara</i><par n="ager__adv"/></e>
+    <e lm="alara"><i>alara</i><par n="donc__cnjadv"/></e>
     <e lm="alèra" r="LR"><i>alèra</i><par n="ager__adv"/></e>
     <e lm="amassa"><i>amassa</i><par n="ager__adv"/></e>
       <e r="LR" lm="amb jo" alt="oci"><i>amb<b/>jo</i><par n="ager__adv"/></e>
@@ -20053,6 +20080,7 @@
       <e r="LR" lm="amont" alt="oci@gascon"><i>amont</i><par n="ager__adv"/></e>
     <e lm="amont" alt="oci"><i>amont</i><par n="ager__adv"/></e>
     <e lm="tanben"><i>tanben</i><par n="ager__adv"/></e>
+    <e lm="tanben"><i>tanben</i><par n="ben__preadv"/></e>
     <e lm="atanben" r="LR"><i>atanben</i><par n="ager__adv"/></e>
     <e lm="tanplan" a="carmentano" r="LR"><i>tanplan</i><par n="ager__adv"/></e>
     <e lm="a mai" a="carmentano" r="LR"><i>a<b/>mai</i><par n="ager__adv"/></e>
@@ -26929,7 +26957,9 @@
     <e lm="Piemont"><i>Piemont</i><par n="Aran__np"/></e>
     <e lm="Autan"><i>Autan</i><par n="ABC__np"/></e>
     <e lm="Auxiliadora"><i>Auxiliadora</i><par n="Abad__np"/></e>
-    <e lm="Àvila"><i>Àvila</i><par n="Pau__np"/></e>
+    <e lm="Àvila"><i>Àvila</i><par n="Abad__np"/></e>
+    <e lm="Àvila"><i>Àvila</i><par n="Aran__np"/></e>
+    <e lm="Avilés"><i>Avilés</i><par n="Aran__np"/></e>
     <e lm="Avilés"><i>Avilés</i><par n="Aran__np"/></e>
     <e lm="Aymerich" a="carmentano"><i>Aymerich</i><par n="Abad__np"/></e>
     <e lm="Aznar"><i>Aznar</i><par n="Abad__np"/></e>
@@ -26963,7 +26993,8 @@
     <e lm="Baricauba"><i>Baricauba</i><par n="Aran__np"/></e>
     <e lm="Barra"><i>Barra</i><par n="Abad__np"/></e>
     <e lm="Barrera"><i>Barrera</i><par n="Abad__np"/></e>
-    <e lm="Bartau"><i>Bartau</i><par n="Pau__np"/></e>
+    <e lm="Bartau"><i>Bartau</i><par n="Abad__np"/></e>
+    <e lm="Bartau"><i>Bartau</i><par n="Aran__np"/></e>
     <e lm="Bartolomé"><i>Bartolomé</i><par n="Abad__np"/></e>
     <e lm="Bartomeu"><i>Bartomeu</i><par n="Abad__np"/></e>
     <e lm="Basilio"><i>Basilio</i><par n="Abad__np"/></e>
@@ -27314,7 +27345,8 @@
     <e lm="Ferrandis"><i>Ferrandis</i><par n="Abad__np"/></e>
     <e lm="Ferrando"><i>Ferrando</i><par n="Abad__np"/></e>
     <e lm="Ferrán"><i>Ferrán</i><par n="Abad__np"/></e>
-    <e lm="Ferrari"><i>Ferrari</i><par n="Ferrari__np"/></e>
+    <e lm="Ferrari"><i>Ferrari</i><par n="ABC__np"/></e>
+    <e lm="Ferrari"><i>Ferrari</i><par n="Abad__np"/></e>
     <e lm="Ferreira"><i>Ferreira</i><par n="Abad__np"/></e>
     <e lm="Ferrer"><i>Ferrer</i><par n="Abad__np"/></e>
     <e lm="Ferrero"><i>Ferrero</i><par n="Abad__np"/></e>
@@ -27517,7 +27549,7 @@
     <e lm="Jèsus"><i>Jèsus</i><par n="Abad__np"/></e>
     <e lm="Jiménez"><i>Jiménez</i><par n="Abad__np"/></e>
     <e lm="Joana"><i>Joana</i><par n="Abad__np"/></e>
-    <e lm="Joanchiquet"><i>Joanchiquet</i><par n="Pau__np"/></e>
+    <e lm="Joanchiquet"><i>Joanchiquet</i><par n="Abad__np"/></e>
     <e lm="Joan"><i>Joan</i><par n="Abad__np"/></e>
     <e lm="Joaquim"><i>Joaquim</i><par n="Abad__np"/></e>
     <e lm="Joaquín"><i>Joaquín</i><par n="Abad__np"/></e>
@@ -27663,7 +27695,7 @@
     <e lm="March"><i>March</i><par n="Abad__np"/></e>
     <e lm="Marc"><i>Marc</i><par n="Abad__np"/></e>
     <e lm="Marco" a="carmentano"><i>Marco</i><par n="Abad__np"/></e>
-    <e lm="Margalida"><i>Margalida</i><par n="Pau__np"/></e>
+    <e lm="Margalida"><i>Margalida</i><par n="Abad__np"/></e>
     <e lm="Margarita"><i>Margarita</i><par n="Abad__np"/></e>
     <e lm="Maria"><i>Maria</i><par n="Abad__np"/></e>
     <e lm="Trogecia"><i>Trogecia</i><par n="Abad__np"/></e>
@@ -27709,7 +27741,8 @@
     <e lm="Mengual"><i>Mengual</i><par n="ABC__np"/></e>
     <e lm="Menorca"><i>Menorca</i><par n="Aran__np"/></e>
     <e lm="Mercè" a="carmentano"><i>Mercè</i><par n="Abad__np"/></e>
-    <e lm="Mercedes"><i>Mercedes</i><par n="Ferrari__np"/></e>
+    <e lm="Mercedes"><i>Mercedes</i><par n="ABC__np"/></e>
+    <e lm="Mercedes"><i>Mercedes</i><par n="Abad__np"/></e>
     <e lm="Meridiana" a="carmentano"><i>Meridiana</i><par n="Aran__np"/></e>
     <e lm="Merino"><i>Merino</i><par n="Abad__np"/></e>
     <e lm="Meritxell"><i>Meritxell</i><par n="Abad__np"/></e>
@@ -27809,7 +27842,8 @@
     <e lm="Noruega"><i>Noruega</i><par n="Aran__np"/></e>
     <e lm="Núñez"><i>Núñez</i><par n="Abad__np"/></e>
     <e lm="Nuria"><i>Nuria</i><par n="Abad__np"/></e>
-    <e lm="Núria"><i>Núria</i><par n="Pau__np"/></e>
+    <e lm="Núria"><i>Núria</i><par n="Abad__np"/></e>
+    <e lm="Núria"><i>Núria</i><par n="Aran__np"/></e>
     <e lm="Obregón"><i>Obregón</i><par n="Abad__np"/></e>
     <e lm="Ocaña"><i>Ocaña</i><par n="Aran__np"/></e>
     <e lm="Occitània"><i>Occitània</i><par n="Aran__np"/></e>
@@ -27867,7 +27901,8 @@
     <e lm="Patricia"><i>Patricia</i><par n="Abad__np"/></e>
     <e lm="Patrici"><i>Patrici</i><par n="Abad__np"/></e>
     <e lm="Patxi"><i>Patxi</i><par n="Abad__np"/></e>
-    <e lm="Pau"><i>Pau</i><par n="Pau__np"/></e>
+    <e lm="Pau"><i>Pau</i><par n="Abad__np"/></e>
+    <e lm="Pau"><i>Pau</i><par n="Aran__np"/></e>
     <e lm="Paula"><i>Paula</i><par n="Abad__np"/></e>
     <e lm="Paul"><i>Paul</i><par n="Abad__np"/></e>
     <e lm="Pedraza"><i>Pedraza</i><par n="Aran__np"/></e>
@@ -27993,7 +28028,8 @@
     <e lm="Robert"><i>Robert</i><par n="Abad__np"/></e>
     <e lm="Roberto"><i>Roberto</i><par n="Abad__np"/></e>
     <e lm="Robledo"><i>Robledo</i><par n="Abad__np"/></e>
-    <e lm="Rocha"><i>Rocha</i><par n="Pau__np"/></e>
+    <e lm="Rocha"><i>Rocha</i><par n="Abad__np"/></e>
+    <e lm="Rocha"><i>Rocha</i><par n="Aran__np"/></e>
     <e lm="Rocío"><i>Rocío</i><par n="Abad__np"/></e>
     <e lm="Ròc"><i>Ròc</i><par n="Abad__np"/></e>
     <e lm="Rodrigo"><i>Rodrigo</i><par n="Abad__np"/></e>
@@ -28081,7 +28117,7 @@
     <e lm="Seró" a="carmentano"><i>Seró</i><par n="Abad__np"/></e>
     <e lm="Serra"><i>Serra</i><par n="Aran__np"/></e>
     <e lm="Serrano"><i>Serrano</i><par n="Abad__np"/></e>
-    <e lm="Serrat"><i>Serrat</i><par n="Pau__np"/></e>
+    <e lm="Serrat"><i>Serrat</i><par n="Abad__np"/></e>
     <e lm="Seu" a="carmentano"><i>Seu</i><par n="Aran__np"/></e>
     <e lm="Sevilla"><i>Sevilla</i><par n="Aran__np"/></e>
     <e lm="Sevillano" a="carmentano"><i>Sevillano</i><par n="Abad__np"/></e>
@@ -28095,9 +28131,10 @@
     <e lm="Sinisterra"><i>Sinisterra</i><par n="Abad__np"/></e>
     <e lm="Sitges"><i>Sitges</i><par n="Aran__np"/></e>
     <e lm="Smith"><i>Smith</i><par n="Abad__np"/></e>
-    <e lm="Sobirà"><i>Sobirà</i><par n="Pau__np"/></e>
+    <e lm="Sobirà"><i>Sobirà</i><par n="Abad__np"/></e>
     <e lm="Socasau"><i>Socasau</i><par n="Abad__np"/></e>
-    <e lm="Sofia"><i>Sofia</i><par n="Pau__np"/></e>
+    <e lm="Sofia"><i>Sofia</i><par n="Abad__np"/></e>
+    <e lm="Sofia"><i>Sofia</i><par n="Aran__np"/></e>
     <e lm="Softcatalà" a="carmentano"><i>Softcatalà</i><par n="ABC__np"/></e>
     <e lm="Solana"><i>Solana</i><par n="Abad__np"/></e>
     <e lm="Solan"><i>Solan</i><par n="Aran__np"/></e>
@@ -41234,7 +41271,7 @@
 <e lm="aquesit" a="capsot"><i>aquesit</i><par n="conselh__n"/></e>
 <e lm="aquisicion" a="capsot"><i>aquisicion</i><par n="part__n"/></e>
 <e lm="aquitament" a="capsot"><i>aquitament</i><par n="conselh__n"/></e>
-<e lm="arab" a="capsot"><i>arab</i><par n="conselhèr__n"/></e>
+<e lm="arab" a="capsot"><i>arab</i><par n="filosòf__n"/></e>
 <e lm="arabi" a="capsot"><i>ar</i><par n="ar/abi__n"/></e>
 <e lm="aragonés" a="capsot"><i>aragon</i><par n="pag/és__n"/></e>
 <e lm="aranés" a="capsot"><i>aran</i><par n="pag/és__n"/></e>
