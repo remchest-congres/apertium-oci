@@ -24947,9 +24947,9 @@
       <e r="LR" lm="orde" alt="oci"><i>orde</i><par n="agent__n"/></e>
     <e lm="orde" alt="oci@aran"><i>orde</i><par n="agent__n"/></e>
     <e lm="orde" alt="oci@gascon"><i>orde</i><par n="agent__n"/></e>
-      <e r="LR" lm="òrdre" alt="oci@aran"><i>òrdre</i><par n="agent__n"/></e>
-      <e r="LR" lm="òrdre" alt="oci@gascon"><i>òrdre</i><par n="agent__n"/></e>
-    <e lm="òrdre" alt="oci"><i>òrdre</i><par n="agent__n"/></e>
+      <e r="LR" lm="òrdre" alt="oci@aran"><i>òrdre</i><par n="conselh__n"/></e>
+      <e r="LR" lm="òrdre" alt="oci@gascon"><i>òrdre</i><par n="conselh__n"/></e>
+    <e lm="òrdre" alt="oci"><i>òrdre</i><par n="conselh__n"/></e>
       <e r="LR" lm="sosorde" alt="oci"><i>sosorde</i><par n="conselh__n"/></e>
     <e lm="sosorde" alt="oci@aran"><i>sosorde</i><par n="conselh__n"/></e>
     <e lm="sosorde" alt="oci@gascon"><i>sosorde</i><par n="conselh__n"/></e>
@@ -45506,6 +45506,7 @@
 <e lm="zòmbi" a="capsot"><i>zòmbi</i><par n="conselh__n"/></e>
 
 <e lm="en van"><i>en<b/>van</i><par n="ager__adv"/></e>
+<e lm="militar"><i>militar</i><par n="trabalhador__adj"/></e>
 
 <!-- xxxx -->
 </section>
