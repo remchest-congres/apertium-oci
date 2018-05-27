@@ -27,13 +27,13 @@ LIST PRON = prn ;
 LIST PERS = pers ;
 LIST AV = adv ;
 LIST PREAV = preadv ;
-LIST Pers = (prn p1) (prn p2) (prn p3); 
+LIST Excl = "!" ;
+LIST PRONPers = (prn p1) (prn p2) (prn p3); 
 LIST IJ = ij ;
 LIST PREDET = predet ;
 LIST Pos = pos ;
 LIST DETPos = (det pos);
 LIST SENT = sent ;
-
 
 #Jos=categorias
 LIST Pro = pro ;
@@ -65,11 +65,18 @@ SET MascPl = (m pl) OR (m sp) OR (mf pl) OR (mf sp) ;
 SET FemSg = (f sg) OR (f sp) OR (mf sg) OR (mf sp) ;
 SET FemPl = (f pl) OR (f sp) OR (mf pl) OR (mf sp) ;
 
+LIST P1 = p1 ;
+LIST P2 = p2 ;
+LIST P3 = p3 ;
+LIST Pers = p1 p2 p3 ;
+
 #Mots
 LIST En = ("en" prn);
 LIST Un = "un" ;
 LIST Nostre = "nòstre" "nòste" ;
 LIST Vostre = "vòstre" "vòste" ;
+
+LIST Excl = "!" ;
 
 LIST unknown = ("\\*.*"r) ;
 LIST unknownMajIni = ("\\*[A-ZÀÁÈÉíÒÓÚÜÇ].*"r) ;
@@ -91,8 +98,11 @@ REMOVE Rel IF (-1 BOS OR SENT);
 #Un imperatiu seguis pas una conjonccion, un relatiu o un pronom personal
 REMOVE VBimp IF (-1 Enon OR Conjco OR Conjsub OR Rel OR Pers);
 
+REMOVE VBimp IF (NOT 1* Excl) ;
+REMOVE VBimp IF (0 P3) ;
+
 #Un nom pot pas seguir qu'un vèrbe, un adjectiu, un determinant, un numeral, una prepausicion o un pronom (levat los personals)
-REMOVE N IF (NOT -1 V OR AJ OR DET OR NUM OR PREP OR PRON - Pers);
+REMOVE N IF (NOT -1 V OR AJ OR DET OR NUM OR PREP OR PRON - PRONPers);
 
 #Un predeterminant es pas seguit que per un determinant
 REMOVE PREDET IF (NOT 1 DET);
