@@ -2,6 +2,7 @@
 #	- son: pos o vbser o nom
 #	- an: vbhaver o nom
 #	- es: det (aran) o vbser
+#	- se: prn.pro.ref o cnjadv
 
 # Firstly, we need to define what tags should be considered sentence delimiters. For this example, only full stop is set as delimiter.
 DELIMITERS = "<.>" ;
