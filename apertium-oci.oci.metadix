@@ -28368,7 +28368,12 @@
     <e lm="onze"><i>onz</i><par n="onz/e__num"/></e>
     <e lm="dotze"><i>dotz</i><par n="onz/e__num"/></e>
     <e lm="tretze"><i>tretz</i><par n="onz/e__num"/></e>
-    <e lm="catorze"><i>catorz</i><par n="onz/e__num"/></e>
+    <e alt="oci" lm="catòrze"><i>catòrz</i><par n="onz/e__num"/></e>
+    <e r="LR" alt="oci@aran" lm="catòrze"><i>catòrz</i><par n="onz/e__num"/></e>
+    <e r="LR" alt="oci@gascon" lm="catòrze"><i>catòrz</i><par n="onz/e__num"/></e>
+    <e alt="oci@aran" lm="catorze"><i>catorz</i><par n="onz/e__num"/></e>
+    <e alt="oci@gascon" lm="catorze"><i>catorz</i><par n="onz/e__num"/></e>
+    <e r="LR" alt="oci" lm="catorze"><i>catorz</i><par n="onz/e__num"/></e>
     <e lm="quinze"><i>quinz</i><par n="onz/e__num"/></e>
     <e lm="setze"><i>setz</i><par n="onz/e__num"/></e>
     <e lm="dètz-e-sèt"><i>dètz-e-s</i><par n="s/èt__num"/></e>
