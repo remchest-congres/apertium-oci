@@ -45546,6 +45546,68 @@
 <e lm="zincatge" a="capsot"><i>zincatge</i><par n="conselh__n"/></e>
 <e lm="zòmbi" a="capsot"><i>zòmbi</i><par n="conselh__n"/></e>
 
+<e lm="airejar"><i>air</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="baisotejar"><i>baisot</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="balancejar"><i>balanc</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="balbucejar"><i>balbuc</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="becassejar"><i>becass</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="bedossejar"><i>bedoss</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="blanquejar"><i>blanqu</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="blavejar"><i>blav</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="blesejar"><i>bles</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="blondejar"><i>blond</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="bracejar"><i>brac</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="brasejar"><i>bras</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e alt="oci@aran" lm="bromejar"><i>brom</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="butinejar"><i>butin</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="cantonejar"><i>canton</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="capejar"><i>cap</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="cracinejar"><i>crecin</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="envejar"><i>env</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="farotejar"><i>farot</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="flanejar"><i>flan</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="galejar"><i>gal</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="guerlejar"><i>guerl</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="lagremejar"><i>lagrem</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="manejar"><i>man</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="ondejar"><i>ond</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="parafrasejar"><i>parafras</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="parlotejar"><i>parlot</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="parpalholejar"><i>parpalhol</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="patesejar"><i>pates</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="salsejar"><i>sals</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="sautejar"><i>saut</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="pavonejar"><i>pavon</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="tamborinejar"><i>tamborin</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="trastejar"><i>trast</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="tutejar"><i>tut</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="verdejar"><i>verd</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="vivotejar"><i>vivot</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="volatejar"><i>volat</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="voltejar"><i>volt</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="vosejar"><i>vos</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="zezejar"><i>zez</i><par n="p/e[N]jar__vblex" prm=""/></e>
+<e lm="zigazaguejar"><i>zigazagu</i><par n="p/e[N]jar__vblex" prm=""/></e>
+
+<e lm="banalizar"><i>banal</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+<e lm="depersonalizar"><i>depersonal</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+<e lm="deslocalizar"><i>deslocal</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+<e lm="ellenizar"><i>ellen</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+<e i="yes" lm="encarnizar"><i>encarn</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+<e lm="esquematizar"><i>esquemat</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+<e lm="fertilizar"><i>fertil</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+<e lm="immobilizar"><i>immobil</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+<e lm="ispanizar"><i>ispan</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+<e lm="italianizar"><i>italian</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+<e lm="latinizar"><i>latin</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+<e lm="lematizar"><i>lemat</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+<e lm="nacionalizar"><i>nacional</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+<e lm="robotizar"><i>robot</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+<e lm="umanizar"><i>uman</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+<e lm="vegetalizar"><i>vegetal</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+
+
+
 <e lm="en van"><i>en<b/>van</i><par n="ager__adv"/></e>
 <e lm="militar"><i>militar</i><par n="trabalhador__adj"/></e>
 <e lm="París"><i>Agen</i><par n="Iran__np"/></e>
