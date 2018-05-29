@@ -41,6 +41,7 @@ LIST VBger = ger ;
 LIST VBimp = imp ;
 LIST PRencl = enc ;
 LIST VBinf = inf ;
+LIST VBpp = pp ;
 LIST Npl = (n pl);
 LIST AJpl = (adj pl);
 LIST Ns = (n s);
@@ -73,8 +74,11 @@ LIST Pers = p1 p2 p3 ;
 #Mots
 LIST En = ("en" prn);
 LIST Un = "un" ;
+LIST An = "an" ;
+LIST Eth = "eth" ;
 LIST Nostre = "nòstre" "nòste" ;
 LIST Vostre = "vòstre" "vòste" ;
+LIST Pas = "pas" ;
 
 LIST Excl = "!" ;
 
@@ -127,6 +131,13 @@ REMOVE motsdetf IF (1 Nm OR AJm);
 REMOVE motsdetm IF (1 Nf OR AJf);
 
 
+# AN (+ partipici)
+
+SELECT V IF (0 An + MascSg) (1 VBpp + MascSg) ;
+  ## aqueste mes an fach
+SELECT V IF (0 An + MascSg) (1 Pas) (2 VBpp + MascSg) ;
+SELECT V IF (0 An + MascSg) (1C AV) (2 VBpp + MascSg) ;
+
 # DET
 
 SELECT DET IF (0 DETind + MascSg) (1 N + MascSg) ;
@@ -139,6 +150,11 @@ SELECT DET IF (0 DETind + FemSg) (1 AJ + FemSg) ;
 SELECT DET IF (0 DETind + MascPl) (1 AJ + MascPl) ;
 SELECT DET IF (0 DETind + FemPl) (1 AJ + FemPl) ;
   ## un jaune
+SELECT DET IF (0 DETind) (1C V) ;
+SELECT DET IF (0 DETind) (1 unknown) ;
+  ## pedaç, especialment quan falta molt vocabulari (endevinem que és un DET i no una forma del V unir)
+REMOVE DET IF (0 Eth) (1 DET);
+REMOVE DET IF (0 Eth) (1 Pas);
 
 # NUM
 
