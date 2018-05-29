@@ -117,7 +117,8 @@ REMOVE Enon IF (NOT 1 V OR PRencl);
 REMOVE PREP IF (NOT 1 N OR PRON OR AV OR NUM OR NP OR VBinf OR DET OR AJ);
 
 #Es pas un vèrbe se, dempuèi lo darrièr vèrbe conjugat, avèm pas agut de novèla proposicion
-REMOVE Vconj IF (NOT -1* intrprop BARRIER Vconj) ;
+#REMOVE Vconj IF (NOT -1* intrprop BARRIER Vconj) ;
+	# funciona pas: “Es lo primièr còp que vesi aquò”
 
 #Un determinant es pas plural se lo nom/adjectiu que seguis es singular (o masculin feminin...)
 REMOVE motsdetpl IF (1 Ns OR AJs);
