@@ -23934,12 +23934,10 @@
     <e lm="illusion"><i>illusion</i><par n="part__n"/></e>
     <e lm="illustracion"><i>illustracion</i><par n="part__n"/></e>
     <e lm="imaginacion"><i>imaginacion</i><par n="part__n"/></e>
-      <e r="LR" lm="imatge"  alt="oci"><i>imatge</i><par n="part__n"/></e>
-    <e lm="imatge"  alt="oci@aran"><i>imatge</i><par n="part__n"/></e>
-    <e lm="imatge"  alt="oci@gascon"><i>imatge</i><par n="part__n"/></e>
-      <e r="LR" lm="image" alt="oci@aran"><i>image</i><par n="part__n"/></e>
-      <e r="LR" lm="image" alt="oci@gascon"><i>image</i><par n="part__n"/></e>
-    <e lm="image" alt="oci"><i>image</i><par n="part__n"/></e>
+    <e lm="imatge" alt="oci"><i>imatge</i><par n="conselh__n"/></e>
+    <e lm="imatge" alt="oci@aran"><i>imatge</i><par n="part__n"/></e>
+    <e lm="imatge" alt="oci@gascon"><i>imatge</i><par n="conselh__n"/></e>
+    <e lm="image" r="LR"><i>image</i><par n="part__n"/></e>
     <e lm="immigracion"><i>immigracion</i><par n="part__n"/></e>
     <e lm="immigrant"><i>immigrant</i><par n="conselhèr__n"/></e>
     <e lm="emigrant"><i>emigrant</i><par n="conselhèr__n"/></e>
@@ -34071,7 +34069,7 @@
     <e lm="abestit"><i>abesti</i><par n="estima/t__adj"/></e>
     <e lm="abrutit"><i>abruti</i><par n="estima/t__adj"/></e>
     <e lm="ornar"><i/><par n="aband/o[N]ar__vblex" prm="rn"/></e>
-    <e lm="abissal"><i>abissal</i><par n="generau__adj"/></e>
+    <e lm="abissal"><i>abissa</i><par n="addiciona/l_u__adj"/></e>
     <e lm="abjeccion"><i>abjeccion</i><par n="part__n"/></e>
     <e lm="abjècte"><i>abjèct</i><par n="ampl/e__adj"/></e>
     <e lm="consecutiu"><i>consecuti</i><par n="representati/u__adj"/></e>
@@ -37745,7 +37743,7 @@
     <e lm="Neil" a="mmonge"><i>Neil</i><par n="Abad__np"/></e>
     <e lm="Luxemborg" a="mmonge"><i>Luxemborg</i><par n="Aran__np"/></e>
     <e lm="Jimmy" a="mmonge"><i>Jimmy</i><par n="Abad__np"/></e>
-    <e lm="fatal" a="mmonge"><i>fatal</i><par n="generau__adj"/></e>
+    <e lm="fatal"><i>fata</i><par n="addiciona/l_u__adj"/></e>
     <e lm="Dakòta" a="mmonge"><i>Dakòta</i><par n="Aran__np"/></e>
     <e lm="Berga" a="mmonge"><i>Berga</i><par n="Aran__np"/></e>
     <e lm="Senegal" a="mmonge"><i>Senegal</i><par n="Aran__np"/></e>
@@ -40476,6 +40474,7 @@
     <e lm="Zhengzhou"><i>Zhengzhou</i><par n="Aran__np"/></e>
     <e lm="Zug"><i>Zug</i><par n="Aran__np"/></e>
 
+    <e lm="capital"><i>capita</i><par n="addiciona/l_u__adj"/></e>
     <e lm="ambiental"><i>ambienta</i><par n="addiciona/l_u__adj"/></e>
     <e lm="ancestral"><i>ancestra</i><par n="addiciona/l_u__adj"/></e>
     <e lm="annal"><i>anna</i><par n="addiciona/l_u__adj"/></e>
@@ -45549,6 +45548,7 @@
 
 <e lm="en van"><i>en<b/>van</i><par n="ager__adv"/></e>
 <e lm="militar"><i>militar</i><par n="trabalhador__adj"/></e>
+<e lm="París"><i>Agen</i><par n="Iran__np"/></e>
 
 <!-- xxxx -->
 </section>
