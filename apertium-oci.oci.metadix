@@ -2388,6 +2388,11 @@
       <e><p><l>a</l><r>a<s n="det"/><s n="pos"/><s n="mf"/><s n="sg"/></r></p></e>
     </pardef>
 
+        <pardef n="mant/es__det">
+      <e><p><l>es</l><r><s n="det"/><s n="ind"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l>as</l><r><s n="det"/><s n="ind"/><s n="f"/><s n="pl"/></r></p></e>
+    </pardef>
+
         <pardef n="çòdemès__detnt">
       <e><p><l/><r><s n="detnt"/></r></p></e>
     </pardef>
@@ -18552,6 +18557,7 @@
     <e lm="folcloric"><i>folclori</i><par n="tecni/c__adj"/></e>
     <e lm="fonetic"><i>foneti</i><par n="tecni/c__adj"/></e>
     <e lm="fòrça"><i>fòrça</i><par n="fòrça__det"/></e>
+    <e lm="mantes"><i>mant</i><par n="mant/es__det"/></e>
     <e lm="honoris causa"><i>honoris<b/>causa</i><par n="post__adj"/></e>
     <e lm="pop"><i>pop</i><par n="post__adj"/></e>
     <e lm="post"><i>post</i><par n="post__adj"/></e>
@@ -22883,6 +22889,7 @@
     <e lm="emparament" alt="oci@gascon"><i>emparament</i><par n="conselh__n"/></e>
     <e lm="emparança" a="carmentano" r="LR"><i>emparan</i><par n="seden/ça__n"/></e>
     <e lm="emperaire"><i>emperair</i><par n="emperair/e__n"/></e>
+    <e lm="emperador"><i>emperador</i><par n="conselhèr__n"/></e>
     <e lm="empèri"><i>empèri</i><par n="conselh__n"/></e>
     <e lm="empeut"><i>empeut</i><par n="conselh__n"/></e>
     <e lm="emplaçament"><i>emplaçament</i><par n="conselh__n"/></e>
@@ -30460,6 +30467,7 @@
     <e lm="penchinar" r="LR"><i>pench</i><par n="ab/i[T]ar__vblex" prm="n"/></e>
     <e lm="generalisar"><i>general</i><par n="ab/i[T]ar__vblex" prm="s"/></e>
     <e lm="generar"><i>gen</i><par n="cap/e[R]ar__vblex" prm="r"/></e>
+    <e lm="degenerar"><i>degen</i><par n="cap/e[R]ar__vblex" prm="r"/></e>
     <e lm="governar"><i>gov</i><par n="lid/e[R]ar__vblex" prm="rn"/></e>
     <e lm="grapinhar"><i>grap</i><par n="ab/i[T]ar__vblex" prm="nh"/></e>
       <e r="LR" lm="guardar" alt="oci"><i>gu</i><par n="c/a[NT]ar__vblex" prm="rd"/></e>
