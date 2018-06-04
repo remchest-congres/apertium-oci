@@ -4614,6 +4614,16 @@
       <e><p><l>as</l><r>es<s n="prn"/><s n="tn"/><s n="p1"/><s n="f"/><s n="pl"/></r></p></e>
     </pardef>
 
+        <pardef n="nosautr/es_meteises__prn">
+      <e><p><l>es<b/>meteises</l><r>es<b/>meteises<s n="prn"/><s n="tn"/><s n="p1"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l>as<b/>meteisas</l><r>es<b/>meteises<s n="prn"/><s n="tn"/><s n="p1"/><s n="f"/><s n="pl"/></r></p></e>
+    </pardef>
+
+        <pardef n="nos_meteis__prn">
+      <e><p><l></l><r><s n="prn"/><s n="tn"/><s n="p1"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l>a</l><r><s n="prn"/><s n="tn"/><s n="p1"/><s n="f"/><s n="pl"/></r></p></e>
+    </pardef>
+
         <pardef n="vosaut/s__prn">
       <e><p><l>s</l><r>s<s n="prn"/><s n="tn"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
       <e><p><l>as</l><r>s<s n="prn"/><s n="tn"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
@@ -4622,6 +4632,16 @@
         <pardef n="vosautr/es__prn">
       <e><p><l>es</l><r>es<s n="prn"/><s n="tn"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
       <e><p><l>as</l><r>es<s n="prn"/><s n="tn"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+    </pardef>
+
+        <pardef n="vosautr/es_meteises__prn">
+      <e><p><l>es<b/>meteises</l><r>es<b/>meteises<s n="prn"/><s n="tn"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l>as<b/>meteisas</l><r>es<b/>meteises<s n="prn"/><s n="tn"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+    </pardef>
+
+        <pardef n="vos_meteis__prn">
+      <e><p><l></l><r><s n="prn"/><s n="tn"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l>a</l><r><s n="prn"/><s n="tn"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
     </pardef>
 
         <pardef n="nos__prn">
@@ -4658,6 +4678,14 @@
       <e><p><l>es</l><r><s n="prn"/><s n="tn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
       <e><p><l/><r><s n="prn"/><s n="tn"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
     </pardef>
+
+        <pardef n="el/_meteis__prn">
+      <e><p><l>as<b/>meteisas</l><r><b/>meteis<s n="prn"/><s n="tn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+      <e><p><l>a<b/>meteisa</l><r><b/>meteis<s n="prn"/><s n="tn"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+      <e><p><l>es<b/>meteises</l><r><b/>meteis<s n="prn"/><s n="tn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l><b/>meteis</l><r><b/>meteis<s n="prn"/><s n="tn"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+    </pardef>
+
 <!-- en ar la forma de respecte és "vos". ja pensaré com fer-ho-->
         <pardef n="vosté__prn">
       <e><p><l>s</l><r><s n="prn"/><s n="tn"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
@@ -28861,6 +28889,7 @@
       <e r="LR" lm="a comptar de" alt="oci@gascon"><i>a<b/>comptar<b/></i><par n="/de__pr"/></e>
     <e lm="a comptar de" alt="oci"><i>a<b/>comptar<b/></i><par n="/de__pr"/></e>
     <e lm="tre"><i>tre</i><par n="a__pr"/></e>
+    <e lm="tre que"><i>tre<b/>que</i><par n="donc__cnjadv"/></e>
     <e lm="a despiet de" r="LR"><i>a<b/>despiet<b/></i><par n="/de__pr"/></e>
     <e lm="entà per'mor de" alt="oci" r="LR"><i>entà<b/>per'mor<b/></i><par n="/de__pr"/></e>
     <e lm="entà per'mor de" alt="oci@aran" r="LR"><i>entà<b/>per'mor<b/></i><par n="/de__pr"/></e>
@@ -29243,6 +29272,7 @@
       <e r="LR" lm="el" alt="oci@aran"><i>el</i><par n="el__prn"/></e>
       <e r="LR" lm="el" alt="oci@gascon"><i>el</i><par n="el__prn"/></e>
     <e lm="el" alt="oci"><i>el</i><par n="el__prn"/></e>
+    <e lm="el meteis" alt="oci"><i>el</i><par n="el/_meteis__prn"/></e>
       <e r="LR" lm="eth sòn" alt="oci"><par n="/eth_sòn__prn"/></e>
     <e lm="eth sòn" alt="oci@aran"><par n="/eth_sòn__prn"/></e>
     <e lm="eth sòn" alt="oci@gascon"><par n="/eth_sòn__prn"/></e>
@@ -29277,6 +29307,7 @@
       <e r="LR" lm="ieu" alt="oci@aran"><i>ieu</i><par n="jo__prn"/></e>
       <e r="LR" lm="ieu" alt="oci@gascon"><i>ieu</i><par n="jo__prn"/></e>
     <e lm="ieu" alt="oci"><i>ieu</i><par n="jo__prn"/></e>
+    <e lm="ieu meteis" alt="oci"><i>ieu<b/>meteis</i><par n="jo__prn"/></e>
     <e lm="lèu tot"><i>lèu<b/>tot</i><par n="aguest__prn"/></e>
     <e lm="li" r="LR"><i/><par n="/li__prn"/></e>
     <e lm="li" r="RL"><p><l><a/></l><r/></p><par n="/li__prn"/></e>
@@ -29302,12 +29333,16 @@
     <e lm="nosautres" alt="oci"><i>nosautr</i><par n="nosautr/es__prn"/></e>
     <e lm="nosauts" alt="oci@gascon"><i>nosaut</i><par n="nosaut/s__prn"/></e>
     <e lm="nos" r="LR"><i>nos</i><par n="nos__prn"/></e>
+    <e lm="nosautres meteises" alt="oci"><i>nosautr</i><par n="nosautr/es_meteises__prn"/></e>
+    <e lm="nos meteis" alt="oci"><i>nos<b/>meteis</i><par n="nos_meteis__prn"/></e>
 
     <e r="LR" lm="vosautres" alt="oci@aran"><i>vosautr</i><par n="vosautr/es__prn"/></e>
     <e r="LR" lm="vosautres" alt="oci@gascon"><i>vosautr</i><par n="vosautr/es__prn"/></e>
     <e lm="vosautres" alt="oci"><i>vosautr</i><par n="vosautr/es__prn"/></e>
     <e lm="vosauts" alt="oci@gascon"><i>vosaut</i><par n="vosaut/s__prn"/></e>
     <e lm="vos"><p><l>vos</l><r>vos<s n="prn"/><s n="tn"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e lm="vosautres meteises" alt="oci"><i>vosautr</i><par n="vosautr/es_meteises__prn"/></e>
+    <e lm="vos meteis" alt="oci"><i>vos<b/>meteis</i><par n="vos_meteis__prn"/></e>
 
     <e r="LR" lm="pòc" alt="oci"><i>pò</i><par n="pò/c__prn"/></e>
     <e lm="pòc" alt="oci@aran"><i>pò</i><par n="pò/c__prn"/></e>
@@ -29376,6 +29411,7 @@
     <e lm="tot lo monde" r="LR"><i>tot<b/>lo<b/>monde</i><par n="quauquarrés__prn"/></e>
     <e lm="tot lo mon" r="LR"><i>tot<b/>lo<b/>mon</i><par n="quauquarrés__prn"/></e>
     <e lm="tu"><i>tu</i><par n="tu__prn"/></e>
+    <e lm="tu meteis" alt="oci"><i>tu<b/>meteis</i><par n="tu__prn"/></e>
       <e r="LR" lm="vosati" alt="oci"><i>vosat</i><par n="vosat/i__prn"/></e>
     <e lm="vosati" alt="oci@aran"><i>vosat</i><par n="vosat/i__prn"/></e>
     <e lm="vosati" alt="oci@gascon"><i>vosat</i><par n="vosat/i__prn"/></e>
@@ -43687,6 +43723,9 @@
 <e lm="manualament" a="capsot"><i>manua</i><par n="accidenta/lament__adv"/></e>
 <e lm="mas" a="capsot"><i>mas</i><par n="ager__adv"/></e>
 <e lm="materialament" a="capsot"><i>materialament</i><par n="adequadament__adv"/></e>
+<e lm="meteis" a="hector" alt="oci"><i>meteis</i><par n="ager__adv"/></e>
+<e lm="meteis" a="hector" alt="gascon" r="LR"><i>meteis</i><par n="ager__adv"/></e>
+<e lm="meteis" a="hector" alt="aran" r="LR"><i>meteis</i><par n="ager__adv"/></e>
 <e lm="medeish" a="capsot" alt="gascon"><i>medeish</i><par n="ager__adv"/></e>
 <e lm="medeish" a="capsot" alt="oci" r="LR"><i>medeish</i><par n="ager__adv"/></e>
 <e lm="medeish" a="capsot" alt="aran" r="LR"><i>medeish</i><par n="ager__adv"/></e>
