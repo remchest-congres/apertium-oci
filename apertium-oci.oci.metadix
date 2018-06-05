@@ -2389,8 +2389,8 @@
     </pardef>
 
         <pardef n="mant/es__det">
-      <e><p><l>es</l><r><s n="det"/><s n="ind"/><s n="m"/><s n="pl"/></r></p></e>
-      <e><p><l>as</l><r><s n="det"/><s n="ind"/><s n="f"/><s n="pl"/></r></p></e>
+      <e><p><l>es</l><r>es<s n="det"/><s n="ind"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l>as</l><r>es<s n="det"/><s n="ind"/><s n="f"/><s n="pl"/></r></p></e>
     </pardef>
 
         <pardef n="çòdemès__detnt">
@@ -5010,36 +5010,62 @@
     </pardef>
 
         <pardef n="/lo_que__rel">
-    <e alt="oci" r="LR"><p><l>las<b/>que</l><r>lo<b/>que<s n="rel"/><s n="nn"/><s n="f"/><s n="pl"/></r></p></e>
-    <e alt="oci" r="RL"><p><l>las<b/><a/>que</l><r>lo<b/>que<s n="rel"/><s n="nn"/><s n="f"/><s n="pl"/></r></p></e>
-    <e alt="oci" r="LR"><p><l>la<b/>que</l><r>lo<b/>que<s n="rel"/><s n="nn"/><s n="f"/><s n="sg"/></r></p></e>
-    <e alt="oci" r="RL"><p><l>la<b/><a/>que</l><r>lo<b/>que<s n="rel"/><s n="nn"/><s n="f"/><s n="sg"/></r></p></e>
-    <e alt="oci" r="LR"><p><l>los<b/>que</l><r>lo<b/>que<s n="rel"/><s n="nn"/><s n="m"/><s n="pl"/></r></p></e>
-    <e alt="oci" r="LR"><p><l>lo<b/>que</l><r>lo<b/>que<s n="rel"/><s n="nn"/><s n="m"/><s n="sg"/></r></p></e>
-    <e alt="oci" r="RL"><p><l><a/>los<b/><a/>que</l><r>lo<b/>que<s n="rel"/><s n="nn"/><s n="m"/><s n="pl"/></r></p></e>
-    <e alt="oci" r="RL"><p><l><a/>lo<b/><a/>que</l><r>lo<b/>que<s n="rel"/><s n="nn"/><s n="m"/><s n="sg"/></r></p></e>
-    <e alt="oci@aran" r="LR"><p><l>es<b/>que</l><r>eth<b/>que<s n="rel"/><s n="nn"/><s n="f"/><s n="pl"/></r></p></e>
-    <e alt="oci@gascon" r="LR"><p><l>es<b/>que</l><r>eth<b/>que<s n="rel"/><s n="nn"/><s n="f"/><s n="pl"/></r></p></e>
-    <e alt="oci@aran" r="RL"><p><l><a/>es<b/><a/>que</l><r>eth<b/>que<s n="rel"/><s n="nn"/><s n="f"/><s n="pl"/></r></p></e>
-    <e alt="oci@gascon" r="RL"><p><l><a/>es<b/><a/>que</l><r>eth<b/>que<s n="rel"/><s n="nn"/><s n="f"/><s n="pl"/></r></p></e>
-    <e alt="oci@aran" r="LR"><p><l>era<b/>que</l><r>eth<b/>que<s n="rel"/><s n="nn"/><s n="f"/><s n="sg"/></r></p></e>
-    <e alt="oci@gascon" r="LR"><p><l>era<b/>que</l><r>eth<b/>que<s n="rel"/><s n="nn"/><s n="f"/><s n="sg"/></r></p></e>
-    <e alt="oci@aran" r="RL"><p><l>era<b/><a/>que</l><r>eth<b/>que<s n="rel"/><s n="nn"/><s n="f"/><s n="sg"/></r></p></e>
-    <e alt="oci@gascon" r="RL"><p><l>era<b/><a/>que</l><r>eth<b/>que<s n="rel"/><s n="nn"/><s n="f"/><s n="sg"/></r></p></e>
-    <e alt="oci@aran" r="LR"><p><l>es<b/>que</l><r>eth<b/>que<s n="rel"/><s n="nn"/><s n="m"/><s n="pl"/></r></p></e>
-    <e alt="oci@gascon" r="LR"><p><l>es<b/>que</l><r>eth<b/>que<s n="rel"/><s n="nn"/><s n="m"/><s n="pl"/></r></p></e>
-    <e alt="oci@aran" r="LR"><p><l>eth<b/>que</l><r>eth<b/>que<s n="rel"/><s n="nn"/><s n="m"/><s n="sg"/></r></p></e>
-    <e alt="oci@gascon" r="LR"><p><l>eth<b/>que</l><r>eth<b/>que<s n="rel"/><s n="nn"/><s n="m"/><s n="sg"/></r></p></e>
-    <e alt="oci@aran" r="RL"><p><l><a/>es<b/><a/>que</l><r>eth<b/>que<s n="rel"/><s n="nn"/><s n="m"/><s n="pl"/></r></p></e>
-    <e alt="oci@gascon" r="RL"><p><l><a/>es<b/><a/>que</l><r>eth<b/>que<s n="rel"/><s n="nn"/><s n="m"/><s n="pl"/></r></p></e>
-    <e alt="oci@aran" r="RL"><p><l><a/>eth<b/><a/>que</l><r>eth<b/>que<s n="rel"/><s n="nn"/><s n="m"/><s n="sg"/></r></p></e>
-    <e alt="oci@gascon" r="RL"><p><l><a/>eth<b/><a/>que</l><r>eth<b/>que<s n="rel"/><s n="nn"/><s n="m"/><s n="sg"/></r></p></e>
+    <e alt="oci" r="LR"><p><l>las<b/>que</l><r>lo<b/>que<s n="rel"/><s n="an"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci" r="RL"><p><l>las<b/><a/>que</l><r>lo<b/>que<s n="rel"/><s n="an"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci" r="LR"><p><l>la<b/>que</l><r>lo<b/>que<s n="rel"/><s n="an"/><s n="f"/><s n="sg"/></r></p></e>
+    <e alt="oci" r="RL"><p><l>la<b/><a/>que</l><r>lo<b/>que<s n="rel"/><s n="an"/><s n="f"/><s n="sg"/></r></p></e>
+    <e alt="oci" r="LR"><p><l>los<b/>que</l><r>lo<b/>que<s n="rel"/><s n="an"/><s n="m"/><s n="pl"/></r></p></e>
+    <e alt="oci" r="LR"><p><l>lo<b/>que</l><r>lo<b/>que<s n="rel"/><s n="an"/><s n="m"/><s n="sg"/></r></p></e>
+    <e alt="oci" r="RL"><p><l><a/>los<b/><a/>que</l><r>lo<b/>que<s n="rel"/><s n="an"/><s n="m"/><s n="pl"/></r></p></e>
+    <e alt="oci" r="RL"><p><l><a/>lo<b/><a/>que</l><r>lo<b/>que<s n="rel"/><s n="an"/><s n="m"/><s n="sg"/></r></p></e>
+    <e alt="oci@aran" r="LR"><p><l>es<b/>que</l><r>eth<b/>que<s n="rel"/><s n="an"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci@gascon" r="LR"><p><l>es<b/>que</l><r>eth<b/>que<s n="rel"/><s n="an"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci@aran" r="RL"><p><l><a/>es<b/><a/>que</l><r>eth<b/>que<s n="rel"/><s n="an"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci@gascon" r="RL"><p><l><a/>es<b/><a/>que</l><r>eth<b/>que<s n="rel"/><s n="an"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci@aran" r="LR"><p><l>era<b/>que</l><r>eth<b/>que<s n="rel"/><s n="an"/><s n="f"/><s n="sg"/></r></p></e>
+    <e alt="oci@gascon" r="LR"><p><l>era<b/>que</l><r>eth<b/>que<s n="rel"/><s n="an"/><s n="f"/><s n="sg"/></r></p></e>
+    <e alt="oci@aran" r="RL"><p><l>era<b/><a/>que</l><r>eth<b/>que<s n="rel"/><s n="an"/><s n="f"/><s n="sg"/></r></p></e>
+    <e alt="oci@gascon" r="RL"><p><l>era<b/><a/>que</l><r>eth<b/>que<s n="rel"/><s n="an"/><s n="f"/><s n="sg"/></r></p></e>
+    <e alt="oci@aran" r="LR"><p><l>es<b/>que</l><r>eth<b/>que<s n="rel"/><s n="an"/><s n="m"/><s n="pl"/></r></p></e>
+    <e alt="oci@gascon" r="LR"><p><l>es<b/>que</l><r>eth<b/>que<s n="rel"/><s n="an"/><s n="m"/><s n="pl"/></r></p></e>
+    <e alt="oci@aran" r="LR"><p><l>eth<b/>que</l><r>eth<b/>que<s n="rel"/><s n="an"/><s n="m"/><s n="sg"/></r></p></e>
+    <e alt="oci@gascon" r="LR"><p><l>eth<b/>que</l><r>eth<b/>que<s n="rel"/><s n="an"/><s n="m"/><s n="sg"/></r></p></e>
+    <e alt="oci@aran" r="RL"><p><l><a/>es<b/><a/>que</l><r>eth<b/>que<s n="rel"/><s n="an"/><s n="m"/><s n="pl"/></r></p></e>
+    <e alt="oci@gascon" r="RL"><p><l><a/>es<b/><a/>que</l><r>eth<b/>que<s n="rel"/><s n="an"/><s n="m"/><s n="pl"/></r></p></e>
+    <e alt="oci@aran" r="RL"><p><l><a/>eth<b/><a/>que</l><r>eth<b/>que<s n="rel"/><s n="an"/><s n="m"/><s n="sg"/></r></p></e>
+    <e alt="oci@gascon" r="RL"><p><l><a/>eth<b/><a/>que</l><r>eth<b/>que<s n="rel"/><s n="an"/><s n="m"/><s n="sg"/></r></p></e>
     <e alt="oci" r="RL"><p><l>çò<b/><a/>que</l><r>lo<b/>que<s n="rel"/><s n="nn"/><s n="nt"/></r></p></e>
     <e alt="oci" r="LR"><p><l>çò<b/>que</l><r>lo<b/>que<s n="rel"/><s n="nn"/><s n="nt"/></r></p></e>
     <e alt="oci@aran" r="RL"><p><l>çò<b/><a/>que</l><r>eth<b/>que<s n="rel"/><s n="nn"/><s n="nt"/></r></p></e>
     <e alt="oci@gascon" r="RL"><p><l>çò<b/><a/>que</l><r>eth<b/>que<s n="rel"/><s n="nn"/><s n="nt"/></r></p></e>
     <e alt="oci@aran" r="LR"><p><l>çò<b/>que</l><r>eth<b/>que<s n="rel"/><s n="nn"/><s n="nt"/></r></p></e>
     <e alt="oci@gascon" r="LR"><p><l>çò<b/>que</l><r>eth<b/>que<s n="rel"/><s n="nn"/><s n="nt"/></r></p></e>
+    </pardef>
+
+        <pardef n="aquel/_que__rel">
+    <e alt="oci@aran"><p><l>es<b/>que</l><r><b/>que<s n="rel"/><s n="an"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci@gascon"><p><l>es<b/>que</l><r><b/>que<s n="rel"/><s n="an"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci"><p><l>as<b/>que</l><r><b/>que<s n="rel"/><s n="an"/><s n="f"/><s n="pl"/></r></p></e>
+      <e><p><l>a<b/>que</l><r><b/>que<s n="rel"/><s n="an"/><s n="f"/><s n="sg"/></r></p></e>
+    <e alt="oci@aran"><p><l>i<b/>que</l><r><b/>que<s n="rel"/><s n="an"/><s n="m"/><s n="pl"/></r></p></e>
+    <e alt="oci@gascon"><p><l>i<b/>que</l><r><b/>que<s n="rel"/><s n="an"/><s n="m"/><s n="pl"/></r></p></e>
+    <e alt="oci"><p><l>es<b/>que</l><r><b/>que<s n="rel"/><s n="an"/><s n="m"/><s n="pl"/></r></p></e>
+      <e r="LR"><p><l>s<b/>que</l><r><b/>que<s n="rel"/><s n="an"/><s n="m"/><s n="pl"/></r></p></e>
+      <e r="LR"><p><l>is<b/>que</l><r><b/>que<s n="rel"/><s n="an"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l><b/>que</l><r><b/>que<s n="rel"/><s n="an"/><s n="m"/><s n="sg"/></r></p></e>
+    </pardef>
+
+        <pardef n="aquel/_qui__rel">
+    <e alt="oci@aran"><p><l>es<b/>qui</l><r><b/>qui<s n="rel"/><s n="nn"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci@gascon"><p><l>es<b/>qui</l><r><b/>qui<s n="rel"/><s n="nn"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci"><p><l>as<b/>qui</l><r><b/>qui<s n="rel"/><s n="nn"/><s n="f"/><s n="pl"/></r></p></e>
+      <e><p><l>a<b/>qui</l><r><b/>qui<s n="rel"/><s n="nn"/><s n="f"/><s n="sg"/></r></p></e>
+    <e alt="oci@aran"><p><l>i<b/>qui</l><r><b/>qui<s n="rel"/><s n="nn"/><s n="m"/><s n="pl"/></r></p></e>
+    <e alt="oci@gascon"><p><l>i<b/>qui</l><r><b/>qui<s n="rel"/><s n="nn"/><s n="m"/><s n="pl"/></r></p></e>
+    <e alt="oci"><p><l>es<b/>qui</l><r><b/>qui<s n="rel"/><s n="nn"/><s n="m"/><s n="pl"/></r></p></e>
+      <e r="LR"><p><l>s<b/>qui</l><r><b/>qui<s n="rel"/><s n="nn"/><s n="m"/><s n="pl"/></r></p></e>
+      <e r="LR"><p><l>is<b/>qui</l><r><b/>qui<s n="rel"/><s n="nn"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l><b/>qui</l><r><b/>qui<s n="rel"/><s n="nn"/><s n="m"/><s n="sg"/></r></p></e>
     </pardef>
 
         <pardef n="/lo_qual__rel">
@@ -14422,37 +14448,37 @@
       <e><p><l>iràs</l><r>ire<s n="vblex"/><s n="fti"/><s n="p2"/><s n="sg"/></r></p></e>
       <e><p><l>iràn</l><r>ire<s n="vblex"/><s n="fti"/><s n="p3"/><s n="pl"/></r></p></e>
       <e><p><l>irà</l><r>ire<s n="vblex"/><s n="fti"/><s n="p3"/><s n="sg"/></r></p></e>
-      <e><p><l>sent</l><r>ire<s n="vblex"/><s n="ger"/></r></p></e>
-      <e><p><l>sent</l><r>ire<s n="vblex"/><s n="ger"/><j/></r></p><par n="S__cantant"/></e>
-      <e><p><l>gam</l><r>ire<s n="vblex"/><s n="imp"/><s n="p1"/><s n="pl"/></r></p></e>
-      <e><p><l>gam</l><r>ire<s n="vblex"/><s n="imp"/><s n="p1"/><s n="pl"/><j/></r></p><par n="S__cantem"/></e>
-      <e><p><l>sètz</l><r>ire<s n="vblex"/><s n="imp"/><s n="p2"/><s n="pl"/></r></p></e>
-      <e><p><l>sètz</l><r>ire<s n="vblex"/><s n="imp"/><s n="p2"/><s n="pl"/><j/></r></p><par n="S__cantem"/></e>
+      <e><p><l>isent</l><r>ire<s n="vblex"/><s n="ger"/></r></p></e>
+      <e><p><l>isent</l><r>ire<s n="vblex"/><s n="ger"/><j/></r></p><par n="S__cantant"/></e>
+      <e><p><l>igam</l><r>ire<s n="vblex"/><s n="imp"/><s n="p1"/><s n="pl"/></r></p></e>
+      <e><p><l>igam</l><r>ire<s n="vblex"/><s n="imp"/><s n="p1"/><s n="pl"/><j/></r></p><par n="S__cantem"/></e>
+      <e><p><l>isètz</l><r>ire<s n="vblex"/><s n="imp"/><s n="p2"/><s n="pl"/></r></p></e>
+      <e><p><l>isètz</l><r>ire<s n="vblex"/><s n="imp"/><s n="p2"/><s n="pl"/><j/></r></p><par n="S__cantem"/></e>
       <e><p><l>ís</l><r>ire<s n="vblex"/><s n="imp"/><s n="p2"/><s n="sg"/></r></p></e>
       <e><p><l>ís</l><r>ire<s n="vblex"/><s n="imp"/><s n="p2"/><s n="sg"/><j/></r></p><par n="S__sigues"/></e>
       <e><p><l>ire</l><r>ire<s n="vblex"/><s n="inf"/></r></p></e>
       <e><p><l>ire</l><r>ire<s n="vblex"/><s n="inf"/><j/></r></p><par n="S__sigues"/></e>
-      <e><p><l>siam</l><r>ire<s n="vblex"/><s n="pii"/><s n="p1"/><s n="pl"/></r></p></e>
-      <e><p><l>siái</l><r>ire<s n="vblex"/><s n="pii"/><s n="p1"/><s n="sg"/></r></p></e>
-      <e><p><l>siatz</l><r>ire<s n="vblex"/><s n="pii"/><s n="p2"/><s n="pl"/></r></p></e>
-      <e><p><l>siáis</l><r>ire<s n="vblex"/><s n="pii"/><s n="p2"/><s n="sg"/></r></p></e>
-      <e><p><l>sián</l><r>ire<s n="vblex"/><s n="pii"/><s n="p3"/><s n="pl"/></r></p></e>
-      <e><p><l>siá</l><r>ire<s n="vblex"/><s n="pii"/><s n="p3"/><s n="sg"/></r></p></e>
-      <e><p><l>guèrem</l><r>ire<s n="vblex"/><s n="ifi"/><s n="p1"/><s n="pl"/></r></p></e>
-      <e><p><l>guèri</l><r>ire<s n="vblex"/><s n="ifi"/><s n="p1"/><s n="sg"/></r></p></e>
-      <e><p><l>guèretz</l><r>ire<s n="vblex"/><s n="ifi"/><s n="p2"/><s n="pl"/></r></p></e>
-      <e><p><l>guères</l><r>ire<s n="vblex"/><s n="ifi"/><s n="p2"/><s n="sg"/></r></p></e>
-      <e><p><l>guèron</l><r>ire<s n="vblex"/><s n="ifi"/><s n="p3"/><s n="pl"/></r></p></e>
-      <e><p><l>guèt</l><r>ire<s n="vblex"/><s n="ifi"/><s n="p3"/><s n="sg"/></r></p></e>
-      <e><p><l>guèssem</l><r>ire<s n="vblex"/><s n="pis"/><s n="p1"/><s n="pl"/></r></p></e>
-      <e><p><l>guèsse</l><r>ire<s n="vblex"/><s n="pis"/><s n="p1"/><s n="sg"/></r></p></e>
-      <e r="LR"><p><l>guèssi</l><r>ire<s n="vblex"/><s n="pis"/><s n="p1"/><s n="sg"/></r></p></e>
-      <e><p><l>guèssetz</l><r>ire<s n="vblex"/><s n="pis"/><s n="p2"/><s n="pl"/></r></p></e>
-      <e><p><l>guèsses</l><r>ire<s n="vblex"/><s n="pis"/><s n="p2"/><s n="sg"/></r></p></e>
-      <e><p><l>guèsson</l><r>ire<s n="vblex"/><s n="pis"/><s n="p3"/><s n="pl"/></r></p></e>
-      <e><p><l>guèsse</l><r>ire<s n="vblex"/><s n="pis"/><s n="p3"/><s n="sg"/></r></p></e>
-      <e><p><l>das</l><r>ire<s n="vblex"/><s n="pp"/><s n="f"/><s n="pl"/></r></p></e>
-      <e><p><l>da</l><r>ire<s n="vblex"/><s n="pp"/><s n="f"/><s n="sg"/></r></p></e>
+      <e><p><l>isiam</l><r>ire<s n="vblex"/><s n="pii"/><s n="p1"/><s n="pl"/></r></p></e>
+      <e><p><l>isiái</l><r>ire<s n="vblex"/><s n="pii"/><s n="p1"/><s n="sg"/></r></p></e>
+      <e><p><l>isiatz</l><r>ire<s n="vblex"/><s n="pii"/><s n="p2"/><s n="pl"/></r></p></e>
+      <e><p><l>isiáis</l><r>ire<s n="vblex"/><s n="pii"/><s n="p2"/><s n="sg"/></r></p></e>
+      <e><p><l>isián</l><r>ire<s n="vblex"/><s n="pii"/><s n="p3"/><s n="pl"/></r></p></e>
+      <e><p><l>isiá</l><r>ire<s n="vblex"/><s n="pii"/><s n="p3"/><s n="sg"/></r></p></e>
+      <e><p><l>iguèrem</l><r>ire<s n="vblex"/><s n="ifi"/><s n="p1"/><s n="pl"/></r></p></e>
+      <e><p><l>iguèri</l><r>ire<s n="vblex"/><s n="ifi"/><s n="p1"/><s n="sg"/></r></p></e>
+      <e><p><l>iguèretz</l><r>ire<s n="vblex"/><s n="ifi"/><s n="p2"/><s n="pl"/></r></p></e>
+      <e><p><l>iguères</l><r>ire<s n="vblex"/><s n="ifi"/><s n="p2"/><s n="sg"/></r></p></e>
+      <e><p><l>iguèron</l><r>ire<s n="vblex"/><s n="ifi"/><s n="p3"/><s n="pl"/></r></p></e>
+      <e><p><l>iguèt</l><r>ire<s n="vblex"/><s n="ifi"/><s n="p3"/><s n="sg"/></r></p></e>
+      <e><p><l>iguèssem</l><r>ire<s n="vblex"/><s n="pis"/><s n="p1"/><s n="pl"/></r></p></e>
+      <e><p><l>iguèsse</l><r>ire<s n="vblex"/><s n="pis"/><s n="p1"/><s n="sg"/></r></p></e>
+      <e r="LR"><p><l>iguèssi</l><r>ire<s n="vblex"/><s n="pis"/><s n="p1"/><s n="sg"/></r></p></e>
+      <e><p><l>iguèssetz</l><r>ire<s n="vblex"/><s n="pis"/><s n="p2"/><s n="pl"/></r></p></e>
+      <e><p><l>iguèsses</l><r>ire<s n="vblex"/><s n="pis"/><s n="p2"/><s n="sg"/></r></p></e>
+      <e><p><l>iguèsson</l><r>ire<s n="vblex"/><s n="pis"/><s n="p3"/><s n="pl"/></r></p></e>
+      <e><p><l>iguèsse</l><r>ire<s n="vblex"/><s n="pis"/><s n="p3"/><s n="sg"/></r></p></e>
+      <e><p><l>idas</l><r>ire<s n="vblex"/><s n="pp"/><s n="f"/><s n="pl"/></r></p></e>
+      <e><p><l>ida</l><r>ire<s n="vblex"/><s n="pp"/><s n="f"/><s n="sg"/></r></p></e>
       <e><p><l>its</l><r>ire<s n="vblex"/><s n="pp"/><s n="m"/><s n="pl"/></r></p></e>
       <e><p><l>it</l><r>ire<s n="vblex"/><s n="pp"/><s n="m"/><s n="sg"/></r></p></e>
       <e><p><l>isèm</l><r>ire<s n="vblex"/><s n="pri"/><s n="p1"/><s n="pl"/></r></p></e>
@@ -28889,7 +28915,6 @@
       <e r="LR" lm="a comptar de" alt="oci@gascon"><i>a<b/>comptar<b/></i><par n="/de__pr"/></e>
     <e lm="a comptar de" alt="oci"><i>a<b/>comptar<b/></i><par n="/de__pr"/></e>
     <e lm="tre"><i>tre</i><par n="a__pr"/></e>
-    <e lm="tre que"><i>tre<b/>que</i><par n="donc__cnjadv"/></e>
     <e lm="a despiet de" r="LR"><i>a<b/>despiet<b/></i><par n="/de__pr"/></e>
     <e lm="entà per'mor de" alt="oci" r="LR"><i>entà<b/>per'mor<b/></i><par n="/de__pr"/></e>
     <e lm="entà per'mor de" alt="oci@aran" r="LR"><i>entà<b/>per'mor<b/></i><par n="/de__pr"/></e>
@@ -29435,6 +29460,8 @@
     <e lm="eth quau"><par n="/eth_quau__rel"/></e>
     <e lm="lo que"><par n="/lo_que__rel"/></e>
     <e lm="lo qui"><par n="/lo_qui__rel"/></e>
+    <e lm="aquel que"><i>aquel</i><par n="aquel/_que__rel"/></e>
+    <e lm="aquel qui"><i>aquel</i><par n="aquel/_qui__rel"/></e>
     <e lm="per'mor que" r="RL"><p><l>per'mor<b/><a/>que</l><r>per'mor<b/>que</r></p><par n="que__rel"/></e>
     <e lm="pr'amor que" r="RL"><p><l>pr'amor<b/><a/>que</l><r>pr'amor<b/>que</r></p><par n="donc__cnjadv"/></e>
     <e lm="cada còp que" r="LR" alt="oci@aran"><i>cada<b/>còp<b/>que</i><par n="donc__cnjadv"/></e>
@@ -29454,6 +29481,8 @@
     <e lm="malgrat que" r="LR" alt="oci@gascon"><i>malgrat<b/>que</i><par n="donc__cnjadv"/></e>
     <e lm="malgrat que" r="LR" alt="oci"><i>malgrat<b/>que</i><par n="donc__cnjadv"/></e>
     <e lm="malgrat que" r="RL" alt="oci"><p><l>malgrat<b/><a/>que</l><r>malgrat<b/>que</r></p><par n="donc__cnjadv"/></e>
+    <e lm="tre que" r="LR"><i>tre<b/>que</i><par n="donc__cnjadv"/></e>
+    <e lm="tre que" r="RL"><p><l>tre<b/><a/>que</l><r>tre<b/>que</r></p><par n="donc__cnjadv"/></e>
     <e lm="per tant que" r="LR" alt="oci@aran"><i>per<b/>tant<b/>que</i><par n="donc__cnjadv"/></e>
     <e lm="per tant que" r="LR" alt="oci@gascon"><i>per<b/>tant<b/>que</i><par n="donc__cnjadv"/></e>
     <e lm="per tant que" r="LR" alt="oci"><i>per<b/>tant<b/>que</i><par n="donc__cnjadv"/></e>
@@ -45749,6 +45778,7 @@
     <e lm="maugrat que" r="LR" alt="oci@aran"><p><l>maugrat<b/>qu'</l><r>maugrat<b/>que</r></p><par n="donc__cnjadv"/></e>
     <e lm="maugrat que" r="LR" alt="oci@gascon"><p><l>maugrat<b/>qu'</l><r>maugrat<b/>que</r></p><par n="donc__cnjadv"/></e>
     <e lm="malgrat que" r="LR" alt="oci"><p><l>malgrat<b/>qu'</l><r>malgrat<b/>que</r></p><par n="donc__cnjadv"/></e>
+    <e lm="tre que" r="LR"><p><l>tre<b/>qu'</l><r>tre<b/>que</r></p><par n="donc__cnjadv"/></e>
     <e lm="per tant que" r="LR" alt="oci"><p><l>per<b/>tant<b/>qu'</l><r>per<b/>tant<b/>que</r></p><par n="donc__cnjadv"/></e>
     <e lm="cada viatge que" r="LR" alt="oci@aran"><p><l>cada<b/>viatge<b/>qu'</l><r>cada<b/>viatge<b/>que</r></p><par n="donc__cnjadv"/></e>
     <e lm="cada viatge que" r="LR" alt="oci@gascon"><p><l>cada<b/>viatge<b/>qu'</l><r>cada<b/>viatge<b/>que</r></p><par n="donc__cnjadv"/></e>
