@@ -3645,15 +3645,23 @@
       <e><p><l/><r><s n="n"/><s n="mf"/><s n="sp"/></r></p></e>
     </pardef>
 
+        <pardef n="set__n">
+      <e><p><l/><r><s n="n"/><s n="f"/><s n="sg"/></r></p></e>
+    </pardef>
+
+        <pardef n="epatiti__n">
+      <e><p><l></l><r><s n="n"/><s n="f"/><s n="sp"/></r></p></e>
+    </pardef>
+
+        <pardef n="vacances__n">
+      <e><p><l/><r><s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+    </pardef>
+
         <pardef n="pòrtavo/tz__n">
     <e alt="oci@aran"><p><l>tzes</l><r>tz<s n="n"/><s n="mf"/><s n="pl"/></r></p></e>
     <e alt="oci@gascon"><p><l>tzes</l><r>tz<s n="n"/><s n="mf"/><s n="pl"/></r></p></e>
     <e alt="oci"><p><l>ses</l><r>tz<s n="n"/><s n="mf"/><s n="pl"/></r></p></e>
       <e><p><l>tz</l><r>tz<s n="n"/><s n="mf"/><s n="sg"/></r></p></e>
-    </pardef>
-
-        <pardef n="epatiti__n">
-      <e><p><l></l><r><s n="n"/><s n="f"/><s n="sp"/></r></p></e>
     </pardef>
 
         <pardef n="cro/tz__n">
@@ -3669,10 +3677,6 @@
     <e alt="oci@gascon"><p><l>tzi</l><r>tz<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
     <e alt="oci"><p><l>ses</l><r>tz<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
       <e><p><l>tz</l><r>tz<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
-    </pardef>
-
-        <pardef n="vacances__n">
-      <e><p><l/><r><s n="n"/><s n="f"/><s n="pl"/></r></p></e>
     </pardef>
 
         <pardef n="mes__n">
@@ -18202,10 +18206,12 @@
       <e r="LR" lm="perfièch" alt="oci@aran"><i>perfièch</i><par n="content__adj"/></e>
       <e r="LR" lm="perfièch" alt="oci@gascon"><i>perfièch</i><par n="content__adj"/></e>
     <e lm="perfièch" alt="oci"><i>perfièch</i><par n="content__adj"/></e>
+    <e lm="perfèit" r="LR"><i>perfèit</i><par n="content__adj"/></e>
     <e lm="perfièit" r="LR"><i>perfièit</i><par n="content__adj"/></e>
     <e lm="imperfècte"><i>imperfèct</i><par n="ampl/e__adj"/></e>
-    <e lm="imperfièch" r="LR"><i>imperfièch</i><par n="content__adj"/></e>
-    <e lm="imperfièit" r="LR"><i>imperfièit</i><par n="content__adj"/></e>
+      <e r="LR" lm="imperfièch" alt="oci@aran"><i>imperfièch</i><par n="content__adj"/></e>
+      <e r="LR" lm="imperfièch" alt="oci@gascon"><i>imperfièch</i><par n="content__adj"/></e>
+    <e lm="imperfièch" alt="oci"><i>imperfièch</i><par n="content__adj"/></e>
     <e lm="accidental"><i>accidenta</i><par n="addiciona/l_u__adj"/></e>
     <e lm="mexican"><i>mexican</i><par n="content__adj"/></e>
     <e lm="australian"><i>australian</i><par n="content__adj"/></e>
@@ -26192,7 +26198,7 @@
       <e r="LR" lm="setembre" alt="oci@gascon"><i>setembre</i><par n="conselh__n"/></e>
     <e lm="setembre" alt="oci"><i>setembre</i><par n="conselh__n"/></e>
     <e lm="sèti"><i>sèti</i><par n="conselh__n"/></e>
-    <e lm="set"><i>set</i><par n="part__n"/></e>
+    <e lm="set"><i>set</i><par n="set__n"/></e>
     <e lm="setmana"><i>setman</i><par n="jornad/a__n"/></e>
     <e lm="seu"><i>seu</i><par n="part__n"/></e>
     <e lm="sèuva"><i>sèuv</i><par n="jornad/a__n"/></e>
@@ -42711,8 +42717,8 @@
 <e lm="impar" a="capsot"><i>impar</i><par n="conselh__n"/></e>
 <e lm="imperfach" a="capsot"><i>imperfach</i><par n="mes__n"/></e>
 <e lm="imperfeccion" a="capsot"><i>imperfeccion</i><par n="part__n"/></e>
-<e lm="imperfièch" a="capsot"><i>imperfièch</i><par n="mes__n"/></e>
-<e lm="imperfièit" a="capsot"><i>imperfièit</i><par n="conselh__n"/></e>
+<e lm="imperfièch" a="capsot"><i>imperfièch</i><par n="filosòf__n"/></e>
+<e lm="imperfièit" a="capsot"><i>imperfièit</i><par n="conselhèr__n"/></e>
 <e lm="imperialisme" a="capsot"><i>imperialisme</i><par n="conselh__n"/></e>
 <e lm="impertinent" a="capsot"><i>impertinent</i><par n="conselhèr__n"/></e>
 <e lm="impossibilitat" a="capsot"><i>impossibilitat</i><par n="part__n"/></e>
@@ -44480,9 +44486,6 @@
 <e lm="immòble" a="capsot"><i>immòbl</i><par n="ampl/e__adj"/></e>
 <e lm="immortal" a="capsot"><i>immor</i><par n="addiciona/l_u__adj"/></e>
 <e lm="impar" a="capsot"><i>impar</i><par n="trabalhador__adj"/></e>
-<e lm="imperfèit" a="capsot"><i>imperfèit</i><par n="trabalhador__adj"/></e>
-<e lm="imperfièch" a="capsot"><i>imperfièch</i><par n="divèrs__adj"/></e>
-<e lm="imperfièit" a="capsot"><i>imperfièit</i><par n="trabalhador__adj"/></e>
 <e lm="impròpri" a="capsot"><i>impròpri</i><par n="trabalhador__adj"/></e>
 <e lm="inacabat" a="capsot"><i>inacaba</i><par n="apropria/t__adj"/></e>
 <e lm="inalator" a="capsot"><i>inalat</i><par n="reproduct/or__adj"/></e>
@@ -44715,8 +44718,6 @@
 <e lm="pentós" a="capsot"><i>pent</i><par n="perilh/ós__adj"/></e>
 <e lm="perdeire" a="capsot"><i>perdeir</i><par n="ampl/e__adj"/></e>
 <e lm="peresós" a="capsot"><i>peres</i><par n="perilh/ós__adj"/></e>
-<e lm="perfièch" a="capsot"><i>perfièch</i><par n="divèrs__adj"/></e>
-<e lm="perfièit" a="capsot"><i>perfièit</i><par n="trabalhador__adj"/></e>
 <e lm="pèrs" a="capsot"><i>pèrs</i><par n="divèrs__adj"/></e>
 <e lm="perseverant" a="capsot"><i>perseverant</i><par n="trabalhador__adj"/></e>
 <e lm="pesant" a="capsot"><i>pesant</i><par n="trabalhador__adj"/></e>
@@ -45867,6 +45868,540 @@
 <e lm="militar"><i>militar</i><par n="trabalhador__adj"/></e>
 <e lm="París"><i>Agen</i><par n="Iran__np"/></e>
 <e lm="traversada" a="capsot"><i>traversad</i><par n="jornad/a__n"/></e>
+
+<e lm="acronime" a="capsot"><i>acronime</i><par n="conselh__n"/></e>
+<e lm="acronim" a="capsot"><i>acronim</i><par n="conselh__n"/></e>
+<e lm="actual" a="capsot"><i>actua</i><par n="castè/l__n"/></e>
+<e lm="agregacion" a="capsot"><i>agregacion</i><par n="part__n"/></e>
+<e lm="ainat" a="capsot"><i>aina</i><par n="afilia/t__n"/></e>
+<e lm="alcolisme" a="capsot"><i>alcolisme</i><par n="conselh__n"/></e>
+<e lm="alcoolisme" a="capsot"><i>alcoolisme</i><par n="conselh__n"/></e>
+<e lm="entorn" a="capsot"><i>entorn</i><par n="conselh__n"/></e>
+<e lm="alèrta" a="capsot"><i>alèrt</i><par n="jornad/a__n"/></e>
+<e lm="algoritme" a="capsot"><i>algoritme</i><par n="conselh__n"/></e>
+<e lm="aliat" a="capsot"><i>alia</i><par n="afilia/t__n"/></e>
+<e lm="aligança" a="capsot"><i>aligan</i><par n="seden/ça__n"/></e>
+<e lm="aligat" a="capsot"><i>aliga</i><par n="afilia/t__n"/></e>
+<e lm="AMC" a="capsot"><i>AMC</i><par n="personau__n"/></e>
+<e lm="amplitud" a="capsot"><i>amplitud</i><par n="part__n"/></e>
+<e lm="ancoratge" a="capsot"><i>ancoratge</i><par n="conselh__n"/></e>
+<e lm="anglofòn" a="capsot"><i>anglofòn</i><par n="conselhèr__n"/></e>
+<e lm="annèxa" a="capsot"><i>annèx</i><par n="jornad/a__n"/></e>
+<e lm="annexion" a="capsot"><i>annexion</i><par n="part__n"/></e>
+<e lm="anonime" a="capsot"><i>anonime</i><par n="conselh__n"/></e>
+<e lm="anonim" a="capsot"><i>anonim</i><par n="conselh__n"/></e>
+<e lm="antic" a="capsot" alt="aran"><i>antic</i><par n="conselh__n"/></e>
+<e lm="antic" a="capsot" alt="oci" r="LR"><i>antic</i><par n="conselh__n"/></e>
+<e lm="antic" a="capsot" alt="gascon" r="LR"><i>antic</i><par n="conselh__n"/></e>
+<e lm="anticomunista" a="capsot"><i>anticomunist</i><par n="guardi/a__n"/></e>
+<e lm="antroponime" a="capsot"><i>antroponime</i><par n="conselh__n"/></e>
+<e lm="antroponim" a="capsot"><i>antroponim</i><par n="conselh__n"/></e>
+<e lm="apogèu" a="capsot"><i>apogèu</i><par n="conselh__n"/></e>
+<e lm="apòrt" a="capsot"><i>apòrt</i><par n="conselh__n"/></e>
+<e lm="aprendís" a="capsot"><i>aprend</i><par n="mandad/ís__n"/></e>
+<e lm="aprovesiment" a="capsot"><i>aprovesiment</i><par n="conselh__n"/></e>
+<e lm="archius" a="capsot"><i>archius</i><par n="entorns__n"/></e>
+<e lm="aristocracia" a="capsot"><i>aristocraci</i><par n="jornad/a__n"/></e>
+<e lm="armadura" a="capsot"><i>armadur</i><par n="jornad/a__n"/></e>
+<e lm="armatura" a="capsot"><i>armatur</i><par n="jornad/a__n"/></e>
+<e lm="armistici" a="capsot"><i>armistici</i><par n="conselh__n"/></e>
+<e lm="arqueològ" a="capsot"><i>arqueològ</i><par n="dramaturg__n"/></e>
+<e lm="arribada" a="capsot"><i>arribad</i><par n="jornad/a__n"/></e>
+<e lm="artèria" a="capsot"><i>artèri</i><par n="jornad/a__n"/></e>
+<e lm="artesan" a="capsot"><i>artesan</i><par n="conselhèr__n"/></e>
+<e lm="artifici" a="capsot"><i>artifici</i><par n="conselh__n"/></e>
+<e lm="artilhariá" a="capsot"><i>artilhariá</i><par n="conselh__n"/></e>
+<e lm="ascension" a="capsot"><i>ascension</i><par n="conselh__n"/></e>
+<e lm="astronauta" a="capsot"><i>astronaut</i><par n="guardi/a__n"/></e>
+<e lm="astronòme" a="capsot"><i>astronòm</i><par n="ministr/e__n"/></e>
+<e lm="astronòm" a="capsot"><i>astronòm</i><par n="conselhèr__n"/></e>
+<e lm="ataca" a="capsot"><i>ata</i><par n="va/ca__n"/></e>
+<e lm="atlèta" a="capsot"><i>atlèt</i><par n="guardi/a__n"/></e>
+<e lm="atribut" a="capsot"><i>atribut</i><par n="conselh__n"/></e>
+<e lm="autoctòn" a="capsot"><i>autoctòn</i><par n="conselhèr__n"/></e>
+<e lm="automobilista" a="capsot"><i>automobilist</i><par n="guardi/a__n"/></e>
+<e lm="autonòme" a="capsot"><i>autonòm</i><par n="ministr/e__n"/></e>
+<e lm="autonomista" a="capsot"><i>autonomist</i><par n="guardi/a__n"/></e>
+<e lm="autonòm" a="capsot" alt="aran"><i>autonòm</i><par n="conselh__n"/></e>
+<e lm="autonòm" a="capsot" alt="oci" r="LR"><i>autonòm</i><par n="conselh__n"/></e>
+<e lm="autonòm" a="capsot" alt="gascon" r="LR"><i>autonòm</i><par n="conselh__n"/></e>
+<e lm="auxiliar" a="capsot"><i>auxiliar</i><par n="conselhèr__n"/></e>
+<e lm="avança" a="capsot"><i>avan</i><par n="seden/ça__n"/></e>
+<e lm="avantatge" a="capsot"><i>avantatge</i><par n="conselh__n"/></e>
+<e lm="balon" a="capsot"><i>balon</i><par n="conselh__n"/></e>
+<e lm="barbar" a="capsot"><i>barbar</i><par n="conselhèr__n"/></e>
+<e lm="bassista" a="capsot"><i>bassist</i><par n="guardi/a__n"/></e>
+<e lm="bastion" a="capsot"><i>bastion</i><par n="conselh__n"/></e>
+<e lm="bilanç" a="capsot"><i>bilan</i><par n="tra/ç__n"/></e>
+<e lm="bit" a="capsot"><i>bit</i><par n="conselh__n"/></e>
+<e lm="blason" a="capsot"><i>blason</i><par n="conselh__n"/></e>
+<e lm="blòg" a="capsot"><i>blòg</i><par n="conselh__n"/></e>
+<e lm="bodista" a="capsot"><i>bodist</i><par n="guardi/a__n"/></e>
+<e lm="bombardièr" a="capsot"><i>bombardièr</i><par n="conselh__n"/></e>
+<e lm="bonaür" a="capsot"><i>bonaür</i><par n="conselh__n"/></e>
+<e lm="bonur" a="capsot"><i>bonur</i><par n="conselh__n"/></e>
+<e lm="boston" a="capsot"><i>boston</i><par n="conselh__n"/></e>
+<e lm="botanista" a="capsot"><i>botanist</i><par n="guardi/a__n"/></e>
+<e lm="breton" a="capsot"><i>breton</i><par n="conselh__n"/></e>
+<e lm="brin" a="capsot"><i>brin</i><par n="conselh__n"/></e>
+<e lm="britanic" a="capsot"><i>britani</i><par n="sindi/c__n"/></e>
+<e lm="brodariá" a="capsot"><i>brodariá</i><par n="part__n"/></e>
+<e lm="bulgar" a="capsot"><i>bulgar</i><par n="conselhèr__n"/></e>
+<e lm="cairat" a="capsot"><i>cairat</i><par n="conselh__n"/></e>
+<e lm="calibre" a="capsot"><i>calibre</i><par n="conselh__n"/></e>
+<e lm="canonge" a="capsot"><i>canonge</i><par n="conselh__n"/></e>
+<e lm="cantaire" a="capsot"><i>cantair</i><par n="ministr/e__n"/></e>
+<e lm="cantina" a="capsot"><i>cantin</i><par n="jornad/a__n"/></e>
+<e lm="captivitat" a="capsot"><i>captivitat</i><par n="part__n"/></e>
+<e lm="catalisi" a="capsot"><i>catalisi</i><par n="part__n"/></e>
+<e lm="catolic" a="capsot"><i>catoli</i><par n="sindi/c__n"/></e>
+<e lm="cauquilha" a="capsot"><i>cauquilh</i><par n="jornad/a__n"/></e>
+<e lm="causalitat" a="capsot"><i>causalitat</i><par n="part__n"/></e>
+<e lm="cavitat" a="capsot"><i>cavitat</i><par n="part__n"/></e>
+<e lm="celebritat" a="capsot"><i>celebritat</i><par n="part__n"/></e>
+<e lm="censura" a="capsot"><i>censur</i><par n="jornad/a__n"/></e>
+<e lm="certificat" a="capsot"><i>certificat</i><par n="conselh__n"/></e>
+<e lm="chòc" a="capsot"><i>chò</i><par n="sindi/c__n"/></e>
+<e lm="cilindre" a="capsot"><i>cilindre</i><par n="conselh__n"/></e>
+<e lm="cinic" a="capsot"><i>cini</i><par n="sindi/c__n"/></e>
+<e lm="clan" a="capsot"><i>clan</i><par n="conselh__n"/></e>
+<e lm="clarineta" a="capsot"><i>clarinet</i><par n="jornad/a__n"/></e>
+<e lm="classic" a="capsot"><i>classic</i><par n="conselh__n"/></e>
+<e lm="clergat" a="capsot"><i>clergat</i><par n="conselh__n"/></e>
+<e lm="clientèla" a="capsot"><i>clientèl</i><par n="jornad/a__n"/></e>
+<e lm="clip" a="capsot"><i>clip</i><par n="conselh__n"/></e>
+<e lm="clòr" a="capsot"><i>clòr</i><par n="conselh__n"/></e>
+<e lm="CNRS" a="capsot"><i>CNRS</i><par n="personau__n"/></e>
+<e lm="coeficient" a="capsot"><i>coeficient</i><par n="conselh__n"/></e>
+<e lm="cofret" a="capsot"><i>cofret</i><par n="conselh__n"/></e>
+<e lm="collar" a="capsot"><i>collar</i><par n="conselh__n"/></e>
+<e lm="collècta" a="capsot"><i>collèct</i><par n="jornad/a__n"/></e>
+<e lm="collision" a="capsot"><i>collision</i><par n="part__n"/></e>
+<e lm="combatent" a="capsot"><i>combatent</i><par n="conselhèr__n"/></e>
+<e lm="combinason" a="capsot"><i>combinason</i><par n="part__n"/></e>
+<e lm="comic" a="capsot"><i>comic</i><par n="conselhèr__n"/></e>
+<e lm="compàs" a="capsot"><i>comp</i><par n="trasp/às__n"/></e>
+<e lm="compausanta" a="capsot"><i>compausant</i><par n="jornad/a__n"/></e>
+<e lm="compilacion" a="capsot"><i>compilacion</i><par n="part__n"/></e>
+<e lm="compositor" a="capsot"><i>composit</i><par n="dictat/or__n"/></e>
+<e lm="compression" a="capsot"><i>compression</i><par n="part__n"/></e>
+<e lm="comunicat" a="capsot"><i>comunicat</i><par n="conselh__n"/></e>
+<e lm="comunion" a="capsot"><i>comunion</i><par n="part__n"/></e>
+<e lm="concertista" a="capsot"><i>concertist</i><par n="guardi/a__n"/></e>
+<e lm="concessionari" a="capsot"><i>concession</i><par n="propriet/ari__n"/></e>
+<e lm="concurréncia" a="capsot"><i>concurrénci</i><par n="jornad/a__n"/></e>
+<e lm="conduch" a="capsot"><i>conduch</i><par n="mes__n"/></e>
+<e lm="conduit" a="capsot"><i>conduit</i><par n="conselh__n"/></e>
+<e lm="confiscacion" a="capsot"><i>confiscacion</i><par n="part__n"/></e>
+<e lm="conformacion" a="capsot"><i>conformacion</i><par n="part__n"/></e>
+<e lm="conglomerat" a="capsot"><i>conglomerat</i><par n="conselh__n"/></e>
+<e lm="congregacion" a="capsot"><i>congregacion</i><par n="part__n"/></e>
+<e lm="consecracion" a="capsot"><i>consecracion</i><par n="part__n"/></e>
+<e lm="consèrva" a="capsot"><i>consèrv</i><par n="jornad/a__n"/></e>
+<e lm="consòla" a="capsot"><i>consòl</i><par n="jornad/a__n"/></e>
+<e lm="constellacion" a="capsot"><i>constellacion</i><par n="part__n"/></e>
+<e lm="contingent" a="capsot"><i>contingent</i><par n="conselh__n"/></e>
+<e lm="contravent" a="capsot"><i>contravent</i><par n="conselh__n"/></e>
+<e lm="coproprietari" a="capsot"><i>copropriet</i><par n="propriet/ari__n"/></e>
+<e lm="corista" a="capsot"><i>corist</i><par n="guardi/a__n"/></e>
+<e lm="cratèr" a="capsot"><i>cratèr</i><par n="conselh__n"/></e>
+<e lm="cripta" a="capsot"><i>cript</i><par n="jornad/a__n"/></e>
+<e lm="cristal" a="capsot"><i>crista</i><par n="castè/l__n"/></e>
+<e lm="critic" a="capsot"><i>critic</i><par n="conselhèr__n"/></e>
+<e lm="cròm" a="capsot"><i>cròm</i><par n="conselh__n"/></e>
+<e lm="CSA" a="capsot"><i>CSA</i><par n="personau__n"/></e>
+<e lm="cubisme" a="capsot"><i>cubisme</i><par n="personau__n"/></e>
+<e lm="culte" a="capsot"><i>culte</i><par n="conselh__n"/></e>
+<e lm="cura" a="capsot"><i>cur</i><par n="jornad/a__n"/></e>
+<e lm="dat" a="capsot"><i>dat</i><par n="conselh__n"/></e>
+<e lm="declin" a="capsot"><i>declin</i><par n="conselh__n"/></e>
+<e lm="deriva" a="capsot"><i>deriv</i><par n="jornad/a__n"/></e>
+<e lm="descendéncia" a="capsot"><i>descendénci</i><par n="jornad/a__n"/></e>
+<e lm="desconegut" a="capsot"><i>desconegu</i><par n="afilia/t__n"/></e>
+<e lm="desintegracion" a="capsot"><i>desintegracion</i><par n="part__n"/></e>
+<e lm="destacament" a="capsot"><i>destacament</i><par n="conselh__n"/></e>
+<e lm="destinada" a="capsot"><i>destinad</i><par n="jornad/a__n"/></e>
+<e lm="determinista" a="capsot"><i>determinist</i><par n="guardi/a__n"/></e>
+<e lm="diagrama" a="capsot"><i>diagram</i><par n="di/a__n"/></e>
+<e lm="diamètre" a="capsot"><i>diamètre</i><par n="conselh__n"/></e>
+<e lm="dich" a="capsot"><i>dich</i><par n="mes__n"/></e>
+<e lm="diesèl" a="capsot"><i>diesè</i><par n="castè/l__n"/></e>
+<e lm="diferenciacion" a="capsot"><i>diferenciacion</i><par n="part__n"/></e>
+<e lm="diplomat" a="capsot"><i>diploma</i><par n="afilia/t__n"/></e>
+<e lm="directiva" a="capsot"><i>directiv</i><par n="jornad/a__n"/></e>
+<e lm="discípol" a="capsot"><i>discípo</i><par n="castè/l__n"/></e>
+<e lm="distorsion" a="capsot"><i>distorsion</i><par n="part__n"/></e>
+<e lm="DJ" a="capsot"><i>DJ</i><par n="conselh__n"/></e>
+<e lm="dògma" a="capsot"><i>dògm</i><par n="di/a__n"/></e>
+<e lm="domestic" a="capsot"><i>domesti</i><par n="sindi/c__n"/></e>
+<e lm="drapèu" a="capsot"><i>drapèu</i><par n="conselh__n"/></e>
+<e lm="duc" a="capsot"><i>duc</i><par n="conselh__n"/></e>
+<e lm="duquessa" a="capsot"><i>duquess</i><par n="jornad/a__n"/></e>
+<e lm="ebdomadari" a="capsot"><i>ebdomadari</i><par n="conselh__n"/></e>
+<e lm="ebrèu" a="capsot"><i>ebrè</i><par n="europè/u__n"/></e>
+<e lm="ebrieu" a="capsot"><i>ebrie</i><par n="directi/u__n"/></e>
+<e lm="eclesiastic" a="capsot"><i>eclesiastic</i><par n="conselh__n"/></e>
+<e lm="efectiu" a="capsot"><i>efectiu</i><par n="conselh__n"/></e>
+<e lm="eissida" a="capsot"><i>eissid</i><par n="jornad/a__n"/></e>
+<e lm="electrificacion" a="capsot"><i>electrificacion</i><par n="part__n"/></e>
+<e lm="elegit" a="capsot"><i>elegi</i><par n="afilia/t__n"/></e>
+<e lm="elita" a="capsot"><i>elit</i><par n="jornad/a__n"/></e>
+<e lm="emblèma" a="capsot"><i>emblèm</i><par n="di/a__n"/></e>
+<e lm="emissari" a="capsot"><i>emiss</i><par n="propriet/ari__n"/></e>
+<e lm="engatjament" a="capsot"><i>engatjament</i><par n="conselh__n"/></e>
+<e lm="enjòc" a="capsot"><i>enjòc</i><par n="conselh__n"/></e>
+<e lm="enregistrament" a="capsot"><i>enregistrament</i><par n="conselh__n"/></e>
+<e lm="equivaléncia" a="capsot"><i>equivalénci</i><par n="jornad/a__n"/></e>
+<e lm="equivalent" a="capsot"><i>equivalent</i><par n="conselh__n"/></e>
+<e lm="èra" a="capsot"><i>èr</i><par n="jornad/a__n"/></e>
+<e lm="erupcion" a="capsot"><i>erupcion</i><par n="part__n"/></e>
+<e lm="escapolon" a="capsot"><i>escapolon</i><par n="conselh__n"/></e>
+<e lm="escolar" a="capsot"><i>escolar</i><par n="personau__n"/></e>
+<e lm="escòrta" a="capsot"><i>escòrt</i><par n="jornad/a__n"/></e>
+<e lm="escriba" a="capsot"><i>escrib</i><par n="di/a__n"/></e>
+<e lm="escrupul" a="capsot"><i>escrupu</i><par n="castè/l__n"/></e>
+<e lm="eslau" a="capsot"><i>esla</i><par n="directi/u__n"/></e>
+<e lm="especificacion" a="capsot"><i>especificacion</i><par n="part__n"/></e>
+<e lm="espèra" a="capsot"><i>espèr</i><par n="jornad/a__n"/></e>
+<e lm="espèr" a="capsot"><i>espèr</i><par n="conselh__n"/></e>
+<e lm="esquadra" a="capsot"><i>esquadr</i><par n="jornad/a__n"/></e>
+<e lm="esquadron" a="capsot"><i>esquadron</i><par n="conselh__n"/></e>
+<e lm="estable" a="capsot"><i>estable</i><par n="conselh__n"/></e>
+<e lm="estacament" a="capsot"><i>estacament</i><par n="conselh__n"/></e>
+<e lm="estagi" a="capsot"><i>estagi</i><par n="conselh__n"/></e>
+<e lm="estagnacion" a="capsot"><i>estagnacion</i><par n="part__n"/></e>
+<e lm="estereotipe" a="capsot"><i>estereotipe</i><par n="conselh__n"/></e>
+<e lm="estrangièr" a="capsot"><i>estrangiè</i><par n="presoniè/r__n"/></e>
+<e lm="estrata" a="capsot"><i>estrat</i><par n="jornad/a__n"/></e>
+<e lm="evasion" a="capsot"><i>evasion</i><par n="part__n"/></e>
+<e lm="evèrs" a="capsot"><i>evèrs</i><par n="mes__n"/></e>
+<e lm="excentricitat" a="capsot"><i>excentricitat</i><par n="part__n"/></e>
+<e lm="executiu" a="capsot"><i>executiu</i><par n="conselh__n"/></e>
+<e lm="èx" a="capsot"><i>èx</i><par n="mes__n"/></e>
+<e lm="exploracion" a="capsot"><i>exploracion</i><par n="part__n"/></e>
+<e lm="exterior" a="capsot"><i>exterior</i><par n="conselh__n"/></e>
+<e lm="extraccion" a="capsot"><i>extraccion</i><par n="part__n"/></e>
+<e lm="extremitat" a="capsot"><i>extremitat</i><par n="part__n"/></e>
+<e lm="faissista" a="capsot"><i>faissist</i><par n="guardi/a__n"/></e>
+<e lm="fascista" a="capsot"><i>fascist</i><par n="guardi/a__n"/></e>
+<e lm="FDJ" a="capsot"><i>FDJ</i><par n="BBC__n"/></e>
+<e lm="feminista" a="capsot"><i>feminist</i><par n="guardi/a__n"/></e>
+<e lm="fial" a="capsot"><i>fia</i><par n="castè/l__n"/></e>
+<e lm="fidèl" a="capsot"><i>fidè</i><par n="espanhò/l__n"/></e>
+<e lm="filiala" a="capsot"><i>filial</i><par n="jornad/a__n"/></e>
+<e lm="finala" a="capsot"><i>final</i><par n="jornad/a__n"/></e>
+<e lm="finalista" a="capsot"><i>finalist</i><par n="guardi/a__n"/></e>
+<e lm="finança" a="capsot"><i>finan</i><par n="seden/ça__n"/></e>
+<e lm="fiscalitat" a="capsot"><i>fiscalitat</i><par n="part__n"/></e>
+<e lm="fisician" a="capsot"><i>fisician</i><par n="conselhèr__n"/></e>
+<e lm="fix" a="capsot"><i>fix</i><par n="mes__n"/></e>
+<e lm="flècha" a="capsot"><i>flèch</i><par n="jornad/a__n"/></e>
+<e lm="FN" a="capsot"><i>FN</i><par n="personau__n"/></e>
+<e lm="fonta" a="capsot"><i>font</i><par n="jornad/a__n"/></e>
+<e lm="format" a="capsot"><i>format</i><par n="conselh__n"/></e>
+<e lm="fortificacion" a="capsot"><i>fortificacion</i><par n="part__n"/></e>
+<e lm="fosc" a="capsot"><i>fos</i><par n="ris/c__n"/></e>
+<e lm="fotograf" a="capsot"><i>fotograf</i><par n="filosòf__n"/></e>
+<e lm="francofonia" a="capsot"><i>francofoni</i><par n="jornad/a__n"/></e>
+<e lm="fregata" a="capsot"><i>fregat</i><par n="jornad/a__n"/></e>
+<e lm="frequentacion" a="capsot"><i>frequentacion</i><par n="part__n"/></e>
+<e lm="fuselatge" a="capsot"><i>fuselatge</i><par n="conselh__n"/></e>
+<e lm="gang" a="capsot"><i>gang</i><par n="conselh__n"/></e>
+<e lm="gara" a="capsot"><i>gar</i><par n="jornad/a__n"/></e>
+<e lm="gardian" a="capsot"><i>gardian</i><par n="conselhèr__n"/></e>
+<e lm="gendarma" a="capsot"><i>gendarm</i><par n="guardi/a__n"/></e>
+<e lm="gendarmariá" a="capsot"><i>gendarmariá</i><par n="part__n"/></e>
+<e lm="geograf" a="capsot"><i>geograf</i><par n="filosòf__n"/></e>
+<e lm="gestacion" a="capsot"><i>gestacion</i><par n="part__n"/></e>
+<e lm="gestionari" a="capsot"><i>gestion</i><par n="propriet/ari__n"/></e>
+<e lm="gropament" a="capsot"><i>gropament</i><par n="conselh__n"/></e>
+<e lm="guilhotina" a="capsot"><i>guilhotin</i><par n="jornad/a__n"/></e>
+<e lm="igièna" a="capsot"><i>igièn</i><par n="jornad/a__n"/></e>
+<e lm="image" a="capsot"><i>image</i><par n="conselh__n"/></e>
+<e lm="imatge`" a="capsot"><i>imatge`</i><par n="conselh__n"/></e>
+<e lm="imatjariá" a="capsot"><i>imatjariá</i><par n="part__n"/></e>
+<e lm="imperatiu" a="capsot"><i>imperatiu</i><par n="conselh__n"/></e>
+<e lm="imperialista" a="capsot"><i>imperialist</i><par n="guardi/a__n"/></e>
+<e lm="impulsion" a="capsot"><i>impulsion</i><par n="part__n"/></e>
+<e lm="incarceracion" a="capsot"><i>incarceracion</i><par n="part__n"/></e>
+<e lm="incitacion" a="capsot"><i>incitacion</i><par n="part__n"/></e>
+<e lm="inclinason" a="capsot"><i>inclinason</i><par n="conselh__n"/></e>
+<e lm="inconvenient" a="capsot"><i>inconvenient</i><par n="conselh__n"/></e>
+<e lm="indigèn" a="capsot"><i>indigèn</i><par n="conselhèr__n"/></e>
+<e lm="industrial" a="capsot"><i>industria</i><par n="espanhò/l__n"/></e>
+<e lm="infinitat" a="capsot"><i>infinitat</i><par n="part__n"/></e>
+<e lm="ingestion" a="capsot"><i>ingestion</i><par n="part__n"/></e>
+<e lm="institutor" a="capsot"><i>institut</i><par n="dictat/or__n"/></e>
+<e lm="instructor" a="capsot"><i>instructo</i><par n="operado/r__n"/></e>
+<e lm="intellectual" a="capsot"><i>intellectua</i><par n="espanhò/l__n"/></e>
+<e lm="intendéncia" a="capsot"><i>intendénci</i><par n="jornad/a__n"/></e>
+<e lm="intendent" a="capsot"><i>intendent</i><par n="conselhèr__n"/></e>
+<e lm="interfàcia" a="capsot"><i>interfàci</i><par n="jornad/a__n"/></e>
+<e lm="interior" a="capsot"><i>interior</i><par n="conselh__n"/></e>
+<e lm="internament" a="capsot"><i>internament</i><par n="conselh__n"/></e>
+<e lm="interseccion" a="capsot"><i>interseccion</i><par n="part__n"/></e>
+<e lm="intime" a="capsot"><i>intim</i><par n="ministr/e__n"/></e>
+<e lm="intim" a="capsot"><i>intim</i><par n="conselhèr__n"/></e>
+<e lm="intoxicacion" a="capsot"><i>intoxicacion</i><par n="part__n"/></e>
+<e lm="investiment" a="capsot"><i>investiment</i><par n="conselh__n"/></e>
+<e lm="ion" a="capsot"><i>ion</i><par n="conselh__n"/></e>
+<e lm="ipermercat" a="capsot"><i>ipermercat</i><par n="conselh__n"/></e>
+<e lm="jaguar" a="capsot"><i>jaguar</i><par n="conselh__n"/></e>
+<e lm="jet" a="capsot"><i>jet</i><par n="conselh__n"/></e>
+<e lm="joncion" a="capsot"><i>joncion</i><par n="part__n"/></e>
+<e lm="judo" a="capsot"><i>judo</i><par n="personau__n"/></e>
+<e lm="just" a="capsot"><i>just</i><par n="filosòf__n"/></e>
+<e lm="lançaire" a="capsot"><i>lançair</i><par n="ministr/e__n"/></e>
+<e lm="larva" a="capsot"><i>larv</i><par n="jornad/a__n"/></e>
+<e lm="legir" a="capsot"><i>legir</i><par n="conselh__n"/></e>
+<e lm="legitim" a="capsot"><i>legitim</i><par n="conselh__n"/></e>
+<e lm="lepidoptèr" a="capsot"><i>lepidoptèr</i><par n="conselh__n"/></e>
+<e lm="liberacion" a="capsot"><i>liberacion</i><par n="part__n"/></e>
+<e lm="litoral" a="capsot"><i>litora</i><par n="castè/l__n"/></e>
+<e lm="locomotiva" a="capsot"><i>locomotiv</i><par n="jornad/a__n"/></e>
+<e lm="lògo" a="capsot"><i>lògo</i><par n="conselh__n"/></e>
+<e lm="luòctenent" a="capsot"><i>luòctenent</i><par n="conselh__n"/></e>
+<e lm="lustre" a="capsot"><i>lustre</i><par n="conselh__n"/></e>
+<e lm="madrigal" a="capsot"><i>madriga</i><par n="castè/l__n"/></e>
+<e lm="manual" a="capsot"><i>manua</i><par n="castè/l__n"/></e>
+<e lm="marxista" a="capsot"><i>marxist</i><par n="guardi/a__n"/></e>
+<e lm="masqueta" a="capsot"><i>masquet</i><par n="jornad/a__n"/></e>
+<e lm="massís" a="capsot"><i>mass</i><par n="mandad/ís__n"/></e>
+<e lm="mediana" a="capsot"><i>median</i><par n="jornad/a__n"/></e>
+<e lm="mejana" a="capsot"><i>mejan</i><par n="jornad/a__n"/></e>
+<e lm="melodia" a="capsot"><i>melodi</i><par n="jornad/a__n"/></e>
+<e lm="mercadièr" a="capsot"><i>mercadiè</i><par n="presoniè/r__n"/></e>
+<e lm="mèscla" a="capsot"><i>mèscl</i><par n="jornad/a__n"/></e>
+<e lm="mesprètz" a="capsot"><i>mesprè</i><par n="prè/tz__n"/></e>
+<e lm="mestresa" a="capsot"><i>mestres</i><par n="jornad/a__n"/></e>
+<e lm="metratge" a="capsot"><i>metratge</i><par n="conselh__n"/></e>
+<e lm="metropòli" a="capsot"><i>metropòli</i><par n="part__n"/></e>
+<e lm="micro" a="capsot"><i>micro</i><par n="conselh__n"/></e>
+<e lm="miniatura" a="capsot"><i>miniatur</i><par n="jornad/a__n"/></e>
+<e lm="minoritari" a="capsot"><i>minoritari</i><par n="conselh__n"/></e>
+<e lm="missionari" a="capsot"><i>mission</i><par n="propriet/ari__n"/></e>
+<e lm="modèste" a="capsot"><i>modèst</i><par n="ministr/e__n"/></e>
+<e lm="modèst" a="capsot"><i>modèst</i><par n="conselhèr__n"/></e>
+<e lm="moldau" a="capsot"><i>molda</i><par n="directi/u__n"/></e>
+<e lm="montada" a="capsot"><i>montad</i><par n="jornad/a__n"/></e>
+<e lm="mortièr" a="capsot"><i>mortièr</i><par n="conselh__n"/></e>
+<e lm="multiple" a="capsot"><i>multiple</i><par n="conselh__n"/></e>
+<e lm="multiplicacion" a="capsot"><i>multiplicacion</i><par n="part__n"/></e>
+<e lm="multiplicitat" a="capsot"><i>multiplicitat</i><par n="part__n"/></e>
+<e lm="mutacion" a="capsot"><i>mutacion</i><par n="part__n"/></e>
+<e lm="nacionalista" a="capsot"><i>nacionalist</i><par n="guardi/a__n"/></e>
+<e lm="naufragi" a="capsot"><i>naufragi</i><par n="conselh__n"/></e>
+<e lm="nèça" a="capsot"><i>nè</i><par n="seden/ça__n"/></e>
+<e lm="neurologia" a="capsot"><i>neurologi</i><par n="jornad/a__n"/></e>
+<e lm="nòble" a="capsot"><i>nòbl</i><par n="ministr/e__n"/></e>
+<e lm="nomada" a="capsot"><i>nomad</i><par n="guardi/a__n"/></e>
+<e lm="nordic" a="capsot"><i>nordic</i><par n="conselhèr__n"/></e>
+<e lm="nòrd-oèst" a="capsot"><i>nòrd-oèst</i><par n="personau__n"/></e>
+<e lm="notacion" a="capsot"><i>notacion</i><par n="part__n"/></e>
+<e lm="notorietat" a="capsot"><i>notorietat</i><par n="part__n"/></e>
+<e lm="nul" a="capsot"><i>nu</i><par n="castè/l__n"/></e>
+<e lm="obratge" a="capsot"><i>obratge</i><par n="conselh__n"/></e>
+<e lm="obstruccion" a="capsot"><i>obstruccion</i><par n="part__n"/></e>
+<e lm="occidental" a="capsot"><i>occidenta</i><par n="espanhò/l__n"/></e>
+<e lm="ocupacion" a="capsot"><i>ocupacion</i><par n="part__n"/></e>
+<e lm="ocurréncia" a="capsot"><i>ocurrénci</i><par n="jornad/a__n"/></e>
+<e lm="ofensiva" a="capsot"><i>ofensiv</i><par n="jornad/a__n"/></e>
+<e lm="oficièr" a="capsot"><i>oficiè</i><par n="presoniè/r__n"/></e>
+<e lm="omogeneïtat" a="capsot"><i>omogeneïtat</i><par n="part__n"/></e>
+<e lm="ondulacion" a="capsot"><i>ondulacion</i><par n="conselh__n"/></e>
+<e lm="ordinari" a="capsot"><i>ordinari</i><par n="conselh__n"/></e>
+<e lm="ornitologia" a="capsot"><i>ornitologi</i><par n="jornad/a__n"/></e>
+<e lm="ortodòxe" a="capsot"><i>ortodòx</i><par n="ministr/e__n"/></e>
+<e lm="ortodòx" a="capsot"><i>ortodòx</i><par n="conselhèr__n"/></e>
+<e lm="oscar" a="capsot"><i>oscar</i><par n="conselh__n"/></e>
+<e lm="oscillacion" a="capsot"><i>oscillacion</i><par n="part__n"/></e>
+<e lm="òs" a="capsot"><i></i><par n="esb/òs__n"/></e>
+<e lm="ostilitat" a="capsot"><i>ostilitat</i><par n="part__n"/></e>
+<e lm="ovacion" a="capsot"><i>ovacion</i><par n="part__n"/></e>
+<e lm="oxid" a="capsot"><i>oxid</i><par n="conselh__n"/></e>
+<e lm="pacient" a="capsot"><i>pacient</i><par n="conselhèr__n"/></e>
+<e lm="palais" a="capsot"><i>palais</i><par n="pas__n"/></e>
+<e lm="papa" a="capsot"><i>pap</i><par n="di/a__n"/></e>
+<e lm="parallèla" a="capsot"><i>parallèl</i><par n="jornad/a__n"/></e>
+<e lm="parent" a="capsot"><i>parent</i><par n="conselhèr__n"/></e>
+<e lm="parlamentari" a="capsot"><i>parlament</i><par n="propriet/ari__n"/></e>
+<e lm="paroxisme" a="capsot"><i>paroxisme</i><par n="conselh__n"/></e>
+<e lm="participi" a="capsot"><i>participi</i><par n="conselh__n"/></e>
+<e lm="passa" a="capsot"><i>pass</i><par n="jornad/a__n"/></e>
+<e lm="passant" a="capsot"><i>passant</i><par n="conselhèr__n"/></e>
+<e lm="passionat" a="capsot"><i>passiona</i><par n="afilia/t__n"/></e>
+<e lm="patriarca" a="capsot"><i>patriar</i><par n="va/ca__n"/></e>
+<e lm="patriòta" a="capsot"><i>patriòt</i><par n="guardi/a__n"/></e>
+<e lm="pauretat" a="capsot"><i>pauretat</i><par n="part__n"/></e>
+<e lm="PC" a="capsot"><i>PC</i><par n="conselh__n"/></e>
+<e lm="peloton" a="capsot"><i>peloton</i><par n="conselh__n"/></e>
+<e lm="penalitat" a="capsot"><i>penalitat</i><par n="part__n"/></e>
+<e lm="penny" a="capsot"><i>penny</i><par n="conselh__n"/></e>
+<e lm="pensionat" a="capsot"><i>pensiona</i><par n="afilia/t__n"/></e>
+<e lm="penuria" a="capsot"><i>penuri</i><par n="jornad/a__n"/></e>
+<e lm="percors" a="capsot"><i>percors</i><par n="mes__n"/></e>
+<e lm="pèrdia" a="capsot"><i>pèrdi</i><par n="jornad/a__n"/></e>
+<e lm="pilhatge" a="capsot"><i>pilhatge</i><par n="conselh__n"/></e>
+<e lm="pilotatge" a="capsot"><i>pilotatge</i><par n="conselh__n"/></e>
+<e lm="pinhon" a="capsot"><i>pinhon</i><par n="conselh__n"/></e>
+<e lm="pin" a="capsot"><i>pin</i><par n="conselh__n"/></e>
+<e lm="piratariá" a="capsot"><i>piratariá</i><par n="part__n"/></e>
+<e lm="piston" a="capsot"><i>piston</i><par n="conselh__n"/></e>
+<e lm="pitre" a="capsot"><i>pitre</i><par n="conselh__n"/></e>
+<e lm="plagiat" a="capsot"><i>plagiat</i><par n="conselh__n"/></e>
+<e lm="plantacion" a="capsot"><i>plantacion</i><par n="part__n"/></e>
+<e lm="plaqueta" a="capsot"><i>plaquet</i><par n="jornad/a__n"/></e>
+<e lm="plebiscit" a="capsot"><i>plebiscit</i><par n="conselh__n"/></e>
+<e lm="pneumonia" a="capsot"><i>pneumoni</i><par n="jornad/a__n"/></e>
+<e lm="polemica" a="capsot"><i>polemic</i><par n="jornad/a__n"/></e>
+<e lm="policièr" a="capsot"><i>policiè</i><par n="presoniè/r__n"/></e>
+<e lm="pòl" a="capsot"><i>pò</i><par n="castè/l__n"/></e>
+<e lm="ponhal" a="capsot"><i>ponha</i><par n="castè/l__n"/></e>
+<e lm="popular" a="capsot"><i>popular</i><par n="conselh__n"/></e>
+<e lm="porcion" a="capsot"><i>porcion</i><par n="part__n"/></e>
+<e lm="possessor" a="capsot"><i>possesso</i><par n="operado/r__n"/></e>
+<e lm="posterioritat" a="capsot"><i>posterioritat</i><par n="part__n"/></e>
+<e lm="postulat" a="capsot"><i>postulat</i><par n="conselh__n"/></e>
+<e lm="potencial" a="capsot"><i>potencia</i><par n="castè/l__n"/></e>
+<e lm="prealable" a="capsot"><i>prealable</i><par n="conselh__n"/></e>
+<e lm="precòç" a="capsot"><i>precò</i><par n="tra/ç__n"/></e>
+<e lm="precursor" a="capsot"><i>precursor</i><par n="conselhèr__n"/></e>
+<e lm="percussion" a="capsot"><i>percussion</i><par n="part__n"/></e>
+<e lm="prefàcia" a="capsot"><i>prefàci</i><par n="jornad/a__n"/></e>
+<e lm="preguièra" a="capsot"><i>preguièr</i><par n="jornad/a__n"/></e>
+<e lm="prelat" a="capsot"><i>prelat</i><par n="conselh__n"/></e>
+<e lm="encencha" a="capsot"><i>encench</i><par n="jornad/a__n"/></e>
+<e lm="presonièr" a="capsot"><i>presoniè</i><par n="presoniè/r__n"/></e>
+<e lm="prevaléncia" a="capsot"><i>prevalénci</i><par n="jornad/a__n"/></e>
+<e lm="princi" a="capsot"><i>princi</i><par n="conselh__n"/></e>
+<e lm="principal" a="capsot"><i>principa</i><par n="espanhò/l__n"/></e>
+<e lm="priorat" a="capsot"><i>priorat</i><par n="conselh__n"/></e>
+<e lm="profièch" a="capsot"><i>profièch</i><par n="mes__n"/></e>
+<e lm="profièit" a="capsot"><i>profièit</i><par n="conselh__n"/></e>
+<e lm="projector" a="capsot"><i>projector</i><par n="conselh__n"/></e>
+<e lm="prolongacion" a="capsot"><i>prolongacion</i><par n="part__n"/></e>
+<e lm="promontòri" a="capsot"><i>promontòri</i><par n="conselh__n"/></e>
+<e lm="prosperitat" a="capsot"><i>prosperitat</i><par n="part__n"/></e>
+<e lm="protector" a="capsot"><i>protect</i><par n="dictat/or__n"/></e>
+<e lm="pseudonime" a="capsot"><i>pseudonime</i><par n="conselh__n"/></e>
+<e lm="psicanalisi" a="capsot"><i>psicanalisi</i><par n="part__n"/></e>
+<e lm="psiquiatria" a="capsot"><i>psiquiatri</i><par n="jornad/a__n"/></e>
+<e lm="punk" a="capsot"><i>punk</i><par n="conselh__n"/></e>
+<e lm="quart" a="capsot"><i>quart</i><par n="conselh__n"/></e>
+<e lm="rabin" a="capsot"><i>rabin</i><par n="conselh__n"/></e>
+<e lm="racion" a="capsot"><i>racion</i><par n="part__n"/></e>
+<e lm="rap" a="capsot"><i>rap</i><par n="conselh__n"/></e>
+<e lm="rapòrt" a="capsot"><i>rapòrt</i><par n="conselh__n"/></e>
+<e lm="rassemblament" a="capsot"><i>rassemblament</i><par n="conselh__n"/></e>
+<e lm="reactivitat" a="capsot"><i>reactivitat</i><par n="part__n"/></e>
+<e lm="reactor" a="capsot"><i>reactor</i><par n="conselh__n"/></e>
+<e lm="realista" a="capsot"><i>realist</i><par n="guardi/a__n"/></e>
+<e lm="recession" a="capsot"><i>recession</i><par n="part__n"/></e>
+<e lm="recòlta" a="capsot"><i>recòlt</i><par n="jornad/a__n"/></e>
+<e lm="recompensa" a="capsot"><i>recompens</i><par n="jornad/a__n"/></e>
+<e lm="reconquista" a="capsot"><i>reconquist</i><par n="jornad/a__n"/></e>
+<e lm="reconstitucion" a="capsot"><i>reconstitucion</i><par n="part__n"/></e>
+<e lm="recrutament" a="capsot"><i>recrutament</i><par n="conselh__n"/></e>
+<e lm="recurréncia" a="capsot"><i>recurrénci</i><par n="jornad/a__n"/></e>
+<e lm="reddicion" a="capsot"><i>reddicion</i><par n="part__n"/></e>
+<e lm="reeducacion" a="capsot"><i>reeducacion</i><par n="part__n"/></e>
+<e lm="regent" a="capsot"><i>regent</i><par n="conselhèr__n"/></e>
+<e lm="regiment" a="capsot"><i>regiment</i><par n="conselh__n"/></e>
+<e lm="relegacion" a="capsot"><i>relegacion</i><par n="part__n"/></e>
+<e lm="religiós" a="capsot"><i>religi</i><par n="esp/ós__n"/></e>
+<e lm="remuneracion" a="capsot"><i>remuneracion</i><par n="part__n"/></e>
+<e lm="requisicion" a="capsot"><i>requisicion</i><par n="part__n"/></e>
+<e lm="resistent" a="capsot"><i>resistent</i><par n="conselhèr__n"/></e>
+<e lm="responsable" a="capsot"><i>responsabl</i><par n="ministr/e__n"/></e>
+<e lm="resurreccion" a="capsot"><i>resurreccion</i><par n="part__n"/></e>
+<e lm="revòlta" a="capsot"><i>revòlt</i><par n="jornad/a__n"/></e>
+<e lm="revolucionari" a="capsot"><i>revolucion</i><par n="propriet/ari__n"/></e>
+<e lm="rima" a="capsot"><i>rim</i><par n="jornad/a__n"/></e>
+<e lm="ritual" a="capsot"><i>ritua</i><par n="castè/l__n"/></e>
+<e lm="romantisme" a="capsot"><i>romantisme</i><par n="conselh__n"/></e>
+<e lm="RTL" a="capsot"><i>RTL</i><par n="BBC__n"/></e>
+<e lm="rubrica" a="capsot"><i>rubri</i><par n="va/ca__n"/></e>
+<e lm="sabre" a="capsot"><i>sabre</i><par n="conselh__n"/></e>
+<e lm="sageta" a="capsot"><i>saget</i><par n="jornad/a__n"/></e>
+<e lm="SA" a="capsot"><i>SA</i><par n="BBC__n"/></e>
+<e lm="salariat" a="capsot"><i>salaria</i><par n="afilia/t__n"/></e>
+<e lm="santetat" a="capsot"><i>santetat</i><par n="part__n"/></e>
+<e lm="sant" a="capsot"><i>sant</i><par n="conselhèr__n"/></e>
+<e lm="savi" a="capsot"><i>savi</i><par n="conselh__n"/></e>
+<e lm="secors" a="capsot"><i>secors</i><par n="mes__n"/></e>
+<e lm="secretariat" a="capsot"><i>secretariat</i><par n="conselh__n"/></e>
+<e lm="seduccion" a="capsot"><i>seduccion</i><par n="part__n"/></e>
+<e lm="semblable" a="capsot"><i>semblabl</i><par n="ministr/e__n"/></e>
+<e lm="senator" a="capsot"><i>senat</i><par n="dictat/or__n"/></e>
+<e lm="separatista" a="capsot"><i>separatist</i><par n="guardi/a__n"/></e>
+<e lm="sepultura" a="capsot"><i>sepultur</i><par n="jornad/a__n"/></e>
+<e lm="severitat" a="capsot"><i>severitat</i><par n="part__n"/></e>
+<e lm="significacion" a="capsot"><i>significacion</i><par n="part__n"/></e>
+<e lm="silvicultura" a="capsot"><i>silvicultur</i><par n="jornad/a__n"/></e>
+<e lm="simbolic" a="capsot"><i>simbolic</i><par n="conselh__n"/></e>
+<e lm="simetria" a="capsot"><i>simetri</i><par n="jornad/a__n"/></e>
+<e lm="similar" a="capsot"><i>similar</i><par n="conselh__n"/></e>
+<e lm="sòcle" a="capsot"><i>sòcle</i><par n="conselh__n"/></e>
+<e lm="sollicitacion" a="capsot"><i>sollicitacion</i><par n="part__n"/></e>
+<e lm="sol" a="capsot"><i>so</i><par n="espanhò/l__n"/></e>
+<e lm="sovietic" a="capsot"><i>sovieti</i><par n="sindi/c__n"/></e>
+<e lm="ss" a="capsot"><i>ss</i><par n="personau__n"/></e>
+<e lm="subjècte" a="capsot"><i>subjècte</i><par n="conselh__n"/></e>
+<e lm="sufixe" a="capsot"><i>sufixe</i><par n="conselh__n"/></e>
+<e lm="sufragi" a="capsot"><i>sufragi</i><par n="conselh__n"/></e>
+<e lm="sultanat" a="capsot"><i>sultanat</i><par n="conselh__n"/></e>
+<e lm="sultan" a="capsot"><i>sultan</i><par n="conselh__n"/></e>
+<e lm="superior" a="capsot"><i>superior</i><par n="part__n"/></e>
+<e lm="suspicion" a="capsot"><i>suspicion</i><par n="part__n"/></e>
+<e lm="taça" a="capsot"><i>ta</i><par n="seden/ça__n"/></e>
+<e lm="tara" a="capsot"><i>tar</i><par n="jornad/a__n"/></e>
+<e lm="telecargament" a="capsot"><i>telecargament</i><par n="conselh__n"/></e>
+<e lm="telefilme" a="capsot"><i>telefilme</i><par n="conselh__n"/></e>
+<e lm="telegraf" a="capsot"><i>telegraf</i><par n="contrast__n"/></e>
+<e lm="telescòpi" a="capsot"><i>telescòpi</i><par n="conselh__n"/></e>
+<e lm="teologian" a="capsot"><i>teologian</i><par n="conselhèr__n"/></e>
+<e lm="teorèma" a="capsot"><i>teorèma</i><par n="part__n"/></e>
+<e lm="terrorista" a="capsot"><i>terrorist</i><par n="guardi/a__n"/></e>
+<e lm="testimoniatge" a="capsot"><i>testimoniatge</i><par n="conselh__n"/></e>
+<e lm="teulat" a="capsot"><i>teulat</i><par n="conselh__n"/></e>
+<e lm="timbala" a="capsot"><i>timbal</i><par n="jornad/a__n"/></e>
+<e lm="tòca" a="capsot"><i>tò</i><par n="va/ca__n"/></e>
+<e lm="tonèl" a="capsot"><i>tonè</i><par n="castè/l__n"/></e>
+<e lm="toponime" a="capsot"><i>toponime</i><par n="conselh__n"/></e>
+<e lm="tòrs" a="capsot"><i>tòrs</i><par n="mes__n"/></e>
+<e lm="tortura" a="capsot"><i>tortur</i><par n="jornad/a__n"/></e>
+<e lm="total" a="capsot"><i>tota</i><par n="castè/l__n"/></e>
+<e lm="trabalhaire" a="capsot"><i>trabalhair</i><par n="ministr/e__n"/></e>
+<e lm="traccion" a="capsot"><i>traccion</i><par n="part__n"/></e>
+<e lm="trapèla" a="capsot"><i>trapèl</i><par n="jornad/a__n"/></e>
+<e lm="tubercul" a="capsot"><i>tubercu</i><par n="castè/l__n"/></e>
+<e lm="tunica" a="capsot"><i>tuni</i><par n="va/ca__n"/></e>
+<e lm="turbina" a="capsot"><i>turbin</i><par n="jornad/a__n"/></e>
+<e lm="UCI" a="capsot"><i>UCI</i><par n="BBC__n"/></e>
+<e lm="UHF" a="capsot"><i>UHF</i><par n="BBC__n"/></e>
+<e lm="umanitari" a="capsot"><i>umanit</i><par n="propriet/ari__n"/></e>
+<e lm="umiliacion" a="capsot"><i>umiliacion</i><par n="part__n"/></e>
+<e lm="unifòrme" a="capsot"><i>unifòrme</i><par n="conselh__n"/></e>
+<e lm="universitari" a="capsot"><i>universit</i><par n="propriet/ari__n"/></e>
+<e lm="URSS" a="capsot"><i>URSS</i><par n="BBC__n"/></e>
+<e lm="vacança" a="capsot"><i>vacan</i><par n="seden/ça__n"/></e>
+<e lm="vassal" a="capsot"><i>vassa</i><par n="espanhò/l__n"/></e>
+<e lm="vel" a="capsot"><i>ve</i><par n="castè/l__n"/></e>
+<e lm="velodròm" a="capsot"><i>velodròm</i><par n="conselh__n"/></e>
+<e lm="vencut" a="capsot"><i>vencut</i><par n="conselh__n"/></e>
+<e lm="vençut" a="capsot"><i>vençut</i><par n="conselh__n"/></e>
+<e lm="venguda" a="capsot"><i>vengud</i><par n="jornad/a__n"/></e>
+<e lm="vernacular" a="capsot"><i>vernacular</i><par n="conselh__n"/></e>
+<e lm="vesicula" a="capsot"><i>vesicul</i><par n="jornad/a__n"/></e>
+<e lm="vesinatge" a="capsot"><i>vesinatge</i><par n="conselh__n"/></e>
+<e lm="viatjaire" a="capsot"><i>viatjair</i><par n="ministr/e__n"/></e>
+<e lm="vicari" a="capsot"><i>vic</i><par n="propriet/ari__n"/></e>
+<e lm="volant" a="capsot"><i>volant</i><par n="conselh__n"/></e>
+<e lm="volontari" a="capsot"><i>volont</i><par n="propriet/ari__n"/></e>
+<e lm="voluta" a="capsot"><i>volut</i><par n="jornad/a__n"/></e>
+<e lm="edat mejana" a="hector"><i>edat<b/>mejana</i><par n="set__n"/></e>
+<e lm="màger part" a="hector"><i>màger<b/>part</i><par n="set__n"/></e>
+
 
 <!-- xxxx -->
 </section>
