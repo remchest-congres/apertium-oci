@@ -1399,6 +1399,13 @@
       <e><p><l/><r><s n="adj"/><s n="mf"/><s n="sg"/></r></p></e>
     </pardef>
 
+    <pardef n="/fraire__adj">
+      <e><p><l>fraire</l><r>fraire<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
+      <e><p><l>fraires</l><r>fraire<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l>sor</l><r>fraire<s n="adj"/><s n="f"/><s n="sg"/></r></p></e>
+      <e><p><l>sors</l><r>fraire<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
+    </pardef>
+
         <pardef n="bèlg/a__adj">
     <e alt="oci@aran"><p><l>ues</l><r>a<s n="adj"/><s n="mf"/><s n="pl"/></r></p></e>
     <e alt="oci@gascon"><p><l>ues</l><r>a<s n="adj"/><s n="mf"/><s n="pl"/></r></p></e>
@@ -24949,6 +24956,8 @@
     <e lm="nòm de familha"><i>nòm</i><par n="conselh__n"/><p><l><b/>de<b/>familha</l><r><g><b/>de<b/>familha</g></r></p></e>
     <e lm="nòrd"><i>nòrd</i><par n="personau__n"/></e>
     <e lm="nord" r="LR"><i>nord</i><par n="personau__n"/></e>
+    <e lm="nòrd-èst" a="hector"><i>nòrd-èst</i><par n="personau__n"/></e>
+    <e lm="nord-oèst" a="hector"><i>nord-oèst</i><par n="personau__n"/></e>
     <e lm="norma"><i>norm</i><par n="jornad/a__n"/></e>
     <e lm="normalisacion" r="LR"><i>normalisacion</i><par n="part__n"/></e>
     <e lm="normalizacion"><i>normalizacion</i><par n="part__n"/></e>
@@ -25313,7 +25322,12 @@
     <e lm="persona"><i>person</i><par n="jornad/a__n"/></e>
     <e lm="personalitat"><i>personalitat</i><par n="part__n"/></e>
     <e lm="personatge"><i>personatge</i><par n="conselh__n"/></e>
-    <e lm="personal"><i>persona</i><par n="cè/l__n"/></e>
+    <e lm="personal" alt="oci"><i>personal</i><par n="personau__n"/></e>
+    <e lm="personau" alt="oci@gascon"><i>personau</i><par n="personau__n"/></e>
+    <e lm="personau" alt="oci@garan"><i>personau</i><par n="personau__n"/></e>
+    <e r="LR" lm="personau" alt="oci"><i>personau</i><par n="personau__n"/></e>
+    <e r="LR" lm="personal" alt="oci@gascon"><i>personal</i><par n="personau__n"/></e>
+    <e r="LR" lm="personal" alt="oci@aran"><i>personal</i><par n="personau__n"/></e>
     <e lm="apartheid"><i>apartheid</i><par n="personau__n"/></e>
     <e lm="agressor"><i>agresso</i><par n="operado/r__n"/></e>
     <e lm="benzina"><i>benzin</i><par n="jornad/a__n"/></e>
@@ -26321,6 +26335,8 @@
     <e lm="succession"><i>succession</i><par n="part__n"/></e>
     <e lm="sucre"><i>sucre</i><par n="conselh__n"/></e>
     <e lm="sud"><i>sud</i><par n="personau__n"/></e>
+    <e lm="sud-èst" a="hector"><i>sud-èst</i><par n="personau__n"/></e>
+    <e lm="sud-oèst" a="hector"><i>sud-oèst</i><par n="personau__n"/></e>
     <e lm="sudoku" a="carmentano"><i>sudoku</i><par n="conselh__n"/></e>
     <e lm="suenh" a="carmentano"><i>suenh</i><par n="conselh__n"/></e>
     <e lm="suer"><i>suer</i><par n="conselhèr__n"/></e>
@@ -42465,7 +42481,7 @@
 <e lm="faure" a="capsot"><i>faure</i><par n="conselh__n"/></e>
 <e lm="fautuèlh" a="capsot"><i>fautuèlh</i><par n="conselh__n"/></e>
 <e lm="fava" a="capsot"><i>fav</i><par n="jornad/a__n"/></e>
-<e lm="feble" a="capsot"><i>feble</i><par n="conselh__n"/></e>
+<e lm="feble" a="capsot"><i>febl</i><par n="ministr/e__n"/></e>
 <e lm="feminin" a="capsot"><i>femini</i><par n="cosi/n__n"/></e>
 <e lm="feminisme" a="capsot"><i>feminisme</i><par n="conselh__n"/></e>
 <e lm="femur" a="capsot"><i>femur</i><par n="conselh__n"/></e>
@@ -42502,7 +42518,7 @@
 <e lm="fisson" a="capsot"><i>fisson</i><par n="conselh__n"/></e>
 <e lm="fitoplancton" a="capsot"><i>fitoplancton</i><par n="conselh__n"/></e>
 <e lm="fitoremediacion" a="capsot"><i>fitoremediacion</i><par n="part__n"/></e>
-<e lm="flac" a="capsot"><i>flac</i><par n="conselh__n"/></e>
+<e lm="flac" a="capsot"><i>fla</i><par n="sindi/c__n"/></e>
 <e lm="flaire" a="capsot"><i>flaire</i><par n="conselh__n"/></e>
 <e lm="flam" a="capsot"><i>flam</i><par n="conselh__n"/></e>
 <e lm="flamba" a="capsot"><i>flamb</i><par n="jornad/a__n"/></e>
@@ -42582,7 +42598,7 @@
 <e lm="garba" a="capsot"><i>garb</i><par n="jornad/a__n"/></e>
 <e lm="garbin" a="capsot"><i>garbi</i><par n="personau__n"/></e>
 <e lm="garçon" a="capsot"><i>garçon</i><par n="conselh__n"/></e>
-<e lm="garda" a="capsot"><i>gard</i><par n="jornad/a__n"/></e>
+<e lm="garda" a="capsot"><i>gard</i><par n="guardi/a__n"/></e>
 <e lm="gardanenon" a="capsot"><i>gardanenon</i><par n="part__n"/></e>
 <e lm="gargalhòl" a="capsot"><i>gargalhò</i><par n="cè/l__n"/></e>
 <e lm="garganta" a="capsot"><i>gargant</i><par n="jornad/a__n"/></e>
@@ -42660,7 +42676,7 @@
 <e lm="graisselon" a="capsot"><i>graisselon</i><par n="conselh__n"/></e>
 <e lm="grama" a="capsot"><i>gram</i><par n="di/a__n"/></e>
 <e lm="gran" a="capsot"><i>gran</i><par n="conselh__n"/></e>
-<e lm="grand" a="capsot"><i>grand</i><par n="conselh__n"/></e>
+<e lm="grand" a="capsot"><i>grand</i><par n="conselhèr__n"/></e>
 <e lm="granhòta" a="capsot"><i>granhòt</i><par n="jornad/a__n"/></e>
 <e lm="granit" a="capsot"><i>granit</i><par n="conselh__n"/></e>
 <e lm="granolha" a="capsot"><i>granolh</i><par n="jornad/a__n"/></e>
@@ -42753,6 +42769,7 @@
 <e lm="iperespaci" a="capsot"><i>iperespaci</i><par n="conselh__n"/></e>
 <e lm="iperonim" a="capsot"><i>iperonim</i><par n="conselh__n"/></e>
 <e lm="irange" a="capsot"><i>irange</i><par n="conselh__n"/></e>
+<e lm="arange" a="capsot"><i>arange</i><par n="conselh__n"/></e>
 <e lm="iranjat" a="capsot"><i>iranja</i><par n="afilia/t__n"/></e>
 <e lm="irlandés" a="capsot"><i>irland</i><par n="pag/és__n"/></e>
 <e lm="ironda" a="capsot"><i>irond</i><par n="jornad/a__n"/></e>
@@ -43419,7 +43436,7 @@
 <e lm="rancura" a="capsot"><i>rancur</i><par n="jornad/a__n"/></e>
 <e lm="randa" a="capsot"><i>rand</i><par n="jornad/a__n"/></e>
 <e lm="randoleta" a="capsot"><i>randolet</i><par n="jornad/a__n"/></e>
-<e lm="rapid" a="capsot"><i>rapid</i><par n="conselh__n"/></e>
+<e lm="rapid" a="capsot"><i>rapid</i><par n="conselhèr__n"/></e>
 <e lm="rasa" a="capsot"><i>ras</i><par n="jornad/a__n"/></e>
 <e lm="rasic" a="capsot"><i>rasic</i><par n="part__n"/></e>
 <e lm="raspa" a="capsot"><i>rasp</i><par n="jornad/a__n"/></e>
@@ -44445,7 +44462,7 @@
 <e lm="forrat" a="capsot"><i>forra</i><par n="apropria/t__adj"/></e>
 <e lm="fosc" a="capsot"><i>fos</i><par n="bas/c__adj"/></e>
 <e lm="fossil" a="capsot"><i>fossil</i><par n="trabalhador__adj"/></e>
-<e lm="fraire" a="capsot"><i>fraire</i><par n="generau__adj"/></e>
+<e lm="fraire"><i></i><par n="/fraire__adj"/></e>
 <e lm="francofòn" a="capsot"><i>francofòn</i><par n="trabalhador__adj"/></e>
 <e lm="fruchièr" a="capsot"><i>fruchiè</i><par n="primiè/r__adj"/></e>
 <e lm="fruchós" a="capsot"><i>fruch</i><par n="perilh/ós__adj"/></e>
@@ -45920,9 +45937,9 @@
 <e lm="automobilista" a="capsot"><i>automobilist</i><par n="guardi/a__n"/></e>
 <e lm="autonòme" a="capsot"><i>autonòm</i><par n="ministr/e__n"/></e>
 <e lm="autonomista" a="capsot"><i>autonomist</i><par n="guardi/a__n"/></e>
-<e lm="autonòm" a="capsot" alt="aran"><i>autonòm</i><par n="conselh__n"/></e>
-<e lm="autonòm" a="capsot" alt="oci" r="LR"><i>autonòm</i><par n="conselh__n"/></e>
-<e lm="autonòm" a="capsot" alt="gascon" r="LR"><i>autonòm</i><par n="conselh__n"/></e>
+<e lm="autonòm" a="capsot" alt="aran"><i>autonòm</i><par n="conselhèr__n"/></e>
+<e lm="autonòm" a="capsot" alt="oci" r="LR"><i>autonòm</i><par n="conselhèr__n"/></e>
+<e lm="autonòm" a="capsot" alt="gascon" r="LR"><i>autonòm</i><par n="conselhèr__n"/></e>
 <e lm="auxiliar" a="capsot"><i>auxiliar</i><par n="conselhèr__n"/></e>
 <e lm="avança" a="capsot"><i>avan</i><par n="seden/ça__n"/></e>
 <e lm="avantatge" a="capsot"><i>avantatge</i><par n="conselh__n"/></e>
@@ -45959,7 +45976,7 @@
 <e lm="celebritat" a="capsot"><i>celebritat</i><par n="part__n"/></e>
 <e lm="censura" a="capsot"><i>censur</i><par n="jornad/a__n"/></e>
 <e lm="certificat" a="capsot"><i>certificat</i><par n="conselh__n"/></e>
-<e lm="chòc" a="capsot"><i>chò</i><par n="sindi/c__n"/></e>
+<e lm="chòc" a="capsot"><i>chòc</i><par n="conselh__n"/></e>
 <e lm="cilindre" a="capsot"><i>cilindre</i><par n="conselh__n"/></e>
 <e lm="cinic" a="capsot"><i>cini</i><par n="sindi/c__n"/></e>
 <e lm="clan" a="capsot"><i>clan</i><par n="conselh__n"/></e>
@@ -46027,7 +46044,7 @@
 <e lm="diferenciacion" a="capsot"><i>diferenciacion</i><par n="part__n"/></e>
 <e lm="diplomat" a="capsot"><i>diploma</i><par n="afilia/t__n"/></e>
 <e lm="directiva" a="capsot"><i>directiv</i><par n="jornad/a__n"/></e>
-<e lm="discípol" a="capsot"><i>discípo</i><par n="castè/l__n"/></e>
+<e lm="discípol" a="capsot"><i>discípol</i><par n="conselhèr__n"/></e>
 <e lm="distorsion" a="capsot"><i>distorsion</i><par n="part__n"/></e>
 <e lm="DJ" a="capsot"><i>DJ</i><par n="conselh__n"/></e>
 <e lm="dògma" a="capsot"><i>dògm</i><par n="di/a__n"/></e>
@@ -46075,7 +46092,7 @@
 <e lm="evèrs" a="capsot"><i>evèrs</i><par n="mes__n"/></e>
 <e lm="excentricitat" a="capsot"><i>excentricitat</i><par n="part__n"/></e>
 <e lm="executiu" a="capsot"><i>executiu</i><par n="conselh__n"/></e>
-<e lm="èx" a="capsot"><i>èx</i><par n="mes__n"/></e>
+<e lm="èx" a="capsot"><i>èx</i><par n="minjamosques__n"/></e>
 <e lm="exploracion" a="capsot"><i>exploracion</i><par n="part__n"/></e>
 <e lm="exterior" a="capsot"><i>exterior</i><par n="conselh__n"/></e>
 <e lm="extraccion" a="capsot"><i>extraccion</i><par n="part__n"/></e>
@@ -46255,7 +46272,7 @@
 <e lm="policièr" a="capsot"><i>policiè</i><par n="presoniè/r__n"/></e>
 <e lm="pòl" a="capsot"><i>pò</i><par n="castè/l__n"/></e>
 <e lm="ponhal" a="capsot"><i>ponha</i><par n="castè/l__n"/></e>
-<e lm="popular" a="capsot"><i>popular</i><par n="conselh__n"/></e>
+<e lm="popular" a="capsot"><i>popular</i><par n="conselhèr__n"/></e>
 <e lm="porcion" a="capsot"><i>porcion</i><par n="part__n"/></e>
 <e lm="possessor" a="capsot"><i>possesso</i><par n="operado/r__n"/></e>
 <e lm="posterioritat" a="capsot"><i>posterioritat</i><par n="part__n"/></e>
@@ -46338,7 +46355,7 @@
 <e lm="silvicultura" a="capsot"><i>silvicultur</i><par n="jornad/a__n"/></e>
 <e lm="simbolic" a="capsot"><i>simbolic</i><par n="conselh__n"/></e>
 <e lm="simetria" a="capsot"><i>simetri</i><par n="jornad/a__n"/></e>
-<e lm="similar" a="capsot"><i>similar</i><par n="conselh__n"/></e>
+<e lm="similar" a="capsot"><i>similar</i><par n="conselhèr__n"/></e>
 <e lm="sòcle" a="capsot"><i>sòcle</i><par n="conselh__n"/></e>
 <e lm="sollicitacion" a="capsot"><i>sollicitacion</i><par n="part__n"/></e>
 <e lm="sol" a="capsot"><i>so</i><par n="espanhò/l__n"/></e>
@@ -46734,6 +46751,8 @@
 <e lm="sostengut" a="capsot"><i>sostengu</i><par n="apropria/t__adj"/></e>
 <e lm="sublim" a="capsot"><i>sublim</i><par n="content__adj"/></e>
 <e lm="sud" a="capsot"><i>sud</i><par n="post__adj"/></e>
+<e lm="sud-èst" a="hector"><i>sud-èst</i><par n="post__adj"/></e>
+<e lm="sud-oèst" a="hector"><i>sud-oèst</i><par n="post__adj"/></e>
 <e lm="sudafrican" a="capsot"><i>sudafrican</i><par n="trabalhador__adj"/></e>
 <e lm="suplementari" a="capsot"><i>suplement</i><par n="priorit/ari__adj"/></e>
 <e lm="tangent" a="capsot"><i>tangent</i><par n="trabalhador__adj"/></e>
