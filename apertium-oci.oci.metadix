@@ -1402,8 +1402,8 @@
     <pardef n="/fraire__adj">
       <e><p><l>fraire</l><r>fraire<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
       <e><p><l>fraires</l><r>fraire<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
-      <e><p><l>sor</l><r>fraire<s n="adj"/><s n="f"/><s n="sg"/></r></p></e>
-      <e><p><l>sors</l><r>fraire<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
+      <e><p><l>sòr</l><r>fraire<s n="adj"/><s n="f"/><s n="sg"/></r></p></e>
+      <e><p><l>sòrs</l><r>fraire<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
     </pardef>
 
         <pardef n="bèlg/a__adj">
@@ -1507,6 +1507,14 @@
       <e><p><l>àvia</l><r>avi<s n="adj"/><s n="f"/><s n="sg"/></r></p></e>
       <e><p><l>avis</l><r>avi<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
       <e><p><l>avi</l><r>avi<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
+    </pardef>
+        <pardef n="s/avi__n">
+    <e alt="oci@aran"><p><l>àvies</l><r>avi<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci@gascon"><p><l>àvies</l><r>avi<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+    <e alt="oci"><p><l>àvias</l><r>avi<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+      <e><p><l>àvia</l><r>avi<s n="n"/><s n="f"/><s n="sg"/></r></p></e>
+      <e><p><l>avis</l><r>avi<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l>avi</l><r>avi<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
     </pardef>
 <!-- no l'he posat al fitxer de forms-->
         <pardef n="nauè/th__adj">
@@ -24131,8 +24139,8 @@
     <e lm="interiorisacion" r="LR"><i>interiorisacion</i><par n="part__n"/></e>
     <e lm="intermediacion"><i>intermediacion</i><par n="part__n"/></e>
     <e lm="internacionalizacion"><i>internacionalizacion</i><par n="part__n"/></e>
-    <e lm="internet"><i>internet</i><par n="part__n"/></e>
-    <e lm="internèt" r="LR"><i>internèt</i><par n="part__n"/></e>
+    <e lm="internet"><i>internet</i><par n="set__n"/></e>
+    <e lm="internèt" r="LR"><i>internèt</i><par n="set__n"/></e>
     <e lm="interpretacion"><i>interpretacion</i><par n="part__n"/></e>
     <e lm="interrupcion"><i>interrupcion</i><par n="part__n"/></e>
     <e lm="interval"><i>interva</i><par n="cè/l__n"/></e>
@@ -25655,7 +25663,7 @@
     <e lm="patac" r="LR"><i>patac</i><par n="conselh__n"/></e>
     <e lm="productor"><i>productor</i><par n="conselhèr__n"/></e>
     <e lm="profecia"><i>profeci</i><par n="jornad/a__n"/></e>
-    <e lm="professional"><i>professiona</i><par n="cè/l__n"/></e>
+    <e lm="professional"><i>professional</i><par n="conselhèr__n"/></e>
     <e lm="profession"><i>profession</i><par n="part__n"/></e>
     <e lm="professorat"><i>professorat</i><par n="conselh__n"/></e>
     <e lm="professor"><i>professor</i><par n="conselhèr__n"/></e>
@@ -31751,6 +31759,7 @@
       <e r="LR" lm="constituir" alt="oci@gascon"><i>constitu</i><par n="atribu/ir__vblex"/></e>
     <e lm="constituir" alt="oci"><i>constitu</i><par n="atribu/ir__vblex"/></e>
     <e lm="reconstruïr" r="LR"><i>reconstru</i><par n="atribu/ïr__vblex"/></e>
+    <e lm="reconstrusir" r="LR"><i>reconstrus</i><par n="magr/èrem__vblex"/></e>
     <e lm="construsir" r="LR"><i>construs</i><par n="magr/èrem__vblex"/></e>
     <e lm="construire" r="LR"><i>constr</i><par n="constr/uire__vblex"/></e>
       <e r="LR" lm="contribuïr" alt="oci"><i>contribu</i><par n="atribu/ïr__vblex"/></e>
@@ -35628,6 +35637,7 @@
     <e lm="crudèl" a="carmentano" r="LR"><i>crudèl</i><par n="content__adj"/></e>
     <e lm="crusèl" a="carmentano"><i>crusèl</i><par n="content__adj"/></e>
     <e lm="polonés" a="carmentano"><i>polon</i><par n="aran/és__adj"/></e>
+    <e lm="polonés" a="hector"><i>polon</i><par n="pag/és__n"/></e>
     <e lm="convenent" a="carmentano"><i>convenent</i><par n="content__adj"/></e>
     <e lm="ciment" a="carmentano"><i>ciment</i><par n="conselh__n"/></e>
     <e lm="roman" a="carmentano"><i>roman</i><par n="trabalhador__adj"/></e>
@@ -42038,7 +42048,7 @@
 <e lm="commutacion" a="capsot"><i>commutacion</i><par n="part__n"/></e>
 <e lm="comòda" a="capsot"><i>comòd</i><par n="jornad/a__n"/></e>
 <e lm="companha" a="capsot"><i>companh</i><par n="jornad/a__n"/></e>
-<e lm="compausat" a="capsot"><i>compausa</i><par n="afilia/t__n"/></e>
+<e lm="compausat" a="capsot"><i>compausa</i><par n="conselh__n"/></e>
 <e lm="complet" a="capsot"><i>complet</i><par n="conselh__n"/></e>
 <e lm="complèx" a="capsot"><i>complèx</i><par n="mes__n"/></e>
 <e lm="compra" a="capsot"><i>compr</i><par n="jornad/a__n"/></e>
@@ -42439,7 +42449,7 @@
 <e lm="èstre" a="capsot"><i>èstre</i><par n="conselh__n"/></e>
 <e lm="estreit" a="capsot"><i>estreit</i><par n="conselh__n"/></e>
 <e lm="estromatolit" a="capsot"><i>estromatolit</i><par n="conselh__n"/></e>
-<e lm="estuari" a="capsot"><i>estu</i><par n="propriet/ari__n"/></e>
+<e lm="estuari" a="capsot"><i>estuari</i><par n="conselh__n"/></e>
 <e lm="eterosexual" a="capsot"><i>eterosexua</i><par n="espanhò/l__n"/></e>
 <e lm="eucariòta" a="capsot"><i>eucariòt</i><par n="jornad/a__n"/></e>
 <e lm="eule" a="capsot"><i>eule</i><par n="conselh__n"/></e>
@@ -42676,7 +42686,7 @@
 <e lm="graisselon" a="capsot"><i>graisselon</i><par n="conselh__n"/></e>
 <e lm="grama" a="capsot"><i>gram</i><par n="di/a__n"/></e>
 <e lm="gran" a="capsot"><i>gran</i><par n="conselh__n"/></e>
-<e lm="grand" a="capsot"><i>grand</i><par n="conselhèr__n"/></e>
+<e lm="grand" a="capsot"><i>grand</i><par n="agent__n"/></e>
 <e lm="granhòta" a="capsot"><i>granhòt</i><par n="jornad/a__n"/></e>
 <e lm="granit" a="capsot"><i>granit</i><par n="conselh__n"/></e>
 <e lm="granolha" a="capsot"><i>granolh</i><par n="jornad/a__n"/></e>
@@ -43204,6 +43214,7 @@
 <e lm="papà" a="capsot"><i>papà</i><par n="conselh__n"/></e>
 <e lm="papagai" a="capsot"><i>papagai</i><par n="conselh__n"/></e>
 <e lm="papet" a="capsot"><i>papet</i><par n="conselh__n"/></e>
+<e lm="mameta" a="capsot"><i>mamet</i><par n="jornad/a__n"/></e>
 <e lm="paracasudas" a="capsot"><i>paracasudas</i><par n="deluns__n"/></e>
 <e lm="parada" a="capsot"><i>parad</i><par n="jornad/a__n"/></e>
 <e lm="paradura" a="capsot"><i>paradur</i><par n="jornad/a__n"/></e>
@@ -45052,7 +45063,7 @@
 <e lm="bentonita" a="capsot"><i>bentonit</i><par n="jornad/a__n"/></e>
 <e lm="berlòca" a="capsot"><i>berlò</i><par n="va/ca__n"/></e>
 <e lm="cocòra" a="capsot"><i>cocòr</i><par n="jornad/a__n"/></e>
-<e lm="besavi" a="capsot"><i>besavi</i><par n="conselh__n"/></e>
+<e lm="besavi" a="capsot"><i>bes</i><par n="s/avi__n"/></e>
 <e lm="bestiesa" a="capsot"><i>besties</i><par n="jornad/a__n"/></e>
 <e lm="bicador" a="capsot"><i>bicado</i><par n="operado/r__n"/></e>
 <e lm="bicromia" a="capsot"><i>bicromi</i><par n="jornad/a__n"/></e>
@@ -45617,7 +45628,7 @@
 <e lm="reduplicacion" a="capsot"><i>reduplicacion</i><par n="part__n"/></e>
 <e lm="regatejaire" a="capsot"><i>regatejair</i><par n="ministr/e__n"/></e>
 <e lm="reiraujòl" a="capsot"><i>reiraujò</i><par n="cè/l__n"/></e>
-<e lm="rèire-besavi" a="capsot"><i>rèire-besavi</i><par n="conselh__n"/></e>
+<e lm="rèire-besavi" a="capsot"><i>rèire-bes</i><par n="s/avi__n"/></e>
 <e lm="rèire" a="capsot"><i>rèire</i><par n="conselh__n"/></e>
 <e lm="rejoveniment" a="capsot"><i>rejoveniment</i><par n="conselh__n"/></e>
 <e lm="rejuvenacion" a="capsot"><i>rejuvenacion</i><par n="part__n"/></e>
@@ -45881,7 +45892,7 @@
 
 <e lm="en van"><i>en<b/>van</i><par n="ager__adv"/></e>
 <e lm="militar"><i>militar</i><par n="trabalhador__adj"/></e>
-<e lm="París"><i>Agen</i><par n="Iran__np"/></e>
+<e lm="Agen"><i>Agen</i><par n="Iran__np"/></e>
 <e lm="traversada" a="capsot"><i>traversad</i><par n="jornad/a__n"/></e>
 
 <e lm="acronime" a="capsot"><i>acronime</i><par n="conselh__n"/></e>
@@ -45986,7 +45997,7 @@
 <e lm="clientèla" a="capsot"><i>clientèl</i><par n="jornad/a__n"/></e>
 <e lm="clip" a="capsot"><i>clip</i><par n="conselh__n"/></e>
 <e lm="clòr" a="capsot"><i>clòr</i><par n="conselh__n"/></e>
-<e lm="CNRS" a="capsot"><i>CNRS</i><par n="personau__n"/></e>
+<e lm="CNRS" a="capsot"><i>CNRS</i><par n="BBVA__n"/></e>
 <e lm="coeficient" a="capsot"><i>coeficient</i><par n="conselh__n"/></e>
 <e lm="cofret" a="capsot"><i>cofret</i><par n="conselh__n"/></e>
 <e lm="collar" a="capsot"><i>collar</i><par n="conselh__n"/></e>
@@ -46248,7 +46259,7 @@
 <e lm="patriarca" a="capsot"><i>patriar</i><par n="va/ca__n"/></e>
 <e lm="patriòta" a="capsot"><i>patriòt</i><par n="guardi/a__n"/></e>
 <e lm="pauretat" a="capsot"><i>pauretat</i><par n="part__n"/></e>
-<e lm="PC" a="capsot"><i>PC</i><par n="conselh__n"/></e>
+<e lm="PC" a="capsot"><i>PC</i><par n="IRPF__n"/></e>
 <e lm="peloton" a="capsot"><i>peloton</i><par n="conselh__n"/></e>
 <e lm="penalitat" a="capsot"><i>penalitat</i><par n="part__n"/></e>
 <e lm="penny" a="capsot"><i>penny</i><par n="conselh__n"/></e>
@@ -46342,7 +46353,7 @@
 <e lm="salariat" a="capsot"><i>salaria</i><par n="afilia/t__n"/></e>
 <e lm="santetat" a="capsot"><i>santetat</i><par n="part__n"/></e>
 <e lm="sant" a="capsot"><i>sant</i><par n="conselhèr__n"/></e>
-<e lm="savi" a="capsot"><i>savi</i><par n="conselh__n"/></e>
+<e lm="savi" a="capsot"><i>s</i><par n="s/avi__n"/></e>
 <e lm="secors" a="capsot"><i>secors</i><par n="mes__n"/></e>
 <e lm="secretariat" a="capsot"><i>secretariat</i><par n="conselh__n"/></e>
 <e lm="seduccion" a="capsot"><i>seduccion</i><par n="part__n"/></e>
@@ -46403,8 +46414,8 @@
 <e lm="vassal" a="capsot"><i>vassa</i><par n="espanhò/l__n"/></e>
 <e lm="vel" a="capsot"><i>ve</i><par n="castè/l__n"/></e>
 <e lm="velodròm" a="capsot"><i>velodròm</i><par n="conselh__n"/></e>
-<e lm="vencut" a="capsot"><i>vencut</i><par n="conselh__n"/></e>
-<e lm="vençut" a="capsot"><i>vençut</i><par n="conselh__n"/></e>
+<e lm="vencut" a="capsot"><i>vencu</i><par n="afilia/t__n"/></e>
+<e lm="vençut" a="capsot"><i>vençu</i><par n="afilia/t__n"/></e>
 <e lm="venguda" a="capsot"><i>vengud</i><par n="jornad/a__n"/></e>
 <e lm="vernacular" a="capsot"><i>vernacular</i><par n="conselh__n"/></e>
 <e lm="vesicula" a="capsot"><i>vesicul</i><par n="jornad/a__n"/></e>
@@ -46783,6 +46794,8 @@
 <e lm="victoriós" a="capsot"><i>victori</i><par n="perilh/ós__adj"/></e>
 <e lm="viticòla" a="capsot"><i>viticòl</i><par n="agricòl/a__adj"/></e>
 <e lm="volant" a="capsot"><i>volant</i><par n="trabalhador__adj"/></e>
+
+<e lm="pretendre"><i>pretend</i><par n="bat/re__vblex"/></e>
 
 <!-- xxxx -->
 </section>
