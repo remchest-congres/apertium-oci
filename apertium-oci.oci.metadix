@@ -24866,6 +24866,7 @@
     <e lm="museta"><i>muset</i><par n="jornad/a__n"/></e>
     <e lm="musèu"><i>musèu</i><par n="conselh__n"/></e>
     <e lm="musician" a="carmentano"><i>musician</i><par n="conselhèr__n"/></e>
+    <e lm="musician"><i>musician</i><par n="trabalhador__adj"/></e>
     <e lm="tecnician" a="carmentano"><i>tecnician</i><par n="conselhèr__n"/></e>
     <e lm="gramatician" a="carmentano"><i>gramatician</i><par n="conselhèr__n"/></e>
     <e lm="music" a="carmentano" r="LR"><i>musi</i><par n="sindi/c__n"/></e>
@@ -30250,6 +30251,7 @@
     <e lm="compulsar"><i>comp</i><par n="ab/u[S]ar__vblex" prm="ls"/></e>
     <e lm="comunicar"><i>comun</i><par n="revl/i[N]car__vblex" prm=""/></e>
     <e lm="concentrar"><i>conc</i><par n="lid/e[R]ar__vblex" prm="ntr"/></e>
+    <e lm="concernir"><i>concern</i><par n="magr/èrem__vblex"/></e>
     <e lm="concertar"><i>conc</i><par n="cap/e[R]ar__vblex" prm="rt"/></e>
     <e lm="conciliar"><i>conc</i><par n="conc/i[L]iar__vblex" prm="l"/></e>
     <e lm="concordar"><i>conc</i><par n="p/o[RT]ar__vblex" prm="rd"/></e>
@@ -46796,6 +46798,22 @@
 <e lm="volant" a="capsot"><i>volant</i><par n="trabalhador__adj"/></e>
 
 <e lm="pretendre"><i>pretend</i><par n="bat/re__vblex"/></e>
+<e lm="demesir"><i>demes</i><par n="magr/èrem__vblex"/></e>
+<e lm="banalizar"><i>banal</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+<e lm="budgetizar"><i>budget</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+<e lm="dramatizar"><i>dramat</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+<e lm="fertilizar"><i>fertil</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+<e lm="fossilizar"><i>fossil</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+<e lm="generalizar"><i>general</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+<e lm="idealizar"><i>ideal</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+<e lm="impermeabilizar"><i>impermeabil</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+<e lm="interiorizar"><i>interior</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+<e lm="pulverizar"><i>pulver</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+<e lm="sintetizar"><i>sintet</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+<e lm="pasteurizar"><i>pasteur</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+<e lm="ipnotizar"><i>ipnot</i><par n="ab/i[T]ar__vblex" prm="z"/></e>
+<e lm="aclamar"><i>acl</i><par n="c/a[NT]ar__vblex" prm="m"/></e>
+
 
 <!-- xxxx -->
 </section>
