@@ -2090,6 +2090,45 @@ L?objet indirect peut être: « li, lor1, me, te, se, nos, vos »-->
 			<par n="vocal_general"/>
 		</e>
 
+		<e>
+			<p>
+				<l><a/>que<b/><a/>lo<b/></l>
+				<r>que<b/>lo<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
+				<l><a/>que<b/><a/>los<b/></l>
+				<r>que<b/>los<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
+				<l><a/>que<b/><a/>lo<b/></l>
+				<r>que<b/>l'</r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>que<b/><a/>la<b/></l>
+				<r>que<b/>la<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
+				<l><a/>que<b/><a/>las<b/></l>
+				<r>que<b/>las<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
+				<l><a/>que<b/><a/>la<b/></l>
+				<r>que<b/>l'</r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+
 
 	 <e>
 		 <p>
