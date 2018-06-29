@@ -1517,13 +1517,6 @@
 		</e>
 		<e>
 			<p>
-				<l><a/>ta<b/></l>
-				<r>ton<b/></r>
-			</p>
-			<par n="vocal_general"/>
-		</e>
-		<e>
-			<p>
 				<l><a/>ma<b/></l>
 				<r>mon<b/></r>
 			</p>
@@ -1531,8 +1524,36 @@
 		</e>
 		<e>
 			<p>
+				<l><a/>ta<b/></l>
+				<r>ton<b/></r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
 				<l><a/>sa<b/></l>
 				<r>son<b/></r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>de<b/><a/>ma<b/></l>
+				<r>de<b/>mon<b/></r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>de<b/><a/>ta<b/></l>
+				<r>de<b/>ton<b/></r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>de<b/><a/>sa<b/></l>
+				<r>de<b/>son<b/></r>
 			</p>
 			<par n="vocal_general"/>
 		</e>
@@ -2294,13 +2315,6 @@ L?objet indirect peut être: « li, lor1, me, te, se, nos, vos »-->
 		</e>
 		<e>
 			<p>
-				<l><a/>ta<b/></l>
-				<r>ton<b/></r>
-			</p>
-			<par n="vocal_general"/>
-		</e>
-		<e>
-			<p>
 				<l><a/>ma<b/></l>
 				<r>mon<b/></r>
 			</p>
@@ -2308,8 +2322,36 @@ L?objet indirect peut être: « li, lor1, me, te, se, nos, vos »-->
 		</e>
 		<e>
 			<p>
+				<l><a/>ta<b/></l>
+				<r>ton<b/></r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
 				<l><a/>sa<b/></l>
 				<r>son<b/></r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>de<b/><a/>ma<b/></l>
+				<r>de<b/>mon<b/></r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>de<b/><a/>ta<b/></l>
+				<r>de<b/>ton<b/></r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>de<b/><a/>sa<b/></l>
+				<r>de<b/>son<b/></r>
 			</p>
 			<par n="vocal_general"/>
 		</e>
