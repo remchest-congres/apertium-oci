@@ -1565,6 +1565,27 @@
 		</e>
 		<e>
 			<p>
+				<l><a/>sus<b/><a/>ma<b/></l>
+				<r>sus<b/>mon<b/></r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>sus<b/><a/>ta<b/></l>
+				<r>sus<b/>ton<b/></r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>sus<b/><a/>sa<b/></l>
+				<r>sus<b/>son<b/></r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
 				<l><a/>me<b/></l>
 				<r>m'</r>
 			</p>
@@ -2364,6 +2385,27 @@ L?objet indirect peut être: « li, lor1, me, te, se, nos, vos »-->
 			<p>
 				<l><a/>de<b/><a/>sa<b/></l>
 				<r>de<b/>son<b/></r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>sus<b/><a/>ma<b/></l>
+				<r>sus<b/>mon<b/></r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>sus<b/><a/>ta<b/></l>
+				<r>sus<b/>ton<b/></r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>sus<b/><a/>sa<b/></l>
+				<r>sus<b/>son<b/></r>
 			</p>
 			<par n="vocal_general"/>
 		</e>
