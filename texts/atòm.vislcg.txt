@@ -613,7 +613,7 @@
 	"que" cnjsub
 	"que" rel an mf sp
 "<'s>"
-	"'s" n f sp
+	"se" prn pro ref p3 mf sp
 "<pòt>"
 	"poder" vbmod pri p3 sg
 "<trencar>"
@@ -639,14 +639,13 @@
 "<no>"
 	"no" adv
 "<'s>"
-	"'s" n f sp
+	"se" prn pro ref p3 mf sp
 "<pòden>"
 	"*pòden"
 "<pas>"
 	"pas" adv
-;	"pas" n m sg
 "<trencar>"
-	"*trencar"
+	"trencar" vblex inf
 "<)>"
 	")" rpar
 "<->"
