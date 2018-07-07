@@ -1,0 +1,2569 @@
+"<Un>"
+	"un" det ind m sg
+"<atòm>"
+	"atòm" n m sg
+"<(>"
+	"(" lpar
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<grèc>"
+	"grèc" n m sg
+"<ἄτομος>"
+	"ἄτομος" barb	
+"<,>"
+	"," cm
+"<«>"
+	"«" lpar
+"<intrencable>"
+	"*intrencable"
+"<»>"
+	"»" rpar
+"<,>"
+	"," cm
+"<eth>"
+	"eth" det def m sg
+	"eth" prn tn p3 m sg
+"<medish>"
+	"medish" adv
+	"medish" adj m sg
+"<compausat>"
+	"compausar" vblex pp m sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<prefixe>"
+	"prefixe" n m sg
+"<α->"
+	"α-" barb
+"<->"
+	"-" guio
+"<in->"
+	"in-" barb
+"<e>"
+	"e" cnjcoo
+"<τέμνω>"
+	"τέμνω" barb
+"<->"
+	"-" guio
+"<«>"
+	"«" lpar
+"<copar>"
+	"copar" vblex inf
+"<,>"
+	"," cm
+"<trencar>"
+	"*trencar"
+"<»>"
+	"»" rpar
+"<->"
+	"-" guio
+"<)>"
+	")" rpar
+"<qu'>"
+	"que" cnjsub
+	"que" adv enon
+	"que" rel an mf sp
+"<ei>"
+	"èster" vbser pri p3 sg
+"<l'>"
+	"lo" det def mf sg
+"<unitat>"
+	"unitat" n f sg
+"<de>"
+	"de" pr
+"<composicion>"
+	"composicion" n f sg
+"<elementària>"
+	"elementari" adj f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<matèria>"
+	"matèria" n f sg
+"<e de>"
+	"e" cnjcoo
+		"de" pr
+"<las>"
+	"lo" det def f pl
+"<moleculas>"
+	"molecula" n f pl
+"<quimicas>"
+	"quimic" adj f pl
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<consèrva>"
+	"conservar" vblex pri p3 sg
+;	"conservar" vblex imp p2 sg
+"<las>"
+	"lo" det def f pl
+"<proprietats>"
+	"proprietat" n f pl
+"<quimicas>"
+	"quimic" adj f pl
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+"<element>"
+	"element" n m sg
+"<.>"
+	"." sent
+¶
+"<Los>"
+	"lo" det def m pl
+"<atòms>"
+	"atòm" n m pl
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<son>"
+	"èsser" vbser pri p3 pl
+"<compausats>"
+	"compausar" vblex pp m pl
+"<de>"
+	"de" pr
+"<fermions>"
+	"fermion" n m pl
+"<:>"
+	":" sent
+"<neutrons>"
+	"neutron" n m pl
+"<,>"
+	"," cm
+"<protons>"
+	"proton" n m pl
+"<e>"
+	"e" cnjcoo
+"<electrons>"
+	"electron" n m pl
+"<ligats>"
+	"ligar" vblex pp m pl
+"<per>"
+	"per" pr
+"<bosons>"
+	"boson" n m pl
+"<,>"
+	"," cm
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<son>"
+	"èsser" vbser pri p3 pl
+"<las>"
+	"lo" det def f pl
+"<particulas>"
+	"particula" n f pl
+"<elementàrias>"
+	"elementari" adj f pl
+"<.>"
+	"." sent
+¶
+"<Un>"
+	"un" det ind m sg
+"<atòm>"
+	"atòm" n m sg
+"<qu'>"
+	"que" cnjsub
+	"que" adv enon
+	"que" rel an mf sp
+"<ei>"
+	"èsser" vbser pri p3 sg
+"<electricament>"
+	"electricament" adv
+"<neutre>"
+	"neutre" adj m sg
+"<e>"
+	"e" cnjcoo
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<'s>"
+	"se" prn pro ref p3 mf sp
+"<compausa>"
+	"compausar" vblex pri p3 sg
+"<d'>"
+	"de" pr
+"<un>"
+	"un" det ind m sg
+"<nuclèu>"
+	"nuclèu" n m sg
+"<atomic>"
+	"atomic" adj m sg
+"<(>"
+	"(" lpar
+"<qui>"
+	"qui" rel nn mf sp
+"<pòrta>"
+	"portar" vblex pri p3 sg
+"<cargas>"
+	"carga" n f pl
+"<positivas>"
+	"positiu" adj f pl
+"<aperadas>"
+	"aperar" vblex pp f pl
+"<protons>"
+	"proton" n m pl
+"<e>"
+	"e" cnjcoo
+"<tanben>"
+	"tanben" adv
+"<(>"
+	"(" lpar
+"<generaument>"
+	"generalament" adv
+"<)>"
+	")" rpar
+"<de>"
+	"de" pr
+"<particulas>"
+	"particula" n f pl
+"<neutras>"
+	"neutre" adj f pl
+"<(>"
+	"(" lpar
+"<aperadas>"
+	"aperar" vblex pp f pl
+"<justament>"
+	"justament" adv
+"<neutrons>"
+	"neutron" n m pl
+"<)>"
+	")" rpar
+"<e d'>"
+	"e" cnjcoo
+		"de" pr
+"<electrons>"
+	"electron" n m pl
+"<cargats>"
+	"cargar" vblex pp m pl
+"<negativament>"
+	"negativament" adv
+"<e>"
+	"e" cnjcoo
+"<qui>"
+	"qui" rel nn mf sp
+"<viran>"
+	"virar" vblex pri p3 pl
+"<autorn>"
+	"autorn" adv
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<nuclèu>"
+	"nuclèu" n m sg
+"<autorn d'>"
+	"autorn de" pr
+"<ua>"
+	"un" det ind f sg
+"<orbita>"
+	"orbita" n f sg
+"<(>"
+	"(" lpar
+"<de>"
+	"de" pr
+"<probabilitat>"
+	"probabilitat" n f sg
+"<de>"
+	"de" pr
+"<preséncia>"
+	"preséncia" n f sg
+"<)>"
+	")" rpar
+"<determinada>"
+	"determinat" adj f sg
+"<.>"
+	"." sent
+¶
+"<Quan>"
+	"quan" rel adv
+"<lo>"
+	"lo" det def m sg
+"<nombre>"
+	"nombre" n m sg
+"<de>"
+	"de" pr
+"<protons>"
+	"proton" n m pl
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<nuclèu>"
+	"nuclèu" n m sg
+"<e>"
+	"e" cnjcoo
+"<lo>"
+	"lo" det def m sg
+"<nombre>"
+	"nombre" n m sg
+"<d'>"
+	"de" pr
+"<electrons>"
+	"electron" n m pl
+"<en>"
+	"en" pr
+"<orbita>"
+	"orbita" n f sg
+"<e>"
+	"e" cnjcoo
+"<son>"
+	"èsser" vbser pri p3 pl
+"<diferents>"
+	"diferent" adj m pl
+"<,>"
+	"," cm
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<s'>"
+	"se" prn pro ref p3 mf sp
+"<tracta>"
+	"tractar" vblex pri p3 sg
+"<alavetz>"
+	"alavetz" adv
+"<d'>"
+	"de" pr
+"<un>"
+	"un" det ind m sg
+"<ion>"
+	"ion" n m sg
+"<.>"
+	"." sent
+¶
+"<La>"
+	"lo" det def f sg
+"<quasi>"
+	"quasi" preadv
+"<totalitat>"
+	"totalitat" n f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<massa>"
+	"massa" n f sg
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+"<atòm>"
+	"atòm" n m sg
+"<qu'>"
+	"que" cnjsub
+	"que" adv enon
+	"que" rel an mf sp
+"<ei>"
+	"èsser" vbser pri p3 sg
+"<contienguda>"
+	"*contienguda"
+"<dehens>"
+	"*dehens"
+"<lo>"
+	"lo" det def m sg
+"<nuclèu>"
+	"nuclèu" n m sg
+"<.>"
+	"." sent
+¶
+"<Com>"
+	"com" pr
+	"com" adv itg
+"<aqueth>"
+	"aqueth" det dem m sg
+"<nuclèu>"
+	"nuclèu" n m sg
+"<qu'>"
+	"que" cnjsub
+	"que" adv enon
+	"que" rel an mf sp
+"<ei>"
+	"èsser" vbser pri p3 sg
+"<100>"
+	"100" num
+"<000>"
+	"000" num
+"<vegadas>"
+	"vegada" n f pl
+"<mei>"
+	"mei" adv
+"<petit>"
+	"petit" adj m sg
+;	"petit" n m sg
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<'u>"
+	"'u" n f sg
+"<son>"
+	"èsser" vbser pri p3 pl
+	"èster" vbser pri p3 pl
+	"son" det pos m sg
+;	"son" n m sg
+;	"son" det pos f sg
+"<atòm>"
+	"atòm" n m sg
+"<,>"
+	"," cm
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<cau>"
+	"*cau"
+"<logicament>"
+	"logicament" adv
+"<soslinhar>"
+	"soslinhar" vblex inf
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<l'>"
+	"lo" det def mf sg
+;	"lo" prn pro p3 f sg
+;	"lo" prn pro p3 m sg
+"<atòm>"
+	"atòm" n m sg
+"<(>"
+	"(" lpar
+"<e>"
+	"e" cnjcoo
+"<donc>"
+	"donc" cnjadv
+"<la>"
+	"lo" det def f sg
+;	"lo" prn pro p3 f sg
+"<matèria>"
+	"matèria" n f sg
+"<)>"
+	")" rpar
+"<qu'>"
+	"que" cnjsub
+	"que" adv enon
+	"que" rel an mf sp
+"<ei>"
+	"èster" vbser pri p3 sg
+"<mei>"
+	"mei" adv
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<mei>"
+	"mei" adv
+"<compausat>"
+	"compausat" adj m sg
+	"compausar" vblex pp m sg
+;	"compausat" n m sg
+"<de>"
+	"de" pr
+"<vueit>"
+	"*vueit"
+"<.>"
+	"." sent
+¶
+"<Lo>"
+	"lo" det def m sg
+	"lo" prn pro p3 m sg
+"<nombre>"
+	"nombre" n m sg
+	"nombrar" vblex prs p3 sg
+	"nombrar" vblex pri p1 sg
+	"nombrar" vblex prs p1 sg
+;	"nombrar" vblex imp p3 sg
+"<de>"
+	"de" pr
+"<cargas>"
+	"carga" n f pl
+	"cargar" vblex pri p2 sg
+"<positivas>"
+	"positiu" adj f pl
+"<deu>"
+	"deure" vbmod pri p3 sg
+	"de" pr
+		"lo" det def m sg
+	"deure" vblex pri p3 sg
+	"dever" vbmod pri p3 sg
+	"déuer" vbmod pri p3 sg
+;	"deure" vblex imp p2 sg
+"<nuclèu>"
+	"nuclèu" n m sg
+"<(>"
+	"(" lpar
+"<e>"
+	"e" cnjcoo
+"<donc>"
+	"donc" cnjadv
+"<tanben>"
+	"tanben" preadv
+;	"tanben" adv
+"<egau>"
+	"egau" adj mf sg
+;	"egau" n mf sg
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<nombre>"
+	"nombre" n m sg
+	"nombrar" vblex prs p3 sg
+	"nombrar" vblex pri p1 sg
+	"nombrar" vblex prs p1 sg
+;	"nombrar" vblex imp p3 sg
+"<d'>"
+	"de" pr
+"<electrons>"
+	"electron" n m pl
+"<qui>"
+	"qui" prn itg mf sp
+	"qui" rel nn mf sp
+"<viran>"
+	"virar" vblex pri p3 pl
+"<autorn>"
+	"*autorn"
+"<)>"
+	")" rpar
+"<qu'>"
+	"que" cnjsub
+	"que" adv enon
+	"que" rel an mf sp
+"<ei>"
+	"èster" vbser pri p3 sg
+"<lo>"
+	"lo" det def m sg
+	"lo" prn pro p3 m sg
+"<nombre>"
+	"nombre" n m sg
+	"nombrar" vblex prs p3 sg
+	"nombrar" vblex pri p1 sg
+	"nombrar" vblex prs p1 sg
+;	"nombrar" vblex imp p3 sg
+"<atomic>"
+	"atomic" adj m sg
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+;	"lo" prn pro p3 f sg
+;	"lo" prn pro p3 m sg
+"<atòm>"
+	"atòm" n m sg
+"<e>"
+	"e" cnjcoo
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<determina>"
+	"determinar" vblex pri p3 sg
+;	"determinar" vblex imp p2 sg
+"<l'>"
+	"lo" det def mf sg
+;	"lo" prn pro p3 f sg
+;	"lo" prn pro p3 m sg
+"<element>"
+	"element" n m sg
+"<d'>"
+	"de" pr
+"<aqueth>"
+	"aqueth" prn tn m sg
+	"aqueth" det dem m sg
+"<atòm>"
+	"atòm" n m sg
+"<.>"
+	"." sent
+¶
+"<Lo>"
+	"lo" det def m sg
+;	"lo" prn pro p3 m sg
+"<concèpte>"
+	"concèpte" n m sg
+"<d'>"
+	"de" pr
+"<atòm>"
+	"atòm" n m sg
+"<(>"
+	"(" lpar
+"<l'>"
+	"lo" det def mf sg
+	"lo" prn pro p3 f sg
+	"lo" prn pro p3 m sg
+"<idèa>"
+	"idèa" n f sg
+	"idear" vblex pri p3 sg
+;	"idear" vblex imp p2 sg
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<la>"
+	"lo" det def f sg
+;	"lo" prn pro p3 f sg
+"<matèria>"
+	"matèria" n f sg
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<'s>"
+	"'s" n f sp
+"<pòt>"
+	"poder" vbmod pri p3 sg
+"<trencar>"
+	"*trencar"
+"<en>"
+	"en" pr
+	"en" prn pro adv
+"<partidas>"
+	"partit" adj f pl
+	"partida" n f pl
+	"partir" vblex pp f pl
+"<elementàrias>"
+	"elementari" adj f pl
+"<qui>"
+	"qui" prn itg mf sp
+	"qui" rel nn mf sp
+"<,>"
+	"," cm
+"<eras>"
+	"eth" det def f pl
+"<,>"
+	"," cm
+"<no>"
+	"no" adv
+"<'s>"
+	"'s" n f sp
+"<pòden>"
+	"*pòden"
+"<pas>"
+	"pas" adv
+;	"pas" n m sg
+"<trencar>"
+	"*trencar"
+"<)>"
+	")" rpar
+"<->"
+	"-" guio 
+"<com>"
+	"com" pr
+	"com" adv itg
+"<lo>"
+	"lo" det def m sg
+	"lo" prn pro p3 m sg
+"<son>"
+	"son" n m sg
+	"èsser" vbser pri p3 pl
+	"son" det pos m sg
+	"èster" vbser pri p3 pl
+;	"son" det pos f sg
+"<nom>"
+	"nom" n m sg
+"<grèc>"
+	"grèc" adj m sg
+;	"grèc" n m sg
+"<ac>"
+	"ac" prn pro p3 nt
+"<muisha>"
+	"*muisha"
+"<->"
+	"-" guio
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<ho>"
+	"*ho"
+"<perpausat>"
+	"*perpausat"
+"<durant>"
+	"durant" pr
+	"durar" vblex ger
+"<l'>"
+	"lo" det def mf sg
+;	"lo" prn pro p3 f sg
+;	"lo" prn pro p3 m sg
+"<antiquitat>"
+	"antiquitat" n f sg
+"<mes>"
+	"mes" adv
+	"metre" vblex pp m sg
+;	"mes" n m sg
+"<non pas>"
+	"non pas" adv
+"<ho>"
+	"*ho"
+"<definitivament>"
+	"definitivament" adv
+"<adoptada>"
+	"adoptat" adj f sg
+	"adoptar" vblex pp f sg
+"<abans>"
+	"abans" adv
+	"abans" pr
+"<lo>"
+	"lo" det def m sg
+;	"lo" prn pro p3 m sg
+"<sègle>"
+	"sègle" n m sg
+"<XVIII>"
+	"XVIII" num mf sp
+"<.>"
+	"." sent
+¶
+"<Se>"
+	"se" cnjadv
+	"se" prn pro ref p3 mf sp
+"<lo>"
+	"lo" det def m sg
+	"lo" prn pro p3 m sg
+"<nombre>"
+	"nombre" n m sg
+	"nombrar" vblex prs p3 sg
+	"nombrar" vblex pri p1 sg
+	"nombrar" vblex prs p1 sg
+;	"nombrar" vblex imp p3 sg
+"<de>"
+	"de" pr
+"<protons>"
+	"proton" n m pl
+"<(>"
+	"(" lpar
+"<egau>"
+	"egau" adj mf sg
+;	"egau" n mf sg
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<nombre>"
+	"nombre" n m sg
+	"nombrar" vblex prs p3 sg
+	"nombrar" vblex pri p1 sg
+	"nombrar" vblex prs p1 sg
+;	"nombrar" vblex imp p3 sg
+"<d'>"
+	"de" pr
+"<electrons>"
+	"electron" n m pl
+"<)>"
+	")" rpar
+"<b'>"
+	"be" adv enon
+"<ei>"
+	"èster" vbser pri p3 sg
+"<fixe>"
+	"fixe" adj m sg
+	"fixar" vblex prs p3 sg
+	"fixar" vblex pri p1 sg
+	"fixar" vblex prs p1 sg
+;	"fixar" vblex imp p3 sg
+"<e>"
+	"e" cnjcoo
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<determina>"
+	"determinar" vblex pri p3 sg
+;	"determinar" vblex imp p2 sg
+"<l'>"
+	"lo" det def mf sg
+;	"lo" prn pro p3 f sg
+;	"lo" prn pro p3 m sg
+"<identitat>"
+	"identitat" n f sg
+"<d'>"
+	"de" pr
+"<un>"
+	"un" det ind m sg
+;	"un" num m sp
+;	"un" n m sg
+;	"un" prn tn m sg
+"<element>"
+	"element" n m sg
+"<,>"
+	"," cm
+"<lo>"
+	"lo" det def m sg
+	"lo" prn pro p3 m sg
+"<nombre>"
+	"nombre" n m sg
+	"nombrar" vblex prs p3 sg
+	"nombrar" vblex pri p1 sg
+	"nombrar" vblex prs p1 sg
+;	"nombrar" vblex imp p3 sg
+"<de>"
+	"de" pr
+"<neutrons>"
+	"neutron" n m pl
+"<eth>"
+	"eth" det def m sg
+	"eth" prn tn p3 m sg
+"<(>"
+	"(" lpar
+"<e>"
+	"e" cnjcoo
+"<donc>"
+	"donc" cnjadv
+"<atau>"
+	"atau" adv
+"<lo>"
+	"lo" det def m sg
+	"lo" prn pro p3 m sg
+"<nombre>"
+	"nombre" n m sg
+	"nombrar" vblex prs p3 sg
+	"nombrar" vblex pri p1 sg
+	"nombrar" vblex prs p1 sg
+;	"nombrar" vblex imp p3 sg
+"<totau>"
+	"totau" adj mf sg
+	"total" n m sg
+"<d'>"
+	"de" pr
+"<elements>"
+	"element" n m pl
+"<compausant>"
+	"compausar" vblex ger
+;	"compausant" n m sg
+"<lo>"
+	"lo" det def m sg
+;	"lo" prn pro p3 m sg
+"<nuclèu>"
+	"nuclèu" n m sg
+"<)>"
+	")" rpar
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<pòt>"
+	"poder" vbmod pri p3 sg
+"<variar>"
+	"variar" vblex inf
+"<.>"
+	"." sent
+¶
+"<Dus>"
+	"*Dus"
+"<atòms>"
+	"atòm" n m pl
+"<d'>"
+	"de" pr
+"<un>"
+	"un" det ind m sg
+;	"un" num m sp
+;	"un" n m sg
+;	"un" prn tn m sg
+"<medish>"
+	"medish" adv
+	"medish" adj m sg
+"<element>"
+	"element" n m sg
+"<dab>"
+	"dab" pr
+"<un>"
+	"un" det ind m sg
+;	"un" num m sp
+;	"un" n m sg
+;	"un" prn tn m sg
+"<nombre>"
+	"nombre" n m sg
+	"nombrar" vblex prs p3 sg
+	"nombrar" vblex pri p1 sg
+	"nombrar" vblex prs p1 sg
+;	"nombrar" vblex imp p3 sg
+"<diferent>"
+	"diferent" adj m sg
+"<de>"
+	"de" pr
+"<neutrons>"
+	"neutron" n m pl
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<constitueishen>"
+	"*constitueishen"
+"<dus>"
+	"*dus"
+"<isotòps>"
+	"isotòp" adj m pl
+;	"isotòp" n m pl
+"<d'>"
+	"de" pr
+"<aqueth>"
+	"aqueth" prn tn m sg
+	"aqueth" det dem m sg
+"<element>"
+	"element" n m sg
+"<.>"
+	"." sent
+¶
+"<Un>"
+	"un" det ind m sg
+;	"un" n m sg
+;	"un" num m sp
+;	"un" prn tn m sg
+"<medish>"
+	"medish" adv
+	"medish" adj m sg
+"<element>"
+	"element" n m sg
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<pòt>"
+	"poder" vbmod pri p3 sg
+"<comptar>"
+	"comptar" vblex inf
+"<dab>"
+	"dab" pr
+"<un>"
+	"un" det ind m sg
+;	"un" num m sp
+;	"un" n m sg
+;	"un" prn tn m sg
+"<sarròt>"
+	"*sarròt"
+"<d'>"
+	"de" pr
+"<isotòps>"
+	"isotòp" adj m pl
+	"isotòp" n m pl
+"<.>"
+	"." sent
+¶
+"<Cèrtes>"
+	"cèrtes" prn tn m pl
+"<isotòps>"
+	"isotòp" adj m pl
+	"isotòp" n m pl
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<pòden>"
+	"*pòden"
+"<estar>"
+	"estar" vblex inf
+;	"estar" n m sg
+"<inestables>"
+	"*inestables"
+"<e>"
+	"e" cnjcoo
+"<,>"
+	"," cm
+"<atau>"
+	"atau" adv
+"<,>"
+	"," cm
+"<radioactius>"
+	"radioactiu" adj m pl
+"<.>"
+	"." sent
+¶
+"<Dab>"
+	"dab" pr
+"<lo>"
+	"lo" det def m sg
+;	"lo" prn pro p3 m sg
+"<temps>"
+	"temps" n m sg
+"<,>"
+	"," cm
+"<un>"
+	"un" det ind m sg
+;	"un" n m sg
+;	"un" num m sp
+;	"un" prn tn m sg
+"<isotòp>"
+	"isotòp" adj m sg
+	"isotòp" n m sg
+"<radioactiu>"
+	"radioactiu" adj m sg
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<'s>"
+	"s" n f sp
+"<pòt>"
+	"poder" vbmod pri p3 sg
+"<transformar>"
+	"transformar" vblex inf
+"<en>"
+	"en" pr
+;	"en" prn pro adv
+"<un>"
+	"un" det ind m sg
+;	"un" num m sp
+;	"un" n m sg
+;	"un" prn tn m sg
+"<aute>"
+	"aute" adj ind m sg
+"<isotòp>"
+	"isotòp" adj m sg
+	"isotòp" n m sg
+"<o>"
+	"o" cnjcoo
+;	"o" prn pro p3 nt
+"<element>"
+	"element" n m sg
+"<per>"
+	"per" adv
+;	"per" pr
+"<transmutacion>"
+	"*transmutacion"
+"<en>"
+	"en" pr
+;	"en" prn pro adv
+"<bèth>"
+	"bèth" det ind m sg
+;	"bèl" n m sg
+"<cambiar>"
+	"cambiar" vblex inf
+"<lo>"
+	"lo" det def m sg
+	"lo" prn pro p3 m sg
+"<son>"
+	"son" n m sg
+	"èsser" vbser pri p3 pl
+	"son" det pos m sg
+	"èster" vbser pri p3 pl
+;	"son" det pos f sg
+"<nombre>"
+	"nombre" n m sg
+	"nombrar" vblex prs p3 sg
+	"nombrar" vblex pri p1 sg
+	"nombrar" vblex prs p1 sg
+;	"nombrar" vblex imp p3 sg
+"<de>"
+	"de" pr
+"<particulas>"
+	"particula" n f pl
+"<dehens>"
+	"*dehens"
+"<lo>"
+	"lo" det def m sg
+;	"lo" prn pro p3 m sg
+"<nuclèu>"
+	"nuclèu" n m sg
+"<.>"
+	"." sent
+¶
+"<Deu>"
+	"Deu" np cog mf sp
+	"deure" vbmod pri p3 sg
+	"de" pr
+		"lo" det def m sg
+	"deure" vblex pri p3 sg
+	"dever" vbmod pri p3 sg
+	"déuer" vbmod pri p3 sg
+;	"deure" vblex imp p2 sg
+"<punt>"
+	"punt" adv
+	"punt" n m sg
+"<de>"
+	"de" pr
+"<vista>"
+	"vista" n f sg
+	"veir" vblex pp f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+;	"lo" prn pro p3 f sg
+"<filosofia>"
+	"filosofia" n f sg
+"<,>"
+	"," cm
+"<lo>"
+	"lo" det def m sg
+;	"lo" prn pro p3 m sg
+"<concèpte>"
+	"concèpte" n m sg
+"<e>"
+	"e" cnjcoo
+"<lo>"
+	"lo" det def m sg
+;	"lo" prn pro p3 m sg
+"<mot>"
+	"mot" n m sg
+"<d'>"
+	"de" pr
+"<atòm>"
+	"atòm" n m sg
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<hon>"
+	"hóner" vblex pri p3 sg
+;	"hóner" vblex imp p2 sg
+"<perpausats>"
+	"*perpausats"
+"<dens>"
+	"dens" adj m sg
+"<la>"
+	"lo" det def f sg
+;	"lo" prn pro p3 f sg
+"<Grècia>"
+	"Grècia" np top f sg
+"<Antica>"
+	"antic" adj f sg
+"<per>"
+	"per" adv
+;	"per" pr
+"<Leucip>"
+	"*Leucip"
+"<e>"
+	"e" cnjcoo
+"<lo>"
+	"lo" det def m sg
+	"lo" prn pro p3 m sg
+"<son>"
+	"son" n m sg
+	"èsser" vbser pri p3 pl
+	"son" det pos m sg
+	"èster" vbser pri p3 pl
+;	"son" det pos f sg
+"<discípol>"
+	"discípol" n m sg
+"<Democrit>"
+	"*Democrit"
+"<en>"
+	"en" pr
+;	"en" prn pro adv
+"<bèth>"
+	"bèth" det ind m sg
+;	"bèl" n m sg
+"<apujà>"
+	"*apujà"
+"<'s>"
+	"s" n f sp
+"<suber>"
+	"*suber"
+"<l'>"
+	"lo" det def mf sg
+;	"lo" prn pro p3 f sg
+;	"lo" prn pro p3 m sg
+"<idea>"
+	"*idea"
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<s'>"
+	"se" cnjadv
+;	"se" prn pro ref p3 mf sp
+"<un>"
+	"un" det ind m sg
+;	"un" n m sg
+;	"un" num m sp
+;	"un" prn tn m sg
+"<objècte>"
+	"objècte" n m sg
+	"objectar" vblex prs p3 sg
+	"objectar" vblex prs p1 sg
+;	"objectar" vblex imp p3 sg
+"<e>"
+	"e" cnjcoo
+"<'s>"
+	"s" n f sp
+"<pòt>"
+	"poder" vbmod pri p3 sg
+"<copar>"
+	"copar" vblex inf
+"<,>"
+	"," cm
+"<aquò>"
+	"aquò" prn tn nt
+	"aquò" prn tn p3 nt
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<vòu>"
+	"voler" vbmod pri p3 sg
+	"voler" vblex pri p3 sg
+"<díser>"
+	"dire" vblex inf
+"<qu'>"
+	"que" cnjsub
+	"que" adv enon
+	"que" rel an mf sp
+"<ei>"
+	"èster" vbser pri p3 sg
+"<compausat>"
+	"compausat" adj m sg
+	"compausat" n m sg
+	"compausar" vblex pp m sg
+"<d'>"
+	"de" pr
+"<elements>"
+	"element" n m pl
+"<basics>"
+	"basic" adj m pl
+"<qui>"
+	"qui" prn itg mf sp
+	"qui" rel nn mf sp
+"<eths>"
+	"eth" det def m pl
+"<,>"
+	"," cm
+"<no>"
+	"no" adv
+"<'s>"
+	"s" n f sp
+"<pòden>"
+	"*pòden"
+"<pas>"
+	"pas" adv
+;	"pas" n m sg
+"<trencar>"
+	"*trencar"
+"<.>"
+	"." sent
+¶
+"<Curiosament>"
+	"curiosament" adv
+"<,>"
+	"," cm
+"<aquesta>"
+	"aqueste" prn tn f sg
+	"aqueste" det dem f sg
+"<teoria>"
+	"teoria" n f sg
+"<non>"
+	"non" adv
+"<ho>"
+	"*ho"
+"<pas>"
+	"pas" adv
+;	"pas" n m sg
+"<privilegiada>"
+	"privilegiat" adj f sg
+	"privilegiar" vblex pp f sg
+"<durant>"
+	"durant" pr
+	"durar" vblex ger
+"<los>"
+	"lo" det def m pl
+;	"lo" prn pro p3 m pl
+"<sègles>"
+	"sègle" n m pl
+"<seguents>"
+	"seguent" adj m pl
+;	"seguent" n m pl
+"<e>"
+	"e" cnjcoo
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<se>"
+	"se" cnjadv
+	"se" prn pro ref p3 mf sp
+"<la>"
+	"lo" det def f sg
+	"lo" prn pro p3 f sg
+"<preferí>"
+	"preferir" vblex imp p2 sg
+"<lo>"
+	"lo" det def m sg
+;	"lo" prn pro p3 m sg
+"<concèpte>"
+	"concèpte" n m sg
+"<deus>"
+	"de" pr
+		"lo" det def m pl
+"<tres>"
+	"tres" num mf sp
+"<elements>"
+	"element" n m pl
+"<(>"
+	"(" lpar
+"<tèrra>"
+	"tèrra" n f sg
+"<,>"
+	"," cm
+"<huec>"
+	"huec" n m sg
+"<,>"
+	"," cm
+"<aiga>"
+	"aiga" n f sg
+	"aigua" n f sg
+"<e>"
+	"e" cnjcoo
+"<aire>"
+	"aire" n m sg
+"<)>"
+	")" rpar
+"<dinc>"
+	"dinc" pr
+"<aus>"
+	"a" pr
+		"lo" det def m pl
+"<sègles>"
+	"sègle" n m pl
+"<XVI>"
+	"XVI" num mf sp
+"<e>"
+	"e" cnjcoo
+"<XVIII>"
+	"XVIII" num mf sp
+"<.>"
+	"." sent
+¶
+"<Un>"
+	"un" det ind m sg
+;	"un" n m sg
+;	"un" num m sp
+;	"un" prn tn m sg
+"<pas>"
+	"pas" adv
+	"pas" n m sg
+"<determinant>"
+	"determinar" vblex ger
+	"determinant" adj m sg
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<hon>"
+	"hóner" vblex pri p3 sg
+;	"hóner" vblex imp p2 sg
+"<provesit>"
+	"provesir" vblex pp m sg
+"<peus>"
+	"pel" n m pl
+"<tribalhs>"
+	"*tribalhs"
+"<deu>"
+	"deure" vbmod pri p3 sg
+	"de" pr
+		"lo" det def m sg
+	"deure" vblex pri p3 sg
+	"dever" vbmod pri p3 sg
+	"déuer" vbmod pri p3 sg
+;	"deure" vblex imp p2 sg
+"<picard>"
+	"picard" adj m sg
+"<Antoine>"
+	"Antoine" np ant m sg
+"<Lavoisier>"
+	"Lavoisier" np cog mf sp
+"<qui>"
+	"qui" prn itg mf sp
+	"qui" rel nn mf sp
+"<,>"
+	"," cm
+"<deu>"
+	"deure" vbmod pri p3 sg
+	"de" pr
+		"lo" det def m sg
+	"deure" vblex pri p3 sg
+	"dever" vbmod pri p3 sg
+	"déuer" vbmod pri p3 sg
+;	"deure" vblex imp p2 sg
+"<punt>"
+	"punt" adv
+	"punt" n m sg
+"<de>"
+	"de" pr
+"<vista>"
+	"vista" n f sg
+	"veir" vblex pp f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+;	"lo" prn pro p3 f sg
+"<quimia>"
+	"quimia" n f sg
+"<e>"
+	"e" cnjcoo
+"<muishè>"
+	"*muishè"
+"<">"
+	""" quot
+"<la>"
+	"lo" det def f sg
+"<conservacion>"
+	"conservacion" n f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<matèria>"
+	"matèria" n f sg
+"<">"
+	""" quot
+"<,>"
+	"," cm
+"<tan>"
+	"tan" preadv
+"<vau>"
+	"anar" vblex pri p1 sg
+"<díser>"
+	"dire" vblex inf
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<dens>"
+	"dens" adj m sg
+"<ua>"
+	"un" det ind f sg
+;	"un" prn tn f sg
+"<reaccion>"
+	"reaccion" n f sg
+"<quimica>"
+	"quimic" adj f sg
+"<,>"
+	"," cm
+"<la>"
+	"lo" det def f sg
+;	"lo" prn pro p3 f sg
+"<massa>"
+	"massa" adv
+	"massa" n f sg
+"<deus>"
+	"de" pr
+		"lo" det def m pl
+"<productes>"
+	"producte" n m pl
+"<reactius>"
+	"reactiu" adj m pl
+"<qu'>"
+	"que" cnjsub
+	"que" adv enon
+	"que" rel an mf sp
+"<ei>"
+	"èster" vbser pri p3 sg
+"<egala>"
+	"egal" adj f sg
+	"egal" n f sg
+	"egalar" vblex pri p3 sg
+;	"egalar" vblex imp p2 sg
+"<a>"
+	"a" pr
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
+	"auer" vbhaver pri p3 sg
+	"auer" vblex pri p3 sg
+"<la>"
+	"lo" det def f sg
+;	"lo" prn pro p3 f sg
+"<massa>"
+	"massa" adv
+	"massa" n f sg
+"<deus>"
+	"de" pr
+		"lo" det def m pl
+"<productes>"
+	"producte" n m pl
+"<generats>"
+	"generar" vblex pp m pl
+"<per>"
+	"per" adv
+	"per" pr
+"<la>"
+	"lo" det def f sg
+;	"lo" prn pro p3 f sg
+"<reaccion>"
+	"reaccion" n f sg
+"<.>"
+	"." sent
+¶
+"<Mes>"
+	"mes" adv
+	"metre" vblex pp m sg
+;	"mes" n m sg
+"<lo>"
+	"lo" det def m sg
+;	"lo" prn pro p3 m sg
+"<pair>"
+	"pair" n m sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+;	"lo" prn pro p3 f sg
+"<Teoria>"
+	"teoria" n f sg
+"<Atomica>"
+	"atomic" adj f sg
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<ho>"
+	"*ho"
+"<John>"
+	"John" np ant m sg
+"<Dalton>"
+	"Dalton" np cog mf sp
+"<qui>"
+	"qui" prn itg mf sp
+	"qui" rel nn mf sp
+"<,>"
+	"," cm
+"<en>"
+	"en" prn pro adv
+;	"en" pr
+"<s'>"
+	"se" cnjadv
+;	"se" prn pro ref p3 mf sp
+"<apujant>"
+	"*apujant"
+"<suber>"
+	"*suber"
+"<las>"
+	"las" adj m sg
+	"lo" det def f pl
+;	"lo" prn pro p3 f pl
+"<observacions>"
+	"observacion" n f pl
+"<quimicas>"
+	"quimic" adj f pl
+"<,>"
+	"," cm
+"<ensagè>"
+	"*ensagè"
+"<d'>"
+	"de" pr
+"<isolar>"
+	"isolar" vblex inf
+"<e d'>"
+	"e" cnjcoo
+		"de" pr
+"<identificar>"
+	"identificar" vblex inf
+"<l'>"
+	"lo" det def mf sg
+;	"lo" prn pro p3 f sg
+;	"lo" prn pro p3 m sg
+"<identitat>"
+	"identitat" n f sg
+"<e>"
+	"e" cnjcoo
+"<las>"
+	"las" adj m sg
+	"lo" det def f pl
+;	"lo" prn pro p3 f pl
+"<proprietats>"
+	"proprietat" n f pl
+"<d'>"
+	"de" pr
+"<un>"
+	"un" det ind m sg
+;	"un" num m sp
+;	"un" n m sg
+;	"un" prn tn m sg
+"<cèrte>"
+	"*cèrte"
+"<nombre>"
+	"nombrar" vblex prs p1 sg
+	"nombrar" vblex prs p3 sg
+	"nombrar" vblex pri p1 sg
+;	"nombrar" vblex imp p3 sg
+;	"nombre" n m sg
+"<d'>"
+	"de" pr
+"<elements>"
+	"element" n m pl
+"<considerats>"
+	"considerar" vblex pp m pl
+"<indestructibles>"
+	"*indestructibles"
+"<e>"
+	"e" cnjcoo
+"<capables>"
+	"capable" adj m pl
+"<de>"
+	"de" pr
+"<s'>"
+	"se" cnjadv
+	"se" prn pro ref p3 mf sp
+"<associar>"
+	"associar" vblex inf
+"<entà>"
+	"entà" pr
+"<formar>"
+	"formar" vblex inf
+"<moleculas>"
+	"molecula" n f pl
+"<.>"
+	"." sent
+¶
+"<Dalton>"
+	"Dalton" np cog mf sp
+"<qu'>"
+	"que" cnjsub
+	"que" rel an mf sp
+;	"que" adv enon
+"<ensagè>"
+	"*ensagè"
+"<atau>"
+	"atau" adv
+"<de>"
+	"de" pr
+"<hargar>"
+	"*hargar"
+"<ua>"
+	"un" det ind f sg
+;	"un" prn tn f sg
+"<classificacion>"
+	"classificacion" n f sg
+"<deus>"
+	"de" pr
+		"lo" det def m pl
+"<elements>"
+	"element" n m pl
+"<qui>"
+	"qui" prn itg mf sp
+	"qui" rel nn mf sp
+"<,>"
+	"," cm
+"<pionièra>"
+	"pionièr" adj f sg
+;	"pionièr" n f sg
+"<,>"
+	"," cm
+"<patishèva>"
+	"*patishèva"
+"<de>"
+	"de" pr
+"<mantua>"
+	"mantun" det ind f sg
+"<imperfeccion>"
+	"imperfeccion" n f sg
+"<.>"
+	"." sent
+¶
+"<Lo>"
+	"lo" det def m sg
+;	"lo" prn pro p3 m sg
+"<quimista>"
+	"quimista" n mf sg
+"<rus>"
+	"rus" adj m sg
+;	"rus" n m sg
+"<Dmitrii>"
+	"*Dmitrii"
+"<Mendeleiev>"
+	"*Mendeleiev"
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<publiquè>"
+	"*publiquè"
+"<en>"
+	"en" pr
+;	"en" prn pro adv
+"<1869>"
+	"1869" num
+"<la>"
+	"lo" det def f sg
+;	"lo" prn pro p3 f sg
+"<Taula>"
+	"taula" n f sg
+"<periodica>"
+	"periodic" adj f sg
+"<e>"
+	"e" cnjcoo
+"<s'>"
+	"se" cnjadv
+;	"se" prn pro ref p3 mf sp
+"<apujant>"
+	"*apujant"
+"<suber>"
+	"*suber"
+"<las>"
+	"las" adj m sg
+	"lo" det def f pl
+	"lo" prn pro p3 f pl
+"<descobèrtas>"
+	"descobèrt" adj f pl
+	"descobèrta" n f pl
+	"descobrir" vblex pp f pl
+"<experimentalas>"
+	"experimental" adj f pl
+"<e>"
+	"e" cnjcoo
+"<empiricas>"
+	"empiric" adj f pl
+"<qui>"
+	"qui" prn itg mf sp
+	"qui" rel nn mf sp
+"<suggereishen>"
+	"*suggereishen"
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<,>"
+	"," cm
+"<un còp>"
+	"un còp" adv
+"<classats>"
+	"classar" vblex pp m pl
+"<los>"
+	"lo" det def m pl
+;	"lo" prn pro p3 m pl
+"<elements>"
+	"element" n m pl
+"<en>"
+	"en" pr
+;	"en" prn pro adv
+"<òrdi>"
+	"òrdi" n m sg
+"<creishent>"
+	"créisher" vblex ger
+	"creishent" adj m sg
+"<de>"
+	"de" pr
+"<massa>"
+	"massa" adv
+	"massa" n f sg
+"<,>"
+	"," cm
+"<be>"
+	"*be"
+"<semblan>"
+	"semblar" vblex pri p3 pl
+"<ostentar>"
+	"*ostentar"
+"<periodicament>"
+	"periodicament" adv
+"<proprietats>"
+	"proprietat" n f pl
+"<comunas>"
+	"comun" adj f pl
+;	"comuna" n f pl
+"<qui>"
+	"qui" prn itg mf sp
+	"qui" rel nn mf sp
+"<tornan>"
+	"tornar" vblex pri p3 pl
+"<regularament>"
+	"regularament" adv
+"<.>"
+	"." sent
+¶
+"<En>"
+	"en" pr
+;	"en" prn pro adv
+"<1897>"
+	"1897" num
+"<Joseph>"
+	"Joseph" np ant m sg
+	"Joseph" np cog mf sp
+"<John>"
+	"John" np ant m sg
+"<Thomson>"
+	"Thomson" np al
+	"Thomson" np cog mf sp
+"<descobrí>"
+	"*descobrí"
+"<l'>"
+	"lo" det def mf sg
+;	"lo" prn pro p3 f sg
+;	"lo" prn pro p3 m sg
+"<electron>"
+	"electron" n m sg
+"<en>"
+	"en" pr
+;	"en" prn pro adv
+"<lo>"
+	"lo" det def m sg
+;	"lo" prn pro p3 m sg
+"<bèth>"
+	"bèth" det ind m sg
+;	"bèl" n m sg
+"<identificar>"
+	"identificar" vblex inf
+"<com>"
+	"com" pr
+	"com" adv itg
+"<ua>"
+	"un" det ind f sg
+;	"un" prn tn f sg
+"<particula>"
+	"particula" n f sg
+"<subatomica>"
+	"subatomic" adj f sg
+"<en tot>"
+	"en tot" adv
+"<muishar>"
+	"*muishar"
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<l'>"
+	"lo" det def mf sg
+;	"lo" prn pro p3 f sg
+;	"lo" prn pro p3 m sg
+"<atòm>"
+	"atòm" n m sg
+"<(>"
+	"(" lpar
+"<en>"
+	"en" pr
+;	"en" prn pro adv
+"<contradiccion>"
+	"contradiccion" n f sg
+"<dab>"
+	"dab" pr
+"<l'>"
+	"lo" det def mf sg
+;	"lo" prn pro p3 f sg
+;	"lo" prn pro p3 m sg
+"<etimologia>"
+	"etimologia" n f sg
+"<deu>"
+	"deure" vbmod pri p3 sg
+	"de" pr
+		"lo" det def m sg
+	"deure" vblex pri p3 sg
+	"dever" vbmod pri p3 sg
+	"déuer" vbmod pri p3 sg
+;	"deure" vblex imp p2 sg
+"<son>"
+	"son" n m sg
+	"èsser" vbser pri p3 pl
+	"son" det pos m sg
+	"èster" vbser pri p3 pl
+;	"son" det pos f sg
+"<nom>"
+	"nom" n m sg
+"<)>"
+	")" rpar
+"<qu'>"
+	"que" cnjsub
+	"que" adv enon
+	"que" rel an mf sp
+"<èra>"
+	"èster" vbser pii p1 sg
+	"èsser" vbser pii p3 sg
+;	"èra" n f sg
+"<en>"
+	"en" pr
+;	"en" prn pro adv
+"<vertat>"
+	"vertat" n f sg
+"<divisible>"
+	"divisible" adj m sg
+"<.>"
+	"." sent
+¶
+"<Que>"
+	"que" cnjadv
+;	"que" cnjsub
+;	"que" rel an mf sp
+"<perpausè>"
+	"*perpausè"
+"<un>"
+	"un" det ind m sg
+;	"un" n m sg
+;	"un" num m sp
+;	"un" prn tn m sg
+"<modèl>"
+	"modèl" adj m sg
+	"modèl" n mf sg
+	"modèl" n m sg
+"<atomic>"
+	"atomic" adj m sg
+"<(>"
+	"(" lpar
+"<uei>"
+	"uei" adv
+"<considerat>"
+	"considerar" vblex pp m sg
+"<com>"
+	"com" pr
+	"com" adv itg
+"<faus>"
+	"fau" n m pl
+	"faus" adj m sg
+"<)>"
+	")" rpar
+"<on>"
+	"on" adv itg
+"<explicava>"
+	"explicar" vblex pii p3 sg
+"<la>"
+	"lo" det def f sg
+;	"lo" prn pro p3 f sg
+"<neutralitat>"
+	"neutralitat" n f sg
+"<electrica>"
+	"electric" adj f sg
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+;	"lo" prn pro p3 f sg
+;	"lo" prn pro p3 m sg
+"<atòm>"
+	"atòm" n m sg
+"<en>"
+	"en" pr
+;	"en" prn pro adv
+"<lo>"
+	"lo" det def m sg
+;	"lo" prn pro p3 m sg
+"<bèth>"
+	"bèth" det ind m sg
+;	"bèl" n m sg
+"<descríver>"
+	"descríuer" vblex inf
+"<com>"
+	"com" pr
+	"com" adv itg
+"<un>"
+	"un" det ind m sg
+;	"un" num m sp
+;	"un" n m sg
+;	"un" prn tn m sg
+"<pudding>"
+	"*pudding"
+"<anglés>"
+	"anglés" adj m sg
+;	"anglés" n m sg
+"<->"
+	"-" guio 
+"<l'>"
+	"lo" det def mf sg
+	"lo" prn pro p3 f sg
+	"lo" prn pro p3 m sg
+"<equivalent>"
+	"equivaler" vblex ger
+	"equivalent" adj m sg
+	"equivalent" n m sg
+"<deu>"
+	"deure" vbmod pri p3 sg
+	"déuer" vbmod pri p3 sg
+	"deure" vblex pri p3 sg
+	"dever" vbmod pri p3 sg
+;	"deure" vblex imp p2 sg
+;	"de" pr
+;		"lo" det def m sg
+"<clafotís>"
+	"*clafotís"
+"<occitan>"
+	"occitan" adj m sg
+;	"occitan" n m sg
+"<->"
+	"-" guio 
+"<caupit>"
+	"*caupit"
+"<d'>"
+	"de" pr
+"<electrons>"
+	"electron" n m pl
+"<negatius>"
+	"negatiu" adj m pl
+"<.>"
+	"." sent
+¶
+"<En>"
+	"en" pr
+;	"en" prn pro adv
+"<1909>"
+	"1909" num
+"<lo>"
+	"lo" det def m sg
+;	"lo" prn pro p3 m sg
+"<modèl>"
+	"modèl" adj m sg
+	"modèl" n mf sg
+	"modèl" n m sg
+"<deu>"
+	"deure" vbmod pri p3 sg
+	"déuer" vbmod pri p3 sg
+	"deure" vblex pri p3 sg
+	"dever" vbmod pri p3 sg
+;	"deure" vblex imp p2 sg
+;	"de" pr
+;		"lo" det def m sg
+"<pudding>"
+	"*pudding"
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<ho>"
+	"*ho"
+"<avalit>"
+	"avalir" vblex pp m sg
+"<per>"
+	"per" adv
+	"per" pr
+"<Ernest>"
+	"Ernest" np ant m sg
+"<Rutherford>"
+	"Rutherford" np cog mf sp
+"<qui>"
+	"qui" prn itg mf sp
+	"qui" rel nn mf sp
+"<muishè>"
+	"*muishè"
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<'n>"
+	"n" n f sg
+"<bombardant>"
+	"bombardar" vblex ger
+"<ua>"
+	"un" det ind f sg
+;	"un" prn tn f sg
+"<huelha>"
+	"huelha" n f sg
+"<d'>"
+	"de" pr
+"<aur>"
+	"aur" n m sg
+"<dab>"
+	"dab" pr
+"<particulas>"
+	"particula" n f pl
+"<α>"
+	"α" barb 
+"<qu'>"
+	"que" cnjsub
+	"que" rel an mf sp
+;	"que" adv enon
+"<ua>"
+	"un" det ind f sg
+;	"un" prn tn f sg
+"<petita>"
+	"petit" adj f sg
+	"petit" n f sg
+"<fraccion>"
+	"fraccion" n f sg
+"<d'>"
+	"de" pr
+"<aquestas>"
+	"aqueste" prn tn f pl
+	"aqueste" det dem f pl
+"<particulas>"
+	"particula" n f pl
+"<qu'>"
+	"que" cnjsub
+	"que" adv enon
+	"que" rel an mf sp
+"<èra>"
+	"èster" vbser pii p1 sg
+	"èsser" vbser pii p3 sg
+;	"èra" n f sg
+"<desviada>"
+	"desviar" vblex pp f sg
+"<enlòc>"
+	"enlòc" adv
+"<de>"
+	"de" pr
+"<traucar>"
+	"*traucar"
+"<linearament>"
+	"*linearament"
+"<los>"
+	"lo" det def m pl
+;	"lo" prn pro p3 m pl
+"<atòms>"
+	"atòm" n m pl
+"<d'>"
+	"de" pr
+"<aur>"
+	"aur" n m sg
+"<.>"
+	"." sent
+¶
+"<Entà>"
+	"entà" pr
+"<explicar>"
+	"explicar" vblex inf
+"<aqueth>"
+	"aqueth" prn tn m sg
+	"aqueth" det dem m sg
+"<fenomèn>"
+	"fenomèn" n m sg
+"<,>"
+	"," cm
+"<Rutherford>"
+	"Rutherford" np cog mf sp
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<perpausè>"
+	"*perpausè"
+"<lo>"
+	"lo" det def m sg
+;	"lo" prn pro p3 m sg
+"<modèl>"
+	"modèl" adj m sg
+	"modèl" n mf sg
+	"modèl" n m sg
+"<planetari>"
+	"planetari" adj m sg
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+;	"lo" prn pro p3 f sg
+;	"lo" prn pro p3 m sg
+"<atòm>"
+	"atòm" n m sg
+"<:>"
+	":" sent
+"<un>"
+	"un" det ind m sg
+;	"un" n m sg
+;	"un" num m sp
+;	"un" prn tn m sg
+"<nuclèu>"
+	"nuclèu" n m sg
+"<hèra>"
+	"*hèra"
+"<petit>"
+	"petit" adj m sg
+;	"petit" n m sg
+"<dab>"
+	"dab" pr
+"<electrons>"
+	"electron" n m pl
+"<en>"
+	"en" pr
+;	"en" prn pro adv
+"<orbita>"
+	"orbita" n f sg
+"<autorn>"
+	"*autorn"
+"<.>"
+	"." sent
+¶
+"<En>"
+	"en" pr
+;	"en" prn pro adv
+"<tribalhant>"
+	"tribalhar" vblex ger
+"<sus>"
+	"sus" pr
+"<la>"
+	"lo" det def f sg
+;	"lo" prn pro p3 f sg
+"<radioactivitat>"
+	"radioactivitat" n f sg
+"<,>"
+	"," cm
+"<Frederick>"
+	"*Frederick"
+"<Soddy>"
+	"*Soddy"
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<descobrí>"
+	"*descobrí"
+"<,>"
+	"," cm
+"<en>"
+	"en" pr
+;	"en" prn pro adv
+"<1913>"
+	"1913" num
+"<,>"
+	"," cm
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<per>"
+	"per" adv
+	"per" pr
+"<cada>"
+	"cada" det ind mf sp
+"<element>"
+	"element" n m sg
+"<,>"
+	"," cm
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<pòden>"
+	"*pòden"
+"<existir>"
+	"existir" vblex inf
+"<atòms>"
+	"atòm" n m pl
+"<diferents>"
+	"diferent" adj m pl
+"<:>"
+	":" sent
+"<los>"
+	"lo" det def m pl
+;	"lo" prn pro p3 m pl
+"<isotòps>"
+	"isotòp" adj m pl
+	"isotòp" n m pl
+"<.>"
+	"." sent
+¶
+"<La>"
+	"lo" det def f sg
+;	"lo" prn pro p3 f sg
+"<medisha>"
+	"medish" adj f sg
+"<annada>"
+	"annada" n f sg
+"<,>"
+	"," cm
+"<Niels>"
+	"*Niels"
+"<Bohr>"
+	"Bohr" np cog mf sp
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<muishè>"
+	"*muishè"
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<los>"
+	"lo" det def m pl
+;	"lo" prn pro p3 m pl
+"<electrons>"
+	"electron" n m pl
+"<be>"
+	"*be"
+"<son>"
+	"èsser" vbser pri p3 pl
+	"èster" vbser pri p3 pl
+;	"son" n m sg
+;	"son" det pos f sg
+;	"son" det pos m sg
+"<situats>"
+	"situat" adj m pl
+	"situar" vblex pp m pl
+"<sus>"
+	"sus" pr
+"<orbitas>"
+	"orbita" n f pl
+"<determinadas>"
+	"determinat" adj f pl
+	"determinar" vblex pp f pl
+"<.>"
+	"." sent
+¶
+"<En>"
+	"en" pr
+;	"en" prn pro adv
+"<1916>"
+	"1916" num
+"<,>"
+	"," cm
+"<Gilbert>"
+	"Gilbert" np ant m sg
+	"Gilbert" np cog mf sp
+"<Newton>"
+	"Newton" np cog mf sp
+"<Lewis>"
+	"Lewis" np ant m sg
+	"Lewis" np cog mf sp
+"<qu'>"
+	"que" cnjsub
+	"que" rel an mf sp
+;	"que" adv enon
+"<expliquè>"
+	"*expliquè"
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<los>"
+	"lo" det def m pl
+;	"lo" prn pro p3 m pl
+"<atòms>"
+	"atòm" n m pl
+"<e>"
+	"e" cnjcoo
+"<'s>"
+	"s" n f sp
+"<ligan>"
+	"ligar" vblex pri p3 pl
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<mejan>"
+	"mejan" adj m sg
+	"mejan" n m sg
+"<deus>"
+	"de" pr
+		"lo" det def m pl
+"<lors>"
+	"lor" prn tn pos mf pl
+	"lor" det pos mf pl
+;	"lor" adj pos mf pl
+"<electrons>"
+	"electron" n m pl
+"<.>"
+	"." sent
+¶
+"<Durant>"
+	"durant" pr
+	"durar" vblex ger
+"<las>"
+	"las" adj m sg
+	"lo" det def f pl
+;	"lo" prn pro p3 f pl
+"<annadas>"
+	"annada" n f pl
+"<1920>"
+	"1920" num
+"<,>"
+	"," cm
+"<lo>"
+	"lo" det def m sg
+;	"lo" prn pro p3 m sg
+"<modèl>"
+	"modèl" adj m sg
+	"modèl" n mf sg
+	"modèl" n m sg
+"<planetari>"
+	"planetari" adj m sg
+"<dab>"
+	"dab" pr
+"<electrons>"
+	"electron" n m pl
+"<virant>"
+	"virar" vblex ger
+"<suber>"
+	"*suber"
+"<orbitas>"
+	"orbita" n f pl
+"<precisas>"
+	"precís" adj f pl
+	"precisar" vblex pri p2 sg
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<ho>"
+	"*ho"
+"<remplaçat>"
+	"remplaçar" vblex pp m sg
+"<per>"
+	"per" adv
+	"per" pr
+"<la>"
+	"lo" det def f sg
+;	"lo" prn pro p3 f sg
+"<nocion>"
+	"nocion" n f sg
+"<de>"
+	"de" pr
+"<nubla>"
+	"*nubla"
+"<d'>"
+	"de" pr
+"<electrons>"
+	"electron" n m pl
+"<e de>"
+	"e" cnjcoo
+		"de" pr
+"<probabilitat>"
+	"probabilitat" n f sg
+"<de>"
+	"de" pr
+"<preséncia>"
+	"preséncia" n f sg
+	"presenciar" vblex pri p3 sg
+;	"presenciar" vblex imp p2 sg
+"<autorn>"
+	"*autorn"
+"<d'>"
+	"de" pr
+"<ua>"
+	"un" det ind f sg
+;	"un" prn tn f sg
+"<orbita>"
+	"orbita" n f sg
+"<.>"
+	"." sent
+¶
+"<A partir de>"
+	"a partir de" pr
+"<las>"
+	"las" adj m sg
+	"lo" det def f pl
+;	"lo" prn pro p3 f pl
+"<annadas>"
+	"annada" n f pl
+"<1950>"
+	"1950" num
+"<,>"
+	"," cm
+"<los>"
+	"lo" det def m pl
+;	"lo" prn pro p3 m pl
+"<scientifics>"
+	"scientific" adj m pl
+	"scientific" n m pl
+"<qu'>"
+	"que" cnjsub
+	"que" rel an mf sp
+;	"que" adv enon
+"<explorèn>"
+	"*explorèn"
+"<lo>"
+	"lo" det def m sg
+;	"lo" prn pro p3 m sg
+"<monde>"
+	"monde" n m sg
+"<jusatomic>"
+	"*jusatomic"
+"<de>"
+	"de" pr
+"<las>"
+	"las" adj m sg
+	"lo" det def f pl
+;	"lo" prn pro p3 f pl
+"<particulas>"
+	"particula" n f pl
+"<elementàrias>"
+	"elementari" adj f pl
+"<(>"
+	"(" lpar
+"<dab>"
+	"dab" pr
+"<la>"
+	"lo" det def f sg
+	"lo" prn pro p3 f sg
+"<descobèrta>"
+	"descobèrt" adj f sg
+	"descobèrta" n f sg
+	"descobrir" vblex pp f sg
+"<deus>"
+	"de" pr
+		"lo" det def m pl
+"<quarks>"
+	"quark" n m pl
+"<,>"
+	"," cm
+"<compausants>"
+	"compausant" n m pl
+"<deus>"
+	"de" pr
+		"lo" det def m pl
+"<protons>"
+	"proton" n m pl
+"<e>"
+	"e" cnjcoo
+"<deus>"
+	"de" pr
+		"lo" det def m pl
+"<neutrons>"
+	"neutron" n m pl
+"<,>"
+	"," cm
+"<e>"
+	"e" cnjcoo
+"<deus>"
+	"de" pr
+		"lo" det def m pl
+"<leptons>"
+	"lepton" n m pl
+"<,>"
+	"," cm
+"<estant>"
+	"estar" vblex ger
+	"èster" vbser ger
+;	"estant" n m sg
+"<l'>"
+	"lo" det def mf sg
+;	"lo" prn pro p3 f sg
+;	"lo" prn pro p3 m sg
+"<electron>"
+	"electron" n m sg
+"<lo>"
+	"lo" det def m sg
+;	"lo" prn pro p3 m sg
+"<mei>"
+	"mei" adv
+"<famós>"
+	"famós" adj m sg
+"<enter>"
+	"enter" pr
+"<eths>"
+	"eth" det def m pl
+"<)>"
+	")" rpar
+"<mercés>"
+	"mercés" ij
+;	"mercé" n f pl
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<desvolopament>"
+	"desvolopament" n m sg
+"<deus>"
+	"de" pr
+		"lo" det def m pl
+"<accelerators>"
+	"accelerator" adj m pl
+	"accelerator" n m pl
+"<de>"
+	"de" pr
+"<particulas>"
+	"particula" n f pl
+"<qui>"
+	"qui" prn itg mf sp
+	"qui" rel nn mf sp
+"<permeten>"
+	"*permeten"
+"<d'>"
+	"de" pr
+"<accelerar>"
+	"accelerar" vblex inf
+"<los>"
+	"lo" det def m pl
+;	"lo" prn pro p3 m pl
+"<atòms>"
+	"atòm" n m pl
+"<en>"
+	"en" pr
+;	"en" prn pro adv
+"<bèth>"
+	"bèth" det ind m sg
+;	"bèl" n m sg
+"<generar>"
+	"generar" vblex inf
+"<impactes>"
+	"impacte" n m pl
+"<enter>"
+	"enter" pr
+"<eths>"
+	"eth" det def m pl
+"<.>"
+	"." sent
+¶
