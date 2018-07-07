@@ -1,4 +1,4 @@
-SRC=atòm.tagged.txt
+SRC=atòm.tagged.txt continent.tagged.txt bastida.tagged.txt carcassona_ciutat.tagged.txt galaxia.tagged.txt glacier.tagged.txt neptun_prov.tagged.txt uranus_prov.tagged.txt
 
 all: oci.unigram.prob
 
