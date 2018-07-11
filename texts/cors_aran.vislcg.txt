@@ -1,0 +1,948 @@
+"<Cors>"
+	"cors" n m sg
+"<de>"
+	"de" pr
+"<correccion>"
+	"correccion" n f sg
+"<lingüistica>"
+	"lingüistic" adj f sg
+;	"lingüistica" n f sg REMOVE:110
+"<en>"
+	"en" pr
+;	"en" prn pro adv REMOVE:93
+"<aranés>"
+	"aranés" adj m sg
+	"aranés" n m sg
+"<.>"
+	"." sent
+
+
+
+"<S'>"
+	"se" cnjadv
+	"se" prn pro ref p3 mf sp
+"<agís>"
+	"agir" vblex ifi p2 sg
+	"agir" vblex pri p3 sg
+;	"agir" vblex imp p2 sg REMOVE:104
+"<d'>"
+	"de" pr
+"<un>"
+	"un" det ind m sg SELECT:144
+;	"un" num m sp SELECT:144
+;	"un" n m sg SELECT:144
+;	"un" prn tn m sg SELECT:144
+"<cors>"
+	"cors" n m sg
+"<de>"
+	"de" pr
+"<4>"
+	"4" num
+"<dies>"
+	"*dies"
+"<,>"
+	"," cm
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<tanben>"
+	"tanben" adv
+;	"tanben" preadv REMOVE:169
+"<aurà>"
+	"auer" vbhaver fti p3 sg
+	"auer" vblex fti p3 sg
+	"aver" vbhaver fti p3 sg
+	"aver" vblex fti p3 sg
+"<sessions>"
+	"session" n f pl
+"<d’>"
+	"de" pr
+"<exercicis>"
+	"exercici" n m pl
+"<practics>"
+	"practic" adj m pl
+"<.>"
+	"." sent
+
+
+
+"<Deth>"
+	"de" pr
+		"eth" det def m sg
+"<dia>"
+	"dia" n m sg
+	"díder" vblex pp f sg
+"<3>"
+	"3" num
+"<ath>"
+	"*ath"
+"<6>"
+	"6" num
+"<de>"
+	"de" pr
+"<juriòl>"
+	"juriòl" n m sg
+"<er>"
+	"eth" det def m sg
+"<Institut>"
+	"institut" n m sg
+"<d’>"
+	"de" pr
+"<Estudis>"
+	"estudi" n m pl
+"<Aranesi>"
+	"*Aranesi"
+- 
+"<Acadèmia>"
+	"acadèmia" n f sg
+"<aranesa>"
+	"aranés" adj f sg
+;	"aranés" n f sg REMOVE:110
+"<dera>"
+	"de" pr
+		"eth" det def f sg
+"<lengua>"
+	"lengua" n f sg
+"<occitana>"
+	"occitan" adj f sg
+;	"occitan" n f sg REMOVE:110
+"<(>"
+	"(" lpar
+"<IEA>"
+	"*IEA"
+-
+"<AALO>"
+	"*AALO"
+"<)>"
+	")" rpar
+"<en collaboracion>"
+	"en collaboracion" adv
+"<damb>"
+	"damb" pr
+"<eth>"
+	"eth" det def m sg
+	"eth" prn tn p3 m sg
+"<Conselh>"
+	"conselh" n m sg
+"<Generau>"
+	"generau" adj mf sg
+"<d’>"
+	"de" pr
+"<Aran>"
+	"Aran" np ant f sg
+	"Aran" np cog mf sp
+	"Aran" np top m sg
+"<e>"
+	"e" cnjcoo
+"<era>"
+	"eth" det def f sg
+	"eth" prn tn p3 f sg
+"<Generalitat>"
+	"generalitat" n f sg
+	"Generalitat" np al f sg
+"<de>"
+	"de" pr
+"<Catalonha>"
+	"Catalonha" np top f sg
+"<organize>"
+	"organizar" vblex prs p3 sg
+	"organizar" vblex pri p1 sg
+	"organizar" vblex prs p1 sg
+;	"organizar" vblex imp p3 sg REMOVE:106
+"<peth prumèr còp>"
+	"peth prumèr còp" adv
+"<un>"
+	"un" det ind m sg SELECT:144
+;	"un" n m sg REMOVE:110
+;	"un" num m sp SELECT:144
+;	"un" prn tn m sg SELECT:144
+"<cors>"
+	"cors" n m sg
+"<especific>"
+	"especific" adj m sg
+"<sus>"
+	"sus" pr
+"<era>"
+	"eth" det def f sg
+	"eth" prn tn p3 f sg
+"<correccion>"
+	"correccion" n f sg
+"<lingüistica>"
+	"lingüistic" adj f sg
+;	"lingüistica" n f sg REMOVE:110
+"<en>"
+	"en" pr
+;	"en" prn pro adv REMOVE:93
+"<occitan>"
+	"occitan" adj m sg
+	"occitan" n m sg
+"<aranés>"
+	"aranés" adj m sg
+	"aranés" n m sg
+"<.>"
+	"." sent
+
+
+
+"<Es>"
+	"èsser" vbser pri p3 sg
+	"eth" det def m pl
+;	"eth" det def f pl REMOVE:131
+"<critèris>"
+	"critèri" n m pl
+"<de>"
+	"de" pr
+"<correccion>"
+	"correccion" n f sg
+"<,>"
+	"," cm
+"<eth>"
+	"eth" det def m sg
+	"eth" prn tn p3 m sg
+"<procès>"
+	"procès" n m sg
+"<istoric>"
+	"istoric" adj m sg
+;	"istoric" n m sg REMOVE:110
+"<e>"
+	"e" cnjcoo
+"<er>"
+	"eth" det def m sg
+"<estat>"
+	"estat" n m sg
+	"estar" vblex pp m sg
+	"èster" vbser pp m sg
+	"èsser" vbser pp m sg
+"<de>"
+	"de" pr
+"<referéncia>"
+	"referéncia" n f sg
+	"referenciar" vblex pri p3 sg
+;	"referenciar" vblex imp p2 sg REMOVE:106
+"<lingüistica>"
+	"lingüistic" adj f sg
+	"lingüistica" n f sg
+"<en>"
+	"en" pr
+;	"en" prn pro adv REMOVE:93
+"<occitan>"
+	"occitan" adj m sg
+	"occitan" n m sg
+"<en generau>"
+	"en generau" adv
+"<e>"
+	"e" cnjcoo
+"<en>"
+	"en" pr
+;	"en" prn pro adv REMOVE:93
+"<aranés>"
+	"aranés" adj m sg
+	"aranés" n m sg
+"<en>"
+	"en" pr
+;	"en" prn pro adv REMOVE:93
+"<particular>"
+	"particular" adj m sg
+	"particular" n m sg
+"<,>"
+	"," cm
+"<eth>"
+	"eth" det def m sg
+	"eth" prn tn p3 m sg
+"<còrpus>"
+	"còrpus" n m sp
+"<textuau>"
+	"textuau" adj mf sg
+"<des>"
+	"dar" vblex prs p2 sg
+	"de" pr
+		"eth" det def f pl
+	"de" pr
+		"eth" det def m pl
+"<darrèri>"
+	"darrèr" adj m pl
+"<40>"
+	"40" num
+"<ans>"
+	"an" n m pl
+"<,>"
+	"," cm
+"<es>"
+	"eth" det def f pl
+	"eth" det def m pl
+	"èsser" vbser pri p3 sg
+"<referéncies>"
+	"referenciar" vblex prs p2 sg
+"<gramaticaus>"
+	"gramaticau" adj mf pl
+"<,>"
+	"," cm
+"<lexicaus>"
+	"lexicau" adj mf pl
+"<,>"
+	"," cm
+"<istoriques>"
+	"*istoriques"
+"<e>"
+	"e" cnjcoo
+"<documentàries>"
+	"*documentàries"
+"<des>"
+	"dar" vblex prs p2 sg
+	"de" pr
+		"eth" det def f pl
+	"de" pr
+		"eth" det def m pl
+"<darrèri>"
+	"darrèr" adj m pl
+"<ans>"
+	"an" n m pl
+"<,>"
+	"," cm
+"<era>"
+	"eth" det def f sg
+	"eth" prn tn p3 f sg
+"<utilizacion>"
+	"utilizacion" n f sg
+"<des>"
+	"dar" vblex prs p2 sg
+;	"de" pr REMOVE:122
+;		"eth" det def f pl
+;	"de" pr REMOVE:122
+;		"eth" det def m pl
+"<naues>"
+	"*naues"
+"<tecnologies>"
+	"*tecnologies"
+"<,>"
+	"," cm
+"<des>"
+	"dar" vblex prs p2 sg
+;	"de" pr REMOVE:122
+;		"eth" det def f pl
+;	"de" pr REMOVE:122
+;		"eth" det def m pl
+"<programes>"
+	"programar" vblex prs p2 sg
+"<de>"
+	"de" pr
+"<còdi>"
+	"còdi" n m sg
+	"còder" vblex pri p1 sg
+"<dubèrt>"
+	"dubèrt" adj m sg
+	"dubrir" vblex pp m sg
+"<e>"
+	"e" cnjcoo
+"<des>"
+	"dar" vblex prs p2 sg
+;	"de" pr REMOVE:122
+;		"eth" det def f pl
+;	"de" pr REMOVE:122
+;		"eth" det def m pl
+"<airines>"
+	"*airines"
+"<digitaus>"
+	"digitau" adj mf pl
+"<,>"
+	"," cm
+"<seràn>"
+	"èster" vbser fti p3 pl
+	"èsser" vbser fti p3 pl
+"<quauqui uns>"
+	"quauqu'un" prn tn mf pl
+	"quauqu'un" prn tn m pl
+"<des>"
+	"dar" vblex prs p2 sg
+	"de" pr
+		"eth" det def f pl
+	"de" pr
+		"eth" det def m pl
+"<contenguts>"
+	"contier" vblex pp m pl
+	"contengut" adj m pl
+	"contengut" n m pl
+	"contenir" vblex pp m pl
+	"conténer" vblex pp m pl
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<s’>"
+	"se" cnjadv
+	"se" prn pro ref p3 mf sp
+"<abordaràn>"
+	"abordar" vblex fti p3 pl
+"<en>"
+	"en" pr
+;	"en" prn pro adv REMOVE:93
+"<aqueth>"
+	"aqueth" prn tn m sg
+	"aqueth" det dem m sg
+"<cors>"
+	"cors" n m sg
+"<de>"
+	"de" pr
+"<4>"
+	"4" num
+"<dies>"
+	"*dies"
+"<,>"
+	"," cm
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<tanben>"
+	"tanben" adv
+;	"tanben" preadv REMOVE:169
+"<aurà>"
+	"auer" vbhaver fti p3 sg
+	"auer" vblex fti p3 sg
+	"aver" vbhaver fti p3 sg
+	"aver" vblex fti p3 sg
+"<sessions>"
+	"session" n f pl
+"<d’>"
+	"de" pr
+"<exercicis>"
+	"exercici" n m pl
+"<practics>"
+	"practic" adj m pl
+"<.>"
+	"." sent
+
+
+
+"<Eth>"
+	"eth" det def m sg
+	"eth" prn tn p3 m sg
+"<diuendres>"
+	"diuendres" n m sp
+"<6>"
+	"6" num
+"<de>"
+	"de" pr
+"<juriòl>"
+	"juriòl" n m sg
+"<,>"
+	"," cm
+"<aurà>"
+	"auer" vbhaver fti p3 sg
+	"auer" vblex fti p3 sg
+	"aver" vbhaver fti p3 sg
+	"aver" vblex fti p3 sg
+"<lòc>"
+	"lòc" n m sg
+"<ua>"
+	"un" det ind f sg SELECT:145
+;	"un" prn tn f sg SELECT:145
+"<taula>"
+	"taula" n f sg
+"<redona>"
+	"redon" adj f sg
+	"redonar" vblex pri p3 sg
+;	"redonar" vblex imp p2 sg REMOVE:106
+"<jos>"
+	"jos" adv
+	"jos" pr
+	"jo" n m pl
+"<eth>"
+	"eth" det def m sg
+	"eth" prn tn p3 m sg
+"<títol>"
+	"títol" n m sg
+"<de>"
+	"de" pr
+"<:>"
+	":" sent
+ “
+"<Era>"
+	"eth" det def f sg
+	"eth" prn tn p3 f sg
+"<correccion>"
+	"correccion" n f sg
+"<lingüistica>"
+	"lingüistic" adj f sg
+;	"lingüistica" n f sg REMOVE:110
+"<en>"
+	"en" pr
+;	"en" prn pro adv REMOVE:93
+"<catalan>"
+	"catalan" adj m sg
+	"catalan" n m sg
+"<,>"
+	"," cm
+"<en>"
+	"en" pr
+;	"en" prn pro adv REMOVE:93
+"<occitan>"
+	"occitan" adj m sg
+	"occitan" n m sg
+"<estandard>"
+	"estandard" adj m sg
+	"estandard" n m sg
+"<e>"
+	"e" cnjcoo
+"<en>"
+	"en" pr
+;	"en" prn pro adv REMOVE:93
+"<aranés>"
+	"aranés" adj m sg
+	"aranés" n m sg
+”
+"<,>"
+	"," cm
+"<que>"
+	"que" cnjadv
+	"que" cnjsub
+	"que" rel an mf sp
+"<i>"
+	"i" prn pro adv
+"<intervieràn>"
+	"intervier" vblex fti p3 pl
+"<Albert>"
+	"Albert" np ant m sg
+	"Albert" np cog mf sp
+"<Turull>"
+	"Turull" np cog mf sp
+"<,>"
+	"," cm
+"<membre>"
+	"membre" n mf sg
+"<numerari>"
+	"*numerari"
+"<dera>"
+	"de" pr
+		"eth" det def f sg
+"<Seccion>"
+	"seccion" n f sg
+"<de>"
+	"de" pr
+"<Filologia>"
+	"filologia" n f sg
+"<der>"
+	"de" pr
+		"eth" det def m sg
+"<IEC>"
+	"IEC" n acr m sg
+"<(>"
+	"(" lpar
+"<Institut>"
+	"institut" n m sg
+"<d’>"
+	"de" pr
+"<Estudis>"
+	"estudi" n m pl
+"<Catalans>"
+	"catalan" adj m pl
+;	"catalan" n m pl REMOVE:110
+"<)>"
+	")" rpar
+"<;>"
+	";" sent
+"<Jacme>"
+	"Jacme" np ant m sg
+"<Taupiac>"
+	"Taupiac" np cog mf sp
+"<,>"
+	"," cm
+"<membre>"
+	"membre" n mf sg
+"<der>"
+	"de" pr
+		"eth" det def m sg
+"<IEA>"
+	"*IEA"
+-
+"<AALO>"
+	"*AALO"
+"<,>"
+	"," cm
+"<e>"
+	"e" cnjcoo
+"<dera>"
+	"de" pr
+		"eth" det def f sg
+"<comission>"
+	"comission" n f sg
+"<qu’>"
+	"que" cnjsub
+	"que" rel an mf sp
+;	"que" adv enon REMOVE:119
+"<elaborèc>"
+	"*elaborèc"
+"<es>"
+	"eth" det def f pl
+	"eth" det def m pl
+	"èsser" vbser pri p3 sg
+"<Nòrmes>"
+	"*Nòrmes"
+"<Ortografiques>"
+	"*Ortografiques"
+"<der>"
+	"de" pr
+		"eth" det def m sg
+"<Aranés>"
+	"aranés" adj m sg
+	"aranés" n m sg
+"<;>"
+	";" sent
+"<Joan>"
+	"Joan" np ant m sg
+"<Salas>"
+	"Salas" np cog mf sp
+;	"sala" n f pl REMOVE:110
+-
+"<Lostau>"
+	"*Lostau"
+"<,>"
+	"," cm
+"<president>"
+	"president" n m sg
+"<dera>"
+	"de" pr
+		"eth" det def f sg
+"<Seccion>"
+	"seccion" n f sg
+"<Estandard>"
+	"estandard" adj m sg
+;	"estandard" n m sg REMOVE:110
+"<der>"
+	"de" pr
+		"eth" det def m sg
+"<IEA>"
+	"*IEA"
+-
+"<AALO>"
+	"*AALO"
+"<;>"
+	";" sent
+"<e>"
+	"e" cnjcoo
+"<Jusèp>"
+	"Jusèp" np ant m sg
+"<Loís>"
+	"Loís" np ant m sg
+"<Sans>"
+	"san" adj m pl
+	"Sans" np cog mf sp
+"<,>"
+	"," cm
+"<president>"
+	"president" n m sg
+"<der>"
+	"de" pr
+		"eth" det def m sg
+"<IEA>"
+	"*IEA"
+-
+"<AALO>"
+	"*AALO"
+"<.>"
+	"." sent
+
+"<Era>"
+	"eth" det def f sg
+	"eth" prn tn p3 f sg
+"<taula>"
+	"taula" n f sg
+"<redona>"
+	"redon" adj f sg
+	"redonar" vblex pri p3 sg
+;	"redonar" vblex imp p2 sg REMOVE:106
+"<serà>"
+	"èster" vbser fti p3 sg
+	"èsser" vbser fti p3 sg
+"<retransmetuda>"
+	"retransméter" vblex pp f sg
+"<per>"
+	"per" adv
+	"per" pr
+"<Aran>"
+	"Aran" np ant f sg
+	"Aran" np cog mf sp
+	"Aran" np top m sg
+"<TV>"
+	"TV" np al
+"<e>"
+	"e" cnjcoo
+"<serà>"
+	"èster" vbser fti p3 sg
+	"èsser" vbser fti p3 sg
+"<moderada>"
+	"moderat" adj f sg
+	"moderar" vblex pp f sg
+"<pera>"
+	"pera" n f sg
+	"perir" vblex prs p3 sg
+"<jornalista>"
+	"jornalista" n mf sg
+"<Clara>"
+	"clar" adj f sg
+	"Clara" np ant f sg
+"<Villar>"
+	"Villar" np cog mf sp
+	"Villar" np top m sg
+"<.>"
+	"." sent
+
+
+
+"<Eth>"
+	"eth" det def m sg
+	"eth" prn tn p3 m sg
+"<prètz>"
+	"prètz" n m sg
+"<deth>"
+	"de" pr
+		"eth" det def m sg
+"<cors>"
+	"cors" n m sg
+"<ei>"
+	"èster" vbser pri p3 sg
+"<de>"
+	"de" pr
+"<200>"
+	"200" num
+"<èuros>"
+	"èuro" n m pl
+"<,>"
+	"," cm
+"<encara>"
+	"encara" adv
+	"encarir" vblex prs p3 sg
+	"encarar" vblex pri p3 sg
+;	"encarar" vblex imp p2 sg REMOVE:106
+"<qu’>"
+	"que" cnjsub
+	"que" adv enon
+	"que" rel an mf sp
+"<es>"
+	"eth" det def f pl
+	"eth" det def m pl
+	"èsser" vbser pri p3 sg
+"<membres>"
+	"membre" n mf pl
+"<e>"
+	"e" cnjcoo
+"<collaboradors>"
+	"collaborador" n m pl
+"<der>"
+	"de" pr
+		"eth" det def m sg
+"<IEA>"
+	"*IEA"
+-
+"<AALO>"
+	"*AALO"
+"<i>"
+	"i" prn pro adv
+"<poderàn>"
+	"*poderàn"
+"<assistir>"
+	"assistir" vblex inf
+"<gratuïtaments>"
+	"gratuïtament" adv
+"<.>"
+	"." sent
+
+"<Ath delà>"
+	"ath delà" adv
+"<,>"
+	"," cm
+"<s’>"
+	"se" cnjadv
+;	"se" prn pro ref p3 mf sp REMOVE:93
+"<aufrissen>"
+	"*aufrissen"
+"<3>"
+	"3" num
+"<ajudes>"
+	"ajudar" vblex prs p2 sg
+"<entà>"
+	"entà" pr
+"<poder>"
+	"poder" vbmod inf
+	"poder" n m sg
+"<participar>"
+	"participar" vblex inf
+"<ath>"
+	"*ath"
+"<cors>"
+	"cors" n m sg
+"<.>"
+	"." sent
+
+"<Es>"
+	"èsser" vbser pri p3 sg
+	"eth" det def m pl
+;	"eth" det def f pl REMOVE:131
+"<places>"
+	"plaç" n m pl
+	"plaçar" vblex prs p2 sg
+"<son>"
+	"son" n m sg
+	"son" det pos f sg
+	"son" det pos m sg
+	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
+"<limitades>"
+	"*limitades"
+"<e>"
+	"e" cnjcoo
+"<ei>"
+	"èster" vbser pri p3 sg
+"<imprescindible>"
+	"imprescindible" adj m sg
+"<,>"
+	"," cm
+"<entath>"
+	"*entath"
+"<bon>"
+	"bon" adj m sg
+;	"bon" n m sg REMOVE:110
+"<profitament>"
+	"profitament" n m sg
+"<deth>"
+	"de" pr
+		"eth" det def m sg
+"<cors>"
+	"cors" n m sg
+"<,>"
+	"," cm
+"<d’>"
+	"de" pr
+"<auer>"
+	"auer" vbhaver inf
+	"auer" vblex inf
+"<un>"
+	"un" det ind m sg SELECT:144
+;	"un" num m sp SELECT:144
+;	"un" n m sg SELECT:144
+;	"un" prn tn m sg SELECT:144
+"<ordenador>"
+	"ordenador" adj m sg
+	"ordenador" n m sg
+"<portable>"
+	"portable" adj m sg
+	"portable" n m sg
+"<entà>"
+	"entà" pr
+"<seguir>"
+	"seguir" vblex inf
+"<es>"
+	"eth" det def f pl
+	"èsser" vbser pri p3 sg
+;	"eth" det def m pl REMOVE:132
+"<explicacions>"
+	"explicacion" n f pl
+"<e>"
+	"e" cnjcoo
+"<es>"
+	"èsser" vbser pri p3 sg
+	"eth" det def m pl
+;	"eth" det def f pl REMOVE:131
+"<exercicis>"
+	"exercici" n m pl
+"<.>"
+	"." sent
+
+
+
+"<Eth>"
+	"eth" det def m sg
+	"eth" prn tn p3 m sg
+"<cors>"
+	"cors" n m sg
+"<serà>"
+	"èster" vbser fti p3 sg
+	"èsser" vbser fti p3 sg
+"<dat>"
+	"dat" n m sg
+	"dar" vblex pp m sg
+"<per>"
+	"per" adv
+	"per" pr
+"<membres>"
+	"membre" n mf pl
+"<der>"
+	"de" pr
+		"eth" det def m sg
+"<IEA>"
+	"*IEA"
+-
+"<AALO>"
+	"*AALO"
+"<e>"
+	"e" cnjcoo
+"<aurà>"
+	"auer" vbhaver fti p3 sg
+	"auer" vblex fti p3 sg
+	"aver" vbhaver fti p3 sg
+	"aver" vblex fti p3 sg
+"<lòc>"
+	"lòc" n m sg
+"<ena>"
+	"*ena"
+"<sedença>"
+	"sedença" n f sg
+"<der>"
+	"de" pr
+		"eth" det def m sg
+"<Institut>"
+	"institut" n m sg
+"<,>"
+	"," cm
+"<17>"
+	"17" num
+"<Avenguda>"
+	"avier" vblex pp f sg
+	"avenir" vblex pp f sg
+	"avenguda" n f sg
+"<Garona>"
+	"Garona" np top f sg
+"<de>"
+	"de" pr
+"<Vielha>"
+	"vielh" adj f sg
+	"Vielha" np top f sg
+	"vielhir" vblex prs p3 sg
+"<,>"
+	"," cm
+"<a compdar des>"
+	"a compdar de" pr
+		"eth" det def f pl
+	"a compdar de" pr
+		"eth" det def m pl
+"<18>"
+	"18" num
+"<h>"
+	"h" n f sp
+"<.>"
+	"." sent
+
+
+
+"<Tota>"
+	"tot" predet f sg
+	"tot" prn tn f sg
+"<era>"
+	"eth" det def f sg
+	"eth" prn tn p3 f sg
+"<informacion>"
+	"informacion" n f sg
+"<en>"
+	"en" pr
+;	"en" prn pro adv REMOVE:93
+"<www.institutestudisaranesi.cat>"
+	"www.institutestudisaranesi.cat" num
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
