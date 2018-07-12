@@ -1026,6 +1026,7 @@
 	"lo" det def m pl
 ;	"lo" prn pro p3 m pl REMOVE:93
 "<limits>"
+	"limit" adj m pl
 	"limit" n m pl
 "<entre>"
 	"entre" pr
@@ -4967,6 +4968,7 @@
 "<de>"
 	"de" pr
 "<limits>"
+	"limit" adj m pl
 	"limit" n m pl
 "<geologics>"
 	"geologic" adj m pl
@@ -5207,11 +5209,12 @@
 ;	"marcar" vblex imp p2 sg REMOVE:106
 ;	"marca" n f sg REMOVE:110
 "<convencionalament>"
-	"*convencionalament"
+	"convencionalament" adv
 "<lo>"
 	"lo" det def m sg
 ;	"lo" prn pro p3 m sg REMOVE:93
 "<limit>"
+	"limit" adj m sg
 	"limit" n m sg
 "<entre>"
 	"entre" pr
@@ -5381,6 +5384,7 @@
 	"lo" det def m sg
 ;	"lo" prn pro p3 m sg REMOVE:93
 "<limit>"
+	"limit" adj m sg
 	"limit" n m sg
 "<entre>"
 	"entre" pr
@@ -5814,6 +5818,7 @@
 "<de>"
 	"de" pr
 "<limits>"
+	"limit" adj m pl
 	"limit" n m pl
 "<arbitraris>"
 	"arbitrari" adj m pl
@@ -5963,6 +5968,7 @@
 	"lo" det def m pl
 ;	"lo" prn pro p3 m pl REMOVE:93
 "<limits>"
+	"limit" adj m pl
 	"limit" n m pl
 "<d'>"
 	"de" pr
@@ -6254,6 +6260,7 @@
 	"de" pr
 		"lo" det def m sg
 "<limit>"
+	"limit" adj m sg
 	"limit" n m sg
 "<entre>"
 	"entre" pr
@@ -6294,6 +6301,7 @@
 	"lo" det def m sg
 ;	"lo" prn pro p3 m sg REMOVE:93
 "<limit>"
+	"limit" adj m sg
 	"limit" n m sg
 "<al delà de>"
 	"al delà de" pr
@@ -7379,6 +7387,7 @@
 	"èster" vbser pp m sg
 	"èsser" vbser pp m sg
 "<confederat>"
+	"confederat" adj m sg
 	"confederat" n m sg
 	"confederar" vblex pp m sg
 "<situat>"
@@ -9670,6 +9679,7 @@
 	"lo" det def m sg
 ;	"lo" prn pro p3 m sg REMOVE:93
 "<limit>"
+	"limit" adj m sg
 	"limit" n m sg
 "<entre>"
 	"entre" pr
