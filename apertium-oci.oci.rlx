@@ -16,6 +16,7 @@ LIST V = vblex vbser vbhaver vbaux vbmod ;
 LIST Ser = vbser ;
 LIST Conjco = cnjcoo ;
 LIST Conjsub = cnjsub ;
+LIST Conjadv = cnjadv ;
 LIST Enon = enon ;
 LIST Rel = rel ;
 LIST N = n ;
@@ -62,6 +63,9 @@ LIST motsdetsg = (det sg) (pr sg);
 LIST motsdetf = (det f) (pr f);
 LIST motsdetm = (det m) (pr m);
 
+LIST Masc = m mf ;
+LIST Fem = f mf ;
+
 SET MascSg = (m sg) OR (m sp) OR (mf sg) OR (mf sp) ;
 SET MascPl = (m pl) OR (m sp) OR (mf pl) OR (mf sp) ;
 SET FemSg = (f sg) OR (f sp) OR (mf sg) OR (mf sp) ;
@@ -72,6 +76,9 @@ LIST P2 = p2 ;
 LIST P3 = p3 ;
 LIST Pers = p1 p2 p3 ;
 
+SET CM = (cm) OR (lpar) OR (rpar) OR ("<;>") ;
+LIST Excl = "!" ;
+
 #Mots
 LIST En = ("en" prn);
 LIST Un = "un" ;
@@ -80,6 +87,8 @@ LIST Eth = "eth" ;
 LIST Nostre = "nòstre" "nòste" ;
 LIST Vostre = "vòstre" "vòste" ;
 LIST Pas = "pas" ;
+LIST Que = "que" ;
+LIST Se = "se" ;
 
 LIST Excl = "!" ;
 
@@ -107,7 +116,8 @@ REMOVE VBimp IF (NOT 1* Excl) ;
 REMOVE VBimp IF (0 P3) ;
 
 #Un nom pot pas seguir qu'un vèrbe, un adjectiu, un determinant, un numeral, una prepausicion o un pronom (levat los personals)
-REMOVE N IF (NOT -1 V OR AJ OR DET OR NUM OR PREP OR PRON - PRONPers);
+#(en titolars periodístics, però, es comença sovint per un nom)
+REMOVE N IF (NOT -1 BOS OR V OR AJ OR DET OR NUM OR PREP OR PRON - PRONPers);
 
 #Un predeterminant es pas seguit que per un determinant
 REMOVE PREDET IF (NOT 1 DET);
@@ -172,3 +182,26 @@ REMOVE PREAV IF (0 PREAV) (0 AV) (NOT 1 AJ OR AV) ;
 # ADJ POS
 
 REMOVE AJ IF (NOT -1 Ser) (0 AJ + Pos) ;
+
+# MOTS
+
+SELECT Conjsub IF (-1 V) (0 Que) ;
+  ## vôli que
+SELECT Conjsub IF (-2 V) (1 AV) (0 Que) ;
+  ## vôli pas que
+SELECT Conjadv IF (-2 ("mai") OR ("pus") OR ("mens")) (-1 AJ OR VBpp OR AV) (0 Que) ;
+  ## plus rapide que moi
+SELECT Rel IF (-1 CM) (0 Que) ;
+SELECT Rel IF (-1 DET) (0 Que) ;
+SELECT Rel IF (-1C N) (0 Que) ;
+SELECT Rel IF (-2C N) (-1 AJ) (0 Que) ;
+SELECT Rel IF (-3 N) (-2 AV OR PREAV) (-1 AJ) (0 Que) ;
+
+REMOVE PRON IF (0 Se) (NOT -1 Pro OR V + P3) ;
+  ## se canti
+
+SELECT N IF (0 ("<Estat>")) ;
+SELECT N IF (-1 DET + Masc) (0 ("estat")) ;
+SELECT VBpp IF (-1 Ser) (0 ("estat")) ;
+SELECT VBpp IF (-2 Ser) (-1 AV) (0 ("estat")) ;
+SELECT N IF (-1 ("vila") OR ("ciutat")) (0 ("estat")) ;	# vila estat
