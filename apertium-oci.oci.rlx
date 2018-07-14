@@ -89,6 +89,8 @@ LIST Vostre = "vòstre" "vòste" ;
 LIST Pas = "pas" ;
 LIST Que = "que" ;
 LIST Se = "se" ;
+LIST Las = "las" ;
+LIST Mas = "mas" ;
 
 LIST Excl = "!" ;
 
@@ -205,3 +207,8 @@ SELECT N IF (-1 DET + Masc) (0 ("estat")) ;
 SELECT VBpp IF (-1 Ser) (0 ("estat")) ;
 SELECT VBpp IF (-2 Ser) (-1 AV) (0 ("estat")) ;
 SELECT N IF (-1 ("vila") OR ("ciutat")) (0 ("estat")) ;	# vila estat
+
+REMOVE AJ IF (0 Las) (1 N + FemPl) ;
+  ## las pomas
+
+SELECT Conjco IF (0 Mas) (-1 CM) ;
