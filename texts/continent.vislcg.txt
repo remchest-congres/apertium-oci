@@ -1,129 +1,96 @@
 "<Lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
 "<mot>"
 	"mot" n m sg
 "<continent>"
-	"continent" adj m sg
-;	"continent" n m sg REMOVE:110
+	"continent" n m sg
 "<ven>"
-	"veir" vblex pri p3 pl
-	"vier" vblex pri p3 sg
 	"venir" vblex pri p3 sg
-	"véner" vblex pri p3 sg
-;	"véner" vblex imp p2 sg REMOVE:106
 "<del>"
 	"de" pr
 		"lo" det def m sg
 "<latin>"
-	"latin" adj m sg
 	"latin" n m sg
 "<continere>"
-	"*continere"
+	"continere" barb
 "<per>"
-	"per" adv
-;	"per" pr REMOVE:122
+	"per" pr
 "<«>"
 	"«" lpar
 "<tenir>"
-	"téner" vblex inf
+	"tenir" vblex inf
 "<ensemble>"
 	"ensemble" adv
-	"ensemble" n m sg
 "<»>"
 	"»" rpar
 "<,>"
 	"," cm
 "<o>"
 	"o" cnjcoo
-;	"o" prn pro p3 nt REMOVE:93
 "<continens>"
-	"*continens"
+	"continens" barb
 "<terra>"
-	"*terra"
+	"terra" barb
 "<,>"
 	"," cm
 "<las>"
-	"las" adj m sg
 	"lo" det def f pl
-;	"lo" prn pro p3 f pl REMOVE:93
 "<«>"
 	"«" lpar
 "<tèrras>"
 	"tèrra" n f pl
 "<continuas>"
-	"continuar" vblex pri p2 sg
+	"continú" adj f pl
 "<»>"
 	"»" rpar
 "<.>"
 	"." sent
-
 "<Al>"
-	"Al" np ant m sg
 	"a" pr
 		"lo" det def m sg
 "<sens>"
-	"sens" pr
 	"sens" n m sg
 "<pròpri>"
 	"pròpri" adj m sg
-	"pròpri" n m sg
 "<,>"
 	"," cm
 "<aquel>"
-	"aquel" prn tn m sg
 	"aquel" det dem m sg
 "<tèrme>"
 	"tèrme" n m sg
 "<designa>"
 	"designar" vblex pri p3 sg
-;	"designar" vblex imp p2 sg REMOVE:106
 "<una>"
-	"un" det ind f sg SELECT:150
-;	"un" num f sp SELECT:150
-;	"un" prn tn f sg SELECT:150
-;	"unir" vblex prs p3 sg SELECT:150
+	"un" det ind f sg
 "<vasta>"
 	"vast" adj f sg
-	"vaste" adj f sg
 "<espandida>"
-	"espandit" adj f sg
-	"espandir" vblex pp f sg
+	"espandida" n f sg
 "<contunha>"
 	"contunh" adj f sg
-	"contunha" n f sg
-	"contunhar" vblex pri p3 sg
-;	"contunhar" vblex imp p2 sg REMOVE:106
 "<de>"
 	"de" pr
 "<tèrra>"
 	"tèrra" n f sg
 "<a>"
 	"a" pr
-	"aver" vbhaver pri p3 sg
-	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
 "<superfícia>"
 	"superfícia" n f sg
 "<del>"
 	"de" pr
 		"lo" det def m sg
 "<glòbe>"
-	"*glòbe"
+	"glòbe" n m sg
 "<.>"
 	"." sent
 
 "<Pasmens>"
-	"pasmens" adv
 	"pasmens" cnjadv
 "<,>"
 	"," cm
 "<aquela>"
-	"aquel" prn tn f sg
 	"aquel" det dem f sg
 "<definicion>"
 	"definicion" n f sg
@@ -132,24 +99,19 @@
 "<geografica>"
 	"geografic" adj f sg
 "<s'>"
-	"se" cnjadv
 	"se" prn pro ref p3 mf sp
 "<emplega>"
 	"emplegar" vblex pri p3 sg
-;	"emplegar" vblex imp p2 sg REMOVE:104
 "<sovent>"
 	"sovent" adv
 "<segon>"
-	"segon" adv
-	"segon" adj m sg
-;	"segon" pr REMOVE:122
+;	"segon" pr
 "<de>"
 	"de" pr
 "<critèris>"
 	"critèri" n m pl
 "<istorics>"
 	"istoric" adj m pl
-;	"istoric" n m pl REMOVE:110
 "<e>"
 	"e" cnjcoo
 "<culturals>"
@@ -158,13 +120,11 @@
 	"." sent
 
 "<Se>"
-	"se" cnjadv
 	"se" prn pro ref p3 mf sp
 "<pòt>"
 	"poder" vbmod pri p3 sg
 "<veire>"
 	"veire" vblex inf
-	"veire" n m sg
 "<atal>"
 	"atal" adv
 "<de>"
@@ -174,57 +134,35 @@
 "<de>"
 	"de" pr
 "<continents>"
-	"continent" adj m pl
 	"continent" n m pl
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
 	"que" rel an mf sp
 "<considèran>"
 	"considerar" vblex pri p3 pl
 "<Euròpa>"
-	"Euròpa" np ant f sg
 	"Euròpa" np top f sg
 "<e>"
 	"e" cnjcoo
 "<Asia>"
-	"Asia" np ant f sg
 	"Asia" np top f sg
 "<coma>"
 	"coma" adv
-	"coma" cnjadv
-	"coma" pr
-	"coma" rel adv
-;	"coma" n f sg REMOVE:110
 "<dos>"
 	"dos" num m sp
 "<continents>"
-	"continent" adj m pl
 	"continent" n m pl
-"<alara>"
-	"alara" adv
-	"alara" cnjadv
-"<qu'>"
-	"que" cnjsub
-	"que" rel an mf sp
-;	"que" adv enon REMOVE:119
+"<alara qu'>"
+	"alara que" cnjadv
 "<Eurasia>"
-	"*Eurasia"
+	"Eurasia" np top f sg
 "<forma>"
 	"formar" vblex pri p3 sg
-;	"formar" vblex imp p2 sg REMOVE:106
-;	"forma" n f sg REMOVE:110
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg
 "<sola>"
 	"sol" adj f sg
-	"sol" n f sg
 "<espandida>"
-	"espandit" adj f sg
-	"espandir" vblex pp f sg
+	"espandida" n f sg
 "<de>"
 	"de" pr
 "<tèrra>"
@@ -239,41 +177,27 @@
 
 "<La>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
 "<definicion>"
 	"definicion" n f sg
 "<pauc>"
 	"pauc" prn tn m sg
 	"pauc" preadv
 	"pauc" adj m sg
-;	"pauc" n m sg REMOVE:110
-;	"pauc" adv REMOVE:168
+;	"pauc" adv 
 "<clara>"
 	"clar" adj f sg
 "<d'>"
 	"de" pr
 "<un>"
 	"un" det ind m sg SELECT:144
-;	"un" num m sp SELECT:144
-;	"un" n m sg SELECT:144
-;	"un" prn tn m sg SELECT:144
 "<continent>"
-	"continent" adj m sg
 	"continent" n m sg
 "<mena>"
-	"mena" n f sg
 	"menar" vblex pri p3 sg
-;	"menar" vblex imp p2 sg REMOVE:106
 "<a>"
 	"a" pr
-	"aver" vbhaver pri p3 sg
-	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
 "<existéncia>"
 	"existéncia" n f sg
 "<de>"
@@ -281,8 +205,6 @@
 "<divèrses>"
 	"divèrs" adj m pl
 "<modèls>"
-	"modèl" adj m pl
-	"modèl" n mf pl
 	"modèl" n m pl
 "<de>"
 	"de" pr
@@ -290,35 +212,23 @@
 	"quatre" num mf sp
 "<a>"
 	"a" pr
-	"aver" vbhaver pri p3 sg
-	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
 "<sèt>"
 	"sèt" num mf sp
 "<continents>"
-	"continent" adj m pl
 	"continent" n m pl
 "<.>"
 	"." sent
 
 "<Mas>"
-	"mas" adv
-	"Mas" np cog mf sp
-	"Mas" np al
-;	"mas" cnjcoo REMOVE:99
-;	"mas" n m sg REMOVE:110
-;	"mon" det pos f pl REMOVE:116
+;	"mas" cnjcoo
 "<foguèt>"
 	"èsser" vbser ifi p3 sg
 "<pas>"
 	"pas" adv
-	"pas" n m sg
 "<totjorn>"
 	"totjorn" adv
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
 "<cas>"
 	"cas" n m sg
 "<,>"
@@ -326,33 +236,23 @@
 "<e>"
 	"e" cnjcoo
 "<aqueles>"
-	"aquel" prn tn m pl
 	"aquel" det dem m pl
 "<modèls>"
-	"modèl" adj m pl
-	"modèl" n mf pl
 	"modèl" n m pl
 "<varièron>"
 	"variar" vblex ifi p3 pl
 "<segon>"
-	"segon" adv
 	"segon" pr
-	"segon" adj m sg
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
 "<Istòria>"
 	"istòria" n f sg
 "<e>"
 	"e" cnjcoo
 "<la>"
 	"lo" det def f sg
-	"lo" prn pro p3 f sg
 "<descobèrta>"
-	"descobèrt" adj f sg
 	"descobèrta" n f sg
-	"descobrir" vblex pp f sg
 "<de>"
 	"de" pr
 "<territòris>"
@@ -368,63 +268,44 @@
 
 
 "<Dins>"
-	"dins" adv
 	"dins" pr
 "<son>"
-	"son" n m sg
 	"son" det pos f sg
-	"èsser" vbser pri p3 pl
-	"èster" vbser pri p3 pl
-;	"son" det pos m sg REMOVE:132
 "<accepcion>"
 	"accepcion" n f sg
 "<comuna>"
 	"comun" adj f sg
-;	"comuna" n f sg REMOVE:110
 "<,>"
 	"," cm
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
 "<zona>"
 	"*zona"
 "<continentala>"
 	"continental" adj f sg
 "<inclutz>"
 	"inclure" vblex pri p3 sg
-;	"inclure" vblex imp p2 sg REMOVE:106
 "<tanben>"
 	"tanben" adv
 	"tanben" preadv
 "<las>"
-	"las" adj m sg
 	"lo" det def f pl
-;	"lo" prn pro p3 f pl REMOVE:93
 "<pichonas>"
 	"pichon" adj f pl
-	"pichon" n f pl
 "<illas>"
 	"illa" n f pl
 "<a>"
 	"a" pr
-	"aver" vbhaver pri p3 sg
-	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
 "<flaca>"
 	"flac" adj f sg
-	"flac" n f sg
 "<distància>"
 	"distància" n f sg
 "<de>"
 	"de" pr
 "<las>"
-	"las" adj m sg
 	"lo" det def f pl
-	"lo" prn pro p3 f pl
 "<còstas>"
 	"còsta" n f pl
-	"costar" vblex pri p2 sg
 "<,>"
 	"," cm
 "<mas>"
@@ -434,13 +315,11 @@
 ;	"mon" det pos f pl REMOVE:131
 "<pas>"
 	"pas" adv
-;	"pas" n m sg REMOVE:110
 "<aquelas>"
 	"aquel" prn tn f pl
 	"aquel" det dem f pl
 "<separadas>"
 	"separat" adj f pl
-	"separar" vblex pp f pl
 "<per>"
 	"per" adv
 ;	"per" pr REMOVE:122
@@ -465,23 +344,19 @@
 ;	"un" n m sg SELECT:144
 ;	"un" prn tn m sg SELECT:144
 "<punt>"
-	"punt" adv
 	"punt" n m sg
 "<de>"
 	"de" pr
 "<vista>"
 	"vista" n f sg
-	"veir" vblex pp f sg
 "<scientific>"
 	"scientific" adj m sg
-	"scientific" n m sg
 "<,>"
 	"," cm
 "<los>"
 	"lo" det def m pl
 ;	"lo" prn pro p3 m pl REMOVE:93
 "<continents>"
-	"continent" adj m pl
 	"continent" n m pl
 "<incluson>"
 	"inclure" vblex pri p3 pl
@@ -489,25 +364,15 @@
 	"tanben" adv
 	"tanben" preadv
 "<las>"
-	"las" adj m sg
 	"lo" det def f pl
-;	"lo" prn pro p3 f pl REMOVE:93
 "<illas>"
 	"illa" n f pl
 "<estacadas>"
 	"estacat" adj f pl
-	"estacar" vblex pp f pl
-;	"estacat" n f pl REMOVE:110
 "<a>"
 	"a" pr
-	"aver" vbhaver pri p3 sg
-	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
 "<las>"
-	"las" adj m sg
 	"lo" det def f pl
-;	"lo" prn pro p3 f pl REMOVE:93
 "<placas>"
 	"placa" n f pl
 "<continentalas>"
@@ -521,15 +386,13 @@
 	"coma" rel adv
 ;	"coma" n f sg REMOVE:110
 "<las>"
-	"las" adj m sg
 	"lo" det def f pl
-;	"lo" prn pro p3 f pl REMOVE:93
 "<illas Britanicas>"
 	"illas Britanicas" np top f pl
 "<al respècte d'>"
 	"al respècte de" pr
 "<Eurasia>"
-	"*Eurasia"
+	"Eurasia"
 "<.>"
 	"." sent
 
@@ -548,44 +411,34 @@
 
 
 "<Las>"
-	"las" adj m sg
 	"lo" det def f pl
-;	"lo" prn pro p3 f pl REMOVE:93
 "<primièras>"
 	"primièr" adj f pl
-	"primièr" n f pl
 "<definicions>"
 	"definicion" n f pl
 
 
 "<Lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
 "<geograf>"
 	"geograf" n m sg
 "<grèc>"
 	"grèc" adj m sg
-;	"grèc" n m sg REMOVE:110
 "<Estrabon>"
-	"*Estrabon"
+	"Estrabon"
 "<tenent>"
 	"téner" vblex ger
 "<un>"
-	"un" det ind m sg SELECT:155
-;	"un" num m sp SELECT:155
-;	"un" n m sg SELECT:155
-;	"un" prn tn m sg SELECT:155
+	"un" det ind m sg
 "<glòbe>"
-	"*glòbe"
+	"glòbe" n m sg
 "<indicant>"
 	"indicar" vblex ger
 "<Euròpa>"
-	"Euròpa" np ant f sg
 	"Euròpa" np top f sg
 "<e>"
 	"e" cnjcoo
 "<Asia>"
-	"Asia" np ant f sg
 	"Asia" np top f sg
 "<.>"
 	"." sent
@@ -594,42 +447,29 @@
 
 "<La>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
 "<primièra>"
 	"primièr" adj f sg
-	"primièr" n f sg
 "<distincion>"
 	"distincion" n f sg
 "<entre>"
 	"entre" pr
-	"entrar" vblex prs p3 sg
-	"entrar" vblex pri p1 sg
-	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
 "<los>"
 	"lo" det def m pl
-;	"lo" prn pro p3 m pl REMOVE:93
 "<continents>"
-	"continent" adj m pl
 	"continent" n m pl
 "<se>"
-	"se" cnjadv
 	"se" prn pro ref p3 mf sp
 "<faguèt>"
 	"far" vblex ifi p3 sg
 "<pels>"
-	"pel" n m pl
 	"per" pr
 		"lo" det def m pl
 "<ancians>"
 	"ancian" adj m pl
-	"ancian" n m pl
 "<marins>"
-	"marin" adj m pl
 	"marin" n m pl
 "<grècs>"
 	"grèc" adj m pl
-	"grèc" n m pl
 "<que>"
 	"que" cnjadv
 	"que" cnjsub
@@ -638,30 +478,21 @@
 	"donar" vblex ifi p3 pl
 "<los>"
 	"lo" det def m pl
-;	"lo" prn pro p3 m pl REMOVE:93
 "<noms>"
 	"nom" n m pl
 "<d'>"
 	"de" pr
 "<Euròpa>"
-	"Euròpa" np ant f sg
 	"Euròpa" np top f sg
 "<e d'>"
 	"e" cnjcoo
 		"de" pr
 "<Asia>"
-	"Asia" np ant f sg
 	"Asia" np top f sg
 "<a>"
 	"a" pr
-	"aver" vbhaver pri p3 sg
-	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
 "<las>"
-	"las" adj m sg
 	"lo" det def f pl
-;	"lo" prn pro p3 f pl REMOVE:93
 "<tèrras>"
 	"tèrra" n f pl
 "<dels>"
@@ -671,7 +502,6 @@
 	"dos" num m sp
 "<costats>"
 	"costat" n m pl
-	"costar" vblex pp m pl
 "<del>"
 	"de" pr
 		"lo" det def m sg
@@ -681,12 +511,10 @@
 	"de" pr
 "<aiga>"
 	"aiga" n f sg
-	"aigua" n f sg
 "<de>"
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
 "<mar>"
 	"mar" n f sg
 "<Egèa>"
@@ -695,10 +523,7 @@
 	"," cm
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
 "<estrech>"
-	"estrech" adj m sg
 	"estrech" n m sg
 "<dels>"
 	"de" pr
@@ -709,21 +534,17 @@
 	"," cm
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
 "<Mar>"
 	"mar" n f sg
 "<de>"
 	"de" pr
 "<Marmara>"
-	"*Marmara"
+	"Marmara" np top f sg
 "<,>"
 	"," cm
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
 "<estrech>"
-	"estrech" adj m sg
 	"estrech" n m sg
 "<del>"
 	"de" pr
@@ -734,7 +555,6 @@
 	"e" cnjcoo
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
 "<mar Negra>"
 	"mar Negra" np top f sg
 "<.>"
@@ -742,7 +562,6 @@
 
 "<Los>"
 	"lo" det def m pl
-;	"lo" prn pro p3 m pl REMOVE:93
 "<noms>"
 	"nom" n m pl
 "<foguèron>"
@@ -755,7 +574,6 @@
 	"primièr" n m sg
 "<aplicats>"
 	"aplicat" adj m pl
-	"aplicar" vblex pp m pl
 "<solament>"
 	"solament" adv
 	"solament" cnjadv
@@ -765,54 +583,40 @@
 "<designar>"
 	"designar" vblex inf
 "<las>"
-	"las" adj m sg
 	"lo" det def f pl
-;	"lo" prn pro p3 f pl REMOVE:93
 "<tèrras>"
 	"tèrra" n f pl
 "<prèp de>"
 	"prèp de" pr
 "<la>"
 	"lo" det def f sg
-	"lo" prn pro p3 f sg
 "<còsta>"
 	"còsta" n f sg
-	"costar" vblex pri p3 sg
-;	"costar" vblex imp p2 sg REMOVE:104
 "<e>"
 	"e" cnjcoo
 "<pus>"
 	"pus" adv
-;	"pus" n m sg REMOVE:110
 "<tard>"
 	"tard" adv
 "<las>"
-	"las" adj m sg
 	"lo" det def f pl
-	"lo" prn pro p3 f pl
 "<espandidas>"
-	"espandit" adj f pl
-	"espandir" vblex pp f pl
+	"espandit" n f pl
 "<pus>"
 	"pus" adv
-	"pus" n m sg
 "<alunhadas>"
 	"alunhat" adj f pl
-	"alunhar" vblex pp f pl
 "<.>"
 	"." sent
 
 "<Los>"
 	"lo" det def m pl
-;	"lo" prn pro p3 m pl REMOVE:93
 "<pensaires>"
-	"pensaire" adj m pl
 	"pensaire" n m pl
 "<de>"
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
 "<Grècia>"
 	"Grècia" np top f sg
 "<antica>"
@@ -824,10 +628,8 @@
 	"per" pr
 "<saber>"
 	"saber" vblex inf
-	"saber" n m sg
 "<s'>"
 	"se" cnjadv
-;	"se" prn pro ref p3 mf sp REMOVE:93
 "<Africa>"
 	"Africa" np top f sg
 "<(>"
@@ -862,11 +664,9 @@
 "<d'>"
 	"de" pr
 "<Asia>"
-	"Asia" np ant f sg
 	"Asia" np top f sg
 "<o>"
 	"o" cnjcoo
-;	"o" prn pro p3 nt REMOVE:93
 "<coma>"
 	"coma" adv
 	"coma" cnjadv
@@ -874,12 +674,9 @@
 	"coma" rel adv
 ;	"coma" n f sg REMOVE:110
 "<tresena>"
-	"tres" adj f sg
 	"tresen" adj f sg
 "<partida>"
-	"partit" adj f sg
 	"partida" n f sg
-	"partir" vblex pp f sg
 "<del>"
 	"de" pr
 		"lo" det def m sg
@@ -901,11 +698,8 @@
 "<tres>"
 	"tres" num mf sp
 "<partidas>"
-	"partit" adj f pl
 	"partida" n f pl
-	"partir" vblex pp f pl
 "<s'>"
-	"se" cnjadv
 	"se" prn pro ref p3 mf sp
 "<impausèt>"
 	"impausar" vblex ifi p3 sg
@@ -918,21 +712,17 @@
 	"de" pr
 		"lo" det def m sg
 "<punt>"
-	"punt" adv
 	"punt" n m sg
 "<de>"
 	"de" pr
 "<vista>"
 	"vista" n f sg
-	"veir" vblex pp f sg
 "<grèc>"
 	"grèc" adj m sg
-	"grèc" n m sg
 "<,>"
 	"," cm
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
 "<mar>"
 	"mar" n f sg
 "<Egèa>"
@@ -940,18 +730,11 @@
 "<,>"
 	"," cm
 "<èra>"
-	"èster" vbser pii p1 sg
 	"èsser" vbser pii p3 sg
-;	"èra" n f sg REMOVE:110
 "<lo>"
 	"lo" det def m sg
-	"lo" prn pro p3 m sg
 "<centre>"
 	"centre" n m sg
-	"centrar" vblex prs p3 sg
-	"centrar" vblex pri p1 sg
-	"centrar" vblex prs p1 sg
-;	"centrar" vblex imp p3 sg REMOVE:104
 "<del>"
 	"de" pr
 		"lo" det def m sg
@@ -962,38 +745,22 @@
 "<amb>"
 	"amb" pr
 "<Asia>"
-	"Asia" np ant f sg
 	"Asia" np top f sg
 "<a>"
 	"a" pr
-	"aver" vbhaver pri p3 sg
-	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
 "<Èst>"
-	"èst" adj mf sp
 	"èst" n m sg
 "<,>"
 	"," cm
 "<Euròpa>"
-	"Euròpa" np ant f sg
 	"Euròpa" np top f sg
 "<a>"
 	"a" pr
-	"aver" vbhaver pri p3 sg
-	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
 "<Oèst>"
-	"oèst" adj mf sp
 	"oèst" n m sg
 "<e>"
 	"e" cnjcoo
@@ -1001,7 +768,6 @@
 	"a" pr
 		"lo" det def m sg
 "<Nòrd>"
-	"nòrd" adj mf sp
 	"nòrd" n m sg
 	"Nòrd" np top m sg
 "<e>"
@@ -1030,25 +796,14 @@
 	"limit" n m pl
 "<entre>"
 	"entre" pr
-	"entrar" vblex prs p3 sg
-	"entrar" vblex pri p1 sg
-	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
 "<los>"
 	"lo" det def m pl
-;	"lo" prn pro p3 m pl REMOVE:93
 "<continents>"
-	"continent" adj m pl
 	"continent" n m pl
 "<son>"
-	"son" n m sg
 	"èsser" vbser pri p3 pl
-	"son" det pos m sg
-	"èster" vbser pri p3 pl
-;	"son" det pos f sg REMOVE:131
 "<pas>"
 	"pas" adv
-	"pas" n m sg
 "<fixats>"
 	"fixar" vblex pp m pl
 "<.>"
@@ -1060,18 +815,15 @@
 	"," cm
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
 "<frontièra>"
 	"frontièra" n f sg
 "<d'>"
 	"de" pr
 "<Euròpa>"
-	"Euròpa" np ant f sg
 	"Euròpa" np top f sg
 "<amb>"
 	"amb" pr
 "<Asia>"
-	"Asia" np ant f sg
 	"Asia" np top f sg
 "<foguèt>"
 	"èsser" vbser ifi p3 sg
@@ -1082,7 +834,6 @@
 	"dempuèi" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
 "<mar Negra>"
 	"mar Negra" np top f sg
 "<,>"
@@ -1091,28 +842,24 @@
 	"lo long de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
 "<ribièra>"
 	"ribièra" n f sg
 "<Rioni>"
-	"*Rioni"
+	"Rioni" np top f sg
 "<e>"
 	"e" cnjcoo
 "<Georgia>"
-	"Georgia" np ant f sg
 	"Georgia" np top f sg
 "<.>"
 	"." sent
 
 "<Pus>"
 	"pus" adv
-;	"pus" n m sg REMOVE:110
 "<tard>"
 	"tard" adv
 "<,>"
 	"," cm
 "<se>"
-	"se" cnjadv
 	"se" prn pro ref p3 mf sp
 "<considerèt>"
 	"considerar" vblex ifi p3 sg
@@ -1129,7 +876,6 @@
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
 "<mar Negra>"
 	"mar Negra" np top f sg
 "<per>"
@@ -1137,20 +883,16 @@
 	"per" pr
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
 "<estrech>"
-	"estrech" adj m sg
 	"estrech" n m sg
 "<de>"
 	"de" pr
 "<Kerch>"
-	"*Kerch"
+	"Kerch" np top m sg
 "<,>"
 	"," cm
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
 "<mar d'Azov>"
 	"mar d'Azov" np top f sg
 "<e>"
@@ -1159,9 +901,9 @@
 	"lo long de" pr
 		"lo" det def m sg
 "<flume>"
-	"*flume"
+	"flume" n m sg
 "<Don>"
-	"don" n m sg
+	"Don" np top m sg
 "<.>"
 	"." sent
 
@@ -1186,17 +928,11 @@
 	"coma" n f sg
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
 "<frontièra>"
 	"frontièra" n f sg
 "<entre>"
 	"entre" pr
-	"entrar" vblex prs p3 sg
-	"entrar" vblex pri p1 sg
-	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
 "<Asia>"
-	"Asia" np ant f sg
 	"Asia" np top f sg
 "<e>"
 	"e" cnjcoo
@@ -1216,25 +952,18 @@
 	"sègle" n m sg
 "<V>"
 	"V" num mf sp
-;	"v" n f sg REMOVE:110
 "<,>"
 	"," cm
 "<pasmens>"
 	"pasmens" adv
 	"pasmens" cnjadv
 "<s'>"
-	"se" cnjadv
 	"se" prn pro ref p3 mf sp
 "<opausèt>"
 	"opausar" vblex ifi p3 sg
 "<a>"
 	"a" pr
-	"aver" vbhaver pri p3 sg
-	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
 "<aquela>"
-	"aquel" prn tn f sg
 	"aquel" det dem f sg
 "<situacion>"
 	"situacion" n f sg
@@ -1253,7 +982,6 @@
 "<dos>"
 	"dos" num m sp
 "<continents>"
-	"continent" adj m pl
 	"continent" n m pl
 "<.>"
 	"." sent
@@ -1267,17 +995,11 @@
 	"coïncidir" vblex inf
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
 "<rompedura>"
-	"*rompedura"
+	"rompedura" n f sg
 "<entre>"
 	"entre" pr
-	"entrar" vblex prs p3 sg
-	"entrar" vblex pri p1 sg
-	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
 "<Asia>"
-	"Asia" np ant f sg
 	"Asia" np top f sg
 "<e>"
 	"e" cnjcoo
@@ -1287,12 +1009,10 @@
 	"amb" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
 "<frontièra>"
 	"frontièra" n f sg
 "<occidentala>"
 	"occidental" adj f sg
-;	"occidental" n f sg REMOVE:110
 "<d'>"
 	"de" pr
 "<Egipte>"
@@ -1302,10 +1022,8 @@
 "<çò que>"
 	"lo que" rel nn nt
 "<situava>"
-	"situar" vblex pii p1 sg
 	"situar" vblex pii p3 sg
 "<aquel>"
-	"aquel" prn tn m sg
 	"aquel" det dem m sg
 "<país>"
 	"país" n m sg
@@ -1313,7 +1031,6 @@
 	"en" pr
 ;	"en" prn pro adv REMOVE:93
 "<Asia>"
-	"Asia" np ant f sg
 	"Asia" np top f sg
 "<.>"
 	"." sent
@@ -1325,7 +1042,6 @@
 ;	"tanben" preadv REMOVE:170
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
 "<division>"
 	"division" n f sg
 "<en>"
@@ -1344,8 +1060,6 @@
 	"que" adv enon
 	"que" rel an mf sp
 "<es>"
-	"eth" det def f pl
-	"eth" det def m pl
 	"èsser" vbser pri p3 sg
 "<en fach>"
 	"en fach" adv
@@ -1356,24 +1070,16 @@
 ;	"unir" vblex prs p3 sg SELECT:145
 "<sola>"
 	"sol" adj f sg
-	"sol" n f sg
 "<massa>"
-	"massa" adv
 	"massa" n f sg
 "<,>"
 	"," cm
 "<lo>"
 	"lo" det def m sg
-	"lo" prn pro p3 m sg
 "<debat>"
 	"debat" n m sg
-	"debàter" vblex pri p3 sg
-	"debatre" vblex pri p3 sg
-;	"debatre" vblex imp p2 sg REMOVE:104
-;	"debàter" vblex imp p2 sg REMOVE:104
 "<continua>"
 	"continuar" vblex pri p3 sg
-;	"continuar" vblex imp p2 sg REMOVE:104
 "<.>"
 	"." sent
 
@@ -1387,13 +1093,10 @@
 
 "<Lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
 "<pus>"
 	"pus" adv
-	"pus" n m sg
 "<ancian>"
 	"ancian" adj m sg
-;	"ancian" n m sg REMOVE:110
 "<exemple>"
 	"exemple" n m sg
 "<imprimit>"
@@ -1402,7 +1105,6 @@
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
 "<mapa>"
 	"mapa" n f sg
 "<en>"
@@ -1420,11 +1122,9 @@
 	"mostrar" vblex ger
 "<los>"
 	"lo" det def m pl
-;	"lo" prn pro p3 m pl REMOVE:93
 "<tres>"
 	"tres" num mf sp
 "<continents>"
-	"continent" adj m pl
 	"continent" n m pl
 "<coma>"
 	"coma" adv
@@ -1434,7 +1134,6 @@
 	"coma" n f sg
 "<los>"
 	"lo" det def m pl
-;	"lo" prn pro p3 m pl REMOVE:93
 "<domenis>"
 	"domeni" n m pl
 "<dels>"
@@ -1449,15 +1148,15 @@
 "<:>"
 	":" sent
 "<Sem>"
-	"sèir" vblex imp p1 pl
+	"Sem" np cog m sp
 "<,>"
 	"," cm
 "<Iafet>"
-	"*Iafet"
+	"Iafet" np cog m sp
 "<e>"
 	"e" cnjcoo
 "<Cham>"
-	"*Cham"
+	"Sham" np cog m sp
 "<.>"
 	"." sent
 
@@ -1490,12 +1189,9 @@
 	"dividir" vblex pii p3 pl
 "<los>"
 	"lo" det def m pl
-;	"lo" prn pro p3 m pl REMOVE:93
 "<continents>"
-	"continent" adj m pl
 	"continent" n m pl
 "<pels>"
-	"pel" n m pl
 ;	"per" pr REMOVE:122
 ;		"lo" det def m pl
 "<flumes>"
@@ -1514,7 +1210,6 @@
 	"," cm
 "<los>"
 	"lo" det def m pl
-	"lo" prn pro p3 m pl
 "<considerant>"
 	"considerar" vblex ger
 "<atal>"
@@ -1540,14 +1235,11 @@
 	"de" pr
 "<autres>"
 	"autre" n m pl
-	"autre" adj ind m pl
 "<dividissián>"
 	"dividir" vblex pii p3 pl
 "<los>"
 	"lo" det def m pl
-;	"lo" prn pro p3 m pl REMOVE:93
 "<continents>"
-	"continent" adj m pl
 	"continent" n m pl
 "<per>"
 	"per" adv
@@ -1565,9 +1257,7 @@
 	"alara" cnjadv
 "<los>"
 	"lo" det def m pl
-;	"lo" prn pro p3 m pl REMOVE:93
 "<continents>"
-	"continent" adj m pl
 	"continent" n m pl
 "<«>"
 	"«" lpar
@@ -1579,7 +1269,6 @@
 	"." sent
 
 "<Aqueles>"
-	"aquel" prn tn m pl
 	"aquel" det dem m pl
 "<geografs>"
 	"geograf" n m pl
@@ -1587,51 +1276,32 @@
 	"fixar" vblex ifi p3 pl
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
 "<frontièra>"
 	"frontièra" n f sg
 "<entre>"
 	"entre" pr
-	"entrar" vblex prs p3 sg
-	"entrar" vblex pri p1 sg
-	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
 "<Euròpa>"
-	"Euròpa" np ant f sg
 	"Euròpa" np top f sg
 "<e>"
 	"e" cnjcoo
 "<Asia>"
-	"Asia" np ant f sg
 	"Asia" np top f sg
 "<a>"
 	"a" pr
-	"aver" vbhaver pri p3 sg
-	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
 "<istme>"
 	"istme" n m sg
 "<entre>"
 	"entre" pr
-	"entrar" vblex prs p3 sg
-	"entrar" vblex pri p1 sg
-	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
 "<mar Negra>"
 	"mar Negra" np top f sg
 "<e>"
 	"e" cnjcoo
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
 "<mar>"
 	"mar" n f sg
 "<Caspiana>"
@@ -1642,17 +1312,11 @@
 	"e" cnjcoo
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
 "<frontièra>"
 	"frontièra" n f sg
 "<entre>"
 	"entre" pr
-	"entrar" vblex prs p3 sg
-	"entrar" vblex pri p1 sg
-	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
 "<Asia>"
-	"Asia" np ant f sg
 	"Asia" np top f sg
 "<e>"
 	"e" cnjcoo
@@ -1660,33 +1324,20 @@
 	"Africa" np top f sg
 "<a>"
 	"a" pr
-	"aver" vbhaver pri p3 sg
-	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
 "<istme>"
 	"istme" n m sg
 "<entre>"
 	"entre" pr
-	"entrar" vblex prs p3 sg
-	"entrar" vblex pri p1 sg
-	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
 "<mar Roja>"
 	"mar Roja" np top f sg
 "<e>"
 	"e" cnjcoo
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
 "<embocadura>"
 	"embocadura" n f sg
 "<del>"
@@ -1695,7 +1346,7 @@
 "<lac>"
 	"lac" n m sg
 "<Bardawil>"
-	"*Bardawil"
+	"Bardawil" np top m sg
 "<sus>"
 	"sus" pr
 "<la>"
@@ -1949,9 +1600,7 @@
 "<aténher>"
 	"aténher" vblex inf
 "<las>"
-	"las" adj m sg
 	"lo" det def f pl
-;	"lo" prn pro p3 f pl REMOVE:93
 "<Antilhas>"
 	"Antilhas" np top f pl
 "<en>"
@@ -1965,43 +1614,28 @@
 	"*dubrissent"
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
 "<camin>"
 	"camin" n m sg
 "<a>"
 	"a" pr
-	"aver" vbhaver pri p3 sg
-	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
 "<exploracion>"
 	"exploracion" n f sg
 "<e>"
 	"e" cnjcoo
 "<a>"
 	"a" pr
-	"aver" vbhaver pri p3 sg
-	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
 "<colonizacion>"
 	"colonizacion" n f sg
 "<europèa>"
 	"europèu" adj f sg
-;	"europèu" n f sg REMOVE:110
 "<de>"
 	"de" pr
 "<las>"
 	"las" adj m sg
-	"lo" det def f pl
-;	"lo" prn pro p3 f pl REMOVE:93
 "<Americas>"
 	"Americas" np top f pl
 "<.>"
@@ -2023,15 +1657,11 @@
 	"quatre" num mf sp
 "<viatges>"
 	"viatge" n m pl
-	"viatjar" vblex prs p2 sg
 "<cap a>"
 	"cap a" pr
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
 "<oèst>"
-	"oèst" adj mf sp
 	"oèst" n m sg
 "<,>"
 	"," cm
@@ -2046,8 +1676,6 @@
 "<aver>"
 	"aver" vbhaver inf
 	"aver" vblex inf
-	"auer" vblex inf
-	"aver" n m sg
 "<atench>"
 	"*atench"
 "<un>"
@@ -2058,7 +1686,6 @@
 "<novèl>"
 	"novèl" adj m sg
 "<continent>"
-	"continent" adj m sg
 	"continent" n m sg
 "<e>"
 	"e" cnjcoo
@@ -2075,9 +1702,8 @@
 "<aviá>"
 	"aver" vbhaver pii p3 sg
 	"aver" vblex pii p3 sg
-	"auer" vblex pii p3 sg
 "<atench>"
-	"*atench"
+	"aténher" vblex 
 "<Asia>"
 	"Asia" np ant f sg
 	"Asia" np top f sg
@@ -2099,7 +1725,6 @@
 	"èsser" vbser ifi p3 sg
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
 "<pilòt>"
 	"pilòt" n m sg
 "<d'>"
@@ -2116,16 +1741,13 @@
 	"que" cnjsub
 	"que" rel an mf sp
 "<navigava>"
-	"*navigava"
+	"navigar" vblex pii p3 sg
 "<lo long de>"
 	"lo long de" pr
 "<la>"
 	"lo" det def f sg
-	"lo" prn pro p3 f sg
 "<còsta>"
 	"còsta" n f sg
-	"costar" vblex pri p3 sg
-;	"costar" vblex imp p2 sg REMOVE:104
 "<de>"
 	"de" pr
 "<Brasil>"
@@ -2135,24 +1757,20 @@
 
 "<Los>"
 	"lo" det def m pl
-;	"lo" prn pro p3 m pl REMOVE:93
 "<membres>"
 	"membre" n mf pl
 "<de>"
 	"de" pr
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+
 "<expedicion>"
 	"expedicion" n f sg
 "<percorriguèron>"
 	"*percorriguèron"
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
 "<long>"
-	"long" adj m sg
 	"long" n m sg
 "<camin>"
 	"camin" n m sg
@@ -2160,7 +1778,6 @@
 	"cap a" pr
 		"lo" det def m sg
 "<sud>"
-	"sud" adj mf sp
 	"sud" n m sg
 "<,>"
 	"," cm
@@ -2168,17 +1785,12 @@
 	"lo long de" pr
 "<la>"
 	"lo" det def f sg
-	"lo" prn pro p3 f sg
 "<còsta>"
 	"còsta" n f sg
-	"costar" vblex pri p3 sg
-;	"costar" vblex imp p2 sg REMOVE:104
 "<de>"
 	"de" pr
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
 "<America del Sud>"
 	"America del Sud" np top f sg
 "<,>"
@@ -2187,15 +1799,12 @@
 	"lo que" rel nn nt
 "<confirma>"
 	"confirmar" vblex pri p3 sg
-;	"confirmar" vblex imp p2 sg REMOVE:104
 "<que>"
 	"que" cnjadv
 	"que" cnjsub
 	"que" rel an mf sp
 "<las>"
 	"las" adj m sg
-	"lo" det def f pl
-;	"lo" prn pro p3 f pl REMOVE:93
 "<tèrras>"
 	"tèrra" n f pl
 "<que>"
@@ -2218,12 +1827,8 @@
 	"de retorn" adv
 "<a>"
 	"a" pr
-	"aver" vbhaver pri p3 sg
-	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+
 "<Euròpa>"
-	"Euròpa" np ant f sg
 	"Euròpa" np top f sg
 "<,>"
 	"," cm
@@ -2241,20 +1846,13 @@
 "<de>"
 	"de" pr
 "<son>"
-	"son" n m sg
-	"èsser" vbser pri p3 pl
 	"son" det pos m sg
-	"èster" vbser pri p3 pl
-;	"son" det pos f sg REMOVE:131
 "<viatge>"
 	"viatge" n m sg
-	"viatjar" vblex prs p3 sg
-	"viatjar" vblex prs p1 sg
-;	"viatjar" vblex imp p3 sg REMOVE:104
 "<Mundus>"
-	"*Mundus"
+	"Mundus" barb
 "<Novus>"
-	"*Novus"
+	"Novus" barb
 "<(>"
 	"(" lpar
 "<«>"
@@ -2274,7 +1872,6 @@
 	"1502" num
 "<o>"
 	"o" cnjcoo
-;	"o" prn pro p3 nt REMOVE:93
 "<1503>"
 	"1503" num
 "<,>"
@@ -2282,11 +1879,8 @@
 "<mas>"
 	"mas" adv
 	"mas" cnjcoo
-;	"mas" n m sg REMOVE:110
-;	"mon" det pos f pl REMOVE:116
 "<sembla>"
 	"semblar" vblex pri p3 sg
-;	"semblar" vblex imp p2 sg REMOVE:104
 "<que>"
 	"que" cnjadv
 	"que" cnjsub
@@ -2294,16 +1888,14 @@
 "<i>"
 	"i" prn pro adv
 "<auriá>"
-	"auer" vblex cni p3 sg
 	"aver" vbhaver cni p3 sg
 	"aver" vblex cni p3 sg
 "<d'>"
 	"de" pr
 "<apondons>"
-	"*apondons"
+	"apondon" n m pl
 "<o>"
 	"o" cnjcoo
-;	"o" prn pro p3 nt REMOVE:93
 "<de>"
 	"de" pr
 "<modificacions>"
@@ -2316,7 +1908,6 @@
 ;	"un" n m sg SELECT:144
 ;	"un" prn tn m sg SELECT:144
 "<autre>"
-	"autre" n m sg
 	"autre" adj ind m sg
 "<autor>"
 	"autor" n m sg
@@ -2336,27 +1927,24 @@
 "<d'>"
 	"de" pr
 "<aquelas>"
-	"aquel" prn tn f pl
 	"aquel" det dem f pl
 "<paraulas>"
 	"paraula" n f pl
 "<,>"
 	"," cm
 "<se>"
-	"se" cnjadv
 	"se" prn pro ref p3 mf sp
 "<pòt>"
 	"poder" vbmod pri p3 sg
 "<legir>"
 	"legir" vblex inf
-	"legir" n m sg
 "<dins>"
 	"dins" adv
 ;	"dins" pr REMOVE:122
 "<Mundus>"
-	"*Mundus"
+	"Mundus" barb
 "<Novus>"
-	"*Novus"
+	"Novus" barb
 "<«>"
 	"«" lpar
 "<descobriguèt>"
@@ -2367,13 +1955,11 @@
 ;	"un" n m sg SELECT:144
 ;	"un" prn tn m sg SELECT:144
 "<continent>"
-	"continent" adj m sg
 	"continent" n m sg
 "<dins>"
 	"dins" adv
 	"dins" pr
 "<aquelas>"
-	"aquel" prn tn f pl
 	"aquel" det dem f pl
 "<regions>"
 	"region" n f pl
@@ -2381,7 +1967,6 @@
 	"de" pr
 		"lo" det def m sg
 "<sud>"
-	"sud" adj mf sp
 	"sud" n m sg
 "<qu'>"
 	"que" cnjsub
@@ -2389,10 +1974,7 @@
 	"que" rel an mf sp
 "<es>"
 	"èsser" vbser pri p3 sg
-	"eth" det def m pl
-;	"eth" det def f pl REMOVE:131
 "<abitat>"
-	"abitat" n m sg
 	"abitar" vblex pp m sg
 "<per>"
 	"per" adv
@@ -2427,11 +2009,9 @@
 	"en" pr
 ;	"en" prn pro adv REMOVE:93
 "<Asia>"
-	"Asia" np ant f sg
 	"Asia" np top f sg
 "<o>"
 	"o" cnjcoo
-;	"o" prn pro p3 nt REMOVE:93
 "<en>"
 	"en" pr
 ;	"en" prn pro adv REMOVE:93
@@ -2443,19 +2023,14 @@
 	"," cm
 "<primièra>"
 	"primièr" adj f sg
-;	"primièr" n f sg REMOVE:110
 "<identificacion>"
 	"identificacion" n f sg
 "<explicita>"
 	"explicit" adj f sg
-	"explicitar" vblex pri p3 sg
-;	"explicitar" vblex imp p2 sg REMOVE:106
 "<de>"
 	"de" pr
 "<las>"
-	"las" adj m sg
 	"lo" det def f pl
-;	"lo" prn pro p3 f pl REMOVE:93
 "<Americas>"
 	"Americas" np top f pl
 "<,>"
