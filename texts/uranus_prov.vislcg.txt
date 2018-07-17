@@ -2,11 +2,11 @@
 	"Uranus" np top m sg
 "<es>"
 	"èsser" vbser pri p3 sg
-;	"eth" det def f pl REMOVE:157
-;	"eth" det def m pl REMOVE:157
+;	"eth" det def f pl REMOVE:169
+;	"eth" det def m pl REMOVE:169
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<setena>"
 	"sèt" adj f sg
 	"seten" adj f sg
@@ -21,7 +21,7 @@
 	"sistèma" n m sg
 "<Solar>"
 	"solar" adj m sg
-;	"solar" n m sg REMOVE:110
+;	"solar" n m sg REMOVE:122
 "<per>"
 	"per" adv
 	"per" pr
@@ -31,6 +31,8 @@
 	"de" pr
 "<distància>"
 	"distància" n f sg
+	"distanciar" vblex pri p3 sg
+;	"distanciar" vblex imp p2 sg REMOVE:117
 "<au>"
 	"a" pr
 		"lo" det def m sg
@@ -53,18 +55,18 @@
 
 "<Es>"
 	"èsser" vbser pri p3 sg
-;	"eth" det def f pl REMOVE:157
-;	"eth" det def m pl REMOVE:157
+;	"eth" det def f pl REMOVE:169
+;	"eth" det def m pl REMOVE:169
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<planeta>"
 	"planeta" n f sg
 "<giganta>"
 	"gigant" adj f sg
-;	"gigant" n f sg REMOVE:110
+;	"gigant" n f sg REMOVE:122
 "<e>"
 	"e" cnjcoo
 "<gasosa>"
@@ -95,19 +97,19 @@
 	"donc" cnjadv
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<tresena>"
 	"tres" adj f sg
 	"tresen" adj f sg
 "<talha>"
 	"talha" n f sg
 	"talhar" vblex pri p3 sg
-;	"talhar" vblex imp p2 sg REMOVE:106
+;	"talhar" vblex imp p2 sg REMOVE:117
 "<e>"
 	"e" cnjcoo
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<quatrena>"
 	"quatre" adj f sg
 	"quatren" adj f sg
@@ -123,16 +125,16 @@
 	"sistèma" n m sg
 "<Solar>"
 	"solar" adj m sg
-;	"solar" n m sg REMOVE:110
+;	"solar" n m sg REMOVE:122
 "<.>"
 	"." sent
 
 "<Son>"
-	"èsser" vbser pri p3 pl
+	"son" n m sg
 	"son" det pos f sg
+	"èsser" vbser pri p3 pl
 	"èster" vbser pri p3 pl
-;	"son" n m sg REMOVE:110
-;	"son" det pos m sg REMOVE:132
+;	"son" det pos m sg REMOVE:144
 "<atmosfèra>"
 	"atmosfèra" n f sg
 "<de>"
@@ -144,26 +146,26 @@
 	"blau" adj f sg
 "<es>"
 	"èsser" vbser pri p3 sg
-;	"eth" det def m pl REMOVE:132
-;	"eth" det def f pl REMOVE:157
+;	"eth" det def m pl REMOVE:144
+;	"eth" det def f pl REMOVE:169
 "<fòrça>"
-	"fòrça" det ind mf sp SELECT:150
-;	"forçar" vblex imp p2 sg REMOVE:104
-;	"fòrça" adv SELECT:150
-;	"fòrça" preadv SELECT:150
-;	"fòrça" n f sg SELECT:150
-;	"forçar" vblex prs p1 sg SELECT:150
+	"fòrça" det ind mf sp SELECT:162
+;	"forçar" vblex imp p2 sg REMOVE:115
+;	"fòrça" adv SELECT:162
+;	"fòrça" preadv SELECT:162
+;	"fòrça" n f sg SELECT:162
+;	"forçar" vblex prs p1 sg SELECT:162
 "<espessa>"
 	"espés" adj f sg
 "<e>"
 	"e" cnjcoo
 "<es>"
 	"èsser" vbser pri p3 sg
-;	"eth" det def f pl REMOVE:157
-;	"eth" det def m pl REMOVE:157
+;	"eth" det def f pl REMOVE:169
+;	"eth" det def m pl REMOVE:169
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<pus>"
 	"pus" adv
 	"pus" n m sg
@@ -174,7 +176,7 @@
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
+;	"entrar" vblex imp p3 sg REMOVE:117
 "<lei>"
 	"lei" n f sg
 	"lo" det def mf pl
@@ -192,7 +194,7 @@
 	"coma" cnjadv
 	"coma" pr
 	"coma" rel adv
-;	"coma" n f sg REMOVE:110
+;	"coma" n f sg REMOVE:122
 "<leis>"
 	"lei" n f pl
 	"lo" det def mf pl
@@ -202,7 +204,7 @@
 	"planeta" n f pl
 "<gigantas>"
 	"gigant" adj f pl
-;	"gigant" n f pl REMOVE:110
+;	"gigant" n f pl REMOVE:122
 "<,>"
 	"," cm
 "<Uranus>"
@@ -210,10 +212,10 @@
 "<tèn>"
 	"*tèn"
 "<un>"
-	"un" det ind m sg SELECT:144
-;	"un" n m sg REMOVE:110
-;	"un" num m sp SELECT:144
-;	"un" prn tn m sg SELECT:144
+	"un" det ind m sg SELECT:156
+;	"un" n m sg REMOVE:122
+;	"un" num m sp SELECT:156
+;	"un" prn tn m sg SELECT:156
 "<sistèma>"
 	"sistèma" n m sg
 "<d'>"
@@ -244,14 +246,14 @@
 	"*espectaclosa"
 "<es>"
 	"èsser" vbser pri p3 sg
-;	"eth" det def f pl REMOVE:131
-;	"eth" det def m pl REMOVE:157
+;	"eth" det def f pl REMOVE:143
+;	"eth" det def m pl REMOVE:169
 "<son>"
 	"son" n m sg
 	"èsser" vbser pri p3 pl
 	"son" det pos m sg
 	"èster" vbser pri p3 pl
-;	"son" det pos f sg REMOVE:131
+;	"son" det pos f sg REMOVE:143
 "<axe>"
 	"axe" n m sg
 "<de>"
@@ -266,10 +268,10 @@
 	"*maniera"
 "<quasi>"
 	"quasi" preadv
-;	"quasi" adv REMOVE:168
+;	"quasi" adv REMOVE:180
 "<parallèla>"
 	"parallèl" adj f sg
-;	"parallèla" n f sg REMOVE:110
+;	"parallèla" n f sg REMOVE:122
 "<au>"
 	"a" pr
 		"lo" det def m sg
@@ -277,7 +279,7 @@
 	"plan" adv
 	"plan" n m sg
 	"plan" adj m sg
-;	"plan" preadv REMOVE:170
+;	"plan" preadv REMOVE:182
 "<dau>"
 	"dar" vblex pri p1 sg
 	"de" pr
@@ -286,7 +288,7 @@
 	"sistèma" n m sg
 "<Solar>"
 	"solar" adj m sg
-;	"solar" n m sg REMOVE:110
+;	"solar" n m sg REMOVE:122
 "<.>"
 	"." sent
 
@@ -297,10 +299,10 @@
 	"especificitat" n f sg
 "<se>"
 	"se" cnjadv
-	"se" prn pro ref p3 mf sp
+;	"se" prn pro ref p3 mf sp REMOVE:202
 "<retròba>"
 	"retrobar" vblex pri p3 sg
-;	"retrobar" vblex imp p2 sg REMOVE:104
+;	"retrobar" vblex imp p2 sg REMOVE:115
 "<egalament>"
 	"egalament" adv
 "<dins>"
@@ -312,12 +314,12 @@
 "<forma>"
 	"forma" n f sg
 	"formar" vblex pri p3 sg
-;	"formar" vblex imp p2 sg REMOVE:104
+;	"formar" vblex imp p2 sg REMOVE:115
 "<de>"
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<magnetosfèra>"
 	"*magnetosfèra"
 "<e>"
@@ -340,10 +342,11 @@
 "<coneguts>"
 	"conegut" adj m pl
 	"conéisser" vblex pp m pl
+;	"conegut" n m pl REMOVE:122
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" cnjsub SELECT:190
+;	"que" cnjadv SELECT:190
+;	"que" rel an mf sp SELECT:190
 "<tèn>"
 	"*tèn"
 "<Uranus>"
@@ -363,7 +366,7 @@
 	"causa" n f sg
 	"causir" vblex prs p3 sg
 	"causar" vblex pri p3 sg
-;	"causar" vblex imp p2 sg REMOVE:106
+;	"causar" vblex imp p2 sg REMOVE:117
 "<de>"
 	"de" pr
 "<son>"
@@ -381,24 +384,25 @@
 "<es>"
 	"eth" det def f pl
 	"èsser" vbser pri p3 sg
-;	"eth" det def m pl REMOVE:132
+;	"eth" det def m pl REMOVE:144
 "<coneguda>"
 	"conegut" adj f sg
+	"conegut" n f sg
 	"conéisser" vblex pp f sg
 "<per>"
 	"per" adv
-;	"per" pr REMOVE:122
+;	"per" pr REMOVE:134
 "<sei>"
 	"*sei"
 "<temperaturas>"
 	"temperatura" n f pl
 "<fòrça>"
-	"fòrça" det ind mf sp SELECT:147
-;	"forçar" vblex imp p2 sg REMOVE:106
-;	"fòrça" n f sg REMOVE:110
-;	"fòrça" adv SELECT:147
-;	"fòrça" preadv SELECT:147
-;	"forçar" vblex prs p1 sg SELECT:147
+	"fòrça" det ind mf sp SELECT:159
+;	"forçar" vblex imp p2 sg REMOVE:117
+;	"fòrça" n f sg REMOVE:122
+;	"fòrça" adv SELECT:159
+;	"fòrça" preadv SELECT:159
+;	"forçar" vblex prs p1 sg SELECT:159
 "<bassas>"
 	"bas" adj f pl
 	"bassa" n f pl
@@ -433,7 +437,7 @@
 	"èsser" vbser ifi p3 sg
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<premiera>"
 	"*premiera"
 "<planeta>"
@@ -441,20 +445,20 @@
 "<desconeguda>"
 	"desconegut" adj f sg
 	"desconéisser" vblex pp f sg
-;	"desconegut" n f sg REMOVE:110
+;	"desconegut" n f sg REMOVE:122
 "<durant>"
 	"durant" pr
 	"durar" vblex ger
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<Antiquitat>"
 	"antiquitat" n f sg
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" rel an mf sp SELECT:198
+;	"que" cnjadv SELECT:198
+;	"que" cnjsub SELECT:198
 "<foguèt>"
 	"èsser" vbser ifi p3 sg
 "<descubèrta>"
@@ -462,15 +466,15 @@
 "<amb>"
 	"amb" pr
 "<un>"
-	"un" det ind m sg SELECT:144
-;	"un" num m sp SELECT:144
-;	"un" n m sg SELECT:144
-;	"un" prn tn m sg SELECT:144
+	"un" det ind m sg SELECT:156
+;	"un" num m sp SELECT:156
+;	"un" n m sg SELECT:156
+;	"un" prn tn m sg SELECT:156
 "<telescòpi>"
 	"telescòpi" n m sg
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:93
+;	"en" prn pro adv REMOVE:104
 "<1781>"
 	"1781" num
 "<per>"
@@ -499,7 +503,7 @@
 	"gaire" prn itg f sg
 	"gaire" prn itg m sg
 	"gaire" adj itg f sg
-;	"gaire" preadv REMOVE:170
+;	"gaire" preadv REMOVE:182
 "<de>"
 	"de" pr
 "<telescòpis>"
@@ -517,29 +521,29 @@
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<planeta>"
 	"planeta" n f sg
 "<e>"
 	"e" cnjcoo
 "<una>"
-	"un" det ind f sg SELECT:150
-;	"un" num f sp SELECT:150
-;	"un" prn tn f sg SELECT:150
-;	"unir" vblex prs p3 sg SELECT:150
+	"un" det ind f sg SELECT:162
+;	"un" num f sp SELECT:162
+;	"un" prn tn f sg SELECT:162
+;	"unir" vblex prs p3 sg SELECT:162
 "<unica>"
 	"unic" adj f sg
 "<sonda>"
 	"sonda" n f sg
 	"sondar" vblex pri p3 sg
-;	"sondar" vblex imp p2 sg REMOVE:106
+;	"sondar" vblex imp p2 sg REMOVE:117
 "<espaciala>"
 	"espacial" adj f sg
 "<visitèt>"
 	"visitar" vblex ifi p3 sg
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<sistèma>"
 	"sistèma" n m sg
 "<d'>"
@@ -553,34 +557,34 @@
 	"èsser" vbser ifi p3 sg
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<mission>"
 	"mission" n f sg
 "<estatsunidenca>"
 	"estatsunidenc" adj f sg
-;	"estatsunidenc" n f sg REMOVE:110
+;	"estatsunidenc" n f sg REMOVE:122
 "<Voyager>"
 	"*Voyager"
 "<2>"
 	"2" num
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:93
+;	"en" prn pro adv REMOVE:104
 "<1986>"
 	"1986" num
 "<après>"
 	"après" adv
 	"après" pr
 "<un>"
-	"un" det ind m sg SELECT:144
-;	"un" num m sp SELECT:144
-;	"un" n m sg SELECT:144
-;	"un" prn tn m sg SELECT:144
+	"un" det ind m sg SELECT:156
+;	"un" num m sp SELECT:156
+;	"un" n m sg SELECT:156
+;	"un" prn tn m sg SELECT:156
 "<viatge>"
 	"viatge" n m sg
 	"viatjar" vblex prs p3 sg
 	"viatjar" vblex prs p1 sg
-;	"viatjar" vblex imp p3 sg REMOVE:106
+;	"viatjar" vblex imp p3 sg REMOVE:117
 "<de>"
 	"de" pr
 "<nòu>"
@@ -611,7 +615,7 @@
 	"Uranus" np top m sg
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:93
+;	"en" prn pro adv REMOVE:104
 "<onor>"
 	"onor" n m sg
 "<d'>"
@@ -622,18 +626,18 @@
 	"dieu" n m sg
 "<roman>"
 	"roman" adj m sg
-;	"roman" n m sg REMOVE:110
+;	"roman" n m sg REMOVE:122
 "<qu'>"
-	"que" cnjsub
-	"que" adv enon
-	"que" rel an mf sp
+	"que" rel an mf sp SELECT:199
+;	"que" cnjsub SELECT:199
+;	"que" adv enon SELECT:199
 "<èra>"
 	"èster" vbser pii p1 sg
 	"èsser" vbser pii p3 sg
-;	"èra" n f sg REMOVE:110
+;	"èra" n f sg REMOVE:122
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<paire>"
 	"paire" n m sg
 "<de>"
@@ -645,8 +649,8 @@
 
 "<L'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<apelacion>"
 	"*apelacion"
 "<foguèt>"
@@ -658,7 +662,7 @@
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<mema>"
 	"*mema"
 "<maniera>"
@@ -669,7 +673,7 @@
 	"que" rel an mf sp
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<dieu>"
 	"dieu" n m sg
 "<Saturne>"
@@ -677,10 +681,10 @@
 "<èra>"
 	"èster" vbser pii p1 sg
 	"èsser" vbser pii p3 sg
-;	"èra" n f sg REMOVE:110
+;	"èra" n f sg REMOVE:122
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<paire>"
 	"paire" n m sg
 "<de>"
@@ -697,7 +701,7 @@
 
 "<Caracteristicas>"
 	"caracteristic" adj f pl
-;	"caracteristica" n f pl REMOVE:110
+	"caracteristica" n f pl
 "<fisicas>"
 	"fisic" adj f pl
 	"fisica" n f pl
@@ -717,7 +721,7 @@
 	"planeta" n f pl
 "<gigantas>"
 	"gigant" adj f pl
-;	"gigant" n f pl REMOVE:110
+;	"gigant" n f pl REMOVE:122
 "<gasosas>"
 	"gasós" adj f pl
 "<amb>"
@@ -752,14 +756,14 @@
 "<febla>"
 	"feble" adj f sg
 	"feblir" vblex prs p3 sg
-;	"feble" n f sg REMOVE:110
+;	"feble" n f sg REMOVE:122
 "<amb>"
 	"amb" pr
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<valor>"
 	"valor" n f sg
 "<de>"
@@ -780,8 +784,8 @@
 "<egala>"
 	"egal" adj f sg
 	"egalar" vblex pri p3 sg
-;	"egalar" vblex imp p2 sg REMOVE:106
-;	"egal" n f sg REMOVE:110
+;	"egalar" vblex imp p2 sg REMOVE:117
+;	"egal" n f sg REMOVE:122
 "<a>"
 	"a" pr
 	"aver" vbhaver pri p3 sg
@@ -794,7 +798,7 @@
 	"còp" n m pl
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<massa>"
 	"massa" adv
 	"massa" n f sg
@@ -802,18 +806,18 @@
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<Tèrra>"
 	"tèrra" n f sg
 "<,>"
 	"," cm
 "<es>"
 	"èsser" vbser pri p3 sg
-;	"eth" det def f pl REMOVE:157
-;	"eth" det def m pl REMOVE:157
+;	"eth" det def f pl REMOVE:169
+;	"eth" det def m pl REMOVE:169
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<quatrena>"
 	"quatre" adj f sg
 	"quatren" adj f sg
@@ -826,7 +830,7 @@
 	"sistèma" n m sg
 "<Solar>"
 	"solar" adj m sg
-;	"solar" n m sg REMOVE:110
+;	"solar" n m sg REMOVE:122
 "<mai>"
 	"mai" adv
 	"mai" cnjcoo
@@ -835,8 +839,8 @@
 	"èsser" vbser pri p3 pl
 	"èster" vbser pri p3 pl
 	"son" det pos m sg
-;	"son" n m sg REMOVE:110
-;	"son" det pos f sg REMOVE:131
+;	"son" n m sg REMOVE:122
+;	"son" det pos f sg REMOVE:143
 "<rai>"
 	"rai" n m sg
 "<eqüatoriau>"
@@ -845,7 +849,7 @@
 	"de" pr
 "<quasi>"
 	"quasi" adv
-;	"quasi" preadv REMOVE:170
+;	"quasi" preadv REMOVE:182
 "<25>"
 	"25" num
 "<000>"
@@ -856,14 +860,14 @@
 	"," cm
 "<representant>"
 	"representar" vblex ger
-;	"representant" n m sg REMOVE:110
+;	"representant" n m sg REMOVE:122
 "<quatre>"
 	"quatre" num mf sp
 "<còps>"
 	"còp" n m pl
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<rai>"
 	"rai" n m sg
 "<terrèstre>"
@@ -872,11 +876,11 @@
 	"," cm
 "<es>"
 	"èsser" vbser pri p3 sg
-;	"eth" det def f pl REMOVE:157
-;	"eth" det def m pl REMOVE:157
+;	"eth" det def f pl REMOVE:169
+;	"eth" det def m pl REMOVE:169
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<tresen>"
 	"tres" adj m sg
 	"tresen" adj m sg
@@ -888,36 +892,36 @@
 	"sistèma" n m sg
 "<Solar>"
 	"solar" adj m sg
-;	"solar" n m sg REMOVE:110
+;	"solar" n m sg REMOVE:122
 "<.>"
 	"." sent
 
 
 
 "<Estructura>"
+	"estructura" n f sg
 	"estructurar" vblex pri p3 sg
-;	"estructurar" vblex imp p2 sg REMOVE:106
-;	"estructura" n f sg REMOVE:110
+;	"estructurar" vblex imp p2 sg REMOVE:117
 "<intèrna>"
 	"intèrn" adj f sg
 	"intèrn" n f sg
 	"intèrne" adj f sg
 	"intèrne" n f sg
 	"internar" vblex pri p3 sg
-;	"internar" vblex imp p2 sg REMOVE:104
+;	"internar" vblex imp p2 sg REMOVE:115
 
 
 "<Estructura>"
 	"estructura" n f sg
 	"estructurar" vblex pri p3 sg
-;	"estructurar" vblex imp p2 sg REMOVE:104
+;	"estructurar" vblex imp p2 sg REMOVE:115
 "<intèrna>"
 	"intèrn" adj f sg
 	"intèrn" n f sg
 	"intèrne" adj f sg
 	"intèrne" n f sg
 	"internar" vblex pri p3 sg
-;	"internar" vblex imp p2 sg REMOVE:104
+;	"internar" vblex imp p2 sg REMOVE:115
 "<possibla>"
 	"possible" adj f sg
 "<per>"
@@ -935,7 +939,7 @@
 
 "<La>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<composicion>"
 	"composicion" n f sg
 "<d'>"
@@ -945,7 +949,7 @@
 "<es>"
 	"èsser" vbser pri p3 sg
 	"eth" det def m pl
-;	"eth" det def f pl REMOVE:131
+;	"eth" det def f pl REMOVE:143
 "<mau>"
 	"mau" adv
 	"mau" preadv
@@ -953,6 +957,7 @@
 	"mal" n m sg
 "<coneguda>"
 	"conegut" adj f sg
+	"conegut" n f sg
 	"conéisser" vblex pp f sg
 "<e>"
 	"e" cnjcoo
@@ -975,18 +980,18 @@
 	"." sent
 
 "<Leis>"
+	"lei" n f pl
 	"lo" det def mf pl
-;	"lei" n f pl REMOVE:110
 "<elements>"
 	"element" n m pl
 "<principaus>"
 	"principau" adj mf pl
-;	"principau" n mf pl REMOVE:110
+;	"principau" n mf pl REMOVE:122
 "<formant>"
 	"formar" vblex ger
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<planeta>"
 	"planeta" n f sg
 "<serián>"
@@ -1012,21 +1017,21 @@
 "<metan>"
 	"méter" vblex prs p3 pl
 	"metre" vblex prs p3 pl
-;	"metan" n m sg REMOVE:110
+;	"metan" n m sg REMOVE:122
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" cnjsub SELECT:190
+;	"que" cnjadv SELECT:190
+;	"que" rel an mf sp SELECT:190
 "<comptarián>"
 	"comptar" vblex cni p3 pl
 "<per>"
 	"per" adv
 	"per" pr
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<massa>"
 	"massa" adv
 	"massa" n f sg
@@ -1038,7 +1043,7 @@
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
+;	"entrar" vblex imp p3 sg REMOVE:117
 "<9,3>"
 	"9,3" num
 "<e>"
@@ -1061,12 +1066,12 @@
 "<,>"
 	"," cm
 "<fòrça>"
-	"fòrça" det ind mf sp SELECT:146
-;	"forçar" vblex imp p2 sg REMOVE:106
-;	"fòrça" n f sg REMOVE:110
-;	"fòrça" adv SELECT:146
-;	"fòrça" preadv SELECT:146
-;	"forçar" vblex prs p1 sg SELECT:146
+	"fòrça" det ind mf sp SELECT:158
+;	"forçar" vblex imp p2 sg REMOVE:117
+;	"fòrça" n f sg REMOVE:122
+;	"fòrça" adv SELECT:158
+;	"fòrça" preadv SELECT:158
+;	"forçar" vblex prs p1 sg SELECT:158
 "<presents>"
 	"present" adj m pl
 	"present" n m pl
@@ -1092,8 +1097,8 @@
 	"èsser" vbser pri p3 pl
 	"èster" vbser pri p3 pl
 	"son" det pos m sg
-;	"son" n m sg REMOVE:110
-;	"son" det pos f sg REMOVE:131
+;	"son" n m sg REMOVE:122
+;	"son" det pos f sg REMOVE:143
 "<pus>"
 	"pus" adv
 	"pus" n m sg
@@ -1109,10 +1114,10 @@
 	"solament" adv
 	"solament" cnjadv
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<massa>"
 	"massa" adv
 	"massa" n f sg
@@ -1124,7 +1129,7 @@
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
+;	"entrar" vblex imp p3 sg REMOVE:117
 "<0,5>"
 	"0,5" num
 "<e>"
@@ -1140,16 +1145,16 @@
 
 "<Lo>"
 	"lo" prn pro p3 m sg
-;	"lo" det def m sg REMOVE:132
+;	"lo" det def m sg REMOVE:144
 "<rèsta>"
 	"restar" vblex pri p3 sg
-;	"restar" vblex imp p2 sg REMOVE:104
-;	"rèsta" n f sg REMOVE:110
+;	"restar" vblex imp p2 sg REMOVE:115
+;	"rèsta" n f sg REMOVE:122
 "<de>"
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<massa>"
 	"massa" adv
 	"massa" n f sg
@@ -1157,7 +1162,7 @@
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<planeta>"
 	"planeta" n f sg
 "<,>"
@@ -1167,7 +1172,7 @@
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
+;	"entrar" vblex imp p3 sg REMOVE:117
 "<0,5>"
 	"0,5" num
 "<e>"
@@ -1195,7 +1200,7 @@
 
 "<Lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<modèl>"
 	"modèl" adj m sg
 	"modèl" n mf sg
@@ -1212,27 +1217,27 @@
 "<estructura>"
 	"estructura" n f sg
 	"estructurar" vblex pri p3 sg
-;	"estructurar" vblex imp p2 sg REMOVE:104
+;	"estructurar" vblex imp p2 sg REMOVE:115
 "<intèrna>"
 	"intèrn" adj f sg
 	"intèrn" n f sg
 	"intèrne" adj f sg
 	"intèrne" n f sg
 	"internar" vblex pri p3 sg
-;	"internar" vblex imp p2 sg REMOVE:104
+;	"internar" vblex imp p2 sg REMOVE:115
 "<d'>"
 	"de" pr
 "<Uranus>"
 	"Uranus" np top m sg
 "<es>"
 	"èsser" vbser pri p3 sg
-;	"eth" det def f pl REMOVE:131
-;	"eth" det def m pl REMOVE:157
+;	"eth" det def f pl REMOVE:143
+;	"eth" det def m pl REMOVE:169
 "<un>"
-	"un" det ind m sg SELECT:144
-;	"un" num m sp SELECT:144
-;	"un" n m sg SELECT:144
-;	"un" prn tn m sg SELECT:144
+	"un" det ind m sg SELECT:156
+;	"un" num m sp SELECT:156
+;	"un" n m sg SELECT:156
+;	"un" prn tn m sg SELECT:156
 "<nuclèu>"
 	"nuclèu" n m sg
 "<rocassós>"
@@ -1245,12 +1250,12 @@
 	"centrar" vblex prs p3 sg
 	"centrar" vblex pri p1 sg
 	"centrar" vblex prs p1 sg
-;	"centrar" vblex imp p3 sg REMOVE:106
+;	"centrar" vblex imp p3 sg REMOVE:117
 "<de>"
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<planeta>"
 	"planeta" n f sg
 "<,>"
@@ -1261,16 +1266,16 @@
 	"per" adv
 	"per" pr
 "<un>"
-	"un" det ind m sg SELECT:155
-;	"un" num m sp SELECT:155
-;	"un" n m sg SELECT:155
-;	"un" prn tn m sg SELECT:155
+	"un" det ind m sg SELECT:167
+;	"un" num m sp SELECT:167
+;	"un" n m sg SELECT:167
+;	"un" prn tn m sg SELECT:167
 "<mantèu>"
 	"*mantèu"
 "<fach>"
 	"fach" adj m sg
 	"far" vblex pp m sg
-;	"fach" n m sg REMOVE:110
+;	"fach" n m sg REMOVE:122
 "<de>"
 	"de" pr
 "<glaç>"
@@ -1282,14 +1287,14 @@
 "<d'>"
 	"de" pr
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<envolopa>"
 	"envolopa" n f sg
 	"envolopar" vblex pri p3 sg
-;	"envolopar" vblex imp p2 sg REMOVE:104
+;	"envolopar" vblex imp p2 sg REMOVE:115
 "<gasosa>"
 	"gasós" adj f sg
 "<d'>"
@@ -1306,7 +1311,7 @@
 
 "<Lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<nuclèu>"
 	"nuclèu" n m sg
 "<seriá>"
@@ -1316,14 +1321,14 @@
 	"relativament" adv
 "<pichon>"
 	"pichon" adj m sg
-;	"pichon" n m sg REMOVE:110
+;	"pichon" n m sg REMOVE:122
 "<amb>"
 	"amb" pr
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<massa>"
 	"massa" adv
 	"massa" n f sg
@@ -1343,15 +1348,15 @@
 	"aver" vbhaver cni p3 sg
 	"aver" vblex cni p3 sg
 "<un>"
-	"un" det ind m sg SELECT:144
-;	"un" num m sp SELECT:144
-;	"un" n m sg SELECT:144
-;	"un" prn tn m sg SELECT:144
+	"un" det ind m sg SELECT:156
+;	"un" num m sp SELECT:156
+;	"un" n m sg SELECT:156
+;	"un" prn tn m sg SELECT:156
 "<rai>"
 	"rai" n m sg
 "<egau>"
 	"egau" adj mf sg
-;	"egau" n mf sg REMOVE:110
+;	"egau" n mf sg REMOVE:122
 "<a>"
 	"a" pr
 	"aver" vbhaver pri p3 sg
@@ -1370,7 +1375,7 @@
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<planeta>"
 	"planeta" n f sg
 "<.>"
@@ -1394,10 +1399,10 @@
 "<amb>"
 	"amb" pr
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<pression>"
 	"pression" n f sg
 "<de>"
@@ -1409,10 +1414,10 @@
 "<e>"
 	"e" cnjcoo
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<temperatura>"
 	"temperatura" n f sg
 "<de>"
@@ -1430,7 +1435,7 @@
 
 "<Lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<mantèu>"
 	"*mantèu"
 "<de>"
@@ -1442,23 +1447,23 @@
 	"representar" vblex cni p3 sg
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<màger part>"
 	"màger part" n f sg
 "<de>"
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<planeta>"
 	"planeta" n f sg
 "<amb>"
 	"amb" pr
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<massa>"
 	"massa" adv
 	"massa" n f sg
@@ -1479,8 +1484,8 @@
 	"," cm
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<atmosfèra>"
 	"atmosfèra" n f sg
 "<d'>"
@@ -1497,18 +1502,18 @@
 	"aver" vblex pii p3 sg
 	"auer" vblex pii p3 sg
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<massa>"
 	"massa" adv
 	"massa" n f sg
 "<egala>"
 	"egal" adj f sg
 	"egalar" vblex pri p3 sg
-;	"egalar" vblex imp p2 sg REMOVE:106
-;	"egal" n f sg REMOVE:110
+;	"egalar" vblex imp p2 sg REMOVE:117
+;	"egal" n f sg REMOVE:122
 "<a>"
 	"a" pr
 	"aver" vbhaver pri p3 sg
@@ -1526,17 +1531,17 @@
 	"per" adv
 	"per" pr
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<espessor>"
 	"espessor" n f sg
 "<egala>"
 	"egal" adj f sg
 	"egalar" vblex pri p3 sg
-;	"egalar" vblex imp p2 sg REMOVE:106
-;	"egal" n f sg REMOVE:110
+;	"egalar" vblex imp p2 sg REMOVE:117
+;	"egal" n f sg REMOVE:122
 "<a>"
 	"a" pr
 	"aver" vbhaver pri p3 sg
@@ -1573,12 +1578,12 @@
 	"*aqueu"
 "<modèl>"
 	"modèl" adj m sg
-;	"modèl" n mf sg REMOVE:110
-;	"modèl" n m sg REMOVE:110
+;	"modèl" n mf sg REMOVE:122
+;	"modèl" n m sg REMOVE:122
 "<es>"
 	"èsser" vbser pri p3 sg
-;	"eth" det def f pl REMOVE:131
-;	"eth" det def m pl REMOVE:158
+;	"eth" det def f pl REMOVE:143
+;	"eth" det def m pl REMOVE:170
 "<pas>"
 	"pas" adv
 	"pas" n m sg
@@ -1607,7 +1612,7 @@
 	"*rocassós"
 "<o>"
 	"o" cnjcoo
-;	"o" prn pro p3 nt REMOVE:93
+;	"o" prn pro p3 nt REMOVE:104
 "<d'>"
 	"de" pr
 "<idrogèn>"
@@ -1616,15 +1621,15 @@
 	"*podrián"
 "<èsser>"
 	"èsser" vbser inf
-;	"èsser" n m sg REMOVE:110
+;	"èsser" n m sg REMOVE:122
 "<mescladas>"
-	"*mescladas"
+	"mesclar" vblex pp f pl
 "<dins>"
 	"dins" adv
 	"dins" pr
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<mantèu>"
 	"*mantèu"
 "<de>"
@@ -1636,7 +1641,7 @@
 
 "<La>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<consequéncia>"
 	"consequéncia" n f sg
 "<es>"
@@ -1644,12 +1649,12 @@
 	"eth" det def m pl
 	"èsser" vbser pri p3 sg
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" cnjsub SELECT:190
+;	"que" cnjadv SELECT:190
+;	"que" rel an mf sp SELECT:190
 "<lei>"
 	"lo" det def mf pl
-;	"lei" n f sg REMOVE:110
+;	"lei" n f sg REMOVE:122
 "<percentatges>"
 	"percentatge" n m pl
 "<dei>"
@@ -1662,7 +1667,7 @@
 	"*rocassós"
 "<o>"
 	"o" cnjcoo
-;	"o" prn pro p3 nt REMOVE:93
+;	"o" prn pro p3 nt REMOVE:104
 "<d'>"
 	"de" pr
 "<idrogèn>"
@@ -1671,7 +1676,7 @@
 	"*podrián"
 "<èsser>"
 	"èsser" vbser inf
-;	"èsser" n m sg REMOVE:110
+;	"èsser" n m sg REMOVE:122
 "<pus>"
 	"pus" adv
 	"pus" n m sg
@@ -1699,7 +1704,7 @@
 	"donar" vblex pp f pl
 "<per>"
 	"per" adv
-;	"per" pr REMOVE:122
+;	"per" pr REMOVE:134
 "<resòuvre>"
 	"*resòuvre"
 "<aqueu>"
@@ -1715,10 +1720,10 @@
 
 
 "<Un>"
-	"un" det ind m sg SELECT:144
-;	"un" n m sg REMOVE:110
-;	"un" num m sp SELECT:144
-;	"un" prn tn m sg SELECT:144
+	"un" det ind m sg SELECT:156
+;	"un" num m sp SELECT:156
+;	"un" n m sg SELECT:156
+;	"un" prn tn m sg SELECT:156
 "<autre>"
 	"autre" n m sg
 	"autre" adj ind m sg
@@ -1738,28 +1743,28 @@
 "<estructura>"
 	"estructura" n f sg
 	"estructurar" vblex pri p3 sg
-;	"estructurar" vblex imp p2 sg REMOVE:104
+;	"estructurar" vblex imp p2 sg REMOVE:115
 "<intèrna>"
 	"intèrn" adj f sg
 	"intèrn" n f sg
 	"intèrne" adj f sg
 	"intèrne" n f sg
 	"internar" vblex pri p3 sg
-;	"internar" vblex imp p2 sg REMOVE:104
+;	"internar" vblex imp p2 sg REMOVE:115
 "<d'>"
 	"de" pr
 "<Uranus>"
 	"Uranus" np top m sg
 "<es>"
 	"èsser" vbser pri p3 sg
-;	"eth" det def f pl REMOVE:131
-;	"eth" det def m pl REMOVE:157
+;	"eth" det def f pl REMOVE:143
+;	"eth" det def m pl REMOVE:169
 "<son>"
 	"son" n m sg
 	"èsser" vbser pri p3 pl
 	"son" det pos m sg
 	"èster" vbser pri p3 pl
-;	"son" det pos f sg REMOVE:131
+;	"son" det pos f sg REMOVE:143
 "<flux>"
 	"flux" n m sg
 "<termic>"
@@ -1768,7 +1773,7 @@
 	"relativament" adv
 "<feble>"
 	"feble" adj m sg
-;	"feble" n m sg REMOVE:110
+;	"feble" n m sg REMOVE:122
 "<a>"
 	"a" pr
 	"aver" vbhaver pri p3 sg
@@ -1779,7 +1784,7 @@
 	"respècte" n m sg
 	"respectar" vblex prs p3 sg
 	"respectar" vblex prs p1 sg
-;	"respectar" vblex imp p3 sg REMOVE:104
+;	"respectar" vblex imp p3 sg REMOVE:115
 "<deis>"
 	"de" pr
 		"lo" det def m pl
@@ -1789,7 +1794,7 @@
 	"planeta" n f pl
 "<gigantas>"
 	"gigant" adj f pl
-;	"gigant" n f pl REMOVE:110
+;	"gigant" n f pl REMOVE:122
 "<dau>"
 	"dar" vblex pri p1 sg
 	"de" pr
@@ -1798,7 +1803,7 @@
 	"sistèma" n m sg
 "<Solar>"
 	"solar" adj m sg
-;	"solar" n m sg REMOVE:110
+;	"solar" n m sg REMOVE:122
 "<.>"
 	"." sent
 
@@ -1812,13 +1817,13 @@
 "<emet>"
 	"eméter" vblex pri p3 sg
 	"emetre" vblex pri p3 sg
-;	"emetre" vblex imp p2 sg REMOVE:106
-;	"eméter" vblex imp p2 sg REMOVE:106
+;	"emetre" vblex imp p2 sg REMOVE:117
+;	"eméter" vblex imp p2 sg REMOVE:117
 "<un>"
-	"un" det ind m sg SELECT:144
-;	"un" num m sp SELECT:144
-;	"un" n m sg SELECT:144
-;	"un" prn tn m sg SELECT:144
+	"un" det ind m sg SELECT:156
+;	"un" num m sp SELECT:156
+;	"un" n m sg SELECT:156
+;	"un" prn tn m sg SELECT:156
 "<flux>"
 	"flux" n m sg
 "<2,6>"
@@ -1827,7 +1832,7 @@
 	"còp" n m pl
 "<superior>"
 	"superior" adj m sg
-;	"superior" n m sg REMOVE:110
+;	"superior" n m sg REMOVE:122
 "<a>"
 	"a" pr
 	"aver" vbhaver pri p3 sg
@@ -1836,7 +1841,7 @@
 	"auer" vblex pri p3 sg
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<quantitat>"
 	"quantitat" n f sg
 "<d'>"
@@ -1849,7 +1854,7 @@
 	"recéber" vblex pp f sg
 "<dau>"
 	"dar" vblex pri p1 sg
-;	"de" pr REMOVE:122
+;	"de" pr REMOVE:134
 ;		"lo" det def m sg
 "<Soleu>"
 	"*Soleu"
@@ -1862,7 +1867,7 @@
 	"," cm
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:93
+;	"en" prn pro adv REMOVE:104
 "<comparason>"
 	"comparason" n f sg
 "<,>"
@@ -1872,8 +1877,8 @@
 	"dins" pr
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<infraroge>"
 	"infraroge" adj m sg
 "<,>"
@@ -1883,8 +1888,8 @@
 "<emet>"
 	"eméter" vblex pri p3 sg
 	"emetre" vblex pri p3 sg
-;	"emetre" vblex imp p2 sg REMOVE:106
-;	"eméter" vblex imp p2 sg REMOVE:106
+;	"emetre" vblex imp p2 sg REMOVE:117
+;	"eméter" vblex imp p2 sg REMOVE:117
 "<solament>"
 	"solament" adv
 	"solament" cnjadv
@@ -1894,12 +1899,12 @@
 	"còp" n m pl
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<flux>"
 	"flux" n m sg
 "<solar>"
 	"solar" adj m sg
-;	"solar" n m sg REMOVE:110
+;	"solar" n m sg REMOVE:122
 "<absorbit>"
 	"absorbir" vblex pp m sg
 "<per>"
@@ -1910,7 +1915,7 @@
 	"son" det pos f sg
 	"èsser" vbser pri p3 pl
 	"èster" vbser pri p3 pl
-;	"son" det pos m sg REMOVE:132
+;	"son" det pos m sg REMOVE:144
 "<atmosfèra>"
 	"atmosfèra" n f sg
 "<.>"
@@ -1922,7 +1927,7 @@
 	"," cm
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<flux>"
 	"flux" n m sg
 "<termic>"
@@ -1931,7 +1936,7 @@
 	"," cm
 "<egau>"
 	"egau" adj mf sg
-;	"egau" n mf sg REMOVE:110
+;	"egau" n mf sg REMOVE:122
 "<a>"
 	"a" pr
 	"aver" vbhaver pri p3 sg
@@ -1950,7 +1955,7 @@
 "<es>"
 	"èsser" vbser pri p3 sg
 	"eth" det def m pl
-;	"eth" det def f pl REMOVE:131
+;	"eth" det def f pl REMOVE:143
 "<inferior>"
 	"inferior" adj m sg
 	"inferior" n m sg
@@ -1965,10 +1970,10 @@
 	"." sent
 
 "<Una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<ipotèsi>"
 	"ipotèsi" n f sg
 "<per>"
@@ -1985,23 +1990,23 @@
 	"èsser" vbser cni p3 sg
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<existéncia>"
 	"existéncia" n f sg
 "<d'>"
 	"de" pr
 "<un>"
-	"un" det ind m sg SELECT:144
-;	"un" num m sp SELECT:144
-;	"un" n m sg SELECT:144
-;	"un" prn tn m sg SELECT:144
+	"un" det ind m sg SELECT:156
+;	"un" num m sp SELECT:156
+;	"un" n m sg SELECT:156
+;	"un" prn tn m sg SELECT:156
 "<jaç>"
 	"jaç" n m sg
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" rel an mf sp SELECT:198
+;	"que" cnjadv SELECT:198
+;	"que" cnjsub SELECT:198
 "<,>"
 	"," cm
 "<per exemple>"
@@ -2012,14 +2017,14 @@
 	"dispersar" vblex cni p3 sg
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<calor>"
 	"calor" n f sg
 "<per>"
 	"per" adv
-;	"per" pr REMOVE:122
+	"per" pr
 "<conveccion>"
-	"*conveccion"
+	"conveccion" n f sg
 "<e>"
 	"e" cnjcoo
 "<empachariá>"
@@ -2031,15 +2036,15 @@
 	"èsser" vbser pri p3 pl
 	"èster" vbser pri p3 pl
 	"son" det pos m sg
-;	"son" n m sg REMOVE:110
-;	"son" det pos f sg REMOVE:131
+;	"son" n m sg REMOVE:122
+;	"son" det pos f sg REMOVE:143
 "<passatge>"
 	"passatge" n m sg
 "<vèrs>"
 	"vèrs" n m sg
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<superficia>"
 	"superficia" n f sg
 "<.>"
@@ -2058,7 +2063,7 @@
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
+;	"entrar" vblex imp p3 sg REMOVE:117
 "<lei>"
 	"lei" n f sg
 	"lo" det def mf pl
@@ -2069,7 +2074,7 @@
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<Tèrra>"
 	"tèrra" n f sg
 "<e d'>"
@@ -2095,7 +2100,7 @@
 	"respècte" n m sg
 	"respectar" vblex prs p3 sg
 	"respectar" vblex prs p1 sg
-;	"respectar" vblex imp p3 sg REMOVE:104
+;	"respectar" vblex imp p3 sg REMOVE:115
 "<dau>"
 	"dar" vblex pri p1 sg
 	"de" pr
@@ -2103,20 +2108,20 @@
 "<rèsta>"
 	"rèsta" n f sg
 	"restar" vblex pri p3 sg
-;	"restar" vblex imp p2 sg REMOVE:104
+;	"restar" vblex imp p2 sg REMOVE:115
 "<de>"
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<planeta>"
 	"planeta" n f sg
 "<,>"
 	"," cm
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<atmosfèra>"
 	"atmosfèra" n f sg
 "<d'>"
@@ -2130,19 +2135,19 @@
 	"auer" vbhaver pri p3 sg
 	"auer" vblex pri p3 sg
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<composicion>"
 	"composicion" n f sg
 "<fòrça>"
-	"fòrça" det ind mf sp SELECT:150
-;	"forçar" vblex imp p2 sg REMOVE:106
-;	"fòrça" n f sg REMOVE:110
-;	"fòrça" adv SELECT:150
-;	"fòrça" preadv SELECT:150
-;	"forçar" vblex prs p1 sg SELECT:150
+	"fòrça" det ind mf sp SELECT:162
+;	"forçar" vblex imp p2 sg REMOVE:117
+;	"fòrça" n f sg REMOVE:122
+;	"fòrça" adv SELECT:162
+;	"fòrça" preadv SELECT:162
+;	"forçar" vblex prs p1 sg SELECT:162
 "<diferenta>"
 	"diferent" adj f sg
 "<,>"
@@ -2181,7 +2186,7 @@
 "<metan>"
 	"méter" vblex prs p3 pl
 	"metre" vblex prs p3 pl
-;	"metan" n m sg REMOVE:110
+;	"metan" n m sg REMOVE:122
 "<(>"
 	"(" lpar
 "<1,99>"
@@ -2198,19 +2203,19 @@
 	"mesura" n f pl
 	"mesurar" vblex pri p2 sg
 "<espectroscopicas>"
-	"*espectroscopicas"
+	"espectroscopic" adj f pl
 "<mostrèron>"
 	"mostrar" vblex ifi p3 pl
 "<tanben>"
 	"tanben" adv
-;	"tanben" preadv REMOVE:170
+;	"tanben" preadv REMOVE:182
 "<la>"
 	"lo" det def f sg
 	"lo" prn pro p3 f sg
 "<preséncia>"
 	"preséncia" n f sg
 	"presenciar" vblex pri p3 sg
-;	"presenciar" vblex imp p2 sg REMOVE:104
+;	"presenciar" vblex imp p2 sg REMOVE:115
 "<de>"
 	"de" pr
 "<traças>"
@@ -2268,13 +2273,13 @@
 	"." sent
 
 "<Leis>"
+	"lei" n f pl
 	"lo" det def mf pl
-;	"lei" n f pl REMOVE:110
 "<aparelhs>"
 	"aparelh" n m pl
 "<scientifics>"
 	"scientific" adj m pl
-;	"scientific" n m pl REMOVE:110
+;	"scientific" n m pl REMOVE:122
 "<pòdon>"
 	"poder" vbmod pri p3 pl
 "<obtenir>"
@@ -2289,8 +2294,8 @@
 "<una>"
 	"unir" vblex prs p3 sg
 	"un" prn tn f sg
-;	"un" det ind f sg REMOVE:131
-;	"un" num f sp REMOVE:163
+;	"un" det ind f sg REMOVE:143
+;	"un" num f sp REMOVE:175
 "<prefondor>"
 	"prefondor" n m sg
 "<de>"
@@ -2303,7 +2308,7 @@
 	"sota" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<superficia>"
 	"superficia" n f sg
 "<nominala>"
@@ -2313,7 +2318,7 @@
 
 "<En>"
 	"en" pr
-;	"en" prn pro adv REMOVE:93
+;	"en" prn pro adv REMOVE:104
 "<aquel>"
 	"aquel" prn tn m sg
 	"aquel" det dem m sg
@@ -2323,18 +2328,18 @@
 	"," cm
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<pression>"
 	"pression" n f sg
 "<es>"
 	"eth" det def f pl
 	"èsser" vbser pri p3 sg
-;	"eth" det def m pl REMOVE:132
+;	"eth" det def m pl REMOVE:144
 "<egala>"
 	"egal" adj f sg
 	"egal" n f sg
 	"egalar" vblex pri p3 sg
-;	"egalar" vblex imp p2 sg REMOVE:104
+;	"egalar" vblex imp p2 sg REMOVE:115
 "<a>"
 	"a" pr
 	"aver" vbhaver pri p3 sg
@@ -2348,17 +2353,17 @@
 "<amb>"
 	"amb" pr
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<temperatura>"
 	"temperatura" n f sg
 "<de>"
 	"de" pr
 "<quasi>"
 	"quasi" adv
-;	"quasi" preadv REMOVE:170
+;	"quasi" preadv REMOVE:182
 "<50>"
 	"50" num
  °
@@ -2375,26 +2380,26 @@
 	"atmosfèra" n f sg
 "<se>"
 	"se" cnjadv
-	"se" prn pro ref p3 mf sp
+;	"se" prn pro ref p3 mf sp REMOVE:202
 "<pòt>"
 	"poder" vbmod pri p3 sg
 "<devesir>"
 	"*devesir"
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:93
+;	"en" prn pro adv REMOVE:104
 "<divèrseis>"
 	"*divèrseis"
 "<estructuras>"
 	"estructurar" vblex pri p2 sg
-;	"estructura" n f pl REMOVE:110
+;	"estructura" n f pl REMOVE:122
 "<:>"
 	":" sent
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<troposfèra>"
 	"troposfèra" n f sg
 "<entre>"
@@ -2402,7 +2407,7 @@
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
+;	"entrar" vblex imp p3 sg REMOVE:117
  -
 "<300>"
 	"300" num
@@ -2415,10 +2420,10 @@
 "<,>"
 	"," cm
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<estratosfèra>"
 	"estratosfèra" n f sg
 "<entre>"
@@ -2426,7 +2431,7 @@
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
+;	"entrar" vblex imp p3 sg REMOVE:117
 "<50>"
 	"50" num
 "<e>"
@@ -2440,10 +2445,10 @@
 "<e>"
 	"e" cnjcoo
 "<una>"
-	"un" det ind f sg SELECT:155
-;	"un" num f sp SELECT:155
-;	"un" prn tn f sg SELECT:155
-;	"unir" vblex prs p3 sg SELECT:155
+	"un" det ind f sg SELECT:167
+;	"un" num f sp SELECT:167
+;	"un" prn tn f sg SELECT:167
+;	"unir" vblex prs p3 sg SELECT:167
 "<termosfèra>"
 	"*termosfèra"
 "<o>"
@@ -2451,14 +2456,14 @@
 	"o" prn pro p3 nt
 "<corona>"
 	"coronar" vblex pri p3 sg
-;	"coronar" vblex imp p2 sg REMOVE:104
-;	"corona" n f sg REMOVE:110
+;	"coronar" vblex imp p2 sg REMOVE:115
+;	"corona" n f sg REMOVE:122
 "<entre>"
 	"entre" pr
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:104
+;	"entrar" vblex imp p3 sg REMOVE:115
 "<4>"
 	"4" num
 "<000>"
@@ -2505,8 +2510,8 @@
 	"," cm
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<atmosfèra>"
 	"atmosfèra" n f sg
 "<d'>"
@@ -2515,7 +2520,7 @@
 	"Uranus" np top m sg
 "<sembla>"
 	"semblar" vblex pri p3 sg
-;	"semblar" vblex imp p2 sg REMOVE:106
+;	"semblar" vblex imp p2 sg REMOVE:117
 "<d'>"
 	"de" pr
 "<èsser>"
@@ -2525,7 +2530,7 @@
 	"calm" adj f sg
 	"calma" n f sg
 	"calmar" vblex pri p3 sg
-;	"calmar" vblex imp p2 sg REMOVE:106
+;	"calmar" vblex imp p2 sg REMOVE:117
 "<a>"
 	"a" pr
 	"aver" vbhaver pri p3 sg
@@ -2536,7 +2541,7 @@
 	"respècte" n m sg
 	"respectar" vblex prs p3 sg
 	"respectar" vblex prs p1 sg
-;	"respectar" vblex imp p3 sg REMOVE:104
+;	"respectar" vblex imp p3 sg REMOVE:115
 "<d'>"
 	"de" pr
 "<aquelei>"
@@ -2547,7 +2552,7 @@
 	"Jupitèr" np top m sg
 "<o>"
 	"o" cnjcoo
-;	"o" prn pro p3 nt REMOVE:93
+;	"o" prn pro p3 nt REMOVE:104
 "<de>"
 	"de" pr
 "<Saturne>"
@@ -2557,8 +2562,8 @@
 "<una>"
 	"unir" vblex prs p3 sg
 	"un" prn tn f sg
-;	"un" det ind f sg REMOVE:131
-;	"un" num f sp REMOVE:163
+;	"un" det ind f sg REMOVE:143
+;	"un" num f sp REMOVE:175
 "<color>"
 	"color" n f sg
 	"color" n m sg
@@ -2581,7 +2586,7 @@
 "<sonda>"
 	"sonda" n f sg
 	"sondar" vblex pri p3 sg
-;	"sondar" vblex imp p2 sg REMOVE:104
+;	"sondar" vblex imp p2 sg REMOVE:115
 "<Voyager>"
 	"*Voyager"
 "<2>"
@@ -2600,16 +2605,16 @@
 	"*tèn"
 "<tanben>"
 	"tanben" adv
-;	"tanben" preadv REMOVE:170
+;	"tanben" preadv REMOVE:182
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<estructura>"
 	"estructura" n f sg
 	"estructurar" vblex pri p3 sg
-;	"estructurar" vblex imp p2 sg REMOVE:104
+;	"estructurar" vblex imp p2 sg REMOVE:115
 "<de>"
 	"de" pr
 "<nívols>"
@@ -2623,10 +2628,10 @@
 "<e>"
 	"e" cnjcoo
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<activitat>"
 	"activitat" n f sg
 "<climatica>"
@@ -2634,7 +2639,7 @@
 "<activa>"
 	"actiu" adj f sg
 	"activar" vblex pri p3 sg
-;	"activar" vblex imp p2 sg REMOVE:106
+;	"activar" vblex imp p2 sg REMOVE:117
 "<.>"
 	"." sent
 
@@ -2649,47 +2654,47 @@
 
 "<La>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<troposfèra>"
 	"troposfèra" n f sg
 "<es>"
 	"èsser" vbser pri p3 sg
-;	"eth" det def f pl REMOVE:157
-;	"eth" det def m pl REMOVE:157
+;	"eth" det def f pl REMOVE:169
+;	"eth" det def m pl REMOVE:169
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<jaç>"
 	"jaç" n m sg
 "<bas>"
 	"bas" adv
 	"bas" adj m sg
-;	"bas" n m sg REMOVE:110
+;	"bas" n m sg REMOVE:122
 "<de>"
 	"de" pr
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<atmosfèra>"
 	"atmosfèra" n f sg
 "<e>"
 	"e" cnjcoo
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<pus>"
 	"pus" adv
 	"pus" n m sg
 "<actiu>"
 	"actiu" adj m sg
-;	"actiu" n m sg REMOVE:110
+;	"actiu" n m sg REMOVE:122
 "<entre>"
 	"entre" pr
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
+;	"entrar" vblex imp p3 sg REMOVE:117
 "<leis>"
 	"lei" n f pl
 	"lo" det def mf pl
@@ -2711,19 +2716,19 @@
 
 "<La>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<temperatura>"
 	"temperatura" n f sg
 "<baissa>"
 	"baissar" vblex pri p3 sg
-;	"baissar" vblex imp p2 sg REMOVE:106
-;	"baissa" n f sg REMOVE:110
+;	"baissar" vblex imp p2 sg REMOVE:117
+;	"baissa" n f sg REMOVE:122
 "<amb>"
 	"amb" pr
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<altitud>"
 	"altitud" n f sg
 "<de>"
@@ -2772,13 +2777,13 @@
 	"*onte"
 "<se>"
 	"se" cnjadv
-	"se" prn pro ref p3 mf sp
+;	"se" prn pro ref p3 mf sp REMOVE:202
 "<situa>"
 	"situar" vblex pri p3 sg
-;	"situar" vblex imp p2 sg REMOVE:104
+;	"situar" vblex imp p2 sg REMOVE:115
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<tropopausa>"
 	"*tropopausa"
 "<.>"
@@ -2791,14 +2796,14 @@
 	"," cm
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<temperatura>"
 	"temperatura" n f sg
 "<de>"
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<tropopausa>"
 	"*tropopausa"
 "<varia>"
@@ -2810,7 +2815,7 @@
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
+;	"entrar" vblex imp p3 sg REMOVE:117
  -
 "<224>"
 	"224" num
@@ -2827,7 +2832,7 @@
 	"amb" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<latitud>"
 	"latitud" n f sg
 "<.>"
@@ -2839,11 +2844,11 @@
 	"valor" n f pl
 "<fan>"
 	"far" vblex pri p3 pl
-;	"fan" n mf sg REMOVE:110
+;	"fan" n mf sg REMOVE:122
 "<qu'>"
-	"que" cnjsub
-	"que" rel an mf sp
-;	"que" adv enon REMOVE:119
+	"que" cnjsub SELECT:190
+;	"que" adv enon REMOVE:131
+;	"que" rel an mf sp SELECT:190
 "<Uranus>"
 	"Uranus" np top m sg
 "<a>"
@@ -2854,13 +2859,13 @@
 	"auer" vblex pri p3 sg
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<atmosfèra>"
 	"atmosfèra" n f sg
 "<pus>"
 	"pus" adv
-;	"pus" n m sg REMOVE:110
+;	"pus" n m sg REMOVE:122
 "<freja>"
 	"freg" adj f sg
 "<dau>"
@@ -2871,7 +2876,7 @@
 	"sistèma" n m sg
 "<Solar>"
 	"solar" adj m sg
-;	"solar" n m sg REMOVE:110
+;	"solar" n m sg REMOVE:122
 "<.>"
 	"." sent
 
@@ -2881,7 +2886,7 @@
 	"," cm
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<pression>"
 	"pression" n f sg
 "<varia>"
@@ -2912,7 +2917,7 @@
 "<estructura>"
 	"estructura" n f sg
 	"estructurar" vblex pri p3 sg
-;	"estructurar" vblex imp p2 sg REMOVE:104
+;	"estructurar" vblex imp p2 sg REMOVE:115
 "<dei>"
 	"de" pr
 		"lo" det def m sg
@@ -2923,6 +2928,8 @@
 	"èsser" vbser cni p3 sg
 "<complèxa>"
 	"complèx" adj f sg
+	"complexar" vblex pri p3 sg
+;	"complexar" vblex imp p2 sg REMOVE:115
 "<amb>"
 	"amb" pr
 "<la>"
@@ -2931,7 +2938,7 @@
 "<preséncia>"
 	"preséncia" n f sg
 	"presenciar" vblex pri p3 sg
-;	"presenciar" vblex imp p2 sg REMOVE:104
+;	"presenciar" vblex imp p2 sg REMOVE:115
 "<de>"
 	"de" pr
 "<nívols>"
@@ -2951,10 +2958,10 @@
 "<amb>"
 	"amb" pr
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<pression>"
 	"pression" n f sg
 "<situada>"
@@ -2965,7 +2972,7 @@
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
+;	"entrar" vblex imp p3 sg REMOVE:117
 "<50>"
 	"50" num
 "<bar>"
@@ -2995,7 +3002,7 @@
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
+;	"entrar" vblex imp p3 sg REMOVE:117
 "<20>"
 	"20" num
 "<e>"
@@ -3016,11 +3023,11 @@
 	"*amoniac"
 "<o>"
 	"o" cnjcoo
-;	"o" prn pro p3 nt REMOVE:93
+;	"o" prn pro p3 nt REMOVE:104
 "<de>"
 	"de" pr
 "<sulfur>"
-	"*sulfur"
+	"sulfur" n m sg
 "<d'>"
 	"de" pr
 "<idrogèn>"
@@ -3030,7 +3037,7 @@
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
+;	"entrar" vblex imp p3 sg REMOVE:117
 "<3>"
 	"3" num
 "<e>"
@@ -3058,7 +3065,7 @@
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:104
+;	"entrar" vblex imp p3 sg REMOVE:115
 "<1>"
 	"1" num
 "<e>"
@@ -3077,7 +3084,7 @@
 	"," cm
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<màger part>"
 	"màger part" n f sg
 "<dei>"
@@ -3092,7 +3099,7 @@
 "<es>"
 	"eth" det def f pl
 	"èsser" vbser pri p3 sg
-;	"eth" det def m pl REMOVE:132
+;	"eth" det def m pl REMOVE:144
 "<especulativa>"
 	"especulatiu" adj f sg
 "<car>"
@@ -3119,7 +3126,7 @@
 "<preséncia>"
 	"preséncia" n f sg
 	"presenciar" vblex pri p3 sg
-;	"presenciar" vblex imp p2 sg REMOVE:104
+;	"presenciar" vblex imp p2 sg REMOVE:115
 "<dei>"
 	"de" pr
 		"lo" det def m sg
@@ -3145,28 +3152,28 @@
 
 "<L'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<estratosfèra>"
 	"estratosfèra" n f sg
 "<es>"
 	"èsser" vbser pri p3 sg
-;	"eth" det def f pl REMOVE:157
-;	"eth" det def m pl REMOVE:157
+;	"eth" det def f pl REMOVE:169
+;	"eth" det def m pl REMOVE:169
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<jaç>"
 	"jaç" n m sg
 "<intermediari>"
 	"intermediari" adj m sg
-;	"intermediari" n m sg REMOVE:110
+;	"intermediari" n m sg REMOVE:122
 "<de>"
 	"de" pr
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<atmosfèra>"
 	"atmosfèra" n f sg
 "<d'>"
@@ -3204,7 +3211,7 @@
 "<basa>"
 	"basa" n f sg
 	"basar" vblex pri p3 sg
-;	"basar" vblex imp p2 sg REMOVE:104
+;	"basar" vblex imp p2 sg REMOVE:115
 "<a>"
 	"a" pr
 	"aver" vbhaver pri p3 sg
@@ -3232,7 +3239,7 @@
 	"auer" vblex pri p3 sg
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<cima>"
 	"cima" n f sg
 "<.>"
@@ -3240,7 +3247,7 @@
 
 "<Lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<rescaufament>"
 	"*rescaufament"
 "<es>"
@@ -3267,7 +3274,7 @@
 	"*dempuei"
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<termosfèra>"
 	"*termosfèra"
 "<e>"
@@ -3278,7 +3285,7 @@
 "<preséncia>"
 	"preséncia" n f sg
 	"presenciar" vblex pri p3 sg
-;	"presenciar" vblex imp p2 sg REMOVE:104
+;	"presenciar" vblex imp p2 sg REMOVE:115
 "<de>"
 	"de" pr
 "<metan>"
@@ -3294,15 +3301,15 @@
 	"idrocarbur" n m pl
 "<formats>"
 	"formar" vblex pp m pl
-;	"format" n m pl REMOVE:110
+;	"format" n m pl REMOVE:122
 "<per>"
 	"per" adv
 	"per" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<dissociacion>"
-	"*dissociacion"
+	"dissociacion" n f sg
 "<dei>"
 	"de" pr
 		"lo" det def m sg
@@ -3323,7 +3330,7 @@
 	"rai" n m pl
 "<solars>"
 	"solar" adj m pl
-;	"solar" n m pl REMOVE:110
+;	"solar" n m pl REMOVE:122
 "<.>"
 	"." sent
 
@@ -3334,9 +3341,9 @@
 "<son>"
 	"èsser" vbser pri p3 pl
 	"èster" vbser pri p3 pl
-;	"son" n m sg REMOVE:110
-;	"son" det pos f sg REMOVE:130
-;	"son" det pos m sg REMOVE:130
+;	"son" n m sg REMOVE:122
+;	"son" det pos f sg REMOVE:142
+;	"son" det pos m sg REMOVE:142
 "<situats>"
 	"situat" adj m pl
 	"situar" vblex pp m pl
@@ -3344,10 +3351,10 @@
 	"dins" adv
 	"dins" pr
 "<un>"
-	"un" det ind m sg SELECT:144
-;	"un" num m sp SELECT:144
-;	"un" n m sg SELECT:144
-;	"un" prn tn m sg SELECT:144
+	"un" det ind m sg SELECT:156
+;	"un" num m sp SELECT:156
+;	"un" n m sg SELECT:156
+;	"un" prn tn m sg SELECT:156
 "<jaç>"
 	"jaç" n m sg
 "<relativament>"
@@ -3355,14 +3362,14 @@
 "<fin>"
 	"fin" adv
 	"fin" adj m sg
-;	"fin" n f sg REMOVE:110
-;	"fin" n m sg REMOVE:110
+;	"fin" n f sg REMOVE:122
+;	"fin" n m sg REMOVE:122
 "<entre>"
 	"entre" pr
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
+;	"entrar" vblex imp p3 sg REMOVE:117
 "<100>"
 	"100" num
 "<e>"
@@ -3379,35 +3386,35 @@
 "<adonc>"
 	"*adonc"
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<bruma>"
 	"bruma" n f sg
 "<probablament>"
 	"probablament" adv
 "<responsabla>"
 	"responsable" adj f sg
-;	"responsable" n f sg REMOVE:110
+;	"responsable" n f sg REMOVE:122
 "<de>"
 	"de" pr
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<aspècte>"
 	"aspècte" n m sg
 "<calme>"
 	"calmar" vblex prs p3 sg
 	"calmar" vblex pri p1 sg
 	"calmar" vblex prs p1 sg
-;	"calmar" vblex imp p3 sg REMOVE:106
+;	"calmar" vblex imp p3 sg REMOVE:117
 "<de>"
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<planeta>"
 	"planeta" n f sg
 "<.>"
@@ -3421,14 +3428,14 @@
 	"e" cnjcoo
 "<corona>"
 	"coronar" vblex pri p3 sg
-;	"coronar" vblex imp p2 sg REMOVE:104
-;	"corona" n f sg REMOVE:110
+;	"coronar" vblex imp p2 sg REMOVE:115
+;	"corona" n f sg REMOVE:122
 
 
 "<Fotografia>"
 	"fotografia" n f sg
 	"fotografiar" vblex pri p3 sg
-;	"fotografiar" vblex imp p2 sg REMOVE:104
+;	"fotografiar" vblex imp p2 sg REMOVE:115
 "<d'>"
 	"de" pr
 "<Uranus>"
@@ -3438,7 +3445,7 @@
 	"far" vblex pp f sg
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:93
+;	"en" prn pro adv REMOVE:104
 "<2005>"
 	"2005" num
 "<amb>"
@@ -3448,7 +3455,7 @@
 	"èsser" vbser pri p3 pl
 	"son" det pos m sg
 	"èster" vbser pri p3 pl
-;	"son" det pos f sg REMOVE:131
+;	"son" det pos f sg REMOVE:143
 "<sistèma>"
 	"sistèma" n m sg
 "<d'>"
@@ -3472,8 +3479,8 @@
 
 "<L'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<atmosfèra>"
 	"atmosfèra" n f sg
 "<exteriora>"
@@ -3485,7 +3492,7 @@
 "<es>"
 	"eth" det def f pl
 	"èsser" vbser pri p3 sg
-;	"eth" det def m pl REMOVE:132
+;	"eth" det def m pl REMOVE:144
 "<compausada>"
 	"compausat" adj f sg
 	"compausar" vblex pp f sg
@@ -3493,39 +3500,39 @@
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<termosfèra>"
 	"*termosfèra"
 "<e d'>"
 	"e" cnjcoo
 		"de" pr
 "<un>"
-	"un" det ind m sg SELECT:144
-;	"un" n m sg REMOVE:110
-;	"un" num m sp SELECT:144
-;	"un" prn tn m sg SELECT:144
+	"un" det ind m sg SELECT:156
+;	"un" n m sg REMOVE:122
+;	"un" num m sp SELECT:156
+;	"un" prn tn m sg SELECT:156
 "<jaç>"
 	"jaç" n m sg
 "<dich>"
 	"dire" vblex pp m sg
-;	"dich" n m sg REMOVE:110
+;	"dich" n m sg REMOVE:122
 "<corona>"
 	"corona" n f sg
 	"coronar" vblex pri p3 sg
-;	"coronar" vblex imp p2 sg REMOVE:106
+;	"coronar" vblex imp p2 sg REMOVE:117
 "<.>"
 	"." sent
 
 "<La>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<temperatura>"
 	"temperatura" n f sg
 "<de>"
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<termosfèra>"
 	"*termosfèra"
 "<es>"
@@ -3534,16 +3541,16 @@
 	"èsser" vbser pri p3 sg
 "<quasi>"
 	"quasi" preadv
-;	"quasi" adv REMOVE:168
+;	"quasi" adv REMOVE:180
 "<constanta>"
 	"constant" adj f sg
-;	"constanta" n f sg REMOVE:110
+;	"constanta" n f sg REMOVE:122
 "<entre>"
 	"entre" pr
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
+;	"entrar" vblex imp p3 sg REMOVE:117
 "<530>"
 	"530" num
  °
@@ -3569,19 +3576,19 @@
 	"donc" cnjadv
 "<pus>"
 	"pus" adv
-;	"pus" n m sg REMOVE:110
+;	"pus" n m sg REMOVE:122
 "<importanta>"
 	"important" adj f sg
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" cnjadv SELECT:194
+;	"que" cnjsub SELECT:194
+;	"que" rel an mf sp SELECT:194
 "<per>"
 	"per" adv
 	"per" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<termosfèra>"
 	"*termosfèra"
 "<de>"
@@ -3592,7 +3599,7 @@
 	"(" lpar
 "<environ>"
 	"environ" adv
-;	"environ" n m sg REMOVE:110
+;	"environ" n m sg REMOVE:122
 "<150>"
 	"150" num
  °
@@ -3604,19 +3611,19 @@
 "<mai>"
 	"mai" adv
 	"mai" cnjcoo
-;	"mai" n m sg REMOVE:110
+;	"mai" n m sg REMOVE:122
 "<se>"
 	"se" cnjadv
-	"se" prn pro ref p3 mf sp
+;	"se" prn pro ref p3 mf sp REMOVE:202
 "<conois>"
 	"conéisser" vblex pri p3 sg
-;	"conéisser" vblex imp p2 sg REMOVE:104
+;	"conéisser" vblex imp p2 sg REMOVE:115
 "<pas>"
 	"pas" adv
 	"pas" n m sg
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<rason>"
 	"rason" n f sg
 "<d'>"
@@ -3636,30 +3643,30 @@
 	"," cm
 "<lei>"
 	"lo" det def mf pl
-;	"lei" n f sg REMOVE:110
+;	"lei" n f sg REMOVE:122
 "<radiacions>"
 	"radiacion" n f pl
 "<ultravioletas>"
 	"ultraviolet" adj f pl
 "<dau>"
 	"dar" vblex pri p1 sg
-;	"de" pr REMOVE:122
+;	"de" pr REMOVE:134
 ;		"lo" det def m sg
 "<Soleu>"
 	"*Soleu"
 "<o>"
 	"o" cnjcoo
-;	"o" prn pro p3 nt REMOVE:93
+;	"o" prn pro p3 nt REMOVE:104
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<activitat>"
 	"activitat" n f sg
 "<d'>"
 	"de" pr
 "<auròras>"
-	"*auròras"
+	"auròra" n f pl
 "<polaras>"
 	"polar" adj f pl
 "<fornisson>"
@@ -3669,8 +3676,8 @@
 	"pas" n m sg
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<energia>"
 	"energia" n f sg
 "<necessària>"
@@ -3684,21 +3691,21 @@
 	"," cm
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<activitat>"
 	"activitat" n f sg
 "<deis>"
 	"de" pr
 		"lo" det def m pl
 "<auròras>"
-	"*auròras"
+	"auròra" n f pl
 "<polaras>"
 	"polar" adj f pl
 "<es>"
 	"eth" det def f pl
 	"èsser" vbser pri p3 sg
-;	"eth" det def m pl REMOVE:132
+;	"eth" det def m pl REMOVE:144
 "<insignificanta>"
 	"insignificant" adj f sg
 "<a>"
@@ -3711,14 +3718,14 @@
 	"respècte" n m sg
 	"respectar" vblex prs p3 sg
 	"respectar" vblex prs p1 sg
-;	"respectar" vblex imp p3 sg REMOVE:104
+;	"respectar" vblex imp p3 sg REMOVE:115
 "<de>"
 	"de" pr
 "<Jupitèr>"
 	"Jupitèr" np top m sg
 "<o>"
 	"o" cnjcoo
-;	"o" prn pro p3 nt REMOVE:93
+;	"o" prn pro p3 nt REMOVE:104
 "<de>"
 	"de" pr
 "<Saturne>"
@@ -3732,11 +3739,11 @@
 "<corona>"
 	"corona" n f sg
 	"coronar" vblex pri p3 sg
-;	"coronar" vblex imp p2 sg REMOVE:104
+;	"coronar" vblex imp p2 sg REMOVE:115
 "<es>"
 	"eth" det def f pl
 	"èsser" vbser pri p3 sg
-;	"eth" det def m pl REMOVE:132
+;	"eth" det def m pl REMOVE:144
 "<facha>"
 	"fach" adj f sg
 	"far" vblex pp f sg
@@ -3767,15 +3774,15 @@
 	"composicion" n f sg
 "<explica>"
 	"explicar" vblex pri p3 sg
-;	"explicar" vblex imp p2 sg REMOVE:106
-;	"explica" n f sg REMOVE:110
+;	"explicar" vblex imp p2 sg REMOVE:117
+;	"explica" n f sg REMOVE:122
 "<la>"
 	"lo" det def f sg
 	"lo" prn pro p3 f sg
 "<talha>"
 	"talha" n f sg
 	"talhar" vblex pri p3 sg
-;	"talhar" vblex imp p2 sg REMOVE:104
+;	"talhar" vblex imp p2 sg REMOVE:115
 "<unica>"
 	"unic" adj f sg
 "<dins>"
@@ -3783,12 +3790,12 @@
 	"dins" pr
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<Sistèma>"
 	"sistèma" n m sg
 "<Solar>"
 	"solar" adj m sg
-;	"solar" n m sg REMOVE:110
+;	"solar" n m sg REMOVE:122
 "<de>"
 	"de" pr
 "<la>"
@@ -3797,7 +3804,7 @@
 "<corona>"
 	"corona" n f sg
 	"coronar" vblex pri p3 sg
-;	"coronar" vblex imp p2 sg REMOVE:104
+;	"coronar" vblex imp p2 sg REMOVE:115
 "<fins a>"
 	"fins a" pr
 "<50>"
@@ -3819,16 +3826,16 @@
 	"," cm
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<creacion>"
 	"creacion" n f sg
 "<d'>"
 	"de" pr
 "<una>"
-	"un" det ind f sg SELECT:155
-;	"un" num f sp SELECT:155
-;	"un" prn tn f sg SELECT:155
-;	"unir" vblex prs p3 sg SELECT:155
+	"un" det ind f sg SELECT:167
+;	"un" num f sp SELECT:167
+;	"un" prn tn f sg SELECT:167
+;	"unir" vblex prs p3 sg SELECT:167
 "<tirassiera>"
 	"*tirassiera"
 "<per>"
@@ -3860,23 +3867,23 @@
 "<corona>"
 	"corona" n f sg
 	"coronar" vblex pri p3 sg
-;	"coronar" vblex imp p2 sg REMOVE:104
+;	"coronar" vblex imp p2 sg REMOVE:115
 "<entraïna>"
 	"*entraïna"
 "<especialament>"
 	"especialament" adv
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<reduccion>"
 	"reduccion" n f sg
 "<de>"
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<quantitat>"
 	"quantitat" n f sg
 "<de>"
@@ -3888,7 +3895,7 @@
 	"dins" pr
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<sistèma>"
 	"sistèma" n m sg
 "<d'>"
@@ -3899,7 +3906,7 @@
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<planeta>"
 	"planeta" n f sg
 "<.>"
@@ -3916,8 +3923,8 @@
 
 "<L'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<ionosfèra>"
 	"ionosfèra" n f sg
 "<d'>"
@@ -3927,7 +3934,7 @@
 "<es>"
 	"eth" det def f pl
 	"èsser" vbser pri p3 sg
-;	"eth" det def m pl REMOVE:132
+;	"eth" det def m pl REMOVE:144
 "<situada>"
 	"situat" adj f sg
 	"situar" vblex pp f sg
@@ -3936,7 +3943,7 @@
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
+;	"entrar" vblex imp p3 sg REMOVE:117
 "<2>"
 	"2" num
 "<000>"
@@ -3966,20 +3973,20 @@
 	"de" pr
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<estratosfèra>"
 	"estratosfèra" n f sg
 "<e>"
 	"e" cnjcoo
 "<bassa>"
 	"bas" adj f sg
-;	"bassa" n f sg REMOVE:110
+;	"bassa" n f sg REMOVE:122
 "<de>"
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<termosfèra>"
 	"*termosfèra"
 "<.>"
@@ -3988,19 +3995,19 @@
 "<Es>"
 	"èsser" vbser pri p3 sg
 	"eth" det def m pl
-;	"eth" det def f pl REMOVE:131
+;	"eth" det def f pl REMOVE:143
 "<pus>"
 	"pus" adv
 	"pus" n m sg
 "<densa>"
 	"dens" adj f sg
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" cnjadv SELECT:194
+;	"que" cnjsub SELECT:194
+;	"que" rel an mf sp SELECT:194
 "<leis>"
 	"lo" det def mf pl
-;	"lei" n f pl REMOVE:110
+;	"lei" n f pl REMOVE:122
 "<ionosfèras>"
 	"ionosfèra" n f pl
 "<de>"
@@ -4024,7 +4031,7 @@
 	"causa" n f sg
 	"causir" vblex prs p3 sg
 	"causar" vblex pri p3 sg
-;	"causar" vblex imp p2 sg REMOVE:106
+;	"causar" vblex imp p2 sg REMOVE:117
 "<de>"
 	"de" pr
 "<la>"
@@ -4033,20 +4040,20 @@
 "<preséncia>"
 	"preséncia" n f sg
 	"presenciar" vblex pri p3 sg
-;	"presenciar" vblex imp p2 sg REMOVE:104
+;	"presenciar" vblex imp p2 sg REMOVE:115
 "<d'>"
 	"de" pr
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<concentracion>"
 	"concentracion" n f sg
 "<febla>"
 	"feble" adj f sg
 	"feblir" vblex prs p3 sg
-;	"feble" n f sg REMOVE:110
+;	"feble" n f sg REMOVE:122
 "<d'>"
 	"de" pr
 "<idrocarburs>"
@@ -4056,8 +4063,8 @@
 	"dins" pr
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<estratosfèra>"
 	"estratosfèra" n f sg
 "<.>"
@@ -4065,8 +4072,8 @@
 
 "<L'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<ionosfèra>"
 	"ionosfèra" n f sg
 "<es>"
@@ -4091,7 +4098,7 @@
 	"ultraviolet" adj m pl
 "<dau>"
 	"dar" vblex pri p1 sg
-;	"de" pr REMOVE:122
+;	"de" pr REMOVE:134
 ;		"lo" det def m sg
 "<Soleu>"
 	"*Soleu"
@@ -4099,10 +4106,10 @@
 	"." sent
 
 "<Leis>"
+	"lei" n f pl
 	"lo" det def mf pl
-;	"lei" n f pl REMOVE:110
 "<auròras>"
-	"*auròras"
+	"auròra" n f pl
 "<polaras>"
 	"polar" adj f pl
 "<an>"
@@ -4133,7 +4140,7 @@
 	"Jupitèr" np top m sg
 "<o>"
 	"o" cnjcoo
-;	"o" prn pro p3 nt REMOVE:93
+;	"o" prn pro p3 nt REMOVE:104
 "<Saturne>"
 	"Saturne" np top m sg
 "<.>"
@@ -4142,8 +4149,8 @@
 
 
 "<Bendas>"
+	"benda" n f pl
 	"bendar" vblex pri p2 sg
-;	"benda" n f pl REMOVE:110
 "<,>"
 	"," cm
 "<vents>"
@@ -4159,7 +4166,7 @@
 
 "<En>"
 	"en" pr
-;	"en" prn pro adv REMOVE:93
+;	"en" prn pro adv REMOVE:104
 "<1986>"
 	"1986" num
 "<,>"
@@ -4170,7 +4177,7 @@
 "<sonda>"
 	"sonda" n f sg
 	"sondar" vblex pri p3 sg
-;	"sondar" vblex imp p2 sg REMOVE:104
+;	"sondar" vblex imp p2 sg REMOVE:115
 "<Voyager>"
 	"*Voyager"
 "<2>"
@@ -4179,13 +4186,13 @@
 	"observar" vblex ifi p3 sg
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<emisfèri>"
 	"emisfèri" n m sg
 "<sud>"
 	"sud" adj mf sp
-;	"sud" n m sg REMOVE:110
+;	"sud" n m sg REMOVE:122
 "<d'>"
 	"de" pr
 "<Uranus>"
@@ -4197,26 +4204,26 @@
 "<mai>"
 	"mai" adv
 	"mai" cnjcoo
-;	"mai" n m sg REMOVE:110
+;	"mai" n m sg REMOVE:122
 "<manca>"
 	"mancar" vblex pri p3 sg
-;	"mancar" vblex imp p2 sg REMOVE:104
-;	"manca" n f sg REMOVE:110
+;	"mancar" vblex imp p2 sg REMOVE:115
+;	"manca" n f sg REMOVE:122
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<emisfèri>"
 	"emisfèri" n m sg
 "<nòrd>"
 	"nòrd" adj mf sp
-;	"nòrd" n m sg REMOVE:110
+;	"nòrd" n m sg REMOVE:122
 "<.>"
 	"." sent
 
 "<Leis>"
+	"lei" n f pl
 	"lo" det def mf pl
-;	"lei" n f pl REMOVE:110
 "<observacions>"
 	"observacion" n f pl
 "<de>"
@@ -4227,7 +4234,7 @@
 "<sonda>"
 	"sonda" n f sg
 	"sondar" vblex pri p3 sg
-;	"sondar" vblex imp p2 sg REMOVE:104
+;	"sondar" vblex imp p2 sg REMOVE:115
 "<,>"
 	"," cm
 "<puei>"
@@ -4247,18 +4254,18 @@
 "<mostrèron>"
 	"mostrar" vblex ifi p3 pl
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" cnjsub SELECT:190
+;	"que" cnjadv SELECT:190
+;	"que" rel an mf sp SELECT:190
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<emisfèri>"
 	"emisfèri" n m sg
 "<sud>"
 	"sud" adj mf sp
-;	"sud" n m sg REMOVE:110
+;	"sud" n m sg REMOVE:122
 "<èra>"
 	"èra" n f sg
 	"èsser" vbser pii p3 sg
@@ -4270,12 +4277,12 @@
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
+;	"entrar" vblex imp p3 sg REMOVE:117
 "<una>"
-	"un" det ind f sg SELECT:155
-;	"un" num f sp SELECT:155
-;	"un" prn tn f sg SELECT:155
-;	"unir" vblex prs p3 sg SELECT:155
+	"un" det ind f sg SELECT:167
+;	"un" num f sp SELECT:167
+;	"un" prn tn f sg SELECT:167
+;	"unir" vblex prs p3 sg SELECT:167
 "<calòta>"
 	"*calòta"
 "<polara>"
@@ -4287,7 +4294,7 @@
 		"de" pr
 "<bendas>"
 	"bendar" vblex pri p2 sg
-;	"benda" n f pl REMOVE:110
+;	"benda" n f pl REMOVE:122
 "<sornas>"
 	"*sornas"
 "<a>"
@@ -4298,8 +4305,8 @@
 	"auer" vblex pri p3 sg
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<eqüator>"
 	"equator" n m sg
 "<.>"
@@ -4307,22 +4314,23 @@
 
 "<Lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<limit>"
+	"limit" adj m sg
 	"limit" n m sg
 "<èra>"
-	"èster" vbser pii p1 sg
+	"èra" n f sg
 	"èsser" vbser pii p3 sg
-;	"èra" n f sg REMOVE:110
+	"èster" vbser pii p1 sg
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<benda>"
 	"benda" n f sg
 	"bendar" vblex pri p3 sg
-;	"bendar" vblex imp p2 sg REMOVE:104
+;	"bendar" vblex imp p2 sg REMOVE:115
 "<estrecha>"
 	"estrech" adj f sg
 "<,>"
@@ -4332,7 +4340,7 @@
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
+;	"entrar" vblex imp p3 sg REMOVE:117
 "<lei>"
 	"lei" n f sg
 	"lo" det def mf pl
@@ -4352,6 +4360,7 @@
 	"," cm
 "<dicha>"
 	"dire" vblex pp f sg
+;	"dicha" n f sg REMOVE:122
 "<còl>"
 	"còl" n m sg
 "<polar>"
@@ -4361,24 +4370,24 @@
 
 "<Se>"
 	"se" cnjadv
-	"se" prn pro ref p3 mf sp
+;	"se" prn pro ref p3 mf sp REMOVE:202
 "<supausa>"
 	"supausar" vblex pri p3 sg
-;	"supausar" vblex imp p2 sg REMOVE:104
+;	"supausar" vblex imp p2 sg REMOVE:115
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" cnjsub SELECT:190
+;	"que" cnjadv SELECT:190
+;	"que" rel an mf sp SELECT:190
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<calòta>"
 	"*calòta"
 "<e>"
 	"e" cnjcoo
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<còl>"
 	"còl" n m sg
 "<polars>"
@@ -4398,10 +4407,10 @@
 "<amb>"
 	"amb" pr
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<pression>"
 	"pression" n f sg
 "<entre>"
@@ -4409,7 +4418,7 @@
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
+;	"entrar" vblex imp p3 sg REMOVE:117
 "<1,3>"
 	"1,3" num
 "<e>"
@@ -4423,12 +4432,12 @@
 
 "<La>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<planeta>"
 	"planeta" n f sg
 "<sembla>"
 	"semblar" vblex pri p3 sg
-;	"semblar" vblex imp p2 sg REMOVE:106
+;	"semblar" vblex imp p2 sg REMOVE:117
 "<donc>"
 	"donc" cnjadv
 "<assimetrica>"
@@ -4455,7 +4464,7 @@
 
 "<La>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<mission>"
 	"mission" n f sg
 "<Voyager>"
@@ -4466,7 +4475,7 @@
 	"vetz" n f sg
 "<tanben>"
 	"tanben" adv
-;	"tanben" preadv REMOVE:170
+;	"tanben" preadv REMOVE:182
 "<de>"
 	"de" pr
 "<nívols>"
@@ -4514,8 +4523,8 @@
 	"entrar" vblex prs p1 sg
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
-;	"entre" pr REMOVE:122
+;	"entrar" vblex imp p3 sg REMOVE:117
+;	"entre" pr REMOVE:134
 "<quauquei>"
 	"*quauquei"
 "<jorns>"
@@ -4529,7 +4538,7 @@
 "<mai>"
 	"mai" adv
 	"mai" cnjcoo
-;	"mai" n m sg REMOVE:110
+;	"mai" n m sg REMOVE:122
 "<permetèron>"
 	"permetre" vblex ifi p3 pl
 	"perméter" vblex ifi p3 pl
@@ -4562,7 +4571,7 @@
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<troposfèra>"
 	"troposfèra" n f sg
 "<.>"
@@ -4574,7 +4583,7 @@
 	"," cm
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<circulacion>"
 	"circulacion" n f sg
 "<dei>"
@@ -4586,8 +4595,8 @@
 	"de" pr
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<eqüator>"
 	"equator" n m sg
 "<es>"
@@ -4599,7 +4608,7 @@
 	"dins" pr
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<sens>"
 	"sens" pr
 	"sens" n m sg
@@ -4609,8 +4618,8 @@
 	"." sent
 
 "<Lei>"
+	"lei" n f sg
 	"lo" det def mf pl
-;	"lei" n f sg REMOVE:110
 "<velocitats>"
 	"velocitat" n f pl
 "<,>"
@@ -4622,7 +4631,7 @@
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
+;	"entrar" vblex imp p3 sg REMOVE:117
 "<50>"
 	"50" num
 "<e>"
@@ -4639,18 +4648,18 @@
 	"aumentar" vblex pri p3 pl
 "<en>"
 	"en" prn pro adv
-;	"en" pr REMOVE:122
+;	"en" pr REMOVE:134
 "<s'>"
 	"se" cnjadv
-;	"se" prn pro ref p3 mf sp REMOVE:93
+;	"se" prn pro ref p3 mf sp REMOVE:104
 "<alunchant>"
 	"*alunchant"
 "<de>"
 	"de" pr
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<eqüator>"
 	"equator" n m sg
 "<.>"
@@ -4660,22 +4669,22 @@
 	"vèrs" n m sg
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<pòl>"
 	"pòl" n m sg
 "<nòrd>"
 	"nòrd" adj mf sp
-;	"nòrd" n m sg REMOVE:110
+;	"nòrd" n m sg REMOVE:122
 "<,>"
 	"," cm
 "<lei>"
 	"lo" det def mf pl
-;	"lei" n f sg REMOVE:110
+;	"lei" n f sg REMOVE:122
 "<vents>"
 	"vent" n m pl
 "<se>"
 	"se" cnjadv
-	"se" prn pro ref p3 mf sp
+;	"se" prn pro ref p3 mf sp REMOVE:202
 "<desplaçan>"
 	"desplaçar" vblex pri p3 pl
 "<dins>"
@@ -4683,22 +4692,22 @@
 	"dins" pr
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<sens>"
 	"sens" n m sg
-;	"sens" pr REMOVE:122
+;	"sens" pr REMOVE:134
 "<prograd>"
 	"*prograd"
 "<e>"
 	"e" cnjcoo
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<velocitat>"
 	"velocitat" n f sg
 "<monta>"
 	"montar" vblex pri p3 sg
-;	"montar" vblex imp p2 sg REMOVE:106
+;	"montar" vblex imp p2 sg REMOVE:117
 "<a>"
 	"a" pr
 	"aver" vbhaver pri p3 sg
@@ -4716,7 +4725,7 @@
 	"per" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<latitud>"
 	"latitud" n f sg
  +
@@ -4741,15 +4750,15 @@
 
 "<En>"
 	"en" pr
-;	"en" prn pro adv REMOVE:93
+;	"en" prn pro adv REMOVE:104
 "<revenge>"
-	"*revenge"
+	"revenge" n m sg
 "<,>"
 	"," cm
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<abséncia>"
 	"abséncia" n f sg
 "<de>"
@@ -4761,7 +4770,7 @@
 	"dins" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<region>"
 	"region" n f sg
 "<polara>"
@@ -4771,7 +4780,7 @@
 	"sud" n m sg
 "<empacha>"
 	"empachar" vblex pri p3 sg
-;	"empachar" vblex imp p2 sg REMOVE:106
+;	"empachar" vblex imp p2 sg REMOVE:117
 "<de>"
 	"de" pr
 "<conóisser>"
@@ -4783,7 +4792,7 @@
 	"vent" n m pl
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:93
+;	"en" prn pro adv REMOVE:104
 "<dessota>"
 	"*dessota"
 "<dau>"
@@ -4805,7 +4814,7 @@
 	"," cm
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<velocitat>"
 	"velocitat" n f sg
 "<dei>"
@@ -4818,37 +4827,37 @@
 	"dins" pr
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<emisfèri>"
 	"emisfèri" n m sg
 "<sud>"
 	"sud" adj mf sp
-;	"sud" n m sg REMOVE:110
+;	"sud" n m sg REMOVE:122
 "<sembla>"
 	"semblar" vblex pri p3 sg
-;	"semblar" vblex imp p2 sg REMOVE:106
+;	"semblar" vblex imp p2 sg REMOVE:117
 "<pus>"
 	"pus" adv
 	"pus" n m sg
 "<rapida>"
 	"rapid" adj f sg
-;	"rapid" n f sg REMOVE:110
+;	"rapid" n f sg REMOVE:122
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" cnjadv SELECT:194
+;	"que" cnjsub SELECT:194
+;	"que" rel an mf sp SELECT:194
 "<dans>"
 	"*dans"
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<emisfèri>"
 	"emisfèri" n m sg
 "<nòrd>"
 	"nòrd" adj mf sp
-;	"nòrd" n m sg REMOVE:110
+;	"nòrd" n m sg REMOVE:122
 "<,>"
 	"," cm
 "<especialament>"
@@ -4858,7 +4867,7 @@
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
+;	"entrar" vblex imp p3 sg REMOVE:117
 "<lei>"
 	"lei" n f sg
 	"lo" det def mf pl
@@ -4883,21 +4892,23 @@
 
 "<En>"
 	"en" pr
-;	"en" prn pro adv REMOVE:93
+;	"en" prn pro adv REMOVE:104
 "<2006>"
 	"2006" num
 "<,>"
 	"," cm
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<tempèsta>"
 	"tempèsta" n f sg
+	"tempestar" vblex pri p3 sg
+;	"tempestar" vblex imp p2 sg REMOVE:115
 "<similara>"
 	"similar" adj f sg
-;	"similar" n f sg REMOVE:110
+	"similar" n f sg
 "<a>"
 	"a" pr
 	"aver" vbhaver pri p3 sg
@@ -4910,14 +4921,14 @@
 "<taca>"
 	"taca" n f sg
 	"tacar" vblex pri p3 sg
-;	"tacar" vblex imp p2 sg REMOVE:104
+;	"tacar" vblex imp p2 sg REMOVE:115
 "<blava>"
 	"blau" adj f sg
 "<observada>"
 	"observar" vblex pp f sg
 "<per>"
 	"per" adv
-;	"per" pr REMOVE:122
+;	"per" pr REMOVE:134
 "<Voyager>"
 	"*Voyager"
 "<2>"
@@ -4950,18 +4961,18 @@
 	"dins" pr
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<emisfèri>"
 	"emisfèri" n m sg
 "<nòrd>"
 	"nòrd" adj mf sp
-;	"nòrd" n m sg REMOVE:110
+;	"nòrd" n m sg REMOVE:122
 "<vers>"
 	"*vers"
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<latitud>"
 	"latitud" n f sg
  +
@@ -4977,25 +4988,25 @@
 "<taca>"
 	"taca" n f sg
 	"tacar" vblex pri p3 sg
-;	"tacar" vblex imp p2 sg REMOVE:104
+;	"tacar" vblex imp p2 sg REMOVE:115
 "<aviá>"
 	"aver" vbhaver pii p3 sg
 	"aver" vblex pii p3 sg
 	"auer" vblex pii p3 sg
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<talha>"
 	"talha" n f sg
 	"talhar" vblex pri p3 sg
-;	"talhar" vblex imp p2 sg REMOVE:104
+;	"talhar" vblex imp p2 sg REMOVE:115
 "<relativament>"
 	"relativament" adv
 "<pichona>"
 	"pichon" adj f sg
-;	"pichon" n f sg REMOVE:110
+;	"pichon" n f sg REMOVE:122
 "<a>"
 	"a" pr
 	"aver" vbhaver pri p3 sg
@@ -5006,15 +5017,16 @@
 	"respècte" n m sg
 	"respectar" vblex prs p3 sg
 	"respectar" vblex prs p1 sg
-;	"respectar" vblex imp p3 sg REMOVE:104
+;	"respectar" vblex imp p3 sg REMOVE:115
 "<dei>"
 	"de" pr
 		"lo" det def m sg
 "<tempèstas>"
 	"tempèsta" n f pl
+	"tempestar" vblex pri p2 sg
 "<similaras>"
 	"similar" adj f pl
-;	"similar" n f pl REMOVE:110
+	"similar" n f pl
 "<de>"
 	"de" pr
 "<Neptun>"
@@ -5023,10 +5035,10 @@
 "<amb>"
 	"amb" pr
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<longor>"
 	"longor" n f sg
 "<de>"
@@ -5039,7 +5051,7 @@
 	"km" n m sp
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:93
+;	"en" prn pro adv REMOVE:104
 "<longitud>"
 	"longitud" n f sg
 "<e>"
@@ -5052,7 +5064,7 @@
 	"km" n m sp
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:93
+;	"en" prn pro adv REMOVE:104
 "<latitud>"
 	"latitud" n f sg
 "<.>"
@@ -5064,19 +5076,19 @@
 "<preséncia>"
 	"preséncia" n f sg
 	"presenciar" vblex pri p3 sg
-;	"presenciar" vblex imp p2 sg REMOVE:106
+;	"presenciar" vblex imp p2 sg REMOVE:117
 "<mòstra>"
 	"mòstra" n f sg
 	"mostrar" vblex pri p3 sg
-;	"mostrar" vblex imp p2 sg REMOVE:104
+;	"mostrar" vblex imp p2 sg REMOVE:115
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" cnjsub SELECT:190
+;	"que" cnjadv SELECT:190
+;	"que" rel an mf sp SELECT:190
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<atmosfèra>"
 	"atmosfèra" n f sg
 "<d'>"
@@ -5088,8 +5100,8 @@
 	"déuer" vbmod pri p3 sg
 	"deure" vblex pri p3 sg
 	"dever" vbmod pri p3 sg
-;	"deure" vblex imp p2 sg REMOVE:106
-;	"de" pr REMOVE:122
+;	"deure" vblex imp p2 sg REMOVE:117
+;	"de" pr REMOVE:134
 ;		"lo" det def m sg
 "<subir>"
 	"*subir"
@@ -5147,14 +5159,14 @@
 "<sonda>"
 	"sonda" n f sg
 	"sondar" vblex pri p3 sg
-;	"sondar" vblex imp p2 sg REMOVE:104
+;	"sondar" vblex imp p2 sg REMOVE:115
 "<Voyager>"
 	"*Voyager"
 "<2>"
 	"2" num
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:93
+;	"en" prn pro adv REMOVE:104
 "<1986>"
 	"1986" num
 "<.>"
@@ -5162,24 +5174,24 @@
 
 "<L'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<anèu>"
 	"anèl" n m sg
 "<pus>"
 	"pus" adv
-;	"pus" n m sg REMOVE:110
+;	"pus" n m sg REMOVE:122
 "<brilhant>"
 	"brilhar" vblex ger
 	"brilhant" adj m sg
 "<es>"
 	"èsser" vbser pri p3 sg
-;	"eth" det def f pl REMOVE:157
-;	"eth" det def m pl REMOVE:157
+;	"eth" det def f pl REMOVE:169
+;	"eth" det def m pl REMOVE:169
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<anèu>"
 	"anèl" n m sg
  ε
@@ -5200,10 +5212,10 @@
 	"auer" vbhaver pri p3 sg
 	"auer" vblex pri p3 sg
 "<un>"
-	"un" det ind m sg SELECT:144
-;	"un" num m sp SELECT:144
-;	"un" n m sg SELECT:144
-;	"un" prn tn m sg SELECT:144
+	"un" det ind m sg SELECT:156
+;	"un" num m sp SELECT:156
+;	"un" n m sg SELECT:156
+;	"un" prn tn m sg SELECT:156
 "<sistèma>"
 	"sistèma" n m sg
 "<d'>"
@@ -5216,7 +5228,7 @@
 	"*descubèrt"
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:93
+;	"en" prn pro adv REMOVE:104
 "<1977>"
 	"1977" num
 "<per>"
@@ -5228,25 +5240,25 @@
 	"durant" pr
 	"durar" vblex ger
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<observacion>"
 	"observacion" n f sg
 "<de>"
 	"de" pr
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<atmosfèra>"
 	"atmosfèra" n f sg
 "<de>"
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<planeta>"
 	"planeta" n f sg
 "<.>"
@@ -5256,7 +5268,7 @@
 	"èsser" vbser ifi p3 sg
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<segond>"
 	"dos" adj m sg
 	"segond" adj m sg
@@ -5266,17 +5278,18 @@
 "<conegut>"
 	"conegut" adj m sg
 	"conéisser" vblex pp m sg
+;	"conegut" n m sg REMOVE:122
 "<dins>"
 	"dins" adv
 	"dins" pr
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<Sistèma>"
 	"sistèma" n m sg
 "<Solar>"
 	"solar" adj m sg
-;	"solar" n m sg REMOVE:110
+;	"solar" n m sg REMOVE:122
 "<.>"
 	"." sent
 
@@ -5286,23 +5299,26 @@
 	"sistèma" n m sg
 "<es>"
 	"èsser" vbser pri p3 sg
-;	"eth" det def f pl REMOVE:131
-;	"eth" det def m pl REMOVE:158
+;	"eth" det def f pl REMOVE:143
+;	"eth" det def m pl REMOVE:170
 "<pas>"
 	"pas" adv
 	"pas" n m sg
 "<tant>"
 	"tant" adv
 	"tant" adj m sg
-;	"tant" preadv REMOVE:170
+;	"tant" preadv REMOVE:182
 "<complèxe>"
 	"complèxe" n m sg
+	"complexar" vblex prs p3 sg
+	"complexar" vblex prs p1 sg
+;	"complexar" vblex imp p3 sg REMOVE:117
 "<coma>"
 	"coma" adv
 	"coma" cnjadv
 	"coma" pr
 	"coma" rel adv
-;	"coma" n f sg REMOVE:110
+	"coma" n f sg
 "<leis>"
 	"lei" n f pl
 	"lo" det def mf pl
@@ -5315,11 +5331,11 @@
 "<mai>"
 	"mai" adv
 	"mai" cnjcoo
-;	"mai" n m sg REMOVE:110
+;	"mai" n m sg REMOVE:122
 "<es>"
 	"èsser" vbser pri p3 sg
 	"eth" det def m pl
-;	"eth" det def f pl REMOVE:131
+;	"eth" det def f pl REMOVE:143
 "<pus>"
 	"pus" adv
 	"pus" n m sg
@@ -5327,9 +5343,9 @@
 	"importar" vblex ger
 	"important" adj m sg
 "<qu'>"
-	"que" cnjsub
-	"que" rel an mf sp
-;	"que" adv enon REMOVE:119
+	"que" cnjsub SELECT:190
+;	"que" adv enon REMOVE:131
+;	"que" rel an mf sp SELECT:190
 "<aquelei>"
 	"*aquelei"
 "<que>"
@@ -5338,17 +5354,17 @@
 	"que" rel an mf sp
 "<s'>"
 	"se" cnjadv
-	"se" prn pro ref p3 mf sp
+;	"se" prn pro ref p3 mf sp REMOVE:202
 "<obsèrva>"
 	"observar" vblex pri p3 sg
-;	"observar" vblex imp p2 sg REMOVE:104
+;	"observar" vblex imp p2 sg REMOVE:115
 "<a l'entorn de>"
 	"a l'entorn de" adv
 "<Jupitèr>"
 	"Jupitèr" np top m sg
 "<o>"
 	"o" cnjcoo
-;	"o" prn pro p3 nt REMOVE:93
+;	"o" prn pro p3 nt REMOVE:104
 "<de>"
 	"de" pr
 "<Neptun>"
@@ -5363,10 +5379,10 @@
 	"," cm
 "<se>"
 	"se" cnjadv
-	"se" prn pro ref p3 mf sp
+;	"se" prn pro ref p3 mf sp REMOVE:202
 "<conois>"
 	"conéisser" vblex pri p3 sg
-;	"conéisser" vblex imp p2 sg REMOVE:104
+;	"conéisser" vblex imp p2 sg REMOVE:115
 "<13>"
 	"13" num
 "<anèus>"
@@ -5374,10 +5390,10 @@
 "<amb>"
 	"amb" pr
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<espessor>"
 	"espessor" n f sg
 "<eqüatoriala>"
@@ -5388,21 +5404,21 @@
 	"*quauquei"
 "<quilomètres>"
 	"quilometrar" vblex prs p2 sg
-;	"quilomètre" n m pl REMOVE:110
+;	"quilomètre" n m pl REMOVE:122
 "<.>"
 	"." sent
 
 "<Son>"
-	"èsser" vbser pri p3 pl
+	"son" n m sg
 	"son" det pos f sg
 	"son" det pos m sg
 	"èster" vbser pri p3 pl
-;	"son" n m sg REMOVE:110
+	"èsser" vbser pri p3 pl
 "<probablament>"
 	"probablament" adv
 "<joves>"
 	"jove" adj mf pl
-;	"jove" n mf pl REMOVE:110
+;	"jove" n mf pl REMOVE:122
 "<e>"
 	"e" cnjcoo
 "<dos>"
@@ -5422,11 +5438,11 @@
 	"." sent
 
 "<Son>"
-	"èsser" vbser pri p3 pl
+	"son" n m sg
 	"èster" vbser pri p3 pl
-;	"son" n m sg REMOVE:110
-;	"son" det pos f sg REMOVE:116
-;	"son" det pos m sg REMOVE:116
+	"èsser" vbser pri p3 pl
+;	"son" det pos f sg REMOVE:128
+;	"son" det pos m sg REMOVE:128
 "<fachs>"
 	"far" vblex pp m pl
 "<de>"
@@ -5441,22 +5457,22 @@
 "<d'>"
 	"de" pr
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<talha>"
 	"talha" n f sg
 	"talhar" vblex pri p3 sg
-;	"talhar" vblex imp p2 sg REMOVE:104
+;	"talhar" vblex imp p2 sg REMOVE:115
 "<variant>"
 	"variar" vblex ger
 "<dau>"
 	"dar" vblex pri p1 sg
-;	"de" pr REMOVE:122
-;		"lo" det def m sg
+	"de" pr
+		"lo" det def m sg
 "<micromètre>"
-	"*micromètre"
+	"micromètre" n m sg
 "<au>"
 	"a" pr
 		"lo" det def m sg
@@ -5477,7 +5493,9 @@
 	"nom" n m sg
  	
 "<Distància>"
-	"distància" n f sg
+	"distanciar" vblex pri p3 sg
+;	"distanciar" vblex imp p2 sg REMOVE:117
+;	"distància" n f sg REMOVE:122
 "<(>"
 	"(" lpar
 "<km>"
@@ -5740,7 +5758,7 @@
 "<Camp>"
 	"Camp" np top m sg
 	"Camp" np cog mf sp
-;	"camp" n m sg REMOVE:110
+;	"camp" n m sg REMOVE:122
 "<magnetic>"
 	"magnetic" adj m sg
 
@@ -5760,14 +5778,14 @@
 	"mesurar" vblex pp m sg
 "<per>"
 	"per" adv
-;	"per" pr REMOVE:122
+;	"per" pr REMOVE:134
 "<Voyager>"
 	"*Voyager"
 "<2>"
 	"2" num
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:93
+;	"en" prn pro adv REMOVE:104
 "<1986>"
 	"1986" num
 "<amb>"
@@ -5778,7 +5796,7 @@
 "<forma>"
 	"forma" n f sg
 	"formar" vblex pri p3 sg
-;	"formar" vblex imp p2 sg REMOVE:106
+;	"formar" vblex imp p2 sg REMOVE:117
 "<assimetrica>"
 	"*assimetrica"
 "<e>"
@@ -5787,14 +5805,14 @@
 	"èsser" vbser pri p3 pl
 	"èster" vbser pri p3 pl
 	"son" det pos m sg
-;	"son" n m sg REMOVE:110
-;	"son" det pos f sg REMOVE:131
+;	"son" n m sg REMOVE:122
+;	"son" det pos f sg REMOVE:143
 "<centre>"
 	"centre" n m sg
 	"centrar" vblex prs p3 sg
 	"centrar" vblex pri p1 sg
 	"centrar" vblex prs p1 sg
-;	"centrar" vblex imp p3 sg REMOVE:104
+;	"centrar" vblex imp p3 sg REMOVE:115
 "<desplaçat>"
 	"desplaçat" adj m sg
 	"desplaçar" vblex pp m sg
@@ -5808,7 +5826,7 @@
 
 "<Lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<camp>"
 	"camp" n m sg
 "<magnetic>"
@@ -5824,14 +5842,14 @@
 	"auer" vbhaver pri p3 sg
 	"auer" vblex pri p3 sg
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<forma>"
 	"forma" n f sg
 	"formar" vblex pri p3 sg
-;	"formar" vblex imp p2 sg REMOVE:104
+;	"formar" vblex imp p2 sg REMOVE:115
 "<particulara>"
 	"particular" adj f sg
 	"particular" n f sg
@@ -5842,30 +5860,30 @@
 	"causa" n f sg
 	"causir" vblex prs p3 sg
 	"causar" vblex pri p3 sg
-;	"causar" vblex imp p2 sg REMOVE:106
+;	"causar" vblex imp p2 sg REMOVE:117
 "<de>"
 	"de" pr
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<enclinason>"
 	"*enclinason"
 "<fòrça>"
-	"fòrça" det ind mf sp SELECT:150
-;	"forçar" vblex imp p2 sg REMOVE:106
-;	"fòrça" n f sg REMOVE:110
-;	"fòrça" adv SELECT:150
-;	"fòrça" preadv SELECT:150
-;	"forçar" vblex prs p1 sg SELECT:150
+	"fòrça" det ind mf sp SELECT:162
+;	"forçar" vblex imp p2 sg REMOVE:117
+;	"fòrça" n f sg REMOVE:122
+;	"fòrça" adv SELECT:162
+;	"fòrça" preadv SELECT:162
+;	"forçar" vblex prs p1 sg SELECT:162
 "<importanta>"
 	"important" adj f sg
 "<de>"
 	"de" pr
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<axe>"
 	"axe" n m sg
 "<de>"
@@ -5876,7 +5894,7 @@
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<planeta>"
 	"planeta" n f sg
 "<e>"
@@ -5890,9 +5908,9 @@
 	"fach" n m sg
 	"far" vblex pp m sg
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" cnjsub SELECT:190
+;	"que" cnjadv SELECT:190
+;	"que" rel an mf sp SELECT:190
 "<lo>"
 	"lo" det def m sg
 	"lo" prn pro p3 m sg
@@ -5901,7 +5919,7 @@
 	"centrar" vblex prs p3 sg
 	"centrar" vblex pri p1 sg
 	"centrar" vblex prs p1 sg
-;	"centrar" vblex imp p3 sg REMOVE:104
+;	"centrar" vblex imp p3 sg REMOVE:115
 "<dau>"
 	"dar" vblex pri p1 sg
 	"de" pr
@@ -5911,7 +5929,7 @@
 "<es>"
 	"èsser" vbser pri p3 sg
 	"eth" det def m pl
-;	"eth" det def f pl REMOVE:131
+;	"eth" det def f pl REMOVE:143
 "<desplaçat>"
 	"desplaçat" adj m sg
 	"desplaçar" vblex pp m sg
@@ -5925,7 +5943,7 @@
 	"respècte" n m sg
 	"respectar" vblex prs p3 sg
 	"respectar" vblex prs p1 sg
-;	"respectar" vblex imp p3 sg REMOVE:104
+;	"respectar" vblex imp p3 sg REMOVE:115
 "<dau>"
 	"dar" vblex pri p1 sg
 	"de" pr
@@ -5935,14 +5953,14 @@
 	"centrar" vblex prs p3 sg
 	"centrar" vblex pri p1 sg
 	"centrar" vblex prs p1 sg
-;	"centrar" vblex imp p3 sg REMOVE:104
+;	"centrar" vblex imp p3 sg REMOVE:115
 "<geometric>"
 	"geometric" adj m sg
 "<de>"
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<planeta>"
 	"planeta" n f sg
 "<.>"
@@ -5958,12 +5976,12 @@
 "<forma>"
 	"forma" n f sg
 	"formar" vblex pri p3 sg
-;	"formar" vblex imp p2 sg REMOVE:104
+;	"formar" vblex imp p2 sg REMOVE:115
 "<de>"
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<magnetosfèra>"
 	"*magnetosfèra"
 "<es>"
@@ -5976,7 +5994,7 @@
 	"e" cnjcoo
 "<lei>"
 	"lo" det def mf pl
-;	"lei" n f sg REMOVE:110
+;	"lei" n f sg REMOVE:122
 "<valors>"
 	"valor" n f pl
 "<enregistradas>"
@@ -5994,7 +6012,7 @@
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
+;	"entrar" vblex imp p3 sg REMOVE:117
 "<lei>"
 	"lei" n f sg
 	"lo" det def mf pl
@@ -6002,12 +6020,12 @@
 	"pòl" n m pl
 "<nòrd>"
 	"nòrd" adj mf sp
-;	"nòrd" n m sg REMOVE:110
+;	"nòrd" n m sg REMOVE:122
 "<e>"
 	"e" cnjcoo
 "<sud>"
 	"sud" adj mf sp
-;	"sud" n m sg REMOVE:110
+;	"sud" n m sg REMOVE:122
 "<.>"
 	"." sent
 
@@ -6017,13 +6035,13 @@
 	"," cm
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<intensitat>"
 	"intensitat" n f sg
 "<mejana>"
 	"mejan" adj f sg
-;	"mejana" n f sg REMOVE:110
+;	"mejana" n f sg REMOVE:122
 "<dau>"
 	"dar" vblex pri p1 sg
 	"de" pr
@@ -6042,7 +6060,7 @@
 "<mai>"
 	"mai" adv
 	"mai" cnjcoo
-;	"mai" n m sg REMOVE:110
+;	"mai" n m sg REMOVE:122
 "<pòu>"
 	"pòl" n m sg
 "<baissar>"
@@ -6063,13 +6081,13 @@
 	"dins" pr
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<emisfèri>"
 	"emisfèri" n m sg
 "<sud>"
 	"sud" adj mf sp
-;	"sud" n m sg REMOVE:110
+;	"sud" n m sg REMOVE:122
 "<e>"
 	"e" cnjcoo
 "<montar>"
@@ -6099,44 +6117,44 @@
 	"coma" cnjadv
 	"coma" pr
 	"Coma" np cog mf sp
-;	"coma" rel adv REMOVE:101
-;	"coma" n f sg REMOVE:110
+	"coma" n f sg
+;	"coma" rel adv REMOVE:112
 "<Neptun>"
 	"Neptun" np ant m sg
 	"Neptun" np top m sg
 "<presenta>"
 	"present" adj f sg
 	"presentar" vblex pri p3 sg
-;	"presentar" vblex imp p2 sg REMOVE:106
+;	"presentar" vblex imp p2 sg REMOVE:117
 "<un>"
-	"un" det ind m sg SELECT:144
-;	"un" num m sp SELECT:144
-;	"un" n m sg SELECT:144
-;	"un" prn tn m sg SELECT:144
+	"un" det ind m sg SELECT:156
+;	"un" num m sp SELECT:156
+;	"un" n m sg SELECT:156
+;	"un" prn tn m sg SELECT:156
 "<comportament>"
 	"comportament" n m sg
 "<similar>"
 	"similar" adj m sg
-;	"similar" n m sg REMOVE:110
+;	"similar" n m sg REMOVE:122
 "<,>"
 	"," cm
 "<podriá>"
 	"*podriá"
 "<èsser>"
 	"èsser" vbser inf
-;	"èsser" n m sg REMOVE:110
+;	"èsser" n m sg REMOVE:122
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<caracteristica>"
 	"caracteristic" adj f sg
 	"caracteristica" n f sg
 "<frequenta>"
 	"frequent" adj f sg
 	"frequentar" vblex pri p3 sg
-;	"frequentar" vblex imp p2 sg REMOVE:106
+;	"frequentar" vblex imp p2 sg REMOVE:117
 "<dei>"
 	"de" pr
 		"lo" det def m sg
@@ -6144,7 +6162,7 @@
 	"planeta" n f pl
 "<gigantas>"
 	"gigant" adj f pl
-;	"gigant" n f pl REMOVE:110
+;	"gigant" n f pl REMOVE:122
 "<d'>"
 	"de" pr
 "<aqueu>"
@@ -6161,7 +6179,7 @@
 "<origina>"
 	"origina" n f sg
 	"originar" vblex pri p3 sg
-;	"originar" vblex imp p2 sg REMOVE:104
+;	"originar" vblex imp p2 sg REMOVE:115
 "<d'>"
 	"de" pr
 "<aquelei>"
@@ -6197,7 +6215,7 @@
 	"*amoniac"
 "<dau>"
 	"dar" vblex pri p1 sg
-;	"de" pr REMOVE:122
+;	"de" pr REMOVE:134
 ;		"lo" det def m sg
 "<mantèu>"
 	"*mantèu"
@@ -6205,7 +6223,7 @@
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<planeta>"
 	"planeta" n f sg
 "<.>"
@@ -6218,14 +6236,14 @@
 
 "<La>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<magnetosfèra>"
 	"*magnetosfèra"
 "<creada>"
 	"crear" vblex pp f sg
 "<per>"
 	"per" adv
-;	"per" pr REMOVE:122
+;	"per" pr REMOVE:134
 "<aqueu>"
 	"*aqueu"
 "<camp>"
@@ -6239,15 +6257,15 @@
 	"auer" vbhaver pri p3 sg
 	"auer" vblex pri p3 sg
 "<un>"
-	"un" det ind m sg SELECT:144
-;	"un" num m sp SELECT:144
-;	"un" n m sg SELECT:144
-;	"un" prn tn m sg SELECT:144
+	"un" det ind m sg SELECT:156
+;	"un" num m sp SELECT:156
+;	"un" n m sg SELECT:156
+;	"un" prn tn m sg SELECT:156
 "<un>"
-	"un" det ind m sg SELECT:144
-;	"un" num m sp SELECT:144
-;	"un" n m sg SELECT:144
-;	"un" prn tn m sg SELECT:144
+	"un" det ind m sg SELECT:156
+;	"un" num m sp SELECT:156
+;	"un" n m sg SELECT:156
+;	"un" prn tn m sg SELECT:156
 "<arc>"
 	"arc" n m sg
 "<de>"
@@ -6269,20 +6287,20 @@
 	"per" pr
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<interaccion>"
 	"interaccion" n f sg
 "<amb>"
 	"amb" pr
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<vent>"
 	"vent" n m sg
 "<solar>"
 	"solar" adj m sg
-;	"solar" n m sg REMOVE:110
+;	"solar" n m sg REMOVE:122
 "<.>"
 	"." sent
 
@@ -6290,20 +6308,20 @@
 	"*Enviroutant"
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<magnetosfèra>"
 	"*magnetosfèra"
 "<,>"
 	"," cm
 "<se>"
 	"se" cnjadv
-	"se" prn pro ref p3 mf sp
+;	"se" prn pro ref p3 mf sp REMOVE:202
 "<tròba>"
 	"trobar" vblex pri p3 sg
-;	"trobar" vblex imp p2 sg REMOVE:104
+;	"trobar" vblex imp p2 sg REMOVE:115
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<magnetopausa>"
 	"*magnetopausa"
 "<,>"
@@ -6325,7 +6343,7 @@
 	"*onte"
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<camp>"
 	"camp" n m sg
 "<magnetic>"
@@ -6334,7 +6352,7 @@
 	"*vèn"
 "<feble>"
 	"feble" adj m sg
-;	"feble" n m sg REMOVE:110
+;	"feble" n m sg REMOVE:122
 "<e>"
 	"e" cnjcoo
 "<desorganizat>"
@@ -6348,16 +6366,16 @@
 	"," cm
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<vent>"
 	"vent" n m sg
 "<solar>"
 	"solar" adj m sg
-;	"solar" n m sg REMOVE:110
+;	"solar" n m sg REMOVE:122
 "<interagís>"
 	"interagir" vblex ifi p2 sg
 	"interagir" vblex pri p3 sg
-;	"interagir" vblex imp p2 sg REMOVE:106
+;	"interagir" vblex imp p2 sg REMOVE:117
 "<amb>"
 	"amb" pr
 "<aquelei>"
@@ -6368,21 +6386,23 @@
 	"e" cnjcoo
 "<estira>"
 	"estirar" vblex pri p3 sg
-;	"estirar" vblex imp p2 sg REMOVE:104
+;	"estirar" vblex imp p2 sg REMOVE:115
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<magnetosfèra>"
 	"*magnetosfèra"
 "<sus>"
 	"sus" pr
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<distància>"
 	"distància" n f sg
+	"distanciar" vblex pri p3 sg
+;	"distanciar" vblex imp p2 sg REMOVE:115
 "<de>"
 	"de" pr
 "<quauquei>"
@@ -6404,17 +6424,17 @@
 	"," cm
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<rotacion>"
 	"rotacion" n f sg
 "<particulara>"
 	"particular" adj f sg
-;	"particular" n f sg REMOVE:110
+;	"particular" n f sg REMOVE:122
 "<de>"
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<planeta>"
 	"planeta" n f sg
 "<deforma>"
@@ -6425,24 +6445,24 @@
 "<coa>"
 	"coa" n f sg
 	"coar" vblex pri p3 sg
-;	"coar" vblex imp p2 sg REMOVE:106
+;	"coar" vblex imp p2 sg REMOVE:117
 "<e>"
 	"e" cnjcoo
 "<li>"
 	"li" prn pro p3 mf sg
 "<dona>"
 	"donar" vblex pri p3 sg
-;	"donar" vblex imp p2 sg REMOVE:104
-;	"dona" n f sg REMOVE:110
+;	"donar" vblex imp p2 sg REMOVE:115
+;	"dona" n f sg REMOVE:122
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<forma>"
 	"forma" n f sg
 	"formar" vblex pri p3 sg
-;	"formar" vblex imp p2 sg REMOVE:104
+;	"formar" vblex imp p2 sg REMOVE:115
 "<de>"
 	"de" pr
 "<tiratap>"
@@ -6471,7 +6491,7 @@
 	"a l'entorn" adv
 "<dau>"
 	"dar" vblex pri p1 sg
-;	"de" pr REMOVE:122
+;	"de" pr REMOVE:134
 ;		"lo" det def m sg
 "<Soleu>"
 	"*Soleu"
@@ -6482,20 +6502,22 @@
 	"auer" vbhaver pri p3 sg
 	"auer" vblex pri p3 sg
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<distància>"
 	"distància" n f sg
+	"distanciar" vblex pri p3 sg
+;	"distanciar" vblex imp p2 sg REMOVE:115
 "<mejana>"
 	"mejan" adj f sg
-;	"mejana" n f sg REMOVE:110
+	"mejana" n f sg
 "<egala>"
 	"egal" adj f sg
 	"egal" n f sg
 	"egalar" vblex pri p3 sg
-;	"egalar" vblex imp p2 sg REMOVE:106
+;	"egalar" vblex imp p2 sg REMOVE:117
 "<a>"
 	"a" pr
 	"aver" vbhaver pri p3 sg
@@ -6504,7 +6526,7 @@
 	"auer" vblex pri p3 sg
 "<quasi>"
 	"quasi" adv
-;	"quasi" preadv REMOVE:170
+;	"quasi" preadv REMOVE:182
 "<3>"
 	"3" num
 "<miliards>"
@@ -6516,7 +6538,7 @@
 	"quilometrar" vblex prs p2 sg
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:93
+;	"en" prn pro adv REMOVE:104
 "<84>"
 	"84" num
 "<annadas>"
@@ -6527,15 +6549,15 @@
 	"dins" adv
 	"dins" pr
 "<un>"
-	"un" det ind m sg SELECT:144
-;	"un" num m sp SELECT:144
-;	"un" n m sg SELECT:144
-;	"un" prn tn m sg SELECT:144
+	"un" det ind m sg SELECT:156
+;	"un" num m sp SELECT:156
+;	"un" n m sg SELECT:156
+;	"un" prn tn m sg SELECT:156
 "<plan>"
 	"plan" adv
 	"plan" n m sg
 	"plan" adj m sg
-;	"plan" preadv REMOVE:170
+;	"plan" preadv REMOVE:182
 "<clinat>"
 	"*clinat"
 "<de>"
@@ -6553,7 +6575,7 @@
 	"respècte" n m sg
 	"respectar" vblex prs p3 sg
 	"respectar" vblex prs p1 sg
-;	"respectar" vblex imp p3 sg REMOVE:104
+;	"respectar" vblex imp p3 sg REMOVE:115
 "<dau>"
 	"dar" vblex pri p1 sg
 	"de" pr
@@ -6562,7 +6584,7 @@
 	"plan" adv
 	"plan" n m sg
 	"plan" adj m sg
-;	"plan" preadv REMOVE:170
+;	"plan" preadv REMOVE:182
 "<ecliptic>"
 	"*ecliptic"
 "<.>"
@@ -6570,8 +6592,8 @@
 
 "<L'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<excentricitat>"
 	"excentricitat" n f sg
 "<de>"
@@ -6581,7 +6603,7 @@
 	"son" det pos f sg
 	"èsser" vbser pri p3 pl
 	"èster" vbser pri p3 pl
-;	"son" det pos m sg REMOVE:132
+;	"son" det pos m sg REMOVE:144
 "<orbita>"
 	"orbita" n f sg
 "<es>"
@@ -6600,7 +6622,7 @@
 	"," cm
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<caracteristica>"
 	"caracteristic" adj f sg
 	"caracteristica" n f sg
@@ -6611,20 +6633,20 @@
 	"remarcable" adj f sg
 "<es>"
 	"èsser" vbser pri p3 sg
-;	"eth" det def f pl REMOVE:157
-;	"eth" det def m pl REMOVE:157
+;	"eth" det def f pl REMOVE:169
+;	"eth" det def m pl REMOVE:169
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<enclinason>"
 	"*enclinason"
 "<de>"
 	"de" pr
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<axe>"
 	"axe" n m sg
 "<de>"
@@ -6635,14 +6657,14 @@
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<planeta>"
 	"planeta" n f sg
 "<egala>"
 	"egal" adj f sg
 	"egalar" vblex pri p3 sg
-;	"egalar" vblex imp p2 sg REMOVE:106
-;	"egal" n f sg REMOVE:110
+;	"egalar" vblex imp p2 sg REMOVE:117
+;	"egal" n f sg REMOVE:122
 "<a>"
 	"a" pr
 	"aver" vbhaver pri p3 sg
@@ -6660,8 +6682,8 @@
 	"," cm
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<axe>"
 	"axe" n m sg
 "<es>"
@@ -6670,10 +6692,10 @@
 	"èsser" vbser pri p3 sg
 "<quasi>"
 	"quasi" preadv
-;	"quasi" adv REMOVE:168
+;	"quasi" adv REMOVE:180
 "<parallèl>"
 	"parallèl" adj m sg
-;	"parallèl" n m sg REMOVE:110
+;	"parallèl" n m sg REMOVE:122
 "<au>"
 	"a" pr
 		"lo" det def m sg
@@ -6681,7 +6703,7 @@
 	"plan" adv
 	"plan" n m sg
 	"plan" adj m sg
-;	"plan" preadv REMOVE:170
+;	"plan" preadv REMOVE:182
 "<dau>"
 	"dar" vblex pri p1 sg
 	"de" pr
@@ -6690,13 +6712,13 @@
 	"sistèma" n m sg
 "<Solar>"
 	"solar" adj m sg
-;	"solar" n m sg REMOVE:110
+;	"solar" n m sg REMOVE:122
 "<.>"
 	"." sent
 
 "<Lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<periòde>"
 	"periòde" n m sg
 "<de>"
@@ -6732,8 +6754,8 @@
 	"." sent
 
 "<Lei>"
+	"lei" n f sg
 	"lo" det def mf pl
-;	"lei" n f sg REMOVE:110
 "<pòls>"
 	"pòl" n m pl
 "<an>"
@@ -6741,7 +6763,7 @@
 	"auer" vbhaver pri p3 pl
 	"auer" vblex pri p3 pl
 	"aver" vbhaver pri p3 pl
-;	"an" n m sg REMOVE:110
+;	"an" n m sg REMOVE:122
 "<donc>"
 	"donc" cnjadv
 "<de>"
@@ -6757,7 +6779,7 @@
 "<nuech>"
 	"*nuech"
 "<continús>"
-	"*continús"
+	"continú" adj m pl
 "<d'>"
 	"de" pr
 "<environ>"
@@ -6772,10 +6794,10 @@
 
 "<Se>"
 	"se" cnjadv
-	"se" prn pro ref p3 mf sp
+;	"se" prn pro ref p3 mf sp REMOVE:202
 "<conois>"
 	"conéisser" vblex pri p3 sg
-;	"conéisser" vblex imp p2 sg REMOVE:104
+;	"conéisser" vblex imp p2 sg REMOVE:115
 "<pas>"
 	"pas" adv
 	"pas" n m sg
@@ -6786,7 +6808,7 @@
 "<origina>"
 	"origina" n f sg
 	"originar" vblex pri p3 sg
-;	"originar" vblex imp p2 sg REMOVE:104
+;	"originar" vblex imp p2 sg REMOVE:115
 "<d'>"
 	"de" pr
 "<aquela>"
@@ -6799,20 +6821,20 @@
 
 "<L'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<ipotèsi>"
 	"ipotèsi" n f sg
 "<principala>"
 	"principal" adj f sg
-;	"principal" n f sg REMOVE:110
+;	"principal" n f sg REMOVE:122
 "<es>"
 	"èsser" vbser pri p3 sg
-;	"eth" det def f pl REMOVE:157
-;	"eth" det def m pl REMOVE:157
+;	"eth" det def f pl REMOVE:169
+;	"eth" det def m pl REMOVE:169
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<collision>"
 	"collision" n f sg
 "<amb>"
@@ -6820,8 +6842,8 @@
 "<un>"
 	"un" prn tn m sg
 	"un" n m sg
-;	"un" det ind m sg REMOVE:130
-;	"un" num m sp REMOVE:163
+;	"un" det ind m sg REMOVE:142
+;	"un" num m sp REMOVE:175
 "<còrs>"
 	"còr" n m pl
 	"còrs" adj m sg
@@ -6834,12 +6856,12 @@
 "<talha>"
 	"talha" n f sg
 	"talhar" vblex pri p3 sg
-;	"talhar" vblex imp p2 sg REMOVE:104
+;	"talhar" vblex imp p2 sg REMOVE:115
 "<de>"
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<Tèrra>"
 	"tèrra" n f sg
 "<dins>"
@@ -6860,7 +6882,7 @@
 	"sistèma" n m sg
 "<Solar>"
 	"solar" adj m sg
-;	"solar" n m sg REMOVE:110
+;	"solar" n m sg REMOVE:122
 "<.>"
 	"." sent
 
@@ -6904,7 +6926,7 @@
 	"per" pr
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<telescòpi>"
 	"telescòpi" n m sg
 "<VLT>"
@@ -6931,16 +6953,17 @@
 	"satellit" n m pl
 "<naturaus>"
 	"naturau" adj mf pl
-;	"natural" n m pl REMOVE:110
+;	"natural" n m pl REMOVE:122
 "<coneguts>"
 	"conegut" adj m pl
+	"conegut" n m pl
 	"conéisser" vblex pp m pl
 "<dichs>"
 	"dire" vblex pp m pl
 "<segon>"
 	"segon" adv
 	"segon" adj m sg
-;	"segon" pr REMOVE:122
+;	"segon" pr REMOVE:134
 "<de>"
 	"de" pr
 "<personatges>"
@@ -6960,21 +6983,21 @@
 	"popar" vblex prs p3 sg
 	"popar" vblex pri p1 sg
 	"popar" vblex prs p1 sg
-;	"popar" vblex imp p3 sg REMOVE:106
+;	"popar" vblex imp p3 sg REMOVE:117
 "<.>"
 	"." sent
 
 "<Son>"
-	"èsser" vbser pri p3 pl
+	"son" n m sg
 	"èster" vbser pri p3 pl
-;	"son" n m sg REMOVE:110
-;	"son" det pos f sg REMOVE:130
-;	"son" det pos m sg REMOVE:130
+	"èsser" vbser pri p3 pl
+;	"son" det pos f sg REMOVE:142
+;	"son" det pos m sg REMOVE:142
 "<devesits>"
 	"devesit" adj m pl
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:93
+;	"en" prn pro adv REMOVE:104
 "<tres>"
 	"tres" num mf sp
 "<grops>"
@@ -6992,27 +7015,27 @@
 	"*podriá"
 "<tanben>"
 	"tanben" adv
-;	"tanben" preadv REMOVE:169
+;	"tanben" preadv REMOVE:181
 "<aver de>"
 	"aver# de" vbmod inf
 	"aver# de" vblex inf
 	"auer# de" vbmod inf
 "<quasi>"
 	"quasi" adv
-;	"quasi" preadv REMOVE:170
+;	"quasi" preadv REMOVE:182
 -
 "<satellits>"
 	"satellit" n m pl
 "<estables>"
 	"estable" adj m pl
-;	"estable" n m pl REMOVE:110
+;	"estable" n m pl REMOVE:122
 "<amb>"
 	"amb" pr
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<durada>"
 	"durada" n f sg
 	"durar" vblex pp f sg
@@ -7023,8 +7046,8 @@
 "<egala>"
 	"egal" adj f sg
 	"egalar" vblex pri p3 sg
-;	"egalar" vblex imp p2 sg REMOVE:106
-;	"egal" n f sg REMOVE:110
+;	"egalar" vblex imp p2 sg REMOVE:117
+;	"egal" n f sg REMOVE:122
 "<a>"
 	"a" pr
 	"aver" vbhaver pri p3 sg
@@ -7042,7 +7065,7 @@
 	"sistèma" n m sg
 "<Solar>"
 	"solar" adj m sg
-;	"solar" n m sg REMOVE:110
+;	"solar" n m sg REMOVE:122
 "<.>"
 	"." sent
 
@@ -7054,14 +7077,14 @@
 "<ges>"
 	"ges" adv
 	"gésser" vblex pri p3 sg
-;	"gésser" vblex imp p2 sg REMOVE:106
+;	"gésser" vblex imp p2 sg REMOVE:117
 "<d'>"
 	"de" pr
 "<objècte>"
 	"objècte" n m sg
 	"objectar" vblex prs p3 sg
 	"objectar" vblex prs p1 sg
-;	"objectar" vblex imp p3 sg REMOVE:106
+;	"objectar" vblex imp p3 sg REMOVE:117
 "<d'>"
 	"de" pr
 "<aqueu>"
@@ -7071,12 +7094,12 @@
 "<es>"
 	"èsser" vbser pri p3 sg
 	"eth" det def m pl
-;	"eth" det def f pl REMOVE:131
+;	"eth" det def f pl REMOVE:143
 "<estat>"
-	"estat" n m sg
-	"estar" vblex pp m sg
-	"èster" vbser pp m sg
-	"èsser" vbser pp m sg
+	"estat" n m sg SELECT:206
+;	"estar" vblex pp m sg SELECT:206
+;	"èster" vbser pp m sg SELECT:206
+;	"èsser" vbser pp m sg SELECT:206
 "<observat>"
 	"observar" vblex pp m sg
 "<.>"
@@ -7088,7 +7111,7 @@
 	"satellit" n m pl
 "<interiors>"
 	"interior" adj m pl
-;	"interior" n m pl REMOVE:110
+;	"interior" n m pl REMOVE:122
 "<.>"
 	"." sent
 
@@ -7108,14 +7131,14 @@
 	"satellit" n m pl
 "<pichons>"
 	"pichon" adj m pl
-;	"pichon" n m pl REMOVE:110
+;	"pichon" n m pl REMOVE:122
 "<amb>"
 	"amb" pr
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<orbita>"
 	"orbita" n f sg
 "<situada>"
@@ -7127,7 +7150,7 @@
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<trajectòria>"
 	"trajectòria" n f sg
 "<de>"
@@ -7142,7 +7165,7 @@
 	"*Totei"
 "<lei>"
 	"lo" det def mf pl
-;	"lei" n f sg REMOVE:110
+;	"lei" n f sg REMOVE:122
 "<satellits>"
 	"satellit" n m pl
 "<d'>"
@@ -7156,13 +7179,13 @@
 	"son" det pos f sg
 	"son" det pos m sg
 	"èster" vbser pri p3 pl
-;	"son" n m sg REMOVE:110
+;	"son" n m sg REMOVE:122
 "<liats>"
 	"*liats"
 "<ais>"
 	"a" pr
 		"lo" det def mf pl
-;	"ais" n m sg REMOVE:110
+;	"ais" n m sg REMOVE:122
 "<anèus>"
 	"anèl" n m pl
 "<.>"
@@ -7170,17 +7193,17 @@
 
 "<Lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<pus>"
 	"pus" adv
 	"pus" n m sg
 "<grand>"
 	"grand" adj m sg
-;	"grand" n mf sg REMOVE:110
+;	"grand" n mf sg REMOVE:122
 "<es>"
 	"èsser" vbser pri p3 sg
 	"eth" det def m pl
-;	"eth" det def f pl REMOVE:131
+;	"eth" det def f pl REMOVE:143
 "<dich>"
 	"dich" n m sg
 	"dire" vblex pp m sg
@@ -7189,15 +7212,15 @@
 "<amb>"
 	"amb" pr
 "<un>"
-	"un" det ind m sg SELECT:144
-;	"un" num m sp SELECT:144
-;	"un" n m sg SELECT:144
-;	"un" prn tn m sg SELECT:144
+	"un" det ind m sg SELECT:156
+;	"un" num m sp SELECT:156
+;	"un" n m sg SELECT:156
+;	"un" prn tn m sg SELECT:156
 "<diamètre>"
 	"diamètre" n m sg
 "<egau>"
 	"egau" adj mf sg
-;	"egau" n mf sg REMOVE:110
+;	"egau" n mf sg REMOVE:122
 "<a>"
 	"a" pr
 	"aver" vbhaver pri p3 sg
@@ -7220,21 +7243,21 @@
 	"auer" vbhaver pri p3 pl
 	"auer" vblex pri p3 pl
 	"aver" vbhaver pri p3 pl
-;	"an" n m sg REMOVE:110
+;	"an" n m sg REMOVE:122
 "<un>"
-	"un" det ind m sg SELECT:144
-;	"un" num m sp SELECT:144
-;	"un" n m sg SELECT:144
-;	"un" prn tn m sg SELECT:144
+	"un" det ind m sg SELECT:156
+;	"un" num m sp SELECT:156
+;	"un" n m sg SELECT:156
+;	"un" prn tn m sg SELECT:156
 "<albedo>"
 	"albedo" n m sg
 "<fòrça>"
-	"fòrça" det ind mf sp SELECT:144
-;	"forçar" vblex imp p2 sg REMOVE:106
-;	"fòrça" n f sg REMOVE:110
-;	"fòrça" adv SELECT:144
-;	"fòrça" preadv SELECT:144
-;	"forçar" vblex prs p1 sg SELECT:144
+	"fòrça" det ind mf sp SELECT:156
+;	"forçar" vblex imp p2 sg REMOVE:117
+;	"fòrça" n f sg REMOVE:122
+;	"fòrça" adv SELECT:156
+;	"fòrça" preadv SELECT:156
+;	"forçar" vblex prs p1 sg SELECT:156
 "<feble>"
 	"feble" adj m sg
 	"feble" n m sg
@@ -7248,23 +7271,24 @@
 	"." sent
 
 "<Son>"
-	"èsser" vbser pri p3 pl
+	"son" n m sg
 	"èster" vbser pri p3 pl
-;	"son" n m sg REMOVE:110
-;	"son" det pos f sg REMOVE:130
-;	"son" det pos m sg REMOVE:130
+	"èsser" vbser pri p3 pl
+;	"son" det pos f sg REMOVE:142
+;	"son" det pos m sg REMOVE:142
 "<fachas>"
 	"fach" adj f pl
 	"far" vblex pp f pl
 "<d'>"
 	"de" pr
 "<una>"
-	"un" det ind f sg SELECT:155
-;	"un" num f sp SELECT:155
-;	"un" prn tn f sg SELECT:155
-;	"unir" vblex prs p3 sg SELECT:155
+	"un" det ind f sg SELECT:166
+;	"un" num f sp SELECT:166
+;	"un" prn tn f sg SELECT:166
+;	"unir" vblex prs p3 sg SELECT:166
 "<mescla>"
-	"*mescla"
+	"mesclar" vblex pri p3 sg
+;	"mesclar" vblex imp p2 sg REMOVE:115
 "<d'>"
 	"de" pr
 "<aiga>"
@@ -7286,18 +7310,18 @@
 	"," cm
 "<lei>"
 	"lo" det def mf pl
-;	"lei" n f sg REMOVE:110
+;	"lei" n f sg REMOVE:122
 "<calculs>"
 	"calcul" n m pl
 "<mòstran>"
 	"mostrar" vblex pri p3 pl
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" cnjsub SELECT:190
+;	"que" cnjadv SELECT:190
+;	"que" rel an mf sp SELECT:190
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<sistèma>"
 	"sistèma" n m sg
 "<dei>"
@@ -7307,25 +7331,25 @@
 	"satellit" n m pl
 "<interiors>"
 	"interior" adj m pl
-;	"interior" n m pl REMOVE:110
+;	"interior" n m pl REMOVE:122
 "<es>"
 	"èsser" vbser pri p3 sg
-;	"eth" det def f pl REMOVE:131
-;	"eth" det def m pl REMOVE:158
+;	"eth" det def f pl REMOVE:143
+;	"eth" det def m pl REMOVE:170
 "<pas>"
 	"pas" adv
 	"pas" n m sg
 "<estable>"
 	"estable" adj m sg
-;	"estable" n m sg REMOVE:110
+;	"estable" n m sg REMOVE:122
 "<es>"
 	"eth" det def f pl
 	"eth" det def m pl
 	"èsser" vbser pri p3 sg
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" cnjsub SELECT:190
+;	"que" cnjadv SELECT:190
+;	"que" rel an mf sp SELECT:190
 "<de>"
 	"de" pr
 "<collisions>"
@@ -7335,15 +7359,15 @@
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
+;	"entrar" vblex imp p3 sg REMOVE:117
 "<lunas>"
 	"luna" n f pl
 "<son>"
 	"èsser" vbser pri p3 pl
 	"èster" vbser pri p3 pl
-;	"son" n m sg REMOVE:110
-;	"son" det pos f sg REMOVE:130
-;	"son" det pos m sg REMOVE:130
+;	"son" n m sg REMOVE:122
+;	"son" det pos f sg REMOVE:142
+;	"son" det pos m sg REMOVE:142
 "<possiblas>"
 	"possible" adj f pl
 "<.>"
@@ -7353,7 +7377,7 @@
 	"*Totei"
 "<lei>"
 	"lo" det def mf pl
-;	"lei" n f sg REMOVE:110
+;	"lei" n f sg REMOVE:122
 "<satellits>"
 	"satellit" n m pl
 "<semblan>"
@@ -7377,13 +7401,13 @@
 	"satellit" n m pl
 "<principaus>"
 	"principau" adj mf pl
-;	"principau" n mf pl REMOVE:110
+;	"principau" n mf pl REMOVE:122
 
 
 "<Fotografia>"
 	"fotografia" n f sg
 	"fotografiar" vblex pri p3 sg
-;	"fotografiar" vblex imp p2 sg REMOVE:106
+;	"fotografiar" vblex imp p2 sg REMOVE:117
 "<dau>"
 	"dar" vblex pri p1 sg
 	"de" pr
@@ -7398,8 +7422,8 @@
 
 
 "<Lei>"
+	"lei" n f sg
 	"lo" det def mf pl
-;	"lei" n f sg REMOVE:110
 "<cinc>"
 	"cinc" num mf sp
 "<grands>"
@@ -7421,7 +7445,7 @@
 	"auer" vblex pri p3 sg
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<Luna>"
 	"luna" n f sg
 	"Luna" np ant f sg
@@ -7437,13 +7461,13 @@
 "<Massa>"
 	"massa" adv
 	"Massa" np cog mf sp
-;	"massa" n f sg REMOVE:110
+;	"massa" n f sg REMOVE:122
  	
 "<Semiaxe>"
 	"*Semiaxe"
 "<major>"
 	"major" adj m sg
-;	"major" n f sg REMOVE:110
+;	"major" n f sg REMOVE:122
  	
 "<Periòde>"
 	"periòde" n m sg
@@ -7667,15 +7691,15 @@
 
 
 "<Lei>"
+	"lei" n f sg
 	"lo" det def mf pl
-;	"lei" n f sg REMOVE:110
 "<cinc>"
 	"cinc" num mf sp
 "<satellits>"
 	"satellit" n m pl
 "<principaus>"
 	"principau" adj mf pl
-;	"principau" n mf pl REMOVE:110
+;	"principau" n mf pl REMOVE:122
 "<d'>"
 	"de" pr
 "<Uranus>"
@@ -7685,7 +7709,7 @@
 	"son" det pos f sg
 	"son" det pos m sg
 	"èster" vbser pri p3 pl
-;	"son" n m sg REMOVE:110
+;	"son" n m sg REMOVE:122
 "<Miranda>"
 	"Miranda" np ant f sg
 	"Miranda" np cog mf sp
@@ -7723,16 +7747,16 @@
 	"luna" n f pl
 "<es>"
 	"èsser" vbser pri p3 sg
-;	"eth" det def f pl REMOVE:157
-;	"eth" det def m pl REMOVE:157
+;	"eth" det def f pl REMOVE:169
+;	"eth" det def m pl REMOVE:169
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<mens>"
 	"mens" adv
 "<massís>"
 	"massís" adj m sg
-;	"massís" n m sg REMOVE:110
+;	"massís" n m sg REMOVE:122
 "<dau>"
 	"dar" vblex pri p1 sg
 	"de" pr
@@ -7741,12 +7765,12 @@
 	"sistèma" n m sg
 "<Solar>"
 	"solar" adj m sg
-;	"solar" n m sg REMOVE:110
+;	"solar" n m sg REMOVE:122
 "<:>"
 	":" sent
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<massa>"
 	"massa" adv
 	"massa" n f sg
@@ -7762,7 +7786,7 @@
 	"satellit" n m pl
 "<monta>"
 	"montar" vblex pri p3 sg
-;	"montar" vblex imp p2 sg REMOVE:106
+;	"montar" vblex imp p2 sg REMOVE:117
 "<pas>"
 	"pas" adv
 	"pas" n m sg
@@ -7774,14 +7798,14 @@
 	"auer" vblex pri p3 sg
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<mitat>"
 	"mitat" n f sg
 "<de>"
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<massa>"
 	"massa" adv
 	"massa" n f sg
@@ -7797,31 +7821,31 @@
 	"*Titània"
 "<es>"
 	"èsser" vbser pri p3 sg
-;	"eth" det def f pl REMOVE:157
-;	"eth" det def m pl REMOVE:157
+;	"eth" det def f pl REMOVE:169
+;	"eth" det def m pl REMOVE:169
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<pus>"
 	"pus" adv
 	"pus" n m sg
 "<grand>"
 	"grand" adj m sg
-;	"grand" n mf sg REMOVE:110
+;	"grand" n mf sg REMOVE:122
 "<satellit>"
 	"satellit" n m sg
 "<amb>"
 	"amb" pr
 "<un>"
-	"un" det ind m sg SELECT:144
-;	"un" num m sp SELECT:144
-;	"un" n m sg SELECT:144
-;	"un" prn tn m sg SELECT:144
+	"un" det ind m sg SELECT:156
+;	"un" num m sp SELECT:156
+;	"un" n m sg SELECT:156
+;	"un" prn tn m sg SELECT:156
 "<rai>"
 	"rai" n m sg
 "<mejan>"
 	"mejan" adj m sg
-;	"mejan" n m sg REMOVE:110
+;	"mejan" n m sg REMOVE:122
 "<egau>"
 	"egau" adj mf sg
 	"egau" n mf sg
@@ -7847,7 +7871,7 @@
 	"*Totei"
 "<lei>"
 	"lo" det def mf pl
-;	"lei" n f sg REMOVE:110
+;	"lei" n f sg REMOVE:122
 "<lunas>"
 	"luna" n f pl
 "<an>"
@@ -7855,17 +7879,17 @@
 	"auer" vbhaver pri p3 pl
 	"auer" vblex pri p3 pl
 	"aver" vbhaver pri p3 pl
-;	"an" n m sg REMOVE:110
+;	"an" n m sg REMOVE:122
 "<un>"
-	"un" det ind m sg SELECT:144
-;	"un" num m sp SELECT:144
-;	"un" n m sg SELECT:144
-;	"un" prn tn m sg SELECT:144
+	"un" det ind m sg SELECT:156
+;	"un" num m sp SELECT:156
+;	"un" n m sg SELECT:156
+;	"un" prn tn m sg SELECT:156
 "<albedo>"
 	"albedo" n m sg
 "<feble>"
 	"feble" adj m sg
-;	"feble" n m sg REMOVE:110
+;	"feble" n m sg REMOVE:122
 "<,>"
 	"," cm
 "<variant>"
@@ -7891,7 +7915,7 @@
 	"son" det pos f sg
 	"son" det pos m sg
 	"èster" vbser pri p3 pl
-;	"son" n m sg REMOVE:110
+;	"son" n m sg REMOVE:122
 "<probablament>"
 	"probablament" adv
 "<fachas>"
@@ -7900,12 +7924,13 @@
 "<d'>"
 	"de" pr
 "<una>"
-	"un" det ind f sg SELECT:155
-;	"un" num f sp SELECT:155
-;	"un" prn tn f sg SELECT:155
-;	"unir" vblex prs p3 sg SELECT:155
+	"un" det ind f sg SELECT:166
+;	"un" num f sp SELECT:166
+;	"un" prn tn f sg SELECT:166
+;	"unir" vblex prs p3 sg SELECT:166
 "<mescla>"
-	"*mescla"
+	"mesclar" vblex pri p3 sg
+;	"mesclar" vblex imp p2 sg REMOVE:115
 "<de>"
 	"de" pr
 "<glaç>"
@@ -7920,14 +7945,14 @@
 
 "<Lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<glaç>"
 	"glaç" n m sg
 "<podriá>"
 	"*podriá"
 "<tanben>"
 	"tanben" adv
-;	"tanben" preadv REMOVE:169
+;	"tanben" preadv REMOVE:181
 "<tenir>"
 	"téner" vblex inf
 "<de>"
@@ -7963,7 +7988,7 @@
 "<Ges>"
 	"ges" adv
 	"gésser" vblex pri p3 sg
-;	"gésser" vblex imp p2 sg REMOVE:106
+;	"gésser" vblex imp p2 sg REMOVE:117
 "<d'>"
 	"de" pr
 "<atmosfèra>"
@@ -7983,7 +8008,7 @@
 	"," cm
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<pression>"
 	"pression" n f sg
 "<atmosferica>"
@@ -7994,14 +8019,14 @@
 	"*Titània"
 "<passa>"
 	"passar" vblex pri p3 sg
-;	"passar" vblex imp p2 sg REMOVE:106
-;	"pas" n f sg REMOVE:110
-;	"passa" n f sg REMOVE:110
+;	"passar" vblex imp p2 sg REMOVE:117
+;	"pas" n f sg REMOVE:122
+;	"passa" n f sg REMOVE:122
 "<probablament>"
 	"probablament" adv
 "<pas>"
 	"pas" adv
-;	"pas" n m sg REMOVE:110
+;	"pas" n m sg REMOVE:122
 "<10>"
 	"10" num
 -
@@ -8021,12 +8046,12 @@
 	"aver" vbhaver inf
 	"aver" vblex inf
 	"auer" vblex inf
-;	"aver" n m sg REMOVE:110
+;	"aver" n m sg REMOVE:122
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<activitat>"
 	"activitat" n f sg
 "<geologica>"
@@ -8041,7 +8066,7 @@
 	"causa" n f sg
 	"causir" vblex prs p3 sg
 	"causar" vblex pri p3 sg
-;	"causar" vblex imp p2 sg REMOVE:106
+;	"causar" vblex imp p2 sg REMOVE:117
 "<de>"
 	"de" pr
 "<fòrças>"
@@ -8064,15 +8089,15 @@
 "<,>"
 	"," cm
 "<un>"
-	"un" det ind m sg SELECT:155
-;	"un" n m sg REMOVE:110
-;	"un" num m sp SELECT:155
-;	"un" prn tn m sg SELECT:155
+	"un" det ind m sg SELECT:167
+;	"un" n m sg REMOVE:122
+;	"un" num m sp SELECT:167
+;	"un" prn tn m sg SELECT:167
 "<criovolcanisme>"
 	"*criovolcanisme"
 "<ancian>"
 	"ancian" adj m sg
-;	"ancian" n m sg REMOVE:110
+;	"ancian" n m sg REMOVE:122
 "<podriá>"
 	"*podriá"
 "<explicar>"
@@ -8083,7 +8108,7 @@
 "<preséncia>"
 	"preséncia" n f sg
 	"presenciar" vblex pri p3 sg
-;	"presenciar" vblex imp p2 sg REMOVE:104
+;	"presenciar" vblex imp p2 sg REMOVE:115
 "<d'>"
 	"de" pr
 "<estructuras>"
@@ -8121,7 +8146,7 @@
 	"*totei"
 "<lei>"
 	"lo" det def mf pl
-;	"lei" n f sg REMOVE:110
+;	"lei" n f sg REMOVE:122
 "<satellits>"
 	"satellit" n m pl
 "<dau>"
@@ -8132,7 +8157,7 @@
 	"grop" n m sg
 "<principau>"
 	"principau" adj mf sg
-;	"principau" n mf sg REMOVE:110
+;	"principau" n mf sg REMOVE:122
 "<an>"
 	"an" n m sg
 	"auer" vbhaver pri p3 pl
@@ -8140,19 +8165,19 @@
 	"aver" vbhaver pri p3 pl
 	"aver" vblex pri p3 pl
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<superficia>"
 	"superficia" n f sg
 "<amb>"
 	"amb" pr
 "<una>"
-	"un" det ind f sg SELECT:155
-;	"un" num f sp SELECT:155
-;	"un" prn tn f sg SELECT:155
-;	"unir" vblex prs p3 sg SELECT:155
+	"un" det ind f sg SELECT:167
+;	"un" num f sp SELECT:167
+;	"un" prn tn f sg SELECT:167
+;	"unir" vblex prs p3 sg SELECT:167
 "<craterizacion>"
 	"*craterizacion"
 "<importanta>"
@@ -8171,7 +8196,7 @@
 	"," cm
 "<lei>"
 	"lo" det def mf pl
-;	"lei" n f sg REMOVE:110
+;	"lei" n f sg REMOVE:122
 "<periòdes>"
 	"periòde" n m pl
 "<de>"
@@ -8185,7 +8210,7 @@
 	"satellit" n m pl
 "<principaus>"
 	"principau" adj mf pl
-;	"principau" n mf pl REMOVE:110
+;	"principau" n mf pl REMOVE:122
 "<a l'entorn>"
 	"a l'entorn" adv
 "<d'>"
@@ -8195,9 +8220,9 @@
 "<son>"
 	"èsser" vbser pri p3 pl
 	"èster" vbser pri p3 pl
-;	"son" n m sg REMOVE:110
-;	"son" det pos f sg REMOVE:116
-;	"son" det pos m sg REMOVE:116
+;	"son" n m sg REMOVE:122
+;	"son" det pos f sg REMOVE:128
+;	"son" det pos m sg REMOVE:128
 "<comprés>"
 	"comprene" vblex pp m sg
 "<entre>"
@@ -8205,7 +8230,7 @@
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
+;	"entrar" vblex imp p3 sg REMOVE:117
 "<1,4>"
 	"1,4" num
 "<e>"
@@ -8222,8 +8247,8 @@
 "<Lor>"
 	"lor" prn tn pos mf sg
 	"lor" det pos mf sg
-;	"li" prn pro p3 mf pl REMOVE:93
-;	"lor" adj pos mf sg REMOVE:174
+;	"li" prn pro p3 mf pl REMOVE:104
+;	"lor" adj pos mf sg REMOVE:186
 "<axe>"
 	"axe" n m sg
 "<de>"
@@ -8236,10 +8261,10 @@
 	"èsser" vbser pri p3 sg
 "<quasi>"
 	"quasi" preadv
-;	"quasi" adv REMOVE:168
+;	"quasi" adv REMOVE:180
 "<parallèl>"
 	"parallèl" adj m sg
-;	"parallèl" n m sg REMOVE:110
+;	"parallèl" n m sg REMOVE:122
 "<a>"
 	"a" pr
 	"aver" vbhaver pri p3 sg
@@ -8248,8 +8273,8 @@
 	"auer" vblex pri p3 sg
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<axe>"
 	"axe" n m sg
 "<d'>"
@@ -8260,8 +8285,8 @@
 	"." sent
 
 "<Lei>"
+	"lei" n f sg
 	"lo" det def mf pl
-;	"lei" n f sg REMOVE:110
 "<satellits>"
 	"satellit" n m pl
 "<an>"
@@ -8269,23 +8294,23 @@
 	"auer" vbhaver pri p3 pl
 	"auer" vblex pri p3 pl
 	"aver" vbhaver pri p3 pl
-;	"an" n m sg REMOVE:110
+;	"an" n m sg REMOVE:122
 "<donc>"
 	"donc" cnjadv
 "<una>"
-	"un" det ind f sg SELECT:155
-;	"un" num f sp SELECT:155
-;	"un" prn tn f sg SELECT:155
-;	"unir" vblex prs p3 sg SELECT:155
+	"un" det ind f sg SELECT:167
+;	"un" num f sp SELECT:167
+;	"un" prn tn f sg SELECT:167
+;	"unir" vblex prs p3 sg SELECT:167
 "<enclinason>"
 	"*enclinason"
 "<fòrça>"
-	"fòrça" det ind mf sp SELECT:145
-;	"forçar" vblex imp p2 sg REMOVE:106
-;	"fòrça" n f sg REMOVE:110
-;	"fòrça" adv SELECT:145
-;	"fòrça" preadv SELECT:145
-;	"forçar" vblex prs p1 sg SELECT:145
+	"fòrça" det ind mf sp SELECT:157
+;	"forçar" vblex imp p2 sg REMOVE:117
+;	"fòrça" n f sg REMOVE:122
+;	"fòrça" adv SELECT:157
+;	"fòrça" preadv SELECT:157
+;	"forçar" vblex prs p1 sg SELECT:157
 "<similara>"
 	"similar" adj f sg
 	"similar" n f sg
@@ -8297,7 +8322,7 @@
 	"auer" vblex pri p3 sg
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<planeta>"
 	"planeta" n f sg
 "<.>"
@@ -8327,7 +8352,7 @@
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
+;	"entrar" vblex imp p3 sg REMOVE:117
 "<Miranda>"
 	"Miranda" np ant f sg
 	"Miranda" np cog mf sp
@@ -8348,7 +8373,7 @@
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
+;	"entrar" vblex imp p3 sg REMOVE:117
 "<Ariel>"
 	"Ariel" np ant m sg
 "<e>"
@@ -8371,7 +8396,7 @@
 
 "<En>"
 	"en" pr
-;	"en" prn pro adv REMOVE:93
+;	"en" prn pro adv REMOVE:104
 "<2005>"
 	"2005" num
 "<,>"
@@ -8400,8 +8425,8 @@
 	"auer" vblex pri p3 sg
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<exterior>"
 	"exterior" adj m sg
 	"exterior" n m sg
@@ -8409,8 +8434,8 @@
 	"de" pr
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<orbita>"
 	"orbita" n f sg
 "<d'>"
@@ -8421,11 +8446,11 @@
 	"." sent
 
 "<Son>"
-	"èsser" vbser pri p3 pl
+	"son" n m sg
 	"èster" vbser pri p3 pl
-;	"son" n m sg REMOVE:110
-;	"son" det pos f sg REMOVE:116
-;	"son" det pos m sg REMOVE:116
+	"èsser" vbser pri p3 pl
+;	"son" det pos f sg REMOVE:128
+;	"son" det pos m sg REMOVE:128
 "<d'>"
 	"de" pr
 "<objèctes>"
@@ -8448,7 +8473,7 @@
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<planeta>"
 	"planeta" n f sg
 "<gaire>"
@@ -8459,7 +8484,7 @@
 	"gaire" prn itg f sg
 	"gaire" prn itg m sg
 	"gaire" adj itg f sg
-;	"gaire" preadv REMOVE:170
+;	"gaire" preadv REMOVE:182
 "<de>"
 	"de" pr
 "<temps>"
@@ -8479,11 +8504,11 @@
 	"lor" prn tn pos mf sg
 	"lor" det pos mf sg
 	"li" prn pro p3 mf pl
-;	"lor" adj pos mf sg REMOVE:174
+;	"lor" adj pos mf sg REMOVE:186
 "<talha>"
 	"talha" n f sg
 	"talhar" vblex pri p3 sg
-;	"talhar" vblex imp p2 sg REMOVE:104
+;	"talhar" vblex imp p2 sg REMOVE:115
 "<varia>"
 	"*varia"
 "<de>"
@@ -8502,14 +8527,14 @@
 	"km" n m sp
 "<per>"
 	"per" adv
-;	"per" pr REMOVE:122
+;	"per" pr REMOVE:134
 "<Sícorax>"
 	"*Sícorax"
 "<,>"
 	"," cm
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<pus>"
 	"pus" adv
 	"pus" n m sg
@@ -8521,7 +8546,7 @@
 
 "<La>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<màger part>"
 	"màger part" n f sg
 "<d'>"
@@ -8535,12 +8560,12 @@
 	"auer" vbhaver pri p3 pl
 	"auer" vblex pri p3 pl
 	"aver" vbhaver pri p3 pl
-;	"an" n m sg REMOVE:110
+;	"an" n m sg REMOVE:122
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<trajectòria>"
 	"trajectòria" n f sg
 "<retrograda>"
@@ -8551,7 +8576,7 @@
 "<Ges>"
 	"ges" adv
 	"gésser" vblex pri p3 sg
-;	"gésser" vblex imp p2 sg REMOVE:106
+;	"gésser" vblex imp p2 sg REMOVE:117
 "<de>"
 	"de" pr
 "<satellit>"
@@ -8565,10 +8590,10 @@
 	"auer" vbhaver pri p3 sg
 	"auer" vblex pri p3 sg
 "<una>"
-	"un" det ind f sg SELECT:155
-;	"un" num f sp SELECT:155
-;	"un" prn tn f sg SELECT:155
-;	"unir" vblex prs p3 sg SELECT:155
+	"un" det ind f sg SELECT:167
+;	"un" num f sp SELECT:167
+;	"un" prn tn f sg SELECT:167
+;	"unir" vblex prs p3 sg SELECT:167
 "<enclinason>"
 	"*enclinason"
 "<compresa>"
@@ -8579,7 +8604,7 @@
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
+;	"entrar" vblex imp p3 sg REMOVE:117
 "<60>"
 	"60" num
 "<e>"
@@ -8592,8 +8617,8 @@
 	"car" n m sg
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<estabilitat>"
 	"estabilitat" n f sg
 "<dins>"
@@ -8607,7 +8632,7 @@
 "<es>"
 	"eth" det def f pl
 	"èsser" vbser pri p3 sg
-;	"eth" det def m pl REMOVE:132
+;	"eth" det def m pl REMOVE:144
 "<limitada>"
 	"limitat" adj f sg
 	"limitar" vblex pp f sg
@@ -8628,10 +8653,10 @@
 "<d'>"
 	"de" pr
 "<un>"
-	"un" det ind m sg SELECT:144
-;	"un" num m sp SELECT:144
-;	"un" n m sg SELECT:144
-;	"un" prn tn m sg SELECT:144
+	"un" det ind m sg SELECT:156
+;	"un" num m sp SELECT:156
+;	"un" n m sg SELECT:156
+;	"un" prn tn m sg SELECT:156
 "<satellit>"
 	"satellit" n m sg
 "<d'>"
@@ -8643,7 +8668,7 @@
 "<es>"
 	"eth" det def f pl
 	"èsser" vbser pri p3 sg
-;	"eth" det def m pl REMOVE:132
+;	"eth" det def m pl REMOVE:144
 "<estimada>"
 	"estimat" adj f sg
 	"estimar" vblex pp f sg
@@ -8681,7 +8706,7 @@
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
+;	"entrar" vblex imp p3 sg REMOVE:117
 "<1995>"
 	"1995" num
 "<e>"
@@ -8692,7 +8717,7 @@
 	"," cm
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<magnitud>"
 	"magnitud" n f sg
 "<d'>"
@@ -8702,7 +8727,7 @@
 "<èra>"
 	"èster" vbser pii p1 sg
 	"èsser" vbser pii p3 sg
-;	"èra" n f sg REMOVE:110
+;	"èra" n f sg REMOVE:122
 "<situada>"
 	"situat" adj f sg
 	"situar" vblex pp f sg
@@ -8711,7 +8736,7 @@
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
+;	"entrar" vblex imp p3 sg REMOVE:117
  +
 "<5,6>"
 	"5,6" num
@@ -8723,10 +8748,10 @@
 "<amb>"
 	"amb" pr
 "<un>"
-	"un" det ind m sg SELECT:144
-;	"un" num m sp SELECT:144
-;	"un" n m sg SELECT:144
-;	"un" prn tn m sg SELECT:144
+	"un" det ind m sg SELECT:156
+;	"un" num m sp SELECT:156
+;	"un" n m sg SELECT:156
+;	"un" prn tn m sg SELECT:156
 "<diamètre>"
 	"diamètre" n m sg
 "<angular>"
@@ -8736,7 +8761,7 @@
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
+;	"entrar" vblex imp p3 sg REMOVE:117
 "<3,4>"
 	"3,4" num
 "<e>"
@@ -8757,21 +8782,21 @@
 	"." sent
 
 "<Èra>"
-	"èster" vbser pii p1 sg
+	"èra" n f sg
 	"èsser" vbser pii p3 sg
-;	"èra" n f sg REMOVE:110
+	"èster" vbser pii p1 sg
 "<donc>"
 	"donc" cnjadv
 "<un>"
-	"un" det ind m sg SELECT:144
-;	"un" n m sg REMOVE:110
-;	"un" num m sp SELECT:144
-;	"un" prn tn m sg SELECT:144
+	"un" det ind m sg SELECT:156
+;	"un" n m sg REMOVE:122
+;	"un" num m sp SELECT:156
+;	"un" prn tn m sg SELECT:156
 "<objècte>"
 	"objècte" n m sg
 	"objectar" vblex prs p3 sg
 	"objectar" vblex prs p1 sg
-;	"objectar" vblex imp p3 sg REMOVE:106
+;	"objectar" vblex imp p3 sg REMOVE:117
 "<dificilament>"
 	"dificilament" adv
 "<visible>"
@@ -8784,24 +8809,24 @@
 	"auer" vblex pri p3 sg
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<uèlh>"
 	"uèlh" n m sg
 "<mai>"
 	"mai" adv
 	"mai" cnjcoo
-;	"mai" n m sg REMOVE:110
+;	"mai" n m sg REMOVE:122
 "<observable>"
 	"observable" adj m sg
 "<durant>"
 	"durant" pr
 	"durar" vblex ger
 "<una>"
-	"un" det ind f sg SELECT:155
-;	"un" num f sp SELECT:155
-;	"un" prn tn f sg SELECT:155
-;	"unir" vblex prs p3 sg SELECT:155
+	"un" det ind f sg SELECT:167
+;	"un" num f sp SELECT:167
+;	"un" prn tn f sg SELECT:167
+;	"unir" vblex prs p3 sg SELECT:167
 "<nuech>"
 	"*nuech"
 "<sorna>"
@@ -8811,31 +8836,31 @@
 
 "<En>"
 	"en" pr
-;	"en" prn pro adv REMOVE:93
+;	"en" prn pro adv REMOVE:104
 "<revenge>"
-	"*revenge"
+	"revenge" n m sg
 "<,>"
 	"," cm
 "<vèn>"
 	"*vèn"
 "<una>"
-	"un" det ind f sg SELECT:154
-;	"un" num f sp SELECT:154
-;	"un" prn tn f sg SELECT:154
-;	"unir" vblex prs p3 sg SELECT:154
+	"un" det ind f sg SELECT:166
+;	"un" num f sp SELECT:166
+;	"un" prn tn f sg SELECT:166
+;	"unir" vblex prs p3 sg SELECT:166
 "<buta>"
 	"butar" vblex pri p3 sg
-;	"butar" vblex imp p2 sg REMOVE:104
+;	"butar" vblex imp p2 sg REMOVE:115
 "<facila>"
 	"facil" adj f sg
 "<per>"
 	"per" adv
 	"per" pr
 "<un>"
-	"un" det ind m sg SELECT:155
-;	"un" num m sp SELECT:155
-;	"un" n m sg SELECT:155
-;	"un" prn tn m sg SELECT:155
+	"un" det ind m sg SELECT:167
+;	"un" num m sp SELECT:167
+;	"un" n m sg SELECT:167
+;	"un" prn tn m sg SELECT:167
 "<pòrtavista>"
 	"*pòrtavista"
 "<,>"
@@ -8844,8 +8869,9 @@
 	"e mai" adv
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:93
+;	"en" prn pro adv REMOVE:104
 "<vila>"
+	"vil" adj f sg
 	"vila" n f sg
 "<.>"
 	"." sent
@@ -8853,10 +8879,10 @@
 "<Amb>"
 	"amb" pr
 "<un>"
-	"un" det ind m sg SELECT:144
-;	"un" num m sp SELECT:144
-;	"un" n m sg SELECT:144
-;	"un" prn tn m sg SELECT:144
+	"un" det ind m sg SELECT:156
+;	"un" num m sp SELECT:156
+;	"un" n m sg SELECT:156
+;	"un" prn tn m sg SELECT:156
 "<telescòpi>"
 	"telescòpi" n m sg
 "<amator>"
@@ -8864,10 +8890,10 @@
 "<d'>"
 	"de" pr
 "<un>"
-	"un" det ind m sg SELECT:144
-;	"un" num m sp SELECT:144
-;	"un" n m sg SELECT:144
-;	"un" prn tn m sg SELECT:144
+	"un" det ind m sg SELECT:156
+;	"un" num m sp SELECT:156
+;	"un" n m sg SELECT:156
+;	"un" prn tn m sg SELECT:156
 "<diamètre>"
 	"diamètre" n m sg
 "<de>"
@@ -8888,12 +8914,12 @@
 	"," cm
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<planeta>"
 	"planeta" n f sg
 "<apareis>"
 	"aparéisser" vblex pri p3 sg
-;	"aparéisser" vblex imp p2 sg REMOVE:106
+;	"aparéisser" vblex imp p2 sg REMOVE:117
 "<coma>"
 	"coma" adv
 	"coma" cnjadv
@@ -8901,15 +8927,15 @@
 	"coma" rel adv
 	"coma" n f sg
 "<un>"
-	"un" det ind m sg SELECT:144
-;	"un" num m sp SELECT:144
-;	"un" n m sg SELECT:144
-;	"un" prn tn m sg SELECT:144
+	"un" det ind m sg SELECT:156
+;	"un" num m sp SELECT:156
+;	"un" n m sg SELECT:156
+;	"un" prn tn m sg SELECT:156
 "<disc>"
 	"disc" n m sg
 "<blau>"
 	"blau" adj m sg
-;	"blau" n m sg REMOVE:110
+;	"blau" n m sg REMOVE:122
 "<.>"
 	"." sent
 
@@ -8918,10 +8944,10 @@
 "<,>"
 	"," cm
 "<un>"
-	"un" det ind m sg SELECT:144
-;	"un" n m sg REMOVE:110
-;	"un" num m sp SELECT:144
-;	"un" prn tn m sg SELECT:144
+	"un" det ind m sg SELECT:156
+;	"un" n m sg REMOVE:122
+;	"un" num m sp SELECT:156
+;	"un" prn tn m sg SELECT:156
 "<telescòpi>"
 	"telescòpi" n m sg
 "<de>"
@@ -8938,13 +8964,13 @@
 	"," cm
 "<o>"
 	"o" cnjcoo
-;	"o" prn pro p3 nt REMOVE:93
+;	"o" prn pro p3 nt REMOVE:104
 "<pus>"
 	"pus" adv
-;	"pus" n m sg REMOVE:110
+;	"pus" n m sg REMOVE:122
 "<grand>"
 	"grand" adj m sg
-;	"grand" n mf sg REMOVE:110
+;	"grand" n mf sg REMOVE:122
 "<,>"
 	"," cm
 "<pòu>"
@@ -8962,7 +8988,7 @@
 	"nívol" n m pl
 "<o>"
 	"o" cnjcoo
-;	"o" prn pro p3 nt REMOVE:93
+;	"o" prn pro p3 nt REMOVE:104
 "<certanei>"
 	"*certanei"
 "<dei>"
@@ -8977,13 +9003,13 @@
 	"coma" adv
 	"coma" cnjadv
 	"coma" rel adv
-;	"coma" n f sg REMOVE:110
-;	"coma" pr REMOVE:122
+;	"coma" n f sg REMOVE:122
+;	"coma" pr REMOVE:134
 "<Titània>"
 	"*Titània"
 "<o>"
 	"o" cnjcoo
-;	"o" prn pro p3 nt REMOVE:93
+;	"o" prn pro p3 nt REMOVE:104
 "<Oberon>"
 	"*Oberon"
 "<.>"
@@ -9036,7 +9062,7 @@
 	"observar" vblex pp f sg
 "<per>"
 	"per" adv
-;	"per" pr REMOVE:122
+;	"per" pr REMOVE:134
 "<divèrseis>"
 	"*divèrseis"
 "<astronòms>"
@@ -9050,7 +9076,7 @@
 	"descubèrta" n f sg
 "<oficiala>"
 	"oficial" adj f sg
-;	"oficial" n f sg REMOVE:110
+;	"oficial" n f sg REMOVE:122
 "<.>"
 	"." sent
 
@@ -9062,7 +9088,7 @@
 	"," cm
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<premier>"
 	"*premier"
 "<que>"
@@ -9093,14 +9119,14 @@
 	")" rpar
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:93
+;	"en" prn pro adv REMOVE:104
 "<1690>"
 	"1690" num
 "<sota>"
 	"sota" pr
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<nom>"
 	"nom" n m sg
 "<34>"
@@ -9112,7 +9138,7 @@
 
 "<Lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<Francés>"
 	"francés" adj m sg
 	"francés" n m sg
@@ -9133,12 +9159,12 @@
 	")" rpar
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<veguèt>"
 	"*veguèt"
 "<tanben>"
 	"tanben" adv
-;	"tanben" preadv REMOVE:170
+;	"tanben" preadv REMOVE:182
 "<dotze>"
 	"dotze" num mf sp
 "<còps>"
@@ -9148,7 +9174,7 @@
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
+;	"entrar" vblex imp p3 sg REMOVE:117
 "<1750>"
 	"1750" num
 "<e>"
@@ -9160,7 +9186,7 @@
 
 "<En>"
 	"en" pr
-;	"en" prn pro adv REMOVE:93
+;	"en" prn pro adv REMOVE:104
 "<1781>"
 	"1781" num
 "<,>"
@@ -9175,35 +9201,35 @@
 	"donc" cnjadv
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<premier>"
 	"*premier"
 "<astronòm>"
 	"astronòm" n m sg
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" rel an mf sp SELECT:198
+;	"que" cnjadv SELECT:198
+;	"que" cnjsub SELECT:198
 "<comprenguèt>"
 	"comprene" vblex ifi p3 sg
 "<qu'>"
-	"que" cnjsub
-	"que" rel an mf sp
-;	"que" adv enon REMOVE:119
+	"que" cnjsub SELECT:190
+;	"que" adv enon REMOVE:131
+;	"que" rel an mf sp SELECT:190
 "<Uranus>"
 	"Uranus" np top m sg
 "<èra>"
 	"èster" vbser pii p1 sg
 	"èsser" vbser pii p3 sg
-;	"èra" n f sg REMOVE:110
+;	"èra" n f sg REMOVE:122
 "<pas>"
 	"pas" adv
 	"pas" n m sg
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<estela>"
 	"estela" n f sg
 "<.>"
@@ -9225,10 +9251,10 @@
 "<vesiá>"
 	"veire" vblex pii p3 sg
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<cometa>"
 	"cometa" n f sg
 	"cometre" vblex prs p1 sg
@@ -9254,12 +9280,12 @@
 	"e" cnjcoo
 "<leis>"
 	"lo" det def mf pl
-;	"lei" n f pl REMOVE:110
+;	"lei" n f pl REMOVE:122
 "<astronòms>"
 	"astronòm" n m pl
 "<rus>"
 	"rus" adj m sg
-;	"rus" n m sg REMOVE:110
+;	"rus" n m sg REMOVE:122
 "<Anders>"
 	"Anders" np cog mf sp
 "<Johan>"
@@ -9270,7 +9296,7 @@
 	"e" cnjcoo
 "<alemand>"
 	"alemand" adj m sg
-;	"alemand" n m sg REMOVE:110
+;	"alemand" n m sg REMOVE:122
 "<Johann>"
 	"Johann" np ant m sg
 "<Elert>"
@@ -9281,8 +9307,8 @@
 	"calcular" vblex ifi p3 pl
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<orbita>"
 	"orbita" n f sg
 "<de>"
@@ -9295,20 +9321,20 @@
 	"objècte" n m sg
 	"objectar" vblex prs p3 sg
 	"objectar" vblex prs p1 sg
-;	"objectar" vblex imp p3 sg REMOVE:104
+;	"objectar" vblex imp p3 sg REMOVE:115
 "<descubèrt>"
 	"*descubèrt"
 "<per>"
 	"per" adv
-;	"per" pr REMOVE:122
+;	"per" pr REMOVE:134
 "<Herschel>"
 	"*Herschel"
 "<.>"
 	"." sent
 
 "<Lei>"
+	"lei" n f sg
 	"lo" det def mf pl
-;	"lei" n f sg REMOVE:110
 "<resultats>"
 	"resultat" n m pl
 	"resultar" vblex pp m pl
@@ -9320,43 +9346,43 @@
 "<preséncia>"
 	"preséncia" n f sg
 	"presenciar" vblex pri p3 sg
-;	"presenciar" vblex imp p2 sg REMOVE:104
+;	"presenciar" vblex imp p2 sg REMOVE:115
 "<d'>"
 	"de" pr
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<orbita>"
 	"orbita" n f sg
 "<quasi>"
 	"quasi" preadv
-;	"quasi" adv REMOVE:168
+;	"quasi" adv REMOVE:180
 "<circulara>"
 	"circular" adj f sg
-;	"circulara" n f sg REMOVE:110
+;	"circulara" n f sg REMOVE:122
 "<e>"
 	"e" cnjcoo
 "<concluguèron>"
 	"conclure" vblex ifi p3 pl
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" cnjsub SELECT:190
+;	"que" cnjadv SELECT:190
+;	"que" rel an mf sp SELECT:190
 "<se>"
 	"se" cnjadv
-	"se" prn pro ref p3 mf sp
+;	"se" prn pro ref p3 mf sp REMOVE:202
 "<tractava>"
 	"tractar" vblex pii p1 sg
 	"tractar" vblex pii p3 sg
 "<d'>"
 	"de" pr
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<planeta>"
 	"planeta" n f sg
 "<.>"
@@ -9377,12 +9403,12 @@
 	"*confiermat"
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:93
+;	"en" prn pro adv REMOVE:104
 "<1783>"
 	"1783" num
 "<per>"
 	"per" adv
-;	"per" pr REMOVE:122
+;	"per" pr REMOVE:134
 "<Herschel>"
 	"*Herschel"
 "<au>"
@@ -9394,7 +9420,7 @@
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<Royal>"
 	"Royal" np cog mf sp
 "<Society>"
@@ -9413,12 +9439,12 @@
 
 "<En>"
 	"en" pr
-;	"en" prn pro adv REMOVE:93
+;	"en" prn pro adv REMOVE:104
 "<onor>"
 	"onor" n m sg
 "<dau>"
 	"dar" vblex pri p1 sg
-;	"de" pr REMOVE:122
+;	"de" pr REMOVE:134
 ;		"lo" det def m sg
 "<rèi>"
 	"*rèi"
@@ -9434,7 +9460,7 @@
 	"(" lpar
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:93
+;	"en" prn pro adv REMOVE:104
 "<anglés>"
 	"anglés" adj m sg
 	"anglés" n m sg
@@ -9454,7 +9480,7 @@
 	"*nomar"
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<planeta>"
 	"planeta" n f sg
 "<Georgium>"
@@ -9465,7 +9491,7 @@
 	"(" lpar
 "<Estela>"
 	"Estela" np cog mf sp
-;	"estela" n f sg REMOVE:110
+;	"estela" n f sg REMOVE:122
 "<de>"
 	"de" pr
 "<Jòrdi>"
@@ -9475,16 +9501,16 @@
 "<mai>"
 	"mai" adv
 	"mai" cnjcoo
-;	"mai" n m sg REMOVE:110
+;	"mai" n m sg REMOVE:122
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<nom>"
 	"nom" n m sg
 "<èra>"
 	"èster" vbser pii p1 sg
 	"èsser" vbser pii p3 sg
-;	"èra" n f sg REMOVE:110
+;	"èra" n f sg REMOVE:122
 "<pas>"
 	"pas" adv
 	"pas" n m sg
@@ -9492,10 +9518,10 @@
 	"veritablament" adv
 "<popular>"
 	"popular" adj m sg
-;	"popular" n m sg REMOVE:110
+;	"popular" n m sg REMOVE:122
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:93
+;	"en" prn pro adv REMOVE:104
 "<Euròpa>"
 	"Euròpa" np ant f sg
 	"Euròpa" np top f sg
@@ -9504,8 +9530,8 @@
 
 "<L'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<astronòm>"
 	"astronòm" n m sg
 "<Jérôme>"
@@ -9516,8 +9542,8 @@
 	"prepausar" vblex ifi p3 sg
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<apelacion>"
 	"*apelacion"
 "<Herschel>"
@@ -9526,7 +9552,7 @@
 	"e" cnjcoo
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<Suedés>"
 	"suedés" adj m sg
 	"suedés" n m sg
@@ -9536,7 +9562,7 @@
 	"*Prosperin"
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<nom>"
 	"nom" n m sg
 "<Neptun>"
@@ -9560,7 +9586,7 @@
 "<flòta>"
 	"flòta" n f sg
 	"flotar" vblex pri p3 sg
-;	"flotar" vblex imp p2 sg REMOVE:104
+;	"flotar" vblex imp p2 sg REMOVE:115
 "<britanica>"
 	"britanic" adj f sg
 	"britanic" n f sg
@@ -9569,7 +9595,7 @@
 	"durar" vblex ger
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<Guèrra>"
 	"guèrra" n f sg
 "<d'>"
@@ -9600,11 +9626,11 @@
 	"que" rel an mf sp
 "<es>"
 	"èsser" vbser pri p3 sg
-;	"eth" det def f pl REMOVE:157
-;	"eth" det def m pl REMOVE:157
+;	"eth" det def f pl REMOVE:169
+;	"eth" det def m pl REMOVE:169
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<paire>"
 	"paire" n m sg
 "<de>"
@@ -9616,12 +9642,12 @@
 	"dins" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<mitologia>"
 	"mitologia" n f sg
 "<grèga>"
 	"grèc" adj f sg
-;	"grèc" n f sg REMOVE:110
+;	"grèc" n f sg REMOVE:122
 "<.>"
 	"." sent
 
@@ -9636,7 +9662,7 @@
 	"pauc a pauc" adv
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<pus>"
 	"pus" adv
 	"pus" n m sg
@@ -9647,7 +9673,7 @@
 	"e" cnjcoo
 "<s'>"
 	"se" cnjadv
-	"se" prn pro ref p3 mf sp
+;	"se" prn pro ref p3 mf sp REMOVE:202
 "<impausèt>"
 	"impausar" vblex ifi p3 sg
 "<definitivament>"
@@ -9662,8 +9688,8 @@
 	"quand" rel adv
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<HM>"
 	"*HM"
 "<Nautical>"
@@ -9682,8 +9708,8 @@
 	"auer" vblex pri p3 sg
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<apelacion>"
 	"*apelacion"
 "<d'>"
@@ -9712,8 +9738,8 @@
 	"*Premiera"
 "<taca>"
 	"tacar" vblex pri p3 sg
-;	"tacar" vblex imp p2 sg REMOVE:106
-;	"taca" n f sg REMOVE:110
+;	"tacar" vblex imp p2 sg REMOVE:117
+;	"taca" n f sg REMOVE:122
 "<sorna>"
 	"*sorna"
 "<d'>"
@@ -9727,7 +9753,7 @@
 	"per" pr
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<telescòpi>"
 	"telescòpi" n m sg
 "<espaciau>"
@@ -9746,7 +9772,7 @@
 	"*Avans"
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<passatge>"
 	"passatge" n m sg
 "<de>"
@@ -9757,7 +9783,7 @@
 "<sonda>"
 	"sonda" n f sg
 	"sondar" vblex pri p3 sg
-;	"sondar" vblex imp p2 sg REMOVE:104
+;	"sondar" vblex imp p2 sg REMOVE:115
 "<Voyager>"
 	"*Voyager"
 "<2>"
@@ -9766,7 +9792,7 @@
 	"," cm
 "<lei>"
 	"lo" det def mf pl
-;	"lei" n f sg REMOVE:110
+;	"lei" n f sg REMOVE:122
 "<conoissenças>"
 	"*conoissenças"
 "<sus>"
@@ -9787,8 +9813,8 @@
 	"," cm
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<exploracion>"
 	"exploracion" n f sg
 "<d'>"
@@ -9803,13 +9829,13 @@
 	"telescòpi" n m pl
 "<necessita>"
 	"necessitar" vblex pri p3 sg
-;	"necessitar" vblex imp p2 sg REMOVE:106
+;	"necessitar" vblex imp p2 sg REMOVE:117
 "<generalament>"
 	"generalament" adv
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<utilizacion>"
 	"utilizacion" n f sg
 "<dei>"
@@ -9821,7 +9847,7 @@
 	"*Hubble"
 "<o>"
 	"o" cnjcoo
-;	"o" prn pro p3 nt REMOVE:93
+;	"o" prn pro p3 nt REMOVE:104
 "<Keck>"
 	"*Keck"
 "<que>"
@@ -9834,14 +9860,14 @@
 	"observar" vblex inf
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<planeta>"
 	"planeta" n f sg
 "<dempuei>"
 	"*dempuei"
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<Tèrra>"
 	"tèrra" n f sg
 "<.>"
@@ -9859,7 +9885,7 @@
 "<preséncia>"
 	"preséncia" n f sg
 	"presenciar" vblex pri p3 sg
-;	"presenciar" vblex imp p2 sg REMOVE:104
+;	"presenciar" vblex imp p2 sg REMOVE:115
 "<de>"
 	"de" pr
 "<fenomèns>"
@@ -9871,7 +9897,7 @@
 	"coma" cnjadv
 	"coma" n f sg
 	"coma" rel adv
-;	"coma" pr REMOVE:122
+;	"coma" pr REMOVE:134
 "<de>"
 	"de" pr
 "<tacas>"
@@ -9893,7 +9919,7 @@
 	"Neptun" np top m sg
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:93
+;	"en" prn pro adv REMOVE:104
 "<2006>"
 	"2006" num
 "<.>"
@@ -9903,7 +9929,7 @@
 	"descurbir" vblex ifi p3 pl
 "<tanben>"
 	"tanben" adv
-;	"tanben" preadv REMOVE:170
+;	"tanben" preadv REMOVE:182
 "<dos>"
 	"dos" num m sp
 "<anèus>"
@@ -9916,7 +9942,7 @@
 	"satellit" n m pl
 "<naturaus>"
 	"naturau" adj mf pl
-;	"natural" n m pl REMOVE:110
+;	"natural" n m pl REMOVE:122
 "<suplementaris>"
 	"suplementari" adj m pl
 "<.>"
@@ -9941,7 +9967,7 @@
 
 "<La>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<mission>"
 	"mission" n f sg
 "<espaciala>"
@@ -9955,21 +9981,21 @@
 	"2" num
 "<es>"
 	"èsser" vbser pri p3 sg
-;	"eth" det def f pl REMOVE:157
-;	"eth" det def m pl REMOVE:157
+;	"eth" det def f pl REMOVE:169
+;	"eth" det def m pl REMOVE:169
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<soleta>"
 	"solet" adj f sg
 "<sonda>"
 	"sonda" n f sg
 	"sondar" vblex pri p3 sg
-;	"sondar" vblex imp p2 sg REMOVE:106
+;	"sondar" vblex imp p2 sg REMOVE:117
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" cnjsub SELECT:190
+;	"que" cnjadv SELECT:190
+;	"que" rel an mf sp SELECT:190
 "<foguèt>"
 	"èsser" vbser ifi p3 sg
 "<mandada>"
@@ -9979,7 +10005,7 @@
 	"dins" pr
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<sistèma>"
 	"sistèma" n m sg
 "<d'>"
@@ -9988,7 +10014,7 @@
 	"Uranus" np top m sg
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:93
+;	"en" prn pro adv REMOVE:104
 "<1986>"
 	"1986" num
 "<.>"
@@ -10002,7 +10028,7 @@
 	"satellit" n m pl
 "<naturaus>"
 	"naturau" adj mf pl
-;	"natural" n m pl REMOVE:110
+;	"natural" n m pl REMOVE:122
 "<suplementaris>"
 	"suplementari" adj m pl
 "<e>"
@@ -10013,7 +10039,7 @@
 "<forma>"
 	"forma" n f sg
 	"formar" vblex pri p3 sg
-;	"formar" vblex imp p2 sg REMOVE:104
+;	"formar" vblex imp p2 sg REMOVE:115
 "<asimetrica>"
 	"asimetric" adj f sg
 "<dau>"
@@ -10031,10 +10057,10 @@
 	"estudiar" vblex ifi p3 sg
 "<tanben>"
 	"tanben" adv
-;	"tanben" preadv REMOVE:170
+;	"tanben" preadv REMOVE:182
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<composicion>"
 	"composicion" n f sg
 "<dei>"
@@ -10077,13 +10103,13 @@
 "<sonda>"
 	"sonda" n f sg
 	"sondar" vblex pri p3 sg
-;	"sondar" vblex imp p2 sg REMOVE:104
+;	"sondar" vblex imp p2 sg REMOVE:115
 "<observèt>"
 	"observar" vblex ifi p3 sg
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<atmosfèra>"
 	"atmosfèra" n f sg
 "<d'>"
@@ -10106,11 +10132,11 @@
 	"Uranus" np top m sg
 "<es>"
 	"èsser" vbser pri p3 sg
-;	"eth" det def f pl REMOVE:157
-;	"eth" det def m pl REMOVE:157
+;	"eth" det def f pl REMOVE:169
+;	"eth" det def m pl REMOVE:169
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<nom>"
 	"nom" n m sg
 "<latinizat>"
@@ -10123,7 +10149,7 @@
 	"dieu" n m sg
 "<grèc>"
 	"grèc" adj m sg
-;	"grèc" n m sg REMOVE:110
+;	"grèc" n m sg REMOVE:122
 "<Ouranós>"
 	"*Ouranós"
 "<(>"
@@ -10133,10 +10159,10 @@
 	")" rpar
 "<representant>"
 	"representar" vblex ger
-;	"representant" n m sg REMOVE:110
+;	"representant" n m sg REMOVE:122
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<cèu>"
 	"cèu" n m sg
 	"cèl" n m sg
@@ -10147,14 +10173,14 @@
 	"èsser" vbser ifi p3 sg
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<paire>"
 	"paire" n m sg
 "<dei>"
 	"de" pr
 		"lo" det def m sg
 "<Titans>"
-	"*Titans"
+	"titan" n m pl
 "<e>"
 	"e" cnjcoo
 "<foguèt>"
@@ -10179,8 +10205,8 @@
 
 "<L'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<urani>"
 	"urani" n m sg
 "<,>"
@@ -10189,7 +10215,7 @@
 	"*descubèrt"
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:93
+;	"en" prn pro adv REMOVE:104
 "<1789>"
 	"1789" num
 "<per>"
@@ -10197,12 +10223,12 @@
 	"per" pr
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<quimista>"
 	"quimista" n mf sg
 "<alemand>"
 	"alemand" adj m sg
-;	"alemand" n m sg REMOVE:110
+;	"alemand" n m sg REMOVE:122
 "<Martin>"
 	"Martin" np ant m sg
 "<Heinrich>"
@@ -10217,7 +10243,7 @@
 	"*nomat"
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:93
+;	"en" prn pro adv REMOVE:104
 "<onor>"
 	"onor" n m sg
 "<dau>"
@@ -10233,7 +10259,7 @@
 	"per" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<novèla>"
 	"novèl" adj f sg
 "<planeta>"
@@ -10252,14 +10278,14 @@
 
 "<En>"
 	"en" pr
-;	"en" prn pro adv REMOVE:93
+;	"en" prn pro adv REMOVE:104
 "<1943>"
 	"1943" num
 "<,>"
 	"," cm
 "<lei>"
 	"lo" det def mf pl
-;	"lei" n f sg REMOVE:110
+;	"lei" n f sg REMOVE:122
 "<Sovietics>"
 	"sovietic" adj m pl
 	"sovietic" n m pl
@@ -10267,12 +10293,12 @@
 	"*nomèron"
 "<tanben>"
 	"tanben" adv
-;	"tanben" preadv REMOVE:170
+;	"tanben" preadv REMOVE:182
 "<lor>"
 	"lor" prn tn pos mf sg
 	"lor" det pos mf sg
-;	"li" prn pro p3 mf pl REMOVE:93
-;	"lor" adj pos mf sg REMOVE:174
+;	"li" prn pro p3 mf pl REMOVE:104
+;	"lor" adj pos mf sg REMOVE:186
 "<còntraofensiva>"
 	"*còntraofensiva"
 "<a l'entorn de>"
@@ -10289,8 +10315,8 @@
 
 
 "<Nòtas>"
+	"nòta" n f pl
 	"notar" vblex pri p2 sg
-;	"nòta" n f pl REMOVE:110
 "<.>"
 	"." sent
 
@@ -10298,7 +10324,7 @@
 
 "<Lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<tèrme>"
 	"tèrme" n m sg
 "<de>"
@@ -10307,14 +10333,14 @@
 	"glaç" n m sg
 "<designa>"
 	"designar" vblex pri p3 sg
-;	"designar" vblex imp p2 sg REMOVE:106
+;	"designar" vblex imp p2 sg REMOVE:117
 "<aicí>"
 	"aicí" adv
 "<un>"
 	"un" prn tn m sg
-;	"un" n m sg REMOVE:110
-;	"un" det ind m sg REMOVE:130
-;	"un" num m sp REMOVE:163
+;	"un" n m sg REMOVE:122
+;	"un" det ind m sg REMOVE:142
+;	"un" num m sp REMOVE:175
 "<còrs>"
 	"còr" n m pl
 	"còrs" adj m sg
@@ -10326,13 +10352,13 @@
 	"e" cnjcoo
 "<caud>"
 	"caud" adj m sg
-;	"caud" n m sg REMOVE:110
+;	"caud" n m sg REMOVE:122
 "<,>"
 	"," cm
 "<somés>"
 	"somés" adj m sg
 	"sometre" vblex pp m sg
-;	"somés" n m sg REMOVE:110
+;	"somés" n m sg REMOVE:122
 "<a de>"
 	"aver# de" vbmod pri p3 sg
 	"aver# de" vblex pri p3 sg
@@ -10354,9 +10380,9 @@
 	"non" adv
 "<un>"
 	"un" prn tn m sg
-;	"un" n m sg REMOVE:110
-;	"un" det ind m sg REMOVE:130
-;	"un" num m sp REMOVE:163
+;	"un" n m sg REMOVE:122
+;	"un" det ind m sg REMOVE:142
+;	"un" num m sp REMOVE:175
 "<còrs>"
 	"còr" n m pl
 	"còrs" adj m sg
@@ -10369,7 +10395,7 @@
 	"coma" n f sg
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<glaç>"
 	"glaç" n m sg
 "<d'>"
@@ -10400,19 +10426,20 @@
 	"," cm
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 m sg REMOVE:104
 "<limit>"
+	"limit" adj m sg
 	"limit" n m sg
 "<entre>"
 	"entre" pr
 	"entrar" vblex prs p3 sg
 	"entrar" vblex pri p1 sg
 	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:106
+;	"entrar" vblex imp p3 sg REMOVE:117
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:93
-;	"lo" prn pro p3 m sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
+;	"lo" prn pro p3 m sg REMOVE:104
 "<interior>"
 	"interior" adj m sg
 	"interior" n m sg
@@ -10420,7 +10447,7 @@
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:93
+;	"lo" prn pro p3 f sg REMOVE:104
 "<planeta>"
 	"planeta" n f sg
 "<e>"
@@ -10429,8 +10456,8 @@
 	"èsser" vbser pri p3 pl
 	"son" det pos f sg
 	"èster" vbser pri p3 pl
-;	"son" n m sg REMOVE:110
-;	"son" det pos m sg REMOVE:132
+;	"son" n m sg REMOVE:122
+;	"son" det pos m sg REMOVE:144
 "<atmosfèra>"
 	"atmosfèra" n f sg
 "<es>"
@@ -10446,19 +10473,19 @@
 	"auer" vbhaver pri p3 sg
 	"auer" vblex pri p3 sg
 "<una>"
-	"un" det ind f sg SELECT:145
-;	"un" num f sp SELECT:145
-;	"un" prn tn f sg SELECT:145
-;	"unir" vblex prs p3 sg SELECT:145
+	"un" det ind f sg SELECT:157
+;	"un" num f sp SELECT:157
+;	"un" prn tn f sg SELECT:157
+;	"unir" vblex prs p3 sg SELECT:157
 "<pression>"
 	"pression" n f sg
 "<d'>"
 	"de" pr
 "<un>"
-	"un" det ind m sg SELECT:144
-;	"un" num m sp SELECT:144
-;	"un" n m sg SELECT:144
-;	"un" prn tn m sg SELECT:144
+	"un" det ind m sg SELECT:156
+;	"un" num m sp SELECT:156
+;	"un" n m sg SELECT:156
+;	"un" prn tn m sg SELECT:156
 "<bar>"
 	"bar" n m sg
 "<.>"
@@ -10470,8 +10497,8 @@
 
 
 "<Referéncias>"
+	"referéncia" n f pl
 	"referenciar" vblex pri p2 sg
-;	"referéncia" n f pl REMOVE:110
 "<.>"
 	"." sent
 
