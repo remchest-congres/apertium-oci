@@ -180,10 +180,7 @@
 "<definicion>"
 	"definicion" n f sg
 "<pauc>"
-	"pauc" prn tn m sg
 	"pauc" preadv
-	"pauc" adj m sg
-;	"pauc" adv 
 "<clara>"
 	"clar" adj f sg
 "<d'>"
@@ -280,14 +277,13 @@
 "<la>"
 	"lo" det def f sg
 "<zona>"
-	"*zona"
+	"zona" n f sg
 "<continentala>"
 	"continental" adj f sg
 "<inclutz>"
 	"inclure" vblex pri p3 sg
 "<tanben>"
 	"tanben" adv
-	"tanben" preadv
 "<las>"
 	"lo" det def f pl
 "<pichonas>"
