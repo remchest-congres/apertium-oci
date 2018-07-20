@@ -14,6 +14,7 @@ LIST EOS = (<<<) ;
 #Categorias
 LIST V = vblex vbser vbhaver vbaux vbmod ;
 LIST Ser = vbser ;
+LIST Haver = vbhaver ;
 LIST Conjco = cnjcoo ;
 LIST Conjsub = cnjsub ;
 LIST Conjadv = cnjadv ;
@@ -34,7 +35,6 @@ LIST PRONPers = (prn p1) (prn p2) (prn p3);
 LIST IJ = ij ;
 LIST PREDET = predet ;
 LIST Pos = pos ;
-LIST DETPos = (det pos);
 LIST SENT = sent ;
 
 #Jos=categorias
@@ -54,7 +54,16 @@ LIST Nf = (n f);
 LIST AJf = (adj f);
 LIST Vconj = pri prs pii pis imp fti ifi cni ;
 LIST Itg = itg ;
+LIST DETdef = (det def);
 LIST DETind = (det ind);
+LIST DETpos = (det pos);
+
+SET Ant = (np ant) ;
+SET Cog = (np cog) ;
+SET Ant_Cog = Ant OR Cog ;
+SET Top = (np top) ;
+SET Al = (al) ;
+SET Acr = (acr) ;
 
 #Listas
 SET intrprop = Conjco OR Itg ; #cnjcoo cnjsub rel itg "," ";" sent adv;
@@ -80,7 +89,8 @@ SET CM = (cm) OR (lpar) OR (rpar) OR ("<;>") ;
 LIST Excl = "!" ;
 
 #Mots
-LIST En = ("en" prn);
+LIST En = "en";
+LIST En_pron = ("en" prn);
 LIST Un = "un" ;
 LIST An = "an" ;
 LIST Eth = "eth" ;
@@ -91,6 +101,7 @@ LIST Que = "que" ;
 LIST Se = "se" ;
 LIST Las = "las" ;
 LIST Mas = "mas" ;
+LIST Estat = "estat" ;
 
 LIST Excl = "!" ;
 
@@ -104,7 +115,7 @@ SECTION
 REMOVE Pro IF (NOT 1 V OR Pro);
 
 #En es pas un pronom s'es abans un gerondiu (amb possibilitat de pronoms entre los dos)
-REMOVE En IF (1* VBger BARRIER (*) - Pro) ;
+REMOVE En_pron IF (1* VBger BARRIER (*) - Pro) ;
 
 #Una conjonccion o un pronom relatiu se podon pas trobar en debuta de frasa
 REMOVE Conjco IF (-1 BOS OR SENT);
@@ -125,7 +136,7 @@ REMOVE N IF (NOT -1 BOS OR V OR AJ OR DET OR NUM OR PREP OR PRON - PRONPers);
 REMOVE PREDET IF (NOT 1 DET);
 
 #Los pronoms possessius son totjorn seguits per un nom, un adjectiu, un advèrb o un numeral
-REMOVE DETPos IF (NOT 1 N OR AJ OR AV OR NUM OR NP OR unknown);
+REMOVE DETpos IF (NOT 1 N OR AJ OR AV OR NUM OR NP OR unknown);
 
 # L'enonciatiu es totjorn seguit d'un vèrb o d'un enclitic
 REMOVE Enon IF (NOT 1 V OR PRencl);
@@ -185,6 +196,24 @@ REMOVE PREAV IF (0 PREAV) (0 AV) (NOT 1 AJ OR AV) ;
 
 REMOVE AJ IF (NOT -1 Ser) (0 AJ + Pos) ;
 
+# NP
+
+REMOVE Cog IF (-1 DETdef) (0 Cog) ;
+REMOVE Cog IF (-1 DETind) (0 Cog) ;
+REMOVE Cog IF (-1 En) (0 Cog) ;
+REMOVE Ant IF (-1 DETdef) (0 Ant) ;
+REMOVE Ant IF (-1 DETind) (0 Ant) ;
+REMOVE Ant IF (-1 En) (0 Ant) ;
+
+SELECT Ant IF (0 Ant) (1C Ant) ;
+  ## Jean-René
+SELECT Cog IF (0 Cog OR Ant) (-1C Ant) ;
+SELECT Ant_Cog IF (0 Cog OR Ant) (1C Cog) ;
+
+REMOVE Top IF (0 Cog OR Ant OR Top) (1 unknown) ;
+SELECT Ant IF (NOT -1 Cog OR Ant) (0C Cog OR Ant) (1 unknown) ;
+  ## Léon Verguet
+
 # MOTS
 
 SELECT Conjsub IF (-1 V) (0 Que) ;
@@ -212,3 +241,10 @@ REMOVE AJ IF (0 Las) (1 N + FemPl) ;
   ## las pomas
 
 SELECT Conjco IF (0 Mas) (-1 CM) ;
+
+
+SELECT N IF (-1 DET + Masc) (0 Estat) ;
+SELECT VBpp IF (-1 Ser) (0 Estat) (1 VBpp) ;
+SELECT N IF (-1 ("<[a-zàáèéíòóú]>.*"r)) (0 Estat) ;	# "Estat" (con mayúscula) va precedido de una palabra con minúscula inicial
+SELECT N IF (-1 ("vila") OR ("citat") OR ("ciutat")) (0 Estat) ;	# vila estat
+
