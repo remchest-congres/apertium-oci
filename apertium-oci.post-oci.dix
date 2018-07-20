@@ -174,9 +174,9 @@
 			 <i>"</i>
 			 <par n="vocals"/>
 		 </e>
-		 <e>
+	<!--	 <e>
 			 <i>8</i>
-		 </e>
+		 </e> -->
     </pardef>
 <!-- paradigma amb les consonants. hi he afegit la h	  -->
 	 <pardef n="consonant_menys_h">
