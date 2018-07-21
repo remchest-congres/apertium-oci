@@ -105,7 +105,7 @@
 "<sovent>"
 	"sovent" adv
 "<segon>"
-;	"segon" pr
+	"segon" pr
 "<de>"
 	"de" pr
 "<critèris>"
@@ -217,7 +217,7 @@
 	"." sent
 
 "<Mas>"
-;	"mas" cnjcoo
+	"mas" cnjcoo
 "<foguèt>"
 	"èsser" vbser ifi p3 sg
 "<pas>"
@@ -388,7 +388,7 @@
 "<al respècte d'>"
 	"al respècte de" pr
 "<Eurasia>"
-	"Eurasia"
+	"Eurasia" np top f sg
 "<.>"
 	"." sent
 
@@ -1638,12 +1638,7 @@
 	"." sent
 
 "<Mas>"
-	"mas" adv
-	"mon" det pos f pl
-	"Mas" np al
-	"Mas" np cog mf sp
-;	"mas" cnjcoo REMOVE:99
-;	"mas" n m sg REMOVE:110
+	"mas" cnjcoo REMOVE:99
 "<malgrat>"
 	"malgrat" adv
 	"malgrat" pr
@@ -1662,7 +1657,7 @@
 "<,>"
 	"," cm
 "<Colomb>"
-	"colomb" n m sg
+	"Colomb" np cog mf sp
 "<jamai>"
 	"jamai" adv
 "<pensèt>"
@@ -4301,7 +4296,7 @@
 "<«>"
 	"«" lpar
 "<Eurasia>"
-	"*Eurasia"
+	"Eurasia" np top f sg
 "<»>"
 	"»" rpar
  — 
@@ -6457,7 +6452,7 @@
 "<(>"
 	"(" lpar
 "<Eurasia>"
-	"*Eurasia"
+	"Eurasia" np top f sg
 "<)>"
 	")" rpar
 "<e>"
@@ -6587,7 +6582,7 @@
 "<(>"
 	"(" lpar
 "<Eurasia>"
-	"*Eurasia"
+	"Eurasia" np top f sg
 "<)>"
 	")" rpar
 "<es>"
@@ -10270,7 +10265,6 @@
 	"amb" pr
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:93
 "<raprochament>"
 	"raprochament" n m sg
 "<d'>"
@@ -10282,14 +10276,13 @@
 "<d'>"
 	"de" pr
 "<Eurasia>"
-	"*Eurasia"
-"<e de>"
+	"Eurasia" np top f sg
+"<e>"
 	"e" cnjcoo
-		"de" pr
+"<de>"
+	"de" pr
 "<las>"
-	"las" adj m sg
 	"lo" det def f pl
-;	"lo" prn pro p3 f pl REMOVE:93
 "<Americas>"
 	"Americas" np top f pl
 "<.>"
