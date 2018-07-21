@@ -2282,7 +2282,7 @@
 "<mot>"
 	"mot" n m sg
 "<continent>"
-;	"continent" n m sg
+	"continent" n m sg
 "<.>"
 	"." sent
 
@@ -2323,7 +2323,7 @@
 "<tèrme>"
 	"tèrme" n m sg
 "<continent>"
-;	"continent" n m sg 
+	"continent" n m sg 
 "<land>"
 	"land" barb
 "<,>"
@@ -3390,7 +3390,7 @@
 	"geologia" n f sg
 "<e>"
 	"e" cnjcoo
-"<de>
+"<de>"
 	"de" pr
 "<la>"
 	"lo" det def f sg
@@ -5115,8 +5115,6 @@
 "<America del Sud>"
 	"America del Sud" np top f sg
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
 	"que" rel an mf sp
 "<formarián>"
 	"formar" vblex cni p3 pl
@@ -5561,14 +5559,12 @@
 	"mot" n m pl
 "<grecs>"
 	"grèc" adj m sg
-"<eur>"
-	"eur" barb
-ý
-"<s>"
-	"s" n f sp
+"<eurýs>"
+	"eurýs" barb
 "<(>"
 	"(" lpar
-εὐρύς
+"<εὐρύς>"
+	"εὐρύς" barb
 "<,>"
 	"," cm
 "<«>"
@@ -5581,12 +5577,12 @@
 	")" rpar
 "<e>"
 	"e" cnjcoo
- ṓ
-"<ps>"
-	"*ps"
+"<ṓps>"
+	"ṓps" barb
 "<(>"
 	"(" lpar
-ὤψ
+"<ὤψ>"
+	"ὤψ" barb
 "<,>"
 	"," cm
 "<«>"
@@ -6907,7 +6903,7 @@
 "<Qualques>"
 	"qualque" det ind mf pl
 "<zonas>"
-	"zona"
+	"zona" n f pl
 "<de>"
 	"de" pr
 "<la>"
@@ -6992,7 +6988,7 @@
 "<lo>"
 	"lo" det def m sg
 "<replan>"
-	"*replan"
+	"replan" n m sg
 "<de>"
 	"de" pr
 "<Kerguelen>"
@@ -7507,7 +7503,7 @@
 "<la>"
 	"lo" det def f sg
 "<Pangèa>"
-	"*Pangèa" np
+	"Pangèa" np top f sg
 "<.>"
 	"." sent
 
