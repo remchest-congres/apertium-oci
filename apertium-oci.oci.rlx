@@ -91,6 +91,7 @@ LIST Excl = "!" ;
 #Mots
 LIST En = "en";
 LIST En_pron = ("en" prn);
+LIST Dins = "dins";
 LIST Un = "un" ;
 LIST An = "an" ;
 LIST Eth = "eth" ;
@@ -243,6 +244,8 @@ SELECT Rel IF (-3 N) (-2 AV OR PREAV) (-1 AJ) (0 Que) ;
 
 REMOVE PRON IF (0 Se) (NOT -1 Pro OR V + P3) ;
   ## se canti
+
+SELECT PREP IF (0 Dins) (1 DET) ;
 
 SELECT N IF (0 ("<Estat>")) ;
 SELECT N IF (-1 DET + Masc) (0 ("estat")) ;
