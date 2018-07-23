@@ -154,6 +154,19 @@ REMOVE motsdetsg IF (1 Npl OR AJpl);
 REMOVE motsdetf IF (1 Nm OR AJm);
 REMOVE motsdetm IF (1 Nf OR AJf);
 
+# distinccio entre MascPl i FemPl (típicament en terminacions en -es)
+SELECT MascPl IF (-1C MascPl) (0 N + MascPl) ;
+SELECT FemPl IF (-1C FemPl) (0 N + FemPl) ;
+SELECT MascPl IF (-1C MascPl) (0 AJ + MascPl) ;
+SELECT FemPl IF (-1C FemPl) (0 AJ + FemPl) ;
+SELECT MascPl IF (1C MascPl) (0 N + MascPl) ;
+SELECT FemPl IF (1C FemPl) (0 N + FemPl) ;
+SELECT MascPl IF (1C MascPl) (0 AJ + MascPl) ;
+SELECT FemPl IF (1C FemPl) (0 AJ + FemPl) ;
+SELECT MascPl IF (-2C MascPl) (-1 AV OR PREAV) (0 AJ + MascPl) ;
+SELECT FemPl IF (-2C FemPl) (-1 AV OR PREAV) (0 AJ + FemPl) ;
+SELECT MascPl IF (2C MascPl) (1 AV OR PREAV) (0 AJ + MascPl) ;
+SELECT FemPl IF (2C FemPl) (1 AV OR PREAV) (0 AJ + FemPl) ;
 
 # AN (+ partipici)
 
@@ -247,4 +260,3 @@ SELECT N IF (-1 DET + Masc) (0 Estat) ;
 SELECT VBpp IF (-1 Ser) (0 Estat) (1 VBpp) ;
 SELECT N IF (-1 ("<[a-zàáèéíòóú]>.*"r)) (0 Estat) ;	# "Estat" (con mayúscula) va precedido de una palabra con minúscula inicial
 SELECT N IF (-1 ("vila") OR ("citat") OR ("ciutat")) (0 Estat) ;	# vila estat
-
