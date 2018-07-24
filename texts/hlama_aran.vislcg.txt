@@ -1,25 +1,19 @@
 "<Eth>"
 	"eth" det def m sg
-	"eth" prn tn p3 m sg
 "<Ostau>"
 	"ostau" n m sg
-	"ostal" n m sg
 "<Comengés>"
-	"*Comengés"
+	"comengés" adj m sg
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" adv enon 
 "<torna>"
 	"tornar" vblex pri p3 sg
-;	"tornar" vblex imp p2 sg REMOVE:115
 "<aviar>"
-	"*aviar"
+	"aviar" vblex inf
 "<era>"
 	"eth" det def f sg
-	"eth" prn tn p3 f sg
 "<hlama>"
-	"*hlama"
+	"hlama" n f sg
 "<!>"
 	"!" sent
 
@@ -32,24 +26,24 @@
 "<de>"
 	"de" pr
 "<Reus>"
-	"Reus" np cog mf sp
 	"Reus" np top m sg
-"<en mai de>"
-	"en mai de" pr
+"<en>"
+	"en" pr
+ "<mai>"
+	"mai" n m sg
+ "<de>"
+	"de" pr
 "<2017>"
 	"2017" num
 "<ara>"
-	"ara" adv
-	"are" adj f sg
+	"a" pr
+		"eth" det def f sg
 "<hèsta>"
 	"hèsta" n f sg
 "<de>"
 	"de" pr
 "<Sent>"
-	"sénter" vblex pri p3 sg
-	"sentir" vblex pri p3 sg
-;	"sentir" vblex imp p2 sg REMOVE:117
-;	"sénter" vblex imp p2 sg REMOVE:117
+	"sent" n m sg
 "<Joan>"
 	"Joan" np ant m sg
 "<de>"
@@ -58,12 +52,11 @@
 	"2018" num
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:104
 "<Comenge>"
-	"*Comenge"
+	"Comenge" np top m sg
 -
 "<Varossa>"
-	"*Varossa"
+	"Varossa" np top f sg
 "<.>"
 	"." sent
 
@@ -71,44 +64,30 @@
 
 "<Eth>"
 	"eth" det def m sg
-	"eth" prn tn p3 m sg
 "<Ostau>"
 	"ostau" n m sg
-	"ostal" n m sg
 "<Comengés>"
-	"*Comengés"
+	"comengés" adj m sg
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" adv enon 
 "<contunha>"
-	"contunh" adj f sg
 	"contunhar" vblex pri p3 sg
-;	"contunhar" vblex imp p2 sg REMOVE:115
-;	"contunha" n f sg REMOVE:122
-"<eth>"
-	"eth" prn tn p3 m sg
-;	"eth" det def m sg REMOVE:169
-"<son>"
-	"èster" vbser pri p3 pl
-	"èsser" vbser pri p3 pl
-	"son" det pos m sg
-;	"son" det pos f sg REMOVE:143
-;	"son" n m sg REMOVE:122
+"<eth son>"
+	"eth son" det pos m sg
 "<trabalh>"
 	"trabalh" n m sg
 "<de>"
 	"de" pr
 "<sauvaguarda>"
-	"sauvaguardar" vblex pri p3 sg
-;	"sauvaguardar" vblex imp p2 sg REMOVE:117
+	"sauvaguarda" n f sg
 "<e de>"
 	"e" cnjcoo
 		"de" pr
 "<sensibilizacion>"
 	"sensibilizacion" n f sg
 "<ath>"
-	"*ath"
+	"a" pr
+		"eth" det def m sg
 "<entorn>"
 	"entorn" n m sg
 "<deras>"
@@ -127,32 +106,30 @@
 	"estiu" n m sg
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:104
 "<Comenge>"
-	"*Comenge"
+	"Comenge" np top m sg
 "<e>"
 	"e" cnjcoo
 "<Varossa>"
-	"*Varossa"
+	"Varossa" np top f sg
 "<.>"
 	"." sent
 
 "<Era>"
 	"eth" det def f sg
-	"eth" prn tn p3 f sg
 "<inscripcion>"
 	"inscripcion" n f sg
 "<d'>"
 	"de" pr
 "<aqueras>"
-	"aquerir" vblex prs p2 sg
+	"aqueth" det dem f pl
 "<tradicions>"
 	"tradicion" n f pl
 "<pirenencas>"
 	"pirenenc" adj f pl
-;	"pirenenc" n f pl REMOVE:122
 "<ath>"
-	"*ath"
+	"a" pr
+		"eth" det def m sg
 "<Patrimòni>"
 	"patrimòni" n m sg
 "<Culturau>"
@@ -165,15 +142,14 @@
 "<Umanitat>"
 	"umanitat" n f sg
 "<pera>"
-	"perir" vblex prs p3 sg
-;	"pera" n f sg REMOVE:122
+	"per" pr
+		"eth" det def f sg
 "<UNÈSCO>"
-	"*UNÈSCO"
+	"UNESCO" n acr f sg
 "<ja>"
 	"ja" adv
 "<atèsta>"
 	"atestar" vblex pri p3 sg
-;	"atestar" vblex imp p2 sg REMOVE:117
 "<dera>"
 	"de" pr
 		"eth" det def f sg
@@ -181,21 +157,14 @@
 	"hòrt" adj m sg
 "<grana>"
 	"gran" adj f sg
-	"grana" n f sg
-	"granar" vblex pri p3 sg
-;	"granar" vblex imp p2 sg REMOVE:117
 "<valor>"
 	"valor" n f sg
 "<d'>"
 	"de" pr
 "<aquera>"
-	"aqueth" prn tn f sg
 	"aqueth" det dem f sg
-	"aquerir" vblex prs p3 sg
 "<partida>"
-	"partit" adj f sg
 	"partida" n f sg
-	"partir" vblex pp f sg
 "<dera>"
 	"de" pr
 		"eth" det def f sg
@@ -208,145 +177,107 @@
 
 "<Pr'aquò>"
 	"pr'aquò" adv
-	"pr'aquò" cnjadv
 "<,>"
 	"," cm
   
 "<non>"
 	"non" adv
 "<s'>"
-	"se" cnjadv
-;	"se" prn pro ref p3 mf sp REMOVE:202
+	"se" prn pro ref p3 mf sp
 "<arrèsta>"
 	"arrestar" vblex pri p3 sg
-;	"arrestar" vblex imp p2 sg REMOVE:115
 "<pas>"
 	"pas" adv
-	"pas" n m sg
 "<aquiu>"
 	"aquiu" adv
 "<:>"
 	":" sent
 "<mès>"
-	"mès" adv
-;	"mès" cnjcoo REMOVE:110
+	"mès" cnjcoo
 "<que>"
 	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
 "<james>"
-	"*james"
+	"james" barb
 "<,>"
 	"," cm
 "<que>"
-	"que" rel an mf sp SELECT:196
-;	"que" cnjadv SELECT:196
-;	"que" cnjsub SELECT:196
+	"que" adv enon 
 "<mos>"
-	"mon" det pos m pl
-;	"mos" prn pro p1 mf pl REMOVE:104
+	"mos" prn pro p1 mf pl 
 "<cau>"
-	"*cau"
+	"caler" vblex p3 sg
 "<estudiar>"
 	"estudiar" vblex inf
 "<era>"
 	"eth" det def f sg
-	"eth" prn tn p3 f sg
 "<realitat>"
 	"realitat" n f sg
 "<d'>"
 	"de" pr
 "<aqueras>"
-	"aquerir" vblex prs p2 sg
+	"aqueth" det dem f pl 
 "<practicas>"
-	"practic" adj f pl
 	"practica" n f pl
-	"practicar" vblex pri p2 sg
 "<mès tanben>"
 	"mès tanben" cnjcoo
 "<sensibilizar>"
 	"sensibilizar" vblex inf
 "<eth>"
 	"eth" det def m sg
-	"eth" prn tn p3 m sg
 "<public>"
-	"public" adj m sg
 	"public" n m sg
 "<entà>"
 	"entà" pr
 "<tornar>"
-	"tornar" adv
 	"tornar" vblex inf
 "<dar>"
 	"dar" vblex inf
-	"donar" vblex inf
 "<ad>"
 	"a" pr
 "<aquera>"
-	"aqueth" prn tn f sg
 	"aqueth" det dem f sg
-	"aquerir" vblex prs p3 sg
 "<hèsta>"
 	"hèsta" n f sg
 "<collectiva>"
 	"collectiu" adj f sg
 "<tota>"
 	"tot" predet f sg
-	"tot" prn tn f sg
 "<era sua>"
 	"eth sòn" det pos f sg
-	"eth sòn" prn tn pos f sg
 "<vigor>"
 	"vigor" n f sg
 "<et>"
-	"*et"
+	"et" barb
 "<tot>"
-	"tot" prn tn m sg
-;	"tot" predet m sg REMOVE:125
-;	"tot" predet nt sg REMOVE:125
-"<eth>"
-	"eth" prn tn p3 m sg
-;	"eth" det def m sg REMOVE:169
-"<son>"
-	"èster" vbser pri p3 pl
-	"èsser" vbser pri p3 pl
-	"son" det pos m sg
-;	"son" det pos f sg REMOVE:143
-;	"son" n m sg REMOVE:122
+	"tot" predet m sg 
+"<eth son>"
+	"eth son" det pos m sg
 "<sens>"
 	"sens" n m sg
-;	"sens" pr REMOVE:134
 "<.>"
 	"." sent
 
 "<Eth>"
 	"eth" det def m sg
-	"eth" prn tn p3 m sg
 "<liberòt>"
-	"*liberòt"
+	"liberòt" n m sg
 "<Era>"
 	"eth" det def f sg
-	"eth" prn tn p3 f sg
 "<Sent>"
-	"sénter" vblex pri p3 sg
-	"sentir" vblex pri p3 sg
-;	"sentir" vblex imp p2 sg REMOVE:115
-;	"sénter" vblex imp p2 sg REMOVE:115
+	"sent" adj m sg
 "<Joan>"
 	"Joan" np ant m sg
  — 
 "<Comminges>"
-	"*Comminges"
+	"Comminges" barb
 "<et>"
-	"*et"
+	"et" barb
 "<Barousse>"
-	"*Barousse"
+	"Barousse" barb
 "<,>"
 	"," cm
 "<qu'>"
-	"que" rel an mf sp SELECT:196
-;	"que" cnjsub SELECT:196
-;	"que" adv enon SELECT:196
+	"que" cnjsub 
 "<acabam>"
 	"acabar" vblex pri p1 pl
 "<de>"
@@ -356,53 +287,34 @@
 "<e>"
 	"e" cnjcoo
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" cnjsub 
 "<presentèrem>"
 	"presentar" vblex ifi p1 pl
 "<eth>"
 	"eth" det def m sg
-	"eth" prn tn p3 m sg
 "<26>"
 	"26" num
-"<de mai>"
-	"de mai" adv
+"<de>
+	"de" pr
+"<mai>"
+	"mai" n m sg
 "<tara>"
-	"tara" n f sg
+	"ta" pr 
+		"eth" det def f sg
 "<Trobada>"
-	"trobat" adj f sg
-	"trobar" vblex pp f sg
+	"trobada" n f sg
 "<Fallaire>"
-	"*Fallaire"
+	"fallaire" barb
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
 	"que" rel an mf sp
-'
-"<s>"
-	"s" n f sp
-  
+"<'s>"
+	"se" prn pro ref p3 mf sp
 "<tenguec>"
 	"tier" vblex ifi p3 sg
 "<a>"
 	"a" pr
-	"aver" vbhaver pri p3 sg
-	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
-"<San>"
-	"San" np al
-	"san" adj m sg
-"<Chuan>"
-	"*Chuan"
-"<de>"
-	"de" pr
-"<Plan>"
-	"plan" adv
-	"plan" n m sg
-	"plan" adj m sg
-;	"plan" preadv REMOVE:182
+"<San Chuan de Plan>"
+	"San Chuan de Plan" np top m sg
 "<(>"
 	"(" lpar
 "<Aragon>"
@@ -412,23 +324,17 @@
 "<,>"
 	"," cm
 "<que>"
-	"que" rel an mf sp SELECT:196
-;	"que" cnjadv SELECT:196
-;	"que" cnjsub SELECT:196
+	"que" adv enon 
 "<va>"
 	"anar" vblex pri p3 sg
-;	"va" prn pro p3 nt REMOVE:104
 "<exactament>"
 	"exactament" adv
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:104
 "<aqueth>"
-	"aqueth" prn tn m sg
 	"aqueth" det dem m sg
 "<sens>"
 	"sens" n m sg
-;	"sens" pr REMOVE:134
 "<.>"
 	"." sent
  
@@ -436,17 +342,14 @@
 
 "<Ua>"
 	"un" det ind f sg SELECT:157
-;	"un" prn tn f sg SELECT:157
 "<exposicion>"
 	"exposicion" n f sg
 "<e>"
 	"e" cnjcoo
 "<tanben>"
 	"tanben" adv
-;	"tanben" preadv REMOVE:182
 "<eth>"
 	"eth" det def m sg
-	"eth" prn tn p3 m sg
 "<cicle>"
 	"cicle" n m sg
 "<de>"
@@ -454,32 +357,25 @@
 "<conferéncias>"
 	"conferéncia" n f pl
 "<Sent>"
-	"sénter" vblex pri p3 sg
-	"sentir" vblex pri p3 sg
-;	"sentir" vblex imp p2 sg REMOVE:117
-;	"sénter" vblex imp p2 sg REMOVE:117
+	"sent" adj m sg
 "<Joan>"
 	"Joan" np ant m sg
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:104
 "<Comenge>"
-	"*Comenge"
+	"Comenge" np top m sg
 "<e>"
 	"e" cnjcoo
 "<Varossa>"
-	"*Varossa"
+	"Varossa" np top f sg
 "<,>"
 	"," cm
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:104
 "<arreprénguer>"
-	"*arreprénguer"
-"<eras>"
-	"eth" det def f pl
-"<nòstas>"
-	"*nòstas"
+	"arreprénguer" vblex inf
+"<eras nòstas>"
+	"eth nòste" det pos f pl 
 "<intervencions>"
 	"intervencion" n f pl
 "<deth>"
@@ -488,37 +384,30 @@
 "<Simpòsi>"
 	"simpòsi" n m sg
 "<Festes>"
-	"*Festes"
+	"Festes" barb
 "<de>"
 	"de" pr
 "<foc>"
-	"*foc"
+	"foc" barb
 "<a>"
 	"a" pr
-	"aver" vbhaver pri p3 sg
-	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:104
 "<Mediterrània>"
-	"*Mediterrània"
+	"Mediterrània" barb
 "<organizat>"
-	"organizat" adj m sg
 	"organizar" vblex pp m sg
-"<en mai de>"
-	"en mai de" pr
+"<en>"
+	"en" pr
+"<mai> 
+	"mai" n m sg
+"<de>"
+	"de" pr
 "<2017>"
 	"2017" num
 "<a>"
 	"a" pr
-	"aver" vbhaver pri p3 sg
-	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
 "<Reus>"
-	"Reus" np cog mf sp
 	"Reus" np top m sg
 "<(>"
 	"(" lpar
@@ -529,19 +418,17 @@
 "<,>"
 	"," cm
 "<que>"
-	"que" rel an mf sp SELECT:196
-;	"que" cnjadv SELECT:196
-;	"que" cnjsub SELECT:196
+	"que" adv enon
 "<viatgèren>"
-	"*viatgèren"
+	"viatjar" vblex ifi pr3 pl
 "<per tot>"
 	"per tot" adv
 "<Comenge>"
-	"*Comenge"
+	"Comenge" n m sg
 "<e>"
 	"e" cnjcoo
 "<Varossa>"
-	"*Varossa"
+	"Varossa" n f sg
 "<deth>"
 	"de" pr
 		"eth" det def m sg
@@ -550,45 +437,40 @@
 "<dinc>"
 	"dinc" pr
 "<ath>"
-	"*ath"
+	"a" pr
+		"eth" det def m sg
 "<23>"
 	"23" num
 "<de>"
 	"de" pr
 "<junh>"
 	"junh" n m sg
-	"júnher" vblex pri p3 sg
-;	"júnher" vblex imp p2 sg REMOVE:117
 "<.>"
 	"." sent
 
 "<Aqueths>"
-	"*Aqueths"
+	"aqueth" det dem m sg
 "<eveniments>"
 	"eveniment" n m pl
 "<que>"
-	"que" rel an mf sp SELECT:198
-;	"que" cnjadv SELECT:198
-;	"que" cnjsub SELECT:198
+	"que" adv enon 
 "<permeteren>"
-	"*permeteren"
+	"perméter" vblex ifi p3 pl
 "<ath>"
-	"*ath"
+	"a" pr
+		"eth" det def m sg
 "<Ostau>"
 	"ostau" n m sg
-	"ostal" n m sg
 "<Comengés>"
-	"*Comengés"
+	"comengés" adj m sg
 "<d'>"
 	"de" pr
 "<arrencontrar>"
-	"*arrencontrar"
+	"arrencontrar" vblex inf
 "<eths>"
 	"eth" det def m pl
 "<elegits>"
-	"elegit" adj m pl
 	"elegit" n m pl
-	"elegir" vblex pp m pl
 "<e>"
 	"e" cnjcoo
 "<eths>"
@@ -605,7 +487,7 @@
 	"e" cnjcoo
 		"de" pr
 "<aprénguer>"
-	"*aprénguer"
+	"aprénguer" vblex inf
 "<,>"
 	"," cm
 "<gràcias>"
@@ -613,8 +495,7 @@
 "<ad>"
 	"a" pr
 "<aqueres>"
-	"aqueth" prn tn f pl
-;	"aqueth" det dem f pl REMOVE:143
+	"aqueth" det dem f pl
 "<escambis>"
 	"escambi" n m pl
 "<,>"
@@ -623,15 +504,10 @@
 	"aspècte" n m pl
 "<desconeguts>"
 	"desconegut" adj m pl
-	"desconéisser" vblex pp m pl
-;	"desconegut" n m pl REMOVE:122
 "<de>"
 	"de" pr
 "<Sent>"
-	"sénter" vblex pri p3 sg
-	"sentir" vblex pri p3 sg
-;	"sentir" vblex imp p2 sg REMOVE:117
-;	"sénter" vblex imp p2 sg REMOVE:117
+	"sent" adj m sg
 "<Joan>"
 	"Joan" np ant m sg
 "<e de>"
@@ -639,7 +515,6 @@
 		"de" pr
 "<parlar>"
 	"parlar" vblex inf
-;	"parlar" n m sg REMOVE:122
 "<deths>"
 	"de" pr
 		"eth" det def m pl
@@ -653,19 +528,18 @@
 "<exigéncias>"
 	"exigéncia" n f pl
 "<ligats>"
-	"ligat" adj m pl
 	"ligar" vblex pp m pl
 "<ath>"
-	"*ath"
+	"a" pr
+		"eth" det def m sg
 "<classament>"
 	"classament" n m sg
 "<UNÈSCO>"
-	"*UNÈSCO"
+	"UNESCO" n acr f sg
 "<.>"
 	"." sent
 
 "<Aqueth>"
-	"aqueth" prn tn m sg
 	"aqueth" det dem m sg
 "<cicle>"
 	"cicle" n m sg
@@ -675,145 +549,110 @@
 	"realizar" vblex pp m sg
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:104
 "<quadre>"
 	"quadre" n m sg
 "<deth>"
 	"de" pr
 		"eth" det def m sg
 "<hestau>"
-	"*hestau"
+	"hestau" n m sg
 "<Total>"
 	"total" adj m sg
-;	"total" n m sg REMOVE:122
 "<Festum>"
-	"*Festum"
+	"festum" n m sg
 "<,>"
 	"," cm
 "<que>"
-	"que" rel an mf sp SELECT:196
-;	"que" cnjadv SELECT:196
-;	"que" cnjsub SELECT:196
+	"que" rel an mf sp 
 "<s'>"
-	"se" cnjadv
-;	"se" prn pro ref p3 mf sp REMOVE:104
+	"se" prn pro ref p3 mf sp 
 "<acabèc>"
-	"*acabèc"
+	"acabar" vblex ifi p3 sg
 "<eth>"
 	"eth" det def m sg
-	"eth" prn tn p3 m sg
 "<23>"
 	"23" num
 "<de>"
 	"de" pr
 "<junh>"
 	"junh" n m sg
-	"júnher" vblex pri p3 sg
-;	"júnher" vblex imp p2 sg REMOVE:117
 "<,>"
 	"," cm
 "<a>"
-	"auer" vblex pri p3 sg
-	"aver" vbhaver pri p3 sg
-	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-;	"a" pr REMOVE:134
+	"a" pr
 "<Sarp>"
-	"*Sarp"
+	"Sarp" np top m sg
 "<,>"
 	"," cm
 "<damb>"
 	"damb" pr
 "<ua>"
-	"un" det ind f sg SELECT:157
-;	"un" prn tn f sg SELECT:157
+	"un" det ind f sg
 "<jornada>"
 	"jornada" n f sg
 "<especiala>"
 	"especial" adj f sg
 "<Sent>"
-	"sénter" vblex pri p3 sg
-	"sentir" vblex pri p3 sg
-;	"sentir" vblex imp p2 sg REMOVE:117
-;	"sénter" vblex imp p2 sg REMOVE:117
+	"sent" adj m sg
 "<Joan>"
 	"Joan" np ant m sg
 "<,>"
 	"," cm
 "<organizada>"
-	"organizat" adj f sg
 	"organizar" vblex pp f sg
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:104
 "<partenariat>"
-	"*partenariat"
+	"partenariat" n m sg
 "<damb>"
 	"damb" pr
 "<era>"
 	"eth" det def f sg
-	"eth" prn tn p3 f sg
 "<comuna>"
-	"comun" adj f sg
 	"comuna" n f sg
 "<,>"
 	"," cm
 "<qu'>"
 	"que" rel an mf sp SELECT:196
-;	"que" cnjsub SELECT:196
-;	"que" adv enon SELECT:196
 "<a>"
-	"auer" vblex pri p3 sg
 	"aver" vbhaver pri p3 sg
-	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-;	"a" pr REMOVE:134
 "<sabut>"
 	"saber" vblex pp m sg
 "<manténguer>"
 	"manténer" vblex inf
 "<viu>"
 	"viu" adj m sg
-	"viu" n m sg
-	"víuer" vblex pri p3 sg
-	"viure" vblex pri p3 sg
-;	"viure" vblex imp p2 sg REMOVE:117
-;	"víuer" vblex imp p2 sg REMOVE:117
 "<aqueth>"
-	"aqueth" prn tn m sg
 	"aqueth" det dem m sg
 "<patrimòni>"
 	"patrimòni" n m sg
 "<collectiu>"
 	"collectiu" adj m sg
-;	"collectiu" n m sg REMOVE:122
 "<e>"
 	"e" cnjcoo
 "<popular>"
 	"popular" adj m sg
-;	"popular" n m sg REMOVE:122
 "<,>"
 	"," cm
 "<e>"
 	"e" cnjcoo
 "<era>"
 	"eth" det def f sg
-	"eth" prn tn p3 f sg
 "<associacion>"
 	"associacion" n f sg
 "<Serpettes>"
-	"*Serpettes"
+	"Serpettes" barb
 "<et>"
-	"*et"
+	"et" barb
 "<Chaudrons>"
-	"*Chaudrons"
+	"Chaudrons" barb
 "<,>"
 	"," cm
 "<especializada>"
-	"especializat" adj f sg
 	"especializar" vblex pp f sg
 "<ena>"
-	"*ena"
+	"en" pr
+		"eth" det def f sg
 "<recèrca>"
 	"recèrca" n f sg
 "<sus>"
@@ -822,17 +661,14 @@
 	"eth" det def f pl
 "<plantas>"
 	"planta" n f pl
-	"plantar" vblex pri p2 sg
 "<e>"
 	"e" cnjcoo
 "<eth>"
 	"eth" det def m sg
-	"eth" prn tn p3 m sg
 "<mieilòc>"
-	"*mieilòc"
+	"mieilòc" n m sg
 "<naturau>"
 	"naturau" adj mf sg
-;	"natural" n m sg REMOVE:122
 "<.>"
 	"." sent
  
@@ -840,9 +676,8 @@
 
 "<Era>"
 	"eth" det def f sg
-	"eth" prn tn p3 f sg
 "<renommada>"
-	"*renommada"
+	"renommada"
 "<deras>"
 	"de" pr
 		"eth" det def f pl
@@ -859,22 +694,16 @@
 	"estiu" n m sg
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:104
 "<eths>"
 	"eth" det def m pl
 "<Pirenèus>"
 	"Pirenèus" np top m pl
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" adv enon 
 "<s'>"
-	"se" cnjadv
-;	"se" prn pro ref p3 mf sp REMOVE:202
+	"se" prn pro ref p3 mf sp 
 "<espandís>"
-	"espandir" vblex ifi p2 sg
 	"espandir" vblex pri p3 sg
-;	"espandir" vblex imp p2 sg REMOVE:115
 "<largament>"
 	"largament" adv
 "<ath delà deth>"
@@ -884,7 +713,6 @@
 	"espaci" n m sg
 "<pirenenc>"
 	"pirenenc" adj m sg
-;	"pirenenc" n m sg REMOVE:122
 "<.>"
 	"." sent
 
@@ -892,13 +720,12 @@
 	"atau" adv
 "<eth>"
 	"eth" det def m sg
-	"eth" prn tn p3 m sg
 "<Festival>"
 	"festival" n m sg
 "<Smithsonian>"
-	"*Smithsonian"
+	"Smithsonian" barb
 "<Folklife>"
-	"*Folklife"
+	"Folklife" barb
 "<,>"
 	"," cm
 "<prumèra>"
@@ -911,64 +738,42 @@
 	"cultura" n f sg
 "<populara>"
 	"popular" adj f sg
-;	"popular" n f sg REMOVE:122
 "<immateriala>"
 	"immaterial" adj f sg
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:104
 "<Mond>"
 	"mond" n m sg
 "<qu'>"
-	"que" rel an mf sp SELECT:198
-;	"que" cnjsub SELECT:198
-;	"que" adv enon SELECT:198
+	"que" rel an mf sp
 "<a>"
-	"a" pr
-	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
 "<lòc>"
 	"lòc" n m sg
 "<cada>"
 	"cada" det ind mf sp
 "<mes>"
-	"mes" adv
 	"mes" n m sg
-	"metre" vblex pp m sg
 "<de>"
 	"de" pr
 "<julhet>"
 	"julhet" n m sg
 "<a>"
 	"a" pr
-	"aver" vbhaver pri p3 sg
-	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
 "<Washington>"
-	"Washington" np al m sg
-	"Washington" np cog mf sp
 	"Washington" np top m sg
 "<,>"
 	"," cm
 "<qu'>"
-	"que" rel an mf sp SELECT:196
-;	"que" cnjsub SELECT:196
-;	"que" adv enon SELECT:196
+	"que" adv enon 
 "<a>"
-	"auer" vblex pri p3 sg
 	"aver" vbhaver pri p3 sg
-	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-;	"a" pr REMOVE:134
 "<causit>"
 	"causir" vblex pp m sg
 "<d'>"
 	"de" pr
 "<invitar>"
-	"*invitar"
+	"invitar" vblex inf
 "<enguan>"
 	"enguan" adv
 "<eras>"
@@ -977,14 +782,13 @@
 	"cultura" n f pl
 "<catalana>"
 	"catalan" adj f sg
-;	"catalan" n f sg REMOVE:122
 "<e>"
 	"e" cnjcoo
 "<armènia>"
 	"armèni" adj f sg
-;	"armèni" n f sg REMOVE:122
 "<ath>"
-	"*ath"
+	"a" pr
+		"eth" det def m sg
 "<entorn>"
 	"entorn" n m sg
 "<deth>"
@@ -1004,9 +808,7 @@
 "<culturalas>"
 	"cultural" adj f pl
 "<que>"
-	"que" rel an mf sp SELECT:199
-;	"que" cnjadv SELECT:199
-;	"que" cnjsub SELECT:199
+	"que" rel an mf sp 
 "<genèran>"
 	"generar" vblex pri p3 pl
 "<valors>"
@@ -1018,15 +820,17 @@
 "<socialas>"
 	"social" adj f pl
 "<entaras>"
-	"*entaras"
+	"entà" pr
+		"eth" det def f pl
 "<comunautats>"
 	"comunautat" n f pl
 "<peth>"
-	"*peth"
+	"per" pr
+		"eth" det def m sg
 "<Mond>"
 	"mond" n m sg
 "<sencèr>"
-	"*sencèr"
+	"sencèr" adj m sg
 ”
 "<.>"
 	"." sent
@@ -1034,18 +838,15 @@
 "<Ad>"
 	"a" pr
 "<aquera>"
-	"aqueth" prn tn f sg
 	"aqueth" det dem f sg
-	"aquerir" vblex prs p3 sg
 "<ocasion>"
 	"ocasion" n f sg
 "<,>"
 	"," cm
 "<era>"
 	"eth" det def f sg
-	"eth" prn tn p3 f sg
 "<Catedra>"
-	"*Catedra"
+	"catedra" n f sg 
 "<d'>"
 	"de" pr
 "<Educacion>"
@@ -1060,7 +861,7 @@
 	"de" pr
 		"eth" det def f pl
 "<Pireneas>"
-	"*Pireneas"
+	"Pireneas" np top f pl
 "<dera>"
 	"de" pr
 		"eth" det def f sg
@@ -1069,7 +870,7 @@
 "<de>"
 	"de" pr
 "<Lleida>"
-	"Lleida" np top f sg
+	"Lleida" barb
 "<(>"
 	"(" lpar
 "<Catalonha>"
@@ -1077,18 +878,15 @@
 "<)>"
 	")" rpar
 "<que>"
-	"que" rel an mf sp SELECT:196
-;	"que" cnjadv SELECT:196
-;	"que" cnjsub SELECT:196
+	"que" adv enon 
 "<presenterà>"
-	"*presenterà"
+	"presentar" vblex fti p3 sg
 "<eths>"
 	"eth" det def m pl
 "<elements>"
 	"element" n m pl
 "<majors>"
 	"major" adj m pl
-;	"major" n f pl REMOVE:122
 "<deth>"
 	"de" pr
 		"eth" det def m sg
@@ -1098,7 +896,6 @@
 	"immateriau" adj mf sg
 "<pirenenc>"
 	"pirenenc" adj m sg
-	"pirenenc" n m sg
 "<e>"
 	"e" cnjcoo
 "<exemples>"
@@ -1106,39 +903,30 @@
 "<de>"
 	"de" pr
 "<halhòts>"
-	"*halhòts"
+	"halhòt" n m sg
 "<comengeses>"
-	"*comengeses"
+	"comengés" adj m pl
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" adv enon 
 "<i>"
 	"i" prn pro adv
 "<seràn>"
-	"èster" vbser fti p3 pl
 	"èsser" vbser fti p3 pl
 "<expausats>"
-	"expausat" adj m pl
-	"expausat" n m pl
 	"expausar" vblex pp m pl
 "<.>"
 	"." sent
 
 "<Era>"
 	"eth" det def f sg
-	"eth" prn tn p3 f sg
 "<Catalonha>"
 	"Catalonha" np top f sg
 "<qu'>"
-	"que" cnjsub
-	"que" rel an mf sp
-;	"que" adv enon REMOVE:131
+	"que" adv enon 
 "<estèc>"
-	"*estèc"
+	"èster" vblex ifi p3 sg
 "<causida>"
 	"causir" vblex pp f sg
-;	"causida" n f sg REMOVE:122
 "<peths>"
 	"per" pr
 		"eth" det def m pl
@@ -1148,14 +936,12 @@
 	"de" pr
 		"eth" det def m sg
 "<Smithsonian>"
-	"*Smithsonian"
+	"Smithsonian" barb
 "<Institute>"
-	"*Institute"
-"<pera>"
-	"perir" vblex prs p3 sg
-;	"pera" n f sg REMOVE:122
-"<sua>"
-	"sòn" adj pos f sg
+	"Institute" barb
+"<pera sua>"
+	"per" pr
+		"eth son" det pos f sg
 "<longa>"
 	"long" adj f sg
 "<tradicion>"
@@ -1172,33 +958,17 @@
 	"formal" adj f pl
 "<coma>"
 	"coma" adv
-	"coma" cnjadv
-	"coma" pr
-	"coma" rel adv
-	"coma" n f sg
 "<difusas>"
 	"difús" adj f pl
-	"difusar" vblex pri p2 sg
 "<,>"
 	"," cm
 "<qu'>"
-	"que" rel an mf sp SELECT:196
-;	"que" cnjsub SELECT:196
-;	"que" adv enon SELECT:196
+	"que" rel an mf sp 
 "<an>"
 	"aver" vblex pri p3 pl
-	"auer" vbhaver pri p3 pl
-	"auer" vblex pri p3 pl
-	"aver" vbhaver pri p3 pl
-;	"an" n m sg REMOVE:122
 "<coma>"
 	"coma" adv
-	"coma" cnjadv
-	"coma" pr
-	"coma" rel adv
-	"coma" n f sg
 "<objectiu>"
-	"objectiu" adj m sg
 	"objectiu" n m sg
 "<de>"
 	"de" pr
@@ -1208,7 +978,6 @@
 	"hòrt" adj m sg
 "<eth>"
 	"eth" det def m sg
-	"eth" prn tn p3 m sg
 "<sentiment>"
 	"sentiment" n m sg
 "<d'>"
@@ -1222,8 +991,6 @@
 
 "<Qu'>"
 	"que" adv enon
-;	"que" cnjsub REMOVE:111
-;	"que" rel an mf sp REMOVE:112
 "<ei>"
 	"èster" vbser pri p3 sg
 "<donc>"
@@ -1231,44 +998,34 @@
 "<gràcias>"
 	"gràcia" n f pl
 "<ara>"
-	"ara" adv
-	"are" adj f sg
+	"a" pr
+		"eth" det def f sg
 "<determinacion>"
 	"determinacion" n f sg
 "<catalana>"
 	"catalan" adj f sg
-;	"catalan" n f sg REMOVE:122
 "<qu'>"
-	"que" rel an mf sp SELECT:199
-;	"que" adv enon REMOVE:131
-;	"que" cnjsub SELECT:199
+	"que" cnjsub
 "<era>"
 	"eth" det def f sg
-	"eth" prn tn p3 f sg
 "<cultura>"
 	"cultura" n f sg
 "<gascona>"
 	"gascon" adj f sg
-;	"gascon" n f sg REMOVE:122
 "<podec>"
-	"*podec"
+	"poder" vblex ifi p3 sg
 "<trobar>"
 	"trobar" vblex inf
 "<plaça>"
 	"plaça" n f sg
-	"plaçar" vblex pri p3 sg
-;	"plaçar" vblex imp p2 sg REMOVE:117
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:104
 "<aqueth>"
-	"aqueth" prn tn m sg
 	"aqueth" det dem m sg
 "<temps>"
 	"temps" n m sg
 "<major>"
 	"major" adj m sg
-;	"major" n f sg REMOVE:122
 "<d'>"
 	"de" pr
 "<escambis>"
@@ -1280,10 +1037,6 @@
 	"discussion" n f pl
 "<entre>"
 	"entre" pr
-	"entrar" vblex prs p3 sg
-	"entrar" vblex pri p1 sg
-	"entrar" vblex prs p1 sg
-;	"entrar" vblex imp p3 sg REMOVE:117
 "<eras>"
 	"eth" det def f pl
 "<culturas>"
@@ -1322,86 +1075,59 @@
 	"enjòc" n m pl
 "<politics>"
 	"politic" adj m pl
-;	"politic" n m pl REMOVE:122
 "<.>"
 	"." sent
   
 
-
 "<Que>"
-	"que" cnjadv
-;	"que" cnjsub REMOVE:111
-;	"que" rel an mf sp REMOVE:112
+	"que" adv enon 
 "<podem>"
-	"podar" vblex prs p1 pl
-;	"podar" vblex imp p1 pl REMOVE:117
+	"poder" vblex pri p1 pl
 "<donc>"
 	"donc" cnjadv
 "<constatar>"
 	"constatar" vblex inf
 "<un>"
-	"un" det ind m sg SELECT:156
-;	"un" num m sp SELECT:156
-;	"un" n m sg SELECT:156
-;	"un" prn tn m sg SELECT:156
+	"un" det ind m sg
 "<interès>"
 	"interès" n m sg
 "<plan>"
-	"plan" adv
 	"plan" preadv
-	"plan" adj m sg
-;	"plan" n m sg REMOVE:122
 "<viu>"
 	"viu" adj m sg
-	"viu" n m sg
-	"víuer" vblex pri p3 sg
-	"viure" vblex pri p3 sg
-;	"viure" vblex imp p2 sg REMOVE:117
-;	"víuer" vblex imp p2 sg REMOVE:117
  – 
 "<autant>"
 	"autant" adv
 "<ara>"
-	"ara" adv
-	"are" adj f sg
+	"a" pr
+		"eth" det def f sg
 "<escala>"
 	"escala" n f sg
-	"escalar" vblex pri p3 sg
-;	"escalar" vblex imp p2 sg REMOVE:117
 "<locala>"
 	"local" adj f sg
 "<,>"
 	"," cm
 "<pirenenca>"
 	"pirenenc" adj f sg
-;	"pirenenc" n f sg REMOVE:122
 "<o>"
 	"o" cnjcoo
-;	"o" prn pro p3 nt REMOVE:104
 "<internacionala>"
 	"internacional" adj f sg
-;	"internacional" n f sg REMOVE:122
  —
 "<e>"
 	"e" cnjcoo
 "<qu'>"
-	"que" cnjsub
-	"que" adv enon
-	"que" rel an mf sp
+	"que" adv enon 
 "<èm>"
-	"èsser" vbser pri p1 pl
 	"èster" vbser pri p1 pl
 "<aürós>"
 	"aürós" adj m sg
-	"aurós" adj m sg
 "<de>"
 	"de" pr
 "<constatar>"
 	"constatar" vblex inf
 "<qu'>"
-	"que" cnjsub SELECT:190
-;	"que" adv enon REMOVE:131
-;	"que" rel an mf sp SELECT:190
+	"que" cnjsub 
 "<un pialèr d'>"
 	"un pialèr de" pr
 "<actors>"
@@ -1411,16 +1137,13 @@
 "<de>"
 	"de" pr
 "<tornà>"
-	"*tornà"
-'
-"<s>"
-	"s" n f sp
+	"tornà" barb
+"<'s>"
+	"se" prn pro ref p3 mf sp
 "<apoderar>"
 	"apoderar" vblex inf
 "<aquera>"
-	"aqueth" prn tn f sg
 	"aqueth" det dem f sg
-	"aquerir" vblex prs p3 sg
 "<tradicion>"
 	"tradicion" n f sg
 "<.>"
@@ -1429,112 +1152,87 @@
 "<Tanplan>"
 	"tanplan" adv
 "<qu'>"
-	"que" cnjsub
 	"que" adv enon
-	"que" rel an mf sp
 "<ei>"
 	"èster" vbser pri p3 sg
 "<bilhèu>"
-	"*bilhèu"
+	"bilhèu" adv
 "<arribat>"
 	"arribar" vblex pp m sg
 "<eth>"
 	"eth" det def m sg
-	"eth" prn tn p3 m sg
 "<moment>"
 	"moment" n m sg
 "<de>"
 	"de" pr
 "<lançar>"
 	"lançar" vblex inf
-	"lançar" n m sg
 "<ua>"
-	"un" det ind f sg SELECT:167
-;	"un" prn tn f sg SELECT:167
+	"un" 
 "<vertadera>"
-	"*vertadera"
+	"vertader" adj m sg
 "<sinergia>"
 	"sinergia" n f sg
 "<populara>"
 	"popular" adj f sg
-;	"popular" n f sg REMOVE:122
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:104
 "<Comenge>"
-	"*Comenge"
+	"Comenge" np top m sg
 -
 "<Varossa>"
-	"*Varossa"
+	"Varossa" np top f sg
 "<,>"
 	"," cm
 "<e>"
-	"e" cnjcoo
-"<perqué>"
-	"perqué" cnjadv
+	"e" pr
+"<perqué>" 
 	"perqué" adv itg
-;	"perqué" n m sg REMOVE:122
 "<pas>"
 	"pas" adv
-;	"pas" n m sg REMOVE:122
 "<crear>"
 	"crear" vblex inf
 "<,>"
 	"," cm
 "<coma>"
 	"coma" adv
-	"coma" cnjadv
-	"coma" rel adv
-;	"coma" n f sg REMOVE:122
-;	"coma" pr REMOVE:134
 "<se>"
-	"se" cnjadv
-;	"se" prn pro ref p3 mf sp REMOVE:202
+	"se" prn pro ref p3 mf sp
 "<hè>"
-	"hèr" vblex pri p3 sg
-;	"hèr" vblex imp p2 sg REMOVE:115
+	 "hèr" vblex pri p3 sg
 "<dejà>"
 	"dejà" adv
 "<en>"
 	"en" pr
-;	"en" prn pro adv REMOVE:104
 "<Catalonha>"
 	"Catalonha" np top f sg
 "<,>"
 	"," cm
 "<ua>"
-	"un" det ind f sg SELECT:157
-;	"un" prn tn f sg SELECT:157
+	"un" det ind m sg
 "<associacion>"
 	"associacion" n f sg
 "<de>"
 	"de" pr
 "<halhaires>"
-	"*halhaires"
+	"halhaire" n m sg
 "<,>"
 	"," cm
 "<un>"
-	"un" det ind m sg SELECT:156
-;	"un" n m sg REMOVE:122
-;	"un" num m sp SELECT:156
-;	"un" prn tn m sg SELECT:156
+	"un" det ind m sg
 "<collectiu>"
-	"collectiu" adj m sg
 	"collectiu" n m sg
 "<qu'>"
-	"que" cnjsub
 	"que" rel an mf sp
-;	"que" adv enon REMOVE:131
 "<amasseria>"
-	"*amasseria"
+	"amassar" vblex
 "<eths>"
 	"eth" det def m pl
 "<actors>"
 	"actor" n m pl
-— 
+—
 "<comunas>"
-	"comun" adj f pl
-;	"comuna" n f pl REMOVE:122
+	"comuna" n f pl
 "<,>"
 	"," cm
 "<comitats>"
@@ -1542,25 +1240,21 @@
 "<deras>"
 	"de" pr
 		"eth" det def f pl
-"<hèstas>"
+"< hèstas>"
 	"hèsta" n f pl
-"<,>"
+,"<,>"
 	"," cm
 "<benevòls>"
 	"benevòl" n m pl
- – 
+ –
 "<d'>"
 	"de" pr
 "<aquera>"
-	"aqueth" prn tn f sg
 	"aqueth" det dem f sg
-	"aquerir" vblex prs p3 sg
 "<tradicion>"
 	"tradicion" n f sg
-"<?>"
+<?>
 	"?" sent
-
-
 "<Matiu>"
 	"Matiu" np ant m sg
 "<Fauré>"
@@ -1569,19 +1263,18 @@
 	"," cm
 "<Bernat>"
 	"Bernat" np ant m sg
-"<Ménétrier>"
+"< Ménétrier>"
 	"Ménétrier" np cog mf sp
 -
 "<Marcadal>"
 	"Marcadal" np cog mf sp
 "<e>"
-	"e" cnjcoo
-"<Joan Pau>"
-	"Joan Pau" np ant m sg
+	"e" pr
+"<Joan>"
+	"Joan" np ant m sg
+"<Pau>"
+	"Pau" np ant m sg
 "<Ferrèr>"
 	"Ferrèr" np cog mf sp
-"<.>"
-	"." sent
-
 
 
