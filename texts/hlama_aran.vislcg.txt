@@ -341,7 +341,7 @@
 
 
 "<Ua>"
-	"un" det ind f sg SELECT:157
+	"un" det ind f sg
 "<exposicion>"
 	"exposicion" n f sg
 "<e>"
@@ -613,7 +613,7 @@
 "<,>"
 	"," cm
 "<qu'>"
-	"que" rel an mf sp SELECT:196
+	"que" rel an mf sp
 "<a>"
 	"aver" vbhaver pri p3 sg
 "<sabut>"

@@ -304,7 +304,7 @@
 	"." sent
 
 "<Ansin>"
-	"ansin" pr
+	"ansin" adv
 "<,>"
 	"," cm
 "<foguèt>"
@@ -1153,7 +1153,7 @@
 
 
 "<Dins aquò>"
-	"dins aquò" pr
+	"dins aquò" adv
 "<,>"
 	"," cm
 "<aqueu>"
@@ -1172,7 +1172,7 @@
 	"." sent
 
 "<Ansin>"
-	"ansin"
+	"ansin" adv
 "<,>"
 	"," cm
 "<de>"
@@ -1192,7 +1192,7 @@
 "<idrogèn>"
 	"idrogèn" n m sg
 "<podrián>"
-	"poder" vblex c
+	"poder" vblex cni p3 pl
 "<èsser>"
 	"èsser" vbser inf
 "<mescladas>"
@@ -1313,7 +1313,7 @@
 	"de" pr
 		"lo" det def m pl
 "<autrei>"
-	"*autrei"
+	"autrei" adj ind f pl
 "<planetas>"
 	"planeta" n f pl
 "<gigantas>"
@@ -1412,7 +1412,7 @@
 	"." sent
 
 "<Ansin>"
-	"ansin" pr
+	"ansin" adv
 "<,>"
 	"," cm
 "<lo>"
@@ -1766,7 +1766,7 @@
 	"aquel" det dem f sg
 "<atmosfèra>"
 	"atmosfèra" n f sg
-"<se>
+"<se>"
 	"se" prn pro ref p3 mf sp 
 "<pòt>"
 	"poder" vbmod pri p3 sg
@@ -2052,7 +2052,7 @@
 "<km>"
 	"km" n m sp
 "<onte>"
-	"onte"
+	"onte" rel adv
 "<se>"
 	"se" prn pro ref p3 mf sp
 "<situa>"
@@ -2426,7 +2426,7 @@
 "<calor>"
 	"calor" n f sg
 "<dempuei>"
-	"dempuei"
+	"dempuei" pr
 "<la>"
 	"lo" det def f sg
 "<termosfèra>"
@@ -2865,7 +2865,7 @@
 	"." sent
 
 "<Ansin>"
-	"ansin" pr
+	"ansin" adv
 "<,>"
 	"," cm
 "<la>"
@@ -3303,7 +3303,7 @@
 "<donc>"
 	"donc" cnjadv
 "<assimetrica>"
-	"assimetric"adj f sg
+	"assimetric" adj f sg
 "<amb>"
 	"amb" pr
 "<de>"
@@ -3395,7 +3395,7 @@
 "<definir>"
 	"definir" vblex inf
 "<unei>"
-	"un"
+	"un" det ind mf pl
 "<zonas>"
 	"zona" n f pl
 "<dei>"
@@ -3421,7 +3421,7 @@
 	"." sent
 
 "<Ansin>"
-	"ansin" pr
+	"ansin" adv
 "<,>"
 	"," cm
 "<la>"
@@ -4518,7 +4518,7 @@
 	"." sent
 
 "<Ansin>"
-	"ansin" pr
+	"ansin" adv
 "<,>"
 	"," cm
 "<l'>"
@@ -4595,7 +4595,7 @@
 "<,>"
 	"," cm
 "<podriá>"
-	"poder"
+	"poder" vblex cni p3 sg
 "<èsser>"
 	"èsser" vbser inf
 "<una>"
@@ -4756,7 +4756,7 @@
 "<,>"
 	"," cm
 "<onte>"
-	"*onte"
+	"onte" rel adv
 "<lo>"
 	"lo" det def m sg
 "<camp>"
@@ -4911,7 +4911,7 @@
 "<annadas>"
 	"annada" n f pl
 "<terrèstras>"
-	"terrèstre"
+	"terrèstre" adj f pl
 "<dins>"
 	"dins" pr
 "<un>"
@@ -4998,7 +4998,7 @@
 "<;>"
 	";" sent
 "<ansin>"
-	"ansin" pr
+	"ansin" adv
 "<,>"
 	"," cm
 "<l'>"
@@ -5197,7 +5197,7 @@
 "<telescòpi>"
 	"telescòpi" n m sg
 "<VLT>"
-	"*VLT"
+	"VLT" n acr m sg
 "<.>"
 	"." sent
 
@@ -6059,7 +6059,7 @@
 	"." sent
 
 "<Ansin>"
-	"ansin" pr
+	"ansin" adv
 "<,>"
 	"," cm
 "<la>"
@@ -6084,7 +6084,7 @@
 "<20>"
 	"20" num
 "<nPa>"
-	"*nPa"
+	"nPa" n m sp
 "<.>"
 	"." sent
 
@@ -6102,7 +6102,7 @@
 	"geologic" adj f sg
 "<anciana>"
 	"ancian" adj f sg
-"<en causa de"
+"<en causa de>"
 	"en causa de" pr
 "<fòrças>"
 	"fòrça" n f pl
@@ -6124,7 +6124,7 @@
 "<un>"
 	"un" det ind m sg 
 "<criovolcanisme>"
-	"criovolcanisme"n m sg
+	"criovolcanisme" n m sg
 "<ancian>"
 	"ancian" adj m sg
 "<podriá>"
@@ -6158,7 +6158,7 @@
 	"." sent
 
 "<Dins aquò>"
-	"dins aquò" pr
+	"dins aquò" adv
 "<,>"
 	"," cm
 "<totei>"
@@ -6303,7 +6303,7 @@
 "<de>"
 	"de" pr
 "<resonàncias>"
-	"*resonàncias"
+	"resonància" n f pl
 "<3>"
 	"3" num
 "<:>"
@@ -6709,7 +6709,7 @@
 "<230>"
 	"230" num
 "<mm>"
-	"mm"
+	"mm" n m sp
 "<,>"
 	"," cm
 "<la>"
@@ -6742,7 +6742,7 @@
 "<250>"
 	"250" num
 "<mm>"
-	"mm"
+	"mm" n m sp
 "<de>"
 	"de" pr
 "<diamètre>"
@@ -7487,7 +7487,7 @@
 "<planeta>"
 	"planeta" n f sg
 "<dempuei>"
-	"dempuei"
+	"dempuei" pr
 "<la>"
 	"lo" det def f sg
 "<Tèrra>"
