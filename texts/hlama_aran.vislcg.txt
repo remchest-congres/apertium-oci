@@ -29,9 +29,9 @@
 	"Reus" np top m sg
 "<en>"
 	"en" pr
- "<mai>"
+"<mai>"
 	"mai" n m sg
- "<de>"
+"<de>"
 	"de" pr
 "<2017>"
 	"2017" num
@@ -294,7 +294,7 @@
 	"eth" det def m sg
 "<26>"
 	"26" num
-"<de>
+"<de>"
 	"de" pr
 "<mai>"
 	"mai" n m sg
@@ -399,7 +399,7 @@
 	"organizar" vblex pp m sg
 "<en>"
 	"en" pr
-"<mai> 
+"<mai>"
 	"mai" n m sg
 "<de>"
 	"de" pr
@@ -677,7 +677,7 @@
 "<Era>"
 	"eth" det def f sg
 "<renommada>"
-	"renommada"
+	"renommada" n f sg
 "<deras>"
 	"de" pr
 		"eth" det def f pl
@@ -1168,7 +1168,7 @@
 "<lançar>"
 	"lançar" vblex inf
 "<ua>"
-	"un" 
+	"un" det ind f sg
 "<vertadera>"
 	"vertader" adj m sg
 "<sinergia>"
@@ -1242,7 +1242,7 @@
 		"eth" det def f pl
 "< hèstas>"
 	"hèsta" n f pl
-,"<,>"
+"<,>"
 	"," cm
 "<benevòls>"
 	"benevòl" n m pl
@@ -1253,7 +1253,7 @@
 	"aqueth" det dem f sg
 "<tradicion>"
 	"tradicion" n f sg
-<?>
+"<?>"
 	"?" sent
 "<Matiu>"
 	"Matiu" np ant m sg
@@ -1263,7 +1263,7 @@
 	"," cm
 "<Bernat>"
 	"Bernat" np ant m sg
-"< Ménétrier>"
+"<Ménétrier>"
 	"Ménétrier" np cog mf sp
 -
 "<Marcadal>"
