@@ -1240,7 +1240,7 @@
 "<deras>"
 	"de" pr
 		"eth" det def f pl
-"< hèstas>"
+"<hèstas>"
 	"hèsta" n f pl
 "<,>"
 	"," cm
