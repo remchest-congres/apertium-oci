@@ -230,17 +230,17 @@ SELECT Ant IF (NOT -1 Cog OR Ant) (0C Cog OR Ant) (1 unknown) ;
 
 # MOTS
 
-SELECT Conjsub IF (-1 V) (0 Que) ;
+SELECT Conjsub IF (-1C V) (0 Que) ;
   ## vôli que
-SELECT Conjsub IF (-2 V) (1 AV) (0 Que) ;
+SELECT Conjsub IF (-2C V) (1 AV) (0 Que) ;
   ## vôli pas que
 SELECT Conjadv IF (-2 ("mai") OR ("pus") OR ("mens")) (-1 AJ OR VBpp OR AV) (0 Que) ;
   ## plus rapide que moi
-SELECT Rel IF (-1 CM) (0 Que) ;
-SELECT Rel IF (-1 DET) (0 Que) ;
-SELECT Rel IF (-1C N) (0 Que) ;
-SELECT Rel IF (-2C N) (-1 AJ) (0 Que) ;
-SELECT Rel IF (-3 N) (-2 AV OR PREAV) (-1 AJ) (0 Que) ;
+REMOVE Conjsub IF (-1 CM) (0 Que) ;
+REMOVE Conjsub IF (-1 DET) (0 Que) ;
+REMOVE Conjsub IF (-1C N) (0 Que) ;
+REMOVE Conjsub IF (-2C N) (-1 AJ) (0 Que) ;
+REMOVE Conjsub IF (-3 N) (-2 AV OR PREAV) (-1 AJ) (0 Que) ;
 
 REMOVE PRON IF (0 Se) (NOT -1 Pro OR V + P3) ;
   ## se canti
