@@ -16,17 +16,13 @@
 "<«>"
 	"«" lpar
 "<intrencable>"
-	"*intrencable"
+	"intrencable" adj m sg
 "<»>"
 	"»" rpar
 "<,>"
 	"," cm
-"<eth>"
-	"eth" det def m sg
-	"eth" prn tn p3 m sg
-"<medish>"
-	"medish" adv
-	"medish" adj m sg
+"<eth medish>"
+	"eth medish" prn tn p3 m sg
 "<compausat>"
 	"compausar" vblex pp m sg
 "<deu>"
@@ -53,7 +49,7 @@
 "<,>"
 	"," cm
 "<trencar>"
-	"*trencar"
+	"trencar" vblex inf
 "<»>"
 	"»" rpar
 "<->"
@@ -61,9 +57,7 @@
 "<)>"
 	")" rpar
 "<qu'>"
-	"que" cnjsub
 	"que" adv enon
-	"que" rel an mf sp
 "<ei>"
 	"èster" vbser pri p3 sg
 "<l'>"
@@ -92,12 +86,9 @@
 "<quimicas>"
 	"quimic" adj f pl
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
 	"que" rel an mf sp
 "<consèrva>"
 	"conservar" vblex pri p3 sg
-;	"conservar" vblex imp p2 sg
 "<las>"
 	"lo" det def f pl
 "<proprietats>"
@@ -118,9 +109,7 @@
 "<atòms>"
 	"atòm" n m pl
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" adv.enon
 "<son>"
 	"èsser" vbser pri p3 pl
 "<compausats>"
@@ -150,8 +139,6 @@
 "<,>"
 	"," cm
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
 	"que" rel an mf sp
 "<son>"
 	"èsser" vbser pri p3 pl
@@ -169,9 +156,7 @@
 "<atòm>"
 	"atòm" n m sg
 "<qu'>"
-	"que" cnjsub
 	"que" adv enon
-	"que" rel an mf sp
 "<ei>"
 	"èsser" vbser pri p3 sg
 "<electricament>"
@@ -181,9 +166,7 @@
 "<e>"
 	"e" cnjcoo
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" adv enon
 "<'s>"
 	"se" prn pro ref p3 mf sp
 "<compausa>"
@@ -319,9 +302,7 @@
 "<,>"
 	"," cm
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" adv.enon
 "<s'>"
 	"se" prn pro ref p3 mf sp
 "<tracta>"
@@ -356,15 +337,13 @@
 "<atòm>"
 	"atòm" n m sg
 "<qu'>"
-	"que" cnjsub
 	"que" adv enon
-	"que" rel an mf sp
 "<ei>"
 	"èsser" vbser pri p3 sg
 "<contienguda>"
-	"*contienguda"
+	"contiener" vblex pp f sg
 "<dehens>"
-	"*dehens"
+	"dehens" pr
 "<lo>"
 	"lo" det def m sg
 "<nuclèu>"
@@ -373,16 +352,13 @@
 	"." sent
 ¶
 "<Com>"
-	"com" pr
-	"com" adv itg
+	"com" cnjadv
 "<aqueth>"
 	"aqueth" det dem m sg
 "<nuclèu>"
 	"nuclèu" n m sg
 "<qu'>"
-	"que" cnjsub
 	"que" adv enon
-	"que" rel an mf sp
 "<ei>"
 	"èsser" vbser pri p3 sg
 "<100>"
@@ -395,41 +371,28 @@
 	"mei" adv
 "<petit>"
 	"petit" adj m sg
-;	"petit" n m sg
-"<que>"
+"<qu'>"
 	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
-"<'u>"
-	"'u" n f sg
+"<u>"
+	"u" n m sg
 "<son>"
-	"èsser" vbser pri p3 pl
-	"èster" vbser pri p3 pl
 	"son" det pos m sg
-;	"son" n m sg
-;	"son" det pos f sg
 "<atòm>"
 	"atòm" n m sg
 "<,>"
 	"," cm
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" adv enon
 "<cau>"
-	"*cau"
+	"cau" vbmod pri p3 sg
 "<logicament>"
 	"logicament" adv
 "<soslinhar>"
 	"soslinhar" vblex inf
 "<que>"
 	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg
-;	"lo" prn pro p3 m sg
 "<atòm>"
 	"atòm" n m sg
 "<(>"
@@ -440,60 +403,38 @@
 	"donc" cnjadv
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg
 "<matèria>"
 	"matèria" n f sg
 "<)>"
 	")" rpar
 "<qu'>"
-	"que" cnjsub
 	"que" adv enon
-	"que" rel an mf sp
 "<ei>"
 	"èster" vbser pri p3 sg
-"<mei>"
-	"mei" adv
-"<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
-"<mei>"
-	"mei" adv
+"<mei que mei>"
+	"mei que mei" adv
 "<compausat>"
-	"compausat" adj m sg
 	"compausar" vblex pp m sg
-;	"compausat" n m sg
 "<de>"
 	"de" pr
 "<vueit>"
-	"*vueit"
+	"vueit" n m sg
 "<.>"
 	"." sent
 ¶
 "<Lo>"
 	"lo" det def m sg
-	"lo" prn pro p3 m sg
 "<nombre>"
 	"nombre" n m sg
-	"nombrar" vblex prs p3 sg
-	"nombrar" vblex pri p1 sg
-	"nombrar" vblex prs p1 sg
-;	"nombrar" vblex imp p3 sg
 "<de>"
 	"de" pr
 "<cargas>"
 	"carga" n f pl
-	"cargar" vblex pri p2 sg
 "<positivas>"
 	"positiu" adj f pl
 "<deu>"
-	"deure" vbmod pri p3 sg
 	"de" pr
 		"lo" det def m sg
-	"deure" vblex pri p3 sg
-	"dever" vbmod pri p3 sg
-	"déuer" vbmod pri p3 sg
-;	"deure" vblex imp p2 sg
 "<nuclèu>"
 	"nuclèu" n m sg
 "<(>"
@@ -503,77 +444,55 @@
 "<donc>"
 	"donc" cnjadv
 "<tanben>"
-	"tanben" preadv
-;	"tanben" adv
+	"tanben" adv
 "<egau>"
 	"egau" adj mf sg
-;	"egau" n mf sg
 "<au>"
 	"a" pr
 		"lo" det def m sg
 "<nombre>"
 	"nombre" n m sg
-	"nombrar" vblex prs p3 sg
-	"nombrar" vblex pri p1 sg
-	"nombrar" vblex prs p1 sg
-;	"nombrar" vblex imp p3 sg
 "<d'>"
 	"de" pr
 "<electrons>"
 	"electron" n m pl
 "<qui>"
-	"qui" prn itg mf sp
 	"qui" rel nn mf sp
 "<viran>"
 	"virar" vblex pri p3 pl
 "<autorn>"
-	"*autorn"
+	"autorn" adv
 "<)>"
 	")" rpar
 "<qu'>"
-	"que" cnjsub
 	"que" adv enon
-	"que" rel an mf sp
 "<ei>"
 	"èster" vbser pri p3 sg
 "<lo>"
 	"lo" det def m sg
-	"lo" prn pro p3 m sg
 "<nombre>"
 	"nombre" n m sg
-	"nombrar" vblex prs p3 sg
-	"nombrar" vblex pri p1 sg
-	"nombrar" vblex prs p1 sg
-;	"nombrar" vblex imp p3 sg
 "<atomic>"
 	"atomic" adj m sg
 "<de>"
 	"de" pr
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg
-;	"lo" prn pro p3 m sg
 "<atòm>"
 	"atòm" n m sg
 "<e>"
 	"e" cnjcoo
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" adv enon
 "<determina>"
 	"determinar" vblex pri p3 sg
-;	"determinar" vblex imp p2 sg
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg
-;	"lo" prn pro p3 m sg
 "<element>"
 	"element" n m sg
 "<d'>"
 	"de" pr
 "<aqueth>"
-	"aqueth" prn tn m sg
 	"aqueth" det dem m sg
 "<atòm>"
 	"atòm" n m sg
@@ -582,7 +501,6 @@
 ¶
 "<Lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg
 "<concèpte>"
 	"concèpte" n m sg
 "<d'>"
@@ -593,47 +511,34 @@
 	"(" lpar
 "<l'>"
 	"lo" det def mf sg
-	"lo" prn pro p3 f sg
-	"lo" prn pro p3 m sg
 "<idèa>"
 	"idèa" n f sg
-	"idear" vblex pri p3 sg
-;	"idear" vblex imp p2 sg
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
 	"que" rel an mf sp
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg
 "<matèria>"
 	"matèria" n f sg
 "<que>"
 	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
 "<'s>"
 	"se" prn pro ref p3 mf sp
 "<pòt>"
 	"poder" vbmod pri p3 sg
 "<trencar>"
-	"*trencar"
+	"trencar" vblex inf
 "<en>"
 	"en" pr
-	"en" prn pro adv
 "<partidas>"
-	"partit" adj f pl
 	"partida" n f pl
-	"partir" vblex pp f pl
 "<elementàrias>"
 	"elementari" adj f pl
 "<qui>"
-	"qui" prn itg mf sp
 	"qui" rel nn mf sp
 "<,>"
 	"," cm
 "<eras>"
-	"eth" det def f pl
+	"eth" prn tn p3 f pl
 "<,>"
 	"," cm
 "<no>"
@@ -641,7 +546,7 @@
 "<'s>"
 	"se" prn pro ref p3 mf sp
 "<pòden>"
-	"*pòden"
+	"poder" vbmod pri p3 pl
 "<pas>"
 	"pas" adv
 "<trencar>"
@@ -651,64 +556,45 @@
 "<->"
 	"-" guio 
 "<com>"
-	"com" pr
-	"com" adv itg
-"<lo>"
-	"lo" det def m sg
-	"lo" prn pro p3 m sg
-"<son>"
-	"son" n m sg
-	"èsser" vbser pri p3 pl
-	"son" det pos m sg
-	"èster" vbser pri p3 pl
-;	"son" det pos f sg
+	"com" cnjadv
+"<lo son>"
+	"lo son" prn tn pos m sg
 "<nom>"
 	"nom" n m sg
 "<grèc>"
 	"grèc" adj m sg
-;	"grèc" n m sg
 "<ac>"
-	"ac" prn pro p3 nt
+	"ac" barb
 "<muisha>"
-	"*muisha"
+	"muisha" barb
 "<->"
 	"-" guio
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" adv enon
 "<ho>"
-	"*ho"
+	"estre" vbser ifi p3 sg
 "<perpausat>"
-	"*perpausat"
+	"perpausar" vblex pp m sg
 "<durant>"
 	"durant" pr
-	"durar" vblex ger
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg
-;	"lo" prn pro p3 m sg
 "<antiquitat>"
 	"antiquitat" n f sg
 "<mes>"
-	"mes" adv
-	"metre" vblex pp m sg
-;	"mes" n m sg
+	"mes" cnjcoo
 "<non pas>"
 	"non pas" adv
 "<ho>"
-	"*ho"
+	"estre" vbser ifi p3 sg
 "<definitivament>"
 	"definitivament" adv
 "<adoptada>"
-	"adoptat" adj f sg
 	"adoptar" vblex pp f sg
 "<abans>"
-	"abans" adv
 	"abans" pr
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg
 "<sègle>"
 	"sègle" n m sg
 "<XVIII>"
@@ -718,16 +604,10 @@
 ¶
 "<Se>"
 	"se" cnjadv
-	"se" prn pro ref p3 mf sp
 "<lo>"
 	"lo" det def m sg
-	"lo" prn pro p3 m sg
 "<nombre>"
 	"nombre" n m sg
-	"nombrar" vblex prs p3 sg
-	"nombrar" vblex pri p1 sg
-	"nombrar" vblex prs p1 sg
-;	"nombrar" vblex imp p3 sg
 "<de>"
 	"de" pr
 "<protons>"
@@ -736,16 +616,11 @@
 	"(" lpar
 "<egau>"
 	"egau" adj mf sg
-;	"egau" n mf sg
 "<au>"
 	"a" pr
 		"lo" det def m sg
 "<nombre>"
 	"nombre" n m sg
-	"nombrar" vblex prs p3 sg
-	"nombrar" vblex pri p1 sg
-	"nombrar" vblex prs p1 sg
-;	"nombrar" vblex imp p3 sg
 "<d'>"
 	"de" pr
 "<electrons>"
@@ -758,51 +633,33 @@
 	"èster" vbser pri p3 sg
 "<fixe>"
 	"fixe" adj m sg
-	"fixar" vblex prs p3 sg
-	"fixar" vblex pri p1 sg
-	"fixar" vblex prs p1 sg
-;	"fixar" vblex imp p3 sg
 "<e>"
 	"e" cnjcoo
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" adv enon
 "<determina>"
 	"determinar" vblex pri p3 sg
-;	"determinar" vblex imp p2 sg
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg
-;	"lo" prn pro p3 m sg
 "<identitat>"
 	"identitat" n f sg
 "<d'>"
 	"de" pr
 "<un>"
 	"un" det ind m sg
-;	"un" num m sp
-;	"un" n m sg
-;	"un" prn tn m sg
 "<element>"
 	"element" n m sg
 "<,>"
 	"," cm
 "<lo>"
 	"lo" det def m sg
-	"lo" prn pro p3 m sg
 "<nombre>"
 	"nombre" n m sg
-	"nombrar" vblex prs p3 sg
-	"nombrar" vblex pri p1 sg
-	"nombrar" vblex prs p1 sg
-;	"nombrar" vblex imp p3 sg
 "<de>"
 	"de" pr
 "<neutrons>"
 	"neutron" n m pl
 "<eth>"
-	"eth" det def m sg
 	"eth" prn tn p3 m sg
 "<(>"
 	"(" lpar
@@ -814,34 +671,24 @@
 	"atau" adv
 "<lo>"
 	"lo" det def m sg
-	"lo" prn pro p3 m sg
 "<nombre>"
 	"nombre" n m sg
-	"nombrar" vblex prs p3 sg
-	"nombrar" vblex pri p1 sg
-	"nombrar" vblex prs p1 sg
-;	"nombrar" vblex imp p3 sg
 "<totau>"
 	"totau" adj mf sg
-	"total" n m sg
 "<d'>"
 	"de" pr
 "<elements>"
 	"element" n m pl
 "<compausant>"
 	"compausar" vblex ger
-;	"compausant" n m sg
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg
 "<nuclèu>"
 	"nuclèu" n m sg
 "<)>"
 	")" rpar
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" adv enon
 "<pòt>"
 	"poder" vbmod pri p3 sg
 "<variar>"
@@ -850,18 +697,14 @@
 	"." sent
 ¶
 "<Dus>"
-	"*Dus"
+	"Dus" num m sp
 "<atòms>"
 	"atòm" n m pl
 "<d'>"
 	"de" pr
 "<un>"
 	"un" det ind m sg
-;	"un" num m sp
-;	"un" n m sg
-;	"un" prn tn m sg
 "<medish>"
-	"medish" adv
 	"medish" adj m sg
 "<element>"
 	"element" n m sg
@@ -869,15 +712,8 @@
 	"dab" pr
 "<un>"
 	"un" det ind m sg
-;	"un" num m sp
-;	"un" n m sg
-;	"un" prn tn m sg
 "<nombre>"
 	"nombre" n m sg
-	"nombrar" vblex prs p3 sg
-	"nombrar" vblex pri p1 sg
-	"nombrar" vblex prs p1 sg
-;	"nombrar" vblex imp p3 sg
 "<diferent>"
 	"diferent" adj m sg
 "<de>"
@@ -885,20 +721,16 @@
 "<neutrons>"
 	"neutron" n m pl
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
 	"que" rel an mf sp
 "<constitueishen>"
-	"*constitueishen"
+	"constituir" vblex pri p3 pl
 "<dus>"
-	"*dus"
+	"dus" num m sp
 "<isotòps>"
-	"isotòp" adj m pl
-;	"isotòp" n m pl
+	"isotòp" n m pl
 "<d'>"
 	"de" pr
 "<aqueth>"
-	"aqueth" prn tn m sg
 	"aqueth" det dem m sg
 "<element>"
 	"element" n m sg
@@ -907,18 +739,12 @@
 ¶
 "<Un>"
 	"un" det ind m sg
-;	"un" n m sg
-;	"un" num m sp
-;	"un" prn tn m sg
 "<medish>"
-	"medish" adv
 	"medish" adj m sg
 "<element>"
 	"element" n m sg
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" adv enon
 "<pòt>"
 	"poder" vbmod pri p3 sg
 "<comptar>"
@@ -927,35 +753,27 @@
 	"dab" pr
 "<un>"
 	"un" det ind m sg
-;	"un" num m sp
-;	"un" n m sg
-;	"un" prn tn m sg
 "<sarròt>"
-	"*sarròt"
+	"sarròt" n m sg
 "<d'>"
 	"de" pr
 "<isotòps>"
-	"isotòp" adj m pl
 	"isotòp" n m pl
 "<.>"
 	"." sent
 ¶
 "<Cèrtes>"
-	"cèrtes" prn tn m pl
+	"cèrt" det ind m pl
 "<isotòps>"
-	"isotòp" adj m pl
 	"isotòp" n m pl
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" adv enon
 "<pòden>"
-	"*pòden"
+	"poder" vbmod pri p3 pl
 "<estar>"
 	"estar" vblex inf
-;	"estar" n m sg
 "<inestables>"
-	"*inestables"
+	"inestable" adj m pl
 "<e>"
 	"e" cnjcoo
 "<,>"
@@ -973,127 +791,86 @@
 	"dab" pr
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg
 "<temps>"
 	"temps" n m sg
 "<,>"
 	"," cm
 "<un>"
 	"un" det ind m sg
-;	"un" n m sg
-;	"un" num m sp
-;	"un" prn tn m sg
 "<isotòp>"
-	"isotòp" adj m sg
 	"isotòp" n m sg
 "<radioactiu>"
 	"radioactiu" adj m sg
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" adv enon
 "<'s>"
-	"s" n f sp
+	"se" prn pro ref p3 mf sp
 "<pòt>"
 	"poder" vbmod pri p3 sg
 "<transformar>"
 	"transformar" vblex inf
 "<en>"
 	"en" pr
-;	"en" prn pro adv
 "<un>"
 	"un" det ind m sg
-;	"un" num m sp
-;	"un" n m sg
-;	"un" prn tn m sg
 "<aute>"
 	"aute" adj ind m sg
 "<isotòp>"
-	"isotòp" adj m sg
 	"isotòp" n m sg
 "<o>"
 	"o" cnjcoo
-;	"o" prn pro p3 nt
 "<element>"
 	"element" n m sg
 "<per>"
-	"per" adv
-;	"per" pr
+	"per" pr
 "<transmutacion>"
-	"*transmutacion"
-"<en>"
-	"en" pr
-;	"en" prn pro adv
-"<bèth>"
-	"bèth" det ind m sg
-;	"bèl" n m sg
+	"transmutacion" n f sg
+"<en bèth>"
+	"en bèth" pr
 "<cambiar>"
 	"cambiar" vblex inf
-"<lo>"
-	"lo" det def m sg
-	"lo" prn pro p3 m sg
-"<son>"
-	"son" n m sg
-	"èsser" vbser pri p3 pl
-	"son" det pos m sg
-	"èster" vbser pri p3 pl
-;	"son" det pos f sg
+"<lo son>"
+	"lo" det pos m sg
 "<nombre>"
 	"nombre" n m sg
-	"nombrar" vblex prs p3 sg
-	"nombrar" vblex pri p1 sg
-	"nombrar" vblex prs p1 sg
-;	"nombrar" vblex imp p3 sg
 "<de>"
 	"de" pr
 "<particulas>"
 	"particula" n f pl
 "<dehens>"
-	"*dehens"
+	"dehens" pr
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg
 "<nuclèu>"
 	"nuclèu" n m sg
 "<.>"
 	"." sent
 ¶
 "<Deu>"
-	"Deu" np cog mf sp
-	"deure" vbmod pri p3 sg
 	"de" pr
 		"lo" det def m sg
-	"deure" vblex pri p3 sg
-	"dever" vbmod pri p3 sg
-	"déuer" vbmod pri p3 sg
-;	"deure" vblex imp p2 sg
 "<punt>"
-	"punt" adv
 	"punt" n m sg
 "<de>"
 	"de" pr
 "<vista>"
 	"vista" n f sg
-	"veir" vblex pp f sg
 "<de>"
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg
 "<filosofia>"
 	"filosofia" n f sg
 "<,>"
 	"," cm
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg
 "<concèpte>"
 	"concèpte" n m sg
 "<e>"
 	"e" cnjcoo
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg
 "<mot>"
 	"mot" n m sg
 "<d'>"
@@ -1101,82 +878,55 @@
 "<atòm>"
 	"atòm" n m sg
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" adv enon
 "<hon>"
-	"hóner" vblex pri p3 sg
-;	"hóner" vblex imp p2 sg
+	"estre" vbser ifi p3 pl
 "<perpausats>"
-	"*perpausats"
+	"perpausar" vblex pp m sg
 "<dens>"
-	"dens" adj m sg
+	"dens" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg
 "<Grècia>"
 	"Grècia" np top f sg
 "<Antica>"
 	"antic" adj f sg
 "<per>"
-	"per" adv
-;	"per" pr
+	"per" pr
 "<Leucip>"
-	"*Leucip"
+	"Leucip" np ant m sg
 "<e>"
 	"e" cnjcoo
-"<lo>"
-	"lo" det def m sg
-	"lo" prn pro p3 m sg
-"<son>"
-	"son" n m sg
-	"èsser" vbser pri p3 pl
-	"son" det pos m sg
-	"èster" vbser pri p3 pl
-;	"son" det pos f sg
+"<lo son>"
+	"lo son" det pos m sg
 "<discípol>"
 	"discípol" n m sg
 "<Democrit>"
-	"*Democrit"
-"<en>"
-	"en" pr
-;	"en" prn pro adv
-"<bèth>"
-	"bèth" det ind m sg
-;	"bèl" n m sg
+	"Democrit" np ant m sg
+"<en bèth>"
+	"en bèth" pr
 "<apujà>"
-	"*apujà"
+	"apujar" vblex inf
 "<'s>"
-	"s" n f sp
+	"se" prn pro ref p3 mf sp
 "<suber>"
-	"*suber"
+	"suber" pr
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg
-;	"lo" prn pro p3 m sg
 "<idea>"
-	"*idea"
+	"idea" n f sg
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
 	"que" rel an mf sp
 "<s'>"
 	"se" cnjadv
-;	"se" prn pro ref p3 mf sp
 "<un>"
 	"un" det ind m sg
-;	"un" n m sg
-;	"un" num m sp
-;	"un" prn tn m sg
 "<objècte>"
 	"objècte" n m sg
-	"objectar" vblex prs p3 sg
-	"objectar" vblex prs p1 sg
-;	"objectar" vblex imp p3 sg
 "<e>"
-	"e" cnjcoo
+	"e" adv enon
 "<'s>"
-	"s" n f sp
+	"se" prn pro ref p3 mf sp
 "<pòt>"
 	"poder" vbmod pri p3 sg
 "<copar>"
@@ -1185,25 +935,17 @@
 	"," cm
 "<aquò>"
 	"aquò" prn tn nt
-	"aquò" prn tn p3 nt
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
 	"que" rel an mf sp
 "<vòu>"
 	"voler" vbmod pri p3 sg
-	"voler" vblex pri p3 sg
 "<díser>"
 	"dire" vblex inf
 "<qu'>"
-	"que" cnjsub
-	"que" adv enon
-	"que" rel an mf sp
+	"que" rel adv
 "<ei>"
 	"èster" vbser pri p3 sg
 "<compausat>"
-	"compausat" adj m sg
-	"compausat" n m sg
 	"compausar" vblex pp m sg
 "<d'>"
 	"de" pr
@@ -1213,22 +955,20 @@
 	"basic" adj m pl
 "<qui>"
 	"qui" prn itg mf sp
-	"qui" rel nn mf sp
 "<eths>"
-	"eth" det def m pl
+	"eth" prn tn p3 m pl
 "<,>"
 	"," cm
 "<no>"
 	"no" adv
 "<'s>"
-	"s" n f sp
+	"se" prn pro ref p3 mf sp
 "<pòden>"
-	"*pòden"
+	"poder" vbmod pri p3 pl
 "<pas>"
 	"pas" adv
-;	"pas" n m sg
 "<trencar>"
-	"*trencar"
+	"trencar" vblex inf
 "<.>"
 	"." sent
 ¶
@@ -1237,48 +977,37 @@
 "<,>"
 	"," cm
 "<aquesta>"
-	"aqueste" prn tn f sg
 	"aqueste" det dem f sg
 "<teoria>"
 	"teoria" n f sg
 "<non>"
 	"non" adv
 "<ho>"
-	"*ho"
+	"estre" vbser ifi p3 sg
 "<pas>"
 	"pas" adv
-;	"pas" n m sg
 "<privilegiada>"
 	"privilegiat" adj f sg
-	"privilegiar" vblex pp f sg
 "<durant>"
 	"durant" pr
-	"durar" vblex ger
 "<los>"
 	"lo" det def m pl
-;	"lo" prn pro p3 m pl
 "<sègles>"
 	"sègle" n m pl
 "<seguents>"
 	"seguent" adj m pl
-;	"seguent" n m pl
 "<e>"
 	"e" cnjcoo
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" adv enon
 "<se>"
-	"se" cnjadv
 	"se" prn pro ref p3 mf sp
 "<la>"
-	"lo" det def f sg
 	"lo" prn pro p3 f sg
 "<preferí>"
 	"preferir" vblex imp p2 sg
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg
 "<concèpte>"
 	"concèpte" n m sg
 "<deus>"
@@ -1300,7 +1029,6 @@
 	"," cm
 "<aiga>"
 	"aiga" n f sg
-	"aigua" n f sg
 "<e>"
 	"e" cnjcoo
 "<aire>"
@@ -1325,36 +1053,24 @@
 ¶
 "<Un>"
 	"un" det ind m sg
-;	"un" n m sg
-;	"un" num m sp
-;	"un" prn tn m sg
 "<pas>"
-	"pas" adv
 	"pas" n m sg
 "<determinant>"
-	"determinar" vblex ger
 	"determinant" adj m sg
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" adv enon
 "<hon>"
-	"hóner" vblex pri p3 sg
-;	"hóner" vblex imp p2 sg
-"<provesit>"
+	"estre" vbser ifi p3 pl
+"<provesit>"  PER QUÈ NO PROVESITS??
 	"provesir" vblex pp m sg
 "<peus>"
-	"pel" n m pl
+	"per" pr
+		"lo" det def m sg
 "<tribalhs>"
-	"*tribalhs"
+	"tribalh" n m pl
 "<deu>"
-	"deure" vbmod pri p3 sg
 	"de" pr
 		"lo" det def m sg
-	"deure" vblex pri p3 sg
-	"dever" vbmod pri p3 sg
-	"déuer" vbmod pri p3 sg
-;	"deure" vblex imp p2 sg
 "<picard>"
 	"picard" adj m sg
 "<Antoine>"
@@ -1362,37 +1078,28 @@
 "<Lavoisier>"
 	"Lavoisier" np cog mf sp
 "<qui>"
-	"qui" prn itg mf sp
 	"qui" rel nn mf sp
 "<,>"
 	"," cm
 "<deu>"
-	"deure" vbmod pri p3 sg
 	"de" pr
 		"lo" det def m sg
-	"deure" vblex pri p3 sg
-	"dever" vbmod pri p3 sg
-	"déuer" vbmod pri p3 sg
-;	"deure" vblex imp p2 sg
 "<punt>"
-	"punt" adv
 	"punt" n m sg
 "<de>"
 	"de" pr
 "<vista>"
 	"vista" n f sg
-	"veir" vblex pp f sg
 "<de>"
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg
 "<quimia>"
 	"quimia" n f sg
 "<e>"
 	"e" cnjcoo
 "<muishè>"
-	"*muishè"
+	"muishar" vblex ifi p3 sg
 "<">"
 	""" quot
 "<la>"
@@ -1416,14 +1123,11 @@
 "<díser>"
 	"dire" vblex inf
 "<que>"
-	"que" cnjadv
 	"que" cnjsub
-	"que" rel an mf sp
 "<dens>"
-	"dens" adj m sg
+	"dens" pr
 "<ua>"
 	"un" det ind f sg
-;	"un" prn tn f sg
 "<reaccion>"
 	"reaccion" n f sg
 "<quimica>"
@@ -1432,9 +1136,7 @@
 	"," cm
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg
 "<massa>"
-	"massa" adv
 	"massa" n f sg
 "<deus>"
 	"de" pr
@@ -1444,27 +1146,16 @@
 "<reactius>"
 	"reactiu" adj m pl
 "<qu'>"
-	"que" cnjsub
 	"que" adv enon
-	"que" rel an mf sp
 "<ei>"
 	"èster" vbser pri p3 sg
 "<egala>"
 	"egal" adj f sg
-	"egal" n f sg
-	"egalar" vblex pri p3 sg
-;	"egalar" vblex imp p2 sg
 "<a>"
 	"a" pr
-	"aver" vbhaver pri p3 sg
-	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg
 "<massa>"
-	"massa" adv
 	"massa" n f sg
 "<deus>"
 	"de" pr
@@ -1474,63 +1165,50 @@
 "<generats>"
 	"generar" vblex pp m pl
 "<per>"
-	"per" adv
 	"per" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg
 "<reaccion>"
 	"reaccion" n f sg
 "<.>"
 	"." sent
 ¶
 "<Mes>"
-	"mes" adv
-	"metre" vblex pp m sg
-;	"mes" n m sg
+	"mes" cnjcoo
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg
 "<pair>"
 	"pair" n m sg
 "<de>"
 	"de" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg
 "<Teoria>"
 	"teoria" n f sg
 "<Atomica>"
 	"atomic" adj f sg
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" adv enon
 "<ho>"
-	"*ho"
+	"estre" vbser ifi p3 sg
 "<John>"
 	"John" np ant m sg
 "<Dalton>"
 	"Dalton" np cog mf sp
 "<qui>"
-	"qui" prn itg mf sp
 	"qui" rel nn mf sp
 "<,>"
 	"," cm
 "<en>"
-	"en" prn pro adv
-;	"en" pr
+	"en" pr
 "<s'>"
-	"se" cnjadv
-;	"se" prn pro ref p3 mf sp
+	"se" prn pro ref p3 mf sp
 "<apujant>"
-	"*apujant"
+	"apujar" vblex ger
 "<suber>"
-	"*suber"
+	"suber" pr
 "<las>"
-	"las" adj m sg
 	"lo" det def f pl
-;	"lo" prn pro p3 f pl
 "<observacions>"
 	"observacion" n f pl
 "<quimicas>"
@@ -1538,7 +1216,7 @@
 "<,>"
 	"," cm
 "<ensagè>"
-	"*ensagè"
+	"ensajar" vblex ifi p3 sg
 "<d'>"
 	"de" pr
 "<isolar>"
@@ -1550,33 +1228,22 @@
 	"identificar" vblex inf
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg
-;	"lo" prn pro p3 m sg
 "<identitat>"
 	"identitat" n f sg
 "<e>"
 	"e" cnjcoo
 "<las>"
-	"las" adj m sg
 	"lo" det def f pl
-;	"lo" prn pro p3 f pl
 "<proprietats>"
 	"proprietat" n f pl
 "<d'>"
 	"de" pr
 "<un>"
 	"un" det ind m sg
-;	"un" num m sp
-;	"un" n m sg
-;	"un" prn tn m sg
 "<cèrte>"
-	"*cèrte"
+	"cèrte" adj m sg
 "<nombre>"
-	"nombrar" vblex prs p1 sg
-	"nombrar" vblex prs p3 sg
-	"nombrar" vblex pri p1 sg
-;	"nombrar" vblex imp p3 sg
-;	"nombre" n m sg
+	"nombre" n m sg
 "<d'>"
 	"de" pr
 "<elements>"
@@ -1584,7 +1251,7 @@
 "<considerats>"
 	"considerar" vblex pp m pl
 "<indestructibles>"
-	"*indestructibles"
+	"indestructible" adj m pl
 "<e>"
 	"e" cnjcoo
 "<capables>"
@@ -1592,7 +1259,6 @@
 "<de>"
 	"de" pr
 "<s'>"
-	"se" cnjadv
 	"se" prn pro ref p3 mf sp
 "<associar>"
 	"associar" vblex inf
@@ -1608,20 +1274,17 @@
 "<Dalton>"
 	"Dalton" np cog mf sp
 "<qu'>"
-	"que" cnjsub
-	"que" rel an mf sp
-;	"que" adv enon
+	"que" adv enon
 "<ensagè>"
-	"*ensagè"
+	"ensajar" vblex ifi p3 sg
 "<atau>"
 	"atau" adv
 "<de>"
 	"de" pr
 "<hargar>"
-	"*hargar"
+	"hargar" vblex inf
 "<ua>"
 	"un" det ind f sg
-;	"un" prn tn f sg
 "<classificacion>"
 	"classificacion" n f sg
 "<deus>"
@@ -1630,17 +1293,15 @@
 "<elements>"
 	"element" n m pl
 "<qui>"
-	"qui" prn itg mf sp
 	"qui" rel nn mf sp
 "<,>"
 	"," cm
 "<pionièra>"
 	"pionièr" adj f sg
-;	"pionièr" n f sg
 "<,>"
 	"," cm
 "<patishèva>"
-	"*patishèva"
+	"patìsher" vblex pii p3 sg
 "<de>"
 	"de" pr
 "<mantua>"
@@ -1652,30 +1313,24 @@
 ¶
 "<Lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg
 "<quimista>"
 	"quimista" n mf sg
 "<rus>"
 	"rus" adj m sg
-;	"rus" n m sg
 "<Dmitrii>"
-	"*Dmitrii"
+	"Dmitrii" np ant m sg
 "<Mendeleiev>"
-	"*Mendeleiev"
+	"Mendeleiev" np cog mf sp
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" adv enon
 "<publiquè>"
-	"*publiquè"
+	"publicar" vblex ifi p3 sg
 "<en>"
 	"en" pr
-;	"en" prn pro adv
 "<1869>"
 	"1869" num
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg
 "<Taula>"
 	"taula" n f sg
 "<periodica>"
@@ -1683,20 +1338,15 @@
 "<e>"
 	"e" cnjcoo
 "<s'>"
-	"se" cnjadv
-;	"se" prn pro ref p3 mf sp
+	"se" prn pro ref p3 mf sp
 "<apujant>"
-	"*apujant"
+	"apujar" vblex inf
 "<suber>"
-	"*suber"
+	"suber" pr
 "<las>"
-	"las" adj m sg
 	"lo" det def f pl
-	"lo" prn pro p3 f pl
 "<descobèrtas>"
-	"descobèrt" adj f pl
 	"descobèrta" n f pl
-	"descobrir" vblex pp f pl
 "<experimentalas>"
 	"experimental" adj f pl
 "<e>"
@@ -1704,55 +1354,48 @@
 "<empiricas>"
 	"empiric" adj f pl
 "<qui>"
-	"qui" prn itg mf sp
 	"qui" rel nn mf sp
 "<suggereishen>"
-	"*suggereishen"
+	"suggerir" vblex pri p3 pl
 "<que>"
-	"que" cnjadv
 	"que" cnjsub
-	"que" rel an mf sp
 "<,>"
 	"," cm
-"<un còp>"
-	"un còp" adv
+"<un>"
+	"un" det ind m sg
+"<còp>"
+	"còp" n m sg
 "<classats>"
 	"classar" vblex pp m pl
 "<los>"
 	"lo" det def m pl
-;	"lo" prn pro p3 m pl
 "<elements>"
 	"element" n m pl
 "<en>"
 	"en" pr
-;	"en" prn pro adv
 "<òrdi>"
 	"òrdi" n m sg
 "<creishent>"
-	"créisher" vblex ger
 	"creishent" adj m sg
 "<de>"
 	"de" pr
 "<massa>"
-	"massa" adv
 	"massa" n f sg
 "<,>"
 	"," cm
 "<be>"
-	"*be"
+	"be" adv enon
 "<semblan>"
 	"semblar" vblex pri p3 pl
 "<ostentar>"
-	"*ostentar"
+	"ostentar" vblex inf
 "<periodicament>"
 	"periodicament" adv
 "<proprietats>"
 	"proprietat" n f pl
 "<comunas>"
 	"comun" adj f pl
-;	"comuna" n f pl
 "<qui>"
-	"qui" prn itg mf sp
 	"qui" rel nn mf sp
 "<tornan>"
 	"tornar" vblex pri p3 pl
@@ -1763,125 +1406,81 @@
 ¶
 "<En>"
 	"en" pr
-;	"en" prn pro adv
 "<1897>"
 	"1897" num
 "<Joseph>"
 	"Joseph" np ant m sg
-	"Joseph" np cog mf sp
 "<John>"
 	"John" np ant m sg
 "<Thomson>"
-	"Thomson" np al
 	"Thomson" np cog mf sp
 "<descobrí>"
-	"*descobrí"
+	"descobrir" vblex ifi p3 sg
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg
-;	"lo" prn pro p3 m sg
 "<electron>"
 	"electron" n m sg
-"<en>"
-	"en" pr
-;	"en" prn pro adv
-"<lo>"
-	"lo" det def m sg
-;	"lo" prn pro p3 m sg
-"<bèth>"
-	"bèth" det ind m sg
-;	"bèl" n m sg
+"<en lo bèth>"
+	"en lo bèth" pr ???
 "<identificar>"
 	"identificar" vblex inf
 "<com>"
-	"com" pr
-	"com" adv itg
+	"com" cnjadv
 "<ua>"
 	"un" det ind f sg
-;	"un" prn tn f sg
 "<particula>"
 	"particula" n f sg
 "<subatomica>"
 	"subatomic" adj f sg
 "<en tot>"
-	"en tot" adv
+	"en tot" adv ???
 "<muishar>"
-	"*muishar"
+	"*muishar" ???
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" adv enon ???
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg
-;	"lo" prn pro p3 m sg
 "<atòm>"
 	"atòm" n m sg
 "<(>"
 	"(" lpar
 "<en>"
 	"en" pr
-;	"en" prn pro adv
 "<contradiccion>"
 	"contradiccion" n f sg
 "<dab>"
 	"dab" pr
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg
-;	"lo" prn pro p3 m sg
 "<etimologia>"
 	"etimologia" n f sg
 "<deu>"
-	"deure" vbmod pri p3 sg
 	"de" pr
 		"lo" det def m sg
-	"deure" vblex pri p3 sg
-	"dever" vbmod pri p3 sg
-	"déuer" vbmod pri p3 sg
-;	"deure" vblex imp p2 sg
 "<son>"
-	"son" n m sg
-	"èsser" vbser pri p3 pl
-	"son" det pos m sg
-	"èster" vbser pri p3 pl
-;	"son" det pos f sg
+	"son" det pos f sg
 "<nom>"
 	"nom" n m sg
 "<)>"
 	")" rpar
 "<qu'>"
-	"que" cnjsub
 	"que" adv enon
-	"que" rel an mf sp
 "<èra>"
-	"èster" vbser pii p1 sg
 	"èsser" vbser pii p3 sg
-;	"èra" n f sg
-"<en>"
-	"en" pr
-;	"en" prn pro adv
-"<vertat>"
-	"vertat" n f sg
+"<en vertat>"
+	"en" adv
 "<divisible>"
 	"divisible" adj m sg
 "<.>"
 	"." sent
 ¶
 "<Que>"
-	"que" cnjadv
-;	"que" cnjsub
-;	"que" rel an mf sp
+	"que" adv enon
 "<perpausè>"
-	"*perpausè"
+	"perpausar" vblex ifi p3 sg
 "<un>"
 	"un" det ind m sg
-;	"un" n m sg
-;	"un" num m sp
-;	"un" prn tn m sg
 "<modèl>"
-	"modèl" adj m sg
-	"modèl" n mf sg
 	"modèl" n m sg
 "<atomic>"
 	"atomic" adj m sg
@@ -1892,20 +1491,17 @@
 "<considerat>"
 	"considerar" vblex pp m sg
 "<com>"
-	"com" pr
-	"com" adv itg
+	"com" cnjadv
 "<faus>"
-	"fau" n m pl
 	"faus" adj m sg
 "<)>"
 	")" rpar
 "<on>"
-	"on" adv itg
+	"on" rel adv
 "<explicava>"
 	"explicar" vblex pii p3 sg
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg
 "<neutralitat>"
 	"neutralitat" n f sg
 "<electrica>"
@@ -1914,61 +1510,37 @@
 	"de" pr
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg
-;	"lo" prn pro p3 m sg
 "<atòm>"
 	"atòm" n m sg
-"<en>"
-	"en" pr
-;	"en" prn pro adv
-"<lo>"
-	"lo" det def m sg
-;	"lo" prn pro p3 m sg
-"<bèth>"
-	"bèth" det ind m sg
-;	"bèl" n m sg
+"<en lo bèth>"
+	"en lo bèth" pr
 "<descríver>"
 	"descríuer" vblex inf
 "<com>"
-	"com" pr
-	"com" adv itg
+	"com" cnjadv
 "<un>"
 	"un" det ind m sg
-;	"un" num m sp
-;	"un" n m sg
-;	"un" prn tn m sg
 "<pudding>"
-	"*pudding"
+	"pudding" n m sg
 "<anglés>"
 	"anglés" adj m sg
-;	"anglés" n m sg
 "<->"
 	"-" guio 
 "<l'>"
 	"lo" det def mf sg
-	"lo" prn pro p3 f sg
-	"lo" prn pro p3 m sg
 "<equivalent>"
-	"equivaler" vblex ger
-	"equivalent" adj m sg
 	"equivalent" n m sg
 "<deu>"
-	"deure" vbmod pri p3 sg
-	"déuer" vbmod pri p3 sg
-	"deure" vblex pri p3 sg
-	"dever" vbmod pri p3 sg
-;	"deure" vblex imp p2 sg
-;	"de" pr
-;		"lo" det def m sg
+	"de" pr
+		"lo" det def m sg
 "<clafotís>"
-	"*clafotís"
+	"clafotís" n m sg
 "<occitan>"
 	"occitan" adj m sg
-;	"occitan" n m sg
 "<->"
 	"-" guio 
 "<caupit>"
-	"*caupit"
+	"caupir" vblex pp m sg
 "<d'>"
 	"de" pr
 "<electrons>"
@@ -1985,52 +1557,37 @@
 	"1909" num
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg
 "<modèl>"
-	"modèl" adj m sg
 	"modèl" n mf sg
-	"modèl" n m sg
 "<deu>"
-	"deure" vbmod pri p3 sg
-	"déuer" vbmod pri p3 sg
-	"deure" vblex pri p3 sg
-	"dever" vbmod pri p3 sg
-;	"deure" vblex imp p2 sg
-;	"de" pr
-;		"lo" det def m sg
+	"de" pr
+		"lo" det def m sg
 "<pudding>"
-	"*pudding"
+	"pudding" n m sg
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" adv enon
 "<ho>"
-	"*ho"
+	"estre" vbser ifi p3 sg
 "<avalit>"
 	"avalir" vblex pp m sg
 "<per>"
-	"per" adv
 	"per" pr
 "<Ernest>"
 	"Ernest" np ant m sg
 "<Rutherford>"
 	"Rutherford" np cog mf sp
 "<qui>"
-	"qui" prn itg mf sp
 	"qui" rel nn mf sp
 "<muishè>"
-	"*muishè"
+	"muishar" vblex ifi p3 sg
 "<que>"
-	"que" cnjadv
 	"que" cnjsub
-	"que" rel an mf sp
 "<'n>"
-	"n" n f sg
+	"en" pr
 "<bombardant>"
 	"bombardar" vblex ger
 "<ua>"
 	"un" det ind f sg
-;	"un" prn tn f sg
 "<huelha>"
 	"huelha" n f sg
 "<d'>"
@@ -2044,32 +1601,23 @@
 "<α>"
 	"α" barb 
 "<qu'>"
-	"que" cnjsub
-	"que" rel an mf sp
-;	"que" adv enon
+	"que" adv enon
 "<ua>"
 	"un" det ind f sg
-;	"un" prn tn f sg
 "<petita>"
 	"petit" adj f sg
-	"petit" n f sg
 "<fraccion>"
 	"fraccion" n f sg
 "<d'>"
 	"de" pr
 "<aquestas>"
-	"aqueste" prn tn f pl
 	"aqueste" det dem f pl
 "<particulas>"
 	"particula" n f pl
 "<qu'>"
-	"que" cnjsub
 	"que" adv enon
-	"que" rel an mf sp
 "<èra>"
-	"èster" vbser pii p1 sg
 	"èsser" vbser pii p3 sg
-;	"èra" n f sg
 "<desviada>"
 	"desviar" vblex pp f sg
 "<enlòc>"
@@ -2077,12 +1625,11 @@
 "<de>"
 	"de" pr
 "<traucar>"
-	"*traucar"
+	"traucar" vblex inf
 "<linearament>"
-	"*linearament"
+	"linearament" adv
 "<los>"
 	"lo" det def m pl
-;	"lo" prn pro p3 m pl
 "<atòms>"
 	"atòm" n m pl
 "<d'>"
@@ -2091,13 +1638,12 @@
 	"aur" n m sg
 "<.>"
 	"." sent
-¶
+¶ 
 "<Entà>"
 	"entà" pr
 "<explicar>"
 	"explicar" vblex inf
 "<aqueth>"
-	"aqueth" prn tn m sg
 	"aqueth" det dem m sg
 "<fenomèn>"
 	"fenomèn" n m sg
@@ -2106,17 +1652,12 @@
 "<Rutherford>"
 	"Rutherford" np cog mf sp
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" adv enon
 "<perpausè>"
-	"*perpausè"
+	"perpausar" vblex ifi p3 sg
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg
 "<modèl>"
-	"modèl" adj m sg
-	"modèl" n mf sg
 	"modèl" n m sg
 "<planetari>"
 	"planetari" adj m sg
@@ -2124,77 +1665,62 @@
 	"de" pr
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg
-;	"lo" prn pro p3 m sg
 "<atòm>"
 	"atòm" n m sg
 "<:>"
 	":" sent
 "<un>"
 	"un" det ind m sg
-;	"un" n m sg
-;	"un" num m sp
-;	"un" prn tn m sg
 "<nuclèu>"
 	"nuclèu" n m sg
 "<hèra>"
-	"*hèra"
+	"hèra" adv
 "<petit>"
 	"petit" adj m sg
-;	"petit" n m sg
 "<dab>"
 	"dab" pr
 "<electrons>"
 	"electron" n m pl
 "<en>"
 	"en" pr
-;	"en" prn pro adv
 "<orbita>"
 	"orbita" n f sg
 "<autorn>"
-	"*autorn"
+	"autorn" adv
 "<.>"
 	"." sent
 ¶
 "<En>"
 	"en" pr
-;	"en" prn pro adv
 "<tribalhant>"
 	"tribalhar" vblex ger
 "<sus>"
 	"sus" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg
 "<radioactivitat>"
 	"radioactivitat" n f sg
 "<,>"
 	"," cm
 "<Frederick>"
-	"*Frederick"
+	"Frederick" np ant m sg
 "<Soddy>"
-	"*Soddy"
+	"Soddy" np cog mf sp
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" adv enon
 "<descobrí>"
-	"*descobrí"
+	"descobrí" vblex ifi p3 sg
 "<,>"
 	"," cm
 "<en>"
 	"en" pr
-;	"en" prn pro adv
 "<1913>"
 	"1913" num
 "<,>"
 	"," cm
 "<que>"
-	"que" cnjadv
 	"que" cnjsub
-	"que" rel an mf sp
 "<per>"
-	"per" adv
 	"per" pr
 "<cada>"
 	"cada" det ind mf sp
@@ -2203,11 +1729,9 @@
 "<,>"
 	"," cm
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" adv enon
 "<pòden>"
-	"*pòden"
+	"poder" vbmod pri p3 pl
 "<existir>"
 	"existir" vblex inf
 "<atòms>"
@@ -2218,16 +1742,13 @@
 	":" sent
 "<los>"
 	"lo" det def m pl
-;	"lo" prn pro p3 m pl
 "<isotòps>"
-	"isotòp" adj m pl
 	"isotòp" n m pl
 "<.>"
 	"." sent
 ¶
 "<La>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg
 "<medisha>"
 	"medish" adj f sg
 "<annada>"
@@ -2235,34 +1756,24 @@
 "<,>"
 	"," cm
 "<Niels>"
-	"*Niels"
+	"Niels" np ant m sg
 "<Bohr>"
 	"Bohr" np cog mf sp
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" adv enon
 "<muishè>"
-	"*muishè"
+	"muishar" vblex ifi p3 sg
 "<que>"
-	"que" cnjadv
 	"que" cnjsub
-	"que" rel an mf sp
 "<los>"
 	"lo" det def m pl
-;	"lo" prn pro p3 m pl
 "<electrons>"
 	"electron" n m pl
 "<be>"
-	"*be"
+	"be" adv enon
 "<son>"
-	"èsser" vbser pri p3 pl
 	"èster" vbser pri p3 pl
-;	"son" n m sg
-;	"son" det pos f sg
-;	"son" det pos m sg
 "<situats>"
-	"situat" adj m pl
 	"situar" vblex pp m pl
 "<sus>"
 	"sus" pr
@@ -2270,59 +1781,42 @@
 	"orbita" n f pl
 "<determinadas>"
 	"determinat" adj f pl
-	"determinar" vblex pp f pl
 "<.>"
 	"." sent
 ¶
 "<En>"
 	"en" pr
-;	"en" prn pro adv
 "<1916>"
 	"1916" num
 "<,>"
 	"," cm
 "<Gilbert>"
 	"Gilbert" np ant m sg
-	"Gilbert" np cog mf sp
 "<Newton>"
-	"Newton" np cog mf sp
-"<Lewis>"
 	"Lewis" np ant m sg
+"<Lewis>"
 	"Lewis" np cog mf sp
 "<qu'>"
-	"que" cnjsub
-	"que" rel an mf sp
-;	"que" adv enon
+	"que" adv enon
 "<expliquè>"
-	"*expliquè"
+	"explicar" vblex ifi p3 sg
 "<que>"
-	"que" cnjadv
 	"que" cnjsub
-	"que" rel an mf sp
 "<los>"
 	"lo" det def m pl
-;	"lo" prn pro p3 m pl
 "<atòms>"
 	"atòm" n m pl
 "<e>"
-	"e" cnjcoo
+	"e" adv enon
 "<'s>"
 	"s" n f sp
 "<ligan>"
 	"ligar" vblex pri p3 pl
-"<au>"
-	"a" pr
+"<au mejan deus>"
+	"au mejan de" pr
 		"lo" det def m sg
-"<mejan>"
-	"mejan" adj m sg
-	"mejan" n m sg
-"<deus>"
-	"de" pr
-		"lo" det def m pl
 "<lors>"
-	"lor" prn tn pos mf pl
 	"lor" det pos mf pl
-;	"lor" adj pos mf pl
 "<electrons>"
 	"electron" n m pl
 "<.>"
@@ -2330,11 +1824,8 @@
 ¶
 "<Durant>"
 	"durant" pr
-	"durar" vblex ger
 "<las>"
 	"las" adj m sg
-	"lo" det def f pl
-;	"lo" prn pro p3 f pl
 "<annadas>"
 	"annada" n f pl
 "<1920>"
@@ -2343,10 +1834,7 @@
 	"," cm
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg
 "<modèl>"
-	"modèl" adj m sg
-	"modèl" n mf sg
 	"modèl" n m sg
 "<planetari>"
 	"planetari" adj m sg
@@ -2357,32 +1845,27 @@
 "<virant>"
 	"virar" vblex ger
 "<suber>"
-	"*suber"
+	"suber" pr
 "<orbitas>"
 	"orbita" n f pl
 "<precisas>"
 	"precís" adj f pl
-	"precisar" vblex pri p2 sg
 "<que>"
-	"que" cnjadv
-	"que" cnjsub
-	"que" rel an mf sp
+	"que" adv enon
 "<ho>"
-	"*ho"
+	"estre" vbser ifi p3 sg
 "<remplaçat>"
 	"remplaçar" vblex pp m sg
 "<per>"
-	"per" adv
 	"per" pr
 "<la>"
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg
 "<nocion>"
 	"nocion" n f sg
 "<de>"
 	"de" pr
 "<nubla>"
-	"*nubla"
+	"nubla" n f sg
 "<d'>"
 	"de" pr
 "<electrons>"
@@ -2396,15 +1879,12 @@
 	"de" pr
 "<preséncia>"
 	"preséncia" n f sg
-	"presenciar" vblex pri p3 sg
-;	"presenciar" vblex imp p2 sg
 "<autorn>"
-	"*autorn"
+	"autorn" pr
 "<d'>"
 	"de" pr
 "<ua>"
 	"un" det ind f sg
-;	"un" prn tn f sg
 "<orbita>"
 	"orbita" n f sg
 "<.>"
@@ -2413,9 +1893,7 @@
 "<A partir de>"
 	"a partir de" pr
 "<las>"
-	"las" adj m sg
 	"lo" det def f pl
-;	"lo" prn pro p3 f pl
 "<annadas>"
 	"annada" n f pl
 "<1950>"
@@ -2424,29 +1902,22 @@
 	"," cm
 "<los>"
 	"lo" det def m pl
-;	"lo" prn pro p3 m pl
 "<scientifics>"
-	"scientific" adj m pl
 	"scientific" n m pl
 "<qu'>"
-	"que" cnjsub
-	"que" rel an mf sp
-;	"que" adv enon
-"<explorèn>"
-	"*explorèn"
+	"que" adv enon
+"<explorèn>" temps verbal??
+	"*explorèn" vblex ifi p3 pl
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg
 "<monde>"
 	"monde" n m sg
 "<jusatomic>"
-	"*jusatomic"
+	"jusatomic" adj m sg
 "<de>"
 	"de" pr
 "<las>"
 	"las" adj m sg
-	"lo" det def f pl
-;	"lo" prn pro p3 f pl
 "<particulas>"
 	"particula" n f pl
 "<elementàrias>"
@@ -2457,11 +1928,8 @@
 	"dab" pr
 "<la>"
 	"lo" det def f sg
-	"lo" prn pro p3 f sg
 "<descobèrta>"
-	"descobèrt" adj f sg
 	"descobèrta" n f sg
-	"descobrir" vblex pp f sg
 "<deus>"
 	"de" pr
 		"lo" det def m pl
@@ -2495,18 +1963,13 @@
 "<,>"
 	"," cm
 "<estant>"
-	"estar" vblex ger
 	"èster" vbser ger
-;	"estant" n m sg
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg
-;	"lo" prn pro p3 m sg
 "<electron>"
 	"electron" n m sg
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg
 "<mei>"
 	"mei" adv
 "<famós>"
@@ -2514,14 +1977,11 @@
 "<enter>"
 	"enter" pr
 "<eths>"
-	"eth" det def m pl
+	"eth" prn tn p3 m pl
 "<)>"
 	")" rpar
-"<mercés>"
-	"mercés" ij
-;	"mercé" n f pl
-"<au>"
-	"a" pr
+"<mercés au>"
+	"mercés a" pr
 		"lo" det def m sg
 "<desvolopament>"
 	"desvolopament" n m sg
@@ -2529,32 +1989,25 @@
 	"de" pr
 		"lo" det def m pl
 "<accelerators>"
-	"accelerator" adj m pl
 	"accelerator" n m pl
 "<de>"
 	"de" pr
 "<particulas>"
 	"particula" n f pl
 "<qui>"
-	"qui" prn itg mf sp
 	"qui" rel nn mf sp
 "<permeten>"
-	"*permeten"
+	"perméter" vblex pri p3 sg
 "<d'>"
 	"de" pr
 "<accelerar>"
 	"accelerar" vblex inf
 "<los>"
 	"lo" det def m pl
-;	"lo" prn pro p3 m pl
 "<atòms>"
 	"atòm" n m pl
-"<en>"
-	"en" pr
-;	"en" prn pro adv
-"<bèth>"
-	"bèth" det ind m sg
-;	"bèl" n m sg
+"<en bèth>"
+	"en bèth" pr
 "<generar>"
 	"generar" vblex inf
 "<impactes>"
@@ -2562,7 +2015,7 @@
 "<enter>"
 	"enter" pr
 "<eths>"
-	"eth" det def m pl
+	"eth" pr tn p3 m pl
 "<.>"
 	"." sent
 ¶
