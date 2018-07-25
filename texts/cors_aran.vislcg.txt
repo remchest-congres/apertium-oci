@@ -96,7 +96,7 @@
 	"IEA" n acr m sg
 -
 "<AALO>"
-	"AALO" n acr m sg
+	"AALO" n acr f sg
 "<)>"
 	")" rpar
 "<en collaboracion>"
@@ -305,7 +305,7 @@
 "<,>"
 	"," cm
 "<que>"
-	"que" rel an mf sp 
+	"que" adv enon
 "<tanben>"
 	"tanben" adv
 "<aurà>"
@@ -384,7 +384,7 @@
 "<,>"
 	"," cm
 "<que>"
-	"que" rel an mf sp
+	"que" adv enon
 "<i>"
 	"i" prn pro adv
 "<intervieràn>"
