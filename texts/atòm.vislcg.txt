@@ -825,8 +825,10 @@
 	"per" pr
 "<transmutacion>"
 	"transmutacion" n f sg
-"<en bèth>"
-	"en bèth" pr
+"<en>"
+	"en" pr
+"<bèth>"
+	"bèth" adv
 "<cambiar>"
 	"cambiar" vblex inf
 "<lo son>"
@@ -903,8 +905,10 @@
 	"discípol" n m sg
 "<Democrit>"
 	"Democrit" np ant m sg
-"<en bèth>"
-	"en bèth" pr
+"<en>"
+	"en" pr
+"<bèth>"
+	"bèth" adv
 "<apujà>"
 	"apujar" vblex inf
 "<'s>"
@@ -1061,7 +1065,7 @@
 	"que" adv enon
 "<hon>"
 	"estre" vbser ifi p3 pl
-"<provesit>"  PER QUÈ NO PROVESITS??
+"<provesit>"
 	"provesir" vblex pp m sg
 "<peus>"
 	"per" pr
@@ -1420,8 +1424,12 @@
 	"lo" det def mf sg
 "<electron>"
 	"electron" n m sg
-"<en lo bèth>"
-	"en lo bèth" pr ???
+"<en>"
+	"en" pr
+"<lo>"
+	"lo" prn pro p3 m sg
+"<bèth>"
+	"bèth" adv
 "<identificar>"
 	"identificar" vblex inf
 "<com>"
@@ -1432,12 +1440,14 @@
 	"particula" n f sg
 "<subatomica>"
 	"subatomic" adj f sg
-"<en tot>"
-	"en tot" adv ???
+"<en>"
+	"en" pr
+"<tot>"
+	"tot" adv
 "<muishar>"
-	"*muishar" ???
+	"muishar" vblex inf
 "<que>"
-	"que" adv enon ???
+	"que" adv enon
 "<l'>"
 	"lo" det def mf sg
 "<atòm>"
@@ -1512,8 +1522,12 @@
 	"lo" det def mf sg
 "<atòm>"
 	"atòm" n m sg
-"<en lo bèth>"
-	"en lo bèth" pr
+"<en>"
+	"en" pr
+"<lo>"
+	"lo" prn pro p3 m sg
+"<bèth>"
+	"bèth" adv
 "<descríver>"
 	"descríuer" vblex inf
 "<com>"
@@ -1906,8 +1920,8 @@
 	"scientific" n m pl
 "<qu'>"
 	"que" adv enon
-"<explorèn>" temps verbal??
-	"*explorèn" vblex ifi p3 pl
+"<explorèn>"
+	"explorèn" vblex ifi p3 pl
 "<lo>"
 	"lo" det def m sg
 "<monde>"
@@ -2006,8 +2020,10 @@
 	"lo" det def m pl
 "<atòms>"
 	"atòm" n m pl
-"<en bèth>"
-	"en bèth" pr
+"<en>"
+	"en" pr
+"<bèth>"
+	"bèth" adv
 "<generar>"
 	"generar" vblex inf
 "<impactes>"
