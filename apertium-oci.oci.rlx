@@ -102,6 +102,7 @@ LIST Eth = "eth" ;
 LIST Nostre = "nòstre" "nòste" ;
 LIST Vostre = "vòstre" "vòste" ;
 LIST Pas = "pas" ;
+LIST Pel = "pel" ;
 LIST Que = "que" ;
 LIST Se = "se" ;
 LIST Las = "las" ;
@@ -159,12 +160,12 @@ REMOVE motsdetsg IF (1 Npl OR AJpl);
 REMOVE motsdetf IF (1 Nm OR AJm);
 REMOVE motsdetm IF (1 Nf OR AJf);
 
-# distinccio entre MascPl i FemPl (típicament en terminacions en -es)
-SELECT MascPl IF (-1C MascPl) (0 N + MascPl) ;
+# distincio entre MascPl i FemPl (típicament en terminacions en -es)
+SELECT MascPl IF (-1C MascPl) (0 N + MascPl) (NOT 0 ("pel")) ;
 SELECT FemPl IF (-1C FemPl) (0 N + FemPl) ;
 SELECT MascPl IF (-1C MascPl) (0 AJ + MascPl) ;
 SELECT FemPl IF (-1C FemPl) (0 AJ + FemPl) ;
-SELECT MascPl IF (1C MascPl) (0 N + MascPl) ;
+SELECT MascPl IF (1C MascPl) (0 N + MascPl) (NOT 0 ("pel")) ;
 SELECT FemPl IF (1C FemPl) (0 N + FemPl) ;
 SELECT MascPl IF (1C MascPl) (0 AJ + MascPl) ;
 SELECT FemPl IF (1C FemPl) (0 AJ + FemPl) ;
@@ -271,3 +272,5 @@ REMOVE AJ IF (0 Las) (1 N + FemPl) ;
   ## las pomas
 
 SELECT Conjco IF (0 Mas) (-1 CM) ;
+
+REMOVE N IF (-1C V) (0 Pel) ;
