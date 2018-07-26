@@ -75,6 +75,9 @@ LIST motsdetm = (det m) (pr m);
 LIST Masc = m mf ;
 LIST Fem = f mf ;
 
+LIST Sg = sg sp;
+LIST Pl = pl sp;
+
 SET MascSg = (m sg) OR (m sp) OR (mf sg) OR (mf sp) ;
 SET MascPl = (m pl) OR (m sp) OR (mf pl) OR (mf sp) ;
 SET FemSg = (f sg) OR (f sp) OR (mf sg) OR (mf sp) ;
@@ -89,6 +92,7 @@ SET CM = (cm) OR (lpar) OR (rpar) OR ("<;>") ;
 LIST Excl = "!" ;
 
 #Mots
+LIST A = "a";
 LIST En = "en";
 LIST En_pron = ("en" prn);
 LIST Dins = "dins";
@@ -230,6 +234,9 @@ SELECT Ant IF (NOT -1 Cog OR Ant) (0C Cog OR Ant) (1 unknown) ;
 
 # MOTS
 
+SELECT Haver IF (0 A) (1C VBpp);
+  ## a cantat
+
 SELECT Conjsub IF (-1C V) (0 Que) ;
   ## vôli que
 SELECT Conjsub IF (-2C V) (1 AV) (0 Que) ;
@@ -248,18 +255,19 @@ REMOVE PRON IF (0 Se) (NOT -1 Pro OR V + P3) ;
 SELECT PREP IF (0 Dins) (1 DET) ;
 
 SELECT N IF (0 ("<Estat>")) ;
-SELECT N IF (-1 DET + Masc) (0 ("estat")) ;
-SELECT VBpp IF (-1 Ser) (0 ("estat")) ;
-SELECT VBpp IF (-2 Ser) (-1 AV) (0 ("estat")) ;
-SELECT N IF (-1 ("vila") OR ("ciutat")) (0 ("estat")) ;	# vila estat
+SELECT N IF (-1 DET + Masc) (NOT -1 Ser) (0 Estat) ;
+SELECT VBpp IF (-1 Ser + Sg) (0 Estat + Sg) ;
+#SELECT VBpp IF (-1 Ser + Pl) (0 Estat + Pl) ;
+SELECT Ser IF (0 Ser + Sg) (1 Ser + VBpp + Sg) ;
+SELECT Ser IF (0 Ser + Pl) (1 Ser + VBpp + Pl) ;
+SELECT VBpp IF (-2 Ser + Sg) (-1 AV) (0 Estat + Sg) ;
+SELECT VBpp IF (-2 Ser + Pl) (-1 AV) (0 Estat + Pl) ;
+SELECT Ser IF (0 Ser + Sg) (1 AV) (2 Ser + VBpp + Sg) ;
+SELECT Ser IF (0 Ser + Pl) (1 AV) (2 Ser + VBpp + Pl) ;
+SELECT N IF (-1 ("vila") OR ("ciutat")) (0 Estat) ;	# vila estat
+SELECT N IF (-1 ("<[a-zàáèéíòóú]>.*"r)) (0 Estat) ;	# "Estat" (con mayúscula) va precedido de una palabra con minúscula inicial
 
 REMOVE AJ IF (0 Las) (1 N + FemPl) ;
   ## las pomas
 
 SELECT Conjco IF (0 Mas) (-1 CM) ;
-
-
-SELECT N IF (-1 DET + Masc) (0 Estat) ;
-SELECT VBpp IF (-1 Ser) (0 Estat) (1 VBpp) ;
-SELECT N IF (-1 ("<[a-zàáèéíòóú]>.*"r)) (0 Estat) ;	# "Estat" (con mayúscula) va precedido de una palabra con minúscula inicial
-SELECT N IF (-1 ("vila") OR ("citat") OR ("ciutat")) (0 Estat) ;	# vila estat
