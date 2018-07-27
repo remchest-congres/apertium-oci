@@ -33,4 +33,3 @@ AS_IF([test x$CGCOMP = xfalse], [AC_MSG_ERROR([You don't have cg-comp installed]
 AP_MKINCLUDE
 
 AC_OUTPUT([Makefile apertium-oci.pc])
-

@@ -2,8 +2,6 @@
 ## Makefile for apertium-oci
 ###############################################################################
 
-RELEASE=0.1
-VERSION=0.1.0
 LANG1=oci
 LANG1b=oci@aran
 LANG1c=oci@gascon
@@ -75,10 +73,10 @@ $(LANG1).autogen.bin: .deps/$(LANG1).dix
 	lt-comp rl .deps/$(LANG1).dix $@
 
 $(LANG1).autogen.att.gz: $(LANG1).autogen.bin
-	lt-print $< | gzip -9 -c > $@
+	lt-print $< | gzip -n -9 -c > $@
 
 $(LANG1).automorf.att.gz: $(LANG1).automorf.bin
-	lt-print $< | gzip -9 -c > $@
+	lt-print $< | gzip -n -9 -c > $@
 
 $(LANG1).autopgen.bin: .deps/$(LANG1).post.dix
 	lt-comp lr $< $@
@@ -94,10 +92,10 @@ $(LANG1b).autogen.bin: .deps/$(LANG1b).dix
 	lt-comp rl .deps/$(LANG1b).dix $@
 
 $(LANG1b).autogen.att.gz: $(LANG1b).autogen.bin
-	lt-print $< | gzip -9 -c > $@
+	lt-print $< | gzip -n -9 -c > $@
 
 $(LANG1b).automorf.att.gz: $(LANG1b).automorf.bin
-	lt-print $< | gzip -9 -c > $@
+	lt-print $< | gzip -n -9 -c > $@
 
 $(LANG1b).autopgen.bin: .deps/$(LANG1b).post.dix
 	lt-comp lr $< $@
@@ -113,10 +111,10 @@ $(LANG1c).autogen.bin: .deps/$(LANG1c).dix
 	lt-comp rl .deps/$(LANG1c).dix $@
 
 $(LANG1c).autogen.att.gz: $(LANG1c).autogen.bin
-	lt-print $< | gzip -9 -c > $@
+	lt-print $< | gzip -n -9 -c > $@
 
 $(LANG1c).automorf.att.gz: $(LANG1c).automorf.bin
-	lt-print $< | gzip -9 -c > $@
+	lt-print $< | gzip -n -9 -c > $@
 
 $(LANG1c).autopgen.bin: .deps/$(LANG1c).post.dix
 	lt-comp lr $< $@
