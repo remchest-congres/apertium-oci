@@ -35,31 +35,31 @@ TARGETS_COMMON =			\
 .deps/$(LANG1).metadix: $(BASENAME).$(LANG1).metadix .deps/.d
 	xsltproc --stringparam alt $(LANG1) alt.xsl $(BASENAME).$(LANG1).metadix >$@
 
-.deps/$(LANG1).dix: .deps/$(LANG1).metadix 
+.deps/$(LANG1).dix: .deps/$(LANG1).metadix .deps/.d
 	xsltproc buscaPar.xsl .deps/$(LANG1).metadix | uniq >$$$$tmp1 && \
 	xsltproc $$$$tmp1 .deps/$(LANG1).metadix > $@ && rm $$$$tmp1
 
-.deps/$(LANG1).post.dix: $(BASENAME).post-$(LANG1).dix
+.deps/$(LANG1).post.dix: $(BASENAME).post-$(LANG1).dix .deps/.d
 	xsltproc --stringparam alt $(LANG1) alt.xsl $(BASENAME).post-$(LANG1).dix >$@
 
-.deps/$(LANG1b).metadix: $(BASENAME).$(LANG1).metadix
+.deps/$(LANG1b).metadix: $(BASENAME).$(LANG1).metadix .deps/.d
 	xsltproc --stringparam alt $(LANG1b) alt.xsl $(BASENAME).$(LANG1).metadix >$@
 
-.deps/$(LANG1b).dix: .deps/$(LANG1b).metadix
+.deps/$(LANG1b).dix: .deps/$(LANG1b).metadix .deps/.d
 	xsltproc buscaPar.xsl .deps/$(LANG1b).metadix | uniq >$$$$tmp1 && \
 	xsltproc $$$$tmp1 .deps/$(LANG1b).metadix > $@ && rm $$$$tmp1
 
-.deps/$(LANG1b).post.dix: $(BASENAME).post-$(LANG1).dix
+.deps/$(LANG1b).post.dix: $(BASENAME).post-$(LANG1).dix .deps/.d
 	xsltproc --stringparam alt $(LANG1b) alt.xsl $(BASENAME).post-$(LANG1).dix >$@
 
-.deps/$(LANG1c).metadix: $(BASENAME).$(LANG1).metadix
+.deps/$(LANG1c).metadix: $(BASENAME).$(LANG1).metadix .deps/.d
 	xsltproc --stringparam alt $(LANG1c) alt.xsl $(BASENAME).$(LANG1).metadix >$@
 
-.deps/$(LANG1c).dix: .deps/$(LANG1c).metadix
+.deps/$(LANG1c).dix: .deps/$(LANG1c).metadix .deps/.d
 	xsltproc buscaPar.xsl .deps/$(LANG1c).metadix | uniq >$$$$tmp1 && \
 	xsltproc $$$$tmp1 .deps/$(LANG1c).metadix > $@ && rm $$$$tmp1
 
-.deps/$(LANG1c).post.dix: $(BASENAME).post-$(LANG1).dix
+.deps/$(LANG1c).post.dix: $(BASENAME).post-$(LANG1).dix .deps/.d
 	xsltproc --stringparam alt $(LANG1c) alt.xsl $(BASENAME).post-$(LANG1).dix >$@
 
 ###############################################################################
