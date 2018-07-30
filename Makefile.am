@@ -23,6 +23,7 @@ TARGETS_COMMON =			\
 	$(LANG1c).autogen.bin		\
 	$(LANG1c).autogen.att.gz		\
 	$(LANG1c).autopgen.bin		\
+	$(LANG1).prob				\
 	$(LANG1).rlx.bin
 
 # Use this goal for creating .deps, otherwise make -j2 will give problems:
@@ -172,7 +173,7 @@ $(LANG1).rlx.bin: $(BASENAME).$(LANG1).rlx $(CGCOMP)
 ###############################################################################
 ## Distribution
 ###############################################################################
-EXTRA_DIST=$(BASENAME).$(LANG1).dix		\
+EXTRA_DIST=$(BASENAME).$(LANG1).metadix		\
 		$(BASENAME).$(LANG1).acx	\
 		$(BASENAME).$(LANG1).rlx	\
 		$(BASENAME).post-$(LANG1).dix	\
