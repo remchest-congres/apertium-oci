@@ -12308,7 +12308,7 @@
 	"orbita" n f sg
 "<terrèstra>"
 	"terrèstre" adj f sg
-<.>"
+"<.>"
 	"." sent
 
 
