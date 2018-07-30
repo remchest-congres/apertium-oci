@@ -961,7 +961,7 @@
 	"èsser" vbser pri p3 pl
 "<somés>"
 	"sometre" vblex pp m sg
-"<a>
+"<a>"
 	"a" pr
 "<de>"
 	"de" pr		
@@ -1553,7 +1553,7 @@
 "<glaç>"
 	"glaç" n m sg
 "<amolonat>"
-	"*amolonat"
+	"amolonat" vblex pp m sg
 "<s'>"
 	"se" prn pro ref p3 mf sp
 "<esquicha>"
@@ -2270,7 +2270,9 @@
 "<unes>"
 	"un" det ind m pl
 "<3>"
-	"3 km" 
+	"3" num mf sp
+"<km>"
+	"km" n m sp
 "<)>"
 	")" rpar
 "<es>"
@@ -2349,8 +2351,10 @@
 	"a mai" adv
 "<de>"
 	"de" pr
-"<3000 m>"
-	"3000 m" num mf sp
+"<3000>"
+	"3000" num mf sp
+"<m>"
+	"m" n m sp
 "<.>"
 	"." sent
 
@@ -2983,8 +2987,10 @@
 	"mai" adv
 "<de>"
 	"de" pr
-"<5 000 km2>"
-	"5 000 km2" 
+"<5 000>"
+	"5 000" num mf sp
+"<km2>"
+	"km2" n m sp
 "<de>"
 	"de" pr
 "<la>"
@@ -3348,7 +3354,9 @@
 "<de>"
 	"de" pr
 "<21>"
-	"21 m"
+	"21" num m sp
+"<m>"
+	"m" n m sp
 "<al>"
 	"a" pr
 		"lo" det def m sg
@@ -3375,13 +3383,15 @@
 "<l'>"
 	"lo" det def mf sg
 "<enauçada>"
-	"*enauçada"
+	"enauçada" n f sg
 "<seriá>"
 	"èsser" vbser cni p3 sg
 "<de>"
 	"de" pr
-"<108 m>"
-	"108 m" num mf sp
+"<108>"
+	"108" num mf sp
+"<m>"
+	"m" n m sp
 "<.>"
 	"." sent
 
@@ -3400,7 +3410,9 @@
 "<de>"
 	"de" pr
 "<130>"
-	"130 m"
+	"130" num mf sp
+"<m>"
+	"m" n m sp
 "<.>"
 	"." sent
 
@@ -3560,8 +3572,10 @@
 	"aténher" vblex prs p3 sg
 "<los>"
 	"lo" det def m pl
-"<50 m>"
-	"50 m" num mf sp
+"<50>"
+	"50" num mf sp
+"<m>"
+	"m" n m sp
 "<d'>"
 	"de" pr
 "<espessor>"
@@ -4045,7 +4059,9 @@
 "<los>"
 	"lo" det def m pl
 "<50>"
-	"50 m"
+	"50" num mf sp
+"<m>"
+	"m" n m sp
 "<superiors>"
 	"superior" adj m pl
 "<,>"
@@ -4161,8 +4177,10 @@
 	"aver" vblex inf
 "<fins a>"
 	"fins a" pr
-"<50 m>"
-	"50 m" num mf sp
+"<50>"
+	"50" num mf sp
+"<m>"
+	"m" n m sp
 "<de>"
 	"de" pr
 "<prigondor>"
@@ -4185,7 +4203,7 @@
 "<de>"
 	"de" pr
 "<crebassa>"
-	"crebassa"n f sg
+	"crebassa" n f sg
 "<que>"
 	"que" rel an mf sp
 "<se>"
@@ -4488,7 +4506,7 @@
 "<glacièrs>"
 	"glacièr" n m pl
 "<aupencs>"
-	"aupenc"
+	"aupenc" adj m pl
 "<per>"
 	"per" pr
 "<n'>"
@@ -4708,8 +4726,10 @@
 	"750" num
 "<a>"
 	"a" pr
-"<800 m>"
-	"800 m" num
+"<800>"
+	"800" num
+"<m>"
+	"m" n m sp
 "<per>"
 	"per" pr
 "<an>"
@@ -4718,8 +4738,10 @@
 	"(" lpar
 "<siá>"
 	"èsser" vbser prs p3 sg
-"<2 m>"
-	"2 m" num mf sp
+"<2>"
+	"2" num mf sp
+"<m>"
+	"m" n m sp
 "<per>"
 	"per" pr
 "<jorn>"
@@ -5007,9 +5029,9 @@
 "<Aqueste>"
 	"aqueste" det dem m sg
 "<processus>"
-	"*processus"
+	"processus" n m sg
 "<conegut>"
-	"conegut" adj m sg
+	"conegut" vblex pp m sg
 "<coma>"
 	"coma" adv
 "<arrancament>"
@@ -5361,7 +5383,7 @@
 "<erosion>"
 	"erosion" n f sg
 "<glaciària>"
-	"glaciari"
+	"glaciari" adj f sg
 "<son>"
 	"èsser" vbser pri p3 pl
 "<los>"
@@ -5429,7 +5451,7 @@
 	"de" pr
 		"lo" det def m pl
 "<selhons>"
-	"*selhons"
+	"selhons" n m pl
 "<pòt>"
 	"poder" vbmod pri p3 sg
 "<permetre>"
@@ -5719,7 +5741,7 @@
 "<de>"
 	"de" pr
 "<brisadisses>"
-	"*brisadisses"
+	"brisadisses" n m pl
 "<glaciaris>"
 	"glaciari" adj m pl
 "<.>"
@@ -6145,7 +6167,7 @@
 "<de>"
 	"de" pr
 "<brisadisses>"
-	"*brisadisses"
+	"brisadisses" n m pl
 "<encontrats>"
 	"encontrar" vblex pp m pl
 "<prèp de>"
@@ -6335,7 +6357,7 @@
 "<de>"
 	"de" pr
 "<l'>"
-	"lo"
+	"lo" det def mf sg
 "<avançada>"
 	"avançada" n f sg
 "<endavant>"
@@ -7425,7 +7447,7 @@
 "<circs>"
 	"circ" n m pl
 "<glaciaris>"
-	"glaciari adj m pl"
+	"glaciari" adj m pl
 "<vesins>"
 	"vesin" adj m pl
 "<.>"
@@ -8278,7 +8300,9 @@
 "<e>"
 	"e" cnjcoo
 "<50>"
-	"50 m"
+	"50" num mf sp
+"<m>"
+	"m" n m sp
 "<e>"
 	"e" cnjcoo
 "<pòdon>"
@@ -8288,7 +8312,9 @@
 "<fins a>"
 	"fins a" pr
 "<1>"
-	"1 km"
+	"1" num m sp
+"<km>"
+	"km" n m sp
 "<de>"
 	"de" pr
 "<longor>"
@@ -8404,7 +8430,7 @@
 "<d'>"
 	"de" pr
 "<els>"
-	"*els"
+	"els" prn tn p3 m pl 
 "<s'>"
 	"se" prn pro ref p3 mf sp
 "<encontra>"
@@ -9023,7 +9049,7 @@
 "<entre>"
 	"entre" pr
 "<els>"
-	"*els"
+	"els" prn tn p3 m pl 
 "<.>"
 	"." sent
 
@@ -9177,8 +9203,10 @@
 	"pas" adv
 "<los>"
 	"lo" det def m pl
-"<2 km>"
-	"2 km" num mf sp
+"<2>"
+	"2" num m sp
+"<km>"
+	"km" n m sp
 "<,>"
 	"," cm
 "<levat>"
@@ -9205,8 +9233,10 @@
 	"aténher" vblex inf
 "<los>"
 	"lo" det def m pl
-"<50 km>"
-	"50 km" num mf sp
+"<50>"
+	"50" num mf sp
+"<km>"
+	"km" n m sp
 "<de>"
 	"de" pr
 "<diamètre>"
@@ -9222,12 +9252,16 @@
 	"oscillar" vblex pri p3 pl
 "<entre>"
 	"entre" pr
-"<10 m>"
-	"10 m" 
+"<10>"
+	"10" num mf sp
+"<m>"
+	"m" n m sp
 "<e>"
 	"e" cnjcoo
-"<50 m>"
-	"50 m" 
+"<50>"
+	"50" num mf sp
+"<m>"
+	"m" n m sp
 "<.>"
 	"." sent
 
@@ -9648,8 +9682,10 @@
 	"superar" vblex pri p3 pl
 "<los>"
 	"lo" det def m pl
-"<100 m>"
-	"100 m" num mf sp
+"<100>"
+	"100" num mf sp
+"<m>"
+	"m" n m sp
 "<de>"
 	"de" pr
 "<nautor>"
@@ -9658,8 +9694,10 @@
 	"e" cnjcoo
 "<los>"
 	"lo" det def m pl
-"<100 km>"
-	"100 km" num mf sp
+"<100>"
+	"100" num mf sp
+"<km>"
+	"km" n m sp
 "<de>"
 	"de" pr
 "<long>"
@@ -10440,7 +10478,7 @@
 "<:>"
 	":" sent
 "<Günz>"
-	"Günz"
+	"Günz" np top m sg
 "<,>"
 	"," cm
 "<Nebraska>"
@@ -11030,8 +11068,10 @@
 	"de" pr
 "<aperaquí>"
 	"aperaquí" adv
-"<300 m>"
-	"300 m" num mf sp
+"<300>"
+	"300" num mf sp
+"<m>"
+	"m" n m sp
 "<.>"
 	"." sent
 
@@ -11990,7 +12030,7 @@
 "<,>"
 	"," cm
 "<çò qu'>"
-	"lo que"
+	"lo que" rel nn nt
 "<indica>"
 	"indicar" vblex pri p3 sg
 "<que>"
@@ -12223,8 +12263,10 @@
 	"lentament" adv
 "<(>"
 	"(" lpar
-"<2 cm>"
-	"2 cm" num mf sp
+"<2>"
+	"2" num mf sp
+"<cm>"
+	"cm" n m sp
 "<per>"
 	"per" pr
 "<an>"
@@ -12401,7 +12443,7 @@
 "<Milutin>"
 	"Milutin" np ant m sg
 "<Milankovitch>"
-	"*Milankovitch" np cog mf sp
+	"Milankovitch" np cog mf sp
 "<e>"
 	"e" cnjcoo
 "<se>"
