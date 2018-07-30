@@ -210,10 +210,10 @@ noinst_DATA=modes/$(LANG1)-morph.mode
 
 install-data-local: install-modes
 	test -d $(DESTDIR)$(apertium_oci_srcdir) || mkdir -p $(DESTDIR)$(apertium_oci_srcdir)
-	$(INSTALL_DATA) $(BASENAME).$(LANG1).dix $(DESTDIR)$(apertium_oci_srcdir)
+	$(INSTALL_DATA) $(BASENAME).$(LANG1).metadix $(DESTDIR)$(apertium_oci_srcdir)
 	$(INSTALL_DATA) $(BASENAME).$(LANG1).rlx $(DESTDIR)$(apertium_oci_srcdir)
 	$(INSTALL_DATA) $(BASENAME).post-$(LANG1).dix $(DESTDIR)$(apertium_oci_srcdir)
-
+ 
 CLEANFILES = $(TARGETS_COMMON)
 clean-local:
 	-rm -rf .deps modes
