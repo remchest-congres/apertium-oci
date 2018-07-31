@@ -3972,7 +3972,7 @@
 "<pas>"
 	"pas" adv
 "<tant>"
-	"tant" adv
+	"tant" preadv
 "<complèxe>"
 	"complèxe" adj m sg
 "<coma>"

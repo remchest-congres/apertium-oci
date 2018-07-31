@@ -3324,7 +3324,7 @@
 "<es>"
 	"èsser" vbser pri p3 sg
 "<tant>"
-	"tant" adv
+	"tant" preadv
 "<grand>"
 	"grand" adj m sg
 "<que>"
