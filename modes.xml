@@ -60,7 +60,7 @@
 
   <!-- -->
 
-  <mode name="oci_aran-morph" install="yes">
+  <mode name="oci_aran-morph" install="no">
     <pipeline>
       <program name="lt-proc -w">
         <file name="oci@aran.automorf.bin"/>
@@ -68,7 +68,7 @@
     </pipeline>
   </mode>
 
-  <mode name="oci_aran-gener" install="yes">
+  <mode name="oci_aran-gener" install="no">
     <pipeline>
       <program name="lt-proc -g">
         <file name="oci@aran.autogen.bin"/>
@@ -76,7 +76,7 @@
     </pipeline>
   </mode>
 
-  <mode name="oci_aran-tagger" install="yes">
+  <mode name="oci_aran-tagger" install="no">
     <pipeline>
       <program name="lt-proc -w">
         <file name="oci@aran.automorf.bin"/>
@@ -87,7 +87,7 @@
     </pipeline>
   </mode>
 
-  <mode name="oci_aran-disam" install="yes">
+  <mode name="oci_aran-disam" install="no">
     <pipeline>
       <program name="lt-proc -w">
         <file name="oci@aran.automorf.bin"/>
@@ -101,7 +101,7 @@
 
   <!-- -->
 
-  <mode name="oci_gascon-morph" install="yes">
+  <mode name="oci_gascon-morph" install="no">
     <pipeline>
       <program name="lt-proc -w">
         <file name="oci@gascon.automorf.bin"/>
@@ -109,7 +109,7 @@
     </pipeline>
   </mode>
 
-  <mode name="oci_gascon-gener" install="yes">
+  <mode name="oci_gascon-gener" install="no">
     <pipeline>
       <program name="lt-proc -g">
         <file name="oci@gascon.autogen.bin"/>
@@ -117,7 +117,7 @@
     </pipeline>
   </mode>
 
-  <mode name="oci_gascon-tagger" install="yes">
+  <mode name="oci_gascon-tagger" install="no">
     <pipeline>
       <program name="lt-proc -w">
         <file name="oci@gascon.automorf.bin"/>
@@ -128,7 +128,7 @@
     </pipeline>
   </mode>
 
-  <mode name="oci_gascon-disam" install="yes">
+  <mode name="oci_gascon-disam" install="no">
     <pipeline>
       <program name="lt-proc -w">
         <file name="oci@gascon.automorf.bin"/>
