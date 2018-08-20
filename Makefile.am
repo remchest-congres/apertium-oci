@@ -178,7 +178,10 @@ EXTRA_DIST=$(BASENAME).$(LANG1).metadix		\
 		$(BASENAME).$(LANG1).rlx	\
 		$(BASENAME).post-$(LANG1).dix	\
 		$(LANG1).prob			\
-		modes.xml
+		modes.xml \
+		alt.xsl \
+		buscaPar.xsl \
+		principal.xsl
 
 ###############################################################################
 ## Installation stuff
@@ -228,4 +231,3 @@ test: all
 	@echo "TODO test analysis results" > .test-ref
 	@diff .test-ref .test-mt
 	@rm .test-ref .test-mt
-
