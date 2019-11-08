@@ -1,15 +1,12 @@
 AC_PREREQ(2.52)
 
-AC_INIT([apertium-oci], [0.1.0], [francis.tyers@uit.no])
-AM_INIT_AUTOMAKE([apertium-oci], [0.1.0], no-define)
-AC_PROG_LN_S
+AC_INIT([Apertium Occitan], [0.2.0], [apertium-stuff@lists.sourceforge.net], [apertium-oci], [http://wiki.apertium.org/wiki/Apertium-oci])
+AM_INIT_AUTOMAKE
 AC_PROG_AWK
 
-m4_define([required_apertium_version], [3.3.0])
-m4_define([required_lttolbox_version], [3.3.0])
-
-PKG_CHECK_MODULES(APERTIUM, apertium >= required_apertium_version)
-PKG_CHECK_MODULES(LTTOOLBOX, lttoolbox >= required_lttolbox_version)
+PKG_CHECK_MODULES(APERTIUM, apertium >= 3.6.0)
+PKG_CHECK_MODULES(LTTOOLBOX, lttoolbox >= 3.5.0)
+PKG_CHECK_MODULES(CG3, cg3 >= 1.3.0)
 
 dnl HFST support
 AH_TEMPLATE(HAVE_HFSTOSPELL, [Have HFSTOSPELL])
@@ -24,11 +21,6 @@ AS_IF([test x$hfstospell = xyes], [
           CXXFLAGS="$CXXFLAGS $HFSTOSPELL_CFLAGS"
         ])
 AM_CONDITIONAL([HAVE_HFSTOSPELL], [test x$hfstospell = xyes])
-
-
-AC_PATH_PROG([CGCOMP], [cg-comp], [false], [$PATH$PATH_SEPARATOR$with_cg_comp/bin])
-AS_IF([test x$CGCOMP = xfalse], [AC_MSG_ERROR([You don't have cg-comp installed])])
-
 
 AP_MKINCLUDE
 

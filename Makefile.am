@@ -66,7 +66,7 @@ TARGETS_COMMON =			\
 ###############################################################################
 
 $(LANG1).automorf.bin: .deps/$(LANG1).dix $(BASENAME).$(LANG1).acx
-	apertium-validate-dictionary .deps/$(LANG1).dix 
+	apertium-validate-dictionary .deps/$(LANG1).dix
 	lt-comp lr .deps/$(LANG1).dix $@ $(BASENAME).$(LANG1).acx
 
 $(LANG1).autogen.bin: .deps/$(LANG1).dix
@@ -85,7 +85,7 @@ $(LANG1).autopgen.bin: .deps/$(LANG1).post.dix
 ###############################################################################
 
 $(LANG1b).automorf.bin: .deps/$(LANG1b).dix $(BASENAME).$(LANG1).acx
-	apertium-validate-dictionary .deps/$(LANG1b).dix 
+	apertium-validate-dictionary .deps/$(LANG1b).dix
 	lt-comp lr .deps/$(LANG1b).dix $@ $(BASENAME).$(LANG1).acx
 
 $(LANG1b).autogen.bin: .deps/$(LANG1b).dix
@@ -104,7 +104,7 @@ $(LANG1b).autopgen.bin: .deps/$(LANG1b).post.dix
 ###############################################################################
 
 $(LANG1c).automorf.bin: .deps/$(LANG1c).dix $(BASENAME).$(LANG1).acx
-	apertium-validate-dictionary .deps/$(LANG1c).dix 
+	apertium-validate-dictionary .deps/$(LANG1c).dix
 	lt-comp lr .deps/$(LANG1c).dix $@ $(BASENAME).$(LANG1).acx
 
 $(LANG1c).autogen.bin: .deps/$(LANG1c).dix
@@ -151,8 +151,8 @@ $(LANG1).zhfst: .deps/acceptor.default.hfst .deps/errmodel.default.hfst
 .deps/$(LANG1).autogen.bin: .deps/spell.$(LANG1).dix
 	lt-comp rl $< $@
 
-.deps/acceptor.default.hfst: .deps/$(LANG1).autogen.bin 
-	lt-print .deps/$(LANG1).autogen.bin | sed 's/ε/@0@/g' | sed 's/ /@_SPACE_@/g' | hfst-txt2fst | hfst-fst2fst -t | hfst-project --project=lower | hfst-minimise |hfst-fst2fst -f olw -o $@ 
+.deps/acceptor.default.hfst: .deps/$(LANG1).autogen.bin
+	lt-print .deps/$(LANG1).autogen.bin | sed 's/ε/@0@/g' | sed 's/ /@_SPACE_@/g' | hfst-txt2fst | hfst-fst2fst -t | hfst-project --project=lower | hfst-minimise |hfst-fst2fst -f olw -o $@
 
 .deps/spell.$(LANG1).dix: .deps/$(LANG1).dix .deps/.d
 	echo '<dictionary>' > $@
@@ -167,8 +167,8 @@ $(LANG1).zhfst: .deps/acceptor.default.hfst .deps/errmodel.default.hfst
 ## Disambiguation rules
 ###############################################################################
 
-$(LANG1).rlx.bin: $(BASENAME).$(LANG1).rlx $(CGCOMP)
-	$(CGCOMP) $< $@
+$(LANG1).rlx.bin: $(BASENAME).$(LANG1).rlx
+	cg-comp $< $@
 
 ###############################################################################
 ## Distribution
@@ -217,7 +217,7 @@ install-data-local: install-modes
 	$(INSTALL_DATA) $(BASENAME).$(LANG1).metadix $(DESTDIR)$(apertium_oci_srcdir)
 	$(INSTALL_DATA) $(BASENAME).$(LANG1).rlx $(DESTDIR)$(apertium_oci_srcdir)
 	$(INSTALL_DATA) $(BASENAME).post-$(LANG1).dix $(DESTDIR)$(apertium_oci_srcdir)
- 
+
 CLEANFILES = $(TARGETS_COMMON)
 clean-local:
 	-rm -rf .deps modes
