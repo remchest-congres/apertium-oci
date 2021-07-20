@@ -1,0 +1,18 @@
+[7o4a-2sUd1_4#0] ^perʼmor quʼ/per'mor que<cnjadv>$
+[/7o4a-2sUd1_4]
+[IrAOY7eTPa5g#0] ^9,8%/9,8%<num><percent>$
+[/IrAOY7eTPa5g]
+[Muuxq8wcYBzr#0] ^(/(<lpar>$
+[/Muuxq8wcYBzr]
+[N9eE5wmBoTu5#0] ^nʼ/ne<adv><enon>/en<prn><pro><adv>$
+[/N9eE5wmBoTu5]
+[XnabiXiNVHre#0] ^s'/se<cnjadv>/se<prn><pro><ref><p3><mf><sp>$
+[/XnabiXiNVHre]
+[io3oI9XtPhJ0#0] ^?/?<sent>$
+[/io3oI9XtPhJ0]
+[mayeJdy6pnRI#0] ^o tʼ/te<prn><pro><p2><mf><sg>+o<prn><pro><p3><nt>$ ^ʼ/*ʼ$
+[/mayeJdy6pnRI]
+[poEKQq2qTVXt#0] ^«/«<lpar>$
+[/poEKQq2qTVXt]
+[sTwJOW3Hnxb5#0] ^òm s'/se<prn><pro><ref><p3><mf><sp>$
+[/sTwJOW3Hnxb5]

@@ -22,6 +22,9 @@ AS_IF([test x$hfstospell = xyes], [
         ])
 AM_CONDITIONAL([HAVE_HFSTOSPELL], [test x$hfstospell = xyes])
 
+PKG_CHECK_MODULES(REGTEST, apertium-regtest >= 0.0.1, [],
+                  [AC_MSG_WARN([Running tests requires apertium-regtest])])
+
 AP_MKINCLUDE
 
 AC_OUTPUT([Makefile apertium-oci.pc])

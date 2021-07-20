@@ -29,3 +29,10 @@
 /oci@gascon.automorf.att.gz
 /oci@gascon.automorf.bin
 /oci@gascon.autopgen.bin
+/*.hfst
+/.DS_Store
+/*.mode
+/*-*.prob
+/config.in
+/config
+/test/*-output.txt
