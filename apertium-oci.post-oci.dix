@@ -43,9 +43,11 @@
       <e>
         <i>;</i>
       </e>
+<!--
       <e>
         <i>#</i>
       </e>
+-->
       <e>
         <i>)</i>
       </e>
@@ -2101,6 +2103,30 @@
 <!--
 L?objet direct peut être: « lo, los, la, las, o, me, te, se, nos, vos ».
 L?objet indirect peut être: « li, lor1, me, te, se, nos, vos »-->
+<!-- patches for removing extra blanks in enonciative generation -->
+		<e>
+			<p>
+				<l><a/>que<b/></l>
+				<r>qu</r>
+			</p>
+			<par n="apostrof_e"/>
+ 		</e>
+		<e>
+			<p>
+				<l><a/>que<b/><b/></l>
+				<r>que<b/></r>
+			</p>
+			<par n="caracter_general"/>
+		</e>
+<!--
+		<e>
+			<p>
+				<l><a/>que<b/><b/></l>
+				<r>que<b/></r>
+			</p>
+			<par n="consonant_menys_h"/>
+		</e>
+-->
 </group>
 
 	<group alt="oci">
