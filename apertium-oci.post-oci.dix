@@ -1809,10 +1809,23 @@
 	</e>
 	<e>
 		<p>
+			<l><a/>que<b/><a/>lo<b/><a/>i<b/></l>
+			<r>que<b/>l'i<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
 			<l><a/>la<b/><a/>i<b/></l>
 			<r>l'i<b/></r>
 		</p>
 	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>la<b/><a/>i<b/></l>
+			<r>que<b/>l'i<b/></r>
+		</p>
+	</e>
+
 	<e>
 		<p>
 			<l><a/>me<b/><a/>i<b/></l>
@@ -1821,8 +1834,70 @@
 	</e>
 	<e>
 		<p>
+			<l><a/>que<b/><a/>me<b/><a/>i<b/></l>
+			<r>que<b/>m'i<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
 			<l><a/>te<b/><a/>i<b/></l>
 			<r>t'i<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>te<b/><a/>i<b/></l>
+			<r>que<b/>t'i<b/></r>
+		</p>
+	</e>
+
+	<e>
+		<p>
+			<l><a/>lo<b/><a/>ac<b/></l>
+			<r>l'ac<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>lo<b/><a/>ac<b/></l>
+			<r>que<b/>l'ac<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>la<b/><a/>ac<b/></l>
+			<r>l'ac<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>la<b/><a/>ac<b/></l>
+			<r>que<b/>l'ac<b/></r>
+		</p>
+	</e>
+
+	<e>
+		<p>
+			<l><a/>me<b/><a/>ac<b/></l>
+			<r>m'ac<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>me<b/><a/>ac<b/></l>
+			<r>que<b/>m'ac<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>te<b/><a/>ac<b/></l>
+			<r>t'ac<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>te<b/><a/>ac<b/></l>
+			<r>que<b/>t'ac<b/></r>
 		</p>
 	</e>
 
@@ -1853,10 +1928,30 @@
 			<r>que<b/>s'i<b/></r>
 		</p>
 	</e>
+
 	<e>
 		<p>
-			<l><a/>que<b/><a/>ne<b/><a/>i<b/></l>
-			<r>que<b/>n'i<b/></r>
+			<l><a/>se<b/><a/>ac<b/></l>
+			<r>s'ac<b/></r>
+		</p>
+	</e>
+
+	<e>
+		<p>
+			<l><a/>que<b/><a/>se<b/><a/>ac<b/></l>
+			<r>que<b/>s'ac<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>ne<b/><a/>ac<b/></l>
+			<r>n'ac<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>ne<b/><a/>ac<b/></l>
+			<r>que<b/>n'ac<b/></r>
 		</p>
 	</e>
 
@@ -2755,13 +2850,13 @@ L?objet indirect peut être: « li, lor1, me, te, se, nos, vos »-->
 		</p>
 		<par n="en_apostrofat"/>
 	</e>
-  <e>
+	<e>
 	  <p>
 		  <l><a/>de</l>
 		  <r/>
 	  </p>
 	  <par n="de"/>
-    </e>
+	</e>
 	<e>
 		<p>
 			<l><a/>ne</l>
@@ -2783,29 +2878,28 @@ L?objet indirect peut être: « li, lor1, me, te, se, nos, vos »-->
 		</p>
 		<par n="apostrofenperdarrere"/>
 	</e>
-  <e>
+	<e>
 	  <p>
 		  <l><a/>que<b/><a/>de</l>
 		  <r>que<b/></r>
 	  </p>
 	  <par n="de"/>
-    </e>
-	
+	</e>
 
 	<e>
 		<p>
-			<l><a/>cada</l>
-			<r>cad</r>
+		<l><a/>cada</l>
+		<r>cad</r>
 		</p>
 		<par n="un"/>
-      </e>
+	</e>
 	<e>
 		<p>
 			<l><a/>a<b/><a/></l>
 			<r>a</r>
 		</p>
 		<par n="contraccio"/>
-      </e>
+	</e>
 	<e>
 		<p>
 			<l><a/>a</l>
@@ -2854,7 +2948,7 @@ L?objet indirect peut être: « li, lor1, me, te, se, nos, vos »-->
 			<r>no</r>
 		</p>
 		<par n="pronom_aton_apostrofat"/>
-     </e>
+	</e>
 	<e>
 		<p>
 			<l><a/>non</l>
