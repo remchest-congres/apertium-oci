@@ -772,22 +772,6 @@
 		</p>
 		<par n="apostrofadors"/>
 	</e>
-<!-- xxxxxx
-	<e>
-		<p>
-			<l><b/><b/><a/></l>
-			<r>'</r>
-		</p>
-		<par n="apostrofadors"/>
-	</e> 
-	<e>
-		<p>
-			<l><b/><b/></l>
-			<r>'</r>
-		</p>
-		<par n="apostrofadors"/>
-	</e>
--->
 <!--		<e>
 		<p>
 			<l/>
@@ -1694,30 +1678,27 @@
 		</p>
 		<par n="vocal_general"/>
 	</e>
-<!--
 	<e>
 		<p>
-			<l><a/>que<b/><a/>me<b/></l>
-			<r>que<b/>m'</r>
+			<l><a/>que<b/><b/><a/>me<b/></l>
+			<r>que<b/>me<b/></r>
 		</p>
-		<par n="vocal_general"/>
+		<par n="consonant_menys_h"/>
 	</e>
 	<e>
 		<p>
-			<l><a/>que<b/><a/>te<b/></l>
-			<r>que<b/>t'</r>
+			<l><a/>que<b/><b/><a/>te<b/></l>
+			<r>que<b/>te<b/></r>
 		</p>
-		<par n="vocal_general"/>
+		<par n="consonant_menys_h"/>
 	</e>
 	<e>
 		<p>
-			<l><a/>que<b/><a/>se<b/></l>
-			<r>que<b/>s'</r>
+			<l><a/>que<b/><b/><a/>se<b/></l>
+			<r>que<b/>se<b/></r>
 		</p>
-		<par n="vocal_general"/>
+		<par n="consonant_menys_h"/>
 	</e>
-xxxxx
-	-->
 	<e>
 		<p>
 			<l><a/>que<b/><b/><a/>me<b/></l>
