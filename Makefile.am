@@ -12,6 +12,7 @@ TARGETS_COMMON =			\
 	$(LANG1).automorf.att.gz	\
 	$(LANG1).autogen.bin		\
 	$(LANG1).autogen.att.gz		\
+	$(LANG1).autoprepgen.bin		\
 	$(LANG1).autopgen.bin		\
 	$(LANG1b).automorf.bin		\
 	$(LANG1b).automorf.att.gz	\
@@ -80,6 +81,9 @@ $(LANG1).automorf.att.gz: $(LANG1).automorf.bin
 	lt-print $< | gzip -n -9 -c > $@
 
 $(LANG1).autopgen.bin: .deps/$(LANG1).post.dix
+	lt-comp lr $< $@
+
+$(LANG1).autoprepgen.bin: $(BASENAME).pre-post-$(LANG1).dix
 	lt-comp lr $< $@
 
 ###############################################################################

@@ -6,37 +6,37 @@
 
   <pardefs>
 	  
-	  <pardef n="numeros">
-		  <e>
-			  <i>1</i>
-		  </e>
-		  <e>
-			  <i>2</i>
-		  </e>
-		  <e>
-			  <i>3</i>
-		  </e>
-		  <e>
-			  <i>4</i>
-		  </e>
-		  <e>
-			  <i>5</i>
-		  </e>
-		  <e>
-			  <i>6</i>
-		  </e>
-		  <e>
-			  <i>7</i>
-		  </e>
-		  <e>
-			  <i>8</i>
-		  </e>
-		  <e>
-			  <i>9</i>
-		  </e>
-		  <e>
-			  <i>0</i>
-		  </e>
+  <pardef n="numeros">
+	  <e>
+		  <i>1</i>
+	  </e>
+	  <e>
+		  <i>2</i>
+	  </e>
+	  <e>
+		  <i>3</i>
+	  </e>
+	  <e>
+		  <i>4</i>
+	  </e>
+	  <e>
+		  <i>5</i>
+	  </e>
+	  <e>
+		  <i>6</i>
+	  </e>
+	  <e>
+		  <i>7</i>
+	  </e>
+	  <e>
+		  <i>8</i>
+	  </e>
+	  <e>
+		  <i>9</i>
+	  </e>
+	  <e>
+		  <i>0</i>
+	  </e>
     </pardef>
 	 
     <pardef n="caracter_general">
@@ -818,13 +818,6 @@
 	</e>
 	<e>
 		<p>
-			<l><b/><b/></l>
-			<r>n'</r>
-		</p>
-		<par n="apostrofadors"/>
-	</e>
-	<e>
-		<p>
 			<l/>
 			<r>ne</r>
 		</p>
@@ -1555,7 +1548,7 @@
 	<e>
 		<p>
 			<l><a/>a<b/>Los<b/>Angeles<b/></l>
-			<r>a<b/>Los<b/>Angeles<b/><b/></r>
+			<r>a<b/>Los<b/>Angeles<b/></r>
 		</p>
 	</e>
 	<e>
@@ -1678,48 +1671,6 @@
 		</p>
 		<par n="vocal_general"/>
 	</e>
-	<e>
-		<p>
-			<l><a/>que<b/><b/><a/>me<b/></l>
-			<r>que<b/>me<b/></r>
-		</p>
-		<par n="consonant_menys_h"/>
-	</e>
-	<e>
-		<p>
-			<l><a/>que<b/><b/><a/>te<b/></l>
-			<r>que<b/>te<b/></r>
-		</p>
-		<par n="consonant_menys_h"/>
-	</e>
-	<e>
-		<p>
-			<l><a/>que<b/><b/><a/>se<b/></l>
-			<r>que<b/>se<b/></r>
-		</p>
-		<par n="consonant_menys_h"/>
-	</e>
-	<e>
-		<p>
-			<l><a/>que<b/><b/><a/>me<b/></l>
-			<r>que<b/>m'</r>
-		</p>
-		<par n="vocal_general"/>
-	</e>
-	<e>
-		<p>
-			<l><a/>que<b/><b/><a/>te<b/></l>
-			<r>que<b/>t'</r>
-		</p>
-		<par n="vocal_general"/>
-	</e>
-	<e>
-		<p>
-			<l><a/>que<b/><b/><a/>se<b/></l>
-			<r>que<b/>s'</r>
-		</p>
-		<par n="vocal_general"/>
-	</e>
 
 	<e>
 		<p>
@@ -1727,13 +1678,6 @@
 			<r>qu'i<b/></r>
 		</p>
 	</e>
-	<e>
-		<p>
-			<l><a/>que<b/><b/><a/>i<b/></l>
-			<r>qu'i<b/></r>
-		</p>
-	</e>
-
 	<e>
 		<p>
 			<l><a/>me<b/><a/>ne<b/></l>
@@ -1898,27 +1842,6 @@
 	</e>
 	<e>
 		<p>
-			<l><a/>que<b/><b/><a/>se<b/><a/>ne<b/></l>
-			<r>que<b/>se</r>
-		</p>
-		<par n="en_apostrofat"/>
-	</e>
-	<e>
-		<p>
-			<l><a/>que<b/><a/>se<b/><b/><a/>ne<b/></l>
-			<r>que<b/>se</r>
-		</p>
-		<par n="en_apostrofat"/>
-	</e>
-	<e>
-		<p>
-			<l><a/>que<b/><b/><a/>se<b/><b/><a/>ne<b/></l>
-			<r>que<b/>se</r>
-		</p>
-		<par n="en_apostrofat"/>
-	</e>
-	<e>
-		<p>
 			<l><a/>se<b/><a/>i<b/></l>
 			<r>s'i<b/></r>
 		</p>
@@ -1932,60 +1855,11 @@
 	</e>
 	<e>
 		<p>
-			<l><a/>que<b/><a/>se<b/><b/><a/>i<b/></l>
-			<r>que<b/>s'i<b/></r>
-		</p>
-	</e>
-	<e>
-		<p>
-			<l><a/>que<b/><b/><a/>se<b/><a/>i<b/></l>
-			<r>que<b/>s'i<b/></r>
-		</p>
-	</e>
-	<e>
-		<p>
-			<l><a/>que<b/><b/><a/>se<b/><b/><a/>i<b/></l>
-			<r>que<b/>s'i<b/></r>
-		</p>
-	</e>
-
-	<e>
-		<p>
 			<l><a/>que<b/><a/>ne<b/><a/>i<b/></l>
 			<r>que<b/>n'i<b/></r>
 		</p>
 	</e>
-	<e>
-		<p>
-			<l><a/>que<b/><b/><a/>ne<b/><a/>i<b/></l>
-			<r>que<b/>n'i<b/></r>
-		</p>
-	</e>
 
-<!-- patches for removing extra blanks in enonciative generation -->
-	<e>
-		<p>
-			<l><a/>que<b/></l>
-			<r>qu</r>
-		</p>
-		<par n="apostrof_e"/>
- 		</e>
-	<e>
-		<p>
-			<l><a/>que<b/><b/></l>
-			<r>que<b/></r>
-		</p>
-		<par n="caracter_general"/>
-	</e>
-<!--
-	<e>
-		<p>
-			<l><a/>que<b/><b/></l>
-			<r>que<b/></r>
-		</p>
-		<par n="consonant_menys_h"/>
-	</e>
--->
 </group>
 
 <group alt="oci">
@@ -2238,8 +2112,15 @@
 	<e>
 		<p>
 			<l><a/>a<b/>Los<b/>Angeles<b/></l>
-			<r>a<b/>Los<b/>Angeles<b/><b/></r>
+			<r>a<b/>Los<b/>Angeles<b/></r>
 		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>a<b/>Los<b/>Angeles</l>
+			<r>a<b/>Los<b/>Angeles</r>
+		</p>
+		<par n="vocal_general"/>
 	</e>
 	<e>
 		<p>
@@ -3012,20 +2893,6 @@ L?objet indirect peut être: « li, lor1, me, te, se, nos, vos »-->
 	<e>
 		<p>
 			<l><a/>que<b/><a/>lo<b/></l>
-			<r>que<b/>l'</r>
-		</p>
-		<par n="vocal_general"/>
-	</e>
-	<e>
-		<p>
-			<l><a/>que<b/><b/><a/>la<b/></l>
-			<r>que<b/>l'</r>
-		</p>
-		<par n="vocal_general"/>
-	</e>
-	<e>
-		<p>
-			<l><a/>que<b/><b/><a/>lo<b/></l>
 			<r>que<b/>l'</r>
 		</p>
 		<par n="vocal_general"/>

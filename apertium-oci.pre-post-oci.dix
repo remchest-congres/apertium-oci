@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ces règles ne sont que pour tenter d'éviter le plus possible les problèmes causés par le bug de l'interchunk et le patch pour le contourner à apertium-oci-fra.fra-oci.t2x_enon, qui ajoute des espaces suplémentaire. Ici nous enlevons la plupart de ces espaces. -->
+<dictionary>
+  <alphabet/>
+<!--  <sdefs>
+  </sdefs>-->
+
+  <pardefs>
+  <pardef n="numeros">
+	  <e>
+		  <i>1</i>
+	  </e>
+	  <e>
+		  <i>2</i>
+	  </e>
+	  <e>
+		  <i>3</i>
+	  </e>
+	  <e>
+		  <i>4</i>
+	  </e>
+	  <e>
+		  <i>5</i>
+	  </e>
+	  <e>
+		  <i>6</i>
+	  </e>
+	  <e>
+		  <i>7</i>
+	  </e>
+	  <e>
+		  <i>8</i>
+	  </e>
+	  <e>
+		  <i>9</i>
+	  </e>
+	  <e>
+		  <i>0</i>
+	  </e>
+    </pardef>
+	 
+    <pardef n="caracter_general">
+      <e>
+	<i><b/></i>
+      </e>
+      <e>
+	<i>;</i>
+      </e>
+      <e>
+	<i>#</i>
+      </e>
+      <e>
+	<i>)</i>
+      </e>
+      <e>
+	<i>:</i>
+      </e>
+      <e>
+	<i>(</i>
+      </e>
+      <e>
+	<i>[</i>
+      </e>
+      <e>
+	<i>]</i>
+      </e>
+      <e>
+	<i>"</i>
+      </e>
+      <e>
+	<i>'</i>
+      </e>
+      <e>
+	<i>*</i>
+      </e>
+      <e>
+	<i>@</i>
+      </e>
+      <e>
+	<i>«</i>
+      </e>
+      <e>
+	<i>-</i>
+      </e>
+      <e>
+	<i>,</i>
+      </e>
+      <e>
+	<i>?</i>
+      </e>
+      <e>
+	<i>/</i>
+      </e>
+      <e>
+	<i>`</i>
+      </e>
+      <e>
+	<i>±</i>
+      </e>
+      <e>
+	<i>­</i>
+      </e>
+      <e>
+	<i>$</i>
+      </e>
+      <e>
+	<i>)</i>
+      </e>
+      <e>
+	<i>:</i>
+      </e>
+      <e>
+	<i>.</i>
+      </e>
+	<e>
+		<par n="numeros"/>
+	</e>
+    </pardef>
+</pardefs>
+ 
+  <section id="main" type="standard">
+	<!-- canvis -->
+	<e>
+		<p>
+			<l><a/>que<b/><b/></l>
+			<r><a/>que<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>me<b/><b/></l>
+			<r><a/>me<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>te<b/><b/></l>
+			<r><a/>te<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>se<b/><b/></l>
+			<r><a/>se<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>nos<b/><b/></l>
+			<r><a/>nos<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>vos<b/><b/></l>
+			<r><a/>vos<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>ne<b/><b/></l>
+			<r><a/>ne<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>y<b/><b/></l>
+			<r><a/>y<b/></r>
+		</p>
+	</e>
+	<!-- canvis: cases especials frequents -->
+	<e>
+		<p>
+			<l><a/>que<b/><b/>ei<b/><b/></l>
+			<r><a/>que<b/>ei<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><b/>son<b/><b/></l>
+			<r><a/>que<b/>son<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><b/>a<b/><b/></l>
+			<r><a/>que<b/>a<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><b/>an<b/><b/></l>
+			<r><a/>que<b/>an<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><b/>pòt<b/><b/></l>
+			<r><a/>que<b/>pòt<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><b/>pòden<b/><b/></l>
+			<r><a/>que<b/>pòden<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><b/>vòu<b/><b/></l>
+			<r><a/>que<b/>vòu<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><b/>vòlen<b/><b/></l>
+			<r><a/>que<b/>vòlen<b/></r>
+		</p>
+	</e>
+	<!-- mantenença -->
+	<e>
+		<p>
+			<l><a/>me</l>
+			<r><a/>me</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>te</l>
+			<r><a/>te</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>se</l>
+			<r><a/>se</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>nos</l>
+			<r><a/>nos</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>vos</l>
+			<r><a/>vos</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>la</l>
+			<r><a/>la</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>lo</l>
+			<r><a/>lo</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>las</l>
+			<r><a/>las</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>los</l>
+			<r><a/>los</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>ac</l>
+			<r><a/>ac</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>ne</l>
+			<r><a/>ne</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>i</l>
+			<r><a/>i</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>detla</l>
+			<r><a/>detla</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>detlo</l>
+			<r><a/>detlo</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>detlas</l>
+			<r><a/>detlas</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>detlos</l>
+			<r><a/>detlos</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>aquera</l>
+			<r><a/>aquera</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>aqueth</l>
+			<r><a/>aqueth</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>aqueras</l>
+			<r><a/>aqueras</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>aqueths</l>
+			<r><a/>aqueths</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>prnera</l>
+			<r><a/>prnera</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>prneth</l>
+			<r><a/>prneth</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>prneras</l>
+			<r><a/>prneras</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>prneths</l>
+			<r><a/>prneths</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>ambdús</l>
+			<r><a/>ambdús</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>ambdues</l>
+			<r><a/>ambdues</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>cada</l>
+			<r><a/>cada</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>a</l>
+			<r><a/>a</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>de</l>
+			<r><a/>de</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>en</l>
+			<r><a/>en</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>jos</l>
+			<r><a/>jos</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>per</l>
+			<r><a/>per</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>sus</l>
+			<r><a/>sus</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>que</l>
+			<r><a/>que</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>cnjse</l>
+			<r><a/>cnjse</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+</section>
+
+
+
+
+</dictionary>
