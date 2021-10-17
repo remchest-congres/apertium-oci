@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Ces règles ne sont que pour tenter d'éviter le plus possible les problèmes causés par le bug de l'interchunk et le patch pour le contourner à apertium-oci-fra.fra-oci.t2x_enon, qui ajoute des espaces suplémentaire. Ici nous enlevons la plupart de ces espaces. -->
+<!-- Ces règles ne sont que pour tenter d'éviter le plus possible les problèmes causés par le bug de l'interchunk, qui cause la perte d'espaces, et le patch pour le contourner à apertium-oci-fra.fra-oci.t2x_enon, qui ajoute des espaces suplémentaires. Ici nous enlevons la plupart de ces espaces. -->
 <dictionary>
   <alphabet/>
 <!--  <sdefs>
