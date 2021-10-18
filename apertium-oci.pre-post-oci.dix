@@ -39,6 +39,111 @@
 	  </e>
     </pardef>
 	 
+  <pardef n="letras">
+	  <e>
+		  <i>a</i>
+	  </e>
+	  <e>
+		  <i>à</i>
+	  </e>
+	  <e>
+		  <i>á</i>
+	  </e>
+	  <e>
+		  <i>b</i>
+	  </e>
+	  <e>
+		  <i>c</i>
+	  </e>
+	  <e>
+		  <i>d</i>
+	  </e>
+	  <e>
+		  <i>e</i>
+	  </e>
+	  <e>
+		  <i>è</i>
+	  </e>
+	  <e>
+		  <i>é</i>
+	  </e>
+	  <e>
+		  <i>f</i>
+	  </e>
+	  <e>
+		  <i>g</i>
+	  </e>
+	  <e>
+		  <i>h</i>
+	  </e>
+	  <e>
+		  <i>i</i>
+	  </e>
+	  <e>
+		  <i>í</i>
+	  </e>
+	  <e>
+		  <i>j</i>
+	  </e>
+	  <e>
+		  <i>k</i>
+	  </e>
+	  <e>
+		  <i>l</i>
+	  </e>
+	  <e>
+		  <i>m</i>
+	  </e>
+	  <e>
+		  <i>n</i>
+	  </e>
+	  <e>
+		  <i>o</i>
+	  </e>
+	  <e>
+		  <i>ó</i>
+	  </e>
+	  <e>
+		  <i>ò</i>
+	  </e>
+	  <e>
+		  <i>p</i>
+	  </e>
+	  <e>
+		  <i>q</i>
+	  </e>
+	  <e>
+		  <i>r</i>
+	  </e>
+	  <e>
+		  <i>s</i>
+	  </e>
+	  <e>
+		  <i>t</i>
+	  </e>
+	  <e>
+		  <i>u</i>
+	  </e>
+	  <e>
+		  <i>ú</i>
+	  </e>
+	  <e>
+		  <i>v</i>
+	  </e>
+	  <e>
+		  <i>w</i>
+	  </e>
+	  <e>
+		  <i>x</i>
+	  </e>
+	  <e>
+		  <i>y</i>
+	  </e>
+	  <e>
+		  <i>z</i>
+	  </e>
+    </pardef>
+	 
     <pardef n="caracter_general">
       <e>
 	<i><b/></i>
@@ -183,6 +288,18 @@
 	</e>
 	<e>
 		<p>
+			<l><a/>que<b/>ei<b/><b/></l>
+			<r><a/>que<b/>ei<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/>son<b/><b/></l>
+			<r><a/>que<b/>son<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
 			<l><a/>que<b/><b/>a<b/><b/></l>
 			<r><a/>que<b/>a<b/></r>
 		</p>
@@ -190,6 +307,18 @@
 	<e>
 		<p>
 			<l><a/>que<b/><b/>an<b/><b/></l>
+			<r><a/>que<b/>an<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/>a<b/><b/></l>
+			<r><a/>que<b/>a<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/>an<b/><b/></l>
 			<r><a/>que<b/>an<b/></r>
 		</p>
 	</e>
@@ -207,6 +336,18 @@
 	</e>
 	<e>
 		<p>
+			<l><a/>que<b/>pòt<b/><b/></l>
+			<r><a/>que<b/>pòt<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/>pòden<b/><b/></l>
+			<r><a/>que<b/>pòden<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
 			<l><a/>que<b/><b/>vòu<b/><b/></l>
 			<r><a/>que<b/>vòu<b/></r>
 		</p>
@@ -214,6 +355,18 @@
 	<e>
 		<p>
 			<l><a/>que<b/><b/>vòlen<b/><b/></l>
+			<r><a/>que<b/>vòlen<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/>vòu<b/><b/></l>
+			<r><a/>que<b/>vòu<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/>vòlen<b/><b/></l>
 			<r><a/>que<b/>vòlen<b/></r>
 		</p>
 	</e>
@@ -292,6 +445,13 @@
 		<p>
 			<l><a/>ne</l>
 			<r><a/>ne</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>non</l>
+			<r><a/>non</r>
 		</p>
 		<par n="caracter_general"/>
 	</e>
