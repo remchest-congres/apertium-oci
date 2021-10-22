@@ -531,10 +531,24 @@
 		</p>
 		<par n="vocal_general"/>
 	</e>
+
 	<e>
 		<p>
 			<l><a/>ne<b/><a/>ac<b/></l>
 			<r>n'ac<b/></r>
+		</p>
+	</e>
+
+	<e>
+		<p>
+			<l><a/>ne<b/><a/>lo<b/><a/>ac<b/></l>
+			<r>ne<b/>l'ac<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>ne<b/><a/>la<b/><a/>ac<b/></l>
+			<r>ne<b/>l'ac<b/></r>
 		</p>
 	</e>
 </pardef>
@@ -2240,7 +2254,7 @@ COMPTE
 	<e>
 		<p>
 			<l><a/>que<b/><a/>la<b/><a/>ac<b/></l>
-			<r>que<b/>la'c<b/></r>
+			<r>que<b/>l'ac<b/></r>
 		</p>
 	</e>
 
