@@ -300,6 +300,66 @@
 	</e>
 	<e>
 		<p>
+			<l><a/>que<b/><b/>èi<b/><b/></l>
+			<r><a/>que<b/>èi<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/>èi<b/><b/></l>
+			<r><a/>que<b/>èi<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>lo<b/>èi<b/><b/></l>
+			<r><a/>que<b/><a/>lo<b/>èi<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>la<b/>èi<b/><b/></l>
+			<r><a/>que<b/><a/>la<b/>èi<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>los<b/>èi<b/><b/></l>
+			<r><a/>que<b/><a/>los<b/>èi<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>las<b/>èi<b/><b/></l>
+			<r><a/>que<b/><a/>las<b/>èi<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>lo<b/>èi<b/><b/></l>
+			<r><a/>que<b/><a/>lo<b/>èi<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>la<b/>èi<b/><b/></l>
+			<r><a/>que<b/><a/>la<b/>èi<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>los<b/>èi<b/><b/></l>
+			<r><a/>que<b/><a/>los<b/>èi<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>las<b/>èi<b/><b/></l>
+			<r><a/>que<b/><a/>las<b/>èi<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
 			<l><a/>que<b/><b/>a<b/><b/></l>
 			<r><a/>que<b/>a<b/></r>
 		</p>
@@ -320,6 +380,54 @@
 		<p>
 			<l><a/>que<b/>an<b/><b/></l>
 			<r><a/>que<b/>an<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>lo<b/>a<b/><b/></l>
+			<r><a/>que<b/><a/>lo<b/>a<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>la<b/>a<b/><b/></l>
+			<r><a/>que<b/><a/>la<b/>a<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>los<b/>a<b/><b/></l>
+			<r><a/>que<b/><a/>los<b/>a<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>las<b/>a<b/><b/></l>
+			<r><a/>que<b/><a/>las<b/>a<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>lo<b/>an<b/><b/></l>
+			<r><a/>que<b/><a/>lo<b/>an<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>la<b/>an<b/><b/></l>
+			<r><a/>que<b/><a/>la<b/>an<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>los<b/>an<b/><b/></l>
+			<r><a/>que<b/><a/>los<b/>an<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>las<b/>an<b/><b/></l>
+				<r><a/>que<b/><a/>las<b/>an<b/></r>
 		</p>
 	</e>
 	<e>
@@ -624,8 +732,5 @@
 		<par n="caracter_general"/>
 	</e>
 </section>
-
-
-
 
 </dictionary>
