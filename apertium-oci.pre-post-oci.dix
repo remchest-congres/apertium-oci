@@ -149,6 +149,9 @@
 	<i><b/></i>
       </e>
       <e>
+	<i> </i>	<!-- acò es pas un blanc -->
+      </e>
+      <e>
 	<i>;</i>
       </e>
       <e>
