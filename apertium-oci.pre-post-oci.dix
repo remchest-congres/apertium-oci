@@ -143,14 +143,16 @@
 		  <i>z</i>
 	  </e>
     </pardef>
-	 
-    <pardef n="caracter_general">
+ 
+    <pardef n="caracter_general_no_blanc">
+<!--
       <e>
 	<i><b/></i>
       </e>
       <e>
-	<i> </i>	<!-- acò es pas un blanc -->
+	<i> </i>
       </e>
+-->
       <e>
 	<i>;</i>
       </e>
@@ -223,6 +225,21 @@
 	<e>
 		<par n="numeros"/>
 	</e>
+    </pardef>
+ 
+    <pardef n="caracter_general">
+      <e>
+	<i><b/></i>
+      </e>
+      <e>
+	<i> </i>	<!-- aquò es pas un blanc -->
+      </e>
+      <e>
+	<i/>
+      </e>
+      <e>
+	<par n="caracter_general_no_blanc"/>
+      </e>
     </pardef>
 </pardefs>
  
@@ -299,6 +316,30 @@
 		<p>
 			<l><a/>que<b/>son<b/><b/></l>
 			<r><a/>que<b/>son<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><b/>èra<b/><b/></l>
+			<r><a/>que<b/>èra<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><b/>èran<b/><b/></l>
+			<r><a/>que<b/>èran<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/>èra<b/><b/></l>
+			<r><a/>que<b/>èra<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/>èran<b/><b/></l>
+			<r><a/>que<b/>èran<b/></r>
 		</p>
 	</e>
 	<e>
@@ -733,6 +774,9 @@
 			<r><a/>cnjse</r>
 		</p>
 		<par n="caracter_general"/>
+	</e>
+	<e>
+		<par n="caracter_general_no_blanc"/>
 	</e>
 </section>
 
