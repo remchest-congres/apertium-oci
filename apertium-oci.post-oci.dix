@@ -63,9 +63,9 @@
       <e>
 	<i>]</i>
       </e>
- <!--     <e>
+     <e>
 	<i>"</i>
-      </e> -->
+      </e>
       <e>
 	<i>'</i>
       </e>
@@ -100,6 +100,9 @@
 	<i>­</i>
       </e>
       <e>
+	<i> </i>
+      </e>
+      <e>
 	<i>$</i>
       </e>
       <e>
@@ -111,9 +114,9 @@
       <e>
 	<i>.</i>
       </e>
-		<e>
-			<par n="numeros"/>
-		</e>
+      <e>
+	<par n="numeros"/>
+      </e>
     </pardef>
 	 
 	 <pardef n="vocals">
@@ -219,8 +222,8 @@
 			 <i>8</i>
 		 </e> -->
     </pardef>
-<!-- paradigma amb les consonants. hi he afegit la h	  -->
-	 <pardef n="consonant_menys_h">
+<!-- paradigma amb les consonants -->
+	 <pardef n="consonant">
 		 <e>
 			 <i>b</i>
 		 </e>
@@ -239,6 +242,9 @@
 		 <e>
 			 <i>g</i>
 		 </e>
+		 <e>
+			 <i>h</i>
+		 </e> 
 		 <e>
 			 <i>j</i>
 		 </e>
@@ -282,12 +288,26 @@
 			 <i>y</i>
 		 </e>
 		 <e>
-			 <i>h</i>
-		 </e> 
-		 <e>
 			 <i>z</i>
 		 </e>
     </pardef>
+
+<pardef n="quotes">
+	<e><i>"</i></e>
+	<e><i>'</i></e>
+	<e><i>«</i></e>
+	<e><i>" </i></e>
+	<e><i>' </i></e>
+	<e><i>« </i></e>
+</pardef>
+
+<pardef n="quotes_empty">
+	<e><i></i></e>
+	<e>
+		<par n="quotes"/>
+	</e>
+</pardef>
+
 <!-- pronom "en" apostrofat (s'apostrofa darrere de verb acabat en vocal o en contacte amb els altres pronoms febles	  -->
 	 <pardef n="en_apostrofat">
 		 <e>
@@ -301,7 +321,7 @@
 				 <l/>
 				 <r><b/>n'</r>
 			 </p>
-				<par n="vocal_general"/>
+			<par n="vocal_general"/>
 		 </e>
 	 </pardef>
 	 
@@ -719,7 +739,7 @@
 <!-- casos en què una paraula no s'ha d'apostrofar ni contraure  -->
 	 <pardef n="no_contrac">
 		 <e>
-			 <par n="consonant_menys_h"/>
+			 <par n="consonant"/>
 		 </e>
 		 <e>
 			 <par n="pronom_aton_apostrofat"/>
@@ -849,6 +869,13 @@
  
  <!-- paradigma per a les contraccions amb determinant 	 -->
  <pardef n="contraccio_per">
+	 <e>
+		 <p>
+			 <l>e</l>
+			 <r/>
+		 </p>
+		 <par n="contrac_det"/>
+	 </e>
 	 <e>
 		 <p>
 			 <l>e</l>
@@ -1192,20 +1219,20 @@
 	 </p>
 	 <par n="les_ac"/>
 	</e> 
-	<e>
-		<p>
-			<l><b/><a/>se</l>
-			<r>s</r>
-		</p>
-		<par n="apostrof_e"/>
-      </e>
-	<e>
-		<p>
-			<l><b/><a/>ne</l>
-			<r/>
-		</p>
-		<par n="apostrof_en"/>
-      </e>
+<e>
+	<p>
+		<l><b/><a/>se</l>
+		<r>s</r>
+	</p>
+	<par n="apostrof_e"/>
+</e>
+<e>
+	<p>
+		<l><b/><a/>ne</l>
+		<r/>
+	</p>
+	<par n="apostrof_en"/>
+</e>
 </pardef>
 <!--  paradigma especial per a la preposició "de" -->
 <pardef n="de"> 
@@ -1558,6 +1585,19 @@
 	</e>
 	<e>
 		<p>
+			<l><b/><a/>ne<b/></l>
+			<r>de'n<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><b/><a/>ne</l>
+			<r>de'n</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
 			<l><b/></l>
 			<r>de<b/></r>
 		</p>
@@ -1767,6 +1807,92 @@
 	 </p>
  </e>
 </pardef>
+
+<pardef n="det_simple">
+	<e>
+		<p>
+			<l><a/>detla<b/></l>
+			<r>la<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>detlo<b/></l>
+			<r>lo<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>detlas<b/></l>
+			<r>las<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>detlos<b/></l>
+			<r>los<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>detla</l>
+			<r>la</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>detlo</l>
+			<r>lo</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>detlas</l>
+			<r>las</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>detlos</l>
+			<r>los</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+</pardef>
+
+<pardef n="prneth_simple">
+	<e>
+		<par n="quotes_empty"/>
+		<p>
+			<l><a/>prnera</l>
+			<r>era</r>
+		</p>
+	</e>
+	<e>
+		<par n="quotes_empty"/>
+		<p>
+			<l><a/>prneth</l>
+			<r>eth</r>
+		</p>
+	</e>
+	<e>
+		<par n="quotes_empty"/>
+		<p>
+			<l><a/>prneras</l>
+			<r>eras</r>
+		</p>
+	</e>
+	<e>
+		<par n="quotes_empty"/>
+		<p>
+			<l><a/>prneths</l>
+			<r>eths</r>
+		</p>
+	</e>
+</pardef>
 </pardefs>
  
   <section id="main" type="standard">
@@ -1955,7 +2081,15 @@
 		</p>
 		<par n="apostrofenperdarrere"/>
 	</e>
+	<e>
+		<p>
+			<l><a/>que</l>
+			<r>que<b/></r>
+		</p>
+		<par n="apostrofenperdarrere"/>
+	</e>
 </group>
+
 <group alt="oci@gascon">
 	<e>
 	  <p>
@@ -2072,6 +2206,19 @@
 	</e>
 	<e>
 		<p>
+			<l><a/>a<b/><a/>ne<b/></l>
+			<r>a'n<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>a<b/><a/>ne</l>
+			<r>a'n</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
 			<l><a/>jos<b/><a/>detlo<b/></l>
 			<r>jol<b/></r>
 		</p>
@@ -2121,6 +2268,14 @@
 			<r>jos<b/>se</r>
 		</p>
 	</e>
+
+	<e>
+		<p>
+			<l><a/>sus<b/></l>
+			<r>sus<b/></r>
+		</p>
+		<par n="quotes"/>
+	</e>
 	<e>
 		<p>
 			<l><a/>sus<b/><a/>detlo<b/></l>
@@ -2141,16 +2296,44 @@
 	</e>
 	<e>
 		<p>
+			<l><a/>sus<b/><a/>detlos<b/></l>
+			<r>suls<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>sus<b/><a/>detlo</l>
+			<r>sul</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>sus<b/><a/>detla</l>
+			<r>sus<b/>la</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>sus<b/><a/>detlas</l>
+			<r>sus<b/>las</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>sus<b/><a/>detlos</l>
+			<r>suls</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
 			<l><a/>sus<b/><a/>detla<b/></l>
 			<r>sus<b/>l'<b/></r>
 		</p>
 		<par n="vocal_general"/>
-	</e>
-	<e>
-		<p>
-			<l><a/>sus<b/><a/>detlos<b/></l>
-			<r>suls<b/></r>
-		</p>
 	</e>
 	<e>
 		<p>
@@ -2354,23 +2537,6 @@
 		</p>
 		<par n="en_apostrofat"/>
 	</e>
-<!--
-COMPTE
-	<e>
-		<p>
-			<l><a/>que<b/><a/>me<b/><a/>ne<b/></l> xxxxxx
-			<r>que<b/>me</r>
-		</p>
-		<par n="en_apostrofat"/>
-	</e>
-	<e>
-		<p>
-			<l><a/>que<b/><a/>se<b/><a/>ne<b/></l>
-			<r>que<b/>se</r>
-		</p>
-		<par n="en_apostrofat"/>
-	</e>
--->
 
 	<e>
 		<p>
@@ -2422,7 +2588,7 @@ COMPTE
 	<e>
 		<p>
 			<l><a/>que<b/><a/>nos<b/><a/>ne<b/></l>
-			<r>que'ns<b/>en<b/></r>
+			<r>que<b/>ns'en<b/></r>
 		</p>
 	</e>
 	<e>
@@ -2462,7 +2628,7 @@ COMPTE
 	<e>
 		<p>
 			<l><a/>que<b/><a/>vos<b/><a/>ne<b/></l>
-			<r>que'vs<b/>en<b/></r>
+			<r>que<b/>vs'en<b/></r>
 		</p>
 	</e>
 	
@@ -2601,6 +2767,88 @@ COMPTE
 		</p>
 		<par n="ne_gascon"/>
 	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>ne<b/></l>
+			<r>que<b/>n'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>ne<b/></l>
+			<r>que'n<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>ne</l>
+			<r>que'n</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+
+	<e>
+		<p>
+			<l><a/>que<b/><a/>me<b/></l>
+			<r>que<b/>m'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>me<b/></l>
+			<r>que'm<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>me</l>
+			<r>que'm</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>te<b/></l>
+			<r>que<b/>t'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>te<b/></l>
+			<r>que't<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>te</l>
+			<r>que't</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>se<b/></l>
+			<r>que<b/>s'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>se<b/></l>
+			<r>que's<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>se</l>
+			<r>que's</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+
 </group>
 
 <group alt="oci">
@@ -2710,20 +2958,20 @@ COMPTE
 	</e>
 
 
- <e>
-	 <p>
-		 <l><a/>la<b/><a/>ne<b/></l>
-		 <r>la</r>
-	 </p>
-	 <par n="en_apostrofat"/>
- </e>
- <e>
-	 <p>
-		 <l><a/>lo<b/><a/>ne<b/></l>
-		 <r>lo</r>
-	 </p>
-	 <par n="en_apostrofat"/>
- </e>
+ 	<e>
+		<p>
+			<l><a/>la<b/><a/>ne<b/></l>
+			<r>la</r>
+		</p>
+		<par n="en_apostrofat"/>
+ 	</e>
+ 	<e>
+		<p>
+			<l><a/>lo<b/><a/>ne<b/></l>
+			<r>lo</r>
+		</p>
+		<par n="en_apostrofat"/>
+ 	</e>
 	<e>
 		<p>
 			<l><a/>a<b/><a/>detlo<b/></l>
@@ -2846,6 +3094,7 @@ COMPTE
 		</p>
 	</e>
 	<e>
+		<par n="quotes_empty"/>
 		<p>
 			<l><a/>detla<b/></l>
 			<r>l'</r>
@@ -2853,6 +3102,7 @@ COMPTE
 		<par n="vocal_general"/>
 	</e>
 	<e>
+		<par n="quotes_empty"/>
 		<p>
 			<l><a/>detlo<b/></l>
 			<r>l'</r>
@@ -3322,6 +3572,13 @@ COMPTE
 		</p>
 		<par n="caracter_general"/>
 	</e>
+	<e>
+		<p>
+			<l><a/>que</l>
+			<r>que<b/></r>
+		</p>
+		<par n="apostrofenperdarrere"/>
+	</e>
 
 <!--
 L?objet direct peut être: « lo, los, la, las, o, me, te, se, nos, vos ».
@@ -3330,6 +3587,7 @@ L?objet indirect peut être: « li, lor1, me, te, se, nos, vos »-->
 <!-- aquests són comuns -->
 			
 	<e>
+		<par n="quotes_empty"/>
 		<p>
 			<l><a/>cnjse</l>
 			<r>s</r>
@@ -3375,20 +3633,13 @@ L?objet indirect peut être: « li, lor1, me, te, se, nos, vos »-->
 			<r>qu</r>
 		</p>
 		<par n="apostrof_e"/>
- 		</e>
+ 	</e>
 	<e>
 		<p>
-			<l><a/>que</l>
+			<l><a/>que<b/><a/>de</l>
 			<r>que<b/></r>
 		</p>
-		<par n="apostrofenperdarrere"/>
-	</e>
-	<e>
-	  <p>
-		  <l><a/>que<b/><a/>de</l>
-		  <r>que<b/></r>
-	  </p>
-	  <par n="de"/>
+		<par n="de"/>
 	</e>
 
 	<e>
@@ -3448,52 +3699,159 @@ L?objet indirect peut être: « li, lor1, me, te, se, nos, vos »-->
 		<par n="vocal_general"/>
 	</e>
 	<e>
+		<par n="quotes_empty"/>
 		<p>
 			<l><a/>detla</l>
 			<r>la</r>
 		</p>
-		</e>
+	</e>
 	<e>
+		<par n="quotes_empty"/>
 		<p>
 			<l><a/>detlo</l>
 			<r>lo</r>
 		</p>
 	</e>
 	<e>
+		<par n="quotes_empty"/>
 		<p>
 			<l><a/>detlas</l>
 			<r>las</r>
 		</p>
 	</e>
 	<e>
+		<par n="quotes_empty"/>
 		<p>
 			<l><a/>detlos</l>
 			<r>los</r>
 		</p>
 	</e>
+
 	<e>
 		<p>
-			<l><a/>prnera</l>
-			<r>era</r>
+			<l><a/>de<b/></l>
+			<r>de<b/></r>
 		</p>
-		</e>
-	<e>
+		<par n="quotes"/>
 		<p>
-			<l><a/>prneth</l>
-			<r>eth</r>
+			<l><a/>detla<b/></l>
+			<r>l'</r>
 		</p>
+		<par n="vocal_general"/>
 	</e>
 	<e>
 		<p>
-			<l><a/>prneras</l>
-			<r>eras</r>
+			<l><a/>de<b/></l>
+			<r>de<b/></r>
 		</p>
+		<par n="quotes"/>
+		<p>
+			<l><a/>detlo<b/></l>
+			<r>l'</r>
+		</p>
+		<par n="vocal_general"/>
 	</e>
 	<e>
 		<p>
-			<l><a/>prneths</l>
-			<r>eths</r>
+			<l><a/>de<b/></l>
+			<r>de<b/></r>
 		</p>
+		<par n="quotes"/>
+		<par n="det_simple"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/></l>
+			<r>que<b/></r>
+		</p>
+		<par n="quotes"/>
+		<par n="det_simple"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>de<b/></l>
+			<r>que<b/>de<b/></r>
+		</p>
+		<par n="quotes"/>
+		<par n="det_simple"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>me<b/></l>
+			<r>me<b/></r>
+		</p>
+		<par n="quotes"/>
+		<par n="det_simple"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>te<b/></l>
+			<r>te<b/></r>
+		</p>
+		<par n="quotes"/>
+		<par n="det_simple"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>se<b/></l>
+			<r>se<b/></r>
+		</p>
+		<par n="quotes"/>
+		<par n="det_simple"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>ne<b/></l>
+			<r>ne<b/></r>
+		</p>
+		<par n="quotes"/>
+		<par n="det_simple"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>sus<b/></l>
+			<r>sus<b/></r>
+		</p>
+		<par n="quotes"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>jos<b/></l>
+			<r>jos<b/></r>
+		</p>
+		<par n="quotes"/>
+	</e>
+
+	<e>
+		<par n="prneth_simple"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/></l>
+			<r>qu'</r>
+		</p>
+		<par n="prneth_simple"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>ne<b/></l>
+			<r>n'</r>
+		</p>
+		<par n="prneth_simple"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>sus<b/></l>
+			<r>sus<b/></r>
+		</p>
+		<par n="prneth_simple"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>jos<b/></l>
+			<r>jos<b/></r>
+		</p>
+		<par n="prneth_simple"/>
 	</e>
 
 	<e>
