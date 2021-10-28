@@ -2849,6 +2849,107 @@
 		<par n="caracter_general"/>
 	</e>
 
+	<e>
+		<p>
+			<l><a/>be<b/></l>
+			<r>b'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>be<b/><a/>i<b/></l>
+			<r>b'i<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>be<b/><a/>ac<b/></l>
+			<r>b'ac<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>be<b/><a/>m</l>
+			<r>be<b/>m</r>
+		</p>
+		<par n="me_te_se_gascon"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>be<b/><a/>me<b/></l>
+			<r>be<b/>m'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>be<b/><a/>me<b/></l>
+			<r>be'm<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>be<b/><a/>me</l>
+			<r>be'm</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>be<b/><a/>t</l>
+			<r>be<b/>t</r>
+		</p>
+		<par n="me_te_se_gascon"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>be<b/><a/>te<b/></l>
+			<r>be<b/>t'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>be<b/><a/>te<b/></l>
+			<r>be't<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>be<b/><a/>te</l>
+			<r>be't</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>be<b/><a/>s</l>
+			<r>be<b/>s</r>
+		</p>
+		<par n="me_te_se_gascon"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>be<b/><a/>se<b/></l>
+			<r>be<b/>s'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>be<b/><a/>se<b/></l>
+			<r>be's<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>be<b/><a/>se</l>
+			<r>be's</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+
 </group>
 
 <group alt="oci">

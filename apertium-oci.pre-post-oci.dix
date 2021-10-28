@@ -253,6 +253,12 @@
 	</e>
 	<e>
 		<p>
+			<l><a/>be<b/><b/></l>
+			<r><a/>be<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
 			<l><a/>me<b/><b/></l>
 			<r><a/>me<b/></r>
 		</p>
@@ -471,7 +477,7 @@
 	<e>
 		<p>
 			<l><a/>que<b/><a/>las<b/>an<b/><b/></l>
-				<r><a/>que<b/><a/>las<b/>an<b/></r>
+			<r><a/>que<b/><a/>las<b/>an<b/></r>
 		</p>
 	</e>
 	<e>
@@ -522,7 +528,100 @@
 			<r><a/>que<b/>vòlen<b/></r>
 		</p>
 	</e>
+
+	<e>
+		<p>
+			<l><a/>be<b/><b/>ei<b/><b/></l>
+			<r><a/>be<b/>ei<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>be<b/><b/>son<b/><b/></l>
+			<r><a/>be<b/>son<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>be<b/>ei<b/><b/></l>
+			<r><a/>be<b/>ei<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>be<b/>son<b/><b/></l>
+			<r><a/>be<b/>son<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>be<b/><b/>èra<b/><b/></l>
+			<r><a/>be<b/>èra<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>be<b/><b/>èran<b/><b/></l>
+			<r><a/>be<b/>èran<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>be<b/>èra<b/><b/></l>
+			<r><a/>be<b/>èra<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>be<b/>èran<b/><b/></l>
+			<r><a/>be<b/>èran<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>be<b/><b/>èi<b/><b/></l>
+			<r><a/>be<b/>èi<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>be<b/><b/>èi<b/><b/></l>
+			<r><a/>be<b/>èi<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>be<b/><b/>a<b/><b/></l>
+			<r><a/>be<b/>a<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>be<b/><b/>an<b/><b/></l>
+			<r><a/>be<b/>an<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>be<b/>a<b/><b/></l>
+			<r><a/>be<b/>a<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>be<b/>an<b/><b/></l>
+			<r><a/>be<b/>an<b/></r>
+		</p>
+	</e>
+
 	<!-- mantenença -->
+	<e>
+		<p>
+			<l><a/>be</l>
+			<r><a/>be</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
 	<e>
 		<p>
 			<l><a/>me</l>
