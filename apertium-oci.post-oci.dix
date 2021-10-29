@@ -525,6 +525,7 @@
 			<r>ne'us<b/></r>
 		</p>
 	</e>
+<!--
 	<e>
 		<p>
 			<l><a/>ne<b/><a/>lo<b/></l>
@@ -532,6 +533,7 @@
 		</p>
 		<par n="vocal_general"/>
 	</e>
+-->
 	<e>
 		<p>
 			<l><a/>ne<b/><a/>la<b/></l>
@@ -544,6 +546,7 @@
 			<r>ne'us<b/></r>
 		</p>
 	</e>
+<!--
 	<e>
 		<p>
 			<l><a/>ne<b/><a/>la<b/></l>
@@ -551,6 +554,7 @@
 		</p>
 		<par n="vocal_general"/>
 	</e>
+-->
 
 	<e>
 		<p>
@@ -3484,14 +3488,6 @@
 		</p>
 	</e>
 
-<!-- COMPTE -->
-	<e>
-		<p>
-			<l><a/>ne<b/><a/>se<b/></l>
-			<r>se</r>
-		</p>
-		<par n="en_apostrofat"/>
-	</e>
 	<e>
 		<p>
 			<l><a/>se<b/><a/>ne<b/></l>
