@@ -1541,6 +1541,12 @@
 	<e>
 		<p>
 			<l><b/><a/>me<b/></l>
+			<r>de'm<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><b/><a/>me<b/></l>
 			<r>de<b/>m'</r>
 		</p>
 		<par n="vocal_general"/>
@@ -1551,6 +1557,12 @@
 			<r>de<b/>m</r>
 		</p>
 		<par n="me_te_se_gascon"/>
+	</e>
+	<e>
+		<p>
+			<l><b/><a/>te<b/></l>
+			<r>de't<b/></r>
+		</p>
 	</e>
 	<e>
 		<p>
@@ -1569,6 +1581,12 @@
 	<e>
 		<p>
 			<l><b/><a/>se<b/></l>
+			<r>de's<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><b/><a/>se<b/></l>
 			<r>de<b/>s'</r>
 		</p>
 		<par n="vocal_general"/>
@@ -1579,6 +1597,76 @@
 			<r>de<b/>s</r>
 		</p>
 		<par n="me_te_se_gascon"/>
+	</e>
+	<e>
+		<p>
+			<l><b/><a/>lo<b/></l>
+			<r>de'u<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><b/><a/>lo<b/></l>
+			<r>de<b/>l'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><b/><a/>la<b/></l>
+			<r>de'u<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><b/><a/>la<b/></l>
+			<r>de<b/>l'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><b/><a/>los<b/></l>
+			<r>de'us<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><b/><a/>las<b/></l>
+			<r>de'us<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><b/><a/>nos<b/></l>
+			<r>de'ns<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><b/><a/>nos<b/></l>
+			<r>de<b/>ns'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><b/><a/>vos<b/></l>
+			<r>de'vs<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><b/><a/>vos<b/></l>
+			<r>de<b/>vs'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><b/><a/>ac<b/></l>
+			<r>de'c<b/></r>
+		</p>
 	</e>
 	<e>
 		<p>
