@@ -875,6 +875,20 @@
 		<par n="caracter_general"/>
 	</e>
 	<e>
+		<p>
+			<l><a/>entà</l>
+			<r><a/>entà</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>tà</l>
+			<r><a/>tà</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
 		<par n="caracter_general_no_blanc"/>
 	</e>
 </section>
