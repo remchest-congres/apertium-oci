@@ -2483,10 +2483,36 @@
 	</e>
 	<e>
 		<p>
+			<l><a/>entà<b/></l>
+			<r>entà<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>entà</l>
+			<r>entà</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
 			<l><a/>tà</l>
 			<r>ta</r>
 		</p>
 		<par n="ad_gascon"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>tà<b/></l>
+			<r>tà<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>tà</l>
+			<r>tà</r>
+		</p>
+		<par n="caracter_general"/>
 	</e>
 	<e>
 		<p>
