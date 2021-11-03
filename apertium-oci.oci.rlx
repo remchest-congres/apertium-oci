@@ -77,9 +77,13 @@ LIST motsdetm = (det m) (pr m);
 
 LIST Masc = m mf ;
 LIST Fem = f mf ;
+LIST Masc_strict = m ;
+LIST Fem_strict = f ;
 
 LIST Sg = sg sp;
 LIST Pl = pl sp;
+LIST Sg_strict = sg ;
+LIST Pl_strict = pl ;
 
 SET MascSg = (m sg) OR (m sp) OR (mf sg) OR (mf sp) ;
 SET MascPl = (m pl) OR (m sp) OR (mf pl) OR (mf sp) ;
@@ -100,6 +104,7 @@ LIST Excl = "!" ;
 #Mots
 LIST A = "a";
 LIST En = "en";
+LIST De = "de";
 LIST En_pron = ("en" prn);
 LIST Dins = "dins";
 LIST Un = "un" ;
@@ -119,21 +124,57 @@ LIST Excl = "!" ;
 
 LIST unknown = ("\\*.*"r) ;
 LIST unknownMajIni = ("\\*[A-ZÀÁÈÉíÒÓÚÜÇ].*"r) ;
+LIST MajIni = ("\\<[A-ZÀÁÄÂÈÉËÊÍÏÎÒÓÖÔÚÜÛÇ].*\\>"r) ;
+LIST Majusc = ("\\<[A-ZÉÈÊ][A-ZÂÉÈÊÎÔÛ]*>"r) ;
+LIST MinIni = ("\\<[a-zàáäâèéëêíïîòóöôúüûç].*\\>"r) ;
+LIST siecles_nom_romains = ("[IVX][IVX]*"r) ;
+
+SET Dignite = ("pape") OR ("patriarche") OR ("évêque") OR ("archevêque") OR ("saint") OR ("saint") OR ("apôtre") OR ("empereur") OR ("roi") OR ("tsar") OR ("vice-roi") OR ("régent") OR ("prince") OR ("infant") OR ("dauphin") OR ("comte") OR ("comtesse") OR ("vicomte") OR ("vicomtesse") OR ("duc") OR ("duchesse") OR ("grand-duc") OR ("grande-duchesse") OR ("archiduc") OR ("archiduchesse") OR ("marquis") OR ("baron") ;
 
 
 SECTION
 
+REMOVE N IF (0 ("<a>"i)) (NOT 1 (")")) ;		# patch
 SELECT PREP IF (0 ("<per>"i)) ;		# patch
+SELECT PREP IF (0 ("<pel>"i)) (1 N + MascSg) ;		# patch
+SELECT PREP IF (0 ("<pel>"i)) (1 NP + MascSg) ;		# patch
 SELECT PREP IF (0 ("<de>"i)) ;		# patch
 REMOVE N IF (0 ("<coma>"i)) ;		# patch
 REMOVE N IF (0 ("<arren>"i)) ;		# patch
 REMOVE V IF (0 ("<arren>"i)) ;		# patch
-SELECT AV IF (-1 V) (0 ("<pas>"i)) ;		# patch
 REMOVE N IF (0 ("<e>"i)) ;		# patch
+SELECT VBinf IF (-1C PREP OR V) (0 ("<far>"i)) ;		# patch
+SELECT VBinf IF (-2C PREP OR V) (-1 Pro OR AV) (0 ("<far>"i)) ;		# patch
+SELECT VBinf IF (-3C PREP OR V) (-2 Pro OR AV) (-1 Pro OR AV) (0 ("<far>"i)) ;		# patch
+SELECT VBinf IF (NOT 0 DET + MascSg) (0 ("<far>"i)) ;		# patch
+SELECT V IF (-1 ("<se>"i)) (NOT 0 DET) ;		# se practica # patch
+SELECT PRON IF (0 ("<se>"i)) (1 Ser + &&AcordSP) (2 VBpp + &&AcordSP) ;		# se son formats # patch
+SELECT Ser + &&AcordSP IF (-1 ("<se>"i)) (0 Ser + &&AcordSP) (1 VBpp + &&AcordSP) ;		# patch
+SELECT VBpp + &&AcordSP IF (-2 ("<se>"i)) (-1 Ser + &&AcordSP) (0 VBpp + &&AcordSP) ;		# patch
+SELECT PRON IF (0 ("<se>"i)) (1 Ser + &&AcordSP) (2 AV) (3 VBpp + &&AcordSP) ;		# patch
+SELECT Ser + &&AcordSP IF (-1 ("<se>"i)) (0 Ser + &&AcordSP) (1 AV) (2 VBpp + &&AcordSP) ;		# patch
+SELECT VBpp + &&AcordSP IF (-3 ("<se>"i)) (-2 Ser + &&AcordSP) (-1 AV) (0 VBpp + &&AcordSP) ;		# patch
+SELECT PRON IF (0 ("<se>"i)) (1 Ser + &&AcordSP) (2 AV) (3 AV) (4 VBpp + &&AcordSP) ;		# patch
+SELECT Ser + &&AcordSP IF (-1 ("<se>"i)) (0 Ser + &&AcordSP) (1 AV) (2 AV) (3 VBpp + &&AcordSP) ;		# patch
+SELECT VBpp + &&AcordSP IF (-4 ("<se>"i)) (-3 Ser + &&AcordSP) (-2 AV) (-1 AV) (0 VBpp + &&AcordSP) ;		# patch
+SELECT V IF (0 ("<son>"i)) (1 ("<pas>"i)) ;		# patch
+SELECT N IF (-1 DET + MascSg) (0 ("<pas>"i)) ;		# un pas # patch
+SELECT DET + MascSg IF (0 DET + MascSg) (1 ("<pas>"i)) ;		# un pas # patch
+SELECT N IF (-2 DET + MascSg) (-1 AJ + MascSg) (0 ("<pas>"i)) ;		# un important pas # patch
+SELECT AJ + MascSg IF (-1 DET + MascSg) (0 AJ + MascSg) (1 ("<pas>"i)) ;		# un important pas # patch
+SELECT AV IF (-1 V) (0 ("<pas>"i)) ;		# patch
+SELECT V IF (1 ("<pas>"i)) ;		# patch
+
 
 #Un pronom proclitic est totjorn davant un vèrb o un autre pronom
 REMOVE Pro IF (NOT 1 V OR Pro);
+REMOVE DET IF (1C V OR Pro) (NOT 1 VBpp) ;
+SELECT V OR Pro IF (-1C Pro) (NOT -1/* V) ;	# i a un ; i aviá un
 
+SELECT PREP (0 ("a")) (1C Pro) ;	# a lo parlar
+
+REMOVE ("e") + Enon IF (NOT 1* ("?")) ;
+REMOVE ("be") + Enon IF (NOT 1* ("!")) ;
 SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg BARRIER V) (1C Pro OR V + Pers LINK NOT 0 VBimp) ;
 SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg BARRIER V) (0 ("ne") OR ("non")) (1 V + Pers LINK NOT 0 VBimp) (2 ("pas") OR ("pas nat")) ;
 SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg BARRIER V) (0 ("ne") OR ("non")) (1 Pro) (2 V + Pers LINK NOT 0 VBimp) (3 ("pas") OR ("pas nat")) ;
@@ -152,6 +193,7 @@ SELECT IJ IF (-1 BOS) (0 N) (1 CM) (1* ("!")) ;
 SELECT IJ IF (-1 BOS OR CM) (1 ("!")) ;
 SELECT IJ IF (-1 BOS OR CM) (0 ("gràcies") OR ("de res")) ;			# COPY-PASTE
 REMOVE IJ IF (NOT -1 CM OR BOS) (NOT 1 CM OR EOS) (NOT 1* ("!")) ;
+REMOVE IJ IF (NOT -1 CM OR BOS) (NOT 1 CM OR EOS) (0 ("a")) ;
 REMOVE IJ IF (NOT -1 CM OR BOS) (0 ("plan")) ;
 
 #En es pas un pronom s'es abans un gerondiu (amb possibilitat de pronoms entre los dos)
@@ -192,12 +234,22 @@ REMOVE PREP IF (NOT 1 N OR PRON OR AV OR NUM OR NP OR VBinf OR DET OR AJ);
 #Es pas un vèrbe se, dempuèi lo darrièr vèrbe conjugat, avèm pas agut de novèla proposicion
 #REMOVE Vconj IF (NOT -1* intrprop BARRIER Vconj) ;
 	# funciona pas: “Es lo primièr còp que vesi aquò”
+REMOVE Vconj IF (-1C PREP) ;
+SELECT VBinf IF (-1 ("de")) (0C V) ;
+SELECT VBinf IF (-1 ("a") + PREP) (0C V) ;
+SELECT VBger IF (-1 ("en") + PREP) (0C V) ;
+SELECT VBinf IF (-2 ("de")) (-1 Pro) (0C V) ;
+SELECT VBinf IF (-2 ("a") + PREP) (-1 Pro) (0C V) ;
+SELECT VBger IF (-2 ("en") + PREP) (-1 Pro) (0C V) ;
+SELECT VBinf IF (-3 ("de")) (-1 Pro) (-1 Pro) (0C V) ;
+SELECT VBinf IF (-3 ("a") + PREP) (-2 Pro) (-1 Pro) (0C V) ;
+SELECT VBger IF (-3 ("en") + PREP) (-2 Pro) (-1 Pro) (0C V) ;
 
 #Un determinant es pas plural se lo nom/adjectiu que seguis es singular (o masculin feminin...)
-REMOVE motsdetpl IF (1 Ns OR AJs);
-REMOVE motsdetsg IF (1 Npl OR AJpl);
-REMOVE motsdetf IF (1 Nm OR AJm);
-REMOVE motsdetm IF (1 Nf OR AJf);
+REMOVE motsdetpl IF (1C Ns OR AJs);
+REMOVE motsdetsg IF (1C Npl OR AJpl);
+REMOVE motsdetf IF (1C Nm OR AJm);
+REMOVE motsdetm IF (1C Nf OR AJf);
 
 # distincio entre MascPl i FemPl (típicament en terminacions en -es)
 SELECT MascPl IF (-1C MascPl) (0 N + MascPl) (NOT 0 ("pel")) ;
@@ -249,7 +301,7 @@ REMOVE PREAV IF (0 PREAV) (0 AV) (NOT 1 AJ OR AV) ;
 
 # ADJ POS
 
-REMOVE AJ IF (NOT -1 Ser) (0 AJ + Pos) ;
+REMOVE AJ + Pos IF (NOT -1 Ser) (0 AJ + Pos) ;
 
 # NP
 
@@ -285,6 +337,7 @@ REMOVE Conjsub IF (-2C N) (-1 AJ) (0 Que) ;
 REMOVE Conjsub IF (-3 N) (-2 AV OR PREAV) (-1 AJ) (0 Que) ;
 
 REMOVE PRON IF (0 Se) (NOT 1 Pro OR V + P3 OR V + VBinf OR V + VBger) ;	# se canti
+#REMOVE PRON IF (0 Se) (1 ("ne")) ;	# Se n’èram estadas amigas
 SELECT PRON IF (0 Se) (1C Pro OR V + P3) ;	# patch			NE MARCHE PAS DU TOUT
 
 SELECT PREP IF (0 Dins) (1 DET) ;
@@ -311,3 +364,91 @@ REMOVE AJ IF (0 Las) (1 N + FemPl) ;
 SELECT Conjco IF (0 Mas) (-1 CM) ;
 
 REMOVE N IF (-1C V) (0 Pel) ;
+
+# NP
+
+REMOVE Cog IF (-1 DETdef) (0 Cog) ;
+REMOVE Cog IF (-1 DETind) (0 Cog) ;
+REMOVE Cog IF (-1 En) (0 Cog) ;
+REMOVE Ant IF (-1 DETdef) (0 Ant) ;
+REMOVE Ant IF (-1 DETind) (0 Ant) ;
+REMOVE Ant IF (-1 En) (0 Ant) ;
+REMOVE Cog IF (-1 EOS) (0 ("Remarque")) (NOT 1 Conjco) (NOT 1 V + P3 + Sg) ;
+REMOVE NP IF (-1 EOS) (0 ("Remarque")) ;
+REMOVE NP IF (-1 (<<<)) (0 ("Remarque")) ;
+SELECT N IF (-1 EOS) (0 ("Remarque")) ;
+REMOVE Cog IF (-1 (sent)) (0 ("Remarque")) ;
+REMOVE Cog IF (0 ("Remarque")) ;
+
+SELECT NP IF (0 N OR NP) (1 NP) (0 (META:/-/r)) (NOT 0 ("bas") OR ("haut")) ;   # Pierre-Michel
+SELECT Ant IF (0 Ant) (1C Ant) (0 (META:/-/r)) ;                                # Jean-René
+SELECT Ant IF (-1C Ant) (0 Ant) (-1 (META:/-/r)) ;
+SELECT Cog IF (0 Cog) (1C Cog) (0 (META:/-/r)) ;
+SELECT Cog IF (-1C Cog) (0 Cog) (-1 (META:/-/r)) ;
+SELECT Cog IF (0 Cog OR Ant) (-1C Ant) (NOT 1 Cog) ;
+
+SELECT Top IF (-2 Ant) (-1 De) ;                                        # Louis de Lorraine
+SELECT Top IF (-3 Ant) (-2 siecles_nom_romains OR ("<Ièr>")) (-1 De) ;  # Louis II de Lorraine
+SELECT Ant IF (1 De) (2 Top) ;                                          # Michel de Lorraine
+SELECT Ant IF (1 siecles_nom_romains OR ("<Ièr>")) (2 De) (3 Top) ;     # Michel II de Lorraine
+SELECT Top IF (-2 ("ville") OR ("cathédrale") OR ("église") OR ("aéroport") OR ("port")) (-1 De) ;
+SELECT Top IF (-2 ("concile") OR ("parlement") OR ("constitution") OR ("traité") OR ("déclaration")) (-1 De) ;
+SELECT Top IF (-2 ("université")) (-1 De) ;                             # université de Paris VII
+SELECT Ant IF (1 siecles_nom_romains OR ("<Ièr>")) ;                    # Michel II
+SELECT Top IF (1C Top) (0 (META:/-/r)) ;
+SELECT Top IF (-1C Top) (-1 (META:/-/r)) ;
+
+SELECT Ant_Cog IF (0 Cog OR Ant) (1C Cog) ;
+SELECT Ant IF (0C Ant OR Cog) (1 Ant) (0 (META:/-/r)) ;                         # Charles-Michel
+SELECT Cog IF (0C Ant OR Cog) (1 Cog) (0 (META:/-/r)) ;
+SELECT Ant IF (NOT -1 Ant) (0C Ant OR Cog) (1 Cog) (NOT 0 (META:/-/r)) ;        # Albin Michel; Claude Étienne Michel
+SELECT Masc_strict IF (-2 DETdef + MascSg) (-1 N_AJ + MascSg) (0C Ant) ; # l'empereur Claude
+SELECT Fem_strict IF (-2 DETdef + FemSg) (-1 N_AJ + FemSg) (0C Ant) ;    # la belle Claude
+SELECT Masc_strict IF (0 Ant + Masc_strict) (1C Ant + Masc_strict) ;
+SELECT Fem_strict IF (0 Ant + Fem_strict) (1C Ant + Fem_strict) ;
+SELECT Masc_strict IF (-1C Ant + Masc_strict) (0 Ant + Masc_strict) ;
+SELECT Fem_strict IF (-1C Ant + Fem_strict) (0 Ant + Fem_strict) ;
+
+SELECT Ant IF (0 ("René") OR ("Renée") OR ("Marc") OR ("Pierre") OR ("Beau")) (1 Ant OR NP OR unknownMajIni) ;
+REMOVE Ant IF (0 ("Beau")) (NOT 1 Ant OR NP OR unknownMajIni) ;
+SELECT Masc_strict IF (0 ("Camille")) (1 ("Pissarro")) ;
+SELECT Cog IF (-1 ("Édouard")) (0 ("Philippe")) ;
+SELECT Ant IF (0 ("Édouard")) (1 ("Philippe")) ;
+SELECT Ant IF (0 ("Luther")) (1 Cog OR unknownMajIni) ;
+SELECT Cog IF (0 ("Luther")) (NOT 1 Cog OR unknownMajIni) ;
+
+SELECT Fem IF (0 ("Simone")) ;
+
+SELECT Masc_strict IF (0 ("Antigone")) (1 ("le")) (2 ("borgne")) ;
+SELECT Masc_strict IF (0 ("Antigone")) (1 ("\\<[IXV]>"r)) ;
+SELECT Fem_strict IF (0 ("Antigone")) ;
+SELECT Fem_strict IF (0 ("Andromaque")) ;
+
+SELECT Masc_strict IF (0 ("Cassandre")) (1* ("Macédoine") OR ("Roxanne") OR ("Alexandre") OR ("Antipater") OR ("Ptolémée") OR ("roi") + Masc OR ("diadoque")) ;
+SELECT Masc_strict IF (0 ("Cassandre")) (-1* ("Macédoine") OR ("Roxanne") OR ("Alexandre") OR ("Antipater") OR ("Ptolémée") OR ("roi") + Masc OR ("diadoque")) ;
+SELECT Fem_strict IF (0 ("Cassandre")) ;
+
+SELECT Ant + Masc_strict IF (0 Ant) (1 DETdef + Sg + Masc) (2 N_AJ + Sg + Masc + MajIni) ;
+SELECT Ant + Fem_strict IF (0 Ant) (1 DETdef + Sg + Fem) (2 N_AJ + Sg + Fem + MajIni) ;
+SELECT Ant + Masc_strict IF (0 Ant) (1 DETdef + Sg + Masc) (2 unknownMajIni) ;
+SELECT Ant + Masc_strict IF (0 Ant) (1 siecles_nom_romains OR ("<Ièr>")) ;              # Constance II
+
+REMOVE Ant IF (-1 ("banca")) (NOT 1 Cog OR Ant) ;
+
+SELECT Top IF (-2C Ant) (-1 ("<de>")) (0C Cog OR Ant OR Top) ;
+SELECT Ant IF (0C Cog OR Ant OR Top) (1 ("<de>")) (2C Top) ;    # Maurice de Saxe
+REMOVE Top IF (0 Cog OR Ant OR Top) (1 unknownMajIni) (NOT -1 ("de")) ;
+SELECT Ant IF (NOT -1 Cog OR Ant) (0C Cog OR Ant) (1 unknownMajIni) ; # Léon Verguet
+REMOVE (cog) IF (0C NP) (0 (cog)) (0 (top)) (NOT 1 (ant) OR (cog)) (-1 BOS); # Orihuela, Vilallonga
+
+SELECT Ant IF (-1 ("dieu") OR ("déesse")) ;
+
+SELECT Ant IF (-1 (";") OR (":")) (1 Ant OR Cog OR unknownMajIni) ;
+
+SELECT Top IF (-2 ("ville") OR ("aéroport") OR ("port") OR ("royaume") OR ("principauté") OR ("grand-duché") OR ("duché") OR ("marquisat") OR ("comté") OR ("baronnie") OR ("seigneurie") OR ("archevêché") OR ("évêché")) (-1 ("de")) (0 Cog OR Ant) ;
+SELECT Top IF (-2 Dignite) (-1 ("de")) (0 Top) ;
+
+REMOVE Al IF (-1 Ant OR Cog) (0 Ant OR Cog) ;
+REMOVE Top IF (-1 Ant OR Cog) (0 Ant OR Cog) ;
+REMOVE Al IF (0 Ant OR Cog) (1 Ant OR Cog) ;
+
