@@ -327,9 +327,12 @@ SELECT Haver IF (0 A) (1C VBpp);
   ## a cantat
 
 SELECT Conjsub IF (-1C V) (0 Que) ;	# vòli que
-SELECT Conjsub IF (-2C V) (1 AV) (0 Que) ;	# vòli pas que
-SELECT Conjsub IF (-3C V) (2 AV) (1 AV) (0 Que) ;	# vòli pas totjorn que
-SELECT Conjadv IF (-2 ("mai") OR ("pus") OR ("mens")) (-1 AJ OR VBpp OR AV) (0 Que) ;	# plus rapide que moi
+SELECT Conjsub IF (-2C V) (-1 AV) (0 Que) ;	# vòli pas que
+SELECT Conjsub IF (-3C V) (-2 AV) (-1 AV) (0 Que) ;	# vòli pas totjorn que
+SELECT Conjsub IF (-2C Ser) (-1 AJ OR ("vertat")) (0 Que) ;	# es vertat que
+SELECT Conjsub IF (-3C Ser) (-2 AV) (-1 AJ OR ("vertat")) (0 Que) ;	# es pas vertat que
+SELECT Conjsub IF (-4C Ser) (-3 AV) (-2 AV OR PREAV) (-1 AJ OR ("vertat")) (0 Que) ;	# es pas totjorn vertat que
+SELECT Conjadv IF (-2 ("mai") OR ("mei") OR ("pus") OR ("mens")) (-1 AJ OR VBpp OR AV) (0 Que) ;	# plus rapide que moi
 REMOVE Conjsub IF (-1 CM) (0 Que) ;
 REMOVE Conjsub IF (-1 DET) (0 Que) ;
 REMOVE Conjsub IF (-1C N) (0 Que) ;
