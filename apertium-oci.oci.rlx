@@ -143,6 +143,7 @@ REMOVE N IF (0 ("<coma>"i)) ;		# patch
 REMOVE N IF (0 ("<arren>"i)) ;		# patch
 REMOVE V IF (0 ("<arren>"i)) ;		# patch
 REMOVE N IF (0 ("<e>"i)) ;		# patch
+REMOVE N IF (0 ("<o>"i)) ;		# patch
 SELECT VBinf IF (-1C PREP OR V) (0 ("<far>"i)) ;		# patch
 SELECT VBinf IF (-2C PREP OR V) (-1 Pro OR AV) (0 ("<far>"i)) ;		# patch
 SELECT VBinf IF (-3C PREP OR V) (-2 Pro OR AV) (-1 Pro OR AV) (0 ("<far>"i)) ;		# patch
@@ -164,6 +165,11 @@ SELECT N IF (-2 DET + MascSg) (-1 AJ + MascSg) (0 ("<pas>"i)) ;		# un important 
 SELECT AJ + MascSg IF (-1 DET + MascSg) (0 AJ + MascSg) (1 ("<pas>"i)) ;		# un important pas # patch
 SELECT AV IF (-1 V) (0 ("<pas>"i)) ;		# patch
 SELECT V IF (1 ("<pas>"i)) ;		# patch
+REMOVE ("d'unes") ;	# patch
+SELECT PREAV IF (0 ("<plan>"i)) (1C AJ OR AV) ;		# patch
+REMOVE N IF (-1C V) (0 ("<plan>"i)) ;		# patch
+SELECT AJ IF (-1C N + &&AcordSP) (0 ("<plan>"i) + &&AcordSP) ;		# patch
+SELECT AV IF (0 ("<mai>"i)) (1 De) ;		# patch
 
 
 #Un pronom proclitic est totjorn davant un vèrb o un autre pronom
@@ -195,6 +201,11 @@ SELECT IJ IF (-1 BOS OR CM) (0 ("gràcies") OR ("de res")) ;			# COPY-PASTE
 REMOVE IJ IF (NOT -1 CM OR BOS) (NOT 1 CM OR EOS) (NOT 1* ("!")) ;
 REMOVE IJ IF (NOT -1 CM OR BOS) (NOT 1 CM OR EOS) (0 ("a")) ;
 REMOVE IJ IF (NOT -1 CM OR BOS) (0 ("plan")) ;
+
+SELECT AV IF (0 ("fòrça")) (1 ("present")) ;	# son fòrça presents
+SELECT AV IF (-1C Ser OR ("<son>"i)) (0 ("fòrça")) (1C AJ) ;	# son fòrça presents
+SELECT AJ IF (-1C Ser) (0 ("present")) ;
+SELECT AJ IF (-2C Ser) (-1 AV) (0 ("present")) ;
 
 #En es pas un pronom s'es abans un gerondiu (amb possibilitat de pronoms entre los dos)
 REMOVE En_pron IF (1* VBger BARRIER (*) - Pro) ;
@@ -305,21 +316,7 @@ REMOVE AJ + Pos IF (NOT -1 Ser) (0 AJ + Pos) ;
 
 # NP
 
-REMOVE Cog IF (-1 DETdef) (0 Cog) ;
-REMOVE Cog IF (-1 DETind) (0 Cog) ;
-REMOVE Cog IF (-1 En) (0 Cog) ;
-REMOVE Ant IF (-1 DETdef) (0 Ant) ;
-REMOVE Ant IF (-1 DETind) (0 Ant) ;
-REMOVE Ant IF (-1 En) (0 Ant) ;
-
-SELECT Ant IF (0 Ant) (1C Ant) ;
-  ## Jean-René
-SELECT Cog IF (0 Cog OR Ant) (-1C Ant) ;
-SELECT Ant_Cog IF (0 Cog OR Ant) (1C Cog) ;
-
-REMOVE Top IF (0 Cog OR Ant OR Top) (1 unknown) ;
-SELECT Ant IF (NOT -1 Cog OR Ant) (0C Cog OR Ant) (1 unknown) ;
-  ## Léon Verguet
+SELECT N IF (-1C PREP) (1 EOS) ;	# ambe fòrça.
 
 # MOTS
 
@@ -390,6 +387,8 @@ SELECT Cog IF (0 Cog) (1C Cog) (0 (META:/-/r)) ;
 SELECT Cog IF (-1C Cog) (0 Cog) (-1 (META:/-/r)) ;
 SELECT Cog IF (0 Cog OR Ant) (-1C Ant) (NOT 1 Cog) ;
 
+SELECT Ant IF (0 MascSg) (1 (<"Ièr">)) ;
+SELECT AJ IF (-1 Ant OR MajIni OR unknownMajIni) (0 ("<Ièr>")) ;
 SELECT Top IF (-2 Ant) (-1 De) ;                                        # Louis de Lorraine
 SELECT Top IF (-3 Ant) (-2 siecles_nom_romains OR ("<Ièr>")) (-1 De) ;  # Louis II de Lorraine
 SELECT Ant IF (1 De) (2 Top) ;                                          # Michel de Lorraine
