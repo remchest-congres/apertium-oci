@@ -134,6 +134,9 @@ SET Dignite = ("pape") OR ("patriarche") OR ("évêque") OR ("archevêque") OR (
 
 SECTION
 
+REMOVE Tn IF (0 ("qui")) ;	# patch
+REMOVE Tn IF (0 ("qual")) ;	# patch
+REMOVE (mf) IF (0 ("qual")) ;	# patch
 REMOVE N IF (0 ("<a>"i)) (NOT 1 (")")) ;		# patch
 SELECT PREP IF (0 ("<per>"i)) ;		# patch
 SELECT PREP IF (0 ("<pel>"i)) (1 N + MascSg) ;		# patch
@@ -165,12 +168,16 @@ SELECT N IF (-2 DET + MascSg) (-1 AJ + MascSg) (0 ("<pas>"i)) ;		# un important 
 SELECT AJ + MascSg IF (-1 DET + MascSg) (0 AJ + MascSg) (1 ("<pas>"i)) ;		# un important pas # patch
 SELECT AV IF (-1 V) (0 ("<pas>"i)) ;		# patch
 SELECT V IF (1 ("<pas>"i)) ;		# patch
-REMOVE ("d'unes") ;	# patch
+SELECT ("d'unes") ;	# patch
 SELECT PREAV IF (0 ("<plan>"i)) (1C AJ OR AV) ;		# patch
 REMOVE N IF (-1C V) (0 ("<plan>"i)) ;		# patch
 SELECT AJ IF (-1C N + &&AcordSP) (0 ("<plan>"i) + &&AcordSP) ;		# patch
 SELECT AV IF (0 ("<mai>"i)) (1 De) ;		# patch
+REMOVE N IF (-1C PREP) (0 ("<veire>"i)) ;		# patch
+SELECT PREP IF (-1 N OR AJ) (0 ("<de mai>"i)) ;		# patch
+REMOVE N IF (NOT -1 ("mes") OR ("jorn") OR ("jornada") OR ("fèsta") OR ("hèsta")) (0 ("<de mai>"i)) ;		# patch
 
+SELECT N IF (-1 DET + MascSg) (0 ("<cap de>"i)) ;
 
 #Un pronom proclitic est totjorn davant un vèrb o un autre pronom
 REMOVE Pro IF (NOT 1 V OR Pro);
@@ -245,7 +252,7 @@ REMOVE PREP IF (NOT 1 N OR PRON OR AV OR NUM OR NP OR VBinf OR DET OR AJ);
 #Es pas un vèrbe se, dempuèi lo darrièr vèrbe conjugat, avèm pas agut de novèla proposicion
 #REMOVE Vconj IF (NOT -1* intrprop BARRIER Vconj) ;
 	# funciona pas: “Es lo primièr còp que vesi aquò”
-REMOVE Vconj IF (-1C PREP) ;
+REMOVE Vconj IF (-1C PREP) (NOT -1 ("<de mai>"i)) ;
 SELECT VBinf IF (-1 ("de")) (0C V) ;
 SELECT VBinf IF (-1 ("a") + PREP) (0C V) ;
 SELECT VBger IF (-1 ("en") + PREP) (0C V) ;
