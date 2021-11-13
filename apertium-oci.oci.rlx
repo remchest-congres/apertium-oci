@@ -31,6 +31,7 @@ LIST PREP = pr ;
 LIST PRON = prn ;
 LIST PERS = pers ;
 LIST AV = adv ;
+LIST AVexcl = (adv excl) ;
 LIST PREAV = preadv ;
 LIST Excl = "!" ;
 LIST PRONPers = (prn p1) (prn p2) (prn p3); 
@@ -147,6 +148,10 @@ REMOVE N IF (0 ("<arren>"i)) ;		# patch
 REMOVE V IF (0 ("<arren>"i)) ;		# patch
 REMOVE N IF (0 ("<e>"i)) ;		# patch
 REMOVE N IF (0 ("<o>"i)) ;		# patch
+REMOVE N IF (0 ("<la>"i)) ;		# patch
+REMOVE N IF (0 ("<si>"i)) ;		# patch
+REMOVE N + ("tau") IF (0 ("tau")) ;		# patch
+REMOVE N IF (NOT -1 DET + MascSg) (0 ("<com>"i)) ;		# patch
 SELECT VBinf IF (-1C PREP OR V) (0 ("<far>"i)) ;		# patch
 SELECT VBinf IF (-2C PREP OR V) (-1 Pro OR AV) (0 ("<far>"i)) ;		# patch
 SELECT VBinf IF (-3C PREP OR V) (-2 Pro OR AV) (-1 Pro OR AV) (0 ("<far>"i)) ;		# patch
@@ -176,6 +181,12 @@ SELECT AV IF (0 ("<mai>"i)) (1 De) ;		# patch
 REMOVE N IF (-1C PREP) (0 ("<veire>"i)) ;		# patch
 SELECT PREP IF (-1 N OR AJ) (0 ("<de mai>"i)) ;		# patch
 REMOVE N IF (NOT -1 ("mes") OR ("jorn") OR ("jornada") OR ("fèsta") OR ("hèsta")) (0 ("<de mai>"i)) ;		# patch
+REMOVE N IF (NOT -1 DET + FemSg) (0 ("<èra>"i)) ;		# patch
+REMOVE ("sèir") IF (0 ("èsser")) ;	# patch 
+SELECT PREAV IF (0 ("tant")) (1 AJ OR AV) (2 ("coma")) ;
+SELECT AJ OR AV IF (-1 ("tant")) (0 AJ OR AV) (1 ("coma")) ;
+SELECT Conjadv IF (-2 ("tant")) (-1 AJ OR AV) (0 ("coma")) ;
+SELECT PREP IF (0 ("coma")) (1 ("en")) ;
 
 SELECT N IF (-1 DET + MascSg) (0 ("<cap de>"i)) ;
 
@@ -188,19 +199,21 @@ SELECT PREP (0 ("a")) (1C Pro) ;	# a lo parlar
 
 REMOVE ("e") + Enon IF (NOT 1* ("?")) ;
 REMOVE ("be") + Enon IF (NOT 1* ("!")) ;
-SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg BARRIER V) (1C Pro OR V + Pers LINK NOT 0 VBimp) ;
-SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg BARRIER V) (0 ("ne") OR ("non")) (1 V + Pers LINK NOT 0 VBimp) (2 ("pas") OR ("pas nat")) ;
-SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg BARRIER V) (0 ("ne") OR ("non")) (1 Pro) (2 V + Pers LINK NOT 0 VBimp) (3 ("pas") OR ("pas nat")) ;
-SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg BARRIER V) (0 ("ne") OR ("non")) (1 Pro) (2 Pro) (3 V + Pers LINK NOT 0 VBimp) (4 ("pas") OR ("pas nat")) ;
-SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg BARRIER V) (0 ("be")) (1 V + Pers LINK NOT 0 VBimp) (2* ("!")) ;
-SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg BARRIER V) (0 ("be")) (1 Pro) (2 V + Pers LINK NOT 0 VBimp) (3* ("!")) ;
-SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg BARRIER V) (0 ("be")) (1 Pro) (2 Pro) (3 V + Pers LINK NOT 0 VBimp) (4* ("!")) ;
-SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg BARRIER V) (0 ("e")) (1 V + Pers LINK NOT 0 VBimp) (2* ("?")) ;
-SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg BARRIER V) (0 ("e")) (1 Pro) (2 V + Pers LINK NOT 0 VBimp) (3* ("?")) ;
-SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg BARRIER V) (0 ("e")) (1 Pro) (2 Pro) (3 V + Pers LINK NOT 0 VBimp) (4* ("?")) ;
-SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR V) (0 ("que")) (1 V + Pers LINK NOT 0 VBimp) (NOT 2* ("?") OR ("!")) ;
-SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR V) (0 ("que")) (1 Pro) (2 V + Pers LINK NOT 0 VBimp) (NOT 3* ("?") OR ("!")) ;
-SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR V) (0 ("que")) (1 Pro) (2 Pro) (3 V + Pers LINK NOT 0 VBimp) (NOT 4* ("?") OR ("!")) ;
+REMOVE ("que") + Enon IF (-1C V + Pers OR VBinf OR VBger) ;
+REMOVE ("que") + Enon IF (-1 AV) (-2C V + Pers OR VBinf OR VBger) ;
+SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon BARRIER V) (1C Pro OR V + Pers LINK NOT 0 VBimp) ;
+SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon BARRIER V) (0 ("ne") OR ("non")) (1 V + Pers LINK NOT 0 VBimp) (2 ("pas") OR ("pas nat")) ;
+SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon BARRIER V) (0 ("ne") OR ("non")) (1 Pro) (2 V + Pers LINK NOT 0 VBimp) (3 ("pas") OR ("pas nat")) ;
+SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon BARRIER V) (0 ("ne") OR ("non")) (1 Pro) (2 Pro) (3 V + Pers LINK NOT 0 VBimp) (4 ("pas") OR ("pas nat")) ;
+SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon BARRIER V) (0 ("be")) (1 V + Pers LINK NOT 0 VBimp) (2* ("!")) ;
+SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon BARRIER V) (0 ("be")) (1 Pro) (2 V + Pers LINK NOT 0 VBimp) (3* ("!")) ;
+SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon BARRIER V) (0 ("be")) (1 Pro) (2 Pro) (3 V + Pers LINK NOT 0 VBimp) (4* ("!")) ;
+SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon BARRIER V) (0 ("e")) (1 V + Pers LINK NOT 0 VBimp) (2* ("?")) ;
+SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon BARRIER V) (0 ("e")) (1 Pro) (2 V + Pers LINK NOT 0 VBimp) (3* ("?")) ;
+SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon BARRIER V) (0 ("e")) (1 Pro) (2 Pro) (3 V + Pers LINK NOT 0 VBimp) (4* ("?")) ;
+SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon OR V) (0 ("que")) (1 V + Pers LINK NOT 0 VBimp) (NOT 2* ("?") OR ("!")) ;
+SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon OR V) (0 ("que")) (1 Pro) (2 V + Pers LINK NOT 0 VBimp) (NOT 3* ("?") OR ("!")) ;
+SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon OR V) (0 ("que")) (1 Pro) (2 Pro) (3 V + Pers LINK NOT 0 VBimp) (NOT 4* ("?") OR ("!")) ;
 
 SELECT IJ IF (-1 BOS) (0 N) (1 CM) (1* ("!")) ;
 SELECT IJ IF (-1 BOS OR CM) (1 ("!")) ;
@@ -209,10 +222,26 @@ REMOVE IJ IF (NOT -1 CM OR BOS) (NOT 1 CM OR EOS) (NOT 1* ("!")) ;
 REMOVE IJ IF (NOT -1 CM OR BOS) (NOT 1 CM OR EOS) (0 ("a")) ;
 REMOVE IJ IF (NOT -1 CM OR BOS) (0 ("plan")) ;
 
+SELECT AVexcl IF (-1 BOS) (0 AVexcl) (1 ("!")) ;
+SELECT AVexcl IF (-2 BOS) (-1 Conjco) (0 AVexcl) (1 ("!")) ;
+REMOVE AVexcl ;
+
+SELECT Itg IF (-1 BOS) (0C Itg OR Rel OR Conjsub OR Conjadv) ;	# Qui s'adresse
+SELECT Itg IF (-2 BOS) (-1 PREP) (0C Itg OR Rel OR Conjsub OR Conjadv) ;	# A qui s'adresse
+SELECT Itg IF (-2 BOS) (-1 Conjco) (0C Itg OR Rel OR Conjsub OR Conjadv) ;	# Mais qui s'adresse
+SELECT Itg IF (-3 BOS) (-1 Conjco) (-1 PREP) (0C Itg OR Rel OR Conjsub OR Conjadv) ;	# Mais a qui s'adresse
+SELECT Itg IF (-1C V LINK NOT 0 VBpp) (0C Itg OR Rel) ;	# je me demande qui
+SELECT Itg IF (-2C V LINK NOT 0 VBpp) (-1 PREP) (0C Itg OR Rel) ;	# je demande avec qui
+SELECT Itg IF (-2C V LINK NOT 0 VBpp) (-1 AV) (0C Itg OR Rel) ;	# je ne demande pas qui
+SELECT Itg IF (-3C V LINK NOT 0 VBpp) (-2 AV) (-1 PREP) (0C Itg OR Rel) ;	# je ne demande pas avec qui
+REMOVE AV + Itg ;
+
 SELECT AV IF (0 ("fòrça")) (1 ("present")) ;	# son fòrça presents
 SELECT AV IF (-1C Ser OR ("<son>"i)) (0 ("fòrça")) (1C AJ) ;	# son fòrça presents
 SELECT AJ IF (-1C Ser) (0 ("present")) ;
 SELECT AJ IF (-2C Ser) (-1 AV) (0 ("present")) ;
+
+REMOVE Tn IF (NOT -1 Tn) (0 ("vos")) (1 Vconj) ;
 
 #En es pas un pronom s'es abans un gerondiu (amb possibilitat de pronoms entre los dos)
 REMOVE En_pron IF (1* VBger BARRIER (*) - Pro) ;
@@ -223,7 +252,7 @@ SELECT Conjco IF (-1 BOS OR SENT) (0 ("<E>")) (NOT 1 CM) (NOT 1* ("?")) ;
 SELECT Conjco IF (-1 BOS OR SENT) (0 ("<E>")) (NOT 1 CM OR Pro OR V + Pers) ;	
 REMOVE Conjsub IF (-1 BOS OR SENT);
 REMOVE Rel IF (-1 BOS OR SENT);
-REMOVE Rel IF (NOT -1 CM OR N OR AJ OR VBpp OR PRON OR DET);
+REMOVE Rel IF (NOT -1 CM OR N OR NP OR AJ OR VBpp OR PRON OR DET);
 REMOVE Rel IF (NOT -2 N OR AJ OR VBpp OR PRON OR DET) (-1 CM) ;
 SELECT Rel IF (-1C DET) ;
 
@@ -253,6 +282,7 @@ REMOVE PREP IF (NOT 1 N OR PRON OR AV OR NUM OR NP OR VBinf OR DET OR AJ);
 #REMOVE Vconj IF (NOT -1* intrprop BARRIER Vconj) ;
 	# funciona pas: “Es lo primièr còp que vesi aquò”
 REMOVE Vconj IF (-1C PREP) (NOT -1 ("<de mai>"i)) ;
+REMOVE Vconj IF (-2C PREP) (-1 DET + &&AcordSN) (0 N + &&AcordSN) ;	# per la planta.
 SELECT VBinf IF (-1 ("de")) (0C V) ;
 SELECT VBinf IF (-1 ("a") + PREP) (0C V) ;
 SELECT VBger IF (-1 ("en") + PREP) (0C V) ;
@@ -321,7 +351,7 @@ REMOVE PREAV IF (0 PREAV) (0 AV) (NOT 1 AJ OR AV) ;
 
 REMOVE AJ + Pos IF (NOT -1 Ser) (0 AJ + Pos) ;
 
-# NP
+# N
 
 SELECT N IF (-1C PREP) (1 EOS) ;	# ambe fòrça.
 
@@ -345,6 +375,12 @@ REMOVE Conjsub IF (-3 N) (-2 AV OR PREAV) (-1 AJ) (0 Que) ;
 
 REMOVE PRON IF (0 Se) (NOT 1 Pro OR V + P3 OR V + VBinf OR V + VBger) ;	# se canti
 #REMOVE PRON IF (0 Se) (1 ("ne")) ;	# Se n’èram estadas amigas
+SELECT Conjadv IF (0 ("<s'i>"i) OR ("<s’i>"i)) (1 ("aver") OR ("auer")) ;
+SELECT Conjadv IF (0 Se) (1 ("<n'i>"i) OR ("<n’i>"i)) (2 ("aver") OR ("auer")) ;
+SELECT Conjadv IF (0 Se) (1 Pro) (2 Pro) (3 V) ;	# patch
+SELECT Conjadv IF (0 Se) (0/* Pro) (1 Pro) (2 V) ;	# patch
+SELECT Conjadv IF (0 Se) (1 Pro) (2 Pro) (3 Pro) (4 V) ;	# patch
+SELECT Conjadv IF (0 Se) (0/* Pro) (1 Pro) (2 Pro) (3 V) ;	# patch
 SELECT PRON IF (0 Se) (1C Pro OR V + P3) ;	# patch			NE MARCHE PAS DU TOUT
 
 SELECT PREP IF (0 Dins) (1 DET) ;
