@@ -16,6 +16,7 @@ LIST EOS = <<< sent ;
 LIST V = vblex vbser vbhaver vbaux vbmod ;
 LIST Ser = vbser ;
 LIST Haver = vbhaver ;
+LIST Vmod = vbmod ("voler") ("poder") ("caler") ("faler") ("aver# de") ("auer# de") ("dever") ("déuer") ("dever") ("soler") ("sòler") ("saber") ;
 LIST Conjco = cnjcoo ;
 LIST Conjsub = cnjsub ;
 LIST Conjadv = cnjadv ;
@@ -45,6 +46,7 @@ LIST Tn = tn ;
 LIST VBger = ger ;
 LIST VBimp = imp ;
 LIST Pro = pro ;
+LIST Ref = ref ;
 LIST PRencl = enc ;
 LIST VBinf = inf ;
 LIST VBpp = pp ;
@@ -99,6 +101,21 @@ LIST P2 = p2 ;
 LIST P3 = p3 ;
 LIST Pers = p1 p2 p3 ;
 
+SET Sg1 = (p1 sg) OR (p1 m sg) OR (p1 f sg) OR (p1 mf sg) ;
+SET Sg2 = (p2 sg) OR (p2 m sg) OR (p2 f sg) OR (p2 mf sg) ;
+SET Sg3 = (p3 sg) OR (p3 m sg) OR (p3 f sg) OR (p3 mf sg) ;
+SET Pl1 = (p1 pl) OR (p1 m pl) OR (p1 f pl) OR (p1 mf pl) ;
+SET Pl2 = (p2 pl) OR (p2 m pl) OR (p2 f pl) OR (p2 mf pl) ;
+SET Pl3 = (p3 pl) OR (p3 m pl) OR (p3 f pl) OR (p3 mf pl) ;
+LIST VSg1 = (vblex p1 sg) (vbser p1 sg) (vbhaver p1 sg) (vbmod p1 sg) ;
+LIST VSg2 = (vblex p2 sg) (vbser p2 sg) (vbhaver p2 sg) (vbmod p2 sg) ;
+LIST VSg3 = (vblex p3 sg) (vbser p3 sg) (vbhaver p3 sg) (vbmod p3 sg) ;
+LIST VPl1 = (vblex p1 pl) (vbser p1 pl) (vbhaver p1 pl) (vbmod p1 pl) ;
+LIST VPl2 = (vblex p2 pl) (vbser p2 pl) (vbhaver p2 pl) (vbmod p2 pl) ;
+LIST VPl3 = (vblex p3 pl) (vbser p3 pl) (vbhaver p3 pl) (vbmod p3 pl) ;
+
+SET AcordSV = Sg1 OR Sg2 OR Sg3 OR Pl1 OR Pl2 OR Pl3 ;
+
 SET CM = (cm) OR (lpar) OR (rpar) OR ("<;>") ;
 LIST Excl = "!" ;
 
@@ -114,6 +131,9 @@ LIST Eth = "<eth>i" ;
 LIST Nostre = "nòstre" "nòste" ;
 LIST Vostre = "vòstre" "vòste" ;
 LIST Pas = "pas" ;
+LIST Cap = "cap" ;
+LIST Mai = "mai" ;
+LIST Pus = "pus" ;
 LIST Pel = "pel" ;
 LIST Que = "que" ;
 LIST Se = "se" ;
@@ -151,6 +171,7 @@ REMOVE N IF (0 ("<o>"i)) ;		# patch
 REMOVE N IF (0 ("<la>"i)) ;		# patch
 REMOVE N IF (0 ("<si>"i)) ;		# patch
 REMOVE N + ("tau") IF (0 ("tau")) ;		# patch
+REMOVE ("taus") IF (-2 DET + MascPl) (-1 N + MascPl) (0 ("taus")) (1 ("com")) ;		# los fèits taus com s’èran passats
 REMOVE N IF (NOT -1 DET + MascSg) (0 ("<com>"i)) ;		# patch
 SELECT VBinf IF (-1C PREP OR V) (0 ("<far>"i)) ;		# patch
 SELECT VBinf IF (-2C PREP OR V) (-1 Pro OR AV) (0 ("<far>"i)) ;		# patch
@@ -183,12 +204,32 @@ SELECT PREP IF (-1 N OR AJ) (0 ("<de mai>"i)) ;		# patch
 REMOVE N IF (NOT -1 ("mes") OR ("jorn") OR ("jornada") OR ("fèsta") OR ("hèsta")) (0 ("<de mai>"i)) ;		# patch
 REMOVE N IF (NOT -1 DET + FemSg) (0 ("<èra>"i)) ;		# patch
 REMOVE ("sèir") IF (0 ("èsser")) ;	# patch 
+REMOVE ("poirir") IF (0 ("poder")) ;	# patch 
+REMOVE ("sabar") IF (0 ("saber")) ;	# patch 
 SELECT PREAV IF (0 ("tant")) (1 AJ OR AV) (2 ("coma")) ;
 SELECT AJ OR AV IF (-1 ("tant")) (0 AJ OR AV) (1 ("coma")) ;
 SELECT Conjadv IF (-2 ("tant")) (-1 AJ OR AV) (0 ("coma")) ;
 SELECT PREP IF (0 ("coma")) (1 ("en")) ;
+REMOVE N IF (NOT -1 DET) (0 ("<son>"i)) ;	# patch
+REMOVE Sg IF (NOT -1 DET) (0 ("<son>"i)) (1C Pl_strict) ;	# son conegudas
+REMOVE Sg IF (NOT -1 DET) (0 ("<son>"i)) (1 AV OR PREAV) (2C Pl_strict) ;	# son plan conegudas
 
 SELECT N IF (-1 DET + MascSg) (0 ("<cap de>"i)) ;
+SELECT PRON IF (-1 Pas) (0 Cap) ;	# ai pas cap
+SELECT PRON IF (-2 Pas) (-1 VBpp) (0 Cap) ;	# ai agut pas cap
+SELECT PRON IF (-3 Pas) (-2 AV) (-1 VBpp) (0 Cap) ;	# ai agut pas totjorn cap
+SELECT PRON IF (-3 Vmod) (-2 Pas) (-1 VBinf) (0 Cap) ;	# vòli pas manjar cap
+SELECT PRON IF (-4 Vmod) (-3 Pas) (-2 AV OR Pro) (-1 VBinf) (0 Cap) ;	# vòli pas ne manjar cap
+SELECT PRON IF (-5 Vmod) (-4 Pas) (-3 AV OR Pro) (-2 AV OR Pro) (-1 VBinf) (0 Cap) ;	# vòli pas li'n dire cap
+SELECT N IF (0 Cap) (1 NP OR unknownMajIni) ;	# cap Canaveral
+SELECT N + (m) IF (0 Cap) (1 NP OR unknownMajIni) ;	# cap Canaveral
+
+SELECT AV IF (-1 Pas) (0 Mai OR Pus) ;	# ai pas pus
+SELECT AV IF (-2 Pas) (-1 VBpp) (0 Mai OR Pus) ;	# ai agut pas pus
+SELECT AV IF (-3 Pas) (-2 AV) (-1 VBpp) (0 Mai OR Pus) ;	# ai agut pas totjorn pus
+SELECT AV IF (-3 Vmod) (-2 Pas) (-1 VBinf) (0 Mai OR Pus) ;	# vòli pas manjar pus
+SELECT AV IF (-4 Vmod) (-3 Pas) (-2 AV OR Pro) (-1 VBinf) (0 Mai OR Pus) ;	# vòli pas ne manjar pus
+SELECT AV IF (-5 Vmod) (-4 Pas) (-3 AV OR Pro) (-2 AV OR Pro) (-1 VBinf) (0 Mai OR Pus) ;	# vòli pas li'n dire pus
 
 #Un pronom proclitic est totjorn davant un vèrb o un autre pronom
 REMOVE Pro IF (NOT 1 V OR Pro);
@@ -355,10 +396,63 @@ REMOVE AJ + Pos IF (NOT -1 Ser) (0 AJ + Pos) ;
 
 SELECT N IF (-1C PREP) (1 EOS) ;	# ambe fòrça.
 
+# HAVER
+
+SELECT Haver IF (0 Haver) (1C VBpp) ;	# a cantat
+SELECT Haver IF (0 Haver) (1 Haver + VBpp) ;	# a cantat
+SELECT Haver IF (0 Haver) (1 AV) (2 VBpp) ;	# a pas cantat
+SELECT Haver IF (0 Haver) (1 AV) (2 AV) (3 VBpp) ;	# a pas totjorn cantat
+SELECT Haver IF (-1 Haver) (0 Haver + VBpp) ;	# a agut
+SELECT Haver IF (-2 Haver) (-1 AV) (0 Haver + VBpp) ;	# a pas agut
+SELECT Haver IF (-3 Haver) (-2 AV) (-1 AV) (0 Haver + VBpp) ;	# a pas totjorn agut
+
+# Ser
+
+SELECT Ser IF (0 Ser + &&AcordSP) (1C VBpp + &&AcordSP) ;	# soi estat
+SELECT Ser IF (-1 Pro + P1 + Sg) (0 Ser + P1 + Sg) (1 VBpp + Sg) ;	# me soi banhat
+SELECT Ser IF (-1 Pro + P2 + Sg) (0 Ser + P2 + Sg) (1 VBpp + Sg) ;	# t'ès banhat
+SELECT Ser IF (-1 Pro + P1 + Pl) (0 Ser + P1 + Pl) (1 VBpp + Pl) ;	# nos sèm banhats
+SELECT Ser IF (-1 Pro + P2 + Pl) (0 Ser + P2 + Pl) (1 VBpp + Pl) ;	# vos sètz banhats
+SELECT Ser IF (-1 Pro + P3 + Ref) (0 Ser + P3 + Sg) (1 VBpp + Sg) ;	# s'es banhat
+SELECT Ser IF (-1 Pro + P3 + Ref) (0 Ser + P3 + Pl) (1 VBpp + Pl) ;	# se son banhats
+SELECT Ser IF (0 Ser + &&AcordSP) (1 AV) (2 VBpp + &&AcordSP) ;	# soi pas estat
+SELECT Ser IF (0 Ser + &&AcordSP) (1 AV) (2 AV) (3 VBpp + &&AcordSP) ;	# soi pas totjorn estat
+SELECT Ser IF (-1 Ser + &&AcordSP) (0 Ser + VBpp + &&AcordSP) (1 VBpp + &&AcordSP) ;	# soi estat apelat
+SELECT Ser IF (-2 Ser + &&AcordSP) (-1 AV) (0 Ser + VBpp + &&AcordSP) (1 VBpp + &&AcordSP) ;	# soi pas estat apelat
+SELECT Ser IF (-1 Ser + &&AcordSP) (0 Ser + VBpp + &&AcordSP) (-1 AV) (2 VBpp + &&AcordSP) ;	# soi estat immediatament apelat
+SELECT Ser IF (-2 Ser + &&AcordSP) (-1 AV) (0 Ser + VBpp + &&AcordSP) (1 AV) (2 VBpp + &&AcordSP) ;	# soi pas estat immediatament apelat
+SELECT VBpp IF (-2 Ser + &&AcordSP) (-1 Ser + VBpp + &&AcordSP) (0 VBpp + &&AcordSP) ;	# soi estat apelat
+SELECT VBpp IF (-3 Ser + &&AcordSP) (-2 AV) (-1 Ser + VBpp + &&AcordSP) (0 VBpp + &&AcordSP) ;	# soi pas estat apelat
+SELECT VBpp IF (-3 Ser + &&AcordSP) (-2 Ser + VBpp + &&AcordSP) (-1 AV) (0 VBpp + &&AcordSP) ;	# soi estat immediatament apelat
+SELECT VBpp IF (-4 Ser + &&AcordSP) (-3 AV) (-2 Ser + VBpp + &&AcordSP) (-1 AV) (0 VBpp + &&AcordSP) ;	# soi pas estat immediatament apelat
+
+# VBpp
+
+SELECT VBpp IF (0 AJ) (1 ("par")) ;
+REMOVE Vconj IF (-1C Haver + Vconj) (0 VBpp) ;	# ajan avut
+REMOVE Vconj IF (-1C Ser + Vconj + &&AcordSP) (0 VBpp + &&AcordSP) ;
+REMOVE Vconj IF (-2C Haver + Vconj) (-1 AV) (0 VBpp) ;	# ajan pas avut
+REMOVE Vconj IF (-2C Ser + Vconj + &&AcordSP) (-1 AV) (0 VBpp + &&AcordSP) ;
+REMOVE Vconj IF (-3C Haver + Vconj) (-2 AV) (-1 AV) (0 VBpp) ;	# ajan pas totjorn avut
+REMOVE Vconj IF (-3C Ser + Vconj + &&AcordSP) (-2 AV) (-1 AV) (0 VBpp + &&AcordSP) ;
+
+# VBinf
+
+SELECT VBinf IF (0 AJ) (1 ("par")) ;
+SELECT AV IF (-1 Vmod) (0 ("<tornar>"i)) (1 VBinf) ;	# pòdi tornar manjar
+SELECT VBinf IF (-1 Vmod) (0 VBinf) ;	# pòdi manjar
+SELECT Vmod IF (0 Vmod) (1C VBinf) ;	# pòdi manjar
+SELECT VBinf IF (-2 Vmod) (-1 AV OR Pro) (0 VBinf) ;	# pòdi pas manjar
+SELECT Vmod IF (0 Vmod) (1 AV OR Pro) (2C VBinf) ;	# pòdi pas manjar
+SELECT VBinf IF (-3 Vmod) (-2 AV OR Pro) (-1 AV OR Pro) (0 VBinf) ;	# pòdi pas manjar
+SELECT Vmod IF (0 Vmod) (1 AV OR Pro) (2 AV OR Pro) (3C VBinf) ;	# pòdi pas manjar
+
 # MOTS
 
-SELECT Haver IF (0 A) (1C VBpp);
-  ## a cantat
+SELECT Haver IF (0 A) (1C VBpp);	# a cantat
+SELECT Ser IF (-1 Ser) (0 ("estat"));	# soi estat
+SELECT Ser IF (-2 Ser) (-1 AV) (0 ("estat"));	# soi pas estat
+SELECT Ser IF (-3 Ser) (-2 AV) (-1 AV) (0 ("estat"));	# soi pas totjorn estat
 
 SELECT Conjsub IF (-1C V) (0 Que) ;	# vòli que
 SELECT Conjsub IF (-2C V) (-1 AV) (0 Que) ;	# vòli pas que
