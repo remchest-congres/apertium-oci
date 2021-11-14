@@ -132,7 +132,7 @@ LIST Nostre = "nòstre" "nòste" ;
 LIST Vostre = "vòstre" "vòste" ;
 LIST Pas = "pas" ;
 LIST Cap = "cap" ;
-LIST Mai = "mai" ;
+LIST Mai = "mai" "mes" ;
 LIST Pus = "pus" ;
 LIST Pel = "pel" ;
 LIST Que = "que" ;
@@ -197,6 +197,8 @@ SELECT V IF (1 ("<pas>"i)) ;		# patch
 SELECT ("d'unes") ;	# patch
 SELECT PREAV IF (0 ("<plan>"i)) (1C AJ OR AV) ;		# patch
 REMOVE N IF (-1C V) (0 ("<plan>"i)) ;		# patch
+SELECT PREAV IF (-1 Ser + &&AcordSP) (0 ("<plan>"i)) (1 AJ + &&AcordSP) ;		# patch
+SELECT PREAV IF (-2 Ser + &&AcordSP) (-1 AV) (0 ("<plan>"i)) (1 AJ + &&AcordSP) ;		# patch
 SELECT AJ IF (-1C N + &&AcordSP) (0 ("<plan>"i) + &&AcordSP) ;		# patch
 SELECT AV IF (0 ("<mai>"i)) (1 De) ;		# patch
 REMOVE N IF (-1C PREP) (0 ("<veire>"i)) ;		# patch
@@ -227,6 +229,12 @@ SELECT N + (m) IF (0 Cap) (1 NP OR unknownMajIni) ;	# cap Canaveral
 SELECT AV IF (-1 Pas) (0 Mai OR Pus) ;	# ai pas pus
 SELECT AV IF (-2 Pas) (-1 VBpp) (0 Mai OR Pus) ;	# ai agut pas pus
 SELECT AV IF (-3 Pas) (-2 AV) (-1 VBpp) (0 Mai OR Pus) ;	# ai agut pas totjorn pus
+SELECT AV IF (-2 ("non")) (-1 V) (0 Mai OR Pus) ;	# non pòden mes
+SELECT AV IF (-3 ("non")) (-2 Pro) (-1 V) (0 Mai OR Pus) ;	# non li pòden mes
+SELECT AV IF (-4 ("non")) (-3 Pro) (-2 Pro) (-1 V) (0 Mai OR Pus) ;	# non li o pòden mes
+SELECT AV IF (-3 ("non")) (-2 Haver) (-1 VBpp) (0 Mai OR Pus) ;	# non an podut mes
+SELECT AV IF (-4 ("non")) (-3 Pro) (-2 Haver) (-1 VBpp) (0 Mai OR Pus) ;	# non li an podut mes
+SELECT AV IF (-5 ("non")) (-4 Pro) (-3 Pro) (-2 Haver) (-1 VBpp) (0 Mai OR Pus) ;	# non li o an podut mes
 SELECT AV IF (-3 Vmod) (-2 Pas) (-1 VBinf) (0 Mai OR Pus) ;	# vòli pas manjar pus
 SELECT AV IF (-4 Vmod) (-3 Pas) (-2 AV OR Pro) (-1 VBinf) (0 Mai OR Pus) ;	# vòli pas ne manjar pus
 SELECT AV IF (-5 Vmod) (-4 Pas) (-3 AV OR Pro) (-2 AV OR Pro) (-1 VBinf) (0 Mai OR Pus) ;	# vòli pas li'n dire pus
@@ -387,6 +395,9 @@ SELECT PREAV IF (0 ("fòrça")) (1C AJ) ;
 REMOVE AV IF (0 PREAV) (0 AV) (1C AJ OR AV) ;
 REMOVE PREAV IF (0 PREAV) (0 AV) (1C V) ;
 REMOVE PREAV IF (0 PREAV) (0 AV) (NOT 1 AJ OR AV) ;
+SELECT PREAV IF (-1 N + &&AcordSN) (NOT -1 Vconj) (0 AV) (1 AJ + &&AcordSN) ;
+SELECT PREAV IF (-1 AJ + &&AcordSN) (NOT -1 Vconj) (0 AV) (1 AJ + &&AcordSN) ;
+
 
 # ADJ POS
 
