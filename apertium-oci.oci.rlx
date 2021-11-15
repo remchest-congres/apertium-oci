@@ -134,12 +134,13 @@ LIST Pas = "pas" ;
 LIST Cap = "cap" ;
 LIST Mai = "mai" "mes" ;
 LIST Pus = "pus" ;
-LIST Pel = "pel" ;
+LIST Pel = "pel" "peu" ;
 LIST Que = "que" ;
 LIST Se = "se" ;
 LIST Las = "las" ;
 LIST Mas = "mas" ;
 LIST Estat = "estat" ;
+LIST Jorns = "diluns" "dimars" "dimècres" "dimèrcs" "dijòus" "dijaus" "divés" "divendres" "dissabte" "dimenge" ;
 
 LIST Excl = "!" ;
 
@@ -325,7 +326,7 @@ REMOVE DETpos IF (NOT 1 N OR AJ OR AV OR NUM OR NP OR unknown);
 REMOVE Enon IF (NOT 1 V OR Pro);
 
 #Una prepausicion es totjorn seguida d'un nom, pronom, adverb, numeral, infinitiu, determinant o adjectiu
-REMOVE PREP IF (NOT 1 N OR PRON OR AV OR NUM OR NP OR VBinf OR DET OR AJ);
+REMOVE PREP IF (NOT 1 N OR PRON OR AV OR NUM OR NP OR VBinf OR DET OR AJ) (NOT 0/* PREP + DET) (NOT 0/* PREP + N) ;
 
 #Es pas un vèrbe se, dempuèi lo darrièr vèrbe conjugat, avèm pas agut de novèla proposicion
 #REMOVE Vconj IF (NOT -1* intrprop BARRIER Vconj) ;
@@ -349,18 +350,18 @@ REMOVE motsdetf IF (1C Nm OR AJm);
 REMOVE motsdetm IF (1C Nf OR AJf);
 
 # distincio entre MascPl i FemPl (típicament en terminacions en -es)
-SELECT MascPl IF (-1C MascPl) (0 N + MascPl) (NOT 0 ("pel")) ;
-SELECT FemPl IF (-1C FemPl) (0 N + FemPl) ;
-SELECT MascPl IF (-1C MascPl) (0 AJ + MascPl) ;
-SELECT FemPl IF (-1C FemPl) (0 AJ + FemPl) ;
-SELECT MascPl IF (1C MascPl) (0 N + MascPl) (NOT 0 ("pel")) ;
-SELECT FemPl IF (1C FemPl) (0 N + FemPl) ;
-SELECT MascPl IF (1C MascPl) (0 AJ + MascPl) ;
-SELECT FemPl IF (1C FemPl) (0 AJ + FemPl) ;
-SELECT MascPl IF (-2C MascPl) (-1 AV OR PREAV) (0 AJ + MascPl) ;
-SELECT FemPl IF (-2C FemPl) (-1 AV OR PREAV) (0 AJ + FemPl) ;
-SELECT MascPl IF (2C MascPl) (1 AV OR PREAV) (0 AJ + MascPl) ;
-SELECT FemPl IF (2C FemPl) (1 AV OR PREAV) (0 AJ + FemPl) ;
+SELECT MascPl IF (-1C MascPl) (0 N + MascPl) (NOT 0 (Pel)) (NOT -1 VBpp) ;
+SELECT FemPl IF (-1C FemPl) (0 N + FemPl) (NOT -1 VBpp) ;
+SELECT MascPl IF (-1C MascPl) (0 AJ + MascPl) (NOT -1 VBpp) ;
+SELECT FemPl IF (-1C FemPl) (0 AJ + FemPl) (NOT -1 VBpp) ;
+SELECT MascPl IF (1C MascPl) (0 N + MascPl) (NOT 0 (Pel)) (NOT -1 VBpp) ;
+SELECT FemPl IF (1C FemPl) (0 N + FemPl) (NOT -1 VBpp) ;
+SELECT MascPl IF (1C MascPl) (0 AJ + MascPl) (NOT -1 VBpp) ;
+SELECT FemPl IF (1C FemPl) (0 AJ + FemPl) (NOT -1 VBpp) ;
+SELECT MascPl IF (-2C MascPl) (-1 AV OR PREAV) (0 AJ + MascPl) (NOT -2 VBpp) ;
+SELECT FemPl IF (-2C FemPl) (-1 AV OR PREAV) (0 AJ + FemPl) (NOT -2 VBpp) ;
+SELECT MascPl IF (2C MascPl) (1 AV OR PREAV) (0 AJ + MascPl) (NOT -2 VBpp) ;
+SELECT FemPl IF (2C FemPl) (1 AV OR PREAV) (0 AJ + FemPl) (NOT -2 VBpp) ;
 
 # AN (+ partipici)
 
@@ -511,7 +512,11 @@ REMOVE AJ IF (0 Las) (1 N + FemPl) ;
 
 SELECT Conjco IF (0 Mas) (-1 CM) ;
 
+#pel/peu n o per + lo
 REMOVE N IF (-1C V) (0 Pel) ;
+REMOVE N IF (0 Pel) ;
+REMOVE N IF (1 Nm + Sg) (0 ("<peu>") OR ("<pel>")) ;
+REMOVE N IF (0 ("<peus>") OR ("<pels>")) ;
 
 # NP
 
@@ -602,3 +607,38 @@ REMOVE Al IF (-1 Ant OR Cog) (0 Ant OR Cog) ;
 REMOVE Top IF (-1 Ant OR Cog) (0 Ant OR Cog) ;
 REMOVE Al IF (0 Ant OR Cog) (1 Ant OR Cog) ;
 
+#Lo jorn de la setmana es un nom s'es precedit d'un determinant
+REMOVE AV IF (-1 DET) (0 Jorns) ;	# ai pas cap
+
+#Concordància dels genres
+REMOVE Nm IF (-1 DET) (-1 Fem_strict);
+REMOVE Nf IF (-1 DET) (-1 Masc_strict);
+
+#deu -> dever / de +lo
+SELECT V IF (0 ("<deu>")) (1 SENT OR Pro) ;
+REMOVE V IF (0 ("<deu>")) (NOT 1 VBinf OR AV) ;
+
+
+#qui cnjadv o rel
+REMOVE Conjadv IF (0 ("qui")) (NOT -1 AJ OR V OR AV) ;
+
+SELECT Nm IF (0 ("temps")) (-1 DET) ;
+SELECT Nm IF (0 ("temps")) (-1 AJ) (-2 DET) ;
+
+#mes mois
+SELECT Nm IF (0 ("mes")) (-1 DET) (-1 MascSg) ;
+SELECT Nm IF (0 ("mes")) (-1/* PREP + DET) ;
+
+#mes de mai
+SELECT SUB:1 Nm IF (0 PREP) (-1 ("mes")) (0 ("<de mai>")) ;
+
+#punt de vista
+SELECT SUB:1 Nf IF (0 PREP) (-1 ("punt") OR ("ponch")) (0 ("<de vista>")) ;
+
+#un advèrbi pòt pas èstre precedit d'un determinants s'es pas seguit d'un vèrbe
+REMOVE AV IF (-1 DET) (NOT 1 V OR Conjco) ;
+
+# de las + adj
+SELECT DET IF (0 ("<la>") OR ("<las>")) (-1 ("de")) (1 AJ + Fem) ;
+SELECT DET IF (0 ("<la>")) (1 N + Fem + Sg) ;
+SELECT DET IF (0 ("<las>")) (1 N + Fem + Pl) ;
