@@ -625,15 +625,15 @@ SELECT V IF (0 ("<deu>")) (1 SENT OR Pro) ;
 REMOVE V IF (0 ("<deu>")) (NOT 1 VBinf OR AV) ;
 
 # de las + adj
-SELECT DET IF (0 ("<la>") OR ("<las>")) (-1 ("de")) (1 AJ + Fem) ;
+SELECT DET IF (0 ("<la>"i) OR ("<las>"i)) (-1 ("de")) (1 AJ + Fem) ;
 
 # la, las (det)
-SELECT DET IF (0 ("<la>")) (1 N + Fem + Sg) ;
-SELECT DET IF (0 ("<las>")) (1 N + Fem + Pl) ;
+SELECT DET IF (0 ("<la>"i)) (1C N_AJ + FemSg) ;
+SELECT DET IF (0 ("<las>"i)) (1C N_AJ + FemPl) ;	# atencion : las casas (np.pro vblex)
 
 #pel/peu nom o article contractat
-REMOVE N IF (1 Nm + Sg) (0 ("<peu>") OR ("<pel>")) (NOT -1 DET + Sg) (NOT -1 Artcontrsg) ;
-REMOVE N IF (1 Nm + Pl) (0 ("<peus>") OR ("<pels>")) (NOT -1 DET + Pl) (NOT -1 Artcontrpl) ;
+REMOVE N IF (1 Nm + Sg) (0 ("<peu>"i) OR ("<pel>"i)) (NOT -1 DET + Sg) (NOT -1 Artcontrsg) ;
+REMOVE N IF (1 Nm + Pl) (0 ("<peus>"i) OR ("<pels>"i)) (NOT -1 DET + Pl) (NOT -1 Artcontrpl) ;
 
 
 #punt de vista
