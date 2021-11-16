@@ -70,6 +70,7 @@ SET Ant_Cog = Ant OR Cog ;
 SET Top = (np top) ;
 SET Al = (al) ;
 SET Acr = (acr) ;
+SET AVG = AV - Enon ;
 
 #Listas
 SET intrprop = Conjco OR Itg ; #cnjcoo cnjsub rel itg "," ";" sent adv;
@@ -135,12 +136,17 @@ LIST Cap = "cap" ;
 LIST Mai = "mai" "mes" ;
 LIST Pus = "pus" ;
 LIST Pel = "pel" "peu" ;
+LIST Deu = "deu" ;
 LIST Que = "que" ;
 LIST Se = "se" ;
 LIST Las = "las" ;
 LIST Mas = "mas" ;
 LIST Estat = "estat" ;
+List Artcontrpl = "<als>" "<aus>" "<aths>" "<as>" "<dels>" "<deus>" "<dals>" "<deths>" "<des>" "<suls>" "<suus>" "<taus>" "<taths>" "<entaus>" "<entaths>" "<entàs>" "<pels>" "<peus>" "<peths>" "<preus>" "<vèls>" "<jols>" "<enquiaths>" "<ens>" "<enes>" "<endeus>" "<dambeus>" ;
+List Artcontrsg = "<al>" "<au>" "<ath>" "<del>" "<deu>" "<dal>" "<deth>" "<sul>" "<suu>" "<tau>" "<tath>" "<entau>" "<entath>" "<pel>" "<peu>" "<peth>" "<preu>" "<vèl>" "<jol>" "<enquiath>" "<en>" "<ene>" "<endeu>" "<dambeu>" ;
 LIST Jorns = "diluns" "dimars" "dimècres" "dimèrcs" "dijòus" "dijaus" "divés" "divendres" "dissabte" "dimenge" ;
+
+List Nummois = "1" "1èr" "1ièr" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12" "13" "14" "15" "16" "17" "18" "19" "20" "21" "22" "23" "24" "25" "26" "27" "28" "29" "30" "31" "<purmèr>" "<prumèr>" "<prumièr>" "<primièr>" "<primèr>" "<dos>" "<dus>" "<tres>" "<quatre>" "<quate>" "<cinc>" "<sièis>" "<sèis>" "<sies>" "<siés>" "<siès>" "<sheis>" "<sèt>" "<uèit>" "<ueit>" "<uòch>" "<uèch>" "<nòu>" "<nau>" "<dètz>" "<onze>" "<dotze>" "<tretze>" "<catòrze>" "<catorze>" "<quatòrze>" "<quatorze>" "<quinze>" "<setze>" "<dètz-e-sèt>" "<dètz-e-uèit>" "<dètz-e-ueit>" "<dètz-e-uèch>" "<dètz-e-uòch>" "<dètz-e-nòu>" "<dètz-e-nau>" "<vint>" "<vingt>" "<vint-e-un>" "<vingt-e-un>" "<vint-e-dos>" "<vint-e-dus>" "<vingt-e-dos>" "<vingt-e-dus>"  "<vint-e-tres>" "<vingt-e-tres>" "<vint-e-quatre>" "<vingt-e-quatre>" "<vint-e-quate>" "<vingt-e-quate>" "<vint-e-cinc>" "<vingt-e-cinc>" "<vint-e-sèis>" "<vingt-e-sèis>" "<vint-e-sièis>" "<vingt-e-sièis>" "<vint-e-sies>" "<vingt-e-sies>" "<vint-e-siès>" "<vingt-e-siès>" "<vint-e-siés>" "<vingt-e-siés>" "<vint-e-sheis>" "<vingt-e-sheis>" "<vint-e-sèt>" "<vingt-e-sèt>" "<vint-e-uèit>" "<vingt-e-uèit>" "<vint-e-ueit>" "<vingt-e-ueit>" "<vint-e-uèch>" "<vingt-e-uèch>" "<vint-e-uòch>" "<vingt-e-uòch>" "<vint-e-nòu>" "<vingt-e-nòu>" "<vint-e-nau>" "<vingt-e-nau>" "<trenta>" "<trenta-e-un>" "<trenta-un>" "<dètz e uèch>" "<dètz e uòch>" "<dètz e nòu>" "<dètz e nau>" "<vingt>" "<vint e un>" "<vingt e un>" "<vint e dos>" "<vint e dus>" "<vingt e dos>" "<vingt e dus>"  "<vint e tres>" "<vingt e tres>" "<vint e quatre>" "<vingt e quatre>" "<vint e quate>" "<vingt e quate>" "<vint e cinc>" "<vingt e cinc>" "<vint e sèis>" "<vingt e sèis>" "<vint e sièis>" "<vingt e sièis>" "<vint e sies>" "<vingt e sies>" "<vint e siès>" "<vingt e siès>" "<vint e siés>" "<vingt e siés>" "<vint e sheis>" "<vingt e sheis>" "<vint e sèt>" "<vingt e sèt>" "<vint e uèit>" "<vingt e uèit>" "<vint e ueit>" "<vingt e ueit>" "<vint e uèch>" "<vingt e uèch>" "<vint e uòch>" "<vingt e uòch>" "<vint e nòu>" "<vingt e nòu>" "<vint e nau>" "<vingt e nau>" "<trenta>" "<trenta e un>" "<trenta un>"
 
 LIST Excl = "!" ;
 
@@ -152,6 +158,7 @@ LIST MinIni = ("\\<[a-zàáäâèéëêíïîòóöôúüûç].*\\>"r) ;
 LIST siecles_nom_romains = ("[IVX][IVX]*"r) ;
 
 SET Dignite = ("pape") OR ("patriarche") OR ("évêque") OR ("archevêque") OR ("saint") OR ("saint") OR ("apôtre") OR ("empereur") OR ("roi") OR ("tsar") OR ("vice-roi") OR ("régent") OR ("prince") OR ("infant") OR ("dauphin") OR ("comte") OR ("comtesse") OR ("vicomte") OR ("vicomtesse") OR ("duc") OR ("duchesse") OR ("grand-duc") OR ("grande-duchesse") OR ("archiduc") OR ("archiduchesse") OR ("marquis") OR ("baron") ;
+
 
 
 SECTION
@@ -342,6 +349,7 @@ SELECT VBger IF (-2 ("en") + PREP) (-1 Pro) (0C V) ;
 SELECT VBinf IF (-3 ("de")) (-1 Pro) (-1 Pro) (0C V) ;
 SELECT VBinf IF (-3 ("a") + PREP) (-2 Pro) (-1 Pro) (0C V) ;
 SELECT VBger IF (-3 ("en") + PREP) (-2 Pro) (-1 Pro) (0C V) ;
+REMOVE VBger IF (0 VBinf) (NOT -1 SENT OR ("en")) ;
 
 #Un determinant es pas plural se lo nom/adjectiu que seguis es singular (o masculin feminin...)
 REMOVE motsdetpl IF (1C Ns OR AJs);
@@ -350,18 +358,18 @@ REMOVE motsdetf IF (1C Nm OR AJm);
 REMOVE motsdetm IF (1C Nf OR AJf);
 
 # distincio entre MascPl i FemPl (típicament en terminacions en -es)
-SELECT MascPl IF (-1C MascPl) (0 N + MascPl) (NOT 0 (Pel)) (NOT -1 VBpp) ;
-SELECT FemPl IF (-1C FemPl) (0 N + FemPl) (NOT -1 VBpp) ;
-SELECT MascPl IF (-1C MascPl) (0 AJ + MascPl) (NOT -1 VBpp) ;
-SELECT FemPl IF (-1C FemPl) (0 AJ + FemPl) (NOT -1 VBpp) ;
-SELECT MascPl IF (1C MascPl) (0 N + MascPl) (NOT 0 (Pel)) (NOT -1 VBpp) ;
-SELECT FemPl IF (1C FemPl) (0 N + FemPl) (NOT -1 VBpp) ;
-SELECT MascPl IF (1C MascPl) (0 AJ + MascPl) (NOT -1 VBpp) ;
-SELECT FemPl IF (1C FemPl) (0 AJ + FemPl) (NOT -1 VBpp) ;
-SELECT MascPl IF (-2C MascPl) (-1 AV OR PREAV) (0 AJ + MascPl) (NOT -2 VBpp) ;
-SELECT FemPl IF (-2C FemPl) (-1 AV OR PREAV) (0 AJ + FemPl) (NOT -2 VBpp) ;
-SELECT MascPl IF (2C MascPl) (1 AV OR PREAV) (0 AJ + MascPl) (NOT -2 VBpp) ;
-SELECT FemPl IF (2C FemPl) (1 AV OR PREAV) (0 AJ + FemPl) (NOT -2 VBpp) ;
+SELECT MascPl IF (-1C MascPl) (0 N + MascPl) (NOT 0 ("pel")) ;
+SELECT FemPl IF (-1C FemPl) (0 N + FemPl) ;
+SELECT MascPl IF (-1C MascPl) (0 AJ + MascPl) ;
+SELECT FemPl IF (-1C FemPl) (0 AJ + FemPl) ;
+SELECT MascPl IF (1C MascPl) (0 N + MascPl) (NOT 0 ("pel")) ;
+SELECT FemPl IF (1C FemPl) (0 N + FemPl) ;
+SELECT MascPl IF (1C MascPl) (0 AJ + MascPl) ;
+SELECT FemPl IF (1C FemPl) (0 AJ + FemPl) ;
+SELECT MascPl IF (-2C MascPl) (-1 AV OR PREAV) (0 AJ + MascPl) ;
+SELECT FemPl IF (-2C FemPl) (-1 AV OR PREAV) (0 AJ + FemPl) ;
+SELECT MascPl IF (2C MascPl) (1 AV OR PREAV) (0 AJ + MascPl) ;
+SELECT FemPl IF (2C FemPl) (1 AV OR PREAV) (0 AJ + FemPl) ;
 
 # AN (+ partipici)
 
@@ -399,6 +407,8 @@ REMOVE PREAV IF (0 PREAV) (0 AV) (NOT 1 AJ OR AV) ;
 SELECT PREAV IF (-1 N + &&AcordSN) (NOT -1 Vconj) (0 AV) (1 AJ + &&AcordSN) ;
 SELECT PREAV IF (-1 AJ + &&AcordSN) (NOT -1 Vconj) (0 AV) (1 AJ + &&AcordSN) ;
 
+#ADJ
+REMOVE AJ IF (-1 ("en")) (NOT 1 Conjco OR N) ;
 
 # ADJ POS
 
@@ -459,6 +469,10 @@ SELECT Vmod IF (0 Vmod) (1 AV OR Pro) (2C VBinf) ;	# pòdi pas manjar
 SELECT VBinf IF (-3 Vmod) (-2 AV OR Pro) (-1 AV OR Pro) (0 VBinf) ;	# pòdi pas manjar
 SELECT Vmod IF (0 Vmod) (1 AV OR Pro) (2 AV OR Pro) (3C VBinf) ;	# pòdi pas manjar
 
+
+#Vb conjugat après enonciatiu
+SELECT Vconj IF (-1C Enon) (NOT 0 Pro) ;
+
 # MOTS
 
 SELECT Haver IF (0 A) (1C VBpp);	# a cantat
@@ -478,6 +492,7 @@ REMOVE Conjsub IF (-1 DET) (0 Que) ;
 REMOVE Conjsub IF (-1C N) (0 Que) ;
 REMOVE Conjsub IF (-2C N) (-1 AJ) (0 Que) ;
 REMOVE Conjsub IF (-3 N) (-2 AV OR PREAV) (-1 AJ) (0 Que) ;
+REMOVE AVG IF (NOT -1 ("pas") OR ("solament")) (0 Que) ;
 
 REMOVE PRON IF (0 Se) (NOT 1 Pro OR V + P3 OR V + VBinf OR V + VBger) ;	# se canti
 #REMOVE PRON IF (0 Se) (1 ("ne")) ;	# Se n’èram estadas amigas
@@ -512,11 +527,7 @@ REMOVE AJ IF (0 Las) (1 N + FemPl) ;
 
 SELECT Conjco IF (0 Mas) (-1 CM) ;
 
-#pel/peu n o per + lo
 REMOVE N IF (-1C V) (0 Pel) ;
-REMOVE N IF (0 Pel) ;
-REMOVE N IF (1 Nm + Sg) (0 ("<peu>") OR ("<pel>")) ;
-REMOVE N IF (0 ("<peus>") OR ("<pels>")) ;
 
 # NP
 
@@ -607,38 +618,37 @@ REMOVE Al IF (-1 Ant OR Cog) (0 Ant OR Cog) ;
 REMOVE Top IF (-1 Ant OR Cog) (0 Ant OR Cog) ;
 REMOVE Al IF (0 Ant OR Cog) (1 Ant OR Cog) ;
 
-#Lo jorn de la setmana es un nom s'es precedit d'un determinant
-REMOVE AV IF (-1 DET) (0 Jorns) ;	# ai pas cap
-
-#Concordància dels genres
-REMOVE Nm IF (-1 DET) (-1 Fem_strict);
-REMOVE Nf IF (-1 DET) (-1 Masc_strict);
 
 #deu -> dever / de +lo
+LIST Deu = "deu" ;
 SELECT V IF (0 ("<deu>")) (1 SENT OR Pro) ;
 REMOVE V IF (0 ("<deu>")) (NOT 1 VBinf OR AV) ;
 
+# de las + adj
+SELECT DET IF (0 ("<la>") OR ("<las>")) (-1 ("de")) (1 AJ + Fem) ;
 
-#qui cnjadv o rel
-REMOVE Conjadv IF (0 ("qui")) (NOT -1 AJ OR V OR AV) ;
+# la, las (det)
+SELECT DET IF (0 ("<la>")) (1 N + Fem + Sg) ;
+SELECT DET IF (0 ("<las>")) (1 N + Fem + Pl) ;
 
-SELECT Nm IF (0 ("temps")) (-1 DET) ;
-SELECT Nm IF (0 ("temps")) (-1 AJ) (-2 DET) ;
+#pel/peu nom o article contractat
+REMOVE N IF (1 Nm + Sg) (0 ("<peu>") OR ("<pel>")) (NOT -1 DET + Sg) (NOT -1 Artcontrsg) ;
+REMOVE N IF (1 Nm + Pl) (0 ("<peus>") OR ("<pels>")) (NOT -1 DET + Pl) (NOT -1 Artcontrpl) ;
 
-#mes mois
-SELECT Nm IF (0 ("mes")) (-1 DET) (-1 MascSg) ;
-SELECT Nm IF (0 ("mes")) (-1/* PREP + DET) ;
-
-#mes de mai
-SELECT SUB:1 Nm IF (0 PREP) (-1 ("mes")) (0 ("<de mai>")) ;
 
 #punt de vista
 SELECT SUB:1 Nf IF (0 PREP) (-1 ("punt") OR ("ponch")) (0 ("<de vista>")) ;
 
-#un advèrbi pòt pas èstre precedit d'un determinants s'es pas seguit d'un vèrbe
-REMOVE AV IF (-1 DET) (NOT 1 V OR Conjco) ;
+#mes de mai
+SELECT SUB:1 Nm IF (0 PREP) (-1 ("mes")) (0 ("<de mai>")) ;
+SELECT SUB:1 Nm IF (0 PREP) (-1 Nummois) (0 ("<de mai>")) ;
 
-# de las + adj
-SELECT DET IF (0 ("<la>") OR ("<las>")) (-1 ("de")) (1 AJ + Fem) ;
-SELECT DET IF (0 ("<la>")) (1 N + Fem + Sg) ;
-SELECT DET IF (0 ("<las>")) (1 N + Fem + Pl) ;
+#mes mois
+REMOVE AV IF (0 ("mes")) (-1 DET) (-1 MascSg) ;
+REMOVE AV IF (0 ("mes")) (-1/* PREP + DET) ;
+
+#qui cnjadv o rel
+REMOVE Conjadv IF (0 ("qui")) (NOT -1 AJ OR V OR AV) ;
+
+#Lo jorn de la setmana es un nom s'es precedit d'un determinant
+REMOVE AV IF (-1 DET) (0 Jorns) ;
