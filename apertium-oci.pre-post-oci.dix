@@ -889,6 +889,27 @@
 		<par n="caracter_general"/>
 	</e>
 	<e>
+		<p>
+			<l><a/>vèrs</l>
+			<r><a/>vèrs</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>ende</l>
+			<r><a/>ende</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>dambe</l>
+			<r><a/>dambe</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
 		<par n="caracter_general_no_blanc"/>
 	</e>
 </section>

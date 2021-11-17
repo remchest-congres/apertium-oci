@@ -872,7 +872,7 @@
  
  
  <!-- paradigma per a les contraccions amb determinant 	 -->
- <pardef n="contraccio_per">
+ <pardef n="contraccio_per_oci">
 	 <e>
 		 <p>
 			 <l>e</l>
@@ -913,6 +913,91 @@
 		</p>
 	</e>
  </pardef>
+
+ <pardef n="contraccio_per_gascon">
+	 <e>
+		 <p>
+			 <l>e</l>
+			 <r/>
+		 </p>
+		 <par n="contrac_det"/>
+	 </e>
+	 <e>
+		 <p>
+			 <l>e</l>
+			 <r/>
+		 </p>
+		 <par n="contrac_det"/>
+	 </e>
+	 <e>
+		 <p>
+			 <l/>
+			 <r>r<b/><a/></r>
+		 </p>
+	 </e>
+	<e>
+		<p>
+			<l>detlo<b/></l>
+			<r>r<b/>l'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l>detlo<b/></l>
+			<r>u<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l>detlos<b/></l>
+			<r>us<b/></r>
+		</p>
+	</e>
+ </pardef>
+
+ <pardef n="contraccio_per_aran">	<!-- PENDENT -->
+	 <e>
+		 <p>
+			 <l>e</l>
+			 <r/>
+		 </p>
+		 <par n="contrac_det"/>
+	 </e>
+	 <e>
+		 <p>
+			 <l>e</l>
+			 <r/>
+		 </p>
+		 <par n="contrac_det"/>
+	 </e>
+	 <e>
+		 <p>
+			 <l/>
+			 <r>r<b/><a/></r>
+		 </p>
+	 </e>
+	<e>
+		<p>
+			<l>detlo<b/></l>
+			<r>r<b/>l'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l>detlo<b/></l>
+			<r>u<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l>detlos<b/></l>
+			<r>us<b/></r>
+		</p>
+	</e>
+ </pardef>
+
  <pardef n="contraccio">
 	 <e>
 		 <p>
@@ -1302,7 +1387,7 @@
 	<e>
 		<p>
 			<l><b/><a/>detlos</l>
-			<r>de<b/>los</r>
+			<r>dels</r>
 		</p>
 		<par n="caracter_general"/>
 	</e>
@@ -1461,7 +1546,7 @@
 	<e>
 		<p>
 			<l><b/><a/>detlo<b/></l>
-			<r>del<b/></r>
+			<r>deu<b/></r>
 		</p>
 	</e>
 	<e>
@@ -1487,7 +1572,7 @@
 	<e>
 		<p>
 			<l><b/><a/>detlos<b/></l>
-			<r>dels<b/></r>
+			<r>deus<b/></r>
 		</p>
 	</e>
 	<e>
@@ -1499,7 +1584,7 @@
 	<e>
 		<p>
 			<l><b/><a/>detlo</l>
-			<r>del</r>
+			<r>deu</r>
 		</p>
 		<par n="caracter_general"/>
 	</e>
@@ -1513,7 +1598,7 @@
 	<e>
 		<p>
 			<l><b/><a/>detlos</l>
-			<r>de<b/>los</r>
+			<r>deus</r>
 		</p>
 		<par n="caracter_general"/>
 	</e>
@@ -1985,6 +2070,277 @@
 		</p>
 	</e>
 </pardef>
+
+<pardef n="vers_detlo_oci">
+	<e>
+		<p>
+			<l><a/>vèrs<b/><a/>detlo<b/></l>
+			<r>vèl<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>vèrs<b/><a/>detlos<b/></l>
+			<r>vèls<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>vèrs<b/><a/>detla<b/></l>
+			<r>vèrs<b/>la<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>vèrs<b/><a/>detlas<b/></l>
+			<r>vèrs<b/>las<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>vèrs<b/><a/>detla<b/></l>
+			<r>vèrs<b/>l'<b/></r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>vèrs<b/><a/>detlo<b/></l>
+			<r>vèrs<b/>l'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>vèrs<b/><a/>cnjse</l>
+			<r>vèrs<b/>s</r>
+		</p>
+		<par n="apostrof_e"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>vèrs<b/><a/>cnjse</l>
+			<r>vèrs<b/>se</r>
+		</p>
+	</e>
+</pardef>
+
+<pardef n="ta_detlo_gascon">
+	<e>
+		<p>
+			<l><a/>tà<b/><a/>detlo<b/></l>
+			<r>tau<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>tà<b/><a/>detlos<b/></l>
+			<r>taus<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>tà<b/><a/>detla<b/></l>
+			<r>tà<b/>la<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>tà<b/><a/>detlas<b/></l>
+			<r>tà<b/>las<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>tà<b/><a/>detla<b/></l>
+			<r>tà<b/>l'<b/></r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>tà<b/><a/>detlo<b/></l>
+			<r>tà<b/>l'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>tà<b/><a/>cnjse</l>
+			<r>tà<b/>s</r>
+		</p>
+		<par n="apostrof_e"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>tà<b/><a/>cnjse</l>
+			<r>tà<b/>se</r>
+		</p>
+	</e>
+</pardef>
+
+<pardef n="enta_detlo_gascon">
+	<e>
+		<p>
+			<l><a/>entà<b/><a/>detlo<b/></l>
+			<r>entau<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>entà<b/><a/>detlos<b/></l>
+			<r>entaus<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>entà<b/><a/>detla<b/></l>
+			<r>entà<b/>la<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>entà<b/><a/>detlas<b/></l>
+			<r>entà<b/>las<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>entà<b/><a/>detla<b/></l>
+			<r>entà<b/>l'<b/></r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>entà<b/><a/>detlo<b/></l>
+			<r>entà<b/>l'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>entà<b/><a/>cnjse</l>
+			<r>entà<b/>s</r>
+		</p>
+		<par n="apostrof_e"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>entà<b/><a/>cnjse</l>
+			<r>entà<b/>se</r>
+		</p>
+	</e>
+</pardef>
+
+<pardef n="ende_detlo_gascon">
+	<e>
+		<p>
+			<l><a/>ende<b/><a/>detlo<b/></l>
+			<r>endeu<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>ende<b/><a/>detlos<b/></l>
+			<r>endeus<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>ende<b/><a/>detla<b/></l>
+			<r>ende<b/>la<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>ende<b/><a/>detlas<b/></l>
+			<r>ende<b/>las<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>ende<b/><a/>detla<b/></l>
+			<r>ende<b/>l'<b/></r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>ende<b/><a/>detlo<b/></l>
+			<r>ende<b/>l'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>ende<b/><a/>cnjse</l>
+			<r>ende<b/>s</r>
+		</p>
+		<par n="apostrof_e"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>ende<b/><a/>cnjse</l>
+			<r>ende<b/>se</r>
+		</p>
+	</e>
+</pardef>
+
+<pardef n="dambe_detlo_gascon">
+	<e>
+		<p>
+			<l><a/>dambe<b/><a/>detlo<b/></l>
+			<r>dambeu<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>dambe<b/><a/>detlos<b/></l>
+			<r>dambeus<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>dambe<b/><a/>detla<b/></l>
+			<r>dambe<b/>la<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>dambe<b/><a/>detlas<b/></l>
+			<r>dambe<b/>las<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>dambe<b/><a/>detla<b/></l>
+			<r>dambe<b/>l'<b/></r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>dambe<b/><a/>detlo<b/></l>
+			<r>dambe<b/>l'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>dambe<b/><a/>cnjse</l>
+			<r>dambe<b/>s</r>
+		</p>
+		<par n="apostrof_e"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>dambe<b/><a/>cnjse</l>
+			<r>dambe<b/>se</r>
+		</p>
+	</e>
+</pardef>
+
 </pardefs>
  
   <section id="main" type="standard">
@@ -2144,6 +2500,7 @@
 		</p>
 		<par n="contraccioenta"/>
 	</e>
+
 	<e>
 		<p>
 			<l><a/>tà</l>
@@ -2180,9 +2537,17 @@
 		</p>
 		<par n="apostrofenperdarrere"/>
 	</e>
+	<e>
+		<p>
+			<l><a/>per<b/><a/></l>
+			<r>pe</r>
+		</p>
+		<par n="contraccio_per_aran"/>
+	</e>
 </group>
 
 <group alt="oci@gascon">
+
 	<e>
 	  <p>
 		  <l><a/>de</l>
@@ -2371,7 +2736,7 @@
 	<e>
 		<p>
 			<l><a/>sus<b/><a/>detlo<b/></l>
-			<r>sul<b/></r>
+			<r>suu<b/></r>
 		</p>
 	</e>
 	<e>
@@ -2389,13 +2754,13 @@
 	<e>
 		<p>
 			<l><a/>sus<b/><a/>detlos<b/></l>
-			<r>suls<b/></r>
+			<r>suus<b/></r>
 		</p>
 	</e>
 	<e>
 		<p>
 			<l><a/>sus<b/><a/>detlo</l>
-			<r>sul</r>
+			<r>suu</r>
 		</p>
 		<par n="caracter_general"/>
 	</e>
@@ -2416,7 +2781,7 @@
 	<e>
 		<p>
 			<l><a/>sus<b/><a/>detlos</l>
-			<r>suls</r>
+			<r>suus</r>
 		</p>
 		<par n="caracter_general"/>
 	</e>
@@ -2495,12 +2860,17 @@
 		<par n="caracter_general"/>
 	</e>
 	<e>
+		<par n="enta_detlo_gascon"/>
+	</e>
+
+	<e>
 		<p>
 			<l><a/>tà</l>
 			<r>ta</r>
 		</p>
 		<par n="ad_gascon"/>
 	</e>
+
 	<e>
 		<p>
 			<l><a/>tà<b/></l>
@@ -2514,6 +2884,10 @@
 		</p>
 		<par n="caracter_general"/>
 	</e>
+	<e>
+		<par n="ta_detlo_gascon"/>
+	</e>
+
 	<e>
 		<p>
 			<l><a/>detla<b/></l>
@@ -3068,6 +3442,13 @@
 		<par n="caracter_general"/>
 	</e>
 
+	<e>
+		<p>
+			<l><a/>per<b/><a/></l>
+			<r>pe</r>
+		</p>
+		<par n="contraccio_per_gascon"/>
+	</e>
 </group>
 
 <group alt="oci">
@@ -3791,6 +4172,13 @@
 		<par n="apostrofenperdarrere"/>
 	</e>
 
+	<e>
+		<p>
+			<l><a/>per<b/><a/></l>
+			<r>pe</r>
+		</p>
+		<par n="contraccio_per_oci"/>
+	</e>
 <!--
 L?objet direct peut être: « lo, los, la, las, o, me, te, se, nos, vos ».
 L?objet indirect peut être: « li, lor1, me, te, se, nos, vos »-->
@@ -3866,13 +4254,6 @@ L?objet indirect peut être: « li, lor1, me, te, se, nos, vos »-->
 			<r>a</r>
 		</p>
 		<par n="contraccio"/>
-	</e>
-	<e>
-		<p>
-			<l><a/>per<b/><a/></l>
-			<r>pe</r>
-		</p>
-		<par n="contraccio_per"/>
 	</e>
 	<e>
 		<p>
@@ -4066,14 +4447,23 @@ L?objet indirect peut être: « li, lor1, me, te, se, nos, vos »-->
 	</e>
 
 	<e>
+		<par n="ende_detlo_gascon"/>
+	</e>
+
+	<e>
+		<par n="dambe_detlo_gascon"/>
+	</e>
+
+	<e>
+		<par n="vers_detlo_oci"/>
+	</e>
+
+	<e>
 		<p>
 			<l><a/>a<b/>Los<b/>Angeles<b/></l>
 			<r>a<b/>Los<b/>Angeles<b/></r>
 		</p>
 	</e>
 </section>
-
-
-
 
 </dictionary>
