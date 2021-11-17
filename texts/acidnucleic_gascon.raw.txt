@@ -1,0 +1,22 @@
+Un acid nucleïc qu'ei ua macromolecula polimèrica, qu'ei a díser compausada d'unitats de basa (monomèrs) aperadas nucleotids.
+L'acide nucleïc mei famós qu'ei de segur l'acid desoxiribonucleïc (ADN) on b'ei codificada e transmesa l'informacion genetica de las cellulas (e donc deus organismes compausats de cellulas).
+Totun, l'ADN n'ei pas lo sol acid nucleïc 
+Que vedem que los acids nucleïcs que son a las basa de la vita e qu'an ua possibilitat teorica d'autonomia puish que son a l'origina de las loas pròpia reproduccion, çò qui da aus bioquimistas tot lo leser d'especular suber las originas molecularas de la vita.
+Estructura
+Un acid nucleïc qu'ei compausat de nucleotids.
+Un nucleotid, eth, que's compausa d'un acid fosforic (H3PO4), d'un glucid de cinc carbònis (pentòsa), sia la ribòsa (per l'ARN, en estant l'encausa de la "R"), sia la desoxiribòsa (com son nom l'indica, qu'ei una ribòsa dab un atòm d'oxigèn en mens, e, de segur, qu'ei l'encausa de la "D").
+Estructura plana de la macromolecula d'ADN on vedem l'assemblatge deus nucleotids ligats peus lors acids fosforics (en jaune), dab ligams fosfodiesters 
+Acid ribonucleïc (ARN)
+Los acids ribonucleïcs que son cadenas (polimèrs) simplas de nucleotids (los lors monomèrs).
+Lo lor glucid pentòsa qu'ei ua ribòsa e que condan quate menas de nucleotids : adenina (abreujat A), timina (T), citosina (C) e uracila (U) 
+Los ARN be son de tres escantilhs :
+    Acid ribonucleïc messatgèr (ARNm) : qu'ei ua copia (sintetizada au cap d'un procès aperat transcripcion de l'ADN) deu còde marcat suber l'ADN.
+L'ARNm qu'ei apuish lejut peus ribosòmas e peus ARNr (l'ARN seguent dens aquesta lista) qui, mercés au còde marcat per l'encadenament deus sons nucleotids, b'ebrocan los diferents aminoacids.
+    Acid ribonucleïc de transferiment : qu'ei ua molecula d'ARN plagada capabla, au còp, de reconéisher un codon (un ensemble de tres nucleotids qui codan, mercés au còde genetic, pas sonque per un aminoacid particular de la futura proteïna) de l'ARNm e de reconéisher e carrejar l'aminoacid qui'u correspon.
+    Acid ribonucleïc ribosomic (ARNr) : qu'ei un ARN qui s'associa dab proteïnas entà formar las sosunitats deus ribosòmas (las usias on la cellula e harga las soas proteïnas en tot ligar los aminoacids au mejan de ligams peptidics)
+Acid desoxiribonucleïc (ADN)
+Comparason enter las macromoleculas d'ARN (a esquèrra) e d'ADN (a dreta) : cadenas simplas o dobla, uracila en lòc de guaniana, ribòsa en lòc de dexoribòsa.
+L'ADN qu'ei la macromolecula qui contien l'informacion genetica (qui ua partida b'ei transcrivuda suber l'ARNm).
+Aquesta informacion que permet de sintetizar las proteïnas mes tanben de regular las loas sintesi (entà que cada cellula e sintetize pas sonque certas menas de proteïnas, dens ua certa quantitat e/o pas sonque a un moment precís).
+L'ADN qu'ei hèra mei gran que los ARN (qui non son pas sonque la copia d'ua hèra petita partida de l'ADN), que possedeish desoxiribòsas (en lòc de las ribòsas deus ARN), los sons nucleotids que son los medishs deus ARN a despart de la guanina ( qui remplaça l'uracil, absenta de l'ADN) 
+

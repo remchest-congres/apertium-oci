@@ -1,0 +1,1567 @@
+"<Alejandro>"
+	"Alejandro" np ant m sg
+"<Agustín>"
+	"Agustín" np ant m sg
+"<Lanusse>"
+	"Lanusse"np cog mf sp
+"<Gelly>"
+	"Gelly" np cog mf sp
+"<(>"
+	"(" lpar
+"<28>"
+	"28" num
+"<d'>"
+	"de" pr
+"<agost>"
+	"agost" n m sg
+"<de>"
+	"de" pr
+"<1918>"
+	"1918" num
+"<26>"
+	"26" num
+"<d'>"
+	"de" pr
+"<agost>"
+	"agost" n m sg
+"<de>"
+	"de" pr
+"<1996>"
+	"1996" num
+"<)>"
+	")" rpar
+"<que>"
+	"que" adv enon
+"<ho>"
+	"estar" vbser ifi p3 sg
+"<un>"
+	"un" det ind m sg
+"<militar>"
+	"militar" n m sg
+"<argentin>"
+	"argentin" adj m sg
+"<d'>"
+	"de" pr
+"<origina>"
+	"origina" n f sg
+"<bearnesa>"
+	"bearnés" adj f sg
+"<qui>"
+	"qui" rel mf sp
+"<ocupè>"
+	"ocupar" vblex ifi p3 sg
+"<de facto>"
+	"de facto" adv
+"<la>"
+	"lo" det def f sg
+"<presidéncia>"
+	"presidéncia" n f sg
+"<d'>"
+	"de" pr
+"<Argentina>"
+	"Argentina" np top f sg
+"<enter>"
+	"enter" pr
+"<lo>"
+	"lo" det def m sg
+"<22>"
+	"22" num
+"<de>"
+	"de" pr
+"<març>"
+	"març" n m sg
+"<de>"
+	"de" pr
+"<1971>"
+	"1971" num
+"<e>"
+	"e" cnjcoo
+"<lo>"
+	"lo" det def m sg
+"<25>"
+	"25" num
+"<de mai>"
+	"de" pr
+		"mai" n m sg
+"<de>"
+	"de" pr
+"<1973>"
+	"1973" num
+"<.>"
+	"." sent
+
+
+
+"<Que>"
+	"que" adv enon
+"<s'>"
+	"se" prn pro ref p3 mf sp
+"<oposè>"
+	"oposar" vblex ifi p3 sg
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<peronisme>"
+	"peronisme" n m sg
+"<d'>"
+	"de" pr
+"<un>"
+	"un" det ind m sg SELECT:383
+"<biais>"
+	"biais" n m sg
+"<anticonstitucionau>"
+	"anticonstitucionau" adj mf sg
+"<mes>"
+	"mes" cnjcoo
+"<que>"
+	"que" adv enon
+"<sabó>"
+	"saber" vblex ifi p3 sg
+"<li>"
+	"li" prn pro p3 mf sg
+"<tornar>"
+	"tornar" vblex inf
+"<lo>"
+	"lo" det def m sg
+"<poder>"
+	"poder" n m sg
+"<democraticament>"
+	"democraticament" adv
+"<.>"
+	"." sent
+
+
+
+"<La soa>"
+	"lo son" det pos f sg
+"<anticonstitucionalitat>"
+	"anticonstitucionalitat" n f sg
+"<(>"
+	"(" lpar
+"<dens>"
+	"dens" pr
+"<un>"
+	"un" det ind mf pl
+"<contèxte>"
+	"contèxte" n m sg
+"<istoric>"
+	"istoric" adj m sg
+"<e>"
+	"e" cnjcoo
+"<politic>"
+	"politic" adj m sg
+"<on>"
+	"on" rel adv
+"<la>"
+	"lo" det def f sg
+"<constitucionalitat>"
+	"constitucionalitat" n f sg
+"<non>"
+	"non" adv enon
+"<ho>"
+	"estar" vbser ifi p3 sg
+"<que>"
+	"que" adv
+"<chic de>"
+	"chic de" det ind mf sp
+"<còps>"
+	"còp" n m pl
+"<la>"
+	"lo" det def f sg
+"<nòrma>"
+	"nòrma" n f sg
+"<)>"
+	")" rpar
+"<que>"
+	"que" adv enon
+"<pòt>"
+	"poder" vbmod pri p3 sg
+"<envitar>"
+	"envitar" vblex inf
+"<a>"
+	"a" pr
+"<mantuns>"
+	"mantun" det ind m pl
+"<jutjaments>"
+	"jutjament" n m pl
+"<,>"
+	"," cm
+"<mes>"
+	"mes" cnjcoo
+"<non>"
+	"non" adv enon
+"<se>"
+	"se" prn pro ref p3 mf sp
+"<'u>"
+	"lo" prn pro p3 m sg
+"<pòt>"
+	"poder" vbmod pri p3 sg
+"<pas>"
+	"pas" adv
+"<con·hóner>"
+	"con·hóner" vblex inf
+"<dab>"
+	"dab" pr
+"<la>"
+	"lo" det def f sg
+"<dictatura>"
+	"dictatura" n f sg
+"<argentina>"
+	"argentin" adj f sg
+"<a>"
+	"a" pr
+"<laquau>"
+	"loquau" rel an f sg
+"<be>"
+	"be" adv enon
+"<s'>"
+	"se" prn pro ref p3 mf sp
+"<opausè>"
+	"opausar" vblex ifi p3 sg
+"<,>"
+	"," cm
+"<ne>"
+	"ne" adv enon
+"<ho>"
+	"estar" vbser ifi p3 sg
+"<victima>"
+	"victima" n f sg
+"<,>"
+	"," cm
+"<e>"
+	"e" cnjcoo
+"<testimoniè>"
+	"testimoniar" vblex ifi p3 sg
+"<contra>"
+	"contra" pr
+"<quan>"
+	"quan" cnjadv
+"<,>"
+	"," cm
+"<tornada>"
+	"tornar" vblex pp f sg
+"<la>"
+	"lo" det def f sg
+"<democracia>"
+	"democracia" n f sg
+"<,>"
+	"," cm
+"<l'>"
+	"lo" det def mf sg
+"<autobatejat>"
+	"autobatejat" adj m sg
+"<Procèssus>"
+	"procèssus" n m sg
+"<de>"
+	"de" pr
+"<Reorganizacion>"
+	"reorganizacion" n f sg
+"<Nacionau>"
+	"nacionau" adj mf sg
+"<(>"
+	"(" lpar
+"<qu'ei a díser>"
+	"qu'ei a díser" cnjcoo
+"<,>"
+	"," cm
+"<la>"
+	"lo" det def f sg
+"<Dictatura>"
+	"dictatura" n f sg
+"<Militara>"
+	"militar" adj f sg
+"<Argentina>"
+	"argentin" adj f sg
+"<)>"
+	")" rpar
+"<e>"
+	"e" adv enon
+"<ho>"
+	"estar" vbser ifi p3 sg
+"<jutjat>"
+	"jutjar" vblex pp m sg
+"<.>"
+	"." sent
+
+
+
+"<Carrièra>"
+	"carrièra" n f sg
+"<militara>"
+	"militar" adj f sg
+
+
+"<Lanusse>"
+	"Lanusse"np cog mf sp
+"<qu'>"
+	"que" adv enon
+"<entrè>"
+	"entrar" vblex ifi p3 sg
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<Colegio Militar de la Nación>"
+	"Colegio Militar de la Nación" np al m sg
+"<en>"
+	"en" pr
+"<1935>"
+	"1935" num
+"<puish>"
+	"puish" cnjcoo
+"<,>"
+	"," cm
+"<en>"
+	"en" pr
+"<1938>"
+	"1938" num
+"<,>"
+	"," cm
+"<que>"
+	"que" adv enon
+"<vadó>"
+	"vàder" vblex ifi p3 sg
+"<membre>"
+	"membre" n m sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<Cavaleria>"
+	"cavaleria" n f sg
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+"<Armada>"
+	"armada" n f sg
+"<Argentina>"
+	"argentin" adj f sg
+"<e>"
+	"e" cnjcoo
+"<que>"
+	"que" adv enon
+"<formè>"
+	"formar" vblex ifi p3 sg
+"<part>"
+	"part" n f sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<prestigiós>"
+	"prestigiós" adj m sg
+"<regiment>"
+	"regiment" n m sg
+"<de>"
+	"de" pr
+"<Grenadiers>"
+	"Grenadiers" n m pl
+"<a Chivau>"
+	"a chivau" adj mf sp
+"<,>"
+	"," cm
+"<fondat>"
+	"fondar" vblex pp m sg
+"<peu>"
+	"per" pr
+		"lo" det def m sg
+"<Liberator>"
+	"liberator" n m sg
+"<generau>"
+	"generau" adj mf sg
+"<José>"
+	"José" np ant m sg
+"<de San Martín>"
+	"de San Martín" np cog mf sp
+"<.>"
+	"." sent
+
+
+
+"<Arron>"
+	"arron" adv
+"<divèrsas>"
+	"divèrs" adj f pl
+"<afectacions>"
+	"afectacion" n f pl
+"<(>"
+	"(" lpar
+"<Mendoza>"
+	"Mendoza" np top f sg
+"<,>"
+	"," cm
+"<Salta>"
+	"Salta" np top f sg
+"<,>"
+	"," cm
+"<Campo de Mayo>"
+	"Campo de Mayo" np top m sg
+"<,>"
+	"," cm
+"<Chajarí>"
+	"Chajarí" np top m sg
+"<)>"
+	")" rpar
+"<que>"
+	"que" adv enon
+"<participè>"
+	"participar" vblex ifi p3 sg
+"<au còp>"
+	"au còp" adv
+"<d'>"
+	"de" pr
+"<Estat>"
+	"estat" n m sg
+"<orquestrat>"
+	"orquestrar" vblex pp m sg
+"<peu>"
+	"per" pr
+		"lo" det def m sg
+"<generau>"
+	"generau" n mf sg
+"<Benjamín>"
+	"Benjamín" np ant m sg
+"<Menéndez>"
+	"Menéndez" np cog mf sp
+"<contra>"
+	"contra" pr
+"<Juan>"
+	"Juan" np ant m sg
+"<Domingo>"
+	"Domingo" np ant m sg
+"<Perón>"
+	"Perón" np cog mf sp
+"<lo>"
+	"lo" det def m sg
+"<28>"
+	"28" num
+"<de>"
+	"de" pr
+"<seteme>"
+	"seteme" n m sg
+"<de>"
+	"de" pr
+"<1951>"
+	"1951" num
+"<.>"
+	"." sent
+
+
+
+"<Condemnat>"
+	"condemnar" vblex pp m sg
+"<a>"
+	"a" pr
+"<la>"
+	"lo" det def f sg
+"<preson>"
+	"preson" n f sg
+"<a>"
+	"a" pr
+"<vita>"
+	"vita" n f sg
+"<,>"
+	"," cm
+"<que>"
+	"que" adv enon
+"<demorè>"
+	"demorar" vblex ifi p3 sg
+"<durament>"
+	"durament" adv
+"<en>"
+	"en" pr
+"<carcer>"
+	"carcer" n f sg
+"<en>"
+	"en" pr
+"<Rawson>"
+	"Rawson" np top m sg
+"<e>"
+	"e" cnjcoo
+"<en>"
+	"en" pr
+"<Río>"
+	"Río" np cog mf sp
+"<Gallegos>"
+	"Gallegos" np cog mf sp
+"<dinc a>"
+	"dinc a" pr
+"<la soa>"
+	"lo son" det pos f sg
+"<liberacion>"
+	"liberacion" n f sg
+"<lo>"
+	"lo" det def m sg
+"<19>"
+	"19" num
+"<de>"
+	"de" pr
+"<seteme>"
+	"seteme" n m sg
+"<de>"
+	"de" pr
+"<1955>"
+	"1955" num
+"<,>"
+	"," cm
+"<un>"
+	"un" det ind m sg
+"<dia>"
+	"dia" n m sg
+"<abans>"
+	"abans" adv
+"<la>"
+	"lo" det def f sg
+"<caduda>"
+	"caduda" n f sg
+"<de>"
+	"de" pr
+"<Perón>"
+	"Perón" np cog mf sp
+"<,>"
+	"," cm
+"<acassat>"
+	"acassar" vblex pp m sg
+"<per>"
+	"per" pr
+"<la>"
+	"lo" det def f sg
+"<Revolución Libertadora>"
+	"Revolución" np al f sg
+"<,>"
+	"," cm
+"<lo>"
+	"lo" det def m sg
+"<còp d'Estat>"
+	"còp d'estat" n m sg
+"<gavidat>"
+	"gavidar" vblex pp m sg
+"<per>"
+	"per" pr
+"<Eduardo>"
+	"Eduardo" np ant m sg
+"<Lonardi>"
+	"Lonardi" np cog mf sp
+"<e>"
+	"e" cnjcoo
+"<qui>"
+	"qui" rel mf sp
+"<exiliè>"
+	"exiliè" vblex ifi p3 sg
+"<Perón>"
+	"Perón" np cog mf sp
+"<.>"
+	"." sent
+
+
+
+"<Enter>"
+	"enter" pr
+"<octobre>"
+	"octobre" n m sg
+"<de>"
+	"de" pr
+"<1955>"
+	"1955" num
+"<e>"
+	"e" cnjcoo
+"<març>"
+	"març" n m sg
+"<de>"
+	"de" pr
+"<1958>"
+	"1958" num
+"<que>"
+	"que" adv enon
+"<ho>"
+	"estar" vbser ifi p3 sg
+"<cap>"
+	"cap" n mf sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<Regiment>"
+	"regiment" n m sg
+"<de>"
+	"de" pr
+"<Grenadiers>"
+	"Grenadiers" n m pl
+"<a Chivau>"
+	"a chivau" adv
+"<(>"
+	"(" lpar
+"<escòrta>"
+	"escòrta" n f sg
+"<presidenciau>"
+	"presidenciau" adj mf sg
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+
+
+"<En>"
+	"en" pr
+"<1956>"
+	"1956" num
+"<que>"
+	"que" adv enon
+"<ho>"
+	"estar" vbser ifi p3 sg
+"<mandat>"
+	"mandar" vblex pp m sg
+"<com>"
+	"com" pr
+"<embaishador>"
+	"embaishador" n m sg
+"<especiau>"
+	"especiau" adj mf sg
+"<e>"
+	"e" cnjcoo
+"<extraordinari>"
+	"extraordinari" adj m sg
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<Vatican>"
+	"Vatican" np top m sg
+"<per>"
+	"per" pr
+"<hestejar>"
+	"hestejar" vblex inf
+"<los>"
+	"lo" det def m pl
+"<80>"
+	"80" num
+"<ans>"
+	"an" n m pl
+"<de>"
+	"de" pr
+"<Pie>"
+	"Pie" np cog mf sp
+"<XII>"
+	"XII" num mf sp
+"<.>"
+	"." sent
+
+
+
+"<Que>"
+	"que" adv enon
+"<tornè>"
+	"tornar" vblex ifi p3 sg
+"<en>"
+	"en" pr
+"<1960>"
+	"1960" num
+"<per'mor d'>"
+	"per'mor de" pr
+"<estar>"
+	"estar" vbser inf
+"<nomat>"
+	"nomar" vblex pp m sg
+"<susdirector>"
+	"susdirector" n m sg
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+"<Escòla>"
+	"escòla" n f sg
+"<Superiora>"
+	"superior" adj f sg
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+"<Armada>"
+	"armada" n f sg
+"<.>"
+	"." sent
+
+
+
+"<Durant>"
+	"durant" pr
+"<la>"
+	"lo" det def f sg
+"<presidéncia>"
+	"presidéncia" n f sg
+"<de>"
+	"de" pr
+"<José María>"
+	"José María" np ant m sg
+"<Guido>"
+	"Guido" np ant m sg
+"<(>"
+	"(" lpar
+"<1962>"
+	"1962" num
+-
+"<1963>"
+	"1963" num
+"<)>"
+	")" rpar
+"<que>"
+	"que" adv enon
+"<militè>"
+	"militar" vblex ifi p3 sg
+"<dab>"
+	"dab" pr
+"<los>"
+	"lo" det def m pl
+"<Azul>"
+	"Azul" np al m sg
+"<(>"
+	"(" lpar
+"<partisans>"
+	"partisan" n m pl
+"<d'>"
+	"de" pr
+"<un>"
+	"un" n m sg
+"<viste>"
+	"viste" adv
+"<restabliment>"
+	"arrestabliment" n m sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<democracia>"
+	"democracia" n f sg
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+
+
+"<Antiperonista>"
+	"Antiperonista" adj m sg
+"<convençut>"
+	"convençut" adj m sg
+"<,>"
+	"," cm
+"<que>"
+	"que" adv enon
+"<ho>"
+	"estar" vbser ifi p3 sg
+"<ligat>"
+	"ligar" vblex pp m sg
+"<au còp>"
+	"a" pr
+		"lo" det def mf sg
+			"còp" n m sg
+"<d'>"
+	"de" pr
+"<Estat>"
+	"estat" n m sg
+"<de>"
+	"de" pr
+"<Juan>"
+	"Juan" np ant m sg
+"<Carlos>"
+	"Carlos" np ant m sg
+"<Onganía>"
+	"Onganía" np cog mf sp
+"<contra>"
+	"contra" pr
+"<Arturo>"
+	"Arturo" np ant m sg
+"<Umberto>"
+	"Umberto" np ant m sg
+"<Illia>"
+	"Illia" np cog mf sp
+"<,>"
+	"," cm
+"<qui>"
+	"qui" rel mf sp
+"<s'>"
+	"se" prn pro ref p3 mf sp
+"<escadè>"
+	"escàder" vblex pii p3 sg
+"<lo>"
+	"lo" det def m sg
+"<28>"
+	"28" num
+"<de>"
+	"de" pr
+"<junh>"
+	"junh" n m sg
+"<de>"
+	"de" pr
+"<1966>"
+	"1966" num
+"<,>"
+	"," cm
+"<e>"
+	"e" cnjcoo
+"<aperat>"
+	"aperat" adj m sg
+"<Revolucion>"
+	"arrevolucion" n f sg
+"<Argentina>"
+	"argentin" adj f sg
+"<.>"
+	"." sent
+
+
+
+"<En>"
+	"en" pr
+"<1962>"
+	"1962" num
+"<que>"
+	"que" adv enon
+"<comandava>"
+	"comandar" vblex pii p3 sg
+"<la>"
+	"lo" det def f sg
+"<Purmèra>"
+	"purmèr" adj f sg
+"<Division>"
+	"division" n f sg
+"<Blindada>"
+	"blindat" adj f sg
+"<,>"
+	"," cm
+"<e>"
+	"e" cnjcoo
+"<en>"
+	"en" pr
+"<1968>"
+	"1968" num
+"<que>"
+	"que" adv enon
+"<ho>"
+	"estar" vbser ifi p3 sg
+"<nomat>"
+	"nomar" vblex pp m sg
+"<cap>"
+	"cap" n mf sg
+"<comandant>"
+	"comandant" n m sg
+"<en>"
+	"en" pr
+"<cap de>"
+	"cap" n m sg
+		"de" pr
+"<l'>"
+	"lo" det def mf sg
+"<Armada>"
+	"armada" n f sg
+"<.>"
+	"." sent
+
+
+
+"<La>"
+	"lo" det def f sg
+"<pujada>"
+	"pujada" n f sg
+"<cap a>"
+	"cap a" pr
+"<la>"
+	"lo" det def f sg
+"<presidéncia>"
+	"presidéncia" n f sg
+
+
+"<Las>"
+	"lo" det def f pl
+"<divergéncias>"
+	"divergéncia" n f pl
+"<dab>"
+	"dab" pr
+"<la>"
+	"lo" det def f sg
+"<politica>"
+	"politica" n f sg
+"<d'>"
+	"de" pr
+"<Onganía>"
+	"Onganía" np cog mf sp
+"<e>"
+	"e" cnjcoo
+"<l'>"
+	"lo" det def mf sg
+"<aflaquiment>"
+	"aflaquiment" n m sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<Revolucion>"
+	"arrevolucion" n f sg
+"<Argentina>"
+	"argentin" n f sg
+"<qui>"
+	"qui" rel mf sp
+"<afrontava>"
+	"afrontar" vblex pii p3 sg
+"<las>"
+	"lo" det def f pl
+"<susmautas>"
+	"susmauta" n f pl
+"<d'>"
+	"de" pr
+"<organizacions>"
+	"organizacion" n f pl
+"<armadas>"
+	"armat" adj f pl
+"<clandestinas>"
+	"clandestin" adj f pl
+"<arron deu>"
+	"arron de" pr
+		"lo" det def m sg
+"<Cordobazo>"
+	"Cordobazo" np top m sg
+"<,>"
+	"," cm
+"<que'u>"
+	"que" adv enon
+		"lo" prn pro p3 m sg
+"<mièn>"
+	"miar" vblex ifi p3 pl
+"<a>"
+	"a" pr
+"<exigir>"
+	"exigir" vblex inf
+"<la>"
+	"lo" det def f sg
+"<demission>"
+	"demission" n f sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<president>"
+	"president" n m sg
+"<e>"
+	"e" cnjcoo
+"<,>"
+	"," cm
+"<per'mor deu son>"
+	"per'mor de" pr
+		"lo son" det pos m sg
+"<refús>"
+	"arrefús" n m sg
+"<,>"
+	"," cm
+"<de'u>"
+	"de" pr
+		"lo" prn pro p3 m sg
+"<har>"
+	"har" vblex inf
+"<càder>"
+	"càder" vblex inf
+"<.>"
+	"." sent
+
+
+
+"<La>"
+	"lo" det def f sg
+"<Junta>"
+	"junta" n f sg
+"<deus>"
+	"de" pr
+		"lo" det def m pl
+"<comandants>"
+	"comandant" n m pl
+"<en>"
+	"en" pr
+"<cap de>"
+	"cap" n m sg
+		"de" pr
+"<las>"
+	"la" n m pl
+"<Hòrças>"
+	"hòrça" n f pl
+"<Armadas>"
+	"armat" adj f pl
+"<,>"
+	"," cm
+"<dont>"
+	"dont" rel mf sp
+"<Lanusse>"
+	"Lanusse"np cog mf sp
+"<e>"
+	"e" adv enon
+"<hasèva>"
+	"har" vblex pii p3 sg
+"<partida>"
+	"partida" n f sg
+"<com>"
+	"com" pr
+"<cap de>"
+	"cap" n m sg
+		"de" pr
+"<l'>"
+	"lo" det def mf sg
+"<Armada>"
+	"armada" n f sg
+"<,>"
+	"," cm
+"<que>"
+	"que" adv enon
+"<remplacè>"
+	"arremplaçar" vblex ifi p3 sg
+"<de tira>"
+	"de tira" adv
+"<Onganía>"
+	"Onganía" np cog mf sp
+"<per>"
+	"per" pr
+"<Roberto>"
+	"Roberto" np ant m sg
+"<Marcelo>"
+	"Marcelo" np ant m sg
+"<Levingston>"
+	"Levingston" np cog mf sp
+"<,>"
+	"," cm
+"<qui>"
+	"qui" rel mf sp
+"<,>"
+	"," cm
+"<après>"
+	"après" adv
+"<un>"
+	"un" det ind m sg
+"<brèu>"
+	"brèu" adj m sg
+"<temps>"
+	"temps" n m sg
+"<com>"
+	"com" pr
+"<president>"
+	"president" n m sg
+"<,>"
+	"," cm
+"<e>"
+	"e" adv enon
+"<ho>"
+	"estar" vbser ifi p3 sg
+"<au son>"
+	"a" pr
+		"lo son" det pos m sg
+"<torn>"
+	"torn" n m sg
+"<destituit>"
+	"destituïr" vblex pp m sg
+"<e>"
+	"e" cnjcoo
+"<remplaçat>"
+	"remplaçar" vblex pp m sg
+"<per>"
+	"per" pr
+"<Lanusse>"
+	"Lanusse"np cog mf sp
+"<en març>"
+	"en març" adv
+"<de>"
+	"de" pr
+"<1971>"
+	"1971" num
+"<.>"
+	"." sent
+
+
+
+"<Govèrn>"
+	"govèrn" n m sg
+
+
+"<Durant>"
+	"durant" pr
+"<lo son>"
+	"lo son" det pos m sg
+"<mandat>"
+	"mandat" n m sg
+"<que>"
+	"que" adv enon
+"<hasó>"
+	"har" vblex ifi p3 sg
+"<mòstra>"
+	"mòstra" n f sg
+"<d'>"
+	"de" pr
+"<un>"
+	"un" det ind m sg
+"<pragmatisme>"
+	"pragmatisme" n m sg
+"<agut>"
+	"agut" adj m sg
+"<,>"
+	"," cm
+"<en bèth>"
+	"en bèth" adv
+"<restablir>"
+	"arrestablir" vblex inf
+"<las>"
+	"lo" det def f pl
+"<relacions>"
+	"arrelacion" n f pl
+"<diplomaticas>"
+	"diplomatic" adj f pl
+"<dab>"
+	"dab" pr
+"<China>"
+	"China" np top f sg
+"<,>"
+	"," cm
+"<en>"
+	"en" pr
+"<repatriant>"
+	"arrepatriar" vblex ger
+"<lo>"
+	"lo" det def m sg
+"<cadavre>"
+	"cadavre" n m sg
+"<d'>"
+	"de" pr
+"<Eva>"
+	"Eva" np ant f sg
+"<Perón>"
+	"Perón" np cog mf sp
+"<e>"
+	"e" cnjcoo
+"<en bèth>"
+	"en bèth" adv
+"<envitar>"
+	"envitar" vblex inf
+"<Perón>"
+	"Perón" np cog mf sp
+"<a>"
+	"a" pr
+"<tornar>"
+	"tornar" vblex inf
+"<deu son>"
+	"de" pr
+		"lo son" det pos m sg
+"<exili>"
+	"exili" n m sg
+"<en>"
+	"en" pr
+"<1972>"
+	"1972" num
+"<.>"
+	"." sent
+
+
+
+"<Suu>"
+	"sus" pr
+		"lo" det def m sg
+"<plan>"
+	"plan" n m sg
+"<economic>"
+	"economic" adj m sg
+"<que>"
+	"que" adv enon
+"<realizè>"
+	"realizar" vblex ifi p3 sg
+"<o>"
+	"o" cnjcoo
+"<comencè>"
+	"començar" vblex ifi p3 sg
+"<òbras>"
+	"òbra" n f pl
+"<infrastructuraus>"
+	"infrastructuraus" adj mf pl
+"<de>"
+	"de" pr
+"<las>"
+	"lo" det def f pl
+"<importantas>"
+	"important" adj f pl
+"<com>"
+	"com" cnjadv
+"<rotas>"
+	"arrota" n f pl
+"<,>"
+	"," cm
+"<centraus>"
+	"centrau" n f pl
+"<electricas>"
+	"electric" adj f pl
+"<,>"
+	"," cm
+"<ponts>"
+	"pont" n m pl
+"<,>"
+	"," cm
+"<etc.>"
+	"etc." adv
+
+
+"<Totun>"
+	"totun" cnjadv
+"<la soa>"
+	"lo son" det pos f sg
+"<gestion>"
+	"gestion" n f sg
+"<non>"
+	"non" adv enon
+"<podó>"
+	"poder" vbmod ifi p3 sg
+"<pas>"
+	"pas" adv
+"<jamei>"
+	"jamei" adv
+"<cambiar>"
+	"cambiar" vblex inf
+"<lo>"
+	"lo" det def m sg
+"<maucontentèr>"
+	"maucontentèr" n m sg
+"<generau>"
+	"generau" adj mf sg
+"<e>"
+	"e" cnjcoo
+"<popular>"
+	"popular" adj m sg
+"<de cap a>"
+	"de cap a" pr
+"<las>"
+	"lo" det def f pl
+"<duas>"
+	"dus" num f sp
+"<etapas>"
+	"etapa" n f pl
+"<anterioras>"
+	"anterior" adj f pl
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+"<auto>"
+	"auto" n f sg
+"<nomada>"
+	"nomar" vblex pp f sg
+"<Revolución Argentina>"
+	"Revolución" np al f sg
+"<.>"
+	"." sent
+
+
+
+"<Entà>"
+	"entà" pr
+"<adobar>"
+	"adobar" vblex inf
+"<ua>"
+	"un" det ind f sg
+"<sortida>"
+	"sortida" n f sg
+"<de cap a>"
+	"de cap a" pr
+"<la>"
+	"lo" det def f sg
+"<democracia>"
+	"democracia" n f sg
+"<,>"
+	"," cm
+"<Lanusse>"
+	"Lanusse"np cog mf sp
+"<que>"
+	"que" adv enon
+"<nomè>"
+	"nomar" vblex ifi p3 sg
+"<Arturo>"
+	"Arturo" np ant m sg
+"<Mor>"
+	"Mor" np cog mf sp
+"<Roig>"
+	"Roig" np cog mf sp
+"<,>"
+	"," cm
+"<un>"
+	"un" det ind m sg
+"<òmi>"
+	"òmi" n m sg
+"<politic>"
+	"politic" adj m sg
+"<de>"
+	"de" pr
+"<simpatias>"
+	"simpatia" n f pl
+"<radicaus>"
+	"radicau" adj mf pl
+"<,>"
+	"," cm
+"<com>"
+	"com" pr
+"<Ministre>"
+	"ministre" n m sg
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+"<Interior>"
+	"interior" n m sg
+"<.>"
+	"." sent
+
+
+
+"<Qu'>"
+	"que" adv enon
+"<hore>"
+	"horar" vblex prs p3 sg
+"<l'>"
+	"lo" det def mf sg
+"<arquitècte>"
+	"arquitècte" n m sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<Gran>"
+	"gran" adj m sg
+"<Acòrd>"
+	"acòrd" n m sg
+"<Nacionau>"
+	"nacionau" adj mf sg
+"<,>"
+	"," cm
+"<un>"
+	"un" det ind m sg
+"<ensai>"
+	"ensai" n m sg
+"<de>"
+	"de" pr
+"<trobar>"
+	"trobar" vblex inf
+"<ua>"
+	"un" det ind f sg
+"<sortida>"
+	"sortida" n f sg
+"<politica>"
+	"politic" adj f sg
+"<peu>"
+	"per" pr
+		"lo" det def m sg
+"<regim>"
+	"arregime" n m sg
+"<militar>"
+	"militar" adj m sg
+"<.>"
+	"." sent
+
+
+
+"<En abriu>"
+	"en abriu" adv
+"<de>"
+	"de" pr
+"<1971>"
+	"1971" num
+"<,>"
+	"," cm
+"<Mor>"
+	"Mor" np cog mf sp
+"<Roig>"
+	"Roig" np cog mf sp
+"<qu'>"
+	"que" adv enon
+"<anonciè que>"
+	"anonciar que" vblex ifi p3 sg
+"<los>"
+	"lo" det def m pl
+"<partits>"
+	"partit" n m pl
+"<politica>"
+	"politic" adj f sg
+"<non>"
+	"non" adv enon
+"<serèn>"
+	"serar" vblex ifi p3 pl
+"<pas>"
+	"pas" adv
+"<mei>"
+	"mei" adv
+"<vedats>"
+	"vedar" vblex pp m pl
+"<,>"
+	"," cm
+"<e>"
+	"e" cnjcoo
+"<que'us>"
+	"que" adv enon
+		"los" prn pro p3 m pl
+"<tornè>"
+	"tornar" vblex ifi p3 sg
+"<los lors>"
+	"lo lor" det pos m pl
+"<bens>"
+	"ben" n m pl
+"<.>"
+	"." sent
+
+
+
+"<Dens>"
+	"dens" pr
+"<un>"
+	"un" det ind m sg
+"<clima>"
+	"clima" n m sg
+"<politic>"
+	"politic" adj m sg
+"<cada còp>"
+	"cada còp" adv
+"<mei>"
+	"mei" adv
+"<violent>"
+	"violent" adj m sg
+"<en lo quau>"
+	"en lo quau" rel an m sg
+"<,>"
+	"," cm
+"<enter>"
+	"enter" pr
+"<mantuns>"
+	"mantun" det ind m pl
+"<eveniments>"
+	"eveniment" n m pl
+"<sagnós>"
+	"sagnós" adj m pl
+"<,>"
+	"," cm
+"<s'>"
+	"se" prn pro ref p3 mf sp
+"<escadó>"
+	"escàder" vblex ifi p3 sg
+"<lo>"
+	"lo" det def m sg
+"<Massacre>"
+	"massacre" n m sg
+"<de>"
+	"de" pr
+"<Trelew>"
+	"Trelew" np top m sg
+"<,>"
+	"," cm
+"<Lanusse>"
+	"Lanusse"np cog mf sp
+"<se>"
+	"se" prn pro ref p3 mf sp
+"<prometó>"
+	"prométer" vblex ifi p3 sg
+"<de>"
+	"de" pr
+"<convocar>"
+	"convocar" vblex inf
+"<eleccions>"
+	"eleccion" n f pl
+"<en>"
+	"en" pr
+"<1973>"
+	"1973" num
+"<>"
+	"" sent
+"<Héctor>"
+	"Héctor" np ant m sg
+"<José>"
+	"José" np ant m sg
+"<Cámpora>"
+	"Cámpora" np cog mf sp
+"<(>"
+	"(" lpar
+"<l'>"
+	"lo" det def mf sg
+"<òmi>"
+	"òmi" n m sg
+"<de>"
+	"de" pr
+"<palha>"
+	"palha" n f sg
+"<que>"
+	"que" rel mf sp
+"<Perón>"
+	"Perón" np cog mf sp
+"<e>"
+	"e" adv enon
+"<mandè>"
+	"mandar" vblex ifi p3 sg
+"<per>"
+	"per" pr
+"<estar>"
+	"estar" vblex inf
+"<candidat>"
+	"candidat" n m sg
+"<a>"
+	"a" pr
+"<la soa>"
+	"lo son" det pos f sg
+"<plaça>"
+	"plaça" n f sg
+"<e>"
+	"e" cnjcoo
+"<atau>"
+	"atau" adv
+"<non pas>"
+	"non" adv enon
+		"pas" adv
+"<tornar>"
+	"tornar" vblex inf
+"<d'>"
+	"de" pr
+"<exili>"
+	"exili" n m sg
+"<abans>"
+	"abans" adv
+"<qui>"
+	"qui" cnjadv
+"<agi>"
+	"aver" vbhaver prs p3 sg
+"<avut>"
+	"aver" vblex pp m sg
+"<un>"
+	"un" det ind mf pl
+"<govèrn>"
+	"govèrn" n m sg
+"<amistós>"
+	"amistós" adj m sg
+"<per>"
+	"per" pr
+"<eth>"
+	"prneth" prn tn p3 m sg
+"<)>"
+	")" rpar
+"<que>"
+	"que" adv enon
+"<ho>"
+	"estar" vbser ifi p3 sg
+"<elejut>"
+	"eléger" vblex pp m sg
+"<president>"
+	"president" n m sg
+"<,>"
+	"," cm
+"<e>"
+	"e" cnjcoo
+"<arron de>"
+	"arron de" pr
+"<la soa>"
+	"lo son" det pos f sg
+"<pujada>"
+	"pujada" n f sg
+"<,>"
+	"," cm
+"<Lanusse>"
+	"Lanusse"np cog mf sp
+"<que's>"
+	"que" adv enon
+		"se" prn pro ref p3 mf sp
+"<retirè>"
+	"arretirar" vblex ifi p3 sg
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+

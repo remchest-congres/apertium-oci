@@ -1,0 +1,185 @@
+"<Aush>"
+	"Aush" np top m sg
+"<(>"
+	"(" lpar
+"<oficialament>"
+	"oficiaument" adv
+"<en>"
+	"en" pr
+"<francés>"
+	"francés" n m pl
+"<Auch>"
+	"Auch" np cog mf sp
+"<)>"
+	")" rpar
+"<qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<ua>"
+	"un" det ind f sg
+"<vila>"
+	"vila" n f sg
+"<d'>"
+	"de" pr
+"<Occitània>"
+	"Occitània" np top f sg
+"<e>"
+	"e" cnjcoo
+"<qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<la>"
+	"lo" det def f sg
+	"lo" prn pro p3 f sg
+"<capitala>"
+	"capitala" n f sg
+"<istorica>"
+	"istoric" adj f sg
+"<d'>"
+	"de" pr
+"<Armanhac>"
+	"Armanhac" np top m sg
+"<.>"
+	"." sent
+
+
+
+"<Que>"
+	"que" adv enon
+"<constitueish>"
+	"constituïr" vblex pri p3 sg
+"<ua>"
+	"un" det ind f sg
+"<comuna>"
+	"comuna" n f sg
+"<gascoa>"
+	"gascoa" adj n f
+"<situada>"
+	"situat" adj f sg
+"<dens>"
+	"dens" pr
+"<lo>"
+	"lo" det def m sg
+"<departament>"
+	"departament" n m sg
+"<de>"
+	"de" pr
+"<Gers>"
+	"Gers" np top m sg
+"<e>"
+	"e" cnjcoo
+"<la>"
+	"lo" det def f sg
+"<region>"
+	"arregion" n f sg
+"<Occitània>"
+	"Occitània" np top f sg
+"<,>"
+	"," cm
+"<ancianament>"
+	"ancianament" adv
+"<de>"
+	"de" pr
+"<Mieidia-Pirenèus>"
+	"Mieidia-Pirenèus" np top m sg
+"<.>"
+	"." sent
+
+
+
+"<Lo>"
+	"lo" det def m sg
+"<gentilici>"
+	"gentilici" n m sg
+"<qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<aushés>"
+	"aushés" n m sg
+"<,>"
+	"," cm
+"<aushesa>"
+	"aushesa"
+"<.>"
+	"." sent
+
+
+
+"<Geografia>"
+	"geografia" n f sg
+
+
+"<La>"
+	"lo" det def f sg
+"<vila>"
+	"vila" n f sg
+"<es>"
+	"estar" vbser pri p3 sg
+"<situada>"
+	"situar" vblex pp f sg
+"<au ras de>"
+	"au ras de" pr
+"<Gers>"
+	"Gers" np top m sg
+"<,>"
+	"," cm
+"<riu>"
+	"arriu" n m sg
+"<qui>"
+	"qui" rel mf sp
+"<se>"
+	"se" prn pro ref p3 mf sp
+"<geta>"
+	"getar" vblex pri p3 sg
+"<dens>"
+	"dens" pr
+	"Garona" np top f sg
+"<.>"
+	"." sent
+
+
+
+"<Economia>"
+	"economia" n f sg
+
+
+"<Aush>"
+	"Aush" np top m sg
+"<qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<lo>"
+	"lo" det def m sg
+"<capluòc>"
+	"capluòc" n m sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<Cramba>"
+	"cramba" n f sg
+"<de>"
+	"de" pr
+"<comerça>"
+	"comerça" n m sg
+"<e d'>"
+	"e" cnjcoo
+		"de" pr
+"<industria>"
+	"industria" n f sg
+"<de>"
+	"de" pr
+"<Gers>"
+	"Gers" np top m sg
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+

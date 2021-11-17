@@ -1,0 +1,785 @@
+"<Avesac>"
+	"Avesac" np top m sg
+"<,>"
+	"," cm
+"<Prat>"
+	"Prat" np top m sg
+"<e>"
+	"e" cnjcoo
+"<era Hita>"
+	"era Hita" np top f sg
+"<(>"
+	"(" lpar
+"<Avezac>"
+	"Avezac" np top m sg
+-
+"<Prat>"
+	"Prat" np top m sg
+-
+"<Lahitte>"
+	"Lahitte" np top f sg
+"<en>"
+	"en" pr
+"<francés>"
+	"francés" n m sg
+"<)>"
+	")" rpar
+"<qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<ua>"
+	"un" det ind f sg
+"<comuna>"
+	"comuna" n f sg
+"<d'>"
+	"de" pr
+"<Occitània>"
+	"Occitània" np top f sg
+"<,>"
+	"," cm
+"<en>"
+	"en" pr
+"<Gasconha>"
+	"Gasconha" np top f sg
+"<,>"
+	"," cm
+"<situada>"
+	"situar" vblex pp f sg
+"<dens>"
+	"dens" pr
+"<eth>"
+	"eth" det def m sg
+"<departament>"
+	"departament" n m sg
+"<deths>"
+	"de" pr
+		"eth" det def m pl
+"<Hauts Pirenèus>"
+	"Hauts Pirenèus" np top m pl
+"<dera>"
+	"de" pr
+		"eth" det def f sg
+"<region>"
+	"arregion" n f sg
+"<Occitània>"
+	"Occitània" np top f sg
+"<.>"
+	"." sent
+
+
+
+"<Geografia>"
+	"geografia" n f sg
+
+
+"<La>"
+	"lo" det def f sg
+"<comuna>"
+	"comuna" n f sg
+"<qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<situada>"
+	"situar" vblex pp f sg
+"<en>"
+	"en" pr
+"<eras>"
+	"eth" det def f pl
+"<Baronias>"
+	"Baronias" np top f pl
+"<.>"
+	"." sent
+
+
+
+"<Avesaguèt>"
+	"Avesaguèt" np top m sg
+"<,>"
+	"," cm
+"<afluent>"
+	"afluent" n m sg
+"<d'>"
+	"de" pr
+"<Arròs>"
+	"Arròs" np top m sg
+"<,>"
+	"," cm
+"<a>"
+	"aver" vblex pri p3 sg
+"<sa>"
+	"son" det pos f sg
+"<font>"
+	"font" n f sg
+"<en>"
+	"en" pr
+"<era>"
+	"eth" det def f sg
+"<comuna>"
+	"comuna" n f sg
+"<.>"
+	"." sent
+
+
+
+"<Avesac>"
+	"Avesac" np top m sg
+"<qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<nòrd-èst>"
+	"nòrd-èst" n m sg
+"<,>"
+	"," cm
+"<Prat>"
+	"Prat" np top m sg
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<sud-èst>"
+	"sud-èst" n m sg
+"<e>"
+	"e" cnjcoo
+"<Era Hita>"
+	"era Hita" np top f sg
+"<a>"
+	"a" pr
+"<l'>"
+	"lo" det def mf sg
+"<oèst>"
+	"oèst" n m sp
+"<.>"
+	"." sent
+
+
+
+"<Perimètre>"
+	"perimètre" n m sg
+"<deth>"
+	"de" pr
+		"eth" det def m sg
+"<territòri>"
+	"territòri" n m sg
+
+
+"<Avesac>"
+	"Avesac" np top m sg
+"<,>"
+	"," cm
+"<Prat>"
+	"Prat" np top m sg
+"<e>"
+	"e" cnjcoo
+"<era Hita>"
+	"era Hita" np top f sg
+"<que>"
+	"que" adv enon
+"<tòca>"
+	"tocar" vblex pri p3 sg
+"<Lortèth>"
+	"Lortèth" np top f sg
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<sud-èst>"
+	"sud-èst" n m sg
+"<per>"
+	"per" pr
+"<un>"
+	"un" det ind m sg
+"<simple>"
+	"simple" adj m sg
+"<quadripunt>"
+	"quadripunt" n m sg
+"<e>"
+	"e" cnjcoo
+"<Vathsèra>"
+	"Vathsèra" np top f sg
+"<a>"
+	"a" pr
+"<l'>"
+	"lo" det def mf sg
+"<oèst>"
+	"oèst" n m sp
+"<per>"
+	"per" pr
+"<un>"
+	"un" det ind m sg
+"<aute>"
+	"aute" adj ind m sg
+"<quadripunt>"
+	"quadripunt" n m sg
+"<a>"
+	"a" pr
+"<la>"
+	"lo" det def f sg
+"<Pé de Gutor>"
+	"Pé de Gutor" np top m sg
+"<(>"
+	"(" lpar
+"<nom>"
+	"nom" n m sg
+"<francés>"
+	"francés" adj m sg
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+
+
+"<Toponimia>"
+	"toponimia" n f sg
+
+
+"<Avesac>"
+	"Avesac" np top m sg
+
+
+"<Eth>"
+	"eth" det def m sg
+"<nom>"
+	"nom" n m sg
+"<d'>"
+	"de" pr
+"<Avesac>"
+	"Avesac" np top m sg
+"<(>"
+	"(" lpar
+"<atestacions>"
+	"atestacion" n f pl
+"<ancianas>"
+	"ancian" adj f pl
+"<D>"
+	"d" n f sp
+-
+"<Auesag>"
+	"Auesag" np top m sg
+"<,>"
+	"," cm
+"<D>"
+	"d" n f sp
+-
+"<Auzag>"
+	"Auzag" np top m sg
+"<,>"
+	"," cm
+"<D>"
+	"d" n f sp
+-
+"<Auezag>"
+	"Auezag" np top m sg
+"<,>"
+	"," cm
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<sègle>"
+	"sègle" n m sg
+"<XII>"
+	"XII" num mf sp
+"<,>"
+	"," cm
+"<en>"
+	"en" pr
+"<occitan>"
+	"occitan" n m sg
+"<,>"
+	"," cm
+"<Avezac>"
+	"Avezac" np top m sg
+"<,>"
+	"," cm
+"<en>"
+	"en" pr
+"<1256>"
+	"1256" num
+"<,>"
+	"," cm
+"<en>"
+	"en" pr
+"<occitan>"
+	"occitan" n m sg
+"<,>"
+	"," cm
+"<de>"
+	"de" pr
+"<Avezaco>"
+	"Avezaco" np top m sg
+"<,>"
+	"," cm
+"<en>"
+	"en" pr
+"<1300>"
+	"1300" num
+"<,>"
+	"," cm
+"<en>"
+	"en" pr
+"<latin>"
+	"latin" n m sg
+"<,>"
+	"," cm
+"<De>"
+	"de" pr
+"<Auezaco>"
+	"Auezaco" np top m sg
+"<,>"
+	"," cm
+"<en>"
+	"en" pr
+"<1313>"
+	"1313" num
+"<,>"
+	"," cm
+"<en>"
+	"en" pr
+"<latin>"
+	"latin" n m sg
+"<,>"
+	"," cm
+"<De>"
+	"de" pr
+"<Avesaco>"
+	"Avesaco" np top m sg
+"<,>"
+	"," cm
+"<en>"
+	"en" pr
+"<1342>"
+	"1342" num
+"<,>"
+	"," cm
+"<en>"
+	"en" pr
+"<latin>"
+	"latin" n m sg
+"<,>"
+	"," cm
+"<de>"
+	"de" pr
+"<Avessaco>"
+	"Avessaco" np top m sg
+"<,>"
+	"," cm
+"<en>"
+	"en" pr
+"<1369>"
+	"1369" num
+"<,>"
+	"," cm
+"<en>"
+	"en" pr
+"<latin>"
+	"latin" n m sg
+"<>"
+	"" lpar
+"<1>"
+	"1" num
+"<>"
+	"" rpar
+"<)>"
+	")" rpar
+"<que>"
+	"que" adv enon
+"<vieneré>"
+	"vieneré" vblex cni p3 sg
+"<deu>"
+	"de" pr
+"<nom>"
+	"nom" n m sg
+"<d'>"
+	"de" pr
+"<òme>"
+	"òme" n m sg
+"<latin>"
+	"latin" adj m sg
+"<Avitius>"
+	"Avitius" np cog mf sp
+"<damb>"
+	"damb" pr
+"<lo>"
+	"lo" det def m sg
+"<sufixe>"
+	"sufixe" n m sg
+ -
+"<acum>"
+	"acum" barb
+"<>"
+	"" lpar
+"<2>"
+	"2" num
+"<>"
+	"" rpar
+"<.>"
+	"." sent
+
+
+
+"<Avesac>"
+	"Avesac" np top m sg
+"<qu'>"
+	"que" adv enon
+"<èra>"
+	"estar" vbser pii p3 sg
+"<probablament>"
+	"probablament" adv
+"<una>"
+	"un" det ind f sg
+"<grana>"
+	"gran" adj f sg
+"<propietat>"
+	"propietat" n f sg
+"<gallo-romana>"
+	"gallo-roman" adj f sg
+"<.>"
+	"." sent
+
+
+
+"<Prat>"
+	"Prat" np top m sg
+
+
+"<Eth>"
+	"eth" det def m sg
+"<nom>"
+	"nom" n m sg
+"<de>"
+	"de" pr
+"<Prat>"
+	"Prat" np top m sg
+"<(>"
+	"(" lpar
+"<atestacions>"
+	"atestacion" n f pl
+"<ancianas>"
+	"ancian" adj f pl
+"<de>"
+	"de" pr
+"<Prato>"
+	"Prato" np top m sg
+"<,>"
+	"," cm
+"<en>"
+	"en" pr
+"<1313>"
+	"1313" num
+"<,>"
+	"," cm
+"<en>"
+	"en" pr
+"<latin>"
+	"latin" n m sg
+"<,>"
+	"," cm
+"<Prat>"
+	"Prat" np top m sg
+"<,>"
+	"," cm
+"<ad>"
+	"a" pr
+"<era>"
+	"eth" det def f sg
+"<fin>"
+	"fin" n f sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<sègle>"
+	"sègle" n m sg
+"<XVIII>"
+	"XVIII" num mf sp
+"<,>"
+	"," cm
+"<sus>"
+	"sus" pr
+"<era>"
+	"eth" det def f sg
+"<mapa>"
+	"mapa" n f sg
+"<de>"
+	"de" pr
+"<Cassini>"
+	"Cassini" np cog mf sp
+"<>"
+	"" lpar
+"<3>"
+	"3" num
+"<>"
+	"" rpar
+"<)>"
+	")" rpar
+"<que>"
+	"que" adv enon
+"<representa>"
+	"arrepresentar" vblex pri p3 sg
+"<simplament>"
+	"simplament" adv
+"<lo>"
+	"lo" det def m sg
+"<mot>"
+	"mot" n m sg
+"<gascon>"
+	"gascon" adj m sg
+"<prat>"
+	"prat" n m sg
+"<.>"
+	"." sent
+
+
+
+"<Era Hita>"
+	"era Hita" np top f sg
+
+
+"<Eth>"
+	"eth" det def m sg
+"<nom>"
+	"nom" n m sg
+"<d'>"
+	"de" pr
+"<Era Hita>"
+	"era Hita" np top f sg
+"<(>"
+	"(" lpar
+"<atestacions>"
+	"atestacion" n f pl
+"<ancianas>"
+	"ancian" adj f pl
+"<A La Fita en las Seubas>"
+	"a La Fita en las Seubas" np cog mf sp
+"<,>"
+	"," cm
+"<cap a>"
+	"cap a" pr
+"<1200>"
+	"1200" num
+-
+"<1230>"
+	"1230" num
+"<,>"
+	"," cm
+"<en>"
+	"en" pr
+"<occitan>"
+	"occitan" n m sg
+"<,>"
+	"," cm
+"<De Fita prope Auezacum>"
+	"De Fita prope Auezacum" barb
+"<,>"
+	"," cm
+"<en>"
+	"en" pr
+"<1313>"
+	"1313" num
+"<,>"
+	"," cm
+"<en>"
+	"en" pr
+"<latin>"
+	"latin" n m sg
+"<,>"
+	"," cm
+"<De Fita>"
+	"De Fita" barb
+"<,>"
+	"," cm
+"<en>"
+	"en" pr
+"<1342>"
+	"1342" num
+"<,>"
+	"," cm
+"<en>"
+	"en" pr
+"<latin>"
+	"latin" n m sg
+"<,>"
+	"," cm
+"<La Hitte>"
+	"La Hitte" np top f sg
+"<,>"
+	"," cm
+"<ad>"
+	"a" pr
+"<era>"
+	"eth" det def f sg
+"<fin>"
+	"fin" n f sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<sègle>"
+	"sègle" n m sg
+"<XVIII>"
+	"XVIII" num mf sp
+"<,>"
+	"," cm
+"<sus>"
+	"sus" pr
+"<era>"
+	"eth" det def f sg
+"<mapa>"
+	"mapa" n f sg
+"<de>"
+	"de" pr
+"<Cassini>"
+	"Cassini" np cog mf sp
+"<>"
+	"" lpar
+"<4>"
+	"4" num
+"<>"
+	"" rpar
+"<)>"
+	")" rpar
+"<que>"
+	"que" adv enon
+"<vien>"
+	"viéner" vblex pri p3 sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<latin>"
+	"latin" n m sg
+"<ficta>"
+	"ficta" barb
+"<>"
+	"" lpar
+"<petra>"
+	"petra" barb
+"<>"
+	"" rpar
+"<e>"
+	"e" cnjcoo
+"<que>"
+	"que" adv enon
+"<pòt>"
+	"poder" vbmod pri p3 sg
+"<representar>"
+	"arrepresentar" vblex inf
+"<ua>"
+	"un" det ind f sg
+"<bòrna>"
+	"bòrna" n f sg
+"<a>"
+	"a" pr
+"<un>"
+	"un" det ind m sg
+"<limit>"
+	"limit" n m sg
+"<de>"
+	"de" pr
+"<comuna>"
+	"comuna" n f sg
+"<,>"
+	"," cm
+"<sus>"
+	"sus" pr
+"<un>"
+	"un" det ind m sg
+"<ancian>"
+	"ancian" adj m sg
+"<camin>"
+	"camin" n m sg
+"<,>"
+	"," cm
+"<etc>"
+	"*etc"
+"<>"
+	"" lpar
+"<5>"
+	"5" num
+"<>"
+	"" rpar
+"<,>"
+	"," cm
+"<>"
+	"" lpar
+"<6>"
+	"6" num
+"<>"
+	"" rpar
+"<,>"
+	"," cm
+"<o>"
+	"o" cnjcoo
+"<ua>"
+	"un" det ind f sg
+"<pèira levada>"
+	"pèira levada" n f sg
+"<(>"
+	"(" lpar
+"<monument>"
+	"monument" n m sg
+"<megalitic>"
+	"megalitic" adj m sg
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+
+
+"<Istòria>"
+	"istòria" n f sg
+
+
+"<En>"
+	"en" pr
+"<1972>"
+	"1972" num
+"<,>"
+	"," cm
+"<era>"
+	"eth" det def f sg
+"<comuna>"
+	"comuna" n f sg
+"<d'>"
+	"de" pr
+"<Avesac>"
+	"Avesac" np top m sg
+"<e>"
+	"e" cnjcoo
+"<Prat>"
+	"Prat" np top m sg
+"<qu'>"
+	"que" adv enon
+"<annèxa>"
+	"annexar" vblex pri p3 sg
+"<era>"
+	"eth" det def f sg
+"<de>"
+	"de" pr
+"<Era Hita>"
+	"era Hita" np top f sg
+"<(>"
+	"(" lpar
+"<51>"
+	"51" num
+"<abitants>"
+	"abitant" n m pl
+"<en>"
+	"en" pr
+"<1968>"
+	"1968" num
+"<)>"
+	")" rpar
+"<>"
+	"" lpar
+"<7>"
+	"7" num
+"<>"
+	"" rpar
+"<.>"
+	"." sent
+
+
+

@@ -1,0 +1,802 @@
+"<Bolívia>"
+	"Bolívia" np top f sg
+"<(>"
+	"(" lpar
+"<aperada>"
+	"aperar" vblex pp f sg
+"<tanben>"
+	"tanben" cnjadv
+"<oficiaument>"
+	"oficiaument" adv
+"<Estat>"
+	"estat" n m sg
+"<Plurinacionau>"
+	"plurinacionau" adj mf sg
+"<de>"
+	"de" pr
+"<Bolívia>"
+	"Bolívia" np top f sg
+"<(>"
+	"(" lpar
+"<quíchoa>"
+	"quíchoa" n m sg
+"<:>"
+	":" sent
+
+"<Bulibya>"
+	"Bulibya" barb
+"<>"
+	"" sent
+"<aimara>"
+	"aimara" n m sg
+"<:>"
+	":" sent
+
+"<Wuliwya>"
+	"Wuliwya" barb
+"<>"
+	"" sent
+"<guaraní>"
+	"guaraní" n m sg
+"<:>"
+	":" sent
+
+"<Volívia>"
+	"Volívia" barb
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<)>"
+	")" rpar
+"<qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<un>"
+	"un" det ind m sg
+"<país>"
+	"país" n m sg
+"<d'>"
+	"de" pr
+"<America del Sud>"
+	"America del Sud" np top f sg
+"<.>"
+	"." sent
+
+
+
+"<Confronta>"
+	"confrontar" vblex pri p3 sg
+"<Brasil>"
+	"Brasil" np top m sg
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<nòrd>"
+	"nòrd" n m sp
+"<e>"
+	"e" cnjcoo
+"<a>"
+	"a" pr
+"<l'>"
+	"lo" det def mf sg
+"<èst>"
+	"èst" n m sp
+"<,>"
+	"," cm
+"<Paraguai>"
+	"Paragüai" np top m sg
+"<e>"
+	"e" cnjcoo
+"<Argentina>"
+	"Argentina" np top f sg
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<sud>"
+	"sud" n m sp
+"<e>"
+	"e" cnjcoo
+"<Chile>"
+	"Chile" np top m sg
+"<e>"
+	"e" cnjcoo
+"<Peró>"
+	"Peró" np top m sg
+"<a>"
+	"a" pr
+"<l'>"
+	"lo" det def mf sg
+"<oèst>"
+	"oèst" n m sp
+"<.>"
+	"." sent
+
+
+
+"<Bolívia>"
+	"Bolívia" np top f sg
+"<que>"
+	"que" adv enon
+"<revindica>"
+	"revindicar" vblex pri p3 sg
+"<la soa>"
+	"lo son" det pos f sg
+"<còsta>"
+	"còsta" n f sg
+"<atlantica>"
+	"atlantic" adj f sg
+"<annexada>"
+	"annexar" vblex pp f sg
+"<per>"
+	"per" pr
+"<Chile>"
+	"Chile" np top m sg
+"<.>"
+	"." sent
+
+
+
+"<Sa>"
+	"son" det pos f sg
+"<capitau>"
+	"capitau" n f sg
+"<constitucionau>"
+	"constitucionau" adj mf sg
+"<qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<Sucre>"
+	"Sucre" np top m sg
+"<.>"
+	"." sent
+
+
+
+"<Lo>"
+	"lo" det def m sg
+"<gentilici>"
+	"gentilici" n m sg
+"<es>"
+	"estar" vbser pri p3 sg
+"<bolivian>"
+	"bolivian" adj m sg
+"<,>"
+	"," cm
+"<boliviana>"
+	"bolivian" adj f sg
+"<.>"
+	"." sent
+
+
+
+"<Istòria>"
+	"istòria" n f sg
+
+
+"<Abans>"
+	"abans" pr
+"<la>"
+	"lo" det def f sg
+"<conquèsta>"
+	"conquèsta" n f sg
+"<espanhòla>"
+	"espanhòu" adj f sg
+"<,>"
+	"," cm
+"<lo>"
+	"lo" det def m sg
+"<territòri>"
+	"territòri" n m sg
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+"<actuau>"
+	"actuau" adj mf sg
+"<Bolívia>"
+	"Bolívia" np top f sg
+"<qu'>"
+	"que" cnjsub
+"<acessó>"
+	"acésser" vblex if p3 sg
+"<ua>"
+	"un" det ind f sg
+"<seria>"
+	"seria" n f sg
+"<de>"
+	"de" pr
+"<civilizacions>"
+	"civilizacion" n f pl
+"<(>"
+	"(" lpar
+"<dont>"
+	"dont" rel mf sp
+"<ua>"
+	"un" prn tn f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<màger>"
+	"màger" adj mf sg
+"<que>"
+	"que" adv enon
+"<ho>"
+	"estar" vbser ifi p3 sg
+"<la>"
+	"lo" det def f sg
+"<civilizacion>"
+	"civilizacion" n f sg
+"<de>"
+	"de" pr
+"<Tiwanaku>"
+	"Tiwanaku" np top m sg
+"<)>"
+	")" rpar
+"<>"
+	"" sent
+"<ua>"
+	"un" det ind f sg
+"<partida>"
+	"partida" n f sg
+"<deu son>"
+	"de" pr
+		"lo son" det pos m sg
+"<territòri>"
+	"territòri" n m sg
+"<actuau>"
+	"actuau" adj mf sg
+"<que's>"
+	"que" adv enon
+		"se" prn pro ref p3 mf sp
+"<trobava>"
+	"trobar" vblex pii p3 sg
+"<gavidat>"
+	"gavidar" vblex pp m sg
+"<peu>"
+	"per" pr
+		"lo" det def m sg
+"<Tawantinsuyu>"
+	"Tawantinsuyu" np al m sg
+"<(>"
+	"(" lpar
+"<l'>"
+	"lo" det def mf sg
+"<Empèri>"
+	"empèri" n m sg
+"<deus>"
+	"de" pr
+		"lo" det def m pl
+"<Incas>"
+	"inca" n mf pl
+"<)>"
+	")" rpar
+"<au moment de>"
+	"au moment de" pr
+"<l'>"
+	"lo" det def mf sg
+"<arribada>"
+	"arribada" n f sg
+"<de>"
+	"de" pr
+"<las>"
+	"lo" det def f pl
+"<òsts>"
+	"òst" n m pl
+"<espanhòlas>"
+	"espanhòu" adj f pl
+"<.>"
+	"." sent
+
+
+
+"<Durant>"
+	"durant" pr
+"<la>"
+	"lo" det def f sg
+"<tempsada>"
+	"tempsada" n f sg
+"<coloniau>"
+	"coloniau" adj mf sg
+"<Bolívia>"
+	"Bolívia" np top f sg
+"<que>"
+	"que" adv enon
+"<ho>"
+	"estar" vbser ifi p3 sg
+"<denominada>"
+	"denominar" vblex pp f sg
+"<Haut Peró>"
+	"Haut Peró" np top m sg
+	"hautir" vblex pri p3 sg
+"<o>"
+	"o" cnjcoo
+"<Audiencia Reiau de Charcas>"
+	"Audiencia Reiau de Charcas" np top f sg
+"<.>"
+	"." sent
+
+
+
+"<Lo>"
+	"lo" det def m sg
+"<espanhòus>"
+	"espanhòu" n m pl
+"<qu'>"
+	"que" adv enon
+"<expleitèn>"
+	"expleitar" vblex ifi p3 pl
+"<intensament>"
+	"intensament" adv
+"<las>"
+	"lo" det def f pl
+"<minas>"
+	"mina" n f pl
+"<d'>"
+	"de" pr
+"<argent>"
+	"argent" n m sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<ciutat>"
+	"ciutat" n f sg
+"<de>"
+	"de" pr
+"<Potosí>"
+	"Potosí" np top m sg
+"<.>"
+	"." sent
+
+
+
+"<Lo>"
+	"lo" det def m sg
+"<Haut Peró>"
+	"Haut Peró" np top m sg
+"<que>"
+	"que" adv enon
+"<he>"
+	"har" vblex ifi p3 sg
+"<partida>"
+	"partida" n f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<Vicereiautat>"
+	"vicereiautat" n f sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<Peró>"
+	"Peró" np top m sg
+"<abans de>"
+	"abans de" pr
+"<estar>"
+	"estar" vbser inf
+"<inclús>"
+	"inclús" adj m sg
+	"inclús" adj m pl
+	"inclure" vblex pp m sg
+"<dehens>"
+	"dehens" pr
+"<la>"
+	"lo" det def f sg
+"<Vicereiautat>"
+	"vicereiautat" n f sg
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+"<Arriu de la Plata>"
+	"Arriu de la Plata" np top m sg
+"<a>"
+	"a" pr
+"<l'>"
+	"lo" det def mf sg
+"<escadença>"
+	"escadença" n f sg
+"<de>"
+	"de" pr
+"<la soa>"
+	"lo son" det pos f sg
+"<creacion>"
+	"creacion" n f sg
+"<en>"
+	"en" pr
+"<1776>"
+	"1776" num
+"<.>"
+	"." sent
+
+
+
+"<Au cap de>"
+	"au cap de" pr
+"<las>"
+	"lo" det def f pl
+"<guèrras>"
+	"guèrra" n f pl
+"<d'>"
+	"de" pr
+"<independéncia>"
+	"independéncia" n f sg
+"<d'>"
+	"de" pr
+"<America deu Sud>"
+	"America deu Sud" np top f sg
+"<Bolívia>"
+	"Bolívia" np top f sg
+"<que>"
+	"que" adv enon
+"<ho>"
+	"estar" vbser ifi p3 sg
+"<batejada>"
+	"batejar" vblex pp f sg
+"<en>"
+	"en" pr
+"<aunor>"
+	"aunor" n m sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<liberator>"
+	"liberator" n m sg
+"<Simón>"
+	"Simón" np ant m sg
+"<Bolívar>"
+	"Bolívar" np cog mf sp
+"<.>"
+	"." sent
+
+
+
+"<En>"
+	"en" pr
+"<1879>"
+	"1879" num
+"<Chile>"
+	"Chile" np top m sg
+"<qu'>"
+	"que" adv enon
+"<invadí>"
+	"invadir" vblex ifi p3 sg
+"<Bolívia>"
+	"Bolívia" np top f sg
+"<en bèth>"
+	"en bèth" adv
+"<annexar>"
+	"annexar" vblex inf
+"<lo>"
+	"lo" det def m sg
+"<desèrt>"
+	"desèrt" n m sg
+"<d'>"
+	"de" pr
+"<Atacama>"
+	"Atacama" np top f sg
+"<e>"
+	"e" cnjcoo
+"<las soas>"
+	"lo son" det pos f pl
+"<còstas>"
+	"còsta" n f pl
+"<pacificas>"
+	"pacific" adj f pl
+"<durant>"
+	"durant" pr
+"<la>"
+	"lo" det def f sg
+"<Guèrra>"
+	"guèrra" n f sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<Pacific>"
+	"Pacific" np top m sg
+"<.>"
+	"." sent
+
+
+
+"<La>"
+	"lo" det def f sg
+"<sortida>"
+	"sortida" n f sg
+"<de cap a>"
+	"de cap a" pr
+"<la>"
+	"lo" det def f sg
+"<mar>"
+	"mar" n f sg
+"<que>"
+	"que" adv enon
+"<demòra>"
+	"demorar" vblex pri p3 sg
+"<dinc au>"
+	"dinc a" pr
+		"lo" det def m sg
+"<dia>"
+	"dia" n m sg
+"<de uei>"
+	"de uei" adj mf sp
+"<un>"
+	"un" det ind m sg
+"<punt>"
+	"punt" n m sg
+"<de>"
+	"de" pr
+"<conflicte>"
+	"conflicte" n m sg
+"<enter>"
+	"enter" pr
+"<ambs>"
+	"ambs" det ind m pl
+"<país>"
+	"país" n m pl
+"<e>"
+	"e" cnjcoo
+"<un>"
+	"un" det ind m sg
+"<enjòc>"
+	"enjòc" n m sg
+"<prioritari>"
+	"prioritari" adj m sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<politica>"
+	"politica" n f sg
+"<extrangèra>"
+	"extrangèr" adj f sg
+"<de>"
+	"de" pr
+"<Bolívia>"
+	"Bolívia" np top f sg
+"<.>"
+	"." sent
+
+
+
+"<En>"
+	"en" pr
+"<1932>"
+	"1932" num
+"<que>"
+	"que" adv enon
+"<petè>"
+	"petar" vblex ifi p3 sg
+"<la>"
+	"lo" det def f sg
+"<Guèrra>"
+	"guèrra" n f sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<Chaco>"
+	"Chaco" np top m sg
+"<enter>"
+	"enter" pr
+"<Bolívia>"
+	"Bolívia" np top f sg
+"<e>"
+	"e" cnjcoo
+"<Paraguai>"
+	"Paragüai" np top m sg
+"<entau>"
+	"entà" pr
+		"eth" det def m sg
+"<contròlle>"
+	"contròlle" n m sg
+"<d'>"
+	"de" pr
+"<aquesta>"
+	"aqueste" det dem f sg
+"<region>"
+	"arregion" n f sg
+"<.>"
+	"." sent
+
+
+
+"<Fin finala>"
+	"fin finala" adv
+"<,>"
+	"," cm
+"<un>"
+	"un" det ind m sg
+"<acòrd>"
+	"acòrd" n m sg
+"<enter>"
+	"enter" pr
+"<ambs>"
+	"ambs" det ind m pl
+"<estats>"
+	"estat" n m pl
+"<la>"
+	"lo" det def f sg
+"<partagè>"
+	"partajar" vblex ifi p3 sg
+"<(>"
+	"(" lpar
+"<mei que mei>"
+	"mei que mei" adv
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<prohèit>"
+	"prohèit" n m sg
+"<de>"
+	"de" pr
+"<Paraguai>"
+	"Paragüai" np top m sg
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+
+
+"<Bolívia>"
+	"Bolívia" np top f sg
+"<que>"
+	"que" adv enon
+"<conegó>"
+	"conéisher" vblex ifi p3 sg
+"<ua>"
+	"un" det ind f sg
+"<instabilitat>"
+	"instabilitat" n f sg
+"<politica>"
+	"politica" adj f sg
+"<de>"
+	"de" pr
+"<las>"
+	"lo" det def f pl
+"<grana>"
+	"gran" adj f sg
+"<dinc au>"
+	"dinc a" pr
+		"lo" det def m sg
+"<restabliment>"
+	"arrestabliment" n m sg
+"<definitiu>"
+	"definitiu" adj m sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<democracia>"
+	"democracia" n f sg
+"<en>"
+	"en" pr
+"<1982>"
+	"1982" num
+"<.>"
+	"." sent
+
+
+
+"<Lo>"
+	"lo" det def m sg
+"<president>"
+	"president" n m sg
+"<Evo>"
+	"Evo" np ant m sg
+"<Morales>"
+	"Morales" np cog mf sp
+"<que>"
+	"que" adv enon
+"<ho>"
+	"estar" vbser ifi p3 sg
+"<lo>"
+	"lo" det def m sg
+"<purmèr>"
+	"purmèr" adj m sg
+"<amerindian>"
+	"amerindian" n m sg
+"<a>"
+	"a" pr
+"<gavidar>"
+	"gavidar" vblex inf
+"<la>"
+	"lo" det def f sg
+"<Republica>"
+	"republica" n f sg
+"<>"
+	"" sent
+"<gessit>"
+
+	"gessir" vblex pp m sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<meitan>"
+	"meitan" n m sg
+"<sindicalista>"
+	"sindicalista" adj mf sg
+"<e>"
+	"e" cnjcoo
+"<productor>"
+	"productor" n m sg
+"<de>"
+	"de" pr
+"<coca>"
+	"coca" n f sg
+"<,>"
+	"," cm
+"<qu'>"
+	"que" adv enon
+"<establí>"
+	"establir" vblex ifi p3 sg
+"<la>"
+	"lo" det def f sg
+"<nocion>"
+	"nocion" n f sg
+"<d'>"
+	"de" pr
+"<estat>"
+	"estat" n m sg
+"<plurinacionau>"
+	"plurinacionau" adj mf sg
+"<dab>"
+	"dab" pr
+"<ua>"
+	"un" det ind f sg
+"<revindicacion>"
+	"revindicacion" n f sg
+"<de>"
+	"de" pr
+"<las>"
+	"lo" det def f pl
+"<culturas>"
+	"cultura" n f pl
+"<amerindianas>"
+	"amerindian" adj f pl
+"<e>"
+	"e" cnjcoo
+"<ua>"
+	"un" det ind f sg
+"<oposicion>"
+	"oposicion" n f sg
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<Estats Units d'America>"
+	"Estats Units d'America" np top m pl
+"<e>"
+	"e" cnjcoo
+"<tot>"
+	"tot" det ind m sg
+"<intervencion>"
+	"intervencion" n f sg
+"<d'>"
+	"de" pr
+"<aqueth>"
+	"aqueth" det dem m sg
+"<país>"
+	"país" n m sg
+"<dehens>"
+	"dehens" pr
+"<los>"
+	"lo" det def m pl
+"<ahars>"
+	"ahars" n m pl
+"<politics>"
+	"politic" adj m pl
+"<bolivians>"
+	"bolivian" adj m pl
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+

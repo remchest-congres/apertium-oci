@@ -1,0 +1,18 @@
+Lo Congrès a mes en plaça un pichon jòc que l'ajudarà a desvolopar la reconeissença vocala.
+
+Vos cal escriure de nombres en letras e l'ordenador verifica que los a comprés coma cal.
+
+Dins l'encastre del projècte ReVOc, qu'a per tòca de bastir la primièra reconeissença vocala en occitan, Lo Congrès a desvolopat un programa que passa en chifras de nombres escriuts en tota letra.
+
+Per testar son bon foncionar, atal coma sa capacitat a gerir la diversitat de las varietats, lo Congrès a besonh de l'ajuda de la comunautat. Vos convida doncas a ensajar un petit jòc en linha, que vos demanda d'escriure nombres en letras. Lo jòc verifica puèi que l'ordenador a plan convertit lo nombre en chifras.
+
+Tres nivèls son a disposicion :
+
+    Pels confirmats (amb de nombres entre 0 e 999 999 999 999 999)
+    Pels començaires (amb de nombres entre 0 e 999 999)
+    Pels enfants (amb de nombres entre 0 e 9 999)
+
+Podètz jogar dins totas las varietats de l'occitan, tant de còps coma volètz. Se un nombre es tròp malaisit, avètz la possibilitat de lo passar.
+
+    Jogar al jòc dels nombres
+

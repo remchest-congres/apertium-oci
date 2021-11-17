@@ -1,0 +1,1311 @@
+"<Un>"
+	"un" det ind m sg
+	"un tal" prn tn m sg
+"<acid>"
+	"acide" n m sg
+"<nucleïc>"
+	"nucleïc" adj m sg
+"<qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<ua>"
+	"un" det ind f sg
+"<macromolecula>"
+	"macromolecula" n f sg
+"<polimèrica>"
+	"polimèrica" adj f sg
+"<,>"
+	"," cm
+"<qu'ei a díser>"
+	"qu'ei a díser" cnjcoo
+"<compausada>"
+	"compausat" adj f sg
+"<d'>"
+	"de" pr
+"<unitats>"
+	"unitat" n f pl
+"<de>"
+	"de" pr
+"<basa>"
+	"basa" n f sg
+"<(>"
+	"(" lpar
+"<monomèrs>"
+	"monomèr" n m pl
+"<)>"
+	")" rpar
+"<aperadas>"
+	"aperat" adj f pl
+"<nucleotids>"
+	"nucleotids" n m pl
+"<.>"
+	"." sent
+
+
+
+"<L'>"
+	"lo" det def mf sg
+"<acide>"
+	"acide" n m sg
+"<nucleïc>"
+	"nucleïc" adj m sg
+"<mei>"
+	"mei" adv
+"<famós>"
+	"famós" adj m sg
+"<qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<de segur>"
+	"de segur" adv
+"<l'>"
+	"lo" det def mf sg
+"<acid>"
+	"acide" n m sg
+"<desoxiribonucleïc>"
+	"desoxiribonucleïc" adj m sg
+"<(>"
+	"(" lpar
+"<ADN>"
+	"ADN" n acr m sp
+"<)>"
+	")" rpar
+"<on>"
+	"on" rel adv
+"<b'>"
+	"be" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<codificada>"
+	"codificar" vblex pp f sg
+"<e>"
+	"e" cnjcoo
+"<transmesa>"
+	"transmetre" vblex pp f sg
+"<l'>"
+	"lo" det def mf sg
+"<informacion>"
+	"informacion" n f sg
+"<genetica>"
+	"genetic" adj f sg
+"<de>"
+	"de" pr
+"<las>"
+	"lo" det def f pl
+"<cellulas>"
+	"cellula" n f pl
+"<(>"
+	"(" lpar
+"<e donc>"
+	"e donc" ij
+"<deus>"
+	"de" pr
+		"lo" det def m pl
+"<organismes>"
+	"organisme" n m pl
+"<compausats>"
+	"compausar" vblex pp m pl
+"<de>"
+	"de" pr
+"<cellulas>"
+	"cellula" n f pl
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+
+
+"<Totun>"
+	"totun" cnjadv
+"<,>"
+	"," cm
+"<l'>"
+	"lo" det def mf sg
+"<ADN>"
+	"ADN" n acr m sp
+"<n'>"
+	"ne" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<pas>"
+	"pas" adv
+"<lo>"
+	"lo" det def m sg
+"<sol>"
+	"sol" adj m sg
+"<acid>"
+	"acide" n m sg
+"<nucleïc>"
+	"nucleïc" adj m sg
+ 
+
+"<Que>"
+	"que" adv enon
+"<vedem>"
+	"véder" vblex pri p1 pl
+"<que>"
+	"que" cnjsub
+"<los>"
+	"lo" det def m pl
+"<acids>"
+	"acide" n m pl
+"<nucleïcs>"
+	"nucleïc" adj m pl
+"<que>"
+	"que" adv enon
+"<son>"
+	"estar" vbser pri p3 pl
+"<a>"
+	"a" pr
+"<las>"
+	"la" n m pl
+"<basa>"
+	"basa" n f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<vita>"
+	"vita" n f sg
+"<e>"
+	"e" cnjcoo
+"<qu'>"
+	"que" adv enon
+"<an>"
+	"aver" vblex pri p3 pl
+"<ua>"
+	"un" det ind f sg
+"<possibilitat>"
+	"possibilitat" n f sg
+"<teorica>"
+	"teoric" adj f sg
+"<d'>"
+	"de" pr
+"<autonomia>"
+	"autonomia" n f sg
+"<puish que>"
+	"puish que" cnjadv
+"<son>"
+	"estar" vbser pri p3 pl
+"<a>"
+	"a" pr
+"<l'>"
+	"lo" det def mf sg
+"<origina>"
+	"origina" n f sg
+"<de>"
+	"de" pr
+"<las loas>"
+	"las loas" det pos f pl
+"<pròpia>"
+	"pròpi" adj f sg
+"<reproduccion>"
+	"arreproduccion" n f sg
+"<,>"
+	"," cm
+"<çò>"
+	"çò" prn tn nt
+"<qui>"
+	"qui" rel mf sp
+"<da>"
+	"dar" vblex pri p3 sg
+"<aus>"
+	"a" pr
+		"lo" det def m pl
+"<bioquimistas>"
+	"bioquimista" n m pl
+"<tot>"
+	"tot" predet m sg
+"<lo>"
+	"lo" det def m sg
+"<leser>"
+	"leser" n m sg
+"<d'>"
+	"de" pr
+"<especular>"
+	"especular" vblex inf
+"<suber>"
+	"suber" pr
+"<las>"
+	"lo" det def f pl
+"<originas>"
+	"origina" n f pl
+"<molecularas>"
+	"molecular" adj f pl
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<vita>"
+	"vita" n f sg
+"<.>"
+	"." sent
+
+
+
+"<Estructura>"
+	"estructura" n f sg
+
+
+"<Un>"
+	"un" det ind m sg
+"<acid>"
+	"acide" n m sg
+"<nucleïc>"
+	"nucleïc" adj m sg
+"<qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<compausat>"
+	"compausar" vblex pp m sg
+"<de>"
+	"de" pr
+"<nucleotids>"
+	"nucleotids" n m pl
+"<.>"
+	"." sent
+
+
+
+"<Un>"
+	"un" det ind mf pl
+"<nucleotid>"
+	"nucleotid" n m sg
+"<,>"
+	"," cm
+"<eth>"
+	"prneth" prn tn p3 m sg
+"<,>"
+	"," cm
+"<que's>"
+	"que" adv enon
+		"se" prn pro ref p3 mf sp
+"<compausa>"
+	"compausar" vblex pri p3 sg
+"<d'>"
+	"de" pr
+"<un>"
+	"un" det ind m sg
+"<acid>"
+	"acide" n m sg
+"<fosforic>"
+	"fosforic" adj m sg
+"<(>"
+	"(" lpar
+"<H3PO4>"
+	"H3PO4" n acr m sg
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<d'>"
+	"de" pr
+"<un>"
+	"un" det ind m sg
+"<glucid>"
+	"glucide" n m sg
+"<de>"
+	"de" pr
+"<cinc>"
+	"cinc" num mf sp
+"<carbònis>"
+	"carbòni" n m pl
+"<(>"
+	"(" lpar
+"<pentòsa>"
+	"pentòsa" n f sg
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<sia>"
+	"sia" cnjcoo
+"<la>"
+	"lo" det def f sg
+"<ribòsa>"
+	"ribòsa" n f sg
+"<(>"
+	"(" lpar
+"<per>"
+	"per" pr
+"<l'>"
+	"lo" det def mf sg
+"<ARN>"
+	"ARN" n acr m sp
+"<,>"
+	"," cm
+"<en>"
+	"en" pr
+"<estant>"
+	"estar" vblex ger
+"<l'>"
+	"lo" det def mf sg
+"<encausa>"
+	"encausa" n f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<R>"
+	"r" n f sp
+"
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<sia>"
+	"sia" cnjcoo
+"<la>"
+	"lo" det def f sg
+"<desoxiribòsa>"
+	"desoxiribòsa" n f sg
+"<(>"
+	"(" lpar
+"<com>"
+	"com" cnjadv
+"<son>"
+	"son" det pos m sg
+"<nom>"
+	"nom" n m sg
+"<l'>"
+	"lo" prn pro p3 m sg
+"<indica>"
+	"indicar" vblex pri p3 sg
+"<,>"
+	"," cm
+"<qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<una>"
+	"una" n f sg
+"<ribòsa>"
+	"ribòsa" n f sg
+"<dab>"
+	"dab" pr
+"<un>"
+	"un" det ind m sg
+"<atòm>"
+	"atòme" n m sg
+"<d'>"
+	"de" pr
+"<oxigèn>"
+	"oxigène" n m sg
+"<en>"
+	"en" pr
+"<mens>"
+	"mens" adv
+"<,>"
+	"," cm
+"<e>"
+	"e" cnjcoo
+"<,>"
+	"," cm
+"<de segur>"
+	"de segur" adv
+"<,>"
+	"," cm
+"<qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<l'>"
+	"lo" det def mf sg
+"<encausa>"
+	"encausa" n f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<D>"
+	"d" n f sp
+"
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+
+
+"<Estructura>"
+	"estructura" n f sg
+"<plana>"
+	"plan" adj f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<macromolecula>"
+	"macromolecula" n f sg
+"<d'>"
+	"de" pr
+"<ADN>"
+	"ADN" n acr m sp
+"<on>"
+	"on" rel adv
+"<vedem>"
+	"véder" vblex pri p1 pl
+"<l'>"
+	"lo" det def mf sg
+"<assemblatge>"
+	"assemblatge" n m sg
+"<deus>"
+	"de" pr
+		"lo" det def m pl
+"<nucleotids>"
+	"nucleotids" n m sg
+"<ligats>"
+	"ligat" adj m pl
+"<peus lors>"
+	"per" pr
+		"lo lor" det pos m pl
+"<acids>"
+	"acide" n m pl
+"<fosforics>"
+	"fosforic" adj m pl
+"<(>"
+	"(" lpar
+"<en>"
+	"en" pr
+"<jaune>"
+	"jaune" n m sg
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<dab>"
+	"dab" pr
+"<ligams>"
+	"ligam" n m pl
+"<fosfodiesters>"
+	"fosfodiester" adj m pl
+ 
+
+"<Acid>"
+	"acide" n m sg
+"<ribonucleïc>"
+	"ribonucleïc" adj m sg
+"<(>"
+	"(" lpar
+"<ARN>"
+	"ARN" n acr m sp
+"<)>"
+	")" rpar
+
+
+"<Los>"
+	"lo" det def m pl
+"<acids>"
+	"acide" n m pl
+"<ribonucleïcs>"
+	"ribonucleïc" adj m pl
+"<que>"
+	"que" adv enon
+"<son>"
+	"estar" vbser pri p3 pl
+"<cadenas>"
+	"cadena" n f pl
+"<(>"
+	"(" lpar
+"<polimèrs>"
+	"polimèr" adj m pl
+"<)>"
+	")" rpar
+"<simplas>"
+	"simple" adj f pl
+"<de>"
+	"de" pr
+"<nucleotids>"
+	"nucleotids" n m pl
+"<(>"
+	"(" lpar
+"<los lors>"
+	"lo lor" det pos m pl
+"<monomèrs>"
+	"monomèr" n m pl
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+
+
+"<Lo lor>"
+	"lo lor" det pos m sg
+"<glucid>"
+	"glucide" n m sg
+"<pentòsa>"
+	"pentòsa" n f sg
+"<qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<ua>"
+	"un" det ind f sg
+"<ribòsa>"
+	"ribòsa" n f sg
+"<e>"
+	"e" cnjcoo
+"<que>"
+	"que" adv enon
+"<condan>"
+	"condar" vblex pri p3 pl
+"<quate>"
+	"quate" num mf sp
+"<menas>"
+	"mena" n f pl
+"<de>"
+	"de" pr
+"<nucleotids>"
+	"nucleotids" n m pl
+"<:>"
+	":" sent
+
+"<adenina>"
+	"adenina" n f sg
+"<(>"
+	"(" lpar
+"<abreujat>"
+	"abreujat" adj m sg
+"<A>"
+	"a" n f sp
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<timina>"
+	"timina" n f sg
+"<(>"
+	"(" lpar
+"<T>"
+	"t" n f sp
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<citosina>"
+	"citosina" n f sg
+"<(>"
+	"(" lpar
+"<C>"
+	"c" n f sp
+"<)>"
+	")" rpar
+"<e>"
+	"e" cnjcoo
+"<uracila>"
+	"uracila" n f sg
+"<(>"
+	"(" lpar
+"<U>"
+	"u" n f sp
+"<)>"
+	")" rpar
+ 
+
+"<Los>"
+	"lo" det def m pl
+"<ARN>"
+	"ARN" n acr m sp
+"<be>"
+	"be" adv enon
+"<son>"
+	"estar" vbser pri p3 pl
+"<de>"
+	"de" pr
+"<tres>"
+	"tres" num mf sp
+"<escantilhs>"
+	"escantilh" n m pl
+"<:>"
+	":" sent
+
+    
+
+"<Acid>"
+	"acide" n m sg
+"<ribonucleïc>"
+	"ribonucleïc" adj m sg
+"<messatgèr>"
+	"messatgèr" n m sg
+"<(>"
+	"(" lpar
+"<ARNm>"
+	"ARNm" n acr m sg
+"<)>"
+	")" rpar
+"<:>"
+	":" sent
+
+"<qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<ua>"
+	"un" det ind f sg
+"<copia>"
+	"copia" n f sg
+"<(>"
+	"(" lpar
+"<sintetizada>"
+	"sintetizar" vblex pp f sg
+"<au cap d'>"
+	"au cap de" pr
+"<un>"
+	"un" det ind mf pl
+"<procès>"
+	"procès" n m sg
+"<aperat>"
+	"aperar" vblex pp m sg
+"<transcripcion>"
+	"transcripcion" n f sg
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+"<ADN>"
+	"ADN" n acr m sp
+"<)>"
+	")" rpar
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<còde>"
+	"còde" n m sg
+"<marcat>"
+	"marcat" adj m sg
+"<suber>"
+	"suber" pr
+"<l'>"
+	"lo" det def mf sg
+"<ADN>"
+	"ADN" n acr m sp
+"<.>"
+	"." sent
+
+
+
+"<L'>"
+	"lo" det def mf sg
+"<ARNm>"
+	"ARNm" n acr m sg
+"<qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<apuish>"
+	"apuish" cnjadv
+"<lejut>"
+	"léger" vblex pp m sg
+"<peus>"
+	"per" pr
+		"lo" det def m pl
+"<ribosòmas>"
+	"ribosòma" n m pl
+"<e>"
+	"e" cnjcoo
+"<peus>"
+	"per" pr
+		"lo" det def m pl
+"<ARNr>"
+	"ARNr" n acr m sg
+"<(>"
+	"(" lpar
+"<l'>"
+	"lo" det def mf sg
+"<ARN>"
+	"ARN" n acr m sp
+"<seguent>"
+	"següent" adj m sg
+"<dens>"
+	"dens" pr
+"<aquesta>"
+	"aqueste" det dem f sg
+"<lista>"
+	"lista" n f sg
+"<)>"
+	")" rpar
+"<qui>"
+	"qui" rel mf sp
+"<,>"
+	"," cm
+"<mercés au>"
+	"mercés a" pr
+		"lo" det def m sg
+"<còde>"
+	"còde" n m sg
+"<marcat>"
+	"marcat" adj m sg
+"<per>"
+	"per" pr
+"<l'>"
+	"lo" det def mf sg
+"<encadenament>"
+	"encadenament" n m sg
+"<deus sons>"
+	"de" pr
+		"lo son" det pos m pl
+"<nucleotids>"
+	"nucleotids" n m pl
+"<,>"
+	"," cm
+"<b'>"
+	"be" adv enon
+"<ebrocan>"
+	"ebrocar" vblex pri p3 sg
+"<los>"
+	"lo" det def m pl
+"<diferents>"
+	"diferent" adj m pl
+"<aminoacids>"
+	"aminoacide" n m pl
+"<.>"
+	"." sent
+
+    
+
+"<Acid>"
+	"acide" n m sg
+"<ribonucleïc>"
+	"ribonucleïc" adj m sg
+"<de>"
+	"de" pr
+"<transferiment>"
+	"transferiment" n m sg
+"<:>"
+	":" sent
+
+"<qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<ua>"
+	"un" det ind f sg
+"<molecula>"
+	"molecula" n f sg
+"<d'>"
+	"de" pr
+"<ARN>"
+	"ARN" n acr m sp
+"<plagada>"
+	"plagat" adj f sg
+"<capabla>"
+	"capable" adj f sg
+"<,>"
+	"," cm
+"<au còp>"
+	"au còp" adv
+"<,>"
+	"," cm
+"<de>"
+	"de" pr
+"<reconéisher>"
+	"arreconéisher" vblex inf
+"<un>"
+	"un" det ind m sg
+"<codon>"
+	"codon" n m sg
+"<(>"
+	"(" lpar
+"<un>"
+	"un" det ind m sg
+"<ensemble>"
+	"ensemble" n m sg
+"<de>"
+	"de" pr
+"<tres>"
+	"tres" num mf sp
+"<nucleotids>"
+	"nucleotids" n m sg
+"<qui>"
+	"qui" rel mf sp
+"<codan>"
+	"codar" vblex pri p3 sg
+"<,>"
+	"," cm
+"<mercés au>"
+	"mercés a" pr
+		"lo" det def m sg
+"<còde>"
+	"còde" n m sg
+"<genetic>"
+	"genetic" adj m sg
+"<,>"
+	"," cm
+"<pas>"
+	"pas" adv
+"<sonque>"
+	"sonque" adv
+"<per>"
+	"per" pr
+"<un>"
+	"un" det ind m sg
+"<aminoacid>"
+	"aminoacide" n m sg
+"<particular>"
+	"particular" adj m sg
+	"particular" n m sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<futura>"
+	"futur" adj f sg
+"<proteïna>"
+	"proteïna" n f sg
+"<)>"
+	")" rpar
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+"<ARNm>"
+	"ARNm" n acr m sg
+"<e de>"
+	"e" cnjcoo
+		"de" pr
+"<reconéisher>"
+	"arreconéisher" vblex inf
+"<e>"
+	"e" cnjcoo
+"<carrejar>"
+	"carrejar" vblex inf
+"<l'>"
+	"lo" det def mf sg
+"<aminoacid>"
+	"aminoacide" n m sg
+"<qui'u>"
+	"qui" rel mf sp
+		"lo" prn pro p3 m sg
+"<correspon>"
+	"correspóner" vblex pri p3 sg
+"<.>"
+	"." sent
+
+    
+
+"<Acid>"
+	"acide" n m sg
+"<ribonucleïc>"
+	"ribonucleïc" adj m sg
+"<ribosomic>"
+	"ribosomic" adj m sg
+"<(>"
+	"(" lpar
+"<ARNr>"
+	"ARNr" n acr m sg
+"<)>"
+	")" rpar
+"<:>"
+	":" sent
+
+"<qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<un>"
+	"un" det ind mf pl
+"<ARN>"
+	"ARN" n acr m sp
+"<qui>"
+	"qui" rel mf sp
+"<s'>"
+	"se" prn pro ref p3 mf sp
+"<associa>"
+	"associar" vblex pri p3 sg
+"<dab>"
+	"dab" pr
+"<proteïnas>"
+	"proteïna" n f pl
+"<entà>"
+	"entà" pr
+"<formar>"
+	"formar" vblex inf
+"<las>"
+	"lo" det def f pl
+"<sosunitats>"
+	"sosunitat" n f pl
+"<deus>"
+	"de" pr
+		"lo" det def m pl
+"<ribosòmas>"
+	"ribosòma" n m pl
+"<(>"
+	"(" lpar
+"<las>"
+	"lo" det def f pl
+"<usias>"
+	"usia" n f pl
+"<on>"
+	"on" rel adv
+"<la>"
+	"lo" det def f sg
+"<cellula>"
+	"cellula" n f sg
+"<e>"
+	"e" adv enon
+"<harga>"
+	"hargar" vblex pri p3 sg
+"<las soas>"
+	"lo son" det pos f pl
+"<proteïnas>"
+	"proteïna" n f pl
+"<en tot>"
+	"en tot" adv
+"<ligar>"
+	"ligar" vblex inf
+"<los>"
+	"lo" det def m pl
+"<aminoacids>"
+	"aminoacide" n m pl
+"<au mejan de>"
+	"au mejan de" pr
+"<ligams>"
+	"ligam" n m pl
+"<peptidics>"
+	"peptidic" adj m pl
+"<)>"
+	")" rpar
+
+
+"<Acid>"
+	"acide" n m sg
+"<desoxiribonucleïc>"
+	"desoxiribonucleïc" adj m sg
+"<(>"
+	"(" lpar
+"<ADN>"
+	"ADN" n acr m sp
+"<)>"
+	")" rpar
+
+
+"<Comparason>"
+	"comparason" n f sg
+"<enter>"
+	"enter" pr
+"<las>"
+	"lo" det def f pl
+"<macromoleculas>"
+	"macromolecula" n f pl
+"<d'>"
+	"de" pr
+"<ARN>"
+	"ARN" n acr m sp
+"<(>"
+	"(" lpar
+"<a esquèrra>"
+	"a esquèrra" adv
+"<)>"
+	")" rpar
+"<e d'>"
+	"e" cnjcoo
+		"de" pr
+"<ADN>"
+	"ADN" n acr m sp
+"<(>"
+	"(" lpar
+"<a dreta>"
+	"a dreta" adv
+"<)>"
+	")" rpar
+"<:>"
+	":" sent
+
+"<cadenas>"
+	"cadena" n f pl
+"<simplas>"
+	"simple" adj f pl
+"<o>"
+	"o" cnjcoo
+"<dobla>"
+	"doble" adj f sg
+"<,>"
+	"," cm
+"<uracila>"
+	"uracila" n f sg
+"<en lòc de>"
+	"en lòc de" pr
+"<guaniana>"
+	"guaniana" n f sg
+"<,>"
+	"," cm
+"<ribòsa>"
+	"ribòsa" n f sg
+"<en lòc de>"
+	"en lòc de" pr
+"<dexoribòsa>"
+	"dexoribòsa" n f sg
+"<.>"
+	"." sent
+
+
+
+"<L'>"
+	"lo" det def mf sg
+"<ADN>"
+	"ADN" n acr m sp
+"<qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<la>"
+	"lo" det def f sg
+"<macromolecula>"
+	"macromolecula" n f sg
+"<qui>"
+	"qui" rel mf sp
+"<contien>"
+	"contiéner" vblex pri p3 sg
+"<l'>"
+	"lo" det def mf sg
+"<informacion>"
+	"informacion" n f sg
+"<genetica>"
+	"genetic" adj f sg
+"<(>"
+	"(" lpar
+"<qui>"
+	"qui" rel mf sp
+"<ua>"
+	"un" det ind f sg
+"<partida>"
+	"partida" n f sg
+"<b'>"
+	"be" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<transcrivuda>"
+	"transcríver" vblex pp f sg
+"<suber>"
+	"suber" pr
+"<l'>"
+	"lo" det def mf sg
+"<ARNm>"
+	"ARNm" n acr m sg
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+
+
+"<Aquesta>"
+	"aqueste" det dem f sg
+"<informacion>"
+	"informacion" n f sg
+"<que>"
+	"que" adv enon
+"<permet>"
+	"perméter" vblex pri p3 sg
+"<de>"
+	"de" pr
+"<sintetizar>"
+	"sintetizar" vblex inf
+"<las>"
+	"lo" det def f pl
+"<proteïnas>"
+	"proteïna" n f pl
+"<mes>"
+	"mes" cnjcoo
+"<tanben>"
+	"tanben" adv
+"<de>"
+	"de" pr
+"<regular>"
+	"arregular" adj m sg
+"<las loas>"
+	"las loas" det pos f pl
+"<sintesi>"
+	"sintesi" n f sg
+"<(>"
+	"(" lpar
+"<entà que>"
+	"entà que" cnjadv
+"<cada>"
+	"cada" det ind mf sg
+"<cellula>"
+	"cellula" n f sg
+"<e>"
+	"e" adv enon
+"<sintetize>"
+	"sintetizar" vblex prs p3 sg
+"<pas>"
+	"pas" adv
+"<sonque>"
+	"sonque" adv
+"<certas>"
+	"certa" det ind m pl
+"<menas>"
+	"mena" n f pl
+"<de>"
+	"de" pr
+"<proteïnas>"
+	"proteïna" n f pl
+"<,>"
+	"," cm
+"<dens>"
+	"dens" pr
+"<ua>"
+	"ua" n f sg
+"<certa>"
+	"certa" det ind m sg
+"<quantitat>"
+	"quantitat" n f sg
+"<e>"
+	"e" cnjcoo
+/
+"<o>"
+	"o" cnjcoo
+"<pas>"
+	"pas" adv
+"<sonque>"
+	"sonque" adv
+"<a>"
+	"a" pr
+"<un>"
+	"un" det ind m sg
+"<moment>"
+	"moment" n m sg
+"<precís>"
+	"precís" adj m sg
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+
+
+"<L'>"
+	"lo" det def mf sg
+"<ADN>"
+	"ADN" n acr m sp
+"<qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<hèra>"
+	"hèra" preadv
+"<mei>"
+	"mei" adv
+"<gran>"
+	"gran" adj m sg
+"<que>"
+	"que" cnjsub
+"<los>"
+	"lo" det def m pl
+"<ARN>"
+	"ARN" n acr m sp
+"<(>"
+	"(" lpar
+"<qui>"
+	"qui" rel mf sp
+"<non>"
+	"non" adv enon
+"<son>"
+	"estar" vbser pri p3 pl
+"<pas>"
+	"pas" adv
+"<sonque>"
+	"sonque" adv
+"<la>"
+	"lo" det def f sg
+"<copia>"
+	"copia" n f sg
+"<d'>"
+	"de" pr
+"<d'ua>"
+	"d'ua" adv
+"<ua>"
+	"un" det ind f sg
+"<petita>"
+	"petit" adj f sg
+"<partida>"
+	"partida" n f sg
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+"<ADN>"
+	"ADN" n acr m sp
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<que>"
+	"que" adv enon
+"<possedeish>"
+	"possedir" vblex pri p3 sg
+"<desoxiribòsas>"
+	"desoxiribòsas" n f pl
+"<(>"
+	"(" lpar
+"<en lòc de>"
+	"en lòc de" pr
+"<las>"
+	"la" n m pl
+"<ribòsas>"
+	"ribòsas" n f pl
+"<deus>"
+	"de" pr
+		"lo" det def m pl
+"<ARN>"
+	"ARN" n acr m sp
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<los sons>"
+	"lo son" det pos m pl
+"<nucleotids>"
+	"nucleotids" n m sg
+"<que>"
+	"que" adv enon
+"<son>"
+	"estar" vbser pri p3 pl
+"<los>"
+	"lo" det def m pl
+"<medishs>"
+	"medish" adj m pl
+"<deus>"
+	"de" pr
+		"lo" det def m pl
+"<ARN>"
+	"ARN" n acr m sp
+"<a despart de>"
+	"a despart de" pr
+"<la>"
+	"lo" det def f sg
+"<guanina>"
+	"guanina" n f sg
+"<(>"
+	"(" lpar
+"<qui>"
+	"qui" rel mf sp
+"<remplaça>"
+	"arremplaçar" vblex pri p3 sg
+"<l'>"
+	"lo" det def mf sg
+"<uracil>"
+	"uracil" n m sg
+"<,>"
+	"," cm
+"<absenta>"
+	"absent" adj f sg
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+"<ADN>"
+	"ADN" n acr m sp
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+ 
+
+
