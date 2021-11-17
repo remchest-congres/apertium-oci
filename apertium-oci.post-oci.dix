@@ -499,6 +499,112 @@
 
 	<e>
 		<p>
+			<l><b/>aqueste<b/></l>
+			<r>d<b/>aqueste<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><b/>aquesta<b/></l> 
+			<r>d<b/>aquesta<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><b/>aquestes<b/></l>
+			<r>d<b/>aquestes<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><b/>aquestas<b/></l> 
+			<r>d<b/>aquestas<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><b/>aqueste</l>
+			<r>d<b/>aqueste</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><b/>aquesta</l> 
+			<r>d<b/>aquesta</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><b/>aquestes</l>
+			<r>d<b/>aquestes</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><b/>aquestas</l> 
+			<r>d<b/>aquestas</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+
+	<e>
+		<p>
+			<l><b/>aute<b/></l>
+			<r>d<b/>aute<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><b/>auta<b/></l> 
+			<r>d<b/>auta<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><b/>autes<b/></l>
+			<r>d<b/>autes<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><b/>autas<b/></l> 
+			<r>d<b/>autas<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><b/>aute</l>
+			<r>d<b/>aute</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><b/>auta</l> 
+			<r>d<b/>auta</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><b/>autes</l>
+			<r>d<b/>autes</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><b/>autas</l> 
+			<r>d<b/>autas</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+
+	<e>
+		<p>
 			<l><b/><a/>ac<b/></l> 
 			<r>d<b/>ac<b/></r>
 		</p>
@@ -507,6 +613,62 @@
 		<p>
 			<l><b/><a/>ac</l> 
 			<r>d<b/>ac</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+
+	<e>
+		<p>
+			<l><b/>arrés<b/></l> 
+			<r>d<b/>arrés<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><b/>arrés</l> 
+			<r>d<b/>arrés</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+
+	<e>
+		<p>
+			<l><b/>arren<b/></l> 
+			<r>d<b/>arren<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><b/>arren</l> 
+			<r>d<b/>arren</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+
+	<e>
+		<p>
+			<l><b/>arrís<b/></l> 
+			<r>d<b/>arrís<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><b/>arrís</l> 
+			<r>d<b/>arrís</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+
+	<e>
+		<p>
+			<l><b/>arrens<b/></l> 
+			<r>d<b/>arrens<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><b/>arrens</l> 
+			<r>d<b/>arrens</r>
 		</p>
 		<par n="caracter_general"/>
 	</e>

@@ -799,6 +799,34 @@
 	</e>
 	<e>
 		<p>
+			<l><a/>auta</l>
+			<r><a/>auta</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>aute</l>
+			<r><a/>aute</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>autas</l>
+			<r><a/>autas</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>autes</l>
+			<r><a/>autes</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
 			<l><a/>ambdús</l>
 			<r><a/>ambdús</r>
 		</p>
