@@ -163,6 +163,8 @@ SET Dignite = ("pape") OR ("patriarche") OR ("évêque") OR ("archevêque") OR (
 
 SECTION
 
+REMOVE AV IF (0 ("que")) (NOT 0 Enon) ;	# patch
+REMOVE AV IF (0 ("cap")) ;	# patch
 REMOVE Tn IF (0 ("qui")) ;	# patch
 REMOVE Tn IF (0 ("qual")) ;	# patch
 REMOVE (mf) IF (0 ("qual")) ;	# patch
@@ -256,8 +258,15 @@ SELECT PREP (0 ("a")) (1C Pro) ;	# a lo parlar
 
 REMOVE ("e") + Enon IF (NOT 1* ("?")) ;
 REMOVE ("be") + Enon IF (NOT 1* ("!")) ;
+REMOVE ("que") + Enon IF (NOT -1* V + Pers LINK NOT 0 VBimp) (2* ("?") OR ("!")) ;
 REMOVE ("que") + Enon IF (-1C V + Pers OR VBinf OR VBger) ;
 REMOVE ("que") + Enon IF (-1 AV) (-2C V + Pers OR VBinf OR VBger) ;
+REMOVE ("que") + Enon IF (-1C N_AJ OR VBpp OR NP OR unknownMajIni) (NOT 1 Pro) (2*C V + Pers OR VBinf OR VBger) ;	# los amics que son bons (enon) ; los amics que son bons que son bons (que1 = rel, que 2 = enon)
+REMOVE ("que") + Enon IF (-1C N_AJ OR VBpp OR NP OR unknownMajIni) (1 Pro) (NOT 2 Pro) (3*C V + Pers OR VBinf OR VBger) ;
+REMOVE ("que") + Enon IF (-1C N_AJ OR VBpp OR NP OR unknownMajIni) (1 Pro) (2 Pro) (4*C V + Pers OR VBinf OR VBger) ;
+REMOVE ("que") + Enon IF (-2C N_AJ OR VBpp OR NP OR unknownMajIni) (-1 CM) (NOT 2 Pro) (3*C V + Pers OR VBinf OR VBger) ;
+REMOVE ("que") + Enon IF (-2C N_AJ OR VBpp OR NP OR unknownMajIni) (-1 CM) (2 Pro) (NOT 3 Pro) (4*C V + Pers OR VBinf OR VBger) ;
+REMOVE ("que") + Enon IF (-2C N_AJ OR VBpp OR NP OR unknownMajIni) (-1 CM) (2 Pro) (3 Pro) (5*C V + Pers OR VBinf OR VBger) ;
 SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon BARRIER V) (1C Pro OR V + Pers LINK NOT 0 VBimp) ;
 SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon BARRIER V) (0 ("ne") OR ("non")) (1 V + Pers LINK NOT 0 VBimp) (2 ("pas") OR ("pas nat")) ;
 SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon BARRIER V) (0 ("ne") OR ("non")) (1 Pro) (2 V + Pers LINK NOT 0 VBimp) (3 ("pas") OR ("pas nat")) ;
