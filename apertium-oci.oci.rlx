@@ -142,6 +142,8 @@ LIST Se = "se" ;
 LIST Las = "las" ;
 LIST Mas = "mas" ;
 LIST Estat = "estat" ;
+LIST Volar = "volar" ;
+LIST Voler = "voler" ;
 List Artcontrpl = "<als>" "<aus>" "<aths>" "<as>" "<dels>" "<deus>" "<dals>" "<deths>" "<des>" "<suls>" "<suus>" "<taus>" "<taths>" "<entaus>" "<entaths>" "<entàs>" "<pels>" "<peus>" "<peths>" "<preus>" "<vèls>" "<jols>" "<enquiaths>" "<ens>" "<enes>" "<endeus>" "<dambeus>" ;
 List Artcontrsg = "<al>" "<au>" "<ath>" "<del>" "<deu>" "<dal>" "<deth>" "<sul>" "<suu>" "<tau>" "<tath>" "<entau>" "<entath>" "<pel>" "<peu>" "<peth>" "<preu>" "<vèl>" "<jol>" "<enquiath>" "<en>" "<ene>" "<endeu>" "<dambeu>" ;
 LIST Jorns = "diluns" "dimars" "dimècres" "dimèrcs" "dijòus" "dijaus" "divés" "divendres" "dissabte" "dimenge" ;
@@ -248,6 +250,8 @@ SELECT AV IF (-5 ("non")) (-4 Pro) (-3 Pro) (-2 Haver) (-1 VBpp) (0 Mai OR Pus) 
 SELECT AV IF (-3 Vmod) (-2 Pas) (-1 VBinf) (0 Mai OR Pus) ;	# vòli pas manjar pus
 SELECT AV IF (-4 Vmod) (-3 Pas) (-2 AV OR Pro) (-1 VBinf) (0 Mai OR Pus) ;	# vòli pas ne manjar pus
 SELECT AV IF (-5 Vmod) (-4 Pas) (-3 AV OR Pro) (-2 AV OR Pro) (-1 VBinf) (0 Mai OR Pus) ;	# vòli pas li'n dire pus
+SELECT Conjco IF (-1 EOS) (0 Mai) ;
+SELECT Conjco IF (-1 CM) (0 Mai) (NOT 1 AJ) ;
 
 #Un pronom proclitic est totjorn davant un vèrb o un autre pronom
 REMOVE Pro IF (NOT 1 V OR Pro);
@@ -255,9 +259,11 @@ REMOVE DET IF (1C V OR Pro) (NOT 1 VBpp) ;
 SELECT V OR Pro IF (-1C Pro) (NOT -1/* V) ;	# i a un ; i aviá un
 
 SELECT PREP (0 ("a")) (1C Pro) ;	# a lo parlar
+SELECT PREP (0 ("a")) (1C Top OR Ant OR Cog OR Al) ;	# a Niça
 
 REMOVE ("e") + Enon IF (NOT 1* ("?")) ;
 REMOVE ("be") + Enon IF (NOT 1* ("!")) ;
+REMOVE ("que") + Enon IF (-1C DET) ;
 REMOVE ("que") + Enon IF (NOT -1* V + Pers LINK NOT 0 VBimp) (2* ("?") OR ("!")) ;
 REMOVE ("que") + Enon IF (-1C V + Pers OR VBinf OR VBger) ;
 REMOVE ("que") + Enon IF (-1 AV) (-2C V + Pers OR VBinf OR VBger) ;
@@ -308,6 +314,16 @@ SELECT AJ IF (-1C Ser) (0 ("present")) ;
 SELECT AJ IF (-2C Ser) (-1 AV) (0 ("present")) ;
 
 REMOVE Tn IF (NOT -1 Tn) (0 ("vos")) (1 Vconj) ;
+
+# voler e volar (p.ex. vòli)
+SELECT Voler IF (0 Voler) (0 Volar) (1/* VBinf) ;
+SELECT Voler IF (0 Voler) (0 Volar) (1 VBinf) ;
+SELECT Voler IF (0 Voler) (0 Volar) (-1 (prn pro)) (NOT -1 DET OR PREP);
+SELECT Volar IF (0 Voler) (0 Volar) (1 ("a") OR ("cap a")) ;
+SELECT Volar IF (0 Voler) (0 Volar) (1 AV) (2 ("a") OR ("cap a")) ;
+SELECT Voler IF (0 Voler) (0 Volar) (1 ("que")) ;
+SELECT Voler IF (0 Voler) (0 Volar) (1 AV) (2 ("que")) ;
+SELECT Voler IF (0 Voler) (0 Volar) (-1 ("què")) (NOT -2 ("en"));
 
 #En es pas un pronom s'es abans un gerondiu (amb possibilitat de pronoms entre los dos)
 REMOVE En_pron IF (1* VBger BARRIER (*) - Pro) ;
@@ -426,6 +442,7 @@ REMOVE AJ + Pos IF (NOT -1 Ser) (0 AJ + Pos) ;
 # N
 
 SELECT N IF (-1C PREP) (1 EOS) ;	# ambe fòrça.
+SELECT N IF (-1C PREP) (1C PREP) (NOT 0 ("tròp")) ;	# discors de fin d'annada
 
 # HAVER
 
