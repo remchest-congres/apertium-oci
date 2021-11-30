@@ -1,0 +1,961 @@
+"<La>"
+	"lo" det def f s
+"<prumèra>"
+	"prumèr" adj f sg
+"<classa>"
+	"classa" n f sg
+"<bilingüa>"
+	"bilingüe" adj f sg
+"<que>"
+	"que" adv enon
+"<serà>"
+	"estar" vbser fti p3 sg
+"<ubèrta>"
+	"ubèrt" adj f sg
+"<tà>"
+	"tà" pr
+"<la>"
+	"lo" det def f sg
+"<rentrada>"
+	"rentrada" n f sg
+"<de>"
+	"de" pr SELECT:175
+"<2007>"
+	"2007" num
+"<a>"
+	"a" pr
+"<l'>"
+	"lo" det def mf sg
+"<Institucion>"
+	"institucion" n f sg
+"<Sta>"
+	"st" n f sg
+"<Elisabeth>"
+	"Elisabeth" np ant f sg
+"<d'>"
+	"de" pr
+"<Igon>"
+	"Igon" np top m sg
+"<,>"
+	"," cm
+"<ua>"
+	"un" det ind f sg SELECT:392
+"<petita>"
+	"petit" adj f sg
+"<comuna>"
+	"comuna" n f sg
+"<enter>"
+	"enter" pr
+"<Pau>"
+	"Pau" np top m sg
+"<e>"
+	"e" cnjcoo
+"<Lorda>"
+	"Lorda" np top f sg
+"<.>"
+	"." sent
+
+
+
+"<Aqueth>"
+	"aqueth" det dem m sg
+"<establiment>"
+	"establiment" n m sg
+"<privat>"
+	"privat" adj m sg
+"<qu'>"
+	"que" adv enon REMOVE:264
+"<a>"
+	"aver" vblex pri p3 sg
+"<mei>"
+	"mei" adv
+"<de>"
+	"de" pr SELECT:175
+"<150>"
+	"150" num
+"<ans>"
+	"an" n m pl
+"<e>"
+	"e" cnjcoo
+"<los sons>"
+	"lo son" det pos m pl
+"<responsables>"
+	"responsable" n m pl
+"<qu'>"
+	"que" adv enon SELECT:270
+"<an>"
+	"aver" vbhaver pri p3 pl
+"<causit>"
+	"causir" vblex pp m sg
+"<d'>"
+	"de" pr
+"<obrir>"
+	"obrir" vblex inf SELECT:352
+"<la>"
+	"lo" det def f sg
+"<prumèra>"
+	"prumèr" adj f sg
+"<classa>"
+	"classa" n f sg
+"<bilingua>"
+	"bilingüe" adj f sg
+"<de>"
+	"de" pr SELECT:175
+"<l'>"
+	"lo" det def mf sg
+"<ensenhament>"
+	"ensenhament" n m sg
+"<confessionau>"
+	"confessional" adj m sg SELECT:402
+"<per>"
+	"per" pr SELECT:172
+"<la>"
+	"lo" det def f sg SELECT:400
+"<lenga>"
+	"lenga" n f sg
+"<occitana>"
+	"occitan" adj f sg
+"<.>"
+	"." sent
+
+
+
+"<Dinc adara>"
+	"dinc adara" adv
+"<las>"
+	"lo" det def f pl SELECT:400
+"<classas>"
+	"classa" n f pl SELECT:375
+"<bilinguas>"
+	"bilingüe" adj f pl
+"<a>"
+	"a" pr SELECT:175
+"<paritat>"
+	"paritat" n f sg
+"<orària>"
+	"orari" adj f sg
+"<per>"
+	"per" pr SELECT:172
+"<l'>"
+	"lo" det def mf sg
+"<occitan>"
+	"occitan" n m sg
+"<,>"
+	"," cm
+"<qu'>"
+	"que" adv enon SELECT:270
+"<èran>"
+	"estar" vbser pii p3 pl
+"<estadas>"
+	"estar" vbser pp f pl SELECT:375 SELECT:488
+"<ubèrtas>"
+	"ubèrt" adj f pl
+"<sonque>"
+	"sonque" adv
+"<en>"
+	"en" pr
+"<l'>"
+	"lo" det def mf sg
+"<ensenhament>"
+	"ensenhament" n m sg
+"<public>"
+	"public" adj m sg
+"<.>"
+	"." sent
+
+
+
+"<Solide>"
+	"solide" adv
+"<en>"
+	"en" pr
+"<Bretanha>"
+	"Bretanha" np top f sg
+"<e>"
+	"e" cnjcoo
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<País Basco>"
+	"País Basco" np top m sg
+"<las>"
+	"lo" det def f pl
+"<causas>"
+	"causa" n f pl SELECT:371
+"<que>"
+	"que" adv enon SELECT:270
+"<son>"
+	"estar" vbser pri p3 pl
+"<diferentas>"
+	"diferent" adj f pl
+"<e>"
+	"e" cnjcoo
+"<l'>"
+	"lo" det def mf sg
+"<ensenhament>"
+	"ensenhament" n m sg
+"<catolitc>"
+	"catolitc" adj m sg
+"<qu'>"
+	"que" adv enon
+"<a>"
+	"aver" vbhaver pri p3 sg
+"<pres>"
+	"préner" vblex pp m sg
+"<ua>"
+	"un" det ind f sg SELECT:392
+"<part>"
+	"part" n f sg SELECT:394
+"<mei>"
+	"mei" adv
+"<grana>"
+	"gran" adj f sg
+"<en>"
+	"en" pr
+"<lo>"
+	"lo" det def m sg
+"<bilingüisme>"
+	"bilingüisme" n m sg
+"<.>"
+	"." sent
+
+
+
+"<Mes>"
+	"mes" cnjcoo
+"<qu'>"
+	"que" adv enon SELECT:270
+"<ei>"
+	"estar" vbser pri p3 sg
+"<tanben>"
+	"tanben" adv
+"<ua>"
+	"un" det ind f sg SELECT:392
+"<question>"
+	"qüestion" n f sg
+"<de>"
+	"de" pr SELECT:175
+"<natura>"
+	"natura" n f sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<terrenh>"
+	"terrenh" n m sg
+"<.>"
+	"." sent
+
+
+
+"<L'>"
+	"lo" det def mf sg
+"<ensenhament>"
+	"ensenhament" n m sg
+"<catolic>"
+	"catolic" adj m sg
+"<en>"
+	"en" pr
+"<país>"
+	"país" n m sg
+"<occitan>"
+	"occitan" adj m sg
+"<n'>"
+	"ne" adv enon SELECT:270
+"<a>"
+	"aver" vbhaver pri p3 sg SELECT:206 SELECT:435
+"<pas>"
+	"pas" adv SELECT:205
+"<jamei>"
+	"jamei" adv
+"<avut>"
+	"aver" vblex pp m sg SELECT:438
+"<la>"
+	"lo" det def f sg
+"<preséncia>"
+	"preséncia" n f sg
+"<qui>"
+	"qui" rel mf sp
+"<a>"
+	"aver" vblex pri p3 sg
+"<en>"
+	"en" pr
+"<las>"
+	"lo" det def f pl
+"<duas>"
+	"dus" num f sp
+"<regions>"
+	"region" n f pl
+"<precitadas>"
+	"precitat" adj f pl
+"<.>"
+	"." sent
+
+
+
+"<L'>"
+	"lo" det def mf sg
+"<institucion>"
+	"institucion" n f sg
+"<d'>"
+	"de" pr
+"<Igon>"
+	"Igon" np top m sg
+"<qu'>"
+	"que" adv enon REMOVE:264
+"<a>"
+	"aver" vblex pri p3 sg
+"<tanben>"
+	"tanben" adv
+"<la>"
+	"lo" det def f sg
+"<particularitat>"
+	"particularitat" n f sg
+"<d'>"
+	"de" pr
+"<assegurar>"
+	"assegurar" vblex inf SELECT:352
+"<un>"
+	"un" det ind m sg SELECT:392 SELECT:400
+"<cursus>"
+	"cursus" n m sp
+"<complet>"
+	"complet" adj m sg
+"<qui>"
+	"qui" rel mf sp
+"<va>"
+	"anar" vblex pri p3 sg
+"<de>"
+	"de" pr SELECT:175
+"<l'>"
+	"lo" det def mf sg
+"<escòla>"
+	"escòla" n f sg
+"<mairala>"
+	"mairal" adj f sg
+"<dinc au>"
+	"dinc a" pr
+		"lo" det def m sg
+"<bachilierat>"
+	"bachilierat" n m sg
+"<.>"
+	"." sent
+
+
+
+"<Qu'>"
+	"que" adv enon SELECT:270
+"<ei>"
+	"estar" vbser pri p3 sg
+"<ua>"
+	"un" det ind f sg REMOVE:519
+"<de>"
+	"de" pr SELECT:175
+"<las>"
+	"lo" det def f pl SELECT:641
+"<rasons>"
+	"rason" n f pl
+"<qui>"
+	"qui" rel mf sp
+"<hasó>"
+	"har" vblex ifi p3 sg
+"<que>"
+	"que" cnjsub
+"<l'>"
+	"lo" det def mf sg
+"<idea>"
+	"idea" n f sg
+"<d'>"
+	"de" pr
+"<implantar>"
+	"implantar" vblex inf SELECT:352
+"<ua>"
+	"un" det ind f sg SELECT:392
+"<classa>"
+	"classa" n f sg SELECT:394
+"<bilingua>"
+	"bilingüe" adj f sg
+"<e>"
+	"e" adv enon REMOVE:259
+"<semblava>"
+	"semblar" vblex pii p3 sg
+"<mei>"
+	"mei" adv
+"<pertinenta>"
+	"pertinent" adj f sg
+"<.>"
+	"." sent
+
+
+
+"<Qu'>"
+	"que" adv enon SELECT:270
+"<ei>"
+	"estar" vbser pri p3 sg
+"<atau>"
+	"atal" adv
+"<l'>"
+	"lo" det def mf sg
+"<assegurança>"
+	"assegurança" n f sg
+"<d'>"
+	"de" pr
+"<aver>"
+	"aver" vblex inf
+"<ua>"
+	"ua" n f sg SELECT:392
+"<seguida>"
+	"seguida" n f sg SELECT:394
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<primari>"
+	"primari" n m sg
+"<puish>"
+	"puish" cnjcoo
+"<mei>"
+	"mei" adv
+"<tard>"
+	"tard" adv
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<segondari>"
+	"segondari" n m sg SELECT:428
+"<.>"
+	"." sent
+
+
+
+"<Las>"
+	"lo" det def f pl SELECT:400
+"<autoritats>"
+	"autoritat" n f pl
+"<diocesanas>"
+	"diocesan" adj f pl
+"<de>"
+	"de" pr SELECT:175
+"<Baiona>"
+	"Baiona" np top f sg
+"<qu'>"
+	"que" adv enon REMOVE:264
+"<avèvan>"
+	"aver" vbhaver pii p3 pl
+"<tanben>"
+	"tanben" cnjadv
+"<previst>"
+	"prevéder" vblex pp m sg SELECT:380
+"<desempuish>"
+	"desempuish" adv
+"<quauques>"
+	"quauques" det ind m pl
+"<temps>"
+	"temps" n m pl SELECT:370
+"<de>"
+	"de" pr SELECT:175
+"<s'>"
+	"se" prn pro ref p3 mf sp
+"<interessar>"
+	"interessar" vblex inf SELECT:355
+"<a>"
+	"a" pr
+"<l'>"
+	"lo" det def mf sg
+"<ensenhament>"
+	"ensenhament" n m sg
+"<bilingüe>"
+	"bilingüe" adj m sg
+"<francés>"
+	"francés" adj m sg
+-
+"<occitan>"
+	"occitan" adj m sg
+"<pr'amor qu'>"
+	"pr'amor que" cnjadv
+"<avèvan>"
+	"aver" vbhaver pii p3 pl
+"<pres>"
+	"préner" vblex pp m sg
+"<la>"
+	"lo" det def f sg
+"<precaucion>"
+	"precaucion" n f sg
+"<de>"
+	"de" pr SELECT:175
+"<formar>"
+	"formar" vblex inf SELECT:352
+"<ua>"
+	"un" det ind f sg SELECT:392
+"<persona>"
+	"persona" n f sg SELECT:394
+"<abans de>"
+	"abans de" pr
+"<cercar>"
+	"cercar" vblex inf
+"<un>"
+	"un" det ind m sg SELECT:392
+"<establiment>"
+	"establiment" n m sg
+"<capable>"
+	"capable" adj m sg
+"<d'>"
+	"de" pr
+"<arcuélher>"
+	"arcuélher" vblex inf SELECT:352
+"<aquera>"
+	"aqueth" det dem f sg
+"<classa>"
+	"classa" n f sg
+"<.>"
+	"." sent
+
+
+
+"<Segon>"
+	"segon" pr
+"<Olivier>"
+	"Olivier" np ant m sg SELECT:582
+"<Peiret>"
+	"Peiret" np cog m sg
+"<,>"
+	"," cm
+"<lo>"
+	"lo" det def m sg
+"<director>"
+	"director" n m sg
+"<de>"
+	"de" pr SELECT:175
+"<l'>"
+	"lo" det def mf sg
+"<escòla>"
+	"escòla" n f sg
+"<primària>"
+	"primari" adj f sg
+"<de>"
+	"de" pr SELECT:175
+"<l'>"
+	"lo" det def mf sg
+"<institucion>"
+	"institucion" n f sg
+"<,>"
+	"," cm
+"<las>"
+	"lo" det def f pl
+"<causas>"
+	"causa" n f pl
+"<qu'>"
+	"que" adv enon SELECT:270
+"<an>"
+	"aver" vbhaver pri p3 pl SELECT:432
+"<madurat>"
+	"madurar" vblex pp m sg
+"<pauc a pauc>"
+	"pauc a pauc" adv
+"<mes>"
+	"mes" cnjcoo
+"<n'>"
+	"ne" adv enon SELECT:270
+"<an>"
+	"aver" vbhaver pri p3 pl SELECT:206 SELECT:434
+"<pas>"
+	"pas" adv SELECT:205
+"<avut>"
+	"aver" vblex pp m sg SELECT:437
+"<a>"
+	"a" pr SELECT:475
+"<batalhar>"
+	"batalhar" vblex inf SELECT:353
+"<per>"
+	"per" pr SELECT:172
+"<installar>"
+	"installar" vblex inf
+"<l'>"
+	"lo" det def mf sg
+"<idea>"
+	"idea" n f sg
+"<de>"
+	"de" pr SELECT:175
+"<la>"
+	"lo" det def f sg SELECT:400
+"<classa>"
+	"classa" n f sg
+"<bilingua>"
+	"bilingüe" adj f sg
+"<.>"
+	"." sent
+
+
+
+"<Los>"
+	"lo" det def m pl
+"<parents>"
+	"parent" n m pl
+"<qu'>"
+	"que" adv enon SELECT:280
+"<an>"
+	"aver" vbhaver pri p3 pl SELECT:432
+"<responut>"
+	"respóner" vblex pp m sg
+"<lèu>"
+	"lèu" adv
+"<positivament>"
+	"positivament" adv
+"<e>"
+	"e" cnjcoo
+"<que>"
+	"que" adv enon SELECT:270
+"<cau>"
+	"caler" vbmod pri p3 sg SELECT:475
+"<díser>"
+	"dire" vblex inf SELECT:474
+"<l'>"
+	"lo" det def mf sg
+"<environament>"
+	"environament" n m sg
+"<qu’>"
+	"que" adv enon SELECT:270
+"<ei>"
+	"estar" vbser pri p3 sg
+"<pro>"
+	"pro" adv
+"<favorable>"
+	"favorable" adj m sg
+"<.>"
+	"." sent
+
+
+
+"<La>"
+	"lo" det def f sg
+"<lenga>"
+	"lenga" n f sg
+"<en>"
+	"en" pr
+"<aqueth>"
+	"aqueth" det dem m sg
+"<parçan>"
+	"parçan" n m sg
+"<de>"
+	"de" pr SELECT:175
+"<l'>"
+	"lo" det def mf sg
+"<arribèra>"
+	"ribèra" n f sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<gave>"
+	"gave" n m sg
+"<de>"
+	"de" pr SELECT:175
+"<Pau>"
+	"Pau" np top m sg
+"<qu'>"
+	"que" adv enon SELECT:270
+"<ei>"
+	"estar" vbser pri p3 sg
+"<enqüèra>"
+	"enqüèra" adv
+"<plan>"
+	"plan" preadv SELECT:211
+"<viva>"
+	"viu" adj f sg
+"<.>"
+	"." sent
+
+
+
+"<De mei>"
+	"de mei" adv
+	"de mei" cnjadv
+	"de mei" n m sp
+"<,>"
+	"," cm
+"<en>"
+	"en" pr
+"<l'>"
+	"lo" det def mf sg
+"<encastre>"
+	"encastre" n m sg
+"<de>"
+	"de" pr SELECT:175
+"<la>"
+	"lo" det def f sg
+"<politica>"
+	"politica" n f sg
+"<de>"
+	"de" pr SELECT:175
+"<desvolopament>"
+	"desvolopament" n m sg
+"<d'>"
+	"de" pr
+"<aqueth>"
+	"aqueth" det dem m sg
+"<ensenhament>"
+	"ensenhament" n m sg
+"<entinoada>"
+	"entinoar" vblex pp f sg
+"<après>"
+	"après" pr
+"<la>"
+	"lo" det def f sg
+"<signatura>"
+	"signatura" n f sg
+"<d'>"
+	"de" pr
+"<ua>"
+	"un" det ind f sg SELECT:392
+"<convencion>"
+	"convencion" n f sg
+"<enter>"
+	"enter" pr
+"<lo>"
+	"lo" det def m sg
+"<departament>"
+	"departament" n m sg
+"<deus>"
+	"de" pr
+		"lo" det def m pl
+"<Pirenèus Atlantics>"
+	"Pirenèus Atlantics" np top m pl
+"<e>"
+	"e" cnjcoo
+"<lo>"
+	"lo" det def m sg
+"<rectorat>"
+	"rectorat" n m sg
+"<de>"
+	"de" pr SELECT:175
+"<Bordèu>"
+	"Bordèu" np top m sg
+"<,>"
+	"," cm
+"<la>"
+	"lo" det def f sg
+"<recèrca>"
+	"recèrca" n f sg
+"<de>"
+	"de" pr SELECT:175
+"<site>"
+	"site" n m sg
+"<navèths>"
+	"navèth" adj m pl
+"<d'ensenhament>"
+	"d'ensenhament" adj mf sp
+"<en>"
+	"en" pr
+"<la>"
+	"lo" det def f sg
+"<lenga>"
+	"lenga" n f sg
+"<que>"
+	"que" adv enon SELECT:270
+"<s'>"
+	"se" prn pro ref p3 mf sp SELECT:514
+"<ei>"
+	"estar" vbser pri p3 sg
+"<hèita>"
+	"har" vblex pp f sg
+"<de>"
+	"de" pr SELECT:175
+"<faiçon>"
+	"faiçon" n f sg
+"<indiferenciada>"
+	"indiferenciat" adj f sg
+"<enter>"
+	"enter" pr
+"<lo>"
+	"lo" det def m sg
+"<public>"
+	"public" n m sg
+"<l'>"
+	"lo" det def mf sg
+"<associatiu>"
+	"associatiu" n m sg
+"<e>"
+	"e" cnjcoo
+"<lo>"
+	"lo" det def m sg
+"<confessionau>"
+	"confessional" n m sg
+"<.>"
+	"." sent
+
+
+
+"<E>"
+	"e" cnjcoo SELECT:317
+"<la>"
+	"lo" det def f sg
+"<causa>"
+	"causa" n f sg
+"<qu'>"
+	"que" adv enon REMOVE:342
+"<estó>"
+	"estó" vbser ifi p3 sg
+"<apreciada>"
+	"apreciar" vblex pp f sg
+"<per>"
+	"per" pr SELECT:172
+"<l'>"
+	"lo" det def mf sg
+"<ensenhament>"
+	"ensenhament" n m sg
+"<catolic>"
+	"catolic" adj m sg
+"<qui>"
+	"qui" rel mf sp
+"<trobè>"
+	"trobar" vblex ifi p3 sg
+"<interessanta>"
+	"interessant" adj f sg
+"<la>"
+	"lo" prn pro p3 f sg
+"<demarcha>"
+	"demarcha" n f sg
+"<.>"
+	"." sent
+
+
+
+"<Atau>"
+	"atal" cnjadv
+"<donc>"
+	"donc" cnjadv
+"<qu'>"
+	"que" adv enon
+"<obriràn>"
+	"obrir" vblex fti p3 pl
+"<en>"
+	"en" pr
+"<Bearn>"
+	"Bearn" np top m sg
+"<tà>"
+	"tà" pr
+"<la>"
+	"lo" det def f sg
+"<rentrada>"
+	"rentrada" n f sg
+"<qui>"
+	"qui" rel mf sp
+"<vien>"
+	"viéner" vblex pri p3 sg
+"<,>"
+	"," cm
+"<dus>"
+	"dus" num m sp
+"<sites>"
+	"site" n m pl
+"<bilingües>"
+	"bilingüe" adj m pl
+"<en>"
+	"en" pr
+"<l'>"
+	"lo" det def mf sg
+"<ensenhament>"
+	"ensenhament" n m sg
+"<public>"
+	"public" adj m sg
+"<,>"
+	"," cm
+"<un>"
+	"un" det ind m sg SELECT:392
+"<site>"
+	"site" n m sg
+"<en>"
+	"en" pr
+"<lo>"
+	"lo" det def m sg
+"<confessionau>"
+	"confessional" n m sg
+"<e>"
+	"e" cnjcoo
+"<lo>"
+	"lo" det def m sg
+"<Collègi>"
+	"collègi" n m sg
+"<Calandreta>"
+	"Calandreta" np al f sg
+"<de>"
+	"de" pr SELECT:175
+"<Gasconha>"
+	"Gasconha" np top f sg
+"<qu'>"
+	"que" adv enon SELECT:270
+"<obrirà>"
+	"obrir" vblex fti p3 sg
+"<la soa>"
+	"lo son" det pos f sg
+"<classa>"
+	"classa" n f sg
+"<de>"
+	"de" pr SELECT:175
+"<quatau>"
+	"quatau" n mf sg SELECT:428
+"<.>"
+	"." sent
+
+
+
+"<De segur>"
+	"de segur" adv
+"<n'>"
+	"ne" adv enon SELECT:270
+"<èm>"
+	"estar" vbser pri p1 pl
+"<pas>"
+	"pas" adv SELECT:205
+"<enqüèra>"
+	"enqüèra" adv
+"<a>"
+	"a" pr
+"<un>"
+	"un" det ind m sg SELECT:392
+"<ritme>"
+	"ritme" n m sg SELECT:394
+"<de>"
+	"de" pr SELECT:175
+"<creishença>"
+	"creishença" n f sg
+"<a la hautor de>"
+	"a la hautor de" pr
+"<las>"
+	"la" n m pl
+"<esperanças>"
+	"esperanças" n f sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<monde>"
+	"monde" n m sg
+"<associatiu>"
+	"associatiu" adj m sg
+"<mes>"
+	"mes" cnjcoo
+"<que>"
+	"que" adv enon SELECT:270
+"<prometen>"
+	"prométer" vblex pri p3 pl
+"<que>"
+	"que" cnjsub SELECT:492
+"<haràn>"
+	"har" vblex fti p3 pl
+"<miélher>"
+	"miélher" adv
+"<tà>"
+	"tà" pr
+"<l'>"
+	"lo" det def mf sg
+"<an>"
+	"an" n m sg
+"<qui>"
+	"qui" rel mf sp
+"<vien>"
+	"viéner" vblex pri p3 sg
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
