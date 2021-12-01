@@ -228,7 +228,7 @@ REMOVE Sg IF (NOT -1 DET) (0 ("<son>"i)) (1C Pl_strict) ;	# son conegudas
 REMOVE Sg IF (NOT -1 DET) (0 ("<son>"i)) (1 AV OR PREAV) (2C Pl_strict) ;	# son plan conegudas
 
 SELECT N IF (-1 DET + MascSg) (0 ("<cap>"i)) ;
-SELECT N IF (-1 DET + MascSg) (0 ("<cap de>"i)) ;
+SELECT N IF (-1 DET + MascSg) (0 ("<cap de>"i) OR ("<cap d'>"i) OR ("<cap d’>"i)) ;
 SELECT PRON IF (-1 EOS OR Conjsub OR Conjadv) (0 Cap) ;
 SELECT PRON IF (-2 EOS OR Conjsub) (-1 AV OR Conjadv) (0 Cap) ;
 SELECT PRON IF (-1 Pas) (0 Cap) ;	# ai pas cap
@@ -239,7 +239,11 @@ SELECT PRON IF (-4 Vmod) (-3 Pas) (-2 AV OR Pro) (-1 VBinf) (0 Cap) ;	# vòli pa
 SELECT PRON IF (-5 Vmod) (-4 Pas) (-3 AV OR Pro) (-2 AV OR Pro) (-1 VBinf) (0 Cap) ;	# vòli pas li'n dire cap
 SELECT N IF (0 Cap) (1 NP OR unknownMajIni) ;	# cap Canaveral
 SELECT N + (m) IF (0 Cap) (1 NP OR unknownMajIni) ;	# cap Canaveral
-SELECT N + (mf) IF (0 Cap) (1 ("<del>"i) OR ("<deu">i)) (2 ("partit")) ;
+SELECT N + (mf) IF (NOT -1 BOS) (0 Cap) (0/* De) (1 Estat OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("politica") OR ("entrepresa") OR ("enterpresa")) ;
+SELECT N + (mf) IF (NOT -1 BOS) (0 Cap) (0/* De) (1 Al) ;
+SELECT N + (mf) IF (NOT -1 BOS) (0 Cap) (0/* De) (1 Ant_Cog) ;
+SELECT N + (mf) IF (NOT -1 BOS) (0 Cap) (0/* De) (1 DET) (2 Estat OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("politica") OR ("entrepresa") OR ("enterpresa")) ;
+SELECT N + (mf) IF (0 Cap) (1 ("<del>"i) OR ("<deu">i)) (2 Estat OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("politica") OR ("entrepresa") OR ("enterpresa")) ;
 REMOVE AV IF (-1C PREP) (0 Cap) (1C EOS OR CM OR Conjsub OR Conjadv OR Conjco) ;
 
 SELECT AV IF (-1 Pas) (0 Mai OR Pus) ;	# ai pas pus
@@ -353,7 +357,7 @@ REMOVE VBimp IF (0 P3) ;
 #Un nom pot pas seguir qu'un vèrbe, un adjectiu, un determinant, un numeral, una prepausicion o un pronom (levat los personals)
 #(en titolars periodístics, però, es comença sovint per un nom)
 # non : Patxi Zabaleta, actualament cap del partit
-REMOVE N IF (NOT -1 BOS OR CM OR V OR AJ OR DET OR NUM OR PREP OR PRON - PRONPers) (NOT -2 CM) ;
+REMOVE N IF (NOT -1 BOS OR CM OR V OR AJ OR DET OR NUM OR PREP OR PRON - PRONPers) (NOT -1/* ("de")) (NOT -2 CM) ;
 
 #Un predeterminant es pas seguit que per un determinant
 REMOVE PREDET IF (NOT 1 DET);
