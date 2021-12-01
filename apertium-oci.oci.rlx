@@ -166,7 +166,6 @@ SET Dignite = ("pape") OR ("patriarche") OR ("évêque") OR ("archevêque") OR (
 SECTION
 
 REMOVE AV IF (0 ("que")) (NOT 0 Enon) ;	# patch
-REMOVE AV IF (0 ("cap")) ;	# patch
 REMOVE Tn IF (0 ("qui")) ;	# patch
 REMOVE Tn IF (0 ("qual")) ;	# patch
 REMOVE (mf) IF (0 ("qual")) ;	# patch
@@ -228,7 +227,10 @@ REMOVE N IF (NOT -1 DET) (0 ("<son>"i)) ;	# patch
 REMOVE Sg IF (NOT -1 DET) (0 ("<son>"i)) (1C Pl_strict) ;	# son conegudas
 REMOVE Sg IF (NOT -1 DET) (0 ("<son>"i)) (1 AV OR PREAV) (2C Pl_strict) ;	# son plan conegudas
 
+SELECT N IF (-1 DET + MascSg) (0 ("<cap>"i)) ;
 SELECT N IF (-1 DET + MascSg) (0 ("<cap de>"i)) ;
+SELECT PRON IF (-1 EOS OR Conjsub OR Conjadv) (0 Cap) ;
+SELECT PRON IF (-2 EOS OR Conjsub) (-1 AV OR Conjadv) (0 Cap) ;
 SELECT PRON IF (-1 Pas) (0 Cap) ;	# ai pas cap
 SELECT PRON IF (-2 Pas) (-1 VBpp) (0 Cap) ;	# ai agut pas cap
 SELECT PRON IF (-3 Pas) (-2 AV) (-1 VBpp) (0 Cap) ;	# ai agut pas totjorn cap
@@ -237,6 +239,8 @@ SELECT PRON IF (-4 Vmod) (-3 Pas) (-2 AV OR Pro) (-1 VBinf) (0 Cap) ;	# vòli pa
 SELECT PRON IF (-5 Vmod) (-4 Pas) (-3 AV OR Pro) (-2 AV OR Pro) (-1 VBinf) (0 Cap) ;	# vòli pas li'n dire cap
 SELECT N IF (0 Cap) (1 NP OR unknownMajIni) ;	# cap Canaveral
 SELECT N + (m) IF (0 Cap) (1 NP OR unknownMajIni) ;	# cap Canaveral
+SELECT N + (mf) IF (0 Cap) (1 ("<del>"i) OR ("<deu">i)) (2 ("partit")) ;
+REMOVE AV IF (-1C PREP) (0 Cap) (1C EOS OR CM OR Conjsub OR Conjadv OR Conjco) ;
 
 SELECT AV IF (-1 Pas) (0 Mai OR Pus) ;	# ai pas pus
 SELECT AV IF (-2 Pas) (-1 VBpp) (0 Mai OR Pus) ;	# ai agut pas pus
@@ -313,6 +317,8 @@ SELECT AV IF (-1C Ser OR ("<son>"i)) (0 ("fòrça")) (1C AJ) ;	# son fòrça pre
 SELECT AJ IF (-1C Ser) (0 ("present")) ;
 SELECT AJ IF (-2C Ser) (-1 AV) (0 ("present")) ;
 
+REMOVE N IF (NOT -1 DET + Masc) (0 ("nos")) (1 Vconj OR VBinf OR VBger) ;
+
 REMOVE Tn IF (NOT -1 Tn) (0 ("vos")) (1 Vconj) ;
 
 # voler e volar (p.ex. vòli)
@@ -346,7 +352,8 @@ REMOVE VBimp IF (0 P3) ;
 
 #Un nom pot pas seguir qu'un vèrbe, un adjectiu, un determinant, un numeral, una prepausicion o un pronom (levat los personals)
 #(en titolars periodístics, però, es comença sovint per un nom)
-REMOVE N IF (NOT -1 BOS OR V OR AJ OR DET OR NUM OR PREP OR PRON - PRONPers);
+# non : Patxi Zabaleta, actualament cap del partit
+REMOVE N IF (NOT -1 BOS OR CM OR V OR AJ OR DET OR NUM OR PREP OR PRON - PRONPers) (NOT -2 CM) ;
 
 #Un predeterminant es pas seguit que per un determinant
 REMOVE PREDET IF (NOT 1 DET);
@@ -557,18 +564,16 @@ REMOVE N IF (-1C V) (0 Pel) ;
 
 # NP
 
+SELECT NP IF (NOT -1 BOS) ;
+
+SELECT Conjco (-1 BOS) (0 ("Mas")) ;
+
 REMOVE Cog IF (-1 DETdef) (0 Cog) ;
 REMOVE Cog IF (-1 DETind) (0 Cog) ;
 REMOVE Cog IF (-1 En) (0 Cog) ;
 REMOVE Ant IF (-1 DETdef) (0 Ant) ;
 REMOVE Ant IF (-1 DETind) (0 Ant) ;
 REMOVE Ant IF (-1 En) (0 Ant) ;
-REMOVE Cog IF (-1 EOS) (0 ("Remarque")) (NOT 1 Conjco) (NOT 1 V + P3 + Sg) ;
-REMOVE NP IF (-1 EOS) (0 ("Remarque")) ;
-REMOVE NP IF (-1 (<<<)) (0 ("Remarque")) ;
-SELECT N IF (-1 EOS) (0 ("Remarque")) ;
-REMOVE Cog IF (-1 (sent)) (0 ("Remarque")) ;
-REMOVE Cog IF (0 ("Remarque")) ;
 
 SELECT NP IF (0 N OR NP) (1 NP) (0 (META:/-/r)) (NOT 0 ("bas") OR ("haut")) ;   # Pierre-Michel
 SELECT Ant IF (0 Ant) (1C Ant) (0 (META:/-/r)) ;                                # Jean-René
@@ -583,9 +588,9 @@ SELECT Top IF (-2 Ant) (-1 De) ;                                        # Louis 
 SELECT Top IF (-3 Ant) (-2 siecles_nom_romains OR ("<Ièr>")) (-1 De) ;  # Louis II de Lorraine
 SELECT Ant IF (1 De) (2 Top) ;                                          # Michel de Lorraine
 SELECT Ant IF (1 siecles_nom_romains OR ("<Ièr>")) (2 De) (3 Top) ;     # Michel II de Lorraine
-SELECT Top IF (-2 ("ville") OR ("cathédrale") OR ("église") OR ("aéroport") OR ("port")) (-1 De) ;
-SELECT Top IF (-2 ("concile") OR ("parlement") OR ("constitution") OR ("traité") OR ("déclaration")) (-1 De) ;
-SELECT Top IF (-2 ("université")) (-1 De) ;                             # université de Paris VII
+SELECT Top IF (-2 ("vila") OR ("estat") OR ("region") OR ("catedrala") OR ("glèisa") OR ("aeropòrt") OR ("pòrt")) (-1 De) ;
+SELECT Top IF (-2 ("concili") OR ("parlament") OR ("constitucion") OR ("tractat") OR ("declaracion")) (-1 De) ;
+SELECT Top IF (-2 ("universitat")) (-1 De) ;                             # université de Paris VII
 SELECT Ant IF (1 siecles_nom_romains OR ("<Ièr>")) ;                    # Michel II
 SELECT Top IF (1C Top) (0 (META:/-/r)) ;
 SELECT Top IF (-1C Top) (-1 (META:/-/r)) ;
@@ -602,7 +607,6 @@ SELECT Masc_strict IF (-1C Ant + Masc_strict) (0 Ant + Masc_strict) ;
 SELECT Fem_strict IF (-1C Ant + Fem_strict) (0 Ant + Fem_strict) ;
 
 SELECT Ant IF (0 ("René") OR ("Renée") OR ("Marc") OR ("Pierre") OR ("Beau")) (1 Ant OR NP OR unknownMajIni) ;
-REMOVE Ant IF (0 ("Beau")) (NOT 1 Ant OR NP OR unknownMajIni) ;
 SELECT Masc_strict IF (0 ("Camille")) (1 ("Pissarro")) ;
 SELECT Cog IF (-1 ("Édouard")) (0 ("Philippe")) ;
 SELECT Ant IF (0 ("Édouard")) (1 ("Philippe")) ;
