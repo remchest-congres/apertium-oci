@@ -1,0 +1,427 @@
+"<Lo>"
+	"lo" det def m sg
+"<divés>"
+	"divés" n m sp!
+"<19>"
+	"19" num
+"<de>"
+	"de" pr SELECT:176
+"<seteme>"
+	"seteme" n m sg
+"<passat>"
+	"passat" adj m sg
+"<que's>"
+	"que" adv enon SELECT:284
+		"se" prn pro ref p3 mf sp
+"<tienó>"
+	"tiéner" vblex ifi p3 sg
+"<a>"
+	"a" pr SELECT:270
+"<Tolosa>"
+	"Tolosa" np top f sg
+"<la>"
+	"lo" det def f sg
+"<quatau>"
+	"quatau" adj m sg
+"<amassada>"
+	"amassada" n f sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<projècte>"
+	"projècte" n m sg
+"<Linguatec>"
+	"Linguatec" np al m sg
+"<,>"
+	"," cm
+"<finançat>"
+	"finançar" vblex pp m sg
+"<peu>"
+	"per" pr
+		"lo" det def m sg
+"<Programa>"
+	"programa" n m sg
+"<de>"
+	"de" pr SELECT:176
+"<Cooperacion>"
+	"cooperacion" n f sg
+"<Territoriau>"
+	"territoriau" adj mf sg
+"<Espanha>"
+	"Espanha" np top f sg
+-
+"<França>"
+	"França" np top f sg SELECT:599
+-
+"<Andòrra>"
+	"Andòrra" np top f sg
+"<,>"
+	"," cm
+"<aperat>"
+	"aperat" adj m sg
+"<POCTEFA>"
+	"POCTEFA" np al m sg
+"<(>"
+	"(" lpar
+"<2014>"
+	"2014" num
+-
+"<2020>"
+	"2020" num
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+"<Que>"
+	"que" adv enon SELECT:295
+"<i>"
+	"i" prn pro adv
+"<participèn>"
+	"participar" vblex ifi p3 pl
+"<l'>"
+	"lo" det def mf sg
+"<ensem>"
+	"ensem" n m sg
+"<deus>"
+	"de" pr
+		"lo" det def m pl
+"<sòcis>"
+	"sòci" n m pl SELECT:455
+"<:>"
+	":" sent
+
+"<Elhuyar Fundazioa>"
+	"Elhuyar Fundazioa" np al f sg
+"<,>"
+	"," cm
+"<lo>"
+	"lo" det def m sg
+"<Govèrn>"
+	"govèrn" n m sg
+"<d'>"
+	"de" pr
+"<Aragon>"
+	"Aragon" np top m sg
+"<,>"
+	"," cm
+"<Euskaltzaindia>"
+	"Euskaltzaindia" np al f sg
+"<,>"
+	"," cm
+"<l'>"
+	"lo" det def mf sg
+"<Universitat>"
+	"universitat" n f sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<País Basco>"
+	"País Basco" np top m sg
+"<(>"
+	"(" lpar
+"<representada>"
+	"representar" vblex pp f sg
+"<peu>"
+	"per" pr
+		"lo" det def m sg
+"<departament>"
+	"departament" n m sg
+"<IXA>"
+	"IXA" np al f sg
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<Lo Congrès>"
+	"Lo Congrès" np m sg
+"<atau com>"
+	"atau com" cnjadv
+"<l'>"
+	"lo" det def mf sg
+"<entitat>"
+	"entitat" n f sg
+"<qui>"
+	"qui" rel mf sp
+"<arcuelhó>"
+	"arcuélher" vblex ifi p3 sg
+"<l'>"
+	"lo" det def mf sg
+"<amassada>"
+	"amassada" n f sg
+"<,>"
+	"," cm
+"<lo>"
+	"lo" det def m sg
+"<Centre>"
+	"centre" n m sg SELECT:571
+"<Nacionau>"
+	"nacionau" adj mf sg
+"<de>"
+	"de" pr SELECT:176
+"<Recèrca>"
+	"recèrca" n f sg
+"<Scientifica>"
+	"scientific" adj f sg
+"<(>"
+	"(" lpar
+"<CNRS>"
+	"CNRS" n acr m sg
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<aus>"
+	"a" pr
+		"lo" det def m pl
+"<locaus>"
+	"local" n m pl
+"<lors>"
+	"lor" adj pos m pl SELECT:399
+"<de>"
+	"de" pr SELECT:176
+"<l'>"
+	"lo" det def mf sg
+"<Universitat>"
+	"universitat" n f sg
+"<Joan>"
+	"Joan" np ant m sg SELECT:571
+"<Jaurès>"
+	"Jaurès" np cog mf sp
+"<de>"
+	"de" pr SELECT:176
+"<Tolosa>"
+	"Tolosa" np top f sg
+"<(>"
+	"(" lpar
+"<lo>"
+	"lo" det def m sg
+"<Miralh>"
+	"Miralh" np top m sg SELECT:571
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+
+
+"<Los>"
+	"lo" det def m pl
+"<amassats>"
+	"amassat" n m pl
+"<que>"
+	"que" adv enon SELECT:284
+"<realizèn>"
+	"realizar" vblex ifi p3 pl
+"<ua>"
+	"un" det ind f sg SELECT:419
+"<evaluacion>"
+	"evaluacion" n f sg
+"<de>"
+	"de" pr SELECT:176
+"<l'>"
+	"lo" det def mf sg
+"<avançada>"
+	"avançada" n f sg
+"<deus>"
+	"de" pr
+		"lo" det def m pl
+"<diferents>"
+	"diferent" adj m pl
+"<projèctes>"
+	"projècte" n m pl SELECT:397
+"<aviats>"
+	"aviat" adj m pl
+"<en>"
+	"en" pr
+"<2018>"
+	"2018" num
+"<,>"
+	"," cm
+"<e>"
+	"e" cnjcoo
+"<que>"
+	"que" adv enon SELECT:284
+"<deurén>"
+	"dever" vbmod cni p3 pl SELECT:503
+"<estar>"
+	"estar" vbser ger REMOVE:388
+"<acabats>"
+	"acabar" vblex pp m pl
+"<en>"
+	"en" pr
+"<2020>"
+	"2020" num
+"<.>"
+	"." sent
+
+
+
+"<L'>"
+	"lo" det def mf sg
+"<ensem>"
+	"ensem" n m sg
+"<deus>"
+	"de" pr
+		"lo" det def m pl
+"<tribalhs>"
+	"tribalh" n m pl
+"<qu'>"
+	"que" adv enon SELECT:284
+"<avançan>"
+	"avançar" vblex pri p3 pl
+"<a>"
+	"a" pr
+"<un>"
+	"un" det ind m sg SELECT:419
+"<ritme>"
+	"ritme" n m sg SELECT:421
+"<satisfasent>"
+	"satisfasent" adj m sg
+"<.>"
+	"." sent
+
+
+
+"<Ua>"
+	"un" det ind f sg SELECT:419
+"<part>"
+	"part" n f sg SELECT:421
+"<de>"
+	"de" pr SELECT:176
+"<l'>"
+	"lo" det def mf sg
+"<amassada>"
+	"amassada" n f sg
+"<qu'>"
+	"que" adv enon SELECT:284
+"<estó>"
+	"estar" vbser ifi p3 sg
+"<dedicada>"
+	"dedicar" vblex pp f sg
+"<a>"
+	"a" pr
+"<la>"
+	"lo" det def f sg
+"<comunicacion>"
+	"comunicacion" n f sg
+"<extèrna>"
+	"extèrne" adj f sg
+"<e>"
+	"e" cnjcoo
+"<,>"
+	"," cm
+"<entad>"
+	"entad" pr
+"<ac>"
+	"ac" prn pro p3 nt
+"<har>"
+	"har" vblex inf SELECT:267
+"<,>"
+	"," cm
+"<que>"
+	"que" adv enon
+"<i>"
+	"i" prn pro adv
+"<participè>"
+	"participar" vblex ifi p3 sg
+"<l'>"
+	"lo" det def mf sg
+"<enterpresa>"
+	"enterpresa" n f sg
+"<responsabla>"
+	"responsable" adj f sg
+"<d'>"
+	"de" pr
+"<aquera>"
+	"aqueth" det dem f sg
+"<tasca>"
+	"tasca" n f sg
+"<.>"
+	"." sent
+
+
+
+"<Que's>"
+	"que" adv enon SELECT:284
+		"se" prn pro ref p3 mf sp
+"<presentèn>"
+	"presentar" vblex ifi p3 pl
+"<instruments>"
+	"instrument" n m pl
+"<divèrs>"
+	"divèrs" adj m pl SELECT:399
+"<:>"
+	":" sent
+
+"<Internet>"
+	"Internet" np al
+"<,>"
+	"," cm
+"<los>"
+	"lo" det def m pl
+"<hialats>"
+	"hialat" n m pl
+"<sociaus>"
+	"sociau" adj mf pl
+"<(>"
+	"(" lpar
+"<Twitter>"
+	"Twitter" np al m sg
+"<e>"
+	"e" cnjcoo
+"<Facebook>"
+	"Facebook" np al m sg
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<e>"
+	"e" cnjcoo
+"<que's>"
+	"que" adv enon SELECT:284
+		"se" prn pro ref p3 mf sp
+"<considerè>"
+	"considerar" vblex ifi p3 sg
+"<la>"
+	"lo" det def f sg
+"<hrèita>"
+	"hrèita" n f sg
+"<de>"
+	"de" pr SELECT:176
+"<generar>"
+	"generar" vblex inf SELECT:379
+"<eveniments>"
+	"eveniment" n m pl
+"<de>"
+	"de" pr SELECT:176
+"<comunicacion>"
+	"comunicacion" n f sg
+"<en>"
+	"en" pr
+"<cada>"
+	"cada" det ind mf sg
+"<territòri>"
+	"territòri" n m sg
+"<,>"
+	"," cm
+"<qui>"
+	"qui" rel mf sp
+"<permétian>"
+	"perméter" vblex prs p3 pl
+"<obtiéner>"
+	"obtiéner" vblex inf
+"<un>"
+	"un" det ind m sg SELECT:419
+"<impacte>"
+	"impacte" n m sg
+"<comunicatiu>"
+	"comunicatiu" adj m sg
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+

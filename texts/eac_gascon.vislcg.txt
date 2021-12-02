@@ -1,0 +1,540 @@
+"<Las>"
+	"lo" det def f pl SELECT:666
+"<inscripcions>"
+	"inscripcion" n f pl
+"<aus>"
+	"a" pr
+		"lo" det def m pl
+"<projèctes>"
+	"projècte" n m pl
+"<d’>"
+	"de" pr
+"<Educacion>"
+	"educacion" n f sg
+"<Artistica>"
+	"artistic" adj f sg
+"<e>"
+	"e" cnjcoo
+"<Culturau>"
+	"culturau" adj mf sg
+"<que>"
+	"que" adv enon SELECT:284
+"<son>"
+	"estar" vbser pri p3 pl
+"<ubèrtas>"
+	"ubèrt" adj f pl
+"<!>"
+	"!" sent
+
+
+
+"<Per>"
+	"per" pr SELECT:173
+"<la>"
+	"lo" det def f sg
+"<tresau>"
+	"tres" adj f sg SELECT:428
+"<annada>"
+	"annada" n f sg
+"<escolara>"
+	"escolar" adj f sg
+"<consecutiva>"
+	"consecutiu" adj f sg
+"<,>"
+	"," cm
+"<la>"
+	"lo" det def f sg
+	"lo" prn pro p3 f sg REMOVE:265
+"<Delegacion>"
+	"delegacion" n f sg
+"<Academica>"
+	"academic" adj f sg
+"<a>"
+	"a" pr
+"<las>"
+	"lo" det def f pl REMOVE:393
+"<Arts>"
+	"art" n m pl
+"<e>"
+	"e" cnjcoo
+"<a>"
+	"a" pr
+"<la>"
+	"lo" det def f sg
+"<Cultura>"
+	"cultura" n f sg
+"<(>"
+	"(" lpar
+"<DAAC>"
+	"DAAC" np al f sg
+"<)>"
+	")" rpar
+"<de>"
+	"de" pr SELECT:176
+"<l’>"
+	"lo" det def mf sg
+"<Academia>"
+	"academia" n f sg
+"<de>"
+	"de" pr SELECT:176
+"<Bordèu>"
+	"Bordèu" np top m sg SELECT:571
+"<en>"
+	"en" pr
+"<partenariat>"
+	"partenariat" n m sg
+"<dab>"
+	"dab" pr
+"<l’>"
+	"lo" det def mf sg
+"<Etnopòle>"
+	"etnopòle" n m sg
+"<CIRDÒC-Institut occitan de cultura>"
+	"CIRDÒC-Institut occitan de cultura" np al m sg
+"<que>"
+	"que" adv enon SELECT:284
+"<renovèlan>"
+	"renovelar" vblex pri p3 pl
+"<lo lor>"
+	"lo lor" det pos m sg
+"<partenariat>"
+	"partenariat" n m sg
+"<d’>"
+	"de" pr
+"<Educacion>"
+	"educacion" n f sg
+"<Artistica>"
+	"artistic" adj f sg
+"<e>"
+	"e" cnjcoo
+"<Culturau>"
+	"culturau" adj mf sg
+"<a l’entorn deus>"
+	"a l'entorn de"
+		"lo" det def m pl
+"<patrimònis>"
+	"patrimòni" n m pl
+"<occitans>"
+	"occitan" adj m pl
+"<.>"
+	"." sent
+
+
+
+"<Las>"
+	"lo" det def f pl SELECT:666
+"<inscripcions>"
+	"inscripcion" n f pl
+"<que>"
+	"que" adv enon SELECT:284
+"<son>"
+	"estar" vbser pri p3 pl
+"<ubèrtas>"
+	"ubèrt" adj f pl
+"<dinc au>"
+	"dinc a" pr
+		"lo" det def m sg
+"<17>"
+	"17" num
+"<de>"
+	"de" pr SELECT:176
+"<junh>"
+	"junh" n m sg
+"<.>"
+	"." sent
+
+"<En>"
+	"en" pr
+"<2018>"
+	"2018" num
+/
+"<2019>"
+	"2019" num
+"<pas>"
+	"pas" adv
+"<mensh>"
+	"mensh" adv
+"<d’>"
+	"de" pr
+"<onze>"
+	"onze" num mf sp
+"<projèctes>"
+	"projècte" n m pl SELECT:397
+"<distribuits>"
+	"distribuïr" vblex pp m pl
+"<per>"
+	"per" pr SELECT:173
+"<Navèra Aquitània>"
+	"Navèra Aquitània" np top f sg
+"<sancèra>"
+	"sancèr" adj f sg
+"<qu’>"
+	"que" adv enon SELECT:284
+"<estón>"
+	"estar" vbser ifi p3 pl
+"<hicats>"
+	"hicat" adj m pl
+"<en plaça>"
+	"en plaça" adv SELECT:399
+"<.>"
+	"." sent
+
+
+
+"<En tot>"
+	"en tot" adv
+"<desempuish>"
+	"desempuish" adv
+"<2016>"
+	"2016" num
+"<,>"
+	"," cm
+"<qu’>"
+	"que" adv enon REMOVE:275
+"<avem>"
+	"aver" vbhaver pri p1 pl SELECT:460
+"<realizat>"
+	"realizar" vblex pp m sg
+"<25>"
+	"25" num
+"<projèctes>"
+	"projècte" n m pl
+"<sus>"
+	"sus" pr
+"<l'>"
+	"lo" det def mf sg
+"<ensemble>"
+	"ensemble" adv
+	"ensemble" n m sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<territòri>"
+	"territòri" n m sg
+"<de>"
+	"de" pr SELECT:176
+"<l'>"
+	"lo" det def mf sg
+"<academia>"
+	"academia" n f sg
+"<de>"
+	"de" pr SELECT:176
+"<Bordèu>"
+	"Bordèu" np top m sg SELECT:455
+"<!>"
+	"!" sent
+
+
+
+"<Entà>"
+	"entà" pr
+"<la>"
+	"lo" det def f sg
+"<mesa en plaça>"
+	"mesa en plaça" n f sg
+"<d’>"
+	"de" pr
+"<ua>"
+	"un" det ind f sg SELECT:419
+"<trajectòria>"
+	"trajectòria" n f sg
+"<EAC>"
+	"EAC" np al m sg
+"<occitana>"
+	"occitan" adj f sg
+"<,>"
+	"," cm
+"<los>"
+	"lo" det def m pl
+"<ensenhaires>"
+	"ensenhaire" n m pl
+"<que>"
+	"que" adv enon SELECT:284
+"<dispausan>"
+	"dispausar" vblex pri p3 pl
+"<de>"
+	"de" pr SELECT:176
+"<l’>"
+	"lo" det def mf sg
+"<acompanhament>"
+	"acompanhament" n m sg
+"<e de>"
+	"e" cnjcoo
+		"de" pr
+"<las>"
+	"lo" det def f pl SELECT:666
+"<competéncias>"
+	"competéncia" n f pl
+"<d’>"
+	"de" pr
+"<ingenheria>"
+	"ingenheria" np f sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<CIRDÒC-Institut occitan de cultura>"
+	"CIRDÒC-Institut occitan de cultura" np al m sg
+"<,>"
+	"," cm
+"<e de>"
+	"e" cnjcoo
+		"de" pr
+"<la>"
+	"lo" det def f sg
+"<professora>"
+	"professor" n f sg
+"<referenta>"
+	"referenta" adj f sg
+"<entà>"
+	"entà" pr
+"<l'>"
+	"lo" det def mf sg
+"<occitan>"
+	"occitan" n m sg
+"<en>"
+	"en" pr
+"<Navèra Aquitània>"
+	"Navèra Aquitània" np top f sg
+"<.>"
+	"." sent
+
+
+
+"<Aquera>"
+	"aqueth" det dem f sg
+"<accion>"
+	"accion" n f sg
+"<que>"
+	"que" adv enon SELECT:284
+"<s’>"
+	"se" prn pro ref p3 mf sp SELECT:542
+"<adreça>"
+	"adreçar" vblex pri p3 sg
+"<tanben>"
+	"tanben" adv
+"<en>"
+	"en" pr
+"<especiau>"
+	"especial" n m sg
+"<aus>"
+	"a" pr
+		"lo" det def m pl
+"<escolans>"
+	"escolan" n m pl SELECT:407
+"<non>"
+	"non" adv
+"<occitanofònes>"
+	"occitanofòne" adj m pl
+"<.>"
+	"." sent
+
+
+
+"<De mei>"
+	"de mei" adv
+"<que>"
+	"que" adv enon REMOVE:275
+"<podem>"
+	"poder" vbmod pri p1 pl SELECT:503
+"<acompanhar>"
+	"acompanhar" vblex inf
+"<projèctes>"
+	"projècte" n m pl
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<prumèr>"
+	"prumèr" adj m sg
+"<grad>"
+	"grad" n m sg
+"<!>"
+	"!" sent
+
+
+
+"<S’>"
+	"si" cnjadv
+"<ètz>"
+	"estar" vbser pri p2 pl
+"<ensenhaire>"
+	"ensenhaire" n m sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<segondari>"
+	"segondari" n m sg
+"<e>"
+	"e" cnjcoo
+"<que’ns>"
+	"que" adv enon SELECT:284
+		"nos" prn pro p1 mf pl
+"<desiretz>"
+	"desirar" vblex prs p2 pl
+"<juntar>"
+	"juntar" vblex inf
+"<a>"
+	"a" pr
+"<la>"
+	"lo" det def f sg
+"<rentrada>"
+	"rentrada" n f sg
+"<escolara>"
+	"escolar" adj f sg
+"<2019>"
+	"2019" num
+/
+"<2020>"
+	"2020" num
+"<entà>"
+	"entà" pr
+"<miar>"
+	"miar" vblex inf
+"<ua>"
+	"un" det ind f sg SELECT:419
+"<accion>"
+	"accion" n f sg
+"<EAC>"
+	"EAC" np al m sg
+"<:>"
+	":" sent
+
+
+
+"<Qu’>"
+	"que" adv enon SELECT:284
+"<avetz>"
+	"aver" vblex pri p2 pl
+"<dinc au>"
+	"dinc a" pr
+		"lo" det def m sg
+"<17>"
+	"17" num
+"<de>"
+	"de" pr SELECT:176
+"<junh>"
+	"junh" n m sg
+"<entà>"
+	"entà" pr
+"<vs’>"
+	"vos" prn pro p2 mf pl
+"<inscríver>"
+	"inscríver" vblex inf
+"<a>"
+	"a" pr
+"<la>"
+	"lo" det def f sg
+"<ficha>"
+	"ficha" n f sg
+"<accion>"
+	"accion" n f sg
+"<«>"
+	"«" lpar
+"<Víver>"
+	"víver" vblex inf
+"<la>"
+	"lo" det def f sg
+"<cultura>"
+	"cultura" n f sg
+"<occitana>"
+	"occitan" adj f sg
+"<»>"
+	"»" rpar
+"<suu>"
+	"sus" pr
+		"lo" det def m sg
+"<site>"
+	"site" n m sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<rectorat>"
+	"rectorat" n m sg
+"<de>"
+	"de" pr SELECT:176
+"<Bordèu>"
+	"Bordèu" np top m sg SELECT:455
+"<:>"
+	":" sent
+
+
+
+"<http://cache.media.education.gouv.fr/file/musee-patr/55/1/6vivre_la_culture_occitene_patrimoine_1122551.pdf>"
+	"http://cache.media.education.gouv.fr/file/musee-patr/55/1/6vivre_la_culture_occitene_patrimoine_1122551.pdf" web
+
+
+"<E>"
+	"e" adv enon SELECT:284
+"<voletz>"
+	"voler" vbmod pri p2 pl SELECT:329
+"<descobrir>"
+	"descobrir" vblex inf
+"<l’>"
+	"lo" det def mf sg
+"<ensemble>"
+	"ensemble" n m sg
+"<deus nostes>"
+	"de" pr
+		"lo noste" det pos m pl
+"<projèctes>"
+	"projècte" n m pl
+"<?>"
+	"?" sent
+
+
+
+"<Anatz>"
+	"anar" vblex imp p2 pl REMOVE:354
+"<tau noste>"
+	"tà" pr
+		"lo noste" det pos m sg
+"<site>"
+	"site" n m sg
+"<Daquidòc>"
+	"Daquidòc" np al m sg
+"<:>"
+	":" sent
+
+"<http://www.daquidoc.org/fr/mon-peac/m-inspirer>"
+	"http://www.daquidoc.org/fr/mon-peac/m-inspirer" web
+
+
+"<Entà>"
+	"entà" pr
+"<mei>"
+	"mei" adv SELECT:456
+"<d'>"
+	"de" pr
+"<informacions>"
+	"informacion" n f pl
+"<,>"
+	"," cm
+"<no’vs>"
+	"ne" adv enon
+		"vos" prn pro p2 mf pl
+"<sia>"
+	"estar" vbser prs p3 sg SELECT:511
+"<grèu>"
+	"grèu" adv
+"<de>"
+	"de" pr SELECT:176
+"<contactar>"
+	"contactar" vblex inf SELECT:379
+"<a>"
+	"a" pr REMOVE:372
+"<:>"
+	":" sent
+
+
+
+"<Marie>"
+	"Marie" np ant f sg
+-
+"<Tatiana>"
+	"Tatiana" np ant f sg
+"<Martin>"
+	"Martin" np cog mf sp SELECT:587
+"<.>"
+	"." sent
+
+
+
