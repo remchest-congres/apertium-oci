@@ -182,6 +182,7 @@ SELECT PREP IF (0 ("<de>"i)) ;		# patch
 REMOVE N IF (0 ("<coma>"i)) ;		# patch
 REMOVE N IF (0 ("<arren>"i)) ;		# patch
 REMOVE V IF (0 ("<arren>"i)) ;		# patch
+REMOVE N IF (0 ("<ren>"i)) (1 De) ;		# patch
 REMOVE N IF (0 ("<e>"i)) ;		# patch
 REMOVE N IF (0 ("<o>"i)) ;		# patch
 REMOVE N IF (0 ("<la>"i)) ;		# patch
@@ -247,8 +248,8 @@ SELECT N + (m) IF (0 Cap) (1 NP OR unknownMajIni) ;	# cap Canaveral
 SELECT N + (mf) IF (NOT -1 BOS) (0 Cap) (0/* De) (1 Estat OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("politica") OR ("entrepresa") OR ("enterpresa")) ;
 SELECT N + (mf) IF (NOT -1 BOS) (0 Cap) (0/* De) (1 Al) ;
 SELECT N + (mf) IF (NOT -1 BOS) (0 Cap) (0/* De) (1 Ant_Cog) ;
-SELECT N + (mf) IF (NOT -1 BOS) (0 Cap) (0/* De) (1 DET) (2 Estat OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("politica") OR ("entrepresa") OR ("enterpresa")) ;
-SELECT N + (mf) IF (0 Cap) (1 ("<del>"i) OR ("<deu">i)) (2 Estat OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("politica") OR ("entrepresa") OR ("enterpresa")) ;
+SELECT N + (mf) IF (NOT -1 BOS) (0 Cap) (0/* De) (1 DET) (2 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("sindicat") OR ("politica") OR ("entrepresa") OR ("enterpresa")) ;
+SELECT N + (mf) IF (0 Cap) (1 ("<del>"i) OR ("<deu">i)) (2 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("sindicat") OR ("politica") OR ("entrepresa") OR ("enterpresa")) ;
 REMOVE AV IF (-1C PREP) (0 Cap) (1C EOS OR CM OR Conjsub OR Conjadv OR Conjco) ;
 
 SELECT AV IF (-1 Pas) (0 Mai OR Pus) ;	# ai pas pus
@@ -445,6 +446,8 @@ SELECT DET + &&AcordSN IF (0 DET + &&AcordSN) (1 N_AJ + &&AcordSN) (2 N_AJ + &&A
 SELECT N_AJ + &&AcordSN IF (-1 DET + &&AcordSN) (0 N_AJ + &&AcordSN) (1 N_AJ + &&AcordSN) (0C N_AJ) (1C N_AJ) ;
 SELECT N_AJ + &&AcordSN IF (-2 DET + &&AcordSN) (-1 N_AJ + &&AcordSN) (0 N_AJ + &&AcordSN) (-1C N_AJ) (0C N_AJ) ;
 
+REMOVE PRON IF (0 DET + Pos) (1 unknown) ;
+
 # NUM
 
 SELECT NUM IF (-1 ("numéro")) (0 Un); 
@@ -460,7 +463,7 @@ REMOVE PREAV IF (0 PREAV) (0 AV) (NOT 1 AJ OR AV) ;
 SELECT PREAV IF (-1 N + &&AcordSN) (NOT -1 Vconj) (0 AV) (1 AJ + &&AcordSN) ;
 SELECT PREAV IF (-1 AJ + &&AcordSN) (NOT -1 Vconj) (0 AV) (1 AJ + &&AcordSN) ;
 
-#ADJ
+# ADJ
 REMOVE AJ IF (-1 ("en")) (NOT 1 Conjco OR N) ;
 
 # ADJ POS
