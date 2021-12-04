@@ -148,7 +148,12 @@ List Artcontrpl = "<als>" "<aus>" "<aths>" "<as>" "<dels>" "<deus>" "<dals>" "<d
 List Artcontrsg = "<al>" "<au>" "<ath>" "<del>" "<deu>" "<dal>" "<deth>" "<sul>" "<suu>" "<tau>" "<tath>" "<entau>" "<entath>" "<pel>" "<peu>" "<peth>" "<preu>" "<vèl>" "<jol>" "<enquiath>" "<en>" "<ene>" "<endeu>" "<dambeu>" ;
 LIST Jorns = "diluns" "dimars" "dimècres" "dimèrcs" "dijòus" "dijaus" "divés" "divendres" "dissabte" "dimenge" ;
 
-List Nummois = "1" "1èr" "1ièr" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12" "13" "14" "15" "16" "17" "18" "19" "20" "21" "22" "23" "24" "25" "26" "27" "28" "29" "30" "31" "<purmèr>" "<prumèr>" "<prumièr>" "<primièr>" "<primèr>" "<dos>" "<dus>" "<tres>" "<quatre>" "<quate>" "<cinc>" "<sièis>" "<sèis>" "<sies>" "<siés>" "<siès>" "<sheis>" "<sèt>" "<uèit>" "<ueit>" "<uòch>" "<uèch>" "<nòu>" "<nau>" "<dètz>" "<onze>" "<dotze>" "<tretze>" "<catòrze>" "<catorze>" "<quatòrze>" "<quatorze>" "<quinze>" "<setze>" "<dètz-e-sèt>" "<dètz-e-uèit>" "<dètz-e-ueit>" "<dètz-e-uèch>" "<dètz-e-uòch>" "<dètz-e-nòu>" "<dètz-e-nau>" "<vint>" "<vingt>" "<vint-e-un>" "<vingt-e-un>" "<vint-e-dos>" "<vint-e-dus>" "<vingt-e-dos>" "<vingt-e-dus>"  "<vint-e-tres>" "<vingt-e-tres>" "<vint-e-quatre>" "<vingt-e-quatre>" "<vint-e-quate>" "<vingt-e-quate>" "<vint-e-cinc>" "<vingt-e-cinc>" "<vint-e-sèis>" "<vingt-e-sèis>" "<vint-e-sièis>" "<vingt-e-sièis>" "<vint-e-sies>" "<vingt-e-sies>" "<vint-e-siès>" "<vingt-e-siès>" "<vint-e-siés>" "<vingt-e-siés>" "<vint-e-sheis>" "<vingt-e-sheis>" "<vint-e-sèt>" "<vingt-e-sèt>" "<vint-e-uèit>" "<vingt-e-uèit>" "<vint-e-ueit>" "<vingt-e-ueit>" "<vint-e-uèch>" "<vingt-e-uèch>" "<vint-e-uòch>" "<vingt-e-uòch>" "<vint-e-nòu>" "<vingt-e-nòu>" "<vint-e-nau>" "<vingt-e-nau>" "<trenta>" "<trenta-e-un>" "<trenta-un>" "<dètz e uèch>" "<dètz e uòch>" "<dètz e nòu>" "<dètz e nau>" "<vingt>" "<vint e un>" "<vingt e un>" "<vint e dos>" "<vint e dus>" "<vingt e dos>" "<vingt e dus>"  "<vint e tres>" "<vingt e tres>" "<vint e quatre>" "<vingt e quatre>" "<vint e quate>" "<vingt e quate>" "<vint e cinc>" "<vingt e cinc>" "<vint e sèis>" "<vingt e sèis>" "<vint e sièis>" "<vingt e sièis>" "<vint e sies>" "<vingt e sies>" "<vint e siès>" "<vingt e siès>" "<vint e siés>" "<vingt e siés>" "<vint e sheis>" "<vingt e sheis>" "<vint e sèt>" "<vingt e sèt>" "<vint e uèit>" "<vingt e uèit>" "<vint e ueit>" "<vingt e ueit>" "<vint e uèch>" "<vingt e uèch>" "<vint e uòch>" "<vingt e uòch>" "<vint e nòu>" "<vingt e nòu>" "<vint e nau>" "<vingt e nau>" "<trenta>" "<trenta e un>" "<trenta un>"
+List Nummois = "1" "1èr" "1ièr" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12" "13" "14" "15" "16" "17" "18" "19" "20" "21" "22" "23" "24" "25" "26" "27" "28" "29" "30" "31" "<purmèr>" "<prumèr>" "<prumièr>" "<primièr>" "<primèr>" "<dos>" "<dus>" "<tres>" "<quatre>" "<quate>" "<cinc>" "<sièis>" "<sèis>" "<sies>" "<siés>" "<siès>" "<sheis>" "<sèt>" "<uèit>" "<ueit>" "<uòch>" "<uèch>" "<nòu>" "<nau>" "<dètz>" "<onze>" "<dotze>" "<tretze>" "<catòrze>" "<catorze>" "<quatòrze>" "<quatorze>" "<quinze>" "<setze>" "<dètz-e-sèt>" "<dètz-e-uèit>" "<dètz-e-ueit>" "<dètz-e-uèch>" "<dètz-e-uòch>" "<dètz-e-nòu>" "<dètz-e-nau>" "<vint>" "<vingt>" "<vint-e-un>" "<vingt-e-un>" "<vint-e-dos>" "<vint-e-dus>" "<vingt-e-dos>" "<vingt-e-dus>"  "<vint-e-tres>" "<vingt-e-tres>" "<vint-e-quatre>" "<vingt-e-quatre>" "<vint-e-quate>" "<vingt-e-quate>" "<vint-e-cinc>" "<vingt-e-cinc>" "<vint-e-sèis>" "<vingt-e-sèis>" "<vint-e-sièis>" "<vingt-e-sièis>" "<vint-e-sies>" "<vingt-e-sies>" "<vint-e-siès>" "<vingt-e-siès>" "<vint-e-siés>" "<vingt-e-siés>" "<vint-e-sheis>" "<vingt-e-sheis>" "<vint-e-sèt>" "<vingt-e-sèt>" "<vint-e-uèit>" "<vingt-e-uèit>" "<vint-e-ueit>" "<vingt-e-ueit>" "<vint-e-uèch>" "<vingt-e-uèch>" "<vint-e-uòch>" "<vingt-e-uòch>" "<vint-e-nòu>" "<vingt-e-nòu>" "<vint-e-nau>" "<vingt-e-nau>" "<trenta>" "<trenta-e-un>" "<trenta-un>" "<dètz e uèch>" "<dètz e uòch>" "<dètz e nòu>" "<dètz e nau>" "<vingt>" "<vint e un>" "<vingt e un>" "<vint e dos>" "<vint e dus>" "<vingt e dos>" "<vingt e dus>"  "<vint e tres>" "<vingt e tres>" "<vint e quatre>" "<vingt e quatre>" "<vint e quate>" "<vingt e quate>" "<vint e cinc>" "<vingt e cinc>" "<vint e sèis>" "<vingt e sèis>" "<vint e sièis>" "<vingt e sièis>" "<vint e sies>" "<vingt e sies>" "<vint e siès>" "<vingt e siès>" "<vint e siés>" "<vingt e siés>" "<vint e sheis>" "<vingt e sheis>" "<vint e sèt>" "<vingt e sèt>" "<vint e uèit>" "<vingt e uèit>" "<vint e ueit>" "<vingt e ueit>" "<vint e uèch>" "<vingt e uèch>" "<vint e uòch>" "<vingt e uòch>" "<vint e nòu>" "<vingt e nòu>" "<vint e nau>" "<vingt e nau>" "<trenta>" "<trenta e un>" "<trenta un>" ;
+
+# adjectifs qui souvent vont devant le nom
+#SET AdjPre = ("ancien") OR ("vieil") OR ("nouveau") OR ("grand") OR ("petit") OR ("majeur") OR ("bon") OR ("mal") OR ("mauvais") OR ("pauvre") OR      ("haut") OR ("bas") OR ("seul") OR ("célèbre") OR ("vrai") OR ("faux") OR ("beau") OR ("sale") OR ("large") OR ("long") OR ("saint") OR ("sacré") OR ("faible") OR ("multiple") OR ("cher") OR ("gros") ;
+SET AdjPre = ("ancian") OR ("nòu") OR ("nau") OR ("novèl") OR ("navèth") OR ("grand") OR ("petit") OR ("pichon") OR ("pichòt") OR ("bon") OR ("mal") OR ("naut") OR ("haut") OR ("bas") OR ("baish") ;
+
 
 LIST Excl = "!" ;
 
@@ -310,6 +315,9 @@ SELECT IJ IF (-1 BOS OR CM) (0 ("gràcies") OR ("de res")) ;			# COPY-PASTE
 REMOVE IJ IF (NOT -1 CM OR BOS) (NOT 1 CM OR EOS) (NOT 1* ("!")) ;
 REMOVE IJ IF (NOT -1 CM OR BOS) (NOT 1 CM OR EOS) (0 ("a")) ;
 REMOVE IJ IF (NOT -1 CM OR BOS) (0 ("plan")) ;
+REMOVE IJ IF (NOT -1 CM OR BOS) (0 ("las")) ;
+REMOVE AJ (0 ("las")) (1 V OR Pro) ;
+SELECT Pro (0 ("las")) (1C V OR Pro) ;
 
 SELECT AVexcl IF (-1 BOS) (0 AVexcl) (1 ("!")) ;
 SELECT AVexcl IF (-2 BOS) (-1 Conjco) (0 AVexcl) (1 ("!")) ;
@@ -464,6 +472,25 @@ REMOVE AJ + Pos IF (NOT -1 Ser) (0 AJ + Pos) ;
 SELECT N IF (-1C PREP) (1 EOS) ;	# ambe fòrça.
 SELECT N IF (-1C PREP) (1C PREP) (NOT 0 ("tròp")) ;	# discors de fin d'annada
 
+# N / AJ
+
+SELECT NP + &&AcordSN IF(-2 DET + &&AcordSN) (-1 AdjPre + &&AcordSN) (0 NP + &&AcordSN) (NOT -1 ("nau")) ;
+SELECT N + &&AcordSN IF(-2 DET + &&AcordSN) (-1 AdjPre + &&AcordSN) (0 N + &&AcordSN) (NOT -1 ("nau")) ;
+SELECT AJ + &&AcordSN IF(-1 DET + &&AcordSN) (0 AdjPre + &&AcordSN) (1 NP + &&AcordSN) (NOT 0 ("nau")) ;
+SELECT AJ + &&AcordSN IF(-1 DET + &&AcordSN) (0 AdjPre + &&AcordSN) (1 N + &&AcordSN) (NOT 0 ("nau")) ;
+
+SELECT NP + &&AcordSN IF(-1 DET + &&AcordSN) (0 NP + &&AcordSN) (1 AJ + &&AcordSN) ; 
+SELECT N + &&AcordSN IF(-1 DET + &&AcordSN) (0 N + &&AcordSN) (1 AJ + &&AcordSN) ; 
+
+SELECT NP + &&AcordSN IF(-2 DET + &&AcordSN) (-1C AJ + &&AcordSN) (0 NP + &&AcordSN) ; 
+SELECT N + &&AcordSN IF(-2 DET + &&AcordSN) (-1C AJ + &&AcordSN) (0 N + &&AcordSN) ; 
+
+# N / V
+
+REMOVE N IF (-1C PRON) (0 V) ;		# qui sap
+REMOVE V + Pers IF (-1C V + Pers) ;	# voletz ve pariar
+REMOVE V + Pers IF (1C V + Pers) ;	# voletz ve pariar
+
 # HAVER
 
 SELECT Haver IF (0 Haver) (1C VBpp) ;	# a cantat
@@ -515,6 +542,22 @@ SELECT Vmod IF (0 Vmod) (1 AV OR Pro) (2C VBinf) ;	# pòdi pas manjar
 SELECT VBinf IF (-3 Vmod) (-2 AV OR Pro) (-1 AV OR Pro) (0 VBinf) ;	# pòdi pas manjar
 SELECT Vmod IF (0 Vmod) (1 AV OR Pro) (2 AV OR Pro) (3C VBinf) ;	# pòdi pas manjar
 
+# VBmod
+
+SELECT Vmod IF (0 ("caler")) (1 Que) ;
+SELECT Vmod IF (0 ("caler")) (1 AV) (2 Que) ;
+SELECT Vmod IF (0 ("caler")) (1 AV) (2 AV) (3 Que) ;
+SELECT Vmod IF (0 ("caler")) (-1/* Pro) ;
+SELECT Vmod IF (0 ("caler")) (-1 Itg) ;
+SELECT Vmod IF (0 ("caler")) (-1 Enon) ;
+SELECT Vmod IF (0 ("caler")) (-1 BOS) ;
+SELECT Vmod IF (0 ("caler")) (-2 BOS) (1 AV) ;
+REMOVE Vmod IF (NOT 1 VBinf OR AV OR Pro) ;
+REMOVE Vmod IF (1 AV) (NOT 2 VBinf OR AV OR Pro) ;
+REMOVE Vmod IF (1 AV) (1 AV) (NOT 3 VBinf OR AV OR Pro) ;
+REMOVE Vmod IF (1 AV) (2 Pro) (NOT 3 VBinf OR Pro) ;
+REMOVE Vmod IF (1 Pro) (NOT 2 VBinf OR Pro) ;
+REMOVE Vmod IF (1 Pro) (2 Pro) (NOT 2 VBinf) ;
 
 #Vb conjugat après enonciatiu
 SELECT Vconj IF (-1C Enon) (NOT 0 Pro) ;
@@ -572,8 +615,7 @@ SELECT Ser IF (0 Ser + Pl) (1 AV) (2 Ser + VBpp + Pl) ;
 SELECT N IF (-1 ("vila") OR ("ciutat")) (0 Estat) ;	# vila estat
 SELECT N IF (-1 ("<[a-zàáèéíòóú]>.*"r)) (0 Estat) ;	# "Estat" (con mayúscula) va precedido de una palabra con minúscula inicial
 
-REMOVE AJ IF (0 Las) (1 N + FemPl) ;
-  ## las pomas
+REMOVE AJ IF (0 Las) (1 N + FemPl) ;	# las pomas
 
 SELECT Conjco IF (0 Mas) (-1 CM) ;
 
