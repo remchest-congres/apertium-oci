@@ -232,6 +232,9 @@ SELECT PREP IF (0 ("coma")) (1 ("en")) ;
 REMOVE N IF (NOT -1 DET) (0 ("<son>"i)) ;	# patch
 REMOVE Sg IF (NOT -1 DET) (0 ("<son>"i)) (1C Pl_strict) ;	# son conegudas
 REMOVE Sg IF (NOT -1 DET) (0 ("<son>"i)) (1 AV OR PREAV) (2C Pl_strict) ;	# son plan conegudas
+SELECT PREP IF (0 ("sens")) (1C VBinf OR VBger) ;
+SELECT PREP IF (0 ("sens")) (1 Pro) (2C VBinf OR VBger) ;
+SELECT PREP IF (0 ("sens")) (1 Pro) (2 Pro) (3C VBinf OR VBger) ;
 
 SELECT N IF (-1 DET + MascSg) (0 ("<cap>"i)) ;
 SELECT N IF (-1 DET + MascSg) (0 ("<cap de>"i) OR ("<cap d'>"i) OR ("<cap d’>"i)) ;
@@ -251,6 +254,7 @@ SELECT N + (mf) IF (NOT -1 BOS) (0 Cap) (0/* De) (1 Ant_Cog) ;
 SELECT N + (mf) IF (NOT -1 BOS) (0 Cap) (0/* De) (1 DET) (2 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("sindicat") OR ("politica") OR ("entrepresa") OR ("enterpresa")) ;
 SELECT N + (mf) IF (0 Cap) (1 ("<del>"i) OR ("<deu">i)) (2 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("sindicat") OR ("politica") OR ("entrepresa") OR ("enterpresa")) ;
 REMOVE AV IF (-1C PREP) (0 Cap) (1C EOS OR CM OR Conjsub OR Conjadv OR Conjco) ;
+SELECT DET IF (0 Cap) (1 Tn) ;	# cap d'elas
 
 SELECT AV IF (-1 Pas) (0 Mai OR Pus) ;	# ai pas pus
 SELECT AV IF (-2 Pas) (-1 VBpp) (0 Mai OR Pus) ;	# ai agut pas pus
@@ -411,20 +415,6 @@ REMOVE motsdetsg IF (1C Npl OR AJpl);
 REMOVE motsdetf IF (1C Nm OR AJm);
 REMOVE motsdetm IF (1C Nf OR AJf);
 
-# distincio entre MascPl i FemPl (típicament en terminacions en -es)
-SELECT MascPl IF (-1C MascPl) (0 N + MascPl) (NOT 0 ("pel")) ;
-SELECT FemPl IF (-1C FemPl) (0 N + FemPl) ;
-SELECT MascPl IF (-1C MascPl) (0 AJ + MascPl) ;
-SELECT FemPl IF (-1C FemPl) (0 AJ + FemPl) ;
-SELECT MascPl IF (1C MascPl) (0 N + MascPl) (NOT 0 ("pel")) ;
-SELECT FemPl IF (1C FemPl) (0 N + FemPl) ;
-SELECT MascPl IF (1C MascPl) (0 AJ + MascPl) ;
-SELECT FemPl IF (1C FemPl) (0 AJ + FemPl) ;
-SELECT MascPl IF (-2C MascPl) (-1 AV OR PREAV) (0 AJ + MascPl) ;
-SELECT FemPl IF (-2C FemPl) (-1 AV OR PREAV) (0 AJ + FemPl) ;
-SELECT MascPl IF (2C MascPl) (1 AV OR PREAV) (0 AJ + MascPl) ;
-SELECT FemPl IF (2C FemPl) (1 AV OR PREAV) (0 AJ + FemPl) ;
-
 # AN (+ partipici)
 
 SELECT V IF (0 An + MascSg) (1 VBpp + MascSg) ;
@@ -434,6 +424,7 @@ SELECT V IF (0 An + MascSg) (1C AV) (2 VBpp + MascSg) ;
 
 # DET
 
+REMOVE SUB:1 DET IF (0/* DET) (1C DET) ;	# en los acès
 SELECT DETind + &&AcordSN IF (0 DETind + &&AcordSN) (1 N + &&AcordSN) ;	# un enfant
 SELECT DETind + &&AcordSN IF (0 DETind + &&AcordSN) (1 AJ + &&AcordSN) ;	# un jaune
 SELECT N_AJ + &&AcordSN IF (-1 DETind + &&AcordSN) (0 N_AJ + &&AcordSN) ;
@@ -475,18 +466,42 @@ REMOVE AJ + Pos IF (NOT -1 Ser) (0 AJ + Pos) ;
 SELECT N IF (-1C PREP) (1 EOS) ;	# ambe fòrça.
 SELECT N IF (-1C PREP) (1C PREP) (NOT 0 ("tròp")) ;	# discors de fin d'annada
 
+SELECT N + &&AcordSN IF (-1C/* DET) (0C N) (-1/* DET + &&AcordSN) ;	# los acès ; deus autobús
+
 # N / AJ
 
-SELECT NP + &&AcordSN IF(-2 DET + &&AcordSN) (-1 AdjPre + &&AcordSN) (0 NP + &&AcordSN) (NOT -1 ("nau")) ;
-SELECT N + &&AcordSN IF(-2 DET + &&AcordSN) (-1 AdjPre + &&AcordSN) (0 N + &&AcordSN) (NOT -1 ("nau")) ;
-SELECT AJ + &&AcordSN IF(-1 DET + &&AcordSN) (0 AdjPre + &&AcordSN) (1 NP + &&AcordSN) (NOT 0 ("nau")) ;
-SELECT AJ + &&AcordSN IF(-1 DET + &&AcordSN) (0 AdjPre + &&AcordSN) (1 N + &&AcordSN) (NOT 0 ("nau")) ;
+SELECT NP + &&AcordSN IF (-2 DET + &&AcordSN) (-1 AdjPre + &&AcordSN) (0 NP + &&AcordSN) (NOT -1 ("nau")) ;
+SELECT NP + &&AcordSN IF (-2/* DET + &&AcordSN) (-1 AdjPre + &&AcordSN) (0 NP + &&AcordSN) (NOT -1 ("nau")) ;
+SELECT N + &&AcordSN IF (-2 DET + &&AcordSN) (-1 AdjPre + &&AcordSN) (0 N + &&AcordSN) (NOT -1 ("nau")) ;
+SELECT N + &&AcordSN IF (-2/* DET + &&AcordSN) (-1 AdjPre + &&AcordSN) (0 N + &&AcordSN) (NOT -1 ("nau")) ;
+SELECT AJ + &&AcordSN IF (-1 DET + &&AcordSN) (0 AdjPre + &&AcordSN) (1 NP + &&AcordSN) (NOT 0 ("nau")) ;
+SELECT AJ + &&AcordSN IF (-1/* DET + &&AcordSN) (0 AdjPre + &&AcordSN) (1 NP + &&AcordSN) (NOT 0 ("nau")) ;
+SELECT AJ + &&AcordSN IF (-1 DET + &&AcordSN) (0 AdjPre + &&AcordSN) (1 N + &&AcordSN) (NOT 0 ("nau")) ;
+SELECT AJ + &&AcordSN IF (-1/* DET + &&AcordSN) (0 AdjPre + &&AcordSN) (1 N + &&AcordSN) (NOT 0 ("nau")) ;
 
-SELECT NP + &&AcordSN IF(-1 DET + &&AcordSN) (0 NP + &&AcordSN) (1 AJ + &&AcordSN) ; 
-SELECT N + &&AcordSN IF(-1 DET + &&AcordSN) (0 N + &&AcordSN) (1 AJ + &&AcordSN) ; 
+SELECT NP + &&AcordSN IF (-1 DET + &&AcordSN) (0 NP + &&AcordSN) (1 AJ + &&AcordSN) ; 
+SELECT NP + &&AcordSN IF (-1/* DET + &&AcordSN) (0 NP + &&AcordSN) (1 AJ + &&AcordSN) ; 
+SELECT N + &&AcordSN IF (-1 DET + &&AcordSN) (0 N + &&AcordSN) (1 AJ + &&AcordSN) ; 
+SELECT N + &&AcordSN IF (-1/* DET + &&AcordSN) (0 N + &&AcordSN) (1 AJ + &&AcordSN) ; 
 
-SELECT NP + &&AcordSN IF(-2 DET + &&AcordSN) (-1C AJ + &&AcordSN) (0 NP + &&AcordSN) ; 
-SELECT N + &&AcordSN IF(-2 DET + &&AcordSN) (-1C AJ + &&AcordSN) (0 N + &&AcordSN) ; 
+SELECT NP + &&AcordSN IF (-2 DET + &&AcordSN) (-1C AJ) (-1 AJ + &&AcordSN) (0 NP + &&AcordSN) ; 
+SELECT N + &&AcordSN IF (-2 DET + &&AcordSN) (-1C AJ) (-1 AJ + &&AcordSN) (0 N + &&AcordSN) ; 
+SELECT N + &&AcordSN IF (-2 DET + &&AcordSN) (-1C NUM) (-1 NUM + &&AcordSN) (0 N + &&AcordSN) ; 
+SELECT N + &&AcordSN IF (-2 DET + &&AcordSN) (-1C NUM) (0 N + &&AcordSN) ; 
+
+# distincio entre MascPl i FemPl (típicament en terminacions en -es)
+#SELECT MascPl IF (-1C MascPl) (0 N + MascPl) (NOT 0 ("pel")) ;	# Pb: cap de las 200 comunas
+#SELECT FemPl IF (-1C FemPl) (0 N + FemPl) ;
+#SELECT MascPl IF (-1C MascPl) (0 AJ + MascPl) ;
+#SELECT FemPl IF (-1C FemPl) (0 AJ + FemPl) ;
+#SELECT MascPl IF (1C MascPl) (0 N + MascPl) (NOT 0 ("pel")) ;
+#SELECT FemPl IF (1C FemPl) (0 N + FemPl) ;
+#SELECT MascPl IF (1C MascPl) (0 AJ + MascPl) ;
+#SELECT FemPl IF (1C FemPl) (0 AJ + FemPl) ;
+#SELECT MascPl IF (-2C MascPl) (-1 AV OR PREAV) (0 AJ + MascPl) ;
+#SELECT FemPl IF (-2C FemPl) (-1 AV OR PREAV) (0 AJ + FemPl) ;
+#SELECT MascPl IF (2C MascPl) (1 AV OR PREAV) (0 AJ + MascPl) ;
+#SELECT FemPl IF (2C FemPl) (1 AV OR PREAV) (0 AJ + FemPl) ;
 
 # N / V
 
@@ -619,6 +634,7 @@ SELECT N IF (-1 ("vila") OR ("ciutat")) (0 Estat) ;	# vila estat
 SELECT N IF (-1 ("<[a-zàáèéíòóú]>.*"r)) (0 Estat) ;	# "Estat" (con mayúscula) va precedido de una palabra con minúscula inicial
 
 REMOVE AJ IF (0 Las) (1 N + FemPl) ;	# las pomas
+REMOVE AJ IF (0 Las) (1 NUM) (2 N + FemPl) ;	# las 200 pomas
 
 SELECT Conjco IF (0 Mas) (-1 CM) ;
 
