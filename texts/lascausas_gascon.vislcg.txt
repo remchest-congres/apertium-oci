@@ -3,9 +3,9 @@
 "<Romieu>"
 	"Romieu" np cog mf sp
 "<qu’>"
-	"que" adv enon SELECT:280
+	"que" adv enon
 "<a>"
-	"aver" vbhaver pri p3 sg SELECT:432
+	"aver" vbhaver pri p3 sg
 "<demissionat>"
 	"demissionar" vblex pp m sg
 
@@ -21,7 +21,7 @@
 "<generau>"
 	"general" adj f sg
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<la nosta>"
 	"lo noste" det pos f sg
 "<Escòla>"
@@ -55,7 +55,7 @@
 "<ans>"
 	"an" n m pl
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<tribalh>"
 	"tribalh" n m sg
 "<aganat>"
@@ -69,7 +69,7 @@
 "<,>"
 	"," cm
 "<qu’>"
-	"que" adv enon SELECT:270
+	"que" adv enon
 "<anonciè>"
 	"anonciar" vblex ifi p3 sg
 "<la soa>"
@@ -77,13 +77,13 @@
 "<demission>"
 	"demission" n f sg
 "<per>"
-	"per" pr SELECT:172
+	"per" pr
 "<rasons>"
 	"rason" n f pl
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<santat>"
-	"santat" n f sg SELECT:428
+	"santat" n f sg
 "<.>"
 	"." sent
 
@@ -95,7 +95,7 @@
 "<mes>"
 	"mes" n m sg
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<seteme>"
 	"seteme" n m sg
 "<,>"
@@ -109,11 +109,11 @@
 "<administracion>"
 	"administracion" n f sg
 "<que>"
-	"que" adv enon SELECT:270
+	"que" adv enon
 "<causirà>"
 	"causir" vblex fti p3 sg
 "<un>"
-	"un" det ind m sg SELECT:392
+	"un" det ind m sg
 "<navèth>"
 	"navèth" adj m sg
 	"capdau" n mf sg
@@ -123,7 +123,7 @@
 
 
 "<Jan>"
-	"Jan" np ant m sg SELECT:556
+	"Jan" np ant m sg
 -
 "<Pèir>"
 	"Pèir" np ant m sg
@@ -136,7 +136,7 @@
 "<Javaloyès>"
 	"Javaloyès"  np cog mf sp
 "<qu’>"
-	"que" adv enon SELECT:270
+	"que" adv enon
 "<asseguraràn>"
 	"assegurar" vblex fti p3 pl
 "<l’>"
@@ -159,18 +159,18 @@
 "<castèth>"
 	"castèl" n m sg
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<Mauvesin>"
 	"Mauvesin" np top f sg
 
 
 "<Ne’n>"
-	"ne" adv enon SELECT:270
+	"ne" adv enon
 		"en" prn pro adv
 "<parlam>"
 	"parlar" vblex pri p1 pl
 "<pas>"
-	"pas" adv SELECT:205
+	"pas" adv
 "<guaire>"
 	"güaire" adv
 "<sovent>"
@@ -178,19 +178,19 @@
 "<e donc>"
 	"e donc" ij
 "<n’>"
-	"ne" adv enon SELECT:270
+	"ne" adv enon
 "<ei>"
 	"estar" vbser pri p3 sg
 "<pas>"
-	"pas" adv SELECT:205
+	"pas" adv
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<rèste>"
 	"rèste" n m sg
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<senhalar>"
-	"senhalar" vblex inf SELECT:352
+	"senhalar" vblex inf
 "<,>"
 	"," cm
 "<a l’intencion deus>"
@@ -203,7 +203,7 @@
 "<,>"
 	"," cm
 "<que>"
-	"que" cnjsub REMOVE:499
+	"que" cnjsub
 "<l’>"
 	"lo" det def mf sg
 "<Escòla>"
@@ -220,7 +220,7 @@
 "<castèth>"
 	"castèl" n m sg
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<Mauvesin>"
 	"Mauvesin" np top f sg
 "<qui>"
@@ -232,9 +232,9 @@
 "<balhat>"
 	"balhar" vblex pp m sg
 "<per>"
-	"per" pr SELECT:172
+	"per" pr
 "<M>"
-	"m" n m sp SELECT:428
+	"m" n m sp
 "<.>"
 	"." sent
 
@@ -250,11 +250,11 @@
 
 
 "<Mantuns>"
-	"mantun" det ind m pl SELECT:392
+	"mantun" det ind m pl
 "<tribalhs>"
 	"tribalh" n m pl
 "<qu’>"
-	"que" adv enon REMOVE:264
+	"que" adv enon
 "<estón>"
 	"estar" vbser ifi p3 pl
 "<enterprés>"
@@ -266,19 +266,19 @@
 "<,>"
 	"," cm
 "<qui>"
-	"qui" rel mf sp REMOVE:322
+	"qui" rel mf sp
 "<permetón>"
 	"perméter" vblex ifi p3 pl
 "<d’>"
 	"de" pr
 "<ahortir>"
-	"ahortir" vblex inf SELECT:352
+	"ahortir" vblex inf
 "<las>"
-	"lo" det def f pl SELECT:641
+	"lo" det def f pl
 "<condicions>"
 	"condicion" n f pl
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<securitat>"
 	"securitat" n f sg
 "<e de>"
@@ -305,8 +305,8 @@
 	"gran" adj m sg
 "<tinèu>"
 	"tinèl" n m sg
-"<>"
-	"" sent
+"<;>"
+	";" sent
 "<los>"
 	"lo" det def m pl
 "<tribalhs>"
@@ -314,23 +314,23 @@
 "<aquestes>"
 	"aqueste" adj dem m pl
 "<qu’>"
-	"que" adv enon SELECT:270
+	"que" adv enon
 "<estón>"
 	"estar" vbser ifi p3 pl
 "<hèits>"
 	"har" vblex pp m pl
 "<per>"
-	"per" pr SELECT:172
+	"per" pr
 "<professionaus>"
 	"professional" n m pl
 "<e>"
 	"e" cnjcoo
 "<per>"
-	"per" pr SELECT:172
+	"per" pr
 "<benevòls>"
 	"benevòle" n m pl
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<l’>"
 	"lo" det def mf sg
 "<associacion>"
@@ -395,7 +395,7 @@
 "<Abadie>"
 	"Abadie" np cog mf sp
 "<que>"
-	"que" adv enon SELECT:270
+	"que" adv enon
 "<prenón>"
 	"préner" vblex ifi p3 pl
 "<las>"
@@ -405,13 +405,13 @@
 "<precisas>"
 	"precís" adj f pl
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<la>"
-	"lo" det def f sg SELECT:400
+	"lo" det def f sg
 "<murralha>"
 	"murralha" n f sg
 "<nòrd>"
-	"nòrd" adj mf sp SELECT:402
+	"nòrd" adj mf sp
 "<e>"
 	"e" cnjcoo
 "<deu>"
@@ -437,15 +437,15 @@
 "<tà>"
 	"tà" pr
 "<un>"
-	"un" det ind m sg SELECT:392
+	"un" det ind m sg
 "<estudi>"
 	"estudi" n m sg
 "<preparatòri>"
 	"preparatòri" adj m sg
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<las>"
-	"lo" det def f pl SELECT:400
+	"lo" det def f pl
 "<restauracions>"
 	"restauracion" n f pl
 "<urgentas>"
@@ -457,7 +457,7 @@
 "<e>"
 	"e" cnjcoo
 "<qui>"
-	"qui" rel mf sp REMOVE:321
+	"qui" rel mf sp
 "<va>"
 	"anar" vblex pri p3 sg
 "<caler>"
@@ -465,17 +465,17 @@
 "<aviar>"
 	"aviar" vblex inf
 "<per>"
-	"per" pr SELECT:172
+	"per" pr
 "<rasons>"
 	"rason" n f pl
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<securitat>"
 	"securitat" n f sg
 "<dens>"
 	"dens" pr
 "<las>"
-	"lo" det def f pl SELECT:641
+	"lo" det def f pl
 "<annadas>"
 	"annada" n f pl
 "<qui>"
@@ -500,23 +500,23 @@
 "<federalista>"
 	"federalista" adj mf sg
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<Joschka>"
 	"Joschka" np ant m sg
 "<Fischer>"
 	"Fischer" np cog mf sp
 "<que>"
-	"que" adv enon REMOVE:264
+	"que" adv enon
 "<seré>"
 	"estar" vbser cni p3 sg
 "<ua>"
-	"un" det ind f sg SELECT:392
+	"un" det ind f sg
 "<temptativa>"
 	"temptativa" n f sg
 "<d’>"
 	"de" pr
 "<installar>"
-	"installar" vblex inf SELECT:352
+	"installar" vblex inf
 "<l’>"
 	"lo" det def mf sg
 "<egemonia>"
@@ -532,7 +532,7 @@
 "<,>"
 	"," cm
 "<un>"
-	"un" det ind m sg SELECT:392
+	"un" det ind m sg
 "<remake>"
 	"remake" n m sg
 "<deu>"
@@ -562,9 +562,9 @@
 	"en" prn pro adv
 		"i" prn pro adv
 "<a>"
-	"aver" vblex pri p3 sg SELECT:255
+	"aver" vblex pri p3 sg
 "<que’s>"
-	"que" rel mf sp REMOVE:321
+	"que" rel mf sp
 		"se" prn pro ref p3 mf sp
 "<creden>"
 	"créder" vblex pri p3 pl
@@ -588,13 +588,13 @@
 "<grave>"
 	"grave" adj m sg
 "<qu’>"
-	"que" adv enon SELECT:270
+	"que" adv enon
 "<ei>"
 	"estar" vbser pri p3 sg
 "<d’>"
 	"de" pr
 "<amalgamar>"
-	"amalgamar" vblex inf SELECT:352
+	"amalgamar" vblex inf
 "<lo>"
 	"lo" det def m sg
 "<nazisme>"
@@ -655,15 +655,15 @@
 "<com>"
 	"com" cnjadv
 "<un>"
-	"un" det ind m sg SELECT:392
+	"un" det ind m sg
 "<desvolopament>"
 	"desvolopament" n m sg
 "<normau>"
-	"normal" adj m sg SELECT:402
+	"normal" adj m sg
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<l’>"
-	"lo" det def mf sg SELECT:400
+	"lo" det def mf sg
 "<istòria>"
 	"istòria" n f sg
 "<alemanda>"
@@ -681,14 +681,14 @@
 "<planham>"
 	"plànher" vblex imp p1 pl
 "<pas>"
-	"pas" adv SELECT:205
+	"pas" adv
 "<tròp>"
 	"tròp" adv
 "<:>"
 	":" sent
 
 "<qu’>"
-	"que" adv enon SELECT:270
+	"que" adv enon
 "<ei>"
 	"estar" vbser pri p3 sg
 "<rassegurant>"
@@ -713,11 +713,11 @@
 "<«>"
 	"«" lpar
 "<Qu’>"
-	"que" adv enon SELECT:270
+	"que" adv enon
 "<ei>"
 	"estar" vbser pri p3 sg
 "<plan>"
-	"plan" preadv SELECT:208
+	"plan" preadv
 "<evident>"
 	"evident" adj m sg
 "<que>"
@@ -727,13 +727,13 @@
 "<nacionau-socialisme>"
 	"nacionau-socialisme" n m sg
 "<n’>"
-	"ne" adv enon SELECT:270
+	"ne" adv enon
 "<ei>"
 	"estar" vbser pri p3 sg
 "<pas>"
-	"pas" adv SELECT:205
+	"pas" adv
 "<un>"
-	"un" det ind m sg SELECT:392
+	"un" det ind m sg
 "<simple>"
 	"simple" adj m sg
 "<accident>"
@@ -745,7 +745,7 @@
 "<evolucion>"
 	"evolucion" n f sg
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<l’>"
 	"lo" det def mf sg
 "<Alemanha>"
@@ -760,23 +760,23 @@
 "<politica>"
 	"politica" n f sg
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<conquistas>"
 	"conquista" n f pl
 "<qu’>"
-	"que" adv enon REMOVE:264
+	"que" adv enon
 "<esperlonga>"
 	"esperlongar" vblex pri p3 sg
 "<e>"
 	"e" cnjcoo
 "<que>"
-	"que" adv enon SELECT:270
+	"que" adv enon
 "<realiza>"
 	"realizar" vblex pri p3 sg
 "<los>"
 	"lo" det def m pl
 "<projèctes>"
-	"projècte" n m pl SELECT:370
+	"projècte" n m pl
 "<deu>"
 	"de" pr
 		"lo" det def m sg
@@ -795,13 +795,13 @@
 
 
 "<E>"
-	"e" cnjcoo SELECT:317
+	"e" cnjcoo
 "<n’>"
-	"ne" adv enon SELECT:270
+	"ne" adv enon
 "<ei>"
 	"estar" vbser pri p3 sg
 "<pas>"
-	"pas" adv SELECT:205
+	"pas" adv
 "<Hitler>"
 	"Hitler" np cog mf sp
 "<qui>"
@@ -839,7 +839,7 @@
 "<istorian>"
 	"istorian" n m sg
 "<que>"
-	"que" adv enon REMOVE:264
+	"que" adv enon
 "<pòt>"
 	"poder" vbmod pri p3 sg
 "<donc>"
@@ -851,7 +851,7 @@
 "<tradicion>"
 	"tradicion" n f sg
 "<intellectuau>"
-	"intellectual" adj f sg SELECT:402
+	"intellectual" adj f sg
 "<dont>"
 	"dont" rel mf sp
 "<lo>"
@@ -859,10 +859,10 @@
 "<hitlerisme>"
 	"hitlerisme" n m sg
 "<e’s>"
-	"e" adv enon REMOVE:259
+	"e" adv enon
 		"se" prn pro ref p3 mf sp
 "<pòt>"
-	"poder" vbmod pri p3 sg SELECT:475
+	"poder" vbmod pri p3 sg
 "<reclamar>"
 	"reclamar" vblex inf
 "<.>"
@@ -904,15 +904,15 @@
 "<temptacion>"
 	"temptacion" n f sg
 "<qu’>"
-	"que" adv enon SELECT:270
+	"que" adv enon
 "<ei>"
 	"estar" vbser pri p3 sg
 "<grana>"
 	"gran" adj f sg
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<descobrir>"
-	"descobrir" vblex inf SELECT:352
+	"descobrir" vblex inf
 "<,>"
 	"," cm
 "<en>"
@@ -920,13 +920,13 @@
 "<tot>"
 	"tot" det ind m sg
 "<pensaire>"
-	"pensaire" n m sg REMOVE:333
+	"pensaire" n m sg
 "<,>"
 	"," cm
 "<un>"
-	"un" det ind m sg SELECT:392
+	"un" det ind m sg
 "<aliat>"
-	"aliat" n m sg SELECT:394
+	"aliat" n m sg
 "<clandestin>"
 	"clandestin" adj m sg
 "<deu>"
@@ -939,7 +939,7 @@
 "<hens>"
 	"hens" pr
 "<tota>"
-	"tot" det ind f sg SELECT:392
+	"tot" det ind f sg
 "<idea>"
 	"idea" n f sg
 "<dangèrs>"
@@ -955,7 +955,7 @@
 "<progrès>"
 	"progrès" n m sg
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<l’>"
 	"lo" det def mf sg
 "<istòria>"
@@ -967,7 +967,7 @@
 "<e>"
 	"e" cnjcoo
 "<qui>"
-	"qui" rel mf sp REMOVE:321
+	"qui" rel mf sp
 "<ﬁn ﬁnala>"
 	"ﬁn ﬁnala" adv
 "<pareishen>"
@@ -988,19 +988,19 @@
 
 
 "<Aquera>"
-	"aqueth" det dem f sg SELECT:400
+	"aqueth" det dem f sg
 "<sospeccion>"
 	"sospeccion" n f sg
 "<sistematica>"
 	"sistematic" adj f sg
 "<qu’>"
-	"que" adv enon REMOVE:264
+	"que" adv enon
 "<amia>"
 	"amiar" vblex pri p3 sg
 "<a>"
-	"a" pr SELECT:475
+	"a" pr
 "<representar>"
-	"representar" vblex inf SELECT:353
+	"representar" vblex inf
 "<lo>"
 	"lo" det def m sg
 "<nazisme>"
@@ -1014,7 +1014,7 @@
 "<necessari>"
 	"necessari" adj m sg
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<tota>"
 	"tot" predet f sg
 "<l’>"
@@ -1022,9 +1022,9 @@
 "<evolucion>"
 	"evolucion" n f sg
 "<espirituau>"
-	"espiritual" adj f sg SELECT:402
+	"espiritual" adj f sg
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<l’>"
 	"lo" det def mf sg
 "<Alemanha>"
@@ -1035,13 +1035,13 @@
 
 
 "<E>"
-	"e" cnjcoo SELECT:317
+	"e" cnjcoo
 "<aquera>"
 	"aqueth" det dem f sg
 "<vista>"
 	"vista" n f sg
 "<qu’>"
-	"que" adv enon SELECT:270
+	"que" adv enon
 "<ei>"
 	"estar" vbser pri p3 sg
 "<autan>"
@@ -1072,13 +1072,13 @@
 "<hitlerisme>"
 	"hitlerisme" n m sg
 "<ua>"
-	"un" det ind f sg SELECT:392
+	"un" det ind f sg
 "<parentèsi>"
 	"parentèsi" n f sg
 "<hens>"
 	"hens" pr
 "<l’>"
-	"lo" det def mf sg SELECT:400
+	"lo" det def mf sg
 "<istòria>"
 	"istòria" n f sg
 "<alemanda>"
@@ -1122,11 +1122,11 @@
 "<per escàs>"
 	"per escàs" adv
 "<ua>"
-	"un" det ind f sg SELECT:392
+	"un" det ind f sg
 "<dictatura>"
 	"dictatura" n f sg
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<tipe>"
 	"tipe" n m sg
 "<analòg>"
@@ -1137,9 +1137,9 @@
 "<nacionau-socialisme>"
 	"nacionau-socialisme" n m sg
 "<e>"
-	"e" adv enon REMOVE:259
+	"e" adv enon
 "<s’>"
-	"se" prn pro ref p3 mf sp SELECT:514
+	"se" prn pro ref p3 mf sp
 "<èra>"
 	"estar" vbser pii p3 sg
 "<installada>"
@@ -1155,20 +1155,20 @@
 "<guaire>"
 	"güaire" adv
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<pena>"
 	"pena" n f sg
 "<qu’>"
-	"que" adv enon SELECT:270
+	"que" adv enon
 "<averén>"
-	"aver" vbhaver cni p3 pl SELECT:432
+	"aver" vbhaver cni p3 pl
 "<podut>"
 	"poder" vbmod pp m sg
 "<trobà’u>"
 	"trobar" vblex inf
 		"lo" prn enc p3 m sg
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<la>"
 	"lo" det def f sg
 "<medisha>"
@@ -1176,11 +1176,11 @@
 "<manièra>"
 	"manièra" n f sg
 "<ua>"
-	"un" det ind f sg SELECT:392
+	"un" det ind f sg
 "<ascendéncia>"
 	"ascendéncia" n f sg
 "<espirituau>"
-	"espiritual" adj f sg SELECT:402
+	"espiritual" adj f sg
 "<hens>"
 	"hens" pr
 "<lo>"
@@ -1188,13 +1188,13 @@
 "<nacionalisme>"
 	"nacionalisme" n m sg
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<Barrès>"
 	"Barrès" np cog mf sp
 "<o>"
 	"o" cnjcoo
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<Maurras>"
 	"Maurras" np cog mf sp
 "<,>"
@@ -1204,7 +1204,7 @@
 "<racisme>"
 	"racisme" n m sg
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<Gobineau>"
 	"Gobineau" np cog mf sp
 "<,>"
@@ -1214,7 +1214,7 @@
 "<antisemitisme>"
 	"antisemitisme" n m sg
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<Drumont>"
 	"Drumont" np cog mf sp
 "<,>"
@@ -1222,7 +1222,7 @@
 "<senon>"
 	"senon" cnjcoo
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<Proudhon>"
 	"Proudhon" np cog mf sp
 "<,>"
@@ -1232,13 +1232,13 @@
 "<doctrina>"
 	"doctrina" n f sg
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<la>"
 	"lo" det def f sg
 "<violéncia>"
 	"violéncia" n f sg
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<Georges>"
 	"Georges" np ant m sg
 "<Sorel>"
@@ -1259,11 +1259,11 @@
 "<Sorel>"
 	"Sorel" np cog mf sp
 "<que>"
-	"que" adv enon SELECT:270
+	"que" adv enon
 "<den>"
 	"dar" vblex ifi p3 pl
 "<mei d’un>"
-	"mei d'un" det ind m sg SELECT:392
+	"mei d'un" det ind m sg
 "<argument>"
 	"argument" n m sg
 "<aus>"
@@ -1289,7 +1289,7 @@
 "<,>"
 	"," cm
 "<las>"
-	"lo" det def f pl SELECT:400
+	"lo" det def f pl
 "<tèsis>"
 	"tèsi" n f pl
 "<màgers>"
@@ -1302,7 +1302,7 @@
 "<a>"
 	"a" pr
 "<un>"
-	"un" det ind m sg SELECT:393
+	"un" det ind m sg
 "<aute>"
 	"aute" adj ind m sg
 "<estrangèr>"
@@ -1310,7 +1310,7 @@
 "<,>"
 	"," cm
 "<Houston>"
-	"Houston" np ant m sg SELECT:576 SELECT:579
+	"Houston" np ant m sg
 "<Stewart>"
 	"Stewart" np cog mf sp
 "<Chamberlain>"
@@ -1321,7 +1321,7 @@
 
 
 "<De>"
-	"de" pr SELECT:175
+	"de" pr
 "<manièra>"
 	"manièra" n f sg
 "<invèrsa>"
@@ -1329,7 +1329,7 @@
 "<,>"
 	"," cm
 "<qu’>"
-	"que" adv enon SELECT:270
+	"que" adv enon
 "<existeish>"
 	"existir" vblex pri p3 sg
 "<en>"
@@ -1349,7 +1349,7 @@
 "<,>"
 	"," cm
 "<ua>"
-	"un" det ind f sg SELECT:393
+	"un" det ind f sg
 "<auta>"
 	"aute" adj ind f sg
 "<tradicion>"
@@ -1379,15 +1379,15 @@
 "<seré>"
 	"estar" vbser cni p3 sg
 "<estat>"
-	"estar" vbser pp m sg SELECT:488
+	"estar" vbser pp m sg
 "<possible>"
 	"possible" adj m sg
 "<sovent>"
 	"sovent" adv
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<conjurar>"
-	"conjurar" vblex inf SELECT:352
+	"conjurar" vblex inf
 "<e de>"
 	"e" cnjcoo
 		"de" pr
@@ -1395,19 +1395,19 @@
 	"desviar" vblex inf
  — 
 "<qu’>"
-	"que" adv enon REMOVE:262
+	"que" adv enon
 "<explica>"
 	"explicar" vblex pri p3 sg
 "<perqué>"
-	"perqué" adv itg REMOVE:303
+	"perqué" adv itg
 "<ua>"
-	"un" det ind f sg SELECT:392
+	"un" det ind f sg
 "<dictatura>"
 	"dictatura" n f sg
 "<e>"
-	"e" adv enon REMOVE:259
+	"e" adv enon
 "<s’>"
-	"se" prn pro ref p3 mf sp SELECT:514
+	"se" prn pro ref p3 mf sp
 "<installè>"
 	"installar" vblex ifi p3 sg
 "<en>"
@@ -1420,11 +1420,11 @@
 
 
 "<Ne>"
-	"ne" adv enon SELECT:270
+	"ne" adv enon
 "<hè>"
-	"har" vblex pri p3 sg SELECT:206
+	"har" vblex pri p3 sg
 "<pas>"
-	"pas" adv SELECT:205
+	"pas" adv
 "<compréner>"
 	"compréner" vblex inf
 "<la>"
@@ -1453,11 +1453,11 @@
 "<,>"
 	"," cm
 "<que>"
-	"que" cnjsub REMOVE:499
+	"que" cnjsub
 "<cau>"
-	"caler" vbmod pri p3 sg SELECT:475
+	"caler" vbmod pri p3 sg
 "<har>"
-	"har" vblex inf SELECT:474
+	"har" vblex inf
 "<interviéner>"
 	"interviéner" vblex inf
 "<l’>"
@@ -1476,7 +1476,7 @@
 "<,>"
 	"," cm
 "<qu’>"
-	"que" adv enon SELECT:270
+	"que" adv enon
 "<estó>"
 	"estar" vbser ifi p3 sg
 "<la>"
@@ -1495,7 +1495,7 @@
 
 
 "<Qu’>"
-	"que" adv enon SELECT:270
+	"que" adv enon
 "<imaginam>"
 	"imaginar" vblex pri p1 pl
 "<plan>"
@@ -1506,12 +1506,12 @@
 	"dab" pr
 "<von Schleicher>"
 	"von Schleicher" np cog mf sp
-"<>"
-	"" lpar
+"<[>"
+	"[" lpar
 "<un>"
-	"un" det ind m sg SELECT:392
+	"un" det ind m sg
 "<generau>"
-	"general" n m sg SELECT:394
+	"general" n m sg
 "<,>"
 	"," cm
 "<n>"
@@ -1538,8 +1538,8 @@
 "<.>"
 	"." sent
 
-"<>"
-	"" rpar
+"<]>"
+	"]" rpar
 "<o>"
 	"o" cnjcoo
 "<medish>"
@@ -1548,14 +1548,14 @@
 	"Gregor" np ant m sg
 "<Strasser>"
 	"Strasser" np cog mf sp
-"<>"
-	"" lpar
+"<[>"
+	"[" lpar
 "<un>"
-	"un" det ind m sg SELECT:392
+	"un" det ind m sg
 "<gavidaire>"
 	"gavidaire" n m sg
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<las>"
 	"lo" det def f pl
 "<S.A.>"
@@ -1566,12 +1566,12 @@
 "<n.d.l.r.>"
 	"n.d.l.r." adv
 
-"<>"
-	"" rpar
+"<]>"
+	"]" rpar
 "<,>"
 	"," cm
 "<ua>"
-	"un"
+	"un" det ind f sg
 "<Alemanha>"
 	"Alemanha" np top f sg
 "<guerrèra>"
@@ -1580,8 +1580,8 @@
 	"e" cnjcoo
 "<arroganta>"
 	"arrogant" adj f sg
-"<>"
-	"" sent
+"<;>"
+	";" sent
 "<non>"
 	"non" adv
 "<aqueth>"
@@ -1591,7 +1591,7 @@
 "<e>"
 	"e" cnjcoo
 "<aquera>"
-	"aqueth" det dem f sg REMOVE:519
+	"aqueth" det dem f sg
 "<crudeutat>"
 	"crudeutat" n f sg
 "<.>"
@@ -1606,13 +1606,13 @@
 "<realisme>"
 	"realisme" n m sg
 "<ne>"
-	"ne" adv enon SELECT:270
+	"ne" adv enon
 "<sufeish>"
 	"sufir" vblex pri p3 sg
 "<pas>"
-	"pas" adv SELECT:205
+	"pas" adv
 "<a>"
-	"a" pr REMOVE:345
+	"a" pr
 "<justiﬁcar>"
 	"justiﬁcar" vblex inf
 "<la>"
@@ -1620,7 +1620,7 @@
 "<politica>"
 	"politica" n f sg
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<Hitler>"
 	"Hitler" np cog mf sp
 "<:>"
@@ -1635,7 +1635,7 @@
 "<tostemps>"
 	"tostemps" adv
 "<un>"
-	"un" det ind m sg SELECT:392
+	"un" det ind m sg
 "<element>"
 	"element" n m sg
 "<desrasonable>"
@@ -1646,13 +1646,13 @@
 "<)>"
 	")" rpar
 "<Que>"
-	"que" adv enon SELECT:270
+	"que" adv enon
 "<podem>"
-	"poder" vbmod pri p1 pl SELECT:475
+	"poder" vbmod pri p1 pl
 "<díser>"
-	"díser" vblex inf SELECT:474
+	"díser" vblex inf
 "<qu’>"
-	"que" cnjsub SELECT:492
+	"que" cnjsub
 "<èra>"
 	"estar" vbser pii p3 sg
 "<hòu>"
@@ -1671,19 +1671,19 @@
 "<crisis>"
 	"crisi" n f pl
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<nèrvis>"
 	"nèrvi" n m pl
 "<ni>"
 	"ni" cnjcoo
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<las soas>"
 	"lo son" det pos f pl
 "<malícias>"
 	"malícia" n f pl
 "<tan>"
-	"tan" preadv REMOVE:411
+	"tan" preadv
 "<temudas>"
 	"témer" vblex pp f pl
 "<,>"
@@ -1700,7 +1700,7 @@
 "<absurd>"
 	"absurde" adj m sg
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<la soa>"
 	"lo son" det pos f sg
 "<accion>"
@@ -1717,7 +1717,7 @@
 "<bons>"
 	"bon" adj m pl
 "<generaus>"
-	"general" n m pl SELECT:370
+	"general" n m pl
 "<e>"
 	"e" cnjcoo
 "<los>"
@@ -1750,7 +1750,7 @@
 "<balhar>"
 	"balhar" vblex inf
 "<un>"
-	"un" det ind mf pl SELECT:392
+	"un" det ind mf pl
 "<sens>"
 	"sens" n m sg
 "<aus sons>"
@@ -1761,17 +1761,17 @@
 "<mei>"
 	"mei" adv
 "<dangerós>"
-	"dangerós" adj m pl SELECT:378
+	"dangerós" adj m pl
 "<,>"
 	"," cm
 "<qu’>"
-	"que" adv enon REMOVE:267
+	"que" adv enon
 "<ei>"
 	"estar" vbser pri p3 sg
 "<probable>"
 	"probable" adj m sg
 "<que>"
-	"que" cnjsub SELECT:493
+	"que" cnjsub
 "<lo son>"
 	"lo son" det pos m sg
 "<fracàs>"
@@ -1790,7 +1790,7 @@
 "<Mes>"
 	"mes" cnjcoo
 "<que>"
-	"que" adv enon SELECT:270
+	"que" adv enon
 "<demorè>"
 	"demorar" vblex ifi p3 sg
 "<au>"
@@ -1812,11 +1812,11 @@
 "<a>"
 	"a" pr
 "<las>"
-	"lo" det def f pl SELECT:641
+	"lo" det def f pl
 "<victimas>"
 	"victima" n f pl
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<la>"
 	"lo" det def f sg
 "<guèrra>"
@@ -1824,11 +1824,11 @@
 "<los>"
 	"lo" det def m pl
 "<qui>"
-	"qui" rel mf sp SELECT:323
+	"qui" rel mf sp
 "<morín>"
 	"morir" vblex ifi p3 pl
 "<hens>"
-	"hens" pr SELECT:374
+	"hens" pr
 "<los>"
 	"lo" det def m pl
 "<camps>"
@@ -1836,18 +1836,18 @@
 "<,>"
 	"," cm
 "<que’s>"
-	"que" adv enon SELECT:270
+	"que" adv enon
 		"se" prn pro ref p3 mf sp
 "<pòt>"
-	"poder" vbmod pri p3 sg SELECT:475
+	"poder" vbmod pri p3 sg
 "<díser>"
-	"díser" vblex inf SELECT:474
+	"díser" vblex inf
 "<que>"
 	"que" cnjsub
 "<mei>"
 	"mei" adv
 "<de>"
-	"de" pr SELECT:175
+	"de" pr
 "<vint>"
 	"vint" num mf sp
 "<milions>"
@@ -1859,7 +1859,7 @@
 "<perín>"
 	"perir" vblex ifi p3 pl
 "<per>"
-	"per" pr SELECT:172
+	"per" pr
 "<la>"
 	"lo" det def f sg
 "<volontat>"
@@ -1867,7 +1867,7 @@
 "<d’>"
 	"de" pr
 "<un>"
-	"un" det ind m sg SELECT:392
+	"un" det ind m sg
 "<sol>"
 	"sol" adj m sg
 "<.>"

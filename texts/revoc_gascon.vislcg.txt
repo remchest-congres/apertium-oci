@@ -11,7 +11,7 @@
 "<projècte>"
 	"projècte" n m sg
 "<ReVOc>"
-	"*ReVOc"
+	"ReVOc"	np al m sg
 "<de>"
 	"de" pr
 "<la>"

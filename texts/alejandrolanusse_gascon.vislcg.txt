@@ -3,7 +3,7 @@
 "<Agustín>"
 	"Agustín" np ant m sg
 "<Lanusse>"
-	"Lanusse"np cog mf sp
+	"Lanusse" np cog mf sp
 "<Gelly>"
 	"Gelly" np cog mf sp
 "<(>"
@@ -106,7 +106,7 @@
 "<d'>"
 	"de" pr
 "<un>"
-	"un" det ind m sg SELECT:383
+	"un" det ind m sg
 "<biais>"
 	"biais" n m sg
 "<anticonstitucionau>"
@@ -292,7 +292,7 @@
 
 
 "<Lanusse>"
-	"Lanusse"np cog mf sp
+	"Lanusse" np cog mf sp
 "<qu'>"
 	"que" adv enon
 "<entrè>"
@@ -479,10 +479,8 @@
 	"e" cnjcoo
 "<en>"
 	"en" pr
-"<Río>"
-	"Río" np cog mf sp
-"<Gallegos>"
-	"Gallegos" np cog mf sp
+"<Río Gallegos>"
+	"Río" np top m sg
 "<dinc a>"
 	"dinc a" pr
 "<la soa>"
@@ -526,7 +524,7 @@
 "<la>"
 	"lo" det def f sg
 "<Revolución Libertadora>"
-	"Revolución" np al f sg
+	"Revolución Libertadora" np al f sg
 "<,>"
 	"," cm
 "<lo>"
@@ -586,7 +584,7 @@
 "<Grenadiers>"
 	"Grenadiers" n m pl
 "<a Chivau>"
-	"a chivau" adv
+	"a chivau" adj mf sp
 "<(>"
 	"(" lpar
 "<escòrta>"
@@ -638,7 +636,7 @@
 "<de>"
 	"de" pr
 "<Pie>"
-	"Pie" np cog mf sp
+	"Pie" np ant m sg
 "<XII>"
 	"XII" num mf sp
 "<.>"
@@ -692,7 +690,7 @@
 "<José María>"
 	"José María" np ant m sg
 "<Guido>"
-	"Guido" np ant m sg
+	"Guido" np cog mf sp
 "<(>"
 	"(" lpar
 "<1962>"
@@ -711,7 +709,7 @@
 "<los>"
 	"lo" det def m pl
 "<Azul>"
-	"Azul" np al m sg
+	"Azul" np al m sp
 "<(>"
 	"(" lpar
 "<partisans>"
@@ -721,7 +719,7 @@
 "<un>"
 	"un" n m sg
 "<viste>"
-	"viste" adv
+	"viste" adj mf sg
 "<restabliment>"
 	"arrestabliment" n m sg
 "<de>"
@@ -798,7 +796,7 @@
 "<e>"
 	"e" cnjcoo
 "<aperat>"
-	"aperat" adj m sg
+	"aperat" vblex pp m sg
 "<Revolucion>"
 	"arrevolucion" n f sg
 "<Argentina>"
@@ -916,7 +914,7 @@
 	"arron de" pr
 		"lo" det def m sg
 "<Cordobazo>"
-	"Cordobazo" np top m sg
+	"Cordobazo" n m sg
 "<,>"
 	"," cm
 "<que'u>"
@@ -985,7 +983,7 @@
 "<dont>"
 	"dont" rel mf sp
 "<Lanusse>"
-	"Lanusse"np cog mf sp
+	"Lanusse" np cog mf sp
 "<e>"
 	"e" adv enon
 "<hasèva>"
@@ -1057,9 +1055,10 @@
 "<per>"
 	"per" pr
 "<Lanusse>"
-	"Lanusse"np cog mf sp
+	"Lanusse" np cog mf sp
 "<en març>"
-	"en març" adv
+	"en" pr
+		"març" n m sg
 "<de>"
 	"de" pr
 "<1971>"
@@ -1096,9 +1095,9 @@
 "<,>"
 	"," cm
 "<en bèth>"
-	"en bèth" adv
+	"en bèth" pr
 "<restablir>"
-	"arrestablir" vblex inf
+	"arrestablir" vblex ger
 "<las>"
 	"lo" det def f pl
 "<relacions>"
@@ -1128,9 +1127,9 @@
 "<e>"
 	"e" cnjcoo
 "<en bèth>"
-	"en bèth" adv
+	"en bèth" pr
 "<envitar>"
-	"envitar" vblex inf
+	"envitar" vblex ger
 "<Perón>"
 	"Perón" np cog mf sp
 "<a>"
@@ -1237,11 +1236,11 @@
 "<l'>"
 	"lo" det def mf sg
 "<auto>"
-	"auto" n f sg
+	"auto" adv
 "<nomada>"
 	"nomar" vblex pp f sg
 "<Revolución Argentina>"
-	"Revolución" np al f sg
+	"Revolución Argentina" np al f sg
 "<.>"
 	"." sent
 
@@ -1264,7 +1263,7 @@
 "<,>"
 	"," cm
 "<Lanusse>"
-	"Lanusse"np cog mf sp
+	"Lanusse" np cog mf sp
 "<que>"
 	"que" adv enon
 "<nomè>"
@@ -1352,7 +1351,8 @@
 
 
 "<En abriu>"
-	"en abriu" adv
+	"en" pr
+		"abriu" n m sg
 "<de>"
 	"de" pr
 "<1971>"
@@ -1366,17 +1366,18 @@
 "<qu'>"
 	"que" adv enon
 "<anonciè que>"
-	"anonciar que" vblex ifi p3 sg
+	"anonciar" vblex ifi p3 sg
+		"que" cnjsub
 "<los>"
 	"lo" det def m pl
 "<partits>"
 	"partit" n m pl
-"<politica>"
-	"politic" adj f sg
+"<politics>"
+	"politic" adj m pl
 "<non>"
 	"non" adv enon
 "<serèn>"
-	"serar" vblex ifi p3 pl
+	"serar" vblex fti p3 pl
 "<pas>"
 	"pas" adv
 "<mei>"
@@ -1410,7 +1411,8 @@
 "<politic>"
 	"politic" adj m sg
 "<cada còp>"
-	"cada còp" adv
+	"cada" det ind mf sg
+		"còp" n f sg
 "<mei>"
 	"mei" adv
 "<violent>"
@@ -1444,7 +1446,7 @@
 "<,>"
 	"," cm
 "<Lanusse>"
-	"Lanusse"np cog mf sp
+	"Lanusse" np cog mf sp
 "<se>"
 	"se" prn pro ref p3 mf sp
 "<prometó>"
@@ -1459,8 +1461,8 @@
 	"en" pr
 "<1973>"
 	"1973" num
-"<>"
-	"" sent
+"<;>"
+	";" sent
 "<Héctor>"
 	"Héctor" np ant m sg
 "<José>"
@@ -1551,7 +1553,7 @@
 "<,>"
 	"," cm
 "<Lanusse>"
-	"Lanusse"np cog mf sp
+	"Lanusse" np cog mf sp
 "<que's>"
 	"que" adv enon
 		"se" prn pro ref p3 mf sp
@@ -1562,6 +1564,3 @@
 
 "<.>"
 	"." sent
-
-
-

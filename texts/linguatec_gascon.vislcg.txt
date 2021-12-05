@@ -5,18 +5,18 @@
 "<19>"
 	"19" num
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<seteme>"
 	"seteme" n m sg
 "<passat>"
 	"passat" adj m sg
 "<que's>"
-	"que" adv enon SELECT:284
+	"que" adv enon
 		"se" prn pro ref p3 mf sp
 "<tienó>"
 	"tiéner" vblex ifi p3 sg
 "<a>"
-	"a" pr SELECT:270
+	"a" pr
 "<Tolosa>"
 	"Tolosa" np top f sg
 "<la>"
@@ -42,7 +42,7 @@
 "<Programa>"
 	"programa" n m sg
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<Cooperacion>"
 	"cooperacion" n f sg
 "<Territoriau>"
@@ -51,7 +51,7 @@
 	"Espanha" np top f sg
 -
 "<França>"
-	"França" np top f sg SELECT:599
+	"França" np top f sg
 -
 "<Andòrra>"
 	"Andòrra" np top f sg
@@ -74,7 +74,7 @@
 	"." sent
 
 "<Que>"
-	"que" adv enon SELECT:295
+	"que" adv enon
 "<i>"
 	"i" prn pro adv
 "<participèn>"
@@ -87,7 +87,7 @@
 	"de" pr
 		"lo" det def m pl
 "<sòcis>"
-	"sòci" n m pl SELECT:455
+	"sòci" n m pl
 "<:>"
 	":" sent
 
@@ -154,11 +154,11 @@
 "<lo>"
 	"lo" det def m sg
 "<Centre>"
-	"centre" n m sg SELECT:571
+	"centre" n m sg
 "<Nacionau>"
 	"nacionau" adj mf sg
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<Recèrca>"
 	"recèrca" n f sg
 "<Scientifica>"
@@ -177,19 +177,19 @@
 "<locaus>"
 	"local" n m pl
 "<lors>"
-	"lor" adj pos m pl SELECT:399
+	"lor" adj pos m pl
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<l'>"
 	"lo" det def mf sg
 "<Universitat>"
 	"universitat" n f sg
 "<Joan>"
-	"Joan" np ant m sg SELECT:571
+	"Joan" np ant m sg
 "<Jaurès>"
 	"Jaurès" np cog mf sp
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<Tolosa>"
 	"Tolosa" np top f sg
 "<(>"
@@ -197,7 +197,7 @@
 "<lo>"
 	"lo" det def m sg
 "<Miralh>"
-	"Miralh" np top m sg SELECT:571
+	"Miralh" np top m sg
 "<)>"
 	")" rpar
 "<.>"
@@ -210,15 +210,15 @@
 "<amassats>"
 	"amassat" n m pl
 "<que>"
-	"que" adv enon SELECT:284
+	"que" adv enon
 "<realizèn>"
 	"realizar" vblex ifi p3 pl
 "<ua>"
-	"un" det ind f sg SELECT:419
+	"un" det ind f sg
 "<evaluacion>"
 	"evaluacion" n f sg
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<l'>"
 	"lo" det def mf sg
 "<avançada>"
@@ -229,7 +229,7 @@
 "<diferents>"
 	"diferent" adj m pl
 "<projèctes>"
-	"projècte" n m pl SELECT:397
+	"projècte" n m pl
 "<aviats>"
 	"aviat" adj m pl
 "<en>"
@@ -241,11 +241,11 @@
 "<e>"
 	"e" cnjcoo
 "<que>"
-	"que" adv enon SELECT:284
+	"que" adv enon
 "<deurén>"
-	"dever" vbmod cni p3 pl SELECT:503
+	"dever" vbmod cni p3 pl
 "<estar>"
-	"estar" vbser ger REMOVE:388
+	"estar" vbser ger
 "<acabats>"
 	"acabar" vblex pp m pl
 "<en>"
@@ -267,15 +267,15 @@
 "<tribalhs>"
 	"tribalh" n m pl
 "<qu'>"
-	"que" adv enon SELECT:284
+	"que" adv enon
 "<avançan>"
 	"avançar" vblex pri p3 pl
 "<a>"
 	"a" pr
 "<un>"
-	"un" det ind m sg SELECT:419
+	"un" det ind m sg
 "<ritme>"
-	"ritme" n m sg SELECT:421
+	"ritme" n m sg
 "<satisfasent>"
 	"satisfasent" adj m sg
 "<.>"
@@ -284,17 +284,17 @@
 
 
 "<Ua>"
-	"un" det ind f sg SELECT:419
+	"un" det ind f sg
 "<part>"
-	"part" n f sg SELECT:421
+	"part" n f sg
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<l'>"
 	"lo" det def mf sg
 "<amassada>"
 	"amassada" n f sg
 "<qu'>"
-	"que" adv enon SELECT:284
+	"que" adv enon
 "<estó>"
 	"estar" vbser ifi p3 sg
 "<dedicada>"
@@ -316,7 +316,7 @@
 "<ac>"
 	"ac" prn pro p3 nt
 "<har>"
-	"har" vblex inf SELECT:267
+	"har" vblex inf
 "<,>"
 	"," cm
 "<que>"
@@ -343,14 +343,14 @@
 
 
 "<Que's>"
-	"que" adv enon SELECT:284
+	"que" adv enon
 		"se" prn pro ref p3 mf sp
 "<presentèn>"
 	"presentar" vblex ifi p3 pl
 "<instruments>"
 	"instrument" n m pl
 "<divèrs>"
-	"divèrs" adj m pl SELECT:399
+	"divèrs" adj m pl
 "<:>"
 	":" sent
 
@@ -379,7 +379,7 @@
 "<e>"
 	"e" cnjcoo
 "<que's>"
-	"que" adv enon SELECT:284
+	"que" adv enon
 		"se" prn pro ref p3 mf sp
 "<considerè>"
 	"considerar" vblex ifi p3 sg
@@ -388,13 +388,13 @@
 "<hrèita>"
 	"hrèita" n f sg
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<generar>"
-	"generar" vblex inf SELECT:379
+	"generar" vblex inf
 "<eveniments>"
 	"eveniment" n m pl
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<comunicacion>"
 	"comunicacion" n f sg
 "<en>"
@@ -412,7 +412,7 @@
 "<obtiéner>"
 	"obtiéner" vblex inf
 "<un>"
-	"un" det ind m sg SELECT:419
+	"un" det ind m sg
 "<impacte>"
 	"impacte" n m sg
 "<comunicatiu>"

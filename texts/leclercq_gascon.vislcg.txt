@@ -82,7 +82,7 @@
 	"ensajar# de" vblex pri p2 pl
 ’
 "<vs>"
-	"*vs"
+	"vs" prn pro p2 mf pl
 "<díser>"
 	"dire" vblex inf
 "<qu’>"
@@ -496,7 +496,7 @@
 "<Atz>"
 	"aver" vblex pri p2 pl
 "<enveja>"
-;	"enveja" n f sg
+	"enveja" n f sg
 "<de>"
 	"de" pr
 "<cridar>"
@@ -604,7 +604,7 @@
 "<l’>"
 	"lo" det def mf sg
 "<ahar>"
-	"*ahar"
+	"ahar" vblex inf
 "<)>"
 	")" rpar
 "<e>"
@@ -666,7 +666,7 @@
 "<dents>"
 	"dent" n f pl
 "<que>"
-;	"que" cnjsub
+	"que" cnjsub
 "<l’>"
 	"lo" det def mf sg
 "<equipa>"
@@ -738,7 +738,7 @@
 "<véser>"
 	"veire" vblex inf
 "<que>"
-	"que" cnjsub SELECT:190
+	"que" cnjsub
 "<demoratz>"
 	"demorar" vblex pri p2 pl
 "<zen>"
@@ -826,7 +826,7 @@
 "<Passatz>"
 	"passar" vblex imp p2 pl
 "<lavetz>"
-	"alavetz"
+	"alavetz" adv
 
 
 "<a>"
@@ -897,7 +897,7 @@
 "<aquò>"
 	"aquò" prn tn p3 nt
 "<rai>"
-	"rai"
+	"rai" ij
 
 
 "<(>"
@@ -947,7 +947,7 @@
 	"sus" pr
 		"lo" det def m sg
 "<cap>"
-;	"cap" n m sg
+	"cap" n m sg
 "<uglan>"
 	"uglar" vblex pri p3 pl
 "<qu’>"
@@ -1216,7 +1216,7 @@
 "<malaisèr>"
 	"malaisèr" barb
 "<vos>"
-	"vos" prn pro p2 mf pl REMOVE:104
+	"vos" prn pro p2 mf pl
 "<gaha>"
 	"gahar" vblex pri p3 sg
 "<.>"
@@ -1320,7 +1320,7 @@
 "<Es>"
 	"èsser" vbser pri p3 sg
 "<drin>"
-	"drin" 
+	"drin" adv
 "<hastiau>"
 	"hastiau" adj m sg
 "<per>"
@@ -1418,7 +1418,7 @@
 	"lo" det def m sg
 "<shòrt>"
 	"shòrt" n m sg
- "<d’>"
+"<d’>"
 	"de" pr
 "<un>"
 	"un" det ind m sg 
@@ -1509,7 +1509,7 @@
 "<a>"
 	"a" pr
 "<eths>"
-	"eth" 
+	"prneth" prn tn p3 m pl
 "<.>"
 	"." sent
 

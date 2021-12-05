@@ -3,15 +3,15 @@
 "<antropològue>"
 	"antropològue" n m sg
 "<Daniel>"
-	"Daniel" np ant m sg SELECT:605
+	"Daniel" np ant m sg
 "<Fabre>"
 	"Fabre" np cog mf sp
 "<que>"
-	"que" adv enon REMOVE:279
+	"que" adv enon
 "<ns'>"
 	"nos" prn pro p1 mf pl
 "<a>"
-	"aver" vbhaver pri p3 sg SELECT:267 SELECT:460
+	"aver" vbhaver pri p3 sg
 "<quitats>"
 	"quitar" vblex pp m pl
 
@@ -31,7 +31,7 @@
 "<hèit>"
 	"har" vblex pp m sg
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<las soas>"
 	"lo son" det pos f pl
 "<tèrras>"
@@ -54,9 +54,9 @@
 "<perpetuau>"
 	"perpetuau" adj mf sg
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<las>"
-	"lo" det def f pl SELECT:427
+	"lo" det def f pl
 "<societats>"
 	"societat" n f pl
 "<ruraus>"
@@ -73,11 +73,11 @@
 "<,>"
 	"," cm
 "<que>"
-	"que" adv enon SELECT:284
+	"que" adv enon
 "<ns'>"
 	"nos" prn pro p1 mf pl
 "<a>"
-	"aver" vbhaver pri p3 sg SELECT:267 SELECT:460
+	"aver" vbhaver pri p3 sg
 "<quitats>"
 	"quitar" vblex pp m pl
 "<sobtament>"
@@ -93,7 +93,7 @@
 "<atge>"
 	"atge" n m sg
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<69>"
 	"69" num
 "<ans>"
@@ -110,7 +110,7 @@
 "<en>"
 	"en" pr
 "<las>"
-	"lo" det def f pl SELECT:427
+	"lo" det def f pl
 "<reivindicacions>"
 	"reivindicacion" n f pl
 "<culturaus>"
@@ -118,15 +118,15 @@
 "<occitanas>"
 	"occitan" adj f pl
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<las>"
-	"lo" det def f pl SELECT:666
+	"lo" det def f pl
 "<annadas>"
 	"annada" n f pl
 "<70>"
 	"70" num
 "<que>"
-	"que" adv enon SELECT:295
+	"que" adv enon
 "<l'>"
 	"lo" prn pro p3 m sg
 "<a>"
@@ -134,7 +134,7 @@
 "<permés>"
 	"perméter" vblex pp m sg
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<tornar>"
 	"tornar" vblex inf
 "<interrogar>"
@@ -161,9 +161,9 @@
 "<estructuralista>"
 	"estructuralista" adj mf sg
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<las>"
-	"lo" det def f pl SELECT:427
+	"lo" det def f pl
 "<practicas>"
 	"practica" n f pl
 "<sociaus>"
@@ -175,7 +175,7 @@
 "<perpausada>"
 	"perpausar" vblex pp f sg
 "<per>"
-	"per" pr SELECT:173
+	"per" pr
 "<Claude>"
 	"Claude" np ant m sg
 "<Lévi>"
@@ -189,27 +189,27 @@
 
 
 "<Las>"
-	"lo" det def f pl SELECT:427
+	"lo" det def f pl
 "<tèrras>"
-	"tèrra" n f pl SELECT:402
+	"tèrra" n f pl
 "<occitanas>"
 	"occitan" adj f pl
 "<que>"
-	"que" adv enon SELECT:284
+	"que" adv enon
 "<sortivan>"
 	"sortir" vblex pii p3 pl
 "<d'>"
 	"de" pr
 "<un>"
-	"un" det ind m sg SELECT:419
+	"un" det ind m sg
 "<som>"
-	"som" n m sg SELECT:421
+	"som" n m sg
 "<folcloric>"
 	"folcloric" adj m sg
 "<e>"
 	"e" cnjcoo
 "<que's>"
-	"que" adv enon SELECT:284
+	"que" adv enon
 		"se" prn pro ref p3 mf sp
 "<desvelhavan>"
 	"desvelhar" vblex pii p3 pl
@@ -219,9 +219,9 @@
 "<concèrt>"
 	"concèrt" n m sg
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<las>"
-	"lo" det def f pl SELECT:427
+	"lo" det def f pl
 "<culturas>"
 	"cultura" n f pl
 "<popularas>"
@@ -276,9 +276,9 @@
 "<)>"
 	")" rpar
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<las>"
-	"lo" det def f pl SELECT:427
+	"lo" det def f pl
 "<culturas>"
 	"cultura" n f pl
 "<perifericas>"
@@ -307,7 +307,7 @@
 
 
 "<De>"
-	"de" pr SELECT:176
+	"de" pr
 "<la>"
 	"lo" det def f sg
 "<tradicion>"
@@ -350,7 +350,7 @@
 "<,>"
 	"," cm
 "<las>"
-	"lo" det def f pl SELECT:427
+	"lo" det def f pl
 "<escrituras>"
 	"escritura" n f pl
 "<ordinàrias>"
@@ -358,7 +358,7 @@
 "<e>"
 	"e" cnjcoo
 "<las>"
-	"lo" det def f pl SELECT:427
+	"lo" det def f pl
 "<emocions>"
 	"emocion" n f pl
 "<patrimoniaus>"
@@ -366,15 +366,15 @@
 "<,>"
 	"," cm
 "<ua>"
-	"un" det ind f sg SELECT:419
+	"un" det ind f sg
 "<linha>"
-	"linha" n f sg SELECT:421
+	"linha" n f sg
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<fòrça>"
 	"fòrça" n f sg
 "<qu'>"
-	"que" adv enon SELECT:284
+	"que" adv enon
 "<apareish>"
 	"aparéisher" vblex pri p3 sg
 "<:>"
@@ -383,7 +383,7 @@
 "<la>"
 	"lo" det def f sg
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<l'>"
 	"lo" det def mf sg
 "<acte>"
@@ -393,7 +393,7 @@
 "<,>"
 	"," cm
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<l'>"
 	"lo" det def mf sg
 "<anonime>"
@@ -401,7 +401,7 @@
 "<com>"
 	"com" cnjadv
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<l'>"
 	"lo" det def mf sg
 "<artista>"
@@ -471,11 +471,11 @@
 "<,>"
 	"," cm
 "<Daniel>"
-	"Daniel" np ant m sg SELECT:605
+	"Daniel" np ant m sg
 "<Fabre>"
-	"Fabre" np cog mf sp SELECT:571
+	"Fabre" np cog mf sp
 "<qu'>"
-	"que" adv enon REMOVE:278
+	"que" adv enon
 "<estó>"
 	"estar" vbser ifi p3 sg
 "<tanben>"
@@ -483,7 +483,7 @@
 "<lo>"
 	"lo" det def m sg
 "<qui>"
-	"qui" rel mf sp SELECT:349
+	"qui" rel mf sp
 "<estructurè>"
 	"estructurar" vblex ifi p3 sg
 "<l'>"
@@ -517,21 +517,21 @@
 	"de" pr
 		"lo" det def m sg
 "<Centre>"
-	"centre" n m sg SELECT:571
+	"centre" n m sg
 "<d'>"
 	"de" pr
 "<antropologia>"
 	"antropologia" n f sg
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<las>"
-	"lo" det def f pl SELECT:427
+	"lo" det def f pl
 "<societats>"
 	"societat" n f pl
 "<ruraus>"
 	"rurau" adj mf pl
 "<a>"
-	"a" pr SELECT:270
+	"a" pr
 "<Tolosa>"
 	"Tolosa" np top f sg
 "<en>"
@@ -547,14 +547,14 @@
 "<lo>"
 	"lo" det def m sg
 "<Centre>"
-	"centre" n m sg SELECT:571
+	"centre" n m sg
 "<d'>"
 	"de" pr
 "<antropologia>"
 	"antropologia" n f sg
 "<de>"
-	"de" pr SELECT:176
-"<Tolosa>
+	"de" pr
+"<Tolosa>"
 	"Tolosa" np top f sg
 "<,>"
 	"," cm
@@ -575,13 +575,13 @@
 "<istòria>"
 	"istòria" n f sg
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<l'>"
 	"lo" det def mf sg
 "<institucion>"
 	"institucion" n f sg
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<la>"
 	"lo" det def f sg
 "<cultura>"
@@ -602,7 +602,7 @@
 
 
 "<Que>"
-	"que" adv enon SELECT:284
+	"que" adv enon
 "<participè>"
 	"participar" vblex ifi p3 sg
 "<tanben>"
@@ -622,7 +622,7 @@
 "<mesa en plaça>"
 	"mesa en plaça" n f sg
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<la>"
 	"lo" det def f sg
 "<Mission>"
@@ -640,7 +640,7 @@
 "<Ministèri>"
 	"ministèri" n m sg
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<la>"
 	"lo" det def f sg
 "<Cultura>"
@@ -669,7 +669,7 @@
 "<nacionaus>"
 	"nacionau" adj mf pl
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<recèrcas>"
 	"recèrca" n f pl
 "<e de>"
@@ -689,7 +689,7 @@
 
 
 "<Qu'>"
-	"que" adv enon SELECT:284
+	"que" adv enon
 "<estó>"
 	"estar" vbser ifi p3 sg
 "<tanben>"
@@ -700,11 +700,11 @@
 "<comitat>"
 	"comitat" n m sg
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<redaccion>"
 	"redaccion" n f sg
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<nombrosas>"
 	"nombrós" adj f pl
 "<revistas>"
@@ -733,21 +733,21 @@
 
 
 "<Qu'>"
-	"que" adv enon SELECT:284
+	"que" adv enon
 "<aviè>"
 	"aviar" vblex ifi p3 sg
 "<nombrós>"
-	"nombrós" adj m pl SELECT:403
+	"nombrós" adj m pl
 "<camps>"
 	"camp" n m pl
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<recèrcas>"
 	"recèrca" n f pl
 "<e>"
 	"e" cnjcoo
 "<que>"
-	"que" adv enon SELECT:284
+	"que" adv enon
 "<formè>"
 	"formar" vblex ifi p3 sg
 "<generacions>"
@@ -776,9 +776,9 @@
 "<n'>"
 	"ne" adv enon
 "<an>"
-	"aver" vblex pri p3 pl SELECT:207
+	"aver" vblex pri p3 pl
 "<pas>"
-	"pas" adv SELECT:206
+	"pas" adv
 "<mei>"
 	"mei" adv
 "<paur>"
@@ -786,9 +786,9 @@
 "<d'>"
 	"de" pr
 "<estudiar>"
-	"estudiar" vblex inf SELECT:379
+	"estudiar" vblex inf
 "<la lor>"
-	"le lor" det pos f sg SELECT:427
+	"le lor" det pos f sg
 "<pròpria>"
 	"pròpri" adj f sg
 "<cultura>"
@@ -804,7 +804,7 @@
 "<dita>"
 	"dit" adj f sg
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<periferia>"
 	"periferia" n f sg
 "<.>"
@@ -829,7 +829,7 @@
 "<ns'>"
 	"nos" prn pro p1 mf pl
 "<aver>"
-	"aver" vbhaver inf SELECT:267
+	"aver" vbhaver inf
 "<balhat>"
 	"balhar" vblex pp m sg
 "<aquera>"
@@ -839,7 +839,7 @@
 "<,>"
 	"," cm
 "<que'u>"
-	"que" adv enon SELECT:284
+	"que" adv enon
 		"lo" prn pro p3 m sg
 "<disem>"
 	"díser" vblex pri p1 pl
@@ -858,7 +858,7 @@
 "<son>"
 	"estar" vbser pri p3 pl
 "<las>"
-	"lo" det def f pl SELECT:666
+	"lo" det def f pl
 "<dolors>"
 	"dolor" n f pl
 "<(>"

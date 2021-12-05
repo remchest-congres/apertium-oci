@@ -1,0 +1,7995 @@
+"<Uranus>"
+	"Uranus" np top m sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<la>"
+	"lo" det def f sg
+"<setena>"
+	"seten" adj f sg
+"<planeta>"
+	"planeta" n f sg
+"<dau>"
+	"de" pr
+		"lo" det def m sg
+"<Sistèma>"
+	"sistèma" n m sg
+"<Solar>"
+	"solar" adj m sg
+"<per>"
+	"per" pr
+"<òrdre>"
+	"òrdre" n m sg
+"<de>"
+	"de" pr
+"<distància>"
+	"distància" n f sg
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<Soleu>"
+	"Soleu" n m sg
+"<après>"
+	"après" pr
+"<Saturne>"
+	"Saturne" np top m sg
+"<e>"
+	"e" cnjcoo
+"<avans>"
+	"avans" pr
+"<Neptun>"
+	"Neptun" np top m sg
+"<.>"
+	"." sent
+
+"<Es>"
+	"èsser" vbser pri p3 sg
+"<una>"
+	"un" det ind f sg
+"<planeta>"
+	"planeta" n f sg
+"<giganta>"
+	"gigant" adj f sg
+"<e>"
+	"e" cnjcoo
+"<gasosa>"
+	"gasós" adj f sg
+"<coma>"
+	"coma" adv
+"<Jupitèr>"
+	"Jupitèr" np top m sg
+"<,>"
+	"," cm
+"<Saturne>"
+	"Saturne" np top m sg
+"<e>"
+	"e" cnjcoo
+"<Neptun>"
+	"Neptun" np top m sg
+"<.>"
+	"." sent
+
+"<Tèn>"
+	"tenir" vblex pri p3 sg
+"<donc>"
+	"donc" cnjadv
+"<la>"
+	"lo" det def f sg
+"<tresena>"
+	"tresen" adj f sg
+"<talha>"
+	"talha" n f sg
+"<e>"
+	"e" cnjcoo
+"<la>"
+	"lo" det def f sg
+"<quatrena>"
+	"quatren" adj f sg
+"<massa>"
+	"massa" n f sg
+"<dau>"
+	"de" pr
+		"lo" det def m sg
+"<Sistèma>"
+	"sistèma" n m sg
+"<Solar>"
+	"solar" adj m sg
+"<.>"
+	"." sent
+
+"<Son>"
+	"son" det pos f sg
+"<atmosfèra>"
+	"atmosfèra" n f sg
+"<de>"
+	"de" pr
+"<color>"
+	"color" n f sg
+"<blava>"
+	"blau" adj f sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<fòrça>"
+	"fòrça" preadv
+"<espessa>"
+	"espés" adj f sg
+"<e>"
+	"e" cnjcoo
+"<es>"
+	"èsser" vbser pri p3 sg
+"<la>"
+	"lo" det def f sg
+"<pus>"
+	"pus" adv
+"<freja>"
+	"freg" adj f sg
+"<entre>"
+	"entre" pr
+"<lei>"
+	"lo" det def mf pl
+"<planetas>"
+	"planeta" n f pl
+"<.>"
+	"." sent
+
+"<De mai>"
+	"de mai" adv
+"<,>"
+	"," cm
+"<coma>"
+	"coma" adv
+"<leis>"
+	"lo" det def mf pl
+"<autrei>"
+	"autre" adj mf pl
+"<planetas>"
+	"planeta" n f pl
+"<gigantas>"
+	"gigant" adj f pl
+"<,>"
+	"," cm
+"<Uranus>"
+	"Uranus" np top m sg
+"<tèn>"
+	"tenir" vblex pri p3 sg
+"<un>"
+	"un" det ind m sg 
+"<sistèma>"
+	"sistèma" n m sg
+"<d'>"
+	"de" pr
+"<anèus>"
+	"anèl" n m pl
+"<.>"
+	"." sent
+
+"<Dins aquò>"
+	"dins aquò" adv
+"<,>"
+	"," cm
+"<sa>"
+	"son" det pos f sg
+"<caracteristica>"
+	"caracteristica" n f sg
+"<pus>"
+	"pus" adv
+"<espectaclosa>"
+	"espectaclós" adj f sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<son>"
+	"son" det pos m sg
+"<axe>"
+	"axe" n m sg
+"<de>"
+	"de" pr
+"<rotacion>"
+	"rotacion" n f sg
+"<clinat>"
+	"clinat" adj m sg
+"<de>"
+	"de" pr
+"<maniera>"
+	"maniera" n f sg
+"<quasi>"
+	"quasi" preadv
+"<parallèla>"
+	"parallèl" adj f sg
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<plan>"
+	"plan" n m sg
+"<dau>"
+	"de" pr
+		"lo" det def m sg
+"<Sistèma>"
+	"sistèma" n m sg
+"<Solar>"
+	"solar" adj m sg
+"<.>"
+	"." sent
+
+"<Aquela>"
+	"aquel" det dem f sg
+"<especificitat>"
+	"especificitat" n f sg
+"<se>"
+	"se" prn pro ref p3 mf sp
+"<retròba>"
+	"retrobar" vblex pri p3 sg
+"<egalament>"
+	"egalament" adv
+"<dins>"
+	"dins" pr
+"<la>"
+	"lo" det def f sg
+"<forma>"
+	"forma" n f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<magnetosfèra>"
+	"magnetosfèra" n f sg
+"<e>"
+	"e" cnjcoo
+"<dins>"
+	"dins" pr
+"<leis>"
+	"lo" det def mf pl
+"<orbitas>"
+	"orbita" n f pl
+"<dei>"
+	"de" pr
+		"lo" det def m sg
+"<27>"
+	"27" num
+"<satellits>"
+	"satellit" n m pl
+"<coneguts>"
+	"conegut" adj m pl
+"<que>"
+	"que" cnjsub 
+"<tèn>"
+	"tenir" vblex pri p3 sg
+"<Uranus>"
+	"Uranus" np top m sg
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
+"<En causa de>"
+	"en causa de" pr
+"<son>"
+	"son" det pos m sg
+"<alunchament>"
+	"alunchament" n m sg
+"<,>"
+	"," cm
+"<Uranus>"
+	"Uranus" np top m sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<coneguda>"
+	"conéisser" vblex pp f sg
+"<per>"
+	"per" pr
+"<sei>"
+	"son" det pos mf pl
+"<temperaturas>"
+	"temperatura" n f pl
+"<fòrça>"
+	"fòrça" preadv
+"<bassas>"
+	"bas" adj f pl
+"<e>"
+	"e" cnjcoo
+"<per>"
+	"per" pr
+"<lei>"
+	"lo" det def mf pl
+"<dificultats>"
+	"dificultat" n f pl
+"<per>"
+	"per" pr
+"<l'>"
+	"lo" prn pro p3 f sg
+"<estudiar>"
+	"estudiar" vblex inf
+"<.>"
+	"." sent
+
+"<Ansin>"
+	"ansin" adv
+"<,>"
+	"," cm
+"<foguèt>"
+	"èsser" vbser ifi p3 sg
+"<la>"
+	"lo" det def f sg
+"<premiera>"
+	"premier" adj f sg
+"<planeta>"
+	"planeta" n f sg
+"<desconeguda>"
+	"desconéisser" vblex pp f sg
+"<durant>"
+	"durant" pr
+
+"<l'>"
+	"lo" det def mf sg
+"<Antiquitat>"
+	"antiquitat" n f sg
+"<que>"
+	"que" rel an mf sp
+"<foguèt>"
+	"èsser" vbser ifi p3 sg
+"<descubèrta>"
+	"descubrir" vblex pri pp f sg
+"<amb>"
+	"amb" pr
+"<un>"
+	"un" det ind m sg 
+"<telescòpi>"
+	"telescòpi" n m sg
+"<en>"
+	"en" pr
+"<1781>"
+	"1781" num
+"<per>"
+	"per" pr
+"<William>"
+	"William" np ant m sg
+"<Herschel>"
+	"Herschel" np cog mg sp
+"<.>"
+	"." sent
+
+"<De mai>"
+	"de mai" adv
+"<,>"
+	"," cm
+"<a l'ora d'ara>"
+	"a l'ora d'ara" adv
+"<,>"
+	"," cm
+"<gaire>"
+	"gaire" adv
+"<de>"
+	"de" pr
+"<telescòpis>"
+	"telescòpi" n m pl
+"<pòdon>"
+	"poder" vbmod pri p3 pl
+"<veire>"
+	"veire" vblex inf
+"<de>"
+	"de" pr
+"<detalhs>"
+	"detalh" n m pl
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<planeta>"
+	"planeta" n f sg
+"<e>"
+	"e" cnjcoo
+"<una>"
+	"un" det ind f sg 
+"<unica>"
+	"unic" adj f sg
+"<sonda>"
+	"sonda" n f sg
+"<espaciala>"
+	"espacial" adj f sg
+"<visitèt>"
+	"visitar" vblex ifi p3 sg
+"<lo>"
+	"lo" det def m sg
+"<sistèma>"
+	"sistèma" n m sg
+"<d'>"
+	"de" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<.>"
+	"." sent
+
+"<Foguèt>"
+	"èsser" vbser ifi p3 sg
+"<la>"
+	"lo" det def f sg
+"<mission>"
+	"mission" n f sg
+"<estatsunidenca>"
+	"estatsunidenc" adj f sg
+"<Voyager>"
+	"Voyager" np al m sg
+"<2>"
+	"2" num
+"<en>"
+	"en" pr
+"<1986>"
+	"1986" num
+"<après>"
+	"après" pr
+"<un>"
+	"un" det ind m sg 
+"<viatge>"
+	"viatge" n m sg
+"<de>"
+	"de" pr
+"<nòu>"
+	"nòu" num mf sp
+"<ans>"
+	"an" n m pl
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
+"<Aquela>"
+	"aquel" det dem f sg
+"<planeta>"
+	"planeta" n f sg
+"<foguèt>"
+	"èsser" vbser ifi p3 sg
+"<nomada>"
+	"nomar" vblex pp f sg
+"<Uranus>"
+	"Uranus" np top m sg
+"<en>"
+	"en" pr
+"<onor>"
+	"onor" n m sg
+"<d'>"
+	"de" pr
+"<aqueu>"
+	"aqueu" det dem m sg
+"<dieu>"
+	"dieu" n m sg
+"<roman>"
+	"roman" adj m sg
+"<qu'>"
+	"que" rel an mf sp 
+"<èra>"
+	"èsser" vbser pii p3 sg
+"<lo>"
+	"lo" det def m sg
+"<paire>"
+	"paire" n m sg
+"<de>"
+	"de" pr
+"<Saturne>"
+	"Saturne" np top m sg
+"<.>"
+	"." sent
+
+"<L'>"
+	"lo" det def mf sg
+"<apelacion>"
+	"apelacion" n f sg
+"<foguèt>"
+	"èsser" vbser ifi p3 sg
+"<donada>"
+	"donar" vblex pp f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<mema>"
+	"meme" adj f sg
+"<maniera>"
+	"maniera" n f sg
+"<que>"
+	"que" cnjsub
+"<lo>"
+	"lo" det def m sg
+"<dieu>"
+	"dieu" n m sg
+"<Saturne>"
+	"Saturne" np top m sg
+"<èra>"
+	"èsser" vbser pii p3 sg
+"<lo>"
+	"lo" det def m sg
+"<paire>"
+	"paire" n m sg
+"<de>"
+	"de" pr
+"<Jupitèr>"
+	"Jupitèr" np top m sg
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
+"<Caracteristicas>"
+	"caracteristica" n f pl
+"<fisicas>"
+	"fisic" adj f pl
+"<.>"
+	"." sent
+
+
+
+"<Uranus>"
+	"Uranus" np top m sg
+"<fa partida>"
+	"far# partida" vblex pri p3 sg
+"<dei>"
+	"de" pr
+		"lo" det def m sg
+"<planetas>"
+	"planeta" n f pl
+"<gigantas>"
+	"gigant" adj f pl
+"<gasosas>"
+	"gasós" adj f pl
+"<amb>"
+	"amb" pr
+"<Jupitèr>"
+	"Jupitèr" np top m sg
+"<,>"
+	"," cm
+"<Saturne>"
+	"Saturne" np top m sg
+"<e>"
+	"e" cnjcoo
+"<Neptun>"
+	"Neptun" np top m sg
+"<.>"
+	"." sent
+
+"<Sa>"
+	"son" det pos f sg
+"<densitat>"
+	"densitat" n f sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<donc>"
+	"donc" cnjadv
+"<relativament>"
+	"relativament" adv
+"<febla>"
+	"feble" adj f sg
+"<amb>"
+	"amb" pr
+"<una>"
+	"un" det ind f sg
+"<valor>"
+	"valor" n f sg
+"<de>"
+	"de" pr
+"<1,27>"
+	"1,27" num
+"<.>"
+	"." sent
+
+"<Sa>"
+	"son" det pos f sg
+"<massa>"
+	"massa" n f sg
+"<,>"
+	"," cm
+"<egala>"
+	"egal" adj f sg
+"<a>"
+	"a" pr
+"<14,5>"
+	"14,5" num
+"<còps>"
+	"còp" n m pl
+"<la>"
+	"lo" det def f sg
+"<massa>"
+	"massa" n f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<Tèrra>"
+	"tèrra" n f sg
+"<,>"
+	"," cm
+"<es>"
+	"èsser" vbser pri p3 sg
+"<la>"
+	"lo" det def f sg
+"<quatrena>"
+	"quatren" adj f sg
+"<dau>"
+	"de" pr
+		"lo" det def m sg
+"<Sistèma>"
+	"sistèma" n m sg
+"<Solar>"
+	"solar" adj m sg
+"<mai>"
+	"mai" cnjcoo
+"<son>"
+	"son" det pos m sg
+"<rai>"
+	"rai" n m sg
+"<eqüatoriau>"
+	"equatoriau" adj mf sg
+"<de>"
+	"de" pr
+"<quasi>"
+	"quasi" adv
+"<25>"
+	"25" num
+"<000>"
+	"000" num
+"<km>"
+	"km" n m sp
+"<,>"
+	"," cm
+"<representant>"
+	"representar" vblex ger
+"<quatre>"
+	"quatre" num mf sp
+"<còps>"
+	"còp" n m pl
+"<lo>"
+	"lo" det def m sg
+"<rai>"
+	"rai" n m sg
+"<terrèstre>"
+	"terrèstre" adj mf sg
+"<,>"
+	"," cm
+"<es>"
+	"èsser" vbser pri p3 sg
+"<lo>"
+	"lo" det def m sg
+"<tresen>"
+	"tresen" adj m sg
+"<dau>"
+	"de" pr
+		"lo" det def m sg
+"<Sistèma>"
+	"sistèma" n m sg
+"<Solar>"
+	"solar" adj m sg
+"<.>"
+	"." sent
+
+
+
+"<Estructura>"
+	"estructura" n f sg
+"<intèrna>"
+	"intèrn" adj f sg
+
+
+"<Estructura>"
+	"estructura" n f sg
+"<intèrna>"
+	"intèrn" adj f sg
+"<possibla>"
+	"possible" adj f sg
+"<per>"
+	"per" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
+"<La>"
+	"lo" det def f sg
+"<composicion>"
+	"composicion" n f sg
+"<d'>"
+	"de" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<mau>"
+	"mau" adv
+"<coneguda>"
+	"conéisser" vblex pp f sg
+"<e>"
+	"e" cnjcoo
+"<varia>"
+	"variar" vblex pri p3 sg
+"<segon>"
+	"segon" pr
+"<lei>"
+	"lo" det def mf pl
+"<modèls>"
+	"modèl" n m pl
+"<utilizats>"
+	"utilizar" vblex pp m pl
+"<.>"
+	"." sent
+
+"<Leis>"
+	"lo" det def mf pl
+"<elements>"
+	"element" n m pl
+"<principaus>"
+	"principau" adj mf pl
+"<formant>"
+	"formar" vblex ger
+"<la>"
+	"lo" det def f sg
+"<planeta>"
+	"planeta" n f sg
+"<serián>"
+	"èsser" vbser cni p3 pl
+"<de>"
+	"de" pr
+"<glaç>"
+	"glaç" n m sg
+"<d'>"
+	"de" pr
+"<aiga>"
+	"aiga" n f sg
+"<,>"
+	"," cm
+"<d'>"
+	"de" pr
+"<amoniac>"
+	"amoniac" n m sg
+"<e de>"
+	"e" cnjcoo
+		"de" pr
+"<metan>"
+	"metan" n m sg
+"<que>"
+	"que" rel an mf sp
+"<comptarián>"
+	"comptar" vblex cni p3 pl
+"<per>"
+	"per" pr
+"<una>"
+	"un" det ind f sg 
+"<massa>"
+	"massa" n f sg
+"<compresa>"
+	"compréner" vblex pp f sg
+"<entre>"
+	"entre" pr
+"<9,3>"
+	"9,3" num
+"<e>"
+	"e" cnjcoo
+"<13,5>"
+	"13,5" num
+"<massas>"
+	"massa" n f pl
+"<terrèstras>"
+	"terrèstre" adj f pl
+"<.>"
+	"." sent
+
+"<Idrogèn>"
+	"idrogèn" n m sg
+"<e>"
+	"e" cnjcoo
+"<èli>"
+	"èli" n m sg
+"<,>"
+	"," cm
+"<fòrça>"
+	"fòrça" preadv 
+"<presents>"
+	"present" adj m pl
+"<dins>"
+	"dins" pr
+"<lei>"
+	"lo" det def mf pl
+"<composicions>"
+	"composicion" n f pl
+"<de>"
+	"de" pr
+"<Jupitèr>"
+	"Jupitèr" np top m sg
+"<e>"
+	"e" cnjcoo
+"<Saturne>"
+	"Saturne" np top m sg
+"<,>"
+	"," cm
+"<son>"
+	"èsser" vbser pri p3 pl
+"<pus>"
+	"pus" adv
+
+"<rars>"
+	"rar" adj m pl
+"<sus>"
+	"sus" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<amb>"
+	"amb" pr
+"<solament>"
+	"solament" adv
+"<una>"
+	"un" det ind f sg 
+"<massa>"
+	"massa" n f sg
+"<situada>"
+	"situar" vblex pp f sg
+"<entre>"
+	"entre" pr
+"<0,5>"
+	"0,5" num
+"<e>"
+	"e" cnjcoo
+"<1,5>"
+	"1,5" num
+"<massas>"
+	"massa" n f pl
+"<terrèstras>"
+	"terrèstre" adj f pl
+"<.>"
+	"." sent
+
+"<Lo>"
+	"lo" det def m sg 
+"<rèsta>"
+	"rèsta" n m sg 
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<massa>"
+	"massa" n f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<planeta>"
+	"planeta" n f sg
+"<,>"
+	"," cm
+"<entre>"
+	"entre" pr
+"<0,5>"
+	"0,5" num
+"<e>"
+	"e" cnjcoo
+"<3,7>"
+	"3,7" num
+"<massas>"
+	"massa" n f pl
+"<terrèstras>"
+	"terrèstre" adj f pl
+"<,>"
+	"," cm
+"<seriá>"
+	"èsser" vbser cni p3 sg
+"<rocassós>"
+	"rocassós" adj m sg
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
+"<Lo>"
+	"lo" det def m sg
+"<modèl>"
+	"modèl" n m sg
+"<classic>"
+	"classic" adj m sg
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+"<estructura>"
+	"estructura" n f sg
+"<intèrna>"
+	"intèrn" adj f sg
+"<d'>"
+	"de" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<un>"
+	"un" det ind m sg
+"<nuclèu>"
+	"nuclèu" n m sg
+"<rocassós>"
+	"rocassós" adj m sg
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<centre>"
+	"centre" n m sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<planeta>"
+	"planeta" n f sg
+"<,>"
+	"," cm
+"<enviroutat>"
+	"enviroutar" vblex pp m sg
+"<per>"
+	"per" pr
+"<un>"
+	"un" det ind m sg
+"<mantèu>"
+	"mantèu" n m sg
+"<fach>"
+	"far" vblex pp m sg
+"<de>"
+	"de" pr
+"<glaç>"
+	"glaç" n m sg
+"<e>"
+	"e" cnjcoo
+"<subremontat>"
+	"subremontar" vblex pp m sg
+"<d'>"
+	"de" pr
+"<una>"
+	"un" det ind f sg 
+"<envolopa>"
+	"envolopa" n f sg
+"<gasosa>"
+	"gasós" adj f sg
+"<d'>"
+	"de" pr
+"<èli>"
+	"èli" n m sg
+"<e d'>"
+	"e" cnjcoo
+		"de" pr
+"<idrogèn>"
+	"idrogèn" n m sg
+"<.>"
+	"." sent
+
+"<Lo>"
+	"lo" det def m sg
+"<nuclèu>"
+	"nuclèu" n m sg
+"<seriá>"
+	"èsser" vbser cni p3 sg
+"<relativament>"
+	"relativament" adv
+"<pichon>"
+	"pichon" adj m sg
+"<amb>"
+	"amb" pr
+"<una>"
+	"un" det ind f sg 
+"<massa>"
+	"massa" n f sg
+"<de>"
+	"de" pr
+"<0,55>"
+	"0,55" num
+"<massa>"
+	"massa" n f sg
+"<terrèstra>"
+	"terrèstre" adj f sg
+"<e>"
+	"e" cnjcoo
+"<auriá>"
+	"aver" vblex cni p3 sg
+"<un>"
+	"un" det ind m sg
+"<rai>"
+	"rai" n m sg
+"<egau>"
+	"egau" adj mf sg
+"<a>"
+	"a" pr
+"<20%>"
+	"20%" num percent
+"<dau>"
+	"de" pr
+		"lo" det def m sg
+"<rai>"
+	"rai" n m sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<planeta>"
+	"planeta" n f sg
+"<.>"
+	"." sent
+
+"<Sa>"
+	"son" det pos f sg
+"<densitat>"
+	"densitat" n f sg
+"<seriá>"
+	"èsser" vbser cni p3 sg
+"<pròcha>"
+	"pròche" adj f sg
+"<de>"
+	"de" pr
+"<9>"
+	"9" num
+"<amb>"
+	"amb" pr
+"<una>"
+	"un" det ind f sg 
+"<pression>"
+	"pression" n f sg
+"<de>"
+	"de" pr
+"<800 Gpa>"
+	"800 GPa" num mf sp
+"<e>"
+	"e" cnjcoo
+"<una>"
+	"un" det ind f sg 
+"<temperatura>"
+	"temperatura" n f sg
+"<de>"
+	"de" pr
+"<4>"
+	"4" num
+"<800 °C>"
+	"800 °C"  num mf sp
+"<.>"
+	"." sent
+
+"<Lo>"
+	"lo" det def m sg
+"<mantèu>"
+	"mantèu" n m sg
+"<de>"
+	"de" pr
+"<glaç>"
+	"glaç" n m sg
+"<representariá>"
+	"representar" vblex cni p3 sg
+"<la>"
+	"lo" det def f sg
+"<màger part>"
+	"màger part" n f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<planeta>"
+	"planeta" n f sg
+"<amb>"
+	"amb" pr
+"<una>"
+	"un" det ind f sg
+"<massa>"
+	"massa" n f sg
+"<de>"
+	"de" pr
+"<13,4>"
+	"13,4" num
+"<massas>"
+	"massa" n f pl
+"<terrèstras>"
+	"terrèstre" adj f pl
+"<.>"
+	"." sent
+
+"<Enfin>"
+	"enfin" adv
+"<,>"
+	"," cm
+"<l'>"
+	"lo" det def mf sg
+"<atmosfèra>"
+	"atmosfèra" n f sg
+"<d'>"
+	"de" pr
+"<èli>"
+	"èli" n m sg
+"<e d'>"
+	"e" cnjcoo
+		"de" pr
+"<idrogèn>"
+	"idrogèn" n m sg
+"<aviá>"
+	"aver" vblex pii p3 sg
+"<una>"
+	"un" det ind f sg
+"<massa>"
+	"massa" n f sg
+"<egala>"
+	"egal" adj f sg
+"<a>"
+	"a" pr
+"<0,5>"
+	"0,5" num
+"<massa>"
+	"massa" n f sg
+"<terrèstra>"
+	"terrèstre" adj f sg
+"<per>"
+	"per" pr
+"<una>"
+	"un" det ind f sg 
+"<espessor>"
+	"espessor" n f sg
+"<egala>"
+	"egal" adj f sg
+"<a>"
+	"a" pr
+"<20%>"
+	"20%" num percent
+"<dau>"
+	"de" pr
+		"lo" det def m sg
+"<rai>"
+	"rai" n m sg
+"<planetari>"
+	"planetari" adj m sg
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
+"<Dins aquò>"
+	"dins aquò" adv
+"<,>"
+	"," cm
+"<aqueu>"
+	"aqueu" det dem m sg
+"<modèl>"
+	"modèl" n m sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<pas>"
+	"pas" adv
+"<totalament>"
+	"totalament" adv
+"<satisfasent>"
+	"satisfasent" adj m sg
+"<.>"
+	"." sent
+
+"<Ansin>"
+	"ansin" adv
+"<,>"
+	"," cm
+"<de>"
+	"de" pr
+"<quantitats>"
+	"quantitat" n f pl
+"<de>"
+	"de" pr
+"<materiaus>"
+	"material" n m pl
+"<rocassós>"
+	"rocassós" adj m pl
+"<o>"
+	"o" cnjcoo
+"<d'>"
+	"de" pr
+"<idrogèn>"
+	"idrogèn" n m sg
+"<podrián>"
+	"poder" vblex cni p3 pl
+"<èsser>"
+	"èsser" vbser inf
+"<mescladas>"
+	"mesclar" vblex pp f pl
+"<dins>"
+	"dins" pr
+"<lo>"
+	"lo" det def m sg
+"<mantèu>"
+	"mantèu" n m sg
+"<de>"
+	"de" pr
+"<glaç>"
+	"glaç" n m sg
+"<.>"
+	"." sent
+
+"<La>"
+	"lo" det def f sg
+"<consequéncia>"
+	"consequéncia" n f sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<que>"
+	"que" cnjsub 
+"<lei>"
+	"lo" det def mf pl
+"<percentatges>"
+	"percentatge" n m pl
+"<dei>"
+	"de" pr
+		"lo" det def m sg
+"<materiaus>"
+	"material" n m pl
+"<rocassós>"
+	"rocassós" adj m pl
+"<o>"
+	"o" cnjcoo
+"<d'>"
+	"de" pr
+"<idrogèn>"
+	"idrogèn" n m sg
+"<podrián>"
+	"poder" vblex cni p3 pl
+"<èsser>"
+	"èsser" vbser inf
+"<pus>"
+	"pus" adv
+"<importants>"
+	"important" adj m pl
+"<.>"
+	"." sent
+
+"<A l'ora d'ara>"
+	"a l'ora d'ara" adv
+"<,>"
+	"," cm
+"<i a>"
+	"i" prn pro adv
+		"aver" vbhaver pri p3 sg
+"<pas>"
+	"pas" adv
+"<de>"
+	"de" pr
+"<donadas>"
+	"donada" n f pl
+"<per>"
+	"per" adv
+"<resòuvre>"
+	"resòuvre" vblex inf
+"<aqueu>"
+	"aqueu" det dem m sg
+"<problèma>"
+	"problèma" n m sg
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
+"<Un>"
+	"un" det ind m sg
+"<autre>"
+	"autre" adj ind m sg
+"<fach>"
+	"fach" n m sg
+"<incomprés>"
+	"incomprés" adj m sg
+"<pertocant>"
+	"pertocar" vblex ger
+"<l'>"
+	"lo" det def mf sg
+"<estructura>"
+	"estructura" n f sg
+"<intèrna>"
+	"intèrn" adj f sg
+"<d'>"
+	"de" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<son>"
+	"son" det pos m sg
+"<flux>"
+	"flux" n m sg
+"<termic>"
+	"termic" adj m sg
+"<relativament>"
+	"relativament" adv
+"<feble>"
+	"feble" adj m sg
+"<a respècte>"
+	"a respècte" pr
+"<deis>"
+	"de" pr
+		"lo" det def m pl
+"<autrei>"
+	"autrei" adj ind f pl
+"<planetas>"
+	"planeta" n f pl
+"<gigantas>"
+	"gigant" adj f pl
+"<dau>"
+	"de" pr
+		"lo" det def m sg
+"<Sistèma>"
+	"sistèma" n m sg
+"<Solar>"
+	"solar" adj m sg
+"<.>"
+	"." sent
+
+"<Per exemple>"
+	"per exemple" adv
+"<,>"
+	"," cm
+"<Neptun>"
+	"Neptun" np top m sg
+"<emet>"
+	"emetre" vblex pri p3 sg
+"<un>"
+	"un" det ind m sg
+"<flux>"
+	"flux" n m sg
+"<2,6>"
+	"2,6" num
+"<còps>"
+	"còp" n m pl
+"<superior>"
+	"superior" adj m sg
+"<a>"
+	"a" pr
+"<la>"
+	"lo" det def f sg
+"<quantitat>"
+	"quantitat" n f sg
+"<d'>"
+	"de" pr
+"<energia>"
+	"energia" n f sg
+"<recebuda>"
+	"recebut" adj f sg
+"<dau>"
+	"de" pr
+		"lo" det def m sg
+"<Soleu>"
+	"Soleu" n m sg
+"<.>"
+	"." sent
+
+"<Òr>"
+	"òr" cnjcoo
+"<,>"
+	"," cm
+"<en>"
+	"en" pr
+"<comparason>"
+	"comparason" n f sg
+"<,>"
+	"," cm
+"<dins>"
+	"dins" pr
+"<l'>"
+	"lo" det def mf sg
+"<infraroge>"
+	"infraroge" adj m sg
+"<,>"
+	"," cm
+"<Uranus>"
+	"Uranus" np top m sg
+"<emet>"
+	"emetre" vblex pri p3 sg
+"<solament>"
+	"solament" adv
+"<1,08>"
+	"1,08" num
+"<còps>"
+	"còp" n m pl
+"<lo>"
+	"lo" det def m sg
+"<flux>"
+	"flux" n m sg
+"<solar>"
+	"solar" adj m sg
+"<absorbit>"
+	"absorbir" vblex pp m sg
+"<per>"
+	"per" pr
+"<son>"
+	"son" det pos f sg
+"<atmosfèra>"
+	"atmosfèra" n f sg
+"<.>"
+	"." sent
+
+"<Ansin>"
+	"ansin" adv
+"<,>"
+	"," cm
+"<lo>"
+	"lo" det def m sg
+"<flux>"
+	"flux" n m sg
+"<termic>"
+	"termic" adj m sg
+"<,>"
+	"," cm
+"<egau>"
+	"egau" adj mf sg
+"<a>"
+	"a" pr
+"<42 mW>"
+	"42 mW" num mf sp
+"<m>"
+	"m" n m sp
+²
+"<,>"
+	"," cm
+"<es>"
+	"èsser" vbser pri p3 sg
+"<inferior>"
+	"inferior" adj m sg
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<flux>"
+	"flux" n m sg
+"<terrèstre>"
+	"terrèstre" adj mf sg
+"<.>"
+	"." sent
+
+"<Una>"
+	"un" det ind f sg 
+"<ipotèsi>"
+	"ipotèsi" n f sg
+"<per>"
+	"per" pr
+"<explicar>"
+	"explicar" vblex inf
+"<aqueleis>"
+	"aqueu" det dem mf pl
+"<observacions>"
+	"observacion" n f pl
+"<seriá>"
+	"èsser" vbser cni p3 sg
+"<l'>"
+	"lo" det def mf sg
+"<existéncia>"
+	"existéncia" n f sg
+"<d'>"
+	"de" pr
+"<un>"
+	"un" det ind m sg 
+"<jaç>"
+	"jaç" n m sg
+"<que>"
+	"que" rel an mf sp
+"<,>"
+	"," cm
+"<per exemple>"
+	"per exemple" adv
+"<,>"
+	"," cm
+"<dispersariá>"
+	"dispersar" vblex cni p3 sg
+"<la>"
+	"lo" det def f sg
+"<calor>"
+	"calor" n f sg
+"<per>"
+	"per" pr
+"<conveccion>"
+	"conveccion" n f sg
+"<e>"
+	"e" cnjcoo
+"<empachariá>"
+	"empachar" vblex cni p3 sg
+"<adonc>"
+	"adonc" pr
+"<son>"
+	"son" det pos m sg
+"<passatge>"
+	"passatge" n m sg
+"<vèrs>"
+	"vèrs" n m sg
+"<la>"
+	"lo" det def f sg
+"<superficia>"
+	"superficia" n f sg
+"<.>"
+	"." sent
+
+
+
+"<Atmosfèra>"
+	"atmosfèra" n f sg
+
+
+"<Comparason>"
+	"comparason" n f sg
+"<entre>"
+	"entre" pr
+"<lei>"
+	"lo" det def mf pl
+"<talhas>"
+	"talha" n f pl
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<Tèrra>"
+	"tèrra" n f sg
+"<e d'>"
+	"e" cnjcoo
+		"de" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
+"<A respècte>"
+	"a respècte" pr
+"<dau>"
+	"de" pr
+		"lo" det def m sg
+"<rèsta>"
+	"rèsta" n m sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<planeta>"
+	"planeta" n f sg
+"<,>"
+	"," cm
+"<l'>"
+	"lo" det def mf sg
+"<atmosfèra>"
+	"atmosfèra" n f sg
+"<d'>"
+	"de" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<a>"
+	"aver" vblex pri p3 sg
+"<una>"
+	"un" det ind f sg 
+"<composicion>"
+	"composicion" n f sg
+"<fòrça>"
+	"fòrça" preadv 
+"<diferenta>"
+	"diferent" adj f sg
+"<,>"
+	"," cm
+"<tenent>"
+	"téner" vblex ger
+"<principalament>"
+	"principalament" adv
+"<d'>"
+	"de" pr
+"<idrogèn>"
+	"idrogèn" n m sg
+"<(>"
+	"(" lpar
+"<83>"
+	"83" num
+ %
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<d'>"
+	"de" pr
+"<èli>"
+	"èli" n m sg
+"<(>"
+	"(" lpar
+"<15>"
+	"15" num
+ %
+"<)>"
+	")" rpar
+"<e de>"
+	"e" cnjcoo
+		"de" pr
+"<metan>"
+	"metan" n m sg 
+"<(>"
+	"(" lpar
+"<1,99>"
+	"1,99" num
+ %
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+"<De>"
+	"de" pr
+"<mesuras>"
+	"mesura" n f pl
+"<espectroscopicas>"
+	"espectroscopic" adj f pl
+"<mostrèron>"
+	"mostrar" vblex ifi p3 pl
+"<tanben>"
+	"tanben" adv
+"<la>"
+	"lo" det def f sg
+"<preséncia>"
+	"preséncia" n f sg
+"<de>"
+	"de" pr
+"<traças>"
+	"traça" n f pl
+"<d'>"
+	"de" pr
+"<etan>"
+	"etan" n m sg
+"<,>"
+	"," cm
+"<d'>"
+	"de" pr
+"<acetilèn>"
+	"acetilèn" n m sg
+"<,>"
+	"," cm
+"<de>"
+	"de" pr
+"<metilacetilèn>"
+	"metilacetilèn" n m sg
+"<,>"
+	"," cm
+"<de>"
+	"de" pr
+"<diacetilèn>"
+	"diacetilèn" n m sg
+"<,>"
+	"," cm
+"<de>"
+	"de" pr
+"<dioxid>"
+	"dioxid" n m sg
+"<de>"
+	"de" pr
+"<carbòni>"
+	"carbòni" n m sg
+"<,>"
+	"," cm
+"<de>"
+	"de" pr
+"<monoxid>"
+	"monoxid" n m sg
+"<de>"
+	"de" pr
+"<carbòni>"
+	"carbòni" n m sg
+"<e d'>"
+	"e" cnjcoo
+		"de" pr
+"<aiga>"
+	"aiga" n f sg
+"<.>"
+	"." sent
+
+"<Leis>"
+	"lo" det def mf pl
+"<aparelhs>"
+	"aparelh" n m pl
+"<scientifics>"
+	"scientific" adj m pl
+"<pòdon>"
+	"poder" vbmod pri p3 pl
+"<obtenir>"
+	"obténer" vblex inf
+"<de>"
+	"de" pr
+"<mesuras>"
+	"mesura" n f pl
+"<fins a>"
+	"fins a" pr
+"<una>"
+	"un" det ind f sg 
+"<prefondor>"
+	"prefondor" n m sg
+"<de>"
+	"de" pr
+"<300>"
+	"300" num
+"<km>"
+	"km" n m sp
+"<sota>"
+	"sota" pr
+"<la>"
+	"lo" det def f sg
+"<superficia>"
+	"superficia" n f sg
+"<nominala>"
+	"nominal" adj f sg
+"<.>"
+	"." sent
+
+"<En>"
+	"en" pr
+"<aquel>"
+	"aquel" det dem m sg
+"<endrech>"
+	"endrech" n m sg
+"<,>"
+	"," cm
+"<la>"
+	"lo" det def f sg
+"<pression>"
+	"pression" n f sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<egala>"
+	"egal" adj f sg
+"<a>"
+	"a" pr
+"<100>"
+	"100" num
+"<bar>"
+	"bar" n m sg
+"<amb>"
+	"amb" pr
+"<una>"
+	"un" det ind f sg
+"<temperatura>"
+	"temperatura" n f sg
+"<de>"
+	"de" pr
+"<quasi>"
+	"quasi" adv
+"<50 °C>"
+	"50 °C" num mf sp
+"<.>"
+	"." sent
+
+"<Aquela>"
+	"aquel" det dem f sg
+"<atmosfèra>"
+	"atmosfèra" n f sg
+"<se>"
+	"se" prn pro ref p3 mf sp 
+"<pòt>"
+	"poder" vbmod pri p3 sg
+"<devesir>"
+	"devesir" vblex inf
+"<en>"
+	"en" pr
+"<divèrseis>"
+	"divèrs" adj mf pl
+"<estructuras>"
+	"estructura" n f pl
+"<:>"
+	":" sent
+"<una>"
+	"un" det ind f sg
+"<troposfèra>"
+	"troposfèra" n f sg
+"<entre>"
+	"entre" pr
+ -
+"<300>"
+	"300" num
+"<e>"
+	"e" cnjcoo
+"<50>"
+	"50" num
+"<km>"
+	"km" n m sp
+"<,>"
+	"," cm
+"<una>"
+	"un" det ind f sg
+"<estratosfèra>"
+	"estratosfèra" n f sg
+"<entre>"
+	"entre" pr
+"<50>"
+	"50" num
+"<e>"
+	"e" cnjcoo
+"<4>"
+	"4" num
+"<000>"
+	"000" num
+"<km>"
+	"km" n m sp
+"<e>"
+	"e" cnjcoo
+"<una>"
+	"un" det ind f sg 
+"<termosfèra>"
+	"termosfèra" n f sg
+"<o>"
+	"o" cnjcoo
+"<corona>"
+	"corona" n f sg
+"<entre>"
+	"entre" pr
+"<4>"
+	"4" num
+"<000>"
+	"000" num
+"<e>"
+	"e" cnjcoo
+"<50>"
+	"50" num
+"<000>"
+	"000" num
+"<km>"
+	"km" n m sp
+"<.>"
+	"." sent
+
+"<I a>"
+	"i" prn pro adv
+		"aver" vbhaver pri p3 sg
+"<pas>"
+	"pas" adv
+"<de>"
+	"de" pr
+"<mesosfèra>"
+	"mesosfèra" n f sg
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
+"<D'>"
+	"de" pr
+"<autra>"
+	"autre" adj ind f sg
+"<part>"
+	"part" n f sg
+"<,>"
+	"," cm
+"<l'>"
+	"lo" det def mf sg
+"<atmosfèra>"
+	"atmosfèra" n f sg
+"<d'>"
+	"de" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<sembla>"
+	"semblar" vblex pri p3 sg
+"<d'>"
+	"de" pr
+"<èsser>"
+	"èsser" vbser inf
+"<calma>"
+	"calm" adj f sg
+"<a respècte>"
+	"a respècte" pr
+"<d'>"
+	"de" pr
+"<aquelei>"
+	"aqueu" det dem mf pl
+"<de>"
+	"de" pr
+"<Jupitèr>"
+	"Jupitèr" np top m sg
+"<o>"
+	"o" cnjcoo
+"<de>"
+	"de" pr
+"<Saturne>"
+	"Saturne" np top m sg
+"<amb>"
+	"amb" pr
+"<una>"
+	"un" det ind f sg 
+"<color>"
+	"color" n f sg
+"<blava>"
+	"blau" adj f sg
+"<unida>"
+	"unir" vblex pp f sg
+"<sus>"
+	"sus" pr
+"<leis>"
+	"lo" det def mf pl
+"<imatges>"
+	"imatge" n m pl
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<sonda>"
+	"sonda" n f sg
+"<Voyager>"
+	"Voyager" np al m sg
+"<2>"
+	"2" num
+"<.>"
+	"." sent
+
+"<Pasmens>"
+	"pasmens" adv
+"<,>"
+	"," cm
+"<Uranus>"
+	"Uranus" np top m sg
+"<tèn>"
+	"tenir" vblex pri p3 sg
+"<tanben>"
+	"tanben" adv
+"<una>"
+	"un" det ind f sg
+"<estructura>"
+	"estructura" n f sg
+"<de>"
+	"de" pr
+"<nívols>"
+	"nívol" n m pl
+"<en>"
+	"en" pr
+"<bendas>"
+	"benda" n f pl
+"<e>"
+	"e" cnjcoo
+"<una>"
+	"un" det ind f sg
+"<activitat>"
+	"activitat" n f sg
+"<climatica>"
+	"climatic" adj f sg
+"<activa>"
+	"actiu" adj f sg
+"<.>"
+	"." sent
+
+
+
+"<Troposfèra>"
+	"troposfèra" n f sg
+"<.>"
+	"." sent
+
+
+
+"<La>"
+	"lo" det def f sg
+"<troposfèra>"
+	"troposfèra" n f sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<lo>"
+	"lo" det def m sg
+"<jaç>"
+	"jaç" n m sg
+"<bas>"
+	"bas" adj m sg
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+"<atmosfèra>"
+	"atmosfèra" n f sg
+"<e>"
+	"e" cnjcoo
+"<lo>"
+	"lo" det def m sg
+
+"<pus>"
+	"pus" adv
+"<actiu>"
+	"actiu" adj m sg
+"<entre>"
+	"entre" pr
+"<leis>"
+	"lo" det def mf pl
+"<altituds>"
+	"altitud" n f pl
+ -
+"<300>"
+	"300" num
+"<km>"
+	"km" n m sp
+"<e>"
+	"e" cnjcoo
+"<50>"
+	"50" num
+"<km>"
+	"km" n m sp
+"<.>"
+	"." sent
+
+"<La>"
+	"lo" det def f sg
+"<temperatura>"
+	"temperatura" n f sg
+"<baissa>"
+	"baissar" vblex pri p3 sg
+"<amb>"
+	"amb" pr
+"<l'>"
+	"lo" det def mf sg
+"<altitud>"
+	"altitud" n f sg
+"<de>"
+	"de" pr
+"<47 °C>"
+	"47 °C" num mf sp
+"<a>"
+	"a" pr
+ -
+"<300>"
+	"300" num
+"<km>"
+	"km" n m sp
+"<a>"
+	"a" pr
+ -
+"<224 °C>"
+	"224 °C"  num mf sp
+"<a>"
+	"a" pr
+"<50>"
+	"50" num
+"<km>"
+	"km" n m sp
+"<onte>"
+	"onte" rel adv
+"<se>"
+	"se" prn pro ref p3 mf sp
+"<situa>"
+	"situar" vblex pri p3 sg
+"<la>"
+	"lo" det def f sg
+"<tropopausa>"
+	"tropopausa" n f sg
+"<.>"
+	"." sent
+
+"<Pasmens>"
+	"pasmens" adv
+"<,>"
+	"," cm
+"<la>"
+	"lo" det def f sg
+"<temperatura>"
+	"temperatura" n f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<tropopausa>"
+	"tropopausa" nf sg
+"<varia>"
+	"variar" vblex pri p3 sg
+"<leugierament>"
+	"leugierament" adv
+"<entre>"
+	"entre" pr
+ -
+"<224>"
+	"224" num
+"<e>"
+	"e" cnjcoo
+ -
+"<216 °C>"
+	"216 °C" num mf sp
+"<amb>"
+	"amb" pr
+"<la>"
+	"lo" det def f sg
+"<latitud>"
+	"latitud" n f sg
+"<.>"
+	"." sent
+
+"<Aquelei>"
+	"aqueu" det dem mf pl
+"<valors>"
+	"valor" n f pl
+"<fan>"
+	"far" vblex pri p3 pl
+"<qu'>"
+	"que" cnjsub
+"<Uranus>"
+	"Uranus" np top m sg
+"<a>"
+	"aver" vblex pri p3 sg
+"<l'>"
+	"lo" det def mf sg
+"<atmosfèra>"
+	"atmosfèra" n f sg
+"<pus>"
+	"pus" adv
+"<freja>"
+	"freg" adj f sg
+"<dau>"
+	"de" pr
+		"lo" det def m sg
+"<Sistèma>"
+	"sistèma" n m sg
+"<Solar>"
+	"solar" adj m sg
+"<.>"
+	"." sent
+
+"<Enterin>"
+	"enterin" adv
+"<,>"
+	"," cm
+"<la>"
+	"lo" det def f sg
+"<pression>"
+	"pression" n f sg
+"<varia>"
+	"variar" vblex pri p3 sg
+"<de>"
+	"de" pr
+"<100>"
+	"100" num
+"<bar>"
+	"bar" n m sg
+"<a>"
+	"a" pr
+"<0,1>"
+	"0,1" num
+"<bar>"
+	"bar" n m sg
+"<.>"
+	"." sent
+
+"<L'>"
+	"lo" det def mf sg
+"<estructura>"
+	"estructura" n f sg
+"<dei>"
+	"de" pr
+		"lo" det def m sg
+"<nívols>"
+	"nívol" n m pl
+"<seriá>"
+	"èsser" vbser cni p3 sg
+"<complèxa>"
+	"complèx" adj f sg
+"<amb>"
+	"amb" pr
+"<la>"
+	"lo" det def f sg
+"<preséncia>"
+	"preséncia" n f sg
+"<de>"
+	"de" pr
+"<nívols>"
+	"nívol" n m pl
+"<d'>"
+	"de" pr
+"<aigan>"
+	"aigan" barb
+"<dins>"
+	"dins" pr
+"<lei>"
+	"lo" det def mf pl
+"<zonas>"
+	"zona" n f sg
+"<amb>"
+	"amb" pr
+"<una>"
+	"un" det ind f sg
+"<pression>"
+	"pression" n f sg
+"<situada>"
+	"situar" vblex pp f sg
+"<entre>"
+	"entre" pr
+"<50>"
+	"50" num
+"<bar>"
+	"bar" n m sg
+"<e>"
+	"e" cnjcoo
+"<100>"
+	"100" num
+"<bar>"
+	"bar" n m sg
+"<,>"
+	"," cm
+"<de>"
+	"de" pr
+"<nívols>"
+	"nívol" n m pl
+"<d'>"
+	"de" pr
+"<idrosulfur>"
+	"idrosulfur" n m sg
+"<d'>"
+	"de" pr
+"<amòni>"
+	"amòni" n m sg
+"<entre>"
+	"entre" pr
+"<20>"
+	"20" num
+"<e>"
+	"e" cnjcoo
+"<40>"
+	"40" num
+"<bar>"
+	"bar" n m sg
+"<,>"
+	"," cm
+"<de>"
+	"de" pr
+"<nívols>"
+	"nívol" n m pl
+"<d'>"
+	"de" pr
+"<amoniac>"
+	"amoniac" n m sg
+"<o>"
+	"o" cnjcoo
+"<de>"
+	"de" pr
+"<sulfur>"
+	"sulfur" n m sg
+"<d'>"
+	"de" pr
+"<idrogèn>"
+	"idrogèn" n m sg
+"<entre>"
+	"entre" pr
+"<3>"
+	"3" num
+"<e>"
+	"e" cnjcoo
+"<10>"
+	"10" num
+"<bar>"
+	"bar" n m sg
+"<e>"
+	"e" cnjcoo
+"<finalament>"
+	"finalament" adv
+"<de>"
+	"de" pr
+"<nívols>"
+	"nívol" n m pl
+"<de>"
+	"de" pr
+"<metan>"
+	"metan" n m sg
+"<entre>"
+	"entre" pr
+"<1>"
+	"1" num
+"<e>"
+	"e" cnjcoo
+"<2>"
+	"2" num
+"<bar>"
+	"bar" n m sg
+"<.>"
+	"." sent
+
+"<Pasmens>"
+	"pasmens" adv
+"<,>"
+	"," cm
+"<la>"
+	"lo" det def f sg
+"<màger part>"
+	"màger part" n f sg
+"<dei>"
+	"de" pr
+		"lo" det def m sg
+"<jaç>"
+	"jaç" n m sg
+"<de>"
+	"de" pr
+"<nívols>"
+	"nívol" n m pl
+"<es>"
+	"èsser" vbser pri p3 sg
+"<especulativa>"
+	"especulatiu" adj f sg
+"<car>"
+	"car" cnjcoo
+"<Voyager>"
+	"Voyager" np al m sg
+"<2>"
+	"2" num
+"<a>"
+	"aver" vbhaver pri p3 sg
+"<solament>"
+	"solament" adv
+"<observat>"
+	"observar" vblex pp m sg
+"<la>"
+	"lo" det def f sg
+"<preséncia>"
+	"preséncia" n f sg
+"<dei>"
+	"de" pr
+		"lo" det def m sg
+"<nívols>"
+	"nívol" n m pl
+"<de>"
+	"de" pr
+"<metan>"
+	"metan" n m sg
+"<.>"
+	"." sent
+
+
+
+"<Estratosfèra>"
+	"estratosfèra" n f sg
+"<.>"
+	"." sent
+
+
+
+"<L'>"
+	"lo" det def mf sg
+"<estratosfèra>"
+	"estratosfèra" n f sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<lo>"
+	"lo" det def m sg
+"<jaç>"
+	"jaç" n m sg
+"<intermediari>"
+	"intermediari" adj m sg
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+
+"<atmosfèra>"
+	"atmosfèra" n f sg
+"<d'>"
+	"de" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<.>"
+	"." sent
+
+"<Sa>"
+	"son" det pos f sg
+"<temperatura>"
+	"temperatura" n f sg
+"<varia>"
+	"variar" vblex pri p3 sg
+"<de>"
+	"de" pr
+ -
+"<220 °C>"
+	"220 °C"  num mf sp
+"<a>"
+	"a" pr
+"<la>"
+	"lo" det def f sg
+"<basa>"
+	"basa" n f sg
+"<a>"
+	"a" pr
+"<530 °C>"
+	"530 °C"  num mf sp
+ - 
+"<580 °C>"
+	"580 °C"  num mf sp
+"<a>"
+	"a" pr
+"<la>"
+	"lo" det def f sg
+"<cima>"
+	"cima" n f sg
+"<.>"
+	"." sent
+
+"<Lo>"
+	"lo" det def m sg
+"<rescaufament>"
+	"rescaufament" n m sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<probablament>"
+	"probablament" adv
+"<causat>"
+	"causar" vblex pp m sg
+"<per>"
+	"per" pr
+"<lei>"
+	"lo" det def mf pl
+"<transferiments>"
+	"transferiment" n m pl
+"<de>"
+	"de" pr
+"<calor>"
+	"calor" n f sg
+"<dempuei>"
+	"dempuei" pr
+"<la>"
+	"lo" det def f sg
+"<termosfèra>"
+	"termosfèra" n f sg
+"<e>"
+	"e" cnjcoo
+"<la>"
+	"lo" det def f sg
+"<preséncia>"
+	"preséncia" n f sg
+"<de>"
+	"de" pr
+"<metan>"
+	"metan" n m sg
+"<e d'>"
+	"e" cnjcoo
+		"de" pr
+"<autreis>"
+	"autre" adj mf pl
+"<idrocarburs>"
+	"idrocarbur" n m pl
+"<formats>"
+	"formar" vblex pp m pl
+"<per>"
+	"per" pr
+"<la>"
+	"lo" det def f sg
+"<dissociacion>"
+	"dissociacion" n f sg
+"<dei>"
+	"de" pr
+		"lo" det def m sg
+"<moleculas>"
+	"molecula" n f pl
+"<de>"
+	"de" pr
+"<metan>"
+	"metan" n m sg
+"<sus>"
+	"sus" pr
+"<lei>"
+	"lo" det def mf pl
+"<rais>"
+	"rai" n m pl
+"<solars>"
+	"solar" adj m pl
+"<.>"
+	"." sent
+
+"<Aqueleis>"
+	"aqueu" det dem mf pl
+"<idrocarburs>"
+	"idrocarbur" n m pl
+"<son>"
+	"èsser" vbser pri p3 pl
+"<situats>"
+	"situar" vblex pp m pl
+"<dins>"
+	"dins" pr
+"<un>"
+	"un" det ind m sg 
+"<jaç>"
+	"jaç" n m sg
+"<relativament>"
+	"relativament" adv
+"<fin>"
+	"fin" adj m sg
+"<entre>"
+	"entre" pr
+"<100>"
+	"100" num
+"<e>"
+	"e" cnjcoo
+"<280>"
+	"280" num
+"<km>"
+	"km" n m sp
+"<.>"
+	"." sent
+
+"<Forman>"
+	"formar" vblex pri p3 pl
+"<adonc>"
+	"adonc" pr
+"<una>"
+	"un" det ind f sg 
+"<bruma>"
+	"bruma" n f sg
+"<probablament>"
+	"probablament" adv
+"<responsabla>"
+	"responsable" adj f sg
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+"<aspècte>"
+	"aspècte" n m sg
+"<calme>"
+	"calme" adj m sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<planeta>"
+	"planeta" n f sg
+"<.>"
+	"." sent
+
+
+
+"<Termosfèra>"
+	"termosfèra" n f sg
+"<e>"
+	"e" cnjcoo
+"<corona>"
+	"corona" n f sg
+
+
+"<Fotografia>"
+	"fotografia" n f sg
+"<d'>"
+	"de" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<facha>"
+	"far" vblex pp f sg
+"<en>"
+	"en" pr
+"<2005>"
+	"2005" num
+"<amb>"
+	"amb" pr
+"<son>"
+	"son" det pos m sg
+"<sistèma>"
+	"sistèma" n m sg
+"<d'>"
+	"de" pr
+"<anèus>"
+	"anèl" n m pl
+"<e de>"
+	"e" cnjcoo
+		"de" pr
+"<nívols>"
+	"nívol" n m pl
+"<atmosferics>"
+	"atmosferic" adj m pl
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
+"<L'>"
+	"lo" det def mf sg
+"<atmosfèra>"
+	"atmosfèra" n f sg
+"<exteriora>"
+	"exterior" adj f sg
+"<d'>"
+	"de" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<compausada>"
+	"compausar" vblex pp f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<termosfèra>"
+	"termosfèra" n f sg
+"<e d'>"
+	"e" cnjcoo
+		"de" pr
+"<un>"
+	"un" det ind m sg 
+"<jaç>"
+	"jaç" n m sg
+"<dich>"
+	"dire" vblex pp m sg
+"<corona>"
+	"corona" n f sg
+"<.>"
+	"." sent
+
+"<La>"
+	"lo" det def f sg
+"<temperatura>"
+	"temperatura" n f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<termosfèra>"
+	"termosfèra" n f sp
+"<es>"
+	"èsser" vbser pri p3 sg
+"<quasi>"
+	"quasi" preadv
+"<constanta>"
+	"constant" adj f sg
+"<entre>"
+	"entre" pr
+"<530 °C>"
+	"530 °C"  num mf sp
+"<e>"
+	"e" cnjcoo
+"<580 °C>"
+	"580 °C"  num mf sp
+"<.>"
+	"." sent
+
+"<Es>"
+	"èsser" vbser pri p3 sg
+"<donc>"
+	"donc" cnjadv
+"<pus>"
+	"pus" adv
+"<importanta>"
+	"important" adj f sg
+"<que>"
+	"que" cnjadv
+"<per>"
+	"per" pr
+"<la>"
+	"lo" det def f sg
+"<termosfèra>"
+	"termosfèra" n f sg
+"<de>"
+	"de" pr
+"<Saturne>"
+	"Saturne" np top m sg
+"<(>"
+	"(" lpar
+"<environ>"
+	"environ" adv
+"<150 °C>"
+	"150 °C" num mf sp
+"<)>"
+	")" rpar
+"<mai>"
+	"mai" pr
+"<se>"
+	"se" prn pro ref p3 mf sp
+"<conois>"
+	"conéisser" vblex pri p3 sg
+"<pas>"
+	"pas" adv
+"<la>"
+	"lo" det def f sg
+"<rason>"
+	"rason" n f sg
+"<d'>"
+	"de" pr
+"<aqueu>"
+	"aqueu" det dem m sg
+"<fenomèn>"
+	"fenomèn" n m sg
+"<.>"
+	"." sent
+
+"<D'efiech>"
+	"d'efiech" adv
+"<,>"
+	"," cm
+"<lei>"
+	"lo" det def mf pl
+"<radiacions>"
+	"radiacion" n f pl
+"<ultravioletas>"
+	"ultraviolet" adj f pl
+"<dau>"
+	"de" pr
+		"lo" det def m sg
+"<Soleu>"
+	"soleu" n m sg
+"<o>"
+	"o" cnjcoo
+"<l'>"
+	"lo" det def mf sg
+"<activitat>"
+	"activitat" n f sg
+"<d'>"
+	"de" pr
+"<auròras>"
+	"auròra" n f pl
+"<polaras>"
+	"polar" adj f pl
+"<fornisson>"
+	"fornir" vblex pri p3 pl
+"<pas>"
+	"pas" adv
+"<l'>"
+	"lo" det def mf sg
+"<energia>"
+	"energia" n f sg
+"<necessària>"
+	"necessari" adj f sg
+"<.>"
+	"." sent
+
+"<De mai>"
+	"de mai" adv
+"<,>"
+	"," cm
+"<l'>"
+	"lo" det def mf sg
+"<activitat>"
+	"activitat" n f sg
+"<deis>"
+	"de" pr
+		"lo" det def m pl
+"<auròras>"
+	"auròra" n f pl
+"<polaras>"
+	"polar" adj f pl
+"<es>"
+	"èsser" vbser pri p3 sg
+"<insignificanta>"
+	"insignificant" adj f sg
+"<a respècte>"
+	"a respècte" pr
+"<de>"
+	"de" pr
+"<Jupitèr>"
+	"Jupitèr" np top m sg
+"<o>"
+	"o" cnjcoo
+"<de>"
+	"de" pr
+"<Saturne>"
+	"Saturne" np top m sg
+"<.>"
+	"." sent
+
+"<La>"
+	"lo" det def f sg
+"<corona>"
+	"corona" n f sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<facha>"
+	"far" vblex pp f sg
+"<de>"
+	"de" pr
+"<moleculas>"
+	"molecula" n f pl
+"<de>"
+	"de" pr
+"<diidrogèn>"
+	"diidrogèn" n m sg
+"<e d'>"
+	"e" cnjcoo
+		"de" pr
+"<atòms>"
+	"atòm" n m pl
+"<d'>"
+	"de" pr
+"<idrogèn>"
+	"idrogèn" n m sg
+"<.>"
+	"." sent
+
+"<Aquela>"
+	"aquel" det dem f sg
+"<composicion>"
+	"composicion" n f sg
+"<explica>"
+	"explicar" vblex pri p3 sg
+"<la>"
+	"lo" det def f sg
+"<talha>"
+	"talha" n f sg
+"<unica>"
+	"unic" adj f sg
+"<dins>"
+	"dins" pr
+"<lo>"
+	"lo" det def m sg
+"<Sistèma>"
+	"sistèma" n m sg
+"<Solar>"
+	"solar" adj m sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<corona>"
+	"corona" n f sg
+"<fins a>"
+	"fins a" pr
+"<50>"
+	"50" num
+"<000>"
+	"000" num
+"<km>"
+	"km" n m sp
+"<amb>"
+	"amb" pr
+"<,>"
+	"," cm
+"<per consequéncia>"
+	"per consequéncia" adv
+"<,>"
+	"," cm
+"<la>"
+	"lo" det def f sg
+"<creacion>"
+	"creacion" n f sg
+"<d'>"
+	"de" pr
+"<una>"
+	"un" det ind f sg 
+"<tirassiera>"
+	"tirassiera" n f sg
+"<per>"
+	"per" pr
+"<lei>"
+	"lo" det def mf pl
+"<particulas>"
+	"particula" n f pl
+"<orbitant>"
+	"orbitar" vblex ger
+"<près>"
+	"près" adv
+"<d'>"
+	"de" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<.>"
+	"." sent
+
+"<Ansin>"
+	"ansin" adv
+"<,>"
+	"," cm
+"<la>"
+	"lo" det def f sg
+"<corona>"
+	"corona" n f sg
+"<entraïna>"
+	"entraïnar" vblex pri p3 sg
+"<especialament>"
+	"especialament" adv
+"<una>"
+	"un" det ind f sg
+"<reduccion>"
+	"reduccion" n f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<quantitat>"
+	"quantitat" n f sg
+"<de>"
+	"de" pr
+"<poussa>"
+	"poussa" n f sg
+"<dins>"
+	"dins" pr
+"<lo>"
+	"lo" det def m sg
+"<sistèma>"
+	"sistèma" n m sg
+"<d'>"
+	"de" pr
+"<anèus>"
+	"anèl" n m pl
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<planeta>"
+	"planeta" n f sg
+"<.>"
+	"." sent
+
+
+
+"<Ionosfèra>"
+	"ionosfèra" n f sg
+"<.>"
+	"." sent
+
+
+
+"<L'>"
+	"lo" det def mf sg
+"<ionosfèra>"
+	"ionosfèra" n f sg
+"<d'>"
+	"de" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<situada>"
+	"situar" vblex pp f sg
+"<entre>"
+	"entre" pr
+"<2>"
+	"2" num
+"<000>"
+	"000" num
+"<e>"
+	"e" cnjcoo
+"<10>"
+	"10" num
+"<000>"
+	"000" num
+"<km>"
+	"km" n m sp
+"<dins>"
+	"dins" pr
+"<lei>"
+	"lo" det def mf pl
+"<partidas>"
+	"partida" n f pl
+"<auta>"
+	"aut" adj f sg
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+"<estratosfèra>"
+	"estratosfèra" n f sg
+"<e>"
+	"e" cnjcoo
+"<bassa>"
+	"bas" adj f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<termosfèra>"
+	"termosfèra" n f sg
+"<.>"
+	"." sent
+
+"<Es>"
+	"èsser" vbser pri p3 sg
+"<pus>"
+	"pus" adv
+"<densa>"
+	"dens" adj f sg
+"<que>"
+	"que" cnjsub
+"<leis>"
+	"lo" det def mf pl
+"<ionosfèras>"
+	"ionosfèra" n f pl
+"<de>"
+	"de" pr
+"<Saturne>"
+	"Saturne" np top m sg
+"<e de>"
+	"e" cnjcoo
+		"de" pr
+"<Neptun>"
+	"Neptun" np top m sg
+"<,>"
+	"," cm
+"<probablament>"
+	"probablament" adv
+"<en causa de>"
+	"en causa de" pr
+"<la>"
+	"lo" det def f sg
+"<preséncia>"
+	"preséncia" n f sg
+"<d'>"
+	"de" pr
+"<una>"
+	"un" det ind f sg
+"<concentracion>"
+	"concentracion" n f sg
+"<febla>"
+	"feble" adj f sg
+"<d'>"
+	"de" pr
+"<idrocarburs>"
+	"idrocarbur" n m pl
+"<dins>"
+	"dins" pr
+"<l'>"
+	"lo" det def mf sg
+"<estratosfèra>"
+	"estratosfèra" n f sg
+"<.>"
+	"." sent
+
+"<L'>"
+	"lo" det def mf sg
+
+"<ionosfèra>"
+	"ionosfèra" n f sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<principalament>"
+	"principalament" adv
+"<sostenguda>"
+	"sosténer" vblex pp f sg
+"<per>"
+	"per" pr
+"<lei>"
+	"lo" det def mf pl
+"<rais>"
+	"rai" n m pl
+"<ultraviolets>"
+	"ultraviolet" adj m pl
+"<dau>"
+	"de" pr 
+		"lo" det def m sg
+"<Soleu>"
+	"Soleu" n m sg
+"<.>"
+	"." sent
+
+"<Leis>"
+	"lo" det def mf pl
+"<auròras>"
+	"auròra" n f pl
+"<polaras>"
+	"polar" adj f pl
+"<an>"
+	"aver" vblex pri p3 pl
+"<pas>"
+	"pas" adv
+"<de>"
+	"de" pr
+"<ròtles>"
+	"ròtle" n m pl
+"<importants>"
+	"important" adj m pl
+"<coma>"
+	"coma" adv
+"<per>"
+	"per" pr
+"<Jupitèr>"
+	"Jupitèr" np top m sg
+"<o>"
+	"o" cnjcoo
+"<Saturne>"
+	"Saturne" np top m sg
+"<.>"
+	"." sent
+
+
+
+"<Bendas>"
+	"benda" n f pl
+"<,>"
+	"," cm
+"<vents>"
+	"vent" n m pl
+"<e>"
+	"e" cnjcoo
+"<nívols>"
+	"nívol" n m pl
+"<.>"
+	"." sent
+
+
+
+"<En>"
+	"en" pr
+"<1986>"
+	"1986" num
+"<,>"
+	"," cm
+"<la>"
+	"lo" det def f sg
+"<sonda>"
+	"sonda" n f sg
+"<Voyager>"
+	"Voyager" np al m sg
+"<2>"
+	"2" num
+"<observèt>"
+	"observar" vblex ifi p3 sg
+"<l'>"
+	"lo" det def mf sg
+"<emisfèri>"
+	"emisfèri" n m sg
+"<sud>"
+	"sud" adj mf sp
+"<d'>"
+	"de" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<d'>"
+	"de" pr
+"<estiu>"
+	"estiu" n m sg
+"<mai>"
+	"mai" pr
+"<manca>"
+	"mancar" vblex pri p3 sg
+"<l'>"
+	"lo" det def mf sg
+"<emisfèri>"
+	"emisfèri" n m sg
+"<nòrd>"
+	"nòrd" adj mf sp
+"<.>"
+	"." sent
+
+"<Leis>"
+	"lo" det def mf pl
+"<observacions>"
+	"observacion" n f pl
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<sonda>"
+	"sonda" n f sg
+"<,>"
+	"," cm
+"<puei>"
+	"puei" pr
+"<de>"
+	"de" pr
+"<telescòpis>"
+	"telescòpi" n m pl
+"<Hubble>"
+	"Hubble" np cog mf sp
+"<,>"
+	"," cm
+"<e>"
+	"e" cnjcoo
+"<Keck>"
+	"Keck" np cog mf sp
+"<mostrèron>"
+	"mostrar" vblex ifi p3 pl
+"<que>"
+	"que" cnjsub
+"<l'>"
+	"lo" det def mf sg
+"<emisfèri>"
+	"emisfèri" n m sg
+"<sud>"
+	"sud" adj mf sp
+"<èra>"
+	"èsser" vbser pii p3 sg
+"<devesit>"
+	"devesit" adj m sg
+"<entre>"
+	"entre" pr
+"<una>"
+	"un" det ind f sg
+"<calòta>"
+	"calòta" n f sg
+"<polara>"
+	"polar" adj f sg
+"<brilhanta>"
+	"brilhant" adj f sg
+"<e de>"
+	"e" cnjcoo
+		"de" pr
+"<bendas>"
+	"benda" n f pl
+"<sornas>"
+	"sorne" adj f pl
+"<a>"
+	"a" pr
+"<l'>"
+	"lo" det def mf sg
+"<eqüator>"
+	"equator" n m sg
+"<.>"
+	"." sent
+
+"<Lo>"
+	"lo" det def m sg
+"<limit>"
+	"limit" n m sg
+"<èra>"
+	"èsser" vbser pii p3 sg
+"<una>"
+	"un" det ind f sg 
+"<benda>"
+	"benda" n f sg
+"<estrecha>"
+	"estrech" adj f sg
+"<,>"
+	"," cm
+"<entre>"
+	"entre" pr
+
+"<lei>"
+	"lo" det def mf pl
+"<latituds>"
+	"latitud" n f pl
+ -
+"<45>"
+	"45" num
+° 
+"<e>"
+	"e" cnjcoo
+ -
+"<50>"
+	"50" num
+°
+"<,>"
+	"," cm
+"<dicha>"
+	"dire" vblex pp f sg
+"<còl>"
+	"còl" n m sg
+"<polar>"
+	"polar" adj m sg
+"<.>"
+	"." sent
+
+"<Se>"
+	"se" prn pro ref p3 mf sp
+"<supausa>"
+	"supausar" vblex pri p3 sg
+"<que>"
+	"que" cnjsub 
+"<la>"
+	"lo" det def f sg
+"<calòta>"
+	"calòta" n f sg
+"<e>"
+	"e" cnjcoo
+"<lo>"
+	"lo" det def m sg
+"<còl>"
+	"còl" n m sg
+"<polars>"
+	"polar" adj m pl
+"<tènon>"
+	"tenir" vblex pri p3 pl
+"<de>"
+	"de" pr
+"<nívols>"
+	"nívol" n m pl
+"<de>"
+	"de" pr
+"<metan>"
+	"metan" n m sg
+"<amb>"
+	"amb" pr
+"<una>"
+	"un" det ind f sg 
+"<pression>"
+	"pression" n f sg
+"<entre>"
+	"entre" pr
+"<1,3>"
+	"1,3" num
+"<e>"
+	"e" cnjcoo
+"<2>"
+	"2" num
+"<bar>"
+	"bar" n m sg
+"<.>"
+	"." sent
+
+"<La>"
+	"lo" det def f sg
+"<planeta>"
+	"planeta" n f sg
+"<sembla>"
+	"semblar" vblex pri p3 sg
+"<donc>"
+	"donc" cnjadv
+"<assimetrica>"
+	"assimetric" adj f sg
+"<amb>"
+	"amb" pr
+"<de>"
+	"de" pr
+"<regions>"
+	"region" n f pl
+"<lusentas>"
+	"lusent" adj f pl
+"<e>"
+	"e" cnjcoo
+"<sornas>"
+	"sorne" adj f pl
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
+"<La>"
+	"lo" det def f sg
+"<mission>"
+	"mission" n f sg
+"<Voyager>"
+	"Voyager" np al m sg
+"<2>"
+	"2" num
+"<vetz>"
+	"veire" vblex pri p3 sg
+"<tanben>"
+	"tanben" adv
+"<de>"
+	"de" pr
+"<nívols>"
+	"nívol" n m pl
+"<d'>"
+	"de" pr
+"<auta>"
+	"aut" adj f sg
+"<altitud>"
+	"altitud" n f sg
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<nòrd>"
+	"nòrd" n m sg
+"<dau>"
+	"de" pr
+		"lo" det def m sg
+"<còl>"
+	"còl" n m sg
+"<.>"
+	"." sent
+
+"<La>"
+	"lo" det def f sg
+"<durada>"
+	"durada" n f sg
+"<de>"
+	"de" pr
+"<vida>"
+	"vida" n f sg
+"<dei>"
+	"de" pr
+		"lo" det def m sg
+"<nívols>"
+	"nívol" n m pl
+"<varia>"
+	"variar" vblex pri p3 sg
+"<entre>"
+	"entre" pr 
+"<quauquei>"
+	"quauque" det ind mf pl
+"<jorns>"
+	"jorn" n m pl
+"<e>"
+	"e" cnjcoo
+"<uneis>"
+	"un" det ind mf pl
+"<annadas>"
+	"annada" n f pl
+"<mai>"
+	"mai" pr
+"<permetèron>"
+	"permetre" vblex ifi p3 pl
+"<de>"
+	"de" pr
+"<definir>"
+	"definir" vblex inf
+"<unei>"
+	"un" det ind mf pl
+"<zonas>"
+	"zona" n f pl
+"<dei>"
+	"de" pr
+		"lo" det def m sg
+"<vents>"
+	"vent" n m pl
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<partida>"
+	"partida" n f sg
+"<superiora>"
+	"superior" adj f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<troposfèra>"
+	"troposfèra" n f sg
+"<.>"
+	"." sent
+
+"<Ansin>"
+	"ansin" adv
+"<,>"
+	"," cm
+"<la>"
+	"lo" det def f sg
+"<circulacion>"
+	"circulacion" n f sg
+"<dei>"
+	"de" pr
+		"lo" det def m sg
+"<vents>"
+	"vent" n m pl
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+"<eqüator>"
+	"equator" n m sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<dins>"
+	"dins" pr
+"<lo>"
+	"lo" det def m sg
+"<sens>"
+	"sens" n m sg
+"<retrograd>"
+	"retrograd" adj m sg
+"<.>"
+	"." sent
+
+"<Lei>"
+	"lo" det def mf pl
+"<velocitats>"
+	"velocitat" n f pl
+"<,>"
+	"," cm
+"<enregistradas>"
+	"enregistrar" vblex pp f pl
+"<entre>"
+	"entre" pr
+"<50>"
+	"50" num
+"<e>"
+	"e" cnjcoo
+"<100>"
+	"100" num
+"<m>"
+	"m" n m sp
+"<s>"
+	"s" n f sp
+"<,>"
+	"," cm
+"<aumentan>"
+	"aumentar" vblex pri p3 pl
+"<en>"
+	"en" prn pro adv
+"<s'>"
+	"se" prn pro ref p3 mf sp 
+"<alunchant>"
+	"alunchar" vblex ger
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+"<eqüator>"
+	"equator" n m sg
+"<.>"
+	"." sent
+
+"<Vèrs>"
+	"vèrs" n m sg
+"<lo>"
+	"lo" det def m sg
+"<pòl>"
+	"pòl" n m sg
+"<nòrd>"
+	"nòrd" adj mf sp
+"<,>"
+	"," cm
+"<lei>"
+	"lo" det def mf pl
+"<vents>"
+	"vent" n m pl
+"<se>"
+	"se" prn pro ref p3 mf sp 
+"<desplaçan>"
+	"desplaçar" vblex pri p3 pl
+"<dins>"
+	"dins" pr
+"<lo>"
+	"lo" det def m sg
+"<sens>"
+	"sens" n m sg
+"<prograd>"
+	"prograd" adj m sg
+"<e>"
+	"e" cnjcoo
+"<la>"
+	"lo" det def f sg
+"<velocitat>"
+	"velocitat" n f sg
+"<monta>"
+	"montar" vblex pri p3 sg
+"<a>"
+	"a" pr
+"<240>"
+	"240" num
+"<m>"
+	"m" n m sp
+"<s>"
+	"s" n f sp
+"<per>"
+	"per" pr
+"<la>"
+	"lo" det def f sg
+"<latitud>"
+	"latitud" n f sg
+ +
+"<50>"
+	"50" num
+° 
+"<per>"
+	"per" pr
+"<venir>"
+	"venir" vblex inf
+"<nulla>"
+	"nul" adj f sg
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<pòl>"
+	"pòl" n m sg
+"<.>"
+	"." sent
+
+"<En revenge>"
+	"en revenge" adv
+"<,>"
+	"," cm
+"<l'>"
+	"lo" det def mf sg
+"<abséncia>"
+	"abséncia" n f sg
+"<de>"
+	"de" pr
+"<nívols>"
+	"nívol" n m pl
+"<dins>"
+	"dins" pr
+"<la>"
+	"lo" det def f sg
+"<region>"
+	"region" n f sg
+"<polara>"
+	"polar" adj f sg
+"<sud>"
+	"sud" adj mf sp
+
+"<empacha>"
+	"empachar" vblex pri p3 sg
+"<de>"
+	"de" pr
+"<conóisser>"
+	"conéisser" vblex inf
+"<lei>"
+	"lo" det def mf pl
+"<vents>"
+	"vent" n m pl
+"<en dessota>"
+	"en dessota" adv
+"<dau>"
+	"de" pr
+		"lo" det def m sg
+"<còl>"
+	"còl" n m sg
+"<.>"
+	"." sent
+
+"<Dins>"
+	"dins" pr
+"<aquò>"
+	"aquò" prn tn p3 nt
+"<,>"
+	"," cm
+"<la>"
+	"lo" det def f sg
+"<velocitat>"
+	"velocitat" n f sg
+"<dei>"
+	"de" pr
+		"lo" det def m sg
+"<vents>"
+	"vent" n m pl
+"<dins>"
+	"dins" pr
+"<l'>"
+	"lo" det def mf sg
+"<emisfèri>"
+	"emisfèri" n m sg
+"<sud>"
+	"sud" adj mf sp
+"<sembla>"
+	"semblar" vblex pri p3 sg
+"<pus>"
+	"pus" adv
+"<rapida>"
+	"rapid" adj f sg
+"<que>"
+	"que" cnjsub 
+"<dans>"
+	"dans" barb
+"<l'>"
+	"lo" det def mf sg
+"<emisfèri>"
+	"emisfèri" n m sg
+"<nòrd>"
+	"nòrd" adj mf sp
+"<,>"
+	"," cm
+"<especialament>"
+	"especialament" adv
+"<entre>"
+	"entre" pr
+"<lei>"
+	"lo" det def mf pl
+"<latituds>"
+	"latitud" n f pl
+ ±
+"<20>"
+	"20" num
+"<e>"
+	"e" cnjcoo
+ ±
+"<40>"
+	"40" num
+°
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
+"<En>"
+	"en" pr
+"<2006>"
+	"2006" num
+"<,>"
+	"," cm
+"<una>"
+	"un" det ind f sg 
+"<tempèsta>"
+	"tempèsta" n f sg
+"<similara>"
+	"similar" adj f sg
+"<a>"
+	"a" pr
+"<la>"
+	"lo" det def f sg
+"<taca>"
+	"taca" n f sg
+"<blava>"
+	"blau" adj f sg
+"<observada>"
+	"observar" vblex pp f sg
+"<per>"
+	"per" adv
+"<Voyager>"
+	"Voyager" np al m sg
+"<2>"
+	"2" num
+"<sus>"
+	"sus" pr
+"<Neptun>"
+	"Neptun" np top m sg
+"<foguèt>"
+	"èsser" vbser ifi p3 sg
+"<detectada>"
+	"detectar" vblex pp f sg
+"<per>"
+	"per" pr
+"<lei>"
+	"lo" det def mf pl
+"<telescòpis>"
+	"telescòpi" n m pl
+"<Hubble>"
+	"Hubble" np al m sg
+"<e>"
+	"e" cnjcoo
+"<Keck>"
+	"Keck" np al m sg
+"<dins>"
+	"dins" pr
+"<l'>"
+	"lo" det def mf sg
+"<emisfèri>"
+	"emisfèri" n m sg
+"<nòrd>"
+	"nòrd" adj mf sp
+"<vers>"
+	"vers" barb
+"<la>"
+	"lo" det def f sg
+"<latitud>"
+	"latitud" n f sg
+ +
+"<28>"
+	"28" num
+°
+"<.>"
+	"." sent
+
+"<La>"
+	"lo" det def f sg
+"<taca>"
+	"taca" n f sg
+"<aviá>"
+	"aver" vblex pii p3 sg
+"<una>"
+	"un" det ind f sg 
+"<talha>"
+	"talha" n f sg
+"<relativament>"
+	"relativament" adv
+"<pichona>"
+	"pichon" adj f sg
+"<a respècte>"
+	"a respècte" pr
+"<dei>"
+	"de" pr
+		"lo" det def m sg
+"<tempèstas>"
+	"tempèsta" n f pl
+"<similaras>"
+	"similar" adj f pl
+"<de>"
+	"de" pr
+"<Neptun>"
+	"Neptun" np top m sg
+"<amb>"
+	"amb" pr
+"<una>"
+	"un" det ind f sg
+"<longor>"
+	"longor" n f sg
+"<de>"
+	"de" pr
+"<1>"
+	"1" num
+"<300>"
+	"300" num
+"<km>"
+	"km" n m sp
+"<en>"
+	"en" pr
+"<longitud>"
+	"longitud" n f sg
+"<e>"
+	"e" cnjcoo
+"<2>"
+	"2" num
+"<700>"
+	"700" num
+"<km>"
+	"km" n m sp
+"<en>"
+	"en" pr
+"<latitud>"
+	"latitud" n f sg
+"<.>"
+	"." sent
+
+"<Sa>"
+	"son" det pos f sg
+"<preséncia>"
+	"preséncia" n f sg
+"<mòstra>"
+	"mostrar" vblex pri p3 sg
+"<que>"
+	"que" cnjsub 
+"<l'>"
+	"lo" det def mf sg
+"<atmosfèra>"
+	"atmosfèra" n f sg
+"<d'>"
+	"de" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<deu>"
+	"deure" vbmod pri p3 sg
+"<subir>"
+	"subir" vblex inf
+"<de>"
+	"de" pr
+"<cambiaments>"
+	"cambiament" n m pl
+"<climatics>"
+	"climatic" adj m pl
+"<importants>"
+	"important" adj m pl
+"<durant>"
+	"durant" pr
+"<lei>"
+	"lo" det def mf pl
+"<periòdes>"
+	"periòde" n m pl
+"<d'>"
+	"de" pr
+"<equinòcci>"
+	"equinòcci" n m sg
+"<.>"
+	"." sent
+
+
+
+"<Sistèma>"
+	"sistèma" n m sg
+"<d'>"
+	"de" pr
+"<anèus>"
+	"anèl" n m pl
+
+
+"<Sistèma>"
+	"sistèma" n m sg
+"<d'>"
+	"de" pr
+"<anèus>"
+	"anèl" n m pl
+"<d'>"
+	"de" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<observat>"
+	"observar" vblex pp m sg
+"<per>"
+	"per" pr
+"<la>"
+	"lo" det def f sg
+"<sonda>"
+	"sonda" n f sg
+"<Voyager>"
+	"Voyager" np al m sg
+"<2>"
+	"2" num
+"<en>"
+	"en" pr
+"<1986>"
+	"1986" num
+"<.>"
+	"." sent
+
+"<L'>"
+	"lo" det def mf sg
+"<anèu>"
+	"anèl" n m sg
+"<pus>"
+	"pus" adv
+"<brilhant>"
+	"brilhant" adj m sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<l'>"
+	"lo" det def mf sg
+"<anèu>"
+	"anèl" n m sg
+ ε
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
+"<Uranus>"
+	"Uranus" np top m sg
+"<a>"
+	"aver" vblex pri p3 sg
+"<un>"
+	"un" det ind m sg 
+"<sistèma>"
+	"sistèma" n m sg
+"<d'>"
+	"de" pr
+"<anèus>"
+	"anèl" n m pl
+"<tèunes>"
+	"tèune" adj m pl
+"<descubèrt>"
+	"descubrir" vblex pp m sg
+"<en>"
+	"en" pr
+"<1977>"
+	"1977" num
+"<per azard>"
+	"per azard" adv
+"<durant>"
+	"durant" pr
+"<una>"
+	"un" det ind f sg 
+"<observacion>"
+	"observacion" n f sg
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+"<atmosfèra>"
+	"atmosfèra" n f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<planeta>"
+	"planeta" n f sg
+"<.>"
+	"." sent
+
+"<Foguèt>"
+	"èsser" vbser ifi p3 sg
+"<lo>"
+	"lo" det def m sg
+"<segond>"
+	"segond" adj m sg
+"<sistèma>"
+	"sistèma" n m sg
+"<conegut>"
+	"conéisser" vblex pp m sg
+"<dins>"
+	"dins" pr
+"<lo>"
+	"lo" det def m sg
+"<Sistèma>"
+	"sistèma" n m sg
+"<Solar>"
+	"solar" adj m sg
+"<.>"
+	"." sent
+
+"<Aqueu>"
+	"aqueu" det dem m sg
+"<sistèma>"
+	"sistèma" n m sg
+"<es>"
+	"èsser" vbser pri p3 sg
+
+"<pas>"
+	"pas" adv
+"<tant>"
+	"tant" preadv
+"<complèxe>"
+	"complèxe" adj m sg
+"<coma>"
+	"coma" adv
+"<leis>"
+	"lo" det def mf pl
+"<anèus>"
+	"anèl" n m pl
+"<de>"
+	"de" pr
+"<Saturne>"
+	"Saturne" np top m sg
+"<mai>"
+	"mai" pr
+"<es>"
+	"èsser" vbser pri p3 sg
+"<pus>"
+	"pus" adv
+"<important>"
+	"important" adj m sg
+"<qu'>"
+	"que" cnjsub
+"<aquelei>"
+	"aqueu" prn tn mf pl
+"<que>"
+	"que" rel an mf sp
+"<s'>"
+	"se" prn pro ref p3 mf sp 
+"<obsèrva>"
+	"observar" vblex pri p3 sg
+"<a l'entorn de>"
+	"a l'entorn de" adv
+"<Jupitèr>"
+	"Jupitèr" np top m sg
+"<o>"
+	"o" cnjcoo
+"<de>"
+	"de" pr
+"<Neptun>"
+	"Neptun" np top m sg
+"<.>"
+	"." sent
+
+"<A l'ora d'ara>"
+	"a l'ora d'ara" adv
+"<,>"
+	"," cm
+"<se>"
+	"se" prn pro ref p3 mf sp
+"<conois>"
+	"conéisser" vblex pri p3 sg
+"<13>"
+	"13" num
+"<anèus>"
+	"anèl" n m pl
+"<amb>"
+	"amb" pr
+"<una>"
+	"un" det ind f sg 
+"<espessor>"
+	"espessor" n f sg
+"<eqüatoriala>"
+	"equatorial" adj f sg
+"<de>"
+	"de" pr
+"<quauquei>"
+	"quauque" det ind mf pl
+"<quilomètres>"
+	"quilomètre" n m pl 
+"<.>"
+	"." sent
+
+"<Son>"
+	"èsser" vbser pri p3 pl
+"<probablament>"
+	"probablament" adv
+"<joves>"
+	"jove" adj mf pl
+"<e>"
+	"e" cnjcoo
+"<dos>"
+	"dos" num m sp
+"<pichons>"
+	"pichon" adj m pl
+"<satellits>"
+	"satellit" n m pl
+"<partejan>"
+	"partejar" vblex pri p3 pl
+"<seis>"
+	"son" dem pos mf pl
+"<orbitas>"
+	"orbita" n f pl
+"<.>"
+	"." sent
+
+"<Son>"
+	"èsser" vbser pri p3 pl
+"<fachs>"
+	"far" vblex pp m pl
+"<de>"
+	"de" pr
+"<particulas>"
+	"particula" n f pl
+"<e de>"
+	"e" cnjcoo
+		"de" pr
+"<blòts>"
+	"blòt" n m pl
+"<d'>"
+	"de" pr
+"<una>"
+	"un" det ind f sg
+"<talha>"
+	"talha" n f sg
+"<variant>"
+	"variar" vblex ger
+"<dau>"
+	"de" pr
+		"lo" det def m sg
+"<micromètre>"
+	"micromètre" n m sg
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<mètre>"
+	"mètre" n m sg
+"<.>"
+	"." sent
+
+
+
+"<Anèus>"
+	"anèl" n m pl
+"<d'>"
+	"de" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<Nom>"
+	"nom" n m sg
+ 	
+"<Distància>"
+	"distància" n f sg
+"<(>"
+	"(" lpar
+"<km>"
+	"km" n m sp
+"<)>"
+	")" rpar
+ 	
+"<Espessor>"
+	"espessor" n f sg
+"<(>"
+	"(" lpar
+"<km>"
+	"km" n m sp
+"<)>"
+	")" rpar
+
+
+"<Anèu>"
+	"anèl" n m sg
+ ζ 	
+"<38>"
+	"38" num
+"<000>"
+	"000" num
+ 	
+"<2>"
+	"2" num
+
+
+"<Anèu>"
+	"anèl" n m sg
+"<6>"
+	"6" num
+ 	
+"<41>"
+	"41" num
+"<840>"
+	"840" num
+ 	
+"<1>"
+	"1" num
+"<a>"
+	"a" pr
+"<3>"
+	"3" num
+
+
+"<Anèu>"
+	"anèl" n m sg
+"<5>"
+	"5" num
+ 	
+"<42>"
+	"42" num
+"<230>"
+	"230" num
+ 	
+"<2>"
+	"2" num
+"<a>"
+	"a" pr
+"<3>"
+	"3" num
+
+
+"<Anèu>"
+	"anèl" n m sg
+"<4>"
+	"4" num
+ 	
+"<42>"
+	"42" num
+"<580>"
+	"580" num
+ 	
+"<2>"
+	"2" num
+"<a>"
+	"a" pr
+"<3>"
+	"3" num
+
+
+"<Anèu>"
+	"anèl" n m sg
+ α 	
+"<44>"
+	"44" num
+"<720>"
+	"720" num
+ 	
+"<7>"
+	"7" num
+"<a>"
+	"a" pr
+"<12>"
+	"12" num
+
+
+"<Anèu>"
+	"anèl" n m sg
+ β 	
+"<45>"
+	"45" num
+"<670>"
+	"670" num
+ 	
+"<7>"
+	"7" num
+"<a>"
+	"a" pr
+"<12>"
+	"12" num
+
+
+"<Anèu>"
+	"anèl" n m sg
+ η 	
+"<47>"
+	"47" num
+"<190>"
+	"190" num
+ 	
+"<0>"
+	"0" num
+"<a>"
+	"a" pr
+"<2>"
+	"2" num
+
+
+"<Anèu>"
+	"anèl" n m sg
+ γ 	
+"<47>"
+	"47" num
+"<630>"
+	"630" num
+ 	
+"<1>"
+	"1" num
+"<a>"
+	"a" pr
+"<4>"
+	"4" num
+
+
+"<Anèu>"
+	"anèl" n m sg
+ δ 	
+"<48>"
+	"48" num
+"<290>"
+	"290" num
+ 	
+"<3>"
+	"3" num
+"<a>"
+	"a" pr
+"<9>"
+	"9" num
+
+
+"<Anèu>"
+	"anèl" n m sg
+ λ 	
+"<50>"
+	"50" num
+"<020>"
+	"020" num
+ 	
+"<1>"
+	"1" num
+"<a>"
+	"a" pr
+"<2>"
+	"2" num
+
+
+"<Anèu>"
+	"anèl" n m sg
+ ε 	
+"<51>"
+	"51" num
+"<140>"
+	"140" num
+ 	
+"<20>"
+	"20" num
+"<a>"
+	"a" pr
+"<100>"
+	"100" num
+
+
+"<Anèu>"
+	"anèl" n m sg
+ ν 	~ 
+"<66>"
+	"66" num
+"<000>"
+	"000" num
+ 	
+"<?>"
+	"?" sent
+
+
+"<Anèu>"
+	"anèl" n m sg
+ μ 	
+"<97>"
+	"97" num
+"<734>"
+	"734" num
+ 	
+"<?>"
+	"?" sent
+
+
+"<Camp>"
+	"camp" n m sg
+"<magnetic>"
+	"magnetic" adj m sg
+
+
+"<Camp>"
+	"camp" n m sg
+"<magnetic>"
+	"magnetic" adj m sg
+"<d'>"
+	"de" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<mesurat>"
+	"mesurar" vblex pp m sg
+"<per>"
+	"per" adv
+"<Voyager>"
+	"Voyager" np al m sg
+"<2>"
+	"2" num
+"<en>"
+	"en" pr
+"<1986>"
+	"1986" num
+"<amb>"
+	"amb" pr
+"<sa>"
+	"son" det pos f sg
+"<forma>"
+	"forma" n f sg
+"<assimetrica>"
+	"assimetric" adj f sg
+"<e>"
+	"e" cnjcoo
+"<son>"
+	"son" det pos m sg
+"<centre>"
+	"centre" n m sg
+"<desplaçat>"
+	"desplaçat" adj m sg
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
+"<Lo>"
+	"lo" det def m sg
+"<camp>"
+	"camp" n m sg
+"<magnetic>"
+	"magnetic" adj m sg
+"<d'>"
+	"de" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<a>"
+	"aver" vblex pri p3 sg
+"<una>"
+	"un" det ind f sg
+"<forma>"
+	"forma" n f sg
+"<particulara>"
+	"particular" adj f sg
+"<en causa de>"
+	"en causa de" pr
+"<l'>"
+	"lo" det def mf sg
+"<enclinason>"
+	"enclinason" n f sg
+"<fòrça>"
+	"fòrça" preadv
+"<importanta>"
+	"important" adj f sg
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+"<axe>"
+	"axe" n m sg
+"<de>"
+	"de" pr
+"<rotacion>"
+	"rotacion" n f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<planeta>"
+	"planeta" n f sg
+"<e>"
+	"e" cnjcoo
+"<dau>"
+	"de" pr
+		"lo" det def m sg
+"<fach>"
+	"fach" n m sg
+"<que>"
+	"que" cnjsub
+"<lo>"
+	"lo" det def m sg
+"<centre>"
+	"centre" n m sg
+"<dau>"
+	"de" pr
+		"lo" det def m sg
+"<camp>"
+	"camp" n m sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<desplaçat>"
+	"desplaçar" vblex pp m sg
+"<a respècte>"
+	"a respècte" pr
+"<dau>"
+	"de" pr
+		"lo" det def m sg
+"<centre>"
+	"centre" n m sg
+"<geometric>"
+	"geometric" adj m sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<planeta>"
+	"planeta" n f sg
+"<.>"
+	"." sent
+
+"<En consequéncia>"
+	"en consequéncia" cnjadv
+"<,>"
+	"," cm
+"<la>"
+	"lo" det def f sg
+"<forma>"
+	"forma" n f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<magnetosfèra>"
+	"magnetosfèra" n f sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<assimetrica>"
+	"assimetric" adj f sg
+"<e>"
+	"e" cnjcoo
+"<lei>"
+	"lo" det def mf pl
+"<valors>"
+	"valor" n f pl
+"<enregistradas>"
+	"enregistrar" vblex pp f pl
+"<vàrian>"
+	"variar" vblex pri p3 pl
+"<de>"
+	"de" pr
+"<maniera>"
+	"maniera" n f sg
+"<importanta>"
+	"important" adj f sg
+"<entre>"
+	"entre" pr
+"<lei>"
+	"lo" det def mf pl
+"<pòls>"
+	"pòl" n m pl
+"<nòrd>"
+	"nòrd" adj mf sp
+"<e>"
+	"e" cnjcoo
+"<sud>"
+	"sud" adj mf sp
+"<.>"
+	"." sent
+
+"<Ansin>"
+	"ansin" adv
+"<,>"
+	"," cm
+"<l'>"
+	"lo" det def mf sg
+"<intensitat>"
+	"intensitat" n f sg
+"<mejana>"
+	"mejan" adj f sg
+"<dau>"
+	"de" pr
+		"lo" det def m sg
+"<camp>"
+	"camp" n m sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<0,23>"
+	"0,23" num
+ µ
+"<T>"
+	"t" n f sg
+"<mai>"
+	"mai" pr
+"<pòu>"
+	"poder" vmod 
+"<baissar>"
+	"baissar" vblex inf
+"<a>"
+	"a" pr
+"<0,1>"
+	"0,1" num
+ µ
+"<T>"
+	"t" n f sg
+"<dins>"
+	"dins" pr
+"<l'>"
+	"lo" det def mf sg
+"<emisfèri>"
+	"emisfèri" n m sg
+"<sud>"
+	"sud" adj mf sp
+"<e>"
+	"e" cnjcoo
+"<montar>"
+	"montar" vblex inf
+"<a>"
+	"a" pr
+"<1,1>"
+	"1,1" num
+ µ
+"<T>"
+	"t" n f sg
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<nòrd>"
+	"nòrd" adj mf sp
+	"nòrd" n m sg
+"<.>"
+	"." sent
+
+"<Coma>"
+	"coma" cnjsub
+"<Neptun>"
+	"Neptun" np top m sg
+"<presenta>"
+	"presentar" vblex pri p3 sg
+"<un>"
+	"un" det ind m sg 
+"<comportament>"
+	"comportament" n m sg
+"<similar>"
+	"similar" adj m sg
+"<,>"
+	"," cm
+"<podriá>"
+	"poder" vblex cni p3 sg
+"<èsser>"
+	"èsser" vbser inf
+"<una>"
+	"un" det ind f sg
+"<caracteristica>"
+	"caracteristica" n f sg
+"<frequenta>"
+	"frequent" adj f sg
+"<dei>"
+	"de" pr
+		"lo" det def m sg
+"<planetas>"
+	"planeta" n f pl
+"<gigantas>"
+	"gigant" adj f pl
+"<d'>"
+	"de" pr
+"<aqueu>"
+	"aqueu" det dem m sg
+"<tipe>"
+	"tipe" n m sg
+"<.>"
+	"." sent
+
+"<L'>"
+	"lo" det def mf sg
+"<origina>"
+	"origina" n f sg
+"<d'>"
+	"de" pr
+"<aquelei>"
+	"aqueu" det dem mf pl
+"<camps>"
+	"camp" n m pl
+"<magnetics>"
+	"magnetic" adj m pl
+"<seriá>"
+	"èsser" vbser cni p3 sg
+"<de>"
+	"de" pr
+"<movements>"
+	"movement" n m pl
+"<dins>"
+	"dins" pr
+"<lei>"
+	"lo" det def mf pl
+"<jaç>"
+	"jaç" n m sg
+"<d'>"
+	"de" pr
+"<aiga>"
+	"aiga" n f sg
+"<e d'>"
+	"e" cnjcoo
+		"de" pr
+"<amoniac>"
+	"amoniac" n m sg
+"<dau>"
+	"de" pr 
+		"lo" det def m sg
+"<mantèu>"
+	"mantèu" n m sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<planeta>"
+	"planeta" n f sg
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
+"<La>"
+	"lo" det def f sg
+"<magnetosfèra>"
+	"magnetosfèra" n f sg
+"<creada>"
+	"crear" vblex pp f sg
+"<per>"
+	"per" pr 
+"<aqueu>"
+	"aqueu" det dem m sg
+"<camp>"
+	"camp" n m sg
+"<magnetic>"
+	"magnetic" adj m sg
+"<a>"
+	"a" pr
+"<un>"
+	"un" det ind m sg 
+"<un>"
+	"un" barb
+"<arc>"
+	"arc" n m sg
+"<de>"
+	"de" pr
+"<tuert>"
+	"tuert" n m sg
+"<vèrs>"
+	"vèrs" n m sg
+"<23>"
+	"23" num
+"<rais>"
+	"rai" n m pl
+"<planetaris>"
+	"planetari" adj m pl
+"<causat>"
+	"causar" vblex pp m sg
+"<per>"
+	"per" pr
+"<l'>"
+	"lo" det def mf sg
+"<interaccion>"
+	"interaccion" n f sg
+"<amb>"
+	"amb" pr
+"<lo>"
+	"lo" det def m sg
+"<vent>"
+	"vent" n m sg
+"<solar>"
+	"solar" adj m sg
+"<.>"
+	"." sent
+
+"<Enviroutant>"
+	"enviroutar" vblex ger
+"<la>"
+	"lo" det def f sg
+"<magnetosfèra>"
+	"magnetosfèra" n f sg
+"<,>"
+	"," cm
+"<se>"
+	"se" prn pro ref p3 mf sp
+"<tròba>"
+	"trobar" vblex pri p3 sg
+"<la>"
+	"lo" det def f sg
+"<magnetopausa>"
+	"magnetopausa" n f sg
+"<,>"
+	"," cm
+"<situada>"
+	"situar" vblex pp f sg
+"<vèrs>"
+	"vèrs" n m sg
+"<18>"
+	"18" num
+"<rais>"
+	"rai" n m pl
+"<planetaris>"
+	"planetari" adj m pl
+"<,>"
+	"," cm
+"<onte>"
+	"onte" rel adv
+"<lo>"
+	"lo" det def m sg
+"<camp>"
+	"camp" n m sg
+"<magnetic>"
+	"magnetic" adj m sg
+"<vèn>"
+	"venir" vblex pri p3 sg
+"<feble>"
+	"feble" adj m sg
+"<e>"
+	"e" cnjcoo
+"<desorganizat>"
+	"desorganizar" vblex pp m sg
+"<.>"
+	"." sent
+
+"<Puei>"
+	"puei" adv
+"<,>"
+	"," cm
+"<lo>"
+	"lo" det def m sg
+"<vent>"
+	"vent" n m sg
+"<solar>"
+	"solar" adj m sg
+"<interagís>"
+	"interagir" vblex ifi p2 sg
+"<amb>"
+	"amb" pr
+"<aquelei>"
+	"aqueu" det dem mf pl
+"<regions>"
+	"region" n f pl
+"<e>"
+	"e" cnjcoo
+"<estira>"
+	"estirar" vblex pri p3 sg
+"<la>"
+	"lo" det def f sg
+"<magnetosfèra>"
+	"magnetosfèra" n f sg
+"<sus>"
+	"sus" pr
+"<una>"
+	"un" det ind f sg
+"<distància>"
+	"distància" n f sg
+"<de>"
+	"de" pr
+"<quauquei>"
+	"quauque" det ind mf pl
+"<milions>"
+	"milion" n m pl
+"<de>"
+	"de" pr
+"<quilomètres>"
+	"quilomètre" n m pl
+"<.>"
+	"." sent
+
+"<Pasmens>"
+	"pasmens" adv
+"<,>"
+	"," cm
+"<la>"
+	"lo" det def f sg
+"<rotacion>"
+	"rotacion" n f sg
+"<particulara>"
+	"particular" adj f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<planeta>"
+	"planeta" n f sg
+"<deforma>"
+	"deformar" vblex pri p3 sg
+"<aquela>"
+	"aquel" det dem f sg
+"<coa>"
+	"coa" n f sg
+"<e>"
+	"e" cnjcoo
+"<li>"
+	"li" prn pro p3 mf sg
+"<dona>"
+	"donar" vblex pri p3 sg
+"<una>"
+	"un" det ind f sg 
+"<forma>"
+	"forma" n f sg
+"<de>"
+	"de" pr
+"<tiratap>"
+	"tiratap" n m sg
+"<.>"
+	"." sent
+
+
+
+"<Orbita>"
+	"orbita" n f sg
+"<e>"
+	"e" cnjcoo
+"<rotacion>"
+	"rotacion" n f sg
+"<.>"
+	"." sent
+
+
+
+"<Uranus>"
+	"Uranus" np top m sg
+"<orbita>"
+	"orbita" n f sg
+"<a l'entorn>"
+	"a l'entorn" adv
+"<dau>"
+	"de" pr 
+		"lo" det def m sg
+"<Soleu>"
+	"soleu" n m sg
+"<a>"
+	"a" pr
+"<una>"
+	"un" det ind f sg 
+"<distància>"
+	"distància" n f sg
+"<mejana>"
+	"mejan" adj f sg
+"<egala>"
+	"egal" adj f sg
+"<a>"
+	"a" pr
+"<quasi>"
+	"quasi" adv
+"<3>"
+	"3" num
+"<miliards>"
+	"miliard" n m pl
+"<de>"
+	"de" pr
+"<quilomètres>"
+	"quilomètre" n m pl
+"<en>"
+	"en" pr
+"<84>"
+	"84" num
+"<annadas>"
+	"annada" n f pl
+"<terrèstras>"
+	"terrèstre" adj f pl
+"<dins>"
+	"dins" pr
+"<un>"
+	"un" det ind m sg
+"<plan>"
+	"plan" n m sg
+"<clinat>"
+	"clinat" adj m sg
+"<de>"
+	"de" pr
+"<0,77>"
+	"0,77" num
+° 
+"<a respècte>"
+	"respècte" pr
+"<dau>"
+	"de" pr
+		"lo" det def m sg
+"<plan>"
+	"plan" n m sg
+"<ecliptic>"
+	"ecliptic" adj m sg
+"<.>"
+	"." sent
+
+"<L'>"
+	"lo" det def mf sg
+"<excentricitat>"
+	"excentricitat" n f sg
+"<de>"
+	"de" pr
+"<son>"
+	"son" det pos f sg 
+"<orbita>"
+	"orbita" n f sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<0,044>"
+	"0,044" num
+"<.>"
+	"." sent
+
+"<Pasmens>"
+	"pasmens" adv
+"<,>"
+	"," cm
+"<la>"
+	"lo" det def f sg
+"<caracteristica>"
+	"caracteristica" n f sg
+"<pus>"
+	"pus" adv
+"<remarcabla>"
+	"remarcable" adj f sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<l'>"
+	"lo" det def mf sg
+"<enclinason>"
+	"enclinason" n f sg
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+"<axe>"
+	"axe" n m sg
+"<de>"
+	"de" pr
+"<rotacion>"
+	"rotacion" n f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<planeta>"
+	"planeta" n f sg
+"<egala>"
+	"egal" adj f sg
+"<a>"
+	"a" pr
+"<97,77>"
+	"97,77" num
+°
+"<;>"
+	";" sent
+"<ansin>"
+	"ansin" adv
+"<,>"
+	"," cm
+"<l'>"
+	"lo" det def mf sg
+"<axe>"
+	"axe" n m sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<quasi>"
+	"quasi" preadv
+"<parallèl>"
+	"parallèl" adj m sg
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<plan>"
+	"plan" n m sg
+"<dau>"
+	"de" pr
+		"lo" det def m sg
+"<Sistèma>"
+	"sistèma" n m sg
+"<Solar>"
+	"solar" adj m sg
+"<.>"
+	"." sent
+
+"<Lo>"
+	"lo" det def m sg
+"<periòde>"
+	"periòde" n m sg
+"<de>"
+	"de" pr
+"<rotacion>"
+	"rotacion" n f sg
+"<a l'entorn>"
+	"a l'entorn" adv
+"<d'>"
+	"de" pr
+"<aquel>"
+	"aquel" det dem m sg
+"<axe>"
+	"axe" n m sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<17>"
+	"17" num
+"<h>"
+	"h" n f sp
+"<14>"
+	"14" num
+"<min>"
+	"min" n m sp
+"<24>"
+	"24" num
+"<s>"
+	"s" n f sp
+"<.>"
+	"." sent
+
+"<Lei>"
+	"lo" det def mf pl
+"<pòls>"
+	"pòl" n m pl
+"<an>"
+	"aver" vblex pri p3 pl
+"<donc>"
+	"donc" cnjadv
+"<de>"
+	"de" pr
+"<periòdes>"
+	"periòde" n m pl
+"<de>"
+	"de" pr
+"<jorn>"
+	"jorn" n m sg
+"<e>"
+	"e" cnjcoo
+"<nuech>"
+	"nuech" n f sg
+"<continús>"
+	"continú" adj m pl
+"<d'>"
+	"de" pr
+"<environ>"
+	"environ" adv
+"<42>"
+	"42" num
+"<ans>"
+	"an" n m pl
+"<.>"
+	"." sent
+
+"<Se>"
+	"se" prn pro ref p3 mf sp
+"<conois>"
+	"conéisser" vblex pri p3 sg
+"<pas>"
+	"pas" adv
+"<l'>"
+	"lo" det def mf sg
+"<origina>"
+	"origina" n f sg
+"<d'>"
+	"de" pr
+"<aquela>"
+	"aquel" det dem f sg
+"<rotacion>"
+	"rotacion" n f sg
+"<.>"
+	"." sent
+
+"<L'>"
+	"lo" det def mf sg
+"<ipotèsi>"
+	"ipotèsi" n f sg
+"<principala>"
+	"principal" adj f sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<la>"
+	"lo" det def f sg
+"<collision>"
+	"collision" n f sg
+"<amb>"
+	"amb" pr
+"<un>"
+	"un" prn tn m sg
+"<còrs>"
+	"còrs" n m sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<talha>"
+	"talha" n f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<Tèrra>"
+	"tèrra" n f sg
+"<dins>"
+	"dins" pr
+"<lei>"
+	"lo" det def mf pl
+"<premiers>"
+	"premier" adj m pl
+"<temps>"
+	"temps" n m sg
+"<dau>"
+	"de" pr
+		"lo" det def m sg
+"<Sistèma>"
+	"sistèma" n m sg
+"<Solar>"
+	"solar" adj m sg
+"<.>"
+	"." sent
+
+
+
+"<Satellits>"
+	"satellit" n m pl
+
+
+"<Article>"
+	"article" n m sg
+"<detalhat>"
+	"detalhat" adj m sg
+"<:>"
+	":" sent
+"<Satellits>"
+	"satellit" n m pl
+"<d'>"
+	"de" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<.>"
+	"." sent
+
+
+
+"<Sistèma>"
+	"sistèma" n m sg
+"<d'>"
+	"de" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<vist>"
+	"veire" vblex pp m sg
+"<per>"
+	"per" pr
+"<lo>"
+	"lo" det def m sg
+"<telescòpi>"
+	"telescòpi" n m sg
+"<VLT>"
+	"VLT" n acr m sg
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
+"<Uranus>"
+	"Uranus" np top m sg
+"<a>"
+	"aver" vblex pri p3 sg
+"<27>"
+	"27" num
+"<satellits>"
+	"satellit" n m pl
+"<naturaus>"
+	"naturau" adj mf pl
+"<coneguts>"
+	"conegut" adj m pl
+"<dichs>"
+	"dire" vblex pp m pl
+"<segon>"
+	"segon" adv
+"<de>"
+	"de" pr
+"<personatges>"
+	"personatge" n m pl
+"<de>"
+	"de" pr
+"<William>"
+	"William" np ant m sg
+"<Shakespeare>"
+	"Shakespeare" np cog mf sp
+"<e>"
+	"e" cnjcoo
+"<Alexander>"
+	"Alexander" np ant m sg
+"<Pope>"
+	"Pope" np cog mf sp
+"<.>"
+	"." sent
+
+"<Son>"
+	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
+"<devesits>"
+	"devesit" vblex pp m pl
+"<en>"
+	"en" pr
+"<tres>"
+	"tres" num mf sp
+"<grops>"
+	"grop" n m pl
+"<.>"
+	"." sent
+
+"<De mai>"
+	"de mai" adv
+"<,>"
+	"," cm
+"<Uranus>"
+	"Uranus" np top m sg
+"<podriá>"
+	"poder" vblex cni p3 sg
+"<tanben>"
+	"tanben" adv
+"<aver de>"
+	"aver# de" vblex inf
+"<quasi>"
+	"quasi" adv
+-
+"<satellits>"
+	"satellit" n m pl
+"<estables>"
+	"estable" adj m pl
+"<amb>"
+	"amb" pr
+"<una>"
+	"un" det ind f sg
+"<durada>"
+	"durada" n f sg
+"<de>"
+	"de" pr
+"<vida>"
+	"vida" n f sg
+"<egala>"
+	"egal" adj f sg
+"<a>"
+	"a" pr
+"<aquela>"
+	"aquel" prn tn f sg
+"<dau>"
+	"de" pr
+		"lo" det def m sg
+"<Sistèma>"
+	"sistèma" n m sg
+"<Solar>"
+	"solar" adj m sg
+"<.>"
+	"." sent
+
+"<Pasmens>"
+	"pasmens" adv
+"<,>"
+	"," cm
+"<ges>"
+	"ges" adv
+"<d'>"
+	"de" pr
+"<objècte>"
+	"objècte" n m sg
+"<d'>"
+	"de" pr
+"<aqueu>"
+	"aqueu" det dem m sg
+"<tipe>"
+	"tipe" n m sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<estat>"
+	"èsser" vbser pp m sg
+"<observat>"
+	"observar" vblex pp m sg
+"<.>"
+	"." sent
+
+
+
+"<Satellits>"
+	"satellit" n m pl
+"<interiors>"
+	"interior" adj m pl
+"<.>"
+	"." sent
+
+
+
+"<Uranus>"
+	"Uranus" np top m sg
+"<a>"
+	"aver" vblex pri p3 sg
+"<tretze>"
+	"tretze" num mf sp
+"<satellits>"
+	"satellit" n m pl
+"<pichons>"
+	"pichon" adj m pl
+"<amb>"
+	"amb" pr
+"<una>"
+	"un" det ind f sg
+"<orbita>"
+	"orbita" n f sg
+"<situada>"
+	"situar" vblex pp f sg
+"<a l'interior>"
+	"a l'interior" adv
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<trajectòria>"
+	"trajectòria" n f sg
+"<de>"
+	"de" pr
+"<Miranda>"
+	"Miranda" np cog mf sp
+"<.>"
+	"." sent
+
+"<Totei>"
+	"tot" predet mf pl
+"<lei>"
+	"lo" det def mf pl
+"<satellits>"
+	"satellit" n m pl
+"<d'>"
+	"de" pr
+"<aqueu>"
+	"aqueu" det dem m sg
+"<grop>"
+	"grop" n m sg
+"<son>"
+	"èsser" vbser pri p3 pl
+"<liats>"
+	"liar" vblex pp m pl
+"<ais>"
+	"a" pr
+		"lo" det def mf pl
+"<anèus>"
+	"anèl" n m pl
+"<.>"
+	"." sent
+
+"<Lo>"
+	"lo" det def m sg
+"<pus>"
+	"pus" adv
+"<grand>"
+	"grand" adj m sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<dich>"
+	"dire" vblex pp m sg
+"<Puck>"
+	"Puck" np ant m sg
+"<amb>"
+	"amb" pr
+"<un>"
+	"un" det ind m sg
+"<diamètre>"
+	"diamètre" n m sg
+"<egau>"
+	"egau" adj mf sg
+"<a>"
+	"a" pr
+"<162>"
+	"162" num
+"<km>"
+	"km" n m sp
+"<.>"
+	"." sent
+
+"<Aquelei>"
+	"aqueu" det dem mf pl
+"<satellits>"
+	"satellit" n m pl
+"<an>"
+	"aver" vblex pri p3 pl
+"<un>"
+	"un" det ind m sg 
+"<albedo>"
+	"albedo" n m sg
+"<fòrça>"
+	"fòrça" preadv
+"<feble>"
+	"feble" adj m sg
+"<,>"
+	"," cm
+"<a l'entorn de>"
+	"a l'entorn de" adv
+"<0,10>"
+	"0,10" num
+"<.>"
+	"." sent
+
+"<Son>"
+	"èsser" vbser pri p3 pl
+"<fachas>"
+	"far" vblex pp f pl
+"<d'>"
+	"de" pr
+"<una>"
+	"un" det ind f sg
+"<mescla>"
+	"mescla" n f sg
+"<d'>"
+	"de" pr
+"<aiga>"
+	"aiga" n f sg
+"<e de>"
+	"e" cnjcoo
+		"de" pr
+"<poussas>"
+	"poussa" n f pl
+"<sornas>"
+	"sorne" adj f pl
+"<.>"
+	"." sent
+
+"<De mai>"
+	"de mai" adv
+"<,>"
+	"," cm
+"<lei>"
+	"lo" det def mf pl
+"<calculs>"
+	"calcul" n m pl
+"<mòstran>"
+	"mostrar" vblex pri p3 pl
+"<que>"
+	"que" cnjsub 
+"<lo>"
+	"lo" det def m sg
+"<sistèma>"
+	"sistèma" n m sg
+"<dei>"
+	"de" pr
+		"lo" det def m sg
+"<satellits>"
+	"satellit" n m pl
+"<interiors>"
+	"interior" adj m pl
+"<es>"
+	"èsser" vbser pri p3 sg
+"<pas>"
+	"pas" adv
+"<estable>"
+	"estable" adj m sg
+"<es>"
+	"es" barb
+"<que>"
+	"que" cnjsub 
+"<de>"
+	"de" pr
+"<collisions>"
+	"collision" n f pl
+"<entre>"
+	"entre" pr
+"<lunas>"
+	"luna" n f pl
+"<son>"
+	"èsser" vbser pri p3 pl
+"<possiblas>"
+	"possible" adj f pl
+"<.>"
+	"." sent
+
+"<Totei>"
+	"tot" predet mf pl
+"<lei>"
+	"lo" det def mf pl
+"<satellits>"
+	"satellit" n m pl
+"<semblan>"
+	"semblar" vblex pri p3 pl
+"<estacats>"
+	"estacar" vblex pp m pl
+"<ais>"
+	"a" pr
+		"lo" det def mf pl
+"<anèus>"
+	"anèl" n m pl
+"<.>"
+	"." sent
+
+
+
+"<Satellits>"
+	"satellit" n m pl
+"<principaus>"
+	"principau" adj mf pl
+
+
+"<Fotografia>"
+	"fotografia" n f sg
+"<dau>"
+	"de" pr
+		"lo" det def m sg
+"<satellit>"
+	"satellit" n m sg
+"<Titània>"
+	"Titània" np top f sg
+"<.>"
+	"." sent
+
+
+
+"<Lei>"
+	"lo" det def mf pl
+"<cinc>"
+	"cinc" num mf sp
+"<grands>"
+	"grand" adj m pl
+"<satellits>"
+	"satellit" n m pl
+"<d'>"
+	"de" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<comparats>"
+	"comparar" vblex pp m pl
+"<a>"
+	"a" pr
+"<la>"
+	"lo" det def f sg
+"<Luna>"
+	"luna" n f sg
+
+
+"<Nom>"
+	"nom" n m sg
+ 	
+"<Diamètre>"
+	"diamètre" n m sg
+ 	
+"<Massa>"
+	"massa" n f sg
+ 	
+"<Semiaxe>"
+	"semiaxe" n m sg
+"<major>"
+	"major" adj m sg
+ 	
+"<Periòde>"
+	"periòde" n m sg
+"<orbital>"
+	"orbital" adj m sg
+
+
+"<km>"
+	"km" n m sp
+ 	% 	
+"<kg>"
+	"kg" n m sp
+ 	% 	
+"<km>"
+	"km" n m sp
+ 	% 	
+"<jorns>"
+	"jorn" n m pl
+ 	%
+
+"<Miranda>"
+	"Miranda" np cog mf sp
+ 	
+"<471,6>"
+	"471,6" num
+ ± 
+"<1,4>"
+	"1,4" num
+ 	
+"<13,6>"
+	"13,6" num
+ 	
+"<6,59>"
+	"6,59" num
+"<.>"
+	"." sent
+
+"<1019>"
+	"1019" num
+ 	
+"<0,09>"
+	"0,09" num
+ 	
+"<129>"
+	"129" num
+"<390>"
+	"390" num
+ 	
+"<33,6>"
+	"33,6" num
+ 	
+"<1,41>"
+	"1,41" num
+ 	
+"<5,1>"
+	"5,1" num
+
+
+"<Ariel>"
+	"Ariel" np ant m sg
+ 	
+"<1>"
+	"1" num
+"<157,8>"
+	"157,8" num
+ ± 
+"<1,2>"
+	"1,2" num
+ 	
+"<33,3>"
+	"33,3" num
+ 	
+"<1,353>"
+	"1,353" num
+"<.>"
+	"." sent
+
+"<1021>"
+	"1021" num
+ 	
+"<1,8>"
+	"1,8" num
+ 	
+"<191>"
+	"191" num
+"<020>"
+	"020" num
+ 	
+"<49,7>"
+	"49,7" num
+ 	
+"<2,52>"
+	"2,52" num
+ 	
+"<9,2>"
+	"9,2" num
+
+
+"<Umbriel>"
+	"Umbriel" np top m sg
+ 	
+"<1>"
+	"1" num
+"<169,4>"
+	"169,4" num
+ ± 
+"<5,6>"
+	"5,6" num
+ 	
+"<33,7>"
+	"33,7" num
+ 	
+"<1,172>"
+	"1,172" num
+"<.>"
+	"." sent
+
+"<1021>"
+	"1021" num
+ 	
+"<1,6>"
+	"1,6" num
+ 	
+"<266>"
+	"266" num
+"<300>"
+	"300" num
+ 	
+"<69,2>"
+	"69,2" num
+ 	
+"<4,14>"
+	"4,14" num
+ 	
+"<15,2>"
+	"15,2" num
+
+
+"<Titània>"
+	"Titània" np top f sg
+ 	
+"<1>"
+	"1" num
+"<576,8>"
+	"576,8" num
+ ± 
+"<1,2>"
+	"1,2" num
+ 	
+"<45,3>"
+	"45,3" num
+ 	
+"<3,527>"
+	"3,527" num
+"<.>"
+	"." sent
+
+"<1021>"
+	"1021" num
+ 	
+"<4,8>"
+	"4,8" num
+ 	
+"<435>"
+	"435" num
+"<910>"
+	"910" num
+ 	
+"<113,5>"
+	"113,5" num
+ 	
+"<8,71>"
+	"8,71" num
+ 	
+"<31,8>"
+	"31,8" num
+
+
+"<Oberon>"
+	"Oberon" np top m sg
+ 	
+"<1>"
+	"1" num
+"<522,8>"
+	"522,8" num
+ ± 
+"<5,2>"
+	"5,2" num
+ 	
+"<43,9>"
+	"43,9" num
+ 	
+"<3,014>"
+	"3,014" num
+"<.>"
+	"." sent
+
+"<1021>"
+	"1021" num
+ 	
+"<4,1>"
+	"4,1" num
+ 	
+"<583>"
+	"583" num
+"<520>"
+	"520" num
+ 	
+"<151>"
+	"151" num
+ 	
+"<13,46>"
+	"13,46" num
+ 	
+"<49,3>"
+	"49,3" num
+"<.>"
+	"." sent
+
+
+
+"<Lei>"
+	"lo" det def mf pl
+"<cinc>"
+	"cinc" num mf sp
+"<satellits>"
+	"satellit" n m pl
+"<principaus>"
+	"principau" adj mf pl
+"<d'>"
+	"de" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<son>"
+	"èsser" vbser pri p3 pl
+"<Miranda>"
+	"Miranda" np top f sg
+"<,>"
+	"," cm
+"<Ariel>"
+	"Ariel" np top m sg
+"<,>"
+	"," cm
+"<Umbriel>"
+	"Umbriel" np top m sg
+"<,>"
+	"," cm
+"<Titània>"
+	"Titània" np top f sg
+"<e>"
+	"e" cnjcoo
+"<Oberon>"
+	"Oberon" n top m sg
+"<.>"
+	"." sent
+
+"<Pasmens>"
+	"pasmens" adv
+
+"<,>"
+	"," cm
+"<Aqueu>"
+	"aqueu" det dem m sg 
+"<sistèma>"
+	"sistèma" n m sg
+"<de>"
+	"de" pr
+"<lunas>"
+	"luna" n f pl
+"<es>"
+	"èsser" vbser pri p3 sg
+"<lo>"
+	"lo" det def m sg
+"<mens>"
+	"mens" adv
+"<massís>"
+	"massís" adj m sg
+"<dau>"
+	"de" pr
+		"lo" det def m sg
+"<Sistèma>"
+	"sistèma" n m sg
+"<Solar>"
+	"solar" adj m sg
+"<:>"
+	":" sent
+"<la>"
+	"lo" det def f sg
+"<massa>"
+	"massa" n f sg
+"<dei>"
+	"de" pr
+		"lo" det def m sg
+"<cinc>"
+	"cinc" num mf sp
+"<grands>"
+	"grand" adj m pl
+"<satellits>"
+	"satellit" n m pl
+"<monta>"
+	"montar" vblex pri p3 sg
+"<pas>"
+	"pas" adv
+"<a>"
+	"a" pr
+"<la>"
+	"lo" det def f sg
+"<mitat>"
+	"mitat" n f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<massa>"
+	"massa" n f sg
+"<de>"
+	"de" pr
+"<Triton>"
+	"Triton" np top m sg
+"<.>"
+	"." sent
+
+"<Titània>"
+	"Titània" n top f sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<lo>"
+	"lo" det def m sg
+
+"<pus>"
+	"pus" adv
+"<grand>"
+	"grand" adj m sg
+"<satellit>"
+	"satellit" n m sg
+"<amb>"
+	"amb" pr
+"<un>"
+	"un" det ind m sg
+"<rai>"
+	"rai" n m sg
+"<mejan>"
+	"mejan" adj m sg
+"<egau>"
+	"egau" adj mf sg
+"<a>"
+	"a" pr
+"<788,9>"
+	"788,9" num
+"<km>"
+	"km" n m sp
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
+"<Totei>"
+	"tot" predet mf pl
+"<lei>"
+	"lo" det def mf pl
+"<lunas>"
+	"luna" n f pl
+"<an>"
+	"aver" vblex pri p3 pl
+"<un>"
+	"un" det ind m sg
+"<albedo>"
+	"albedo" n m sg
+"<feble>"
+	"feble" adj m sg
+"<,>"
+	"," cm
+"<variant>"
+	"variar" vblex ger
+"<de>"
+	"de" pr
+"<0,20>"
+	"0,20" num
+"<a>"
+	"a" pr
+"<0,35>"
+	"0,35" num
+"<,>"
+	"," cm
+"<e>"
+	"e" cnjcoo
+"<son>"
+	"èsser" vbser pri p3 pl
+"<probablament>"
+	"probablament" adv
+"<fachas>"
+	"far" vblex pp f pl
+"<d'>"
+	"de" pr
+"<una>"
+	"un" det ind f sg
+"<mescla>"
+	"mescla" n f sg
+"<de>"
+	"de" pr
+"<glaç>"
+	"glaç" n m sg
+"<e de>"
+	"e" cnjcoo
+		"de" pr
+"<ròcas>"
+	"ròca" n f pl
+"<.>"
+	"." sent
+
+"<Lo>"
+	"lo" det def m sg
+"<glaç>"
+	"glaç" n m sg
+"<podriá>"
+	"podriá" vblex cni p3 sg
+"<tanben>"
+	"tanben" adv
+"<tenir>"
+	"téner" vblex inf
+"<de>"
+	"de" pr
+"<percentatges>"
+	"percentatge" n m pl
+"<importants>"
+	"important" adj m pl
+"<de>"
+	"de" pr
+"<dioxid>"
+	"dioxid" n m sg
+"<de>"
+	"de" pr
+"<carbòni>"
+	"carbòni" n m sg
+"<e d'>"
+	"e" cnjcoo
+		"de" pr
+"<amoniac>"
+	"amoniac" n m sg
+"<dins>"
+	"dins" pr
+"<sa>"
+	"son" det pos f sg
+"<composicion>"
+	"composicion" n f sg
+"<.>"
+	"." sent
+
+"<Ges>"
+	"ges" adv
+"<d'>"
+	"de" pr
+"<atmosfèra>"
+	"atmosfèra" n f sg
+"<espessa>"
+	"espés" adj f sg
+"<foguèt>"
+	"èsser" vbser ifi p3 sg
+"<detectada>"
+	"detectar" vblex pp f sg
+"<.>"
+	"." sent
+
+"<Ansin>"
+	"ansin" adv
+"<,>"
+	"," cm
+"<la>"
+	"lo" det def f sg
+"<pression>"
+	"pression" n f sg
+"<atmosferica>"
+	"atmosferic" adj f sg
+"<sus>"
+	"sus" pr
+"<Titània>"
+	"Titània" np top f sg
+"<passa>"
+	"passar" vblex pri p3 sg
+"<probablament>"
+	"probablament" adv
+"<pas>"
+	"pas" adv
+"<10>"
+	"10" num
+-
+"<20>"
+	"20" num
+"<nPa>"
+	"nPa" n m sp
+"<.>"
+	"." sent
+
+"<Miranda>"
+	"Miranda" np cog mf sp
+"<podriá>"
+	"podriá" vlex cni p3 sg
+"<aver>"
+	"aver" vblex inf
+"<una>"
+	"un" det ind f sg 
+"<activitat>"
+	"activitat" n f sg
+"<geologica>"
+	"geologic" adj f sg
+"<anciana>"
+	"ancian" adj f sg
+"<en causa de>"
+	"en causa de" pr
+"<fòrças>"
+	"fòrça" n f pl
+"<de>"
+	"de" pr
+"<marèia>"
+	"marèia" n f sg
+"<amb>"
+	"amb" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<.>"
+	"." sent
+
+"<D'efiech>"
+	"d'efiech" adv
+"<,>"
+	"," cm
+"<un>"
+	"un" det ind m sg 
+"<criovolcanisme>"
+	"criovolcanisme" n m sg
+"<ancian>"
+	"ancian" adj m sg
+"<podriá>"
+	"poder" vblex cni p3 sg
+"<explicar>"
+	"explicar" vblex inf
+"<la>"
+	"lo" det def f sg
+"<preséncia>"
+	"preséncia" n f sg
+"<d'>"
+	"de" pr
+"<estructuras>"
+	"estructura" n f pl
+"<semblablas>"
+	"semblable" adj f pl
+"<a>"
+	"a" pr
+"<de>"
+	"de" pr
+"<volcans>"
+	"volcan" n m pl
+"<dau>"
+	"de" pr
+		"lo" det def m sg
+"<tipe>"
+	"tipe" n m sg
+"<coronae>"
+	"coronae" barb
+"<.>"
+	"." sent
+
+"<Dins aquò>"
+	"dins aquò" adv
+"<,>"
+	"," cm
+"<totei>"
+	"tot" predet mf pl
+"<lei>"
+	"lo" det def mf pl
+"<satellits>"
+	"satellit" n m pl
+"<dau>"
+	"de" pr
+		"lo" det def m sg
+"<grop>"
+	"grop" n m sg
+"<principau>"
+	"principau" adj mf sg
+"<an>"
+	"aver" vblex pri p3 pl
+"<una>"
+	"un" det ind f sg 
+"<superficia>"
+	"superficia" n f sg
+"<amb>"
+	"amb" pr
+"<una>"
+	"un" det ind f sg 
+"<craterizacion>"
+	"craterizacion" n f sg
+"<importanta>"
+	"important" adj f sg
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
+"<Enfin>"
+	"enfin" adv
+"<,>"
+	"," cm
+"<lei>"
+	"lo" det def mf pl
+"<periòdes>"
+	"periòde" n m pl
+"<de>"
+	"de" pr
+"<rotacion>"
+	"rotacion" n f sg
+"<dei>"
+	"de" pr
+		"lo" det def m sg
+"<satellits>"
+	"satellit" n m pl
+"<principaus>"
+	"principau" adj mf pl
+
+"<a l'entorn>"
+	"a l'entorn" adv
+"<d'>"
+	"de" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<son>"
+	"èsser" vbser pri p3 pl
+"<comprés>"
+	"comprene" vblex pp m sg
+"<entre>"
+	"entre" pr
+"<1,4>"
+	"1,4" num
+"<e>"
+	"e" cnjcoo
+"<13,5>"
+	"13,5" num
+"<jorns>"
+	"jorn" n m pl
+"<terrèstres>"
+	"terrèstre" adj mf pl
+"<.>"
+	"." sent
+
+"<Lor>"
+	"lor" det pos mf sg
+"<axe>"
+	"axe" n m sg
+"<de>"
+	"de" pr
+"<rotacion>"
+	"rotacion" n f sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<quasi>"
+	"quasi" preadv
+"<parallèl>"
+	"parallèl" adj m sg
+"<a>"
+	"a" pr
+"<l'>"
+	"lo" det def mf sg
+"<axe>"
+	"axe" n m sg
+"<d'>"
+	"de" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<.>"
+	"." sent
+
+"<Lei>"
+	"lo" det def mf pl
+"<satellits>"
+	"satellit" n m pl
+"<an>"
+	"aver" vblex pri p3 pl
+"<donc>"
+	"donc" cnjadv
+"<una>"
+	"un" det ind f sg 
+"<enclinason>"
+	"enclinason" n f sg
+"<fòrça>"
+	"fòrça" preadv 
+"<similara>"
+	"similar" adj f sg
+"<a>"
+	"a" pr
+"<la>"
+	"lo" det def f sg
+"<planeta>"
+	"planeta" n f sg
+"<.>"
+	"." sent
+
+"<Enfin>"
+	"enfin" adv
+"<,>"
+	"," cm
+"<i a>"
+	"i" prn pro adv
+		"aver" vbhaver pri p3 sg
+"<de>"
+	"de" pr
+"<resonàncias>"
+	"resonància" n f pl
+"<3>"
+	"3" num
+"<:>"
+	":" sent
+"<1>"
+	"1" num
+"<entre>"
+	"entre" pr
+"<Miranda>"
+	"Miranda" np top f sg
+"<e>"
+	"e" cnjcoo
+"<Umbriel>"
+	"Umbriel" np top m sg
+"<e>"
+	"e" cnjcoo
+"<4>"
+	"4" num
+"<:>"
+	":" sent
+"<1>"
+	"1" num
+"<entre>"
+	"entre" pr
+"<Ariel>"
+	"Ariel" np top m sg
+"<e>"
+	"e" cnjcoo
+"<Umbriel>"
+	"Umbriel" np top m sg
+"<.>"
+	"." sent
+
+
+
+"<Satellits>"
+	"satellit" n m pl
+"<irregulars>"
+	"irregular" adj m pl
+"<.>"
+	"." sent
+
+
+
+"<En>"
+	"en" pr
+"<2005>"
+	"2005" num
+"<,>"
+	"," cm
+"<Uranus>"
+	"Uranus" np top m sg
+"<aviá>"
+	"aver" vblex pii p3 sg
+"<nòu>"
+	"nòu" num mf sp
+"<satellits>"
+	"satellit" n m pl
+"<dichs>"
+	"dire" vblex pp m pl
+"<irregulars>"
+	"irregular" adj m pl
+"<a>"
+	"a" pr
+"<l'>"
+	"lo" det def mf sg
+"<exterior>"
+	"exterior" n m sg
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+"<orbita>"
+	"orbita" n f sg
+"<d'>"
+	"de" pr
+"<Oberon>"
+	"Oberon" np top m sg
+"<.>"
+	"." sent
+
+"<Son>"
+	"èsser" vbser pri p3 pl
+"<d'>"
+	"de" pr
+"<objèctes>"
+	"objècte" n m pl
+"<probablament>"
+	"probablament" adv
+"<capturats>"
+	"capturar" vblex pp m pl
+"<per>"
+	"per" pr
+"<la>"
+	"lo" det def f sg
+"<gravitat>"
+	"gravitat" n f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<planeta>"
+	"planeta" n f sg
+"<gaire>"
+	"gaire" adv
+"<de>"
+	"de" pr
+"<temps>"
+	"temps" n m sg
+"<après>"
+	"après" pr
+"<sa>"
+	"son" det pos f sg
+"<formacion>"
+	"formacion" n f sg
+"<.>"
+	"." sent
+
+"<Lor>"
+	"lor" det pos mf sg
+"<talha>"
+	"talha" n f sg
+"<varia>"
+	"variar" vblex pri p3 sg
+"<de>"
+	"de" pr
+"<18>"
+	"18" num
+"<a>"
+	"a" pr
+"<150>"
+	"150" num
+"<km>"
+	"km" n m sp
+"<per>"
+	"per" pr
+"<Sícorax>"
+	"Sícorax" np top m sg
+"<,>"
+	"," cm
+"<lo>"
+	"lo" det def m sg
+"<pus>"
+	"pus" adv
+"<important>"
+	"important" adj m sg
+"<.>"
+	"." sent
+
+"<La>"
+	"lo" det def f sg
+"<màger part>"
+	"màger part" n f sg
+"<d'>"
+	"de" pr
+"<aquelei>"
+	"aqueu" det dem mf pl
+"<satellits>"
+	"satellit" n m pl
+"<an>"
+	"aver" vblex pri p3 pl
+"<una>"
+	"un" det ind f sg
+"<trajectòria>"
+	"trajectòria" n f sg
+"<retrograda>"
+	"retrograd" adj f sg
+"<.>"
+	"." sent
+
+"<Ges>"
+	"ges" adv
+"<de>"
+	"de" pr
+"<satellit>"
+	"satellit" n m sg
+"<irregular>"
+	"irregular" adj m sg
+"<a>"
+	"aver" vblex pri p3 sg
+"<una>"
+	"un" det ind f sg
+"<enclinason>"
+	"enclinason" n f sg
+"<compresa>"
+	"compréner" vblex pp f sg
+"<entre>"
+	"entre" pr
+"<60>"
+	"60" num
+"<e>"
+	"e" cnjcoo
+"<140>"
+	"140" num
+° 
+"<car>"
+	"car" cnjcoo
+"<l'>"
+	"lo" det def mf sg
+"<estabilitat>"
+	"estabilitat" n f sg
+"<dins>"
+	"dins" pr
+"<aquela>"
+	"aquel" det dem f sg
+"<region>"
+	"region" n f sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<limitada>"
+	"limitat" adj f sg
+"<,>"
+	"," cm
+"<e>"
+	"e" cnjcoo
+"<la>"
+	"lo" det def f sg
+"<durada>"
+	"durada" n f sg
+"<de>"
+	"de" pr
+"<vida>"
+	"vida" n f sg
+"<d'>"
+	"de" pr
+"<un>"
+	"un" det ind m sg 
+"<satellit>"
+	"satellit" n m sg
+"<d'>"
+	"de" pr
+"<aqueu>"
+	"aqueu" det dem m sg
+"<tipe>"
+	"tipe" n m sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<estimada>"
+	"estimar" vblex pp f sg
+"<a>"
+	"a" pr
+"<environ>"
+	"environ" adv
+"<10>"
+	"10" num
+"<milions>"
+	"milion" n m pl
+"<d'>"
+	"de" pr
+"<annadas>"
+	"annada" n f pl
+"<.>"
+	"." sent
+
+
+
+"<Observacion>"
+	"observacion" n f sg
+"<.>"
+	"." sent
+
+
+
+"<Entre>"
+	"entre" pr
+"<1995>"
+	"1995" num
+"<e>"
+	"e" cnjcoo
+"<2006>"
+	"2006" num
+"<,>"
+	"," cm
+"<la>"
+	"lo" det def f sg
+"<magnitud>"
+	"magnitud" n f sg
+"<d'>"
+	"de" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<èra>"
+	"èsser" vbser pii p3 sg
+"<situada>"
+	"situar" vblex pp f sg
+"<entre>"
+	"entre" pr
+ +
+"<5,6>"
+	"5,6" num
+"<e>"
+	"e" cnjcoo
+ +
+"<5,9>"
+	"5,9" num
+"<amb>"
+	"amb" pr
+"<un>"
+	"un" det ind m sg 
+"<diamètre>"
+	"diamètre" n m sg
+"<angular>"
+	"angular" adj m sg
+"<entre>"
+	"entre" pr
+"<3,4>"
+	"3,4" num
+"<e>"
+	"e" cnjcoo
+"<3,7>"
+	"3,7" num
+"<segondas>"
+	"segonda" n f pl
+"<d'>"
+	"de" pr
+"<arc>"
+	"arc" n m sg
+"<.>"
+	"." sent
+
+"<Èra>"
+	"èsser" vbser pii p3 sg
+"<donc>"
+	"donc" cnjadv
+"<un>"
+	"un" det ind m sg
+"<objècte>"
+	"objècte" n m sg
+"<dificilament>"
+	"dificilament" adv
+"<visible>"
+	"visible" adj m sg
+"<a>"
+	"a" pr
+"<l'>"
+	"lo" det def mf sg
+"<uèlh>"
+	"uèlh" n m sg
+"<mai>"
+	"mai" pr
+"<observable>"
+	"observable" adj m sg
+"<durant>"
+	"durant" pr
+"<una>"
+	"un" det ind f sg 
+"<nuech>"
+	"nuech" n f sg
+"<sorna>"
+	"sorne" adj f sg
+"<.>"
+	"." sent
+
+"<En revenge>"
+	"en revenge" adv
+"<,>"
+	"," cm
+"<vèn>"
+	"venir" vblex pri p3 sg
+"<una>"
+	"un" det ind f sg 
+"<buta>"
+	"buta" n f sg
+"<facila>"
+	"facil" adj f sg
+"<per>"
+	"per" pr
+"<un>"
+	"un" det ind m sg
+"<pòrtavista>"
+	"pòrtavista" n m sg
+"<,>"
+	"," cm
+"<e mai>"
+	"e mai" adv
+"<en>"
+	"en" pr
+"<vila>"
+	"vila" n f sg
+"<.>"
+	"." sent
+
+"<Amb>"
+	"amb" pr
+"<un>"
+	"un" det ind m sg
+"<telescòpi>"
+	"telescòpi" n m sg
+"<amator>"
+	"amator" n m sg
+"<d'>"
+	"de" pr
+"<un>"
+	"un" det ind m sg 
+"<diamètre>"
+	"diamètre" n m sg
+"<de>"
+	"de" pr
+"<150>"
+	"150" num
+"<a>"
+	"a" pr
+"<230>"
+	"230" num
+"<mm>"
+	"mm" n m sp
+"<,>"
+	"," cm
+"<la>"
+	"lo" det def f sg
+"<planeta>"
+	"planeta" n f sg
+"<apareis>"
+	"aparéisser" vblex pri p3 sg
+"<coma>"
+	"coma" adv
+"<un>"
+	"un" det ind m sg
+"<disc>"
+	"disc" n m sg
+"<blau>"
+	"blau" adj m sg
+"<.>"
+	"." sent
+
+"<Enfin>"
+	"enfin" adv
+"<,>"
+	"," cm
+"<un>"
+	"un" det ind m sg
+"<telescòpi>"
+	"telescòpi" n m sg
+"<de>"
+	"de" pr
+"<250>"
+	"250" num
+"<mm>"
+	"mm" n m sp
+"<de>"
+	"de" pr
+"<diamètre>"
+	"diamètre" n m sg
+"<,>"
+	"," cm
+"<o>"
+	"o" cnjcoo
+"<pus>"
+	"pus" adv
+"<grand>"
+	"grand" adj m sg
+"<,>"
+	"," cm
+"<pòu>"
+	"poder" vblex pri p3 sg
+"<mostrar>"
+	"mostrar" vblex inf
+"<de>"
+	"de" pr
+"<bendas>"
+	"benda" n f pl
+"<de>"
+	"de" pr
+"<nívols>"
+	"nívol" n m pl
+"<o>"
+	"o" cnjcoo
+"<certanei>"
+	"certan" prn tn mf pl
+"<dei>"
+	"de" pr
+		"lo" det def m sg
+"<grands>"
+	"grand" adj m pl
+"<satellits>"
+	"satellit" n m pl
+"<coma>"
+	"coma" adv
+"<Titània>"
+	"Titània" np top f sg
+"<o>"
+	"o" cnjcoo
+"<Oberon>"
+	"Oberon" np top m sg
+"<.>"
+	"." sent
+
+
+
+"<Descubèrta>"
+	"descubèrta" n f sg
+"<,>"
+	"," cm
+"<recèrca>"
+	"recèrca" n f sg
+"<e>"
+	"e" cnjcoo
+"<exploracion>"
+	"exploracion" n f sg
+
+
+"<Descubèrta>"
+	"descubèrta" n f sg
+
+
+"<William>"
+	"William" np ant m sg
+"<Herschel>"
+	"Herschel" np cog mf sp
+"<(>"
+	"(" lpar
+"<1738>"
+	"1738" num
+-
+"<1822>"
+	"1822" num
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
+"<Uranus>"
+	"Uranus" np top m sg
+"<foguèt>"
+	"èsser" vbser ifi p3 sg
+"<observada>"
+	"observar" vblex pp f sg
+"<per>"
+	"per" adv
+"<divèrseis>"
+	"divèrs" adj mf pl
+"<astronòms>"
+	"astronòm" n m pl
+"<avans>"
+	"avans" pr
+"<sa>"
+	"son" det pos f sg
+"<descubèrta>"
+	"descubèrta" n f sg
+"<oficiala>"
+	"oficial" adj f sg
+"<.>"
+	"." sent
+
+"<D'efiech>"
+	"d'efiech" adv
+"<,>"
+	"," cm
+"<lo>"
+	"lo" det def m sg
+"<premier>"
+	"premier" n m sg
+"<que>"
+	"que" rel an mf sp
+"<notèt>"
+	"notar" vblex ifi p3 sg
+"<sa>"
+	"son" det pos f sg
+"<posicion>"
+	"posicion" n f sg
+"<foguèt>"
+	"èsser" vbser ifi p3 sg
+"<John>"
+	"John" np ant m sg
+"<Flamsteed>"
+	"Flamsteed" np cog mf sp
+"<(>"
+	"(" lpar
+"<1646>"
+	"1646" num
+-
+"<1719>"
+	"1719" num
+"<)>"
+	")" rpar
+"<en>"
+	"en" pr
+"<1690>"
+	"1690" num
+"<sota>"
+	"sota" pr
+"<lo>"
+	"lo" det def m sg
+"<nom>"
+	"nom" n m sg
+"<34>"
+	"34" num
+"<Tauri>"
+	"Tauri" np top m sg
+"<.>"
+	"." sent
+
+"<Lo>"
+	"lo" det def m sg
+"<Francés>"
+	"francés" adj m sg
+"<Pierre>"
+	"Pierre" np ant m sg
+"<Lemonnier>"
+	"Lemonnier" np cog mf sp
+"<(>"
+	"(" lpar
+"<1715>"
+	"1715" num
+-
+"<1799>"
+	"1799" num
+"<)>"
+	")" rpar
+"<la>"
+	"lo" prn pro p3 f sg 
+"<veguèt>"
+	"veire" vblex ifi p3 sg
+"<tanben>"
+	"tanben" adv
+"<dotze>"
+	"dotze" num mf sp
+"<còps>"
+	"còp" n m pl
+"<entre>"
+	"entre" pr
+"<1750>"
+	"1750" num
+"<e>"
+	"e" cnjcoo
+"<1769>"
+	"1769" num
+"<.>"
+	"." sent
+
+"<En>"
+	"en" pr
+"<1781>"
+	"1781" num
+"<,>"
+	"," cm
+"<William>"
+	"William" np ant m sg
+"<Herschel>"
+	"Herschel" np cog mf sp
+"<foguèt>"
+	"èsser" vbser ifi p3 sg
+"<donc>"
+	"donc" cnjadv
+"<lo>"
+	"lo" det def m sg
+"<premier>"
+	"premier" adj m sg
+"<astronòm>"
+	"astronòm" n m sg
+"<que>"
+	"que" rel an mf sp 
+"<comprenguèt>"
+	"comprene" vblex ifi p3 sg
+"<qu'>"
+	"que" cnjsub 
+"<Uranus>"
+	"Uranus" np top m sg
+"<èra>"
+	"èsser" vbser pii p3 sg
+"<pas>"
+	"pas" adv
+"<una>"
+	"un" det ind f sg 
+"<estela>"
+	"estela" n f sg
+"<.>"
+	"." sent
+
+"<Pasmens>"
+	"pasmens" adv
+"<,>"
+	"," cm
+"<pensèt>"
+	"pensar" vblex ifi p3 sg
+"<premier>"
+	"premier" adv
+"<que>"
+	"que" cnjsub
+"<vesiá>"
+	"veire" vblex pii p3 sg
+"<una>"
+	"un" det ind f sg 
+"<cometa>"
+	"cometa" n f sg
+"<.>"
+	"." sent
+
+"<Pasmens>"
+	"pasmens" adv
+"<,>"
+	"," cm
+"<de>"
+	"de" pr
+"<dobtes>"
+	"dobte" n m pl
+"<apareguèron>"
+	"aparéisser" vblex ifi p3 pl
+"<e>"
+	"e" cnjcoo
+"<leis>"
+	"lo" det def mf pl
+"<astronòms>"
+	"astronòm" n m pl
+"<rus>"
+	"rus" adj m pl
+"<Anders>"
+	"Anders" np ant m sg
+"<Johan>"
+	"Johan" np ant m sg
+"<Lexell>"
+	"Lexell" np cog mf sp
+"<e>"
+	"e" cnjcoo
+"<alemand>"
+	"alemand" adj m sg
+"<Johann>"
+	"Johann" np ant m sg
+"<Elert>"
+	"Elert" np cog mf sp
+"<Bode>"
+	"Bode" np cog mf sp
+"<calculèron>"
+	"calcular" vblex ifi p3 pl
+"<l'>"
+	"lo" det def mf sg
+"<orbita>"
+	"orbita" n f sg
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+"<objècte>"
+	"objècte" n m sg
+"<descubèrt>"
+	"descubèrt" adj m sg
+"<per>"
+	"per" adv
+"<Herschel>"
+	"Herschel" np cog mf sp
+"<.>"
+	"." sent
+
+"<Lei>"
+	"lo" det def mf pl
+"<resultats>"
+	"resultat" n m pl
+"<mostrèron>"
+	"mostrar" vblex ifi p3 pl
+"<la>"
+	"lo" det def f sg
+"<preséncia>"
+	"preséncia" n f sg
+"<d'>"
+	"de" pr
+"<una>"
+	"un" det ind f sg 
+"<orbita>"
+	"orbita" n f sg
+"<quasi>"
+	"quasi" preadv
+"<circulara>"
+	"circular" adj f sg
+"<e>"
+	"e" cnjcoo
+"<concluguèron>"
+	"conclure" vblex ifi p3 pl
+"<que>"
+	"que" cnjsub
+"<se>"
+	"se" prn pro ref p3 mf sp
+"<tractava>"
+	"tractar" vblex pii p3 sg
+"<d'>"
+	"de" pr
+"<una>"
+	"un" det ind f sg 
+"<planeta>"
+	"planeta" n f sg
+"<.>"
+	"." sent
+
+"<Lo>"
+	"lo" det def m sg
+"<fach>"
+	"fach" n m sg
+"<foguèt>"
+	"èsser" vbser ifi p3 sg
+"<finalament>"
+	"finalament" adv
+"<confiermat>"
+	"confiermar" vblex pri pp m sg
+"<en>"
+	"en" pr
+"<1783>"
+	"1783" num
+"<per>"
+	"per" adv
+"<Herschel>"
+	"Herschel" np cog mf sp
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<president>"
+	"president" n m sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<Royal>"
+	"Royal" barb
+"<Society>"
+	"Society" barb
+"<.>"
+	"." sent
+
+
+
+"<Nom>"
+	"nom" n m sg
+"<.>"
+	"." sent
+
+
+
+"<En>"
+	"en" pr
+"<onor>"
+	"onor" n m sg
+"<dau>"
+	"de" pr 
+		"lo" det def m sg
+"<rèi>"
+	"rèi" n m sg
+"<d'>"
+	"de" pr
+"<Anglatèrra>"
+	"Anglatèrra" np top f sg
+"<Jòrdi>"
+	"Jòrdi" np ant m sg
+"<III>"
+	"III" num mf sp
+"<(>"
+	"(" lpar
+"<en>"
+	"en" pr
+"<anglés>"
+	"anglés" n m sg
+"<George>"
+	"George" np ant m sg
+"<III>"
+	"III" num mf sp
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<Herschel>"
+	"Herschel" np cog mf sp
+"<vouguèt>"
+	"voler" vblex ifi p3 sg
+"<nomar>"
+	"nomar" vblex inf
+"<la>"
+	"lo" det def f sg
+"<planeta>"
+	"planeta" n f sg
+"<Georgium>"
+	"Georgium" barb
+"<Sidus>"
+	"Sidus" barb
+"<(>"
+	"(" lpar
+"<Estela>"
+	"estela" n f sg
+"<de>"
+	"de" pr
+"<Jòrdi>"
+	"Jòrdi" np ant m sg
+"<)>"
+	")" rpar
+"<mai>"
+	"mai" pr
+"<lo>"
+	"lo" det def m sg
+"<nom>"
+	"nom" n m sg
+"<èra>"
+	"èsser" vbser pii p3 sg
+"<pas>"
+	"pas" adv
+"<veritablament>"
+	"veritablament" adv
+"<popular>"
+	"popular" adj m sg
+"<en>"
+	"en" pr
+"<Euròpa>"
+	"Euròpa" np top f sg
+"<.>"
+	"." sent
+
+"<L'>"
+	"lo" det def mf sg
+"<astronòm>"
+	"astronòm" n m sg
+"<Jérôme>"
+	"Jérôme" np ant m sg
+"<Lalande>"
+	"Lalande" np cog mf sp
+"<prepausèt>"
+	"prepausar" vblex ifi p3 sg
+"<l'>"
+	"lo" det def mf sg
+"<apelacion>"
+	"apelacion" n f sg
+"<Herschel>"
+	"Herschel" np cog mf sp
+"<e>"
+	"e" cnjcoo
+"<lo>"
+	"lo" det def m sg
+"<Suedés>"
+	"suedés" adj m sg
+"<Erik>"
+	"Erik" np ant m sg
+"<Prosperin>"
+	"Prosperin" np cog mf sp
+"<lo>"
+	"lo" det def m sg
+"<nom>"
+	"nom" n m sg
+"<Neptun>"
+	"Neptun" np ant m sg
+"<per>"
+	"per" pr
+"<celebrar>"
+	"celebrar" vblex inf
+"<lei>"
+	"lo" det def mf pl
+"<victòrias>"
+	"victòria" n f pl
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<flòta>"
+	"flòta" n f sg
+"<britanica>"
+	"britanic" adj f sg
+"<durant>"
+	"durant" pr
+"<la>"
+	"lo" det def f sg
+"<Guèrra>"
+	"guèrra" n f sg
+"<d'>"
+	"de" pr
+"<Independéncia>"
+	"independéncia" n f sg
+"<deis>"
+	"de" pr
+		"lo" det def m pl
+"<Estats Units>"
+	"Estats Units" np top m pl
+"<.>"
+	"." sent
+
+"<Enfin>"
+	"enfin" adv
+"<,>"
+	"," cm
+"<Bode>"
+	"Bode" np cog mf sp
+"<prepausèt>"
+	"prepausar" vblex ifi p3 sg
+"<Uranus>"
+	"Uranus" np top m sg
+"<qu'>"
+	"que" rel an mf sp
+"<es>"
+	"èsser" vbser pri p3 sg
+"<lo>"
+	"lo" det def m sg
+"<paire>"
+	"paire" n m sg
+"<de>"
+	"de" pr
+"<Saturne>"
+	"Saturne" np top m sg
+"<dins>"
+	"dins" pr
+"<la>"
+	"lo" det def f sg
+"<mitologia>"
+	"mitologia" n f sg
+"<grèga>"
+	"grèc" adj f sg
+"<.>"
+	"." sent
+
+"<Aqueu>"
+	"aqueu" det dem m sg
+"<nom>"
+	"nom" n m sg
+"<venguèt>"
+	"venir" vblex ifi p3 sg
+"<pauc a pauc>"
+	"pauc a pauc" adv
+"<lo>"
+	"lo" det def m sg
+"<pus>"
+	"pus" adv
+"<espandit>"
+	"espandit" adj m sg
+"<e>"
+	"e" cnjcoo
+"<s'>"
+	"se" prn pro ref p3 mf sp
+"<impausèt>"
+	"impausar" vblex ifi p3 sg
+"<definitivament>"
+	"definitivament" adv
+"<vèrs>"
+	"vèrs" n m sg
+"<1850>"
+	"1850" num
+"<quand>"
+	"quand" cnjadv
+"<l'>"
+	"lo" det def mf sg
+"<HM>"
+	"HM" barb
+"<Nautical>"
+	"Nautical" barb
+"<Almanac>"
+	"almanac" n m sg
+"<Office>"
+	"Office" barb
+"<renoncièt>"
+	"renonciar" vblex ifi p3 sg
+"<a>"
+	"a" pr
+"<l'>"
+	"lo" det def mf sg
+"<apelacion>"
+	"apelacion" n f sg
+"<d'>"
+	"de" pr
+"<Herschell>"
+	"Herschell" np cog mf sp
+"<.>"
+	"." sent
+
+
+
+"<Recèrca>"
+	"recèrca" n f sg
+"<amb>"
+	"amb" pr
+"<lei>"
+	"lo" det def mf pl
+"<telescòpis>"
+	"telescòpi" n m pl
+"<terrèstres>"
+	"terrèstre" adj mf pl
+
+
+"<Premiera>"
+	"premier" adj f sg
+"<taca>"
+	"taca" n f sg
+"<sorna>"
+	"sorne" adj f sg
+"<d'>"
+	"de" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<observada>"
+	"observar" vblex pp f sg
+"<per>"
+	"per" pr
+"<lo>"
+	"lo" det def m sg
+"<telescòpi>"
+	"telescòpi" n m sg
+"<espaciau>"
+	"espaciau" adj mf sg
+"<Hubble>"
+	"Hubble" np al m sg
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
+"<Avans>"
+	"avans" pr
+"<lo>"
+	"lo" det def m sg
+"<passatge>"
+	"passatge" n m sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<sonda>"
+	"sonda" n f sg
+"<Voyager>"
+	"Voyager" np al m sg
+"<2>"
+	"2" num
+"<,>"
+	"," cm
+"<lei>"
+	"lo" det def mf pl
+"<conoissenças>"
+	"conoissença" n fpl
+"<sus>"
+	"sus" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<èran>"
+	"èsser" vbser pii p3 pl
+"<limitadas>"
+	"limitat" adj f pl
+"<.>"
+	"." sent
+
+"<A l'ora d'ara>"
+	"a l'ora d'ara" adv
+"<,>"
+	"," cm
+"<l'>"
+	"lo" det def mf sg
+"<exploracion>"
+	"exploracion" n f sg
+"<d'>"
+	"de" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<amb>"
+	"amb" pr
+"<de>"
+	"de" pr
+"<telescòpis>"
+	"telescòpi" n m pl
+"<necessita>"
+	"necessitar" vblex pri p3 sg
+"<generalament>"
+	"generalament" adv
+"<l'>"
+	"lo" det def mf sg
+"<utilizacion>"
+	"utilizacion" n f sg
+"<dei>"
+	"de" pr
+		"lo" det def m sg
+"<telescòpis>"
+	"telescòpi" n m pl
+"<Hubble>"
+	"Hubble" np al m sg
+"<o>"
+	"o" cnjcoo
+"<Keck>"
+	"Keck" np al m sg
+"<que>"
+	"que" rel an mf sp
+"<pòu>"
+	"poder" vblex pri p3 sg
+"<observar>"
+	"observar" vblex inf
+"<la>"
+	"lo" det def f sg
+"<planeta>"
+	"planeta" n f sg
+"<dempuei>"
+	"dempuei" pr
+"<la>"
+	"lo" det def f sg
+"<Tèrra>"
+	"tèrra" n f sg
+"<.>"
+	"." sent
+
+"<Aqueleis>"
+	"aqueu" det dem mf pl
+"<observacions>"
+	"observacion" n f pl
+"<mostrèron>"
+	"mostrar" vblex ifi p3 pl
+"<la>"
+	"lo" det def f sg
+"<preséncia>"
+	"preséncia" n f sg
+"<de>"
+	"de" pr
+"<fenomèns>"
+	"fenomèn" n m pl
+"<climatics>"
+	"climatic" adj m pl
+"<coma>"
+	"coma" adv
+"<de>"
+	"de" pr
+"<tacas>"
+	"taca" n f pl
+"<blavas>"
+	"blau" adj f pl
+"<similaras>"
+	"similar" adj f pl
+"<a>"
+	"a" pr
+"<Neptun>"
+	"Neptun" np top m sg
+"<en>"
+	"en" pr
+"<2006>"
+	"2006" num
+"<.>"
+	"." sent
+
+"<Descurbiguèron>"
+	"descurbir" vblex ifi p3 pl
+"<tanben>"
+	"tanben" adv
+"<dos>"
+	"dos" num m sp
+"<anèus>"
+	"anèl" n m pl
+"<e>"
+	"e" cnjcoo
+"<dotze>"
+	"dotze" num mf sp
+"<satellits>"
+	"satellit" n m pl
+"<naturaus>"
+	"naturau" adj mf pl
+"<suplementaris>"
+	"suplementari" adj m pl
+"<.>"
+	"." sent
+
+
+
+"<Exploracion>"
+	"exploracion" n f sg
+"<amb>"
+	"amb" pr
+"<de>"
+	"de" pr
+"<missions>"
+	"mission" n f pl
+"<espacialas>"
+	"espacial" adj f pl
+"<.>"
+	"." sent
+
+
+
+"<La>"
+	"lo" det def f sg
+"<mission>"
+	"mission" n f sg
+"<espaciala>"
+	"espacial" adj f sg
+"<estatsunidenca>"
+	"estatsunidenc" adj f sg
+"<Voyager>"
+	"Voyager" np al m sg
+"<2>"
+	"2" num
+"<es>"
+	"èsser" vbser pri p3 sg
+"<la>"
+	"lo" det def f sg
+"<soleta>"
+	"solet" adj f sg
+"<sonda>"
+	"sonda" n f sg
+"<que>"
+	"que" cnjsub
+"<foguèt>"
+	"èsser" vbser ifi p3 sg
+"<mandada>"
+	"mandar" vblex pp f sg
+"<dins>"
+	"dins" pr
+"<lo>"
+	"lo" det def m sg
+"<sistèma>"
+	"sistèma" n m sg
+"<d'>"
+	"de" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<en>"
+	"en" pr
+"<1986>"
+	"1986" num
+"<.>"
+	"." sent
+
+"<Descurbiguèt>"
+	"descurbir" vblex ifi p3 sg
+"<dètz>"
+	"dètz" num mf sp
+"<satellits>"
+	"satellit" n m pl
+"<naturaus>"
+	"naturau" adj mf pl
+"<suplementaris>"
+	"suplementari" adj m pl
+"<e>"
+	"e" cnjcoo
+"<la>"
+	"lo" det def f sg
+"<forma>"
+	"forma" n f sg
+"<asimetrica>"
+	"asimetric" adj f sg
+"<dau>"
+	"de" pr
+		"lo" det def m sg
+"<camp>"
+	"camp" n m sg
+"<magnetic>"
+	"magnetic" adj m sg
+"<.>"
+	"." sent
+
+"<Estudièt>"
+	"estudiar" vblex ifi p3 sg
+"<tanben>"
+	"tanben" adv
+"<la>"
+	"lo" det def f sg
+"<composicion>"
+	"composicion" n f sg
+"<dei>"
+	"de" pr
+		"lo" det def m sg
+"<cinc>"
+	"cinc" num mf sp
+"<grands>"
+	"grand" adj m pl
+"<satellits>"
+	"satellit" n m pl
+"<e>"
+	"e" cnjcoo
+"<realizèt>"
+	"realizar" vblex ifi p3 sg
+"<de>"
+	"de" pr
+"<fotografias>"
+	"fotografia" n f pl
+"<detalhadas>"
+	"detalhat" adj f pl
+"<de>"
+	"de" pr
+"<Miranda>"
+	"Miranda" np cog mf sp
+"<.>"
+	"." sent
+
+"<Enfin>"
+	"enfin" adv
+"<,>"
+	"," cm
+"<la>"
+	"lo" det def f sg
+"<sonda>"
+	"sonda" n f sg
+"<observèt>"
+	"observar" vblex ifi p3 sg
+"<l'>"
+	"lo" det def mf sg
+"<atmosfèra>"
+	"atmosfèra" n f sg
+"<d'>"
+	"de" pr
+"<Uranus>"
+	"Uranus" np top m sg
+"<.>"
+	"." sent
+
+
+
+"<Cultura>"
+	"cultura" n f sg
+"<.>"
+	"." sent
+
+
+
+"<Uranus>"
+	"Uranus" np top m sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<lo>"
+	"lo" det def m sg
+"<nom>"
+	"nom" n m sg
+"<latinizat>"
+	"latinizar" vblex pp m sg
+"<dau>"
+	"de" pr
+		"lo" det def m sg
+"<dieu>"
+	"dieu" n m sg
+"<grèc>"
+	"grèc" adj m sg
+"<Ouranós>"
+	"Ouranós" barb
+"<(>"
+	"(" lpar
+Οὐρανός
+"<)>"
+	")" rpar
+"<representant>"
+	"representar" vblex ger
+"<lo>"
+	"lo" det def m sg
+"<cèu>"
+	"cèu" n m sg
+"<.>"
+	"." sent
+
+"<Foguèt>"
+	"èsser" vbser ifi p3 sg
+"<lo>"
+	"lo" det def m sg
+"<paire>"
+	"paire" n m sg
+"<dei>"
+	"de" pr
+		"lo" det def m sg
+"<Titans>"
+	"titan" n m pl
+"<e>"
+	"e" cnjcoo
+"<foguèt>"
+	"èsser" vbser ifi p3 sg
+"<reversat>"
+	"reversar" vblex pp m sg
+"<per>"
+	"per" pr
+"<son>"
+	"son" det pos m sg
+"<fiu>"
+	"fiu" n m sg
+"<Crònos>"
+	"Crònos" np ant m sg
+"<.>"
+	"." sent
+
+"<L'>"
+	"lo" det def mf sg
+"<urani>"
+	"urani" n m sg
+"<,>"
+	"," cm
+"<descubèrt>"
+	"descubrir" vblex pp m sg
+"<en>"
+	"en" pr
+"<1789>"
+	"1789" num
+"<per>"
+	"per" pr
+"<lo>"
+	"lo" det def m sg
+"<quimista>"
+	"quimista" n mf sg
+"<alemand>"
+	"alemand" adj m sg
+"<Martin>"
+	"Martin" np ant m sg
+"<Heinrich>"
+	"Heinrich" np ant m sg
+"<Klaproth>"
+	"Klaproth" np cog mf sg
+"<,>"
+	"," cm
+"<foguèt>"
+	"èsser" vbser ifi p3 sg
+"<nomat>"
+	"nomar" vblex pp m sg
+"<en>"
+	"en" pr
+"<onor>"
+	"onor" n f sg
+"<dau>"
+	"de" pr
+		"lo" det def m sg
+"<nom>"
+	"nom" n m sg
+"<prepausat>"
+	"prepausar" vblex pp m sg
+"<per>"
+	"per" pr
+"<la>"
+	"lo" det def f sg
+"<novèla>"
+	"novèl" adj f sg
+"<planeta>"
+	"planeta" n f sg
+"<per>"
+	"per" pr
+"<Johann>"
+	"Johann" np ant m sg
+"<Elert>"
+	"Elert" np cog mf sp
+"<Bode>"
+	"Bode" np cog mf sp
+"<.>"
+	"." sent
+
+
+"<En>"
+	"en" pr
+"<1943>"
+	"1943" num
+"<,>"
+	"," cm
+"<lei>"
+	"lo" det def mf pl
+"<Sovietics>"
+	"sovietic" n m pl
+"<nomèron>"
+	"nomar" vblex ifi p3 pl
+"<tanben>"
+	"tanben" adv
+"<lor>"
+	"lor" det pos mf sg
+"<còntraofensiva>"
+	"còntraofensiva" n f sg
+"<a l'entorn de>"
+	"a l'entorn de" adv
+"<Stalingrad>"
+	"Stalingrad" np top m sg
+"<Operacion>"
+	"operacion" n f sg
+"<Uranus>"
+	"Uranus" np top m sg
+"<.>"
+	"." sent
+
+
+
+"<Nòtas>"
+	"nòta" n f pl
+"<.>"
+	"." sent
+
+
+"<Lo>"
+	"lo" det def m sg
+"<tèrme>"
+	"tèrme" n m sg
+"<de>"
+	"de" pr
+"<glaç>"
+	"glaç" n m sg
+"<designa>"
+	"designar" vblex pri p3 sg
+"<aicí>"
+	"aicí" adv
+"<un>"
+	"un" prn tn m sg
+"<còrs>"
+	"còrs" n m sg
+"<fluid>"
+	"fluid" adj m sg
+"<e>"
+	"e" cnjcoo
+"<caud>"
+	"caud" adj m sg
+"<,>"
+	"," cm
+"<somés>"
+	"sometre" vblex pp m sg
+"<a>"
+	"a" pr
+"<de>"
+	"de" pr
+"<pressions>"
+	"pression" n f pl
+"<e>"
+	"e" cnjcoo
+"<temperaturas>"
+	"temperatura" n f pl
+"<autas>"
+	"aut" adj f pl
+"<,>"
+	"," cm
+"<e>"
+	"e" cnjcoo
+"<non>"
+	"non" adv
+"<un>"
+	"un" prn tn m sg
+"<còrs>"
+	"còrs" n m sg
+"<coma>"
+	"coma" adv
+"<lo>"
+	"lo" det def m sg
+"<glaç>"
+	"glaç" n m sg
+"<d'>"
+	"de" pr
+"<aiga>"
+	"aiga" n f sg
+"<visible>"
+	"visible" adj m sg
+"<d'>"
+	"de" pr
+"<ivèrn>"
+	"ivèrn" n m sg
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+"<Per>"
+	"per" pr
+"<convencion>"
+	"convencion" n f sg
+"<,>"
+	"," cm
+"<lo>"
+	"lo" det def m sg
+"<limit>"
+	"limit" n m sg
+"<entre>"
+	"entre" pr
+"<l'>"
+	"lo" det def mf sg
+"<interior>"
+	"interior" n m sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<planeta>"
+	"planeta" n f sg
+"<e>"
+	"e" cnjcoo
+"<son>"
+	"son" det pos f sg
+"<atmosfèra>"
+	"atmosfèra" n f sg
+"<es>"
+	"èsser" vbser pri p3 sg
+"<fixat>"
+	"fixar" vblex pp m sg
+"<a>"
+	"a" pr
+"<una>"
+	"un" det ind f sg 
+"<pression>"
+	"pression" n f sg
+"<d'>"
+	"de" pr
+"<un>"
+	"un" det ind m sg 
+"<bar>"
+	"bar" n m sg
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
+"<Referéncias>"
+	"referéncia" n f pl
+"<.>"
+	"." sent

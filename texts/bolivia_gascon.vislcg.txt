@@ -25,8 +25,8 @@
 
 "<Bulibya>"
 	"Bulibya" barb
-"<>"
-	"" sent
+"<;>"
+	";" sent
 "<aimara>"
 	"aimara" n m sg
 "<:>"
@@ -34,8 +34,8 @@
 
 "<Wuliwya>"
 	"Wuliwya" barb
-"<>"
-	"" sent
+"<;>"
+	";" sent
 "<guaraní>"
 	"guaraní" n m sg
 "<:>"
@@ -236,8 +236,8 @@
 	"Tiwanaku" np top m sg
 "<)>"
 	")" rpar
-"<>"
-	"" sent
+"<;>"
+	";" sent
 "<ua>"
 	"un" det ind f sg
 "<partida>"
@@ -709,8 +709,8 @@
 	"lo" det def f sg
 "<Republica>"
 	"republica" n f sg
-"<>"
-	"" sent
+"<;>"
+	";" sent
 "<gessit>"
 
 	"gessir" vblex pp m sg

@@ -102,7 +102,7 @@
 "<,>"
 	"," cm
 "<aushesa>"
-	"aushesa"
+	"aushesa" n f sg
 "<.>"
 	"." sent
 

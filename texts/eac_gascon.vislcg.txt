@@ -1,5 +1,5 @@
 "<Las>"
-	"lo" det def f pl SELECT:666
+	"lo" det def f pl
 "<inscripcions>"
 	"inscripcion" n f pl
 "<aus>"
@@ -18,7 +18,7 @@
 "<Culturau>"
 	"culturau" adj mf sg
 "<que>"
-	"que" adv enon SELECT:284
+	"que" adv enon
 "<son>"
 	"estar" vbser pri p3 pl
 "<ubèrtas>"
@@ -29,11 +29,11 @@
 
 
 "<Per>"
-	"per" pr SELECT:173
+	"per" pr
 "<la>"
 	"lo" det def f sg
 "<tresau>"
-	"tres" adj f sg SELECT:428
+	"tres" adj f sg
 "<annada>"
 	"annada" n f sg
 "<escolara>"
@@ -44,7 +44,7 @@
 	"," cm
 "<la>"
 	"lo" det def f sg
-	"lo" prn pro p3 f sg REMOVE:265
+	"lo" prn pro p3 f sg
 "<Delegacion>"
 	"delegacion" n f sg
 "<Academica>"
@@ -52,7 +52,7 @@
 "<a>"
 	"a" pr
 "<las>"
-	"lo" det def f pl REMOVE:393
+	"lo" det def f pl
 "<Arts>"
 	"art" n m pl
 "<e>"
@@ -70,15 +70,15 @@
 "<)>"
 	")" rpar
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<l’>"
 	"lo" det def mf sg
 "<Academia>"
 	"academia" n f sg
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<Bordèu>"
-	"Bordèu" np top m sg SELECT:571
+	"Bordèu" np top m sg
 "<en>"
 	"en" pr
 "<partenariat>"
@@ -92,7 +92,7 @@
 "<CIRDÒC-Institut occitan de cultura>"
 	"CIRDÒC-Institut occitan de cultura" np al m sg
 "<que>"
-	"que" adv enon SELECT:284
+	"que" adv enon
 "<renovèlan>"
 	"renovelar" vblex pri p3 pl
 "<lo lor>"
@@ -110,7 +110,7 @@
 "<Culturau>"
 	"culturau" adj mf sg
 "<a l’entorn deus>"
-	"a l'entorn de"
+	"a l'entorn de" pr
 		"lo" det def m pl
 "<patrimònis>"
 	"patrimòni" n m pl
@@ -122,11 +122,11 @@
 
 
 "<Las>"
-	"lo" det def f pl SELECT:666
+	"lo" det def f pl
 "<inscripcions>"
 	"inscripcion" n f pl
 "<que>"
-	"que" adv enon SELECT:284
+	"que" adv enon
 "<son>"
 	"estar" vbser pri p3 pl
 "<ubèrtas>"
@@ -137,7 +137,7 @@
 "<17>"
 	"17" num
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<junh>"
 	"junh" n m sg
 "<.>"
@@ -159,23 +159,23 @@
 "<onze>"
 	"onze" num mf sp
 "<projèctes>"
-	"projècte" n m pl SELECT:397
+	"projècte" n m pl
 "<distribuits>"
 	"distribuïr" vblex pp m pl
 "<per>"
-	"per" pr SELECT:173
+	"per" pr
 "<Navèra Aquitània>"
 	"Navèra Aquitània" np top f sg
 "<sancèra>"
 	"sancèr" adj f sg
 "<qu’>"
-	"que" adv enon SELECT:284
+	"que" adv enon
 "<estón>"
 	"estar" vbser ifi p3 pl
 "<hicats>"
 	"hicat" adj m pl
 "<en plaça>"
-	"en plaça" adv SELECT:399
+	"en plaça" adv
 "<.>"
 	"." sent
 
@@ -190,9 +190,9 @@
 "<,>"
 	"," cm
 "<qu’>"
-	"que" adv enon REMOVE:275
+	"que" adv enon
 "<avem>"
-	"aver" vbhaver pri p1 pl SELECT:460
+	"aver" vbhaver pri p1 pl
 "<realizat>"
 	"realizar" vblex pp m sg
 "<25>"
@@ -204,7 +204,6 @@
 "<l'>"
 	"lo" det def mf sg
 "<ensemble>"
-	"ensemble" adv
 	"ensemble" n m sg
 "<deu>"
 	"de" pr
@@ -212,15 +211,15 @@
 "<territòri>"
 	"territòri" n m sg
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<l'>"
 	"lo" det def mf sg
 "<academia>"
 	"academia" n f sg
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<Bordèu>"
-	"Bordèu" np top m sg SELECT:455
+	"Bordèu" np top m sg
 "<!>"
 	"!" sent
 
@@ -235,7 +234,7 @@
 "<d’>"
 	"de" pr
 "<ua>"
-	"un" det ind f sg SELECT:419
+	"un" det ind f sg
 "<trajectòria>"
 	"trajectòria" n f sg
 "<EAC>"
@@ -249,11 +248,11 @@
 "<ensenhaires>"
 	"ensenhaire" n m pl
 "<que>"
-	"que" adv enon SELECT:284
+	"que" adv enon
 "<dispausan>"
 	"dispausar" vblex pri p3 pl
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<l’>"
 	"lo" det def mf sg
 "<acompanhament>"
@@ -262,7 +261,7 @@
 	"e" cnjcoo
 		"de" pr
 "<las>"
-	"lo" det def f pl SELECT:666
+	"lo" det def f pl
 "<competéncias>"
 	"competéncia" n f pl
 "<d’>"
@@ -305,9 +304,9 @@
 "<accion>"
 	"accion" n f sg
 "<que>"
-	"que" adv enon SELECT:284
+	"que" adv enon
 "<s’>"
-	"se" prn pro ref p3 mf sp SELECT:542
+	"se" prn pro ref p3 mf sp
 "<adreça>"
 	"adreçar" vblex pri p3 sg
 "<tanben>"
@@ -320,7 +319,7 @@
 	"a" pr
 		"lo" det def m pl
 "<escolans>"
-	"escolan" n m pl SELECT:407
+	"escolan" n m pl
 "<non>"
 	"non" adv
 "<occitanofònes>"
@@ -333,9 +332,9 @@
 "<De mei>"
 	"de mei" adv
 "<que>"
-	"que" adv enon REMOVE:275
+	"que" adv enon
 "<podem>"
-	"poder" vbmod pri p1 pl SELECT:503
+	"poder" vbmod pri p1 pl
 "<acompanhar>"
 	"acompanhar" vblex inf
 "<projèctes>"
@@ -366,7 +365,7 @@
 "<e>"
 	"e" cnjcoo
 "<que’ns>"
-	"que" adv enon SELECT:284
+	"que" adv enon
 		"nos" prn pro p1 mf pl
 "<desiretz>"
 	"desirar" vblex prs p2 pl
@@ -390,7 +389,7 @@
 "<miar>"
 	"miar" vblex inf
 "<ua>"
-	"un" det ind f sg SELECT:419
+	"un" det ind f sg
 "<accion>"
 	"accion" n f sg
 "<EAC>"
@@ -401,7 +400,7 @@
 
 
 "<Qu’>"
-	"que" adv enon SELECT:284
+	"que" adv enon
 "<avetz>"
 	"aver" vblex pri p2 pl
 "<dinc au>"
@@ -410,7 +409,7 @@
 "<17>"
 	"17" num
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<junh>"
 	"junh" n m sg
 "<entà>"
@@ -450,9 +449,9 @@
 "<rectorat>"
 	"rectorat" n m sg
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<Bordèu>"
-	"Bordèu" np top m sg SELECT:455
+	"Bordèu" np top m sg
 "<:>"
 	":" sent
 
@@ -463,9 +462,9 @@
 
 
 "<E>"
-	"e" adv enon SELECT:284
+	"e" adv enon
 "<voletz>"
-	"voler" vbmod pri p2 pl SELECT:329
+	"voler" vbmod pri p2 pl
 "<descobrir>"
 	"descobrir" vblex inf
 "<l’>"
@@ -483,7 +482,7 @@
 
 
 "<Anatz>"
-	"anar" vblex imp p2 pl REMOVE:354
+	"anar" vblex imp p2 pl
 "<tau noste>"
 	"tà" pr
 		"lo noste" det pos m sg
@@ -501,7 +500,7 @@
 "<Entà>"
 	"entà" pr
 "<mei>"
-	"mei" adv SELECT:456
+	"mei" adv
 "<d'>"
 	"de" pr
 "<informacions>"
@@ -512,15 +511,15 @@
 	"ne" adv enon
 		"vos" prn pro p2 mf pl
 "<sia>"
-	"estar" vbser prs p3 sg SELECT:511
+	"estar" vbser prs p3 sg
 "<grèu>"
 	"grèu" adv
 "<de>"
-	"de" pr SELECT:176
+	"de" pr
 "<contactar>"
-	"contactar" vblex inf SELECT:379
+	"contactar" vblex inf
 "<a>"
-	"a" pr REMOVE:372
+	"a" pr
 "<:>"
 	":" sent
 
@@ -532,7 +531,7 @@
 "<Tatiana>"
 	"Tatiana" np ant f sg
 "<Martin>"
-	"Martin" np cog mf sp SELECT:587
+	"Martin" np cog mf sp
 "<.>"
 	"." sent
 

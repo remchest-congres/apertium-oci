@@ -377,12 +377,10 @@
 	"en" pr
 "<latin>"
 	"latin" n m sg
-"<>"
-	"" lpar
+"<(>"
+	"(" lpar
 "<1>"
 	"1" num
-"<>"
-	"" rpar
 "<)>"
 	")" rpar
 "<que>"
@@ -410,12 +408,12 @@
  -
 "<acum>"
 	"acum" barb
-"<>"
-	"" lpar
+"<(>"
+	"(" lpar
 "<2>"
 	"2" num
-"<>"
-	"" rpar
+"<(>"
+	")" rpar
 "<.>"
 	"." sent
 
@@ -507,12 +505,10 @@
 	"de" pr
 "<Cassini>"
 	"Cassini" np cog mf sp
-"<>"
-	"" lpar
+"<(>"
+	"(" lpar
 "<3>"
 	"3" num
-"<>"
-	"" rpar
 "<)>"
 	")" rpar
 "<que>"
@@ -632,12 +628,10 @@
 	"de" pr
 "<Cassini>"
 	"Cassini" np cog mf sp
-"<>"
-	"" lpar
+"<(>"
+	"(" lpar
 "<4>"
 	"4" num
-"<>"
-	"" rpar
 "<)>"
 	")" rpar
 "<que>"
@@ -651,12 +645,12 @@
 	"latin" n m sg
 "<ficta>"
 	"ficta" barb
-"<>"
-	"" lpar
+"<(>"
+	"(" lpar
 "<petra>"
 	"petra" barb
-"<>"
-	"" rpar
+"<)>"
+	")" rpar
 "<e>"
 	"e" cnjcoo
 "<que>"
@@ -692,21 +686,21 @@
 "<,>"
 	"," cm
 "<etc>"
-	"*etc"
-"<>"
-	"" lpar
+	"etc" adv
+"<(>"
+	")" lpar
 "<5>"
 	"5" num
-"<>"
-	"" rpar
+"<(>"
+	")" rpar
 "<,>"
 	"," cm
-"<>"
-	"" lpar
+"<(>"
+	"(" lpar
 "<6>"
 	"6" num
-"<>"
-	"" rpar
+"<)>"
+	")" rpar
 "<,>"
 	"," cm
 "<o>"
@@ -772,12 +766,12 @@
 	"1968" num
 "<)>"
 	")" rpar
-"<>"
-	"" lpar
+"<(>"
+	"(" lpar
 "<7>"
 	"7" num
-"<>"
-	"" rpar
+"<)>"
+	")" rpar
 "<.>"
 	"." sent
 
