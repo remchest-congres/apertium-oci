@@ -1,4 +1,4 @@
-# Problemes especialment complexos de la desambiguació
+	# Problemes especialment complexos de la desambiguació
 #	- son: pos o vbser o nom
 #	- a: vbhaver o prep
 #	- an: vbhaver o nom
@@ -619,6 +619,10 @@ SELECT PREP IF (0 Dins) (1 DET) ;
 
 REMOVE Pro IF (NOT 1 V OR Pro) ;
 REMOVE DET IF (0 Tn) (NOT 1 N OR AJ) ;
+
+REMOVE NP IF (-1 BOS) (0 ("Òc")) ;
+REMOVE NP IF (-2 BOS) (-1 (META:/-/r)) (0 ("Òc")) (1 CM) ;
+REMOVE NP IF (-1 (META:/[—]/r)) (0 ("Òc")) (1 CM) ;
 
 SELECT N IF (0 ("<Estat>")) ;
 SELECT N IF (-1 DET + Masc) (NOT -1 Ser) (0 Estat) ;
