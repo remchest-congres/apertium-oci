@@ -1,4 +1,4 @@
-	# Problemes especialment complexos de la desambiguació
+# Problemes especialment complexos de la desambiguació
 #	- son: pos o vbser o nom
 #	- a: vbhaver o prep
 #	- an: vbhaver o nom
@@ -293,6 +293,8 @@ SELECT V OR Pro IF (-1C Pro) (NOT -1/* V) ;	# i a un ; i aviá un
 SELECT PREP (0 ("a")) (1C Pro) ;	# a lo parlar
 SELECT PREP (0 ("a")) (1C Top OR Ant OR Cog OR Al) ;	# a Niça
 
+SELECT DET + &&AcordSN IF (0 ("un") + &&AcordSN) (1 N_AJ + &&AcordSN) ;	# guess (cal pels enonciatius)
+
 SELECT ("be") + Enon IF (-1 BOS) ;
 SELECT ("be") + Enon IF (-3 BOS) (-2 AV OR Conjadv) (-1 CM) ;
 SELECT ("que") + Enon IF (-1 BOS) ;
@@ -303,7 +305,8 @@ REMOVE ("que") + Enon IF (-1C DET) ;
 REMOVE ("que") + Enon IF (-1 ("solide")) ;
 SELECT ("que") + Conjsub IF (-1 ("mei")) ;
 SELECT ("que") + Conjsub IF (-2 ("mei")) (-1 AJ OR AJ) ;
-REMOVE ("que") + Enon IF (NOT -1* V + Pers LINK NOT 0 VBimp) (2* ("?") OR ("!")) ;
+SELECT ("que") + Enon OR ("be") + Enon OR ("non") + Enon IF (NOT -1* V + Pers) (1C Pro OR V + Pers LINK NOT 0 VBimp) (NOT 2* V + Pers) (NOT 2* ("?")) ;
+REMOVE ("que") + Enon IF (NOT -1* V + Pers) (2* ("?") OR ("!")) ;
 REMOVE ("que") + Enon IF (-1C V + Pers OR VBinf OR VBger) ;
 REMOVE ("que") + Enon IF (-1 AV) (-2C V + Pers OR VBinf OR VBger) ;
 REMOVE ("que") + Enon IF (-1C N_AJ OR VBpp OR NP OR unknownMajIni) (NOT 1 Pro) (2*C V + Pers OR VBinf OR VBger) ;	# los amics que son bons (enon) ; los amics que son bons que son bons (que1 = rel, que 2 = enon)
@@ -444,6 +447,7 @@ SELECT V IF (0 An + MascSg) (1C AV) (2 VBpp + MascSg) ;
 
 # DET
 
+REMOVE DET IF (-1C/* DET) ;	# un cèrt estacament
 REMOVE SUB:1 DET IF (0/* DET) (1C DET) ;	# en los acès
 SELECT DETind + &&AcordSN IF (0 DETind + &&AcordSN) (1 N + &&AcordSN) ;	# un enfant
 SELECT DETind + &&AcordSN IF (0 DETind + &&AcordSN) (1 AJ + &&AcordSN) ;	# un jaune
