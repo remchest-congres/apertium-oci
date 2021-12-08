@@ -34,7 +34,6 @@ LIST PERS = pers ;
 LIST AV = adv ;
 LIST AVexcl = (adv excl) ;
 LIST PREAV = preadv ;
-LIST Excl = "!" ;
 LIST PRONPers = (prn p1) (prn p2) (prn p3); 
 LIST IJ = ij ;
 LIST PREDET = predet ;
@@ -58,7 +57,8 @@ LIST Nm = (n m);
 LIST AJm = (adj m);
 LIST Nf = (n f);
 LIST AJf = (adj f);
-LIST Vconj = pri prs pii pis imp fti ifi cni ;
+LIST Vconj = pri prs pii ifi pis imp fti ifi cni ;
+LIST Vconj_non_Imp = pri prs pii ifi pis fti ifi cni ;
 LIST Itg = itg ;
 LIST DETdef = (det def);
 LIST DETind = (det ind);
@@ -118,6 +118,8 @@ LIST VPl3 = (vblex p3 pl) (vbser p3 pl) (vbhaver p3 pl) (vbmod p3 pl) ;
 SET AcordSV = Sg1 OR Sg2 OR Sg3 OR Pl1 OR Pl2 OR Pl3 ;
 
 SET CM = (cm) OR (lpar) OR (rpar) OR ("<;>") ;
+LIST Lpar = lpar ;
+LIST Rpar = rpar ;
 LIST Excl = "!" ;
 
 #Mots
@@ -135,6 +137,7 @@ LIST Pas = "pas" ;
 LIST Cap = "cap" ;
 LIST Mai = "mai" "mes" ;
 LIST Pus = "pus" ;
+LIST Res = "res" "arren" "arrens" "ren" ;
 LIST Pel = "pel" "peu" ;
 LIST Deu = "deu" ;
 LIST Que = "que" ;
@@ -155,8 +158,6 @@ List Nummois = "1" "1èr" "1ièr" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12"
 SET AdjPre = ("ancian") OR ("nòu") OR ("nau") OR ("novèl") OR ("navèth") OR ("grand") OR ("petit") OR ("pichon") OR ("pichòt") OR ("bon") OR ("mal") OR ("naut") OR ("haut") OR ("bas") OR ("baish") ;
 
 
-LIST Excl = "!" ;
-
 LIST unknown = ("\\*.*"r) ;
 LIST unknownMajIni = ("\\*[A-ZÀÁÈÉíÒÓÚÜÇ].*"r) ;
 LIST MajIni = ("\\<[A-ZÀÁÄÂÈÉËÊÍÏÎÒÓÖÔÚÜÛÇ].*\\>"r) ;
@@ -164,8 +165,7 @@ LIST Majusc = ("\\<[A-ZÉÈÊ][A-ZÂÉÈÊÎÔÛ]*>"r) ;
 LIST MinIni = ("\\<[a-zàáäâèéëêíïîòóöôúüûç].*\\>"r) ;
 LIST siecles_nom_romains = ("[IVX][IVX]*"r) ;
 
-SET Dignite = ("pape") OR ("patriarche") OR ("évêque") OR ("archevêque") OR ("saint") OR ("saint") OR ("apôtre") OR ("empereur") OR ("roi") OR ("tsar") OR ("vice-roi") OR ("régent") OR ("prince") OR ("infant") OR ("dauphin") OR ("comte") OR ("comtesse") OR ("vicomte") OR ("vicomtesse") OR ("duc") OR ("duchesse") OR ("grand-duc") OR ("grande-duchesse") OR ("archiduc") OR ("archiduchesse") OR ("marquis") OR ("baron") ;
-
+SET Dignitat = ("papa") OR ("patriarca") OR ("avesque") OR ("arcavesque") OR ("archavesque") OR ("archevesque") OR ("arquevesque") OR ("sant") OR ("sant") OR ("apòstol") OR ("apostòl") OR ("emperador") OR ("emperaire") OR ("rei") OR ("tsar") OR ("vicerei") OR ("regent") OR ("prince") OR ("infant") OR ("dalfin") OR ("comte") OR ("comtessa") OR ("vescomte") OR ("vescomtessa") OR ("duc") OR ("grand-duc") OR ("arcaduc") OR ("archiduc") OR ("marqués") OR ("baron") ;
 
 
 SECTION
@@ -188,6 +188,7 @@ REMOVE N IF (0 ("<o>"i)) ;		# patch
 REMOVE N IF (0 ("<la>"i)) ;		# patch
 REMOVE N IF (0 ("<si>"i)) ;		# patch
 REMOVE N + ("tau") IF (0 ("tau")) ;		# patch
+REMOVE SUB:1 DET IF (0 ("<en>"i)) ;		# patch
 REMOVE ("taus") IF (-2 DET + MascPl) (-1 N + MascPl) (0 ("taus")) (1 ("com")) ;		# los fèits taus com s’èran passats
 REMOVE N IF (NOT -1 DET + MascSg) (0 ("<com>"i)) ;		# patch
 SELECT VBinf IF (-1C PREP OR V) (0 ("<far>"i)) ;		# patch
@@ -271,6 +272,19 @@ SELECT AV IF (-5 Vmod) (-4 Pas) (-3 AV OR Pro) (-2 AV OR Pro) (-1 VBinf) (0 Mai 
 SELECT Conjco IF (-1 EOS) (0 Mai) ;
 SELECT Conjco IF (-1 CM) (0 Mai) (NOT 1 AJ) ;
 
+REMOVE VBimp IF (NOT 1* Excl) ;		# guess
+REMOVE VBimp IF (-1 Ant OR Cog OR unknown) (0 P3) ;
+REMOVE VBimp IF (-2 Ant OR Cog OR unknown) (-1 AV OR Pro) (0 P3) ;
+REMOVE VBimp IF (-3 Ant OR Cog OR unknown) (-2 AV) (-1 Pro) (0 P3) ;
+SELECT VBimp IF (-1 BOS) (1 Excl) ;
+SELECT VBimp IF (-1 BOS) (1 AV) (2 Excl) ;
+SELECT VBimp IF (-2 BOS) (-1 ("be") OR ("que")) (1 Excl) ;
+SELECT VBimp IF (-2 BOS) (-1 ("be") OR ("que")) (1 AV) (2 Excl) ;
+REMOVE VBimp IF (-1 BOS) (0 ("un")) ;
+SELECT VBimp IF (-1 BOS) (0 P2) (1* Excl) ;		# guess
+REMOVE VBimp IF (-2 BOS) (-1 ("be") OR ("que")) (0 ("un")) ;
+SELECT VBimp IF (-2 BOS) (-1 ("be") OR ("que")) (0 P2) (1* Excl) ;	# guess
+
 #Un pronom proclitic est totjorn davant un vèrb o un autre pronom
 REMOVE Pro IF (NOT 1 V OR Pro);
 REMOVE DET IF (1C V OR Pro) (NOT 1 VBpp) ;
@@ -280,7 +294,9 @@ SELECT PREP (0 ("a")) (1C Pro) ;	# a lo parlar
 SELECT PREP (0 ("a")) (1C Top OR Ant OR Cog OR Al) ;	# a Niça
 
 SELECT ("be") + Enon IF (-1 BOS) ;
+SELECT ("be") + Enon IF (-3 BOS) (-2 AV OR Conjadv) (-1 CM) ;
 SELECT ("que") + Enon IF (-1 BOS) ;
+SELECT ("que") + Enon IF (-3 BOS) (-2 AV OR Conjadv) (-1 CM) ;
 REMOVE ("e") + Enon IF (NOT 1* ("?")) ;
 REMOVE ("be") + Enon IF (NOT 1* ("!")) ;
 REMOVE ("que") + Enon IF (-1C DET) ;
@@ -298,6 +314,9 @@ REMOVE ("que") + Enon IF (-2C N_AJ OR VBpp OR NP OR unknownMajIni) (-1 CM) (2 Pr
 REMOVE ("que") + Enon IF (-2C N_AJ OR VBpp OR NP OR unknownMajIni) (-1 CM) (2 Pro) (3 Pro) (5*C V + Pers OR VBinf OR VBger) ;
 SELECT ("non") + Enon IF (1C Pro OR V + Pers LINK NOT 0 VBimp) ;
 SELECT SUB:1 ("non") + Enon IF (1C Pro OR V + Pers LINK NOT 0 VBimp) ;
+SELECT ("non") + Enon IF (1 Pro OR V + Pers) (NOT -1 DET + MascSg) ;
+SELECT ("non") + Enon IF (1 Pro OR V + Pers) (-1 ("<nat>"i)) ;
+SELECT PRON IF (0 ("<nat>"i)) (1 ("<non>"i)) ;
 SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon BARRIER V) (1C Pro OR V + Pers LINK NOT 0 VBimp) ;
 SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon BARRIER V) (0 ("ne") OR ("non")) (1 V + Pers LINK NOT 0 VBimp) (2 ("pas") OR ("pas nat")) ;
 SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon BARRIER V) (0 ("ne") OR ("non")) (1 Pro) (2 V + Pers LINK NOT 0 VBimp) (3 ("pas") OR ("pas nat")) ;
@@ -323,6 +342,7 @@ REMOVE IJ IF (NOT -1 CM OR BOS) (0 ("plan")) ;
 REMOVE IJ IF (NOT -1 CM OR BOS) (0 ("las")) ;
 REMOVE AJ (0 ("las")) (1 V OR Pro) ;
 SELECT Pro (0 ("las")) (1C V OR Pro) ;
+SELECT DET (-1 PREP) (0 ("las")) (1 De) ;
 
 SELECT AVexcl IF (-1 BOS) (0 AVexcl) (1 ("!")) ;
 SELECT AVexcl IF (-2 BOS) (-1 Conjco) (0 AVexcl) (1 ("!")) ;
@@ -643,6 +663,7 @@ REMOVE AJ IF (0 Las) (1 NUM) (2 N + FemPl) ;	# las 200 pomas
 SELECT Conjco IF (0 Mas) (-1 CM) ;
 
 REMOVE N IF (-1C V) (0 Pel) ;
+REMOVE N IF (0 Pel) (1 unknown) ;
 
 # NP
 
@@ -657,7 +678,7 @@ REMOVE Ant IF (-1 DETdef) (0 Ant) ;
 REMOVE Ant IF (-1 DETind) (0 Ant) ;
 REMOVE Ant IF (-1 En) (0 Ant) ;
 
-SELECT NP IF (0 N OR NP) (1 NP) (0 (META:/-/r)) (NOT 0 ("bas") OR ("haut")) ;   # Pierre-Michel
+SELECT NP IF (0 N OR NP) (1 NP) (0 (META:/-/r)) (NOT 0 ("bas") OR ("naut") OR ("haut")) ;   # Pierre-Michel
 SELECT Ant IF (0 Ant) (1C Ant) (0 (META:/-/r)) ;                                # Jean-René
 SELECT Ant IF (-1C Ant) (0 Ant) (-1 (META:/-/r)) ;
 SELECT Cog IF (0 Cog) (1C Cog) (0 (META:/-/r)) ;
@@ -702,8 +723,8 @@ SELECT Masc_strict IF (0 ("Antigone")) (1 ("\\<[IXV]>"r)) ;
 SELECT Fem_strict IF (0 ("Antigone")) ;
 SELECT Fem_strict IF (0 ("Andromaque")) ;
 
-SELECT Masc_strict IF (0 ("Cassandre")) (1* ("Macédoine") OR ("Roxanne") OR ("Alexandre") OR ("Antipater") OR ("Ptolémée") OR ("roi") + Masc OR ("diadoque")) ;
-SELECT Masc_strict IF (0 ("Cassandre")) (-1* ("Macédoine") OR ("Roxanne") OR ("Alexandre") OR ("Antipater") OR ("Ptolémée") OR ("roi") + Masc OR ("diadoque")) ;
+SELECT Masc_strict IF (0 ("Cassandre")) (1* ("Macédoine") OR ("Roxanne") OR ("Alexandre") OR ("Antipater") OR ("Ptolémée") OR ("rei") + Masc OR ("diadoque")) ;
+SELECT Masc_strict IF (0 ("Cassandre")) (-1* ("Macédoine") OR ("Roxanne") OR ("Alexandre") OR ("Antipater") OR ("Ptolémée") OR ("rei") + Masc OR ("diadoque")) ;
 SELECT Fem_strict IF (0 ("Cassandre")) ;
 
 SELECT Ant + Masc_strict IF (0 Ant) (1 DETdef + Sg + Masc) (2 N_AJ + Sg + Masc + MajIni) ;
@@ -719,16 +740,17 @@ REMOVE Top IF (0 Cog OR Ant OR Top) (1 unknownMajIni) (NOT -1 ("de")) ;
 SELECT Ant IF (NOT -1 Cog OR Ant) (0C Cog OR Ant) (1 unknownMajIni) ; # Léon Verguet
 REMOVE (cog) IF (0C NP) (0 (cog)) (0 (top)) (NOT 1 (ant) OR (cog)) (-1 BOS); # Orihuela, Vilallonga
 
-SELECT Ant IF (-1 ("dieu") OR ("déesse")) ;
+SELECT Ant IF (-1 ("dieu") OR ("divessa")) ;
 
 SELECT Ant IF (-1 (";") OR (":")) (1 Ant OR Cog OR unknownMajIni) ;
 
-SELECT Top IF (-2 ("ville") OR ("aéroport") OR ("port") OR ("royaume") OR ("principauté") OR ("grand-duché") OR ("duché") OR ("marquisat") OR ("comté") OR ("baronnie") OR ("seigneurie") OR ("archevêché") OR ("évêché")) (-1 ("de")) (0 Cog OR Ant) ;
-SELECT Top IF (-2 Dignite) (-1 ("de")) (0 Top) ;
+SELECT Top IF (-2 ("vila") OR ("aeropòrt") OR ("pòrt") OR ("reialme") OR ("principat") OR ("grand-ducat") OR ("ducat") OR ("marquesat") OR ("comtat") OR ("baroniá") OR ("senhoria") OR ("archavescat") OR ("arquevescat") OR ("avescat")) (-1 ("de")) (0 Cog OR Ant) ;
+SELECT Top IF (-2 Dignitat) (-1 ("de")) (0 Top) ;
 
 REMOVE Al IF (-1 Ant OR Cog) (0 Ant OR Cog) ;
 REMOVE Top IF (-1 Ant OR Cog) (0 Ant OR Cog) ;
 REMOVE Al IF (0 Ant OR Cog) (1 Ant OR Cog) ;
+SELECT Top IF (-1 Lpar) (0 Cog) (1 Rpar);
 
 
 #deu -> dever / de +lo
