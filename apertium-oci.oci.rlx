@@ -38,6 +38,7 @@ LIST PRONPers = (prn p1) (prn p2) (prn p3);
 LIST IJ = ij ;
 LIST PREDET = predet ;
 LIST Pos = pos ;
+LIST Pref = pref ;
 LIST SENT = sent ;
 
 #Jos=categorias
@@ -134,7 +135,9 @@ LIST Eth = "<eth>i" ;
 LIST Nostre = "nòstre" "nòste" ;
 LIST Vostre = "vòstre" "vòste" ;
 LIST Pas = "pas" ;
-LIST Cap = "cap" ;
+LIST Cap = ("<cap>"i) ;
+LIST Cap_de = ("<cap de>"i) ("<cap d'>"i) ("<cap d’>"i) ;
+LIST Cap_de_del = ("<cap de>"i) ("<cap d'>"i) ("<cap d’>"i) ("<cap del>"i) ("<cap dels>"i) ("<cap deu>"i) ("<cap deus>"i) ;
 LIST Mai = "mai" "mes" ;
 LIST Pus = "pus" ;
 LIST Res = "res" "arren" "arrens" "ren" ;
@@ -237,8 +240,11 @@ SELECT PREP IF (0 ("sens")) (1C VBinf OR VBger) ;
 SELECT PREP IF (0 ("sens")) (1 Pro) (2C VBinf OR VBger) ;
 SELECT PREP IF (0 ("sens")) (1 Pro) (2 Pro) (3C VBinf OR VBger) ;
 
-SELECT N IF (-1 DET + MascSg) (0 ("<cap>"i)) ;
-SELECT N IF (-1 DET + MascSg) (0 ("<cap de>"i) OR ("<cap d'>"i) OR ("<cap d’>"i)) ;
+SELECT N IF (-1 DET + MascSg) (0 Cap); ;
+SELECT N IF (-1 DET + MascSg) (0 Cap_de) ;
+SELECT PRON IF (NOT -1 DET) (0 Cap_de) (1 Tn) ;	# cap d'elas
+SELECT PRON IF (NOT -1 DET OR CM) (0 Cap_de) (1 DET) ;
+SELECT PRON IF (NOT -1 DET OR CM) (0 ("<cap del>"i) OR ("<cap dels>"i)) ;
 SELECT PRON IF (-1 EOS OR Conjsub OR Conjadv) (0 Cap) ;
 SELECT PRON IF (-2 EOS OR Conjsub) (-1 AV OR Conjadv) (0 Cap) ;
 SELECT PRON IF (-1 Pas) (0 Cap) ;	# ai pas cap
@@ -249,13 +255,13 @@ SELECT PRON IF (-4 Vmod) (-3 Pas) (-2 AV OR Pro) (-1 VBinf) (0 Cap) ;	# vòli pa
 SELECT PRON IF (-5 Vmod) (-4 Pas) (-3 AV OR Pro) (-2 AV OR Pro) (-1 VBinf) (0 Cap) ;	# vòli pas li'n dire cap
 SELECT N IF (0 Cap) (1 NP OR unknownMajIni) ;	# cap Canaveral
 SELECT N + (m) IF (0 Cap) (1 NP OR unknownMajIni) ;	# cap Canaveral
-SELECT N + (mf) IF (NOT -1 BOS) (0 Cap) (0/* De) (1 Estat OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("politica") OR ("entrepresa") OR ("enterpresa")) ;
-SELECT N + (mf) IF (NOT -1 BOS) (0 Cap) (0/* De) (1 Al) ;
-SELECT N + (mf) IF (NOT -1 BOS) (0 Cap) (0/* De) (1 Ant_Cog) ;
-SELECT N + (mf) IF (NOT -1 BOS) (0 Cap) (0/* De) (1 DET) (2 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("sindicat") OR ("politica") OR ("entrepresa") OR ("enterpresa")) ;
-SELECT N + (mf) IF (0 Cap) (1 ("<del>"i) OR ("<deu">i)) (2 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("sindicat") OR ("politica") OR ("entrepresa") OR ("enterpresa")) ;
+SELECT N + (mf) IF (NOT -1 BOS) (0 Cap_de_del) (1 Estat OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("politica") OR ("entrepresa") OR ("enterpresa")) ;
+SELECT N + (mf) IF (NOT -1 BOS) (0 Cap_de_del) (1 Al) ;
+SELECT N + (mf) IF (NOT -1 BOS) (0 Cap_de_del) (1 Ant_Cog) ;
+SELECT N + (mf) IF (NOT -1 BOS) (0 Cap_de_del) (1 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("sindicat") OR ("politica") OR ("entrepresa") OR ("enterpresa")) ;
+SELECT N + (mf) IF (NOT -1 BOS) (0 Cap_de) (1 DET) (2 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("sindicat") OR ("politica") OR ("entrepresa") OR ("enterpresa")) ;
 REMOVE AV IF (-1C PREP) (0 Cap) (1C EOS OR CM OR Conjsub OR Conjadv OR Conjco) ;
-SELECT DET IF (0 Cap) (1 Tn) ;	# cap d'elas
+
 
 SELECT AV IF (-1 Pas) (0 Mai OR Pus) ;	# ai pas pus
 SELECT AV IF (-2 Pas) (-1 VBpp) (0 Mai OR Pus) ;	# ai agut pas pus
@@ -402,6 +408,10 @@ REMOVE VBimp IF (-1C Enon OR Conjco OR Conjsub OR Rel OR Pers);
 
 REMOVE VBimp IF (NOT 1* Excl) ;
 REMOVE VBimp IF (0 P3) ;
+
+SELECT N IF (-1 ("<[a-zàáèéíòóú].*>"r)) (0 ("<Estat>")) ;	# "Estat" (con mayúscula) va precedido de una palabra con minúscula inicial
+SELECT N IF (-1C N) (-1 (META:/-/r)) ;
+SELECT N IF (0 (META:/-/r)) (1C N) ;
 
 #Un nom pot pas seguir qu'un vèrbe, un adjectiu, un determinant, un numeral, una prepausicion o un pronom (levat los personals)
 #(en titolars periodístics, però, es comença sovint per un nom)
@@ -653,7 +663,6 @@ REMOVE NP IF (-1 BOS) (0 ("Òc")) ;
 REMOVE NP IF (-2 BOS) (-1 (META:/-/r)) (0 ("Òc")) (1 CM) ;
 REMOVE NP IF (-1 (META:/[—]/r)) (0 ("Òc")) (1 CM) ;
 
-SELECT N IF (0 ("<Estat>")) ;
 SELECT N IF (-1 DET + Masc) (NOT -1 Ser) (0 Estat) ;
 SELECT VBpp IF (-1 Ser + Sg) (0 Estat + Sg) ;
 #SELECT VBpp IF (-1 Ser + Pl) (0 Estat + Pl) ;
@@ -664,7 +673,6 @@ SELECT VBpp IF (-2 Ser + Pl) (-1 AV) (0 Estat + Pl) ;
 SELECT Ser IF (0 Ser + Sg) (1 AV) (2 Ser + VBpp + Sg) ;
 SELECT Ser IF (0 Ser + Pl) (1 AV) (2 Ser + VBpp + Pl) ;
 SELECT N IF (-1 ("vila") OR ("ciutat")) (0 Estat) ;	# vila estat
-SELECT N IF (-1 ("<[a-zàáèéíòóú]>.*"r)) (0 Estat) ;	# "Estat" (con mayúscula) va precedido de una palabra con minúscula inicial
 
 REMOVE AJ IF (0 Las) (1 N + FemPl) ;	# las pomas
 REMOVE AJ IF (0 Las) (1 NUM) (2 N + FemPl) ;	# las 200 pomas
