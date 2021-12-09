@@ -292,6 +292,7 @@ SELECT V OR Pro IF (-1C Pro) (NOT -1/* V) ;	# i a un ; i aviá un
 
 SELECT PREP (0 ("a")) (1C Pro) ;	# a lo parlar
 SELECT PREP (0 ("a")) (1C Top OR Ant OR Cog OR Al) ;	# a Niça
+REMOVE PREP (0 ("a")) (-1C Rel OR Conjsub) ;
 
 SELECT DET + &&AcordSN IF (0 ("un") + &&AcordSN) (1 N_AJ + &&AcordSN) ;	# guess (cal pels enonciatius)
 
@@ -379,6 +380,9 @@ SELECT Volar IF (0 Voler) (0 Volar) (1 AV) (2 ("a") OR ("cap a")) ;
 SELECT Voler IF (0 Voler) (0 Volar) (1 ("que")) ;
 SELECT Voler IF (0 Voler) (0 Volar) (1 AV) (2 ("que")) ;
 SELECT Voler IF (0 Voler) (0 Volar) (-1 ("què")) (NOT -2 ("en"));
+
+SELECT NUM IF (-1 ("en")) (0 ("dos")) ;
+SELECT PREP IF (0 ("en")) (1 ("dos")) ;
 
 #En es pas un pronom s'es abans un gerondiu (amb possibilitat de pronoms entre los dos)
 REMOVE En_pron IF (1* VBger BARRIER (*) - Pro) ;
@@ -622,6 +626,7 @@ SELECT AJ OR VBpp OR AV IF (-1 ("mai") OR ("mei") OR ("pus") OR ("mens")) (0 AJ 
 SELECT AJ OR AV IF (-1 ("mai") OR ("mei") OR ("pus") OR ("mens")) (0 AJ OR VBpp OR AV) (1 Que) ;	# plus rapide que moi
 SELECT Conjsub IF (-2 ("mai") OR ("mei") OR ("pus") OR ("mens")) (-1 AJ OR VBpp OR AV) (0 Que) ;	# plus rapide que moi
 SELECT Rel IF (-1 ("çò")) (0 Que) ;
+REMOVE Itg IF (-1C N_AJ) (0 Que) ;
 REMOVE Conjsub IF (-1 CM) (0 Que) ;
 REMOVE Conjsub IF (-1 DET) (0 Que) ;
 REMOVE Conjsub IF (-1C N) (0 Que) ;
