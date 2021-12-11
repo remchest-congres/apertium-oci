@@ -38,7 +38,6 @@ LIST PRONPers = (prn p1) (prn p2) (prn p3);
 LIST IJ = ij ;
 LIST PREDET = predet ;
 LIST Pos = pos ;
-LIST Pref = pref ;
 LIST SENT = sent ;
 
 #Jos=categorias
@@ -239,6 +238,19 @@ REMOVE Sg IF (NOT -1 DET) (0 ("<son>"i)) (1 AV OR PREAV) (2C Pl_strict) ;	# son 
 SELECT PREP IF (0 ("sens")) (1C VBinf OR VBger) ;
 SELECT PREP IF (0 ("sens")) (1 Pro) (2C VBinf OR VBger) ;
 SELECT PREP IF (0 ("sens")) (1 Pro) (2 Pro) (3C VBinf OR VBger) ;
+SELECT N IF (-1 MinIni) (0 ("sap") + MajIni) ;
+SELECT N IF (0 ("sap")) (1C V + Pers) ;
+SELECT N IF (0 ("sap")) (1C AV) (2C V + Pers) ;
+SELECT N + &&AcordSN IF (-2C V + Pers) (-1 DET + &&AcordSN) (0 ("sap") + &&AcordSN) ;
+SELECT N + MascPl IF (-2C V + Pers) (-1 De) (0 ("sap") + MascPl) ;
+SELECT N + &&AcordSN IF (-1/* DET + &&AcordSN) (0 ("sap") + &&AcordSN) (1 De) ;
+REMOVE N + ("sap");
+
+REMOVE ("cosina") IF (-1 DETpos + FemSg) (0 ("<cosina>")) ;
+REMOVE ("cosina") IF (0 ("cosin") + FemPl) ;
+REMOVE ("cosina") IF (0 ("cosin")) (1* ("paire") OR ("pair") OR ("maire") OR ("mair") OR ("parent") OR ("fraire") OR ("sòr") OR ("cosin") OR ("oncle") OR ("tanta") OR ("nebot") OR ("grand")) ;
+REMOVE ("cosina") IF (0 ("cosin")) (-1* ("paire") OR ("pair") OR ("maire") OR ("mair") OR ("parent") OR ("fraire") OR ("sòr") OR ("cosin") OR ("oncle") OR ("tanta") OR ("nebot") OR ("grand")) ;
+REMOVE ("cosin") IF (0 ("cosina")) ;
 
 SELECT N IF (-1 DET + MascSg) (0 Cap); ;
 SELECT N IF (-1 DET + MascSg) (0 Cap_de) ;
@@ -292,9 +304,10 @@ REMOVE VBimp IF (-2 BOS) (-1 ("be") OR ("que")) (0 ("un")) ;
 SELECT VBimp IF (-2 BOS) (-1 ("be") OR ("que")) (0 P2) (1* Excl) ;	# guess
 
 #Un pronom proclitic est totjorn davant un vèrb o un autre pronom
-REMOVE Pro IF (NOT 1 V OR Pro);
+REMOVE Pro IF (NOT 1 Pro OR V - VBpp OR VBimp) ;
 REMOVE DET IF (1C V OR Pro) (NOT 1 VBpp) ;
 SELECT V OR Pro IF (-1C Pro) (NOT -1/* V) ;	# i a un ; i aviá un
+SELECT V OR Pro IF (-1C/* Pro) (NOT -1/* V) ;	# se'n sap
 
 SELECT PREP (0 ("a")) (1C Pro) ;	# a lo parlar
 SELECT PREP (0 ("a")) (1C Top OR Ant OR Cog OR Al) ;	# a Niça
@@ -410,6 +423,8 @@ REMOVE VBimp IF (NOT 1* Excl) ;
 REMOVE VBimp IF (0 P3) ;
 
 SELECT N IF (-1 ("<[a-zàáèéíòóú].*>"r)) (0 ("<Estat>")) ;	# "Estat" (con mayúscula) va precedido de una palabra con minúscula inicial
+SELECT N IF (0 ("radio")) (0 (META:/-/r)) (1 ("television")) ;
+SELECT PREP IF (0 ("jos")) (0 (META:/-/r)) ;
 SELECT N IF (-1C N) (-1 (META:/-/r)) ;
 SELECT N IF (0 (META:/-/r)) (1C N) ;
 
@@ -608,9 +623,9 @@ SELECT Vmod IF (0 ("caler")) (-1 Itg) ;
 SELECT Vmod IF (0 ("caler")) (-1 Enon) ;
 SELECT Vmod IF (0 ("caler")) (-1 BOS) ;
 SELECT Vmod IF (0 ("caler")) (-2 BOS) (1 AV) ;
-REMOVE Vmod IF (NOT 1 VBinf OR AV OR Pro) ;
-REMOVE Vmod IF (1 AV) (NOT 2 VBinf OR AV OR Pro) ;
-REMOVE Vmod IF (1 AV) (1 AV) (NOT 3 VBinf OR AV OR Pro) ;
+REMOVE Vmod IF (NOT 1 VBinf OR AV OR Pro OR Que) ;
+REMOVE Vmod IF (1 AV) (NOT 2 VBinf OR AV OR Pro OR Que) ;
+REMOVE Vmod IF (1 AV) (1 AV) (NOT 3 VBinf OR AV OR Pro OR Que) ;
 REMOVE Vmod IF (1 AV) (2 Pro) (NOT 3 VBinf OR Pro) ;
 REMOVE Vmod IF (1 Pro) (NOT 2 VBinf OR Pro) ;
 REMOVE Vmod IF (1 Pro) (2 Pro) (NOT 2 VBinf) ;
