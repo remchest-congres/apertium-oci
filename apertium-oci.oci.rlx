@@ -794,6 +794,10 @@ REMOVE Top IF (-1 Ant OR Cog) (0 Ant OR Cog) ;
 REMOVE Al IF (0 Ant OR Cog) (1 Ant OR Cog) ;
 SELECT Top IF (-1 Lpar) (0 Cog) (1 Rpar);
 
+SELECT Top IF (0 ("Euròpa")) (NOT -1 DET) (NOT -1 Ant_Cog) ;
+SELECT Top IF (0 ("Asia")) (NOT -1 DET) (NOT -1 Ant_Cog) ;
+SELECT Top IF (0 ("America")) (NOT -1 DET) (NOT -1 Ant_Cog) ;
+
 
 #deu -> dever / de +lo
 LIST Deu = "deu" ;
