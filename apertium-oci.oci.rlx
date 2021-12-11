@@ -659,7 +659,15 @@ REMOVE Conjsub IF (-2C N) (-1 AJ) (0 Que) ;
 REMOVE Conjsub IF (-3 N) (-2 AV OR PREAV) (-1 AJ) (0 Que) ;
 REMOVE AVG IF (NOT -1 ("pas") OR ("solament")) (0 Que) ;
 
-REMOVE PRON IF (0 Se) (NOT 1 Pro OR V + P3 OR V + VBinf OR V + VBger) ;	# se canti
+REMOVE Pro IF (NOT 1 V OR Pro) ;
+REMOVE DET IF (0 Tn) (NOT 1 N OR AJ) ;
+
+REMOVE PRON IF (0 Se) (NOT 1 Pro OR V + P3 OR V + VBinf OR V + VBger) ;        # se canti
+REMOVE PRON IF (0 Se) (1 Pro) (NOT 2 Pro OR V + P3 OR V + VBinf OR V + VBger) ;	# se li canti
+REMOVE PRON IF (0 Se) (1 Pro) (2 Pro) (NOT 3 Pro OR V + P3 OR V + VBinf OR V + VBger) ;	# se li o canti
+REMOVE PRON IF (0 Se) (1 Pro) (2 Pro) (3 Pro) (4 V + P3 OR V + VBinf OR V + VBger) ;
+REMOVE Conjadv IF (0 Se) (1C V + VBinf) ;        # de se crear
+REMOVE Conjadv IF (0 Se) (1 Pro) (2C V + VBinf) ;        # de se lo crear
 #REMOVE PRON IF (0 Se) (1 ("ne")) ;	# Se n’èram estadas amigas
 SELECT Conjadv IF (0 ("<s'i>"i) OR ("<s’i>"i)) (1 ("aver") OR ("auer")) ;
 SELECT Conjadv IF (0 Se) (1 ("<n'i>"i) OR ("<n’i>"i)) (2 ("aver") OR ("auer")) ;
@@ -667,12 +675,14 @@ SELECT Conjadv IF (0 Se) (1 Pro) (2 Pro) (3 V) ;	# patch
 SELECT Conjadv IF (0 Se) (0/* Pro) (1 Pro) (2 V) ;	# patch
 SELECT Conjadv IF (0 Se) (1 Pro) (2 Pro) (3 Pro) (4 V) ;	# patch
 SELECT Conjadv IF (0 Se) (0/* Pro) (1 Pro) (2 Pro) (3 V) ;	# patch
+REMOVE Conjadv IF (0 Se) (0/* Pro) (-1*C N) (NOT -1* V + Pers) ;	# un ministeri s'encargue
+SELECT P3 IF (-1C Se + PRON) (NOT 0 Pro) (0 V) ;		# se canti
+SELECT P3 IF (-2C Se + PRON) (-1 Pro) (NOT 0 Pro) (0 V) ;	# se li canti
+SELECT P3 IF (-3C Se + PRON) (-2 Pro) (-1 Pro) (NOT 0 Pro) (0 V + P3) ;	# se li o canti
 SELECT PRON IF (0 Se) (1C Pro OR V + P3) ;	# patch			NE MARCHE PAS DU TOUT
 
-SELECT PREP IF (0 Dins) (1 DET) ;
 
-REMOVE Pro IF (NOT 1 V OR Pro) ;
-REMOVE DET IF (0 Tn) (NOT 1 N OR AJ) ;
+SELECT PREP IF (0 Dins) (1 DET) ;
 
 REMOVE NP IF (-1 BOS) (0 ("Òc")) ;
 REMOVE NP IF (-2 BOS) (-1 (META:/-/r)) (0 ("Òc")) (1 CM) ;
