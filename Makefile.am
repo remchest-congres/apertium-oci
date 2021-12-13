@@ -19,7 +19,7 @@ TARGETS_COMMON =			\
 	$(LANG1c).autogen.bin		\
 	$(LANG1c).autogen.att.gz		\
 	$(LANG1c).autopgen.bin		\
-	$(LANG1).rlx.bin
+	$(LANG1).rlx.bin		\
 	$(LANG1b).automorf.bin		\
 	$(LANG1b).automorf.att.gz	\
 	$(LANG1b).autogen.bin		\
