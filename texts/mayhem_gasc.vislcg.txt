@@ -1,0 +1,2325 @@
+"<Mayhem>"
+	"Mayhem" np al m sg
+"<qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<un>"
+	"un" det ind m sg
+"<grop>"
+	"grop" n m sg
+"<norvegian>"
+	"norvegian" adj m sg
+"<de>"
+	"de" pr
+"<black>"
+	"black" adj m sg
+"<metal>"
+	"metal" n m sg
+"<.>"
+	"." sent
+
+
+
+"<Qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<un>"
+	"un" prn tn m sg
+"<deus>"
+	"de" pr
+		"lo" det def m pl
+"<grops>"
+	"grop" n m pl
+"<fondators>"
+	"fondator" n m pl
+"<d'>"
+	"de" pr
+"<aqueth>"
+	"aqueth" det dem m sg
+"<estil>"
+	"estile" n m sg
+"<.>"
+	"." sent
+
+
+
+"<Qu'>"
+	"que" adv enon
+"<an>"
+	"aver" vbhaver pri p3 pl
+"<causit>"
+	"causir" vblex pp m sg
+"<l'>"
+	"lo" det def mf sg
+"<anglés>"
+	"anglés" n m sg
+"<per>"
+	"per" pr
+"<lenga>"
+	"lenga" n f sg
+"<d'>"
+	"de" pr
+"<expression>"
+	"expression" n f sg
+"<artistica>"
+	"artistic" adj f sg
+"<.>"
+	"." sent
+
+
+
+"<Biografia>"
+	"biografia" n f sg
+
+
+"<Las>"
+	"lo" det def f pl
+"<originas>"
+	"origina" n f pl
+
+
+"<Lo>"
+	"lo" det def m sg
+"<grop>"
+	"grop" n m sg
+"<que's>"
+	"que" adv enon
+		"se" prn pro ref p3 mf sp
+"<formè>"
+	"formar" vblex ifi p3 sg
+"<en>"
+	"en" pr
+"<1983>"
+	"1983" num
+"<.>"
+	"." sent
+
+
+
+"<Los>"
+	"lo" det def m pl
+"<purmèrs>"
+	"purmèr" adj m pl
+"<membres>"
+	"membre" n m pl
+"<que>"
+	"que" adv enon
+"<n'>"
+	"en" prn pro adv
+"<estón>"
+	"estar" vbser ifi p3 pl
+"<Destructor>"
+	"Destructor" np ant m sg
+"<(>"
+	"(" lpar
+"<aliàs>"
+	"aliàs" adv
+"<Øystein>"
+	"Øystein" np ant m sg
+"<Aarseth>"
+	"Aarseth" np ant m sg
+"<,>"
+	"," cm
+"<guitarrista>"
+	"guitarrista" n mf sg
+"<,>"
+	"," cm
+"<qui's>"
+	"qui" rel mf sp
+		"se" prn pro ref p3 mf sp
+"<harà>"
+	"har" vblex fti p3 sg
+"<mei>"
+	"mei" adv
+"<tard>"
+	"tard" adv
+"<aperar>"
+	"aperar" vblex inf
+"<Euronymous>"
+	"Euronymous" np ant m sg
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<Messiah>"
+	"Messiah" np ant m sg
+"<(>"
+	"(" lpar
+"<aliàs>"
+	"aliar" ifi p2 sg
+"<Eirik>"
+	"Eirik" np ant m sg
+"<Nordheim>"
+	"Nordheim" np cog mf sp
+"<,>"
+	"," cm
+"<cantaire>"
+	"cantaire" n m sg
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<Necrobutcher>"
+	"Necrobutcher" np ant m sg
+"<(>"
+	"(" lpar
+"<aliàs>"
+	"aliar" ifi p2 sg
+"<Jørn>"
+	"Jørn" np ant m sg
+"<Stubberud>"
+	"Stubberud" np cog mf sp
+"<,>"
+	"," cm
+"<baishista>"
+	"baishista" n mf sg
+"<)>"
+	")" rpar
+"<e>"
+	"e" cnjcoo
+"<Manheim>"
+	"Manheim" np ant m sg
+"<(>"
+	"(" lpar
+"<aliàs>"
+	"aliàs" adv
+"<Kjetil>"
+	"Kjetil" np ant m sg
+"<Manheim>"
+	"Manheim" np ant m sg
+"<,>"
+	"," cm
+"<trucaire>"
+	"trucaire" n m sg
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+
+
+"<Qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<dab>"
+	"dab" pr
+"<aquera>"
+	"aqueth" det dem f sg
+"<formacion>"
+	"formacion" n f sg
+"<qui>"
+	"qui" rel mf sp
+"<enregistraràn>"
+	"enregistrar" vblex fti p3 pl
+"<las loas>"
+	"lo lor" det pos f pl
+"<duas>"
+	"dus" num f sp
+"<purmèras>"
+	"purmèr" adj f pl
+"<maquetas>"
+	"maqueta" n f pl
+"<,>"
+	"," cm
+"<puish>"
+	"puish" cnjcoo
+"<que>"
+	"que" adv enon
+"<sortiràn>"
+	"sortir" vblex fti p3 pl
+"<lo lor>"
+	"lo lor" det pos m sg
+"<purmèr>"
+	"purmèr" adj m sg
+"<disc>"
+	"disc" n m sg
+"<vertadèr>"
+	"vertadèr" adj m sg
+"<:>"
+	":" sent
+
+"<Deathcrush>"
+	"Deathcrush" np al m sg
+"<,>"
+	"," cm
+"<dab>"
+	"dab" pr
+"<lo>"
+	"lo" det def m sg
+"<cantaire>"
+	"cantaire" n m sg
+"<Maniac>"
+	"Maniac" np ant m sg
+"<(>"
+	"(" lpar
+"<Sven>"
+	"Sven" np ant m sg
+"<Erik>"
+	"Erik" np ant m sg
+"<Kristiansen>"
+	"Kristiansen" np cog mf sp
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<qui>"
+	"qui" rel mf sp
+"<remplacè>"
+	"remplaçar" vblex ifi p3 sg
+"<Messiah>"
+	"Messiah" np ant m sg
+"<.>"
+	"." sent
+
+
+
+"<Lo>"
+	"lo" det def m sg
+"<tiratge>"
+	"tiratge" n m sg
+"<d'>"
+	"de" pr
+"<aqueth>"
+	"aqueth" det dem m sg
+"<disc>"
+	"disc" n m sg
+"<qu'>"
+	"que" adv enon
+"<èra>"
+	"estar" vbser pii p3 sg
+"<limitat>"
+	"limitat" adj m sg
+"<a>"
+	"a" pr
+"<1000>"
+	"1000" num
+"<exemplars>"
+	"exemplar" n m pl
+"<mes>"
+	"mes" cnjcoo
+"<que's>"
+	"que" adv enon
+		"se" prn pro ref p3 mf sp
+"<venón>"
+	"véner" vblex ifi p3 pl
+"<pro>"
+	"pro" adv
+"<viste>"
+	"viste" adv
+"<.>"
+	"." sent
+
+
+
+"<La>"
+	"lo" det def f sg
+"<musica>"
+	"musica" n f sg
+"<qui>"
+	"qui" rel mf sp
+"<perpausava>"
+	"perpausar" vblex pii p3 sg
+"<qu'>"
+	"que" adv enon
+"<èra>"
+	"estar" vbser pii p3 sg
+"<ua>"
+	"un" det ind f sg
+"<mena>"
+	"mena" n f sg
+"<d'>"
+	"de" pr
+"<ultra>"
+	"ultra" n mf sg
+-
+"<speed>"
+	"speed" adj mf sp
+"<metal>"
+	"metal" n m sg
+"<(>"
+	"(" lpar
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<sens>"
+	"sens" n m sg
+"<on>"
+	"on" rel adv
+"<volèn>"
+	"voler" vbmod pii p3 pl
+"<jogar>"
+	"jogar" vblex inf
+"<enqüèra>"
+	"enqüèra" adv
+"<hòrt>"
+	"hòrt" adv
+"<mei>"
+	"mei" adv
+"<viste>"
+	"viste" adv
+"<que>"
+	"que" cnjsub
+"<los>"
+	"lo" det def m pl
+"<grops>"
+	"grop" n m pl
+"<de>"
+	"de" pr
+"<speed>"
+	"speed" adj mf sp
+"<metal>"
+	"metal" n m sg
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<influenciat>"
+	"influenciar" vblex pp m sg
+"<per>"
+	"per" pr
+"<Venom>"
+	"Venom" np al mf sg
+"<e>"
+	"e" cnjcoo
+"<Bathory>"
+	"Bathory" np al mf sg
+"<mes>"
+	"mes" cnjcoo
+"<tanben>"
+	"tanben" adv
+"<peus>"
+	"per" pr
+		"lo" det def m pl
+"<purmèrs>"
+	"purmèr" adj m pl
+"<grops>"
+	"grop" n m pl
+"<de>"
+	"de" pr
+"<death metal>"
+	"death metal" n m sg
+"<,>"
+	"," cm
+"<hòrt>"
+	"hòrt" adv
+"<marginaus>"
+	"marginau" adj mf pl
+"<a>"
+	"a" pr
+"<l'>"
+	"lo" det def mf sg
+"<epòca>"
+	"epòca" n f sg
+"<.>"
+	"." sent
+
+
+
+"<En>"
+	"en" pr
+"<1988>"
+	"1988" num
+"<,>"
+	"," cm
+"<Manheim>"
+	"Manheim" np ant m sg
+"<e>"
+	"e" cnjcoo
+"<Maniac>"
+	"Maniac" np ant m sg
+"<que>"
+	"que" adv enon
+"<se'n>"
+	"se" prn pro ref p3 mf sp
+		"en" prn pro adv
+"<van>"
+	"anar" vblex pri p3 pl
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<grop>"
+	"grop" n m sg
+"<:>"
+	":" sent
+
+"<lo>"
+	"lo" det def m sg
+"<purmèr>"
+	"purmèr" n m sg
+"<que>"
+	"que" adv enon
+"<s'>"
+	"se" prn pro ref p3 mf sp
+"<a>"
+	"aver" vbhaver pri p3 sg
+"<trobat>"
+	"trobar" vblex pp m sg
+"<un>"
+	"un" det ind m sg
+"<tribalh>"
+	"tribalh" n m sg
+"<vertadèr>"
+	"vertadèr" adj m sg
+"<e>"
+	"e" cnjcoo
+"<lo>"
+	"lo" det def m sg
+"<segond>"
+	"segond" n m sg
+"<qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<internat>"
+	"internar" vblex pp m sg
+"<dens>"
+	"dens" pr
+"<un>"
+	"un" det ind m sg
+"<espitau>"
+	"espital" n m sg
+"<psiquiatric>"
+	"psiquiatric" adj m sg
+"<per'mor d'>"
+	"per'mor de" pr
+"<aver>"
+	"aver" vbhaver inf
+"<hèit>"
+	"har" vblex pp m sg
+"<ua>"
+	"un" det ind f sg
+"<temptativa>"
+	"temptativa" n f sg
+"<de>"
+	"de" pr
+"<suicidi>"
+	"suicidi" n m sg
+"<.>"
+	"." sent
+
+
+
+"<Que>"
+	"que" adv enon
+"<son>"
+	"estar" vbser pri p3 pl
+"<remplaçats>"
+	"remplaçar" vblex pp m pl
+"<per>"
+	"per" pr
+"<Dead>"
+	"Dead" np ant m sg
+"<(>"
+	"(" lpar
+"<Per>"
+	"Per" np ant m sg
+"<Yngve>"
+	"Yngve" np ant m sg
+"<Ohlin>"
+	"Ohlin" np cog mf sp
+"<)>"
+	")" rpar
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<micrò>"
+	"micrò" n m sg
+"<e>"
+	"e" cnjcoo
+"<Hellhammer>"
+	"Hellhammer" np ant m sg
+"<(>"
+	"(" lpar
+"<Jan>"
+	"Jan" np ant m sg
+"<Axel>"
+	"Axel" np ant m sg
+"<Blomberg>"
+	"Blomberg" np cog mf sp
+"<)>"
+	")" rpar
+"<a>"
+	"a" pr
+"<la>"
+	"lo" det def f sg
+"<bateria>"
+	"bateria" n f sg
+"<.>"
+	"." sent
+
+
+
+"<Qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<dab>"
+	"dab" pr
+"<aquera>"
+	"aqueth" det dem f sg
+"<formacion>"
+	"formacion" n f sg
+"<qui>"
+	"qui" rel mf sp
+"<haràn>"
+	"har" vblex fti p3 pl
+"<lo>"
+	"lo" det def m sg
+"<live in Leipzig>"
+	"live in Leipzig" np al m sg
+" 
+"<e>"
+	"e" cnjcoo
+"<lo>"
+	"lo" det def m sg
+"<live>"
+	"live" n m sg
+"<piratat>"
+	"piratar" vblex pp m sg
+	"
+"<Dawn of the black hearts>"
+	"Dawn of the black hearts" np al m sg
+"
+"<.>"
+	"." sent
+
+
+
+"<Mes>"
+	"mes" cnjcoo
+"<en abriu>"
+	"en abril" adv
+"<de>"
+	"de" pr
+"<1991>"
+	"1991" num
+"<,>"
+	"," cm
+"<Dead>"
+	"Dead" np ant m sg
+"<que's>"
+	"que" adv enon
+		"se" prn pro ref p3 mf sp
+"<suicida>"
+	"suicidar" vblex pri p3 sg
+"<.>"
+	"." sent
+
+
+
+"<Abans d'>"
+	"abans de" pr
+"<aperar>"
+	"aperar" vblex inf
+"<la>"
+	"lo" det def f sg
+"<polícia>"
+	"polícia" n f sg
+"<,>"
+	"," cm
+"<Euronymous>"
+	"Euronymous" np ant m sg
+"<,>"
+	"," cm
+"<qui>"
+	"qui" rel mf sp
+"<trobè>"
+	"trobar" vblex ifi p3 sg
+"<lo>"
+	"lo" det def m sg
+"<còs>"
+	"còs" n m sg
+"<,>"
+	"," cm
+"<que'n>"
+	"que" adv enon
+		"en" prn pro adv
+"<prenó>"
+	"préner" vblex ifi p3 sg
+"<fòtos>"
+	"fòto" n f pl
+"<.>"
+	"." sent
+
+
+
+"<Ua>"
+	"un" prn tn f sg
+"<d'>"
+	"de" pr
+"<aqueras>"
+	"aqueth" det dem f pl
+"<fòtos>"
+	"fòto" n f pl
+"<que's>"
+	"que" adv enon
+		"se" prn pro ref p3 mf sp
+"<retrobarà>"
+	"retrobar" vblex fti p3 sg
+"<sus>"
+	"sus" pr
+"<la>"
+	"lo" det def f sg
+"<pocheta>"
+	"pocheta" n f sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<disc>"
+	"disc" n m sg
+"<pirata>"
+	"pirata" adj mf sg
+"<Dawn of the black hearts>"
+	"Dawn of the black hearts" np al m sg
+"
+"<.>"
+	"." sent
+
+
+
+"<Pauc après>"
+	"pauc après" pr
+"<,>"
+	"," cm
+"<Euronymous>"
+	"Euronymous" np ant m sg
+"<e>"
+	"e" cnjcoo
+"<Hellhammer>"
+	"Hellhammer" np ant m sg
+"<qu'>"
+	"que" adv enon
+"<enregistrèn>"
+	"enregistrar" vblex ifi p3 pl
+"<un>"
+	"un" det ind m sg
+"<album>"
+	"album" n m sg
+"<qui>"
+	"qui" rel mf sp
+"<influencè>"
+	"influençar" vblex ifi p3
+"<hèra de>"
+	"hèra de" det ind mf sp
+"<grops>"
+	"grop" n m pl
+"<:>"
+	":" sent
+
+"
+
+"<De misteriis dom Satanas>"
+	"De misteriis dom Satanas" np al m sg
+" 
+"<(>"
+	"(" lpar
+"
+"<Los>"
+	"lo" det def m pl
+"<rites>"
+	"rite" n m pl
+"<secrets>"
+	"secret" adj m pl
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<senhor>"
+	"senhor" n m sg
+"<Satan>"
+	"Satan" np ant m sg
+"
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<considerat>"
+	"considerar" vblex pp m sg
+"<per>"
+	"per" pr
+"<mei d'un>"
+	"mei d'un" prn tn m sg
+"<com>"
+	"com" cnjadv
+"<lo lor>"
+	"lo lor" det pos m sg
+"<cap d'òbra>"
+	"cap d'òbra" n m sg
+"<.>"
+	"." sent
+
+
+
+"<Sus>"
+	"sus" pr
+"<la>"
+	"lo" det def f sg
+"<pocheta>"
+	"pocheta" n f sg
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+"<album>"
+	"album" n m sg
+"<,>"
+	"," cm
+"<que>"
+	"que" adv enon
+"<vedem>"
+	"véder" vblex pri p1 pl
+"<sonque>"
+	"sonque" adv
+"<aqueths>"
+	"aqueth" det dem m pl
+"<dus>"
+	"dus" num m sp
+"<musicians>"
+	"musician" n m pl
+"<mes>"
+	"mes" cnjcoo
+"<la>"
+	"lo" det def f sg
+"<guitarra>"
+	"guitarra" n f sg
+"<baisha>"
+	"baish" adj f sg
+"<qu'>"
+	"que" adv enon
+"<estó>"
+	"estar" vbser ifi p3 sg
+"<enregistrada>"
+	"enregistrar" vblex pp f sg
+"<per>"
+	"per" pr
+"<Count>"
+	"Count" np ant m sg
+"<Grischnack>"
+	"Grischnack" np cog mf sp
+"<(>"
+	"(" lpar
+"<Varg>"
+	"Varg" np ant m sg
+"<Vikernes>"
+	"Vikernes" np cog mf sp
+"<,>"
+	"," cm
+"<unic>"
+	"unic" adj m sg
+"<membre>"
+	"membre" n m sg
+"<de>"
+	"de" pr
+"<Burzum>"
+	"Burzum" np al m sg
+"<)>"
+	")" rpar
+"<e>"
+	"e" cnjcoo
+"<la>"
+	"la" n m sg
+"<votz>"
+	"votz" n f sg
+"<per>"
+	"per" pr
+"<Attila>"
+	"Attila" np ant m sg
+"<Csihar>"
+	"Csihar" np cog mf sp
+"<(>"
+	"(" lpar
+"<cantaire>"
+	"cantaire" n m sg
+"<ongrés>"
+	"ongrés" adj m sg
+"<,>"
+	"," cm
+"<membre>"
+	"membre" n m sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<grop>"
+	"grop" n m sg
+"<Tormentor>"
+	"Tormentor" np al m sg
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+
+
+"<En>"
+	"en" pr
+"<1993>"
+	"1993" num
+"<,>"
+	"," cm
+"<abans que>"
+	"abans que" cnjadv
+"<sortisse>"
+	"sortir" vblex pis p3 sg
+"<l'>"
+	"lo" det def mf sg
+"<album>"
+	"album" n m sg
+"<,>"
+	"," cm
+"<Vikernes>"
+	"Vikernes" np al m sg
+"<que>"
+	"que" adv enon
+"<tuè>"
+	"tuar" vblex ifi p3 sg
+"<Øystein>"
+	"Øystein" np ant m sg
+"<Aarseth>"
+	"Aarseth" np cog mf sp
+"<per>"
+	"per" pr
+"<rasons>"
+	"rason" n f pl
+"<de>"
+	"de" pr
+"<las>"
+	"lo" det def f pl
+"<escuras>"
+	"escur" adj f pl
+"<.>"
+	"." sent
+
+"
+
+"<De Misteriis>"
+	"De  Misteriis" np al m sg
+"<qu'>"
+	"que" adv enon
+"<estó>"
+	"estar" vbser ifi p3 sg
+"<donc>"
+	"donc" cnjadv
+"<un>"
+	"un" det ind m sg
+"<disc>"
+	"disc" n m sg
+"<postum>"
+	"postume" adj m sg
+"<d'>"
+	"de" pr
+"<Euronymous>"
+	"Euronymous" np ant m sg
+"<.>"
+	"." sent
+
+
+
+"<Per>"
+	"per" pr
+"<quauques>"
+	"quauque" det ind m pl
+"<fans>"
+	"fan" n mf pl
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<grop>"
+	"grop" n m sg
+"<,>"
+	"," cm
+"<Oystein>"
+	"Oystein" np ant m sg
+"<Aarseth>"
+	"Aarseth" np cog mf sp
+"<que>"
+	"que" adv enon
+"<n'>"
+	"en" prn pro adv
+"<èra>"
+	"estar" vbser pii p3 sg
+"<l'>"
+	"lo" det def mf sg
+"<auna>"
+	"auna" n f sg
+"<.>"
+	"." sent
+
+
+
+"<Dab>"
+	"dab" pr
+"<la soa>"
+	"lo son" det pos f sg
+"<mort>"
+	"mort" n f sg
+"<,>"
+	"," cm
+"<Mayhem>"
+	"Mayhem" np al m sg
+"<que's>"
+	"que" adv enon
+		"se" prn pro ref p3 mf sp
+"<moriva>"
+	"morir" vblex pii p3 sg
+"<tanben>"
+	"tanben" adv
+"<.>"
+	"." sent
+
+
+
+"<La>"
+	"lo" det def f sg
+"<familha>"
+	"familha" n f sg
+"<d'>"
+	"de" pr
+"<Aarseth>"
+	"Aarseth" np ant m sg
+"<que>"
+	"que" adv enon
+"<demandè>"
+	"demandar" vblex ifi p3 sg
+"<aus>"
+	"a" pr
+		"lo" det def m pl
+"<membres>"
+	"membre" n m pl
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<grop>"
+	"grop" n m sg
+"<qui>"
+	"qui" rel mf sp
+"<demoravan>"
+	"demorar" vblex pii p3 pl
+"<de>"
+	"de" pr
+"<boishar>"
+	"boishar" vblex inf
+"<las>"
+	"lo" det def f pl
+"<partidas>"
+	"partida" n f pl
+"<de>"
+	"de" pr
+"<baisha>"
+	"baisha" n f sg
+"<enregistradas>"
+	"enregistrar" vblex pp f pl
+"<per>"
+	"per" pr
+"<Varg>"
+	"Varg" np ant m sg
+"<Vikernes>"
+	"Vikernes" np cog mf sp
+"<mes>"
+	"mes" cnjcoo
+"<arrés>"
+	"arrés" prn tn mf sg
+"<ne'us>"
+	"ne" adv enon
+		"los" prn pro p3 m pl
+"<responón>"
+	"respóner" vblex ifi p3 pl
+"<pas>"
+	"pas" adv
+"<.>"
+	"." sent
+
+
+
+"<Après>"
+	"après" adv
+"<Euronymous>"
+	"Euronymous" np ant m sg
+
+
+"<Quauquas>"
+	"quauque" det ind f pl
+"<annadas>"
+	"annada" n f pl
+"<apuish>"
+	"apuish" adv
+"<,>"
+	"," cm
+"<Mayhem>"
+	"Mayhem" np al m sg
+"<que's>"
+	"que" cnjsub
+		"se" prn pro ref p3 mf sp
+"<tornè>"
+	"tornar" vblex ifi p3 sg
+"<formar>"
+	"formar" vblex inf
+"<dab>"
+	"dab" pr
+"<Necrobutcher>"
+	"Necrobutcher" np ant m sg
+"<a>"
+	"a" pr
+"<la>"
+	"lo" det def f sg
+"<guitarra>"
+	"guitarra" n f sg
+"<baisha>"
+	"baish" adj f sg
+"<,>"
+	"," cm
+"<Hellhammer>"
+	"Hellhammer" np ant m sg
+"<a>"
+	"a" pr
+"<la>"
+	"lo" det def f sg
+"<bateria>"
+	"bateria" n f sg
+"<,>"
+	"," cm
+"<Maniac>"
+	"Maniac" np ant m sg
+"<aus>"
+	"a" pr
+		"lo" det def m pl
+"<vocaus>"
+	"vocau" n f pl
+"<e>"
+	"e" cnjcoo
+"<un>"
+	"un" det ind m sg
+"<navèth>"
+	"navèth" adj m sg
+"<membre>"
+	"membre" n m sg
+"<,>"
+	"," cm
+"<Blasphemer>"
+	"Blasphemer" np ant m sg
+"<(>"
+	"(" lpar
+"<Rune>"
+	"Rune" np ant m sg
+"<Erickson>"
+	"Erickson" np cog mf sp
+"<)>"
+	")" rpar
+"<a>"
+	"a" pr
+"<la>"
+	"lo" det def f sg
+"<guitarra>"
+	"guitarra" n f sg
+"<.>"
+	"." sent
+
+
+
+"<Quauques>"
+	"quauque" det ind m pl
+"<fans>"
+	"fan" n mf pl
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<purmèra>"
+	"purmèr" adj f sg
+"<òra>"
+	"òra" n f sg
+"<que>"
+	"que" adv enon
+"<digón>"
+	"díser" vblex ifi p3 pl
+"<qu'>"
+	"que" cnjsub
+"<aquera>"
+	"aqueth" det dem f sg
+"<arre>"
+	"arre" adj m sg
+-
+"<formacion>"
+	"formacion" n f sg
+"<avè>"
+	"aver" vblex pii p3 sg
+"<per>"
+	"per" pr
+"<but>"
+	"but" n m sg
+"<de>"
+	"de" pr
+"<profieitar>"
+	"profieitar" vblex inf
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<celebritat>"
+	"celebritat" n f sg
+"<qu'>"
+	"que" rel mf sp
+"<Euronymous>"
+	"Euronymous" np ant m sg
+"<e>"
+	"e" cnjcoo
+"<Dead>"
+	"Dead" np ant m sg
+"<avèn>"
+	"aver" vbhaver pii p3 pl
+"<autrejada>"
+	"autrejar" vblex pp f sg
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<grop>"
+	"grop" n m sg
+"<e>"
+	"e" cnjcoo
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<black>"
+	"black" adj m sg
+"<metal>"
+	"metal" n m sg
+"<per>"
+	"per" pr
+"<las loas>"
+	"lo lor" det pos f pl
+"<morts>"
+	"mort" n f pl
+"<violentas>"
+	"violent" adj f pl
+"<e>"
+	"e" cnjcoo
+"<peus>"
+	"per" pr
+		"lo" det def m pl
+"<incendis>"
+	"incendi" n m pl
+"<de>"
+	"de" pr
+"<glèisas>"
+	"glèisa" n f pl
+"<qui>"
+	"qui" rel mf sp
+"<avèn>"
+	"aver" vbhaver pii p3 pl
+"<hèits>"
+	"har" vblex pp m pl
+"<(>"
+	"(" lpar
+"<un>"
+	"un" det ind m sg
+"<reportatge>"
+	"reportatge" n m sg
+"<qu'>"
+	"que" adv enon
+"<estó>"
+	"estar" vbser ifi p3 sg
+"<realizat>"
+	"realizar" vblex pp m sg
+"<per>"
+	"per" pr
+"<la>"
+	"lo" det def f sg
+"<television>"
+	"television" n f sg
+"<norvegiana>"
+	"norvegian" adj f sg
+"<sus>"
+	"sus" pr
+"<aqueste>"
+	"aqueste" det dem m sg
+"<subjecte>"
+	"subjecte" n m sg
+"<)>"
+	")" rpar
+"<entà>"
+	"entà" pr
+"<ganhar>"
+	"ganhar" vblex inf
+"<moneda>"
+	"moneda" n f sg
+"<aisidament>"
+	"aisidament" adv
+"<.>"
+	"." sent
+
+
+
+"<Los>"
+	"lo" det def m pl
+"<membres>"
+	"membre" n m pl
+"<actuaus>"
+	"actuau" adj mf pl
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<grop>"
+	"grop" n m sg
+"<n'ac>"
+	"en" prn pro adv
+		"ac" prn pro p3 nt
+"<denègan>"
+	"denegar" vblex pri p3 pl
+"<pas>"
+	"pas" adv
+"<mes>"
+	"mes" cnjcoo
+"<en>"
+	"en" pr
+"<hant>"
+	"har" vblex ger
+"<ua>"
+	"un" det ind f sg
+"<musica>"
+	"musica" n f sg
+"<black>"
+	"black" adj m sg
+"<metal>"
+	"metal" n m sg
+"<dab>"
+	"dab" pr
+"<conviccion>"
+	"conviccion" n f sg
+"<que>"
+	"que" adv
+"<s'>"
+	"se" prn pro ref p3 mf sp
+"<an>"
+	"aver" vbhaver pri p3 pl
+"<sabut>"
+	"saber" vblex pp m sg
+"<ganhar>"
+	"ganhar" vblex inf
+"<l'>"
+	"lo" det def mf sg
+"<estima>"
+	"estima" n f sg
+"<d'>"
+	"de" pr
+"<un>"
+	"un" det ind m sg
+"<public>"
+	"public" n m sg
+"<navèth>"
+	"navèth" adj m sg
+"<.>"
+	"." sent
+
+
+
+"<La>"
+	"lo" det def f sg
+"<legenda>"
+	"legenda" n f sg
+"<de>"
+	"de" pr
+"<Mayhem>"
+	"Mayhem" np al m sg
+
+
+"<Après>"
+	"après" adv
+"<la>"
+	"lo" det def f sg
+"<mort>"
+	"mort" n f sg
+"<d'>"
+	"de" pr
+"<Euronymous>"
+	"Euronymous" np ant m sg
+"<,>"
+	"," cm
+"<Mayhem>"
+	"Mayhem" np al m sg
+"<qu'>"
+	"que" adv enon
+"<avó>"
+	"aver" vblex ifi p3 sg
+"<ua>"
+	"un" det ind f sg
+"<celebritat>"
+	"celebritat" n f sg
+"<hòrta>"
+	"hòrt" adj f sg
+"<e>"
+	"e" cnjcoo
+"<immediata>"
+	"immediat" adj f sg
+"<.>"
+	"." sent
+
+
+
+"<Çò>"
+	"çò" detnt
+"<qui>"
+	"qui" rel mf sp
+"<hè>"
+	"har" vblex pri p3 sg
+"<que>"
+	"que" cnjsub
+"<los>"
+	"lo" det def m pl
+"<fans>"
+	"fan" n mf pl
+"<de>"
+	"de" pr
+"<black>"
+	"black" adj m sg
+"<metal>"
+	"metal" n m sg
+"<,>"
+	"," cm
+"<qui>"
+	"qui" rel mf sp
+"<aiman>"
+	"aimar" vblex pri p3 pl
+"<lo>"
+	"lo" det def m sg
+"<sensacionau>"
+	"sensacionau" adj mf sg
+"<morbide>"
+	"morbide" adj m sg
+"<,>"
+	"," cm
+"<que>"
+	"que" adv
+"<parlèn>"
+	"parlar" vblex ifi p3 pl
+"<e>"
+	"e" cnjcoo
+"<desparlèn>"
+	"desparlar" vblex ifi p3 pl
+"<hèra>"
+	"hèra" adv
+"<suus>"
+	"sus" pr
+		"lo" det def m pl
+"<membres>"
+	"membre" n m pl
+"<defunts>"
+	"defunt" adj m pl
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<grop>"
+	"grop" n m sg
+"<.>"
+	"." sent
+
+
+
+"<Quin>"
+	"quin" adv itg
+"<destrejar>"
+	"destrejar" vblex inf
+"<,>"
+	"," cm
+"<ara>"
+	"ara" adv
+"<,>"
+	"," cm
+"<la>"
+	"lo" det def f sg
+"<vertat>"
+	"vertat" n f sg
+"<de>"
+	"de" pr
+"<çò>"
+	"çò" prn tn nt
+"<d'>"
+	"de" pr
+"<exagerat>"
+	"exagerat" adj m sg
+"<o>"
+	"o" cnjcoo
+"<de>"
+	"de" pr
+"<completament>"
+	"completament" adv
+"<faus>"
+	"faus" adj m sg
+"<?>"
+	"?" sent
+
+
+
+"<Dead>"
+	"Dead" np ant m sg
+
+
+"<Capvariat>"
+	"capvariat" adj m sg
+"<e>"
+	"e" cnjcoo
+"<obsedat>"
+	"obsedat" adj m sg
+"<per>"
+	"per" pr
+"<la>"
+	"lo" det def f sg
+"<mort>"
+	"mort" n f sg
+"<,>"
+	"," cm
+"<qu'>"
+	"que" adv enon
+"<auré>"
+	"aver" vbhaver cni p3 sg
+"<avut>"
+	"aver" vblex pp m sg
+"<,>"
+	"," cm
+"<a>"
+	"a" pr
+"<un>"
+	"un" det ind m sg
+"<moment>"
+	"moment" n m sg
+"<dat>"
+	"dar" vblex pp m sg
+"<,>"
+	"," cm
+"<un>"
+	"un" det ind m sg
+"<corbaish>"
+	"corbaish" n m sg
+"<mort>"
+	"mort" adj m sg
+"<dens>"
+	"dens" pr
+"<lo son>"
+	"lo son" det pos m sg
+"<sac>"
+	"sac" n m sg
+"<e>"
+	"e" cnjcoo
+"<que>"
+	"que" adv enon
+"<l'>"
+	"lo" prn pro p3 m sg
+"<agradava>"
+	"agradar" vblex pii p3 sg
+"<de'n>"
+	"de" pr
+		"en" prn pro adv
+"<sentir>"
+	"sentir" vblex inf
+"<l'>"
+	"lo" det def mf sg
+"<aulor>"
+	"aulor" n f sg
+"<.>"
+	"." sent
+
+
+
+"<Que's>"
+	"que" adv enon
+		"se" prn pro ref p3 mf sp
+"<pareish>"
+	"paréisher" vblex pri p3 sg
+"<tanben>"
+	"tanben" adv
+"<que>"
+	"que" cnjsub
+"<li>"
+	"li" prn pro p3 mf sg
+"<apariva>"
+	"aparir" vblex pii p3 sg
+"<d'>"
+	"de" pr
+"<enterrar>"
+	"enterrar" vblex inf
+"<la soa>"
+	"lo son" det pos f sg
+"<harda>"
+	"harda" n f sg
+"<pendent>"
+	"pendent" pr
+"<mes>"
+	"mes" n m sg
+"<dens>"
+	"dens" pr
+"<un>"
+	"un" det ind m sg
+"<cemitèri>"
+	"cemitèri" n m sg
+"<,>"
+	"," cm
+"<abans>"
+	"abans" adv
+"<los>"
+	"lo" det def m pl
+"<concèrts>"
+	"concèrt" n m pl
+"<,>"
+	"," cm
+"<entà qu'>"
+	"entà que" cnjsub
+"<ajan>"
+	"aver" vblex prs p3 pl
+"<l'>"
+	"lo" det def mf sg
+"<aulor>"
+	"aulor" n f sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<poeirumi>"
+	"poeirumi" n m sg
+"<.>"
+	"." sent
+
+
+
+"<Qu'>"
+	"que" adv enon
+"<èra>"
+	"estar" vbser pii p3 sg
+"<esquisofrène>"
+	"esquisofrène" adj m sg
+"<.>"
+	"." sent
+
+
+
+"<Las>"
+	"lo" det def f pl
+"<balas>"
+	"bala" n f pl
+"<qui'u>"
+	"qui" rel mf sp
+		"lo" prn pro p3 m sg
+"<servín a>"
+	"servir a" vblex ifi p3 pl
+"<tuà's>"
+	"tuar" vblex inf
+		"se" prn enc ref p3 mf sp
+"<que>"
+	"que" adv enon
+"<serén>"
+	"estar" vbser cni p3 pl
+"<un>"
+	"un" det ind m sg
+"<present>"
+	"present" n m sg
+"<d'>"
+	"de" pr
+"<aniversari>"
+	"aniversari" n m sg
+"<qui>"
+	"qui" rel mf sp
+"<li>"
+	"li" prn pro p3 mf sg
+"<auré>"
+	"aver" vbhaver cni p3 sg
+"<hèit>"
+	"har" vblex pp m sg
+"<Varg>"
+	"Varg" np ant m sg
+"<Vikernes>"
+	"Vikernes" np cog mf sp
+"<(>"
+	"(" lpar
+"<los>"
+	"lo" det def m pl
+"<dus>"
+	"dus" num m sp
+"<qu'>"
+	"que" adv enon
+"<èran>"
+	"estar" vbser pii p3 pl
+"<caçaires>"
+	"caçaire" n m pl
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+
+
+"<Vikernes>"
+	"Vikernes" np ant m sg
+"<que>"
+	"que" adv enon
+"<seré>"
+	"estar" vbser cni p3 sg
+"<donc>"
+	"donc" cnjadv
+"<responsable>"
+	"responsable" adj m sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<mort>"
+	"mort" n f sg
+"<de>"
+	"de" pr
+"<dus>"
+	"dus" num m sp
+"<membres>"
+	"membre" n m pl
+"<de>"
+	"de" pr
+"<Mayhem>"
+	"Mayhem" np al m sg
+"<.>"
+	"." sent
+
+
+
+"<Euronymous>"
+	"*Euronymous"
+
+
+"<Çò>"
+	"çò" detnt
+"<d'>"
+	"de" pr
+"<a puish près>"
+	"a puish près" adv
+"<segur>"
+	"segur" adj m sg
+"<qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<qu'>"
+	"que" cnjsub
+"<estó>"
+	"estar" vbser ifi p3 sg
+"<eth>"
+	"prneth" prn tn p3 m sg
+"<qui>"
+	"qui" rel mf sp
+"<prenó>"
+	"préner" vblex ifi p3 sg
+"<las>"
+	"lo" det def f pl
+"<fòtos>"
+	"fòto" n f pl
+"<de>"
+	"de" pr
+"<Dead>"
+	"Dead" np ant m sg
+"<après>"
+	"après" adv
+"<lo son>"
+	"lo son" det pos m sg
+"<suicidi>"
+	"suicidi" n m sg
+"<(>"
+	"(" lpar
+"<los>"
+	"lo" det def m pl
+"<dus>"
+	"dus" num m sp
+"<òmis>"
+	"òmi" n m pl
+"<que>"
+	"que" adv enon
+"<vivèn>"
+	"víver" vblex pii p3 pl
+"<amassa>"
+	"amassa" adv
+"<e>"
+	"e" cnjcoo
+"<qu'>"
+	"que" adv enon
+"<estó>"
+	"estar" vbser ifi p3 sg
+"<eth>"
+	"prneth" prn tn p3 m sg
+"<qui>"
+	"qui" rel mf sp
+"<aperè>"
+	"aperar" vblex ifi p3 sg
+"<la>"
+	"lo" det def f sg
+"<polícia>"
+	"polícia" n f sg
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+"<Cò de>"
+	"cò de" pr
+"<segur>"
+	"segur" adj m sg
+"<,>"
+	"," cm
+"<tanben>"
+	"tanben" adv
+"<qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<que>"
+	"que" cnjsub
+"<hasó>"
+	"har" vblex ifi p3 sg
+"<partida>"
+	"partida" n f sg
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+"<Inner Circle>"
+	"Inner Circle" np al m sg
+"<,>"
+	"," cm
+"<los>"
+	"lo" det def m pl
+"<gavidaires>"
+	"gavidaire" n m pl
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+"<organizacion>"
+	"organizacion" n f sg
+"<terrorista>"
+	"terrorista" adj mf sg
+"<qui>"
+	"qui" rel mf sp
+"<bruslè>"
+	"bruslar" vblex ifi p3 sg
+"<mantuas>"
+	"mantun" det ind f pl
+"<glèisas>"
+	"glèisa" n f pl
+"<de>"
+	"de" pr
+"<husta>"
+	"husta" n f sg
+"<en>"
+	"en" pr
+"<Norvègia>"
+	"Norvègia" np top f sg
+"<e>"
+	"e" cnjcoo
+"<qui>"
+	"qui" rel mf sp
+"<miacè>"
+	"miaçar" vblex ifi p3 sg
+"<de>"
+	"de" pr
+"<mort>"
+	"mort" n f sg
+"<mantuns>"
+	"mantun" det ind m pl
+"<musicians>"
+	"musician" n m pl
+"<de>"
+	"de" pr
+"<metal>"
+	"metal" n m sg
+"<qui>"
+	"qui" rel mf sp
+"<ne>"
+	"ne" adv enon
+"<partatjavan>"
+	"partatjar" vblex pii p3 pl
+"<pas>"
+	"pas" adv
+"<las loas>"
+	"lo lor" det pos f pl
+"<conviccions>"
+	"conviccion" n f pl
+"<anticrestianas>"
+	"anticrestianas" adj f pl
+"<o>"
+	"o" cnjcoo
+"<qui>"
+	"qui" rel mf sp
+"<las>"
+	"lo" prn pro p3 f pl
+"<partatjavan>"
+	"partatjar" vblex pii p3 pl
+"<mes>"
+	"mes" cnjcoo
+"<pas>"
+	"pas" adv
+"<au punt de>"
+	"au punt de" pr
+"<passar>"
+	"passar" vblex inf
+"<aus>"
+	"a" pr
+		"lo" det def m pl
+"<actes>"
+	"acte" n m pl
+"<.>"
+	"." sent
+
+
+
+"<Per contra>"
+	"per contra" adv
+"<,>"
+	"," cm
+"<e>"
+	"e" adv enon
+"<cau>"
+	"caler" vbmod pri p3 sg
+"<créder>"
+	"créder" vblex inf
+"<que>"
+	"que" cnjsub
+"<prenó>"
+	"préner" vblex ifi p3 sg
+"<tròç>"
+	"tròç" n m sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<crane>"
+	"crane" n m sg
+"<de>"
+	"de" pr
+"<Dead>"
+	"Dead" np ant m sg
+"<entà>"
+	"entà" pr
+"<ne>"
+	"en" prn pro adv
+"<har>"
+	"har" vblex inf
+"<un>"
+	"un" det ind m sg
+"<collièr>"
+	"collièr" n m sg
+"<?>"
+	"?" sent
+
+
+
+"<O>"
+	"o" cnjcoo
+"<mantuns>"
+	"mantun" det ind m pl
+"<collièrs>"
+	"collièr" n m pl
+"<dont>"
+	"dont" rel mf sp
+"<un>"
+	"un" det ind m sg
+"<qui>"
+	"qui" rel mf sp
+"<auherí>"
+	"auherir" vblex ifi p3 sg
+"<a>"
+	"a" pr
+"<Hellhammer>"
+	"Hellhammer" np ant m sg
+"<?>"
+	"?" sent
+
+
+
+"<E>"
+	"e" adv enon
+"<cau>"
+	"caler" vbmod pri p3 sg
+"<créder>"
+	"créder" vblex inf
+"<que>"
+	"que" cnjsub
+"<mingè>"
+	"minjar" vblex ifi p3 sg
+"<tròç>"
+	"tròç" n m sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<cervèth>"
+	"cervèl" n m sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<mort>"
+	"mort" n m sg
+"<entà>"
+	"entà" pr
+"<reprodusir>"
+	"reprodusir" vblex inf
+"<un>"
+	"un" det ind m sg
+"<rite>"
+	"rite" n m sg
+"<deus>"
+	"de" pr
+		"lo" det def m pl
+"<Vikings>"
+	"viking" n m pl
+"<?>"
+	"?" sent
+
+
+
+"<De segur>"
+	"de segur" adv
+"<,>"
+	"," cm
+"<qu'>"
+	"que" adv enon
+"<estó>"
+	"estar" vbser ifi p3 sg
+"<suspectat>"
+	"suspectar" vblex pp m sg
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" prn pro p3 m sg
+"<aver>"
+	"aver" vbhaver inf
+"<tuat>"
+	"tuar" vblex pp m sg
+"<mes>"
+	"mes" cnjcoo
+"<l'>"
+	"lo" det def mf sg
+"<enquista>"
+	"enquista" n f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<polícia>"
+	"polícia" n f sg
+"<que>"
+	"que" adv enon
+"<l'>"
+	"lo" prn pro p3 m sg
+"<innocentè>"
+	"innocentar" vblex ifi p3 sg
+"<.>"
+	"." sent
+
+
+
+"<Maniac>"
+	"Maniac" np ant m sg
+
+
+"<Omi>"
+	"omi" n m sg
+"<de>"
+	"de" pr
+"<scena>"
+	"scena" n f sg
+"<carismatic>"
+	"carismatic" adj m sg
+"<,>"
+	"," cm
+"<qu'>"
+	"que" adv enon
+"<avè>"
+	"aver" vblex pii p3 sg
+"<per>"
+	"per" pr
+"<costuma>"
+	"costuma" n f sg
+"<de's>"
+	"de" pr
+		"se" prn pro ref p3 mf sp
+"<nafrar>"
+	"nafrar" vblex inf
+"<lo>"
+	"lo" det def m sg
+"<pitre>"
+	"pitre" n m sg
+"<sus>"
+	"sus" pr
+"<l'>"
+	"lo" det def mf sg
+"<empont>"
+	"empont" n m sg
+"<dab>"
+	"dab" pr
+"<un>"
+	"un" det ind m sg
+"<cotèth>"
+	"cotèl" n m sg
+"<.>"
+	"." sent
+
+
+
+"<Mensh>"
+	"mensh" adv
+"<morbide>"
+	"morbide" adj m sg
+"<que>"
+	"que" cnjsub
+"<Dead>"
+	"Dead" np ant m sg
+"<,>"
+	"," cm
+"<be>"
+	"be" adv enon
+"<hasó>"
+	"har" vblex ifi p3 sg
+"<ua>"
+	"un" det ind f sg
+"<temptativa>"
+	"temptativa" n f sg
+"<de>"
+	"de" pr
+"<suicidi>"
+	"suicidi" n m sg
+"<mes>"
+	"mes" cnjcoo
+"<que>"
+	"que" adv enon
+"<ditz>"
+	"díser" vblex pri p3 sg
+"<adara>"
+	"adara" adv
+"<qu'>"
+	"que" cnjsub
+"<èra>"
+	"estar" vbser pii p3 sg
+"<ua>"
+	"un" det ind f sg
+"<error>"
+	"error" n f sg
+"<de>"
+	"de" pr
+"<joenessa>"
+	"joenessa" n f sg
+"<e>"
+	"e" cnjcoo
+"<qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<content>"
+	"content" adj m sg
+"<que>"
+	"que" cnjsub
+"<lo son>"
+	"lo son" det pos m sg
+"<hrair>"
+	"hrair" n m sg
+"<l'>"
+	"lo" prn pro p3 m sg
+"<avosse>"
+	"aver" vbhaver pis p3 sg
+"<sauvat>"
+	"sauvar" vblex pp m sg
+"<.>"
+	"." sent
+
+
+
+"<Segon>"
+	"segon" pr
+"<la>"
+	"lo" det def f sg
+"<Wikipedia>"
+	"Wikipedia" np al f sg
+"<francesa>"
+	"francés" adj f sg
+"<,>"
+	"," cm
+"<qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<glossofòbe>"
+	"glossofòbe" adj m sg
+"<.>"
+	"." sent
+
+
+
+"<Valent a díser>"
+	"valent a díser" cnjcoo
+"<qu'>"
+	"que" adv enon
+"<a>"
+	"aver" vblex pri p3 sg
+"<páur>"
+	"páur" n f sg
+"<de>"
+	"de" pr
+"<parlar>"
+	"parlar" vblex inf
+"<en public>"
+	"en public" adv
+"<.>"
+	"." sent
+
+
+
+"<Per'mor d'>"
+	"per'mor de" pr
+"<aquò>"
+	"aquò" prn tn nt
+"<que>"
+	"que" adv enon
+"<s'>"
+	"se" prn pro ref p3 mf sp
+"<embriagava>"
+	"embriagar" vblex pii p3 sg
+"<tostemps>"
+	"tostemps" adv
+"<abans de>"
+	"abans de" pr
+"<pujar>"
+	"pujar" vblex inf
+"<sus>"
+	"sus" pr
+"<l'>"
+	"lo" det def mf sg
+"<empont>"
+	"empont" n m sg
+"<.>"
+	"." sent
+
+
+
+"<Dinc au>"
+	"dinc a" pr
+		"lo" det def m sg
+"<dia>"
+	"dia" n m sg
+"<on>"
+	"on" rel adv
+"<,>"
+	"," cm
+"<hart>"
+	"hart" adj m sg
+"<penut>"
+	"penut" adj m sg
+"<,>"
+	"," cm
+"<e>"
+	"e" adv enon
+"<seré>"
+	"estar" vbser cni p3 sg
+"<estat>"
+	"estar" vbser pp m sg
+"<incapable>"
+	"incapable" adj m sg
+"<de's>"
+	"de" pr
+		"se" prn pro ref p3 mf sp
+"<brembar>"
+	"brembar" vblex inf
+"<de>"
+	"de" pr
+"<las>"
+	"lo" det def f pl
+"<paraulas>"
+	"paraula" n f pl
+"<.>"
+	"." sent
+
+
+
+"<Blasphemer>"
+	"Blasphemer" np ant m sg
+"<que>"
+	"que" adv enon
+"<l'>"
+	"lo" prn pro p3 m sg
+"<auré>"
+	"aver" vbhaver cni p3 sg
+"<tirat>"
+	"tirar" vblex pp m sg
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+"<empont>"
+	"empont" n m sg
+"<de fòrça>"
+	"de fòrça" adv
+"<e>"
+	"e" cnjcoo
+"<remerciat>"
+	"remerciar" vblex pp m sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<grop>"
+	"grop" n m sg
+"<.>"
+	"." sent
+
+
+
+"<Despuish ençà>"
+	"despuish ençà" adv
+"<,>"
+	"," cm
+"<qu'>"
+	"que" adv enon
+"<an>"
+	"aver" vbhaver pri p3 pl
+"<tornat>"
+	"tornar" vblex pp m sg
+"<préner>"
+	"préner" vblex inf
+"<Attila>"
+	"Attila" np ant m sg
+"<Csihar>"
+	"Csihar" np cog mf sp
+"<,>"
+	"," cm
+"<un>"
+	"un" det ind mf pl
+"<vocalista>"
+	"vocalista" n mf sg
+"<ongrés>"
+	"ongrés" adj m sg
+"<qui>"
+	"qui" rel mf sp
+"<avè>"
+	"aver" vbhaver pii p3 sg
+"<dejà>"
+	"dejà" adv
+"<cridat>"
+	"cridar" vblex pp m sg
+"<dens>"
+	"dens" pr
+"<Mayhem>"
+	"Mayhem" np al m sg
+"<mes>"
+	"mes" cnjcoo
+"<qui>"
+	"qui" rel mf sp
+"<n'>"
+	"ne" adv enon
+"<apareish>"
+	"aparéisher" vblex pri p3 sg
+"<pas>"
+	"pas" adv
+"<que>"
+	"que" adv
+"<suu>"
+	"sus" pr
+		"lo" det def m sg
+"<live>"
+	"live" n m sg
+"<Mediolanum Capta Est>"
+	"Mediolanum Capta Est" np al m sg
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+

@@ -1,0 +1,684 @@
+"<Los>"
+	"lo" prn pro p3 m pl
+"<qui>"
+	"qui" rel mf sp
+"<vòlen>"
+	"voler" vbmod pri p3 pl
+"<filosofar>"
+	"filosofar" vblex inf
+"<que’s>"
+	"que" adv enon
+		"se" prn pro ref p3 mf sp
+"<deven>"
+	"dever" vbmod pri p3 pl
+"<pausar>"
+	"pausar" vblex inf
+"<questions>"
+	"question" n f pl
+"<:>"
+	":" sent
+
+"<perqué>"
+	"perqué" adv itg
+"<vivi>"
+	"víver" vblex pri p1 sg
+"<?>"
+	"?" sent
+
+"<perqué>"
+	"perqué" adv itg
+"<e’m>"
+	"e" adv enon
+		"me" prn pro p1 mf sg
+"<moreishi>"
+	"morir" vblex pri p1 sg
+"<?>"
+	"?" sent
+
+"<Que>"
+	"que" adv enon
+"<pensi>"
+	"pensar" vblex pri p1 sg
+"<aus>"
+	"a" pr
+		"lo" det def m pl
+"<subjèctes>"
+	"subjècte" n m pl
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<baccalaureat>"
+	"baccalaureat" n m sg
+"<d’>"
+	"de" pr
+"<aqueth>"
+	"aqueth" det dem m sg
+"<escantilh>"
+	"escantilh" n m sg
+"<:>"
+	":" sent
+
+"<èm>"
+	"estar" vbser pri p1 pl
+"<responsables>"
+	"responsable" adj m pl
+"<de>"
+	"de" pr
+"<l’>"
+	"lo" det def mf sg
+"<aviéner>"
+	"aviéner" n m sg
+"<?>"
+	"?" sent
+
+"<E>"
+	"e" adv enon
+"<l’>"
+	"lo" det def mf sg
+"<inconscient>"
+	"inconscient" n m sg
+"<escapa>"
+	"escapar" vblex pri p3 sg
+"<a>"
+	"a" pr
+"<tota>"
+	"tot" det ind f sg
+"<fòrma>"
+	"fòrma" n f sg
+"<de>"
+	"de" pr
+"<conéishença>"
+	"conéishença" n f sg
+"<?>"
+	"?" sent
+
+"<E>"
+	"e" adv enon
+"<las>"
+	"lo" det def f pl
+"<vertats>"
+	"vertat" n f pl
+"<scientificas>"
+	"scientific" adj f pl
+"<son>"
+	"estar" vbser pri p3 pl
+"<defintivas>"
+	"defintiu" adj f pl
+"<?>"
+	"?" sent
+
+"<Mei d’un>"
+	"mei d'un" det ind m sg
+"<tèma>"
+	"tèma" n m sg
+"<que>"
+	"que" adv enon
+"<torna>"
+	"tornar" vblex pri p3 sg
+"<d’>"
+	"de" pr
+"<ua>"
+	"un" det ind f sg
+"<faiçon>"
+	"faiçon" n f sg
+"<regulara>"
+	"regular" adj f sg
+"<:>"
+	":" sent
+
+"<l’>"
+	"lo" det def mf sg
+"<art>"
+	"art" n m sg
+"<,>"
+	"," cm
+"<la>"
+	"lo" det def f sg
+"<libertat>"
+	"libertat" n f sg
+"<,>"
+	"," cm
+"<la>"
+	"lo" det def f sg
+"<coneishença>"
+	"coneishença" n f sg
+"<,>"
+	"," cm
+"<la>"
+	"lo" det def f sg
+"<consciéncia>"
+	"consciéncia" n f sg
+…
+"<.>"
+	"." sent
+  
+
+"<E>"
+	"e" adv enon
+"<causim>"
+	"causir" vblex ifi p1 pl
+"<d’>"
+	"de" pr
+"<estar>"
+	"estar" vbser inf
+"<liures>"
+	"liure" adj m pl
+"<?>"
+	"?" sent
+
+"<E>"
+	"e" adv enon
+"<podem>"
+	"poder" vbmod pri p1 pl
+"<afirmar>"
+	"afirmar" vblex inf
+"<que>"
+	"que" cnjsub
+"<la>"
+	"lo" det def f sg
+"<fòrça>"
+	"fòrça" adj mf sp
+"<de>"
+	"de" pr
+"<l’>"
+	"lo" det def mf sg
+"<estat>"
+	"estat" n m sg
+"<hè>"
+	"har" vblex pri p3 sg
+"<la>"
+	"lo" det def f sg
+"<libertat>"
+	"libertat" n f sg
+"<deus>"
+	"de" pr
+		"lo" det def m pl
+"<ciutadans>"
+	"ciutadan" n m pl
+"<?>"
+	"?" sent
+
+"<Que>"
+	"que" adv enon
+"<cau>"
+	"caler" vbmod pri p3 sg
+"<trobar>"
+	"trobar" vblex inf
+"<ua>"
+	"un" det ind f sg
+"<responsa>"
+	"responsa" n f sg
+"<en>"
+	"en" pr
+"<quate>"
+	"quate" num mf sp
+"<òras>"
+	"òra" n f pl
+… 
+"<Jo>"
+	"jo" prn tn p1 mf sg
+"<que’m>"
+	"que" adv enon
+		"me" prn pro p1 mf sg
+"<brembi>"
+	"brembar" vblex pri p1 sg
+"<,>"
+	"," cm
+"<qu’>"
+	"que" adv enon
+"<aví>"
+	"aver" vbhaver ifi p1 sg
+"<causit>"
+	"causir" vblex pp m sg
+"<lo>"
+	"lo" det def m sg
+"<subjècte>"
+	"subjècte" n m sg
+"<seguent>"
+	"seguent" adj m sg
+"<:>"
+	":" sent
+
+"<e>"
+	"e" adv enon
+"<podem>"
+	"poder" vbmod pri p1 pl
+"<trionfar>"
+	"trionfar" vblex inf
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<mort>"
+	"mort" n f sg
+"<?>"
+	"?" sent
+
+"<Qué>"
+	"qué" prn itg mf sg
+"<respóner>"
+	"respóner" vblex inf
+"<a>"
+	"a" pr
+"<18>"
+	"18" num
+"<ans>"
+	"an" n m pl
+"<?>"
+	"?" sent
+ 
+
+
+"<Que>"
+	"que" adv enon
+"<podem>"
+	"poder" vbmod pri p1 pl
+"<pensar>"
+	"pensar" vblex inf
+"<que>"
+	"que" cnjsub
+"<los>"
+	"lo" det def m pl
+"<mainats>"
+	"mainat" n m pl
+"<e>"
+	"e" cnjcoo
+"<las>"
+	"lo" det def f pl
+"<mainadas>"
+	"mainat" n f pl
+"<pòden>"
+	"poder" vbmod pri p3 pl
+"<filosofar>"
+	"filosofar" vblex inf
+"<,>"
+	"," cm
+"<quan>"
+	"quan" cnjadv
+"<serén>"
+	"estar" vbser cni p3 pl
+"<hèra>"
+	"hèra" adv
+"<joens>"
+	"joen" adj m pl
+"<.>"
+	"." sent
+
+"<En efèit>"
+	"en efèit" cnjadv
+"<,>"
+	"," cm
+"<los>"
+	"lo" det def m pl
+"<pairs>"
+	"pair" n m pl
+"<que>"
+	"que" adv enon
+"<son>"
+	"estar" vbser pri p3 pl
+"<perduts>"
+	"perdut" adj m pl
+"<,>"
+	"," cm
+"<soventòtas>"
+	"soventòtas" adv
+"<,>"
+	"," cm
+"<fàcia a>"
+	"fàcia a" pr
+"<las>"
+	"lo" det def f pl
+"<questions>"
+	"question" n f pl
+"<shens>"
+	"shens" pr
+"<fin>"
+	"fin" n f sg
+"<deus>"
+	"de" pr
+		"lo" det def m pl
+"<dròlles>"
+	"dròlle" n m pl
+"<.>"
+	"." sent
+
+"<Qu’>"
+	"que" prn itg mf sg
+"<ei>"
+	"estar" vbser pri p3 sg
+"<la>"
+	"lo" det def f sg
+"<vida>"
+	"vida" n f sg
+"<?>"
+	"?" sent
+
+"<Qu’>"
+	"que" prn itg mf sg
+"<ei>"
+	"estar" vbser pri p3 sg
+"<la>"
+	"lo" det def f sg
+"<ploja>"
+	"ploja" n f sg
+"<?>"
+	"?" sent
+
+"<(>"
+	"(" lpar
+"<responsa>"
+	"responsa" n f sg
+"<cuelhuda>"
+	"cuélher" vblex pp f sg
+"<a>"
+	"a" pr
+"<l’>"
+	"lo" det def mf sg
+"<Internet>"
+	"Internet" np al m sg
+"<:>"
+	":" sent
+
+"<ua>"
+	"un" det ind f sg
+"<nubla>"
+	"nubla" n f sg
+"<qui>"
+	"qui" rel mf sp
+"<plora>"
+	"plorar" vblex pri p3 sg
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<perqué>"
+	"perqué" adv itg
+"<dromi>"
+	*dromir" vblex pri p1 sg
+"<?>"
+	"?" sent
+  
+
+"<Perqué>"
+	"perqué" adv itg
+"<la>"
+	"lo" det def f sg
+"<nuèit>"
+	"nuèch" n f sg
+"<ei>"
+	"estar" vbser pri p3 sg
+"<escura>"
+	"escur" adj f sg
+"<?>"
+	"?" sent
+
+"<Perqué>"
+	"perqué" adv itg
+…
+"<.>"
+	"." sent
+  
+
+"<?>"
+	"?" sent
+
+"<ecc>"
+	"ecc" adv
+… 
+"<Los>"
+	"lo" det def m pl
+"<mainats>"
+	"mainat" n m pl
+"<que’s>"
+	"que" adv enon
+		"se" prn pro ref p3 mf sp
+"<pausan>"
+	"pausar" vblex pri p3 pl
+"<un ahoalh de>"
+	"un ahoalh de" det ind mf pl
+"<questions>"
+	"question" n f pl
+"<a perpaus deu>"
+	"a perpaus de" pr
+		"lo" det def m sg
+"<monde>"
+	"monde" n m sg
+"<qui>"
+	"qui" rel mf sp
+"<ns’>"
+	"nos" prn pro p1 mf pl
+"<entorneja>"
+	"entornejar" vblex pri p3 sg
+"<.>"
+	"." sent
+
+"<Quan>"
+	"quan" cnjadv
+"<vadem>"
+	"vàder" vblex pri p1 pl
+"<adultes>"
+	"adulte" adj m pl
+"<,>"
+	"," cm
+"<que>"
+	"que" adv
+"<perdem>"
+	"pèrder" vblex pri p1 pl
+"<lo>"
+	"lo" det def m sg
+"<curiosèr>"
+	"curiosèr" n m sg
+"<,>"
+	"," cm
+"<qu’>"
+	"que" adv enon
+"<èm>"
+	"estar" vbser pri p1 pl
+"<prés>"
+	"prés" adj m sg
+"<per>"
+	"per" pr
+"<la>"
+	"lo" det def f sg
+"<vita>"
+	"vita" n f sg
+"<vitanta>"
+	"vitanta" adj f sg
+"<,>"
+	"," cm
+"<los>"
+	"lo" det def m pl
+"<chepics>"
+	"chepic" n m pl
+… 
+"<Atau>"
+	"atal" adv
+"<,>"
+	"," cm
+"<los>"
+	"lo" det def m pl
+"<mainats>"
+	"mainat" n m pl
+"<que>"
+	"que" adv enon
+"<son>"
+	"estar" vbser pri p3 pl
+"<filosòfes>"
+	"filosòfe" adj m pl
+"<.>"
+	"." sent
+
+"<Las>"
+	"lo" det def f pl
+"<questions>"
+	"question" n f pl
+"<a perpaus de>"
+	"a perpaus de" pr
+"<la>"
+	"lo" det def f sg
+"<mort>"
+	"mort" n f sg
+"<que>"
+	"que" adv enon
+"<son>"
+	"estar" vbser pri p3 pl
+"<dificilas>"
+	"dificile" adj f pl
+"<.>"
+	"." sent
+
+"<Qué>"
+	"qué" prn itg mf sg
+"<díser>"
+	"díser" vblex inf
+"<?>"
+	"?" sent
+
+"<Qu’>"
+	"que" prn itg mf sg
+"<arrespóner>"
+	"respóner" vblex inf
+"<a>"
+	"a" pr
+"<un>"
+	"un" det ind m sg
+"<mainat>"
+	"mainat" n m sg
+"<mentre que>"
+	"mentre que" cnjadv
+"<l’>"
+	"lo" det def mf sg
+"<umanitat>"
+	"umanitat" n f sg
+"<cèrca>"
+	"cercar" vblex pri p3 sg
+"<responsas>"
+	"responsa" n f pl
+"<despuish>"
+	"despuish" pr
+"<milierats>"
+	"milierat" n m pl
+"<e>"
+	"e" cnjcoo
+"<milierats>"
+	"milierat" n m pl
+"<d’>"
+	"de" pr
+"<annadas>"
+	"annada" n f pl
+"<?>"
+	"?" sent
+
+"<Qu’>"
+	"que" adv enon
+"<apareishen>"
+	"aparéisher" vblex pri p3 pl
+"<sovent>"
+	"sovent" adv
+"<quan>"
+	"quan" cnjadv
+"<un>"
+	"un" det ind m sg
+"<pairbon>"
+	"pairbon" n m sg
+"<o>"
+	"o" cnjcoo
+"<ua>"
+	"un" det ind f sg
+"<pairbona>"
+	"pairbona" n f sg
+"<e’s>"
+	"e" adv enon
+		"se" prn pro ref p3 mf sp
+"<moreish>"
+	"morir" vblex pri p3 sg
+"<:>"
+	":" sent
+
+"<on>"
+	"on" rel adv
+"<ei>"
+	"estar" vbser pri p3 sg
+"<mammy>"
+	"mammy" n f sg
+"<?>"
+	"?" sent
+
+"<ei>"
+	"estar" vbser pri p3 sg
+"<au>"
+	"a" pr
+		"lo" det def m sg
+"<cèu>"
+	"cèl" n m sg
+"<?>"
+	"?" sent
+
+"<Au>"
+	"a" pr
+		"lo" det def m sg
+"<paradís>"
+	"paradís" n m sg
+"<?>"
+	"?" sent
+
+"<Que>"
+	"que" adv enon
+"<planhi>"
+	"plànher" vblex pri p1 sg
+"<los>"
+	"lo" det def m pl
+"<pairs>"
+	"pair" n m pl
+"<.>"
+	"." sent
+
+"<Mes>"
+	"mes" cnjcoo
+"<que>"
+	"que" adv enon
+"<m’>"
+	"me" prn pro p1 mf sg
+"<avisi>"
+	"avisar" vblex pri p1 sg
+"<que’m>"
+	"que" cnjsub
+		"me" prn pro p1 mf sg
+"<soi>"
+	"estar" vbser pri p1 sg
+"<desmbrombat>"
+	"desmbrombat" vblex pp m sg
+"<LA>"
+	"lo" det def f sg
+"<question>"
+	"question" n f sg
+"<essenciau>"
+	"essenciau" adj mf sg
+"<e>"
+	"e" cnjcoo
+"<fatau>"
+	"fatau" adj mf sg
+"<entaus>"
+	"entà" pr
+		"eth" det def m pl
+"<pairs>"
+	"pair" n m pl
+"<:>"
+	":" sent
+
+"<quin>"
+	"quin" adv itg
+"<har>"
+	"har" vblex inf
+"<los>"
+	"lo" det def m pl
+"<nenès>"
+	"nenè" n m pl
+"<?>"
+	"?" sent
+
+"<.>"
+	"." sent
+
+
+
