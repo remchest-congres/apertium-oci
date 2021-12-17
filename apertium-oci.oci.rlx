@@ -192,6 +192,7 @@ REMOVE V IF (0 ("<arren>"i)) ;		# patch
 REMOVE N IF (0 ("<ren>"i)) (1 De) ;		# patch
 REMOVE N IF (0 ("<e>"i)) ;		# patch
 REMOVE N IF (0 ("<o>"i)) ;		# patch
+REMOVE N IF (NOT -1 DET) (0 ("<res>"i)) ;		# patch
 REMOVE N IF (0 ("<la>"i)) ;		# patch
 REMOVE N IF (0 ("<si>"i)) ;		# patch
 REMOVE N + ("tau") IF (0 ("tau")) ;		# patch
@@ -257,11 +258,13 @@ REMOVE ("cosina") IF (0 ("cosin")) (1* ("paire") OR ("pair") OR ("maire") OR ("m
 REMOVE ("cosina") IF (0 ("cosin")) (-1* ("paire") OR ("pair") OR ("maire") OR ("mair") OR ("parent") OR ("fraire") OR ("sòr") OR ("cosin") OR ("oncle") OR ("tanta") OR ("nebot") OR ("grand")) ;
 REMOVE ("cosin") IF (0 ("cosina")) ;
 
-SELECT N IF (-1 DET + MascSg) (0 Cap); ;
-SELECT N IF (-1 DET + MascSg) (0 Cap_de) ;
-SELECT PRON IF (NOT -1 DET) (0 Cap_de) (1 Tn) ;	# cap d'elas
-SELECT PRON IF (NOT -1 DET OR CM) (0 Cap_de) (1 DET) ;
-SELECT PRON IF (NOT -1 DET OR CM) (0 ("<cap del>"i) OR ("<cap dels>"i)) ;
+SELECT N IF (-1/* DET + MascSg OR ("<del>"i) OR ("<al>"i)) (0 Cap); ;
+SELECT N IF (-1/* DET + MascSg OR ("<del>"i) OR ("<al>"i)) (0 Cap_de_del) ;
+SELECT N + (mf) IF (-1 ("ex") OR ("<ex>"i)) (0 Cap) ;
+SELECT N + (mf) IF (-1 ("ex") OR ("<ex>"i)) (0 Cap_de_del) ;
+SELECT PRON IF (NOT -1/* DET) (0 Cap_de) (1 Tn) ;	# cap d'elas
+SELECT PRON IF (NOT -1/* DET OR CM) (0 Cap_de) (1 DET) ;
+SELECT PRON IF (NOT -1/* DET OR CM) (0 ("<cap del>"i) OR ("<cap dels>"i)) ;
 SELECT PRON IF (-1 EOS OR Conjsub OR Conjadv) (0 Cap) ;
 SELECT PRON IF (-2 EOS OR Conjsub) (-1 AV OR Conjadv) (0 Cap) ;
 SELECT PRON IF (-1 Pas) (0 Cap) ;	# ai pas cap
@@ -277,6 +280,9 @@ SELECT N + (mf) IF (NOT -1 BOS) (0 Cap_de_del) (1 Al) ;
 SELECT N + (mf) IF (NOT -1 BOS) (0 Cap_de_del) (1 Ant_Cog) ;
 SELECT N + (mf) IF (NOT -1 BOS) (0 Cap_de_del) (1 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("sindicat") OR ("politica") OR ("entrepresa") OR ("enterpresa")) ;
 SELECT N + (mf) IF (NOT -1 BOS) (0 Cap_de) (1 DET) (2 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("sindicat") OR ("politica") OR ("entrepresa") OR ("enterpresa")) ;
+SELECT N + (mf) IF (-1 ("<pel>"i) OR ("<pels>"i)) (0 Cap_de_del) ;
+SELECT N + (mf) IF (-2 ("per")) (-1 DET + &&AcordSN) (0 Cap_de_del + &&AcordSN) ;
+
 REMOVE AV IF (-1C PREP) (0 Cap) (1C EOS OR CM OR Conjsub OR Conjadv OR Conjco) ;
 
 
@@ -559,8 +565,8 @@ REMOVE AJ + Pos IF (NOT -1 Ser) (0 AJ + Pos) ;
 
 # N
 
-SELECT N IF (-1C PREP) (1 EOS) ;	# ambe fòrça.
-SELECT N IF (-1C PREP) (1C PREP) (NOT 0 ("tròp")) ;	# discors de fin d'annada
+SELECT N OR PRON IF (-1C PREP) (1 EOS) ;	# ambe fòrça. ; a res.
+SELECT N OR PRON IF (-1C PREP) (1C PREP) (NOT 0 ("tròp")) ;	# discors de fin d'annada
 
 SELECT N + &&AcordSN IF (-1C/* DET) (0C N) (-1/* DET + &&AcordSN) ;	# los acès ; deus autobús
 
