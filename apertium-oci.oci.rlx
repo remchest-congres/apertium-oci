@@ -727,6 +727,11 @@ REMOVE P1 + Sg IF (-3C N_AJ + Sg) (-2 PREP) (-1 N) (0 V + P3 + Sg) ;
 REMOVE P1 + Sg IF (-4C N_AJ + Sg) (-3 PREP) (-2 N_AJ + &&AcordSN) (-1 N_AJ + &&AcordSN) (0 V + P3 + Sg) ;
 REMOVE P1 + Sg IF (-4C N_AJ + Sg) (-3 PREP) (-2 DET + &&AcordSN) (-1 N + &&AcordSN) (0 V + P3 + Sg) ;
 REMOVE P1 + Sg IF (-5C N_AJ + Sg) (-4 PREP) (-3 DET + &&AcordSN) (-2 N_AJ + &&AcordSN) (-1 N_AJ + &&AcordSN) (0 V + P3 + Sg) ;
+
+SELECT PRI IF (-2C PRI) (-1 Conjco) (0 PRS) (0 PRI) ; # il revoit et corrige
+SELECT PRS IF (-2C PRS) (-1 Conjco) (0 PRS) (0 PRI) ;
+SELECT PRI IF (2C PRI) (1 Conjco) (0 PRS) (0 PRI) ; # il corrige et revoit
+SELECT PRS IF (2C PRS) (1 Conjco) (0 PRS) (0 PRI) ;
 REMOVE PRI IF (-1* ("per que") BARRIER CM) (0 PRS) ;
 
 SELECT PREP IF (0 Dins) (1 DET) ;
