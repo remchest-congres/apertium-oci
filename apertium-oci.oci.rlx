@@ -288,7 +288,6 @@ SELECT N + (mf) IF (-2 ("per")) (-1 DET + &&AcordSN) (0 Cap_de_del + &&AcordSN) 
 
 REMOVE AV IF (-1C PREP) (0 Cap) (1C EOS OR CM OR Conjsub OR Conjadv OR Conjco) ;
 
-
 SELECT AV IF (-1 Pas) (0 Mai OR Pus) ;	# ai pas pus
 SELECT AV IF (-2 Pas) (-1 VBpp) (0 Mai OR Pus) ;	# ai agut pas pus
 SELECT AV IF (-3 Pas) (-2 AV) (-1 VBpp) (0 Mai OR Pus) ;	# ai agut pas totjorn pus
@@ -303,6 +302,13 @@ SELECT AV IF (-4 Vmod) (-3 Pas) (-2 AV OR Pro) (-1 VBinf) (0 Mai OR Pus) ;	# vò
 SELECT AV IF (-5 Vmod) (-4 Pas) (-3 AV OR Pro) (-2 AV OR Pro) (-1 VBinf) (0 Mai OR Pus) ;	# vòli pas li'n dire pus
 SELECT Conjco IF (-1 EOS) (0 Mai) ;
 SELECT Conjco IF (-1 CM) (0 Mai) (NOT 1 AJ) ;
+SELECT AV IF (-1 Ser + &&AcordSP) (0 Mai) (1 AJ + &&AcordSP) ;	# es mai calme
+SELECT AJ OR AV IF (-2 Ser + &&AcordSP) (-1 AV OR PREAV) (0 AJ + &&AcordSP) (NOT 1 AJ + &&AcordSP) ;	# es mai calme
+SELECT AJ OR AV IF (-3 Ser + &&AcordSP) (-2 AV) (-1 AV OR PREAV) (0 AJ + &&AcordSP) (NOT 1 AJ + &&AcordSP) ;	# es pas mai calme
+SELECT VBpp IF (-2 Ser + &&AcordSP) (-1 AV OR PREAV) (0 VBpp + &&AcordSP) (NOT 0 N + &&AcordSP) ;
+SELECT VBpp IF (-3 Ser + &&AcordSP) (-2 AV) (-1 AV OR PREAV) (0 VBpp + &&AcordSP) (NOT 0 N + &&AcordSP) ;
+SELECT PREAV IF (-1 Ser + &&AcordSP) (0 AV OR PREAV) (1 AJ + &&AcordSP) ;
+SELECT PREAV IF (-2 Ser + &&AcordSP) (-1 AV) (0 AV OR PREAV) (1 AJ + &&AcordSP) ;
 
 REMOVE VBimp IF (NOT 1* Excl) ;		# guess
 REMOVE VBimp IF (-1 Ant OR Cog OR unknown) (0 P3) ;
