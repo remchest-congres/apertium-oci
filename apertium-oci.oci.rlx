@@ -552,6 +552,9 @@ SELECT N_AJ + &&AcordSN IF (-2 DET + &&AcordSN) (-1 N_AJ + &&AcordSN) (0 N_AJ + 
 
 REMOVE PRON IF (0 DET + Pos) (1 unknown) ;
 
+SELECT SUB:1 Masc IF (0/* ("lo")) (1 ("díser") OR ("har")) ;	# que'u díser
+SELECT SUB:1 Masc IF (0/* ("lo")) (1 Pro) (2 ("díser") OR ("har")) ;	# que'u te díser
+
 # NUM
 
 SELECT NUM IF (-1 ("numéro")) (0 Un); 
