@@ -60,6 +60,8 @@ LIST Nf = (n f);
 LIST AJf = (adj f);
 LIST Vconj = pri prs pii ifi pis imp fti ifi cni ;
 LIST Vconj_non_Imp = pri prs pii ifi pis fti ifi cni ;
+LIST PRI = pri ;
+LIST PRS = prs ;
 LIST Itg = itg ;
 LIST DETdef = (det def);
 LIST DETind = (det ind);
@@ -614,6 +616,8 @@ REMOVE N IF (-1C PRON) (0 V) ;		# qui sap
 REMOVE V + Pers IF (-1C V + Pers) ;	# voletz ve pariar
 REMOVE V + Pers IF (1C V + Pers) ;	# voletz ve pariar
 
+REMOVE VBpp IF (-1C DET + &&AcordSN OR Pro) (0 N + &&AcordSN) ;		# lo resultat
+
 # HAVER
 
 SELECT Haver IF (0 Haver) (1C VBpp) ;	# a cantat
@@ -713,6 +717,17 @@ SELECT P3 IF (-1C Se + PRON) (NOT 0 Pro) (0 V) ;		# se canti
 SELECT P3 IF (-2C Se + PRON) (-1 Pro) (NOT 0 Pro) (0 V) ;	# se li canti
 SELECT P3 IF (-3C Se + PRON) (-2 Pro) (-1 Pro) (NOT 0 Pro) (0 V + P3) ;	# se li o canti
 SELECT PRON IF (0 Se) (1C Pro OR V + P3) ;	# patch			NE MARCHE PAS DU TOUT
+
+REMOVE P1 + Sg IF (-1 NP + Sg) (0 V + P3 + Sg) ;
+REMOVE P1 + Sg IF (-2 DET + MascSg) (-1 N + MascSg) (0 V + P3 + Sg) ;
+REMOVE P1 + Sg IF (-2 DET + FemSg) (-1 N + FemSg) (0 V + P3 + Sg) ;
+REMOVE P1 + Sg IF (-3 DET + MascSg) (-2 N_AJ + MascSg) (-1 N_AJ + MascSg) (0 V + P3 + Sg) ;
+REMOVE P1 + Sg IF (-3 DET + FemSg) (-2 N_AJ + FemSg) (-1 N_AJ + MascSg) (0 V + P3 + Sg) ;
+REMOVE P1 + Sg IF (-3C N_AJ + Sg) (-2 PREP) (-1 N) (0 V + P3 + Sg) ;
+REMOVE P1 + Sg IF (-4C N_AJ + Sg) (-3 PREP) (-2 N_AJ + &&AcordSN) (-1 N_AJ + &&AcordSN) (0 V + P3 + Sg) ;
+REMOVE P1 + Sg IF (-4C N_AJ + Sg) (-3 PREP) (-2 DET + &&AcordSN) (-1 N + &&AcordSN) (0 V + P3 + Sg) ;
+REMOVE P1 + Sg IF (-5C N_AJ + Sg) (-4 PREP) (-3 DET + &&AcordSN) (-2 N_AJ + &&AcordSN) (-1 N_AJ + &&AcordSN) (0 V + P3 + Sg) ;
+REMOVE PRI IF (-1* ("per que") BARRIER CM) (0 PRS) ;
 
 SELECT PREP IF (0 Dins) (1 DET) ;
 
