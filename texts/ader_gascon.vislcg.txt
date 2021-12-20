@@ -1,0 +1,808 @@
+"<Guilhèm>"
+	"Guilhèm" np ant m sg
+"<Adèr>"
+	"Adèr" np cog mf sp
+"<qu'>"
+	"que" adv enon
+"<èra>"
+	"estar" vbser pii p3 sg
+"<un>"
+	"un" det ind m sg
+"<mètge>"
+	"mètge" n m sg
+"<e>"
+	"e" cnjcoo
+"<un>"
+	"un" det ind m sg
+"<escrivan>"
+	"escrivan" n m sg
+"<gascon>"
+	"gascon" adj m sg
+"<d'>"
+	"de" pr
+"<expression>"
+	"expression" n f sg
+"<occitana>"
+	"occitan" adj f sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<sègle>"
+	"sègle" n m sg
+"<XVIIau>"
+	"XVII" adj m sg
+"<,>"
+	"," cm
+"<originari>"
+	"originari" adj m sg
+"<de>"
+	"de" pr
+"<Gimont>"
+	"Gimont" np top f sg
+"<,>"
+	"," cm
+"<Gasconha>"
+	"Gasconha" np top f sg
+"<.>"
+	"." sent
+
+
+
+"<Qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<autor>"
+	"autor" n m sg
+"<,>"
+	"," cm
+"<enter>"
+	"enter" pr
+"<autas>"
+	"aute" adj ind f pl
+"<causas>"
+	"causa" n f pl
+"<,>"
+	"," cm
+"<d'>"
+	"de" pr
+"<un>"
+	"un" det ind m sg
+"<poème>"
+	"poème" n m sg
+"<eroïc>"
+	"eroïc" adj m sg
+"<en>"
+	"en" pr
+"<aunor>"
+	"aunor" n m sg
+"<deu Noste>"
+	"de" pr
+		"lo noste" det pos m sg
+"<Enric>"
+	"Enric" np ant m sg
+"<(>"
+	"(" lpar
+"<Lo>"
+	"lo" det def m sg
+"<gentilòme>"
+	"gentilòme" n m sg
+"<gascon>"
+	"gascon" adj m sg
+"<)>"
+	")" rpar
+"<e d'>"
+	"e" cnjcoo
+		"de" pr
+"<ua>"
+	"un" det ind f sg
+"<òbra>"
+	"òbra" n f sg
+"<medicau>"
+	"medicau" adj mf sg
+"<en>"
+	"en" pr
+"<latin>"
+	"latin" n m sg
+"<tractant>"
+	"tractar" vblex ger
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<pèsta>"
+	"pèsta" n f sg
+"<e de>"
+	"e" cnjcoo
+		"de" pr
+"<çurgeria>"
+	"çurgeria" n f sg
+"<en>"
+	"en" pr
+"<francés>"
+	"francés" n m sg
+"<.>"
+	"." sent
+
+
+
+"<Vita>"
+	"vita" n f sg
+
+
+"<Que's>"
+	"que" adv enon
+		"se" prn pro ref p3 mf sp
+"<sap>"
+	"sàber" vblex pri p3 sg
+"<chic de>"
+	"chic de" det ind mf sp
+"<causas>"
+	"causa" n f pl
+"<suber>"
+	"suber" pr
+"<las>"
+	"lo" det def f pl
+"<purmèras>"
+	"purmèr" adj f pl
+"<annadas>"
+	"annada" n f pl
+"<d'>"
+	"de" pr
+"<aqueste>"
+	"aqueste" det dem m sg
+"<mètge>"
+	"mètge" n m sg
+"<gimontés>"
+	"gimontés" adj m sg
+"<.>"
+	"." sent
+
+
+
+"<Que's>"
+	"que" adv enon
+		"se" prn pro ref p3 mf sp
+"<sap>"
+	"sàber" vblex pri p3 sg
+"<au contra>"
+	"au contra" cnjadv
+"<qu'>"
+	"que" cnjsub
+"<estudiè>"
+	"estudiar" vblex ifi p3 sg
+"<la>"
+	"lo" det def f sg
+"<medecina>"
+	"medecina" n f sg
+"<a>"
+	"a" pr
+"<Tolosa>"
+	"Tolosa" np top f sg
+"<on>"
+	"on" rel adv
+"<ho>"
+	"estar" vbser ifi p3 sg
+"<membre>"
+	"membre" n m sg
+"<(>"
+	"(" lpar
+"<au mens>"
+	"au mens" adv
+"<a partir de>"
+	"a partir de" pr
+"<1587>"
+	"1587" num
+"<)>"
+	")" rpar
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<con·hrairia>"
+	"con·hrairia" n f sg
+"<deus>"
+	"de" pr
+		"lo" det def m pl
+"<Penitents>"
+	"penitent" n m pl
+"<Blaus>"
+	"blau" adj m pl
+"<.>"
+	"." sent
+
+
+
+"<Que>"
+	"que" adv enon
+"<serví>"
+	"servir" vblex ifi p3 sg
+"<com>"
+	"com" cnjadv
+"<mètge>"
+	"mètge" n m sg
+"<dens>"
+	"dens" pr
+"<l'>"
+	"lo" det def mf sg
+"<armada>"
+	"armada" n f sg
+"<de>"
+	"de" pr
+"<Juèsa>"
+	"Juèsa" np al f sg
+"<(>"
+	"(" lpar
+"<de>"
+	"de" pr
+"<Joyeuse>"
+	"Joyeuse" np al f sg
+"<,>"
+	"," cm
+"<en>"
+	"en" pr
+"<francés>"
+	"francés" n m sg
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+
+
+"<En>"
+	"en" pr
+"<1603>"
+	"1603" num
+"<,>"
+	"," cm
+"<qu'>"
+	"que" adv enon
+"<avó>"
+	"aver" vblex ifi p3 sg
+"<ua>"
+	"un" det ind f sg
+"<mainada>"
+	"mainat" n f sg SELECT:547
+"<vaduda>"
+	"vàder" vblex pp f sg
+"<a>"
+	"a" pr
+"<Gimont>"
+	"Gimont" np top f sg
+"<dab>"
+	"dab" pr
+"<la soa>"
+	"lo son" det pos f sg
+"<molhèr>"
+	"molhèr" n f sg
+"<Magdalena>"
+	"Magdalena" np ant f sg
+"<de Lux>"
+	"de Lux" np cog mf sp
+"<.>"
+	"." sent
+
+
+
+"<Un>"
+	"un" det ind m sg
+"<hilh>"
+	"hilh" n m sg
+"<,>"
+	"," cm
+"<batejat>"
+	"batejar" vblex pp m sg
+"<Pèir>"
+	"Pèir" np ant m sg
+"<,>"
+	"," cm
+"<que>"
+	"que" adv enon
+"<seguí>"
+	"seguir" vblex ifi p3 sg
+"<en>"
+	"en" pr
+"<1608>"
+	"1608" num
+"<.>"
+	"." sent
+
+
+
+"<Que>"
+	"que" adv enon
+"<sembla>"
+	"semblar" vblex pri p3 sg
+"<donc>"
+	"donc" cnjadv
+"<per>"
+	"per" pr
+"<aquera>"
+	"aqueth" det dem f sg
+"<annada>"
+	"annada" n f sg
+"<,>"
+	"," cm
+"<que>"
+	"que" cnjsub
+"<practicava>"
+	"practicar" vblex pii p3 sg
+"<jà>"
+	"jà" adv
+"<lo son>"
+	"lo son" det pos m sg
+"<art>"
+	"art" n m sg
+"<dens>"
+	"dens" pr
+"<la soa>"
+	"lo son" det pos f sg
+"<vila>"
+	"vila" n f sg
+"<nadau>"
+	"nadau" adj mf sg
+"<sustot que>"
+	"sustot que" cnjadv
+"<signa>"
+	"signar" vblex pri p3 sg
+"<e>"
+	"e" cnjcoo
+"<data>"
+	"datar" vblex pri p3 sg
+"<l'>"
+	"lo" det def mf sg
+"<edicion>"
+	"edicion" n f sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<Catonet Gascon>"
+	"Catonet Gascon" np al m sg
+"<a>"
+	"a" pr
+"<Gimont>"
+	"Gimont" np top f sg
+"<en>"
+	"en" pr
+"<1607>"
+	"1607" num
+"<.>"
+	"." sent
+
+
+
+"<Lo Gentilòme gascon>"
+	"lo Gentilòme gascon" np al m sg
+"<que>"
+	"que" adv enon
+"<pareishó>"
+	"paréisher" vblex ifi p3 sg
+"<en>"
+	"en" pr
+"<1610>"
+	"1610" num
+"<,>"
+	"," cm
+"<l'>"
+	"lo" det def mf sg
+"<annada>"
+	"annada" n f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<mort>"
+	"mort" n f sg
+"<deu son>"
+	"de" pr
+		"lo son" det pos m sg
+"<protagonista>"
+	"protagonista" n mf sg
+"<eponim>"
+	"eponime" adj m sg
+"<,>"
+	"," cm
+"<lo Noste>"
+	"lo noste" det pos m sg
+"<Enric>"
+	"Enric" np ant m sg
+"<.>"
+	"." sent
+
+
+
+"<En>"
+	"en" pr
+"<1628>"
+	"1628" num
+"<que>"
+	"que" adv enon
+"<he>"
+	"har" vblex ifi p3 sg
+"<estampar>"
+	"estampar" vblex inf
+"<la soa>"
+	"lo son" det pos f sg
+"<òbra>"
+	"òbra" n f sg
+"<medicau>"
+	"medicau" adj mf sg
+"<latina>"
+	"latin" adj f sg
+"<(>"
+	"(" lpar
+"<De Pestis cognitione et remediis>"
+	"De Pestis cognitione et remediis" np al m sg
+"<)>"
+	")" rpar
+"<e>"
+	"e" cnjcoo
+"<francesa>"
+	"francés" adj f sg
+"<(>"
+	"(" lpar
+"<De la méthode de consulter les maladies chirurgicales>"
+	"De la méthode de consulter les maladies chirurgicales" np al m sg
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+
+
+"<Que's>"
+	"que" adv enon
+		"se" prn pro ref p3 mf sp
+"<morí>"
+	"morir" vblex ifi p3 sg
+"<a>"
+	"a" pr
+"<Gimont>"
+	"Gimont" np top f sg
+"<lo>"
+	"lo" det def m sg
+"<23>"
+	"23" num
+"<de>"
+	"de" pr
+"<junh>"
+	"junh" n m sg
+"<de>"
+	"de" pr
+"<1638>"
+	"1638" num
+"<mentavut>"
+	"mentàver" vblex pp m sg
+"<com>"
+	"com" cnjadv
+"<doctor>"
+	"doctor" n m sg
+"<en>"
+	"en" pr
+"<medecina>"
+	"medecina" n f sg
+"<e>"
+	"e" cnjcoo
+"<mètge>"
+	"mètge" n m sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<vila>"
+	"vila" n f sg
+"<de>"
+	"de" pr
+"<Gimont>"
+	"Gimont" np top f sg
+"
+"<.>"
+	"." sent
+
+
+
+"<Lo Catonet Gascon>"
+	"lo Catonet Gascon" np al m sg
+
+"<Qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<ua>"
+	"un" det ind f sg
+"<colleccion>"
+	"colleccion" n f sg
+"<de>"
+	"de" pr
+"<cent>"
+	"cent" num mf sp
+"<maximas>"
+	"maxima" n f pl
+"<alexandrianas>"
+	"alexandrianas" adj f pl
+"<en>"
+	"en" pr
+"<gascon>"
+	"gascon" n m sg
+"<.>"
+	"." sent
+
+
+
+"<Ader>"
+	"Ader" np cog mf sp
+"<qu'>"
+	"que" adv enon
+"<obreish>"
+	"obrir" vblex pri p3 sg
+"<lo son>"
+	"lo son" det pos m sg
+"<libe>"
+	"libe" n m sg
+"<dab>"
+	"dab" pr
+"<l'>"
+	"lo" det def mf sg
+"<ex-libris>"
+	"ex-libris" n m sp
+"<seguent>"
+	"seguent" adj m sg
+"<:>"
+	":" sent
+
+
+
+"<Si>"
+	"si" cnjadv
+"<non>"
+	"non" adv enon
+"<soi>"
+	"estar" vbser pri p1 sg
+"<a>"
+	"a" pr
+"<ta>"
+	"ta" det pos mf sg
+"<guisa>"
+	"guisa" n f sg
+ / 
+"<E>"
+	"e" cnjcoo
+"<si>"
+	"si" cnjadv
+"<non>"
+	"non" adv enon
+"<parli>"
+	"parlar" vblex pri p1 sg
+"<com>"
+	"com" cnjadv
+"<tu>"
+	"tu" prn tn p2 mf sg
+"<vòs>"
+	"voler" vblex pri p2 sg
+"<,>"
+	"," cm
+ / 
+"<Hè'm>"
+	"har" vblex inf
+		"me" prn enc p1 mf sg
+"<com>"
+	"com" cnjadv
+"<te>"
+	"te" prn pro p2 mf sg
+"<volha>"
+	"voler" vblex prs p3 sg
+"<la>"
+	"lo" det def f sg
+"<camisa>"
+	"camisa" n f sg
+"<,>"
+	"," cm
+ / 
+"<Mes>"
+	"mes" cnjcoo
+"<lèisha'm>"
+	"leishar" vblex imp p2 sg
+		"me" prn enc p1 mf sg
+"<lo>"
+	"lo" det def m sg
+"<mesòth>"
+	"mesòth" n m sg
+"<dens>"
+	"dens" pr
+"<l'>"
+	"lo" det def mf sg
+"<òs>"
+	"òs" n m sg
+"<.>"
+	"." sent
+
+
+
+"<L'>"
+	"lo" det def mf sg
+"<òbra>"
+	"òbra" n f sg
+"<qu'>"
+	"que" adv enon
+"<ei>"
+	"estar" vbser pri p3 sg
+"<vodada>"
+	"vodar" vblex pp f sg
+"<a>"
+	"a" pr
+"<Miquèu>"
+	"Miquèu" np ant m sg
+"<d'Estarac>"
+	"d'Estarac" np cog mf sp
+"<,>"
+	"," cm
+	"
+"<Governador>"
+	"governador" n m sg
+"<de>"
+	"de" pr
+"<las>"
+	"lo" det def f pl
+"<comtats>"
+	"comtat" n f pl
+"<d'>"
+	"de" pr
+"<Armanhac>"
+	"Armanhac" np top m sg
+" 
+"<e>"
+	"e" cnjcoo
+"<la>"
+	"lo" det def f sg
+"<dedicaça>"
+	"dedicaça" n f sg
+"<que>"
+	"que" adv enon
+"<comença>"
+	"començar" vblex pri p3 sg
+"<atau>"
+	"atal" adv
+"<:>"
+	":" sent
+
+
+
+"<Lo>"
+	"lo Catonet" np al m sg
+"<,>"
+	"," cm
+"<Monsénher>"
+	"monsénher" n m sg
+"<,>"
+	"," cm
+"<après>"
+	"après" adv
+"<aver>"
+	"aver" vbhaver inf
+"<corrut>"
+	"córrer" vblex pp m sg
+"<la>"
+	"lo" det def f sg
+"<Grècia>"
+	"Grècia" np top f sg
+"<dab>"
+	"dab" pr
+"<los>"
+	"lo" det def m pl
+"<sèt>"
+	"sèt" num mf sp
+"<sages>"
+	"sage" n m pl
+"<,>"
+	"," cm
+"<l'>"
+	"lo" det def mf sg
+"<Italia>"
+	"Italia" np top f sg
+"<dab>"
+	"dab" pr
+"<Caton>"
+	"Caton" np ant m sg
+"<lo>"
+	"lo" det def m sg
+"<vielh>"
+	"vielh" adj m sg
+"<,>"
+	"," cm
+"<l'>"
+	"lo" det def mf sg
+"<Aspenha>"
+	"Aspenha" np top f sg
+"<(>"
+	"(" lpar
+"<sic>"
+	"sic" adv
+"<)>"
+	")" rpar
+"<dab>"
+	"dab" pr
+"<Berin>"
+	"Berin" np cog mf sp
+"<,>"
+	"," cm
+"<la>"
+	"lo" det def f sg
+"<França>"
+	"França" np top f sg
+"<dab>"
+	"dab" pr
+"<Pibrac>"
+	"Pibrac" np cog mf sp
+"<,>"
+	"," cm
+"<se'n>"
+	"se" prn pro ref p3 mf sp
+		"en" prn pro adv
+"<va>"
+	"anar" vblex pri p3 sg
+"<per>"
+	"per" pr
+"<la>"
+	"lo" det def f sg
+"<Gasconha>"
+	"Gasconha" np top f sg
+"<,>"
+	"," cm
+"<a>"
+	"a" pr
+"<la vòsta>"
+	"lo vòste" det pos f sg
+"<favor>"
+	"favor" n f sg
+"<.>"
+	"." sent
+
+
+
+"<E>"
+	"e" cnjcoo
+"<com>"
+	"com" cnjadv
+"<aqueris>"
+	"aqueth" prn dem m pl
+"<l'>"
+	"lo" prn pro p3 m sg
+"<avèn>"
+	"aver" vbhaver pii p3 pl
+"<vestit>"
+	"vestir" vblex pp m sg
+"<a la mòda deu lor>"
+	"a la mòda de" pr
+		"lo lor" det pos m sg
+"<país>"
+	"país" n m sg
+"<,>"
+	"," cm
+"<ara>"
+	"ara" adv
+"<jo>"
+	"jo" prn tn p1 mf sg
+"<l'>"
+	"lo" prn pro p3 m sg
+"<èi>"
+	"aver" vbhaver pri p1 sg
+"<botat>"
+	"botar" vblex pp m sg
+"<a>"
+	"a" pr
+"<la>"
+	"lo" det def f sg
+"<sisa>"
+	"sisa" n f sg
+"<deu nòste>"
+	"de" pr
+		"lo noste" prn tn pos m sg
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
