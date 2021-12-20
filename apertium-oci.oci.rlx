@@ -46,6 +46,7 @@ LIST Tn = tn ;
 LIST VBger = ger ;
 LIST VBimp = imp ;
 LIST Pro = pro ;
+LIST Ton = tn ;
 LIST Ref = ref ;
 LIST PRencl = enc ;
 LIST VBinf = inf ;
@@ -703,7 +704,10 @@ REMOVE Conjadv IF (0 Se) (0/* Pro) (-1*C N) (NOT -1* V + Pers) ;	# un ministeri 
 SELECT P3 IF (-1C Se + PRON) (NOT 0 Pro) (0 V) ;		# se canti
 SELECT P3 IF (-2C Se + PRON) (-1 Pro) (NOT 0 Pro) (0 V) ;	# se li canti
 SELECT P3 IF (-3C Se + PRON) (-2 Pro) (-1 Pro) (NOT 0 Pro) (0 V + P3) ;	# se li o canti
-SELECT PRON IF (0 Se) (1C Pro OR V + P3) ;	# patch			NE MARCHE PAS DU TOUT
+REMOVE Ton IF (0 Se) (1 V) (1 P3) ;
+REMOVE Ton IF (0 Se) (1 VBinf) ;
+REMOVE Ton IF (0 Se) (1 Pro) ;
+SELECT Pro IF (0 Se) (1C Pro OR V + P3) ;	# patch			NE MARCHE PAS DU TOUT
 
 
 SELECT PREP IF (0 Dins) (1 DET) ;
