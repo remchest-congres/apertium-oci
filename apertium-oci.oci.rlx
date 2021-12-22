@@ -199,6 +199,7 @@ REMOVE N IF (0 ("<e>"i)) ;		# patch
 REMOVE N IF (0 ("<o>"i)) ;		# patch
 REMOVE N IF (NOT -1 DET) (0 ("<res>"i)) ;		# patch
 REMOVE N IF (0 ("<la>"i)) ;		# patch
+REMOVE N IF (0 ("<las>"i)) ;		# patch
 REMOVE N IF (0 ("<si>"i)) ;		# patch
 REMOVE N + ("tau") IF (0 ("tau")) ;		# patch
 REMOVE SUB:1 DET IF (0 ("<en>"i)) ;		# patch
@@ -325,6 +326,9 @@ REMOVE VBimp IF (-1 BOS) (0 ("un")) ;
 SELECT VBimp IF (-1 BOS) (0 P2) (1* Excl) ;		# guess
 REMOVE VBimp IF (-2 BOS) (-1 ("be") OR ("que")) (0 ("un")) ;
 SELECT VBimp IF (-2 BOS) (-1 ("be") OR ("que")) (0 P2) (1* Excl) ;	# guess
+
+REMOVE VBger IF (NOT -1 ("en") OR ("en bèth") OR Pro OR N_AJ OR CM) ;
+REMOVE VBger IF (NOT -2 ("en") OR ("en bèth") OR Pro OR CM) (-1C Pro) ;
 
 #Un pronom proclitic est totjorn davant un vèrb o un autre pronom
 REMOVE Pro IF (NOT 1 Pro OR V - VBpp OR VBimp) ;
@@ -517,13 +521,16 @@ REMOVE Vconj IF (-2C PREP) (-1 DET + &&AcordSN) (0 N + &&AcordSN) ;	# per la pla
 SELECT VBinf IF (-1 ("de")) (0C V) ;
 SELECT VBinf IF (-1 ("a") + PREP) (0C V) ;
 SELECT VBger IF (-1 ("en") + PREP) (0C V) ;
+SELECT VBger IF (-1 ("en bèth") + PREP) (0C V) ;
 SELECT VBinf IF (-2 ("de")) (-1 Pro) (0C V) ;
 SELECT VBinf IF (-2 ("a") + PREP) (-1 Pro) (0C V) ;
 SELECT VBger IF (-2 ("en") + PREP) (-1 Pro) (0C V) ;
+SELECT VBger IF (-2 ("en bèth") + PREP) (-1 Pro) (0C V) ;
 SELECT VBinf IF (-3 ("de")) (-1 Pro) (-1 Pro) (0C V) ;
 SELECT VBinf IF (-3 ("a") + PREP) (-2 Pro) (-1 Pro) (0C V) ;
 SELECT VBger IF (-3 ("en") + PREP) (-2 Pro) (-1 Pro) (0C V) ;
-REMOVE VBger IF (0 VBinf) (NOT -1 SENT OR ("en")) ;
+SELECT VBger IF (-3 ("en bèth") + PREP) (-2 Pro) (-1 Pro) (0C V) ;
+REMOVE VBger IF (0 VBinf) (NOT -1 SENT OR ("en") OR ("en bèth")) ;
 
 #Un determinant es pas plural se lo nom/adjectiu que seguis es singular (o masculin feminin...)
 REMOVE motsdetpl IF (1C Ns OR AJs);
@@ -541,12 +548,15 @@ SELECT V IF (0 An + MascSg) (1C AV) (2 VBpp + MascSg) ;
 # DET
 
 REMOVE DET IF (-1C/* DET) ;	# un cèrt estacament
+REMOVE DET IF (0 DET) (NOT 1 N OR AJ OR NP OR NUM OR AV OR PREAV OR Rel OR unknown) ;
+REMOVE DET IF (0 DET) (1 N_AJ OR NP) (NOT 1 NUM OR AV OR PREAV OR Rel) (0 DET + &&AcordSN) (NOT 1 N_AJ + &&AcordSN OR NP + &&AcordSN) ;	# Avèm entrevistat aquesta pendent la Hèsta
 REMOVE SUB:1 DET IF (0/* DET) (1C DET) ;	# en los acès
 SELECT DETind + &&AcordSN IF (0 DETind + &&AcordSN) (1 N + &&AcordSN) ;	# un enfant
 SELECT DETind + &&AcordSN IF (0 DETind + &&AcordSN) (1 AJ + &&AcordSN) (NOT 0 ("força") OR ("horça")) ;	# un jaune
 SELECT N_AJ + &&AcordSN IF (-1 DETind + &&AcordSN) (0 N_AJ + &&AcordSN) ;
 SELECT DET IF (0 DETind) (1C V) ;
 SELECT DET IF (0 DETind) (1 unknown) ;	# pedaç, especialment quan falta molt vocabulari (endevinem que és un DET i no una forma del V unir)
+REMOVE ("unir") IF (0 Un) (1C V + Pers OR VBpp) ;	# pedaç, especialment quan falta molt vocabulari (endevinem que és un DET i no una forma del V unir)
 REMOVE DET IF (0 Eth) (1 DET);
 REMOVE DET IF (0 Eth) (1 Pas);
 
@@ -709,8 +719,8 @@ SELECT Ser IF (-1 Ser) (0 ("estat"));	# soi estat
 SELECT Ser IF (-2 Ser) (-1 AV) (0 ("estat"));	# soi pas estat
 SELECT Ser IF (-3 Ser) (-2 AV) (-1 AV) (0 ("estat"));	# soi pas totjorn estat
 
-REMOVE Pro IF (NOT 1 V OR Pro) ;
-REMOVE DET IF (0 Tn) (NOT 1 N OR AJ) ;
+REMOVE Pro IF (NOT 1 V OR Pro OR unknown) ;
+REMOVE DET IF (0 Tn) (NOT 1 N OR AJ OR unknown) ;
 
 REMOVE PRON IF (0 Se) (NOT 1 Pro OR V + P3 OR V + VBinf OR V + VBger) ;        # se canti
 REMOVE PRON IF (0 Se) (1 Pro) (NOT 2 Pro OR V + P3 OR V + VBinf OR V + VBger) ;	# se li canti
@@ -770,6 +780,7 @@ SELECT Ser IF (0 Ser + Pl) (1 AV) (2 Ser + VBpp + Pl) ;
 SELECT N IF (-1 ("vila") OR ("ciutat")) (0 Estat) ;	# vila estat
 
 REMOVE AJ IF (0 Las) (1 N + FemPl) ;	# las pomas
+REMOVE AJ IF (0 Las) (1 NP + FemPl) ;	# las Corbièras
 REMOVE AJ IF (0 Las) (1 NUM) (2 N + FemPl) ;	# las 200 pomas
 
 SELECT Conjco IF (0 Mas) (-1 CM) ;
