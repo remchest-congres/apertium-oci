@@ -545,6 +545,98 @@ SELECT V IF (0 An + MascSg) (1 VBpp + MascSg) ;
 SELECT V IF (0 An + MascSg) (1 Pas) (2 VBpp + MascSg) ;
 SELECT V IF (0 An + MascSg) (1C AV) (2 VBpp + MascSg) ;
 
+# NP
+
+SELECT NP IF (NOT -1 BOS) (NOT -1 (META:/—/r)) ;
+
+SELECT Conjco (-1 BOS) (0 ("Mas")) ;
+
+REMOVE Cog IF (-1 DETdef) (0 Cog) ;
+REMOVE Cog IF (-1 DETind) (0 Cog) ;
+REMOVE Cog IF (-1 En) (0 Cog) ;
+REMOVE Ant IF (-1 DETdef) (0 Ant) ;
+REMOVE Ant IF (-1 DETind) (0 Ant) ;
+REMOVE Ant IF (-1 En) (0 Ant) ;
+
+SELECT NP IF (0 N OR NP) (1 NP) (0 (META:/-/r)) (NOT 0 ("bas") OR ("naut") OR ("haut")) ;   # Pierre-Michel
+SELECT Ant IF (0 Ant) (1C Ant) (0 (META:/-/r)) ;                                # Jean-René
+SELECT Ant IF (-1C Ant) (0 Ant) (-1 (META:/-/r)) ;
+SELECT Cog IF (0 Cog) (1C Cog) (0 (META:/-/r)) ;
+SELECT Cog IF (-1C Cog) (0 Cog) (-1 (META:/-/r)) ;
+SELECT Cog IF (0 Cog OR Ant) (-1C Ant) (NOT 1 Cog) ;
+
+SELECT Ant IF (0 MascSg) (1 (<"Ièr">)) ;
+SELECT AJ IF (-1 Ant OR MajIni OR unknownMajIni) (0 ("<Ièr>")) ;
+SELECT Top IF (-2 Ant) (-1 De) ;                                        # Louis de Lorraine
+SELECT Top IF (-3 Ant) (-2 siecles_nom_romains OR ("<Ièr>")) (-1 De) ;  # Louis II de Lorraine
+SELECT Ant IF (1 De) (2 Top) ;                                          # Michel de Lorraine
+SELECT Ant IF (1 siecles_nom_romains OR ("<Ièr>")) (2 De) (3 Top) ;     # Michel II de Lorraine
+SELECT Top IF (-2 ("vila") OR ("estat") OR ("region") OR ("catedrala") OR ("glèisa") OR ("aeropòrt") OR ("pòrt")) (-1 De) ;
+SELECT Top IF (-2 ("concili") OR ("parlament") OR ("constitucion") OR ("tractat") OR ("declaracion")) (-1 De) ;
+SELECT Top IF (-2 ("universitat")) (-1 De) ;                             # université de Paris VII
+SELECT Ant IF (1 siecles_nom_romains OR ("<Ièr>")) ;                    # Michel II
+SELECT Top IF (1C Top) (0 (META:/-/r)) ;
+SELECT Top IF (-1C Top) (-1 (META:/-/r)) ;
+
+SELECT Ant_Cog IF (0 Cog OR Ant) (1C Cog) ;
+SELECT Ant IF (0C Ant OR Cog) (1 Ant) (0 (META:/-/r)) ;                         # Charles-Michel
+SELECT Cog IF (0C Ant OR Cog) (1 Cog) (0 (META:/-/r)) ;
+SELECT Ant IF (NOT -1 Ant) (0C Ant OR Cog) (1 Cog) (NOT 0 (META:/-/r)) ;        # Albin Michel; Claude Étienne Michel
+SELECT Masc_strict IF (-2 DETdef + MascSg) (-1 N_AJ + MascSg) (0C Ant) ; # l'empereur Claude
+SELECT Fem_strict IF (-2 DETdef + FemSg) (-1 N_AJ + FemSg) (0C Ant) ;    # la belle Claude
+SELECT Masc_strict IF (0 Ant + Masc_strict) (1C Ant + Masc_strict) ;
+SELECT Fem_strict IF (0 Ant + Fem_strict) (1C Ant + Fem_strict) ;
+SELECT Masc_strict IF (-1C Ant + Masc_strict) (0 Ant + Masc_strict) ;
+SELECT Fem_strict IF (-1C Ant + Fem_strict) (0 Ant + Fem_strict) ;
+
+SELECT Ant IF (0 ("René") OR ("Renée") OR ("Marc") OR ("Pierre") OR ("Beau")) (1 Ant OR NP OR unknownMajIni) ;
+SELECT Masc_strict IF (0 ("Camille")) (1 ("Pissarro")) ;
+SELECT Cog IF (-1 ("Édouard")) (0 ("Philippe")) ;
+SELECT Ant IF (0 ("Édouard")) (1 ("Philippe")) ;
+SELECT Ant IF (0 ("Luther")) (1 Cog OR unknownMajIni) ;
+SELECT Cog IF (0 ("Luther")) (NOT 1 Cog OR unknownMajIni) ;
+
+SELECT Fem IF (0 ("Simone")) ;
+
+SELECT Masc_strict IF (0 ("Antigone")) (1 ("le")) (2 ("borgne")) ;
+SELECT Masc_strict IF (0 ("Antigone")) (1 ("\\<[IXV]>"r)) ;
+SELECT Fem_strict IF (0 ("Antigone")) ;
+SELECT Fem_strict IF (0 ("Andromaque")) ;
+
+SELECT Masc_strict IF (0 ("Cassandre")) (1* ("Macédoine") OR ("Roxanne") OR ("Alexandre") OR ("Antipater") OR ("Ptolémée") OR ("rei") + Masc OR ("diadoque")) ;
+SELECT Masc_strict IF (0 ("Cassandre")) (-1* ("Macédoine") OR ("Roxanne") OR ("Alexandre") OR ("Antipater") OR ("Ptolémée") OR ("rei") + Masc OR ("diadoque")) ;
+SELECT Fem_strict IF (0 ("Cassandre")) ;
+
+SELECT Ant + Masc_strict IF (0 Ant) (1 DETdef + Sg + Masc) (2 N_AJ + Sg + Masc + MajIni) ;
+SELECT Ant + Fem_strict IF (0 Ant) (1 DETdef + Sg + Fem) (2 N_AJ + Sg + Fem + MajIni) ;
+SELECT Ant + Masc_strict IF (0 Ant) (1 DETdef + Sg + Masc) (2 unknownMajIni) ;
+SELECT Ant + Masc_strict IF (0 Ant) (1 siecles_nom_romains OR ("<Ièr>")) ;              # Constance II
+
+REMOVE Ant IF (-1 ("banca")) (NOT 1 Cog OR Ant) ;
+
+SELECT Top IF (-2C Ant) (-1 ("<de>")) (0C Cog OR Ant OR Top) ;
+SELECT Ant IF (0C Cog OR Ant OR Top) (1 ("<de>")) (2C Top) ;    # Maurice de Saxe
+REMOVE Top IF (0 Cog OR Ant OR Top) (1 unknownMajIni) (NOT -1 ("de")) ;
+SELECT Ant IF (NOT -1 Cog OR Ant) (0C Cog OR Ant) (1 unknownMajIni) ; # Léon Verguet
+REMOVE (cog) IF (0C NP) (0 (cog)) (0 (top)) (NOT 1 (ant) OR (cog)) (-1 BOS); # Orihuela, Vilallonga
+
+SELECT Ant IF (-1 ("dieu") OR ("divessa")) ;
+
+SELECT Ant IF (-1 (";") OR (":")) (1 Ant OR Cog OR unknownMajIni) ;
+
+SELECT Top IF (-2 ("vila") OR ("aeropòrt") OR ("pòrt") OR ("reialme") OR ("principat") OR ("grand-ducat") OR ("ducat") OR ("marquesat") OR ("comtat") OR ("baroniá") OR ("senhoria") OR ("archavescat") OR ("arquevescat") OR ("avescat")) (-1 ("de")) (0 Cog OR Ant) ;
+SELECT Top IF (-2 Dignitat) (-1 ("de")) (0 Top) ;
+
+REMOVE Al IF (-1 Ant OR Cog) (0 Ant OR Cog) ;
+REMOVE Top IF (-1 Ant OR Cog) (0 Ant OR Cog) ;
+REMOVE Al IF (0 Ant OR Cog) (1 Ant OR Cog) ;
+SELECT Top IF (-1 Lpar) (0 Cog) (1 Rpar);
+
+SELECT Top IF (0 ("Euròpa")) (NOT -1 DET) (NOT -1 Ant_Cog) ;
+SELECT Top IF (0 ("Asia")) (NOT -1 DET) (NOT -1 Ant_Cog) ;
+SELECT Top IF (0 ("America")) (NOT -1 DET) (NOT -1 Ant_Cog) ;
+
+
 # DET
 
 REMOVE DET IF (-1C/* DET) ;	# un cèrt estacament
@@ -593,10 +685,10 @@ REMOVE AJ + Pos IF (NOT -1 Ser) (0 AJ + Pos) ;
 
 # N
 
-SELECT N OR PRON IF (-1C PREP) (1 EOS) ;	# ambe fòrça. ; a res.
-SELECT N OR PRON IF (-1C PREP) (1C PREP) (NOT 0 ("tròp")) ;	# discors de fin d'annada
+SELECT N OR PRON OR NP IF (-1C PREP) (1 EOS) ;	# ambe fòrça. ; a res.
+SELECT N OR PRON OR NP IF (-1C PREP) (1C PREP) (NOT 0 ("tròp")) ;	# discors de fin d'annada
 
-SELECT N + &&AcordSN IF (-1C/* DET) (0C N) (-1/* DET + &&AcordSN) ;	# los acès ; deus autobús
+SELECT N + &&AcordSN OR NP + &&AcordSN IF (-1C/* DET) (0C N) (-1/* DET + &&AcordSN) ;	# los acès ; deus autobús
 
 # N / AJ
 
@@ -787,98 +879,6 @@ SELECT Conjco IF (0 Mas) (-1 CM) ;
 
 REMOVE N IF (-1C V) (0 Pel) ;
 REMOVE N IF (0 Pel) (1 unknown) ;
-
-# NP
-
-SELECT NP IF (NOT -1 BOS) ;
-
-SELECT Conjco (-1 BOS) (0 ("Mas")) ;
-
-REMOVE Cog IF (-1 DETdef) (0 Cog) ;
-REMOVE Cog IF (-1 DETind) (0 Cog) ;
-REMOVE Cog IF (-1 En) (0 Cog) ;
-REMOVE Ant IF (-1 DETdef) (0 Ant) ;
-REMOVE Ant IF (-1 DETind) (0 Ant) ;
-REMOVE Ant IF (-1 En) (0 Ant) ;
-
-SELECT NP IF (0 N OR NP) (1 NP) (0 (META:/-/r)) (NOT 0 ("bas") OR ("naut") OR ("haut")) ;   # Pierre-Michel
-SELECT Ant IF (0 Ant) (1C Ant) (0 (META:/-/r)) ;                                # Jean-René
-SELECT Ant IF (-1C Ant) (0 Ant) (-1 (META:/-/r)) ;
-SELECT Cog IF (0 Cog) (1C Cog) (0 (META:/-/r)) ;
-SELECT Cog IF (-1C Cog) (0 Cog) (-1 (META:/-/r)) ;
-SELECT Cog IF (0 Cog OR Ant) (-1C Ant) (NOT 1 Cog) ;
-
-SELECT Ant IF (0 MascSg) (1 (<"Ièr">)) ;
-SELECT AJ IF (-1 Ant OR MajIni OR unknownMajIni) (0 ("<Ièr>")) ;
-SELECT Top IF (-2 Ant) (-1 De) ;                                        # Louis de Lorraine
-SELECT Top IF (-3 Ant) (-2 siecles_nom_romains OR ("<Ièr>")) (-1 De) ;  # Louis II de Lorraine
-SELECT Ant IF (1 De) (2 Top) ;                                          # Michel de Lorraine
-SELECT Ant IF (1 siecles_nom_romains OR ("<Ièr>")) (2 De) (3 Top) ;     # Michel II de Lorraine
-SELECT Top IF (-2 ("vila") OR ("estat") OR ("region") OR ("catedrala") OR ("glèisa") OR ("aeropòrt") OR ("pòrt")) (-1 De) ;
-SELECT Top IF (-2 ("concili") OR ("parlament") OR ("constitucion") OR ("tractat") OR ("declaracion")) (-1 De) ;
-SELECT Top IF (-2 ("universitat")) (-1 De) ;                             # université de Paris VII
-SELECT Ant IF (1 siecles_nom_romains OR ("<Ièr>")) ;                    # Michel II
-SELECT Top IF (1C Top) (0 (META:/-/r)) ;
-SELECT Top IF (-1C Top) (-1 (META:/-/r)) ;
-
-SELECT Ant_Cog IF (0 Cog OR Ant) (1C Cog) ;
-SELECT Ant IF (0C Ant OR Cog) (1 Ant) (0 (META:/-/r)) ;                         # Charles-Michel
-SELECT Cog IF (0C Ant OR Cog) (1 Cog) (0 (META:/-/r)) ;
-SELECT Ant IF (NOT -1 Ant) (0C Ant OR Cog) (1 Cog) (NOT 0 (META:/-/r)) ;        # Albin Michel; Claude Étienne Michel
-SELECT Masc_strict IF (-2 DETdef + MascSg) (-1 N_AJ + MascSg) (0C Ant) ; # l'empereur Claude
-SELECT Fem_strict IF (-2 DETdef + FemSg) (-1 N_AJ + FemSg) (0C Ant) ;    # la belle Claude
-SELECT Masc_strict IF (0 Ant + Masc_strict) (1C Ant + Masc_strict) ;
-SELECT Fem_strict IF (0 Ant + Fem_strict) (1C Ant + Fem_strict) ;
-SELECT Masc_strict IF (-1C Ant + Masc_strict) (0 Ant + Masc_strict) ;
-SELECT Fem_strict IF (-1C Ant + Fem_strict) (0 Ant + Fem_strict) ;
-
-SELECT Ant IF (0 ("René") OR ("Renée") OR ("Marc") OR ("Pierre") OR ("Beau")) (1 Ant OR NP OR unknownMajIni) ;
-SELECT Masc_strict IF (0 ("Camille")) (1 ("Pissarro")) ;
-SELECT Cog IF (-1 ("Édouard")) (0 ("Philippe")) ;
-SELECT Ant IF (0 ("Édouard")) (1 ("Philippe")) ;
-SELECT Ant IF (0 ("Luther")) (1 Cog OR unknownMajIni) ;
-SELECT Cog IF (0 ("Luther")) (NOT 1 Cog OR unknownMajIni) ;
-
-SELECT Fem IF (0 ("Simone")) ;
-
-SELECT Masc_strict IF (0 ("Antigone")) (1 ("le")) (2 ("borgne")) ;
-SELECT Masc_strict IF (0 ("Antigone")) (1 ("\\<[IXV]>"r)) ;
-SELECT Fem_strict IF (0 ("Antigone")) ;
-SELECT Fem_strict IF (0 ("Andromaque")) ;
-
-SELECT Masc_strict IF (0 ("Cassandre")) (1* ("Macédoine") OR ("Roxanne") OR ("Alexandre") OR ("Antipater") OR ("Ptolémée") OR ("rei") + Masc OR ("diadoque")) ;
-SELECT Masc_strict IF (0 ("Cassandre")) (-1* ("Macédoine") OR ("Roxanne") OR ("Alexandre") OR ("Antipater") OR ("Ptolémée") OR ("rei") + Masc OR ("diadoque")) ;
-SELECT Fem_strict IF (0 ("Cassandre")) ;
-
-SELECT Ant + Masc_strict IF (0 Ant) (1 DETdef + Sg + Masc) (2 N_AJ + Sg + Masc + MajIni) ;
-SELECT Ant + Fem_strict IF (0 Ant) (1 DETdef + Sg + Fem) (2 N_AJ + Sg + Fem + MajIni) ;
-SELECT Ant + Masc_strict IF (0 Ant) (1 DETdef + Sg + Masc) (2 unknownMajIni) ;
-SELECT Ant + Masc_strict IF (0 Ant) (1 siecles_nom_romains OR ("<Ièr>")) ;              # Constance II
-
-REMOVE Ant IF (-1 ("banca")) (NOT 1 Cog OR Ant) ;
-
-SELECT Top IF (-2C Ant) (-1 ("<de>")) (0C Cog OR Ant OR Top) ;
-SELECT Ant IF (0C Cog OR Ant OR Top) (1 ("<de>")) (2C Top) ;    # Maurice de Saxe
-REMOVE Top IF (0 Cog OR Ant OR Top) (1 unknownMajIni) (NOT -1 ("de")) ;
-SELECT Ant IF (NOT -1 Cog OR Ant) (0C Cog OR Ant) (1 unknownMajIni) ; # Léon Verguet
-REMOVE (cog) IF (0C NP) (0 (cog)) (0 (top)) (NOT 1 (ant) OR (cog)) (-1 BOS); # Orihuela, Vilallonga
-
-SELECT Ant IF (-1 ("dieu") OR ("divessa")) ;
-
-SELECT Ant IF (-1 (";") OR (":")) (1 Ant OR Cog OR unknownMajIni) ;
-
-SELECT Top IF (-2 ("vila") OR ("aeropòrt") OR ("pòrt") OR ("reialme") OR ("principat") OR ("grand-ducat") OR ("ducat") OR ("marquesat") OR ("comtat") OR ("baroniá") OR ("senhoria") OR ("archavescat") OR ("arquevescat") OR ("avescat")) (-1 ("de")) (0 Cog OR Ant) ;
-SELECT Top IF (-2 Dignitat) (-1 ("de")) (0 Top) ;
-
-REMOVE Al IF (-1 Ant OR Cog) (0 Ant OR Cog) ;
-REMOVE Top IF (-1 Ant OR Cog) (0 Ant OR Cog) ;
-REMOVE Al IF (0 Ant OR Cog) (1 Ant OR Cog) ;
-SELECT Top IF (-1 Lpar) (0 Cog) (1 Rpar);
-
-SELECT Top IF (0 ("Euròpa")) (NOT -1 DET) (NOT -1 Ant_Cog) ;
-SELECT Top IF (0 ("Asia")) (NOT -1 DET) (NOT -1 Ant_Cog) ;
-SELECT Top IF (0 ("America")) (NOT -1 DET) (NOT -1 Ant_Cog) ;
-
 
 #deu -> dever / de +lo
 LIST Deu = "deu" ;
