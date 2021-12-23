@@ -645,6 +645,8 @@ REMOVE DET IF (0 DET) (1 N_AJ OR NP) (NOT 1 NUM OR AV OR PREAV OR Rel) (0 DET + 
 REMOVE SUB:1 DET IF (0/* DET) (1C DET) ;	# en los acès
 SELECT DETind + &&AcordSN IF (0 DETind + &&AcordSN) (1 N + &&AcordSN) ;	# un enfant
 SELECT DETind + &&AcordSN IF (0 DETind + &&AcordSN) (1 AJ + &&AcordSN) (NOT 0 ("força") OR ("horça")) ;	# un jaune
+REMOVE PRON + Pos IF (0 DETpos + &&AcordSN) (1 N + &&AcordSN) ;	# lo son torn
+REMOVE SUB:1 PRON + Pos IF (0/* DETpos + &&AcordSN) (1 N + &&AcordSN) ;	# deu son torn
 SELECT N_AJ + &&AcordSN IF (-1 DETind + &&AcordSN) (0 N_AJ + &&AcordSN) ;
 SELECT DET IF (0 DETind) (1C V) ;
 SELECT DET IF (0 DETind) (1 unknown) ;	# pedaç, especialment quan falta molt vocabulari (endevinem que és un DET i no una forma del V unir)
