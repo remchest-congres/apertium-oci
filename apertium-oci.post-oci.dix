@@ -1209,16 +1209,19 @@
 	 </e>
  </pardef>
  <!-- de davant de eth fa contracció, i no apòstrof	  -->
+
  <pardef n="apostrofadors_de">
 	 <e>
 		 <par n="vocal_general"/>
 	 </e>
+<!--
 	 <e>
 		 <p>
 			 <l><a/>ac<b/></l>
 			 <r>ac<b/></r>
 		 </p>
 	 </e>
+-->
 	 <e>
 		 <p>
 			 <l><a/>enquia<b/><a/></l>
