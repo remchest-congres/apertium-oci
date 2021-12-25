@@ -151,7 +151,7 @@ LIST Pus = "pus" ;
 LIST Res = "res" "arren" "arrens" "ren" ;
 LIST Pel = "pel" "peu" ;
 LIST Deu = "deu" ;
-LIST Que = "que" ;
+LIST Que = "que" ("<que>"i) ;
 LIST Qui = "qui" ;
 LIST Se = "se" ;
 LIST Las = "las" ;
@@ -226,7 +226,11 @@ SELECT N IF (-2 DET + MascSg) (-1 AJ + MascSg) (0 ("<pas>"i)) ;		# un important 
 SELECT AJ + MascSg IF (-1 DET + MascSg) (0 AJ + MascSg) (1 ("<pas>"i)) ;		# un important pas # patch
 SELECT AV IF (-1 V) (0 ("<pas>"i)) ;		# patch
 SELECT V IF (1 ("<pas>"i)) ;		# patch
-SELECT ("d'unes") ;	# patch
+REMOVE ("d'unes") IF (-1C N_AJ) ;
+SELECT ("d'unes") + PRON IF (1C Que OR Rel) ;
+SELECT ("d'unes") IF (-1C BOS OR Que OR Conjadv OR Rel OR PREP) ;	# patch
+SELECT ("d'unes") IF (-1 CM) ;	# patch
+SELECT ("d'unes") IF (-2 BOS OR CM) (-1 PREP) ;	# patch
 SELECT PREAV IF (0 ("<plan>"i)) (1C AJ OR AV) ;		# patch
 REMOVE N IF (-1C V) (0 ("<plan>"i)) ;		# patch
 SELECT PREAV IF (-1 Ser + &&AcordSP) (0 ("<plan>"i)) (1 AJ + &&AcordSP) ;		# patch
@@ -639,6 +643,7 @@ SELECT Top IF (0 ("America")) (NOT -1 DET) (NOT -1 Ant_Cog) ;
 
 # DET
 
+REMOVE ("d'unes") IF (-1C N_AJ) ;	# patch
 REMOVE DET IF (-1C/* DET) ;	# un cèrt estacament
 REMOVE DET IF (0 DET) (NOT 1 N OR AJ OR NP OR NUM OR AV OR PREAV OR Rel OR unknown) ;
 REMOVE DET IF (0 DET) (1 N_AJ OR NP) (NOT 1 NUM OR AV OR PREAV OR Rel) (0 DET + &&AcordSN) (NOT 1 N_AJ + &&AcordSN OR NP + &&AcordSN) ;	# Avèm entrevistat aquesta pendent la Hèsta
