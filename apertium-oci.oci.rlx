@@ -27,6 +27,7 @@ LIST N = n ;
 LIST NP = np ;
 LIST AJ = adj ;
 LIST N_AJ = n adj ;
+LIST AJ_PP = adj pp ;
 LIST DET = det ;
 LIST NUM = num ;
 LIST PREP = pr ;
@@ -44,12 +45,13 @@ LIST SENT = sent ;
 #Jos=categorias
 LIST Tn = tn ;
 LIST VBger = ger ;
+LIST VBinf = inf ;
+LIST VBinfger = inf ger ;
 LIST VBimp = imp ;
 LIST Pro = pro ;
 LIST Ton = tn ;
 LIST Ref = ref ;
 LIST PRencl = enc ;
-LIST VBinf = inf ;
 LIST VBpp = pp ;
 LIST Npl = (n pl);
 LIST AJpl = (adj pl);
@@ -645,6 +647,80 @@ SELECT Top IF (0 ("Asia")) (NOT -1 DET) (NOT -1 Ant_Cog) ;
 SELECT Top IF (0 ("America")) (NOT -1 DET) (NOT -1 Ant_Cog) ;
 
 
+# HAVER
+
+SELECT Haver IF (0 Haver) (1C VBpp) ;	# a cantat
+SELECT Haver IF (0 Haver) (1 Haver + VBpp) ;	# a cantat
+SELECT Haver IF (0 Haver) (1 AV) (2 VBpp) ;	# a pas cantat
+SELECT Haver IF (0 Haver) (1 AV) (2 AV) (3 VBpp) ;	# a pas totjorn cantat
+SELECT Haver IF (-1 Haver) (0 Haver + VBpp) ;	# a agut
+SELECT Haver IF (-2 Haver) (-1 AV) (0 Haver + VBpp) ;	# a pas agut
+SELECT Haver IF (-3 Haver) (-2 AV) (-1 AV) (0 Haver + VBpp) ;	# a pas totjorn agut
+
+# Ser
+
+SELECT Ser IF (0 Ser + &&AcordSP) (1C VBpp + &&AcordSP) ;	# soi estat
+SELECT Ser IF (-1 Pro + P1 + Sg) (0 Ser + P1 + Sg) (1 VBpp + Sg) ;	# me soi banhat
+SELECT Ser IF (-1 Pro + P2 + Sg) (0 Ser + P2 + Sg) (1 VBpp + Sg) ;	# t'ès banhat
+SELECT Ser IF (-1 Pro + P1 + Pl) (0 Ser + P1 + Pl) (1 VBpp + Pl) ;	# nos sèm banhats
+SELECT Ser IF (-1 Pro + P2 + Pl) (0 Ser + P2 + Pl) (1 VBpp + Pl) ;	# vos sètz banhats
+SELECT Ser IF (-1 Pro + P3 + Ref) (0 Ser + P3 + Sg) (1 VBpp + Sg) ;	# s'es banhat
+SELECT Ser IF (-1 Pro + P3 + Ref) (0 Ser + P3 + Pl) (1 VBpp + Pl) ;	# se son banhats
+SELECT Ser IF (0 Ser + &&AcordSP) (1 AV) (2 VBpp + &&AcordSP) ;	# soi pas estat
+SELECT Ser IF (0 Ser + &&AcordSP) (1 AV) (2 AV) (3 VBpp + &&AcordSP) ;	# soi pas totjorn estat
+SELECT Ser IF (-1 Ser + &&AcordSP) (0 Ser + VBpp + &&AcordSP) (1 VBpp + &&AcordSP) ;	# soi estat apelat
+SELECT Ser IF (-2 Ser + &&AcordSP) (-1 AV) (0 Ser + VBpp + &&AcordSP) (1 VBpp + &&AcordSP) ;	# soi pas estat apelat
+SELECT Ser IF (-1 Ser + &&AcordSP) (0 Ser + VBpp + &&AcordSP) (-1 AV) (2 VBpp + &&AcordSP) ;	# soi estat immediatament apelat
+SELECT Ser IF (-2 Ser + &&AcordSP) (-1 AV) (0 Ser + VBpp + &&AcordSP) (1 AV) (2 VBpp + &&AcordSP) ;	# soi pas estat immediatament apelat
+SELECT VBpp IF (-2 Ser + &&AcordSP) (-1 Ser + VBpp + &&AcordSP) (0 VBpp + &&AcordSP) ;	# soi estat apelat
+SELECT VBpp IF (-3 Ser + &&AcordSP) (-2 AV) (-1 Ser + VBpp + &&AcordSP) (0 VBpp + &&AcordSP) ;	# soi pas estat apelat
+SELECT VBpp IF (-3 Ser + &&AcordSP) (-2 Ser + VBpp + &&AcordSP) (-1 AV) (0 VBpp + &&AcordSP) ;	# soi estat immediatament apelat
+SELECT VBpp IF (-4 Ser + &&AcordSP) (-3 AV) (-2 Ser + VBpp + &&AcordSP) (-1 AV) (0 VBpp + &&AcordSP) ;	# soi pas estat immediatament apelat
+
+# VBpp
+
+SELECT VBpp IF (0 AJ) (1 ("par")) ;
+REMOVE Vconj IF (-1C Haver + Vconj) (0 VBpp) ;	# ajan avut
+REMOVE AJ IF (-1C Haver) (0 VBpp) ;	# ai ascotat
+REMOVE Vconj IF (-1C Ser + Vconj + &&AcordSP) (0 VBpp + &&AcordSP) ;
+REMOVE Vconj IF (-2C Haver + Vconj) (-1 AV) (0 VBpp) ;	# ajan pas avut
+REMOVE AJ IF (-2C Haver) (-1 AV) (0 VBpp) ;	# ai pas ascotat
+REMOVE Vconj IF (-2C Ser + Vconj + &&AcordSP) (-1 AV) (0 VBpp + &&AcordSP) ;
+REMOVE Vconj IF (-3C Haver + Vconj) (-2 AV) (-1 AV) (0 VBpp) ;	# ajan pas totjorn avut
+REMOVE AJ IF (-3C Haver) (-2 AV) (-1 AV) (0 VBpp) ;	# ai pas totjorn ascotat
+REMOVE Vconj IF (-3C Ser + Vconj + &&AcordSP) (-2 AV) (-1 AV) (0 VBpp + &&AcordSP) ;
+
+# VBinf
+
+SELECT VBinf IF (0 AJ) (1 ("par")) ;
+SELECT AV IF (-1 Vmod) (0 ("<tornar>"i)) (1 VBinf) ;	# pòdi tornar manjar
+SELECT VBinf IF (-1 Vmod) (0 VBinf) ;	# pòdi manjar
+SELECT Vmod IF (0 Vmod) (1C VBinf) ;	# pòdi manjar
+SELECT VBinf IF (-2 Vmod) (-1 AV OR Pro) (0 VBinf) ;	# pòdi pas manjar
+SELECT Vmod IF (0 Vmod) (1 AV OR Pro) (2C VBinf) ;	# pòdi pas manjar
+SELECT VBinf IF (-3 Vmod) (-2 AV OR Pro) (-1 AV OR Pro) (0 VBinf) ;	# pòdi pas manjar
+SELECT Vmod IF (0 Vmod) (1 AV OR Pro) (2 AV OR Pro) (3C VBinf) ;	# pòdi pas manjar
+
+# VBmod
+
+SELECT Vmod IF (0 ("caler")) (1 Que) ;
+SELECT Vmod IF (0 ("caler")) (1 AV) (2 Que) ;
+SELECT Vmod IF (0 ("caler")) (1 AV) (2 AV) (3 Que) ;
+SELECT Vmod IF (0 ("caler")) (-1/* Pro) ;
+SELECT Vmod IF (0 ("caler")) (-1 Itg) ;
+SELECT Vmod IF (0 ("caler")) (-1 Enon) ;
+SELECT Vmod IF (0 ("caler")) (-1 BOS) ;
+SELECT Vmod IF (0 ("caler")) (-2 BOS) (1 AV) ;
+REMOVE Vmod IF (NOT 1 VBinf OR AV OR Pro OR Que) ;
+REMOVE Vmod IF (1 AV) (NOT 2 VBinf OR AV OR Pro OR Que) ;
+REMOVE Vmod IF (1 AV) (1 AV) (NOT 3 VBinf OR AV OR Pro OR Que) ;
+REMOVE Vmod IF (1 AV) (2 Pro) (NOT 3 VBinf OR Pro) ;
+REMOVE Vmod IF (1 Pro) (NOT 2 VBinf OR Pro) ;
+REMOVE Vmod IF (1 Pro) (2 Pro) (NOT 2 VBinf) ;
+
+#Vb conjugat après enonciatiu
+SELECT Vconj IF (-1C Enon) (NOT 0 Pro) ;
+
 # DET
 
 REMOVE ("d'unes") IF (-1C N_AJ) ;	# patch
@@ -652,6 +728,8 @@ REMOVE DET IF (-1C/* DET) ;	# un cèrt estacament
 REMOVE DET IF (0 DET) (NOT 1 N OR AJ OR NP OR NUM OR AV OR PREAV OR Rel OR unknown) ;
 REMOVE DET IF (0 DET) (1 N_AJ OR NP) (NOT 1 NUM OR AV OR PREAV OR Rel) (0 DET + &&AcordSN) (NOT 1 N_AJ + &&AcordSN OR NP + &&AcordSN) ;	# Avèm entrevistat aquesta pendent la Hèsta
 REMOVE SUB:1 DET IF (0/* DET) (1C DET) ;	# en los acès
+SELECT PREAV IF (0 ("fòrça")) (1C AJ) ;
+SELECT AV IF (0 ("fòrça")) (1C VBpp) ;
 SELECT DETind + &&AcordSN IF (0 DETind + &&AcordSN) (1 N + &&AcordSN) ;	# un enfant
 SELECT DETind + &&AcordSN IF (0 DETind + &&AcordSN) (1 AJ + &&AcordSN) (NOT 0 ("força") OR ("horça")) ;	# un jaune
 REMOVE PRON + Pos IF (0 DETpos + &&AcordSN) (1 N + &&AcordSN) ;	# lo son torn
@@ -679,13 +757,24 @@ REMOVE NUM IF (NOT -1 ("numéro")) (0 Un);
 
 # PREAV
 
-REMOVE PREAV IF (NOT 1 AJ OR AV) ;
-SELECT PREAV IF (0 ("fòrça")) (1C AJ) ;
-REMOVE AV IF (0 PREAV) (0 AV) (1C AJ OR AV) ;
+REMOVE PREAV IF (NOT 1 AJ OR AV OR VBpp) ;
+SELECT AV IF (-1 Ser + &&AcordSP) (0 ("plan")) (1 VBpp + &&AcordSP) ;
+SELECT AV IF (-2 Ser + &&AcordSP) (-1 AV) (0 ("plan")) (1 VBpp + &&AcordSP) ;
+SELECT AV IF (-1 Ser + VBinfger) (0 ("plan")) (1 VBpp) ;
+SELECT AV IF (-2 Ser + VBinfger) (-1 AV) (0 ("plan")) (1 VBpp) ;
+SELECT AV IF (-1 Ser + &&AcordSP) (0 ("plan")) (1 VBpp + &&AcordSP) ;
+SELECT AV IF (-2 Ser + &&AcordSP) (-1 AV) (0 ("plan")) (1 VBpp + &&AcordSP) ;
+SELECT AV IF (-1C Haver) (0 PREAV) (1 VBpp) ;	# ai plan ascotat
+SELECT AV IF (-2C Haver) (-1 AV) (0 PREAV) (1 VBpp) ;	# ai pas plan ascotat
+REMOVE AV IF (0 PREAV) (0 AV) (1C AJ OR AV OR VBpp) ;
 REMOVE PREAV IF (0 PREAV) (0 AV) (1C V) ;
-REMOVE PREAV IF (0 PREAV) (0 AV) (NOT 1 AJ OR AV) ;
-SELECT PREAV IF (-1 N + &&AcordSN) (NOT -1 Vconj) (0 AV) (1 AJ + &&AcordSN) ;
-SELECT PREAV IF (-1 AJ + &&AcordSN) (NOT -1 Vconj) (0 AV) (1 AJ + &&AcordSN) ;
+REMOVE PREAV IF (0 PREAV) (0 AV) (NOT 1 AJ OR AV OR VBpp) ;
+SELECT PREAV IF (-1 N + &&AcordSN) (NOT -1 Vconj) (0 AV) (1 AJ_PP + &&AcordSN) ;
+SELECT PREAV IF (-1 AJ + &&AcordSN) (NOT -1 Vconj) (0 AV) (1 AJ_PP + &&AcordSN) ;
+SELECT PREAV IF (-1 Ser + &&AcordSP) (0 AV) (1 VBpp + &&AcordSP) ;
+SELECT PREAV IF (-2 Ser + &&AcordSP) (-1 AV) (0 AV) (1 VBpp + &&AcordSP) ;
+SELECT PREAV IF (-1 Ser + VBinfger) (0 AV) (1 VBpp) ;
+SELECT PREAV IF (-2 Ser + VBinfger) (-1 AV) (0 AV) (1 VBpp) ;
 
 # ADJ
 REMOVE AJ IF (-1 ("en")) (NOT 1 Conjco OR N) ;
@@ -743,77 +832,6 @@ REMOVE V + Pers IF (-1C V + Pers) ;	# voletz ve pariar
 REMOVE V + Pers IF (1C V + Pers) ;	# voletz ve pariar
 
 REMOVE VBpp IF (-1C DET + &&AcordSN OR Pro) (0 N + &&AcordSN) ;		# lo resultat
-
-# HAVER
-
-SELECT Haver IF (0 Haver) (1C VBpp) ;	# a cantat
-SELECT Haver IF (0 Haver) (1 Haver + VBpp) ;	# a cantat
-SELECT Haver IF (0 Haver) (1 AV) (2 VBpp) ;	# a pas cantat
-SELECT Haver IF (0 Haver) (1 AV) (2 AV) (3 VBpp) ;	# a pas totjorn cantat
-SELECT Haver IF (-1 Haver) (0 Haver + VBpp) ;	# a agut
-SELECT Haver IF (-2 Haver) (-1 AV) (0 Haver + VBpp) ;	# a pas agut
-SELECT Haver IF (-3 Haver) (-2 AV) (-1 AV) (0 Haver + VBpp) ;	# a pas totjorn agut
-
-# Ser
-
-SELECT Ser IF (0 Ser + &&AcordSP) (1C VBpp + &&AcordSP) ;	# soi estat
-SELECT Ser IF (-1 Pro + P1 + Sg) (0 Ser + P1 + Sg) (1 VBpp + Sg) ;	# me soi banhat
-SELECT Ser IF (-1 Pro + P2 + Sg) (0 Ser + P2 + Sg) (1 VBpp + Sg) ;	# t'ès banhat
-SELECT Ser IF (-1 Pro + P1 + Pl) (0 Ser + P1 + Pl) (1 VBpp + Pl) ;	# nos sèm banhats
-SELECT Ser IF (-1 Pro + P2 + Pl) (0 Ser + P2 + Pl) (1 VBpp + Pl) ;	# vos sètz banhats
-SELECT Ser IF (-1 Pro + P3 + Ref) (0 Ser + P3 + Sg) (1 VBpp + Sg) ;	# s'es banhat
-SELECT Ser IF (-1 Pro + P3 + Ref) (0 Ser + P3 + Pl) (1 VBpp + Pl) ;	# se son banhats
-SELECT Ser IF (0 Ser + &&AcordSP) (1 AV) (2 VBpp + &&AcordSP) ;	# soi pas estat
-SELECT Ser IF (0 Ser + &&AcordSP) (1 AV) (2 AV) (3 VBpp + &&AcordSP) ;	# soi pas totjorn estat
-SELECT Ser IF (-1 Ser + &&AcordSP) (0 Ser + VBpp + &&AcordSP) (1 VBpp + &&AcordSP) ;	# soi estat apelat
-SELECT Ser IF (-2 Ser + &&AcordSP) (-1 AV) (0 Ser + VBpp + &&AcordSP) (1 VBpp + &&AcordSP) ;	# soi pas estat apelat
-SELECT Ser IF (-1 Ser + &&AcordSP) (0 Ser + VBpp + &&AcordSP) (-1 AV) (2 VBpp + &&AcordSP) ;	# soi estat immediatament apelat
-SELECT Ser IF (-2 Ser + &&AcordSP) (-1 AV) (0 Ser + VBpp + &&AcordSP) (1 AV) (2 VBpp + &&AcordSP) ;	# soi pas estat immediatament apelat
-SELECT VBpp IF (-2 Ser + &&AcordSP) (-1 Ser + VBpp + &&AcordSP) (0 VBpp + &&AcordSP) ;	# soi estat apelat
-SELECT VBpp IF (-3 Ser + &&AcordSP) (-2 AV) (-1 Ser + VBpp + &&AcordSP) (0 VBpp + &&AcordSP) ;	# soi pas estat apelat
-SELECT VBpp IF (-3 Ser + &&AcordSP) (-2 Ser + VBpp + &&AcordSP) (-1 AV) (0 VBpp + &&AcordSP) ;	# soi estat immediatament apelat
-SELECT VBpp IF (-4 Ser + &&AcordSP) (-3 AV) (-2 Ser + VBpp + &&AcordSP) (-1 AV) (0 VBpp + &&AcordSP) ;	# soi pas estat immediatament apelat
-
-# VBpp
-
-SELECT VBpp IF (0 AJ) (1 ("par")) ;
-REMOVE Vconj IF (-1C Haver + Vconj) (0 VBpp) ;	# ajan avut
-REMOVE Vconj IF (-1C Ser + Vconj + &&AcordSP) (0 VBpp + &&AcordSP) ;
-REMOVE Vconj IF (-2C Haver + Vconj) (-1 AV) (0 VBpp) ;	# ajan pas avut
-REMOVE Vconj IF (-2C Ser + Vconj + &&AcordSP) (-1 AV) (0 VBpp + &&AcordSP) ;
-REMOVE Vconj IF (-3C Haver + Vconj) (-2 AV) (-1 AV) (0 VBpp) ;	# ajan pas totjorn avut
-REMOVE Vconj IF (-3C Ser + Vconj + &&AcordSP) (-2 AV) (-1 AV) (0 VBpp + &&AcordSP) ;
-
-# VBinf
-
-SELECT VBinf IF (0 AJ) (1 ("par")) ;
-SELECT AV IF (-1 Vmod) (0 ("<tornar>"i)) (1 VBinf) ;	# pòdi tornar manjar
-SELECT VBinf IF (-1 Vmod) (0 VBinf) ;	# pòdi manjar
-SELECT Vmod IF (0 Vmod) (1C VBinf) ;	# pòdi manjar
-SELECT VBinf IF (-2 Vmod) (-1 AV OR Pro) (0 VBinf) ;	# pòdi pas manjar
-SELECT Vmod IF (0 Vmod) (1 AV OR Pro) (2C VBinf) ;	# pòdi pas manjar
-SELECT VBinf IF (-3 Vmod) (-2 AV OR Pro) (-1 AV OR Pro) (0 VBinf) ;	# pòdi pas manjar
-SELECT Vmod IF (0 Vmod) (1 AV OR Pro) (2 AV OR Pro) (3C VBinf) ;	# pòdi pas manjar
-
-# VBmod
-
-SELECT Vmod IF (0 ("caler")) (1 Que) ;
-SELECT Vmod IF (0 ("caler")) (1 AV) (2 Que) ;
-SELECT Vmod IF (0 ("caler")) (1 AV) (2 AV) (3 Que) ;
-SELECT Vmod IF (0 ("caler")) (-1/* Pro) ;
-SELECT Vmod IF (0 ("caler")) (-1 Itg) ;
-SELECT Vmod IF (0 ("caler")) (-1 Enon) ;
-SELECT Vmod IF (0 ("caler")) (-1 BOS) ;
-SELECT Vmod IF (0 ("caler")) (-2 BOS) (1 AV) ;
-REMOVE Vmod IF (NOT 1 VBinf OR AV OR Pro OR Que) ;
-REMOVE Vmod IF (1 AV) (NOT 2 VBinf OR AV OR Pro OR Que) ;
-REMOVE Vmod IF (1 AV) (1 AV) (NOT 3 VBinf OR AV OR Pro OR Que) ;
-REMOVE Vmod IF (1 AV) (2 Pro) (NOT 3 VBinf OR Pro) ;
-REMOVE Vmod IF (1 Pro) (NOT 2 VBinf OR Pro) ;
-REMOVE Vmod IF (1 Pro) (2 Pro) (NOT 2 VBinf) ;
-
-#Vb conjugat après enonciatiu
-SELECT Vconj IF (-1C Enon) (NOT 0 Pro) ;
 
 # MOTS
 
