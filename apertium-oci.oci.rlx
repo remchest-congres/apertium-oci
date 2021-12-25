@@ -841,7 +841,7 @@ SELECT Ser IF (-2 Ser) (-1 AV) (0 ("estat"));	# soi pas estat
 SELECT Ser IF (-3 Ser) (-2 AV) (-1 AV) (0 ("estat"));	# soi pas totjorn estat
 
 REMOVE Pro IF (NOT 1 V OR Pro OR unknown) ;
-REMOVE DET IF (0 Tn) (NOT 1 N OR AJ OR unknown) ;
+REMOVE DET IF (0 Tn) (NOT 1 N OR NP OR AJ OR unknown) ;
 
 REMOVE PRON IF (0 Se) (NOT 1 Pro OR V + P3 OR V + VBinf OR V + VBger) ;        # se canti
 REMOVE PRON IF (0 Se) (1 Pro) (NOT 2 Pro OR V + P3 OR V + VBinf OR V + VBger) ;	# se li canti
