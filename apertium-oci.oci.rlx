@@ -630,6 +630,10 @@ SELECT Ant IF (-1 (";") OR (":")) (1 Ant OR Cog OR unknownMajIni) ;
 
 SELECT Top IF (-2 ("vila") OR ("aeropòrt") OR ("pòrt") OR ("reialme") OR ("principat") OR ("grand-ducat") OR ("ducat") OR ("marquesat") OR ("comtat") OR ("baroniá") OR ("senhoria") OR ("archavescat") OR ("arquevescat") OR ("avescat")) (-1 ("de")) (0 Cog OR Ant) ;
 SELECT Top IF (-2 Dignitat) (-1 ("de")) (0 Top) ;
+SELECT Top IF (-2 ("anar") OR ("viatjar") OR ("arribar") OR ("partir")) (-1 ("a") OR ("de") OR ("cap a") OR ("devèrs") OR ("entà") OR ("tà")) ;
+SELECT Top + FemSg IF (-2 ("anar") OR ("viatjar") OR ("arribar") OR ("partir")) (-1 ("en")) ;
+SELECT Top IF (-3 ("anar") OR ("viatjar") OR ("arribar") OR ("partir")) (-2 ("a") OR ("de") OR ("cap a") OR ("devèrs") OR ("entà") OR ("tà")) (-1 DET + &&AcordSN) (0 Top + &&AcordSN) ;
+ 
 
 REMOVE Al IF (-1 Ant OR Cog) (0 Ant OR Cog) ;
 REMOVE Top IF (-1 Ant OR Cog) (0 Ant OR Cog) ;
