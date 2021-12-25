@@ -204,6 +204,9 @@ REMOVE N IF (0 ("<la>"i)) ;		# patch
 REMOVE N IF (0 ("<las>"i)) ;		# patch
 REMOVE N IF (0 ("<si>"i)) ;		# patch
 REMOVE N + ("tau") IF (0 ("tau")) ;		# patch
+SELECT PREP IF (-1 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sortir") OR ("gésser")) (0 ("tau")) ;
+SELECT PREP IF (-2 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sortir") OR ("gésser")) (-1 AV) (0 ("tau")) ;
+SELECT PREP IF (-3 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sortir") OR ("gésser")) (-2 AV) (-1 AV) (0 ("tau")) ;
 REMOVE SUB:1 DET IF (0 ("<en>"i)) ;		# patch
 REMOVE ("taus") IF (-2 DET + MascPl) (-1 N + MascPl) (0 ("taus")) (1 ("com")) ;		# los fèits taus com s’èran passats
 REMOVE N IF (NOT -1 DET + MascSg) (0 ("<com>"i)) ;		# patch
@@ -632,9 +635,12 @@ SELECT Ant IF (-1 (";") OR (":")) (1 Ant OR Cog OR unknownMajIni) ;
 
 SELECT Top IF (-2 ("vila") OR ("aeropòrt") OR ("pòrt") OR ("reialme") OR ("principat") OR ("grand-ducat") OR ("ducat") OR ("marquesat") OR ("comtat") OR ("baroniá") OR ("senhoria") OR ("archavescat") OR ("arquevescat") OR ("avescat")) (-1 ("de")) (0 Cog OR Ant) ;
 SELECT Top IF (-2 Dignitat) (-1 ("de")) (0 Top) ;
-SELECT Top IF (-2 ("anar") OR ("viatjar") OR ("arribar") OR ("partir")) (-1 ("a") OR ("de") OR ("cap a") OR ("devèrs") OR ("entà") OR ("tà")) ;
+SELECT Top IF (-2 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sortir") OR ("gésser")) (-1 ("a") OR ("de") OR ("cap a") OR ("devèrs") OR ("entà") OR ("tà")) ;
 SELECT Top + FemSg IF (-2 ("anar") OR ("viatjar") OR ("arribar") OR ("partir")) (-1 ("en")) ;
-SELECT Top IF (-3 ("anar") OR ("viatjar") OR ("arribar") OR ("partir")) (-2 ("a") OR ("de") OR ("cap a") OR ("devèrs") OR ("entà") OR ("tà")) (-1 DET + &&AcordSN) (0 Top + &&AcordSN) ;
+SELECT Top IF (-3 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sortir") OR ("gésser")) (-2 ("a") OR ("de") OR ("cap a") OR ("devèrs") OR ("entà") OR ("tà")) (-1 DET + &&AcordSN) (0 Top + &&AcordSN) ;
+SELECT Top IF (-3 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sortir") OR ("gésser")) (-2 AV) (-1 ("a") OR ("de") OR ("cap a") OR ("devèrs") OR ("entà") OR ("tà")) ;
+SELECT Top + FemSg IF (-3 ("anar") OR ("viatjar") OR ("arribar") OR ("partir")) (-2 AV) (-1 ("en")) ;
+SELECT Top IF (-4 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sortir") OR ("gésser")) (-3 AV) (-2 ("a") OR ("de") OR ("cap a") OR ("devèrs") OR ("entà") OR ("tà")) (-1 DET + &&AcordSN) (0 Top + &&AcordSN) ;
  
 
 REMOVE Al IF (-1 Ant OR Cog) (0 Ant OR Cog) ;
