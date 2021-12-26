@@ -376,6 +376,7 @@ REMOVE Conjsub IF (-3 N) (-2 AV OR PREAV) (-1 AJ) (0 Que) ;
 REMOVE AVG IF (NOT -1 ("pas") OR ("solament")) (0 Que) ;
 
 SELECT DET + &&AcordSN IF (0 ("un") + &&AcordSN) (1 N_AJ + &&AcordSN) ;	# guess (cal pels enonciatius)
+SELECT DET + &&AcordSN IF (NOT -1 PREP) (0 ("un") + &&AcordSN) (1 Top + &&AcordSN) ;	# guess (cal pels enonciatius)
 REMOVE V IF (0 ("un")) (1 Que OR Qui) ;
 
 SELECT ("be") + Enon IF (-1 BOS) ;
