@@ -202,6 +202,7 @@ REMOVE N IF (0 ("<o>"i)) ;		# patch
 REMOVE N IF (NOT -1 DET) (0 ("<res>"i)) ;		# patch
 REMOVE N IF (0 ("<la>"i)) ;		# patch
 REMOVE N IF (0 ("<las>"i)) ;		# patch
+REMOVE N IF (0 ("una")) ;		# patch
 REMOVE N IF (0 ("<si>"i)) ;		# patch
 REMOVE N + ("tau") IF (0 ("tau")) ;		# patch
 SELECT PREP IF (-1 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sortir") OR ("gésser")) (0 ("tau")) ;
