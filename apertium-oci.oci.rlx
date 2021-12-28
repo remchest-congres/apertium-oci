@@ -732,9 +732,11 @@ SELECT Vconj IF (-1C Enon) (NOT 0 Pro) ;
 # DET
 
 REMOVE ("d'unes") IF (-1C N_AJ) ;	# patch
+SELECT DET + &&AcordSN IF (1 ("un") + &&AcordSN) (2 Conjco) (3 DET) (4 ("altre") OR ("aute")) ;
+SELECT Tn + &&AcordSN IF (-1C DET + &&AcordSN) (0 ("un") + &&AcordSN) ;
 REMOVE DET IF (-1C/* DET) ;	# un cèrt estacament
-REMOVE DET IF (0 DET) (NOT 1 N OR AJ OR NP OR NUM OR AV OR PREAV OR Rel OR unknown) ;
-REMOVE DET IF (0 DET) (1 N_AJ OR NP) (NOT 1 NUM OR AV OR PREAV OR Rel) (0 DET + &&AcordSN) (NOT 1 N_AJ + &&AcordSN OR NP + &&AcordSN) ;	# Avèm entrevistat aquesta pendent la Hèsta
+REMOVE DET IF (0 DET) (NOT 1 N OR AJ OR Tn OR NP OR NUM OR AV OR PREAV OR Rel OR unknown) ;
+REMOVE DET IF (0 DET) (1 N_AJ OR NP OR Tn) (NOT 1 NUM OR AV OR PREAV OR Rel) (0 DET + &&AcordSN) (NOT 1 N_AJ + &&AcordSN OR NP + &&AcordSN OR Tn + &&AcordSN) ;	# Avèm entrevistat aquesta pendent la Hèsta
 REMOVE SUB:1 DET IF (0/* DET) (1C DET) ;	# en los acès
 SELECT PREAV IF (0 ("fòrça")) (1C AJ) ;
 SELECT AV IF (0 ("fòrça")) (1C VBpp) ;
