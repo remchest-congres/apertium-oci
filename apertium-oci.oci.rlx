@@ -4,6 +4,7 @@
 #	- an: vbhaver o nom
 #	- se: prn.pro.ref o cnjadv
 #	- es: det (aran) o vbser
+#	- que: enon, rel, cnjsub
 
 DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>" "<:>";
 SOFT-DELIMITERS = "<,>" "<;>";
@@ -36,7 +37,7 @@ LIST PERS = pers ;
 LIST AV = adv ;
 LIST AVexcl = (adv excl) ;
 LIST PREAV = preadv ;
-LIST PRONPers = (prn p1) (prn p2) (prn p3); 
+LIST PRONPers = (prn p1) (prn p2) (prn p3);
 LIST IJ = ij ;
 LIST PREDET = predet ;
 LIST Pos = pos ;
@@ -169,7 +170,7 @@ List Nummois = "1" "1èr" "1ièr" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12"
 
 # adjectifs qui souvent vont devant le nom
 #SET AdjPre = ("ancien") OR ("vieil") OR ("nouveau") OR ("grand") OR ("petit") OR ("majeur") OR ("bon") OR ("mal") OR ("mauvais") OR ("pauvre") OR      ("haut") OR ("bas") OR ("seul") OR ("célèbre") OR ("vrai") OR ("faux") OR ("beau") OR ("sale") OR ("large") OR ("long") OR ("saint") OR ("sacré") OR ("faible") OR ("multiple") OR ("cher") OR ("gros") ;
-SET AdjPre = ("ancian") OR ("nòu") OR ("nau") OR ("novèl") OR ("navèth") OR ("grand") OR ("petit") OR ("pichon") OR ("pichòt") OR ("bon") OR ("mal") OR ("naut") OR ("haut") OR ("bas") OR ("baish") OR ("autre") OR ("aute") ;
+SET AdjPre = ("ancian") OR ("nòu") OR ("nau") OR ("novèl") OR ("navèth") OR ("grand") OR ("gran") OR ("petit") OR ("pichon") OR ("pichòt") OR ("bon") OR ("mal") OR ("naut") OR ("haut") OR ("bas") OR ("baish") OR ("autre") OR ("aute") ;
 
 
 LIST unknown = ("\\*.*"r) ;
@@ -247,9 +248,9 @@ REMOVE N IF (-1C PREP) (0 ("<veire>"i)) ;		# patch
 SELECT PREP IF (-1 N OR AJ) (0 ("<de mai>"i)) ;		# patch
 REMOVE N IF (NOT -1 ("mes") OR ("jorn") OR ("jornada") OR ("fèsta") OR ("hèsta")) (0 ("<de mai>"i)) ;		# patch
 REMOVE N IF (NOT -1 DET + FemSg) (0 ("<èra>"i)) ;		# patch
-REMOVE ("sèir") IF (0 ("èsser")) ;	# patch 
-REMOVE ("poirir") IF (0 ("poder")) ;	# patch 
-REMOVE ("sabar") IF (0 ("saber")) ;	# patch 
+REMOVE ("sèir") IF (0 ("èsser")) ;	# patch
+REMOVE ("poirir") IF (0 ("poder")) ;	# patch
+REMOVE ("sabar") IF (0 ("saber")) ;	# patch
 SELECT PREAV IF (0 ("tant")) (1 AJ OR AV) (2 ("coma")) ;
 SELECT AJ OR AV IF (-1 ("tant")) (0 AJ OR AV) (1 ("coma")) ;
 SELECT Conjadv IF (-2 ("tant")) (-1 AJ OR AV) (0 ("coma")) ;
@@ -643,7 +644,7 @@ SELECT Top IF (-3 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sort
 SELECT Top IF (-3 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sortir") OR ("gésser")) (-2 AV) (-1 ("a") OR ("de") OR ("cap a") OR ("devèrs") OR ("entà") OR ("tà")) ;
 SELECT Top + FemSg IF (-3 ("anar") OR ("viatjar") OR ("arribar") OR ("partir")) (-2 AV) (-1 ("en")) ;
 SELECT Top IF (-4 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sortir") OR ("gésser")) (-3 AV) (-2 ("a") OR ("de") OR ("cap a") OR ("devèrs") OR ("entà") OR ("tà")) (-1 DET + &&AcordSN) (0 Top + &&AcordSN) ;
- 
+
 
 REMOVE Al IF (-1 Ant OR Cog) (0 Ant OR Cog) ;
 REMOVE Top IF (-1 Ant OR Cog) (0 Ant OR Cog) ;
@@ -762,8 +763,8 @@ SELECT SUB:1 Masc IF (0/* ("lo")) (1 Pro) (2 ("díser") OR ("har")) ;	# que'u te
 
 # NUM
 
-SELECT NUM IF (-1 ("numéro")) (0 Un); 
-REMOVE NUM IF (NOT -1 ("numéro")) (0 Un); 
+SELECT NUM IF (-1 ("numéro")) (0 Un);
+REMOVE NUM IF (NOT -1 ("numéro")) (0 Un);
 
 # PREAV
 
@@ -779,12 +780,12 @@ SELECT AV IF (-2C Haver) (-1 AV) (0 PREAV) (1 VBpp) ;	# ai pas plan ascotat
 REMOVE AV IF (0 PREAV) (0 AV) (1C AJ OR AV OR VBpp) ;
 REMOVE PREAV IF (0 PREAV) (0 AV) (1C V) ;
 REMOVE PREAV IF (0 PREAV) (0 AV) (NOT 1 AJ OR AV OR VBpp) ;
-SELECT PREAV IF (-1 N + &&AcordSN) (NOT -1 Vconj) (0 AV) (1 AJ_PP + &&AcordSN) ;
-SELECT PREAV IF (-1 AJ + &&AcordSN) (NOT -1 Vconj) (0 AV) (1 AJ_PP + &&AcordSN) ;
-SELECT PREAV IF (-1 Ser + &&AcordSP) (0 AV) (1 VBpp + &&AcordSP) ;
-SELECT PREAV IF (-2 Ser + &&AcordSP) (-1 AV) (0 AV) (1 VBpp + &&AcordSP) ;
-SELECT PREAV IF (-1 Ser + VBinfger) (0 AV) (1 VBpp) ;
-SELECT PREAV IF (-2 Ser + VBinfger) (-1 AV) (0 AV) (1 VBpp) ;
+SELECT PREAV IF (-1 N + &&AcordSN) (NOT -1 Vconj) (0 AV OR ("mal")) (1 AJ_PP + &&AcordSN) ;
+SELECT PREAV IF (-1 AJ + &&AcordSN) (NOT -1 Vconj) (0 AV OR ("mal")) (1 AJ_PP + &&AcordSN) ;
+SELECT PREAV IF (-1 Ser + &&AcordSP) (0 AV OR ("mal")) (1 VBpp + &&AcordSP) ;
+SELECT PREAV IF (-2 Ser + &&AcordSP) (-1 AV) (0 AV OR ("mal")) (1 VBpp + &&AcordSP) ;
+SELECT PREAV IF (-1 Ser + VBinfger OR ("mal")) (0 AV) (1 VBpp) ;
+SELECT PREAV IF (-2 Ser + VBinfger) (-1 AV) (0 AV OR ("mal")) (1 VBpp) ;
 
 # ADJ
 REMOVE AJ IF (-1 ("en")) (NOT 1 Conjco OR N) ;
@@ -812,15 +813,31 @@ SELECT AJ + &&AcordSN IF (-1 DET + &&AcordSN) (0 AdjPre + &&AcordSN) (1 N + &&Ac
 SELECT AJ + &&AcordSN IF (-1/* DET + &&AcordSN) (0 AdjPre + &&AcordSN) (1 N + &&AcordSN) (NOT 0 ("nau")) ;
 SELECT AJ + &&AcordSN IF (-1 De) (0 AdjPre + &&AcordSN) (1 N + &&AcordSN) (NOT 0 ("nau")) ;
 
-SELECT NP + &&AcordSN IF (-1 DET + &&AcordSN) (0 NP + &&AcordSN) (1 AJ + &&AcordSN) ; 
-SELECT NP + &&AcordSN IF (-1/* DET + &&AcordSN) (0 NP + &&AcordSN) (1 AJ + &&AcordSN) ; 
-SELECT N + &&AcordSN IF (-1 DET + &&AcordSN) (0 N + &&AcordSN) (1 AJ + &&AcordSN) ; 
-SELECT N + &&AcordSN IF (-1/* DET + &&AcordSN) (0 N + &&AcordSN) (1 AJ + &&AcordSN) ; 
+SELECT NP + &&AcordSN IF (-1 DET + &&AcordSN) (0 NP + &&AcordSN) (1 AJ + &&AcordSN) ;
+SELECT NP + &&AcordSN IF (-1/* DET + &&AcordSN) (0 NP + &&AcordSN) (1 AJ + &&AcordSN) ;
+SELECT N + &&AcordSN IF (-1 DET + &&AcordSN) (0 N + &&AcordSN) (1 AJ + &&AcordSN) ;
+SELECT N + &&AcordSN IF (-1/* DET + &&AcordSN) (0 N + &&AcordSN) (1 AJ + &&AcordSN) ;
+SELECT N + &&AcordSN IF (-1 NUM + &&AcordSN) (0 N + &&AcordSN) (1 AJ + &&AcordSN) ;
 
-SELECT NP + &&AcordSN IF (-2 DET + &&AcordSN) (-1C AJ) (-1 AJ + &&AcordSN) (0 NP + &&AcordSN) ; 
-SELECT N + &&AcordSN IF (-2 DET + &&AcordSN) (-1C AJ) (-1 AJ + &&AcordSN) (0 N + &&AcordSN) ; 
-SELECT N + &&AcordSN IF (-2 DET + &&AcordSN) (-1C NUM) (-1 NUM + &&AcordSN) (0 N + &&AcordSN) ; 
-SELECT N + &&AcordSN IF (-2 DET + &&AcordSN) (-1C NUM) (0 N + &&AcordSN) ; 
+SELECT NP + &&AcordSN IF (-2 DET + &&AcordSN) (-1C AJ) (-1 AJ + &&AcordSN) (0 NP + &&AcordSN) ;
+SELECT N + &&AcordSN IF (-2 DET + &&AcordSN) (-1C AJ) (-1 AJ + &&AcordSN) (0 N + &&AcordSN) ;
+SELECT N + &&AcordSN IF (-2 DET + &&AcordSN) (-1C NUM) (-1 NUM + &&AcordSN) (0 N + &&AcordSN) ;
+SELECT N + &&AcordSN IF (-2 DET + &&AcordSN) (-1C NUM) (0 N + &&AcordSN) ;
+
+SELECT AJ + &&AcordSN IF (-2 DET + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) ;
+SELECT AJ + &&AcordSN IF (-2/* DET + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) ;
+SELECT AJ + &&AcordSN IF (-2 NUM + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) ;
+
+SELECT AJ + &&AcordSN IF (-2C N + &&AcordSN) (-1 AJ + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) ;
+SELECT AJ + &&AcordSN IF (-2C N + &&AcordSN) (-1 AJ + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) ;
+SELECT AJ + &&AcordSN IF (-2C N + &&AcordSN) (-1 AJ + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) ;
+SELECT AJ + &&AcordSN IF (-3 DET + &&AcordSN) (-2 AJ + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) ;
+SELECT AJ + &&AcordSN IF (-3/* DET + &&AcordSN) (-2 AJ + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) ;
+SELECT AJ + &&AcordSN IF (-3 NUM + &&AcordSN) (-2 AJ + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) ;
+
+SELECT AJ + &&AcordSN IF (-3C N + &&AcordSN) (-2 AJ + &&AcordSN) (-1 AJ + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) ;
+SELECT AJ + &&AcordSN IF (-3C N + &&AcordSN) (-2 AJ + &&AcordSN) (-1 AJ + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) ;
+SELECT AJ + &&AcordSN IF (-3C N + &&AcordSN) (-2 AJ + &&AcordSN) (-1 AJ + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) ;
 
 # distincio entre MascPl i FemPl (típicament en terminacions en -es)
 #SELECT MascPl IF (-1C MascPl) (0 N + MascPl) (NOT 0 ("pel")) ;	# Pb: cap de las 200 comunas
