@@ -137,6 +137,7 @@ LIST En = "en";
 LIST De = "de";
 LIST En_pron = ("en" prn);
 LIST Dins = "dins";
+LIST Pendent = "pendent";
 LIST Un = "un" ;
 LIST An = "an" ;
 LIST Eth = "<eth>i" ;
@@ -203,6 +204,7 @@ REMOVE N IF (0 ("<o>"i)) ;		# patch
 REMOVE N IF (NOT -1 DET) (0 ("<res>"i)) ;		# patch
 REMOVE N IF (0 ("<la>"i)) ;		# patch
 REMOVE N IF (0 ("<las>"i)) ;		# patch
+SELECT DET IF (0 ("<las>"i)) (1C N_AJ + FemPl) ;		# patch
 REMOVE N IF (0 ("una")) ;		# patch
 REMOVE N IF (0 ("<si>"i)) ;		# patch
 REMOVE N + ("tau") IF (0 ("tau")) ;		# patch
@@ -824,20 +826,20 @@ SELECT N + &&AcordSN IF (-2 DET + &&AcordSN) (-1C AJ) (-1 AJ + &&AcordSN) (0 N +
 SELECT N + &&AcordSN IF (-2 DET + &&AcordSN) (-1C NUM) (-1 NUM + &&AcordSN) (0 N + &&AcordSN) ;
 SELECT N + &&AcordSN IF (-2 DET + &&AcordSN) (-1C NUM) (0 N + &&AcordSN) ;
 
-SELECT AJ + &&AcordSN IF (-2 DET + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) ;
-SELECT AJ + &&AcordSN IF (-2/* DET + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) ;
-SELECT AJ + &&AcordSN IF (-2 NUM + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) ;
+SELECT AJ + &&AcordSN IF (-2 DET + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
+SELECT AJ + &&AcordSN IF (-2/* DET + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
+SELECT AJ + &&AcordSN IF (-2 NUM + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
 
-SELECT AJ + &&AcordSN IF (-2C N + &&AcordSN) (-1 AJ + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) ;
-SELECT AJ + &&AcordSN IF (-2C N + &&AcordSN) (-1 AJ + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) ;
-SELECT AJ + &&AcordSN IF (-2C N + &&AcordSN) (-1 AJ + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) ;
-SELECT AJ + &&AcordSN IF (-3 DET + &&AcordSN) (-2 AJ + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) ;
-SELECT AJ + &&AcordSN IF (-3/* DET + &&AcordSN) (-2 AJ + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) ;
-SELECT AJ + &&AcordSN IF (-3 NUM + &&AcordSN) (-2 AJ + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) ;
+SELECT AJ + &&AcordSN IF (-2C N + &&AcordSN) (-1 AJ + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
+SELECT AJ + &&AcordSN IF (-2C N + &&AcordSN) (-1 AJ + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
+SELECT AJ + &&AcordSN IF (-2C N + &&AcordSN) (-1 AJ + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
+SELECT AJ + &&AcordSN IF (-3 DET + &&AcordSN) (-2 AJ + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
+SELECT AJ + &&AcordSN IF (-3/* DET + &&AcordSN) (-2 AJ + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
+SELECT AJ + &&AcordSN IF (-3 NUM + &&AcordSN) (-2 AJ + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
 
-SELECT AJ + &&AcordSN IF (-3C N + &&AcordSN) (-2 AJ + &&AcordSN) (-1 AJ + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) ;
-SELECT AJ + &&AcordSN IF (-3C N + &&AcordSN) (-2 AJ + &&AcordSN) (-1 AJ + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) ;
-SELECT AJ + &&AcordSN IF (-3C N + &&AcordSN) (-2 AJ + &&AcordSN) (-1 AJ + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) ;
+SELECT AJ + &&AcordSN IF (-3C N + &&AcordSN) (-2 AJ + &&AcordSN) (-1 AJ + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
+SELECT AJ + &&AcordSN IF (-3C N + &&AcordSN) (-2 AJ + &&AcordSN) (-1 AJ + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
+SELECT AJ + &&AcordSN IF (-3C N + &&AcordSN) (-2 AJ + &&AcordSN) (-1 AJ + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
 
 # distincio entre MascPl i FemPl (típicament en terminacions en -es)
 #SELECT MascPl IF (-1C MascPl) (0 N + MascPl) (NOT 0 ("pel")) ;	# Pb: cap de las 200 comunas
@@ -912,6 +914,8 @@ REMOVE PRI (*-1 ("après que") OR ("per que") OR ("per tal que") OR ("per fin qu
 
 
 SELECT PREP IF (0 Dins) (1 DET) ;
+SELECT PREP IF (0 Pendent) (1 DET) ;
+
 
 REMOVE NP IF (-1 BOS) (0 ("Òc")) ;
 REMOVE NP IF (-2 BOS) (-1 (META:/-/r)) (0 ("Òc")) (1 CM) ;
@@ -952,6 +956,8 @@ SELECT DET IF (0 ("<las>"i)) (1C N_AJ + FemPl) ;	# atencion : las casas (np.pro 
 #pel/peu nom o article contractat
 REMOVE N IF (1 Nm + Sg) (0 ("<peu>"i) OR ("<pel>"i)) (NOT -1 DET + Sg) (NOT -1 Artcontrsg) ;
 REMOVE N IF (1 Nm + Pl) (0 ("<peus>"i) OR ("<pels>"i)) (NOT -1 DET + Pl) (NOT -1 Artcontrpl) ;
+REMOVE N IF (1 AdjPre + MascSg) (0 ("<peu>"i) OR ("<pel>"i)) (NOT -1 DET + Sg) (NOT -1 Artcontrsg) ;
+REMOVE N IF (1 AdjPre + MascPl) (0 ("<peus>"i) OR ("<pels>"i)) (NOT -1 DET + Pl) (NOT -1 Artcontrpl) ;
 
 
 #punt de vista
