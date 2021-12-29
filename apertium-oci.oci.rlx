@@ -4,6 +4,7 @@
 #	- an: vbhaver o nom
 #	- se: prn.pro.ref o cnjadv
 #	- es: det (aran) o vbser
+#	- que: enon, rel, cnjsub
 
 DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>" "<:>";
 SOFT-DELIMITERS = "<,>" "<;>";
@@ -27,6 +28,7 @@ LIST N = n ;
 LIST NP = np ;
 LIST AJ = adj ;
 LIST N_AJ = n adj ;
+LIST AJ_PP = adj pp ;
 LIST DET = det ;
 LIST NUM = num ;
 LIST PREP = pr ;
@@ -35,7 +37,7 @@ LIST PERS = pers ;
 LIST AV = adv ;
 LIST AVexcl = (adv excl) ;
 LIST PREAV = preadv ;
-LIST PRONPers = (prn p1) (prn p2) (prn p3); 
+LIST PRONPers = (prn p1) (prn p2) (prn p3);
 LIST IJ = ij ;
 LIST PREDET = predet ;
 LIST Pos = pos ;
@@ -44,12 +46,13 @@ LIST SENT = sent ;
 #Jos=categorias
 LIST Tn = tn ;
 LIST VBger = ger ;
+LIST VBinf = inf ;
+LIST VBinfger = inf ger ;
 LIST VBimp = imp ;
 LIST Pro = pro ;
 LIST Ton = tn ;
 LIST Ref = ref ;
 LIST PRencl = enc ;
-LIST VBinf = inf ;
 LIST VBpp = pp ;
 LIST Npl = (n pl);
 LIST AJpl = (adj pl);
@@ -134,6 +137,7 @@ LIST En = "en";
 LIST De = "de";
 LIST En_pron = ("en" prn);
 LIST Dins = "dins";
+LIST Pendent = "pendent";
 LIST Un = "un" ;
 LIST An = "an" ;
 LIST Eth = "<eth>i" ;
@@ -151,7 +155,7 @@ LIST Pus = "pus" ;
 LIST Res = "res" "arren" "arrens" "ren" ;
 LIST Pel = "pel" "peu" ;
 LIST Deu = "deu" ;
-LIST Que = "que" ;
+LIST Que = "que" ("<que>"i) ;
 LIST Qui = "qui" ;
 LIST Se = "se" ;
 LIST Las = "las" ;
@@ -167,7 +171,7 @@ List Nummois = "1" "1èr" "1ièr" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12"
 
 # adjectifs qui souvent vont devant le nom
 #SET AdjPre = ("ancien") OR ("vieil") OR ("nouveau") OR ("grand") OR ("petit") OR ("majeur") OR ("bon") OR ("mal") OR ("mauvais") OR ("pauvre") OR      ("haut") OR ("bas") OR ("seul") OR ("célèbre") OR ("vrai") OR ("faux") OR ("beau") OR ("sale") OR ("large") OR ("long") OR ("saint") OR ("sacré") OR ("faible") OR ("multiple") OR ("cher") OR ("gros") ;
-SET AdjPre = ("ancian") OR ("nòu") OR ("nau") OR ("novèl") OR ("navèth") OR ("grand") OR ("petit") OR ("pichon") OR ("pichòt") OR ("bon") OR ("mal") OR ("naut") OR ("haut") OR ("bas") OR ("baish") ;
+SET AdjPre = ("ancian") OR ("nòu") OR ("nau") OR ("novèl") OR ("navèth") OR ("grand") OR ("gran") OR ("petit") OR ("pichon") OR ("pichòt") OR ("bon") OR ("mal") OR ("naut") OR ("haut") OR ("bas") OR ("baish") OR ("autre") OR ("aute") ;
 
 
 LIST unknown = ("\\*.*"r) ;
@@ -199,8 +203,14 @@ REMOVE N IF (0 ("<e>"i)) ;		# patch
 REMOVE N IF (0 ("<o>"i)) ;		# patch
 REMOVE N IF (NOT -1 DET) (0 ("<res>"i)) ;		# patch
 REMOVE N IF (0 ("<la>"i)) ;		# patch
+REMOVE N IF (0 ("<las>"i)) ;		# patch
+SELECT DET IF (0 ("<las>"i)) (1C N_AJ + FemPl) ;		# patch
+REMOVE N IF (0 ("una")) ;		# patch
 REMOVE N IF (0 ("<si>"i)) ;		# patch
 REMOVE N + ("tau") IF (0 ("tau")) ;		# patch
+SELECT PREP IF (-1 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sortir") OR ("gésser")) (0 ("tau")) ;
+SELECT PREP IF (-2 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sortir") OR ("gésser")) (-1 AV) (0 ("tau")) ;
+SELECT PREP IF (-3 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sortir") OR ("gésser")) (-2 AV) (-1 AV) (0 ("tau")) ;
 REMOVE SUB:1 DET IF (0 ("<en>"i)) ;		# patch
 REMOVE ("taus") IF (-2 DET + MascPl) (-1 N + MascPl) (0 ("taus")) (1 ("com")) ;		# los fèits taus com s’èran passats
 REMOVE N IF (NOT -1 DET + MascSg) (0 ("<com>"i)) ;		# patch
@@ -225,7 +235,11 @@ SELECT N IF (-2 DET + MascSg) (-1 AJ + MascSg) (0 ("<pas>"i)) ;		# un important 
 SELECT AJ + MascSg IF (-1 DET + MascSg) (0 AJ + MascSg) (1 ("<pas>"i)) ;		# un important pas # patch
 SELECT AV IF (-1 V) (0 ("<pas>"i)) ;		# patch
 SELECT V IF (1 ("<pas>"i)) ;		# patch
-SELECT ("d'unes") ;	# patch
+REMOVE ("d'unes") IF (-1C N_AJ) ;
+SELECT ("d'unes") + PRON IF (1C Que OR Rel) ;
+SELECT ("d'unes") IF (-1C BOS OR Que OR Conjadv OR Rel OR PREP) ;	# patch
+SELECT ("d'unes") IF (-1 CM) ;	# patch
+SELECT ("d'unes") IF (-2 BOS OR CM) (-1 PREP) ;	# patch
 SELECT PREAV IF (0 ("<plan>"i)) (1C AJ OR AV) ;		# patch
 REMOVE N IF (-1C V) (0 ("<plan>"i)) ;		# patch
 SELECT PREAV IF (-1 Ser + &&AcordSP) (0 ("<plan>"i)) (1 AJ + &&AcordSP) ;		# patch
@@ -236,9 +250,9 @@ REMOVE N IF (-1C PREP) (0 ("<veire>"i)) ;		# patch
 SELECT PREP IF (-1 N OR AJ) (0 ("<de mai>"i)) ;		# patch
 REMOVE N IF (NOT -1 ("mes") OR ("jorn") OR ("jornada") OR ("fèsta") OR ("hèsta")) (0 ("<de mai>"i)) ;		# patch
 REMOVE N IF (NOT -1 DET + FemSg) (0 ("<èra>"i)) ;		# patch
-REMOVE ("sèir") IF (0 ("èsser")) ;	# patch 
-REMOVE ("poirir") IF (0 ("poder")) ;	# patch 
-REMOVE ("sabar") IF (0 ("saber")) ;	# patch 
+REMOVE ("sèir") IF (0 ("èsser")) ;	# patch
+REMOVE ("poirir") IF (0 ("poder")) ;	# patch
+REMOVE ("sabar") IF (0 ("saber")) ;	# patch
 SELECT PREAV IF (0 ("tant")) (1 AJ OR AV) (2 ("coma")) ;
 SELECT AJ OR AV IF (-1 ("tant")) (0 AJ OR AV) (1 ("coma")) ;
 SELECT Conjadv IF (-2 ("tant")) (-1 AJ OR AV) (0 ("coma")) ;
@@ -326,6 +340,9 @@ SELECT VBimp IF (-1 BOS) (0 P2) (1* Excl) ;		# guess
 REMOVE VBimp IF (-2 BOS) (-1 ("be") OR ("que")) (0 ("un")) ;
 SELECT VBimp IF (-2 BOS) (-1 ("be") OR ("que")) (0 P2) (1* Excl) ;	# guess
 
+REMOVE VBger IF (NOT -1 ("en") OR ("en bèth") OR Pro OR N_AJ OR CM) ;
+REMOVE VBger IF (NOT -2 ("en") OR ("en bèth") OR Pro OR CM) (-1C Pro) ;
+
 #Un pronom proclitic est totjorn davant un vèrb o un autre pronom
 REMOVE Pro IF (NOT 1 Pro OR V - VBpp OR VBimp) ;
 REMOVE DET IF (1C V OR Pro) (NOT 1 VBpp) ;
@@ -362,6 +379,7 @@ REMOVE Conjsub IF (-3 N) (-2 AV OR PREAV) (-1 AJ) (0 Que) ;
 REMOVE AVG IF (NOT -1 ("pas") OR ("solament")) (0 Que) ;
 
 SELECT DET + &&AcordSN IF (0 ("un") + &&AcordSN) (1 N_AJ + &&AcordSN) ;	# guess (cal pels enonciatius)
+SELECT DET + &&AcordSN IF (NOT -1 PREP) (0 ("un") + &&AcordSN) (1 Top + &&AcordSN) ;	# guess (cal pels enonciatius)
 REMOVE V IF (0 ("un")) (1 Que OR Qui) ;
 
 SELECT ("be") + Enon IF (-1 BOS) ;
@@ -517,13 +535,16 @@ REMOVE Vconj IF (-2C PREP) (-1 DET + &&AcordSN) (0 N + &&AcordSN) ;	# per la pla
 SELECT VBinf IF (-1 ("de")) (0C V) ;
 SELECT VBinf IF (-1 ("a") + PREP) (0C V) ;
 SELECT VBger IF (-1 ("en") + PREP) (0C V) ;
+SELECT VBger IF (-1 ("en bèth") + PREP) (0C V) ;
 SELECT VBinf IF (-2 ("de")) (-1 Pro) (0C V) ;
 SELECT VBinf IF (-2 ("a") + PREP) (-1 Pro) (0C V) ;
 SELECT VBger IF (-2 ("en") + PREP) (-1 Pro) (0C V) ;
+SELECT VBger IF (-2 ("en bèth") + PREP) (-1 Pro) (0C V) ;
 SELECT VBinf IF (-3 ("de")) (-1 Pro) (-1 Pro) (0C V) ;
 SELECT VBinf IF (-3 ("a") + PREP) (-2 Pro) (-1 Pro) (0C V) ;
 SELECT VBger IF (-3 ("en") + PREP) (-2 Pro) (-1 Pro) (0C V) ;
-REMOVE VBger IF (0 VBinf) (NOT -1 SENT OR ("en")) ;
+SELECT VBger IF (-3 ("en bèth") + PREP) (-2 Pro) (-1 Pro) (0C V) ;
+REMOVE VBger IF (0 VBinf) (NOT -1 SENT OR ("en") OR ("en bèth")) ;
 
 #Un determinant es pas plural se lo nom/adjectiu que seguis es singular (o masculin feminin...)
 REMOVE motsdetpl IF (1C Ns OR AJs);
@@ -538,248 +559,9 @@ SELECT V IF (0 An + MascSg) (1 VBpp + MascSg) ;
 SELECT V IF (0 An + MascSg) (1 Pas) (2 VBpp + MascSg) ;
 SELECT V IF (0 An + MascSg) (1C AV) (2 VBpp + MascSg) ;
 
-# DET
-
-REMOVE DET IF (-1C/* DET) ;	# un cèrt estacament
-REMOVE SUB:1 DET IF (0/* DET) (1C DET) ;	# en los acès
-SELECT DETind + &&AcordSN IF (0 DETind + &&AcordSN) (1 N + &&AcordSN) ;	# un enfant
-SELECT DETind + &&AcordSN IF (0 DETind + &&AcordSN) (1 AJ + &&AcordSN) (NOT 0 ("força") OR ("horça")) ;	# un jaune
-SELECT N_AJ + &&AcordSN IF (-1 DETind + &&AcordSN) (0 N_AJ + &&AcordSN) ;
-SELECT DET IF (0 DETind) (1C V) ;
-SELECT DET IF (0 DETind) (1 unknown) ;	# pedaç, especialment quan falta molt vocabulari (endevinem que és un DET i no una forma del V unir)
-REMOVE DET IF (0 Eth) (1 DET);
-REMOVE DET IF (0 Eth) (1 Pas);
-
-SELECT DET + &&AcordSN IF (0 DET + &&AcordSN) (1 N_AJ + &&AcordSN) (2 N_AJ + &&AcordSN) (1C N_AJ) (2C N_AJ) ;
-SELECT N_AJ + &&AcordSN IF (-1 DET + &&AcordSN) (0 N_AJ + &&AcordSN) (1 N_AJ + &&AcordSN) (0C N_AJ) (1C N_AJ) ;
-SELECT N_AJ + &&AcordSN IF (-2 DET + &&AcordSN) (-1 N_AJ + &&AcordSN) (0 N_AJ + &&AcordSN) (-1C N_AJ) (0C N_AJ) ;
-
-REMOVE PRON IF (0 DET + Pos) (1 unknown) ;
-
-SELECT SUB:1 Masc IF (0/* ("lo")) (1 ("díser") OR ("har")) ;	# que'u díser
-SELECT SUB:1 Masc IF (0/* ("lo")) (1 Pro) (2 ("díser") OR ("har")) ;	# que'u te díser
-
-# NUM
-
-SELECT NUM IF (-1 ("numéro")) (0 Un); 
-REMOVE NUM IF (NOT -1 ("numéro")) (0 Un); 
-
-# PREAV
-
-REMOVE PREAV IF (NOT 1 AJ OR AV) ;
-SELECT PREAV IF (0 ("fòrça")) (1C AJ) ;
-REMOVE AV IF (0 PREAV) (0 AV) (1C AJ OR AV) ;
-REMOVE PREAV IF (0 PREAV) (0 AV) (1C V) ;
-REMOVE PREAV IF (0 PREAV) (0 AV) (NOT 1 AJ OR AV) ;
-SELECT PREAV IF (-1 N + &&AcordSN) (NOT -1 Vconj) (0 AV) (1 AJ + &&AcordSN) ;
-SELECT PREAV IF (-1 AJ + &&AcordSN) (NOT -1 Vconj) (0 AV) (1 AJ + &&AcordSN) ;
-
-# ADJ
-REMOVE AJ IF (-1 ("en")) (NOT 1 Conjco OR N) ;
-
-# ADJ POS
-
-REMOVE AJ + Pos IF (NOT -1 Ser) (0 AJ + Pos) ;
-
-# N
-
-SELECT N OR PRON IF (-1C PREP) (1 EOS) ;	# ambe fòrça. ; a res.
-SELECT N OR PRON IF (-1C PREP) (1C PREP) (NOT 0 ("tròp")) ;	# discors de fin d'annada
-
-SELECT N + &&AcordSN IF (-1C/* DET) (0C N) (-1/* DET + &&AcordSN) ;	# los acès ; deus autobús
-
-# N / AJ
-
-SELECT NP + &&AcordSN IF (-2 DET + &&AcordSN) (-1 AdjPre + &&AcordSN) (0 NP + &&AcordSN) (NOT -1 ("nau")) ;
-SELECT NP + &&AcordSN IF (-2/* DET + &&AcordSN) (-1 AdjPre + &&AcordSN) (0 NP + &&AcordSN) (NOT -1 ("nau")) ;
-SELECT N + &&AcordSN IF (-2 DET + &&AcordSN) (-1 AdjPre + &&AcordSN) (0 N + &&AcordSN) (NOT -1 ("nau")) ;
-SELECT N + &&AcordSN IF (-2/* DET + &&AcordSN) (-1 AdjPre + &&AcordSN) (0 N + &&AcordSN) (NOT -1 ("nau")) ;
-SELECT AJ + &&AcordSN IF (-1 DET + &&AcordSN) (0 AdjPre + &&AcordSN) (1 NP + &&AcordSN) (NOT 0 ("nau")) ;
-SELECT AJ + &&AcordSN IF (-1/* DET + &&AcordSN) (0 AdjPre + &&AcordSN) (1 NP + &&AcordSN) (NOT 0 ("nau")) ;
-SELECT AJ + &&AcordSN IF (-1 DET + &&AcordSN) (0 AdjPre + &&AcordSN) (1 N + &&AcordSN) (NOT 0 ("nau")) ;
-SELECT AJ + &&AcordSN IF (-1/* DET + &&AcordSN) (0 AdjPre + &&AcordSN) (1 N + &&AcordSN) (NOT 0 ("nau")) ;
-
-SELECT NP + &&AcordSN IF (-1 DET + &&AcordSN) (0 NP + &&AcordSN) (1 AJ + &&AcordSN) ; 
-SELECT NP + &&AcordSN IF (-1/* DET + &&AcordSN) (0 NP + &&AcordSN) (1 AJ + &&AcordSN) ; 
-SELECT N + &&AcordSN IF (-1 DET + &&AcordSN) (0 N + &&AcordSN) (1 AJ + &&AcordSN) ; 
-SELECT N + &&AcordSN IF (-1/* DET + &&AcordSN) (0 N + &&AcordSN) (1 AJ + &&AcordSN) ; 
-
-SELECT NP + &&AcordSN IF (-2 DET + &&AcordSN) (-1C AJ) (-1 AJ + &&AcordSN) (0 NP + &&AcordSN) ; 
-SELECT N + &&AcordSN IF (-2 DET + &&AcordSN) (-1C AJ) (-1 AJ + &&AcordSN) (0 N + &&AcordSN) ; 
-SELECT N + &&AcordSN IF (-2 DET + &&AcordSN) (-1C NUM) (-1 NUM + &&AcordSN) (0 N + &&AcordSN) ; 
-SELECT N + &&AcordSN IF (-2 DET + &&AcordSN) (-1C NUM) (0 N + &&AcordSN) ; 
-
-# distincio entre MascPl i FemPl (típicament en terminacions en -es)
-#SELECT MascPl IF (-1C MascPl) (0 N + MascPl) (NOT 0 ("pel")) ;	# Pb: cap de las 200 comunas
-#SELECT FemPl IF (-1C FemPl) (0 N + FemPl) ;
-#SELECT MascPl IF (-1C MascPl) (0 AJ + MascPl) ;
-#SELECT FemPl IF (-1C FemPl) (0 AJ + FemPl) ;
-#SELECT MascPl IF (1C MascPl) (0 N + MascPl) (NOT 0 ("pel")) ;
-#SELECT FemPl IF (1C FemPl) (0 N + FemPl) ;
-#SELECT MascPl IF (1C MascPl) (0 AJ + MascPl) ;
-#SELECT FemPl IF (1C FemPl) (0 AJ + FemPl) ;
-#SELECT MascPl IF (-2C MascPl) (-1 AV OR PREAV) (0 AJ + MascPl) ;
-#SELECT FemPl IF (-2C FemPl) (-1 AV OR PREAV) (0 AJ + FemPl) ;
-#SELECT MascPl IF (2C MascPl) (1 AV OR PREAV) (0 AJ + MascPl) ;
-#SELECT FemPl IF (2C FemPl) (1 AV OR PREAV) (0 AJ + FemPl) ;
-
-# N / V
-
-REMOVE N IF (-1C PRON) (0 V) ;		# qui sap
-REMOVE V + Pers IF (-1C V + Pers) ;	# voletz ve pariar
-REMOVE V + Pers IF (1C V + Pers) ;	# voletz ve pariar
-
-REMOVE VBpp IF (-1C DET + &&AcordSN OR Pro) (0 N + &&AcordSN) ;		# lo resultat
-
-# HAVER
-
-SELECT Haver IF (0 Haver) (1C VBpp) ;	# a cantat
-SELECT Haver IF (0 Haver) (1 Haver + VBpp) ;	# a cantat
-SELECT Haver IF (0 Haver) (1 AV) (2 VBpp) ;	# a pas cantat
-SELECT Haver IF (0 Haver) (1 AV) (2 AV) (3 VBpp) ;	# a pas totjorn cantat
-SELECT Haver IF (-1 Haver) (0 Haver + VBpp) ;	# a agut
-SELECT Haver IF (-2 Haver) (-1 AV) (0 Haver + VBpp) ;	# a pas agut
-SELECT Haver IF (-3 Haver) (-2 AV) (-1 AV) (0 Haver + VBpp) ;	# a pas totjorn agut
-
-# Ser
-
-SELECT Ser IF (0 Ser + &&AcordSP) (1C VBpp + &&AcordSP) ;	# soi estat
-SELECT Ser IF (-1 Pro + P1 + Sg) (0 Ser + P1 + Sg) (1 VBpp + Sg) ;	# me soi banhat
-SELECT Ser IF (-1 Pro + P2 + Sg) (0 Ser + P2 + Sg) (1 VBpp + Sg) ;	# t'ès banhat
-SELECT Ser IF (-1 Pro + P1 + Pl) (0 Ser + P1 + Pl) (1 VBpp + Pl) ;	# nos sèm banhats
-SELECT Ser IF (-1 Pro + P2 + Pl) (0 Ser + P2 + Pl) (1 VBpp + Pl) ;	# vos sètz banhats
-SELECT Ser IF (-1 Pro + P3 + Ref) (0 Ser + P3 + Sg) (1 VBpp + Sg) ;	# s'es banhat
-SELECT Ser IF (-1 Pro + P3 + Ref) (0 Ser + P3 + Pl) (1 VBpp + Pl) ;	# se son banhats
-SELECT Ser IF (0 Ser + &&AcordSP) (1 AV) (2 VBpp + &&AcordSP) ;	# soi pas estat
-SELECT Ser IF (0 Ser + &&AcordSP) (1 AV) (2 AV) (3 VBpp + &&AcordSP) ;	# soi pas totjorn estat
-SELECT Ser IF (-1 Ser + &&AcordSP) (0 Ser + VBpp + &&AcordSP) (1 VBpp + &&AcordSP) ;	# soi estat apelat
-SELECT Ser IF (-2 Ser + &&AcordSP) (-1 AV) (0 Ser + VBpp + &&AcordSP) (1 VBpp + &&AcordSP) ;	# soi pas estat apelat
-SELECT Ser IF (-1 Ser + &&AcordSP) (0 Ser + VBpp + &&AcordSP) (-1 AV) (2 VBpp + &&AcordSP) ;	# soi estat immediatament apelat
-SELECT Ser IF (-2 Ser + &&AcordSP) (-1 AV) (0 Ser + VBpp + &&AcordSP) (1 AV) (2 VBpp + &&AcordSP) ;	# soi pas estat immediatament apelat
-SELECT VBpp IF (-2 Ser + &&AcordSP) (-1 Ser + VBpp + &&AcordSP) (0 VBpp + &&AcordSP) ;	# soi estat apelat
-SELECT VBpp IF (-3 Ser + &&AcordSP) (-2 AV) (-1 Ser + VBpp + &&AcordSP) (0 VBpp + &&AcordSP) ;	# soi pas estat apelat
-SELECT VBpp IF (-3 Ser + &&AcordSP) (-2 Ser + VBpp + &&AcordSP) (-1 AV) (0 VBpp + &&AcordSP) ;	# soi estat immediatament apelat
-SELECT VBpp IF (-4 Ser + &&AcordSP) (-3 AV) (-2 Ser + VBpp + &&AcordSP) (-1 AV) (0 VBpp + &&AcordSP) ;	# soi pas estat immediatament apelat
-
-# VBpp
-
-SELECT VBpp IF (0 AJ) (1 ("par")) ;
-REMOVE Vconj IF (-1C Haver + Vconj) (0 VBpp) ;	# ajan avut
-REMOVE Vconj IF (-1C Ser + Vconj + &&AcordSP) (0 VBpp + &&AcordSP) ;
-REMOVE Vconj IF (-2C Haver + Vconj) (-1 AV) (0 VBpp) ;	# ajan pas avut
-REMOVE Vconj IF (-2C Ser + Vconj + &&AcordSP) (-1 AV) (0 VBpp + &&AcordSP) ;
-REMOVE Vconj IF (-3C Haver + Vconj) (-2 AV) (-1 AV) (0 VBpp) ;	# ajan pas totjorn avut
-REMOVE Vconj IF (-3C Ser + Vconj + &&AcordSP) (-2 AV) (-1 AV) (0 VBpp + &&AcordSP) ;
-
-# VBinf
-
-SELECT VBinf IF (0 AJ) (1 ("par")) ;
-SELECT AV IF (-1 Vmod) (0 ("<tornar>"i)) (1 VBinf) ;	# pòdi tornar manjar
-SELECT VBinf IF (-1 Vmod) (0 VBinf) ;	# pòdi manjar
-SELECT Vmod IF (0 Vmod) (1C VBinf) ;	# pòdi manjar
-SELECT VBinf IF (-2 Vmod) (-1 AV OR Pro) (0 VBinf) ;	# pòdi pas manjar
-SELECT Vmod IF (0 Vmod) (1 AV OR Pro) (2C VBinf) ;	# pòdi pas manjar
-SELECT VBinf IF (-3 Vmod) (-2 AV OR Pro) (-1 AV OR Pro) (0 VBinf) ;	# pòdi pas manjar
-SELECT Vmod IF (0 Vmod) (1 AV OR Pro) (2 AV OR Pro) (3C VBinf) ;	# pòdi pas manjar
-
-# VBmod
-
-SELECT Vmod IF (0 ("caler")) (1 Que) ;
-SELECT Vmod IF (0 ("caler")) (1 AV) (2 Que) ;
-SELECT Vmod IF (0 ("caler")) (1 AV) (2 AV) (3 Que) ;
-SELECT Vmod IF (0 ("caler")) (-1/* Pro) ;
-SELECT Vmod IF (0 ("caler")) (-1 Itg) ;
-SELECT Vmod IF (0 ("caler")) (-1 Enon) ;
-SELECT Vmod IF (0 ("caler")) (-1 BOS) ;
-SELECT Vmod IF (0 ("caler")) (-2 BOS) (1 AV) ;
-REMOVE Vmod IF (NOT 1 VBinf OR AV OR Pro OR Que) ;
-REMOVE Vmod IF (1 AV) (NOT 2 VBinf OR AV OR Pro OR Que) ;
-REMOVE Vmod IF (1 AV) (1 AV) (NOT 3 VBinf OR AV OR Pro OR Que) ;
-REMOVE Vmod IF (1 AV) (2 Pro) (NOT 3 VBinf OR Pro) ;
-REMOVE Vmod IF (1 Pro) (NOT 2 VBinf OR Pro) ;
-REMOVE Vmod IF (1 Pro) (2 Pro) (NOT 2 VBinf) ;
-
-#Vb conjugat après enonciatiu
-SELECT Vconj IF (-1C Enon) (NOT 0 Pro) ;
-
-# MOTS
-
-SELECT Haver IF (0 A) (1C VBpp);	# a cantat
-SELECT Ser IF (-1 Ser) (0 ("estat"));	# soi estat
-SELECT Ser IF (-2 Ser) (-1 AV) (0 ("estat"));	# soi pas estat
-SELECT Ser IF (-3 Ser) (-2 AV) (-1 AV) (0 ("estat"));	# soi pas totjorn estat
-
-REMOVE Pro IF (NOT 1 V OR Pro) ;
-REMOVE DET IF (0 Tn) (NOT 1 N OR AJ) ;
-
-REMOVE PRON IF (0 Se) (NOT 1 Pro OR V + P3 OR V + VBinf OR V + VBger) ;        # se canti
-REMOVE PRON IF (0 Se) (1 Pro) (NOT 2 Pro OR V + P3 OR V + VBinf OR V + VBger) ;	# se li canti
-REMOVE PRON IF (0 Se) (1 Pro) (2 Pro) (NOT 3 Pro OR V + P3 OR V + VBinf OR V + VBger) ;	# se li o canti
-REMOVE PRON IF (0 Se) (1 Pro) (2 Pro) (3 Pro) (4 V + P3 OR V + VBinf OR V + VBger) ;
-REMOVE Conjadv IF (0 Se) (1C V + VBinf) ;        # de se crear
-REMOVE Conjadv IF (0 Se) (1 Pro) (2C V + VBinf) ;        # de se lo crear
-#REMOVE PRON IF (0 Se) (1 ("ne")) ;	# Se n’èram estadas amigas
-SELECT Conjadv IF (0 ("<s'i>"i) OR ("<s’i>"i)) (1 ("aver") OR ("auer")) ;
-SELECT Conjadv IF (0 Se) (1 ("<n'i>"i) OR ("<n’i>"i)) (2 ("aver") OR ("auer")) ;
-SELECT Conjadv IF (0 Se) (1 Pro) (2 Pro) (3 V) ;	# patch
-SELECT Conjadv IF (0 Se) (0/* Pro) (1 Pro) (2 V) ;	# patch
-SELECT Conjadv IF (0 Se) (1 Pro) (2 Pro) (3 Pro) (4 V) ;	# patch
-SELECT Conjadv IF (0 Se) (0/* Pro) (1 Pro) (2 Pro) (3 V) ;	# patch
-REMOVE Conjadv IF (0 Se) (0/* Pro) (-1*C N) (NOT -1* V + Pers) ;	# un ministeri s'encargue
-SELECT P3 IF (-1C Se + PRON) (NOT 0 Pro) (0 V) ;		# se canti
-SELECT P3 IF (-2C Se + PRON) (-1 Pro) (NOT 0 Pro) (0 V) ;	# se li canti
-SELECT P3 IF (-3C Se + PRON) (-2 Pro) (-1 Pro) (NOT 0 Pro) (0 V + P3) ;	# se li o canti
-REMOVE Ton IF (0 Se) (1 V) (1 P3) ;
-REMOVE Ton IF (0 Se) (1 VBinf) ;
-REMOVE Ton IF (0 Se) (1 Pro) ;
-SELECT Pro IF (0 Se) (1C Pro OR V + P3) ;	# patch			NE MARCHE PAS DU TOUT
-
-REMOVE P1 + Sg IF (-1 NP + Sg) (0 V + P3 + Sg) ;
-REMOVE P1 + Sg IF (-2 DET + MascSg) (-1 N + MascSg) (0 V + P3 + Sg) ;
-REMOVE P1 + Sg IF (-2 DET + FemSg) (-1 N + FemSg) (0 V + P3 + Sg) ;
-REMOVE P1 + Sg IF (-3 DET + MascSg) (-2 N_AJ + MascSg) (-1 N_AJ + MascSg) (0 V + P3 + Sg) ;
-REMOVE P1 + Sg IF (-3 DET + FemSg) (-2 N_AJ + FemSg) (-1 N_AJ + MascSg) (0 V + P3 + Sg) ;
-REMOVE P1 + Sg IF (-3C N_AJ + Sg) (-2 PREP) (-1 N) (0 V + P3 + Sg) ;
-REMOVE P1 + Sg IF (-4C N_AJ + Sg) (-3 PREP) (-2 N_AJ + &&AcordSN) (-1 N_AJ + &&AcordSN) (0 V + P3 + Sg) ;
-REMOVE P1 + Sg IF (-4C N_AJ + Sg) (-3 PREP) (-2 DET + &&AcordSN) (-1 N + &&AcordSN) (0 V + P3 + Sg) ;
-REMOVE P1 + Sg IF (-5C N_AJ + Sg) (-4 PREP) (-3 DET + &&AcordSN) (-2 N_AJ + &&AcordSN) (-1 N_AJ + &&AcordSN) (0 V + P3 + Sg) ;
-
-SELECT PRI IF (-2C PRI) (-1 Conjco) (0 PRS) (0 PRI) ; # il revoit et corrige
-SELECT PRS IF (-2C PRS) (-1 Conjco) (0 PRS) (0 PRI) ;
-SELECT PRI IF (2C PRI) (1 Conjco) (0 PRS) (0 PRI) ; # il corrige et revoit
-SELECT PRS IF (2C PRS) (1 Conjco) (0 PRS) (0 PRI) ;
-REMOVE PRI IF (-1* ("per que") BARRIER CM) (0 PRS) ;
-REMOVE PRI (*-1 ("après que") OR ("per que") OR ("per tal que") OR ("per fin que") OR ("a fin que") OR ("afin que") OR ("malgrat que") OR ("maugrat que") OR ("encara que") OR ("abans que") OR ("avans que") OR ("après que") OR ("aprèp que") OR ("apuèi que") BARRIER Cnj_Rel_End OR CM) (0 PRS) ;
-
-
-SELECT PREP IF (0 Dins) (1 DET) ;
-
-REMOVE NP IF (-1 BOS) (0 ("Òc")) ;
-REMOVE NP IF (-2 BOS) (-1 (META:/-/r)) (0 ("Òc")) (1 CM) ;
-REMOVE NP IF (-1 (META:/[—]/r)) (0 ("Òc")) (1 CM) ;
-
-SELECT N IF (-1 DET + Masc) (NOT -1 Ser) (0 Estat) ;
-SELECT VBpp IF (-1 Ser + Sg) (0 Estat + Sg) ;
-#SELECT VBpp IF (-1 Ser + Pl) (0 Estat + Pl) ;
-SELECT Ser IF (0 Ser + Sg) (1 Ser + VBpp + Sg) ;
-SELECT Ser IF (0 Ser + Pl) (1 Ser + VBpp + Pl) ;
-SELECT VBpp IF (-2 Ser + Sg) (-1 AV) (0 Estat + Sg) ;
-SELECT VBpp IF (-2 Ser + Pl) (-1 AV) (0 Estat + Pl) ;
-SELECT Ser IF (0 Ser + Sg) (1 AV) (2 Ser + VBpp + Sg) ;
-SELECT Ser IF (0 Ser + Pl) (1 AV) (2 Ser + VBpp + Pl) ;
-SELECT N IF (-1 ("vila") OR ("ciutat")) (0 Estat) ;	# vila estat
-
-REMOVE AJ IF (0 Las) (1 N + FemPl) ;	# las pomas
-REMOVE AJ IF (0 Las) (1 NUM) (2 N + FemPl) ;	# las 200 pomas
-
-SELECT Conjco IF (0 Mas) (-1 CM) ;
-
-REMOVE N IF (-1C V) (0 Pel) ;
-REMOVE N IF (0 Pel) (1 unknown) ;
-
 # NP
 
-SELECT NP IF (NOT -1 BOS) ;
+SELECT NP IF (NOT -1 BOS) (NOT -1 (META:/—/r)) ;
 
 SELECT Conjco (-1 BOS) (0 ("Mas")) ;
 
@@ -858,6 +640,13 @@ SELECT Ant IF (-1 (";") OR (":")) (1 Ant OR Cog OR unknownMajIni) ;
 
 SELECT Top IF (-2 ("vila") OR ("aeropòrt") OR ("pòrt") OR ("reialme") OR ("principat") OR ("grand-ducat") OR ("ducat") OR ("marquesat") OR ("comtat") OR ("baroniá") OR ("senhoria") OR ("archavescat") OR ("arquevescat") OR ("avescat")) (-1 ("de")) (0 Cog OR Ant) ;
 SELECT Top IF (-2 Dignitat) (-1 ("de")) (0 Top) ;
+SELECT Top IF (-2 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sortir") OR ("gésser")) (-1 ("a") OR ("de") OR ("cap a") OR ("devèrs") OR ("entà") OR ("tà")) ;
+SELECT Top + FemSg IF (-2 ("anar") OR ("viatjar") OR ("arribar") OR ("partir")) (-1 ("en")) ;
+SELECT Top IF (-3 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sortir") OR ("gésser")) (-2 ("a") OR ("de") OR ("cap a") OR ("devèrs") OR ("entà") OR ("tà")) (-1 DET + &&AcordSN) (0 Top + &&AcordSN) ;
+SELECT Top IF (-3 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sortir") OR ("gésser")) (-2 AV) (-1 ("a") OR ("de") OR ("cap a") OR ("devèrs") OR ("entà") OR ("tà")) ;
+SELECT Top + FemSg IF (-3 ("anar") OR ("viatjar") OR ("arribar") OR ("partir")) (-2 AV) (-1 ("en")) ;
+SELECT Top IF (-4 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sortir") OR ("gésser")) (-3 AV) (-2 ("a") OR ("de") OR ("cap a") OR ("devèrs") OR ("entà") OR ("tà")) (-1 DET + &&AcordSN) (0 Top + &&AcordSN) ;
+
 
 REMOVE Al IF (-1 Ant OR Cog) (0 Ant OR Cog) ;
 REMOVE Top IF (-1 Ant OR Cog) (0 Ant OR Cog) ;
@@ -868,6 +657,289 @@ SELECT Top IF (0 ("Euròpa")) (NOT -1 DET) (NOT -1 Ant_Cog) ;
 SELECT Top IF (0 ("Asia")) (NOT -1 DET) (NOT -1 Ant_Cog) ;
 SELECT Top IF (0 ("America")) (NOT -1 DET) (NOT -1 Ant_Cog) ;
 
+
+# HAVER
+
+SELECT Haver IF (0 Haver) (1C VBpp) ;	# a cantat
+SELECT Haver IF (0 Haver) (1 Haver + VBpp) ;	# a cantat
+SELECT Haver IF (0 Haver) (1 AV) (2 VBpp) ;	# a pas cantat
+SELECT Haver IF (0 Haver) (1 AV) (2 AV) (3 VBpp) ;	# a pas totjorn cantat
+SELECT Haver IF (-1 Haver) (0 Haver + VBpp) ;	# a agut
+SELECT Haver IF (-2 Haver) (-1 AV) (0 Haver + VBpp) ;	# a pas agut
+SELECT Haver IF (-3 Haver) (-2 AV) (-1 AV) (0 Haver + VBpp) ;	# a pas totjorn agut
+
+# Ser
+
+SELECT Ser IF (0 Ser + &&AcordSP) (1C VBpp + &&AcordSP) ;	# soi estat
+SELECT Ser IF (-1 Pro + P1 + Sg) (0 Ser + P1 + Sg) (1 VBpp + Sg) ;	# me soi banhat
+SELECT Ser IF (-1 Pro + P2 + Sg) (0 Ser + P2 + Sg) (1 VBpp + Sg) ;	# t'ès banhat
+SELECT Ser IF (-1 Pro + P1 + Pl) (0 Ser + P1 + Pl) (1 VBpp + Pl) ;	# nos sèm banhats
+SELECT Ser IF (-1 Pro + P2 + Pl) (0 Ser + P2 + Pl) (1 VBpp + Pl) ;	# vos sètz banhats
+SELECT Ser IF (-1 Pro + P3 + Ref) (0 Ser + P3 + Sg) (1 VBpp + Sg) ;	# s'es banhat
+SELECT Ser IF (-1 Pro + P3 + Ref) (0 Ser + P3 + Pl) (1 VBpp + Pl) ;	# se son banhats
+SELECT Ser IF (0 Ser + &&AcordSP) (1 AV) (2 VBpp + &&AcordSP) ;	# soi pas estat
+SELECT Ser IF (0 Ser + &&AcordSP) (1 AV) (2 AV) (3 VBpp + &&AcordSP) ;	# soi pas totjorn estat
+SELECT Ser IF (-1 Ser + &&AcordSP) (0 Ser + VBpp + &&AcordSP) (1 VBpp + &&AcordSP) ;	# soi estat apelat
+SELECT Ser IF (-2 Ser + &&AcordSP) (-1 AV) (0 Ser + VBpp + &&AcordSP) (1 VBpp + &&AcordSP) ;	# soi pas estat apelat
+SELECT Ser IF (-1 Ser + &&AcordSP) (0 Ser + VBpp + &&AcordSP) (-1 AV) (2 VBpp + &&AcordSP) ;	# soi estat immediatament apelat
+SELECT Ser IF (-2 Ser + &&AcordSP) (-1 AV) (0 Ser + VBpp + &&AcordSP) (1 AV) (2 VBpp + &&AcordSP) ;	# soi pas estat immediatament apelat
+SELECT VBpp IF (-2 Ser + &&AcordSP) (-1 Ser + VBpp + &&AcordSP) (0 VBpp + &&AcordSP) ;	# soi estat apelat
+SELECT VBpp IF (-3 Ser + &&AcordSP) (-2 AV) (-1 Ser + VBpp + &&AcordSP) (0 VBpp + &&AcordSP) ;	# soi pas estat apelat
+SELECT VBpp IF (-3 Ser + &&AcordSP) (-2 Ser + VBpp + &&AcordSP) (-1 AV) (0 VBpp + &&AcordSP) ;	# soi estat immediatament apelat
+SELECT VBpp IF (-4 Ser + &&AcordSP) (-3 AV) (-2 Ser + VBpp + &&AcordSP) (-1 AV) (0 VBpp + &&AcordSP) ;	# soi pas estat immediatament apelat
+
+# VBpp
+
+SELECT VBpp IF (0 AJ) (1 ("par")) ;
+REMOVE Vconj IF (-1C Haver + Vconj) (0 VBpp) ;	# ajan avut
+REMOVE AJ IF (-1C Haver) (0 VBpp) ;	# ai ascotat
+REMOVE Vconj IF (-1C Ser + Vconj + &&AcordSP) (0 VBpp + &&AcordSP) ;
+REMOVE Vconj IF (-2C Haver + Vconj) (-1 AV) (0 VBpp) ;	# ajan pas avut
+REMOVE AJ IF (-2C Haver) (-1 AV) (0 VBpp) ;	# ai pas ascotat
+REMOVE Vconj IF (-2C Ser + Vconj + &&AcordSP) (-1 AV) (0 VBpp + &&AcordSP) ;
+REMOVE Vconj IF (-3C Haver + Vconj) (-2 AV) (-1 AV) (0 VBpp) ;	# ajan pas totjorn avut
+REMOVE AJ IF (-3C Haver) (-2 AV) (-1 AV) (0 VBpp) ;	# ai pas totjorn ascotat
+REMOVE Vconj IF (-3C Ser + Vconj + &&AcordSP) (-2 AV) (-1 AV) (0 VBpp + &&AcordSP) ;
+
+# VBinf
+
+SELECT VBinf IF (0 AJ) (1 ("par")) ;
+SELECT AV IF (-1 Vmod) (0 ("<tornar>"i)) (1 VBinf) ;	# pòdi tornar manjar
+SELECT VBinf IF (-1 Vmod) (0 VBinf) ;	# pòdi manjar
+SELECT Vmod IF (0 Vmod) (1C VBinf) ;	# pòdi manjar
+SELECT VBinf IF (-2 Vmod) (-1 AV OR Pro) (0 VBinf) ;	# pòdi pas manjar
+SELECT Vmod IF (0 Vmod) (1 AV OR Pro) (2C VBinf) ;	# pòdi pas manjar
+SELECT VBinf IF (-3 Vmod) (-2 AV OR Pro) (-1 AV OR Pro) (0 VBinf) ;	# pòdi pas manjar
+SELECT Vmod IF (0 Vmod) (1 AV OR Pro) (2 AV OR Pro) (3C VBinf) ;	# pòdi pas manjar
+
+# VBmod
+
+SELECT Vmod IF (0 ("caler")) (1 Que) ;
+SELECT Vmod IF (0 ("caler")) (1 AV) (2 Que) ;
+SELECT Vmod IF (0 ("caler")) (1 AV) (2 AV) (3 Que) ;
+SELECT Vmod IF (0 ("caler")) (-1/* Pro) ;
+SELECT Vmod IF (0 ("caler")) (-1 Itg) ;
+SELECT Vmod IF (0 ("caler")) (-1 Enon) ;
+SELECT Vmod IF (0 ("caler")) (-1 BOS) ;
+SELECT Vmod IF (0 ("caler")) (-2 BOS) (1 AV) ;
+REMOVE Vmod IF (NOT 1 VBinf OR AV OR Pro OR Que) ;
+REMOVE Vmod IF (1 AV) (NOT 2 VBinf OR AV OR Pro OR Que) ;
+REMOVE Vmod IF (1 AV) (1 AV) (NOT 3 VBinf OR AV OR Pro OR Que) ;
+REMOVE Vmod IF (1 AV) (2 Pro) (NOT 3 VBinf OR Pro) ;
+REMOVE Vmod IF (1 Pro) (NOT 2 VBinf OR Pro) ;
+REMOVE Vmod IF (1 Pro) (2 Pro) (NOT 2 VBinf) ;
+
+#Vb conjugat après enonciatiu
+SELECT Vconj IF (-1C Enon) (NOT 0 Pro) ;
+
+# DET
+
+REMOVE ("d'unes") IF (-1C N_AJ) ;	# patch
+SELECT DET + &&AcordSN IF (1 ("un") + &&AcordSN) (2 Conjco) (3 DET) (4 ("altre") OR ("aute")) ;
+SELECT Tn + &&AcordSN IF (-1C DET + &&AcordSN) (0 ("un") + &&AcordSN) ;
+REMOVE DET IF (-1C/* DET) ;	# un cèrt estacament
+REMOVE DET IF (0 DET) (NOT 1 N OR AJ OR Tn OR NP OR NUM OR AV OR PREAV OR Rel OR unknown) ;
+REMOVE DET IF (0 DET) (1 N_AJ OR NP OR Tn) (NOT 1 NUM OR AV OR PREAV OR Rel) (0 DET + &&AcordSN) (NOT 1 N_AJ + &&AcordSN OR NP + &&AcordSN OR Tn + &&AcordSN) ;	# Avèm entrevistat aquesta pendent la Hèsta
+REMOVE SUB:1 DET IF (0/* DET) (1C DET) ;	# en los acès
+SELECT PREAV IF (0 ("fòrça")) (1C AJ) ;
+SELECT AV IF (0 ("fòrça")) (1C VBpp) ;
+SELECT DETind + &&AcordSN IF (0 DETind + &&AcordSN) (1 N + &&AcordSN) ;	# un enfant
+SELECT DETind + &&AcordSN IF (0 DETind + &&AcordSN) (1 AJ + &&AcordSN) (NOT 0 ("força") OR ("horça")) ;	# un jaune
+REMOVE PRON + Pos IF (0 DETpos + &&AcordSN) (1 N + &&AcordSN) ;	# lo son torn
+REMOVE SUB:1 PRON + Pos IF (0/* DETpos + &&AcordSN) (1 N + &&AcordSN) ;	# deu son torn
+SELECT N_AJ + &&AcordSN IF (-1 DETind + &&AcordSN) (0 N_AJ + &&AcordSN) ;
+SELECT DET IF (0 DETind) (1C V) ;
+SELECT DET IF (0 DETind) (1 unknown) ;	# pedaç, especialment quan falta molt vocabulari (endevinem que és un DET i no una forma del V unir)
+REMOVE ("unir") IF (0 Un) (1C V + Pers OR VBpp) ;	# pedaç, especialment quan falta molt vocabulari (endevinem que és un DET i no una forma del V unir)
+REMOVE DET IF (0 Eth) (1 DET);
+REMOVE DET IF (0 Eth) (1 Pas);
+
+SELECT DET + &&AcordSN IF (0 DET + &&AcordSN) (1 N_AJ + &&AcordSN) (2 N_AJ + &&AcordSN) (1C N_AJ) (2C N_AJ) ;
+SELECT N_AJ + &&AcordSN IF (-1 DET + &&AcordSN) (0 N_AJ + &&AcordSN) (1 N_AJ + &&AcordSN) (0C N_AJ) (1C N_AJ) ;
+SELECT N_AJ + &&AcordSN IF (-2 DET + &&AcordSN) (-1 N_AJ + &&AcordSN) (0 N_AJ + &&AcordSN) (-1C N_AJ) (0C N_AJ) ;
+
+REMOVE PRON IF (0 DET + Pos) (1 unknown) ;
+
+SELECT SUB:1 Masc IF (0/* ("lo")) (1 ("díser") OR ("har")) ;	# que'u díser
+SELECT SUB:1 Masc IF (0/* ("lo")) (1 Pro) (2 ("díser") OR ("har")) ;	# que'u te díser
+
+# NUM
+
+SELECT NUM IF (-1 ("numéro")) (0 Un);
+REMOVE NUM IF (NOT -1 ("numéro")) (0 Un);
+
+# PREAV
+
+REMOVE PREAV IF (NOT 1 AJ OR AV OR VBpp) ;
+SELECT AV IF (-1 Ser + &&AcordSP) (0 ("plan")) (1 VBpp + &&AcordSP) ;
+SELECT AV IF (-2 Ser + &&AcordSP) (-1 AV) (0 ("plan")) (1 VBpp + &&AcordSP) ;
+SELECT AV IF (-1 Ser + VBinfger) (0 ("plan")) (1 VBpp) ;
+SELECT AV IF (-2 Ser + VBinfger) (-1 AV) (0 ("plan")) (1 VBpp) ;
+SELECT AV IF (-1 Ser + &&AcordSP) (0 ("plan")) (1 VBpp + &&AcordSP) ;
+SELECT AV IF (-2 Ser + &&AcordSP) (-1 AV) (0 ("plan")) (1 VBpp + &&AcordSP) ;
+SELECT AV IF (-1C Haver) (0 PREAV) (1 VBpp) ;	# ai plan ascotat
+SELECT AV IF (-2C Haver) (-1 AV) (0 PREAV) (1 VBpp) ;	# ai pas plan ascotat
+REMOVE AV IF (0 PREAV) (0 AV) (1C AJ OR AV OR VBpp) ;
+REMOVE PREAV IF (0 PREAV) (0 AV) (1C V) ;
+REMOVE PREAV IF (0 PREAV) (0 AV) (NOT 1 AJ OR AV OR VBpp) ;
+SELECT PREAV IF (-1 N + &&AcordSN) (NOT -1 Vconj) (0 AV OR ("mal")) (1 AJ_PP + &&AcordSN) ;
+SELECT PREAV IF (-1 AJ + &&AcordSN) (NOT -1 Vconj) (0 AV OR ("mal")) (1 AJ_PP + &&AcordSN) ;
+SELECT PREAV IF (-1 Ser + &&AcordSP) (0 AV OR ("mal")) (1 VBpp + &&AcordSP) ;
+SELECT PREAV IF (-2 Ser + &&AcordSP) (-1 AV) (0 AV OR ("mal")) (1 VBpp + &&AcordSP) ;
+SELECT PREAV IF (-1 Ser + VBinfger OR ("mal")) (0 AV) (1 VBpp) ;
+SELECT PREAV IF (-2 Ser + VBinfger) (-1 AV) (0 AV OR ("mal")) (1 VBpp) ;
+
+# ADJ
+REMOVE AJ IF (-1 ("en")) (NOT 1 Conjco OR N) ;
+
+# ADJ POS
+
+REMOVE AJ + Pos IF (NOT -1 Ser) (0 AJ + Pos) ;
+
+# N
+
+SELECT N OR PRON OR NP IF (-1C PREP) (1 EOS) ;	# ambe fòrça. ; a res.
+SELECT N OR PRON OR NP IF (-1C PREP) (1C PREP) (NOT 0 ("tròp")) ;	# discors de fin d'annada
+
+SELECT N + &&AcordSN OR NP + &&AcordSN IF (-1C/* DET) (0C N) (-1/* DET + &&AcordSN) ;	# los acès ; deus autobús
+
+# N / AJ
+
+SELECT NP + &&AcordSN IF (-2 DET + &&AcordSN) (-1 AdjPre + &&AcordSN) (0 NP + &&AcordSN) (NOT -1 ("nau")) ;
+SELECT NP + &&AcordSN IF (-2/* DET + &&AcordSN) (-1 AdjPre + &&AcordSN) (0 NP + &&AcordSN) (NOT -1 ("nau")) ;
+SELECT N + &&AcordSN IF (-2 DET + &&AcordSN) (-1 AdjPre + &&AcordSN) (0 N + &&AcordSN) (NOT -1 ("nau")) ;
+SELECT N + &&AcordSN IF (-2/* DET + &&AcordSN) (-1 AdjPre + &&AcordSN) (0 N + &&AcordSN) (NOT -1 ("nau")) ;
+SELECT AJ + &&AcordSN IF (-1 DET + &&AcordSN) (0 AdjPre + &&AcordSN) (1 NP + &&AcordSN) (NOT 0 ("nau")) ;
+SELECT AJ + &&AcordSN IF (-1/* DET + &&AcordSN) (0 AdjPre + &&AcordSN) (1 NP + &&AcordSN) (NOT 0 ("nau")) ;
+SELECT AJ + &&AcordSN IF (-1 DET + &&AcordSN) (0 AdjPre + &&AcordSN) (1 N + &&AcordSN) (NOT 0 ("nau")) ;
+SELECT AJ + &&AcordSN IF (-1/* DET + &&AcordSN) (0 AdjPre + &&AcordSN) (1 N + &&AcordSN) (NOT 0 ("nau")) ;
+SELECT AJ + &&AcordSN IF (-1 De) (0 AdjPre + &&AcordSN) (1 N + &&AcordSN) (NOT 0 ("nau")) ;
+
+SELECT NP + &&AcordSN IF (-1 DET + &&AcordSN) (0 NP + &&AcordSN) (1 AJ + &&AcordSN) ;
+SELECT NP + &&AcordSN IF (-1/* DET + &&AcordSN) (0 NP + &&AcordSN) (1 AJ + &&AcordSN) ;
+SELECT N + &&AcordSN IF (-1 DET + &&AcordSN) (0 N + &&AcordSN) (1 AJ + &&AcordSN) ;
+SELECT N + &&AcordSN IF (-1/* DET + &&AcordSN) (0 N + &&AcordSN) (1 AJ + &&AcordSN) ;
+SELECT N + &&AcordSN IF (-1 NUM + &&AcordSN) (0 N + &&AcordSN) (1 AJ + &&AcordSN) ;
+
+SELECT NP + &&AcordSN IF (-2 DET + &&AcordSN) (-1C AJ) (-1 AJ + &&AcordSN) (0 NP + &&AcordSN) ;
+SELECT N + &&AcordSN IF (-2 DET + &&AcordSN) (-1C AJ) (-1 AJ + &&AcordSN) (0 N + &&AcordSN) ;
+SELECT N + &&AcordSN IF (-2 DET + &&AcordSN) (-1C NUM) (-1 NUM + &&AcordSN) (0 N + &&AcordSN) ;
+SELECT N + &&AcordSN IF (-2 DET + &&AcordSN) (-1C NUM) (0 N + &&AcordSN) ;
+
+SELECT AJ + &&AcordSN IF (-2 DET + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
+SELECT AJ + &&AcordSN IF (-2/* DET + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
+SELECT AJ + &&AcordSN IF (-2 NUM + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
+
+SELECT AJ + &&AcordSN IF (-2C N + &&AcordSN) (-1 AJ + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
+SELECT AJ + &&AcordSN IF (-2C N + &&AcordSN) (-1 AJ + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
+SELECT AJ + &&AcordSN IF (-2C N + &&AcordSN) (-1 AJ + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
+SELECT AJ + &&AcordSN IF (-3 DET + &&AcordSN) (-2 AJ + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
+SELECT AJ + &&AcordSN IF (-3/* DET + &&AcordSN) (-2 AJ + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
+SELECT AJ + &&AcordSN IF (-3 NUM + &&AcordSN) (-2 AJ + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
+
+SELECT AJ + &&AcordSN IF (-3C N + &&AcordSN) (-2 AJ + &&AcordSN) (-1 AJ + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
+SELECT AJ + &&AcordSN IF (-3C N + &&AcordSN) (-2 AJ + &&AcordSN) (-1 AJ + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
+SELECT AJ + &&AcordSN IF (-3C N + &&AcordSN) (-2 AJ + &&AcordSN) (-1 AJ + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
+
+# distincio entre MascPl i FemPl (típicament en terminacions en -es)
+#SELECT MascPl IF (-1C MascPl) (0 N + MascPl) (NOT 0 ("pel")) ;	# Pb: cap de las 200 comunas
+#SELECT FemPl IF (-1C FemPl) (0 N + FemPl) ;
+#SELECT MascPl IF (-1C MascPl) (0 AJ + MascPl) ;
+#SELECT FemPl IF (-1C FemPl) (0 AJ + FemPl) ;
+#SELECT MascPl IF (1C MascPl) (0 N + MascPl) (NOT 0 ("pel")) ;
+#SELECT FemPl IF (1C FemPl) (0 N + FemPl) ;
+#SELECT MascPl IF (1C MascPl) (0 AJ + MascPl) ;
+#SELECT FemPl IF (1C FemPl) (0 AJ + FemPl) ;
+#SELECT MascPl IF (-2C MascPl) (-1 AV OR PREAV) (0 AJ + MascPl) ;
+#SELECT FemPl IF (-2C FemPl) (-1 AV OR PREAV) (0 AJ + FemPl) ;
+#SELECT MascPl IF (2C MascPl) (1 AV OR PREAV) (0 AJ + MascPl) ;
+#SELECT FemPl IF (2C FemPl) (1 AV OR PREAV) (0 AJ + FemPl) ;
+
+# N / V
+
+REMOVE N IF (-1C PRON) (0 V) ;		# qui sap
+REMOVE V + Pers IF (-1C V + Pers) ;	# voletz ve pariar
+REMOVE V + Pers IF (1C V + Pers) ;	# voletz ve pariar
+
+REMOVE VBpp IF (-1C DET + &&AcordSN OR Pro) (0 N + &&AcordSN) ;		# lo resultat
+
+# MOTS
+
+SELECT Haver IF (0 A) (1C VBpp);	# a cantat
+SELECT Ser IF (-1 Ser) (0 ("estat"));	# soi estat
+SELECT Ser IF (-2 Ser) (-1 AV) (0 ("estat"));	# soi pas estat
+SELECT Ser IF (-3 Ser) (-2 AV) (-1 AV) (0 ("estat"));	# soi pas totjorn estat
+
+REMOVE Pro IF (NOT 1 V OR Pro OR unknown) ;
+REMOVE DET IF (0 Tn) (NOT 1 N OR NP OR AJ OR unknown) ;
+
+REMOVE PRON IF (0 Se) (NOT 1 Pro OR V + P3 OR V + VBinf OR V + VBger) ;        # se canti
+REMOVE PRON IF (0 Se) (1 Pro) (NOT 2 Pro OR V + P3 OR V + VBinf OR V + VBger) ;	# se li canti
+REMOVE PRON IF (0 Se) (1 Pro) (2 Pro) (NOT 3 Pro OR V + P3 OR V + VBinf OR V + VBger) ;	# se li o canti
+REMOVE PRON IF (0 Se) (1 Pro) (2 Pro) (3 Pro) (4 V + P3 OR V + VBinf OR V + VBger) ;
+REMOVE Conjadv IF (0 Se) (1C V + VBinf) ;        # de se crear
+REMOVE Conjadv IF (0 Se) (1 Pro) (2C V + VBinf) ;        # de se lo crear
+#REMOVE PRON IF (0 Se) (1 ("ne")) ;	# Se n’èram estadas amigas
+SELECT Conjadv IF (0 ("<s'i>"i) OR ("<s’i>"i)) (1 ("aver") OR ("auer")) ;
+SELECT Conjadv IF (0 Se) (1 ("<n'i>"i) OR ("<n’i>"i)) (2 ("aver") OR ("auer")) ;
+SELECT Conjadv IF (0 Se) (1 Pro) (2 Pro) (3 V) ;	# patch
+SELECT Conjadv IF (0 Se) (0/* Pro) (1 Pro) (2 V) ;	# patch
+SELECT Conjadv IF (0 Se) (1 Pro) (2 Pro) (3 Pro) (4 V) ;	# patch
+SELECT Conjadv IF (0 Se) (0/* Pro) (1 Pro) (2 Pro) (3 V) ;	# patch
+REMOVE Conjadv IF (0 Se) (0/* Pro) (-1*C N) (NOT -1* V + Pers) ;	# un ministeri s'encargue
+SELECT P3 IF (-1C Se + PRON) (NOT 0 Pro) (0 V) ;		# se canti
+SELECT P3 IF (-2C Se + PRON) (-1 Pro) (NOT 0 Pro) (0 V) ;	# se li canti
+SELECT P3 IF (-3C Se + PRON) (-2 Pro) (-1 Pro) (NOT 0 Pro) (0 V + P3) ;	# se li o canti
+REMOVE Ton IF (0 Se) (1 V) (1 P3) ;
+REMOVE Ton IF (0 Se) (1 VBinf) ;
+REMOVE Ton IF (0 Se) (1 Pro) ;
+SELECT Pro IF (0 Se) (1C Pro OR V + P3) ;	# patch			NE MARCHE PAS DU TOUT
+
+REMOVE P1 + Sg IF (-1 NP + Sg) (0 V + P3 + Sg) ;
+REMOVE P1 + Sg IF (-2 DET + MascSg) (-1 N + MascSg) (0 V + P3 + Sg) ;
+REMOVE P1 + Sg IF (-2 DET + FemSg) (-1 N + FemSg) (0 V + P3 + Sg) ;
+REMOVE P1 + Sg IF (-3 DET + MascSg) (-2 N_AJ + MascSg) (-1 N_AJ + MascSg) (0 V + P3 + Sg) ;
+REMOVE P1 + Sg IF (-3 DET + FemSg) (-2 N_AJ + FemSg) (-1 N_AJ + MascSg) (0 V + P3 + Sg) ;
+REMOVE P1 + Sg IF (-3C N_AJ + Sg) (-2 PREP) (-1 N) (0 V + P3 + Sg) ;
+REMOVE P1 + Sg IF (-4C N_AJ + Sg) (-3 PREP) (-2 N_AJ + &&AcordSN) (-1 N_AJ + &&AcordSN) (0 V + P3 + Sg) ;
+REMOVE P1 + Sg IF (-4C N_AJ + Sg) (-3 PREP) (-2 DET + &&AcordSN) (-1 N + &&AcordSN) (0 V + P3 + Sg) ;
+REMOVE P1 + Sg IF (-5C N_AJ + Sg) (-4 PREP) (-3 DET + &&AcordSN) (-2 N_AJ + &&AcordSN) (-1 N_AJ + &&AcordSN) (0 V + P3 + Sg) ;
+
+SELECT PRI IF (-2C PRI) (-1 Conjco) (0 PRS) (0 PRI) ; # il revoit et corrige
+SELECT PRS IF (-2C PRS) (-1 Conjco) (0 PRS) (0 PRI) ;
+SELECT PRI IF (2C PRI) (1 Conjco) (0 PRS) (0 PRI) ; # il corrige et revoit
+SELECT PRS IF (2C PRS) (1 Conjco) (0 PRS) (0 PRI) ;
+REMOVE PRI IF (-1* ("per que") BARRIER CM) (0 PRS) ;
+REMOVE PRI (*-1 ("après que") OR ("per que") OR ("per tal que") OR ("per fin que") OR ("a fin que") OR ("afin que") OR ("malgrat que") OR ("maugrat que") OR ("encara que") OR ("abans que") OR ("avans que") OR ("après que") OR ("aprèp que") OR ("apuèi que") BARRIER Cnj_Rel_End OR CM) (0 PRS) ;
+
+
+SELECT PREP IF (0 Dins) (1 DET) ;
+SELECT PREP IF (0 Pendent) (1 DET) ;
+
+
+REMOVE NP IF (-1 BOS) (0 ("Òc")) ;
+REMOVE NP IF (-2 BOS) (-1 (META:/-/r)) (0 ("Òc")) (1 CM) ;
+REMOVE NP IF (-1 (META:/[—]/r)) (0 ("Òc")) (1 CM) ;
+
+SELECT N IF (-1 DET + Masc) (NOT -1 Ser) (0 Estat) ;
+SELECT VBpp IF (-1 Ser + Sg) (0 Estat + Sg) ;
+#SELECT VBpp IF (-1 Ser + Pl) (0 Estat + Pl) ;
+SELECT Ser IF (0 Ser + Sg) (1 Ser + VBpp + Sg) ;
+SELECT Ser IF (0 Ser + Pl) (1 Ser + VBpp + Pl) ;
+SELECT VBpp IF (-2 Ser + Sg) (-1 AV) (0 Estat + Sg) ;
+SELECT VBpp IF (-2 Ser + Pl) (-1 AV) (0 Estat + Pl) ;
+SELECT Ser IF (0 Ser + Sg) (1 AV) (2 Ser + VBpp + Sg) ;
+SELECT Ser IF (0 Ser + Pl) (1 AV) (2 Ser + VBpp + Pl) ;
+SELECT N IF (-1 ("vila") OR ("ciutat")) (0 Estat) ;	# vila estat
+
+REMOVE AJ IF (0 Las) (1 N + FemPl) ;	# las pomas
+REMOVE AJ IF (0 Las) (1 NP + FemPl) ;	# las Corbièras
+REMOVE AJ IF (0 Las) (1 NUM) (2 N + FemPl) ;	# las 200 pomas
+
+SELECT Conjco IF (0 Mas) (-1 CM) ;
+
+REMOVE N IF (-1C V) (0 Pel) ;
+REMOVE N IF (0 Pel) (1 unknown) ;
 
 #deu -> dever / de +lo
 LIST Deu = "deu" ;
@@ -884,6 +956,8 @@ SELECT DET IF (0 ("<las>"i)) (1C N_AJ + FemPl) ;	# atencion : las casas (np.pro 
 #pel/peu nom o article contractat
 REMOVE N IF (1 Nm + Sg) (0 ("<peu>"i) OR ("<pel>"i)) (NOT -1 DET + Sg) (NOT -1 Artcontrsg) ;
 REMOVE N IF (1 Nm + Pl) (0 ("<peus>"i) OR ("<pels>"i)) (NOT -1 DET + Pl) (NOT -1 Artcontrpl) ;
+REMOVE N IF (1 AdjPre + MascSg) (0 ("<peu>"i) OR ("<pel>"i)) (NOT -1 DET + Sg) (NOT -1 Artcontrsg) ;
+REMOVE N IF (1 AdjPre + MascPl) (0 ("<peus>"i) OR ("<pels>"i)) (NOT -1 DET + Pl) (NOT -1 Artcontrpl) ;
 
 
 #punt de vista
