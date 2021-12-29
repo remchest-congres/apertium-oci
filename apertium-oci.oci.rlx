@@ -485,6 +485,8 @@ SELECT Voler IF (0 Voler) (0 Volar) (-1 ("què")) (NOT -2 ("en"));
 SELECT NUM IF (-1 ("en")) (0 ("dos")) ;
 SELECT PREP IF (0 ("en")) (1 ("dos")) ;
 
+SELECT V IF (0 ("tornar")) (1C VBinf) ;
+
 #En es pas un pronom s'es abans un gerondiu (amb possibilitat de pronoms entre los dos)
 REMOVE En_pron IF (1* VBger BARRIER (*) - Pro) ;
 
