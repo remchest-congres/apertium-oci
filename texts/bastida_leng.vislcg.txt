@@ -463,7 +463,7 @@
 "<totas>"
 	"tot" prn tn f pl SELECT:543
 "<fondadas>"
-;	"fondar" vblex pp f pl SELECT:544
+	"fondar" vblex pp f pl SELECT:544
 "<a>"
 	"a" adv
 "<novo>"
@@ -837,10 +837,9 @@
 "<a>"
 	"a" pr
 "<d'unes>"
-	"de" pr SELECT:225
-		"un" det ind m pl
-"<moment>"
-	"moment" n m sg
+	"d'unes" det ind m pl SELECT:225 SELECT:542
+"<moments>"
+	"moment" n m pl
 "<de>"
 	"de" pr SELECT:190
 "<l'>"
@@ -1257,7 +1256,6 @@
 "<pels>"
 	"per" pr
 		"lo" det def m pl
-;	"pel" n m pl REMOVE:878
 "<Catars>"
 	"catar" n m pl
 "<e>"
@@ -1497,7 +1495,6 @@
 	"èsser" vbser pri p3 sg
 "<aquí>"
 	"aquí" adv
-;	"aquí" ij REMOVE:423
 "<que>"
 	"que" cnjsub SELECT:337
 "<van>"
@@ -1714,48 +1711,31 @@
 	"." sent
 
 
-xxxxxXXXXXX
 "<D'unas>"
 	"d'unes" det ind f pl SELECT:225 SELECT:542
-;	"de" pr SELECT:225
-;		"un" det ind f pl
-;	"d'unes" prn tn f pl SELECT:225 SELECT:542
 "<bastidas>"
 	"bastida" n f pl SELECT:544
 "<s'>"
 	"se" prn pro ref p3 mf sp SELECT:729
-;	"se" cnjadv SELECT:729
-;	"si" cnjadv SELECT:729
 "<establisson>"
 	"establir" vblex pri p3 pl
 "<pasmens>"
 	"pasmens" cnjadv
 "<subre>"
 	"subre" pr
-;	"subre" ij REMOVE:423
 "<de>"
 	"de" pr SELECT:190
-;	"de" n m sg SELECT:190
-;	"un" det ind mf pl SELECT:190
-;	"dar" vblex prs p1 sg SELECT:190
-;	"dar" vblex prs p3 sg SELECT:190
 "<posicions>"
 	"posicion" n f pl
 "<defensivas>"
 	"defensiu" adj f pl
-;	"defensiva" n f pl REMOVE:495
 "<fòrtas>"
 	"fòrt" adj f pl
 "<,>"
 	"," cm
 "<coma>"
-	"coma" cnjadv
 	"coma" pr
-;	"coma" adv itg REMOVE:443
-;	"coma" adv excl REMOVE:433
-;	"coma" n f sg REMOVE:191
 "<Hastings>"
-	"Hastings" np cog mf sp
 	"Hastings" np top f sg
 "<,>"
 	"," cm
@@ -1765,7 +1745,6 @@ xxxxxXXXXXX
 	"," cm
 "<Vaths>"
 	"Vaths" np top f sg SELECT:774
-;	"vath" n f pl SELECT:774
 "<,>"
 	"," cm
 "<Pimbo>"
@@ -1787,48 +1766,28 @@ xxxxxXXXXXX
 	"de" pr
 "<autras>"
 	"autre" n f pl
-	"autre" adj ind f pl
 "<son>"
 	"èsser" vbser pri p3 pl
-;	"son" n m sg REMOVE:243
-;	"son" det pos f sg REMOVE:501
-;	"son" det pos m sg REMOVE:501
 "<entre>"
 	"entre" pr
-;	"entrar" vblex imp p3 sg REMOVE:313
-;	"entrar" vblex pri p1 sg REMOVE:626
-;	"entrar" vblex prs p1 sg REMOVE:626
-;	"entrar" vblex prs p3 sg REMOVE:626
 "<los>"
 	"lo" det def m pl
-;	"lo" prn pro p3 m pl REMOVE:327
 "<dos>"
-	"do" n m pl
 	"dos" num m sp
-	"dos" n m sp
 "<,>"
 	"," cm
 "<mejanament>"
 	"mejanament" adv
 "<dobèrtas>"
 	"dobèrt" adj f pl
-	"dobrir" vblex pp f pl
 "<e>"
 	"e" cnjcoo
-;	"e" n f sp REMOVE:195
-;	"e" n m sp REMOVE:195
 "<protegidas>"
 	"protegit" adj f pl
-	"protegir" vblex pp f pl
-;	"protegit" n f pl REMOVE:495
 "<,>"
 	"," cm
 "<coma>"
 	"coma" cnjadv
-	"coma" pr
-;	"coma" adv itg REMOVE:443
-;	"coma" adv excl REMOVE:433
-;	"coma" n f sg REMOVE:191
 "<esitantas>"
 	"esitant" adj f pl
 "<.>"
@@ -1836,7 +1795,6 @@ xxxxxXXXXXX
 
 "<Per exemple>"
 	"per exemple" adv
-	"per exemple" cnjadv
 "<:>"
 	":" sent
 
@@ -1857,33 +1815,20 @@ xxxxxXXXXXX
 
 "<Mas>"
 	"mas" cnjcoo SELECT:776
-;	"mas" adv SELECT:776
-;	"Mas" np al SELECT:776
-;	"mas" n m sg SELECT:776
-;	"Mas" np cog mf sp SELECT:776
-;	"Mas" np top m sg SELECT:776
-;	"mon" det pos f pl SELECT:776
 "<la>"
 	"lo" det def f sg SELECT:873
-;	"la" adv SELECT:873
-;	"lo" prn pro p3 f sg REMOVE:327
 "<majoritat>"
 	"majoritat" n f sg
 "<s'>"
 	"se" prn pro ref p3 mf sp
-;	"se" cnjadv REMOVE:725
-;	"si" cnjadv REMOVE:725
 "<implanta>"
 	"implantar" vblex pri p3 sg
-;	"implantar" vblex imp p2 sg REMOVE:313
 "<dins de>"
 	"dins de" pr
 "<vals>"
 	"val" n f pl
-	"val" n m pl
 "<sens>"
 	"sens" pr
-;	"sens" n m sg REMOVE:495
 "<accident>"
 	"accident" n m sg
 "<.>"
@@ -1899,10 +1844,6 @@ xxxxxXXXXXX
 	":" sent
 
 "<Granada>"
-	"granat" adj f sg
-	"granada" n f sg
-	"granar" vblex pp f sg
-	"Granada" np cog mf sp
 	"Granada" np top f sg
 "<,>"
 	"," cm
@@ -1915,21 +1856,13 @@ xxxxxXXXXXX
 "<,>"
 	"," cm
 "<La>"
-	"la" adv
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:327
 "<Bastida de Shalòssa>"
 	"Bastida de Shalòssa" np top f sg
 "<e>"
 	"e" cnjcoo
-;	"e" n f sp REMOVE:195
-;	"e" n m sp REMOVE:195
-"<Dur>"
-	"dur" adv
-	"dur" adj m sg
-;	"dur" n m sg REMOVE:495
-"<Hòrt>"
-	"hòrt" adj m sg
+"<Dur Hòrt>"
+	"Dur Hòrt" np top m sp
 "<.>"
 	"." sent
 
@@ -1944,47 +1877,34 @@ xxxxxXXXXXX
 
 "<Personatges>"
 	"personatge" n m pl
-"<de reng>"
-	"de reng" adv
+"<de>"
+	"de" pr
+"<reng>"
+	"reng" n m sg
 "<naut>"
-	"naut" adv
 	"naut" adj m sg
-;	"naut" n m sg REMOVE:495
 "<,>"
 	"," cm
 "<los>"
 	"lo" det def m pl
-;	"lo" prn pro p3 m pl REMOVE:327
 "<fondadors>"
 	"fondador" n m pl
 "<de>"
 	"de" pr SELECT:190
-;	"de" n m sg SELECT:190
-;	"un" det ind mf pl SELECT:190
-;	"dar" vblex prs p1 sg SELECT:190
-;	"dar" vblex prs p3 sg SELECT:190
 "<las>"
 	"lo" det def f pl SELECT:870
-;	"lo" prn pro p3 f pl REMOVE:327
 "<bastidas>"
 	"bastida" n f pl
 "<se>"
 	"se" prn pro ref p3 mf sp SELECT:729
-;	"se" cnjadv SELECT:729
 "<pòdon>"
 	"poder" vbmod pri p3 pl
 "<classar>"
 	"classar" vblex inf
-;	"classar" vblex ger REMOVE:523
 "<coma>"
 	"coma" cnjadv
-;	"coma" pr REMOVE:507
-;	"coma" adv itg REMOVE:443
-;	"coma" adv excl REMOVE:433
-;	"coma" n f sg REMOVE:191
 "<seguís>"
 	"seguir" vblex pri p3 sg
-;	"seguir" vblex imp p2 sg REMOVE:313
 "<:>"
 	":" sent
 
@@ -1995,18 +1915,12 @@ xxxxxXXXXXX
 
 "<los>"
 	"lo" det def m pl
-;	"lo" prn pro p3 m pl REMOVE:327
 "<comtes>"
 	"comte" n m pl
 "<de>"
 	"de" pr SELECT:190
-;	"de" n m sg SELECT:190
-;	"un" det ind mf pl SELECT:190
-;	"dar" vblex prs p1 sg SELECT:190
-;	"dar" vblex prs p3 sg SELECT:190
 "<Tolosa>"
 	"Tolosa" np top f sg SELECT:852
-;	"Tolosa" np cog mf sp SELECT:852
 "<:>"
 	":" sent
 
@@ -2016,68 +1930,47 @@ xxxxxXXXXXX
 	"VII" num mf sp
 "<e>"
 	"e" cnjcoo
-;	"e" n f sp REMOVE:195
-;	"e" n m sp REMOVE:195
 "<Anfós>"
 	"Anfós" np ant m sg
 "<de>"
 	"de" pr SELECT:190
-;	"de" n m sg SELECT:190
-;	"un" det ind mf pl SELECT:190
-;	"dar" vblex prs p1 sg SELECT:190
-;	"dar" vblex prs p3 sg SELECT:190
 "<Peitieus>"
 	"Peitieus" np top m sg
 
     
 "<los>"
 	"lo" det def m pl
-;	"lo" prn pro p3 m pl REMOVE:327
 "<reis>"
 	"rei" n m pl
 "<de>"
 	"de" pr SELECT:190
-;	"de" n m sg SELECT:190
-;	"un" det ind mf pl SELECT:190
-;	"dar" vblex prs p1 sg SELECT:190
-;	"dar" vblex prs p3 sg SELECT:190
 "<França>"
 	"França" np top f sg SELECT:852
-;	"França" np ant f sg SELECT:852
 "<:>"
 	":" sent
 
 "<Loís>"
 	"Loís" np ant m sg SELECT:801
-;	"loís" n m sg SELECT:801
 "<IX>"
 	"IX" num mf sp
 "<,>"
 	"," cm
 "<Felip>"
 	"Felip" np ant m sg SELECT:801
-;	"Felip" np cog mf sp SELECT:801
 "<III>"
 	"III" num mf sp
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:327
 "<ardit>"
-	"ardit" ij
 	"ardit" adj m sg
-	"ardit" n m sg
 "<,>"
 	"," cm
 "<e>"
 	"e" cnjcoo
-;	"e" n f sp REMOVE:195
-;	"e" n m sp REMOVE:195
 "<Felip>"
 	"Felip" np ant m sg SELECT:834
-;	"Felip" np cog mf sp SELECT:834
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:327
 "<Bèl>"
 	"bèl" adj m sg
 	"bèl" n m sg
@@ -2087,7 +1980,6 @@ xxxxxXXXXXX
     
 "<los>"
 	"lo" det def m pl
-;	"lo" prn pro p3 m pl REMOVE:327
 "<reis>"
 	"rei" n m pl
 "<d'>"
@@ -2116,8 +2008,6 @@ xxxxxXXXXXX
 	"II" num mf sp
 "<e>"
 	"e" cnjcoo
-;	"e" n f sp REMOVE:195
-;	"e" n m sp REMOVE:195
 "<Edoard>"
 	"Edoard" np ant m sg
 "<III>"
@@ -2128,64 +2018,42 @@ xxxxxXXXXXX
     
 "<los>"
 	"lo" det def m pl
-;	"lo" prn pro p3 m pl REMOVE:327
 "<grands>"
 	"grand" adj m pl
-	"grand" n mf pl
-	"grand" n m pl
 "<subordenats>"
-	"*subordenats"
+	"subordenat" n m pl
 "<,>"
 	"," cm
 "<coma>"
 	"coma" cnjadv
-	"coma" pr
-;	"coma" adv itg REMOVE:443
-;	"coma" adv excl REMOVE:433
-;	"coma" n f sg REMOVE:191
 "<los>"
 	"lo" det def m pl
-;	"lo" prn pro p3 m pl REMOVE:327
 "<senescals>"
 	"senescal" n m pl
 "<Doat>"
 	"Doat" np ant m sg
-;	"doat" n m sg REMOVE:495
-;	"Doat" np top m sg REMOVE:843
 "<Alaman>"
-	"*Alaman"
+	"Alaman" np cog mf sp
 "<,>"
 	"," cm
 "<Eustache>"
 	"Eustache" np ant m sg
 "<de>"
 	"de" pr SELECT:190
-;	"de" n m sg SELECT:190
-;	"un" det ind mf pl SELECT:190
-;	"dar" vblex prs p1 sg SELECT:190
-;	"dar" vblex prs p3 sg SELECT:190
 "<Beaumarchès>"
-	"*Beaumarchès"
+	"Beaumarchès" np cog mf sp
 "<e>"
 	"e" cnjcoo
-;	"e" n f sp REMOVE:195
-;	"e" n m sp REMOVE:195
 "<Jean>"
 	"Jean" np ant m sg
-;	"jean" n m sg REMOVE:495
 "<de>"
 	"de" pr SELECT:190
-;	"de" n m sg SELECT:190
-;	"un" det ind mf pl SELECT:190
-;	"dar" vblex prs p1 sg SELECT:190
-;	"dar" vblex prs p3 sg SELECT:190
 "<Grailly>"
-	"*Grailly"
+	"Grailly" np top m sg
 "<,>"
 	"," cm
 "<agissent>"
 	"agir" vblex ger
-	"agissent" adj m sg
 "<al>"
 	"a" pr
 		"lo" det def m sg
@@ -2193,34 +2061,17 @@ xxxxxXXXXXX
 	"nom" n m sg
 "<e>"
 	"e" cnjcoo
-;	"e" n f sp REMOVE:195
-;	"e" n m sp REMOVE:195
 "<per>"
 	"per" pr SELECT:187
-;	"per" vblex ger SELECT:187
-;	"per" vblex inf SELECT:187
-;	"perir" vblex pri p3 sg SELECT:187
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:709
 "<compte>"
 	"compte" n m sg
-;	"comptar" vblex imp p3 sg REMOVE:313
-;	"comptar" vblex prs p1 sg REMOVE:513
-;	"comptar" vblex prs p3 sg REMOVE:513
 "<de>"
 	"de" pr SELECT:190
-;	"de" n m sg SELECT:190
-;	"un" det ind mf pl SELECT:190
-;	"dar" vblex prs p1 sg SELECT:190
-;	"dar" vblex prs p3 sg SELECT:190
 "<son>"
 	"son" det pos m sg
-;	"son" n m sg REMOVE:243
-;	"son" det pos f sg REMOVE:528
-;	"èsser" vbser pri p3 pl REMOVE:512
 "<sobeiran>"
-	"sobeiran" adj m sg
 	"sobeiran" n m sg
 "<,>"
 	"," cm
@@ -2228,93 +2079,64 @@ xxxxxXXXXXX
     
 "<los>"
 	"lo" det def m pl
-;	"lo" prn pro p3 m pl REMOVE:327
 "<senhors>"
 	"senhor" n m pl
 "<locals>"
 	"local" adj m pl
-;	"local" n m pl REMOVE:495
 "<,>"
 	"," cm
 "<amb>"
 	"amb" pr
 "<entre>"
 	"entre" pr
-;	"entrar" vblex imp p3 sg REMOVE:313
-;	"entrar" vblex pri p1 sg REMOVE:512
-;	"entrar" vblex prs p1 sg REMOVE:512
-;	"entrar" vblex prs p3 sg REMOVE:512
 "<autres>"
 	"autre" n m pl
-	"autre" adj ind m pl
 "<los>"
 	"lo" det def m pl
-;	"lo" prn pro p3 m pl REMOVE:327
 "<comtes>"
 	"comte" n m pl
 "<de>"
 	"de" pr SELECT:190
-;	"de" n m sg SELECT:190
-;	"un" det ind mf pl SELECT:190
-;	"dar" vblex prs p1 sg SELECT:190
-;	"dar" vblex prs p3 sg SELECT:190
 "<Fois>"
 	"Fois" np top m sg SELECT:852
-;	"Fois" np cog mf sp SELECT:852
 "<,>"
 	"," cm
 "<los>"
 	"lo" det def m pl
-;	"lo" prn pro p3 m pl REMOVE:327
 "<comtes>"
 	"comte" n m pl
 "<de>"
 	"de" pr SELECT:190
-;	"de" n m sg SELECT:190
-;	"un" det ind mf pl SELECT:190
-;	"dar" vblex prs p1 sg SELECT:190
-;	"dar" vblex prs p3 sg SELECT:190
 "<Comenge>"
 	"Comenge" np top m sg
 "<,>"
 	"," cm
 "<los>"
 	"lo" det def m pl
-;	"lo" prn pro p3 m pl REMOVE:327
 "<comtes>"
 	"comte" n m pl
 "<d'>"
 	"de" pr
 "<Astarac>"
-	"*Astarac"
+	"Astarac" np top m sg
 
     
 "<las>"
 	"lo" det def f pl SELECT:550
-;	"lo" prn pro p3 f pl REMOVE:327
 "<autoritats>"
 	"autoritat" n f pl
 "<religiosas>"
 	"religiós" adj f pl
-;	"religiós" n f pl REMOVE:495
 "<,>"
 	"," cm
 "<coma>"
 	"coma" cnjadv
-;	"coma" pr REMOVE:507
-;	"coma" adv itg REMOVE:443
-;	"coma" adv excl REMOVE:433
-;	"coma" n f sg REMOVE:191
 "<d'>"
 	"de" pr
 "<avesques>"
 	"avesque" n m pl
 "<o>"
 	"o" cnjcoo
-;	"o" ij REMOVE:423
-;	"o" n f sp REMOVE:196
-;	"o" n m sp REMOVE:196
-;	"o" prn pro p3 nt REMOVE:327
 "<d'>"
 	"de" pr
 "<abadiás>"
@@ -2331,13 +2153,8 @@ xxxxxXXXXXX
 	"rason" n f pl
 "<de>"
 	"de" pr SELECT:190
-;	"de" n m sg SELECT:190
-;	"un" det ind mf pl SELECT:190
-;	"dar" vblex prs p1 sg SELECT:190
-;	"dar" vblex prs p3 sg SELECT:190
 "<las>"
 	"lo" det def f pl SELECT:874
-;	"lo" prn pro p3 f pl REMOVE:327
 "<fondacions>"
 	"fondacion" n f pl
 "<.>"
@@ -2346,7 +2163,6 @@ xxxxxXXXXXX
 
 
 "<Prenent>"
-	"prene" vblex ger
 	"préner" vblex ger
 "<sens dobte>"
 	"sens dobte" adv
@@ -2357,71 +2173,53 @@ xxxxxXXXXXX
 		"lo" det def m sg
 "<vam>"
 	"vam" n m sg
-;	"anar" vblex pri p1 pl REMOVE:512
 "<dels>"
 	"de" pr
 		"lo" det def m pl
 "<castels>"
-	"*castels"
+	"castel" n m pl
 "<nòus>"
 	"nòu" adj m pl
-;	"nòu" n m pl REMOVE:495
 "<e de>"
 	"e" cnjcoo
 		"de" pr
 "<las>"
 	"lo" det def f pl SELECT:874
-;	"lo" prn pro p3 f pl REMOVE:327
 "<salvetats>"
 	"salvetat" n f pl
 "<,>"
 	"," cm
 "<los>"
 	"lo" det def m pl
-;	"lo" prn pro p3 m pl REMOVE:327
 "<fondadors>"
 	"fondador" n m pl
 "<desvolopan>"
 	"desvolopar" vblex pri p3 pl
 "<las>"
 	"lo" det def f pl
-;	"lo" prn pro p3 f pl REMOVE:327
 "<bastidas>"
 	"bastida" n f pl
 "<per>"
 	"per" pr SELECT:187
-;	"per" vblex ger SELECT:187
-;	"per" vblex inf SELECT:187
-;	"perir" vblex pri p3 sg SELECT:187
 "<maitas>"
-	"*maitas"
+	"maitas" adj f pl
 "<rasons>"
 	"rason" n f pl
 "<que>"
 	"que" rel mf sp
-;	"que" adv REMOVE:182
-;	"que" cnjsub REMOVE:356
-;	"qué" prn itg mf sg REMOVE:353
 "<se>"
 	"se" prn pro ref p3 mf sp SELECT:729
-;	"se" cnjadv SELECT:729
 "<pòdon>"
 	"poder" vbmod pri p3 pl
 "<classar>"
 	"classar" vblex inf
-;	"classar" vblex ger REMOVE:523
 "<del>"
 	"de" pr
 		"lo" det def m sg
 "<biais>"
 	"biais" n m sg SELECT:602
-;	"biais" adj m sg SELECT:602
 "<seguent>"
-	"sègre" vblex ger
-	"seguir" vblex ger
 	"seguent" adj m sg
-;	"següent" pr REMOVE:507
-;	"següent" n m sg REMOVE:495
 "<:>"
 	":" sent
 
@@ -2432,22 +2230,17 @@ xxxxxXXXXXX
 
 "<politicas>"
 	"politic" adj f pl
-	"politic" n f pl
-	"politica" n f pl
-	"politicar" vblex pri p2 sg
 "<:>"
 	":" sent
 
 "<per exemple>"
 	"per exemple" adv
-	"per exemple" cnjadv
 "<,>"
 	"," cm
 "<citarem>"
 	"citar" vblex fti p1 pl
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:327
 "<besonh>"
 	"besonh" n m sg
 "<d'>"
@@ -2461,126 +2254,66 @@ xxxxxXXXXXX
 	"comte" n m sg
 "<de>"
 	"de" pr SELECT:190
-;	"de" n m sg SELECT:190
-;	"un" det ind mf pl SELECT:190
-;	"dar" vblex prs p1 sg SELECT:190
-;	"dar" vblex prs p3 sg SELECT:190
 "<Tolosa>"
 	"Tolosa" np top f sg SELECT:852
-;	"Tolosa" np cog mf sp SELECT:852
 "<als>"
 	"a" pr
 		"lo" det def m pl
 "<limits>"
 	"limit" n m pl SELECT:584
-;	"limit" adj m pl SELECT:584
 "<de>"
 	"de" pr SELECT:190
-;	"de" n m sg SELECT:190
-;	"un" det ind mf pl SELECT:190
-;	"dar" vblex prs p1 sg SELECT:190
-;	"dar" vblex prs p3 sg SELECT:190
 "<sas>"
 	"son" det pos f pl
-;	"sasir" vblex pri p3 sg REMOVE:512
-;	"saber" vblex pri p2 sg REMOVE:512
 "<ancianas>"
 	"ancian" adj f pl SELECT:596
-;	"ancian" n f pl SELECT:596
 "<tèrras>"
 	"tèrra" n f pl SELECT:592
-;	"terrar" vblex pri p2 sg SELECT:592
 "<a>"
 	"aver" vbhaver pri p3 sg SELECT:635
-	"auer" vbhaver pri p3 sg SELECT:635
-;	"a" pr SELECT:635
-;	"a" n f sp REMOVE:186
-;	"a" n m sp REMOVE:186
-;	"aver" vbmod pri p3 sg SELECT:635
-;	"aver" vblex pri p3 sg SELECT:635
-;	"auer" vblex pri p3 sg SELECT:635
 "<la>"
-	"la" adv
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:327
 "<seguida>"
-	"seguit" adj f sg
 	"seguida" n f sg
-	"seguir" vblex pp f sg
 "<de>"
 	"de" pr SELECT:190
-;	"de" n m sg SELECT:190
-;	"un" det ind mf pl SELECT:190
-;	"dar" vblex prs p1 sg SELECT:190
-;	"dar" vblex prs p3 sg SELECT:190
 "<la>"
 	"lo" det def f sg SELECT:870
-;	"la" adv SELECT:870
-;	"lo" prn pro p3 f sg REMOVE:327
 "<Crosada>"
-	"crosat" adj f sg
-	"crosat" n f sg
 	"crosada" n f sg
-;	"crosar" vblex pp f sg REMOVE:629
 "<dels>"
 	"de" pr
 		"lo" det def m pl
 "<Albigeses>"
-	"albigés" adj m pl
 	"albigés" n m pl
 "<,>"
 	"," cm
 "<o>"
 	"o" cnjcoo
-	"o" ij
-;	"o" n f sp REMOVE:196
-;	"o" n m sp REMOVE:196
-;	"o" prn pro p3 nt REMOVE:327
 "<encora>"
-	"*encora"
+	"encora" adv
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:327
-;	"lo" prn pro p3 m sg REMOVE:327
 "<antagonisme>"
 	"antagonisme" n m sg
 "<francoanglés>"
-	"*francoanglés"
+	"francoanglés" adj m sg
 "<que>"
-	"que" cnjsub
-	"qué" prn itg mf sg
-;	"que" adv REMOVE:182
-;	"que" rel mf sp REMOVE:476
+	"que" rel mf sp REMOVE:476
 "<butèt>"
 	"butar" vblex ifi p3 sg
 "<Anfós>"
 	"Anfós" np ant m sg
 "<de>"
 	"de" pr SELECT:190
-;	"de" n m sg SELECT:190
-;	"un" det ind mf pl SELECT:190
-;	"dar" vblex prs p1 sg SELECT:190
-;	"dar" vblex prs p3 sg SELECT:190
 "<Peitieus>"
 	"Peitieus" np top m sg
 "<a>"
-	"aver" vbmod pri p3 sg SELECT:676
-;	"a" pr SELECT:676
-;	"a" n f sp REMOVE:186
-;	"a" n m sp REMOVE:186
-;	"aver" vbhaver pri p3 sg SELECT:676
-;	"aver" vblex pri p3 sg SELECT:676
-;	"auer" vbhaver pri p3 sg SELECT:676
-;	"auer" vblex pri p3 sg SELECT:676
+	"a" pr SELECT:676
 "<fondar>"
 	"fondar" vblex inf SELECT:515
-;	"fondar" vblex ger SELECT:515
 "<de>"
 	"de" pr SELECT:190
-;	"de" n m sg SELECT:190
-;	"un" det ind mf pl SELECT:190
-;	"dar" vblex prs p1 sg SELECT:190
-;	"dar" vblex prs p3 sg SELECT:190
 "<bastidas>"
 	"bastida" n f pl SELECT:584
 "<al>"
@@ -2588,7 +2321,6 @@ xxxxxXXXXXX
 		"lo" det def m sg
 "<limit>"
 	"limit" n m sg SELECT:584
-;	"limit" adj m sg SELECT:584
 "<del>"
 	"de" pr
 		"lo" det def m sg
@@ -2603,8 +2335,6 @@ xxxxxXXXXXX
 
 "<L'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:327
-;	"lo" prn pro p3 m sg REMOVE:327
 "<implantacion>"
 	"implantacion" n f sg
 "<del>"
@@ -2612,13 +2342,10 @@ xxxxxXXXXXX
 		"lo" det def m sg
 "<poder>"
 	"poder" n m sg SELECT:602
-;	"poder" vbmod ger REMOVE:523
-;	"poder" vbmod inf SELECT:602
 "<reial>"
 	"reial" adj m sg
 "<francés>"
 	"francés" adj m sg
-	"francés" n m sg
 "<sul>"
 	"sus" pr
 		"lo" det def m sg
@@ -2626,60 +2353,30 @@ xxxxxXXXXXX
 	"comtat" n m sg
 "<de>"
 	"de" pr SELECT:190
-;	"de" n m sg SELECT:190
-;	"un" det ind mf pl SELECT:190
-;	"dar" vblex prs p1 sg SELECT:190
-;	"dar" vblex prs p3 sg SELECT:190
 "<Tolosa>"
 	"Tolosa" np top f sg SELECT:851
-;	"Tolosa" np cog mf sp SELECT:851
 "<annexat>"
 	"annexar" vblex pp m sg
 "<foguèt>"
-	"fòire" vblex ifi p3 sg
 	"èsser" vbser ifi p3 sg
 "<tanben>"
 	"tanben" adv
-	"tanben" cnjadv
-;	"tanben" preadv REMOVE:566
 "<una>"
 	"un" det ind f sg SELECT:361
-;	"un" num f sp SELECT:361
-;	"una" n f sg SELECT:361
-;	"un" prn tn f sg SELECT:361
-;	"unir" vblex prs p1 sg SELECT:361
-;	"unir" vblex prs p3 sg SELECT:361
 "<rason>"
 	"rason" n f sg SELECT:544
-;	"raire" vblex pri p3 pl SELECT:544
 "<de>"
 	"de" pr SELECT:190
-;	"de" n m sg SELECT:190
-;	"un" det ind mf pl SELECT:190
-;	"dar" vblex prs p1 sg SELECT:190
-;	"dar" vblex prs p3 sg SELECT:190
 "<fondacion>"
 	"fondacion" n f sg
 "<,>"
 	"," cm
 "<tot>"
 	"tot" adv
-	"tot" adj m sg
-	"tot" adj nt sg
-	"tot" n m sg
-	"tot" prn tn m sg
-;	"tot" predet m sg REMOVE:498
-;	"tot" predet nt sg REMOVE:498
-;	"tot" det ind m sg REMOVE:710
 "<coma>"
 	"coma" cnjadv
-	"coma" pr
-;	"coma" adv itg REMOVE:443
-;	"coma" adv excl REMOVE:433
-;	"coma" n f sg REMOVE:191
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:327
 "<besonh>"
 	"besonh" n m sg
 "<d'>"
@@ -2687,10 +2384,8 @@ xxxxxXXXXXX
 "<autonomia>"
 	"autonomia" n f sg
 "<d'unes>"
-	"d'unes" det ind m pl SELECT:225 SELECT:542
-;	"de" pr SELECT:225
-;		"un" det ind m pl
-;	"d'unes" prn tn m pl SELECT:225 SELECT:542
+	"de" pr SELECT:225
+		"un" det ind m pl
 "<senhors>"
 	"senhor" n m pl
 "<.>"
@@ -2705,57 +2400,30 @@ xxxxxXXXXXX
 
 "<la>"
 	"lo" det def f sg SELECT:873
-;	"la" adv SELECT:873
-;	"lo" prn pro p3 f sg REMOVE:327
 "<mesa en valor>"
 	"mesa# en valor" n f sg
 "<de>"
 	"de" pr SELECT:190
-;	"de" n m sg SELECT:190
-;	"un" det ind mf pl SELECT:190
-;	"dar" vblex prs p1 sg SELECT:190
-;	"dar" vblex prs p3 sg SELECT:190
 "<bosigas>"
 	"bosiga" n f pl
-;	"bosigar" vblex pri p2 sg REMOVE:512
 "<o>"
 	"o" cnjcoo
-;	"o" ij REMOVE:423
-;	"o" n f sp REMOVE:196
-;	"o" n m sp REMOVE:196
-;	"o" prn pro p3 nt REMOVE:327
 "<de>"
 	"de" pr SELECT:190
-;	"de" n m sg SELECT:190
-;	"un" det ind mf pl SELECT:190
-;	"dar" vblex prs p1 sg SELECT:190
-;	"dar" vblex prs p3 sg SELECT:190
 "<bòsques>"
-	"boscar" vblex prs p2 sg SELECT:224
-;	"bòsc" n m pl SELECT:224
+	"bòsc" n m pl SELECT:224
 "<pas>"
 	"pas" adv SELECT:223
-;	"pas" n m sg SELECT:223
 "<esplechats>"
 	"esplechar" vblex pp m pl
 "<es>"
 	"èsser" vbser pri p3 sg
 "<una>"
-	"una" n f sg
 	"un" prn tn f sg
-;	"un" num f sp REMOVE:562
-;	"un" det ind f sg REMOVE:710
-;	"unir" vblex prs p1 sg REMOVE:626
-;	"unir" vblex prs p3 sg REMOVE:626
 "<de>"
 	"de" pr SELECT:190
-;	"de" n m sg SELECT:190
-;	"un" det ind mf pl SELECT:190
-;	"dar" vblex prs p1 sg SELECT:190
-;	"dar" vblex prs p3 sg SELECT:190
 "<las>"
 	"lo" det def f pl SELECT:550
-;	"lo" prn pro p3 f pl REMOVE:327
 "<rasons>"
 	"rason" n f pl
 "<economicas>"
@@ -2765,43 +2433,27 @@ xxxxxXXXXXX
 
 "<De mai>"
 	"de mai" cnjadv
-	"de" pr
-		"mai" adv
-	"de" pr
-		"mai" n m sg
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:327
 "<desvolopament>"
 	"desvolopament" n m sg
 "<de>"
 	"de" pr SELECT:190
-;	"de" n m sg SELECT:190
-;	"un" det ind mf pl SELECT:190
-;	"dar" vblex prs p1 sg SELECT:190
-;	"dar" vblex prs p3 sg SELECT:190
 "<las>"
 	"lo" det def f pl SELECT:870
-;	"lo" prn pro p3 f pl REMOVE:327
 "<fièiras>"
-	"fièr" adj f pl
-	"fièr" n f pl
 	"fièira" n f pl
 "<e>"
 	"e" cnjcoo
-;	"e" n f sp REMOVE:195
-;	"e" n m sp REMOVE:195
 "<dels>"
 	"de" pr
 		"lo" det def m pl
 "<mercats>"
 	"mercat" n m pl SELECT:584
-;	"mercar" vblex pp m pl SELECT:584
 "<dins>"
 	"dins" pr
 "<las>"
 	"lo" det def f pl SELECT:874
-;	"lo" prn pro p3 f pl REMOVE:327
 "<nòvas>"
 	"nòu" adj f pl SELECT:596
 "<bastidas>"
@@ -2810,39 +2462,22 @@ xxxxxXXXXXX
 	"èsser" vbser pri p3 sg
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:327
 "<biais>"
-	"biais" adj m sg
 	"biais" n m sg
 "<de>"
 	"de" pr SELECT:190
-;	"de" n m sg SELECT:190
-;	"un" det ind mf pl SELECT:190
-;	"dar" vblex prs p1 sg SELECT:190
-;	"dar" vblex prs p3 sg SELECT:190
 "<percebre>"
 	"percebre" vblex inf SELECT:514
-;	"percebre" vblex ger SELECT:514
 "<de>"
 	"de" pr SELECT:190
-;	"de" n m sg SELECT:190
-;	"un" det ind mf pl SELECT:190
-;	"dar" vblex prs p1 sg SELECT:190
-;	"dar" vblex prs p3 sg SELECT:190
 "<revenguts>"
-	"revengut" adj m pl
 	"revengut" n m pl
-	"revenir" vblex pp m pl
 "<consequents>"
 	"consequent" adj m pl
 "<per>"
 	"per" pr SELECT:187
-;	"per" vblex ger SELECT:187
-;	"per" vblex inf SELECT:187
-;	"perir" vblex pri p3 sg SELECT:187
 "<los>"
 	"lo" det def m pl
-;	"lo" prn pro p3 m pl REMOVE:327
 "<fondadors>"
 	"fondador" n m pl
 "<.>"
@@ -2857,19 +2492,12 @@ xxxxxXXXXXX
 
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:327
-;	"lo" prn pro p3 m sg REMOVE:327
 "<agropament>"
 	"agropament" n m sg
 "<de>"
 	"de" pr SELECT:190
-;	"de" n m sg SELECT:190
-;	"un" det ind mf pl SELECT:190
-;	"dar" vblex prs p1 sg SELECT:190
-;	"dar" vblex prs p3 sg SELECT:190
 "<las>"
 	"lo" det def f pl SELECT:874
-;	"lo" prn pro p3 f pl REMOVE:327
 "<demoranças>"
 	"demorança" n f pl
 "<espargidas>"
@@ -2878,106 +2506,64 @@ xxxxxXXXXXX
 	"motivar" vblex ifi p3 sg
 "<las>"
 	"lo" det def f pl SELECT:874
-;	"lo" prn pro p3 f pl REMOVE:327
 "<fondacions>"
 	"fondacion" n f pl
 "<,>"
 	"," cm
 "<tot>"
 	"tot" adv
-	"tot" adj m sg
-	"tot" adj nt sg
-	"tot" n m sg
-	"tot" prn tn m sg
-;	"tot" predet m sg REMOVE:498
-;	"tot" predet nt sg REMOVE:498
-;	"tot" det ind m sg REMOVE:710
 "<coma>"
 	"coma" cnjadv
-	"coma" pr
-;	"coma" adv itg REMOVE:443
-;	"coma" adv excl REMOVE:433
-;	"coma" n f sg REMOVE:191
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:327
 "<desplaçament>"
 	"desplaçament" n m sg
 "<de>"
 	"de" pr SELECT:190
-;	"de" n m sg SELECT:190
-;	"un" det ind mf pl SELECT:190
-;	"dar" vblex prs p1 sg SELECT:190
-;	"dar" vblex prs p3 sg SELECT:190
 "<populacion>"
 	"populacion" n f sg
 "<aprèp>"
-	"aprèp" adv
-	"aprèp" cnjadv
 	"aprèp" pr
 "<l'>"
 	"lo" det def mf sg
-;	"lo" prn pro p3 f sg REMOVE:327
-;	"lo" prn pro p3 m sg REMOVE:327
 "<avaliment>"
 	"avaliment" n m sg
 "<d'>"
 	"de" pr
 "<un>"
 	"un" det ind m sg SELECT:361
-;	"un" num m sp SELECT:361
-;	"un" n m sg SELECT:361
-;	"un" prn tn m sg SELECT:361
-;	"unir" vblex pri p3 sg SELECT:361
 "<castèl>"
 	"castèl" n m sg
 "<nòu>"
-	"nòu" num mf sp
 	"nòu" adj m sg
-;	"nòu" n m sg REMOVE:495
 "<.>"
 	"." sent
 
     
 
 "<securitàrias>"
-	"*securitàrias"
+	"securitària"	adj f pl
 "<:>"
 	":" sent
 
 "<la>"
 	"lo" det def f sg SELECT:873
-;	"la" adv SELECT:873
-;	"lo" prn pro p3 f sg REMOVE:327
 "<proteccion>"
 	"proteccion" n f sg
 "<de>"
 	"de" pr SELECT:190
-;	"de" n m sg SELECT:190
-;	"un" det ind mf pl SELECT:190
-;	"dar" vblex prs p1 sg SELECT:190
-;	"dar" vblex prs p3 sg SELECT:190
 "<las>"
 	"lo" det def f pl SELECT:874
-;	"lo" prn pro p3 f pl REMOVE:327
 "<populacions>"
 	"populacion" n f pl
 "<de>"
 	"de" pr SELECT:190
-;	"de" n m sg SELECT:190
-;	"un" det ind mf pl SELECT:190
-;	"dar" vblex prs p1 sg SELECT:190
-;	"dar" vblex prs p3 sg SELECT:190
 "<la>"
-	"la" adv
 	"lo" det def f sg
-;	"lo" prn pro p3 f sg REMOVE:327
 "<tochinariá>"
-	"*tochinariá"
+	"tochinariá" n f sg
 "<e>"
 	"e" cnjcoo
-;	"e" n f sp REMOVE:195
-;	"e" n m sp REMOVE:195
 "<dels>"
 	"de" pr
 		"lo" det def m pl
@@ -2985,37 +2571,21 @@ xxxxxXXXXXX
 	"conflicte" n m pl
 "<per>"
 	"per" pr SELECT:187
-;	"per" vblex ger SELECT:187
-;	"per" vblex inf SELECT:187
-;	"perir" vblex pri p3 sg SELECT:187
 "<lo>"
 	"lo" det def m sg
-;	"lo" prn pro p3 m sg REMOVE:327
 "<senhor>"
 	"senhor" n m sg
 "<es>"
 	"èsser" vbser pri p3 sg
 "<una>"
 	"un" det ind f sg SELECT:361
-;	"un" num f sp SELECT:361
-;	"una" n f sg SELECT:361
-;	"un" prn tn f sg SELECT:361
-;	"unir" vblex prs p1 sg SELECT:361
-;	"unir" vblex prs p3 sg SELECT:361
 "<causa>"
 	"causa" n f sg SELECT:544 SELECT:601
-;	"caüs" adj f sg SELECT:544 SELECT:601
-;	"causar" vblex imp p2 sg REMOVE:313
-;	"causar" vblex pri p3 sg SELECT:544
-;	"causir" vblex prs p1 sg SELECT:544
-;	"causir" vblex prs p3 sg SELECT:544
 "<complementària>"
 	"complementari" adj f sg
 "<d'unas>"
-	"d'unes" det ind f pl SELECT:225 SELECT:542
-;	"de" pr SELECT:225
-;		"un" det ind f pl
-;	"d'unes" prn tn f pl SELECT:225 SELECT:542
+	"de" pr SELECT:225
+		"un" det ind f pl
 "<bastisons>"
 	"bastison" n f pl
 "<.>"
@@ -18941,13 +18511,8 @@ xxxxxXXXXXX
 
 "<D'unas>"
 	"d'unes" det ind f pl SELECT:225 SELECT:542
-;	"de" pr SELECT:225
-;		"un" det ind f pl
-;	"d'unes" prn tn f pl SELECT:225 SELECT:542
 "<bastidas>"
-	"bastit" adj f pl SELECT:544
 	"bastida" n f pl SELECT:544
-;	"bastir" vblex pp f pl SELECT:544
 "<avián>"
 	"aver" vbhaver pii p3 pl
 	"aver" vblex pii p3 pl
@@ -21157,9 +20722,6 @@ xxxxxXXXXXX
 
 "<D'unes>"
 	"d'unes" det ind m pl SELECT:225 SELECT:542
-;	"de" pr SELECT:225
-;		"un" det ind m pl
-;	"d'unes" prn tn m pl SELECT:225 SELECT:542
 "<fondadors>"
 	"fondador" n m pl
 "<son>"
@@ -23142,14 +22704,10 @@ xxxxxXXXXXX
 "<Dins>"
 	"dins" pr
 "<d'unas>"
-	"d'unes" det ind f pl SELECT:225 SELECT:542
-;	"de" pr SELECT:225
-;		"un" det ind f pl
-;	"d'unes" prn tn f pl SELECT:225 SELECT:542
+	"de" pr SELECT:225
+		"un" det ind f pl
 "<bastidas>"
-	"bastit" adj f pl SELECT:544
 	"bastida" n f pl SELECT:544
-;	"bastir" vblex pp f pl SELECT:544
 "<,>"
 	"," cm
 "<una>"
@@ -23449,14 +23007,10 @@ xxxxxXXXXXX
 "<Dins>"
 	"dins" pr
 "<d'unas>"
-	"d'unes" det ind f pl SELECT:225 SELECT:542
-;	"de" pr SELECT:225
-;		"un" det ind f pl
-;	"d'unes" prn tn f pl SELECT:225 SELECT:542
+	"de" pr SELECT:225
+		"un" det ind f pl
 "<bastidas>"
-	"bastit" adj f pl SELECT:544
 	"bastida" n f pl SELECT:544
-;	"bastir" vblex pp f pl SELECT:544
 "<d'>"
 	"de" pr
 "<eissartatge>"
@@ -28371,12 +27925,8 @@ xxxxxXXXXXX
 
 "<D'unas>"
 	"d'unes" det ind f pl SELECT:225 SELECT:542
-;	"de" pr SELECT:225
-;		"un" det ind f pl
-;	"d'unes" prn tn f pl SELECT:225 SELECT:542
 "<règlas>"
 	"règla" n f pl SELECT:544
-;	"reglar" vblex pri p2 sg SELECT:544
 "<d'>"
 	"de" pr
 "<implantacion>"
@@ -28729,9 +28279,6 @@ xxxxxXXXXXX
 	"," cm
 "<d'unes>"
 	"d'unes" det ind m pl SELECT:225 SELECT:542
-;	"de" pr SELECT:225
-;		"un" det ind m pl
-;	"d'unes" prn tn m pl SELECT:225 SELECT:542
 "<ostals>"
 	"ostal" n m pl
 "<de cara>"
@@ -30670,13 +30217,8 @@ xxxxxXXXXXX
 
 "<D'unas>"
 	"d'unes" det ind f pl SELECT:225 SELECT:542
-;	"de" pr SELECT:225
-;		"un" det ind f pl
-;	"d'unes" prn tn f pl SELECT:225 SELECT:542
 "<bastidas>"
-	"bastit" adj f pl SELECT:544
 	"bastida" n f pl SELECT:544
-;	"bastir" vblex pp f pl SELECT:544
 "<coneguèron>"
 	"conéisser" vblex ifi p3 pl
 "<tre>"
@@ -30737,9 +30279,6 @@ xxxxxXXXXXX
 	"," cm
 "<d'unes>"
 	"d'unes" det ind m pl SELECT:225 SELECT:542
-;	"de" pr SELECT:225
-;		"un" det ind m pl
-;	"d'unes" prn tn m pl SELECT:225 SELECT:542
 "<fondadors>"
 	"fondador" n m pl
 "<van>"
