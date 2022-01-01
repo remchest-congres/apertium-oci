@@ -161,7 +161,7 @@ LIST Qui = "qui" ;
 LIST Que_Itg = ("qué" itg) ;
 LIST Se = "se" ;
 LIST Las = "las" ;
-LIST Mas = "mas" ;
+LIST Mas_cnjcoo = "mas" "mes" ;
 LIST Estat = "estat" ;
 LIST Volar = "volar" ;
 LIST Voler = "voler" ;
@@ -382,6 +382,7 @@ REMOVE Conjsub IF (-3 N) (-2 AV OR PREAV) (-1 AJ) (0 Que) ;
 REMOVE AVG IF (NOT -1 ("pas") OR ("solament")) (0 Que) ;
 
 REMOVE Que_Itg IF (NOT -1 BOS OR CM OR PREP OR Conjadv OR Vconj OR VBinf OR VBger) ;
+REMOVE Que_Itg IF (-1 CM) (NOT 1* ("?")) ;
 REMOVE Que_Itg IF (-1C N_AJ OR VBpp OR NP) ;
 REMOVE Que_Itg IF (-2C N_AJ OR VBpp OR NP) (-1 CM) ;
 REMOVE Que_Itg IF (-2C N_AJ OR VBpp OR NP) (-1 PREP) ;
@@ -540,6 +541,7 @@ REMOVE PREDET IF (NOT 1 DET);
 
 #Los pronoms possessius son totjorn seguits per un nom, un adjectiu, un advèrb o un numeral
 REMOVE DETpos IF (NOT 1 N OR AJ OR AV OR NUM OR NP OR unknown);
+REMOVE DETpos IF (0 ("son")) (1C NUM) ;		# son doas causas
 
 # L'enonciatiu es totjorn seguit d'un vèrb o d'un proclitic
 REMOVE Enon IF (NOT 1 V OR Pro);
@@ -759,10 +761,10 @@ SELECT P2 + Sg IF (-1 PRON + Tn + P2 + Sg) (0 V + P2 + Sg) (NOT -1 DET + &&Acord
 SELECT P2 + Sg IF (-2 PRON + Tn + P2 + Sg) (-1 Pro OR AV) (0 V + P2 + Sg) ;
 SELECT P2 + Sg IF (-3 PRON + Tn + P2 + Sg) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P2 + Sg) ;
 SELECT P2 + Sg IF (-4 PRON + Tn + P2 + Sg) (-3 Pro OR AV) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P2 + Sg) ;
-SELECT P3 + Sg IF (-1 PRON + Tn + P3 + Sg) (0 V + P3 + Sg) (NOT -1 DET + &&AcordSN LINK NOT 0 N_AJ + &&AcordSN) ;
-SELECT P3 + Sg IF (-2 PRON + Tn + P3 + Sg) (-1 Pro OR AV) (0 V + P3 + Sg) ;
-SELECT P3 + Sg IF (-3 PRON + Tn + P3 + Sg) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P3 + Sg) ;
-SELECT P3 + Sg IF (-4 PRON + Tn + P3 + Sg) (-3 Pro OR AV) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P3 + Sg) ;
+SELECT P3 + Sg IF (-1 PRON + Tn + P3 + Sg LINK NOT 0 ("se")) (0 V + P3 + Sg) (NOT -1 DET + &&AcordSN LINK NOT 0 N_AJ + &&AcordSN) ;
+SELECT P3 + Sg IF (-2 PRON + Tn + P3 + Sg LINK NOT 0 ("se")) (-1 Pro OR AV) (0 V + P3 + Sg) ;
+SELECT P3 + Sg IF (-3 PRON + Tn + P3 + Sg LINK NOT 0 ("se")) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P3 + Sg) ;
+SELECT P3 + Sg IF (-4 PRON + Tn + P3 + Sg LINK NOT 0 ("se")) (-3 Pro OR AV) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P3 + Sg) ;
 SELECT P1 + Pl IF (-1 PRON + Tn + P1 + Pl) (0 V + P1 + Pl) (NOT -1 DET + &&AcordSN LINK NOT 0 N_AJ + &&AcordSN) ;
 SELECT P1 + Pl IF (-2 PRON + Tn + P1 + Pl) (-1 Pro OR AV) (0 V + P1 + Pl) ;
 SELECT P1 + Pl IF (-3 PRON + Tn + P1 + Pl) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P1 + Pl) ;
@@ -775,7 +777,6 @@ SELECT P3 + Pl IF (-1 PRON + Tn + P3 + Pl) (0 V + P3 + Pl) (NOT -1 DET + &&Acord
 SELECT P3 + Pl IF (-2 PRON + Tn + P3 + Pl) (-1 Pro OR AV) (0 V + P3 + Pl) ;
 SELECT P3 + Pl IF (-3 PRON + Tn + P3 + Pl) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P3 + Pl) ;
 SELECT P3 + Pl IF (-4 PRON + Tn + P3 + Pl) (-3 Pro OR AV) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P3 + Pl) ;
-
 
 SELECT Vconj_indic IF (-2 PRON + Tn + P1 + Sg) (-1C Enon) (0 V + P1 + Sg) ;
 SELECT Vconj_indic IF (-3 PRON + Tn + P1 + Sg) (-2C Enon) (-1 Pro OR AV) (0 V + P1 + Sg) ;
@@ -905,6 +906,10 @@ SELECT AJ + &&AcordSN IF (-3C N + &&AcordSN) (-2 AJ + &&AcordSN) (-1 AJ + &&Acor
 SELECT AJ + &&AcordSN IF (-3C N + &&AcordSN) (-2 AJ + &&AcordSN) (-1 AJ + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
 SELECT AJ + &&AcordSN IF (-3C N + &&AcordSN) (-2 AJ + &&AcordSN) (-1 AJ + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
 
+SELECT N + &&AcordSN IF (-1C DET + &&AcordSN) (1C EOS) ;
+SELECT N + &&AcordSN IF (-1C DET + &&AcordSN) (1C PREP) ;
+SELECT N + &&AcordSN IF (-1C DET + &&AcordSN) (1C Rel) ;
+
 # distincio entre MascPl i FemPl (típicament en terminacions en -es)
 #SELECT MascPl IF (-1C MascPl) (0 N + MascPl) (NOT 0 ("pel")) ;	# Pb: cap de las 200 comunas
 #SELECT FemPl IF (-1C FemPl) (0 N + FemPl) ;
@@ -969,6 +974,10 @@ REMOVE P1 + Sg IF (-4C N_AJ + Sg) (-3 PREP) (-2 N_AJ + &&AcordSN) (-1 N_AJ + &&A
 REMOVE P1 + Sg IF (-4C N_AJ + Sg) (-3 PREP) (-2 DET + &&AcordSN) (-1 N + &&AcordSN) (0 V + P3 + Sg) ;
 REMOVE P1 + Sg IF (-5C N_AJ + Sg) (-4 PREP) (-3 DET + &&AcordSN) (-2 N_AJ + &&AcordSN) (-1 N_AJ + &&AcordSN) (0 V + P3 + Sg) ;
 
+REMOVE PRS IF (-1C Se + Conjadv) ;
+REMOVE PRS IF (-2C Se + Conjadv) (-1 Pro OR AV) ;
+REMOVE PRS IF (-3C Se + Conjadv) (-2 Pro OR AV) (-1 Pro OR AV) ;
+REMOVE PRS IF (-4C Se + Conjadv) (-3 Pro OR AV) (-2 Pro OR AV) (-1 Pro OR AV) ;
 SELECT PRI IF (-2C PRI) (-1 Conjco) (0 PRS) (0 PRI) ; # il revoit et corrige
 SELECT PRS IF (-2C PRS) (-1 Conjco) (0 PRS) (0 PRI) ;
 SELECT PRI IF (2C PRI) (1 Conjco) (0 PRS) (0 PRI) ; # il corrige et revoit
@@ -1000,7 +1009,8 @@ REMOVE AJ IF (0 Las) (1 N + FemPl) ;	# las pomas
 REMOVE AJ IF (0 Las) (1 NP + FemPl) ;	# las Corbièras
 REMOVE AJ IF (0 Las) (1 NUM) (2 N + FemPl) ;	# las 200 pomas
 
-SELECT Conjco IF (0 Mas) (-1 CM) ;
+SELECT Conjco IF (0 Mas_cnjcoo) (-1 CM) ;
+SELECT Conjco IF (0 Mas_cnjcoo) (-1 BOS) ;
 
 REMOVE N IF (-1C V) (0 Pel) ;
 REMOVE N IF (0 Pel) (1 unknown) ;
