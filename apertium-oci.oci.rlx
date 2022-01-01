@@ -171,7 +171,7 @@ List Nummois = "1" "1èr" "1ièr" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12"
 
 # adjectifs qui souvent vont devant le nom
 #SET AdjPre = ("ancien") OR ("vieil") OR ("nouveau") OR ("grand") OR ("petit") OR ("majeur") OR ("bon") OR ("mal") OR ("mauvais") OR ("pauvre") OR      ("haut") OR ("bas") OR ("seul") OR ("célèbre") OR ("vrai") OR ("faux") OR ("beau") OR ("sale") OR ("large") OR ("long") OR ("saint") OR ("sacré") OR ("faible") OR ("multiple") OR ("cher") OR ("gros") ;
-SET AdjPre = ("ancian") OR ("nòu") OR ("nau") OR ("novèl") OR ("navèth") OR ("grand") OR ("gran") OR ("petit") OR ("pichon") OR ("pichòt") OR ("bon") OR ("mal") OR ("naut") OR ("haut") OR ("bas") OR ("baish") OR ("autre") OR ("aute") ;
+SET AdjPre = ("ancian") OR ("nòu") OR ("nau") OR ("novèl") OR ("navèth") OR ("grand") OR ("gran") OR ("petit") OR ("pichon") OR ("pichòt") OR ("bon") OR ("mal") OR ("naut") OR ("haut") OR ("bas") OR ("baish") OR ("autre") OR ("aute") OR ("quite") OR ("quiti") ;
 
 
 LIST unknown = ("\\*.*"r) ;
@@ -320,6 +320,7 @@ SELECT AV IF (-5 Vmod) (-4 Pas) (-3 AV OR Pro) (-2 AV OR Pro) (-1 VBinf) (0 Mai 
 SELECT Conjco IF (-1 EOS) (0 Mai) ;
 SELECT Conjco IF (-1 CM) (0 Mai) (NOT 1 AJ) ;
 SELECT AV IF (-1 Ser + &&AcordSP) (0 Mai) (1 AJ + &&AcordSP) ;	# es mai calme
+REMOVE AJ IF (0 AJ) (0 VBpp) (1 ("per")) ;
 SELECT AJ OR AV IF (-2 Ser + &&AcordSP) (-1 AV OR PREAV) (0 AJ + &&AcordSP) (NOT 1 AJ + &&AcordSP) ;	# es mai calme
 SELECT AJ OR AV IF (-3 Ser + &&AcordSP) (-2 AV) (-1 AV OR PREAV) (0 AJ + &&AcordSP) (NOT 1 AJ + &&AcordSP) ;	# es pas mai calme
 SELECT VBpp IF (-2 Ser + &&AcordSP) (-1 AV OR PREAV) (0 VBpp + &&AcordSP) (NOT 0 N + &&AcordSP) ;
@@ -516,6 +517,7 @@ SELECT N IF (0 (META:/-/r)) (1C N) ;
 #(en titolars periodístics, però, es comença sovint per un nom)
 # non : Patxi Zabaleta, actualament cap del partit
 REMOVE N IF (NOT -1 BOS OR CM OR V OR AJ OR DET OR NUM OR PREP OR PRON - PRONPers) (NOT -1/* ("de")) (NOT -2 CM) ;
+REMOVE N IF (-2 N + &&AcordSN) (-1 AJ + &&AcordSN) (0 VBpp + &&AcordSN) ;	# lo ministre canadian encargat
 
 #Un predeterminant es pas seguit que per un determinant
 REMOVE PREDET IF (NOT 1 DET);
@@ -692,7 +694,6 @@ SELECT VBpp IF (-4 Ser + &&AcordSP) (-3 AV) (-2 Ser + VBpp + &&AcordSP) (-1 AV) 
 
 # VBpp
 
-SELECT VBpp IF (0 AJ) (1 ("par")) ;
 REMOVE Vconj IF (-1C Haver + Vconj) (0 VBpp) ;	# ajan avut
 REMOVE AJ IF (-1C Haver) (0 VBpp) ;	# ai ascotat
 REMOVE Vconj IF (-1C Ser + Vconj + &&AcordSP) (0 VBpp + &&AcordSP) ;
@@ -873,7 +874,7 @@ SELECT Ser IF (-2 Ser) (-1 AV) (0 ("estat"));	# soi pas estat
 SELECT Ser IF (-3 Ser) (-2 AV) (-1 AV) (0 ("estat"));	# soi pas totjorn estat
 
 REMOVE Pro IF (NOT 1 V OR Pro OR unknown) ;
-REMOVE DET IF (0 Tn) (NOT 1 N OR NP OR AJ OR unknown) ;
+REMOVE DET IF (0 Tn) (NOT 1 N OR NP OR AJ OR NUM OR unknown) ;
 
 REMOVE PRON IF (0 Se) (NOT 1 Pro OR V + P3 OR V + VBinf OR V + VBger) ;        # se canti
 REMOVE PRON IF (0 Se) (1 Pro) (NOT 2 Pro OR V + P3 OR V + VBinf OR V + VBger) ;	# se li canti
@@ -956,8 +957,10 @@ SELECT DET IF (0 ("<la>"i)) (1C N_AJ + FemSg) ;
 SELECT DET IF (0 ("<las>"i)) (1C N_AJ + FemPl) ;	# atencion : las casas (np.pro vblex)
 
 #pel/peu nom o article contractat
-REMOVE N IF (1 Nm + Sg) (0 ("<peu>"i) OR ("<pel>"i)) (NOT -1 DET + Sg) (NOT -1 Artcontrsg) ;
-REMOVE N IF (1 Nm + Pl) (0 ("<peus>"i) OR ("<pels>"i)) (NOT -1 DET + Pl) (NOT -1 Artcontrpl) ;
+REMOVE N IF (1 N + MascSg) (0 ("<peu>"i) OR ("<pel>"i)) (NOT -1 DET + Sg) (NOT -1 Artcontrsg) ;
+REMOVE N IF (1 N + MascPl) (0 ("<peus>"i) OR ("<pels>"i)) (NOT -1 DET + Pl) (NOT -1 Artcontrpl) ;
+REMOVE N IF (1 NP + MascSg) (0 ("<peu>"i) OR ("<pel>"i)) (NOT -1 DET + Sg) (NOT -1 Artcontrsg) ;
+REMOVE N IF (1 NP + MascPl) (0 ("<peus>"i) OR ("<pels>"i)) (NOT -1 DET + Pl) (NOT -1 Artcontrpl) ;
 REMOVE N IF (1 AdjPre + MascSg) (0 ("<peu>"i) OR ("<pel>"i)) (NOT -1 DET + Sg) (NOT -1 Artcontrsg) ;
 REMOVE N IF (1 AdjPre + MascPl) (0 ("<peus>"i) OR ("<pels>"i)) (NOT -1 DET + Pl) (NOT -1 Artcontrpl) ;
 
