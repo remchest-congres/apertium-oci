@@ -64,6 +64,7 @@ LIST Nf = (n f);
 LIST AJf = (adj f);
 LIST Vconj = pri prs pii ifi pis imp fti ifi cni ;
 LIST Vconj_non_Imp = pri prs pii ifi pis fti ifi cni ;
+LIST Vconj_indic = pri pii ifi fti ifi cni ;
 LIST PRI = pri ;
 LIST PRS = prs ;
 LIST Itg = itg ;
@@ -734,6 +735,51 @@ REMOVE Vmod IF (1 Pro) (2 Pro) (NOT 2 VBinf) ;
 
 #Vb conjugat après enonciatiu
 SELECT Vconj IF (-1C Enon) (NOT 0 Pro) ;
+
+SELECT P1 + Sg IF (-1 PRON + Tn + P1 + Sg) (0 V + P1 + Sg) (NOT -1 DET + &&AcordSN LINK NOT 0 N_AJ + &&AcordSN) ;
+SELECT P1 + Sg IF (-2 PRON + Tn + P1 + Sg) (-1 Pro OR AV) (0 V + P1 + Sg) ;
+SELECT P1 + Sg IF (-3 PRON + Tn + P1 + Sg) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P1 + Sg) ;
+SELECT P1 + Sg IF (-4 PRON + Tn + P1 + Sg) (-3 Pro OR AV) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P1 + Sg) ;
+SELECT P2 + Sg IF (-1 PRON + Tn + P2 + Sg) (0 V + P2 + Sg) (NOT -1 DET + &&AcordSN LINK NOT 0 N_AJ + &&AcordSN) ;
+SELECT P2 + Sg IF (-2 PRON + Tn + P2 + Sg) (-1 Pro OR AV) (0 V + P2 + Sg) ;
+SELECT P2 + Sg IF (-3 PRON + Tn + P2 + Sg) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P2 + Sg) ;
+SELECT P2 + Sg IF (-4 PRON + Tn + P2 + Sg) (-3 Pro OR AV) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P2 + Sg) ;
+SELECT P3 + Sg IF (-1 PRON + Tn + P3 + Sg) (0 V + P3 + Sg) (NOT -1 DET + &&AcordSN LINK NOT 0 N_AJ + &&AcordSN) ;
+SELECT P3 + Sg IF (-2 PRON + Tn + P3 + Sg) (-1 Pro OR AV) (0 V + P3 + Sg) ;
+SELECT P3 + Sg IF (-3 PRON + Tn + P3 + Sg) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P3 + Sg) ;
+SELECT P3 + Sg IF (-4 PRON + Tn + P3 + Sg) (-3 Pro OR AV) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P3 + Sg) ;
+SELECT P1 + Pl IF (-1 PRON + Tn + P1 + Pl) (0 V + P1 + Pl) (NOT -1 DET + &&AcordSN LINK NOT 0 N_AJ + &&AcordSN) ;
+SELECT P1 + Pl IF (-2 PRON + Tn + P1 + Pl) (-1 Pro OR AV) (0 V + P1 + Pl) ;
+SELECT P1 + Pl IF (-3 PRON + Tn + P1 + Pl) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P1 + Pl) ;
+SELECT P1 + Pl IF (-4 PRON + Tn + P1 + Pl) (-3 Pro OR AV) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P1 + Pl) ;
+SELECT P2 + Pl IF (-1 PRON + Tn + P2 + Pl) (0 V + P2 + Pl) (NOT -1 DET + &&AcordSN LINK NOT 0 N_AJ + &&AcordSN) ;
+SELECT P2 + Pl IF (-2 PRON + Tn + P2 + Pl) (-1 Pro OR AV) (0 V + P2 + Pl) ;
+SELECT P2 + Pl IF (-3 PRON + Tn + P2 + Pl) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P2 + Pl) ;
+SELECT P2 + Pl IF (-4 PRON + Tn + P2 + Pl) (-3 Pro OR AV) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P2 + Pl) ;
+SELECT P3 + Pl IF (-1 PRON + Tn + P3 + Pl) (0 V + P3 + Pl) (NOT -1 DET + &&AcordSN LINK NOT 0 N_AJ + &&AcordSN) ;
+SELECT P3 + Pl IF (-2 PRON + Tn + P3 + Pl) (-1 Pro OR AV) (0 V + P3 + Pl) ;
+SELECT P3 + Pl IF (-3 PRON + Tn + P3 + Pl) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P3 + Pl) ;
+SELECT P3 + Pl IF (-4 PRON + Tn + P3 + Pl) (-3 Pro OR AV) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P3 + Pl) ;
+
+
+SELECT Vconj_indic IF (-2 PRON + Tn + P1 + Sg) (-1C Enon) (0 V + P1 + Sg) ;
+SELECT Vconj_indic IF (-3 PRON + Tn + P1 + Sg) (-2C Enon) (-1 Pro OR AV) (0 V + P1 + Sg) ;
+SELECT Vconj_indic IF (-4 PRON + Tn + P1 + Sg) (-3C Enon) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P1 + Sg) ;
+SELECT Vconj_indic IF (-2 PRON + Tn + P2 + Sg) (-1C Enon) (0 V + P2 + Sg) ;
+SELECT Vconj_indic IF (-3 PRON + Tn + P2 + Sg) (-2C Enon) (-1 Pro OR AV) (0 V + P2 + Sg) ;
+SELECT Vconj_indic IF (-4 PRON + Tn + P2 + Sg) (-3C Enon) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P2 + Sg) ;
+SELECT Vconj_indic IF (-2 PRON + Tn + P3 + Sg) (-1C Enon) (0 V + P3 + Sg) ;
+SELECT Vconj_indic IF (-3 PRON + Tn + P3 + Sg) (-2C Enon) (-1 Pro OR AV) (0 V + P3 + Sg) ;
+SELECT Vconj_indic IF (-4 PRON + Tn + P3 + Sg) (-3C Enon) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P3 + Sg) ;
+SELECT Vconj_indic IF (-2 PRON + Tn + P1 + Pl) (-1C Enon) (0 V + P1 + Pl) ;
+SELECT Vconj_indic IF (-3 PRON + Tn + P1 + Pl) (-2C Enon) (-1 Pro OR AV) (0 V + P1 + Pl) ;
+SELECT Vconj_indic IF (-4 PRON + Tn + P1 + Pl) (-3C Enon) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P1 + Pl) ;
+SELECT Vconj_indic IF (-2 PRON + Tn + P2 + Pl) (-1C Enon) (0 V + P2 + Pl) ;
+SELECT Vconj_indic IF (-3 PRON + Tn + P2 + Pl) (-2C Enon) (-1 Pro OR AV) (0 V + P2 + Pl) ;
+SELECT Vconj_indic IF (-4 PRON + Tn + P2 + Pl) (-3C Enon) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P2 + Pl) ;
+SELECT Vconj_indic IF (-2 PRON + Tn + P3 + Pl) (-1C Enon) (0 V + P3 + Pl) ;
+SELECT Vconj_indic IF (-3 PRON + Tn + P3 + Pl) (-2C Enon) (-1 Pro OR AV) (0 V + P3 + Pl) ;
+SELECT Vconj_indic IF (-4 PRON + Tn + P3 + Pl) (-3C Enon) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P3 + Pl) ;
 
 # DET
 
