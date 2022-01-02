@@ -533,7 +533,7 @@ SELECT N IF (0 (META:/-/r)) (1C N) ;
 #Un nom pot pas seguir qu'un vèrbe, un adjectiu, un determinant, un numeral, una prepausicion o un pronom (levat los personals)
 #(en titolars periodístics, però, es comença sovint per un nom)
 # non : Patxi Zabaleta, actualament cap del partit
-REMOVE N IF (NOT -1 BOS OR CM OR V OR AJ OR DET OR NUM OR PREP OR PRON - PRONPers) (NOT -1/* ("de")) (NOT -2 CM) ;
+REMOVE N IF (NOT -1 BOS OR CM OR Conjco OR V OR AJ OR DET OR NUM OR PREP OR PRON - PRONPers) (NOT -1/* ("de")) (NOT -2 CM) ;
 REMOVE N IF (-2 N + &&AcordSN) (-1 AJ + &&AcordSN) (0 VBpp + &&AcordSN) ;	# lo ministre canadian encargat
 
 #Un predeterminant es pas seguit que per un determinant
