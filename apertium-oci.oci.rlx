@@ -284,6 +284,7 @@ SELECT N IF (-1/* DET + MascSg OR ("<del>"i) OR ("<al>"i)) (0 Cap); ;
 SELECT N IF (-1/* DET + MascSg OR ("<del>"i) OR ("<al>"i)) (0 Cap_de_del) ;
 SELECT N + (mf) IF (-1 ("ex") OR ("<ex>"i)) (0 Cap) ;
 SELECT N + (mf) IF (-1 ("ex") OR ("<ex>"i)) (0 Cap_de_del) ;
+SELECT N + (mf) IF (-1 ("ex") OR ("<ex>"i)) (0 ("<caps>"i)) ;
 SELECT PRON IF (NOT -1/* DET) (0 Cap_de) (1 Tn) ;	# cap d'elas
 SELECT PRON IF (NOT -1/* DET OR CM) (0 Cap_de) (1 DET) ;
 SELECT PRON IF (NOT -1/* DET OR CM) (0 ("<cap del>"i) OR ("<cap dels>"i)) ;
@@ -298,12 +299,19 @@ SELECT PRON IF (-5 Vmod) (-4 Pas) (-3 AV OR Pro) (-2 AV OR Pro) (-1 VBinf) (0 Ca
 SELECT N IF (0 Cap) (1 NP OR unknownMajIni) ;	# cap Canaveral
 SELECT N + (m) IF (0 Cap) (1 NP OR unknownMajIni) ;	# cap Canaveral
 SELECT N + (mf) IF (NOT -1 BOS) (0 Cap_de_del) (1 Estat OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("politica") OR ("entrepresa") OR ("enterpresa")) ;
+SELECT N + (mf) IF (NOT -1 BOS) (0 Cap) (1 De) (2 Estat OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("politica") OR ("entrepresa") OR ("enterpresa")) ;
+SELECT N + (mf) IF (NOT -1 BOS) (0 ("cap")) (1 De) (2 Estat OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("politica") OR ("entrepresa") OR ("enterpresa")) ;
+SELECT N + (mf) IF (NOT -1 BOS) (0 ("cap")) (1 De) (2 DET) (3 Estat OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("politica") OR ("entrepresa") OR ("enterpresa")) ;
 SELECT N + (mf) IF (NOT -1 BOS) (0 Cap_de_del) (1 Al) ;
 SELECT N + (mf) IF (NOT -1 BOS) (0 Cap_de_del) (1 Ant_Cog) ;
 SELECT N + (mf) IF (NOT -1 BOS) (0 Cap_de_del) (1 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("sindicat") OR ("politica") OR ("entrepresa") OR ("enterpresa")) ;
 SELECT N + (mf) IF (NOT -1 BOS) (0 Cap_de) (1 DET) (2 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("sindicat") OR ("politica") OR ("entrepresa") OR ("enterpresa")) ;
+SELECT N + (mf) IF (NOT -1 BOS) (0 ("cap")) (1 De) (2 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("sindicat") OR ("politica") OR ("entrepresa") OR ("enterpresa")) ;
+SELECT N + (mf) IF (NOT -1 BOS) (0 ("cap")) (1 De) (2 DET) (3 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("sindicat") OR ("politica") OR ("entrepresa") OR ("enterpresa")) ;
 SELECT N + (mf) IF (-1 ("<pel>"i) OR ("<pels>"i)) (0 Cap_de_del) ;
+SELECT N + (mf) IF (-1 ("<pel>"i) OR ("<pels>"i)) (0 ("cap")) (1 De) ;
 SELECT N + (mf) IF (-2 ("per")) (-1 DET + &&AcordSN) (0 Cap_de_del + &&AcordSN) ;
+SELECT N + (mf) IF (-2 ("per")) (-1 DET + &&AcordSN) (0 ("cap") + &&AcordSN) (1 De) ;
 
 REMOVE AV IF (-1C PREP) (0 Cap) (1C EOS OR CM OR Conjsub OR Conjadv OR Conjco) ;
 
@@ -355,6 +363,7 @@ SELECT V OR Pro IF (-1C/* Pro) (NOT -1/* V) ;	# se'n sap
 SELECT PREP (0 ("a")) (1C Pro) ;	# a lo parlar
 SELECT PREP (0 ("a")) (1C Top OR Ant OR Cog OR Al) ;	# a Niça
 REMOVE PREP (0 ("a")) (-1C Rel OR Conjsub) ;
+REMOVE PREP (0 ("a")) (-1C Itg) ;
 
 SELECT Conjsub IF (-1C V) (0 Que) ;	# vòli que
 SELECT Conjsub IF (-2C V) (-1 AV) (NOT -1 ("e")) (0 Que) ;	# vòli pas que
@@ -516,6 +525,7 @@ REMOVE Conjsub IF (-1 BOS OR SENT);
 REMOVE Rel IF (-1 BOS OR SENT);
 REMOVE Rel IF (NOT -1 CM OR N OR NP OR AJ OR VBpp OR PRON OR DET);
 REMOVE Rel IF (NOT -2 N OR AJ OR VBpp OR PRON OR DET) (-1 CM) ;
+REMOVE Rel IF (-1C DET) (0 ("lo que") OR ("lo qui")) ;
 SELECT Rel IF (-1C DET) ;
 
 #Un imperatiu seguis pas una conjonccion, un relatiu o un pronom personal
@@ -800,11 +810,19 @@ SELECT Vconj_indic IF (-4 PRON + Tn + P3 + Pl) (-3C Enon) (-2 Pro OR AV) (-1 Pro
 # DET
 
 REMOVE ("d'unes") IF (-1C N_AJ) ;	# patch
+
+REMOVE DET IF (-1 DET + &&AcordSN) (0 ("lei") + &&AcordSN) ;
+REMOVE DET IF (-1 DET + &&AcordSN) (0 ("leis") + &&AcordSN) ;
+REMOVE DET IF (-2 DET + &&AcordSN) (-1 AJ + &&AcordSN) (0 ("lei") + &&AcordSN) ;
+REMOVE DET IF (-2 DET + &&AcordSN) (-1 AJ + &&AcordSN) (0 ("leis") + &&AcordSN) ;
+SELECT N IF (-1 De) (0 ("lei")) ;	# patch
+SELECT N IF (-1 De) (0 ("leis")) ;	# patch
+
 SELECT DET + &&AcordSN IF (1 ("un") + &&AcordSN) (2 Conjco) (3 DET) (4 ("altre") OR ("aute")) ;
 SELECT Tn + &&AcordSN IF (-1C DET + &&AcordSN) (0 ("un") + &&AcordSN) ;
 REMOVE DET IF (-1C/* DET) ;	# un cèrt estacament
-REMOVE DET IF (0 DET) (NOT 1 N OR AJ OR Tn OR NP OR NUM OR AV OR PREAV OR Rel OR unknown) ;
-REMOVE DET IF (0 DET) (1 N_AJ OR NP OR Tn) (NOT 1 NUM OR AV OR PREAV OR Rel) (0 DET + &&AcordSN) (NOT 1 N_AJ + &&AcordSN OR NP + &&AcordSN OR Tn + &&AcordSN) ;	# Avèm entrevistat aquesta pendent la Hèsta
+REMOVE DET IF (0 DET) (NOT 1 N OR AJ OR Tn OR NP OR NUM OR AV OR PREAV OR Rel OR unknown) (NOT 0 DETdef LINK 1 De) ;
+REMOVE DET + &&AcordSN IF (0 DET) (1 N_AJ OR NP OR Tn) (NOT 1 NUM OR AV OR PREAV OR Rel) (0 DET + &&AcordSN) (NOT 1 N_AJ + &&AcordSN OR NP + &&AcordSN OR Tn + &&AcordSN) ;	# Avèm entrevistat aquesta pendent la Hèsta
 REMOVE SUB:1 DET IF (0/* DET) (1C DET) ;	# en los acès
 SELECT PREAV IF (0 ("fòrça")) (1C AJ) ;
 SELECT AV IF (0 ("fòrça")) (1C VBpp) ;
@@ -818,6 +836,7 @@ SELECT DET IF (0 DETind) (1 unknown) ;	# pedaç, especialment quan falta molt vo
 REMOVE ("unir") IF (0 Un) (1C V + Pers OR VBpp) ;	# pedaç, especialment quan falta molt vocabulari (endevinem que és un DET i no una forma del V unir)
 REMOVE DET IF (0 Eth) (1 DET);
 REMOVE DET IF (0 Eth) (1 Pas);
+REMOVE DET IF (1 ("<a>"i));
 
 SELECT DET + &&AcordSN IF (0 DET + &&AcordSN) (1 N_AJ + &&AcordSN) (2 N_AJ + &&AcordSN) (1C N_AJ) (2C N_AJ) ;
 SELECT N_AJ + &&AcordSN IF (-1 DET + &&AcordSN) (0 N_AJ + &&AcordSN) (1 N_AJ + &&AcordSN) (0C N_AJ) (1C N_AJ) ;
