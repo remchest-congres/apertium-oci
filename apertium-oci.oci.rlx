@@ -374,10 +374,12 @@ SELECT Conjsub IF (-4 VBaux) (-3 AV) (-2 AV) (-1 VBpp) (NOT -1 ("e")) (0 Que) ;	
 SELECT Conjsub IF (-2C Ser) (-1 AJ OR ("vertat")) (0 Que) ;	# es vertat que
 SELECT Conjsub IF (-3C Ser) (-2 AV) (-1 AJ OR ("vertat")) (0 Que) ;	# es pas vertat que
 SELECT Conjsub IF (-4C Ser) (-3 AV) (-2 AV OR PREAV) (-1 AJ OR ("vertat")) (0 Que) ;	# es pas totjorn vertat que
-SELECT AV IF (0 ("mai") OR ("mei") OR ("pus") OR ("mens")) (1 AJ OR VBpp OR AV) (2 Que) ;	# plus rapide que moi
-SELECT AJ OR VBpp OR AV IF (-1 ("mai") OR ("mei") OR ("pus") OR ("mens")) (0 AJ OR VBpp OR AV) (1 Que) ;	# plus rapide que moi
-SELECT AJ OR AV IF (-1 ("mai") OR ("mei") OR ("pus") OR ("mens")) (0 AJ OR VBpp OR AV) (1 Que) ;	# plus rapide que moi
-SELECT Conjsub IF (-2 ("mai") OR ("mei") OR ("pus") OR ("mens")) (-1 AJ OR VBpp OR AV) (0 Que) ;	# plus rapide que moi
+SELECT AV IF (0 ("mai") OR ("mei") OR ("pus") OR ("mens") OR ("mensh")) (1 AJ OR VBpp OR AV) (2 Que) ;	# plus rapide que moi
+SELECT AV IF (-1 DETdef + &&AcordSN) (0 ("mai") OR ("mei") OR ("pus") OR ("mens") OR ("mensh")) (1 AJ + &&AcordSN OR VBpp + &&AcordSN OR N + &&AcordSN) ;	# lo mai rapide
+SELECT AV IF (-1 DETdef) (0 ("mai") OR ("mei") OR ("pus") OR ("mens") OR ("mensh")) (1 AV) ;
+SELECT AJ OR VBpp OR AV IF (-1 ("mai") OR ("mei") OR ("pus") OR ("mens") OR ("mensh")) (0 AJ OR VBpp OR AV) (1 Que) ;	# plus rapide que moi
+SELECT AJ OR AV IF (-1 ("mai") OR ("mei") OR ("pus") OR ("mens") OR ("mensh")) (0 AJ OR VBpp OR AV) (1 Que) ;	# plus rapide que moi
+SELECT Conjsub IF (-2 ("mai") OR ("mei") OR ("pus") OR ("mens") OR ("mensh")) (-1 AJ OR VBpp OR AV) (0 Que) ;	# plus rapide que moi
 SELECT Itg IF (0 Que) (1 Ser) (2 ("?")) ;
 SELECT Itg IF (0 Que) (1 Ser) (2 ("aquò") OR ("çò")) (1* ("?")) ;
 SELECT Rel IF (-1 ("aquò") OR ("çò")) (0 Que) ;
@@ -508,9 +510,9 @@ SELECT Voler IF (0 Voler) (0 Volar) (-1 (prn pro)) ;
 SELECT Volar IF (0 Voler) (0 Volar) (1 ("a") OR ("cap a")) ;
 SELECT Volar IF (0 Voler) (0 Volar) (1 AV) (2 ("a") OR ("cap a")) ;
 SELECT Volar IF (0 Voler) (0 Volar) (1 AV) (2 AV) (3 ("a") OR ("cap a")) ;
-SELECT Volar IF (0 Voler) (0 Volar) (1 De) (2 Top OR unknownMajIni) ; 
-SELECT Volar IF (0 Voler) (0 Volar) (1 AV) (2 De) (3 Top OR unknownMajIni) ; 
-SELECT Volar IF (0 Voler) (0 Volar) (1 AV) (2 AV) (3 De) (4 Top OR unknownMajIni) ; 
+SELECT Volar IF (0 Voler) (0 Volar) (1 De) (2 Top OR unknownMajIni) ;
+SELECT Volar IF (0 Voler) (0 Volar) (1 AV) (2 De) (3 Top OR unknownMajIni) ;
+SELECT Volar IF (0 Voler) (0 Volar) (1 AV) (2 AV) (3 De) (4 Top OR unknownMajIni) ;
 SELECT Voler IF (0 Voler) (0 Volar) (1 De) (2 N_AJ OR unknown) ; 			# partitiu lengadocian
 SELECT Voler IF (0 Voler) (0 Volar) (1 De) (2 AV) (3 N_AJ OR unknown) ; 		# partitiu lengadocian
 SELECT Voler IF (0 Voler) (0 Volar) (1 De) (2 AV) (3 AV) (4 N_AJ OR unknown) ; 		# partitiu lengadocian
@@ -845,8 +847,14 @@ REMOVE PRON + Pos IF (0 DETpos + &&AcordSN) (1 N + &&AcordSN) ;	# lo son torn
 REMOVE SUB:1 PRON + Pos IF (0/* DETpos + &&AcordSN) (1 N + &&AcordSN) ;	# deu son torn
 SELECT N_AJ + &&AcordSN IF (-1 DETind + &&AcordSN) (0 N_AJ + &&AcordSN) ;
 SELECT DET IF (0 DETind) (1C V) ;
-SELECT DET IF (0 DETind) (1 unknown) ;	# pedaç, especialment quan falta molt vocabulari (endevinem que és un DET i no una forma del V unir)
-REMOVE ("unir") IF (0 Un) (1C V + Pers OR VBpp) ;	# pedaç, especialment quan falta molt vocabulari (endevinem que és un DET i no una forma del V unir)
+SELECT DET IF (0 DETind) (1 unknown) ;	# guess
+REMOVE ("unir") IF (0 Un) (1C V + Pers OR VBpp) ;	# guess
+REMOVE ("unir") IF (0 Un) (1C V + Pers OR VBpp) ;	# guess
+SELECT PRON IF (0 Un) (1 De) (2 N + Sg) ;
+SELECT PRON IF (0 Un + Masc) (1 De) (1/* DET + MascPl) (2 N + MascPl) ;
+SELECT PRON IF (0 Un + Fem) (1 De) (2 DET + FemPl) (3 N + FemPl) ;
+SELECT PRON IF (0 Un + Masc) (1 De) (1/* DET + MascPl) (2 AJ OR ("mai") OR ("mei") OR ("pus") OR ("mens") OR ("mensh")) (3 N_AJ + MascPl) ;
+SELECT PRON IF (0 Un + Fem) (1 De) (2 DET + FemPl) (2 AJ OR ("mai") OR ("mei") OR ("pus") OR ("mens") OR ("mensh")) (4 N_AJ + FemPl) ;
 REMOVE DET IF (0 Eth) (1 DET);
 REMOVE DET IF (0 Eth) (1 Pas);
 REMOVE DET IF (1 ("<a>"i));
@@ -1040,6 +1048,7 @@ SELECT N IF (-1 ("vila") OR ("ciutat")) (0 Estat) ;	# vila estat
 REMOVE AJ IF (0 Las) (1 N + FemPl) ;	# las pomas
 REMOVE AJ IF (0 Las) (1 NP + FemPl) ;	# las Corbièras
 REMOVE AJ IF (0 Las) (1 NUM) (2 N + FemPl) ;	# las 200 pomas
+REMOVE AJ IF (0 Las) (1 AJ OR ("mai") OR ("mei") OR ("pus") OR ("mens") OR ("mensh")) (2 N_AJ + FemPl) ;
 
 SELECT Conjco IF (0 Mas_cnjcoo) (-1 CM) ;
 SELECT Conjco IF (0 Mas_cnjcoo) (-1 BOS) ;
