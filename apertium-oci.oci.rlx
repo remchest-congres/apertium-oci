@@ -585,6 +585,7 @@ REMOVE N IF (-2 N + &&AcordSN) (-1 AJ + &&AcordSN) (0 VBpp + &&AcordSN) ;	# lo m
 
 #Un predeterminant es pas seguit que per un determinant
 REMOVE PREDET IF (NOT 1 DET);
+SELECT PREDET + &&AcordSN IF (0 ("qual que siá") + &&AcordSN OR ("qual que siá") + &&AcordSN) (1 DETdef + &&AcordSN) ;
 
 #Los pronoms possessius son totjorn seguits per un nom, un adjectiu, un advèrb o un numeral
 REMOVE DETpos IF (NOT 1 N OR AJ OR AV OR NUM OR NP OR unknown);
