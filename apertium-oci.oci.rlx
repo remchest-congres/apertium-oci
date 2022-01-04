@@ -502,11 +502,24 @@ REMOVE Tn IF (NOT -1 Tn) (0 ("vos")) (1 Vconj) ;
 # voler e volar (p.ex. vòli)
 SELECT Voler IF (0 Voler) (0 Volar) (1/* VBinf) ;
 SELECT Voler IF (0 Voler) (0 Volar) (1 VBinf) ;
-SELECT Voler IF (0 Voler) (0 Volar) (-1 (prn pro)) (NOT -1 DET OR PREP);
+SELECT Voler IF (0 Voler) (0 Volar) (1 AV) (2 VBinf) ;
+SELECT Voler IF (0 Voler) (0 Volar) (1 AV) (2 AV) (3 VBinf) ;
+SELECT Voler IF (0 Voler) (0 Volar) (-1 (prn pro)) ;
 SELECT Volar IF (0 Voler) (0 Volar) (1 ("a") OR ("cap a")) ;
 SELECT Volar IF (0 Voler) (0 Volar) (1 AV) (2 ("a") OR ("cap a")) ;
+SELECT Volar IF (0 Voler) (0 Volar) (1 AV) (2 AV) (3 ("a") OR ("cap a")) ;
+SELECT Volar IF (0 Voler) (0 Volar) (1 De) (2 Top OR unknownMajIni) ; 
+SELECT Volar IF (0 Voler) (0 Volar) (1 AV) (2 De) (3 Top OR unknownMajIni) ; 
+SELECT Volar IF (0 Voler) (0 Volar) (1 AV) (2 AV) (3 De) (4 Top OR unknownMajIni) ; 
+SELECT Voler IF (0 Voler) (0 Volar) (1 De) (2 N_AJ OR unknown) ; 			# partitiu lengadocian
+SELECT Voler IF (0 Voler) (0 Volar) (1 De) (2 AV) (3 N_AJ OR unknown) ; 		# partitiu lengadocian
+SELECT Voler IF (0 Voler) (0 Volar) (1 De) (2 AV) (3 AV) (4 N_AJ OR unknown) ; 		# partitiu lengadocian
+SELECT Voler IF (0 Voler) (0 Volar) (1 N_AJ OR unknown) ; 			# pas de partitiu en gascon
+SELECT Voler IF (0 Voler) (0 Volar) (1 AV) (2 N_AJ OR NP OR unknown) ; 		# pas de partitiu en gascon
+SELECT Voler IF (0 Voler) (0 Volar) (1 AV) (2 AV) (3 N_AJ OR NP OR unknown) ; 	# pas de partitiu en gascon
 SELECT Voler IF (0 Voler) (0 Volar) (1 ("que")) ;
 SELECT Voler IF (0 Voler) (0 Volar) (1 AV) (2 ("que")) ;
+SELECT Voler IF (0 Voler) (0 Volar) (1 AV) (2 AV) (3 ("que")) ;
 SELECT Voler IF (0 Voler) (0 Volar) (-1 ("què")) (NOT -2 ("en"));
 
 SELECT NUM IF (-1 ("en")) (0 ("dos")) ;
