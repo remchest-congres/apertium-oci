@@ -280,6 +280,28 @@ REMOVE ("cosina") IF (0 ("cosin")) (1* ("paire") OR ("pair") OR ("maire") OR ("m
 REMOVE ("cosina") IF (0 ("cosin")) (-1* ("paire") OR ("pair") OR ("maire") OR ("mair") OR ("parent") OR ("fraire") OR ("sòr") OR ("cosin") OR ("oncle") OR ("tanta") OR ("nebot") OR ("grand")) ;
 REMOVE ("cosin") IF (0 ("cosina")) ;
 
+REMOVE ("desen") + N_AJ IF (0 ("desena")) (-1 ("un") OR NUM OR DETind) ;
+REMOVE ("desen") + N IF (0 ("desena") + N + Pl) ;
+REMOVE ("desen") + N IF (0 ("desena") + N) (-1 DET + FemSg) (1 De) (2 N) ;
+REMOVE ("dotzen") + N_AJ IF (0 ("dotzena")) (-1 ("un") OR NUM OR DETind) ;
+REMOVE ("dotzen") + N IF (0 ("dotzena") + N + Pl) ;
+REMOVE ("dotzen") + N IF (0 ("dotzena") + N) (-1 DET + FemSg) (1 De) (2 N) ;
+REMOVE ("vinten") + N_AJ IF (0 ("vintena")) (-1 ("un") OR NUM OR DETind) ;
+REMOVE ("vinten") + N IF (0 ("vintena") + N + Pl) ;
+REMOVE ("vinten") + N IF (0 ("vintena") + N) (-1 DET + FemSg) (1 De) (2 N) ;
+REMOVE ("trenten") + N_AJ IF (0 ("trentena")) (-1 ("un") OR NUM OR DETind) ;
+REMOVE ("trenten") + N IF (0 ("trentena") + N + Pl) ;
+REMOVE ("trenten") + N IF (0 ("trentena") + N) (-1 DET + FemSg) (1 De) (2 N) ;
+REMOVE ("quaranten") + N_AJ IF (0 ("quarantena")) (-1 ("un") OR NUM OR DETind) ;
+REMOVE ("quaranten") + N IF (0 ("quarantena") + N + Pl) ;
+REMOVE ("quaranten") + N IF (0 ("quarantena") + N) ;
+REMOVE ("quaranten") + N_AJ IF (0 ("quarantena")) (-1 ("un") OR NUM OR DETind) ;
+REMOVE ("cinquanten") + N IF (0 ("cinquantena") + N + Pl) ;
+REMOVE ("cinquanten") + N IF (0 ("cinquantena") + N) (-1 DET + FemSg) (1 De) (2 N) ;
+REMOVE ("centen") + N_AJ IF (0 ("centena")) (-1 ("un") OR NUM OR DETind) ;
+REMOVE ("centen") + N IF (0 ("centena") + N + Pl) ;
+REMOVE ("centen") + N IF (0 ("centena") + N) (-1 DET + FemSg) (1 De) (2 N) ;
+
 SELECT N IF (-1/* DET + MascSg OR ("<del>"i) OR ("<al>"i)) (0 Cap); ;
 SELECT N IF (-1/* DET + MascSg OR ("<del>"i) OR ("<al>"i)) (0 Cap_de_del) ;
 SELECT N + (mf) IF (-1 ("ex") OR ("<ex>"i)) (0 Cap) ;
@@ -507,16 +529,16 @@ SELECT Voler IF (0 Voler) (0 Volar) (1 VBinf) ;
 SELECT Voler IF (0 Voler) (0 Volar) (1 AV) (2 VBinf) ;
 SELECT Voler IF (0 Voler) (0 Volar) (1 AV) (2 AV) (3 VBinf) ;
 SELECT Voler IF (0 Voler) (0 Volar) (-1 (prn pro)) ;
-SELECT Volar IF (0 Voler) (0 Volar) (1 ("a") OR ("cap a")) ;
-SELECT Volar IF (0 Voler) (0 Volar) (1 AV) (2 ("a") OR ("cap a")) ;
-SELECT Volar IF (0 Voler) (0 Volar) (1 AV) (2 AV) (3 ("a") OR ("cap a")) ;
+SELECT Volar IF (0 Voler) (0 Volar) (1 ("a") OR ("cap a") OR ("al dessús de") OR ("au dessús de")) ;
+SELECT Volar IF (0 Voler) (0 Volar) (1 AV) (2 ("a") OR ("cap a") OR ("al dessús de") OR ("au dessús de")) ;
+SELECT Volar IF (0 Voler) (0 Volar) (1 AV) (2 AV) (3 ("a") OR ("cap a") OR ("al dessús de") OR ("au dessús de")) ;
 SELECT Volar IF (0 Voler) (0 Volar) (1 De) (2 Top OR unknownMajIni) ;
 SELECT Volar IF (0 Voler) (0 Volar) (1 AV) (2 De) (3 Top OR unknownMajIni) ;
 SELECT Volar IF (0 Voler) (0 Volar) (1 AV) (2 AV) (3 De) (4 Top OR unknownMajIni) ;
 SELECT Voler IF (0 Voler) (0 Volar) (1 De) (2 N_AJ OR unknown) ; 			# partitiu lengadocian
 SELECT Voler IF (0 Voler) (0 Volar) (1 De) (2 AV) (3 N_AJ OR unknown) ; 		# partitiu lengadocian
 SELECT Voler IF (0 Voler) (0 Volar) (1 De) (2 AV) (3 AV) (4 N_AJ OR unknown) ; 		# partitiu lengadocian
-SELECT Voler IF (0 Voler) (0 Volar) (1 N_AJ OR unknown) ; 			# pas de partitiu en gascon
+SELECT Voler IF (0 Voler) (0 Volar) (1 N_AJ OR NP OR unknown) ; 		# pas de partitiu en gascon
 SELECT Voler IF (0 Voler) (0 Volar) (1 AV) (2 N_AJ OR NP OR unknown) ; 		# pas de partitiu en gascon
 SELECT Voler IF (0 Voler) (0 Volar) (1 AV) (2 AV) (3 N_AJ OR NP OR unknown) ; 	# pas de partitiu en gascon
 SELECT Voler IF (0 Voler) (0 Volar) (1 ("que")) ;
@@ -850,6 +872,7 @@ SELECT DET IF (0 DETind) (1C V) ;
 SELECT DET IF (0 DETind) (1 unknown) ;	# guess
 REMOVE ("unir") IF (0 Un) (1C V + Pers OR VBpp) ;	# guess
 REMOVE ("unir") IF (0 Un) (1C V + Pers OR VBpp) ;	# guess
+REMOVE ("unir") IF (0 Un + &&AcordSN) (1C N_AJ + &&AcordSN) ;	# guess
 SELECT PRON IF (0 Un) (1 De) (2 N + Sg) ;
 SELECT PRON IF (0 Un + Masc) (1 De) (1/* DET + MascPl) (2 N + MascPl) ;
 SELECT PRON IF (0 Un + Fem) (1 De) (2 DET + FemPl) (3 N + FemPl) ;
