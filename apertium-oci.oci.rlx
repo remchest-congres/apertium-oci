@@ -165,6 +165,8 @@ LIST Mas_cnjcoo = "mas" "mes" ;
 LIST Estat = "estat" ;
 LIST Volar = "volar" ;
 LIST Voler = "voler" ;
+LIST Seire = "sèire" ;
+LIST Saber = "saber" "sàber" ;
 List Artcontrpl = "<als>" "<aus>" "<aths>" "<as>" "<dels>" "<deus>" "<dals>" "<deths>" "<des>" "<suls>" "<suus>" "<taus>" "<taths>" "<entaus>" "<entaths>" "<entàs>" "<pels>" "<peus>" "<peths>" "<preus>" "<vèls>" "<jols>" "<enquiaths>" "<ens>" "<enes>" "<endeus>" "<dambeus>" ;
 List Artcontrsg = "<al>" "<au>" "<ath>" "<del>" "<deu>" "<dal>" "<deth>" "<sul>" "<suu>" "<tau>" "<tath>" "<entau>" "<entath>" "<pel>" "<peu>" "<peth>" "<preu>" "<vèl>" "<jol>" "<enquiath>" "<en>" "<ene>" "<endeu>" "<dambeu>" ;
 LIST Jorns = "diluns" "dimars" "dimècres" "dimèrcs" "dijòus" "dijaus" "divés" "divendres" "dissabte" "dimenge" ;
@@ -545,6 +547,15 @@ SELECT Voler IF (0 Voler) (0 Volar) (1 ("que")) ;
 SELECT Voler IF (0 Voler) (0 Volar) (1 AV) (2 ("que")) ;
 SELECT Voler IF (0 Voler) (0 Volar) (1 AV) (2 AV) (3 ("que")) ;
 SELECT Voler IF (0 Voler) (0 Volar) (-1 ("què")) (NOT -2 ("en"));
+
+# sèire e saber/sàber (p. ex. "sèi")
+SELECT Saber IF (0 Seire) (0 Saber) (1C Itg) ;
+SELECT Saber IF (0 Seire) (0 Saber) (1 AV) (2C Itg) ;
+SELECT Saber IF (0 Seire) (0 Saber) (1 AV) (2 AV) (3C Itg) ;
+SELECT Saber IF (0 Seire) (0 Saber) (1C Que OR Se OR ("çò")) ;
+SELECT Saber IF (0 Seire) (0 Saber) (1 AV) (2C Que OR Se OR ("çò")) ;
+SELECT Saber IF (0 Seire) (0 Saber) (1 AV) (2 AV) (3C Que OR Se OR ("çò")) ;
+SELECT Saber IF (0 Seire) (0 Saber) ;	# patch
 
 SELECT NUM IF (-1 ("en")) (0 ("dos")) ;
 SELECT PREP IF (0 ("en")) (1 ("dos")) ;
