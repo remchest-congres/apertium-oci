@@ -1,0 +1,15 @@
+Presentacion publica de Votz, purmèra sintèsi vocau en occitan
+
+Aqueste dimars 23 de heurèr de 15h enlà que’s tienó a Pau - e retransmetuda en linha tanben - la presentacion publica de Votz (votz.eu), la purmèra sintèsi vocau en occitan (gascon e lengadocian).
+
+La sintèsi vocau qu'ei l'utís qui permet a l'ordenador de transformar tèxte escriut en votz. Que l'utilizan los GPS, los transpòrts en comun, los assistents vocaus, los logiciaus de lectura a l'ecran deu monde uelhfebles e òrbs... Tots que son enjòcs màgers tà la lenga occitana, notadament tà la soa preséncia dens lo maine numeric, e la socializacion de la lenga capvath l’espaci public.
+
+Aqueste projècte qu’estó hèit mercés au consòrci transfronterèr Linguatec, qui amassa acadèmias, universitats, centres de recèrca e institucions tau desvolopament de las tecnologias entà l’aragonés, lo basco e l’occitan, dab lo sostien deu fons europèu Poctefa.
+
+Qu’ei hargada Votz dab las darrèras tecnologias, a saber la deus hialats neuronaus (intelligéncia artificiau) desvolopada peu noste sòci Elhuyar. Lo seguit scientific e lo metòde seguit qu’estón d’aulhors premiats per la publicacion d’un article scientific a LREC (Language Resources Evaluation Conference), la conferéncia internacionau màger en tèrmis d’avaloracion de las tecnologias deu lengatge.
+
+L’equipa deu projècte que presentarà aquera tecnologia tà las duas varietats pirenencas de l’occitan (gascon e lengadocian) e que lo public e poderà utilizar mercés a Votz (votz.eu), ua platafòrma en linha. Tanben que’s hiquèn en lutz totas las aplicacions concretas e mei tecnicas qui se’n pòt har ad aquera escadença.
+Descobrir la plataforma Votz
+Véder lo dossièr de premsa
+
+Entaus qui n’averén pas podut seguir lo Facebook live, aquiu la redifusion au noste canau Youtube :
