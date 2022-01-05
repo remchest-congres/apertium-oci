@@ -275,6 +275,7 @@ SELECT N + MascPl IF (-2C V + Pers) (-1 De) (0 ("sap") + MascPl) ;
 SELECT N + &&AcordSN IF (-1/* DET + &&AcordSN) (0 ("sap") + &&AcordSN) (1 De) ;
 REMOVE N + ("sap");
 REMOVE ("un tal") IF (0 ("un")) ;
+REMOVE V IF (0 ("aqueth")) ;	# patch (aquera, aqueras)
 
 REMOVE ("cosina") IF (-1 DETpos + FemSg) (0 ("<cosina>")) ;
 REMOVE ("cosina") IF (0 ("cosin") + FemPl) ;
