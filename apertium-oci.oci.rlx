@@ -986,6 +986,10 @@ SELECT N + &&AcordSN IF (-1C DET + &&AcordSN) (1C EOS) ;
 SELECT N + &&AcordSN IF (-1C DET + &&AcordSN) (1C PREP) ;
 SELECT N + &&AcordSN IF (-1C DET + &&AcordSN) (1C Rel) ;
 
+REMOVE N OR VBpp (-1 ("trobar") OR ("considerar") OR ("jutjar")) (0 AJ) ;
+REMOVE N OR VBpp (-2 ("trobar") OR ("considerar") OR ("jutjar")) (-1 AV) (0 AJ) ;
+REMOVE N OR VBpp (-3 ("trobar") OR ("considerar") OR ("jutjar")) (-2 AV) (-1 AV) (0 AJ) ;
+
 # distincio entre MascPl i FemPl (típicament en terminacions en -es)
 #SELECT MascPl IF (-1C MascPl) (0 N + MascPl) (NOT 0 ("pel")) ;	# Pb: cap de las 200 comunas
 #SELECT FemPl IF (-1C FemPl) (0 N + FemPl) ;
