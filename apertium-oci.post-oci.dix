@@ -798,6 +798,49 @@
 	</e>
 </pardef>
 
+ <pardef n="tant">
+	<e>
+		<p>
+			<l><a/>tant<b/></l>
+			<r>tant<b/></r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>tant</l>
+			<r>tan</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>tant<b/></l>
+			<r>tan<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>autant<b/></l>
+			<r>autant<b/></r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>autant</l>
+			<r>autan</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>autant<b/></l>
+			<r>autan<b/></r>
+		</p>
+	</e>
+</pardef>
+
 <!-- pronom "i" que ni s'apostrofa ni deixa apostrofar -->
 <!--	 <pardef n="no_apostrofadors">
 		 <e>
@@ -1698,6 +1741,13 @@
 			<r>d'eri</r>
 		</p>
 	</e>
+	<e>
+		<p>
+			<l><b/></l>
+			<r>de<b/></r>
+		</p>
+		<par n="tant"/>
+	</e>
 </pardef> 
 
 <pardef n="de_gascon"> 
@@ -2035,6 +2085,13 @@
 			<l><b/><a/>prneri</l>
 			<r>d'eri</r>
 		</p>
+	</e>
+	<e>
+		<p>
+			<l><b/></l>
+			<r>de<b/></r>
+		</p>
+		<par n="tant"/>
 	</e>
 </pardef> 
 
@@ -4624,6 +4681,10 @@ L?objet indirect peut être: « li, lor1, me, te, se, nos, vos »-->
 	</e>
 
 	<e>
+		<par n="tant"/>
+	</e>
+	<e>
+
 		<p>
 			<l><a/>a<b/>Los<b/>Angeles<b/></l>
 			<r>a<b/>Los<b/>Angeles<b/></r>

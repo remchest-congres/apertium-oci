@@ -904,6 +904,20 @@
 	</e>
 	<e>
 		<p>
+			<l><a/>tant</l>
+			<r><a/>tant</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>autant</l>
+			<r><a/>autant</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
 			<l><a/>entà</l>
 			<r><a/>entà</r>
 		</p>
