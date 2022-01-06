@@ -295,6 +295,17 @@ REMOVE ("sabar") IF (0 ("saber")) ;	# patch
 SELECT PREAV IF (0 ("tant")) (1 AJ OR AV) (2 ("coma")) ;
 SELECT AJ OR AV IF (-1 ("tant")) (0 AJ OR AV) (1 ("coma")) ;
 SELECT Conjadv IF (-2 ("tant")) (-1 AJ OR AV) (0 ("coma")) ;
+SELECT PREAV IF (0 ("tant")) (1 AJ OR AV) (2 Conjco) (3 AJ OR AV) (4 ("coma")) ;
+SELECT AJ OR AV IF (-1 ("tant")) (0 AJ OR AV) (1 Conjco) (2 AJ OR AV) (3 ("coma")) ;
+SELECT AJ OR AV IF (-3 ("tant")) (-2 AJ OR AV) (-1 Conjco) (0 AJ OR AV) (1 ("coma")) ;
+SELECT Conjadv IF (-4 ("tant")) (-3 AJ OR AV) (-2 Conjco) (-1 AJ OR AV) (0 ("coma")) ;
+SELECT PREAV IF (0 ("autant")) (1 AJ OR AV) (2 ("com")) ;
+SELECT AJ OR AV IF (-1 ("autant")) (0 AJ OR AV) (1 ("com")) ;
+SELECT Conjadv IF (-2 ("autant")) (-1 AJ OR AV) (0 ("com")) ;
+SELECT PREAV IF (0 ("autant")) (1 AJ OR AV) (2 Conjco) (3 AJ OR AV) (4 ("com")) ;
+SELECT AJ OR AV IF (-1 ("autant")) (0 AJ OR AV) (1 Conjco) (2 AJ OR AV) (3 ("com")) ;
+SELECT AJ OR AV IF (-3 ("autant")) (-2 AJ OR AV) (-1 Conjco) (0 AJ OR AV) (1 ("com")) ;
+SELECT Conjadv IF (-4 ("autant")) (-3 AJ OR AV) (-2 Conjco) (-1 AJ OR AV) (0 ("com")) ;
 SELECT PREP IF (0 ("coma")) (1 ("en")) ;
 REMOVE N IF (NOT -1 DET) (0 ("<son>"i)) ;	# patch
 REMOVE Sg IF (NOT -1 DET) (0 ("<son>"i)) (1C Pl_strict) ;	# son conegudas
@@ -339,6 +350,8 @@ REMOVE ("cinquanten") + N IF (0 ("cinquantena") + N) (-1 DET + FemSg) (1 De) (2 
 REMOVE ("centen") + N_AJ IF (0 ("centena")) (-1 ("un") OR NUM OR DETind) ;
 REMOVE ("centen") + N IF (0 ("centena") + N + Pl) ;
 REMOVE ("centen") + N IF (0 ("centena") + N) (-1 DET + FemSg) (1 De) (2 N) ;
+
+####REMOVE Ser + Pl IF (0 ("son") + Sg) (1C N_AJ + Sg) ;
 
 SELECT N IF (-1/* DET + MascSg OR ("<del>"i) OR ("<al>"i)) (0 Cap); ;
 SELECT N IF (-1/* DET + MascSg OR ("<del>"i) OR ("<al>"i)) (0 Cap_de_del) ;
@@ -434,6 +447,7 @@ SELECT Conjsub IF (-4 VBaux) (-3 AV) (-2 AV) (-1 VBpp) (NOT -1 ("e")) (0 Que) ;	
 SELECT Conjsub IF (-2C Ser) (-1 AJ OR ("vertat")) (0 Que) ;	# es vertat que
 SELECT Conjsub IF (-3C Ser) (-2 AV) (-1 AJ OR ("vertat")) (0 Que) ;	# es pas vertat que
 SELECT Conjsub IF (-4C Ser) (-3 AV) (-2 AV OR PREAV) (-1 AJ OR ("vertat")) (0 Que) ;	# es pas totjorn vertat que
+#####REMOVE Conjsub IF (-1C N_AJ) (0 Que) ;
 SELECT AV IF (0 ("mai") OR ("mei") OR ("pus") OR ("mens") OR ("mensh")) (1 AJ OR VBpp OR AV) (2 Que) ;	# plus rapide que moi
 SELECT AV IF (-1 DETdef + &&AcordSN) (0 ("mai") OR ("mei") OR ("pus") OR ("mens") OR ("mensh")) (1 AJ + &&AcordSN OR VBpp + &&AcordSN OR N + &&AcordSN) ;	# lo mai rapide
 SELECT AV IF (-1 DETdef) (0 ("mai") OR ("mei") OR ("pus") OR ("mens") OR ("mensh")) (1 AV) ;
