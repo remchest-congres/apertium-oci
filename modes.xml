@@ -31,6 +31,20 @@
     </pipeline>
   </mode>
 
+  <mode name="oci-tagger-unigram" install="yes">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="oci.automorf.bin"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="oci.rlx.bin"/>
+      </program>
+      <program name="apertium-tagger -u 2 -g $2">
+        <file name="oci_leng.unigram.prob"/>
+      </program>
+    </pipeline>
+  </mode>
+
   <mode name="oci-disam" install="yes">
     <pipeline>
       <program name="lt-proc -w">
@@ -133,6 +147,20 @@
       </program>
       <program name="apertium-tagger -g $2">
         <file name="oci.prob"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="oci_gascon-tagger-unigram" install="yes">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="oci@gascon.automorf.bin"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="oci.rlx.bin"/>
+      </program>
+      <program name="apertium-tagger -u 2 -g $2">
+        <file name="oci_gasc.unigram.prob"/>
       </program>
     </pipeline>
   </mode>
