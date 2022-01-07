@@ -1,0 +1,430 @@
+"<Los>"
+	"lo" det def m pl
+"<27>"
+	"27" num
+"<e>"
+	"e" cnjcoo
+"<28>"
+	"28" num
+"<d’>"
+	"de" pr
+"<aost>"
+	"aost" n m sg
+"<,>"
+	"," cm
+"<que>"
+	"que" adv enon
+"<s’>"
+	"se" prn pro ref p3 mf sp
+"<apleguè>"
+	"aplegar" vblex ifi p3 sg
+"<a>"
+	"a" pr
+"<l’>"
+	"lo" det def mf sg
+"<ecomusèu>"
+	"ecomusèu" n m sg
+"<de>"
+	"de" pr
+"<Marquesa>"
+	"Marquesa" np top f sg
+"<a>"
+	"a" pr
+"<Sabres>"
+	"Sabres" np top f sg
+"<(>"
+	"(" lpar
+"<Lanas>"
+	"Lanas" np top f pl
+"<)>"
+	")" rpar
+"<l’>"
+	"lo" det def mf sg*
+"<Amassada>"
+	"Amassada" np al f sg
+ – 
+"<Conselh>"
+	"conselh" n m sg
+"<de>"
+	"de" pr
+"<desvolopament>"
+	"desvolopament" n m sg
+"<lenga>"
+	"lenga" n f sg
+"<e>"
+	"e" cnjcoo
+"<cultura>"
+	"cultura" n f sg
+"<occitanas>"
+	"occitan" adj f pl
+"<en>"
+	"en" pr
+"<Navèra Aquitània>"
+	"Navèra Aquitània" np top f sg
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
+"<Aqueras>"
+	"aqueth" det dem f pl
+"<jornadas>"
+	"jornada" n f pl
+"<que>"
+	"que" adv enon
+"<las>"
+	"lo" prn pro p3 f pl
+"<obrí>"
+	"obrir" vblex ifi p3 sg
+"<Charline>"
+	"Charline" np ant f sg
+"<Claveau>"
+	"Claveau" np cog mf sp
+"<,>"
+	"," cm
+"<Conselhèra>"
+	"conselhèr" n f sg
+"<regionau>"
+	"regionau" adj mf sg
+"<delegada>"
+	"delegat" adj f sg
+"<a>"
+	"a" pr
+"<las>"
+	"lo" det def f pl
+"<lengas>"
+	"lenga" n f pl
+"<regionaus>"
+	"regionau" adj mf pl
+"<>"
+	"" sent
+"<qu’>"
+	"que" adv enon
+"<amassèn>"
+	"amassar" vblex ifi p3 pl
+"<representants>"
+	"representant" n m pl
+"<de>"
+	"de" pr
+"<collectivitats>"
+	"collectivitat" n f pl
+"<,>"
+	"," cm
+"<de>"
+	"de" pr
+"<l’>"
+	"lo" det def mf sg
+"<Estat>"
+	"estat" n m sg
+"<,>"
+	"," cm
+"<e d’>"
+	"e" cnjcoo
+		"de" pr
+"<operators>"
+	"operator" n m pl
+"<institucionaus>"
+	"institucionau" adj mf pl
+"<e>"
+	"e" cnjcoo
+"<associatius>"
+	"associatiu" adj m pl
+"<en>"
+	"en" pr
+"<Region>"
+	"region" n f sg
+"<Navèra Aquitània>"
+	"Navèra Aquitània" np top f sg
+"<.>"
+	"." sent
+
+"<Ad>"
+	"a" pr
+"<aqueth>"
+	"aqueth" det dem m sg
+"<parat>"
+	"parat" n m sg
+"<,>"
+	"," cm
+"<representants>"
+	"representant" n m pl
+"<de>"
+	"de" pr
+"<las>"
+	"lo" det def f pl
+"<Edicions>"
+	"edicion" n f pl
+"<Reclams>"
+	"Reclams" np al m pl
+"<e>"
+	"e" cnjcoo
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<Congrès permanent de la lenga occitana>"
+	"Congrès permanent de la lenga occitana" np al m sg
+"<,>"
+	"," cm
+"<coeditor>"
+	"coeditor" n m sg
+"<de>"
+	"de" pr
+"<l'>"
+	"lo" det def mf sg
+"<òbra>"
+	"òbra" n f sg
+"<,>"
+	"," cm
+"<que>"
+	"que" adv enon
+"<remetón>"
+	"reméter" vblex ifi p3 pl
+"<oficiaument>"
+	"oficialament" adv
+"<a>"
+	"a" pr
+"<Charline>"
+	"Charline" np ant f sg
+"<Claveau>"
+	"Claveau" np cog mf sp
+"<un>"
+	"un" det ind m sg
+"<exemplar>"
+	"exemplar" n m sg
+"<de>"
+	"de" pr
+"<l’>"
+	"lo" det def mf sg
+"<edicion>"
+	"edicion" n f sg
+"<navèra>"
+	"navèth" adj f sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<Dictionnaire du Béarnais et du Gascon modernes>"
+	"Dictionnaire du Béarnais et du Gascon modernes" np al m sg
+"<de>"
+	"de" pr
+"<Simin>"
+	"Simin" np ant m sg
+"<Palay>"
+	"Palay" np cog mf sp
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
+"<Ad’arron>"
+	"ad'arron" adv
+"<que’s>"
+	"que" adv enon
+		"se" prn pro ref p3 mf sp
+"<hasó>"
+	"har" vblex ifi p3 sg
+"<lo>"
+	"lo" det def m sg
+"<bilanç>"
+	"bilanç" n m sg
+"<(>"
+	"(" lpar
+"<2016>"
+	"2016" num
+-
+"<2020>"
+	"2020" num
+"<)>"
+	")" rpar
+"<e>"
+	"e" cnjcoo
+"<las>"
+	"lo" det def f pl
+"<perspectivas>"
+	"perspectiva" n f pl
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<politica>"
+	"politica" n f sg
+"<lingüistica>"
+	"lingüistic" adj f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<Region>"
+	"region" n f sg
+"<Navèra Aquitània>"
+	"Navèra Aquitània"
+"<e>"
+	"e" cnjcoo
+"<ua>"
+	"un" det ind f sg
+"<purmèra>"
+	"purmèr" adj f sg
+"<restitucion>"
+	"restitucion" n f sg
+"<deus>"
+	"de" pr
+		"lo" det def m pl
+"<resultats>"
+	"resultat" n m pl
+"<de>"
+	"de" pr
+"<l’>"
+	"lo" det def mf sg
+"<enquista>"
+	"enquista" n f sg
+"<sociolingüistica>"
+	"sociolingüistic" adj f sg
+"<miada>"
+	"miar" vblex pp f sg
+"<per>"
+	"per" pr
+"<l’>"
+	"lo" det def mf sg
+"<OPLO>"
+	"OPLO" np al m sg
+"<sus>"
+	"sus" pr
+"<l’>"
+	"lo" det def mf sg
+"<espaci>"
+	"espaci" n m sg
+"<occitanofone>"
+	"occitanofone" adj m sg
+"<de>"
+	"de" pr
+"<las>"
+	"lo" det def f pl
+"<Regions>"
+	"region" n f pl
+"<Navèra Aquitània>"
+	"Navèra Aquitània" np top f sg
+"<,>"
+	"," cm
+"<Occitania>"
+	"Occitania" np top f sg
+"<e>"
+	"e" cnjcoo
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<Conselh>"
+	"conselh" n m sg
+"<generau>"
+	"generau" adj mf sg
+"<de>"
+	"de" pr
+"<Val D’Aran>"
+	"Val d'Aran" np top f sg
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
+"<L’endedia>"
+	"l'endedia" adv
+"<que>"
+	"que" adv enon
+"<i>"
+	"i" prn pro adv
+"<avó>"
+	"aver" vblex ifi p3 sg
+"<escambis>"
+	"escambi" n m pl
+"<a l’entorn de>"
+	"a l'entorn de" pr
+"<presentacion>"
+	"presentacion" n f sg
+"<d’>"
+	"de" pr
+"<accions>"
+	"accion" n f pl
+"<e>"
+	"e" cnjcoo
+"<talhèrs>"
+	"talhèr" n m pl
+"<tematics>"
+	"tematic" adj m pl
+"<(>"
+	"(" lpar
+"<ensenhament>"
+	"ensenhament" n m sg
+"<,>"
+	"," cm
+"<formacion>"
+	"formacion" n f sg
+"<profesionau>"
+	"profesionau" adj mf sg
+"<,>"
+	"," cm
+"<besonhs>"
+	"besonh" n m pl
+"<en>"
+	"en" pr
+"<formacion>"
+	"formacion" n f sg
+"<de>"
+	"de" pr
+"<las>"
+	"lo" det def f pl
+"<associacions>"
+	"associacion" n f pl
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
+"<La>"
+	"lo" det def f sg
+"<traduccion>"
+	"traduccion" n f sg
+"<simultanèa>"
+	"simultanèu" adj f sg
+"<de>"
+	"de" pr
+"<l’>"
+	"lo" det def mf sg
+"<Amassada>"
+	"Amassada" np al f sg
+"<qu’>"
+	"que" adv enon
+"<èra>"
+	"estar" vbser pii p3 sg
+"<hèita>"
+	"har" vblex pp f sg
+"<per>"
+	"per" pr
+"<l’>"
+	"lo" det def mf sg
+"<equipa>"
+	"equipa" n f sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<Congrès permanent de la lenga occitana>"
+	"Congrès permanent de la lenga occitana" np al m sg
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+

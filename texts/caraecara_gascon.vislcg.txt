@@ -1,0 +1,364 @@
+"<Benaset>"
+	"Benaset" np ant m sg
+"<Dazeas>"
+	"Dazeas" np cog mf sp
+"<a>"
+	"a" pr
+"<Cara e Cara>"
+	"Cara e Cara" np al f sg
+"<.>"
+	"." sent
+
+
+
+"<OCtele>"
+	"OCtele" np al f sg
+"<que>"
+	"que" adv enon
+"<torna>"
+	"tornar" vblex pri p3 sg
+"<aviar>"
+	"aviar" vblex inf
+"<la soa>"
+	"lo son" det pos f sg
+"<emission>"
+	"emission" n f sg
+"<Cara e Cara>"
+	"Cara e Cara" np al f sg
+"<.>"
+	"." sent
+
+"<Tà>"
+	"tà" pr
+"<la>"
+	"lo" det def f sg
+"<purmèra>"
+	"purmèr" n f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<navèra>"
+	"navèth" adj f sg
+"<formula>"
+	"formula" n f sg
+"<,>"
+	"," cm
+"<qu'>"
+	"que" adv enon
+"<invitè>"
+	"invitar" vblex ifi p3 sg
+"<a>"
+	"a" pr
+"<Benaset>"
+	"Benaset" np ant m sg
+"<Dazeas>"
+	"Dazeas" np cog mf sp
+"<,>"
+	"," cm
+"<director>"
+	"director" n m sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<Congrès>"
+	"Congrès" np al m sg
+"<,>"
+	"," cm
+"<a>"
+	"a" pr
+"<i>"
+	"i" prn pro adv
+"<presentar>"
+	"presentar" vblex inf
+"<l'>"
+	"lo" det def mf sg
+"<estructura>"
+	"estructura" n f sg
+"<e>"
+	"e" cnjcoo
+"<los sons>"
+	"lo son" det pos m pl
+"<tribalhs>"
+	"tribalh" n m pl
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
+"<Miat>"
+	"miar" vblex pp m sg
+"<per>"
+	"per" pr
+"<las>"
+	"lo" det def f pl
+"<questions>"
+	"question" n f pl
+"<de>"
+	"de" pr
+"<Clamenç>"
+	"Clamenç" np ant m sg
+"<Pech>"
+	"Pech" np cog mf sp
+"<,>"
+	"," cm
+"<que>"
+	"que" adv enon
+"<tornè>"
+	"tornar" vblex ifi p3 sg
+"<sus>"
+	"sus" pr
+"<l'>"
+	"lo" det def mf sg
+"<istoric>"
+	"istoric" n m sg
+"<e>"
+	"e" cnjcoo
+"<las>"
+	"lo" det def f pl
+"<missions>"
+	"mission" n f pl
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<Congrès>"
+	"Congrès" np al m sg
+"<e>"
+	"e" cnjcoo
+"<la>"
+	"lo" det def f sg
+"<redaccion>"
+	"redaccion" n f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<huelha>"
+	"huelha" n f sg
+"<de>"
+	"de" pr
+"<rota>"
+	"rota" n f sg
+"<tau>"
+	"tà" pr
+		"lo" det def m sg
+"<desvolopament>"
+	"desvolopament" n m sg
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<numeric>"
+	"numeric" adj m sg
+"<occitan>"
+	"occitan" adj m sg
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
+"<Que>"
+	"que" adv enon
+"<presentè>"
+	"presentar" vblex ifi p3 sg
+"<utís>"
+	"utís" n m pl
+"<deu>"
+	"de" pr
+		"lo" det def m sg
+"<Congrès>"
+	"Congrès" np al m sg
+"<com>"
+	"com" cnjadv
+"<lo>"
+	"lo" det def m sg
+"<dicod'Òc>"
+	"dicod'Òc" np al m sg
+"<,>"
+	"," cm
+"<lo>"
+	"lo" det def m sg
+"<vèrb'Òc>"
+	"vèrb'Òc" np al m sg
+"<o>"
+	"o" cnjcoo
+"<los>"
+	"lo" det def m pl
+"<clavèrs>"
+	"clavèr" n m pl
+"<predictius>"
+	"predictiu" adj m pl
+"<.>"
+	"." sent
+
+"<Qu'>"
+	"que" adv enon
+"<expliquè>"
+	"explicar" vblex ifi p3 sg
+"<lo>"
+	"lo" det def m sg
+"<projècte>"
+	"projècte" n m sg
+"<Linguatec>"
+	"Linguatec" np al m sg
+"<qui>"
+	"qui" rel mf sp
+"<a>"
+	"aver" vblex pri p3 sg
+"<per>"
+	"per" pr
+"<prètzhèit>"
+	"prètzhèit" n m sg
+"<de>"
+	"de" pr
+"<desvolopar>"
+	"desvolopar" vblex inf
+"<la>"
+	"lo" det def f sg
+"<traduccion>"
+	"traduccion" n f sg
+"<automatica>"
+	"automatic" adj f sg
+"<e>"
+	"e" cnjcoo
+"<la>"
+	"lo" det def f sg
+"<sintèsi>"
+	"sintèsi" n f sg
+"<vocau>"
+	"vocau" adj mf sg
+"<en>"
+	"en" pr
+"<occitan>"
+	"occitan" n m sg
+"<.>"
+	"." sent
+
+"<Enfin>"
+	"enfin" adv
+"<,>"
+	"," cm
+"<que>"
+	"que" adv enon
+"<parlè>"
+	"parlar" vblex ifi p3 sg
+"<deus>"
+	"de" pr
+		"lo" det def m pl
+"<projèctes>"
+	"projècte" n m pl
+"<a viéner>"
+	"a viéner" adj mf sp
+"<,>"
+	"," cm
+"<com>"
+	"com" cnjadv
+"<lo>"
+	"lo" det def m sg
+"<d'>"
+	"de" pr
+"<ua>"
+	"un" det ind f sg
+"<aplicacion>"
+	"aplicacion" n f sg
+"<unica>"
+	"unic" adj f sg
+"<dab>"
+	"dab" pr
+"<foncionalitats>"
+	"foncionalitat" n f pl
+"<multiplas>"
+	"multiple" adj f pl
+"<(>"
+	"(" lpar
+"<diccionari>"
+	"diccionari" n m sg
+"<de>"
+	"de" pr
+"<traduccions>"
+	"traduccion" n f pl
+"<,>"
+	"," cm
+"<de>"
+	"de" pr
+"<definicions>"
+	"definicion" n f pl
+"<,>"
+	"," cm
+"<d'>"
+	"de" pr
+"<expressions>"
+	"expression" n f pl
+"<,>"
+	"," cm
+"<de>"
+	"de" pr
+"<sinonimes>"
+	"sinonime" n m pl
+"<,>"
+	"," cm
+"<de>"
+	"de" pr
+"<rimas>"
+	"rima" n f sg
+"<,>"
+	"," cm
+"<conjugator>"
+	"conjugator" n m sg
+"<,>"
+	"," cm
+"<ajuda>"
+	"ajuda" n f sg
+"<gramaticau>"
+	"gramaticau" adj mf sg
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
+"<Ací>"
+	"ací" adv
+"<que's>"
+	"que" adv enon
+		"se" prn pro ref p3 mf sp
+"<pòt>"
+	"poder" vbmod pri p3 sg
+"<espiar>"
+	"espiar" vblex inf
+"<l'>"
+	"lo" det def mf sg
+"<emission>"
+	"emission" n f sg
+"<suu>"
+	"sus" pr
+		"lo" det def m sg
+"<site>"
+	"site" n m sg
+"<d'>"
+	"de" pr
+"<OCtele>"
+	"OCtele" np al f sg
+"<.>"
+	"." sent
+
+
+
