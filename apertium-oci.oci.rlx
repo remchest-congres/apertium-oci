@@ -292,20 +292,24 @@ REMOVE N IF (NOT -1 DET + FemSg) (0 ("<èra>"i)) ;		# patch
 REMOVE ("sèir") IF (0 ("èsser")) ;	# patch
 REMOVE ("poirir") IF (0 ("poder")) ;	# patch
 REMOVE ("sabar") IF (0 ("saber")) ;	# patch
-SELECT PREAV IF (0 ("tant")) (1 AJ OR AV) (2 ("coma")) ;
-SELECT AJ OR AV IF (-1 ("tant")) (0 AJ OR AV) (1 ("coma")) ;
-SELECT Conjadv IF (-2 ("tant")) (-1 AJ OR AV) (0 ("coma")) ;
-SELECT PREAV IF (0 ("tant")) (1 AJ OR AV) (2 Conjco) (3 AJ OR AV) (4 ("coma")) ;
-SELECT AJ OR AV IF (-1 ("tant")) (0 AJ OR AV) (1 Conjco) (2 AJ OR AV) (3 ("coma")) ;
-SELECT AJ OR AV IF (-3 ("tant")) (-2 AJ OR AV) (-1 Conjco) (0 AJ OR AV) (1 ("coma")) ;
-SELECT Conjadv IF (-4 ("tant")) (-3 AJ OR AV) (-2 Conjco) (-1 AJ OR AV) (0 ("coma")) ;
-SELECT PREAV IF (0 ("autant")) (1 AJ OR AV) (2 ("com")) ;
-SELECT AJ OR AV IF (-1 ("autant")) (0 AJ OR AV) (1 ("com")) ;
-SELECT Conjadv IF (-2 ("autant")) (-1 AJ OR AV) (0 ("com")) ;
-SELECT PREAV IF (0 ("autant")) (1 AJ OR AV) (2 Conjco) (3 AJ OR AV) (4 ("com")) ;
-SELECT AJ OR AV IF (-1 ("autant")) (0 AJ OR AV) (1 Conjco) (2 AJ OR AV) (3 ("com")) ;
-SELECT AJ OR AV IF (-3 ("autant")) (-2 AJ OR AV) (-1 Conjco) (0 AJ OR AV) (1 ("com")) ;
-SELECT Conjadv IF (-4 ("autant")) (-3 AJ OR AV) (-2 Conjco) (-1 AJ OR AV) (0 ("com")) ;
+SELECT PREAV IF (0 ("tant")) (1 AJ OR VBpp OR AV) (2 ("coma")) ;
+SELECT AJ OR VBpp OR AV IF (-1 ("tant")) (0 AJ OR VBpp OR AV) (1 ("coma")) ;
+SELECT Conjadv IF (-2 ("tant")) (-1 AJ OR VBpp OR AV) (0 ("coma")) ;
+SELECT PREAV IF (0 ("tant")) (1 AJ OR VBpp OR AV) (2 Conjco) (3 AJ OR VBpp OR AV) (4 ("coma")) ;
+SELECT AJ OR VBpp OR AV IF (-1 ("tant")) (0 AJ OR VBpp OR AV) (1 Conjco) (2 AJ OR VBpp OR AV) (3 ("coma")) ;
+SELECT AJ OR VBpp OR AV IF (-3 ("tant")) (-2 AJ OR VBpp OR AV) (-1 Conjco) (0 AJ OR VBpp OR AV) (1 ("coma")) ;
+SELECT Conjadv IF (-4 ("tant")) (-3 AJ OR VBpp OR AV) (-2 Conjco) (-1 AJ OR VBpp OR AV) (0 ("coma")) ;
+SELECT PREAV IF (0 ("autant")) (1 AJ OR VBpp OR AV) (2 ("com")) ;
+SELECT AJ OR VBpp OR AV IF (-1 ("autant")) (0 AJ OR VBpp OR AV) (1 ("com")) ;
+SELECT Conjadv IF (-2 ("autant")) (-1 AJ OR VBpp OR AV) (0 ("com")) ;
+SELECT PREAV IF (0 ("autant")) (1 AJ OR VBpp OR AV) (2 Conjco) (3 AJ OR VBpp OR AV) (4 ("com")) ;
+SELECT AJ OR VBpp OR AV IF (-1 ("autant")) (0 AJ OR VBpp OR AV) (1 Conjco) (2 AJ OR VBpp OR AV) (3 ("com")) ;
+SELECT AJ OR VBpp OR AV IF (-3 ("autant")) (-2 AJ OR VBpp OR AV) (-1 Conjco) (0 AJ OR VBpp OR AV) (1 ("com")) ;
+SELECT Conjadv IF (-4 ("autant")) (-3 AJ OR VBpp OR AV) (-2 Conjco) (-1 AJ OR VBpp OR AV) (0 ("com")) ;
+SELECT PREAV IF (0 ("tant")) (1 VBpp) (2 De) (3* ("coma") LINK 1 De) ;	# seràn tan preocupats de lors electors-clients coma de bastir
+SELECT VBpp IF (-1 ("tant")) (0 VBpp) (1 De) ;
+SELECT PREAV IF (0 ("autant")) (1 VBpp) (2 De) (3* ("com") LINK 1 De) ;
+SELECT VBpp IF (-1 ("autant")) (0 VBpp) (1 De) ;
 SELECT PREP IF (0 ("coma")) (1 ("en")) ;
 REMOVE N IF (NOT -1 DET) (0 ("<son>"i)) ;	# patch
 REMOVE Sg IF (NOT -1 DET) (0 ("<son>"i)) (1C Pl_strict) ;	# son conegudas
@@ -617,8 +621,8 @@ REMOVE En_pron IF (1* VBger BARRIER (*) - Pro) ;
 
 #Una conjonccion o un pronom relatiu se podon pas trobar en debuta de frasa
 #REMOVE Conjco IF (-1 BOS OR SENT);		# en realitat, òc
-SELECT Conjco IF (-1 BOS OR SENT) (0 ("<E>")) (NOT 1 CM) (NOT 1* ("?")) ;	
-SELECT Conjco IF (-1 BOS OR SENT) (0 ("<E>")) (NOT 1 CM OR Pro OR V + Pers) ;	
+SELECT Conjco IF (-1 BOS OR SENT) (0 ("<E>")) (NOT 1 CM) (NOT 1* ("?")) ;
+SELECT Conjco IF (-1 BOS OR SENT) (0 ("<E>")) (NOT 1 CM OR Pro OR V + Pers) ;
 REMOVE Conjsub IF (-1 BOS OR SENT);
 REMOVE Rel IF (-1 BOS OR SENT);
 REMOVE Rel IF (NOT -1 CM OR N OR NP OR AJ OR VBpp OR PRON OR DET);
