@@ -99,8 +99,6 @@
 	"lenga" n f pl
 "<regionaus>"
 	"regionau" adj mf pl
-"<>"
-	"" sent
 "<qu’>"
 	"que" adv enon
 "<amassèn>"
@@ -262,7 +260,7 @@
 "<Region>"
 	"region" n f sg
 "<Navèra Aquitània>"
-	"Navèra Aquitània"
+	"Navèra Aquitània" np top f sg
 "<e>"
 	"e" cnjcoo
 "<ua>"
