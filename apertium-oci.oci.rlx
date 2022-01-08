@@ -1093,6 +1093,8 @@ REMOVE N OR VBpp (-3 ("trobar") OR ("considerar") OR ("jutjar")) (-2 AV) (-1 AV)
 #SELECT MascPl IF (2C MascPl) (1 AV OR PREAV) (0 AJ + MascPl) ;
 #SELECT FemPl IF (2C FemPl) (1 AV OR PREAV) (0 AJ + FemPl) ;
 
+REMOVE AJ IF (NOT -2 N_AJ) (-1 CM) (0 N) (1C Que OR Qui OR PREP OR Conjadv) ;	# dab Blesin, gojat qui
+
 # N / V
 
 REMOVE N IF (-1C PRON) (0 V) ;		# qui sap
@@ -1109,7 +1111,8 @@ SELECT Ser IF (-2 Ser) (-1 AV) (0 ("estat"));	# soi pas estat
 SELECT Ser IF (-3 Ser) (-2 AV) (-1 AV) (0 ("estat"));	# soi pas totjorn estat
 
 REMOVE Pro IF (NOT 1 V OR Pro OR unknown) ;
-REMOVE DET IF (0 Tn) (NOT 1 N OR NP OR AJ OR NUM OR unknown) ;
+SELECT DET + &&AcordSN IF (0 ("un") + &&AcordSN) (1 ("«")) (2 N_AJ + &&AcordSN) ;
+REMOVE DET IF (0 Tn) (NOT 1 N OR NP OR AJ OR NUM OR unknown OR ("«")) ;
 
 REMOVE PRON IF (0 Se) (NOT 1 Pro OR V + P3 OR V + VBinf OR V + VBger) ;        # se canti
 REMOVE PRON IF (0 Se) (1 Pro) (NOT 2 Pro OR V + P3 OR V + VBinf OR V + VBger) ;	# se li canti
