@@ -457,7 +457,7 @@ SELECT AV IF (-1 DETdef + &&AcordSN) (0 ("mai") OR ("mei") OR ("pus") OR ("mens"
 SELECT AV IF (-1 DETdef) (0 ("mai") OR ("mei") OR ("pus") OR ("mens") OR ("mensh")) (1 AV) ;
 SELECT AJ OR VBpp OR AV IF (-1 ("mai") OR ("mei") OR ("pus") OR ("mens") OR ("mensh")) (0 AJ OR VBpp OR AV) (1 Que) ;	# plus rapide que moi
 SELECT AJ OR AV IF (-1 ("mai") OR ("mei") OR ("pus") OR ("mens") OR ("mensh")) (0 AJ OR VBpp OR AV) (1 Que) ;	# plus rapide que moi
-SELECT Conjsub IF (-2 ("mai") OR ("mei") OR ("pus") OR ("mens") OR ("mensh")) (-1 AJ OR VBpp OR AV) (0 Que) ;	# plus rapide que moi
+SELECT Conjadv IF (-2 ("mai") OR ("mei") OR ("pus") OR ("mens") OR ("mensh")) (-1 AJ OR VBpp OR AV) (0 Que) ;	# plus rapide que moi
 SELECT Itg IF (0 Que) (1 Ser) (2 ("?")) ;
 SELECT Itg IF (0 Que) (1 Ser) (2 ("aquò") OR ("çò")) (1* ("?")) ;
 SELECT Rel IF (-1 ("aquò") OR ("çò")) (0 Que) ;
