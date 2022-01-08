@@ -697,6 +697,8 @@ SELECT V IF (0 An + MascSg) (1C AV) (2 VBpp + MascSg) ;
 # NP
 
 SELECT NP IF (NOT -1 BOS) (NOT -1 (META:/—/r)) ;
+REMOVE N + Sg IF (-1 BOS) (0 NP) (NOT 1 CM) (1* V OR Ser BARRIER (":") OR EOS) ;	# Fred es mort ; Mair, vòs que’t haci ; Vacas e vetèths qu’arribavan
+REMOVE AJ + Sg IF (-1 BOS) (0 NP) (NOT 1 N + Sg) (NOT 1 CM) (NOT 1* ("!")) (1* V OR Ser BARRIER (":") OR EOS) ;	# Fred es mort
 
 SELECT Conjco (-1 BOS) (0 ("Mas")) ;
 
@@ -728,9 +730,15 @@ SELECT Top IF (1C Top) (0 (META:/-/r)) ;
 SELECT Top IF (-1C Top) (-1 (META:/-/r)) ;
 
 SELECT Ant_Cog IF (0 Cog OR Ant) (1C Cog) ;
-SELECT Ant IF (0C Ant OR Cog) (1 Ant) (0 (META:/-/r)) ;                         # Charles-Michel
-SELECT Cog IF (0C Ant OR Cog) (1 Cog) (0 (META:/-/r)) ;
+SELECT Ant OR Cog IF (0 Ant OR Cog) (1C Ant OR Cog) (0 (META:/-/r)) ;           # Charles-Michel
+SELECT Ant OR Cog IF (-1C Ant OR Cog) (0 Ant OR Cog) (-1 (META:/-/r)) ;         # Charles-Michel
+SELECT Ant IF (0 Ant) (1C Ant) (0 (META:/-/r)) ;
+SELECT Cog IF (0 Cog) (1C Cog) (0 (META:/-/r)) ;
+SELECT Ant IF (-1C Ant) (0 Ant) (-1 (META:/-/r)) ;
+SELECT Cog IF (-1C Cog) (0 Cog) (-1 (META:/-/r)) ;
 SELECT Ant IF (NOT -1 Ant) (0C Ant OR Cog) (1 Cog) (NOT 0 (META:/-/r)) ;        # Albin Michel; Claude Étienne Michel
+SELECT Ant IF (0 Ant) (1C Ant OR Cog) (NOT 0 (META:/-/r)) ;
+SELECT Cog IF (-1C Ant) (0 Cog) (NOT -1 (META:/-/r)) (NOT 1 Cog OR unknownMajIni) ;
 SELECT Masc_strict IF (-2 DETdef + MascSg) (-1 N_AJ + MascSg) (0C Ant) ; # l'empereur Claude
 SELECT Fem_strict IF (-2 DETdef + FemSg) (-1 N_AJ + FemSg) (0C Ant) ;    # la belle Claude
 SELECT Masc_strict IF (0 Ant + Masc_strict) (1C Ant + Masc_strict) ;
