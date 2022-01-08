@@ -17,6 +17,7 @@ LIST EOS = <<< sent ;
 LIST V = vblex vbser vbhaver vbmod ;
 LIST Ser = vbser ;
 LIST Haver = vbhaver ;
+LIST Aver = "aver" "auer" ;
 LIST VBaux = vbser vbhaver ;
 LIST Vmod = vbmod ("voler") ("poder") ("caler") ("faler") ("aver# de") ("auer# de") ("dever") ("déuer") ("dever") ("soler") ("sòler") ("saber") ;
 LIST Conjco = cnjcoo ;
@@ -103,6 +104,7 @@ SET FemSg = (f sg) OR (f sp) OR (mf sg) OR (mf sp) ;
 SET FemPl = (f pl) OR (f sp) OR (mf pl) OR (mf sp) ;
 
 SET AcordSN = MascSg OR MascPl OR FemSg OR FemPl ;
+
 SET AcordSP = Sg OR Pl ;
 
 LIST P1 = p1 ;
@@ -161,8 +163,9 @@ LIST DET_Pas_Neg = "cap" "cap de" "nat" "brica de" "briga de" "ges de" ;
 LIST Cap = ("<cap>"i) ;
 LIST Cap_de = ("<cap de>"i) ("<cap d'>"i) ("<cap d’>"i) ;
 LIST Cap_de_del = ("<cap de>"i) ("<cap d'>"i) ("<cap d’>"i) ("<cap del>"i) ("<cap dels>"i) ("<cap deu>"i) ("<cap deus>"i) ;
-LIST Mai = "mai" "mes" ;
-LIST Pus = "pus" ;
+LIST Mai = ("mai" adv) ("mei" adv) ("mès" adv) ("mes" adv) ;
+LIST Pus = ("pus" adv) ;
+LIST Mens = "mens" "mensh" ;
 LIST Res = "res" "arren" "arrens" "ren" ;
 LIST Pel = "pel" "peu" ;
 LIST Deu = "deu" ;
@@ -391,6 +394,22 @@ SELECT N + (mf) IF (-2 ("per")) (-1 DET + &&AcordSN) (0 Cap_de_del + &&AcordSN) 
 SELECT N + (mf) IF (-2 ("per")) (-1 DET + &&AcordSN) (0 ("cap") + &&AcordSN) (1 De) ;
 
 REMOVE AV IF (-1C PREP) (0 Cap) (1C EOS OR CM OR Conjsub OR Conjadv OR Conjco) ;
+
+REMOVE DET IF (0 ("hèra")) ;
+SELECT AV IF (0 ("hèra") OR ("plan")) (1 Mai OR Pus OR Mens) ;
+SELECT PREAV IF (-1 Ser + &&AcordSP OR Ser + VBinf OR Ser + VBger OR Ser + VBpp) (0 ("hèra")) (1 AJ + &&AcordSP OR VBpp + &&AcordSP) ;
+SELECT PREAV IF (-2 Ser + &&AcordSP OR Ser + VBinf OR Ser + VBger OR Ser + VBpp) (-1 AV OR Tn) (0 ("hèra")) (1 AJ + &&AcordSP OR VBpp + &&AcordSP) ;	# estón tots hèra urós
+SELECT PREAV IF (-3 Ser + &&AcordSP OR Ser + VBinf OR Ser + VBger OR Ser + VBpp) (-2 AV OR Tn) (-1 AV OR Tn) (0 ("hèra")) (1 AJ + &&AcordSP OR VBpp + &&AcordSP) ;
+SELECT AV IF (-1 Ser + &&AcordSP OR Ser + VBinf OR Ser + VBger OR Ser + VBpp) (0 ("plan")) (1 AJ + &&AcordSP OR VBpp + &&AcordSP) ;
+SELECT AV IF (-2 Ser + &&AcordSP OR Ser + VBinf OR Ser + VBger OR Ser + VBpp) (-1 AV OR Tn) (0 ("plan")) (1 AJ + &&AcordSP OR VBpp + &&AcordSP) ;
+SELECT AV IF (-3 Ser + &&AcordSP OR Ser + VBinf OR Ser + VBger OR Ser + VBpp) (-2 AV OR Tn) (-1 AV OR Tn) (0 ("plan")) (1 AJ + &&AcordSP OR VBpp + &&AcordSP) ;
+SELECT PREAV IF (-1 Aver) (0 ("hèra") OR ("plan") OR ("força")) (1 ("besonh") OR ("enveja")) ;
+SELECT PREAV IF (-2 Aver) (-1 AV OR Tn) (0 ("hèra") OR ("plan") OR ("força")) (1 ("besonh") OR ("enveja")) ;
+SELECT PREAV IF (-3 Aver) (-2 AV OR Tn) (-1 AV OR Tn) (0 ("hèra") OR ("plan") OR ("força")) (1 ("besonh") OR ("enveja")) ;
+SELECT PREAV IF (0 ("hèra")) (1 ("plan")) ;
+SELECT PREAV IF (0 ("hèra")) (1 AJ OR VBpp OR AV LINK NOT 0 Itg OR Excl) (NOT 1 N OR DET OR Que OR ("com") OR ("coma")) ;
+SELECT PREAV IF (0 ("plan")) (1C AJ OR VBpp OR AV LINK NOT 0 Itg OR Excl) (NOT 1 Que OR ("com") OR ("coma")) ;
+REMOVE PREAV IF (0 ("hèra") OR ("plan")) (1C DET OR N OR Que OR ("com") OR ("coma")) ;
 
 SELECT AV IF (-1 Pas) (0 Mai OR Pus) ;	# ai pas pus
 SELECT AV IF (-2 Pas) (-1 VBpp) (0 Mai OR Pus) ;	# ai agut pas pus
@@ -982,6 +1001,11 @@ SELECT AV IF (-1 Ser + VBinfger) (0 ("plan")) (1 VBpp) ;
 SELECT AV IF (-2 Ser + VBinfger) (-1 AV) (0 ("plan")) (1 VBpp) ;
 SELECT AV IF (-1 Ser + &&AcordSP) (0 ("plan")) (1 VBpp + &&AcordSP) ;
 SELECT AV IF (-2 Ser + &&AcordSP) (-1 AV) (0 ("plan")) (1 VBpp + &&AcordSP) ;
+SELECT AV IF (-1C V) (0 ("plan")) (NOT 1 AJ) ;	# parlar plan
+SELECT AV IF (-2C V) (-1 AV OR PREAV OR PRencl) (0 ("plan")) (NOT 1 AJ) ;	# parlar pas plan
+SELECT AV IF (-3C V) (-2 AV OR PRencl) (-1 AV OR PREAV) (0 ("plan")) (NOT 1 AJ) ;	# parlar pas hèra plan
+SELECT PREAV IF (-1C V) (0 ("plan")) (1 AJ) ;	# parlar plan fòrt
+
 SELECT AV IF (-1C Haver) (0 PREAV) (1 VBpp) ;	# ai plan ascotat
 SELECT AV IF (-2C Haver) (-1 AV) (0 PREAV) (1 VBpp) ;	# ai pas plan ascotat
 REMOVE AV IF (0 PREAV) (0 AV) (1C AJ OR AV OR VBpp) ;
@@ -1119,6 +1143,7 @@ REMOVE P1 + Sg IF (-4C N_AJ + Sg) (-3 PREP) (-2 N_AJ + &&AcordSN) (-1 N_AJ + &&A
 REMOVE P1 + Sg IF (-4C N_AJ + Sg) (-3 PREP) (-2 DET + &&AcordSN) (-1 N + &&AcordSN) (0 V + P3 + Sg) ;
 REMOVE P1 + Sg IF (-5C N_AJ + Sg) (-4 PREP) (-3 DET + &&AcordSN) (-2 N_AJ + &&AcordSN) (-1 N_AJ + &&AcordSN) (0 V + P3 + Sg) ;
 
+REMOVE PRS IF (-1 BOS) ;
 REMOVE PRS IF (-1C Se + Conjadv) ;
 REMOVE PRS IF (-2C Se + Conjadv) (-1 Pro OR AV) ;
 REMOVE PRS IF (-3C Se + Conjadv) (-2 Pro OR AV) (-1 Pro OR AV) ;
