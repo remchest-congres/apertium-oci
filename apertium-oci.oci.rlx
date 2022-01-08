@@ -355,7 +355,7 @@ REMOVE ("centen") + N_AJ IF (0 ("centena")) (-1 ("un") OR NUM OR DETind) ;
 REMOVE ("centen") + N IF (0 ("centena") + N + Pl) ;
 REMOVE ("centen") + N IF (0 ("centena") + N) (-1 DET + FemSg) (1 De) (2 N) ;
 
-####REMOVE Ser + Pl IF (0 ("son") + Sg) (1C N_AJ + Sg) ;
+REMOVE Ser + Pl IF (0 ("son") + Sg) (1C N_AJ + Sg) ;
 
 SELECT N IF (-1/* DET + MascSg OR ("<del>"i) OR ("<al>"i)) (0 Cap); ;
 SELECT N IF (-1/* DET + MascSg OR ("<del>"i) OR ("<al>"i)) (0 Cap_de_del) ;
