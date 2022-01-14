@@ -19,7 +19,7 @@ LIST Ser = vbser ;
 LIST Haver = vbhaver ;
 LIST Aver = "aver" "auer" ;
 LIST VBaux = vbser vbhaver ;
-LIST Vmod = vbmod ("voler") ("poder") ("caler") ("faler") ("aver# de") ("auer# de") ("dever") ("déuer") ("dever") ("soler") ("sòler") ("saber") ;
+LIST Vmod = vbmod ("voler") ("poder") ("caler") ("faler") ("dever") ("déuer") ("dever") ("soler") ("sòler") ("saber") ("sàber") ;
 LIST Conjco = cnjcoo ;
 LIST Conjsub = cnjsub ;
 LIST Conjadv = cnjadv ;
@@ -163,9 +163,11 @@ LIST DET_Pas_Neg = "cap" "cap de" "nat" "brica de" "briga de" "ges de" ;
 LIST Cap = ("<cap>"i) ;
 LIST Cap_de = ("<cap de>"i) ("<cap d'>"i) ("<cap d’>"i) ;
 LIST Cap_de_del = ("<cap de>"i) ("<cap d'>"i) ("<cap d’>"i) ("<cap del>"i) ("<cap dels>"i) ("<cap deu>"i) ("<cap deus>"i) ;
+LIST A_de = ("<a de>"i) ("<a d'>"i) ("<a d’>"i) ;
 LIST Mai = ("mai" adv) ("mei" adv) ("mès" adv) ("mes" adv) ;
 LIST Pus = ("pus" adv) ;
 LIST Mens = "mens" "mensh" ;
+LIST AdvComp = ("mai" adv) ("mei" adv) ("mès" adv) ("mes" adv) ("pus" adv) "mens" "mensh" ;
 LIST Res = "res" "arren" "arrens" "ren" ;
 LIST Pel = "pel" "peu" ;
 LIST Deu = "deu" ;
@@ -286,6 +288,8 @@ SELECT PREAV IF (0 ("<plan>"i)) (1C AJ OR AV) ;		# patch
 REMOVE N IF (-1C V) (0 ("<plan>"i)) ;		# patch
 SELECT PREAV IF (-1 Ser + &&AcordSP) (0 ("<plan>"i)) (1 AJ + &&AcordSP) ;		# patch
 SELECT PREAV IF (-2 Ser + &&AcordSP) (-1 AV) (0 ("<plan>"i)) (1 AJ + &&AcordSP) ;		# patch
+SELECT PREAV IF (-1C N + &&AcordSP) (0 ("<plan>"i)) (1 AJ + &&AcordSP) ;
+SELECT PREAV IF (-2C N + &&AcordSP) (-1 AJ + &&AcordSP) (0 ("<plan>"i)) (1 AJ + &&AcordSP) ;
 SELECT AJ IF (-1C N + &&AcordSP) (0 ("<plan>"i) + &&AcordSP) ;		# patch
 SELECT AV IF (0 ("<mai>"i)) (1 De) ;		# patch
 REMOVE N IF (-1C PREP) (0 ("<veire>"i)) ;		# patch
@@ -393,6 +397,11 @@ SELECT N + (mf) IF (-1 ("<pel>"i) OR ("<pels>"i)) (0 ("cap")) (1 De) ;
 SELECT N + (mf) IF (-2 ("per")) (-1 DET + &&AcordSN) (0 Cap_de_del + &&AcordSN) ;
 SELECT N + (mf) IF (-2 ("per")) (-1 DET + &&AcordSN) (0 ("cap") + &&AcordSN) (1 De) ;
 
+REMOVE PREP IF (0 A_de) (NOT 1 N_AJ OR AV OR PREAV) ;	# path
+REMOVE PREP IF (0 A_de) (1 AV OR PREAV) (NOT 2 N_AJ) ;	# path
+REMOVE PREP IF (0 A_de) (-1 Pro) ;	# path
+REMOVE PREP IF (0 A_de) (-1 BOS OR CM) ;	# path
+
 REMOVE AV IF (-1C PREP) (0 Cap) (1C EOS OR CM OR Conjsub OR Conjadv OR Conjco) ;
 
 REMOVE DET IF (0 ("hèra")) ;
@@ -451,7 +460,7 @@ REMOVE VBger IF (NOT -1 ("en") OR ("en bèth") OR Pro OR N_AJ OR CM) ;
 REMOVE VBger IF (NOT -2 ("en") OR ("en bèth") OR Pro OR CM) (-1C Pro) ;
 
 #Un pronom proclitic est totjorn davant un vèrb o un autre pronom
-REMOVE Pro IF (NOT 1 Pro OR V - VBpp OR VBimp) ;
+REMOVE Pro IF (NOT 1 unknown OR Pro OR V - VBpp OR VBimp) ;
 REMOVE DET IF (1C V OR Pro) (NOT 1 VBpp) ;
 SELECT V OR Pro IF (-1C Pro) (NOT -1/* V) ;	# i a un ; i aviá un
 SELECT V OR Pro IF (-1C/* Pro) (NOT -1/* V) ;	# se'n sap
@@ -471,17 +480,23 @@ SELECT Conjsub IF (-2C Ser) (-1 AJ OR ("vertat")) (0 Que) ;	# es vertat que
 SELECT Conjsub IF (-3C Ser) (-2 AV) (-1 AJ OR ("vertat")) (0 Que) ;	# es pas vertat que
 SELECT Conjsub IF (-4C Ser) (-3 AV) (-2 AV OR PREAV) (-1 AJ OR ("vertat")) (0 Que) ;	# es pas totjorn vertat que
 REMOVE Conjsub IF (-1C N_AJ) (0 Que) ;
-SELECT AV IF (0 ("mai") OR ("mei") OR ("pus") OR ("mens") OR ("mensh")) (1 AJ OR VBpp OR AV) (2 Que) ;	# plus rapide que moi
-SELECT AV IF (-1 DETdef + &&AcordSN) (0 ("mai") OR ("mei") OR ("pus") OR ("mens") OR ("mensh")) (1 AJ + &&AcordSN OR VBpp + &&AcordSN OR N + &&AcordSN) ;	# lo mai rapide
-SELECT AV IF (-1 DETdef) (0 ("mai") OR ("mei") OR ("pus") OR ("mens") OR ("mensh")) (1 AV) ;
-SELECT AJ OR VBpp OR AV IF (-1 ("mai") OR ("mei") OR ("pus") OR ("mens") OR ("mensh")) (0 AJ OR VBpp OR AV) (1 Que) ;	# plus rapide que moi
-SELECT AJ OR AV IF (-1 ("mai") OR ("mei") OR ("pus") OR ("mens") OR ("mensh")) (0 AJ OR VBpp OR AV) (1 Que) ;	# plus rapide que moi
-SELECT Conjadv IF (-2 ("mai") OR ("mei") OR ("pus") OR ("mens") OR ("mensh")) (-1 AJ OR VBpp OR AV) (0 Que) ;	# plus rapide que moi
+SELECT AV IF (0 AdvComp) (1 AJ OR VBpp OR AV) (2 Que) ;	# mei leugèr que jo
+SELECT AV IF (-1 DETdef + &&AcordSN) (0 AdvComp) (1 AJ + &&AcordSN OR VBpp + &&AcordSN OR N + &&AcordSN) ;	# lo mai rapide
+SELECT AV IF (-1 DETdef) (0 AdvComp) (1 AV) ;
+SELECT AJ OR VBpp OR AV IF (-1 AdvComp) (0 AJ OR VBpp OR AV) (1 Que) ;	# mei leugèr que jo
+SELECT AJ OR AV IF (-1 AdvComp) (0 AJ OR VBpp OR AV) (1 Que) ;	# mei leugèr que jo
+SELECT Conjsub IF (-2 AdvComp) (-1 AJ OR VBpp OR AV) (0 Que) ;	# mei leugèr que jo
 SELECT Itg IF (0 Que) (1 Ser) (2 ("?")) ;
 SELECT Itg IF (0 Que) (1 Ser) (2 ("aquò") OR ("çò")) (1* ("?")) ;
 SELECT Rel IF (-1 ("aquò") OR ("çò")) (0 Que) ;
 SELECT Rel IF (-1 ("aquò") OR ("çò")) (0 Qui) ;
 REMOVE Itg IF (-1C N_AJ) (0 Que) ;
+REMOVE Itg IF (-1C ("voler")) (0 Que) ;
+REMOVE Itg IF (-1C Saber) (0 Que) ;	# patch
+REMOVE Itg IF (-1C ("pensar")) (0 Que) ;	# patch
+REMOVE Itg IF (-1C ("creire") OR ("créder") OR ("créser") OR ("creir")) (0 Que) ;	# patch
+REMOVE Itg IF (-1C ("diser") OR ("díder")) (0 Que) ;	# patch
+REMOVE Itg IF (-1C ("reconéisser") OR ("reconéisher")) (0 Que) ;	# patch
 REMOVE Conjsub IF (-1 CM) (0 Que) ;
 REMOVE Conjsub IF (-1 DET) (0 Que) ;
 REMOVE Conjsub IF (-1C N) (0 Que) ;
@@ -594,7 +609,7 @@ SELECT AV IF (-1C Ser OR ("<son>"i)) (0 ("fòrça")) (1C AJ) ;	# son fòrça pre
 SELECT AJ IF (-1C Ser) (0 ("present")) ;
 SELECT AJ IF (-2C Ser) (-1 AV) (0 ("present")) ;
 
-REMOVE N IF (NOT -1 DET + Masc) (0 ("nos")) (1 Vconj OR VBinf OR VBger) ;
+REMOVE N IF (NOT -1 DET + Masc) (0 ("nos")) (1 Vconj OR VBinf OR VBger OR unknown) ;
 
 REMOVE Tn IF (NOT -1 Tn) (0 ("vos")) (1 Vconj) ;
 
@@ -677,6 +692,7 @@ REMOVE DETpos IF (0 ("son")) (1C NUM) ;		# son doas causas
 
 # L'enonciatiu es totjorn seguit d'un vèrb o d'un proclitic
 REMOVE Enon IF (NOT 1 V OR Pro);
+REMOVE SUB:1 Enon IF (NOT 1 V OR Pro);
 
 #Una prepausicion es totjorn seguida d'un nom, pronom, adverb, numeral, infinitiu, determinant o adjectiu
 REMOVE PREP IF (NOT 1 N OR PRON OR AV OR NUM OR NP OR VBinf OR DET OR AJ) (NOT 0/* PREP + DET) (NOT 0/* PREP + N) ;
@@ -956,6 +972,7 @@ REMOVE DET + &&AcordSN IF (0 DET) (1 N_AJ OR NP OR Tn) (NOT 1 NUM OR AV OR PREAV
 REMOVE SUB:1 DET IF (0/* DET) (1C DET) ;	# en los acès
 SELECT PREAV IF (0 ("fòrça")) (1C AJ) ;
 SELECT AV IF (0 ("fòrça")) (1C VBpp) ;
+SELECT AV IF (0 ("fòrça")) (1 AdvComp) ;
 SELECT DETind + &&AcordSN IF (0 DETind + &&AcordSN) (1 N + &&AcordSN) ;	# un enfant
 SELECT DETind + &&AcordSN IF (0 DETind + &&AcordSN) (1 AJ + &&AcordSN) (NOT 0 ("força") OR ("horça")) ;	# un jaune
 REMOVE PRON + Pos IF (0 DETpos + &&AcordSN) (1 N + &&AcordSN) ;	# lo son torn
@@ -969,8 +986,8 @@ REMOVE ("unir") IF (0 Un + &&AcordSN) (1C N_AJ + &&AcordSN) ;	# guess
 SELECT PRON IF (0 Un) (1 De) (2 N + Sg) ;
 SELECT PRON IF (0 Un + Masc) (1 De) (1/* DET + MascPl) (2 N + MascPl) ;
 SELECT PRON IF (0 Un + Fem) (1 De) (2 DET + FemPl) (3 N + FemPl) ;
-SELECT PRON IF (0 Un + Masc) (1 De) (1/* DET + MascPl) (2 AJ OR ("mai") OR ("mei") OR ("pus") OR ("mens") OR ("mensh")) (3 N_AJ + MascPl) ;
-SELECT PRON IF (0 Un + Fem) (1 De) (2 DET + FemPl) (2 AJ OR ("mai") OR ("mei") OR ("pus") OR ("mens") OR ("mensh")) (4 N_AJ + FemPl) ;
+SELECT PRON IF (0 Un + Masc) (1 De) (1/* DET + MascPl) (2 AJ OR AdvComp) (3 N_AJ + MascPl) ;
+SELECT PRON IF (0 Un + Fem) (1 De) (2 DET + FemPl) (2 AJ OR AdvComp) (4 N_AJ + FemPl) ;
 REMOVE DET IF (0 Eth) (1 DET);
 REMOVE DET IF (0 Eth) (1 Pas);
 REMOVE DET IF (1 ("<a>"i));
@@ -1181,7 +1198,7 @@ SELECT N IF (-1 ("vila") OR ("ciutat")) (0 Estat) ;	# vila estat
 REMOVE AJ IF (0 Las) (1 N + FemPl) ;	# las pomas
 REMOVE AJ IF (0 Las) (1 NP + FemPl) ;	# las Corbièras
 REMOVE AJ IF (0 Las) (1 NUM) (2 N + FemPl) ;	# las 200 pomas
-REMOVE AJ IF (0 Las) (1 AJ OR ("mai") OR ("mei") OR ("pus") OR ("mens") OR ("mensh")) (2 N_AJ + FemPl) ;
+REMOVE AJ IF (0 Las) (1 AJ OR AdvComp) (2 N_AJ + FemPl) ;
 
 SELECT Conjco IF (0 Mas_cnjcoo) (-1 CM) ;
 SELECT Conjco IF (0 Mas_cnjcoo) (-1 BOS) ;
