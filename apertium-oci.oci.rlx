@@ -218,7 +218,7 @@ OR ("nonanten") OR ("navantau")
 OR ("centen") OR ("centau")
 OR ("milen") OR ("milau")
 OR ("milionen") OR ("milionau")
-OR ("dernier") OR ("darrièr")
+OR ("dernier") OR ("darnièr") OR ("darrièr") OR ("darrèr")
 OR NumOrd ;
 
 # adjectifs qui souvent vont devant le nom
@@ -334,6 +334,7 @@ SELECT N + &&AcordSN IF (-1/* DET + &&AcordSN) (0 ("sap") + &&AcordSN) (1 De) ;
 REMOVE N + ("sap");
 REMOVE ("un tal") IF (0 ("un")) ;
 REMOVE V IF (0 ("aqueth")) ;	# patch (aquera, aqueras)
+SELECT NUM IF (0 ("set")) (1C N_AJ + Pl) ;
 
 REMOVE ("cosina") IF (-1 DETpos + FemSg) (0 ("<cosina>")) ;
 REMOVE ("cosina") IF (0 ("cosin") + FemPl) ;
@@ -884,11 +885,11 @@ REMOVE Vconj IF (-3C Ser + Vconj + &&AcordSP) (-2 AV) (-1 AV) (0 VBpp + &&AcordS
 SELECT VBinf IF (0 AJ) (1 ("par")) ;
 SELECT AV IF (-1 Vmod) (0 ("<tornar>"i)) (1 VBinf) ;	# pòdi tornar manjar
 SELECT VBinf IF (-1 Vmod) (0 VBinf) ;	# pòdi manjar
-SELECT Vmod IF (0 Vmod) (1C VBinf) ;	# pòdi manjar
-SELECT VBinf IF (-2 Vmod) (-1 AV OR Pro) (0 VBinf) ;	# pòdi pas manjar
-SELECT Vmod IF (0 Vmod) (1 AV OR Pro) (2C VBinf) ;	# pòdi pas manjar
-SELECT VBinf IF (-3 Vmod) (-2 AV OR Pro) (-1 AV OR Pro) (0 VBinf) ;	# pòdi pas manjar
-SELECT Vmod IF (0 Vmod) (1 AV OR Pro) (2 AV OR Pro) (3C VBinf) ;	# pòdi pas manjar
+SELECT Vmod IF (0 Vmod) (1C VBinf) (NOT 0 PREP) ;	# pòdi manjar
+SELECT VBinf IF (-2 Vmod) (-1 AV OR Pro) (0 VBinf) (NOT 0 PREP) ;	# pòdi pas manjar
+SELECT Vmod IF (0 Vmod) (1 AV OR Pro) (2C VBinf) (NOT 0 PREP) ;	# pòdi pas manjar
+SELECT VBinf IF (-3 Vmod) (-2 AV OR Pro) (-1 AV OR Pro) (0 VBinf) (NOT 0 PREP) ;	# pòdi pas manjar
+SELECT Vmod IF (0 Vmod) (1 AV OR Pro) (2 AV OR Pro) (3C VBinf) (NOT 0 PREP) ;	# pòdi pas manjar
 
 # VBmod
 
