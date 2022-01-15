@@ -245,7 +245,8 @@ REMOVE V IF (0 ("<arren>"i)) ;		# patch
 REMOVE N IF (0 ("<ren>"i)) (1 De) ;		# patch
 REMOVE N IF (0 ("<e>"i)) ;		# patch
 REMOVE N IF (0 ("<o>"i)) ;		# patch
-REMOVE N IF (NOT -1 DET) (0 ("<res>"i)) ;		# patch
+REMOVE N IF (NOT -1/* DET) (0 ("<res>"i)) ;		# patch
+REMOVE N IF (NOT -1/* DET) (0 ("<tròp>"i)) ;		# patch
 REMOVE N IF (0 ("<la>"i)) ;		# patch
 REMOVE N IF (0 ("<las>"i)) ;		# patch
 SELECT DET IF (0 ("<las>"i)) (1C N_AJ + FemPl) ;		# patch
