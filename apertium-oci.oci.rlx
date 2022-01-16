@@ -1039,7 +1039,8 @@ SELECT PREAV IF (-2 Ser + VBinfger) (-1 AV) (0 AV OR ("mal")) (1 VBpp) ;
 
 # ADJ
 
-REMOVE AJ IF (-1 ("en")) (NOT 1 Conjco OR N) ;
+REMOVE AJ IF (-1 ("en")) (NOT 1 Conjco OR N OR NP) ;
+SELECT AJ + &&AcordSN IF (0 AJ + MajIni + &&AcordSN) (1 NP + &&AcordSN) ;	# en Naut Comenge
 
 # ADJ POS
 
