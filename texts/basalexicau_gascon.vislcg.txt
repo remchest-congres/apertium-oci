@@ -1,0 +1,420 @@
+"<Lo>"
+	"lo" det def m sg
+"<Congrès>"
+	"Congrès" np al m sg
+"<qu’>"
+	"que" adv enon
+"<a>"
+	"aver" vbhaver pri p3 sg
+"<aviat>"
+	"aviar" vblex pp m sg
+"<la>"
+	"lo" det def f sg
+"<creacion>"
+	"creacion" n f sg
+"<d’>"
+	"de" pr
+"<ua>"
+	"un" det ind f sg
+"<basa>"
+	"basa" n f sg
+"<descriptiva>"
+	"descriptiu" adj f sg
+"<de>"
+	"de" pr
+"<dadas>"
+	"dada" n f pl
+"<qui>"
+	"qui" rel mf sp
+"<amassa>"
+	"amassar" vblex pri p3 sg
+"<las>"
+	"lo" det def f pl
+"<entradas>"
+	"entrada" n f pl
+"<lexicaus>"
+	"lexicau" adj mf pl
+"<presentas>"
+	"present" adj f pl
+"<dens>"
+	"dens" pr
+"<los>"
+	"lo" det def m pl
+"<diccionaris>"
+	"diccionari" n m pl
+"<,>"
+	"," cm
+"<lexics>"
+	"lexic" n m pl
+"<e>"
+	"e" cnjcoo
+"<glossaris>"
+	"glossari" n m pl
+"<hèits>"
+	"har" vblex pp m pl
+"<de>"
+	"de" pr
+"<l’>"
+	"lo" det def mf sg
+"<Edat Mejana>"
+	"Edat Mejana" np al f sg
+"<enlà>"
+	"enlà" adv
+"<.>"
+	"." sent
+
+"<Qu’>"
+	"que" adv enon
+"<a>"
+	"aver" vblex pri p3 sg
+"<per>"
+	"per" pr
+"<objectiu>"
+	"objectiu" n m sg
+"<d’>"
+	"de" pr
+"<estar>"
+	"estar" vbser inf
+"<un>"
+	"un" det ind m sg
+"<diccionari>"
+	"diccionari" n m sg
+"<scientific>"
+	"scientific" adj m sg
+"<descriptiu>"
+	"descriptiu" adj m sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<lenga>"
+	"lenga" n f sg
+"<occitana>"
+	"occitan" adj f sg
+"<,>"
+	"," cm
+"<de bon>"
+	"de bon" adv
+"<accedir>"
+	"accedir" vblex inf
+"<en linha>"
+	"en linha" adv
+"<entaus>"
+	"entà" pr
+		"lo" det def m pl
+"<especialistas>"
+	"especialista" adj mf pl
+"<e>"
+	"e" cnjcoo
+"<public>"
+	"public" n m sg
+"<avisat>"
+	"avisat" adj m sg
+"<.>"
+	"." sent
+
+"<Que>"
+	"que" adv enon
+"<serà>"
+	"estar" vbser fti p3 sg
+"<aisidament>"
+	"aisidament" adv
+"<consultader>"
+	"consultader" adj m sg
+"<,>"
+	"," cm
+"<modificader>"
+	"modificader" adj m sg
+"<e>"
+	"e" cnjcoo
+"<extensible>"
+	"extensible" adj m sg
+"<mercés a>"
+	"mercés a" pr
+"<las>"
+	"lo" det def f pl
+"<TIC>"
+	"TIC" n acr f pl
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
+"<Aqueras>"
+	"aqueth" det dem f pl
+"<òbras>"
+	"òbra" n f pl
+"<de>"
+	"de" pr
+"<las>"
+	"lo" det def f pl
+"<longas>"
+	"long" adj f pl
+"<que>"
+	"que" rel mf sp
+"<hè>"
+	"har" vblex pri p3 sg
+"<hrèita>"
+	"hrèita" n f sg
+"<entà>"
+	"entà" pr
+"<miar>"
+	"miar" vblex inf
+"<un>"
+	"un" det ind m sg
+"<tribalh>"
+	"tribalh" n m sg
+"<lexicografic>"
+	"lexicografic" adj m sg
+"<avançat>"
+	"avançat" adj m sg
+"<.>"
+	"." sent
+
+"<Que>"
+	"que" adv enon
+"<serà>"
+	"estar" vbser fti p3 sg
+"<un>"
+	"un" det ind m sg SELECT:524
+"<còrpus>"
+	"còrpus" n m sp
+"<scientific>"
+	"scientific" adj m sg
+"<tà>"
+	"tà" pr
+"<la>"
+	"lo" det def f sg
+"<coneishença>"
+	"coneishença" n f sg
+"<completa>"
+	"complet" adj f sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<lenga>"
+	"lenga" n f sg
+"<e>"
+	"e" cnjcoo
+"<entà>"
+	"entà" pr
+"<la>"
+	"lo" det def f sg
+"<creacion>"
+	"creacion" n f sg
+"<d’>"
+	"de" pr
+"<autes>"
+	"aute" adj ind m pl
+"<utís>"
+	"utís" n m pl
+"<lexicografics>"
+	"lexicografic" adj m pl
+"<:>"
+	":" sent
+
+"<diccionaris>"
+	"diccionari" n m pl
+"<d’>"
+	"de" pr
+"<orientacion>"
+	"orientacion" n f sg
+"<,>"
+	"," cm
+"<lexics>"
+	"lexic" n m pl
+"<especializats>"
+	"especializat" adj m pl
+"<,>"
+	"," cm
+"<etc.>"
+	"etc." adv
+"<.>"
+	"." sent
+
+
+
+"<Lo>"
+	"lo" det def m sg
+"<CIRDÒC>"
+	"CIRDÒC" np al m sg
+"<Aqueste>"
+	"aqueste" det dem m sg
+"<projècte>"
+	"projècte" n m sg
+"<que>"
+	"que" adv enon
+"<serà>"
+	"estar" vbser fti p3 sg
+"<miat>"
+	"miar" vblex pp m sg
+"<en>"
+	"en" pr
+"<partenariat>"
+	"partenariat" n m sg
+"<dab>"
+	"dab" pr
+"<lo>"
+	"lo" det def m sg
+"<CIRDÒC>"
+	"CIRDÒC" np al m sg
+ – 
+"<Centre>"
+	"centre" n m sg
+"<Interregionau>"
+	"interregionau" adj mf sg
+"<de>"
+	"de" pr
+"<Desvolopament>"
+	"desvolopament" n m sg
+"<de>"
+	"de" pr
+"<l’>"
+	"lo" det def mf sg
+"<Occitan>"
+	"occitan" n m sg
+ – 
+"<qui>"
+	"qui" rel mf sp
+"<ei>"
+	"estar" vbser pri p3 sg
+"<operator>"
+	"operator" n m sg
+"<de>"
+	"de" pr
+"<la>"
+	"lo" det def f sg
+"<Bibliotèca>"
+	"bibliotèca" n f sg
+"<Nacionau>"
+	"nacionau" adj mf sg
+"<de>"
+	"de" pr
+"<França>"
+	"França" np top f sg
+"<dens l’encastre d’>"
+	"dens l'encastre de" pr
+"<un>"
+	"un" det ind m sg
+"<projècte>"
+	"projècte" n m sg
+"<granàs>"
+	"granàs" adj m sg
+"<de>"
+	"de" pr
+"<numerizacion>"
+	"numerizacion" n f sg
+"<de>"
+	"de" pr
+"<tot>"
+	"tot" predet m sg
+"<lo>"
+	"lo" det def m sg
+"<patrimòni>"
+	"patrimòni" n m sg
+"<occitan>"
+	"occitan" adj m sg
+"<.>"
+	"." sent
+
+"<Lo>"
+	"lo" det def m sg
+"<projècte>"
+	"projècte" n m sg
+"<que>"
+	"que" adv enon
+"<compren>"
+	"compréner" vblex pri p3 sg
+"<ua>"
+	"un" det ind f sg
+"<fasa>"
+	"fasa" n f sg
+"<de>"
+	"de" pr
+"<numerizacion>"
+	"numerizacion" n f sg
+"<de>"
+	"de" pr
+"<l’>"
+	"lo" det def mf sg
+"<ensemble>"
+	"ensemble" n m sg
+"<deus>"
+	"de" pr
+		"lo" det def m pl
+"<diccionaris>"
+	"diccionari" n m pl
+"<occitans>"
+	"occitan" adj m pl
+"<e>"
+	"e" cnjcoo
+"<diccionaris>"
+	"diccionari" n m pl
+"<occitans>"
+	"occitan" adj m pl
+"<istorics>"
+	"istoric" adj m pl
+"<.>"
+	"." sent
+
+"<Lo>"
+	"lo" det def m sg
+"<Congrès>"
+	"Congrès" np al m sg
+"<que>"
+	"que" adv enon
+"<portarà>"
+	"portar" vblex fti p3 sg
+"<l’>"
+	"lo" det def mf sg
+"<autoritat>"
+	"autoritat" n f sg
+"<scientifica>"
+	"scientific" adj f sg
+"<qui>"
+	"qui" rel mf sp
+"<hè>"
+	"har" vblex pri p3 sg
+"<besonh>"
+	"besonh" n m sg
+"<entà>"
+	"entà" pr
+"<constituir>"
+	"constituïr" vblex inf
+"<ua>"
+	"un" det ind f sg
+"<basa>"
+	"basa" n f sg
+"<de>"
+	"de" pr
+"<dadas>"
+	"dada" n f pl
+"<exaustiva>"
+	"exaustiu" adj f sg
+"<e>"
+	"e" cnjcoo
+"<valida>"
+	"valide" adj f sg
+"<a partir de>"
+	"a partir de" pr
+"<diccionaris>"
+	"diccionari" n m pl
+"<e d’>"
+	"e" cnjcoo
+		"de" pr
+"<entradas>"
+	"entrada" n f pl
+"<identificadas>"
+	"identificar" vblex pp f pl
+"<.>"
+	"." sent
+
+"<.>"
+	"." sent
+
+
+
