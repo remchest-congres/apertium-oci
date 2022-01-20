@@ -142,8 +142,6 @@
 	"origina" n f sg
 "<normanda>"
 	"normand" adj f sg
-"<>"
-	"" sent
 "<la>"
 	"lo" det def f sg
 "<familha>"
@@ -400,8 +398,6 @@
 	"ALLOc" np al m sg
 "<)>"
 	")" rpar
-"<>"
-	"" sent
 "<comencèt>"
 	"començar" vblex ifi p3 sg
 "<coma>"
@@ -681,7 +677,6 @@
 	"lo" det def f sg
 "<mencion>"
 	"mencion" n f sg
-	"
 "<Edicion>"
 	"edicion" n f sg
 "<adobada>"
