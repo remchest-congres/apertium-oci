@@ -320,6 +320,7 @@ SELECT PREAV IF (0 ("autant")) (1 VBpp) (2 De) (3* ("com") LINK 1 De) ;
 SELECT VBpp IF (-1 ("autant")) (0 VBpp) (1 De) ;
 SELECT PREP IF (0 ("coma")) (1 ("en")) ;
 REMOVE N IF (NOT -1 DET) (0 ("<son>"i)) ;	# patch
+REMOVE DET + Sg IF (-1 NUM LINK NOT 0 ("1")) (0 ("<son>"i)) ;	# patch
 REMOVE Sg IF (NOT -1 DET) (0 ("<son>"i)) (1C Pl_strict) ;	# son conegudas
 REMOVE Sg IF (NOT -1 DET) (0 ("<son>"i)) (1 AV OR PREAV) (2C Pl_strict) ;	# son plan conegudas
 SELECT PREP IF (0 ("sens")) (1C VBinf OR VBger) ;
@@ -652,11 +653,14 @@ SELECT PREP IF (0 ("en")) (1 ("dos")) ;
 
 SELECT V IF (0 ("tornar")) (1C VBinf) ;
 
+SELECT N IF (-1 De) (0 ("òc")) ;
+
 #En es pas un pronom s'es abans un gerondiu (amb possibilitat de pronoms entre los dos)
 REMOVE En_pron IF (1* VBger BARRIER (*) - Pro) ;
 
 #Una conjonccion o un pronom relatiu se podon pas trobar en debuta de frasa
 #REMOVE Conjco IF (-1 BOS OR SENT);		# en realitat, òc
+REMOVE Conjco IF (1 EOS);
 SELECT Conjco IF (-1 BOS OR SENT) (0 ("<E>")) (NOT 1 CM) (NOT 1* ("?")) ;
 SELECT Conjco IF (-1 BOS OR SENT) (0 ("<E>")) (NOT 1 CM OR Pro OR V + Pers) ;
 REMOVE Conjsub IF (-1 BOS OR SENT);
@@ -1041,6 +1045,8 @@ SELECT PREAV IF (-2 Ser + VBinfger) (-1 AV) (0 AV OR ("mal")) (1 VBpp) ;
 
 REMOVE AJ IF (-1 ("en")) (NOT 1 Conjco OR N OR NP) ;
 SELECT AJ + &&AcordSN IF (0 AJ + MajIni + &&AcordSN) (1 NP + &&AcordSN) ;	# en Naut Comenge
+
+REMOVE AJ IF (-1 ("de")) (0 VBinf) (1 PREP OR EOS) ;	# es riscat d'especular
 
 # ADJ POS
 
