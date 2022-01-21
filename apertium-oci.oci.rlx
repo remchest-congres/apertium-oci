@@ -320,6 +320,7 @@ SELECT PREAV IF (0 ("autant")) (1 VBpp) (2 De) (3* ("com") LINK 1 De) ;
 SELECT VBpp IF (-1 ("autant")) (0 VBpp) (1 De) ;
 SELECT PREP IF (0 ("coma")) (1 ("en")) ;
 REMOVE N IF (NOT -1 DET) (0 ("<son>"i)) ;	# patch
+REMOVE N IF (NOT -1 DET OR NUM) (0 ("<endavant>"i)) ;	# patch
 REMOVE DET + Sg IF (-1 NUM LINK NOT 0 ("1")) (0 ("<son>"i)) ;	# patch
 REMOVE Sg IF (NOT -1 DET) (0 ("<son>"i)) (1C Pl_strict) ;	# son conegudas
 REMOVE Sg IF (NOT -1 DET) (0 ("<son>"i)) (1 AV OR PREAV) (2C Pl_strict) ;	# son plan conegudas
@@ -687,6 +688,8 @@ SELECT N IF (0 (META:/-/r)) (1C N) ;
 # non : Patxi Zabaleta, actualament cap del partit
 REMOVE N IF (NOT -1 BOS OR CM OR Conjco OR V OR AJ OR DET OR NUM OR PREP OR PRON - PRONPers) (NOT -1/* ("de")) (NOT -2 CM) ;
 REMOVE N IF (-2 N + &&AcordSN) (-1 AJ + &&AcordSN) (0 VBpp + &&AcordSN) ;	# lo ministre canadian encargat
+
+REMOVE AJ IF (-1C Conjsub OR Conjadv OR Rel) ;
 
 #Un predeterminant es pas seguit que per un determinant
 REMOVE PREDET IF (NOT 1 DET);
@@ -1211,6 +1214,8 @@ REMOVE AJ IF (0 Las) (1 AJ OR AdvComp) (2 N_AJ + FemPl) ;
 
 SELECT Conjco IF (0 Mas_cnjcoo) (-1 CM) ;
 SELECT Conjco IF (0 Mas_cnjcoo) (-1 BOS) ;
+REMOVE N IF (0 ("mas")) (NOT -1/* DET + MascSg) ;
+SELECT Conjco IF (0 ("mas")) (NOT -1/* DET + MascSg) (1C V) ;
 
 REMOVE N IF (-1C V) (0 Pel) ;
 REMOVE N IF (0 Pel) (1 unknown) ;
@@ -1235,6 +1240,8 @@ REMOVE N IF (1 NP + MascPl) (0 ("<peus>"i) OR ("<pels>"i)) (NOT -1 DET + Pl) (NO
 REMOVE N IF (1 AdjPre + MascSg) (0 ("<peu>"i) OR ("<pel>"i)) (NOT -1 DET + Sg) (NOT -1 Artcontrsg) ;
 REMOVE N IF (1 AdjPre + MascPl) (0 ("<peus>"i) OR ("<pels>"i)) (NOT -1 DET + Pl) (NOT -1 Artcontrpl) ;
 
+# de còps
+REMOVE PREP IF (NOT -1 N_AJ) (0 ("de còps")) ;
 
 #punt de vista
 SELECT SUB:1 Nf IF (0 PREP) (-1 ("punt") OR ("ponch")) (0 ("<de vista>")) ;
