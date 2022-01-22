@@ -227,6 +227,7 @@ SET AdjPre = ("ancian") OR ("nòu") OR ("nau") OR ("novèl") OR ("navèth") OR (
 
 SET Dignitat = ("papa") OR ("patriarca") OR ("avesque") OR ("arcavesque") OR ("archavesque") OR ("archevesque") OR ("arquevesque") OR ("sant") OR ("sant") OR ("apòstol") OR ("apostòl") OR ("emperador") OR ("emperaire") OR ("rei") OR ("tsar") OR ("vicerei") OR ("regent") OR ("prince") OR ("infant") OR ("dalfin") OR ("comte") OR ("comtessa") OR ("vescomte") OR ("vescomtessa") OR ("duc") OR ("grand-duc") OR ("arcaduc") OR ("archiduc") OR ("marqués") OR ("baron") ;
 
+SET Lenga = ("occitan") OR ("francés") OR ("anglés") OR ("alemand") OR ("espanhòl") OR ("italian") OR ("rus") OR ("chinés") OR ("japonés") OR ("catalan") OR ("basc") OR ("basco") OR ("breton") OR ("còrse") OR ("arpitan") OR ("francoprovençal") OR ("alsacian") OR ("flamenc") ;
 
 SECTION
 
@@ -1012,6 +1013,8 @@ SELECT SUB:1 Masc IF (0/* ("lo")) (1 Pro) (2 ("díser") OR ("har")) ;	# que'u te
 
 SELECT VBpp IF (-1 ("un còp")) ;
 SELECT VBpp IF (-2 ("un") + MascSg) (-1 ("còp")) ;
+
+REMOVE ("corsa") OR ("corses") IF (0 ("cors")) (1 De) (2 Lenga);
 
 # NUM
 
