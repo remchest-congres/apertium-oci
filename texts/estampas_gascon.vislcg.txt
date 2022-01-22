@@ -820,12 +820,8 @@
 "<malaür>"
 	"malaür" n m sg
 ”
-"<>"
-	"" lpar
 "<1>"
 	"1" num
-"<>"
-	"" rpar
 "<.>"
 	"." sent
 
