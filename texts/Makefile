@@ -1,6 +1,6 @@
 SRC_LENGADOC=continent_leng.tagged.txt diariliceu_leng.tagged.txt glacier_leng.tagged.txt jocnombres_leng.tagged.txt uranus_leng.tagged.txt
 # bastida_leng, carcassona_leng, galaxia_leng, neptun_leng
-SRC_GASCON=acidnucleic_gascon.tagged.txt alejandrolanusse_gascon.tagged.txt amassada_gascon.tagged.txt atom_gascon.tagged.txt aush_gascon.tagged.txt avesac_gascon.tagged.txt basalexicau_gascon.tagged.txt bilcato_gascon.tagged.txt bolivia_gascon.tagged.txt boisgontier_gascon.tagged.txt caraecara_gascon.tagged.txt cors_aran.tagged.txt danielfabre_gascon.tagged.txt eac_gascon.tagged.txt hlama_coming.tagged.txt lascausas_gascon.tagged.txt leclercq_gascon.tagged.txt linguatec_gascon.tagged.txt puntrevoc_gascon.tagged.txt revoc_gascon.tagged.txt trensoccitania_gascon.tagged.txt votzpresent_gasc.tagged.txt
+SRC_GASCON=acidnucleic_gascon.tagged.txt alejandrolanusse_gascon.tagged.txt amassada_gascon.tagged.txt atom_gascon.tagged.txt aush_gascon.tagged.txt avesac_gascon.tagged.txt basalexicau_gascon.tagged.txt bilcato_gascon.tagged.txt bolivia_gascon.tagged.txt boisgontier_gascon.tagged.txt caraecara_gascon.tagged.txt cors_aran.tagged.txt danielfabre_gascon.tagged.txt eac_gascon.tagged.txt estampas_gascon.tagged.txt hlama_coming.tagged.txt lascausas_gascon.tagged.txt leclercq_gascon.tagged.txt linguatec_gascon.tagged.txt puntrevoc_gascon.tagged.txt revoc_gascon.tagged.txt trensoccitania_gascon.tagged.txt votzpresent_gasc.tagged.txt
 
 all: oci_leng.unigram.prob oci_gasc.unigram.prob
 
