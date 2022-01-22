@@ -637,7 +637,7 @@
 	"d'Estarac" np cog mf sp
 "<,>"
 	"," cm
-	"
+"
 "<Governador>"
 	"governador" n m sg
 "<de>"

@@ -579,7 +579,7 @@
 	"live" n m sg
 "<piratat>"
 	"piratar" vblex pp m sg
-	"
+"
 "<Dawn of the black hearts>"
 	"Dawn of the black hearts" np al m sg
 "

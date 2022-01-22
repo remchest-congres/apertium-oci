@@ -153,8 +153,6 @@
 	"idea" n f pl
 "<politicas>"
 	"politic" adj f pl
-"<>"
-	"" sent
 "<durant>"
 	"durant" pr
 "<la>"
@@ -383,6 +381,7 @@
 "<dens>"
 	"dens" pr
 "<las>"
+	"lo" det def f pl
 "<honts>"
 	"hont" n f pl
 "<de>"
@@ -491,8 +490,6 @@
 	"de" pr
 "<Buenos Aires>"
 	"Buenos Aires" np top m sg
-"<>"
-	"" sent
 "<que>"
 	"que" adv enon
 "<ho>"
