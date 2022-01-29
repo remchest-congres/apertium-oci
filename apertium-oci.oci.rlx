@@ -175,6 +175,7 @@ LIST Que = "que" ("<que>"i) ;
 LIST Qui = "qui" ;
 LIST Que_Itg = ("qué" itg) ;
 LIST Se = "se" ;
+LIST Si = "si" ;
 LIST Las = "las" ;
 LIST Mas_cnjcoo = "mas" "mes" ;
 LIST Estat = "estat" ;
@@ -1160,6 +1161,10 @@ SELECT Conjadv IF (0 Se) (0/* Pro) (1 Pro) (2 V) ;	# patch
 SELECT Conjadv IF (0 Se) (1 Pro) (2 Pro) (3 Pro) (4 V) ;	# patch
 SELECT Conjadv IF (0 Se) (0/* Pro) (1 Pro) (2 Pro) (3 V) ;	# patch
 REMOVE Conjadv IF (0 Se) (0/* Pro) (-1*C N) (NOT -1* V + Pers) ;	# un ministeri s'encargue
+SELECT Si + Conjadv IF (0 Si) (-1 ("coma") OR ("com")) (NOT -2 BOS) ;
+REMOVE Tn IF (0 Si) (-1 ("coma") OR ("com")) ;
+REMOVE AV IF (0 Si) (-1 ("coma") OR ("com")) ;
+SELECT Conjadv IF (0 ("coma") OR ("com")) (1 Si) ;
 SELECT P3 IF (-1C Se + PRON) (NOT 0 Pro) (0 V) ;		# se canti
 SELECT P3 IF (-2C Se + PRON) (-1 Pro) (NOT 0 Pro) (0 V) ;	# se li canti
 SELECT P3 IF (-3C Se + PRON) (-2 Pro) (-1 Pro) (NOT 0 Pro) (0 V + P3) ;	# se li o canti
