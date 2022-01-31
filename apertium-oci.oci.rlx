@@ -253,7 +253,10 @@ REMOVE N IF (0 ("<la>"i)) ;		# patch
 REMOVE N IF (0 ("<las>"i)) ;		# patch
 SELECT DET IF (0 ("<las>"i)) (1C N_AJ + FemPl) ;		# patch
 REMOVE N IF (0 ("una")) ;		# patch
-REMOVE N IF (0 ("<si>"i)) ;		# patch
+REMOVE N IF (0 ("<fa>"i)) (NOT 1 ("major") OR ("menor") OR ("minor")) ;		# patch
+REMOVE N IF (0 ("fa")) (NOT 0 ("<fa>"i)) ;	# patch
+REMOVE N IF (0 ("<si>"i)) (NOT 1 ("major") OR ("menor") OR ("minor")) ;		# patch
+REMOVE N IF (0 ("si")) (NOT 0 ("<si>"i)) ;	# patch
 REMOVE N + ("tau") IF (0 ("tau")) ;		# patch
 SELECT PREP IF (-1 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sortir") OR ("gésser")) (0 ("tau")) ;
 SELECT PREP IF (-2 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sortir") OR ("gésser")) (-1 AV) (0 ("tau")) ;
