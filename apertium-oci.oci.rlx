@@ -372,6 +372,7 @@ REMOVE ("centen") + N IF (0 ("centena") + N + Pl) ;
 REMOVE ("centen") + N IF (0 ("centena") + N) (-1 DET + FemSg) (1 De) (2 N) ;
 
 REMOVE ("aviar") IF (0 Aver) ;	# patch
+REMOVE ("averar") IF (0 Aver) ;	# patch
 
 REMOVE Ser + Pl IF (0 ("son") + Sg) (1C N_AJ + Sg) ;
 
