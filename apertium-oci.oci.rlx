@@ -493,8 +493,8 @@ SELECT Conjsub IF (-3C Ser) (-2 AV) (-1 AJ OR ("vertat")) (0 Que) ;	# es pas ver
 SELECT Conjsub IF (-4C Ser) (-3 AV) (-2 AV OR PREAV) (-1 AJ OR ("vertat")) (0 Que) ;	# es pas totjorn vertat que
 REMOVE Conjsub IF (-1C N_AJ) (0 Que) ;
 SELECT AV IF (0 AdvComp) (1 AJ OR VBpp OR AV) (2 Que) ;	# mei leugèr que jo
-SELECT AV IF (-1 DETdef + &&AcordSN) (0 AdvComp) (1 AJ + &&AcordSN OR VBpp + &&AcordSN OR N + &&AcordSN) ;	# lo mai rapide
-SELECT AV IF (-1 DETdef) (0 AdvComp) (1 AV) ;
+SELECT AV IF (-1/* DETdef + &&AcordSN) (0 AdvComp) (1 AJ + &&AcordSN OR VBpp + &&AcordSN OR N + &&AcordSN) ;	# lo mai rapide
+SELECT AV IF (-1/* DETdef) (0 AdvComp) (1 AV) ;
 SELECT AJ OR VBpp OR AV IF (-1 AdvComp) (0 AJ OR VBpp OR AV) (1 Que) ;	# mei leugèr que jo
 SELECT AJ OR AV IF (-1 AdvComp) (0 AJ OR VBpp OR AV) (1 Que) ;	# mei leugèr que jo
 SELECT Conjsub IF (-2 AdvComp) (-1 AJ OR VBpp OR AV) (0 Que) ;	# mei leugèr que jo
