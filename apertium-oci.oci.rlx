@@ -685,7 +685,7 @@ REMOVE VBimp IF (-1C Enon OR Conjco OR Conjsub OR Rel OR Pers);
 REMOVE VBimp IF (NOT 1* Excl) ;
 REMOVE VBimp IF (0 P3) ;
 
-SELECT N IF (-1 ("<[a-zàáèéíòóú].*>"r)) (0 ("<Estat>")) ;	# "Estat" (con mayúscula) va precedido de una palabra con minúscula inicial
+SELECT N IF (-1 ("<[a-zàáèéíòóú].*>"r)) (0 ("<Estat>") OR ("<Estats>")) ;	# "Estat" (con mayúscula) va precedido de una palabra con minúscula inicial
 SELECT N IF (0 ("radio")) (0 (META:/-/r)) (1 ("television")) ;
 SELECT PREP IF (0 ("jos")) (0 (META:/-/r)) ;
 SELECT N IF (-1C N) (-1 (META:/-/r)) ;
@@ -1067,10 +1067,15 @@ REMOVE AJ + Pos IF (NOT -1 Ser) (0 AJ + Pos) ;
 
 # N
 
-SELECT N OR PRON OR NP IF (-1C PREP) (1 EOS) ;	# ambe fòrça. ; a res.
-SELECT N OR PRON OR NP IF (-1C PREP) (1C PREP) (NOT 0 ("tròp")) ;	# discors de fin d'annada
+SELECT N OR PRON OR NP IF (-1C PREP) (1 EOS OR Rpar) ;	# ambe fòrça. ; a res.
+SELECT N OR PRON OR NP OR VBinf IF (-1C PREP) (1C PREP) (NOT 0 ("tròp") OR ("pauc") OR ("pòc")) ;	# discors de fin d'annada
+SELECT N OR PRON OR NP OR VBinf IF (-1C PREP) (1C Rel OR Que OR Qui) ;
+SELECT N OR PRON OR NP OR VBinf IF (-1C PREP) (1C Conjco OR ("e") OR ("o")) ;
 
 SELECT N + &&AcordSN OR NP + &&AcordSN IF (-1C/* DET) (0C N) (-1/* DET + &&AcordSN) ;	# los acès ; deus autobús
+
+SELECT VBpp + &&AcordSN IF (-1C N_AJ + &&AcordSN) (0 ("dire") + &&AcordSN OR ("díder") + &&AcordSN) (1 ("«")) ;
+SELECT N + &&AcordSN OR PRON + &&AcordSN OR NP + &&AcordSN IF (-1C PREP) (0C ("dire") + VBpp + &&AcordSN OR ("díder") + VBpp + &&AcordSN) ;
 
 # N / AJ
 
@@ -1089,6 +1094,9 @@ SELECT NP + &&AcordSN IF (-1/* DET + &&AcordSN) (0 NP + &&AcordSN) (1 AJ + &&Aco
 SELECT N + &&AcordSN IF (-1 DET + &&AcordSN) (0 N + &&AcordSN) (1 AJ + &&AcordSN) ;
 SELECT N + &&AcordSN IF (-1/* DET + &&AcordSN) (0 N + &&AcordSN) (1 AJ + &&AcordSN) ;
 SELECT N + &&AcordSN IF (-1 NUM + &&AcordSN) (0 N + &&AcordSN) (1 AJ + &&AcordSN) ;
+SELECT N + &&AcordSN IF (-1 DET + &&AcordSN) (0 N + &&AcordSN) (1C VBpp + &&AcordSN) ;
+SELECT N + &&AcordSN IF (-1/* DET + &&AcordSN) (0 N + &&AcordSN) (1C VBpp + &&AcordSN) ;
+SELECT N + &&AcordSN IF (-1 NUM + &&AcordSN) (0 N + &&AcordSN) (1C VBpp + &&AcordSN) ;
 
 SELECT NP + &&AcordSN IF (-2 DET + &&AcordSN) (-1C AJ) (-1 AJ + &&AcordSN) (0 NP + &&AcordSN) ;
 SELECT N + &&AcordSN IF (-2 DET + &&AcordSN) (-1C AJ) (-1 AJ + &&AcordSN) (0 N + &&AcordSN) ;
