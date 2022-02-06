@@ -344,6 +344,7 @@ REMOVE ("un tal") IF (0 ("un")) ;
 REMOVE V IF (0 ("aqueth")) ;	# patch (aquera, aqueras)
 SELECT NUM IF (0 ("set")) (1C N_AJ + Pl) ;
 REMOVE ("mesa") IF (0 ("<meses>"i)) ;	# patch
+REMOVE N + ("prim") IF (0 ("prima")) ;	# patch
 SELECT N (-1 ("far") + P3 + Sg OR ("har") + P3 + Sg) (0 ("<meses>"i)) ;
 
 SELECT PREP IF (0 ("entre")) (1C N_AJ OR NP) ;
