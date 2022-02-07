@@ -184,6 +184,8 @@ LIST Volar = "volar" ;
 LIST Voler = "voler" ;
 LIST Seire = "sèire" ;
 LIST Saber = "saber" "sàber" ;
+LIST Vengar = "vengar" ;
+LIST Venir = "venir" "vier" ;
 List Artcontrpl = "<als>" "<aus>" "<aths>" "<as>" "<dels>" "<deus>" "<dals>" "<deths>" "<des>" "<suls>" "<suus>" "<taus>" "<taths>" "<entaus>" "<entaths>" "<entàs>" "<pels>" "<peus>" "<peths>" "<preus>" "<vèls>" "<jols>" "<enquiaths>" "<ens>" "<enes>" "<endeus>" "<dambeus>" ;
 List Artcontrsg = "<al>" "<au>" "<ath>" "<del>" "<deu>" "<dal>" "<deth>" "<sul>" "<suu>" "<tau>" "<tath>" "<entau>" "<entath>" "<pel>" "<peu>" "<peth>" "<preu>" "<vèl>" "<jol>" "<enquiath>" "<en>" "<ene>" "<endeu>" "<dambeu>" ;
 LIST Jorns = "diluns" "dimars" "dimècres" "dimèrcs" "dijòus" "dijaus" "divés" "divendres" "dissabte" "dimenge" ;
@@ -672,6 +674,15 @@ SELECT Saber IF (0 Seire) (0 Saber) (1C Que OR Se OR ("çò")) ;
 SELECT Saber IF (0 Seire) (0 Saber) (1 AV) (2C Que OR Se OR ("çò")) ;
 SELECT Saber IF (0 Seire) (0 Saber) (1 AV) (2 AV) (3C Que OR Se OR ("çò")) ;
 SELECT Saber IF (0 Seire) (0 Saber) ;	# patch
+
+# venir/vier e vengar (p. ex. "venga")
+REMOVE Vengar + VBinf IF (NOT -1 Pro + Ref) (0 Venir) (0 Vengar + VBinf) ;	# patch
+REMOVE Vengar + VBger IF (NOT -1 Pro + Ref) (0 Venir) (0 Vengar + VBger) ;	# patch
+REMOVE Vengar + P3 IF (NOT -1 Pro + Ref) (0 Venir) (0 Vengar + P3) ;	# patch
+REMOVE Vengar + P1 + Sg IF (NOT -1 Pro + P1 + Sg) (0 Venir) (0 Vengar + P1 + Sg) (NOT 0 Vengar + VBimp) ;	# patch
+REMOVE Vengar + P1 + Pl IF (NOT -1 Pro + P1 + Pl) (0 Venir) (0 Vengar + P1 + Pl) (NOT 0 Vengar + VBimp) ;	# patch
+REMOVE Vengar + P2 + Sg IF (NOT -1 Pro + P2 + Sg) (0 Venir) (0 Vengar + P2 + Sg) (NOT 0 Vengar + VBimp) ;	# patch
+REMOVE Vengar + P2 + Pl IF (NOT -1 Pro + P2 + Pl) (0 Venir) (0 Vengar + P2 + Pl) (NOT 0 Vengar + VBimp) ;	# patch
 
 SELECT NUM IF (-1 ("en")) (0 ("dos")) ;
 SELECT PREP IF (0 ("en")) (1 ("dos")) ;
