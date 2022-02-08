@@ -691,6 +691,11 @@ SELECT V IF (0 ("tornar")) (1C VBinf) ;
 
 SELECT N IF (-1 De) (0 ("òc")) ;
 
+SELECT AJ IF (0 ("marrit")) (1 ("flac")) ;	# valoracions Jornalet
+SELECT AJ IF (-1 ("marrit")) (0 ("flac")) ;	# valoracions Jornalet
+SELECT PREAV IF (0 ("plan")) (1 ("bon")) ;	# valoracions Jornalet
+SELECT AJ IF (0 ("bon")) (1 ("fabulós")) ;	# valoracions Jornalet
+
 #En es pas un pronom s'es abans un gerondiu (amb possibilitat de pronoms entre los dos)
 REMOVE En_pron IF (1* VBger BARRIER (*) - Pro) ;
 
