@@ -196,7 +196,7 @@ EXTRA_DIST=$(BASENAME).$(LANG1).metadix		\
 apertium_ocidir=$(prefix)/share/apertium/$(BASENAME)/
 apertium_oci_srcdir=$(prefix)/share/apertium/$(BASENAME)/
 
-EXTRA_TARGETS=
+EXTRA_TARGETS=$(LANG1).prob
 
 if HAVE_HFSTOSPELL
 EXTRA_TARGETS += $(LANG1).zhfst
