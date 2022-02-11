@@ -2779,6 +2779,30 @@
 	</e>
 
 	<e>
+	  <p>
+		  <l><a/>a<b/><a/>de</l>
+		  <r>a<b/></r>
+	  </p>
+	  <par n="de"/>
+	</e>
+
+	<e>
+	  <p>
+		  <l><a/>jos<b/><a/>de</l>
+		  <r>jos<b/></r>
+	  </p>
+	  <par n="de"/>
+	</e>
+
+	<e>
+	  <p>
+		  <l><a/>sus<b/><a/>de</l>
+		  <r>sus<b/></r>
+	  </p>
+	  <par n="de"/>
+	</e>
+
+	<e>
 		<p>
 			<l><a/>detla<b/></l>
 			<r>l'</r>
@@ -3695,6 +3719,30 @@
 	  <p>
 		  <l><a/>de</l>
 		  <r/>
+	  </p>
+	  <par n="de"/>
+	</e>
+
+	<e>
+	  <p>
+		  <l><a/>a<b/><a/>de</l>
+		  <r>a<b/></r>
+	  </p>
+	  <par n="de"/>
+	</e>
+
+	<e>
+	  <p>
+		  <l><a/>jos<b/><a/>de</l>
+		  <r>jos<b/></r>
+	  </p>
+	  <par n="de"/>
+	</e>
+
+	<e>
+	  <p>
+		  <l><a/>sus<b/><a/>de</l>
+		  <r>sus<b/></r>
 	  </p>
 	  <par n="de"/>
 	</e>
