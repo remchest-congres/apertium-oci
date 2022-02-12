@@ -168,6 +168,7 @@ LIST A_de = ("<a de>"i) ("<a d'>"i) ("<a d’>"i) ;
 LIST Mai = ("mai" adv) ("mei" adv) ("mès" adv) ("mes" adv) ;
 LIST Pus = ("pus" adv) ;
 LIST Mens = "mens" "mensh" ;
+LIST Melhor = "melhor" "mélher" ;
 LIST AdvComp = ("mai" adv) ("mei" adv) ("mès" adv) ("mes" adv) ("pus" adv) "mens" "mensh" ;
 LIST Res = "res" "arren" "arrens" "ren" ;
 LIST Pel = "pel" "peu" ;
@@ -425,7 +426,7 @@ REMOVE PREP IF (0 A_de) (-1 BOS OR CM) ;	# path
 REMOVE AV IF (-1C PREP) (0 Cap) (1C EOS OR CM OR Conjsub OR Conjadv OR Conjco) ;
 
 REMOVE DET IF (0 ("hèra")) ;
-SELECT AV IF (0 ("hèra") OR ("plan")) (1 Mai OR Pus OR Mens) ;
+SELECT AV IF (0 ("hèra") OR ("plan")) (1 Mai OR Pus OR Mens OR Melhor) ;
 SELECT PREAV IF (-1 Ser + &&AcordSP OR Ser + VBinf OR Ser + VBger OR Ser + VBpp) (0 ("hèra")) (1 AJ + &&AcordSP OR VBpp + &&AcordSP) ;
 SELECT PREAV IF (-2 Ser + &&AcordSP OR Ser + VBinf OR Ser + VBger OR Ser + VBpp) (-1 AV OR Tn) (0 ("hèra")) (1 AJ + &&AcordSP OR VBpp + &&AcordSP) ;	# estón tots hèra urós
 SELECT PREAV IF (-3 Ser + &&AcordSP OR Ser + VBinf OR Ser + VBger OR Ser + VBpp) (-2 AV OR Tn) (-1 AV OR Tn) (0 ("hèra")) (1 AJ + &&AcordSP OR VBpp + &&AcordSP) ;
@@ -462,6 +463,13 @@ SELECT VBpp IF (-2 Ser + &&AcordSP) (-1 AV OR PREAV) (0 VBpp + &&AcordSP) (NOT 0
 SELECT VBpp IF (-3 Ser + &&AcordSP) (-2 AV) (-1 AV OR PREAV) (0 VBpp + &&AcordSP) (NOT 0 N + &&AcordSP) ;
 SELECT PREAV IF (-1 Ser + &&AcordSP) (0 AV OR PREAV) (1 AJ + &&AcordSP) ;
 SELECT PREAV IF (-2 Ser + &&AcordSP) (-1 AV) (0 AV OR PREAV) (1 AJ + &&AcordSP) ;
+
+SELECT AV (-1C V) (0 Melhor) ;		# parlar melhor
+SELECT AV (-2C V) (-1 AV) (0 Melhor) ;
+SELECT AV (-2 Haver) (-1 VBpp) (0 Melhor) ;	# a parlat melhor
+SELECT AV (-3 Haver) (-2 AV) (-1 VBpp) (0 Melhor) ;	# a parlat melhor
+SELECT AV (-3 Haver) (-2 AV) (-1 VBpp) (0 Melhor) ;	# a pas parlat melhor
+SELECT AV (-3 Haver) (-2 VBpp) (-1 AV) (0 Melhor) ;
 
 REMOVE VBimp IF (NOT 1* Excl) ;		# guess
 REMOVE VBimp IF (-1 Ant OR Cog OR unknown) (0 P3) ;
