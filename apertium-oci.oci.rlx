@@ -390,6 +390,8 @@ SELECT N IF (-1/* DET + MascSg OR ("<del>"i) OR ("<al>"i)) (0 Cap_de_del) ;
 SELECT N + (mf) IF (-1 ("ex") OR ("<ex>"i)) (0 Cap) ;
 SELECT N + (mf) IF (-1 ("ex") OR ("<ex>"i)) (0 Cap_de_del) ;
 SELECT N + (mf) IF (-1 ("ex") OR ("<ex>"i)) (0 ("<caps>"i)) ;
+SELECT N + (mf) IF (-1/* DET) (0 ("cap")) (1 De) (2 Al OR Acr) ;	# lo cap d'ERC
+SELECT N + (mf) IF (-1/* DET) (0 Cap_de_del) (1 Al OR Acr) ;
 SELECT PRON IF (NOT -1/* DET) (0 Cap_de) (1 Tn) ;	# cap d'elas
 SELECT PRON IF (NOT -1/* DET OR CM) (0 Cap_de) (1 DET) ;
 SELECT PRON IF (NOT -1/* DET OR CM) (0 ("<cap del>"i) OR ("<cap dels>"i)) ;
