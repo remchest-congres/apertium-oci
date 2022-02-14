@@ -888,7 +888,6 @@ SELECT Top IF (-3 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sort
 SELECT Top + FemSg IF (-3 ("anar") OR ("viatjar") OR ("arribar") OR ("partir")) (-2 AV) (-1 ("en")) ;
 SELECT Top IF (-4 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sortir") OR ("gésser")) (-3 AV) (-2 ("a") OR ("de") OR ("cap a") OR ("devèrs") OR ("entà") OR ("tà")) (-1 DET + &&AcordSN) (0 Top + &&AcordSN) ;
 
-
 REMOVE Al IF (-1 Ant OR Cog) (0 Ant OR Cog) ;
 REMOVE Top IF (-1 Ant OR Cog) (0 Ant OR Cog) ;
 REMOVE Al IF (0 Ant OR Cog) (1 Ant OR Cog) ;
@@ -897,6 +896,8 @@ SELECT Top IF (-1 Lpar) (0 Cog) (1 Rpar);
 SELECT Top IF (0 ("Euròpa")) (NOT -1 DET) (NOT -1 Ant_Cog) ;
 SELECT Top IF (0 ("Asia")) (NOT -1 DET) (NOT -1 Ant_Cog) ;
 SELECT Top IF (0 ("America")) (NOT -1 DET) (NOT -1 Ant_Cog) ;
+SELECT Top IF (0 ("Barcelona")) (NOT -1 DET) (NOT -1 Ant_Cog) ;
+SELECT Top IF (0 ("Roma")) (NOT -1 DET) (NOT -1 Ant_Cog) ;
 
 
 # HAVER

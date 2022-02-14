@@ -921,14 +921,14 @@
 		 </e>
 		 <e>
 			 <p>
-				 <l><b/><a/>se</l>
-				 <r>'s</r>
+				 <l><b/><a/>se<b/></l>
+				 <r>'s<b/></r>
 			 </p>
 		 </e>
 		<e>
 			 <p>
-				 <l><b/><a/>les</l>
-				 <r><b/>les</r>
+				 <l><b/><a/>les<b/></l>
+				 <r><b/>les<b/></r>
 			 </p>
 		 </e>
 		 <e>
@@ -4187,6 +4187,7 @@
 			<r>l'i<b/></r>
 		</p>
 	</e>
+<!--
 	<e>
 		<p>
 			<l><a/>me<b/><a/>lo<b/></l>
@@ -4222,12 +4223,34 @@
 		</p>
 		<par n="pronoms_aprost_oc"/>
 	</e>
+-->
+	<e>
+		<p>
+			<l><a/>me<b/><a/>lo<b/></l>
+			<r>me<b/>l'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>me<b/><a/>la<b/></l>
+			<r>me<b/>l'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>me<b/><a/>o<b/></l>
+			<r>m'o<b/></r>
+		</p>
+	</e>
 	<e>
 		<p>
 			<l><a/>me<b/><a/>i<b/></l>
 			<r>m'i<b/></r>
 		</p>
 	</e>
+<!--
 	<e>
 		<p>
 			<l><a/>te<b/><a/>lo<b/></l>
@@ -4263,6 +4286,27 @@
 		</p>
 		<par n="pronoms_aprost_oc"/>
 	</e>
+-->
+	<e>
+		<p>
+			<l><a/>te<b/><a/>lo<b/></l>
+			<r>te<b/>l'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>te<b/><a/>la<b/></l>
+			<r>te<b/>l'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>te<b/><a/>o<b/></l>
+			<r>t'o<b/></r>
+		</p>
+	</e>
 	<e>
 		<p>
 			<l><a/>te<b/><a/>i<b/></l>
@@ -4284,6 +4328,7 @@
 		</p>
 		<par n="en_apostrofat"/>
 	</e>-->
+<!--
 	<e>
 		<p>
 			<l><a/>se<b/><a/>lo<b/></l>
@@ -4311,6 +4356,27 @@
 			<r>las<b/>s</r>
 		</p>
 		<par n="pronoms_aprost_oc"/>
+	</e>
+-->
+	<e>
+		<p>
+			<l><a/>se<b/><a/>lo<b/></l>
+			<r>se<b/>l'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>se<b/><a/>la<b/></l>
+			<r>se<b/>l'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>se<b/><a/>o<b/></l>
+			<r>s'o<b/></r>
+		</p>
 	</e>
 	<e>
 		<p>
