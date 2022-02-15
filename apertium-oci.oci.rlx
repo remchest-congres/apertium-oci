@@ -528,6 +528,7 @@ SELECT AV IF (-1/* DETdef) (0 AdvComp) (1 AV) ;
 SELECT AJ OR VBpp OR AV IF (-1 AdvComp) (0 AJ OR VBpp OR AV) (1 Que) ;	# mei leugèr que jo
 SELECT AJ OR AV IF (-1 AdvComp) (0 AJ OR VBpp OR AV) (1 Que) ;	# mei leugèr que jo
 SELECT Conjsub IF (-2 AdvComp) (-1 AJ OR VBpp OR AV) (0 Que) ;	# mei leugèr que jo
+SELECT Conjsub IF (-1 ("mai bon") OR ("mei bon") OR ("mai plan") OR ("mei plan")) (0 Que) ;
 SELECT Itg IF (0 Que) (1 Ser) (2 ("?")) ;
 SELECT Itg IF (0 Que) (1 Ser) (2 ("aquò") OR ("çò")) (1* ("?")) ;
 SELECT Rel IF (-1 ("aquò") OR ("çò")) (0 Que) ;
