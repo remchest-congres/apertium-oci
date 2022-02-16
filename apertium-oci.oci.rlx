@@ -488,6 +488,10 @@ SELECT VBimp IF (-1 BOS) (0 P2) (1* Excl) ;		# guess
 REMOVE VBimp IF (-2 BOS) (-1 ("be") OR ("que")) (0 ("un")) ;
 SELECT VBimp IF (-2 BOS) (-1 ("be") OR ("que")) (0 P2) (1* Excl) ;	# guess
 
+SELECT VBger (-3 De) (-2 DETdef + &&AcordSN) (-1 N + &&AcordSN) (0 ("<estant>"i)) ;
+SELECT VBger (-2 De) (-1 NP + &&AcordSN) (0 ("<estant>"i)) ;
+SELECT VBger (-3 De) (-2 DETdef + &&AcordSN) (-1 NP + &&AcordSN) (0 ("<estant>"i)) ;
+
 REMOVE VBger IF (NOT -1 ("en") OR ("en bèth") OR Pro OR N_AJ OR CM) ;
 REMOVE VBger IF (NOT -2 ("en") OR ("en bèth") OR Pro OR CM) (-1C Pro) ;
 
