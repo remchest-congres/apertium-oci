@@ -878,7 +878,12 @@ SELECT Top IF (-2C Ant) (-1 ("<de>")) (0C Cog OR Ant OR Top) ;
 SELECT Ant IF (0C Cog OR Ant OR Top) (1 ("<de>")) (2C Top) ;    # Maurice de Saxe
 REMOVE Top IF (0 Cog OR Ant OR Top) (1 unknownMajIni) (NOT -1 ("de")) ;
 SELECT Ant IF (NOT -1 Cog OR Ant) (0C Cog OR Ant) (1 unknownMajIni) ; # Léon Verguet
-REMOVE (cog) IF (0C NP) (0 (cog)) (0 (top)) (NOT 1 (ant) OR (cog)) (-1 BOS); # Orihuela, Vilallonga
+REMOVE (top) IF (0C NP) (0 (cog)) (0 (top)) (-1 (sent)) (<*-1 ("\\<[A-ZÀÁÄÂÈÉËÊÍÏÎÒÓÖÔÚÙÜÛÇ]\\>"r) LINK 1 (sent)); # E. Tolosa
+REMOVE (cog) IF (0C NP) (0 (cog)) (0 (top)) (NOT 1 (ant) OR (cog)) (-1 BOS) ; # Barcelona ; Roma ; Tolosa
+SELECT (top) IF (0 ("Barcelona")) (NOT 1 (ant) OR (cog)) ;
+SELECT (top) IF (0 ("Lisbona")) (NOT 1 (ant) OR (cog)) ;
+SELECT (top) IF (0 ("Roma")) (NOT 1 (ant) OR (cog)) ;
+SELECT (top) IF (0 ("Tolosa")) (NOT 1 (ant) OR (cog)) ;
 
 SELECT Ant IF (-1 ("dieu") OR ("divessa")) ;
 
@@ -901,8 +906,6 @@ SELECT Top IF (-1 Lpar) (0 Cog) (1 Rpar);
 SELECT Top IF (0 ("Euròpa")) (NOT -1 DET) (NOT -1 Ant_Cog) ;
 SELECT Top IF (0 ("Asia")) (NOT -1 DET) (NOT -1 Ant_Cog) ;
 SELECT Top IF (0 ("America")) (NOT -1 DET) (NOT -1 Ant_Cog) ;
-SELECT Top IF (0 ("Barcelona")) (NOT -1 DET) (NOT -1 Ant_Cog) ;
-SELECT Top IF (0 ("Roma")) (NOT -1 DET) (NOT -1 Ant_Cog) ;
 
 
 # HAVER
