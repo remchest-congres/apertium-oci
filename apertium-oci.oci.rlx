@@ -187,8 +187,10 @@ LIST Seire = "sèire" ;
 LIST Saber = "saber" "sàber" ;
 LIST Vengar = "vengar" ;
 LIST Venir = "venir" "vier" ;
-List Artcontrpl = "<als>" "<aus>" "<aths>" "<as>" "<dels>" "<deus>" "<dals>" "<deths>" "<des>" "<suls>" "<suus>" "<taus>" "<taths>" "<entaus>" "<entaths>" "<entàs>" "<pels>" "<peus>" "<peths>" "<preus>" "<vèls>" "<jols>" "<enquiaths>" "<ens>" "<enes>" "<endeus>" "<dambeus>" ;
-List Artcontrsg = "<al>" "<au>" "<ath>" "<del>" "<deu>" "<dal>" "<deth>" "<sul>" "<suu>" "<tau>" "<tath>" "<entau>" "<entath>" "<pel>" "<peu>" "<peth>" "<preu>" "<vèl>" "<jol>" "<enquiath>" "<en>" "<ene>" "<endeu>" "<dambeu>" ;
+#List Artcontrpl = "<als>" "<aus>" "<aths>" "<as>" "<dels>" "<deus>" "<dals>" "<deths>" "<des>" "<suls>" "<suus>" "<taus>" "<taths>" "<entaus>" "<entaths>" "<entàs>" "<pels>" "<peus>" "<peths>" "<preus>" "<vèls>" "<jols>" "<enquiaths>" "<ens>" "<enes>" "<endeus>" "<dambeus>" ;
+List Artcontrpl = "<als>" "<aus>" "<aths>" "<dels>" "<deus>" "<dals>" "<deths>" "<des>" "<suls>" "<suus>" "<taus>" "<taths>" "<entaus>" "<entaths>" "<entàs>" "<pels>" "<peus>" "<peths>" "<preus>" "<vèls>" "<jols>" "<enquiaths>" "<ens>" "<enes>" "<endeus>" "<dambeus>" ;
+#List Artcontrsg = "<al>" "<au>" "<ath>" "<del>" "<deu>" "<dal>" "<deth>" "<sul>" "<suu>" "<tau>" "<tath>" "<entau>" "<entath>" "<pel>" "<peu>" "<peth>" "<preu>" "<vèl>" "<jol>" "<enquiath>" "<en>" "<ene>" "<endeu>" "<dambeu>" ;
+List Artcontrsg = "<al>" "<au>" "<ath>" "<del>" "<deu>" "<dal>" "<deth>" "<sul>" "<suu>" "<tau>" "<tath>" "<entau>" "<entath>" "<pel>" "<peu>" "<peth>" "<preu>" "<vèl>" "<jol>" "<enquiath>" "<ene>" "<endeu>" "<dambeu>" ;
 LIST Jorns = "diluns" "dimars" "dimècres" "dimèrcs" "dijòus" "dijaus" "divés" "divendres" "dissabte" "dimenge" ;
 
 List Nummois = "1" "1èr" "1ièr" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12" "13" "14" "15" "16" "17" "18" "19" "20" "21" "22" "23" "24" "25" "26" "27" "28" "29" "30" "31" "<purmèr>" "<prumèr>" "<prumièr>" "<primièr>" "<primèr>" "<dos>" "<dus>" "<tres>" "<quatre>" "<quate>" "<cinc>" "<sièis>" "<sèis>" "<sies>" "<siés>" "<siès>" "<sheis>" "<sèt>" "<uèit>" "<ueit>" "<uòch>" "<uèch>" "<nòu>" "<nau>" "<dètz>" "<onze>" "<dotze>" "<tretze>" "<catòrze>" "<catorze>" "<quatòrze>" "<quatorze>" "<quinze>" "<setze>" "<dètz-e-sèt>" "<dètz-e-uèit>" "<dètz-e-ueit>" "<dètz-e-uèch>" "<dètz-e-uòch>" "<dètz-e-nòu>" "<dètz-e-nau>" "<vint>" "<vingt>" "<vint-e-un>" "<vingt-e-un>" "<vint-e-dos>" "<vint-e-dus>" "<vingt-e-dos>" "<vingt-e-dus>"  "<vint-e-tres>" "<vingt-e-tres>" "<vint-e-quatre>" "<vingt-e-quatre>" "<vint-e-quate>" "<vingt-e-quate>" "<vint-e-cinc>" "<vingt-e-cinc>" "<vint-e-sèis>" "<vingt-e-sèis>" "<vint-e-sièis>" "<vingt-e-sièis>" "<vint-e-sies>" "<vingt-e-sies>" "<vint-e-siès>" "<vingt-e-siès>" "<vint-e-siés>" "<vingt-e-siés>" "<vint-e-sheis>" "<vingt-e-sheis>" "<vint-e-sèt>" "<vingt-e-sèt>" "<vint-e-uèit>" "<vingt-e-uèit>" "<vint-e-ueit>" "<vingt-e-ueit>" "<vint-e-uèch>" "<vingt-e-uèch>" "<vint-e-uòch>" "<vingt-e-uòch>" "<vint-e-nòu>" "<vingt-e-nòu>" "<vint-e-nau>" "<vingt-e-nau>" "<trenta>" "<trenta-e-un>" "<trenta-un>" "<dètz e uèch>" "<dètz e uòch>" "<dètz e nòu>" "<dètz e nau>" "<vingt>" "<vint e un>" "<vingt e un>" "<vint e dos>" "<vint e dus>" "<vingt e dos>" "<vingt e dus>"  "<vint e tres>" "<vingt e tres>" "<vint e quatre>" "<vingt e quatre>" "<vint e quate>" "<vingt e quate>" "<vint e cinc>" "<vingt e cinc>" "<vint e sèis>" "<vingt e sèis>" "<vint e sièis>" "<vingt e sièis>" "<vint e sies>" "<vingt e sies>" "<vint e siès>" "<vingt e siès>" "<vint e siés>" "<vingt e siés>" "<vint e sheis>" "<vingt e sheis>" "<vint e sèt>" "<vingt e sèt>" "<vint e uèit>" "<vingt e uèit>" "<vint e ueit>" "<vingt e ueit>" "<vint e uèch>" "<vingt e uèch>" "<vint e uòch>" "<vingt e uòch>" "<vint e nòu>" "<vingt e nòu>" "<vint e nau>" "<vingt e nau>" "<trenta>" "<trenta e un>" "<trenta un>" ;
@@ -487,6 +489,10 @@ REMOVE VBimp IF (-1 BOS) (0 ("un")) ;
 SELECT VBimp IF (-1 BOS) (0 P2) (1* Excl) ;		# guess
 REMOVE VBimp IF (-2 BOS) (-1 ("be") OR ("que")) (0 ("un")) ;
 SELECT VBimp IF (-2 BOS) (-1 ("be") OR ("que")) (0 P2) (1* Excl) ;	# guess
+
+SELECT VBger (-3 De) (-2 DETdef + &&AcordSN) (-1 N + &&AcordSN) (0 ("<estant>"i)) ;
+SELECT VBger (-2 De) (-1 NP + &&AcordSN) (0 ("<estant>"i)) ;
+SELECT VBger (-3 De) (-2 DETdef + &&AcordSN) (-1 NP + &&AcordSN) (0 ("<estant>"i)) ;
 
 REMOVE VBger IF (NOT -1 ("en") OR ("en bèth") OR Pro OR N_AJ OR CM) ;
 REMOVE VBger IF (NOT -2 ("en") OR ("en bèth") OR Pro OR CM) (-1C Pro) ;
@@ -874,7 +880,12 @@ SELECT Top IF (-2C Ant) (-1 ("<de>")) (0C Cog OR Ant OR Top) ;
 SELECT Ant IF (0C Cog OR Ant OR Top) (1 ("<de>")) (2C Top) ;    # Maurice de Saxe
 REMOVE Top IF (0 Cog OR Ant OR Top) (1 unknownMajIni) (NOT -1 ("de")) ;
 SELECT Ant IF (NOT -1 Cog OR Ant) (0C Cog OR Ant) (1 unknownMajIni) ; # Léon Verguet
-REMOVE (cog) IF (0C NP) (0 (cog)) (0 (top)) (NOT 1 (ant) OR (cog)) (-1 BOS); # Orihuela, Vilallonga
+REMOVE (top) IF (0C NP) (0 (cog)) (0 (top)) (-1 (sent)) (<*-1 ("\\<[A-ZÀÁÄÂÈÉËÊÍÏÎÒÓÖÔÚÙÜÛÇ]\\>"r) LINK 1 (sent)); # E. Tolosa
+REMOVE (cog) IF (0C NP) (0 (cog)) (0 (top)) (NOT 1 (ant) OR (cog)) (-1 BOS) ; # Barcelona ; Roma ; Tolosa
+SELECT (top) IF (0 ("Barcelona")) (NOT 1 (ant) OR (cog)) ;
+SELECT (top) IF (0 ("Lisbona")) (NOT 1 (ant) OR (cog)) ;
+SELECT (top) IF (0 ("Roma")) (NOT 1 (ant) OR (cog)) ;
+SELECT (top) IF (0 ("Tolosa")) (NOT 1 (ant) OR (cog)) ;
 
 SELECT Ant IF (-1 ("dieu") OR ("divessa")) ;
 
@@ -897,8 +908,6 @@ SELECT Top IF (-1 Lpar) (0 Cog) (1 Rpar);
 SELECT Top IF (0 ("Euròpa")) (NOT -1 DET) (NOT -1 Ant_Cog) ;
 SELECT Top IF (0 ("Asia")) (NOT -1 DET) (NOT -1 Ant_Cog) ;
 SELECT Top IF (0 ("America")) (NOT -1 DET) (NOT -1 Ant_Cog) ;
-SELECT Top IF (0 ("Barcelona")) (NOT -1 DET) (NOT -1 Ant_Cog) ;
-SELECT Top IF (0 ("Roma")) (NOT -1 DET) (NOT -1 Ant_Cog) ;
 
 
 # HAVER
@@ -1122,7 +1131,8 @@ SELECT N OR PRON OR NP OR VBinf IF (-1C PREP) (1C Rel OR Que OR Qui) ;
 SELECT N OR PRON OR NP OR VBinf IF (-1C PREP) (1C Conjco OR ("e") OR ("o")) ;
 SELECT N IF (-1C PREP) (0 N + &&AcordSP) (1 (",")) (2 N + &&AcordSP) (3 (",") OR ("e") OR ("o")) (4 N + &&AcordSP) ;
 
-SELECT N + &&AcordSN OR NP + &&AcordSN IF (-1C/* DET) (0C N) (-1/* DET + &&AcordSN) ;	# los acès ; deus autobús
+SELECT N + &&AcordSN OR NP + &&AcordSN IF (-1C/* DET OR Artcontrsg OR Artcontrpl) (0C N) (-1/* DET + &&AcordSN) ;	# los acès ; deus autobús
+SELECT N + &&AcordSN OR NP + &&AcordSN IF (0C N) (1C AJ) (1 AJ + &&AcordSN) ;	# de autobús blus
 
 SELECT VBpp + &&AcordSN IF (-1C N_AJ + &&AcordSN) (0 ("dire") + &&AcordSN OR ("díder") + &&AcordSN) (1 ("«")) ;
 SELECT N + &&AcordSN OR PRON + &&AcordSN OR NP + &&AcordSN IF (-1C PREP) (0C ("dire") + VBpp + &&AcordSN OR ("díder") + VBpp + &&AcordSN) ;
