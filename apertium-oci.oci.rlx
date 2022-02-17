@@ -1368,3 +1368,7 @@ REMOVE Conjadv IF (0 ("qui")) (NOT -1 AJ OR V OR AV) ;
 
 #Lo jorn de la setmana es un nom s'es precedit d'un determinant
 REMOVE AV IF (-1 DET) (0 Jorns) ;
+
+#préner temps
+REMOVE Pl IF (-1 ("prendre") or ("prene") or ("préner")) (0 ("temps")) ;
+REMOVE Pl IF (-2 ("prendre") or ("prene") or ("préner")) (-1 ("de")) (0 ("temps")) ;
