@@ -351,6 +351,11 @@ SELECT NUM IF (0 ("set")) (1C N_AJ + Pl) ;
 REMOVE ("mesa") IF (0 ("<meses>"i)) ;	# patch
 REMOVE N + ("prim") IF (0 ("prima")) ;	# patch
 SELECT N (-1 ("far") + P3 + Sg OR ("har") + P3 + Sg) (0 ("<meses>"i)) ;
+SELECT N IF (-1 ("en")) (0 ("fin")) (1 De) ;
+SELECT N IF (0 ("fin")) (1 De) (2 ("jornada") OR ("serada") OR ("vesprada") OR ("vrespada") OR ("setmana") OR ("mes") OR ("annada")) ;
+SELECT N IF (-1C DET + &&AcordSN) (0 ("lei") + &&AcordSN) ;
+SELECT DET IF (NOT -1/* DET) (0 ("lei")) (1C N + Pl_strict) ;
+SELECT N IF (0 ("lei") + &&AcordSN) (1 Cog OR unknownMajIni) ;	# lei Deixonne
 
 SELECT PREP IF (0 ("entre")) (1C N_AJ OR NP) ;
 
@@ -808,7 +813,7 @@ REMOVE AJ + Sg IF (-1 BOS) (0 NP) (NOT 1 N + Sg) (NOT 1 De) (NOT 1 CM) (NOT 1* (
 SELECT Conjco (-1 BOS) (0 ("Mas")) ;
 
 SELECT NP + &&AcordSN OR N_AJ + &&AcordSN IF (-1/* DET + &&AcordSN) (0 NP + &&AcordSN) ;
-SELECT DET + &&AcordSN IF (0/* DET + &&AcordSN) (1 NP + &&AcordSN) ;
+SELECT DET + &&AcordSN IF (0/* DET + &&AcordSN) (1 NP + &&AcordSN) (NOT 0 ("lei")) ;
 
 REMOVE Cog IF (-1 DETdef) (0 Cog) ;
 REMOVE Cog IF (-1 DETind) (0 Cog) ;
@@ -1034,12 +1039,12 @@ SELECT Vconj_indic IF (-4 PRON + Tn + P3 + Pl) (-3C Enon) (-2 Pro OR AV) (-1 Pro
 
 REMOVE ("d'unes") IF (-1C N_AJ) ;	# patch
 
-REMOVE DET IF (-1 DET + &&AcordSN) (0 ("lei") + &&AcordSN) ;
-REMOVE DET IF (-1 DET + &&AcordSN) (0 ("leis") + &&AcordSN) ;
+REMOVE DET IF (-1 DET + &&AcordSN) (0 ("lei") + &&AcordSN) (NOT 1C N + Pl_strict) ;
+SELECT DET + &&AcordSN IF (-1 ("son")) (0 ("lei") + &&AcordSN) (1C N + Pl_strict) (1 N + &&AcordSN) ;
+SELECT DET IF (-1 ("son")) (0 ("lei")) (1C N + Pl_strict) ;
+SELECT DET IF (-2 ("son")) (-1 AV) (0 ("lei")) (1C N + Pl_strict) ;
 REMOVE DET IF (-2 DET + &&AcordSN) (-1 AJ + &&AcordSN) (0 ("lei") + &&AcordSN) ;
-REMOVE DET IF (-2 DET + &&AcordSN) (-1 AJ + &&AcordSN) (0 ("leis") + &&AcordSN) ;
-SELECT N IF (-1 De) (0 ("lei")) ;	# patch
-SELECT N IF (-1 De) (0 ("leis")) ;	# patch
+SELECT N IF (-1 De) (0 ("lei")) (NOT 1C N + Pl_strict) ;	# patch
 
 SELECT DET + &&AcordSN IF (1 ("un") + &&AcordSN) (2 Conjco) (3 DET) (4 ("altre") OR ("aute")) ;
 SELECT Tn + &&AcordSN IF (-1C DET + &&AcordSN) (0 ("un") + &&AcordSN) ;
