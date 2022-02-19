@@ -807,6 +807,9 @@ REMOVE AJ + Sg IF (-1 BOS) (0 NP) (NOT 1 N + Sg) (NOT 1 De) (NOT 1 CM) (NOT 1* (
 
 SELECT Conjco (-1 BOS) (0 ("Mas")) ;
 
+SELECT NP + &&AcordSN OR N_AJ + &&AcordSN IF (-1/* DET + &&AcordSN) (0 NP + &&AcordSN) ;
+SELECT DET + &&AcordSN IF (0/* DET + &&AcordSN) (1 NP + &&AcordSN) ;
+
 REMOVE Cog IF (-1 DETdef) (0 Cog) ;
 REMOVE Cog IF (-1 DETind) (0 Cog) ;
 REMOVE Cog IF (-1 En) (0 Cog) ;
