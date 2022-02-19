@@ -1239,6 +1239,9 @@ REMOVE VBpp IF (0 ("format")) (1 NP OR Acr) ;	# format PDF
 
 # MOTS
 
+SELECT (mf) IF (0 ("<ròms>"i)) ;
+REMOVE N + (mf) IF (0 ("<ròm>"i)) ;
+
 SELECT Haver IF (0 A) (1C VBpp);	# a cantat
 SELECT Ser IF (-1 Ser) (0 ("estat"));	# soi estat
 SELECT Ser IF (-2 Ser) (-1 AV) (0 ("estat"));	# soi pas estat
