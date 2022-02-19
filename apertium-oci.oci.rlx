@@ -1156,6 +1156,7 @@ SELECT AJ + &&AcordSN IF (-1/* DET + &&AcordSN) (0 AdjPre + &&AcordSN) (1 NP + &
 SELECT AJ + &&AcordSN IF (-1 DET + &&AcordSN) (0 AdjPre + &&AcordSN) (1 N + &&AcordSN) (NOT 0 ("nau")) ;
 SELECT AJ + &&AcordSN IF (-1/* DET + &&AcordSN) (0 AdjPre + &&AcordSN) (1 N + &&AcordSN) (NOT 0 ("nau")) ;
 SELECT AJ + &&AcordSN IF (-1 De) (0 AdjPre + &&AcordSN) (1 N + &&AcordSN) (NOT 0 ("nau")) ;
+SELECT AJ + &&AcordSN OR AV IF (-1 CM) (0 AdjPre + &&AcordSN) (1 N + &&AcordSN) (NOT 0 ("nau")) ;
 SELECT AJ + &&AcordSN IF (0 ("mièg") + &&AcordSN OR ("miei") + &&AcordSN) (1C N) (0 N + &&AcordSN) ;	# mièg torn
 
 SELECT NP + &&AcordSN IF (-1 DET + &&AcordSN) (0 NP + &&AcordSN) (1 AJ + &&AcordSN) ;
@@ -1227,6 +1228,7 @@ SELECT N IF (NOT -1 N) (0C N_AJ_PP) (1 Conjco) (2C N) ;	# comédies, revues et o
 SELECT N + &&AcordSN IF (-1/* DET + &&AcordSN) (0C N_AJ_PP) (1 Conjco) (2 DET) (3C N) ;	# les revues et les opérettes
 SELECT N IF (-2 N) (-1 CM) (0C N_AJ_PP) (1 Conjco OR CM) (2C N) ;	# prêtre, curé, prédicateur
 SELECT N IF (-2C N) (-1 CM) (0C N_AJ_PP) (1 Conjco OR CM) (2 N) ;
+SELECT N IF (-2C N + &&AcordSP) (-1 CM) (0 N + &&AcordSP) (1 ("e") OR ("o")) (2 N + &&AcordSP) ;	# martèths, estenalhas e alicatas
 SELECT N IF (-2C N) (-1 CM) (0C N_AJ_PP) (1 CM) (2 N) ;	# prêtre, curé, prédicateur
 SELECT N IF (-4C N) (-4 N + &&AcordSP) (-3 CM) (-2C N) (-2 N + &&AcordSP) (-1 CM) (0 N + &&AcordSP) ;
 SELECT AJ + &&AcordSN IF (0 ("grand") + &&AcordSN) (1 Conjco) (2 AJ + &&AcordSN) (NOT 2 AdjPre) ;
