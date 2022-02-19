@@ -801,7 +801,7 @@ SELECT V IF (0 An + MascSg) (1C AV) (2 VBpp + MascSg) ;
 
 # NP
 
-SELECT NP IF (NOT -1 BOS) (NOT -1 (META:/—/r)) ;
+SELECT NP OR Acr IF (NOT -1 BOS) (NOT -1 (META:/—/r)) ;
 REMOVE N + Sg IF (-1 BOS) (0 NP) (NOT 1 CM) (1* V OR Ser BARRIER (":") OR EOS) ;	# Fred es mort ; Mair, vòs que’t haci ; Vacas e vetèths qu’arribavan
 REMOVE AJ + Sg IF (-1 BOS) (0 NP) (NOT 1 N + Sg) (NOT 1 De) (NOT 1 CM) (NOT 1* ("!")) (1* V OR Ser BARRIER (":") OR EOS) ;	# Fred es mort
 
@@ -1235,6 +1235,7 @@ REMOVE V + Pers IF (-1C V + Pers) ;	# voletz ve pariar
 REMOVE V + Pers IF (1C V + Pers) ;	# voletz ve pariar
 
 REMOVE VBpp IF (-1C DET + &&AcordSN OR Pro) (0 N + &&AcordSN) ;		# lo resultat
+REMOVE VBpp IF (0 ("format")) (1 NP OR Acr) ;	# format PDF
 
 # MOTS
 
