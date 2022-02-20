@@ -274,7 +274,7 @@ SELECT VBinf IF (-1C PREP OR V) (0 ("<far>"i)) ;		# patch
 SELECT VBinf IF (-2C PREP OR V) (-1 Pro OR AV) (0 ("<far>"i)) ;		# patch
 SELECT VBinf IF (-3C PREP OR V) (-2 Pro OR AV) (-1 Pro OR AV) (0 ("<far>"i)) ;		# patch
 SELECT VBinf IF (NOT 0 DET + MascSg) (0 ("<far>"i)) ;		# patch
-SELECT V IF (-1 ("<se>"i)) (NOT 0 DET) ;		# se practica # patch
+SELECT V IF (-1 ("<se>"i)) (NOT 0 DET OR PRON) ;		# se practica # patch
 SELECT PRON IF (0 ("<se>"i)) (1 Ser + &&AcordSP) (2 VBpp + &&AcordSP) ;		# se son formats # patch
 SELECT Ser + &&AcordSP IF (-1 ("<se>"i)) (0 Ser + &&AcordSP) (1 VBpp + &&AcordSP) ;		# patch
 SELECT VBpp + &&AcordSP IF (-2 ("<se>"i)) (-1 Ser + &&AcordSP) (0 VBpp + &&AcordSP) ;		# patch
@@ -330,6 +330,9 @@ SELECT VBpp IF (-1 ("tant")) (0 VBpp) (1 De) ;
 SELECT PREAV IF (0 ("autant")) (1 VBpp) (2 De) (3* ("com") LINK 1 De) ;
 SELECT VBpp IF (-1 ("autant")) (0 VBpp) (1 De) ;
 SELECT PREP IF (0 ("coma")) (1 ("en")) ;
+SELECT PREP IF (-1 ("<son>"i)) (0 ("coma") OR ("com")) ;
+SELECT PREP IF (-2 ("<son>"i)) (-1C AV OR PREAV OR ("pas")) (0 ("coma") OR ("com")) ;
+SELECT PREP IF (-3 ("<son>"i)) (-1C AV OR PREAV OR ("pas")) (1C AV OR PREAV) (0 ("coma") OR ("com")) ;
 REMOVE N IF (NOT -1 DET) (0 ("<son>"i)) ;	# patch
 REMOVE N IF (NOT -1 DET OR NUM) (0 ("<endavant>"i)) ;	# patch
 REMOVE DET + Sg IF (-1 NUM LINK NOT 0 ("1")) (0 ("<son>"i)) ;	# patch
@@ -778,16 +781,25 @@ REMOVE PREP IF (NOT 1 N OR PRON OR AV OR NUM OR NP OR VBinf OR DET OR AJ) (NOT 0
 REMOVE Vconj IF (-1C PREP) (NOT -1 ("<de mai>"i)) ;
 REMOVE Vconj IF (-2C PREP) (-1 DET + &&AcordSN) (0 N + &&AcordSN) ;	# per la planta.
 SELECT VBinf IF (-1 ("de")) (0C V) ;
+SELECT PREP IF (0 ("<de>"i) + PREP) (1C VBinf) ;
 SELECT VBinf IF (-1 ("a") + PREP) (0C V) ;
-SELECT VBger IF (-1 ("en") + PREP) (0C V) ;
+SELECT PREP IF (0 ("<a>"i) + PREP) (1C VBinf) ;
+SELECT VBger IF (-1 ("<en>"i) + PREP) (0C V) ;
+SELECT PREP IF (0 ("en") + PREP) (1C VBger) ;
 SELECT VBger IF (-1 ("en bèth") + PREP) (0C V) ;
 SELECT VBinf IF (-2 ("de")) (-1 Pro) (0C V) ;
+SELECT PREP IF (0 ("<de>"i) + PREP) (1 Pro) (2C VBinf) ;
 SELECT VBinf IF (-2 ("a") + PREP) (-1 Pro) (0C V) ;
+SELECT PREP IF (0 ("<a>"i) + PREP) (1 Pro) (2C VBinf) ;
 SELECT VBger IF (-2 ("en") + PREP) (-1 Pro) (0C V) ;
+SELECT PREP IF (0 ("<en>"i) + PREP) (1 Pro) (2C VBger) ;
 SELECT VBger IF (-2 ("en bèth") + PREP) (-1 Pro) (0C V) ;
-SELECT VBinf IF (-3 ("de")) (-1 Pro) (-1 Pro) (0C V) ;
+SELECT VBinf IF (-3 ("<de>"i)) (-1 Pro) (-1 Pro) (0C V) ;
+SELECT PREP IF (0 ("de") + PREP) (1 Pro) (2 Pro) (3C VBinf) ;
 SELECT VBinf IF (-3 ("a") + PREP) (-2 Pro) (-1 Pro) (0C V) ;
+SELECT PREP IF (0 ("<a>"i) + PREP) (1 Pro) (2 Pro) (3C VBinf) ;
 SELECT VBger IF (-3 ("en") + PREP) (-2 Pro) (-1 Pro) (0C V) ;
+SELECT PREP IF (0 ("<en>"i) + PREP) (1 Pro) (2 Pro) (3C VBger) ;
 SELECT VBger IF (-3 ("en bèth") + PREP) (-2 Pro) (-1 Pro) (0C V) ;
 REMOVE VBger IF (0 VBinf) (NOT -1 SENT OR ("en") OR ("en bèth")) ;
 
@@ -964,8 +976,9 @@ REMOVE Vconj IF (-3C Ser + Vconj + &&AcordSP) (-2 AV) (-1 AV) (0 VBpp + &&AcordS
 
 SELECT VBinf IF (0 AJ) (1 ("par")) ;
 SELECT AV IF (-1 Vmod) (0 ("<tornar>"i)) (1 VBinf) ;	# pòdi tornar manjar
-SELECT VBinf IF (-1 Vmod) (0 VBinf) ;	# pòdi manjar
-SELECT Vmod IF (0 Vmod) (1C VBinf) (NOT 0 PREP) ;	# pòdi manjar
+SELECT VBinf IF (-1 Vmod LINK 0C V) (0 VBinf) ;	# pòdi manjar
+SELECT Vmod IF (0 Vmod) (1C VBinf OR ("<èsser>"i) OR ("<èster>"i) OR ("<èstre>"i) OR ("<estar>"i) OR ("<far>"i) OR ("<har>"i) OR ("<hèr>"i)) (NOT 0 PREP) ;	# pòdi manjar
+SELECT Vmod IF (0 Vmod) (1C VBinf OR ("<èsser>"i) OR ("<èster>"i) OR ("<èstre>"i) OR ("<estar>"i) OR ("<far>"i) OR ("<har>"i) OR ("<hèr>"i)) (0 Artcontrsg OR Artcontrpl) ;	# deu manjar
 SELECT VBinf IF (-2 Vmod) (-1 AV OR Pro) (0 VBinf) (NOT 0 PREP) ;	# pòdi pas manjar
 SELECT Vmod IF (0 Vmod) (1 AV OR Pro) (2C VBinf) (NOT 0 PREP) ;	# pòdi pas manjar
 SELECT VBinf IF (-3 Vmod) (-2 AV OR Pro) (-1 AV OR Pro) (0 VBinf) (NOT 0 PREP) ;	# pòdi pas manjar
@@ -981,12 +994,12 @@ SELECT Vmod IF (0 ("caler")) (-1 Itg) ;
 SELECT Vmod IF (0 ("caler")) (-1 Enon) ;
 SELECT Vmod IF (0 ("caler")) (-1 BOS) ;
 SELECT Vmod IF (0 ("caler")) (-2 BOS) (1 AV) ;
-REMOVE Vmod IF (NOT 1 VBinf OR AV OR Pro OR Que) ;
-REMOVE Vmod IF (1 AV) (NOT 2 VBinf OR AV OR Pro OR Que) ;
-REMOVE Vmod IF (1 AV) (1 AV) (NOT 3 VBinf OR AV OR Pro OR Que) ;
-REMOVE Vmod IF (1 AV) (2 Pro) (NOT 3 VBinf OR Pro) ;
-REMOVE Vmod IF (1 Pro) (NOT 2 VBinf OR Pro) ;
-REMOVE Vmod IF (1 Pro) (2 Pro) (NOT 2 VBinf) ;
+REMOVE (vbmod) IF (NOT 1 VBinf OR AV OR Pro OR Que) ;
+REMOVE (vbmod) IF (1 AV) (NOT 2 VBinf OR AV OR Pro OR Que) ;
+REMOVE (vbmod) IF (1 AV) (1 AV) (NOT 3 VBinf OR AV OR Pro OR Que) ;
+REMOVE (vbmod) IF (1 AV) (2 Pro) (NOT 3 VBinf OR Pro) ;
+REMOVE (vbmod) IF (1 Pro) (NOT 2 VBinf OR Pro) ;
+REMOVE (vbmod) IF (1 Pro) (2 Pro) (NOT 2 VBinf) ;
 
 #Vb conjugat après enonciatiu
 SELECT Vconj IF (-1C Enon) (NOT 0 Pro) ;
@@ -1272,12 +1285,18 @@ SELECT AJ + &&AcordSN IF (-3 DET + &&AcordSN) (-2 N + &&AcordSN OR NP + &&AcordS
 
 REMOVE AJ IF (-1C DET + &&AcordSN) (0 N + &&AcordSN) (1C CM) (NOT 2 AJ + &&AcordSN) (NOT 0 AdjOrd + &&AcordSN) ;
 
+REMOVE Conjadv IF (0 Se) (1C VBinf OR VBger) ;        # de se crear
+REMOVE Conjadv IF (0 Se) (1 Pro) (2C VBinf OR VBger) ;        # de se lo crear
 REMOVE PRON IF (0 Se) (NOT 1 Pro OR V + P3 OR V + VBinf OR V + VBger) ;        # se canti
 REMOVE PRON IF (0 Se) (1 Pro) (NOT 2 Pro OR V + P3 OR V + VBinf OR V + VBger) ;	# se li canti
 REMOVE PRON IF (0 Se) (1 Pro) (2 Pro) (NOT 3 Pro OR V + P3 OR V + VBinf OR V + VBger) ;	# se li o canti
 REMOVE PRON IF (0 Se) (1 Pro) (2 Pro) (3 Pro) (4 V + P3 OR V + VBinf OR V + VBger) ;
-REMOVE Conjadv IF (0 Se) (1C V + VBinf) ;        # de se crear
-REMOVE Conjadv IF (0 Se) (1 Pro) (2C V + VBinf) ;        # de se lo crear
+REMOVE PRON IF (-1C V LINK NOT 0 VBpp) (0 Se) ;
+REMOVE PRON IF (-2C V LINK NOT 0 VBpp) (-1C AV OR PREAV OR ("pas") LINK NOT 0 Itg) (0 Se) ;
+REMOVE PRON IF (-3C V LINK NOT 0 VBpp) (-2C AV OR PREAV OR ("pas") LINK NOT 0 Itg) (-1 AV LINK NOT 0 Itg) (0 Se) ;
+REMOVE PRON IF (-2 VBaux) (-1C VBpp) (0 Se) ;
+REMOVE PRON IF (-3 VBaux) (-2C AV OR PREAV OR ("pas") LINK NOT 0 Itg) (-1C VBpp) (0 Se) ;
+REMOVE PRON IF (-4 VBaux) (-3C AV OR PREAV OR ("pas") LINK NOT 0 Itg) (-2 AV LINK NOT 0 Itg) (-1C VBpp) (0 Se) ;
 #REMOVE PRON IF (0 Se) (1 ("ne")) ;	# Se n’èram estadas amigas
 SELECT Conjadv IF (0 ("<s'i>"i) OR ("<s’i>"i)) (1 ("aver") OR ("auer")) ;
 SELECT Conjadv IF (0 Se) (1 ("<n'i>"i) OR ("<n’i>"i)) (2 ("aver") OR ("auer")) ;
