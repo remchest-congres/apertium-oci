@@ -1143,6 +1143,9 @@ REMOVE AJ IF (-1 ("de")) (0 VBinf) (1 PREP OR EOS) ;	# es riscat d'especular
 # ADJ POS
 
 REMOVE AJ + Pos IF (NOT -1 Ser) (0 AJ + Pos) ;
+#REMOVE AJ + Pos IF (NOT -1 Ser OR ("lenga") OR ("cultura") OR ("casa")) (0 AJ + Pos) ;
+#REMOVE AJ + Pos IF (NOT -2 DETdef + FemSg) (-1 ("lenga") OR ("cultura")) (0 AJ + Pos) ;
+#SELECT AJ + Pos + &&AcordSN IF (-1 ("casa") + &&AcordSN) (0 AJ + Pos) (NOT 1 AJ + &&AcordSN) ;
 
 # N
 
