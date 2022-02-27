@@ -804,6 +804,8 @@ SELECT PREP IF (0 ("<a>"i) + PREP) (1 Pro) (2 Pro) (3C VBinf) ;
 SELECT VBger IF (-3 ("en") + PREP) (-2 Pro) (-1 Pro) (0C V) ;
 SELECT PREP IF (0 ("<en>"i) + PREP) (1 Pro) (2 Pro) (3C VBger) ;
 SELECT VBger IF (-3 ("en bèth") + PREP) (-2 Pro) (-1 Pro) (0C V) ;
+SELECT VBinf IF (-1 ("per") LINK NOT 0 Artcontrsg OR Artcontrpl) (0 V) ;
+SELECT VBinf IF (-2 ("per")) (-1 Pro) (0 V) (NOT -1 DET + &&AcordSN LINK 1 N + &&AcordSN) ;
 REMOVE VBger IF (0 VBinf) (NOT -1 SENT OR ("en") OR ("en bèth")) ;
 
 #Un determinant es pas plural se lo nom/adjectiu que seguis es singular (o masculin feminin...)
@@ -986,6 +988,12 @@ SELECT VBinf IF (-2 Vmod) (-1 AV OR Pro) (0 VBinf) (NOT 0 PREP) ;	# pòdi pas ma
 SELECT Vmod IF (0 Vmod) (1 AV OR Pro) (2C VBinf) (NOT 0 PREP) ;	# pòdi pas manjar
 SELECT VBinf IF (-3 Vmod) (-2 AV OR Pro) (-1 AV OR Pro) (0 VBinf) (NOT 0 PREP) ;	# pòdi pas manjar
 SELECT Vmod IF (0 Vmod) (1 AV OR Pro) (2 AV OR Pro) (3C VBinf) (NOT 0 PREP) ;	# pòdi pas manjar
+SELECT Vmod IF (0 Vmod) (1 ("tot")) (2C VBinf OR ("<èsser>"i) OR ("<èster>"i) OR ("<èstre>"i) OR ("<estar>"i) OR ("<far>"i) OR ("<har>"i) OR ("<hèr>"i)) (NOT 0 PREP) ;	# pòdi tot manjar
+SELECT Vmod IF (0 Vmod) (1 ("tot")) (2C VBinf OR ("<èsser>"i) OR ("<èster>"i) OR ("<èstre>"i) OR ("<estar>"i) OR ("<far>"i) OR ("<har>"i) OR ("<hèr>"i)) (0 Artcontrsg OR Artcontrpl) ;	# deu tot manjar
+SELECT VBinf IF (-3 Vmod) (-2 AV) (-1 ("tot")) (0 VBinf) (NOT 0 PREP) ;	# pòdi pas tot manjar
+SELECT Vmod IF (0 Vmod) (1 AV) (2 ("tot")) (3C VBinf) (NOT 0 PREP) ;	# pòdi pas tot manjar
+SELECT PRON IF (-1C Vmod) (0 ("tot")) (0C VBinf) ;	# pòdi pas tot manjar
+SELECT PRON IF (-2C Vmod) (-1 AV) (0 ("tot")) (0C VBinf) ;	# pòdi pas tot manjar
 
 # VBmod
 
@@ -1186,6 +1194,8 @@ SELECT N + &&AcordSN IF (-1 NUM + &&AcordSN) (0 N + &&AcordSN) (1 AJ + &&AcordSN
 SELECT N + &&AcordSN IF (-1 DET + &&AcordSN) (0 N + &&AcordSN) (1C VBpp + &&AcordSN) ;
 SELECT N + &&AcordSN IF (-1/* DET + &&AcordSN) (0 N + &&AcordSN) (1C VBpp + &&AcordSN) ;
 SELECT N + &&AcordSN IF (-1 NUM + &&AcordSN) (0 N + &&AcordSN) (1C VBpp + &&AcordSN) ;
+REMOVE AJ IF (-1C PREP) (0 NP + &&AcordSN) (1 AJ + &&AcordSN) (NOT 0 AdjPre + &&AcordSN LINK 1 N + &&AcordSN) ;
+REMOVE AJ IF (-1C PREP) (0 N + &&AcordSN) (1 AJ + &&AcordSN) (NOT 0 AdjPre + &&AcordSN LINK 1 N + &&AcordSN) ;
 
 SELECT NP + &&AcordSN IF (-2 DET + &&AcordSN) (-1C AJ) (-1 AJ + &&AcordSN) (0 NP + &&AcordSN) ;
 SELECT N + &&AcordSN IF (-2 DET + &&AcordSN) (-1C AJ) (-1 AJ + &&AcordSN) (0 N + &&AcordSN) ;
