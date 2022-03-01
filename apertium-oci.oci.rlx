@@ -1444,3 +1444,6 @@ REMOVE AV IF (-1 DET) (0 Jorns) ;
 #préner temps
 REMOVE Pl IF (-1 ("prendre") or ("prene") or ("préner")) (0 ("temps")) ;
 REMOVE Pl IF (-2 ("prendre") or ("prene") or ("préner")) (-1 ("de")) (0 ("temps")) ;
+
+#mercés
+REMOVE Pl IF (0 ("mercés")) ((NOT -1 DET + Pl) OR (NOT -2 DET + Pl)) ;
