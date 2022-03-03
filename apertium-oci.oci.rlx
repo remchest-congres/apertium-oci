@@ -1351,6 +1351,8 @@ REMOVE AV IF (0 Si) (1C V) ;
 SELECT P3 IF (-1C Se + PRON) (NOT 0 Pro) (0 V) ;		# se canti
 SELECT P3 IF (-2C Se + PRON) (-1 Pro) (NOT 0 Pro) (0 V) ;	# se li canti
 SELECT P3 IF (-3C Se + PRON) (-2 Pro) (-1 Pro) (NOT 0 Pro) (0 V + P3) ;	# se li o canti
+SELECT Conjadv IF (0 Se) (1 Pro) (2 ("plaire") OR ("plàser")) ;
+SELECT Conjadv IF (0 Se) (0/* Pro) (1 ("plaire") OR ("plàser")) ;	# se'vs platz
 REMOVE Ton IF (0 Se) (1 V) (1 P3) ;
 REMOVE Ton IF (0 Se) (1 VBinf) ;
 REMOVE Ton IF (0 Se) (1 Pro) ;
