@@ -507,10 +507,20 @@ REMOVE VBger IF (NOT -1 ("en") OR ("en bèth") OR Pro OR N_AJ OR CM) ;
 REMOVE VBger IF (NOT -2 ("en") OR ("en bèth") OR Pro OR CM) (-1C Pro) ;
 
 #Un pronom proclitic est totjorn davant un vèrb o un autre pronom
-REMOVE Pro IF (NOT 1 unknown OR Pro OR V - VBpp OR VBimp) ;
+REMOVE Pro IF (NOT 1 unknown OR Pro OR V - VBpp OR VBimp) (NOT -1 PRencl or VBimp or VBinf or VBger) ;
 REMOVE DET IF (1C V OR Pro) (NOT 1 VBpp) ;
 SELECT V OR Pro IF (-1C Pro) (NOT -1/* V) ;	# i a un ; i aviá un
 SELECT V OR Pro IF (-1C/* Pro) (NOT -1/* V) ;	# se'n sap
+
+#enclitics
+SELECT PRencl IF (0 ("nos") OR ("ve")) (-1 PRencl);
+
+REMOVE V IF (0 ("ve")) (-1 V);
+REMOVE V IF (0 ("ve")) (1 V);
+REMOVE V IF (0 ("ve")) (1 Pro) (2 V);
+REMOVE V IF (0 ("ve")) (1 Pro) (2 Pro) (3 V);
+REMOVE V IF (0 ("ve")) (-1 Pro) (-2 V);
+REMOVE V IF (0 ("ve")) (-1 Pro) (-2 Pro) (-3 V);
 
 SELECT PREP (0 ("a")) (1C Pro) ;	# a lo parlar
 SELECT PREP (0 ("a")) (1C Top OR Ant OR Cog OR Al) ;	# a Niça
@@ -1447,3 +1457,7 @@ REMOVE Pl IF (-2 ("prendre") or ("prene") or ("préner")) (-1 ("de")) (0 ("temps
 
 #mercés
 REMOVE Pl IF (0 ("mercés")) ((NOT -1 DET + Pl) OR (NOT -2 DET + Pl)) ;
+
+
+
+

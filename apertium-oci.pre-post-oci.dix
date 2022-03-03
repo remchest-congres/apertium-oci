@@ -283,8 +283,20 @@
 	</e>
 	<e>
 		<p>
+			<l><a/>nse<b/><b/></l>
+			<r><a/>nse<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
 			<l><a/>vos<b/><b/></l>
 			<r><a/>vos<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>vse<b/><b/></l>
+			<r><a/>vse<b/></r>
 		</p>
 	</e>
 	<e>
@@ -652,8 +664,22 @@
 	</e>
 	<e>
 		<p>
+			<l><a/>nse</l>
+			<r><a/>nse</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
 			<l><a/>vos</l>
 			<r><a/>vos</r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>vse</l>
+			<r><a/>vse</r>
 		</p>
 		<par n="caracter_general"/>
 	</e>

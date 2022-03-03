@@ -895,6 +895,12 @@
 		 </e>
 		 <e>
 			 <p>
+				<l><b/><a/>vse</l>
+				<r><b/>vse</r>
+			</p>
+		 </e>
+		 <e>
+			 <p>
 				 <l><b/><a/>lo</l>
 				 <r><b/>lo</r>
 			 </p>
@@ -1944,7 +1950,20 @@
 	</e>
 	<e>
 		<p>
+			<l><b/><a/>nse<b/></l>
+			<r>de'ns<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
 			<l><b/><a/>nos<b/></l>
+			<r>de<b/>ns'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><b/><a/>nse<b/></l>
 			<r>de<b/>ns'</r>
 		</p>
 		<par n="vocal_general"/>
@@ -1957,7 +1976,20 @@
 	</e>
 	<e>
 		<p>
+			<l><b/><a/>vse<b/></l>
+			<r>de'vs<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
 			<l><b/><a/>vos<b/></l>
+			<r>de<b/>vs'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><b/><a/>vse<b/></l>
 			<r>de<b/>vs'</r>
 		</p>
 		<par n="vocal_general"/>
@@ -3298,8 +3330,22 @@
 	</e>
 	<e>
 		<p>
+			<l><a/>nse<b/></l>
+			<r>ns'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
 			<l><a/>nos<b/><a/>ne<b/></l>
 			<r>nos<b/>n'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>nse<b/><a/>ne<b/></l>
+			<r>nse<b/>n'</r>
 		</p>
 		<par n="vocal_general"/>
 	</e>
@@ -3311,7 +3357,20 @@
 	</e>
 	<e>
 		<p>
+			<l><a/>nse<b/><a/>ne<b/></l>
+			<r>ns'en<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
 			<l><a/>que<b/><a/>nos<b/></l>
+			<r>que<b/>ns'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>nse<b/></l>
 			<r>que<b/>ns'</r>
 		</p>
 		<par n="vocal_general"/>
@@ -3325,13 +3384,33 @@
 	</e>
 	<e>
 		<p>
+			<l><a/>que<b/><a/>nse<b/><a/>ne<b/></l>
+			<r>que'ns<b/>n'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
 			<l><a/>que<b/><a/>nos<b/><a/>ne<b/></l>
 			<r>que<b/>ns'en<b/></r>
 		</p>
 	</e>
 	<e>
 		<p>
+			<l><a/>que<b/><a/>nse<b/><a/>ne<b/></l>
+			<r>que<b/>ns'en<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
 			<l><a/>vos<b/></l>
+			<r>vs'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>vse<b/></l>
 			<r>vs'</r>
 		</p>
 		<par n="vocal_general"/>
@@ -3345,13 +3424,33 @@
 	</e>
 	<e>
 		<p>
+			<l><a/>vse<b/><a/>ne<b/></l>
+			<r>vse<b/>n'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
 			<l><a/>vos<b/><a/>ne<b/></l>
 			<r>vs'en<b/></r>
 		</p>
 	</e>
 	<e>
 		<p>
+			<l><a/>vse<b/><a/>ne<b/></l>
+			<r>vs'en<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
 			<l><a/>que<b/><a/>vos<b/></l>
+			<r>que<b/>vs'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>vse<b/></l>
 			<r>que<b/>vs'</r>
 		</p>
 		<par n="vocal_general"/>
@@ -3365,7 +3464,20 @@
 	</e>
 	<e>
 		<p>
+			<l><a/>que<b/><a/>vse<b/><a/>ne<b/></l>
+			<r>que<b/>vse<b/>n'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
 			<l><a/>que<b/><a/>vos<b/><a/>ne<b/></l>
+			<r>que<b/>vs'en<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
+			<l><a/>que<b/><a/>vse<b/><a/>ne<b/></l>
 			<r>que<b/>vs'en<b/></r>
 		</p>
 	</e>
