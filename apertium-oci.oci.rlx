@@ -276,7 +276,7 @@ SELECT VBinf IF (-1C PREP OR V) (0 ("<far>"i)) ;		# patch
 SELECT VBinf IF (-2C PREP OR V) (-1 Pro OR AV) (0 ("<far>"i)) ;		# patch
 SELECT VBinf IF (-3C PREP OR V) (-2 Pro OR AV) (-1 Pro OR AV) (0 ("<far>"i)) ;		# patch
 SELECT VBinf IF (NOT 0 DET + MascSg) (0 ("<far>"i)) ;		# patch
-SELECT V IF (-1 ("<se>"i)) (NOT 0 DET OR PRON) ;		# se practica # patch
+SELECT V IF (-1 ("<se>"i)) (NOT 0 DET OR PRON OR NP) ;		# se practica # patch
 SELECT PRON IF (0 ("<se>"i)) (1 Ser + &&AcordSP) (2 VBpp + &&AcordSP) ;		# se son formats # patch
 SELECT Ser + &&AcordSP IF (-1 ("<se>"i)) (0 Ser + &&AcordSP) (1 VBpp + &&AcordSP) ;		# patch
 SELECT VBpp + &&AcordSP IF (-2 ("<se>"i)) (-1 Ser + &&AcordSP) (0 VBpp + &&AcordSP) ;		# patch
@@ -419,6 +419,8 @@ SELECT PRON IF (-4 Vmod) (-3 Pas) (-2 AV OR Pro) (-1 VBinf) (0 Cap) ;	# vòli pa
 SELECT PRON IF (-5 Vmod) (-4 Pas) (-3 AV OR Pro) (-2 AV OR Pro) (-1 VBinf) (0 Cap) ;	# vòli pas li'n dire cap
 SELECT N IF (0 Cap) (1 NP OR unknownMajIni) ;	# cap Canaveral
 SELECT N + (m) IF (0 Cap) (1 NP OR unknownMajIni) ;	# cap Canaveral
+SELECT N + (m) IF (0 Cap) (1 ("alt")) ;
+REMOVE N + (mf) IF (0 Cap) (1 ("bas") OR ("baish")) ;
 SELECT N + (mf) IF (NOT -1 BOS) (0 Cap_de_del) (1 Estat OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("politica") OR ("entrepresa") OR ("enterpresa")) ;
 SELECT N + (mf) IF (NOT -1 BOS) (0 Cap) (1 De) (2 Estat OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("politica") OR ("entrepresa") OR ("enterpresa")) ;
 SELECT N + (mf) IF (NOT -1 BOS) (0 ("cap")) (1 De) (2 Estat OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("politica") OR ("entrepresa") OR ("enterpresa")) ;
@@ -931,6 +933,7 @@ SELECT (top) IF (0 ("Barcelona")) (NOT 1 (ant) OR (cog)) ;
 SELECT (top) IF (0 ("Lisbona")) (NOT 1 (ant) OR (cog)) ;
 SELECT (top) IF (0 ("Roma")) (NOT 1 (ant) OR (cog)) ;
 SELECT (top) IF (0 ("Tolosa")) (NOT 1 (ant) OR (cog)) ;
+SELECT (top) IF (0 ("París")) (NOT 1 (ant) OR (cog)) ;
 
 SELECT Ant IF (-1 ("dieu") OR ("divessa")) ;
 
