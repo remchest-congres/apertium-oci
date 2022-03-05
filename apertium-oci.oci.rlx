@@ -1195,6 +1195,14 @@ SELECT N + &&AcordSN OR NP + &&AcordSN IF (0C N) (1C AJ) (1 AJ + &&AcordSN) ;	# 
 SELECT VBpp + &&AcordSN IF (-1C N_AJ + &&AcordSN) (0 ("dire") + &&AcordSN OR ("díder") + &&AcordSN) (1 ("«")) ;
 SELECT N + &&AcordSN OR PRON + &&AcordSN OR NP + &&AcordSN IF (-1C PREP) (0C ("dire") + VBpp + &&AcordSN OR ("díder") + VBpp + &&AcordSN) ;
 
+REMOVE V + Pers IF (-2C V + Pers OR VBinf OR VBger) (-1 DET + &&AcordSN) (0 N + &&AcordSN) ;
+REMOVE V + Pers IF (-3C V + Pers OR VBinf OR VBger) (-2 AV) (-1 DET + &&AcordSN) (0 N + &&AcordSN) ;
+REMOVE V + Pers IF (-4C V + Pers OR VBinf OR VBger) (-3 AV) (-2 AV) (-1 DET + &&AcordSN) (0 N + &&AcordSN) ;
+REMOVE V + Pers IF (-3C VBaux + Pers OR VBinf OR VBger) (-2C VBpp) (-1 DET + &&AcordSN) (0 N + &&AcordSN) ;
+REMOVE V + Pers IF (-4C VBaux + Pers OR VBinf OR VBger) (-3 AV) (-2C VBpp) (-1 DET + &&AcordSN) (0 N + &&AcordSN) ;
+REMOVE V + Pers IF (-5C VBaux + Pers OR VBinf OR VBger) (-4 AV) (-3 AV) (-2C VBpp) (-1 DET + &&AcordSN) (0 N + &&AcordSN) ;
+REMOVE V + Pers IF (-4C VBaux + Pers OR VBinf OR VBger) (-3C VBpp) (-2 AV) (-1 DET + &&AcordSN) (0 N + &&AcordSN) ;
+
 # N / AJ
 
 SELECT NP + &&AcordSN IF (-2 DET + &&AcordSN) (-1 AdjPre + &&AcordSN) (0 NP + &&AcordSN) (NOT -1 ("nau")) ;
