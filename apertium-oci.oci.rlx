@@ -741,7 +741,7 @@ SELECT PREP IF (0 ("en")) (1 ("dos")) ;
 
 SELECT V IF (0 ("tornar")) (1C VBinf) ;
 
-SELECT N IF (-1 De) (0 ("òc")) ;
+SELECT N OR NP IF (-1 De) (0 ("òc")) ;
 
 SELECT AJ IF (0 ("marrit")) (1 ("flac")) ;	# valoracions Jornalet
 SELECT AJ IF (-1 ("marrit")) (0 ("flac")) ;	# valoracions Jornalet
