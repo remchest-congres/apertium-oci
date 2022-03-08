@@ -1475,6 +1475,8 @@ REMOVE AV IF (0 ("mes")) (-1/* PREP + DET) ;
 #qui cnjadv o rel
 REMOVE Conjadv IF (0 ("qui")) (NOT -1 AJ OR V OR AV) ;
 
+REMOVE Itg IF (0 ("qui") OR ("que")) (-1C Tn OR ("jo")) ;	# jo qui’n diserèi
+
 #Lo jorn de la setmana es un nom s'es precedit d'un determinant
 REMOVE AV IF (-1 DET) (0 Jorns) ;
 
