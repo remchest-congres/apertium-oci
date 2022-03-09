@@ -1490,6 +1490,12 @@ REMOVE Pl IF (0 ("mercés")) ((NOT -1 DET + Pl) OR (NOT -2 DET + Pl)) ;
 #en tot
 SELECT PREP IF (0 ("en tot")) (1 VBger) ;
 
+SELECT AJ IF (0 (<"prèste">)) (1 ("de") or ("a"));
+SELECT AJ IF (0 (<"prèste">)) (-1 ("de")) (-2 N);
+SELECT AJ IF (0 (<"prèste">)) (-1 ("de")) (-2 AV or PREAV) (-3 N);
+SELECT AJ IF (0 (<"prèste">)) (-1 N);
+SELECT AJ IF (0 (<"prèste">)) (-1 AV or PREAV) (-2 N);
+
 #çò
 REMOVE Enon IF (0 ("çò")) (NOT 1 Vdire or ("tornar") or Vmod or Haver or Pro) ;
 REMOVE Enon IF (0 ("çò")) (1 ("tornar") or Vmod or Haver) (NOT 2 Vdire) ;
