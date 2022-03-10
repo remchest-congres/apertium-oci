@@ -188,6 +188,7 @@ LIST Vengar = "vengar" ;
 LIST Venir = "venir" "vier" ;
 LIST Pareisser = "paréisser" "paréisher" ;
 LIST Parir = "parir" ;
+LIST Parer = "pàrer" ;
 #List Artcontrpl = "<als>" "<aus>" "<aths>" "<as>" "<dels>" "<deus>" "<dals>" "<deths>" "<des>" "<suls>" "<suus>" "<taus>" "<taths>" "<entaus>" "<entaths>" "<entàs>" "<pels>" "<peus>" "<peths>" "<preus>" "<vèls>" "<jols>" "<enquiaths>" "<ens>" "<enes>" "<endeus>" "<dambeus>" ;
 List Artcontrpl = "<als>" "<aus>" "<aths>" "<dels>" "<deus>" "<dals>" "<deths>" "<des>" "<suls>" "<suus>" "<taus>" "<taths>" "<entaus>" "<entaths>" "<entàs>" "<pels>" "<peus>" "<peths>" "<preus>" "<vèls>" "<jols>" "<enquiaths>" "<ens>" "<enes>" "<endeus>" "<dambeus>" ;
 #List Artcontrsg = "<al>" "<au>" "<ath>" "<del>" "<deu>" "<dal>" "<deth>" "<sul>" "<suu>" "<tau>" "<tath>" "<entau>" "<entath>" "<pel>" "<peu>" "<peth>" "<preu>" "<vèl>" "<jol>" "<enquiath>" "<en>" "<ene>" "<endeu>" "<dambeu>" ;
@@ -515,8 +516,8 @@ SELECT VBger (-3 De) (-2 DETdef + &&AcordSN) (-1 N + &&AcordSN) (0 ("<estant>"i)
 SELECT VBger (-2 De) (-1 NP + &&AcordSN) (0 ("<estant>"i)) ;
 SELECT VBger (-3 De) (-2 DETdef + &&AcordSN) (-1 NP + &&AcordSN) (0 ("<estant>"i)) ;
 
-REMOVE VBger IF (NOT -1 ("en") OR ("en bèth") OR Pro OR N_AJ OR CM) ;
-REMOVE VBger IF (NOT -2 ("en") OR ("en bèth") OR Pro OR CM) (-1C Pro) ;
+REMOVE VBger IF (NOT -1 ("en") OR ("en bèth") OR ("en tot") OR Pro OR N_AJ OR CM) ;
+REMOVE VBger IF (NOT -2 ("en") OR ("en bèth") OR ("en tot") OR Pro OR CM) (-1C Pro) ;
 
 #Un pronom proclitic est totjorn davant un vèrb o un autre pronom
 REMOVE Pro IF (NOT 1 unknown OR Pro OR V - VBpp OR VBimp) (NOT -1 PRencl or VBimp or VBinf or VBger) ;
@@ -738,6 +739,7 @@ REMOVE ("vier") IF (0 ("venir")) ;
 
 # paréisser/paréisher e parir (p. ex. "pareish")
 REMOVE Parir IF (0 Pareisser) ;
+REMOVE Parer IF (0 Pareisser) ;
 
 SELECT NUM IF (-1 ("en")) (0 ("dos")) ;
 SELECT PREP IF (0 ("en")) (1 ("dos")) ;
@@ -802,7 +804,7 @@ REMOVE Enon IF (NOT 1 V OR Pro);
 REMOVE SUB:1 Enon IF (NOT 1 V OR Pro);
 
 #Una prepausicion es totjorn seguida d'un nom, pronom, adverb, numeral, infinitiu, determinant o adjectiu
-REMOVE PREP IF (NOT 1 N OR PRON OR AV OR NUM OR NP OR VBinf OR DET OR AJ) (NOT 0/* PREP + DET) (NOT 0/* PREP + N) ;
+REMOVE PREP IF (NOT 1 N OR PRON OR AV OR NUM OR NP OR VBinf OR DET OR AJ) (NOT 0/* PREP + DET) (NOT 0/* PREP + N) (NOT 0 ("en tot")) ;
 
 #Es pas un vèrbe se, dempuèi lo darrièr vèrbe conjugat, avèm pas agut de novèla proposicion
 #REMOVE Vconj IF (NOT -1* intrprop BARRIER Vconj) ;
@@ -816,6 +818,9 @@ SELECT PREP IF (0 ("<a>"i) + PREP) (1C VBinf) ;
 SELECT VBger IF (-1 ("<en>"i) + PREP) (0C V) ;
 SELECT PREP IF (0 ("en") + PREP) (1C VBger) ;
 SELECT VBger IF (-1 ("en bèth") + PREP) (0C V) ;
+SELECT VBger IF (-1 ("<en tot>"i) + PREP) (0C V OR N) ;
+SELECT VBger IF (-2 ("<en>"i) + PREP) (-1 ("tot")) (0C V) ;
+SELECT PREP IF (0 ("en") + PREP) (1 ("tot")) (2C VBger) ;
 SELECT VBinf IF (-2 ("de")) (-1 Pro) (0C V) ;
 SELECT PREP IF (0 ("<de>"i) + PREP) (1 Pro) (2C VBinf) ;
 SELECT VBinf IF (-2 ("a") + PREP) (-1 Pro) (0C V) ;
@@ -823,6 +828,8 @@ SELECT PREP IF (0 ("<a>"i) + PREP) (1 Pro) (2C VBinf) ;
 SELECT VBger IF (-2 ("en") + PREP) (-1 Pro) (0C V) ;
 SELECT PREP IF (0 ("<en>"i) + PREP) (1 Pro) (2C VBger) ;
 SELECT VBger IF (-2 ("en bèth") + PREP) (-1 Pro) (0C V) ;
+SELECT VBger IF (-3 ("en") + PREP) (-2 ("tot")) (-1 Pro) (0C V) ;
+SELECT PREP IF (0 ("<en>"i) + PREP) (1 ("tot")) (2 Pro) (3C VBger) ;
 SELECT VBinf IF (-3 ("<de>"i)) (-1 Pro) (-1 Pro) (0C V) ;
 SELECT PREP IF (0 ("de") + PREP) (1 Pro) (2 Pro) (3C VBinf) ;
 SELECT VBinf IF (-3 ("a") + PREP) (-2 Pro) (-1 Pro) (0C V) ;
@@ -830,9 +837,15 @@ SELECT PREP IF (0 ("<a>"i) + PREP) (1 Pro) (2 Pro) (3C VBinf) ;
 SELECT VBger IF (-3 ("en") + PREP) (-2 Pro) (-1 Pro) (0C V) ;
 SELECT PREP IF (0 ("<en>"i) + PREP) (1 Pro) (2 Pro) (3C VBger) ;
 SELECT VBger IF (-3 ("en bèth") + PREP) (-2 Pro) (-1 Pro) (0C V) ;
+SELECT VBger IF (-4 ("en") + PREP) (-3 ("tot")) (-2 Pro) (-1 Pro) (0C V) ;
+SELECT PREP IF (0 ("<en>"i) + PREP) (1 ("tot")) (2 Pro) (3 Pro) (4C VBger) ;
 SELECT VBinf IF (-1 ("per") LINK NOT 0 Artcontrsg OR Artcontrpl) (0 V) ;
 SELECT VBinf IF (-2 ("per")) (-1 Pro) (0 V) (NOT -1 DET + &&AcordSN LINK 1 N + &&AcordSN) ;
-REMOVE VBger IF (0 VBinf) (NOT -1 SENT OR ("en") OR ("en bèth")) ;
+REMOVE VBger IF (0 VBinf) (NOT -1 SENT OR ("en") OR ("en bèth") OR ("en tot")) ;
+REMOVE AV IF (0 ("en tot")) (1 VBger) ;
+REMOVE AV IF (0 ("en tot")) (1 Pro) (2 VBger) ;
+REMOVE AV IF (0 ("en tot")) (1 Pro) (2 Pro) (3 VBger) ;
+SELECT AV IF (0 ("en tot")) ;
 
 #Un determinant es pas plural se lo nom/adjectiu que seguis es singular (o masculin feminin...)
 REMOVE motsdetpl IF (1C Ns OR AJs);
@@ -968,9 +981,9 @@ SELECT Haver IF (0 Haver) (1C VBpp) ;	# a cantat
 SELECT Haver IF (0 Haver) (1 Haver + VBpp) ;	# a cantat
 SELECT Haver IF (0 Haver) (1 AV) (2 VBpp) ;	# a pas cantat
 SELECT Haver IF (0 Haver) (1 AV) (2 AV) (3 VBpp) ;	# a pas totjorn cantat
-SELECT Aver IF (-1 Haver) (0 Aver + VBpp) ;	# a agut
-SELECT Aver IF (-2 Haver) (-1 AV) (0 Aver + VBpp) ;	# a pas agut
-SELECT Aver IF (-3 Haver) (-2 AV) (-1 AV) (0 Aver + VBpp) ;	# a pas totjorn agut
+SELECT Aver IF (-1/* Haver) (0 Aver + VBpp) ;	# a agut ; i a agut
+SELECT Aver IF (-2/* Haver) (-1 AV) (0 Aver + VBpp) ;	# a pas agut ; i a pas agut
+SELECT Aver IF (-3/* Haver) (-2 AV) (-1 AV) (0 Aver + VBpp) ;	# a pas totjorn agut ; i a pas totjorn agut
 
 # Ser
 
@@ -1139,6 +1152,8 @@ SELECT VBpp IF (-1 ("un còp")) ;
 SELECT VBpp IF (-2 ("un") + MascSg) (-1 ("còp")) ;
 
 REMOVE ("corsa") OR ("corses") IF (0 ("cors")) (1 De) (2 Lenga);
+
+SELECT Fem IF (0 ("colèra")) (NOT -1/* Masc_strict) (NOT 1 Masc_strict) ;
 
 # NUM
 
