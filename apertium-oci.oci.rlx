@@ -981,9 +981,9 @@ SELECT Haver IF (0 Haver) (1C VBpp) ;	# a cantat
 SELECT Haver IF (0 Haver) (1 Haver + VBpp) ;	# a cantat
 SELECT Haver IF (0 Haver) (1 AV) (2 VBpp) ;	# a pas cantat
 SELECT Haver IF (0 Haver) (1 AV) (2 AV) (3 VBpp) ;	# a pas totjorn cantat
-SELECT Aver IF (-1 Haver) (0 Aver + VBpp) ;	# a agut
-SELECT Aver IF (-2 Haver) (-1 AV) (0 Aver + VBpp) ;	# a pas agut
-SELECT Aver IF (-3 Haver) (-2 AV) (-1 AV) (0 Aver + VBpp) ;	# a pas totjorn agut
+SELECT Aver IF (-1/* Haver) (0 Aver + VBpp) ;	# a agut ; i a agut
+SELECT Aver IF (-2/* Haver) (-1 AV) (0 Aver + VBpp) ;	# a pas agut ; i a pas agut
+SELECT Aver IF (-3/* Haver) (-2 AV) (-1 AV) (0 Aver + VBpp) ;	# a pas totjorn agut ; i a pas totjorn agut
 
 # Ser
 
