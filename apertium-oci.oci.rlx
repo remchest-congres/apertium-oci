@@ -1153,6 +1153,8 @@ SELECT VBpp IF (-2 ("un") + MascSg) (-1 ("còp")) ;
 
 REMOVE ("corsa") OR ("corses") IF (0 ("cors")) (1 De) (2 Lenga);
 
+SELECT Fem IF (0 ("colèra")) (NOT -1/* Masc_strict) (NOT 1 Masc_strict) ;
+
 # NUM
 
 SELECT NUM IF (-1 ("numero") OR ("numèro") OR ("numeró")) (0 Un);
