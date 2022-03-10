@@ -818,6 +818,7 @@ SELECT PREP IF (0 ("<a>"i) + PREP) (1C VBinf) ;
 SELECT VBger IF (-1 ("<en>"i) + PREP) (0C V) ;
 SELECT PREP IF (0 ("en") + PREP) (1C VBger) ;
 SELECT VBger IF (-1 ("en bèth") + PREP) (0C V) ;
+SELECT VBger IF (-1 ("<en tot>"i) + PREP) (0C V OR N) ;
 SELECT VBger IF (-2 ("<en>"i) + PREP) (-1 ("tot")) (0C V) ;
 SELECT PREP IF (0 ("en") + PREP) (1 ("tot")) (2C VBger) ;
 SELECT VBinf IF (-2 ("de")) (-1 Pro) (0C V) ;
