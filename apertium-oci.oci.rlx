@@ -1523,3 +1523,23 @@ REMOVE Enon IF (0 ("çò")) (1 Pro) (NOT 2 Vdire or ("tornar") or Vmod or Haver)
 REMOVE Enon IF (0 ("çò")) (1 Pro) (2 ("tornar") or Vmod or Haver) (NOT 3 Vdire);
 
 SELECT V IF (0 Vdire) (-1 ("çò"));
+
+#patch per las errors de vocabulari
+REMOVE V IF (0 ("<matin>"));
+REMOVE N IF (0 ("<nos>")) (NOT -1 DET + Masc);
+
+REMOVE N IF (0 ("<Vaduda>")) (1 ("a"));
+REMOVE N IF (0 ("<quina>")) (1 N + FemSg);
+REMOVE N IF (0 ("<quinas>")) (1 N + FemPl);
+REMOVE N IF (0 ("<quina>")) (1 AJ + FemSg) (2 N + FemSg);
+REMOVE N IF (0 ("<quinas>")) (1 AJ + FemPl) (2 N + FemPl);
+REMOVE N IF (0 ("<quina>")) (1 PREAV) (2 AJ + FemSg) (3 N + FemSg);
+REMOVE N IF (0 ("<quinas>")) (1 PREAV) (2 AJ + FemPl) (3 N + FemPl);
+REMOVE V IF (0 ("<cas>")) (-1 DET + Masc);
+REMOVE V IF (0 ("<escolan>")) (-1 DET + Masc);
+REMOVE V IF (0 ("<brave>")) (1 N + MascSg);
+REMOVE V IF (0 ("<braves>")) (1 N + MascPl);
+REMOVE V IF (0 ("<lei>")) (-1 DET + FemSg);
+REMOVE V IF (0 ("<lei>")) (-1 AJ + FemSg) (-2 DET + FemSg);
+SELECT N IF (0 ("<lei>")) (-1 PREAV) (-2 AJ + FemSg) (-3 DET + FemSg);
+
