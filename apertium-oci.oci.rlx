@@ -182,6 +182,8 @@ LIST Mas_cnjcoo = "mas" "mes" ;
 LIST Estat = "estat" ;
 LIST Volar = "volar" ;
 LIST Voler = "voler" ;
+LIST Podar = "podar" ;
+LIST Poder = "poder" ;
 LIST Seire = "sèire" ;
 LIST Saber = "saber" "sàber" ;
 LIST Vengar = "vengar" ;
@@ -740,6 +742,9 @@ REMOVE ("vier") IF (0 ("venir")) ;
 # paréisser/paréisher e parir (p. ex. "pareish")
 REMOVE Parir IF (0 Pareisser) ;
 REMOVE Parer IF (0 Pareisser) ;
+
+# poder e podar (p.ex. podetz)
+REMOVE Podar IF (0 Poder) ;
 
 SELECT NUM IF (-1 ("en")) (0 ("dos")) ;
 SELECT PREP IF (0 ("en")) (1 ("dos")) ;
