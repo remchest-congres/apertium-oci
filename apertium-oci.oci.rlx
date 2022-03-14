@@ -244,6 +244,8 @@ SET Lenga = ("occitan") OR ("francés") OR ("anglés") OR ("alemand") OR ("espan
 
 SECTION
 
+REMOVE DET IF (0 ("<tant>"));
+
 REMOVE AV IF (0 ("que")) (NOT 0 Enon) ;	# patch
 REMOVE Tn IF (0 ("qui")) ;	# patch
 REMOVE Tn IF (0 ("qual")) ;	# patch
@@ -1524,9 +1526,26 @@ REMOVE Enon IF (0 ("çò")) (1 Pro) (2 ("tornar") or Vmod or Haver) (NOT 3 Vdire
 
 SELECT V IF (0 Vdire) (-1 ("çò"));
 
+
+REMOVE V IF (0 ("<rason>")) (-1 Haver);
+REMOVE V IF (0 ("<rason>")) (-1 AV) (-2 Haver);
+REMOVE V IF (0 ("<rason>")) (-2 PREAV) (-2 AV) (-3 Haver);
+
+REMOVE V IF (0 ("<punt>"));
+REMOVE V IF (0 ("<punts>"));
+
 #patch per las errors de vocabulari
 REMOVE V IF (0 ("<matin>"));
 REMOVE N IF (0 ("<nos>")) (NOT -1 DET + Masc);
+REMOVE V IF (0 ("<encara>"));
+REMOVE V IF (0 ("<monde>") or ("<mond>"));
+REMOVE V IF (0 ("<ongan>"));
+
+REMOVE V IF (0 ("<minuta>")) (-1 DET + FemSg or AJ + FemSg);
+REMOVE V IF (0 ("<minutas>")) (-1 DET + FemPl or AJ + FemPl or NUM);
+
+REMOVE V IF (0 ("<gaug>")) (-1 DET + MascSg or AJ + MascPl);
+
 
 REMOVE N IF (0 ("<Vaduda>")) (1 ("a"));
 REMOVE N IF (0 ("<quina>")) (1 N + FemSg);
@@ -1542,4 +1561,5 @@ REMOVE V IF (0 ("<braves>")) (1 N + MascPl);
 REMOVE V IF (0 ("<lei>")) (-1 DET + FemSg);
 REMOVE V IF (0 ("<lei>")) (-1 AJ + FemSg) (-2 DET + FemSg);
 SELECT N IF (0 ("<lei>")) (-1 PREAV) (-2 AJ + FemSg) (-3 DET + FemSg);
+
 
