@@ -468,6 +468,7 @@ SELECT PREAV IF (0 ("hèra")) (1 ("plan")) ;
 SELECT PREAV IF (0 ("hèra")) (1 AJ OR VBpp OR AV LINK NOT 0 Itg OR Excl) (NOT 1 N OR DET OR Que OR ("com") OR ("coma")) ;
 SELECT PREAV IF (0 ("plan")) (1C AJ OR VBpp OR AV LINK NOT 0 Itg OR Excl) (NOT 1 Que OR ("com") OR ("coma")) ;
 REMOVE PREAV IF (0 ("hèra") OR ("plan")) (1C DET OR N OR Que OR ("com") OR ("coma")) ;
+REMOVE PREAV IF (0 ("plan")) (-1 Haver) (1 VBpp);
 
 SELECT AV IF (-1 Pas) (0 Mai OR Pus) ;	# ai pas pus
 SELECT AV IF (-2 Pas) (-1 VBpp) (0 Mai OR Pus) ;	# ai agut pas pus
@@ -1571,5 +1572,11 @@ SELECT N IF (0 ("<lei>")) (-1 PREAV) (-2 AJ + FemSg) (-3 DET + FemSg);
 REMOVE V IF (0 ("<sas>")) (1 N + FemPl);
 REMOVE V IF (0 ("<sas>")) (1 AJ + FemPl) (2 N + FemPl);
 REMOVE V IF (0 ("<sas>")) (1 PREAV) (2 AJ + FemPl) (3 N + FemPl);
+
+REMOVE N IF (0 ("<pels>")) (NOT -1 DET + MascPl OR AJ + MascPl) ;
+REMOVE N IF (0 ("<pels>")) (NOT -2 DET + MascPl) (-1 AJ + MascPl) ;
+
+REMOVE N IF (0 ("<pel>")) (NOT -1 DET + MascSg OR AJ + MascSg) ;
+REMOVE N IF (0 ("<pel>")) (NOT -2 DET + MascSg) (-1 AJ + MascSg) ;
 
 
