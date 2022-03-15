@@ -68,6 +68,7 @@ LIST Vconj_non_Imp = pri prs pii ifi pis fti ifi cni ;
 LIST Vconj_indic = pri pii ifi fti ifi cni ;
 LIST PRI = pri ;
 LIST PRS = prs ;
+LIST PIS = pis ;
 LIST Itg = itg ;
 LIST DETdef = (det def);
 LIST DETind = (det ind);
@@ -245,6 +246,9 @@ SET Lenga = ("occitan") OR ("francés") OR ("anglés") OR ("alemand") OR ("espan
 SECTION
 
 REMOVE DET IF (0 ("<tant>"));
+
+REMOVE V IF (0 ("<minuta>")) (-1 DET + FemSg or AJ + FemSg);
+REMOVE V IF (0 ("<minutas>")) (-1 DET + FemPl or AJ + FemPl or NUM);
 
 REMOVE AV IF (0 ("que")) (NOT 0 Enon) ;	# patch
 REMOVE Tn IF (0 ("qui")) ;	# patch
@@ -603,6 +607,9 @@ SELECT Rel IF (-2C N_AJ OR NP) (-1 PREP) (0 Que OR Qui) (1 Vconj + P3) ;
 SELECT Rel IF (-3C N_AJ OR NP) (-2 CM) (-1 PREP) (0 Que OR Qui) (1 Vconj + P3) ;
 SELECT Rel IF (-2C N_AJ OR NP) (-1 PREP) (0 Que OR Qui) (1 AV) (2 Vconj + P3) ;
 SELECT Rel IF (-3C N_AJ OR NP) (-2 CM) (-1 PREP) (0 Que OR Qui) (1 AV) (2 Vconj + P3) ;
+SELECT Conjsub IF (0 Que) (1 Ser + PRS) (1* ("o"));
+SELECT Conjsub IF (0 Que) (1 Ser + PIS) (1* ("o"));
+SELECT Conjsub IF (-1C ("pensar") OR ("créder") OR ("créser") OR ("díser") OR ("imaginar") OR ("ordenar") OR ("comandar") OR ("voler") OR ("demandar") OR ("respóner") OR ("assegurar"));
 
 SELECT DET + &&AcordSN IF (0 ("un") + &&AcordSN) (1 N_AJ + &&AcordSN) ;	# guess (cal pels enonciatius)
 SELECT DET + &&AcordSN IF (NOT -1 PREP) (0 ("un") + &&AcordSN) (1 Top + &&AcordSN) ;	# guess (cal pels enonciatius)
@@ -1309,6 +1316,9 @@ SELECT AJ IF (-3 ("un") + FemSg) (-2 N + FemSg) (-1 ("e")) (0 ("mièg") + FemSg 
 SELECT AJ IF (-3 NUM) (-2 N + MascPl) (-1 ("e")) (0 ("mièg") + MascSg OR ("miei") + MascSg) ;	# dos ans e mièg
 SELECT AJ IF (-3 NUM) (-2 N + FemPl) (-1 ("e")) (0 ("mièg") + FemSg OR ("miei") + FemSg) ;	# doas òras e mièja
 
+SELECT AJ IF (-3 NUM) (0 ("mièg")) (1C N);
+SELECT AV IF (-3 NUM) (0 ("mièg")) (1C AJ or AV);
+
 SELECT N IF (-2C N) (-1 Conjco) (0C N_AJ_PP) (NOT 1 N) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# une comédienne, réalisatrice, traductrice et romancière.
 SELECT N IF (NOT -1 N) (0C N_AJ_PP) (1 Conjco) (2C N) ;	# comédies, revues et opérettes ; langues anciennes et sciences naturelles
 SELECT N + &&AcordSN IF (-1/* DET + &&AcordSN) (0C N_AJ_PP) (1 Conjco) (2 DET) (3C N) ;	# les revues et les opérettes
@@ -1541,9 +1551,6 @@ REMOVE V IF (0 ("<encara>"));
 REMOVE V IF (0 ("<monde>") or ("<mond>"));
 REMOVE V IF (0 ("<ongan>"));
 
-REMOVE V IF (0 ("<minuta>")) (-1 DET + FemSg or AJ + FemSg);
-REMOVE V IF (0 ("<minutas>")) (-1 DET + FemPl or AJ + FemPl or NUM);
-
 REMOVE V IF (0 ("<gaug>")) (-1 DET + MascSg or AJ + MascPl);
 
 
@@ -1561,5 +1568,8 @@ REMOVE V IF (0 ("<braves>")) (1 N + MascPl);
 REMOVE V IF (0 ("<lei>")) (-1 DET + FemSg);
 REMOVE V IF (0 ("<lei>")) (-1 AJ + FemSg) (-2 DET + FemSg);
 SELECT N IF (0 ("<lei>")) (-1 PREAV) (-2 AJ + FemSg) (-3 DET + FemSg);
+REMOVE V IF (0 ("<sas>")) (1 N + FemPl);
+REMOVE V IF (0 ("<sas>")) (1 AJ + FemPl) (2 N + FemPl);
+REMOVE V IF (0 ("<sas>")) (1 PREAV) (2 AJ + FemPl) (3 N + FemPl);
 
 
