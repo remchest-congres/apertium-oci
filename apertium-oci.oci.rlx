@@ -374,12 +374,6 @@ SELECT N IF (0 ("lei") + &&AcordSN) (1 Cog OR unknownMajIni) ;	# lei Deixonne
 
 SELECT PREP IF (0 ("entre")) (1C N_AJ OR NP) ;
 
-REMOVE ("cosina") IF (-1 DETpos + FemSg) (0 ("<cosina>")) ;
-REMOVE ("cosina") IF (0 ("cosin") + FemPl) ;
-REMOVE ("cosina") IF (0 ("cosin")) (1* ("paire") OR ("pair") OR ("maire") OR ("mair") OR ("parent") OR ("fraire") OR ("sòr") OR ("cosin") OR ("oncle") OR ("tanta") OR ("nebot") OR ("grand")) ;
-REMOVE ("cosina") IF (0 ("cosin")) (-1* ("paire") OR ("pair") OR ("maire") OR ("mair") OR ("parent") OR ("fraire") OR ("sòr") OR ("cosin") OR ("oncle") OR ("tanta") OR ("nebot") OR ("grand")) ;
-REMOVE ("cosin") IF (0 ("cosina")) ;
-
 REMOVE ("desen") + N_AJ IF (0 ("desena")) (-1 ("un") OR NUM OR DETind) ;
 REMOVE ("desen") + N IF (0 ("desena") + N + Pl) ;
 REMOVE ("desen") + N IF (0 ("desena") + N) (-1 DET + FemSg) (1 De) (2 N) ;
