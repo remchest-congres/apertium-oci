@@ -192,6 +192,7 @@ LIST Venir = "venir" "vier" ;
 LIST Pareisser = "paréisser" "paréisher" ;
 LIST Parir = "parir" ;
 LIST Parer = "pàrer" ;
+
 #List Artcontrpl = "<als>" "<aus>" "<aths>" "<as>" "<dels>" "<deus>" "<dals>" "<deths>" "<des>" "<suls>" "<suus>" "<taus>" "<taths>" "<entaus>" "<entaths>" "<entàs>" "<pels>" "<peus>" "<peths>" "<preus>" "<vèls>" "<jols>" "<enquiaths>" "<ens>" "<enes>" "<endeus>" "<dambeus>" ;
 List Artcontrpl = "<als>" "<aus>" "<aths>" "<dels>" "<deus>" "<dals>" "<deths>" "<des>" "<suls>" "<suus>" "<taus>" "<taths>" "<entaus>" "<entaths>" "<entàs>" "<pels>" "<peus>" "<peths>" "<preus>" "<vèls>" "<jols>" "<enquiaths>" "<ens>" "<enes>" "<endeus>" "<dambeus>" ;
 #List Artcontrsg = "<al>" "<au>" "<ath>" "<del>" "<deu>" "<dal>" "<deth>" "<sul>" "<suu>" "<tau>" "<tath>" "<entau>" "<entath>" "<pel>" "<peu>" "<peth>" "<preu>" "<vèl>" "<jol>" "<enquiath>" "<en>" "<ene>" "<endeu>" "<dambeu>" ;
@@ -1163,6 +1164,7 @@ SELECT VBpp IF (-2 ("un") + MascSg) (-1 ("còp")) ;
 REMOVE ("corsa") OR ("corses") IF (0 ("cors")) (1 De) (2 Lenga);
 
 SELECT Fem IF (0 ("colèra")) (NOT -1/* Masc_strict) (NOT 1 Masc_strict) ;
+SELECT Fem IF (0 ("chantilly")) (NOT -1/* Masc_strict) (NOT 1 Masc_strict) ;
 
 # NUM
 
