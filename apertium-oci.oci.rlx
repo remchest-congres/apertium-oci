@@ -372,6 +372,8 @@ SELECT N IF (0 ("fin")) (1 De) (2 ("jornada") OR ("serada") OR ("vesprada") OR (
 SELECT N IF (-1C DET + &&AcordSN) (0 ("lei") + &&AcordSN) ;
 SELECT DET IF (NOT -1/* DET) (0 ("lei")) (1C N + Pl_strict) ;
 SELECT N IF (0 ("lei") + &&AcordSN) (1 Cog OR unknownMajIni) ;	# lei Deixonne
+REMOVE N IF (0 ("<estar>"i)) (-1 PREP) ;	# patch
+REMOVE N IF (0 ("<estar>"i) OR Ser + VBinf) (-1 ("har") OR ("far") OR ("hèr")) ;
 
 SELECT PREP IF (0 ("entre")) (1C N_AJ OR NP) ;
 
@@ -748,8 +750,11 @@ REMOVE ("vier") IF (0 ("venir")) ;
 REMOVE Parir IF (0 Pareisser) ;
 REMOVE Parer IF (0 Pareisser) ;
 
-# poder e podar (p.ex. podetz)
+# poder e podar (p.ex. "podetz")
 REMOVE Podar IF (0 Poder) ;
+
+# estarir e estar (p.ex. "estar")
+REMOVE ("estarir") IF (0 ("estar")) ;
 
 SELECT NUM IF (-1 ("en")) (0 ("dos")) ;
 SELECT PREP IF (0 ("en")) (1 ("dos")) ;
@@ -1032,6 +1037,7 @@ REMOVE Vconj IF (-3C Ser + Vconj + &&AcordSP) (-2 AV) (-1 AV) (0 VBpp + &&AcordS
 SELECT VBinf IF (0 AJ) (1 ("par")) ;
 SELECT AV IF (-1 Vmod) (0 ("<tornar>"i)) (1 VBinf) ;	# pòdi tornar manjar
 SELECT VBinf IF (-1 Vmod LINK 0C V) (0 VBinf) ;	# pòdi manjar
+SELECT VBinf IF (-1 ("anar") OR ("tornar") LINK 0C V) (0 VBinf) ;	# anar estar
 SELECT Vmod IF (0 Vmod) (1C VBinf OR ("<èsser>"i) OR ("<èster>"i) OR ("<èstre>"i) OR ("<estar>"i) OR ("<far>"i) OR ("<har>"i) OR ("<hèr>"i)) (NOT 0 PREP) ;	# pòdi manjar
 SELECT Vmod IF (0 Vmod) (1C VBinf OR ("<èsser>"i) OR ("<èster>"i) OR ("<èstre>"i) OR ("<estar>"i) OR ("<far>"i) OR ("<har>"i) OR ("<hèr>"i)) (0 Artcontrsg OR Artcontrpl) ;	# deu manjar
 SELECT VBinf IF (-2 Vmod) (-1 AV OR Pro) (0 VBinf) (NOT 0 PREP) ;	# pòdi pas manjar
