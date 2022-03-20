@@ -759,6 +759,9 @@ REMOVE ("estarir") IF (0 ("estar")) ;
 SELECT NUM IF (-1 ("en")) (0 ("dos")) ;
 SELECT PREP IF (0 ("en")) (1 ("dos")) ;
 
+SELECT NUM IF (0 ("cent")) (1 ("mil")) ;
+SELECT NUM IF (0 ("cent")) (1C N_AJ + Pl) ;
+
 SELECT V IF (0 ("tornar")) (1C VBinf) ;
 
 SELECT N OR NP IF (-1 De) (0 ("òc")) ;
