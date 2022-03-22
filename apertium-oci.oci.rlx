@@ -192,6 +192,8 @@ LIST Venir = "venir" "vier" ;
 LIST Pareisser = "paréisser" "paréisher" ;
 LIST Parir = "parir" ;
 LIST Parer = "pàrer" ;
+LIST Gausir = "gausir" ;
+LIST Gausar = "gausar" ;
 
 #List Artcontrpl = "<als>" "<aus>" "<aths>" "<as>" "<dels>" "<deus>" "<dals>" "<deths>" "<des>" "<suls>" "<suus>" "<taus>" "<taths>" "<entaus>" "<entaths>" "<entàs>" "<pels>" "<peus>" "<peths>" "<preus>" "<vèls>" "<jols>" "<enquiaths>" "<ens>" "<enes>" "<endeus>" "<dambeus>" ;
 List Artcontrpl = "<als>" "<aus>" "<aths>" "<dels>" "<deus>" "<dals>" "<deths>" "<des>" "<suls>" "<suus>" "<taus>" "<taths>" "<entaus>" "<entaths>" "<entàs>" "<pels>" "<peus>" "<peths>" "<preus>" "<vèls>" "<jols>" "<enquiaths>" "<ens>" "<enes>" "<endeus>" "<dambeus>" ;
@@ -752,6 +754,9 @@ REMOVE Parer IF (0 Pareisser) ;
 
 # poder e podar (p.ex. "podetz")
 REMOVE Podar IF (0 Poder) ;
+
+# gausir e gausar
+REMOVE Gausir IF (0 Gausar) ;
 
 # estarir e estar (p.ex. "estar")
 REMOVE ("estarir") IF (0 ("estar")) ;
