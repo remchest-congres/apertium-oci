@@ -1179,6 +1179,7 @@ REMOVE ("corsa") OR ("corses") IF (0 ("cors")) (1 De) (2 Lenga);
 
 SELECT Fem IF (0 ("colèra")) (NOT -1/* Masc_strict) (NOT 1 Masc_strict) ;
 SELECT Fem IF (0 ("chantilly")) (NOT -1/* Masc_strict) (NOT 1 Masc_strict) ;
+SELECT Fem IF (0 ("pub")) (NOT -1/* Masc_strict) (NOT 1 Masc_strict) ;
 
 # NUM
 
