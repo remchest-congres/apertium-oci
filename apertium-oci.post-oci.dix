@@ -127,12 +127,6 @@
 			 <i>e</i>
 		 </e>
 		 <e>
-			 <p>
-				<l><a/><a/>e</l>
-				<r>e</r>
-			</p>
-		 </e>
-		 <e>
 			 <i>i</i>
 		 </e>
 		 <e>
@@ -3831,6 +3825,29 @@
 			<r>pe</r>
 		</p>
 		<par n="contraccio_per_gascon"/>
+	</e>
+
+<!-- fonciona pas
+	<e>
+		<p>
+			<l><a/>e<b/></l>
+			<r/>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+-->
+	<e>
+		<p>
+			<l><a/>e<b/></l>
+			<r>e<b/></r>
+		</p>
+		<par n="caracter_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>e<b/></l>
+			<r>e<b/></r>
+		</p>
 	</e>
 </group>
 
