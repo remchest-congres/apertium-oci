@@ -203,7 +203,7 @@ LIST Jorns = "diluns" "dimars" "dimècres" "dimèrcs" "dijòus" "dijaus" "divés
 
 List Nummois = "1" "1èr" "1ièr" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12" "13" "14" "15" "16" "17" "18" "19" "20" "21" "22" "23" "24" "25" "26" "27" "28" "29" "30" "31" "<purmèr>" "<prumèr>" "<prumièr>" "<primièr>" "<primèr>" "<dos>" "<dus>" "<tres>" "<quatre>" "<quate>" "<cinc>" "<sièis>" "<sèis>" "<sies>" "<siés>" "<siès>" "<sheis>" "<sèt>" "<uèit>" "<ueit>" "<uòch>" "<uèch>" "<nòu>" "<nau>" "<dètz>" "<onze>" "<dotze>" "<tretze>" "<catòrze>" "<catorze>" "<quatòrze>" "<quatorze>" "<quinze>" "<setze>" "<dètz-e-sèt>" "<dètz-e-uèit>" "<dètz-e-ueit>" "<dètz-e-uèch>" "<dètz-e-uòch>" "<dètz-e-nòu>" "<dètz-e-nau>" "<vint>" "<vingt>" "<vint-e-un>" "<vingt-e-un>" "<vint-e-dos>" "<vint-e-dus>" "<vingt-e-dos>" "<vingt-e-dus>"  "<vint-e-tres>" "<vingt-e-tres>" "<vint-e-quatre>" "<vingt-e-quatre>" "<vint-e-quate>" "<vingt-e-quate>" "<vint-e-cinc>" "<vingt-e-cinc>" "<vint-e-sèis>" "<vingt-e-sèis>" "<vint-e-sièis>" "<vingt-e-sièis>" "<vint-e-sies>" "<vingt-e-sies>" "<vint-e-siès>" "<vingt-e-siès>" "<vint-e-siés>" "<vingt-e-siés>" "<vint-e-sheis>" "<vingt-e-sheis>" "<vint-e-sèt>" "<vingt-e-sèt>" "<vint-e-uèit>" "<vingt-e-uèit>" "<vint-e-ueit>" "<vingt-e-ueit>" "<vint-e-uèch>" "<vingt-e-uèch>" "<vint-e-uòch>" "<vingt-e-uòch>" "<vint-e-nòu>" "<vingt-e-nòu>" "<vint-e-nau>" "<vingt-e-nau>" "<trenta>" "<trenta-e-un>" "<trenta-un>" "<dètz e uèch>" "<dètz e uòch>" "<dètz e nòu>" "<dètz e nau>" "<vingt>" "<vint e un>" "<vingt e un>" "<vint e dos>" "<vint e dus>" "<vingt e dos>" "<vingt e dus>"  "<vint e tres>" "<vingt e tres>" "<vint e quatre>" "<vingt e quatre>" "<vint e quate>" "<vingt e quate>" "<vint e cinc>" "<vingt e cinc>" "<vint e sèis>" "<vingt e sèis>" "<vint e sièis>" "<vingt e sièis>" "<vint e sies>" "<vingt e sies>" "<vint e siès>" "<vingt e siès>" "<vint e siés>" "<vingt e siés>" "<vint e sheis>" "<vingt e sheis>" "<vint e sèt>" "<vingt e sèt>" "<vint e uèit>" "<vingt e uèit>" "<vint e ueit>" "<vingt e ueit>" "<vint e uèch>" "<vingt e uèch>" "<vint e uòch>" "<vingt e uòch>" "<vint e nòu>" "<vingt e nòu>" "<vint e nau>" "<vingt e nau>" "<trenta>" "<trenta e un>" "<trenta un>" ;
 
-LIST Vdire = "dire" "díser" "respóner" "respondre" "cridar" "confessar" "con·hessar" "declarar" "afirmar" "contar" "raportar" "expausar" "desvelar" "informar" "explicar" "ensenhar" "enonciar" "anonciar" "comunicar" "precisar" "avançar" "afirmar" "afortir" "ahortir" "allegar" "explicitar" "indicar" "signalar" "significar" "escriure" "escríver" "léger" "legir" "assegurar" "jurar" "certificar" "predire" "predíser" "pensar" "enténer" "ausir" "audir" "entiéner" "entendre" "ajustar" "comentar" "denonciar" "rapelar" "raperar" "brembar" "rebrembar" "remembrar" "remombrar" "rampelar" "recordar" "rementar" "remembrar" "remembrar" "har" "far" "hèr" "concedir" "replicar" "respostir" "rebecar" "assegurar" "garantir" "guarantir" "prometre" "prométer" "insistir" "nuançar" "matisar" "pavonar" "ajustar" "apondre" "híger" "ahíger" "acusar" "reprene" "ramoncinar" "increpar" "semonsar" "conclure" "concludir" ;
+LIST Vdire = "dire" "díser" "respóner" "respondre" "cridar" "confessar" "con·hessar" "declarar" "afirmar" "reafirmar" "manifestar" "contar" "raportar" "expausar" "desvelar" "informar" "explicar" "ensenhar" "enonciar" "anonciar" "comunicar" "precisar" "avançar" "afortir" "ahortir" "allegar" "explicitar" "indicar" "signalar" "significar" "escriure" "escríver" "léger" "legir" "assegurar" "jurar" "certificar" "predire" "predíser" "pensar" "enténer" "ausir" "audir" "entiéner" "entendre" "ajustar" "comentar" "denonciar" "rapelar" "raperar" "brembar" "rebrembar" "remembrar" "remombrar" "rampelar" "recordar" "rementar" "remembrar" "remembrar" "har" "far" "hèr" "concedir" "replicar" "respostir" "rebecar" "assegurar" "garantir" "guarantir" "prometre" "prométer" "insistir" "nuançar" "matisar" "pavonar" "ajustar" "apondre" "híger" "ahíger" "acusar" "reprene" "ramoncinar" "increpar" "semonsar" "conclure" "concludir" ;
 
 
 SET AdjOrd = ("primièr") OR ("primèr") OR  ("prumièr") OR ("prumèr") OR ("purmèr")
@@ -780,7 +780,9 @@ SELECT NUM IF (-1 ("en")) (0 ("dos")) ;
 SELECT PREP IF (0 ("en")) (1 ("dos")) ;
 
 SELECT NUM IF (0 ("cent")) (1 ("mil")) ;
-SELECT NUM IF (0 ("cent")) (1C N_AJ + Pl) ;
+SELECT NUM IF (0 ("cent")) (1 N_AJ + Pl) ;
+SELECT NUM IF (-1 NUM) (0 ("mil")) ;
+SELECT NUM IF (0 ("mil")) (1 N_AJ + Pl) ;
 
 SELECT V IF (0 ("tornar")) (1C VBinf) ;
 
@@ -900,7 +902,10 @@ SELECT V IF (0 An + MascSg) (1C AV) (2 VBpp + MascSg) ;
 
 # NP
 
-SELECT NP OR Acr IF (NOT -1 BOS) (NOT -1 (META:/—/r)) ;
+SELECT N IF (0 ("rei")) (1 ("de")) (2 Top OR unknownMajIni) ;
+SELECT N IF (0 ("marqués")) (1 ("de")) (2 Top OR unknownMajIni) ;
+SELECT NP OR Acr IF (NOT -1 BOS) (NOT -1 (META:/—/r))
+	(NOT 0 ("gran") OR ("grand") OR ("rei") OR ("marqués") OR ("internet") OR ("francés") OR ("catalan") OR ("luna") OR ("marina") OR ("nadal")) ;
 REMOVE N + Sg IF (-1 BOS) (0 NP) (NOT 1 CM) (1* V OR Ser BARRIER (":") OR EOS) ;	# Fred es mort ; Mair, vòs que’t haci ; Vacas e vetèths qu’arribavan
 REMOVE AJ + Sg IF (-1 BOS) (0 NP) (NOT 1 N + Sg) (NOT 1 De) (NOT 1 CM) (NOT 1* ("!")) (1* V OR Ser BARRIER (":") OR EOS) ;	# Fred es mort
 
@@ -1364,8 +1369,9 @@ SELECT AJ IF (-2 AJ + &&AcordSN) (-1 CM) (0C N_AJ_PP) (0 AJ + &&AcordSN) (1 Conj
 SELECT AJ IF (-2C AJ) (-2 AJ + &&AcordSN) (-1 CM) (0C N_AJ_PP) (0 AJ + &&AcordSN) (1 CM) (2 AJ + &&AcordSN) (NOT 2 AdjPre) ;
 SELECT AJ IF (-4C AJ) (-4 AJ + &&AcordSP) (-3 CM) (-2C AJ) (-2 AJ + &&AcordSP) (-1 CM) (0 AJ + &&AcordSP) (NOT 0 AdjPre) ;
 
-
 # N / V
+
+REMOVE V + Sg IF (-1C NUM) ;		# vint mil legas
 
 REMOVE N IF (-1C PRON) (0 V) ;		# qui sap
 REMOVE V + Pers IF (-1C V + Pers) ;	# voletz ve pariar
@@ -1373,6 +1379,10 @@ REMOVE V + Pers IF (1C V + Pers) ;	# voletz ve pariar
 
 REMOVE VBpp IF (-1C DET + &&AcordSN OR Pro) (0 N + &&AcordSN) ;		# lo resultat
 REMOVE VBpp IF (0 ("format")) (1 NP OR Acr) ;	# format PDF
+
+# PR / AV
+
+REMOVE AV IF (-1C N_AJ) (0 PREP) (1C DET) ;	# vint mil legas jos lo mar
 
 # MOTS
 
