@@ -181,6 +181,8 @@ LIST Si = "si" ;
 LIST Las = "las" ;
 LIST Mas_cnjcoo = "mas" "mes" ;
 LIST Estat = "estat" ;
+LIST Calar = "calar" ;
+LIST Caler = "caler" ;
 LIST Volar = "volar" ;
 LIST Voler = "voler" ;
 LIST Podar = "podar" ;
@@ -766,6 +768,9 @@ REMOVE ("vier") IF (0 ("venir")) ;
 # paréisser/paréisher e parir (p. ex. "pareish")
 REMOVE Parir IF (0 Pareisser) ;
 REMOVE Parer IF (0 Pareisser) ;
+
+# caler e calar (p.ex. "calè")
+REMOVE Calar IF (0 Caler) ;
 
 # poder e podar (p.ex. "podetz")
 REMOVE Podar IF (0 Poder) ;
