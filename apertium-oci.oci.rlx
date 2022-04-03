@@ -833,7 +833,8 @@ SELECT N IF (0 (META:/-/r)) (1C N) ;
 #Un nom pot pas seguir qu'un vèrbe, un adjectiu, un determinant, un numeral, una prepausicion o un pronom (levat los personals)
 #(en titolars periodístics, però, es comença sovint per un nom)
 # non : Patxi Zabaleta, actualament cap del partit
-REMOVE N IF (NOT -1 BOS OR CM OR Conjco OR V OR AJ OR DET OR NUM OR PREP OR PRON - PRONPers) (NOT -1/* ("de")) (NOT -2 CM) ;
+REMOVE N IF (NOT -1 BOS OR CM OR Conjco OR V OR AJ OR AV OR DET OR NUM OR PREP OR PRON - PRONPers) (NOT -1/* ("de")) (NOT -2 CM) ;
+REMOVE N IF (NOT -1 BOS OR CM OR Conjco OR V OR AJ OR AV + Itg OR DET OR NUM OR PREP OR PRON - PRONPers) (NOT -1/* ("de")) (NOT -2 CM) (NOT -2 V LINK NOT 0 VBpp) ;
 REMOVE N IF (-2 N + &&AcordSN) (-1 AJ + &&AcordSN) (0 VBpp + &&AcordSN) ;	# lo ministre canadian encargat
 
 REMOVE AJ IF (-1C Conjsub OR Conjadv OR Rel) ;
@@ -1382,9 +1383,19 @@ SELECT AJ IF (-4C AJ) (-4 AJ + &&AcordSP) (-3 CM) (-2C AJ) (-2 AJ + &&AcordSP) (
 
 REMOVE V + Sg IF (-1C NUM) ;		# vint mil legas
 
+REMOVE V + Pers IF (NOT -2* Rel) (-1C V LINK NOT 0 VBpp) ;	# enta finançar programas
+REMOVE V + Pers IF (NOT -3* Rel) (-2C V LINK NOT 0 VBpp) (-1C AV OR PREAV LINK NOT 0 Itg) ;	# finançar pas programas ; sabes on demora
+REMOVE V + Pers IF (NOT -1* Rel) (1C V LINK NOT 0 VBpp OR VBinf) ;
+
 REMOVE N IF (-1C PRON) (0 V) ;		# qui sap
 REMOVE V + Pers IF (-1C V + Pers) ;	# voletz ve pariar
 REMOVE V + Pers IF (1C V + Pers) ;	# voletz ve pariar
+
+REMOVE N IF (-1C Conjsub OR Conjadv OR Rel OR Itg) (0 V) (1C DET) ;		# quan fan un trabalh
+REMOVE N IF (-1C Conjsub OR Conjadv OR Rel OR Itg) (0 V) (1C N) ;		# quan fan un trabalh
+REMOVE N IF (-1C Conjsub OR Conjadv OR Rel OR Itg) (0 V) (1 DET + &&AcordSN) (2 N + &&AcordSN) ;		# quan fan un trabalh
+REMOVE N IF (-2 DET + &&AcordSN) (-1 N + &&AcordSN + Pl) (0 ("<an>"i)) ;		# los participants an
+REMOVE N IF (-1 N_AJ + Pl) (0 ("<an>"i)) ;		# los participants an
 
 REMOVE VBpp IF (-1C DET + &&AcordSN OR Pro) (0 N + &&AcordSN) ;		# lo resultat
 REMOVE VBpp IF (0 ("format")) (1 NP OR Acr) ;	# format PDF
@@ -1402,6 +1413,9 @@ SELECT Haver IF (0 A) (1C VBpp);	# a cantat
 SELECT Ser IF (-1 Ser) (0 ("estat"));	# soi estat
 SELECT Ser IF (-2 Ser) (-1 AV) (0 ("estat"));	# soi pas estat
 SELECT Ser IF (-3 Ser) (-2 AV) (-1 AV) (0 ("estat"));	# soi pas totjorn estat
+
+REMOVE V IF (-1C V LINK NOT 0 VBpp) (0 A) ;
+REMOVE V IF (-2C V LINK NOT 0 VBpp) (-1C AV OR PREAV) (0 A) ;
 
 REMOVE Pro IF (NOT 1 V OR Pro OR unknown) ;
 SELECT DET + &&AcordSN IF (0 ("un") + &&AcordSN) (1 ("«")) (2 N_AJ + &&AcordSN) ;
