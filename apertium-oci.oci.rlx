@@ -781,6 +781,8 @@ REMOVE Gausir IF (0 Gausar) ;
 # estarir e estar (p.ex. "estar")
 REMOVE ("estarir") IF (0 ("estar")) ;
 
+SELECT N IF (0 ("<lei>"i)) (1 ("[1-2][0-9][0-9][0-9]"r)) ;		# lei 1901
+
 SELECT NUM IF (-1 ("en")) (0 ("dos")) ;
 SELECT PREP IF (0 ("en")) (1 ("dos")) ;
 
@@ -907,6 +909,7 @@ SELECT V IF (0 An + MascSg) (1C AV) (2 VBpp + MascSg) ;
 
 # NP
 
+SELECT N IF (0 ("carta")) (1 ("de")) (2 ("crèdit") OR ("credit")) ;
 SELECT N IF (0 ("rei")) (1 ("de")) (2 Top OR unknownMajIni) ;
 SELECT N IF (0 ("marqués")) (1 ("de")) (2 Top OR unknownMajIni) ;
 SELECT NP OR Acr IF (NOT -1 BOS) (NOT -1 (META:/—/r))
