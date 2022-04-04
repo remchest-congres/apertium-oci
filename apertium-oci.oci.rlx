@@ -1648,4 +1648,17 @@ REMOVE N IF (0 ("<pels>")) (NOT -2 DET + MascPl) (-1 AJ + MascPl) ;
 REMOVE N IF (0 ("<pel>")) (NOT -1 DET + MascSg OR AJ + MascSg) ;
 REMOVE N IF (0 ("<pel>")) (NOT -2 DET + MascSg) (-1 AJ + MascSg) ;
 
-
+SELECT DET IF (0 ("<aquel>") OR ("<aqueth>")) (1 N + MascSg OR NP + MascSg);
+SELECT DET IF (0 ("<aquel>") OR ("<aqueth>")) (1 AJ + MascSg) (2 N + MascSg OR NP + MascSg);
+SELECT DET IF (0 ("<aquel>") OR ("<aqueth>")) (1 ("«")) (2 N + MascSg OR NP + MascSg);
+SELECT DET IF (0 ("<aqueles>") OR ("<aqueths>") OR ("aquels")) (1 N + MascPl OR NP + MascPl);
+SELECT DET IF (0 ("<aqueles>") OR ("<aqueths>") OR ("aquels")) (1 AJ + MascPl) (2 N + MascPl OR NP + MascPl);
+SELECT DET IF (0 ("<aqueles>") OR ("<aqueths>") OR ("aquels")) (1 ("«")) (2 N + MascPl OR NP + MascPl);
+SELECT DET IF (0 ("<aquela>") OR ("<aquera>")) (1 N + FemSg OR NP + FemSg);
+SELECT DET IF (0 ("<aquela>") OR ("<aquera>")) (1 AJ + FemSg) (2 N + FemSg OR NP + FemSg);
+SELECT DET IF (0 ("<aquela>") OR ("<aquera>")) (1 ("«")) (2 N + FemSg OR NP + FemSg);
+SELECT DET IF (0 ("<aquelas>") OR ("<aqueras>")) (1 N + FemPl OR NP + FemPl);
+SELECT DET IF (0 ("<aquelas>") OR ("<aqueras>")) (1 AJ + FemPl) (2 N + FemPl OR NP + FemPl);
+SELECT DET IF (0 ("<aquelas>") OR ("<aqueras>")) (1 ("«")) (2 N + FemPl OR NP + FemPl);
+SELECT DET IF (0 ("aquel") OR ("aqueth")) (1 unknown);
+SELECT DET IF (0 ("aquel") OR ("aqueth")) (1 ("«")) (2 unknown);
