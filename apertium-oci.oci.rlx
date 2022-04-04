@@ -1407,6 +1407,8 @@ REMOVE AV IF (-1C N_AJ) (0 PREP) (1C DET) ;	# vint mil legas jos lo mar
 # MOTS
 
 SELECT (mf) IF (0 ("<ròms>"i)) ;
+SELECT (mf) IF (0 ("<ròm>"i))  (-1 DET + Fem_strict);
+SELECT (mf) IF (0 ("<ròm>"i))  (-1 AJ + Fem) (-2 DET + Fem_strict);
 REMOVE N + (mf) IF (0 ("<ròm>"i)) ;
 
 SELECT Haver IF (0 A) (1C VBpp);	# a cantat
@@ -1553,6 +1555,10 @@ REMOVE N IF (1 NP + MascSg) (0 ("<peu>"i) OR ("<pel>"i)) (NOT -1 DET + Sg) (NOT 
 REMOVE N IF (1 NP + MascPl) (0 ("<peus>"i) OR ("<pels>"i)) (NOT -1 DET + Pl) (NOT -1 Artcontrpl) ;
 REMOVE N IF (1 AdjPre + MascSg) (0 ("<peu>"i) OR ("<pel>"i)) (NOT -1 DET + Sg) (NOT -1 Artcontrsg) ;
 REMOVE N IF (1 AdjPre + MascPl) (0 ("<peus>"i) OR ("<pels>"i)) (NOT -1 DET + Pl) (NOT -1 Artcontrpl) ;
+REMOVE N IF (1 NumOrd OR NUM) (0 ("<peus>"i) OR ("<pels>"i)) (NOT -1 DET + Pl) (NOT -1 Artcontrpl) ;
+REMOVE N IF (0 ("<Peus>") OR ("<Pels>")) (NOT 1 AJ) ;
+REMOVE N IF (0 ("<Peu>") OR ("<Pel>")) (NOT 1 AJ) ;
+REMOVE N IF (-1 SENT) (0 ("<peus>"i) OR ("<pels>"i)) (NOT 1 SENT OR ("e") OR AJ) ;
 
 # de còps
 REMOVE PREP IF (NOT -1 N_AJ) (0 ("de còps")) ;
