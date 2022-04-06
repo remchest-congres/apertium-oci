@@ -385,6 +385,9 @@ SELECT PREP IF (0 ("entre")) (1C N_AJ OR NP) ;
 SELECT PREP IF (0 ("entre")) (0 (META:/-/r)) ;
 SELECT PREP IF (0 ("entre")) (1 unknown) ;
 
+SELECT SUB:2 N (0 ("<au darrèr>"i)) (1C N + MascSg) ;
+SELECT SUB:2 N (0 ("<au darrèr>"i)) (1C AJ_PP + MascSg) ;
+
 REMOVE ("desen") + N_AJ IF (0 ("desena")) (-1 ("un") OR NUM OR DETind) ;
 REMOVE ("desen") + N IF (0 ("desena") + N + Pl) ;
 REMOVE ("desen") + N IF (0 ("desena") + N) (-1 DET + FemSg) (1 De) (2 N) ;
@@ -1667,3 +1670,5 @@ SELECT DET IF (0 ("<aquelas>") OR ("<aqueras>")) (1 AJ + FemPl) (2 N + FemPl OR 
 SELECT DET IF (0 ("<aquelas>") OR ("<aqueras>")) (1 ("«")) (2 N + FemPl OR NP + FemPl);
 SELECT DET IF (0 ("aquel") OR ("aqueth")) (1 unknown);
 SELECT DET IF (0 ("aquel") OR ("aqueth")) (1 ("«")) (2 unknown);
+
+SELECT AV (0 ("<au darrèr>"i)) ;
