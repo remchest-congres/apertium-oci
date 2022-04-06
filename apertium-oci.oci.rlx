@@ -196,6 +196,7 @@ LIST Parir = "parir" ;
 LIST Parer = "pàrer" ;
 LIST Gausir = "gausir" ;
 LIST Gausar = "gausar" ;
+LIST DetDe = ("fòrça de" det) ("bravament de" det) ("brica de" det) ("briga de" det) ("cap de" det) ("chic de" det) ("drin de" det) ("de bisçantenas de" det) ("ges de" det) ("hèra de" det) ("mai de" det) ("milantas de" det) ("pas cap de" det) ("pauc de" det) ("plan de" det) ("tant de" det) ("tròp de" det) ("ua balada de" det) ("ua horrèra de" det) ("ua parrabastèra de" det) ("ua pièla de" det) ("ua sarabantena de" det)  ("ua sòrta de" det) ("ua tropa de" det) ("ua troperada de" det) ("ua ahoalh de" det) ("un arramat de" det) ("un beròi tropèth de" det) ("un bricon de" det) ("un chic de" det) ("un chiquet de" det) ("un drin de" det) ("un escag de" det) ("un frami de" det) ("un fum de" det) ("un grand nombre de" det) ("un hardèu de" det) ("un hèish de" det) ("un hum de" det) ("un molon de" det) ("un mont de" det) ("un pauc de" det) ("un sarròt de" det) ("un tropèth de" det) ("una brica de" det) ("una brina de" det) ("una idèa de" det) ("quant de" det) ;
 
 #List Artcontrpl = "<als>" "<aus>" "<aths>" "<as>" "<dels>" "<deus>" "<dals>" "<deths>" "<des>" "<suls>" "<suus>" "<taus>" "<taths>" "<entaus>" "<entaths>" "<entàs>" "<pels>" "<peus>" "<peths>" "<preus>" "<vèls>" "<jols>" "<enquiaths>" "<ens>" "<enes>" "<endeus>" "<dambeus>" ;
 List Artcontrpl = "<als>" "<aus>" "<aths>" "<dels>" "<deus>" "<dals>" "<deths>" "<des>" "<suls>" "<suus>" "<taus>" "<taths>" "<entaus>" "<entaths>" "<entàs>" "<pels>" "<peus>" "<peths>" "<preus>" "<vèls>" "<jols>" "<enquiaths>" "<ens>" "<enes>" "<endeus>" "<dambeus>" ;
@@ -781,6 +782,8 @@ REMOVE Gausir IF (0 Gausar) ;
 # estarir e estar (p.ex. "estar")
 REMOVE ("estarir") IF (0 ("estar")) ;
 
+REMOVE V IF (0 (<"granda">)) ;
+
 SELECT N IF (0 ("<lei>"i)) (1 ("[1-2][0-9][0-9][0-9]"r)) ;		# lei 1901
 
 SELECT NUM IF (-1 ("en")) (0 ("dos")) ;
@@ -1166,7 +1169,7 @@ SELECT N IF (-1 De) (0 ("lei")) (NOT 1C N + Pl_strict) ;	# patch
 
 SELECT DET + &&AcordSN IF (1 ("un") + &&AcordSN) (2 Conjco) (3 DET) (4 ("altre") OR ("aute")) ;
 SELECT Tn + &&AcordSN IF (-1C DET + &&AcordSN) (0 ("un") + &&AcordSN) ;
-REMOVE DET IF (-1C/* DET) ;	# un cèrt estacament
+REMOVE DET IF (-1C/* DET) (NOT -1 DetDe) ;	# un cèrt estacament
 REMOVE DET IF (0 DET) (NOT 1 N OR AJ OR Tn OR NP OR NUM OR AV OR PREAV OR Rel OR unknown) (NOT 0 DETdef LINK 1 De) ;
 REMOVE DET + &&AcordSN IF (0 DET) (1 N_AJ OR NP OR Tn) (NOT 1 NUM OR AV OR PREAV OR Rel) (0 DET + &&AcordSN) (NOT 1 N_AJ + &&AcordSN OR NP + &&AcordSN OR Tn + &&AcordSN) ;	# Avèm entrevistat aquesta pendent la Hèsta
 REMOVE SUB:1 DET IF (0/* DET) (1C DET) ;	# en los acès
