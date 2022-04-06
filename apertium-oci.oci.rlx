@@ -381,6 +381,8 @@ REMOVE N IF (0 ("<estar>"i)) (-1 PREP) ;	# patch
 REMOVE N IF (0 ("<estar>"i) OR Ser + VBinf) (-1 ("har") OR ("far") OR ("hèr")) ;
 
 SELECT PREP IF (0 ("entre")) (1C N_AJ OR NP) ;
+SELECT PREP IF (0 ("entre")) (0 (META:/-/r)) ;
+SELECT PREP IF (0 ("entre")) (1 unknown) ;
 
 REMOVE ("desen") + N_AJ IF (0 ("desena")) (-1 ("un") OR NUM OR DETind) ;
 REMOVE ("desen") + N IF (0 ("desena") + N + Pl) ;
@@ -852,7 +854,7 @@ REMOVE Enon IF (NOT 1 V OR Pro);
 REMOVE SUB:1 Enon IF (NOT 1 V OR Pro);
 
 #Una prepausicion es totjorn seguida d'un nom, pronom, adverb, numeral, infinitiu, determinant o adjectiu
-REMOVE PREP IF (NOT 1 N OR PRON OR AV OR NUM OR NP OR VBinf OR DET OR AJ) (NOT 0/* PREP + DET) (NOT 0/* PREP + N) (NOT 0 ("en tot")) ;
+REMOVE PREP IF (NOT 1 N OR PRON OR AV OR NUM OR NP OR VBinf OR DET OR AJ OR unknown) (NOT 0/* PREP + DET) (NOT 0/* PREP + N) (NOT 0 ("en tot")) ;
 
 #Es pas un vèrbe se, dempuèi lo darrièr vèrbe conjugat, avèm pas agut de novèla proposicion
 #REMOVE Vconj IF (NOT -1* intrprop BARRIER Vconj) ;
