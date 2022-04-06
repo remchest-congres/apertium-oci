@@ -385,7 +385,9 @@ SELECT PREP IF (0 ("entre")) (1C N_AJ OR NP) ;
 SELECT PREP IF (0 ("entre")) (0 (META:/-/r)) ;
 SELECT PREP IF (0 ("entre")) (1 unknown) ;
 
-SELECT SUB:2 N (0 ("<au darrèr>"i)) (1C N + MascSg) ;
+SELECT SUB:2 AJ (0 ("<au darrèr>"i)) (1C N + MascSg) ;
+SELECT SUB:2 AJ (0 ("<au darrèr>"i)) (1C VBpp + MascSg) ;	# au darrèr arribat
+SELECT SUB:2 AJ (0 ("<au darrèr>"i)) (1C N_AJ + MascSg) (NOT 2 AJ + MascSg) ;
 SELECT SUB:2 N (0 ("<au darrèr>"i)) (1C AJ_PP + MascSg) ;
 
 REMOVE ("desen") + N_AJ IF (0 ("desena")) (-1 ("un") OR NUM OR DETind) ;
