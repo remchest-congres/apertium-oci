@@ -789,6 +789,8 @@ REMOVE Gausir IF (0 Gausar) ;
 # estarir e estar (p.ex. "estar")
 REMOVE ("estarir") IF (0 ("estar")) ;
 
+REMOVE NP IF (0 ("Èra")) (-1 BOS OR Lpar) ;
+
 REMOVE V IF (0 (<"granda">)) ;
 
 SELECT N IF (0 ("<lei>"i)) (1 ("[1-2][0-9][0-9][0-9]"r)) ;		# lei 1901
@@ -923,7 +925,9 @@ SELECT V IF (0 An + MascSg) (1C AV) (2 VBpp + MascSg) ;
 SELECT N IF (0 ("carta")) (1 ("de")) (2 ("crèdit") OR ("credit")) ;
 SELECT N IF (0 ("rei")) (1 ("de")) (2 Top OR unknownMajIni) ;
 SELECT N IF (0 ("marqués")) (1 ("de")) (2 Top OR unknownMajIni) ;
-SELECT NP OR Acr IF (NOT -1 BOS) (NOT -1 (META:/—/r))
+SELECT NP OR Acr IF (NOT -1 BOS OR Lpar) (NOT -1 (META:/—/r))
+	(NOT 0 ("gran") OR ("grand") OR ("rei") OR ("marqués") OR ("internet") OR ("francés") OR ("Catalan") OR ("Gascon") OR ("Aragonés") OR ("luna") OR ("marina") OR ("nadal") OR ("Cort") OR ("justícia") OR ("Abril")) ;
+SELECT NP OR Acr IF (NOT -2 BOS) (-1 Lpar)
 	(NOT 0 ("gran") OR ("grand") OR ("rei") OR ("marqués") OR ("internet") OR ("francés") OR ("Catalan") OR ("Gascon") OR ("Aragonés") OR ("luna") OR ("marina") OR ("nadal") OR ("Cort") OR ("justícia") OR ("Abril")) ;
 REMOVE N + Sg IF (-1 BOS) (0 NP) (NOT 1 CM) (1* V OR Ser BARRIER (":") OR EOS) ;	# Fred es mort ; Mair, vòs que’t haci ; Vacas e vetèths qu’arribavan
 REMOVE AJ + Sg IF (-1 BOS) (0 NP) (NOT 1 N + Sg) (NOT 1 De) (NOT 1 CM) (NOT 1* ("!")) (1* V OR Ser BARRIER (":") OR EOS) ;	# Fred es mort
