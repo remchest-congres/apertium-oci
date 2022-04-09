@@ -789,6 +789,9 @@ REMOVE Gausir IF (0 Gausar) ;
 # estarir e estar (p.ex. "estar")
 REMOVE ("estarir") IF (0 ("estar")) ;
 
+# ròder e róder (p.ex. "rodut")
+REMOVE ("róder") IF (0 ("ròder")) ;
+
 REMOVE NP IF (0 ("Èra")) (-1 BOS OR Lpar) ;
 
 REMOVE V IF (0 (<"granda">)) ;
