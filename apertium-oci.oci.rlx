@@ -69,6 +69,7 @@ LIST Vconj_indic = pri pii ifi fti ifi cni ;
 LIST PRI = pri ;
 LIST PRS = prs ;
 LIST PIS = pis ;
+LIST PII = pii ;
 LIST Itg = itg ;
 LIST DETdef = (det def);
 LIST DETind = (det ind);
@@ -1681,3 +1682,8 @@ SELECT DET IF (0 ("aquel") OR ("aqueth")) (1 unknown);
 SELECT DET IF (0 ("aquel") OR ("aqueth")) (1 ("«")) (2 unknown);
 
 SELECT AV (0 ("<au darrèr>"i)) ;
+
+SELECT N IF (0 ("par")) (1 ("de")) ;
+
+#de completar : desambiguizacion present imperfait
+SELECT PRS IF (0 PRS) (0 PII) ;
