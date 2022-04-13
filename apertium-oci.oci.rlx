@@ -15,6 +15,7 @@ LIST EOS = <<< sent ;
 
 #Categorias
 LIST V = vblex vbser vbhaver vbmod ;
+LIST Verb = vblex ;
 LIST Ser = vbser ;
 LIST Haver = vbhaver ;
 LIST Aver = "aver" "auer" ;
@@ -186,6 +187,7 @@ LIST Se = "se" ;
 LIST Si = "si" ;
 LIST Las = "las" ;
 LIST Mas_cnjcoo = "mas" "mes" ;
+LIST Semblar_Pareisser = "semblar" "pareisher" "paréisher" ;
 LIST Estat = "estat" ;
 LIST Calar = "calar" ;
 LIST Caler = "caler" ;
@@ -196,6 +198,7 @@ LIST Poder = "poder" ;
 LIST Seire = "sèire" ;
 LIST Saber = "saber" "sàber" ;
 LIST Vengar = "vengar" ;
+LIST Vener = "véner" "vénder" "vendre";
 LIST Venir = "venir" "vier" ;
 LIST Pareisser = "paréisser" "paréisher" ;
 LIST Parir = "parir" ;
@@ -469,7 +472,11 @@ SELECT N + (mf) IF (-1 ("<pel>"i) OR ("<pels>"i)) (0 Cap_de_del) ;
 SELECT N + (mf) IF (-1 ("<pel>"i) OR ("<pels>"i)) (0 ("cap")) (1 De) ;
 SELECT N + (mf) IF (-2 ("per")) (-1 DET + &&AcordSN) (0 Cap_de_del + &&AcordSN) ;
 SELECT N + (mf) IF (-2 ("per")) (-1 DET + &&AcordSN) (0 ("cap") + &&AcordSN) (1 De) ;
-SELECT N + (m) IF (0 ("cap")) (1 De) (2 ("pont")) ;
+SELECT N + (m) IF (0 ("cap")) (1 De) (2 ("pont") OR ("pònt") OR ("lista")) ;
+SELECT N + (m) IF (0 Cap_de) (1 ("pont") OR ("pònt") OR ("lista")) ;
+SELECT N + (m) IF (0 Caps_de) (1 ("pont") OR ("pònt") OR ("lista")) ;
+SELECT N + (m) IF (-1 ("<al>"i) OR ("<au>"i)) (0 Cap_de) ;
+
 
 REMOVE PREP IF (0 A_de) (NOT 1 N_AJ OR AV OR PREAV) ;	# path
 REMOVE PREP IF (0 A_de) (1 AV OR PREAV) (NOT 2 N_AJ) ;	# path
@@ -788,6 +795,14 @@ REMOVE Vengar + P2 + Sg IF (NOT -1 Pro + P2 + Sg) (0 Venir) (0 Vengar + P2 + Sg)
 REMOVE Vengar + P2 + Pl IF (NOT -1 Pro + P2 + Pl) (0 Venir) (0 Vengar + P2 + Pl) (NOT 0 Vengar + VBimp) ;	# patch
 REMOVE ("vier") IF (0 ("venir")) ;
 
+# venir/véner
+REMOVE Venir IF (0 Vener) (1 ("car")) ;
+REMOVE Venir IF (0 Vener) (1 ("bon")) (2 ("mercat") OR ("pretz")) ;
+REMOVE Venir IF (0 Vener) (1 AV) (2 ("car")) ;
+REMOVE Venir IF (0 Vener) (1 AV) (2 ("bon")) (3 ("mercat") OR ("pretz")) ;
+REMOVE Venir IF (0 Vener) (1 AV) (2 AV) (3 ("car")) ;
+REMOVE Venir IF (0 Vener) (1 AV) (2 AV) (3 ("bon")) (4 ("mercat") OR ("pretz")) ;
+
 # paréisser/paréisher e parir (p. ex. "pareish")
 REMOVE Parir IF (0 Pareisser) ;
 REMOVE Parer IF (0 Pareisser) ;
@@ -882,7 +897,8 @@ REMOVE Enon IF (NOT 1 V OR Pro);
 REMOVE SUB:1 Enon IF (NOT 1 V OR Pro);
 
 #Una prepausicion es totjorn seguida d'un nom, pronom, adverb, numeral, infinitiu, determinant o adjectiu
-REMOVE PREP IF (NOT 1 N OR PRON OR AV OR NUM OR NP OR VBinf OR DET OR AJ OR unknown) (NOT 0/* PREP + DET) (NOT 0/* PREP + N) (NOT 0 ("en tot")) ;
+REMOVE PREP IF (NOT 1 N OR PRON OR AV OR NUM OR NP OR VBinf OR DET OR AJ OR ("de") OR unknown) (NOT 0/* PREP + DET) (NOT 0/* PREP + N) (NOT 0 ("en tot")) ;	# a luchat pendent d'annadas
+REMOVE PREP IF (1 ("de")) (NOT 2 N OR AJ) ;	# a luchat pendent d'annadas
 
 #Es pas un vèrbe se, dempuèi lo darrièr vèrbe conjugat, avèm pas agut de novèla proposicion
 #REMOVE Vconj IF (NOT -1* intrprop BARRIER Vconj) ;
@@ -1206,8 +1222,8 @@ SELECT PREAV IF (0 ("fòrça")) (1C AJ) ;
 SELECT AV IF (0 ("fòrça")) (1C VBpp) ;
 SELECT AV IF (0 ("fòrça")) (1 AdvComp) ;
 SELECT PREAV IF (-1C N_AJ + &&AcordSN) (0 ("fòrça")) (1 AJ + &&AcordSN) ; 
-SELECT DETind + &&AcordSN IF (0 DETind + &&AcordSN) (1 N + &&AcordSN) ;	# un enfant
-SELECT DETind + &&AcordSN IF (0 DETind + &&AcordSN) (1 AJ + &&AcordSN) (NOT 0 ("força") OR ("horça")) ;	# un jaune
+SELECT DETind + &&AcordSN IF (NOT -1 DET) (0 DETind + &&AcordSN) (1 N + &&AcordSN) ;	# un enfant ; lor cap de lista
+SELECT DETind + &&AcordSN IF (NOT -1 DET) (0 DETind + &&AcordSN) (1 AJ + &&AcordSN) (NOT 0 ("força") OR ("horça")) ;	# un jaune
 REMOVE PRON + Pos IF (0 DETpos + &&AcordSN) (1 N + &&AcordSN) ;	# lo son torn
 REMOVE SUB:1 PRON + Pos IF (0/* DETpos + &&AcordSN) (1 N + &&AcordSN) ;	# deu son torn
 SELECT N_AJ + &&AcordSN IF (-1 DETind + &&AcordSN) (0 N_AJ + &&AcordSN) ;
@@ -1362,6 +1378,13 @@ SELECT N + &&AcordSN IF (-1C DET + &&AcordSN) (0 AJ) (0 N + &&AcordSN) (1C NP) ;
 SELECT N IF (-1C PREP) (1C EOS OR Rel) ;	# dels politics
 SELECT N OR VBinf IF (-1C PREP) (1C PREP) ;	# de levar d'impòstes
 SELECT N + &&AcordSN IF (-1C DET + &&AcordSN) (1C EOS OR PREP OR Rel) ;	# los politics
+REMOVE N IF (-1C Semblar_Pareisser LINK NOT 0 VBpp) (0 AJ) (1C EOS OR PREP OR Rel) ;	# las dificultats semblan màgers
+REMOVE N IF (-2 Haver) (-1 Semblar_Pareisser + VBpp) (0 AJ) (1C EOS OR PREP OR Rel) ;	# las dificultats an semblat màgers
+REMOVE N IF (-1C ("faser") LINK NOT 0 VBpp) (0 AJ) (1C EOS OR PREP OR Rel) ;	# las dificultats semblan màgers
+REMOVE N IF (-2 Haver) (-1 ("faser") + VBpp) (0 AJ) (1C EOS OR PREP OR Rel) ;	# las dificultats an semblat màgers
+SELECT AJ OR AV IF (-1 Vener) (0 ("car")) ;
+REMOVE AJ IF (-1C Verb LINK NOT 0 VBpp) (0 N) (1C EOS OR PREP OR Rel) ;	# demani novèlas de son pair
+REMOVE AJ IF (-2 Haver) (-1C Verb + VBpp) (0 N) (1C EOS OR PREP OR Rel) ;	# an demanat novèlas de son pair
 SELECT N + &&AcordSP IF (-3C PREP) (-2 N + &&AcordSP) (-1 ("e") OR ("o")) (0C N_AJ_PP) (1C EOS OR Rel) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# dels politics e responsables
 SELECT N + &&AcordSP OR VBinf IF (-3C PREP) (-2 N + &&AcordSP) (-1 ("e") OR ("o")) (0C N_AJ_PP) (1C PREP) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# dels politics e responsables
 SELECT N + &&AcordSP IF (-3C DET + &&AcordSN) (-2 N + &&AcordSP) (-1 ("e") OR ("o")) (0C N_AJ_PP) (1C EOS OR PREP OR Rel) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# dels politics e responsables
