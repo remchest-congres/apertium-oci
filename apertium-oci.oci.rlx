@@ -677,7 +677,9 @@ REMOVE ("que") + Enon IF (NOT -1* V + Pers) (-1* ("e") + Enon) (2* ("?")) ;
 REMOVE ("que") + Enon IF (NOT -1* V + Pers) (-1* ("be") + Enon) (2* ("!")) ;
 REMOVE ("que") + Enon IF (-1C V + Pers OR VBinf OR VBger) ;
 REMOVE ("que") + Enon IF (-1 AV) (-2C V + Pers OR VBinf OR VBger) ;
-REMOVE ("que") + Enon IF (-1C N_AJ OR VBpp OR NP OR unknownMajIni) (NOT 1 Pro) (2*C V + Pers OR VBinf OR VBger) ;	# los amics que son bons (enon) ; los amics que son bons que son bons (que1 = rel, que 2 = enon)
+REMOVE ("que") + Enon IF (-1C N_AJ OR VBpp OR NP OR unknownMajIni) (NOT 1 Pro) (2*C V + Pers OR VBinf OR VBger LINK NOT -1 Rel OR Conjsub OR Conjadv OR AV OR Pro) ;	# los amics que son bons (enon) ; los amics que son bons que son bons (que1 = rel, que2 = enon) ; Marieta que torna e que serveish
+#REMOVE ("que") + Enon IF (-1C N_AJ OR VBpp OR NP OR unknownMajIni) (NOT 1 Pro) (3*C V + Pers OR VBinf OR VBger LINK -1 Pro LINK NOT -1 Rel OR Conjsub OR Conjadv OR AV OR Pro) ;
+#REMOVE ("que") + Enon IF (-1C N_AJ OR VBpp OR NP OR unknownMajIni) (NOT 1 Pro) (3*C V + Pers OR VBinf OR VBger LINK -1 AV LINK NOT -1 Rel OR Conjsub OR Conjadv) ;	# Marieta que tostemps torna e que serveish
 REMOVE ("que") + Enon IF (-1C N_AJ OR VBpp OR NP OR unknownMajIni) (1 Pro) (NOT 2 Pro) (3*C V + Pers OR VBinf OR VBger) ;
 REMOVE ("que") + Enon IF (-1C N_AJ OR VBpp OR NP OR unknownMajIni) (1 Pro) (2 Pro) (4*C V + Pers OR VBinf OR VBger) ;
 REMOVE ("que") + Enon IF (-2C N_AJ OR VBpp OR NP OR unknownMajIni) (-1 CM) (NOT 2 Pro) (3*C V + Pers OR VBinf OR VBger) ;
