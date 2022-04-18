@@ -189,6 +189,7 @@ LIST Las = "las" ;
 LIST Mas_cnjcoo = "mas" "mes" ;
 LIST Semblar_Pareisser = "semblar" "pareisher" "paréisher" ;
 LIST Estat = "estat" ;
+LIST Clau = "clau" ;
 LIST Calar = "calar" ;
 LIST Caler = "caler" ;
 LIST Volar = "volar" ;
@@ -878,6 +879,8 @@ REMOVE VBimp IF (NOT 1* Excl) ;
 REMOVE VBimp IF (0 P3) ;
 
 SELECT N IF (-1 ("<[a-zàáèéíòóú].*>"r)) (0 ("<Estat>") OR ("<Estats>")) ;	# "Estat" (con mayúscula) va precedido de una palabra con minúscula inicial
+SELECT AJ IF (-1C N) (0 Clau) ;
+SELECT Fem IF (NOT -1/* Masc_strict) (0 Clau + Masc) (NOT 1 Masc_strict) ;
 SELECT N IF (0 ("radio")) (0 (META:/-/r)) (1 ("television")) ;
 SELECT PREP IF (0 ("jos")) (0 (META:/-/r)) ;
 SELECT N IF (-1C N) (-1 (META:/-/r)) ;
