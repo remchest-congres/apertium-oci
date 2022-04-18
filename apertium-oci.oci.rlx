@@ -428,6 +428,12 @@ REMOVE ("averar") IF (0 Aver) ;	# patch
 
 REMOVE ("camèl") IF (0 ("camèra")) ;	# patch
 
+REMOVE ("un còp") IF (0 ("un còp")) ;
+REMOVE AJ IF (-1 ("<un còp>"i)) (0 VBpp) ;
+REMOVE AJ IF (-2 ("un")) (-1 ("còp")) (0 VBpp) ;
+SELECT VBpp IF (-1 ("<un còp>"i)) (0 VBpp) (1 CM OR EOS) ;
+SELECT VBpp IF (-2 ("un")) (-1 ("còp")) (0 VBpp) (1 CM OR EOS) ;
+
 REMOVE Ser + Pl IF (0 ("son") + Sg) (1C N_AJ + Sg) ;
 
 SELECT N (-1 Jorns) (0 ("<matin>"i)) ;
