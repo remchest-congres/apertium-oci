@@ -189,6 +189,7 @@ LIST Las = "las" ;
 LIST Mas_cnjcoo = "mas" "mes" ;
 LIST Semblar_Pareisser = "semblar" "pareisher" "paréisher" ;
 LIST Estat = "estat" ;
+LIST Clau = "clau" ;
 LIST Calar = "calar" ;
 LIST Caler = "caler" ;
 LIST Volar = "volar" ;
@@ -206,7 +207,6 @@ LIST Parer = "pàrer" ;
 LIST Gausir = "gausir" ;
 LIST Gausar = "gausar" ;
 LIST DetDe = ("fòrça de" det) ("bravament de" det) ("brica de" det) ("briga de" det) ("cap de" det) ("chic de" det) ("drin de" det) ("de bisçantenas de" det) ("ges de" det) ("hèra de" det) ("mai de" det) ("milantas de" det) ("pas cap de" det) ("pauc de" det) ("plan de" det) ("tant de" det) ("tròp de" det) ("ua balada de" det) ("ua horrèra de" det) ("ua parrabastèra de" det) ("ua pièla de" det) ("ua sarabantena de" det)  ("ua sòrta de" det) ("ua tropa de" det) ("ua troperada de" det) ("ua ahoalh de" det) ("un arramat de" det) ("un beròi tropèth de" det) ("un bricon de" det) ("un chic de" det) ("un chiquet de" det) ("un drin de" det) ("un escag de" det) ("un frami de" det) ("un fum de" det) ("un grand nombre de" det) ("un hardèu de" det) ("un hèish de" det) ("un hum de" det) ("un molon de" det) ("un mont de" det) ("un pauc de" det) ("un sarròt de" det) ("un tropèth de" det) ("una brica de" det) ("una brina de" det) ("una idèa de" det) ("quant de" det) ;
-
 
 LIST FinFr = "<.>" "<!>" "<?>" "<...>" "<¶>" "<:>";
 
@@ -429,7 +429,15 @@ REMOVE ("averar") IF (0 Aver) ;	# patch
 
 REMOVE ("camèl") IF (0 ("camèra")) ;	# patch
 
+REMOVE ("un còp") IF (0 ("un còp")) ;
+REMOVE AJ IF (-1 ("<un còp>"i)) (0 VBpp) ;
+REMOVE AJ IF (-2 ("un")) (-1 ("còp")) (0 VBpp) ;
+SELECT VBpp IF (-1 ("<un còp>"i)) (0 VBpp) (1 CM OR EOS) ;
+SELECT VBpp IF (-2 ("un")) (-1 ("còp")) (0 VBpp) (1 CM OR EOS) ;
+
 REMOVE Ser + Pl IF (0 ("son") + Sg) (1C N_AJ + Sg) ;
+
+SELECT N (-1 Jorns) (0 ("<matin>"i)) ;
 
 SELECT N IF (-1/* DET + MascSg OR ("<del>"i) OR ("<al>"i)) (0 Cap); ;
 SELECT N + (mf) IF (-1 ("ex") OR ("<ex>"i)) (0 Cap) ;
@@ -677,7 +685,9 @@ REMOVE ("que") + Enon IF (NOT -1* V + Pers) (-1* ("e") + Enon) (2* ("?")) ;
 REMOVE ("que") + Enon IF (NOT -1* V + Pers) (-1* ("be") + Enon) (2* ("!")) ;
 REMOVE ("que") + Enon IF (-1C V + Pers OR VBinf OR VBger) ;
 REMOVE ("que") + Enon IF (-1 AV) (-2C V + Pers OR VBinf OR VBger) ;
-REMOVE ("que") + Enon IF (-1C N_AJ OR VBpp OR NP OR unknownMajIni) (NOT 1 Pro) (2*C V + Pers OR VBinf OR VBger) ;	# los amics que son bons (enon) ; los amics que son bons que son bons (que1 = rel, que 2 = enon)
+REMOVE ("que") + Enon IF (-1C N_AJ OR VBpp OR NP OR unknownMajIni) (NOT 1 Pro) (2*C V + Pers OR VBinf OR VBger LINK NOT -1 Rel OR Conjsub OR Conjadv OR AV OR Pro) ;	# los amics que son bons (enon) ; los amics que son bons que son bons (que1 = rel, que2 = enon) ; Marieta que torna e que serveish
+#REMOVE ("que") + Enon IF (-1C N_AJ OR VBpp OR NP OR unknownMajIni) (NOT 1 Pro) (3*C V + Pers OR VBinf OR VBger LINK -1 Pro LINK NOT -1 Rel OR Conjsub OR Conjadv OR AV OR Pro) ;
+#REMOVE ("que") + Enon IF (-1C N_AJ OR VBpp OR NP OR unknownMajIni) (NOT 1 Pro) (3*C V + Pers OR VBinf OR VBger LINK -1 AV LINK NOT -1 Rel OR Conjsub OR Conjadv) ;	# Marieta que tostemps torna e que serveish
 REMOVE ("que") + Enon IF (-1C N_AJ OR VBpp OR NP OR unknownMajIni) (1 Pro) (NOT 2 Pro) (3*C V + Pers OR VBinf OR VBger) ;
 REMOVE ("que") + Enon IF (-1C N_AJ OR VBpp OR NP OR unknownMajIni) (1 Pro) (2 Pro) (4*C V + Pers OR VBinf OR VBger) ;
 REMOVE ("que") + Enon IF (-2C N_AJ OR VBpp OR NP OR unknownMajIni) (-1 CM) (NOT 2 Pro) (3*C V + Pers OR VBinf OR VBger) ;
@@ -869,6 +879,8 @@ REMOVE VBimp IF (NOT 1* Excl) ;
 REMOVE VBimp IF (0 P3) ;
 
 SELECT N IF (-1 ("<[a-zàáèéíòóú].*>"r)) (0 ("<Estat>") OR ("<Estats>")) ;	# "Estat" (con mayúscula) va precedido de una palabra con minúscula inicial
+SELECT AJ IF (-1C N) (0 Clau) ;
+SELECT Fem IF (NOT -1/* Masc_strict) (0 Clau + Masc) (NOT 1 Masc_strict) ;
 SELECT N IF (0 ("radio")) (0 (META:/-/r)) (1 ("television")) ;
 SELECT PREP IF (0 ("jos")) (0 (META:/-/r)) ;
 SELECT N IF (-1C N) (-1 (META:/-/r)) ;
@@ -993,7 +1005,8 @@ SELECT Ant IF (1 De) (2 Top) ;                                          # Michel
 SELECT Ant IF (1 siecles_nom_romains OR ("<Ièr>")) (2 De) (3 Top) ;     # Michel II de Lorraine
 SELECT Top IF (-2 ("vila") OR ("estat") OR ("region") OR ("catedrala") OR ("glèisa") OR ("aeropòrt") OR ("pòrt")) (-1 De) ;
 SELECT Top IF (-2 ("concili") OR ("parlament") OR ("constitucion") OR ("tractat") OR ("declaracion")) (-1 De) ;
-SELECT Top IF (-2 ("universitat")) (-1 De) ;                             # université de Paris VII
+SELECT Top IF (-2 ("guèrra") OR ("conquista") OR ("annexion") OR ("sèti") OR ("expedicion")) (-1 De) ;
+SELECT Top IF (-2 ("universitat")) (-1 De) ;                            # université de Paris VII
 SELECT Ant IF (1 siecles_nom_romains OR ("<Ièr>")) ;                    # Michel II
 SELECT Top IF (1C Top) (0 (META:/-/r)) ;
 SELECT Top IF (-1C Top) (-1 (META:/-/r)) ;
