@@ -388,6 +388,7 @@ SELECT N (-1 ("far") + P3 + Sg OR ("har") + P3 + Sg) (0 ("<meses>"i)) ;
 SELECT N IF (-1 ("en")) (0 ("fin")) (1 De) ;
 SELECT N IF (0 ("fin")) (1 De) (2 ("jornada") OR ("serada") OR ("vesprada") OR ("vrespada") OR ("setmana") OR ("mes") OR ("annada")) ;
 SELECT N IF (-1C DET + &&AcordSN) (0 ("lei") + &&AcordSN) ;
+SELECT N IF (-1 DET + &&AcordSN) (0 ("lei") + MajIni + &&AcordSN) ;
 SELECT DET IF (NOT -1/* DET) (0 ("lei")) (1C N + Pl_strict) ;
 SELECT N IF (0 ("lei") + &&AcordSN) (1 Cog OR unknownMajIni) ;	# lei Deixonne
 REMOVE N IF (0 ("<estar>"i)) (-1 PREP) ;	# patch
