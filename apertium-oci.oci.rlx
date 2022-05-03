@@ -1202,6 +1202,8 @@ SELECT P3 + Pl IF (-2 PRON + Tn + P3 + Pl) (-1 Pro OR AV) (0 V + P3 + Pl) ;
 SELECT P3 + Pl IF (-3 PRON + Tn + P3 + Pl) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P3 + Pl) ;
 SELECT P3 + Pl IF (-4 PRON + Tn + P3 + Pl) (-3 Pro OR AV) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P3 + Pl) ;
 
+SELECT P1 + Sg IF (NOT -1 PRON + Tn) (0 V + P1 + Sg) (1 CM) (2 PRON + Tn + P1 + Sg) (3 CM OR EOS) ;	# pensi, jo,
+
 SELECT Vconj_indic IF (-2 PRON + Tn + P1 + Sg) (-1C Enon) (0 V + P1 + Sg) ;
 SELECT Vconj_indic IF (-3 PRON + Tn + P1 + Sg) (-2C Enon) (-1 Pro OR AV) (0 V + P1 + Sg) ;
 SELECT Vconj_indic IF (-4 PRON + Tn + P1 + Sg) (-3C Enon) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P1 + Sg) ;
