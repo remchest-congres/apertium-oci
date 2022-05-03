@@ -495,6 +495,9 @@ REMOVE PREP IF (0 A_de) (1 AV OR PREAV) (NOT 2 N_AJ) ;	# path
 REMOVE PREP IF (0 A_de) (-1 Pro) ;	# path
 REMOVE PREP IF (0 A_de) (-1 BOS OR CM) ;	# path
 
+REMOVE NP IF (-1 BOS) (0 ("Quan")) ;	# path
+REMOVE Itg IF (-1 BOS) (0 ("quan")) (NOT 1* ("?")) ;	# path
+
 REMOVE AV IF (-1C PREP) (0 Cap) (1C EOS OR CM OR Conjsub OR Conjadv OR Conjco) ;
 
 REMOVE DET IF (0 ("hèra")) ;
