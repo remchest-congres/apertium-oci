@@ -3486,6 +3486,35 @@
 	
 	<e>
 		<p>
+			<l><a/>ne<b/><a/>nse<b/></l>
+			<r>ne<b/>ns'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>ne<b/><a/>nse<b/><a/>ne<b/></l>
+			<r>ne<b/>nse<b/>n'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>ne<b/><a/>vse<b/></l>
+			<r>ne<b/>vs'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<p>
+			<l><a/>ne<b/><a/>vse<b/><a/>ne<b/></l>
+			<r>ne<b/>vse<b/>n'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+
+	<e>
+		<p>
 			<l><a/>lo<b/><a/>i<b/></l>
 			<r>l'i<b/></r>
 		</p>
