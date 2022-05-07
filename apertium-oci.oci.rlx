@@ -1495,6 +1495,9 @@ REMOVE AV IF (-1C N_AJ) (0 PREP) (1C DET) ;	# vint mil legas jos lo mar
 
 # MOTS
 
+SELECT PREP IF (0 ("<pera>"i)) (1C N + FemSg) ;
+SELECT PREP IF (0 ("<peras>"i)) (1C N + FemPl) ;
+
 SELECT (mf) IF (0 ("<ròms>"i)) ;
 SELECT (mf) IF (0 ("<ròm>"i))  (-1 DET + Fem_strict);
 SELECT (mf) IF (0 ("<ròm>"i))  (-1 AJ + Fem) (-2 DET + Fem_strict);
