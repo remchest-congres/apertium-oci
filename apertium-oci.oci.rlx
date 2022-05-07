@@ -1226,6 +1226,15 @@ SELECT Vconj_indic IF (-2 PRON + Tn + P3 + Pl) (-1C Enon) (0 V + P3 + Pl) ;
 SELECT Vconj_indic IF (-3 PRON + Tn + P3 + Pl) (-2C Enon) (-1 Pro OR AV) (0 V + P3 + Pl) ;
 SELECT Vconj_indic IF (-4 PRON + Tn + P3 + Pl) (-3C Enon) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P3 + Pl) ;
 
+# PRN
+
+REMOVE Tn + Pl_strict IF (0 Tn + Sg_strict) (0 Tn + Pl_strict) (1 V + P3 + Sg) ;	# quauqu'uns pot
+REMOVE Tn + Sg_strict IF (0 Tn + Sg_strict) (0 Tn + Pl_strict) (1 V + P3 + Pl) ;
+REMOVE Tn + Pl_strict IF (0 Tn + Sg_strict) (0 Tn + Pl_strict) (1 AV OR Pro) (2 V + P3 + Sg) ;
+REMOVE Tn + Sg_strict IF (0 Tn + Sg_strict) (0 Tn + Pl_strict) (1 AV OR Pro) (2 V + P3 + Pl) ;
+REMOVE Tn + Pl_strict IF (0 Tn + Sg_strict) (0 Tn + Pl_strict) (1 AV OR Pro) (2 AV OR Pro) (3 V + P3 + Sg) ;
+REMOVE Tn + Sg_strict IF (0 Tn + Sg_strict) (0 Tn + Pl_strict) (1 AV OR Pro) (2 AV OR Pro) (3 V + P3 + Pl) ;
+
 # DET
 
 REMOVE ("d'unes") IF (-1C N_AJ) ;	# patch
