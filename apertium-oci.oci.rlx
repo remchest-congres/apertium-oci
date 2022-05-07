@@ -595,7 +595,9 @@ REMOVE V IF (0 ("ve")) (-1 Pro) (-2 Pro) (-3 V);
 SELECT PREP (0 ("a")) (1C Pro) ;	# a lo parlar
 SELECT PREP (0 ("a")) (1C Top OR Ant OR Cog OR Al) ;	# a Niça
 REMOVE PREP (0 ("a")) (-1C Rel OR Conjsub) ;
-REMOVE PREP (0 ("a")) (-1C Itg) ;
+SELECT PREP (-1 ("quant")) (0 ("a")) (1 DET + Pl_strict) ;
+SELECT PREP (0 ("quant a")) (1 DET + Pl_strict) ;
+REMOVE PREP (0 ("a")) (-1C Itg LINK NOT 0 ("quant")) ;
 
 SELECT SUB:1 AV (-2 ("mai")) (-1 AJ OR VBpp) (0 ("e mai")) ;
 
