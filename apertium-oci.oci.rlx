@@ -1677,6 +1677,8 @@ REMOVE AV IF (0 ("mes")) (-1 DET) (-1 MascSg) ;
 REMOVE AV IF (0 ("mes")) (-1/* PREP + DET) ;
 
 #qui cnjadv o rel
+REMOVE Itg IF (0 ("qui")) (-1C N_AJ) ;
+
 REMOVE Conjadv IF (0 ("qui")) (NOT -1 AJ OR V OR AV) ;
 
 REMOVE Itg IF (0 ("qui") OR ("que")) (-1C Tn OR ("jo")) ;	# jo qui’n diserèi
