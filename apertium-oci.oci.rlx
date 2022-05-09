@@ -723,6 +723,9 @@ SELECT ("ne") + Enon IF (1 V) (-1* PRON + PRON_Pas_Neg) ;
 SELECT ("ne") + Enon IF (1 V) (1* DET + DET_Pas_Neg) ;
 SELECT ("ne") + Enon IF (1 V) (-1* DET + DET_Pas_Neg) ;
 REMOVE ("ne") + Enon ;
+SELECT Rel IF (-1 ("a cada còp"i)) (0 Que) ;
+SELECT Conjadv IF (0 ("cada còp que"i)) (1* Que) ;
+SELECT Conjadv IF (0 ("cada còp que"i)) ;	# patch
 SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon BARRIER V) (1C Pro OR V + Pers LINK NOT 0 VBimp) ;
 SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon BARRIER V) (0 ("ne") OR ("non")) (1 V + Pers LINK NOT 0 VBimp) (2 ("pas") OR ("pas nat")) ;
 SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon BARRIER V) (0 ("ne") OR ("non")) (1 Pro) (2 V + Pers LINK NOT 0 VBimp) (3 ("pas") OR ("pas nat")) ;
