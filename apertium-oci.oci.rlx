@@ -836,6 +836,9 @@ REMOVE Podar IF (0 Poder) ;
 # gausir e gausar
 REMOVE Gausir IF (0 Gausar) ;
 
+# anar e valer (p.ex. "vau")
+REMOVE ("valer") IF (0 ("anar")) (1 VBinf) ;
+
 # estarir e estar (p.ex. "estar")
 REMOVE ("estarir") IF (0 ("estar")) ;
 
