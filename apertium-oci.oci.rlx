@@ -548,6 +548,7 @@ SELECT AV (-3 Haver) (-2 AV) (-1 VBpp) (0 Melhor) ;	# a pas parlat melhor
 SELECT AV (-3 Haver) (-2 VBpp) (-1 AV) (0 Melhor) ;
 
 REMOVE N IF (-1 CM OR BOS) (0 ("<tè>"i)) (1 CM OR EOS)  ;		# guess
+SELECT VBimp IF (0 ("<vejatz>"i) OR ("<vedetz>"i)) (1 (":")) ;
 REMOVE VBimp IF (NOT 1* Excl) (NOT 0 ("tiéner") OR ("tiénguer") OR ("tier")) ;
 REMOVE VBimp IF (NOT 1* Excl) (NOT -1 CM OR BOS) (0 ("tiéner") OR ("tiénguer") OR ("tier")) (NOT 1 CM OR EOS) ;
 REMOVE VBimp IF (-1 Ant OR Cog OR unknown) (0 P3) ;
