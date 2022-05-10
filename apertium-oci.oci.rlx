@@ -857,7 +857,17 @@ REMOVE ("estarir") IF (0 ("estar")) ;
 # ròder e róder (p.ex. "rodut")
 REMOVE ("róder") IF (0 ("ròder")) ;
 
+# comprar e compréner/comprene (p.ex. "compren")
+REMOVE P3 + Sg IF (-3 N OR NP) (-2 Conjco) (-1 N OR NP) (0 V + P3 + Sg) (0 V + P3 + Pl) ;	# Marc e Aitana compren
+REMOVE P3 + Sg IF (-4 N) (-3 Conjco) (-2 DET + &&AcordSN) (-1 N + &&AcordSN) (0 V + P3 + Sg) (0 V + P3 + Pl) ;
+REMOVE P3 + Sg IF (-5 Ser + Pl) (-4 N OR NP) (-3 Conjco) (-2 N OR NP) (-1 Que) (0 V + P3 + Sg) (0 V + P3 + Pl) ;	# Son Marc e Aitana que compren
+REMOVE P3 + Sg IF (-6 Ser + Pl) (-5 N) (-4 Conjco) (-3 DET + &&AcordSN) (-2 N + &&AcordSN) (-1 Que) (0 V + P3 + Sg) (0 V + P3 + Pl) ;
+REMOVE P3 + Pl IF (-1 N_AJ + Sg OR NP + Sg) (0 V + P3 + Sg) (0 V + P3 + Pl) ;
+REMOVE P3 + Sg IF (-1 N_AJ + Pl OR NP + Pl) (0 V + P3 + Sg) (0 V + P3 + Pl) ;
+
 REMOVE NP IF (0 ("Èra")) (-1 BOS OR Lpar) ;
+
+SELECT N IF (-1 DET + &&AcordSN) (0 ("sosten") + &&AcordSN) (1 A) (2 DET) ;	# lor sosten a la lenga
 
 REMOVE V IF (0 (<"granda">)) ;
 
@@ -1505,6 +1515,8 @@ REMOVE N IF (-1 N_AJ + Pl) (0 ("<an>"i)) ;		# los participants an
 
 REMOVE VBpp IF (-1C DET + &&AcordSN OR Pro) (0 N + &&AcordSN) ;		# lo resultat
 REMOVE VBpp IF (0 ("format")) (1 NP OR Acr) ;	# format PDF
+
+REMOVE N IF (-1 ("mas")) (0 V) (1 Que) ;		# mas sosten que
 
 # PR / AV
 
