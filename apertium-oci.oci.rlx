@@ -1006,6 +1006,7 @@ SELECT V IF (0 An + MascSg) (1C AV) (2 VBpp + MascSg) ;
 SELECT N IF (0 ("carta")) (1 ("de")) (2 ("crèdit") OR ("credit")) ;
 SELECT N IF (0 ("rei")) (1 ("de")) (2 Top OR unknownMajIni) ;
 SELECT N IF (0 ("marqués")) (1 ("de")) (2 Top OR unknownMajIni) ;
+SELECT AJ IF (0 ("bas") + &&AcordSN + MajIni) (1 Top + &&AcordSN OR unknownMajIni) ;
 SELECT NP OR Acr IF (NOT -1 BOS OR Lpar) (NOT -1 (META:/—/r)) (NOT -1 (META:/…/r))
 	(NOT 0 ("gran") OR ("grand") OR ("rei") OR ("marqués") OR ("internet") OR ("francés") OR ("Catalan") OR ("Gascon") OR ("Aragonés") OR ("luna") OR ("marina") OR ("nadal") OR ("Cort") OR ("justícia") OR ("Abril")) ;
 SELECT NP OR Acr IF (NOT -2 BOS) (-1 Lpar) (NOT -1 (META:/…/r))
@@ -1099,6 +1100,7 @@ SELECT (top) IF (0 ("Lisbona")) (NOT 1 (ant) OR (cog)) ;
 SELECT (top) IF (0 ("Roma")) (NOT 1 (ant) OR (cog)) ;
 SELECT (top) IF (0 ("Tolosa")) (NOT 1 (ant) OR (cog)) ;
 SELECT (top) IF (0 ("París")) (NOT 1 (ant) OR (cog)) ;
+SELECT (top) IF (0 ("Pamiàs")) (NOT 1 (ant) OR (cog)) ;
 
 SELECT Ant IF (-1 ("dieu") OR ("divessa")) ;
 
