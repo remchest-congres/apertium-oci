@@ -1665,6 +1665,7 @@ SELECT N IF (-1 ("vila") OR ("ciutat")) (0 Estat) ;	# vila estat
 REMOVE AJ IF (0 Las) (1 N + FemPl) ;	# las pomas
 REMOVE AJ IF (0 Las) (1 NP + FemPl) ;	# las Corbièras
 REMOVE AJ IF (0 Las) (1 NUM) (2 N + FemPl) ;	# las 200 pomas
+REMOVE AJ IF (0 Las) (1 NUM) (2 AJ + FemPl) (3 N + FemPl) ;	# las 200 quitas pomas
 REMOVE AJ IF (0 Las) (1 AJ OR AdvComp) (2 N_AJ + FemPl) ;
 
 SELECT Conjco IF (0 Mas_cnjcoo) (-1 CM) ;
