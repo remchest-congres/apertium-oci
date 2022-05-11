@@ -1360,6 +1360,11 @@ SELECT AJ + &&AcordSN IF (0 AJ + MajIni + &&AcordSN) (1 NP + &&AcordSN) ;	# en N
 
 REMOVE AJ IF (-1 ("de")) (0 VBinf) (1 PREP OR EOS) ;	# es riscat d'especular
 
+SELECT AJ IF (-1 NUM) (0 ("quite") + &&AcordSN) (1 N + &&AcordSN) ;	# dos quites mainatges
+SELECT AJ IF (-1 NUM) (0 ("quiti") + &&AcordSN) (1 N + &&AcordSN) ;
+SELECT NUM IF (0 NUM) (1 ("quite") + &&AcordSN) (2 N + &&AcordSN) ;	# dos quites mainatges
+SELECT NUM IF (0 NUM) (1 ("quiti") + &&AcordSN) (2 N + &&AcordSN) ;	# dos quites mainatges
+
 # ADJ POS
 
 REMOVE AJ + Pos IF (NOT -1 Ser) (0 AJ + Pos) ;
