@@ -466,23 +466,25 @@ SELECT N IF (0 Cap) (1 NP OR unknownMajIni) ;	# cap Canaveral
 SELECT N + (m) IF (0 Cap) (1 NP OR unknownMajIni) ;	# cap Canaveral
 SELECT N + (m) IF (0 Cap) (1 ("alt")) ;
 REMOVE N + (mf) IF (0 Cap) (1 ("bas") OR ("baish")) ;
+SELECT DET IF (-2 ("membre")) (-1 De) (0 Cap_de) (1 ("partit") OR ("sindicat")) ;
+SELECT DET IF (-2 ("afiliat")) (-1 A) (0 Cap_de) (1 ("partit") OR ("sindicat")) ;
 SELECT N + (m) IF (0 ("cap")) (1 De) (2 ("pont") OR ("pònt") OR ("lista")) ;
 SELECT N + (m) IF (0 Cap_de) (1 ("pont") OR ("pònt") OR ("lista")) ;
 SELECT N + (m) IF (0 Caps_de) (1 ("pont") OR ("pònt") OR ("lista")) ;
-SELECT N + (mf) IF (NOT -1 BOS) (0 Cap_de_del) (1 Estat OR ("ministèri") OR ("comission") OR ("partit") OR ("oposicion") OR ("union") OR ("politica") OR ("entrepresa") OR ("enterpresa") OR (".*ista"r) OR (".*isme"r)) ;
-SELECT N + (mf) IF (NOT -1 BOS) (0 Caps_de_del) (1 Estat OR ("ministèri") OR ("comission") OR ("partit") OR ("oposicion") OR ("union") OR ("politica") OR ("entrepresa") OR ("enterpresa") OR (".*ista"r) OR (".*isme"r)) ;
-SELECT N + (mf) IF (NOT -1 BOS) (0 Cap) (1 De) (2 Estat OR ("ministèri") OR ("comission") OR ("partit") OR ("oposicion") OR ("union") OR ("politica") OR ("entrepresa") OR ("enterpresa") OR (".*ista"r) OR (".*isme"r)) ;
-SELECT N + (mf) IF (NOT -1 BOS) (0 Caps) (1 De) (2 Estat OR ("ministèri") OR ("comission") OR ("partit") OR ("oposicion") OR ("union") OR ("politica") OR ("entrepresa") OR ("enterpresa") OR (".*ista"r) OR (".*isme"r)) ;
-SELECT N + (mf) IF (NOT -1 BOS) (0 ("cap")) (1 De) (2 Estat OR ("ministèri") OR ("comission") OR ("partit") OR ("oposicion") OR ("union") OR ("politica") OR ("entrepresa") OR ("enterpresa") OR (".*ista"r) OR (".*isme"r)) ;
-SELECT N + (mf) IF (NOT -1 BOS) (0 ("cap")) (1 De) (2 DET) (3 Estat OR ("ministèri") OR ("comission") OR ("oposicion") OR ("partit") OR ("union") OR ("politica") OR ("entrepresa") OR ("enterpresa") OR (".*ista"r) OR (".*isme"r)) ;
+SELECT N + (mf) IF (NOT -1 BOS) (0 Cap_de_del) (1 Estat OR ("ministèri") OR ("comission") OR ("partit") OR ("sindicat") OR ("oposicion") OR ("union") OR ("politica") OR ("entrepresa") OR ("enterpresa") OR (".*ista"r) OR (".*isme"r)) ;
+SELECT N + (mf) IF (NOT -1 BOS) (0 Caps_de_del) (1 Estat OR ("ministèri") OR ("comission") OR ("partit") OR ("sindicat") OR ("oposicion") OR ("union") OR ("politica") OR ("entrepresa") OR ("enterpresa") OR (".*ista"r) OR (".*isme"r)) ;
+SELECT N + (mf) IF (NOT -1 BOS) (0 Cap) (1 De) (2 Estat OR ("ministèri") OR ("comission") OR ("partit") OR ("sindicat") OR ("oposicion") OR ("union") OR ("politica") OR ("entrepresa") OR ("enterpresa") OR (".*ista"r) OR (".*isme"r)) ;
+SELECT N + (mf) IF (NOT -1 BOS) (0 Caps) (1 De) (2 Estat OR ("ministèri") OR ("comission") OR ("partit") OR ("sindicat") OR ("oposicion") OR ("union") OR ("politica") OR ("entrepresa") OR ("enterpresa") OR (".*ista"r) OR (".*isme"r)) ;
+SELECT N + (mf) IF (NOT -1 BOS) (0 ("cap")) (1 De) (2 Estat OR ("ministèri") OR ("comission") OR ("partit") OR ("sindicat") OR ("oposicion") OR ("union") OR ("politica") OR ("entrepresa") OR ("enterpresa") OR (".*ista"r) OR (".*isme"r)) ;
+SELECT N + (mf) IF (NOT -1 BOS) (0 ("cap")) (1 De) (2 DET) (3 Estat OR ("ministèri") OR ("comission") OR ("oposicion") OR ("partit") OR ("sindicat") OR ("union") OR ("politica") OR ("entrepresa") OR ("enterpresa") OR (".*ista"r) OR (".*isme"r)) ;
 SELECT N + (mf) IF (NOT -1 BOS) (0 Cap_de_del) (1 Al) ;
 SELECT N + (mf) IF (NOT -1 BOS) (0 Cap_de_del) (1 Ant_Cog) ;
-SELECT N + (mf) IF (NOT -1 BOS) (0 Cap_de_del) (1 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("sindicat") OR ("politica") OR ("entrepresa") OR ("enterpresa") OR (".*ista"r) OR (".*isme"r)) ;
-SELECT N + (mf) IF (NOT -1 BOS) (0 Caps_de_del) (1 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("sindicat") OR ("politica") OR ("entrepresa") OR ("enterpresa") OR (".*ista"r) OR (".*isme"r)) ;
-SELECT N + (mf) IF (NOT -1 BOS) (0 Cap_de) (1 DET) (2 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("sindicat") OR ("politica") OR ("entrepresa") OR ("enterpresa") OR (".*ista"r) OR (".*isme"r)) ;
-SELECT N + (mf) IF (NOT -1 BOS) (0 Caps_de) (1 DET) (2 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("sindicat") OR ("politica") OR ("entrepresa") OR ("enterpresa") OR (".*ista"r) OR (".*isme"r)) ;
-SELECT N + (mf) IF (NOT -1 BOS) (0 ("cap")) (1 De) (2 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("sindicat") OR ("politica") OR ("entrepresa") OR ("enterpresa") OR (".*ista"r) OR (".*isme"r)) ;
-SELECT N + (mf) IF (NOT -1 BOS) (0 ("cap")) (1 De) (2 DET) (3 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("partit") OR ("union") OR ("sindicat") OR ("politica") OR ("entrepresa") OR ("enterpresa") OR (".*ista"r) OR (".*isme"r)) ;
+SELECT N + (mf) IF (NOT -1 BOS) (0 Cap_de_del) (1 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("partit") OR ("sindicat") OR ("union") OR ("sindicat") OR ("politica") OR ("entrepresa") OR ("enterpresa") OR (".*ista"r) OR (".*isme"r)) ;
+SELECT N + (mf) IF (NOT -1 BOS) (0 Caps_de_del) (1 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("partit") OR ("sindicat") OR ("union") OR ("sindicat") OR ("politica") OR ("entrepresa") OR ("enterpresa") OR (".*ista"r) OR (".*isme"r)) ;
+SELECT N + (mf) IF (NOT -1 BOS) (0 Cap_de) (1 DET) (2 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("partit") OR ("sindicat") OR ("union") OR ("sindicat") OR ("politica") OR ("entrepresa") OR ("enterpresa") OR (".*ista"r) OR (".*isme"r)) ;
+SELECT N + (mf) IF (NOT -1 BOS) (0 Caps_de) (1 DET) (2 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("partit") OR ("sindicat") OR ("union") OR ("sindicat") OR ("politica") OR ("entrepresa") OR ("enterpresa") OR (".*ista"r) OR (".*isme"r)) ;
+SELECT N + (mf) IF (NOT -1 BOS) (0 ("cap")) (1 De) (2 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("partit") OR ("sindicat") OR ("union") OR ("sindicat") OR ("politica") OR ("entrepresa") OR ("enterpresa") OR (".*ista"r) OR (".*isme"r)) ;
+SELECT N + (mf) IF (NOT -1 BOS) (0 ("cap")) (1 De) (2 DET) (3 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("partit") OR ("sindicat") OR ("union") OR ("sindicat") OR ("politica") OR ("entrepresa") OR ("enterpresa") OR (".*ista"r) OR (".*isme"r)) ;
 SELECT N + (mf) IF (-1 ("<pel>"i) OR ("<pels>"i)) (0 Cap_de_del) ;
 SELECT N + (mf) IF (-1 ("<pel>"i) OR ("<pels>"i)) (0 ("cap")) (1 De) ;
 SELECT N + (mf) IF (-2 ("per")) (-1 DET + &&AcordSN) (0 Cap_de_del + &&AcordSN) ;
@@ -1360,6 +1362,11 @@ SELECT AJ + &&AcordSN IF (0 AJ + MajIni + &&AcordSN) (1 NP + &&AcordSN) ;	# en N
 
 REMOVE AJ IF (-1 ("de")) (0 VBinf) (1 PREP OR EOS) ;	# es riscat d'especular
 
+SELECT AJ IF (-1 NUM) (0 ("quite") + &&AcordSN) (1 N + &&AcordSN) ;	# dos quites mainatges
+SELECT AJ IF (-1 NUM) (0 ("quiti") + &&AcordSN) (1 N + &&AcordSN) ;
+SELECT NUM IF (0 NUM) (1 ("quite") + &&AcordSN) (2 N + &&AcordSN) ;	# dos quites mainatges
+SELECT NUM IF (0 NUM) (1 ("quiti") + &&AcordSN) (2 N + &&AcordSN) ;	# dos quites mainatges
+
 # ADJ POS
 
 REMOVE AJ + Pos IF (NOT -1 Ser) (0 AJ + Pos) ;
@@ -1658,6 +1665,7 @@ SELECT N IF (-1 ("vila") OR ("ciutat")) (0 Estat) ;	# vila estat
 REMOVE AJ IF (0 Las) (1 N + FemPl) ;	# las pomas
 REMOVE AJ IF (0 Las) (1 NP + FemPl) ;	# las Corbièras
 REMOVE AJ IF (0 Las) (1 NUM) (2 N + FemPl) ;	# las 200 pomas
+REMOVE AJ IF (0 Las) (1 NUM) (2 AJ + FemPl) (3 N + FemPl) ;	# las 200 quitas pomas
 REMOVE AJ IF (0 Las) (1 AJ OR AdvComp) (2 N_AJ + FemPl) ;
 
 SELECT Conjco IF (0 Mas_cnjcoo) (-1 CM) ;
