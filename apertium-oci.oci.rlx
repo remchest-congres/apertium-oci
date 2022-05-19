@@ -1758,8 +1758,8 @@ REMOVE V IF (0 ("<punts>"));
 
 #patch per las errors de vocabulari
 REMOVE V IF (0 ("<matin>"));
-REMOVE N IF (0 ("<nos>")) (NOT -1 DET + Masc);
-REMOVE V IF (0 ("<encara>"));
+REMOVE N IF (0 ("<nos>"i)) (NOT -1 DET + Masc);
+REMOVE V IF (0 ("<encara>"i));
 REMOVE V IF (0 ("<monde>") or ("<mond>"));
 REMOVE V IF (0 ("<ongan>"));
 
@@ -1767,12 +1767,12 @@ REMOVE V IF (0 ("<gaug>")) (-1 DET + MascSg or AJ + MascPl);
 
 
 REMOVE N IF (0 ("<Vaduda>")) (1 ("a"));
-REMOVE N IF (0 ("<quina>")) (1 N + FemSg);
-REMOVE N IF (0 ("<quinas>")) (1 N + FemPl);
-REMOVE N IF (0 ("<quina>")) (1 AJ + FemSg) (2 N + FemSg);
-REMOVE N IF (0 ("<quinas>")) (1 AJ + FemPl) (2 N + FemPl);
-REMOVE N IF (0 ("<quina>")) (1 PREAV) (2 AJ + FemSg) (3 N + FemSg);
-REMOVE N IF (0 ("<quinas>")) (1 PREAV) (2 AJ + FemPl) (3 N + FemPl);
+REMOVE N IF (0 ("<quina>"i)) (1 N + FemSg);
+REMOVE N IF (0 ("<quinas>"i)) (1 N + FemPl);
+REMOVE N IF (0 ("<quina>"i)) (1 AJ + FemSg) (2 N + FemSg);
+REMOVE N IF (0 ("<quinas>"i)) (1 AJ + FemPl) (2 N + FemPl);
+REMOVE N IF (0 ("<quina>"i)) (1 PREAV) (2 AJ + FemSg) (3 N + FemSg);
+REMOVE N IF (0 ("<quinas>"i)) (1 PREAV) (2 AJ + FemPl) (3 N + FemPl);
 REMOVE V IF (0 ("<cas>")) (-1 DET + Masc);
 REMOVE V IF (0 ("<escolan>")) (-1 DET + Masc);
 REMOVE V IF (0 ("<brave>")) (1 N + MascSg);
@@ -1780,30 +1780,30 @@ REMOVE V IF (0 ("<braves>")) (1 N + MascPl);
 REMOVE V IF (0 ("<lei>")) (-1 DET + FemSg);
 REMOVE V IF (0 ("<lei>")) (-1 AJ + FemSg) (-2 DET + FemSg);
 SELECT N IF (0 ("<lei>")) (-1 PREAV) (-2 AJ + FemSg) (-3 DET + FemSg);
-REMOVE V IF (0 ("<sas>")) (1 N + FemPl);
-REMOVE V IF (0 ("<sas>")) (1 AJ + FemPl) (2 N + FemPl);
-REMOVE V IF (0 ("<sas>")) (1 PREAV) (2 AJ + FemPl) (3 N + FemPl);
+REMOVE V IF (0 ("<sas>"i)) (1 N + FemPl);
+REMOVE V IF (0 ("<sas>"i)) (1 AJ + FemPl) (2 N + FemPl);
+REMOVE V IF (0 ("<sas>"i)) (1 PREAV) (2 AJ + FemPl) (3 N + FemPl);
 
-REMOVE N IF (0 ("<pels>")) (NOT -1 DET + MascPl OR AJ + MascPl) ;
-REMOVE N IF (0 ("<pels>")) (NOT -2 DET + MascPl) (-1 AJ + MascPl) ;
+REMOVE N IF (0 ("<pels>"i)) (NOT -1 DET + MascPl OR AJ + MascPl) ;
+REMOVE N IF (0 ("<pels>"i)) (NOT -2 DET + MascPl) (-1 AJ + MascPl) ;
 
-REMOVE N IF (0 ("<pel>")) (NOT -1 DET + MascSg OR AJ + MascSg) ;
-REMOVE N IF (0 ("<pel>")) (NOT -2 DET + MascSg) (-1 AJ + MascSg) ;
+REMOVE N IF (0 ("<pel>"i)) (NOT -1 DET + MascSg OR AJ + MascSg) ;
+REMOVE N IF (0 ("<pel>"i)) (NOT -2 DET + MascSg) (-1 AJ + MascSg) ;
 
-SELECT DET IF (0 ("<aquel>") OR ("<aqueth>")) (1 N + MascSg OR NP + MascSg);
-SELECT DET IF (0 ("<aquel>") OR ("<aqueth>")) (1 AJ + MascSg) (2 N + MascSg OR NP + MascSg);
-SELECT DET IF (0 ("<aquel>") OR ("<aqueth>")) (1 ("«")) (2 N + MascSg OR NP + MascSg);
-SELECT DET IF (0 ("<aqueles>") OR ("<aqueths>") OR ("aquels")) (1 N + MascPl OR NP + MascPl);
-SELECT DET IF (0 ("<aqueles>") OR ("<aqueths>") OR ("aquels")) (1 AJ + MascPl) (2 N + MascPl OR NP + MascPl);
-SELECT DET IF (0 ("<aqueles>") OR ("<aqueths>") OR ("aquels")) (1 ("«")) (2 N + MascPl OR NP + MascPl);
-SELECT DET IF (0 ("<aquela>") OR ("<aquera>")) (1 N + FemSg OR NP + FemSg);
-SELECT DET IF (0 ("<aquela>") OR ("<aquera>")) (1 AJ + FemSg) (2 N + FemSg OR NP + FemSg);
-SELECT DET IF (0 ("<aquela>") OR ("<aquera>")) (1 ("«")) (2 N + FemSg OR NP + FemSg);
-SELECT DET IF (0 ("<aquelas>") OR ("<aqueras>")) (1 N + FemPl OR NP + FemPl);
-SELECT DET IF (0 ("<aquelas>") OR ("<aqueras>")) (1 AJ + FemPl) (2 N + FemPl OR NP + FemPl);
-SELECT DET IF (0 ("<aquelas>") OR ("<aqueras>")) (1 ("«")) (2 N + FemPl OR NP + FemPl);
-SELECT DET IF (0 ("aquel") OR ("aqueth")) (1 unknown);
-SELECT DET IF (0 ("aquel") OR ("aqueth")) (1 ("«")) (2 unknown);
+SELECT DET IF (0 ("<aquel>"i) OR ("<aqueth>"i)) (1 N + MascSg OR NP + MascSg);
+SELECT DET IF (0 ("<aquel>"i) OR ("<aqueth>"i)) (1 AJ + MascSg) (2 N + MascSg OR NP + MascSg);
+SELECT DET IF (0 ("<aquel>"i) OR ("<aqueth>"i)) (1 ("«")) (2 N + MascSg OR NP + MascSg);
+SELECT DET IF (0 ("<aqueles>"i) OR ("<aqueths>"i) OR ("aquels"i)) (1 N + MascPl OR NP + MascPl);
+SELECT DET IF (0 ("<aqueles>"i) OR ("<aqueths>"i) OR ("aquels"i)) (1 AJ + MascPl) (2 N + MascPl OR NP + MascPl);
+SELECT DET IF (0 ("<aqueles>"i) OR ("<aqueths>"i) OR ("aquels"i)) (1 ("«")) (2 N + MascPl OR NP + MascPl);
+SELECT DET IF (0 ("<aquela>"i) OR ("<aquera>"i)) (1 N + FemSg OR NP + FemSg);
+SELECT DET IF (0 ("<aquela>"i) OR ("<aquera>"i)) (1 AJ + FemSg) (2 N + FemSg OR NP + FemSg);
+SELECT DET IF (0 ("<aquela>"i) OR ("<aquera>"i)) (1 ("«")) (2 N + FemSg OR NP + FemSg);
+SELECT DET IF (0 ("<aquelas>"i) OR ("<aqueras>"i)) (1 N + FemPl OR NP + FemPl);
+SELECT DET IF (0 ("<aquelas>"i) OR ("<aqueras>"i)) (1 AJ + FemPl) (2 N + FemPl OR NP + FemPl);
+SELECT DET IF (0 ("<aquelas>"i) OR ("<aqueras>"i)) (1 ("«")) (2 N + FemPl OR NP + FemPl);
+SELECT DET IF (0 ("aquel"i) OR ("aqueth"i)) (1 unknown);
+SELECT DET IF (0 ("aquel"i) OR ("aqueth"i)) (1 ("«")) (2 unknown);
 
 SELECT AV (0 ("<au darrèr>"i)) ;
 
