@@ -209,6 +209,8 @@ LIST Parer = "pàrer" ;
 LIST Gausir = "gausir" ;
 LIST Gausar = "gausar" ;
 LIST DetDe = ("fòrça de" det) ("bravament de" det) ("brica de" det) ("briga de" det) ("cap de" det) ("chic de" det) ("drin de" det) ("de bisçantenas de" det) ("ges de" det) ("hèra de" det) ("mai de" det) ("milantas de" det) ("pas cap de" det) ("pauc de" det) ("plan de" det) ("tant de" det) ("tròp de" det) ("ua balada de" det) ("ua horrèra de" det) ("ua parrabastèra de" det) ("ua pièla de" det) ("ua sarabantena de" det)  ("ua sòrta de" det) ("ua tropa de" det) ("ua troperada de" det) ("ua ahoalh de" det) ("un arramat de" det) ("un beròi tropèth de" det) ("un bricon de" det) ("un chic de" det) ("un chiquet de" det) ("un drin de" det) ("un escag de" det) ("un frami de" det) ("un fum de" det) ("un grand nombre de" det) ("un hardèu de" det) ("un hèish de" det) ("un hum de" det) ("un molon de" det) ("un mont de" det) ("un pauc de" det) ("un sarròt de" det) ("un tropèth de" det) ("una brica de" det) ("una brina de" det) ("una idèa de" det) ("quant de" det) ;
+LIST Ple = "ple" ;
+LIST Brau = "brau" ;
 
 LIST FinFr = "<.>" "<!>" "<?>" "<...>" "<¶>" "<:>";
 
@@ -1762,11 +1764,45 @@ REMOVE N IF (0 ("<nos>"i)) (NOT -1 DET + Masc);
 REMOVE V IF (0 ("<encara>"i));
 REMOVE V IF (0 ("<monde>") or ("<mond>"));
 REMOVE V IF (0 ("<ongan>"));
+REMOVE V IF (0 ("<mau>")); #gascon seulement
+REMOVE Ple IF (0 ("<plea>") OR ("<pleas>"));
+REMOVE AJ IF (0 ("<man>") OR ("<mans>"));
+REMOVE AJ IF (0 ("<sala>")) (-1 DET + FemSg OR AJ + FemSg);
+REMOVE AJ IF (0 ("<salas>")) (-1 DET + FemPl OR AJ + FemPl);
+REMOVE AJ IF (0 ("<mèca>"));
+REMOVE AJ IF (0 ("<mècas>"));
+REMOVE AJ IF (0 ("<mècha>"));
+REMOVE AJ IF (0 ("<mèchas>"));
+REMOVE AJ IF (0 ("<causa>"));
+REMOVE AJ IF (0 ("<causas>"));
+REMOVE AJ IF (0 ("<convèrsa>"));
+REMOVE AJ IF (0 ("<convèrsas>"));
+REMOVE AJ IF (0 ("<sèrva>"));
+REMOVE AJ IF (0 ("<sèrvas>"));
+REMOVE AJ IF (0 ("<prima>")) (-1 DET + FemSg);
+REMOVE AJ IF (0 ("<discutida>")) (-1 DET + FemSg OR AJ + FemSg);
+REMOVE AJ IF (0 ("<discutidas>")) (-1 DET + FemPl OR AJ + FemPl);
+REMOVE AJ IF (0 ("<traça>"));
+REMOVE AJ IF (0 ("<traças>"));
+REMOVE AJ IF (0 ("<ondada>")) (-1 DET + FemSg OR AJ + FemSg);
+REMOVE AJ IF (0 ("<ondadas>")) (-1 DET + FemPl OR AJ + FemPl);
+REMOVE AJ IF (0 ("<temptativa>"));
+REMOVE AJ IF (0 ("<temptativas>"));
+REMOVE AJ IF (0 ("<flama>")) (-1 DET + FemSg OR AJ + FemSg);
+REMOVE AJ IF (0 ("<flamas>")) (-1 DET + FemPl OR AJ + FemPl);
+REMOVE AJ IF (0 ("<moleta>"));
+REMOVE AJ IF (0 ("<moletas>"));
+
+REMOVE AJ IF (0 ("morisc")) (0 V);
+
+REMOVE Brau IF (0 ("brave"));
 
 REMOVE V IF (0 ("<gaug>")) (-1 DET + MascSg or AJ + MascPl);
 
 
 REMOVE N IF (0 ("<Vaduda>")) (1 ("a"));
+REMOVE V IF (0 ("<punt>"));
+REMOVE V IF (0 ("<punts>"));
 REMOVE N IF (0 ("<quina>"i)) (1 N + FemSg);
 REMOVE N IF (0 ("<quinas>"i)) (1 N + FemPl);
 REMOVE N IF (0 ("<quina>"i)) (1 AJ + FemSg) (2 N + FemSg);
