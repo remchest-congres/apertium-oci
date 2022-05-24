@@ -494,6 +494,13 @@ SELECT N + (mf) IF (-2 ("per")) (-1 DET + &&AcordSN) (0 Cap_de_del + &&AcordSN) 
 SELECT N + (mf) IF (-2 ("per")) (-1 DET + &&AcordSN) (0 ("cap") + &&AcordSN) (1 De) ;
 SELECT N + (m) IF (-1 ("<al>"i) OR ("<au>"i)) (0 Cap_de) ;
 
+SELECT V IF (0 ("a costat")) (1 NUM OR ("desenat") OR ("detzenat") OR ("centena") OR ("milion") OR ("miliard")) ;
+SELECT V IF (0 ("a costat")) (1 DET) (2 ("desenat") OR ("detzenat") OR ("centena") OR ("milion") OR ("miliard")) ;
+REMOVE V IF (0 ("a costat")) ;
+SELECT V IF (0 ("a costat de")) (1 ("desenat") OR ("detzenat") OR ("centena") OR ("milion") OR ("miliard")) ;
+REMOVE V IF (0 ("a costat de")) ;
+REMOVE V IF (0 ("a pena")) ;
+REMOVE V IF (0 ("a penas")) ;
 
 REMOVE PREP IF (0 A_de) (NOT 1 N_AJ OR AV OR PREAV) ;	# path
 REMOVE PREP IF (0 A_de) (1 AV OR PREAV) (NOT 2 N_AJ) ;	# path
