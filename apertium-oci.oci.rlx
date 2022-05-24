@@ -1029,6 +1029,7 @@ REMOVE Cog IF (-1 En) (0 Cog) ;
 REMOVE Ant IF (-1 DETdef) (0 Ant) ;
 REMOVE Ant IF (-1 DETind) (0 Ant) ;
 REMOVE Ant IF (-1 En) (0 Ant) ;
+REMOVE Cog IF (0 ("<XI>")) ;
 
 SELECT NP IF (0 N OR NP) (1 NP) (0 (META:/-/r)) (NOT 0 ("bas") OR ("naut") OR ("haut")) ;   # Pierre-Michel
 SELECT Ant IF (0 Ant) (1C Ant) (0 (META:/-/r)) ;                                # Jean-René
