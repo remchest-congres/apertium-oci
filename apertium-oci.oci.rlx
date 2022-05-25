@@ -1595,6 +1595,9 @@ SELECT Pro IF (0 ("<se'n>"i)) (1 ("anar")) ;
 SELECT Pro IF (0 ("<se'n>"i)) (1 Ser) (2 ("anar") + VBpp) ;
 SELECT Pro IF (0 ("<se'n>"i)) (1 Ser) (2 AV) (3 ("anar") + VBpp) ;
 SELECT Pro IF (0 ("<se'n>"i)) (1 Ser) (2 AV) (3 AV) (4 ("anar") + VBpp) ;
+SELECT Pro IF (-1C Rel) (0 Se) (1 Pro OR V) ;
+SELECT Pro IF (-2C Rel) (-1 AV) (0 Se) (1 Pro OR V) ;
+SELECT Pro IF (-3C Rel) (-2 AV) (-1 AV) (0 Se) (1 Pro OR V) ;
 #REMOVE PRON IF (0 Se) (1 ("ne")) ;	# Se n’èram estadas amigas
 SELECT Conjadv IF (0 ("<s'i>"i) OR ("<s’i>"i)) (1 ("aver") OR ("auer")) ;
 SELECT Conjadv IF (0 Se) (1 ("<n'i>"i) OR ("<n’i>"i)) (2 ("aver") OR ("auer")) ;
