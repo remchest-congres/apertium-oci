@@ -134,6 +134,7 @@ LIST VPl3 = (vblex p3 pl) (vbser p3 pl) (vbhaver p3 pl) (vbmod p3 pl) ;
 SET AcordSV = Sg1 OR Sg2 OR Sg3 OR Pl1 OR Pl2 OR Pl3 ;
 
 SET CM = (cm) OR (lpar) OR (rpar) OR ("<;>") ;
+SET CM_strict = (cm) OR (lpar) - ("«") OR (rpar) - ("»") OR ("<;>") ;
 LIST Lpar = lpar ;
 LIST Rpar = rpar ;
 LIST Excl = "!" ;
@@ -143,6 +144,7 @@ SET Cnj_Rel_End = BOS OR Conjco OR Conjsub OR Conjadv OR Rel OR VBinf ;
 
 LIST unknown = ("\\*.*"r) ;
 LIST unknownMajIni = ("\\*[A-ZÀÁÈÉíÒÓÚÜÇ].*"r) ;
+LIST unknownMinIni = ("\\*[a-zàáäâèéëêíïîòóöôúüûç].*"r) ;
 LIST MajIni = ("\\<[A-ZÀÁÄÂÈÉËÊÍÏÎÒÓÖÔÚÜÛÇ].*\\>"r) ;
 LIST Majusc = ("\\<[A-ZÉÈÊ][A-ZÂÉÈÊÎÔÛ]*>"r) ;
 LIST MinIni = ("\\<[a-zàáäâèéëêíïîòóöôúüûç].*\\>"r) ;
@@ -188,7 +190,8 @@ LIST Que_Itg = ("qué" itg) ;
 LIST Se = "se" ;
 LIST Si = "si" ;
 LIST Las = "las" ;
-LIST Mas_cnjcoo = "mas" "mes" ;
+LIST Mas_cnjcoo = ("mas" cnjcoo) ("mes" cnjcoo) ("mès" cnjcoo) ("mai" cnjcoo) ;
+LIST O_cnjcoo = ("o" cnjcoo) ("ò" cnjcoo) ;
 LIST Semblar_Pareisser = "semblar" "pareisher" "paréisher" ;
 LIST Estat = "estat" ;
 LIST Clau = "clau" ;
@@ -589,7 +592,7 @@ REMOVE VBger IF (NOT -1 ("en") OR ("en bèth") OR ("en tot") OR Pro OR N_AJ OR C
 REMOVE VBger IF (NOT -2 ("en") OR ("en bèth") OR ("en tot") OR Pro OR CM) (-1C Pro) ;
 
 #Un pronom proclitic est totjorn davant un vèrb o un autre pronom
-REMOVE Pro IF (NOT 1 unknown OR Pro OR V - VBpp OR VBimp) (NOT -1 PRencl or VBimp or VBinf or VBger) ;
+REMOVE Pro IF (NOT 1 unknownMinIni OR Pro OR V - VBpp OR VBimp) (NOT -1 PRencl or VBimp or VBinf or VBger) ;
 REMOVE DET IF (1C V OR Pro) (NOT 1 VBpp) ;
 SELECT V OR Pro IF (-1C Pro) (NOT -1/* V) ;	# i a un ; i aviá un
 SELECT V OR Pro IF (-1C/* Pro) (NOT -1/* V) ;	# se'n sap
@@ -701,6 +704,15 @@ SELECT ("çò") + Enon IF (1 Pro OR AV) (2 Haver + Pers) (3 AV) (4 AV) (5 Vdire 
 SELECT ("çò") + Enon IF (1 Pro OR AV) (2 Pro) (3 Haver + Pers) (4 AV) (5 AV) (6 Vdire + VBpp) ;
 REMOVE ("çò") + Enon ;
 
+SELECT AJ (0 ("mai bon") + &&AcordSN) (-1 DET + &&AcordSN) ;
+SELECT AJ (0 ("mai bon") + &&AcordSN) (-1 N + &&AcordSN) ;
+SELECT AJ (0 ("mai bon") + &&AcordSN) (1 N + &&AcordSN) ;
+REMOVE AJ (0 ("mai bon")) ;
+
+SELECT Conjsub IF (-1 Mai) (0 ("que")) (NOT -2 DET OR BOS) ;
+REMOVE N_AJ IF (0 Mai) (1 ("que")) (NOT -1 DET) ;
+SELECT Conjsub IF (-2 Mai) (-1 AJ OR AV) (0 ("que")) ;
+SELECT AV IF (0 Mai) (1 AJ OR AV) (2 ("que")) ;
 SELECT ("be") + Enon IF (-1 BOS) ;
 SELECT ("be") + Enon IF (-3 BOS) (-2 AV OR Conjadv) (-1 CM) ;
 SELECT ("que") + Enon IF (-1 BOS) ;
@@ -719,11 +731,11 @@ REMOVE ("que") + Enon IF (-1 AV) (-2C V + Pers OR VBinf OR VBger) ;
 REMOVE ("que") + Enon IF (-1C N_AJ OR VBpp OR NP OR unknownMajIni) (NOT 1 Pro) (2*C V + Pers OR VBinf OR VBger LINK NOT -1 Rel OR Conjsub OR Conjadv OR AV OR Pro) ;	# los amics que son bons (enon) ; los amics que son bons que son bons (que1 = rel, que2 = enon) ; Marieta que torna e que serveish
 #REMOVE ("que") + Enon IF (-1C N_AJ OR VBpp OR NP OR unknownMajIni) (NOT 1 Pro) (3*C V + Pers OR VBinf OR VBger LINK -1 Pro LINK NOT -1 Rel OR Conjsub OR Conjadv OR AV OR Pro) ;
 #REMOVE ("que") + Enon IF (-1C N_AJ OR VBpp OR NP OR unknownMajIni) (NOT 1 Pro) (3*C V + Pers OR VBinf OR VBger LINK -1 AV LINK NOT -1 Rel OR Conjsub OR Conjadv) ;	# Marieta que tostemps torna e que serveish
-REMOVE ("que") + Enon IF (-1C N_AJ OR VBpp OR NP OR unknownMajIni) (1 Pro) (NOT 2 Pro) (3*C V + Pers OR VBinf OR VBger) ;
-REMOVE ("que") + Enon IF (-1C N_AJ OR VBpp OR NP OR unknownMajIni) (1 Pro) (2 Pro) (4*C V + Pers OR VBinf OR VBger) ;
-REMOVE ("que") + Enon IF (-2C N_AJ OR VBpp OR NP OR unknownMajIni) (-1 CM) (NOT 2 Pro) (3*C V + Pers OR VBinf OR VBger) ;
-REMOVE ("que") + Enon IF (-2C N_AJ OR VBpp OR NP OR unknownMajIni) (-1 CM) (2 Pro) (NOT 3 Pro) (4*C V + Pers OR VBinf OR VBger) ;
-REMOVE ("que") + Enon IF (-2C N_AJ OR VBpp OR NP OR unknownMajIni) (-1 CM) (2 Pro) (3 Pro) (5*C V + Pers OR VBinf OR VBger) ;
+REMOVE ("que") + Enon IF (-1C N_AJ OR VBpp OR NP OR unknownMajIni) (1 Pro) (NOT 2 Pro) (3*C V + Pers OR VBinf OR VBger BARRIER EOS) ;	# guess
+REMOVE ("que") + Enon IF (-1C N_AJ OR VBpp OR NP OR unknownMajIni) (1 Pro) (2 Pro) (4*C V + Pers OR VBinf OR VBger BARRIER EOS) ;	# guess
+REMOVE ("que") + Enon IF (-2C N_AJ OR VBpp OR NP OR unknownMajIni) (-1 CM) (NOT 2 Pro) (3*C V + Pers OR VBinf OR VBger BARRIER EOS) ;	# guess
+REMOVE ("que") + Enon IF (-2C N_AJ OR VBpp OR NP OR unknownMajIni) (-1 CM) (2 Pro) (NOT 3 Pro) (4*C V + Pers OR VBinf OR VBger BARRIER EOS) ;	# guess
+REMOVE ("que") + Enon IF (-2C N_AJ OR VBpp OR NP OR unknownMajIni) (-1 CM) (2 Pro) (3 Pro) (5*C V + Pers OR VBinf OR VBger BARRIER EOS) ;	# guess
 REMOVE ("non") + Enon IF (NOT 1* ("pas")) ;
 SELECT ("non") + Enon IF (1C Pro OR V + Pers LINK NOT 0 VBimp) ;
 SELECT SUB:1 ("non") + Enon IF (1C Pro OR V + Pers LINK NOT 0 VBimp) ;
@@ -747,6 +759,10 @@ REMOVE ("ne") + Enon ;
 SELECT Rel IF (-1 ("a cada còp"i)) (0 Que) ;
 SELECT Conjadv IF (0 ("cada còp que"i)) (1* Que) ;
 SELECT Conjadv IF (0 ("cada còp que"i)) ;	# patch
+SELECT Enon IF (-1*C Enon) (-1C Conjco) (NOT -1* Conjsub OR Que + Rel) (0 Que OR ("ne") OR ("non")) (1 V + Pers LINK NOT 0 VBimp) ;
+SELECT Enon IF (-1*C Enon) (-1C Conjco) (NOT -1* Conjsub OR Que + Rel) (0 Que OR ("ne") OR ("non")) (1 Pro OR AV) (2 V + Pers LINK NOT 0 VBimp) ;
+SELECT Enon IF (-1*C Enon) (-1C Conjco) (NOT -1* Conjsub OR Que + Rel) (0 Que OR ("ne") OR ("non")) (1 Pro OR AV) (2 Pro) (3 V + Pers LINK NOT 0 VBimp) ;
+#REMOVE Enon IF (-1*C Verb + Pers BARRIER EOS OR Mas_cnjcoo OR O_cnjcoo) (NOT -1* Conjadv BARRIER EOS OR ("mes") + Conjco) (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon BARRIER V) ; # (1C Pro OR V + Pers LINK NOT 0 VBimp) ;
 SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon BARRIER V) (1C Pro OR V + Pers LINK NOT 0 VBimp) ;
 SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon BARRIER V) (0 ("ne") OR ("non")) (1 V + Pers LINK NOT 0 VBimp) (2 ("pas") OR ("pas nat")) ;
 SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon BARRIER V) (0 ("ne") OR ("non")) (1 Pro) (2 V + Pers LINK NOT 0 VBimp) (3 ("pas") OR ("pas nat")) ;
@@ -914,8 +930,8 @@ SELECT Conjco IF (-1 BOS OR SENT) (0 ("<E>")) (NOT 1 CM) (NOT 1* ("?")) ;
 SELECT Conjco IF (-1 BOS OR SENT) (0 ("<E>")) (NOT 1 CM OR Pro OR V + Pers) ;
 REMOVE Conjsub IF (-1 BOS OR SENT);
 REMOVE Rel IF (-1 BOS OR SENT);
-REMOVE Rel IF (NOT -1 CM OR N OR NP OR AJ OR VBpp OR PRON OR DET);
-REMOVE Rel IF (NOT -2 N OR AJ OR VBpp OR PRON OR DET) (-1 CM) ;
+REMOVE Rel IF (NOT -1 CM OR ("»") OR N OR NP OR AJ OR VBpp OR PRON OR DET);
+REMOVE Rel IF (NOT -2 N OR AJ OR VBpp OR PRON OR DET) (-1 CM OR ("»")) ;
 REMOVE Rel IF (-1C DET) (0 ("lo que") OR ("lo qui")) ;
 SELECT Rel IF (-1C DET) ;
 
@@ -1295,7 +1311,7 @@ REMOVE SUB:1 DET IF (0/* DET) (1C DET) ;	# en los acès
 SELECT PREAV IF (0 ("fòrça")) (1C AJ) ;
 SELECT AV IF (0 ("fòrça")) (1C VBpp) ;
 SELECT AV IF (0 ("fòrça")) (1 AdvComp) ;
-SELECT PREAV IF (-1C N_AJ + &&AcordSN) (0 ("fòrça")) (1 AJ + &&AcordSN) ; 
+SELECT PREAV IF (-1C N_AJ + &&AcordSN) (0 ("fòrça")) (1 AJ + &&AcordSN) ;
 SELECT PREDET + &&AcordSN IF (0 ("qual que siá") + &&AcordSN) (1 DET + &&AcordSN) (2 N_AJ + &&AcordSN) ;	# qual que siá son contengut
 SELECT PREDET + &&AcordSN IF (0 ("quau que sia") + &&AcordSN) (1 DET + &&AcordSN) (2 N_AJ + &&AcordSN) ;
 SELECT DETind + &&AcordSN IF (NOT -1 DET) (0 DETind + &&AcordSN) (1 N + &&AcordSN) ;	# un enfant ; lor cap de lista
@@ -1519,6 +1535,8 @@ SELECT AJ IF (-4C AJ) (-4 AJ + &&AcordSP) (-3 CM) (-2C AJ) (-2 AJ + &&AcordSP) (
 
 REMOVE V + Sg IF (-1C NUM) ;		# vint mil legas
 
+REMOVE N IF (1C VBinf) (0 V + Pers OR VBinf OR VBger) (NOT -1 DET OR AJ) ;	# fau convéncer
+
 REMOVE V + Pers IF (NOT -2* Rel) (-1C V LINK NOT 0 VBpp) ;	# enta finançar programas
 REMOVE V + Pers IF (NOT -3* Rel) (-2C V LINK NOT 0 VBpp) (-1C AV OR PREAV LINK NOT 0 Itg) ;	# finançar pas programas ; sabes on demora
 REMOVE V + Pers IF (NOT -1* Rel) (1C V LINK NOT 0 VBpp OR VBinf) ;
@@ -1575,12 +1593,17 @@ SELECT AJ + &&AcordSN IF (-3 DET + &&AcordSN) (-2 N + &&AcordSN OR NP + &&AcordS
 
 REMOVE AJ IF (-1C DET + &&AcordSN) (0 N + &&AcordSN) (1C CM) (NOT 2 AJ + &&AcordSN) (NOT 0 AdjOrd + &&AcordSN) ;
 
+REMOVE Conjadv IF (0 Se) (-1C Enon) ;
 REMOVE Conjadv IF (0 Se) (1C VBinf OR VBger) ;        # de se crear
 REMOVE Conjadv IF (0 Se) (1 Pro) (2C VBinf OR VBger) ;        # de se lo crear
-REMOVE PRON IF (0 Se) (NOT 1 Pro OR V + P3 OR V + VBinf OR V + VBger) ;        # se canti
-REMOVE PRON IF (0 Se) (1 Pro) (NOT 2 Pro OR V + P3 OR V + VBinf OR V + VBger) ;	# se li canti
-REMOVE PRON IF (0 Se) (1 Pro) (2 Pro) (NOT 3 Pro OR V + P3 OR V + VBinf OR V + VBger) ;	# se li o canti
-REMOVE PRON IF (0 Se) (1 Pro) (2 Pro) (3 Pro) (4 V + P3 OR V + VBinf OR V + VBger) ;
+REMOVE PRON IF (0 Se) (NOT 1 Pro OR V + P3 OR V + VBinf OR V + VBger OR unknownMinIni) ;        # se canti
+REMOVE PRON IF (0 Se) (1 Pro) (NOT 2 Pro OR V + P3 OR V + VBinf OR V + VBger OR unknownMinIni) ;	# se li canti
+REMOVE PRON IF (0 Se) (1 Pro) (2 Pro) (NOT 3 Pro OR V + P3 OR V + VBinf OR V + VBger OR unknownMinIni) ;	# se li o canti
+REMOVE PRON IF (0 Se) (1 Pro) (2 Pro) (3 Pro) (4 V + P3 OR V + VBinf OR V + VBger OR unknownMinIni) ;
+SELECT Pro IF (0 Se) (1 unknownMinIni) ;
+SELECT Pro IF (0 Se) (1 Pro) (2 unknownMinIni) ;
+SELECT Pro IF (0 Se) (1 Pro) (2 Pro) (3 unknownMinIni) ;
+SELECT Pro IF (0 Se) (1 Pro) (2 Pro) (3 Pro) (4 unknownMinIni) ;
 REMOVE PRON IF (-1C V LINK NOT 0 VBpp) (0 Se) ;
 REMOVE PRON IF (-2C V LINK NOT 0 VBpp) (-1C AV OR PREAV OR ("pas") LINK NOT 0 Itg) (0 Se) ;
 REMOVE PRON IF (-3C V LINK NOT 0 VBpp) (-2C AV OR PREAV OR ("pas") LINK NOT 0 Itg) (-1 AV LINK NOT 0 Itg) (0 Se) ;
@@ -1607,8 +1630,10 @@ SELECT Conjadv IF (0 Se) (1 Pro) (2 Pro) (3 Pro) (4 V) ;	# patch
 SELECT Conjadv IF (0 Se) (0/* Pro) (1 Pro) (2 Pro) (3 V) ;	# patch
 REMOVE Conjadv IF (0 Se) (0/* Pro) (-1*C N) (NOT -1* V + Pers) ;	# un ministeri s'encargue
 SELECT Si + Conjadv IF (0 Si) (-1 ("coma") OR ("com")) (NOT -2 BOS) ;
-REMOVE Pro + Ref IF (0 Si) (NOT 1 Pro OR VBinf OR VBger OR V + P3) ;
-REMOVE Pro + Ref IF (0 Si) (1 Pro LINK NOT 0 V) (NOT 2 VBinf OR VBger OR V + P3) ;
+REMOVE Pro + Ref IF (0 Si) (NOT 1 Pro OR VBinf OR VBger OR V + P3 OR unknownMinIni) ;
+REMOVE Pro + Ref IF (0 Si) (1 Pro LINK NOT 0 V) (NOT 2 VBinf OR VBger OR V + P3 OR unknownMinIni) ;
+SELECT Pro + Ref IF (0 Si) (1 unknownMinIni) ;
+SELECT Pro + Ref IF (0 Si) (1 Pro LINK NOT 0 V) (2 unknownMinIni) ;
 REMOVE Tn IF (0 Si) (-1 BOS) ;
 REMOVE Tn IF (0 Si) (-1C Conjsub OR Conjadv) ;
 REMOVE Tn IF (0 Si) (-1 CM) (1 CM) ;
@@ -1701,6 +1726,12 @@ SELECT DET IF (0 ("<la>"i) OR ("<las>"i)) (-1 ("de")) (1 AJ + Fem) ;
 # la, las (det)
 SELECT DET IF (0 ("<la>"i)) (1C N_AJ + FemSg) ;
 SELECT DET IF (0 ("<las>"i)) (1C N_AJ + FemPl) ;	# atencion : las casas (np.pro vblex)
+SELECT DET IF (0 ("<la>"i)) (1 ("«")) (2C N_AJ + FemSg) ;
+SELECT DET IF (0 ("<las>"i)) (1 ("«")) (2C N_AJ + FemPl) ;
+SELECT DET IF (0 ("<la>"i)) (1 ("«")) (2 N_AJ + FemSg) (3 N_AJ + FemSg) ;
+SELECT DET IF (0 ("<las>"i)) (1 ("«")) (2 N_AJ + FemPl) (3 N_AJ + FemSg) ;
+SELECT DET IF (0 ("<la>"i)) (1 ("«")) (2 N_AJ + FemSg) (3 ("»")) (4 N_AJ + FemSg) ;
+SELECT DET IF (0 ("<las>"i)) (1 ("«")) (2 N_AJ + FemPl) (3 ("»")) (4 N_AJ + FemSg) ;
 
 #pel/peu nom o article contractat
 REMOVE N IF (1 N + MascSg) (0 ("<peu>"i) OR ("<pel>"i)) (NOT -1 DET + Sg) (NOT -1 Artcontrsg) ;
