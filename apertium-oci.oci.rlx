@@ -1138,12 +1138,12 @@ SELECT Ant IF (-1 (";") OR (":")) (1 Ant OR Cog OR unknownMajIni) ;
 
 SELECT Top IF (-2 ("vila") OR ("aeropòrt") OR ("pòrt") OR ("reialme") OR ("principat") OR ("grand-ducat") OR ("ducat") OR ("marquesat") OR ("comtat") OR ("baroniá") OR ("senhoria") OR ("archavescat") OR ("arquevescat") OR ("avescat")) (-1 ("de")) (0 Cog OR Ant) ;
 SELECT Top IF (-2 Dignitat) (-1 ("de")) (0 Top) ;
-SELECT Top IF (-2 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sortir") OR ("gésser")) (-1 ("a") OR ("de") OR ("cap a") OR ("devèrs") OR ("entà") OR ("tà")) ;
+SELECT Top IF (-2 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sortir") OR ("gésser")) (-1 ("a") OR ("de") OR ("cap a") OR ("devèrs") OR ("entà") OR ("tà") OR ("enta") OR ("ta")) ;
 SELECT Top + FemSg IF (-2 ("anar") OR ("viatjar") OR ("arribar") OR ("partir")) (-1 ("en")) ;
-SELECT Top IF (-3 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sortir") OR ("gésser")) (-2 ("a") OR ("de") OR ("cap a") OR ("devèrs") OR ("entà") OR ("tà")) (-1 DET + &&AcordSN) (0 Top + &&AcordSN) ;
-SELECT Top IF (-3 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sortir") OR ("gésser")) (-2 AV) (-1 ("a") OR ("de") OR ("cap a") OR ("devèrs") OR ("entà") OR ("tà")) ;
+SELECT Top IF (-3 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sortir") OR ("gésser")) (-2 ("a") OR ("de") OR ("cap a") OR ("devèrs") OR ("entà") OR ("tà") OR ("enta") OR ("ta")) (-1 DET + &&AcordSN) (0 Top + &&AcordSN) ;
+SELECT Top IF (-3 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sortir") OR ("gésser")) (-2 AV) (-1 ("a") OR ("de") OR ("cap a") OR ("devèrs") OR ("entà") OR ("tà") OR ("enta") OR ("ta")) ;
 SELECT Top + FemSg IF (-3 ("anar") OR ("viatjar") OR ("arribar") OR ("partir")) (-2 AV) (-1 ("en")) ;
-SELECT Top IF (-4 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sortir") OR ("gésser")) (-3 AV) (-2 ("a") OR ("de") OR ("cap a") OR ("devèrs") OR ("entà") OR ("tà")) (-1 DET + &&AcordSN) (0 Top + &&AcordSN) ;
+SELECT Top IF (-4 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sortir") OR ("gésser")) (-3 AV) (-2 ("a") OR ("de") OR ("cap a") OR ("devèrs") OR ("entà") OR ("tà") OR ("enta") OR ("ta")) (-1 DET + &&AcordSN) (0 Top + &&AcordSN) ;
 
 REMOVE Al IF (-1 Ant OR Cog) (0 Ant OR Cog) ;
 REMOVE Top IF (-1 Ant OR Cog) (0 Ant OR Cog) ;
@@ -1155,6 +1155,28 @@ SELECT Top IF (0 ("Asia")) (NOT -1 DET) (NOT -1 Ant_Cog) ;
 SELECT Top IF (0 ("America")) (NOT -1 DET) (NOT -1 Ant_Cog) ;
 
 SELECT Top IF (-2C Al) (-1 ("de")) (0 Cog OR Ant) ;	# Estivada de Rodés
+
+SELECT Top IF (0 Top) (1 Conjco) (2C Top) ;		# Pau e Auloron
+SELECT Top IF (-2C Top) (-1 Conjco) (0 Top) ;		# Auloron e Pau
+SELECT Top IF (0 Top) (1 CM) (2C Top) (3 Conjco) ;	# Pau, Auloron e ...
+SELECT Top IF (-2 Top) (-1 CM) (0 Top) (1 Conjco) ;	# Auloron, Pau e ...
+SELECT Top IF (0 Top) (1 CM) (2 Top) (3 CM) (4C Top) ;
+SELECT Top IF (0 Top) (1 CM) (2C Top) (3 CM) (4 Top) ;
+SELECT Ant_Cog IF (0 Ant_Cog) (1 Conjco) (2C Ant_Cog) ;		# Pau e Jan
+SELECT Ant_Cog IF (-2C Ant_Cog) (-1 Conjco) (0 Ant_Cog) ;	# Jan e Pau
+SELECT Ant_Cog IF (0 Ant_Cog) (1 CM) (2C Ant_Cog) (3 Conjco) ;	# Pau, Jan e ...
+SELECT Ant_Cog IF (-2 Ant_Cog) (-1 CM) (0 Ant_Cog) (1 Conjco) ;	# Jan, Pau e ...
+SELECT Ant_Cog IF (0 Ant_Cog) (1 CM) (2 Ant_Cog) (3 CM) (4C Ant_Cog) ;
+SELECT Ant_Cog IF (0 Ant_Cog) (1 CM) (2C Ant_Cog) (3 CM) (4 Ant_Cog) ;
+SELECT Al IF (0 Al) (1 Conjco) (2C Al) ;
+SELECT Al IF (-2C Al) (-1 Conjco) (0 Al) ;
+SELECT Al IF (0 Al) (1 CM) (2C Al) (3 Conjco) ;
+SELECT Al IF (-2 Al) (-1 CM) (0 Al) (1 Conjco) ;
+SELECT Al IF (0 Al) (1 CM) (2 Al) (3 CM) (4C Al) ;
+SELECT Al IF (0 Al) (1 CM) (2C Al) (3 CM) (4 Al) ;
+
+SELECT Top IF (-1 De) (0 Top) (1 ("a") OR ("entà") OR ("tà") OR ("enta") OR ("ta") OR ("fins a") OR ("dinc a") OR ("dinca") OR ("entrò") OR ("entrò a") OR ("dusca") OR ("duscas") OR ("jusca") OR ("juscas") OR ("denquia") OR ("enquia")) (2 Top OR unknownMajIni) ;		# de Pau a Auloron
+SELECT Top IF (-3 De) (-2 Top OR unknownMajIni) (-1 ("a") OR ("entà") OR ("tà") OR ("enta") OR ("ta") OR ("fins a") OR ("dinc a") OR ("dinca") OR ("entrò") OR ("entrò a") OR ("dusca") OR ("duscas") OR ("jusca") OR ("juscas") OR ("denquia") OR ("enquia")) (0 Top) ;	# de Auloron a Pau	
 
 # HAVER
 
@@ -1584,8 +1606,8 @@ SELECT PREP IF (0 ("<pera>"i)) (1C N + FemSg) ;
 SELECT PREP IF (0 ("<peras>"i)) (1C N + FemPl) ;
 
 SELECT (mf) IF (0 ("<ròms>"i)) ;
-SELECT (mf) IF (0 ("<ròm>"i))  (-1 DET + Fem_strict);
-SELECT (mf) IF (0 ("<ròm>"i))  (-1 AJ + Fem) (-2 DET + Fem_strict);
+SELECT (mf) IF (0 ("<ròm>"i)) (-1 DET + Fem_strict);
+SELECT (mf) IF (0 ("<ròm>"i)) (-1 AJ + Fem) (-2 DET + Fem_strict);
 REMOVE N + (mf) IF (0 ("<ròm>"i)) ;
 
 SELECT Haver IF (0 A) (1C VBpp);	# a cantat
