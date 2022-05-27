@@ -47,13 +47,12 @@ LIST PREDET = predet ;
 LIST Pos = pos ;
 LIST SENT = sent ;
 #Jos=categorias
-LIST Tn = tn ;
 LIST VBger = ger ;
 LIST VBinf = inf ;
 LIST VBinfger = inf ger ;
 LIST VBimp = imp ;
 LIST Pro = pro ;
-LIST Ton = tn ;
+LIST Tn = tn ;
 LIST Ref = ref ;
 LIST PRencl = enc ;
 LIST VBpp = pp ;
@@ -179,7 +178,8 @@ LIST A_de = ("<a de>"i) ("<a d'>"i) ("<a d’>"i) ;
 LIST Mai = ("mai" adv) ("mei" adv) ("mès" adv) ("mes" adv) ;
 LIST Pus = ("pus" adv) ;
 LIST Mens = "mens" "mensh" ;
-LIST Melhor = "melhor" "mélher" ;
+LIST Melhor = "melhor" "mielhor" "mélher" "miélher" ;
+LIST Peger = "péger" "piéger" ;
 LIST AdvComp = ("mai" adv) ("mei" adv) ("mès" adv) ("mes" adv) ("pus" adv) "mens" "mensh" ;
 LIST Res = "res" "arren" "arrens" "ren" ;
 LIST Pel = "pel" "peu" ;
@@ -190,6 +190,7 @@ LIST Que_Itg = ("qué" itg) ;
 LIST Se = "se" ;
 LIST Si = "si" ;
 LIST Las = "las" ;
+LIST Mai_bon = "mai bon" "mai plan" "mei bon" "mei plan" ;
 LIST Mas_cnjcoo = ("mas" cnjcoo) ("mes" cnjcoo) ("mès" cnjcoo) ("mai" cnjcoo) ;
 LIST O_cnjcoo = ("o" cnjcoo) ("ò" cnjcoo) ;
 LIST Semblar_Pareisser = "semblar" "pareisher" "paréisher" ;
@@ -1556,11 +1557,28 @@ REMOVE VBpp IF (0 ("format")) (1 NP OR Acr) ;	# format PDF
 
 REMOVE N IF (-1 ("mas")) (0 V) (1 Que) ;		# mas sosten que
 
+# AJ / AV
+
+SELECT AV IF (-1 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP) (0 Melhor + MascSg) (1 Que OR PREP) ;
+SELECT AV IF (-1 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP) (0 Peger + MascSg) (1 Que OR PREP) ;
+#REMOVE AV IF (NOT -2 Pro + AV OR Tn OR Conjco) (-1 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP) (0 AJ + &&AcordSP) (NOT 1 N_AJ_PP + &&AcordSP OR DET OR PREP OR AV) ;
+#REMOVE AV IF (NOT -3 Pro + AV OR Tn OR Conjco) (-2 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP) (-1 AV OR PREAV) (0 AJ + &&AcordSP) (NOT 1 N_AJ_PP + &&AcordSP OR DET OR PREP OR AV) ;
+SELECT AJ IF (-1 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP) (0 ("probable") + &&AcordSP) ;
+
 # PR / AV
 
 REMOVE AV IF (-1C N_AJ) (0 PREP) (1C DET) ;	# vint mil legas jos lo mar
 
 # MOTS
+
+REMOVE Mai_bon IF (-1 N + &&AcordSN) (0 Mai_bon + &&AcordSN) ;
+REMOVE Mai_bon IF (0 Mai_bon) (1 ("ora") OR ("òra")) ;
+SELECT SUB:1 A IF (-1 N + &&AcordSN) (0/* A + &&AcordSN) (0 Mai_bon) ;
+SELECT SUB:1 A IF (0 Mai_bon) (1 ("ora") OR ("òra")) ;
+SELECT Mai_bon IF (0 Mai_bon) ;
+
+SELECT N IF (-1 DET + MascSg) (0 ("cap a")) ;
+REMOVE N IF (0 ("cap a")) ;
 
 SELECT PREP IF (0 ("<pera>"i)) (1C N + FemSg) ;
 SELECT PREP IF (0 ("<peras>"i)) (1C N + FemPl) ;
@@ -1653,9 +1671,9 @@ SELECT P3 IF (-2C Se + PRON) (-1 Pro) (NOT 0 Pro) (0 V) ;	# se li canti
 SELECT P3 IF (-3C Se + PRON) (-2 Pro) (-1 Pro) (NOT 0 Pro) (0 V + P3) ;	# se li o canti
 SELECT Conjadv IF (0 Se) (1 Pro) (2 ("plaire") OR ("plàser")) ;
 SELECT Conjadv IF (0 Se) (0/* Pro) (1 ("plaire") OR ("plàser")) ;	# se'vs platz
-REMOVE Ton IF (0 Se) (1 V) (1 P3) ;
-REMOVE Ton IF (0 Se) (1 VBinf) ;
-REMOVE Ton IF (0 Se) (1 Pro) ;
+REMOVE Tn IF (0 Se) (1 V) (1 P3) ;
+REMOVE Tn IF (0 Se) (1 VBinf) ;
+REMOVE Tn IF (0 Se) (1 Pro) ;
 SELECT Pro IF (0 Se) (1C Pro OR V + P3) ;	# patch			NE MARCHE PAS DU TOUT
 
 REMOVE P1 + Sg IF (-1 NP + Sg) (0 V + P3 + Sg) ;
