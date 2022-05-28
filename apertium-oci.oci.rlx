@@ -1930,5 +1930,8 @@ SELECT AV (0 ("<au darrèr>"i)) ;
 
 SELECT N IF (0 ("par")) (1 ("de")) ;
 
+REMOVE ("hèr") + (vbhaver) IF (0 ("har") + (vbhaver)) ;
+REMOVE ("hèr") + (vblex) IF (0 ("har") + (vblex)) ;
+
 #de completar : desambiguizacion present imperfait
 #Ne fonctionne pas SELECT PRI IF (0 PRI) (0 PII) (NOT 1* PII BARRIER FinFr) (NOT 1* IFI BARRIER FinFr) (NOT -1* PII BARRIER FinFr) (NOT -1* IFI BARRIER FinFr) ;
