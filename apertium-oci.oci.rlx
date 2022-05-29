@@ -155,7 +155,8 @@ LIST NumOrd = ("[1-9][0-9]en"r) ("[1-9][0-9]au"r) ;
 LIST A = "a";
 LIST En = "en";
 LIST De = "de";
-LIST En_pron = ("en" prn);
+LIST Ne_pron = ("ne" prn) ("en" prn) ;
+LIST Ne_conj = ("ne" cnjcoo);
 LIST Dins = "dins";
 LIST Jos = "jos";
 LIST Pendent = "pendent";
@@ -922,7 +923,46 @@ SELECT AJ IF (0 ("bon")) (1 ("fabulós")) ;	# valoracions Jornalet
 SELECT AV IF (-1 BOS OR CM) (0 ("solide")) (1 CM) ;	# guess
 
 #En es pas un pronom s'es abans un gerondiu (amb possibilitat de pronoms entre los dos)
-REMOVE En_pron IF (1* VBger BARRIER (*) - Pro) ;
+REMOVE ("en") IF (0 ("<ne>"i)) ;
+SELECT Ne_pron IF (-1C PREP) (1 VBinf) ;
+SELECT Ne_pron IF (-1C PREP) (1 Pro) (2 VBinf) ;
+SELECT Ne_pron IF (-2C PREP) (-1 Pro) (1 VBinf) ;	# de se n'anar
+SELECT VBinf IF (-2C PREP LINK NOT 0 ("en")) (-1 Ne_pron) (0 VBinf) ;
+SELECT VBinf IF (-3C PREP LINK NOT 0 ("en")) (-2 Ne_pron) (-1 Pro) (0 VBinf) ;
+SELECT VBinf IF (-3C PREP LINK NOT 0 ("en")) (-2 Pro) (-1 Ne_pron) (0 VBinf) ;	# de se n'anar
+SELECT Ne_pron IF (-1 ("en")) (1 VBger) ;
+SELECT Ne_pron IF (-1 ("en")) (1 Pro) (2 VBger) ;
+SELECT Ne_pron IF (-2 ("en")) (-1 Pro) (2 VBger) ;
+SELECT PREP IF (0 ("en")) (1 Ne_pron) (2 VBger) ;
+SELECT PREP IF (0 ("en")) (1 Ne_pron) (2 Pro) (3 VBger) ;
+SELECT PREP IF (0 ("en")) (1 Pro) (2 Ne_pron) (3 VBger) ;
+SELECT Ne_conj IF (1 N) (2 Ne_conj) (3 N) ;
+SELECT Ne_conj IF (1 AJ) (2 Ne_conj) (3 AJ) ;
+SELECT Ne_conj IF (1 AV) (2 Ne_conj) (3 AV) ;
+SELECT Ne_conj IF (1 V) (2 Ne_conj) (3 V) ;
+SELECT Ne_conj IF (-2 Ne_conj) (-1 N) (0 Ne_conj) (1 N) ;
+SELECT Ne_conj IF (-2 Ne_conj) (-1 AJ) (0 Ne_conj) (1 AJ) ;
+SELECT Ne_conj IF (-2 Ne_conj) (-1 AV) (0 Ne_conj) (1 AV) ;
+SELECT Ne_conj IF (-2 Ne_conj) (-1 V) (0 Ne_conj) (1 V) ;
+SELECT Ne_conj IF (1 N) (2 CM) (3 Ne_conj) (4 N) ;
+SELECT Ne_conj IF (1 AJ) (2 CM) (3 Ne_conj) (4 AJ) ;
+SELECT Ne_conj IF (1 AV) (2 CM) (3 Ne_conj) (4 AV) ;
+SELECT Ne_conj IF (1 V) (2 CM) (3 Ne_conj) (4 V) ;
+SELECT Ne_conj IF (-3 Ne_conj) (-2 N) (-1 CM) (0 Ne_conj) (1 N) ;
+SELECT Ne_conj IF (-3 Ne_conj) (-2 AJ) (-1 CM) (0 Ne_conj) (1 AJ) ;
+SELECT Ne_conj IF (-3 Ne_conj) (-2 AV) (-1 CM) (0 Ne_conj) (1 AV) ;
+SELECT Ne_conj IF (-3 Ne_conj) (-2 V) (-1 CM) (0 Ne_conj) (1 V) ;
+SELECT Ne_pron IF (1C V + Pers) (2C DETdef OR NUM) (NOT 1* Ne_conj) (NOT -1* Ne_conj) ;		# ne reclamavan la destruccion
+
+SELECT PREP IF (NOT -1 PREP) (0 En) (1 VBger) ;
+SELECT PREP IF (NOT -1 PREP) (0 En) (1C Pro) (2 VBger) ;
+SELECT PREP IF (0 En) (1 Pro) (2 Pro) (3 VBger) ;
+SELECT N IF (-1 En) (0 ("sovenir")) (1 De) ;
+SELECT VBger IF (NOT -2 PREP) (-1 En) (0 VBger) ;
+SELECT VBger IF (-2 En) (-1C Pro) (0 VBger) ;
+SELECT VBger IF (-3 En) (-2 Pro) (-1 Pro) (0 VBger) ;
+SELECT Pro IF (-1C PREP) (1 Pro) (2 VBinf OR VBger) ;	# de nos en rendre
+SELECT Pro IF (-2C PREP) (-1 Pro) (1 VBinf OR VBger) ;
 
 #Una conjonccion o un pronom relatiu se podon pas trobar en debuta de frasa
 #REMOVE Conjco IF (-1 BOS OR SENT);		# en realitat, òc
