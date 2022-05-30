@@ -1604,6 +1604,8 @@ SELECT AJ IF (-4C AJ) (-4 AJ + &&AcordSP) (-3 CM) (-2C AJ) (-2 AJ + &&AcordSP) (
 
 # N / V
 
+SELECT N IF (0 ("<Liga>")) (1 NUM) ;
+
 REMOVE V + Sg IF (-1C NUM) ;		# vint mil legas
 
 REMOVE N IF (1C VBinf) (0 V + Pers OR VBinf OR VBger) (NOT -1 DET OR AJ) ;	# fau convéncer
