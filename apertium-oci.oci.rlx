@@ -1980,6 +1980,8 @@ SELECT AV (0 ("<au darrèr>"i)) ;
 
 SELECT N IF (0 ("par")) (1 ("de")) ;
 
+REMOVE ("èster") + (vbser) IF (0 ("èsser") + (vbser)) ;
+REMOVE ("èster") + (vblex) IF (0 ("èsser") + (vblex)) ;
 REMOVE ("hèr") + (vbhaver) IF (0 ("har") + (vbhaver)) ;
 REMOVE ("hèr") + (vblex) IF (0 ("har") + (vblex)) ;
 
