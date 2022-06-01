@@ -985,6 +985,8 @@ REMOVE VBimp IF (0 P3) ;
 SELECT N IF (-1 ("<[a-zàáèéíòóú].*>"r)) (0 ("<Estat>") OR ("<Estats>")) ;	# "Estat" (con mayúscula) va precedido de una palabra con minúscula inicial
 SELECT AJ IF (-1C N) (0 Clau) ;
 SELECT Fem IF (NOT -1/* Masc_strict) (0 Clau + Masc) (NOT 1 Masc_strict) ;
+SELECT Masc_strict IF (NOT -1/* Fem_strict) (0 ("amazigh") + Masc) (NOT 1 Fem_strict) ;
+SELECT Fem_strict IF (NOT -1/* Masc_strict) (0 ("amazigh") + Fem) (NOT 1 Masc_strict) ;
 SELECT N IF (0 ("radio")) (0 (META:/-/r)) (1 ("television")) ;
 SELECT PREP IF (0 ("jos")) (0 (META:/-/r)) ;
 SELECT N IF (-1C N) (-1 (META:/-/r)) ;
