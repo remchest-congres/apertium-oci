@@ -1462,12 +1462,20 @@ SELECT NUM IF (0 NUM) (1 ("quiti") + &&AcordSN) (2 N + &&AcordSN) ;	# dos quites
 
 # ADJ POS
 
-REMOVE AJ + Pos IF (NOT -1 Ser) (0 AJ + Pos) ;
+REMOVE AJ + Pos IF (NOT -1 Ser OR N) (0 AJ + Pos) ;
+REMOVE AJ + Pos IF (-1 N) (0 AJ + Pos) (0 Ser + PRS) (-1* Que OR Conjadv) ;	# que l'excepcion siá faita
+REMOVE Conjco IF (-1 N) (0 ("siá")) (0 Ser + PRS) (-1* Que OR Conjadv) ;	# que l'excepcion siá faita
+SELECT Conjco IF (-1 N) (0 ("siá")) (-1* ("siá")) ;
+SELECT Conjco IF (-1 N) (0 ("siá")) (1* ("siá")) ;
+REMOVE AJ + Pos IF (-1 N) (0 AJ + Pos) (0 Pro) (1 Pro OR V) ;	# lo ministèri lor auriá daissat
+SELECT DET + Pos IF (-1 N) (0 AJ + Pos) (0 DET + Pos + &&AcordSN) (1 N + &&AcordSN OR AdjPre + &&AcordSN) ;	# ofrisson al public lor darrièr disc
 #REMOVE AJ + Pos IF (NOT -1 Ser OR ("lenga") OR ("cultura") OR ("casa")) (0 AJ + Pos) ;
 #REMOVE AJ + Pos IF (NOT -2 DETdef + FemSg) (-1 ("lenga") OR ("cultura")) (0 AJ + Pos) ;
 #SELECT AJ + Pos + &&AcordSN IF (-1 ("casa") + &&AcordSN) (0 AJ + Pos) (NOT 1 AJ + &&AcordSN) ;
 
 # N
+
+REMOVE AJ (-1 N) (-1 ("<.* de>"r)) (0 DET OR N) ;	# una remesa en causa de lor poder
 
 SELECT N OR PRON OR NP IF (-1C PREP) (1 EOS OR Rpar) ;	# ambe fòrça. ; a res.
 SELECT N OR PRON OR NP OR VBinf IF (-1C PREP) (1C PREP) (NOT 0 ("tròp") OR ("pauc") OR ("pòc")) ;	# discors de fin d'annada
