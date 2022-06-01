@@ -195,6 +195,7 @@ LIST Mai_bon = "mai bon" "mai plan" "mei bon" "mei plan" ;
 LIST Mas_cnjcoo = ("mas" cnjcoo) ("mes" cnjcoo) ("mès" cnjcoo) ("mai" cnjcoo) ;
 LIST O_cnjcoo = ("o" cnjcoo) ("ò" cnjcoo) ;
 LIST Semblar_Pareisser = "semblar" "pareisher" "paréisher" ;
+LIST Demandar = "demandar" "demanar" "interrogar" "questionar" "qüestionar" "saber" ;
 LIST Estat = "estat" ;
 LIST Clau = "clau" ;
 LIST Calar = "calar" ;
@@ -405,6 +406,15 @@ SELECT DET IF (NOT -1/* DET) (0 ("lei")) (1C N + Pl_strict) ;
 SELECT N IF (0 ("lei") + &&AcordSN) (1 Cog OR unknownMajIni) ;	# lei Deixonne
 REMOVE N IF (0 ("<estar>"i)) (-1 PREP) ;	# patch
 REMOVE N IF (0 ("<estar>"i) OR Ser + VBinf) (-1 ("har") OR ("far") OR ("hèr")) ;
+
+SELECT Itg IF (1 Que) (2 Ser + PRS + P3) ;	# on que sian
+SELECT Conjsub IF (-1 Itg) (0 Que) (1 Ser + PRS + P3) ;	# on que sian
+SELECT Ser + PRS + P3 IF (-2 Itg) (-1 Que) (0 Ser + PRS + P3) ;	# on que sian
+
+SELECT Conjco (0 ("sia")) (1 V + Pers) (2* ("sia") LINK 1 V + Pers) ;
+SELECT Conjco (0 ("sia")) (1 V + Pers) (-2* ("sia") LINK 1 V + Pers) ;
+SELECT Conjco (0 ("sia")) (1 Que) (2 V + Pers) (3* ("sia") LINK 1 Que LINK 1 V + Pers) ;
+SELECT Conjco (0 ("sia")) (1 Que) (2 V + Pers) (-3* ("sia") LINK 1 Que LINK 1 V + Pers) ;
 
 SELECT PREP IF (0 ("entre")) (1C N_AJ OR NP) ;
 SELECT PREP IF (0 ("entre")) (0 (META:/-/r)) ;
@@ -796,14 +806,24 @@ SELECT AVexcl IF (-1 BOS) (0 AVexcl) (1 ("!")) ;
 SELECT AVexcl IF (-2 BOS) (-1 Conjco) (0 AVexcl) (1 ("!")) ;
 REMOVE AVexcl ;
 
-SELECT Itg IF (-1 BOS) (0C Itg OR Rel OR Conjsub OR Conjadv) ;	# Qui s'adresse
-SELECT Itg IF (-2 BOS) (-1 PREP) (0C Itg OR Rel OR Conjsub OR Conjadv) ;	# A qui s'adresse
-SELECT Itg IF (-2 BOS) (-1 Conjco) (0C Itg OR Rel OR Conjsub OR Conjadv) ;	# Mais qui s'adresse
-SELECT Itg IF (-3 BOS) (-1 Conjco) (-1 PREP) (0C Itg OR Rel OR Conjsub OR Conjadv) ;	# Mais a qui s'adresse
-SELECT Itg IF (-1C V LINK NOT 0 VBpp) (0C Itg OR Rel) ;	# je me demande qui
-SELECT Itg IF (-2C V LINK NOT 0 VBpp) (-1 PREP) (0C Itg OR Rel) ;	# je demande avec qui
-SELECT Itg IF (-2C V LINK NOT 0 VBpp) (-1 AV) (0C Itg OR Rel) ;	# je ne demande pas qui
-SELECT Itg IF (-3C V LINK NOT 0 VBpp) (-2 AV) (-1 PREP) (0C Itg OR Rel) ;	# je ne demande pas avec qui
+SELECT Itg OR Excl OR IJ IF (-1 BOS) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau")) ;	# Qui s'adresse
+SELECT Itg OR Excl OR IJ IF (-2 BOS) (-1 PREP) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau")) ;	# A qui s'adresse
+SELECT Itg OR Excl OR IJ IF (-2 BOS) (-1 Conjco) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau")) ;	# Mais qui s'adresse
+SELECT Itg OR Excl OR IJ IF (-3 BOS) (-1 Conjco) (-1 PREP) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau")) ;	# Mais a qui s'adresse
+
+SELECT Itg IF (-1 BOS) (0C Itg OR Excl OR IJ OR Rel OR Conjsub OR Conjadv OR ("coma")) (1* ("?")) ;
+SELECT Itg IF (-2 BOS) (-1 PREP) (0C Itg OR Excl OR IJ OR Rel OR Conjsub OR Conjadv OR ("coma")) (1* ("?")) ;
+SELECT Itg IF (-2 BOS) (-1 Conjco) (0C Itg OR Excl OR IJ OR Rel OR Conjsub OR Conjadv OR ("coma")) (1* ("?")) ;
+SELECT Itg IF (-3 BOS) (-1 Conjco) (-1 PREP) (0C Itg OR Excl OR IJ OR Rel OR Conjsub OR Conjadv OR ("coma")) (1* ("?")) ;
+SELECT Excl OR IJ IF (-1 BOS) (0C Itg OR Excl OR IJ OR Rel OR Conjsub OR Conjadv) (1* ("!")) ;
+SELECT Excl OR IJ IF (-2 BOS) (-1 PREP) (0C Itg OR Excl OR IJ OR Rel OR Conjsub OR Conjadv) (1* ("!")) ;
+SELECT Excl OR IJ IF (-2 BOS) (-1 Conjco) (0C Itg OR Excl OR IJ OR Rel OR Conjsub OR Conjadv) (1* ("!")) ;
+SELECT Excl OR IJ IF (-3 BOS) (-1 Conjco) (-1 PREP) (0C Itg OR Excl OR IJ OR Rel OR Conjsub OR Conjadv) (1* ("!")) ;
+SELECT Itg IF (-1C Demandar LINK NOT 0 VBpp) (0C Itg OR Excl OR IJ OR Rel OR ("coma")) ;	# je me demande qui
+SELECT Itg IF (-2C Demandar LINK NOT 0 VBpp) (-1 PREP) (0C Itg OR Excl OR IJ OR Rel OR ("coma")) ;	# je demande avec qui
+SELECT Itg IF (-2C Demandar LINK NOT 0 VBpp) (-1 AV) (0C Itg OR Excl OR IJ OR Rel OR ("coma")) ;	# je ne demande pas qui
+SELECT Itg IF (-3C Demandar LINK NOT 0 VBpp) (-2 AV) (-1 PREP) (0C Itg OR Excl OR IJ OR Rel OR ("coma")) ;	# je ne demande pas avec qui
+REMOVE AV + Excl ;
 REMOVE AV + Itg ;
 
 SELECT AV IF (0 ("fòrça")) (1 ("present")) ;	# son fòrça presents
@@ -1706,11 +1726,11 @@ SELECT Pro IF (0 Se) (1 Pro) (2 unknownMinIni) ;
 SELECT Pro IF (0 Se) (1 Pro) (2 Pro) (3 unknownMinIni) ;
 SELECT Pro IF (0 Se) (1 Pro) (2 Pro) (3 Pro) (4 unknownMinIni) ;
 REMOVE PRON IF (-1C V LINK NOT 0 VBpp) (0 Se) ;
-REMOVE PRON IF (-2C V LINK NOT 0 VBpp) (-1C AV OR PREAV OR ("pas") LINK NOT 0 Itg) (0 Se) ;
-REMOVE PRON IF (-3C V LINK NOT 0 VBpp) (-2C AV OR PREAV OR ("pas") LINK NOT 0 Itg) (-1 AV LINK NOT 0 Itg) (0 Se) ;
+REMOVE PRON IF (-2C V LINK NOT 0 VBpp) (-1C AV OR PREAV OR ("pas") LINK NOT 0 Itg OR Rel) (0 Se) ;
+REMOVE PRON IF (-3C V LINK NOT 0 VBpp) (-2C AV OR PREAV OR ("pas") LINK NOT 0 Itg OR Rel) (-1 AV LINK NOT 0 Itg) (0 Se) ;
 REMOVE PRON IF (-2 VBaux) (-1C VBpp) (0 Se) ;
-REMOVE PRON IF (-3 VBaux) (-2C AV OR PREAV OR ("pas") LINK NOT 0 Itg) (-1C VBpp) (0 Se) ;
-REMOVE PRON IF (-4 VBaux) (-3C AV OR PREAV OR ("pas") LINK NOT 0 Itg) (-2 AV LINK NOT 0 Itg) (-1C VBpp) (0 Se) ;
+REMOVE PRON IF (-3 VBaux) (-2C AV OR PREAV OR ("pas") LINK NOT 0 Itg OR Rel) (-1C VBpp) (0 Se) ;
+REMOVE PRON IF (-4 VBaux) (-3C AV OR PREAV OR ("pas") LINK NOT 0 Itg OR Rel) (-2 AV LINK NOT 0 Itg OR Rel) (-1C VBpp) (0 Se) ;
 SELECT Pro IF (0 Se) (1 En) (2 ("anar")) ;
 SELECT Pro IF (0 Se) (1 En) (2 Ser) (3 ("anar") + VBpp) ;
 SELECT Pro IF (0 Se) (1 En) (2 Ser) (3 AV) (4 ("anar") + VBpp) ;
