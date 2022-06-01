@@ -1468,6 +1468,7 @@ REMOVE Conjco IF (-1 N) (0 ("siá")) (0 Ser + PRS) (-1* Que OR Conjadv) ;	# que 
 SELECT Conjco IF (-1 N) (0 ("siá")) (-1* ("siá")) ;
 SELECT Conjco IF (-1 N) (0 ("siá")) (1* ("siá")) ;
 REMOVE AJ + Pos IF (-1 N) (0 AJ + Pos) (0 Pro) (1 Pro OR V) ;	# lo ministèri lor auriá daissat
+REMOVE ("soar") IF (-1 N + &&AcordSN) (0 AJ + Pos + &&AcordSN);	# creacions soas
 SELECT DET + Pos IF (-1 N) (0 AJ + Pos) (0 DET + Pos + &&AcordSN) (1 N + &&AcordSN OR AdjPre + &&AcordSN) ;	# ofrisson al public lor darrièr disc
 #REMOVE AJ + Pos IF (NOT -1 Ser OR ("lenga") OR ("cultura") OR ("casa")) (0 AJ + Pos) ;
 #REMOVE AJ + Pos IF (NOT -2 DETdef + FemSg) (-1 ("lenga") OR ("cultura")) (0 AJ + Pos) ;
