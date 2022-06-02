@@ -176,12 +176,12 @@ LIST Caps_de = ("<caps de>"i) ("<caps d'>"i) ("<caps d’>"i) ;
 LIST Cap_de_del = ("<cap de>"i) ("<cap d'>"i) ("<cap d’>"i) ("<cap del>"i) ("<cap dels>"i) ("<cap deu>"i) ("<cap deus>"i) ;
 LIST Caps_de_del = ("<caps de>"i) ("<caps d'>"i) ("<caps d’>"i) ("<caps del>"i) ("<caps dels>"i) ("<caps deu>"i) ("<caps deus>"i) ;
 LIST A_de = ("<a de>"i) ("<a d'>"i) ("<a d’>"i) ;
-LIST Mai = ("mai" adv) ("mei" adv) ("mès" adv) ("mes" adv) ;
+LIST Mai = ("mai" adv) ("mei" adv) ("mès" adv) ("mes" adv) ("fòrça mai" adv) ("un pauc mai" adv) ;
 LIST Pus = ("pus" adv) ;
 LIST Mens = "mens" "mensh" ;
 LIST Melhor = "melhor" "mielhor" "mélher" "miélher" ;
 LIST Peger = "péger" "piéger" ;
-LIST AdvComp = ("mai" adv) ("mei" adv) ("mès" adv) ("mes" adv) ("pus" adv) "mens" "mensh" ;
+LIST AdvComp = ("mai" adv) ("mei" adv) ("mès" adv) ("mes" adv) ("pus" adv) ("fòrça mai" adv) ("un pauc mai" adv) "mens" "mensh" ;
 LIST Donc = "donc" "doncas" "dongas" "pasmes" "totun" "çaquelà" "ça que la" "emès" "pr'aquò" ;
 LIST Res = "res" "arren" "arrens" "ren" ;
 LIST Pel = "pel" "peu" ;
@@ -664,6 +664,7 @@ SELECT AJ IF (-4/* DETdef + &&AcordSN) (-2 N + &&AcordSN) (-1 AJ + &&AcordSN) (-
 SELECT AV IF (-3 DET + &&AcordSN) (-2 N + &&AcordSN) (-1 AJ + &&AcordSN) (0 AdvComp) (1 AJ + &&AcordSN OR VBpp + &&AcordSN) ;
 SELECT AJ IF (-4 DET + &&AcordSN) (-2 N + &&AcordSN) (-1 AJ + &&AcordSN) (-1 AdvComp) (0 AJ + &&AcordSN) ;
 SELECT AV IF (-1/* DETdef) (0 AdvComp) (1 AV) ;
+SELECT N IF (-1 ("en")) (0 ("nombre") + &&AcordSN) (1 AdvComp) (2 AJ + &&AcordSN) ;
 SELECT AJ OR VBpp OR AV IF (-1 AdvComp) (0 AJ OR VBpp OR AV) (1 Que) ;	# mei leugèr que jo
 SELECT AJ OR AV IF (-1 AdvComp) (0 AJ OR VBpp OR AV) (1 Que) ;	# mei leugèr que jo
 SELECT Conjsub IF (-2 AdvComp) (-1 AJ OR VBpp OR AV) (0 Que) ;	# mei leugèr que jo
@@ -1486,6 +1487,7 @@ SELECT AJ IF (-1 NUM) (0 ("quite") + &&AcordSN) (1 N + &&AcordSN) ;	# dos quites
 SELECT AJ IF (-1 NUM) (0 ("quiti") + &&AcordSN) (1 N + &&AcordSN) ;
 SELECT NUM IF (0 NUM) (1 ("quite") + &&AcordSN) (2 N + &&AcordSN) ;	# dos quites mainatges
 SELECT NUM IF (0 NUM) (1 ("quiti") + &&AcordSN) (2 N + &&AcordSN) ;	# dos quites mainatges
+SELECT AJ IF (-1 DETdef OR NUM) (0 ("quite")) (1 unknown) ;
 
 # ADJ POS
 
@@ -1878,8 +1880,11 @@ REMOVE N IF (0 ("<Peus>") OR ("<Pels>")) (NOT 1 AJ) ;
 REMOVE N IF (0 ("<Peu>") OR ("<Pel>")) (NOT 1 AJ) ;
 REMOVE N IF (-1 SENT) (0 ("<peus>"i) OR ("<pels>"i)) (NOT 1 SENT OR ("e") OR AJ) ;
 
-# de còps
-REMOVE PREP IF (NOT -1 N_AJ) (0 ("de còps")) ;
+# de còps, a còps
+SELECT AV IF (-1 CM OR BOS) (0 ("de còps") OR ("a còps")) ;
+SELECT AV IF (1 CM OR EOS) (0 ("de còps") OR ("a còps")) ;
+SELECT AV IF (1C V) (0 ("de còps") OR ("a còps")) ;
+REMOVE PREP IF (NOT -1 N_AJ) (0 ("de còps") OR ("a còps")) ;
 
 #punt de vista
 SELECT SUB:1 Nf IF (0 PREP) (-1 ("punt") OR ("ponch")) (0 ("<de vista>")) ;
@@ -2058,4 +2063,5 @@ SELECT PRI IF (-3C PRI) (-2 Conjco) (-1 AV OR Pro) (0 PRS) (0 PRI) ;
 SELECT PRS IF (-3C PRS) (-2 Conjco) (-1 AV OR Pro) (0 PRS) (0 PRI) ;
 SELECT PRI IF (3C PRI) (2 AV OR Pro) (1 Conjco) (0 PRS) (0 PRI) ;
 SELECT PRS IF (3C PRS) (2 AV OR Pro) (1 Conjco) (0 PRS) (0 PRI) ;
-#REMOVE PRS IF (0 PRS) (NOT -1* Que OR (".*que"r) + Conjadv OR ("quan") + Conjadv OR ("quand") + Conjadv) ;
+#REMOVE PRS IF (0 PRI) (NOT -1* Que OR Conjadv) ;
+#REMOVE PRS IF (0 PRI) (NOT -1* Que OR (".*que"r) + Conjadv OR ("quan") + Conjadv OR ("quand") + Conjadv) ;
