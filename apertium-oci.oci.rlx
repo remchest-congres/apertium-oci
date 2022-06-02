@@ -664,7 +664,12 @@ SELECT AJ IF (-4/* DETdef + &&AcordSN) (-2 N + &&AcordSN) (-1 AJ + &&AcordSN) (-
 SELECT AV IF (-3 DET + &&AcordSN) (-2 N + &&AcordSN) (-1 AJ + &&AcordSN) (0 AdvComp) (1 AJ + &&AcordSN OR VBpp + &&AcordSN) ;
 SELECT AJ IF (-4 DET + &&AcordSN) (-2 N + &&AcordSN) (-1 AJ + &&AcordSN) (-1 AdvComp) (0 AJ + &&AcordSN) ;
 SELECT AV IF (-1/* DETdef) (0 AdvComp) (1 AV) ;
+SELECT N IF (-1 ("en")) (0 ("contacte") + MascSg) ;
+SELECT PREP IF (0 ("en")) (1 ("contacte") + MascSg) ;
+SELECT N IF (-1 CM) (0 ("signe")) (1 De) ;
 SELECT N IF (-1 ("en")) (0 ("nombre") + &&AcordSN) (1 AdvComp) (2 AJ + &&AcordSN) ;
+SELECT N IF (0 ("nombre") + Sg) (1 De) (2C N_AJ + Pl) ;
+SELECT AJ + MascSg IF (1 ("nombre") + Sg) (2 De) (3C N_AJ + Pl) ;
 SELECT AJ OR VBpp OR AV IF (-1 AdvComp) (0 AJ OR VBpp OR AV) (1 Que) ;	# mei leugèr que jo
 SELECT AJ OR AV IF (-1 AdvComp) (0 AJ OR VBpp OR AV) (1 Que) ;	# mei leugèr que jo
 SELECT Conjsub IF (-2 AdvComp) (-1 AJ OR VBpp OR AV) (0 Que) ;	# mei leugèr que jo
@@ -1648,6 +1653,16 @@ SELECT N IF (0 ("<Liga>")) (1 NUM) ;
 
 REMOVE V + Sg IF (-1C NUM) ;		# vint mil legas
 
+REMOVE V + Pers IF (-1C PREP) ;
+REMOVE V + Pers IF (-1 ("jos")) (0 N_AJ) ;
+REMOVE V + Pers IF (-1 ("devath")) (0 N_AJ) ;
+REMOVE V + Pers IF (-1 ("sota")) (0 N_AJ) ;
+SELECT PREP IF (0 ("jos")) (1 N_AJ) ;
+SELECT PREP IF (0 ("devath")) (1 N_AJ) ;
+SELECT PREP IF (0 ("sota")) (1 N_AJ) ;
+
+REMOVE N (-1 ("de mai")) ;
+
 REMOVE N IF (1C VBinf) (0 V + Pers OR VBinf OR VBger) (NOT -1 DET OR AJ) ;	# fau convéncer
 
 REMOVE V + Pers IF (NOT -2* Rel) (-1C V LINK NOT 0 VBpp) ;	# enta finançar programas
@@ -1673,6 +1688,16 @@ REMOVE VBpp IF (-1C DET + &&AcordSN OR Pro) (0 N + &&AcordSN) ;		# lo resultat
 REMOVE VBpp IF (0 ("format")) (1 NP OR Acr) ;	# format PDF
 
 REMOVE N IF (-1 ("mas")) (0 V) (1 Que) ;		# mas sosten que
+
+# AJ / V
+
+SELECT AJ (0 ("liure")) (1 De) (2 VBinf) ;
+SELECT AJ (-3 N_AJ + &&AcordSN) (-2 AJ + &&AcordSN) (-1 Conjco) (0 AJ + &&AcordSN) ;	# un territòri immens e voide
+SELECT AJ (-4 AJ + &&AcordSN) (-3 CM) (-2 AJ + &&AcordSN) (-1 Conjco) (0 AJ + &&AcordSN) ;	# un territòri desèrt, immense e voide
+SELECT AJ (-4 N_AJ + &&AcordSN) (-3 AJ + &&AcordSN) (-2 Conjco) (-1 AV OR PREAV) (0 AJ + &&AcordSN) ;	# un territòri immense e quasi voide
+SELECT AJ (-5 AJ + &&AcordSN) (-4 CM) (-3 AJ + &&AcordSN) (-2 Conjco) (-1 AV OR PREAV) (0 AJ + &&AcordSN) ;	# un territòri desèrt, immense e quasi voide
+SELECT AJ (-2 AJ + &&AcordSN) (-1 CM) (0 AJ + &&AcordSN) (1 Conjco) (2 AJ + &&AcordSN) ;	# un territòri immense, voide e quasi desèrt
+SELECT AJ (-2 AJ + &&AcordSN) (-1 CM) (0 AJ + &&AcordSN) (1 Conjco) (2 AV OR PREAV) (3 AJ + &&AcordSN) ;	# un territòri immense, voide e quasi desèrt
 
 # AJ / AV
 
