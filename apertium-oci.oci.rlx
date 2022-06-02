@@ -182,6 +182,7 @@ LIST Mens = "mens" "mensh" ;
 LIST Melhor = "melhor" "mielhor" "mélher" "miélher" ;
 LIST Peger = "péger" "piéger" ;
 LIST AdvComp = ("mai" adv) ("mei" adv) ("mès" adv) ("mes" adv) ("pus" adv) "mens" "mensh" ;
+LIST Donc = "donc" "doncas" "dongas" "pasmes" "totun" "çaquelà" "ça que la" "emès" "pr'aquò" ;
 LIST Res = "res" "arren" "arrens" "ren" ;
 LIST Pel = "pel" "peu" ;
 LIST Deu = "deu" ;
@@ -625,6 +626,11 @@ REMOVE PREP (0 ("a")) (-1C Rel OR Conjsub) ;
 SELECT PREP (-1 ("quant")) (0 ("a")) (1 DET + Pl_strict) ;
 SELECT PREP (0 ("quant a")) (1 DET + Pl_strict) ;
 REMOVE PREP (0 ("a")) (-1C Itg LINK NOT 0 ("quant")) ;
+
+SELECT PREP (-2 De) (-1 NUM OR ("un")) (0 ("a")) (1 NUM) ;
+SELECT NUM (-1 De) (0 ("un")) (1 ("a")) (2 NUM) ;
+SELECT PREP (-3 De) (-2 NUM OR ("un")) (-1 N_AJ) (0 ("a")) (1 NUM) ;
+SELECT PREP (-4 De) (-3 NUM OR ("un")) (-2 N_AJ + &&AcordSN) (-1 N_AJ + &&AcordSN) (0 ("a")) (1 NUM) ;
 
 SELECT SUB:1 AV (-2 ("mai")) (-1 AJ OR VBpp) (0 ("e mai")) ;
 
@@ -1239,7 +1245,7 @@ SELECT Al IF (0 Al) (1 CM) (2 Al) (3 CM) (4C Al) ;
 SELECT Al IF (0 Al) (1 CM) (2C Al) (3 CM) (4 Al) ;
 
 SELECT Top IF (-1 De) (0 Top) (1 ("a") OR ("entà") OR ("tà") OR ("enta") OR ("ta") OR ("fins a") OR ("dinc a") OR ("dinca") OR ("entrò") OR ("entrò a") OR ("dusca") OR ("duscas") OR ("jusca") OR ("juscas") OR ("denquia") OR ("enquia")) (2 Top OR unknownMajIni) ;		# de Pau a Auloron
-SELECT Top IF (-3 De) (-2 Top OR unknownMajIni) (-1 ("a") OR ("entà") OR ("tà") OR ("enta") OR ("ta") OR ("fins a") OR ("dinc a") OR ("dinca") OR ("entrò") OR ("entrò a") OR ("dusca") OR ("duscas") OR ("jusca") OR ("juscas") OR ("denquia") OR ("enquia")) (0 Top) ;	# de Auloron a Pau	
+SELECT Top IF (-3 De) (-2 Top OR unknownMajIni) (-1 ("a") OR ("entà") OR ("tà") OR ("enta") OR ("ta") OR ("fins a") OR ("dinc a") OR ("dinca") OR ("entrò") OR ("entrò a") OR ("dusca") OR ("duscas") OR ("jusca") OR ("juscas") OR ("denquia") OR ("enquia")) (0 Top) ;	# de Auloron a Pau
 
 # HAVER
 
@@ -1247,6 +1253,7 @@ SELECT Haver IF (0 Haver) (1C VBpp) ;	# a cantat
 SELECT Haver IF (0 Haver) (1 Haver + VBpp) ;	# a cantat
 SELECT Haver IF (0 Haver) (1 AV) (2 VBpp) ;	# a pas cantat
 SELECT Haver IF (0 Haver) (1 AV) (2 AV) (3 VBpp) ;	# a pas totjorn cantat
+REMOVE Haver IF (1C N_AJ OR NUM OR PREP) ;
 SELECT Aver IF (-1/* Haver) (0 Aver + VBpp) ;	# a agut ; i a agut
 SELECT Aver IF (-2/* Haver) (-1 AV) (0 Aver + VBpp) ;	# a pas agut ; i a pas agut
 SELECT Aver IF (-3/* Haver) (-2 AV) (-1 AV) (0 Aver + VBpp) ;	# a pas totjorn agut ; i a pas totjorn agut
@@ -1642,7 +1649,12 @@ REMOVE V + Sg IF (-1C NUM) ;		# vint mil legas
 REMOVE N IF (1C VBinf) (0 V + Pers OR VBinf OR VBger) (NOT -1 DET OR AJ) ;	# fau convéncer
 
 REMOVE V + Pers IF (NOT -2* Rel) (-1C V LINK NOT 0 VBpp) ;	# enta finançar programas
-REMOVE V + Pers IF (NOT -3* Rel) (-2C V LINK NOT 0 VBpp) (-1C AV OR PREAV LINK NOT 0 Itg) ;	# finançar pas programas ; sabes on demora
+REMOVE V + Pers IF (NOT -3* Rel) (-2C V LINK NOT 0 VBpp) (-1C AV OR PREAV OR Donc LINK NOT 0 Itg) ;	# finançar pas programas ; sabes on demora
+REMOVE V + Pers IF (NOT -4* Rel) (-3C V LINK NOT 0 VBpp) (-2C AV OR PREAV OR Donc LINK NOT 0 Itg) (-1C AV OR PREAV OR Donc LINK NOT 0 Itg) ;	# finançar pas donc programas ; sabes on donc demora
+REMOVE V + Pers IF (-1C V LINK NOT 0 VBpp) (0 ("a")) ;	# s'expausarà a sanccions
+REMOVE V + Pers IF (-2C V LINK NOT 0 VBpp) (-1C AV OR PREAV OR Donc LINK NOT 0 Itg) (0 ("a")) ;	# s'expausarà donc a sanccions
+REMOVE V + Pers IF (-3C V LINK NOT 0 VBpp) (-2C AV OR PREAV OR Donc LINK NOT 0 Itg) (-1C AV OR PREAV OR Donc LINK NOT 0 Itg) (0 ("a")) ;	# s'expausarà pas donc a sanccions
+REMOVE V + Pers IF (-4C V LINK NOT 0 VBpp) (-3C AV OR PREAV OR Donc LINK NOT 0 Itg) (-2C AV OR PREAV OR Donc LINK NOT 0 Itg) (-1C AV OR PREAV OR Donc LINK NOT 0 Itg) (0 ("a")) ;	# s'expausarà pas totjorn donc a sanccions
 REMOVE V + Pers IF (NOT -1* Rel) (1C V LINK NOT 0 VBpp OR VBinf) ;
 
 REMOVE N IF (-1C PRON) (0 V) ;		# qui sap
@@ -2018,3 +2030,32 @@ REMOVE ("hèr") + (vblex) IF (0 ("har") + (vblex)) ;
 
 #de completar : desambiguizacion present imperfait
 #Ne fonctionne pas SELECT PRI IF (0 PRI) (0 PII) (NOT 1* PII BARRIER FinFr) (NOT 1* IFI BARRIER FinFr) (NOT -1* PII BARRIER FinFr) (NOT -1* IFI BARRIER FinFr) ;
+
+# PRI / PII
+SELECT PRI IF (-2C PRI) (-1 Conjco) (0 PII) (0 PRI) ;
+SELECT PII IF (-2C PII) (-1 Conjco) (0 PII) (0 PRI) ;
+SELECT PRI IF (2C PRI) (1 Conjco) (0 PII) (0 PRI) ;
+SELECT PII IF (2C PII) (1 Conjco) (0 PII) (0 PRI) ;
+SELECT PRI IF (-3C PRI) (-2 Conjco) (-1 AV OR Pro) (0 PII) (0 PRI) ;
+SELECT PII IF (-3C PII) (-2 Conjco) (-1 AV OR Pro) (0 PII) (0 PRI) ;
+SELECT PRI IF (3C PRI) (2 AV OR Pro) (1 Conjco) (0 PII) (0 PRI) ;
+SELECT PII IF (3C PII) (2 AV OR Pro) (1 Conjco) (0 PII) (0 PRI) ;
+REMOVE PII (0 PRI) (1* ("uèi") OR ("uei") OR ("ué") OR ("auèi") OR ("aué") OR ("uèi lo dia") OR ("aué en dia") OR ("uèi lo jorn") OR ("ara") OR ("adara") OR ("actualament")) ;
+REMOVE PII (0 PRI) (-1* ("uèi") OR ("uei") OR ("ué") OR ("auèi") OR ("aué") OR ("uèi lo dia") OR ("aué en dia") OR ("uèi lo jorn") OR ("ara") OR ("adara") OR ("actualament")) ;
+REMOVE PRI (0 PII) (1C* PIS) ;
+REMOVE PRI (0 PII) (-1C* PIS) ;
+REMOVE PII (0 PRI LINK NOT 0 Haver) (1C* PRI LINK NOT 0 Haver) ;
+REMOVE PII (0 PRI LINK NOT 0 Haver) (-1C* PRI LINK NOT 0 Haver) ;
+REMOVE PRI (0 PII LINK NOT 0 Haver) (1C* PII LINK NOT 0 Haver) ;
+REMOVE PRI (0 PII LINK NOT 0 Haver) (-1C* PII LINK NOT 0 Haver) ;
+
+# PRI / PRS
+SELECT PRI IF (-2C PRI) (-1 Conjco) (0 PRS) (0 PRI) ;
+SELECT PRS IF (-2C PRS) (-1 Conjco) (0 PRS) (0 PRI) ;
+SELECT PRI IF (2C PRI) (1 Conjco) (0 PRS) (0 PRI) ;
+SELECT PRS IF (2C PRS) (1 Conjco) (0 PRS) (0 PRI) ;
+SELECT PRI IF (-3C PRI) (-2 Conjco) (-1 AV OR Pro) (0 PRS) (0 PRI) ;
+SELECT PRS IF (-3C PRS) (-2 Conjco) (-1 AV OR Pro) (0 PRS) (0 PRI) ;
+SELECT PRI IF (3C PRI) (2 AV OR Pro) (1 Conjco) (0 PRS) (0 PRI) ;
+SELECT PRS IF (3C PRS) (2 AV OR Pro) (1 Conjco) (0 PRS) (0 PRI) ;
+#REMOVE PRS IF (0 PRS) (NOT -1* Que OR (".*que"r) + Conjadv OR ("quan") + Conjadv OR ("quand") + Conjadv) ;
