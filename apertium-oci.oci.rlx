@@ -1881,8 +1881,8 @@ REMOVE N IF (0 ("<Peu>") OR ("<Pel>")) (NOT 1 AJ) ;
 REMOVE N IF (-1 SENT) (0 ("<peus>"i) OR ("<pels>"i)) (NOT 1 SENT OR ("e") OR AJ) ;
 
 # de còps, a còps
-SELECT AV IF (-1 CM OR BOS) (0 ("de còps") OR ("a còps")) ;
-SELECT AV IF (1 CM OR EOS) (0 ("de còps") OR ("a còps")) ;
+SELECT AV IF (-1 CM OR BOS OR Conjco OR Conjsub OR Conjadv OR PREP) (0 ("de còps") OR ("a còps")) ;
+SELECT AV IF (NOT -1 N_AJ) (1 CM OR EOS) (0 ("de còps") OR ("a còps")) ;
 SELECT AV IF (1C V) (0 ("de còps") OR ("a còps")) ;
 REMOVE PREP IF (NOT -1 N_AJ) (0 ("de còps") OR ("a còps")) ;
 
