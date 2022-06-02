@@ -196,6 +196,7 @@ LIST Mai_bon = "mai bon" "mai plan" "mei bon" "mei plan" ;
 LIST Mas_cnjcoo = ("mas" cnjcoo) ("mes" cnjcoo) ("mès" cnjcoo) ("mai" cnjcoo) ;
 LIST O_cnjcoo = ("o" cnjcoo) ("ò" cnjcoo) ;
 LIST Semblar_Pareisser = "semblar" "pareisher" "paréisher" ;
+LIST Devenir = "devenir" "venir" "vàder" "vénguer" "viéner" "vier" ;
 LIST Demandar = "demandar" "demanar" "interrogar" "questionar" "qüestionar" "saber" "sàber" ;
 LIST Estat = "estat" ;
 LIST Clau = "clau" ;
@@ -1493,6 +1494,7 @@ SELECT AJ IF (-1 NUM) (0 ("quiti") + &&AcordSN) (1 N + &&AcordSN) ;
 SELECT NUM IF (0 NUM) (1 ("quite") + &&AcordSN) (2 N + &&AcordSN) ;	# dos quites mainatges
 SELECT NUM IF (0 NUM) (1 ("quiti") + &&AcordSN) (2 N + &&AcordSN) ;	# dos quites mainatges
 SELECT AJ IF (-1 DETdef OR NUM) (0 ("quite")) (1 unknown) ;
+SELECT AJ IF (-1 DETdef OR NUM) (0 ("brave")) (1 unknown) ;
 
 # ADJ POS
 
@@ -1584,8 +1586,16 @@ SELECT N + &&AcordSN IF (-1C DET + &&AcordSN) (0 AJ) (0 N + &&AcordSN) (1C NP) ;
 SELECT N IF (-1C PREP) (1C EOS OR Rel) ;	# dels politics
 SELECT N OR VBinf IF (-1C PREP) (1C PREP) ;	# de levar d'impòstes
 SELECT N + &&AcordSN IF (-1C DET + &&AcordSN) (1C EOS OR PREP OR Rel) ;	# los politics
-REMOVE N IF (-1C Semblar_Pareisser LINK NOT 0 VBpp) (0 AJ) (1C EOS OR PREP OR Rel) ;	# las dificultats semblan màgers
-REMOVE N IF (-2 Haver) (-1 Semblar_Pareisser + VBpp) (0 AJ) (1C EOS OR PREP OR Rel) ;	# las dificultats an semblat màgers
+REMOVE N OR V + Pers IF (-1C Semblar_Pareisser + &&AcordSP LINK NOT 0 VBpp) (0 AJ + &&AcordSP) (1C EOS OR CM OR Conjco OR PREP OR Rel) ;	# las dificultats semblan màgers
+REMOVE N OR V + Pers IF (-2 Haver + &&AcordSP) (-1 Semblar_Pareisser + VBpp) (0 AJ + &&AcordSP) (1C EOS OR CM OR Conjco OR PREP OR Rel) ;	# las dificultats an semblat màgers
+REMOVE N OR V + Pers IF (-3 Haver + &&AcordSP) (-2 AV) (-1 Semblar_Pareisser + VBpp) (0 AJ + &&AcordSP) (1C EOS OR CM OR Conjco OR PREP OR Rel) ;	# las dificultats an pas semblat màgers
+REMOVE N OR V + Pers IF (-3 Haver + &&AcordSP) (-2 Semblar_Pareisser + VBpp) (-1 AV) (0 AJ + &&AcordSP) (1C EOS OR CM OR Conjco OR PREP OR Rel) ;	# an semblat mai caras
+REMOVE N OR V + Pers IF (-4 Haver + &&AcordSP) (-3 AV) (-2 Semblar_Pareisser + VBpp) (-1 AV) (0 AJ + &&AcordSP) (1C EOS OR CM OR Conjco OR PREP OR Rel) ;	# an pas semblat mai caras
+REMOVE N OR V + Pers IF (-1C Devenir + &&AcordSP LINK NOT 0 VBpp) (0 AJ + &&AcordSP) (1C EOS OR CM OR Conjco OR PREP OR Rel) ;	# las dificultats venon màgers
+REMOVE N OR V + Pers IF (-2 Ser + &&AcordSP) (-1 Devenir + VBpp) (0 AJ + &&AcordSP) (1C EOS OR CM OR Conjco OR PREP OR Rel) ;	# las dificultats son venudas màgers
+REMOVE N OR V + Pers IF (-3 Ser + &&AcordSP) (-2 AV) (-1 Devenir + VBpp + &&AcordSP) (0 AJ + &&AcordSP) (1C EOS OR CM OR Conjco OR PREP OR Rel) ;	# las dificultats son pas venudas màgers
+REMOVE N OR V + Pers IF (-3 Ser + &&AcordSP) (-2 Devenir + VBpp + &&AcordSN) (-1 AV) (0 AJ + &&AcordSP) (1C EOS OR CM OR Conjco OR PREP OR Rel) ;	# son venudas caras
+REMOVE N OR V + Pers IF (-4 Ser + &&AcordSP) (-3 AV) (-2 Devenir + VBpp + &&AcordSP) (-1 AV) (0 AJ + &&AcordSP) (1C EOS OR CM OR Conjco OR PREP OR Rel) ;	# son pas venudas caras
 REMOVE N IF (-1C ("faser") LINK NOT 0 VBpp) (0 AJ) (1C EOS OR PREP OR Rel) ;	# las dificultats semblan màgers
 REMOVE N IF (-2 Haver) (-1 ("faser") + VBpp) (0 AJ) (1C EOS OR PREP OR Rel) ;	# las dificultats an semblat màgers
 SELECT AJ OR AV IF (-1 Vener) (0 ("car")) ;
@@ -1650,8 +1660,12 @@ SELECT AJ IF (-4C AJ) (-4 AJ + &&AcordSP) (-3 CM) (-2C AJ) (-2 AJ + &&AcordSP) (
 # N / V
 
 SELECT N IF (0 ("<Liga>")) (1 NUM) ;
+SELECT N IF (-1 DETdef) (0 ("centre")) (1 MajIni OR unknownMajIni) ;
+REMOVE V IF (-1 ("«")) (0 ("<Viatge>")) ;
+REMOVE V IF (0 ("paire")) (1 unknown) (NOT -1 Pro OR Enon) ;
 
 REMOVE V + Sg IF (-1C NUM) ;		# vint mil legas
+REMOVE V IF (-1 CM) (0 N + &&AcordSN) (1C AJ + &&AcordSN) (NOT 0 Ser OR Semblar_Pareisser OR Devenir) ;	# lo « Poton de Tolosa », grope tradicionau
 
 REMOVE V + Pers IF (-1C PREP) ;
 REMOVE V + Pers IF (-1 ("jos")) (0 N_AJ) ;
@@ -1701,11 +1715,11 @@ SELECT AJ (-2 AJ + &&AcordSN) (-1 CM) (0 AJ + &&AcordSN) (1 Conjco) (2 AV OR PRE
 
 # AJ / AV
 
-SELECT AV IF (-1 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP) (0 Melhor + MascSg) (1 Que OR PREP) ;
-SELECT AV IF (-1 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP) (0 Peger + MascSg) (1 Que OR PREP) ;
-#REMOVE AV IF (NOT -2 Pro + AV OR Tn OR Conjco) (-1 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP) (0 AJ + &&AcordSP) (NOT 1 N_AJ_PP + &&AcordSP OR DET OR PREP OR AV) ;
-#REMOVE AV IF (NOT -3 Pro + AV OR Tn OR Conjco) (-2 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP) (-1 AV OR PREAV) (0 AJ + &&AcordSP) (NOT 1 N_AJ_PP + &&AcordSP OR DET OR PREP OR AV) ;
-SELECT AJ IF (-1 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP) (0 ("probable") + &&AcordSP) ;
+SELECT AV IF (-1 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP OR Devenir + &&AcordSP) (0 Melhor + MascSg) (1 Que OR PREP) ;
+SELECT AV IF (-1 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP OR Devenir + &&AcordSP) (0 Peger + MascSg) (1 Que OR PREP) ;
+#REMOVE AV IF (NOT -2 Pro + AV OR Tn OR Conjco) (-1 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP OR Devenir + &&AcordSP) (0 AJ + &&AcordSP) (NOT 1 N_AJ_PP + &&AcordSP OR DET OR PREP OR AV) ;
+#REMOVE AV IF (NOT -3 Pro + AV OR Tn OR Conjco) (-2 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP OR Devenir + &&AcordSP) (-1 AV OR PREAV) (0 AJ + &&AcordSP) (NOT 1 N_AJ_PP + &&AcordSP OR DET OR PREP OR AV) ;
+SELECT AJ IF (-1 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP OR Devenir + &&AcordSP) (0 ("probable") + &&AcordSP) ;
 
 # PR / AV
 
