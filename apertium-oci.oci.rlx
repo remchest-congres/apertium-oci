@@ -147,6 +147,7 @@ LIST unknownMinIni = ("\\*[a-zàáäâèéëêíïîòóöôúüûç].*"r) ;
 LIST MajIni = ("\\<[A-ZÀÁÄÂÈÉËÊÍÏÎÒÓÖÔÚÜÛÇ].*\\>"r) ;
 LIST Majusc = ("\\<[A-ZÉÈÊ][A-ZÂÉÈÊÎÔÛ]*>"r) ;
 LIST MinIni = ("\\<[a-zàáäâèéëêíïîòóöôúüûç].*\\>"r) ;
+LIST VocIni = ("\\<[aeiouàáäâèéëêíïîòóöôúüû].*\\>"r) ;
 LIST siecles_nom_romains = ("[IVX][IVX]*"r) ;
 LIST NumOrd = ("[1-9][0-9]en"r) ("[1-9][0-9]au"r) ;
 
@@ -227,6 +228,8 @@ List Artcontrsg = "<al>" "<au>" "<ath>" "<del>" "<deu>" "<dal>" "<deth>" "<sul>"
 LIST Jorns = "diluns" "dimars" "dimècres" "dimèrcs" "dijòus" "dijaus" "divés" "divendres" "dissabte" "dimenge" ;
 
 List Nummois = "1" "1èr" "1ièr" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12" "13" "14" "15" "16" "17" "18" "19" "20" "21" "22" "23" "24" "25" "26" "27" "28" "29" "30" "31" "<purmèr>" "<prumèr>" "<prumièr>" "<primièr>" "<primèr>" "<dos>" "<dus>" "<tres>" "<quatre>" "<quate>" "<cinc>" "<sièis>" "<sèis>" "<sies>" "<siés>" "<siès>" "<sheis>" "<sèt>" "<uèit>" "<ueit>" "<uòch>" "<uèch>" "<nòu>" "<nau>" "<dètz>" "<onze>" "<dotze>" "<tretze>" "<catòrze>" "<catorze>" "<quatòrze>" "<quatorze>" "<quinze>" "<setze>" "<dètz-e-sèt>" "<dètz-e-uèit>" "<dètz-e-ueit>" "<dètz-e-uèch>" "<dètz-e-uòch>" "<dètz-e-nòu>" "<dètz-e-nau>" "<vint>" "<vingt>" "<vint-e-un>" "<vingt-e-un>" "<vint-e-dos>" "<vint-e-dus>" "<vingt-e-dos>" "<vingt-e-dus>"  "<vint-e-tres>" "<vingt-e-tres>" "<vint-e-quatre>" "<vingt-e-quatre>" "<vint-e-quate>" "<vingt-e-quate>" "<vint-e-cinc>" "<vingt-e-cinc>" "<vint-e-sèis>" "<vingt-e-sèis>" "<vint-e-sièis>" "<vingt-e-sièis>" "<vint-e-sies>" "<vingt-e-sies>" "<vint-e-siès>" "<vingt-e-siès>" "<vint-e-siés>" "<vingt-e-siés>" "<vint-e-sheis>" "<vingt-e-sheis>" "<vint-e-sèt>" "<vingt-e-sèt>" "<vint-e-uèit>" "<vingt-e-uèit>" "<vint-e-ueit>" "<vingt-e-ueit>" "<vint-e-uèch>" "<vingt-e-uèch>" "<vint-e-uòch>" "<vingt-e-uòch>" "<vint-e-nòu>" "<vingt-e-nòu>" "<vint-e-nau>" "<vingt-e-nau>" "<trenta>" "<trenta-e-un>" "<trenta-un>" "<dètz e uèch>" "<dètz e uòch>" "<dètz e nòu>" "<dètz e nau>" "<vingt>" "<vint e un>" "<vingt e un>" "<vint e dos>" "<vint e dus>" "<vingt e dos>" "<vingt e dus>"  "<vint e tres>" "<vingt e tres>" "<vint e quatre>" "<vingt e quatre>" "<vint e quate>" "<vingt e quate>" "<vint e cinc>" "<vingt e cinc>" "<vint e sèis>" "<vingt e sèis>" "<vint e sièis>" "<vingt e sièis>" "<vint e sies>" "<vingt e sies>" "<vint e siès>" "<vingt e siès>" "<vint e siés>" "<vingt e siés>" "<vint e sheis>" "<vingt e sheis>" "<vint e sèt>" "<vingt e sèt>" "<vint e uèit>" "<vingt e uèit>" "<vint e ueit>" "<vingt e ueit>" "<vint e uèch>" "<vingt e uèch>" "<vint e uòch>" "<vingt e uòch>" "<vint e nòu>" "<vingt e nòu>" "<vint e nau>" "<vingt e nau>" "<trenta>" "<trenta e un>" "<trenta un>" ;
+
+LIST Nommois = "genèr" "genièr" "janvièr" "genoier" "genier" "gèr" "janvièir" "janvier" "genovier" "febrièr" "feurèir" "heurèr" "herevèr" "hrevèr" "hervèr" "feurier" "febrier" "hiurèr" "març" "abriu" "abril" "abrial" "abriau" "abrieu" "mai" "junh" "juin" "gulh" "julh" "julhet" "gulhet" "junhsèga" "agost" "aost" "avost" "ost" "seteme" "setembre" "octobre" "octòbre" "noveme" "novembre" "deceme" "decembre" "desembre" ;
 
 LIST Vdire = "dire" "díser" "respóner" "respondre" "cridar" "confessar" "con·hessar" "declarar" "afirmar" "reafirmar" "manifestar" "contar" "raportar" "expausar" "desvelar" "informar" "explicar" "ensenhar" "enonciar" "anonciar" "comunicar" "precisar" "avançar" "afortir" "ahortir" "allegar" "explicitar" "indicar" "signalar" "significar" "escriure" "escríver" "léger" "legir" "assegurar" "jurar" "certificar" "predire" "predíser" "pensar" "enténer" "ausir" "audir" "entiéner" "entendre" "ajustar" "comentar" "denonciar" "rapelar" "raperar" "brembar" "rebrembar" "remembrar" "remombrar" "rampelar" "recordar" "rementar" "remembrar" "remembrar" "har" "far" "hèr" "concedir" "replicar" "respostir" "rebecar" "assegurar" "garantir" "guarantir" "prometre" "prométer" "insistir" "nuançar" "matisar" "pavonar" "ajustar" "apondre" "híger" "ahíger" "acusar" "reprene" "ramoncinar" "increpar" "semonsar" "conclure" "concludir" ;
 
@@ -325,6 +328,7 @@ SELECT VBpp + &&AcordSP IF (-3 ("<se>"i)) (-2 Ser + &&AcordSP) (-1 AV) (0 VBpp +
 SELECT PRON IF (0 ("<se>"i)) (1 Ser + &&AcordSP) (2 AV) (3 AV) (4 VBpp + &&AcordSP) ;		# patch
 SELECT Ser + &&AcordSP IF (-1 ("<se>"i)) (0 Ser + &&AcordSP) (1 AV) (2 AV) (3 VBpp + &&AcordSP) ;		# patch
 SELECT VBpp + &&AcordSP IF (-4 ("<se>"i)) (-3 Ser + &&AcordSP) (-2 AV) (-1 AV) (0 VBpp + &&AcordSP) ;		# patch
+SELECT PRON IF (0 ("<se>"i)) (1 VBger) (-1 ("<en>")) ;		# patch
 SELECT V IF (0 ("<son>"i)) (1 ("<pas>"i)) ;		# patch
 SELECT N IF (-1 DET + MascSg) (0 ("<pas>"i)) ;		# un pas # patch
 SELECT DET + MascSg IF (0 DET + MascSg) (1 ("<pas>"i)) ;		# un pas # patch
@@ -498,6 +502,7 @@ SELECT N + (mf) IF (-1 ("<pel>"i) OR ("<pels>"i)) (0 ("cap")) (1 De) ;
 SELECT N + (mf) IF (-2 ("per")) (-1 DET + &&AcordSN) (0 Cap_de_del + &&AcordSN) ;
 SELECT N + (mf) IF (-2 ("per")) (-1 DET + &&AcordSN) (0 ("cap") + &&AcordSN) (1 De) ;
 SELECT N + (m) IF (-1 ("<al>"i) OR ("<au>"i)) (0 Cap_de) ;
+SELECT N + (m) IF (0 ("cap")) (-1 En) (NOT 1 N OR De) ;
 
 SELECT V IF (0 ("a costat")) (1 NUM OR ("desenat") OR ("detzenat") OR ("centena") OR ("milion") OR ("miliard")) ;
 SELECT V IF (0 ("a costat")) (1 DET) (2 ("desenat") OR ("detzenat") OR ("centena") OR ("milion") OR ("miliard")) ;
@@ -548,6 +553,10 @@ SELECT AV IF (-4 Vmod) (-3 Pas) (-2 AV OR Pro) (-1 VBinf) (0 Mai OR Pus) ;	# vò
 SELECT AV IF (-5 Vmod) (-4 Pas) (-3 AV OR Pro) (-2 AV OR Pro) (-1 VBinf) (0 Mai OR Pus) ;	# vòli pas li'n dire pus
 SELECT Conjco IF (-1 EOS) (0 Mai) ;
 SELECT Conjco IF (-1 CM) (0 Mai) (NOT 1 AJ) ;
+SELECT AV IF (-1 N + MascSg) (0 Mai) (1 AJ + MascSg) ;
+SELECT AV IF (-1 N + MascPl) (0 Mai) (1 AJ + MascPl) ;
+SELECT AV IF (-1 N + FemSg) (0 Mai) (1 AJ + FemSg) ;
+SELECT AV IF (-1 N + FemPl) (0 Mai) (1 AJ + FemPl) ;
 SELECT AV IF (-1 Ser + &&AcordSP) (0 Mai) (1 AJ + &&AcordSP) ;	# es mai calme
 REMOVE AJ IF (0 AJ) (0 VBpp) (1 ("per")) ;
 SELECT AJ OR AV IF (-2 Ser + &&AcordSP) (-1 AV OR PREAV) (0 AJ + &&AcordSP) (NOT 1 AJ + &&AcordSP) ;	# es mai calme
@@ -886,6 +895,10 @@ REMOVE ("estarir") IF (0 ("estar")) ;
 
 # ròder e róder (p.ex. "rodut")
 REMOVE ("róder") IF (0 ("ròder")) ;
+
+# èstre e seriar (p.ex. seriam)
+REMOVE ("seriar") IF (0 ("èstre") OR ("èsser") OR ("estar")) ;
+
 
 # comprar e compréner/comprene (p.ex. "compren")
 REMOVE P3 + Sg IF (-3 N OR NP) (-2 Conjco) (-1 N OR NP) (0 V + P3 + Sg) (0 V + P3 + Pl) ;	# Marc e Aitana compren
@@ -1228,6 +1241,7 @@ SELECT Haver IF (0 Haver) (1 AV) (2 AV) (3 VBpp) ;	# a pas totjorn cantat
 SELECT Aver IF (-1/* Haver) (0 Aver + VBpp) ;	# a agut ; i a agut
 SELECT Aver IF (-2/* Haver) (-1 AV) (0 Aver + VBpp) ;	# a pas agut ; i a pas agut
 SELECT Aver IF (-3/* Haver) (-2 AV) (-1 AV) (0 Aver + VBpp) ;	# a pas totjorn agut ; i a pas totjorn agut
+SELECT Haver IF (0 Haver) (1 ("fait")) ;	# a fait
 
 # Ser
 
@@ -1372,9 +1386,10 @@ REMOVE DET IF (-1C/* DET) (NOT -1 DetDe) ;	# un cèrt estacament
 REMOVE DET IF (0 DET) (NOT 1 N OR AJ OR Tn OR NP OR NUM OR AV OR PREAV OR Rel OR unknown) (NOT 0 DETdef LINK 1 De) ;
 REMOVE DET + &&AcordSN IF (0 DET) (1 N_AJ OR NP OR Tn) (NOT 1 NUM OR AV OR PREAV OR Rel) (0 DET + &&AcordSN) (NOT 1 N_AJ + &&AcordSN OR NP + &&AcordSN OR Tn + &&AcordSN) ;	# Avèm entrevistat aquesta pendent la Hèsta
 REMOVE SUB:1 DET IF (0/* DET) (1C DET) ;	# en los acès
-SELECT PREAV IF (0 ("fòrça")) (1C AJ) ;
+SELECT PREAV IF (0 ("fòrça")) (1C AJ OR AV) ;
 SELECT AV IF (0 ("fòrça")) (1C VBpp) ;
 SELECT AV IF (0 ("fòrça")) (1 AdvComp) ;
+SELECT N IF (0 ("fòrça")) (-1 DET + FemSg) ;
 SELECT PREAV IF (-1C N_AJ + &&AcordSN) (0 ("fòrça")) (1 AJ + &&AcordSN) ;
 SELECT PREDET + &&AcordSN IF (0 ("qual que siá") + &&AcordSN) (1 DET + &&AcordSN) (2 N_AJ + &&AcordSN) ;	# qual que siá son contengut
 SELECT PREDET + &&AcordSN IF (0 ("quau que sia") + &&AcordSN) (1 DET + &&AcordSN) (2 N_AJ + &&AcordSN) ;
@@ -1433,6 +1448,7 @@ SELECT AV IF (-1C V) (0 ("plan")) (NOT 1 AJ) ;	# parlar plan
 SELECT AV IF (-2C V) (-1 AV OR PREAV OR PRencl) (0 ("plan")) (NOT 1 AJ) ;	# parlar pas plan
 SELECT AV IF (-3C V) (-2 AV OR PRencl) (-1 AV OR PREAV) (0 ("plan")) (NOT 1 AJ) ;	# parlar pas hèra plan
 SELECT PREAV IF (-1C V) (0 ("plan")) (1 AJ) ;	# parlar plan fòrt
+SELECT AV IF (0 ("<plan>")) (1 VBinf) (-1 PREP) ;	# de/a/per plan parlar
 
 SELECT AV IF (-1C Haver) (0 PREAV) (1 VBpp) ;	# ai plan ascotat
 SELECT AV IF (-2C Haver) (-1 AV) (0 PREAV) (1 VBpp) ;	# ai pas plan ascotat
@@ -1665,6 +1681,8 @@ SELECT Ser IF (-1 Ser) (0 ("estat"));	# soi estat
 SELECT Ser IF (-2 Ser) (-1 AV) (0 ("estat"));	# soi pas estat
 SELECT Ser IF (-3 Ser) (-2 AV) (-1 AV) (0 ("estat"));	# soi pas totjorn estat
 
+SELECT PREP IF (0 A) (1 unknownMajIni) ;
+
 REMOVE V IF (-1C V LINK NOT 0 VBpp) (0 A) ;
 REMOVE V IF (-2C V LINK NOT 0 VBpp) (-1C AV OR PREAV) (0 A) ;
 
@@ -1801,6 +1819,7 @@ SELECT Conjco IF (0 Mas_cnjcoo) (-1 CM) ;
 SELECT Conjco IF (0 Mas_cnjcoo) (-1 BOS) ;
 REMOVE N IF (0 ("mas")) (NOT -1/* DET + MascSg) ;
 SELECT Conjco IF (0 ("mas")) (NOT -1/* DET + MascSg) (1C V) ;
+REMOVE DET IF (0 ("mas")) (1 AV OR Conjadv) ;
 
 REMOVE N IF (-1C V) (0 Pel) ;
 REMOVE N IF (0 Pel) (1 unknown) ;
@@ -1808,6 +1827,7 @@ REMOVE N IF (0 Pel) (1 unknown) ;
 #deu -> dever / de +lo
 LIST Deu = "deu" ;
 SELECT V IF (0 ("<deu>")) (1 SENT OR Pro) ;
+SELECT V IF (0 ("<deu>")) (1 VocIni) ;
 REMOVE V IF (0 ("<deu>")) (NOT 1 VBinf OR AV) ;
 
 # de las + adj
@@ -1822,6 +1842,8 @@ SELECT DET IF (0 ("<la>"i)) (1 ("«")) (2 N_AJ + FemSg) (3 N_AJ + FemSg) ;
 SELECT DET IF (0 ("<las>"i)) (1 ("«")) (2 N_AJ + FemPl) (3 N_AJ + FemSg) ;
 SELECT DET IF (0 ("<la>"i)) (1 ("«")) (2 N_AJ + FemSg) (3 ("»")) (4 N_AJ + FemSg) ;
 SELECT DET IF (0 ("<las>"i)) (1 ("«")) (2 N_AJ + FemPl) (3 ("»")) (4 N_AJ + FemSg) ;
+SELECT DET IF (0 ("<las>"i)) (1 unknownMinIni) ;
+SELECT DET IF (0 ("<las>"i)) (1 NUM) ;
 
 #pel/peu nom o article contractat
 REMOVE N IF (1 N + MascSg) (0 ("<peu>"i) OR ("<pel>"i)) (NOT -1 DET + Sg) (NOT -1 Artcontrsg) ;
@@ -1893,7 +1915,7 @@ REMOVE V IF (0 ("<punts>"));
 
 #patch per las errors de vocabulari
 REMOVE V IF (0 ("<matin>"));
-REMOVE N IF (0 ("<nos>"i)) (NOT -1 DET + Masc);
+REMOVE N IF (0 ("<nos>"i)) (NOT -1 DET + Masc OR NUM);
 REMOVE V IF (0 ("<encara>"i));
 REMOVE V IF (0 ("<monde>") or ("<mond>"));
 REMOVE V IF (0 ("<ongan>"));
@@ -1901,7 +1923,7 @@ REMOVE V IF (0 ("<mau>")); #gascon seulement
 REMOVE Ple IF (0 ("<plea>") OR ("<pleas>"));
 REMOVE AJ IF (0 ("<man>") OR ("<mans>"));
 REMOVE AJ IF (0 ("<sala>")) (-1 DET + FemSg OR AJ + FemSg);
-REMOVE AJ IF (0 ("<salas>")) (-1 DET + FemPl OR AJ + FemPl);
+REMOVE AJ IF (0 ("<salas>")) (-1 DET + FemPl OR AJ + FemPl OR NUM);
 REMOVE AJ IF (0 ("<mèca>"));
 REMOVE AJ IF (0 ("<mècas>"));
 REMOVE AJ IF (0 ("<mècha>"));
@@ -1914,17 +1936,20 @@ REMOVE AJ IF (0 ("<sèrva>"));
 REMOVE AJ IF (0 ("<sèrvas>"));
 REMOVE AJ IF (0 ("<prima>")) (-1 DET + FemSg);
 REMOVE AJ IF (0 ("<discutida>")) (-1 DET + FemSg OR AJ + FemSg);
-REMOVE AJ IF (0 ("<discutidas>")) (-1 DET + FemPl OR AJ + FemPl);
+REMOVE AJ IF (0 ("<discutidas>")) (-1 DET + FemPl OR AJ + FemPl OR NUM);
 REMOVE AJ IF (0 ("<traça>"));
 REMOVE AJ IF (0 ("<traças>"));
 REMOVE AJ IF (0 ("<ondada>")) (-1 DET + FemSg OR AJ + FemSg);
-REMOVE AJ IF (0 ("<ondadas>")) (-1 DET + FemPl OR AJ + FemPl);
+REMOVE AJ IF (0 ("<ondadas>")) (-1 DET + FemPl OR AJ + FemPl OR NUM);
 REMOVE AJ IF (0 ("<temptativa>"));
 REMOVE AJ IF (0 ("<temptativas>"));
 REMOVE AJ IF (0 ("<flama>")) (-1 DET + FemSg OR AJ + FemSg);
-REMOVE AJ IF (0 ("<flamas>")) (-1 DET + FemPl OR AJ + FemPl);
+REMOVE AJ IF (0 ("<flamas>")) (-1 DET + FemPl OR AJ + FemPl OR NUM);
 REMOVE AJ IF (0 ("<moleta>"));
 REMOVE AJ IF (0 ("<moletas>"));
+REMOVE AJ IF (0 ("<menina>"));
+REMOVE AJ IF (0 ("<meninas>"));
+REMOVE N IF (0 ("<espia>"));
 
 REMOVE AJ IF (0 ("morisc")) (0 V);
 
@@ -1932,7 +1957,62 @@ REMOVE Brau IF (0 ("brave"));
 
 REMOVE V IF (0 ("<gaug>")) (-1 DET + MascSg or AJ + MascSg);
 
-REMOVE AV IF (0 ("<entorn>")) (-1 DET + MascSg or AJ + MascSg);
+REMOVE AV IF (0 ("<entorn>")) (-1 DET + MascSg OR AJ + MascSg);
+
+REMOVE N IF (0 ("assegurat") OR ("iniciat") OR ("preferit")) (-1 ("a"));
+
+REMOVE N IF (0 ("dant")) ((-1 ("en")) OR (-2 ("en")) OR (-3 ("en")));
+
+REMOVE V IF (0 ("dètz")) (1 unknown);
+
+REMOVE N IF (0 ("<van>")) (NOT -1 DET + MascSg);
+
+REMOVE N IF (0 ("<ara>")) (NOT -1 DET + FemSg);
+
+REMOVE V IF (0 ("<fòra>")) ;
+REMOVE V IF (0 ("<aval>")) ;
+REMOVE V IF (0 ("<entre>")) (NOT -1 ("que")) ;
+REMOVE V IF (0 ("<un>") OR ("<una>") or ("<unas>")) ;
+REMOVE V IF (0 ("<les>")) ;
+
+REMOVE V IF (0 ("<manca>")) (-1 ("<la>")) (1 ("de")) ;
+REMOVE Conjadv IF (0 ("<manca>")) (NOT -1 NUM OR ("<un>") OR ("<lo>")) ;
+REMOVE Conjadv IF (0 ("<manca>")) (1 ("<un>") OR ("<lo>")) (NOT 2 ("<quart>"))  ;
+
+REMOVE V IF (0 ("<amassa>")) (-1 V) ;
+
+SELECT V IF (0 ("<val>")) (1 ("<melhor>") OR ("<miélher>") OR ("<mélher>")) ;
+
+REMOVE N IF (0 ("<portariá>")) (NOT -1 DET + FemSg) ;
+
+REMOVE V IF (0 ("<idèa>") or ("<idea>")) (-1 DET + FemSg OR AJ + FemSg) ;
+
+REMOVE V IF (0 ("<viu>")) (-1 N + MascSg) ;
+REMOVE V IF (0 ("<viu>")) (-1 Ser) ;
+
+SELECT V IF (0 ("<còsta>")) (1 ("<car>")) ;
+SELECT V IF (0 ("<còsta>")) (1 NUM) (2 ("èuro") OR ("euro") OR ("franc") OR ("dollar") OR ("dòlar")) ;
+SELECT V IF (0 ("<còsta>")) (1 NUM) (2 NUM) (3 ("èuro") OR ("euro") OR ("franc") OR ("dollar") OR ("dòlar")) ;
+SELECT V IF (0 ("<còsta>")) (1 AV) (2 ("<car>")) ;
+SELECT V IF (0 ("<còsta>")) (1 AV OR PREAV) (1 AV) (2 ("<car>")) ;
+
+REMOVE AV IF (0 ("<fons>")) (-1 DET) ;
+
+REMOVE AV IF (0 ("<jos>")) (1 N OR DET) ;
+
+SELECT N IF (0 ("<gents>")) (-1 DET + FemPl) ;
+SELECT N IF (0 ("<gents>")) (-1 AJ + FemPl) (-2 DET + FemPl) ;
+
+SELECT NUM IF (0 ("<nòu>") OR ("<nau>")) (1 ("mes")) ;
+SELECT NUM IF (0 ("<nòu>") OR ("<nau>")) (1 N + Pl_strict) ;
+SELECT NUM IF (0 ("<nòu>") OR ("<nau>")) (1 N + Fem_strict) ;
+
+REMOVE N IF (0 ("<cort>")) (-1 DET + FemSg) ;
+
+SELECT N IF (0 ("fin")) (-1 DET + FemSg) ;
+
+REMOVE Conjco IF (0 ("ne")) (1 V) ; #A affiner plus tard
+
 
 
 REMOVE N IF (0 ("<Vaduda>")) (1 ("a"));
@@ -1982,6 +2062,18 @@ SELECT N IF (0 ("par")) (1 ("de")) ;
 
 REMOVE ("hèr") + (vbhaver) IF (0 ("har") + (vbhaver)) ;
 REMOVE ("hèr") + (vblex) IF (0 ("har") + (vblex)) ;
+
+SELECT VBpp IF (-1 ("còp")) (-2 ("un")) ;
+
+#Mes de mai
+SELECT N IF (0 ("<mai>")) (-1 ("<de>")) (-2 ("<mes>")) ; #mes de mai
+SELECT N IF (0 ("<mai>")) (-1 ("<de>")) (-2 NUM) (-3 ("lo")) ; #lo 12 de mai
+SELECT N IF (0 ("<mai>")) (-1 ("<de>")) (-2 ("<e>") OR ("<o>")) (-3 Nommois) (-4 ("<de>")) ; #d'abril o de mai
+SELECT N IF (0 ("<mai>")) (-1 ("<de>")) (1 ("<e>") OR ("<o>")) (2 ("<de>")) (3 Nommois) ; #de mai o de junh
+SELECT N IF (0 ("<mai>")) (-1 ("<de>")) (1 ("<a>")) (2 Nommois) ; #de mai a junh
+SELECT N IF (-3 ("<de>")) (-2 Nommois) (-1 ("<a>")) (0 ("<mai>")) ; #d'abril a mai
+SELECT N IF (0 ("<mai>")) (-1 ("<entre>")) (1 ("<e>")) (2 Nommois) ; #entre mai e junh
+SELECT N IF (-3 ("<entre>")) (-2 Nommois) (-1 ("<e>")) (0 ("<mai>")) ; #entre abril a mai
 
 #de completar : desambiguizacion present imperfait
 #Ne fonctionne pas SELECT PRI IF (0 PRI) (0 PII) (NOT 1* PII BARRIER FinFr) (NOT 1* IFI BARRIER FinFr) (NOT -1* PII BARRIER FinFr) (NOT -1* IFI BARRIER FinFr) ;
