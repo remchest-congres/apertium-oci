@@ -571,6 +571,8 @@ SELECT AV IF (-1 N + FemSg) (0 Mai) (1 AJ + FemSg) ;
 SELECT AV IF (-1 N + FemPl) (0 Mai) (1 AJ + FemPl) ;
 SELECT AV IF (-1 Ser + &&AcordSP) (0 Mai) (1 AJ + &&AcordSP) ;	# es mai calme
 REMOVE AJ IF (0 AJ) (0 VBpp) (1 ("per")) ;
+SELECT VBpp IF (-2 Ser + &&AcordSP) (-1 AV OR PREAV) (0 ("escàder") OR ("mauescàder")) ;	# s'i es pas escadut
+SELECT VBpp IF (-3 Ser + &&AcordSP) (-2 AV OR PREAV) (-1 AV OR PREAV) (0 ("escàder") OR ("mauescàder")) ;	# s'i es pas totjorn escadut
 SELECT AJ OR AV IF (-2 Ser + &&AcordSP) (-1 AV OR PREAV) (0 AJ + &&AcordSP) (NOT 1 AJ + &&AcordSP) ;	# es mai calme
 SELECT AJ OR AV IF (-3 Ser + &&AcordSP) (-2 AV) (-1 AV OR PREAV) (0 AJ + &&AcordSP) (NOT 1 AJ + &&AcordSP) ;	# es pas mai calme
 SELECT VBpp IF (-2 Ser + &&AcordSP) (-1 AV OR PREAV) (0 VBpp + &&AcordSP) (NOT 0 N + &&AcordSP) ;
