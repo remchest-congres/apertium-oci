@@ -2253,3 +2253,12 @@ SELECT PRI IF (3C PRI) (2 AV OR Pro) (1 Conjco) (0 PRS) (0 PRI) ;
 SELECT PRS IF (3C PRS) (2 AV OR Pro) (1 Conjco) (0 PRS) (0 PRI) ;
 REMOVE PRS IF (0 PRI) (NOT -1* Que OR Conjadv) ;
 #REMOVE PRS IF (0 PRI) (NOT -1* Que OR (".*que"r) + Conjadv OR ("quan") + Conjadv OR ("quand") + Conjadv) ;
+
+# PII / IFI
+LIST Marca_IFI = ("ièr") ("ger") ("avant-ièr") ("davant-ger") ;
+REMOVE PII (0 IFI) (-1*C Marca_IFI) ;
+REMOVE PII (0 IFI) (1*C Marca_IFI) ;
+REMOVE IFI (0 PII) (-1*C PII) ;
+REMOVE IFI (0 PII) (1*C PII) ;
+REMOVE IFI (0 PII) (<-1*C PII) ;
+REMOVE IFI (0 PII) (>1*C PII) ;
