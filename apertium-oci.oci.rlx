@@ -346,6 +346,8 @@ SELECT ("d'unes") IF (-1 CM) ;	# patch
 SELECT ("d'unes") IF (-2 BOS OR CM) (-1 PREP) ;	# patch
 SELECT PREAV IF (0 ("<plan>"i)) (1C AJ OR AV) ;		# patch
 REMOVE N IF (-1C V) (0 ("<plan>"i)) ;		# patch
+SELECT AV IF (-1 Ser + &&AcordSP) (0 AV OR PREAV) (1 ("escàder") OR ("mauescàder")) ;	# s'i es plan escadut
+SELECT AV IF (-2 Ser + &&AcordSP) (-1 AV OR PREAV) (0 AV OR PREAV) (1 ("escàder") OR ("mauescàder")) ;	# s'i es pas plan escadut
 SELECT PREAV IF (-1 Ser + &&AcordSP) (0 ("<plan>"i)) (1 AJ + &&AcordSP) ;		# patch
 SELECT PREAV IF (-2 Ser + &&AcordSP) (-1 AV) (0 ("<plan>"i)) (1 AJ + &&AcordSP) ;		# patch
 SELECT PREAV IF (-1C N + &&AcordSP) (0 ("<plan>"i)) (1 AJ + &&AcordSP) ;
