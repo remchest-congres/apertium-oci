@@ -976,6 +976,11 @@ REMOVE V IF (0 (<"granda">)) ;
 
 SELECT N IF (0 ("<lei>"i)) (1 ("[1-2][0-9][0-9][0-9]"r)) ;		# lei 1901
 
+SELECT ("retirada") IF (-1 DETpos) ;
+SELECT ("retirada") IF (-2 ("sistèma")) (-1 De) ;
+SELECT ("retirada") IF (-2 ("ostal") OR ("ostau")) (-1 De) ;
+REMOVE ("retirat") + N + Fem ;
+
 SELECT NUM IF (-1 ("en")) (0 ("dos")) ;
 SELECT PREP IF (0 ("en")) (1 ("dos")) ;
 
@@ -1297,11 +1302,35 @@ SELECT Top IF (-3 De) (-2 Top OR unknownMajIni) (-1 ("a") OR ("entà") OR ("tà"
 
 # HAVER
 
-SELECT Haver IF (0 Haver) (1C VBpp) ;	# a cantat
-SELECT Haver IF (0 Haver) (1 Haver + VBpp) ;	# a cantat
-SELECT Haver IF (0 Haver) (1 AV) (2 VBpp) ;	# a pas cantat
-SELECT Haver IF (0 Haver) (1 AV) (2 AV) (3 VBpp) ;	# a pas totjorn cantat
-REMOVE Haver IF (1C N_AJ OR NUM OR PREP) ;
+REMOVE A IF (0 ("ara")) (NOT 1 N_AJ + FemSg) ;
+SELECT PREP IF (-1C V + Pers OR VBinf) (0 A) (NOT 0 ("<a .*>"r) + AV) ;
+SELECT PREP IF (-2C V + Pers OR VBinf) (-1 AV) (0 A) (NOT 0 ("<a .*>"r) + AV) ;
+SELECT PREP IF (-3C V + Pers OR VBinf) (-2 AV) (-1 AV) (0 A) (NOT 0 ("<a .*>"r) + AV) ;
+REMOVE V + Pers IF (-1C V + Pers OR VBinf) (0 A) (0 ("<a .*>"r) + V + Pers) ;
+#REMOVE V + Pers IF (-1C V + Pers OR VBinf) (0 ("<a .*>"r) + V + Pers) ;
+#REMOVE V + Pers IF (-1C V + Pers OR VBinf) (0 ("<a .*>"r)) ;
+#REMOVE V IF (-1C V + Pers OR VBinf) (0 ("<a .*>"r)) ;
+#REMOVE V IF (-1C V + Pers OR VBinf) ;
+REMOVE V + Pers IF (-2C V + Pers OR VBinf) (-1 AV) (0 A) (0 ("<a .*>"r) + V + Pers) ;
+REMOVE V + Pers IF (-3C V + Pers OR VBinf) (-2 AV) (-1 AV) (0 A) (0 ("<a .*>"r) + V + Pers) ;
+SELECT Haver IF (0 Haver) (NOT 0 ("<a de>"i)) (1C VBpp) ;	# a cantat
+SELECT Haver IF (0 Haver) (NOT 0 ("<a de>"i)) (1 Haver + VBpp) ;	# a cantat
+SELECT Haver IF (0 Haver) (NOT 0 ("<a de>"i)) (1 AV) (2 VBpp) ;	# a pas cantat
+SELECT Haver IF (0 Haver) (NOT 0 ("<a de>"i)) (1 AV) (2 AV) (3 VBpp) ;	# a pas totjorn cantat
+REMOVE Haver IF (1C N_AJ OR DET OR NUM OR PREP) ;
+SELECT PREP IF (-1 VBpp OR VBinf) (0 ("<a de>"i)) (1 N_AJ + Pl) ;	# dobèrt a de personas ; pensar a de personas
+SELECT VBpp IF (0 VBpp) (1 ("<a de>"i)) (2C N_AJ_PP + Pl) ;	# dobèrt a de personas
+SELECT VBinf IF (0 VBinf) (1 ("<a de>"i)) (2C N_AJ_PP + Pl) ;	# pensar a de personas
+SELECT V IF (NOT -1 VBpp OR VBinf) (0 ("<a de>"i)) (1C N_AJ_PP + Pl) (NOT -1* V + Pers BARRIER Conjsub OR Conjadv OR Rel) ;	# a de dificultats ; pensar a de personas
+SELECT PREP IF (-1C VBinf) (0 A) ;
+SELECT PREP IF (-2 Ser OR Semblar_Pareisser OR Devenir) (-1 VBpp) (0 A) (1 VBinf) ;	# ser convidat a pensar
+SELECT PREP IF (-3 Ser OR Semblar_Pareisser OR Devenir) (-2 AV) (-1 VBpp) (0 A) (1 VBinf) ;	# ser pas convidat a pensar
+SELECT PREP IF (-4 Ser OR Semblar_Pareisser OR Devenir) (-3 AV) (-2 AV) (-1 VBpp) (0 A) (1 VBinf) ;	# ser pas totjorn convidat a pensar
+SELECT VBpp IF (-1 Ser OR Semblar_Pareisser OR Devenir) (0 VBpp) (1 A) (2 VBinf) ;	# ser convidat a pensar
+SELECT VBpp IF (-2 Ser OR Semblar_Pareisser OR Devenir) (-1 AV) (0 VBpp) (1 A) (2 VBinf) ;	# ser pas convidat a pensar
+SELECT VBpp IF (-3 Ser OR Semblar_Pareisser OR Devenir) (-2 AV) (-1 AV) (0 VBpp) (1 A) (2 VBinf) ;	# ser pas totjorn convidat a pensar
+REMOVE V IF (0 A) (1C N_AJ OR DET OR NUM) (-1* V + Pers BARRIER Conjsub OR Conjadv OR Rel) ;
+REMOVE V IF (0 A) (1C N_AJ OR DET OR NUM) (1* V + Pers BARRIER Conjsub OR Conjadv OR Rel) ;
 SELECT Aver IF (-1/* Haver) (0 Aver + VBpp) ;	# a agut ; i a agut
 SELECT Aver IF (-2/* Haver) (-1 AV) (0 Aver + VBpp) ;	# a pas agut ; i a pas agut
 SELECT Aver IF (-3/* Haver) (-2 AV) (-1 AV) (0 Aver + VBpp) ;	# a pas totjorn agut ; i a pas totjorn agut
