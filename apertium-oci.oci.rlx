@@ -158,6 +158,7 @@ LIST En = "en";
 LIST De = "de";
 LIST Ne_pron = ("ne" prn) ("en" prn) ;
 LIST Ne_conj = ("ne" cnjcoo);
+LIST Ne_enon = ("ne" enon);
 LIST Dins = "dins";
 LIST Jos = "jos";
 LIST Pendent = "pendent";
@@ -666,8 +667,11 @@ SELECT Rel IF (-5C Ser) (-4 DETdef) (-3 AV) (-2 AV) (-1 NP) (0 Que) ;	# es pas t
 SELECT Rel IF (-4C Ser) (-3 NP) (-2 Conjco) (-1 NP) (0 Que) ;	# son Aitana e Anna que
 SELECT Rel IF (-5C Ser) (-4 AV) (-3 NP) (-2 Conjco) (-1 NP) (0 Que) ;	# son pas Aitana e Anna que
 SELECT Rel IF (-6C Ser) (-5 AV) (-4 AV) (-3 NP) (-2 Conjco) (-1 NP) (0 Que) ;	# son pas totjorn Aitana e Anna que
-REMOVE Conjsub IF (-1C N_AJ) (0 Que) ;
+REMOVE Conjsub IF (-1C N_AJ) (0 Que) (NOT -1* V + Pers LINK -1 Ne_enon) (NOT -1* V + Pers LINK 1 ("pas") + AV) ;
 SELECT AV IF (0 AdvComp) (1 AJ OR VBpp OR AV) (2 Que) ;	# mei leugèr que jo
+SELECT Rel IF (-2 ("<n'i>"i) OR ("<n’i>"i)) (-1 ("aver") OR ("auer")) (0 Que) ;
+SELECT Rel IF (-3 ("<n'i>"i) OR ("<n’i>"i)) (-2 ("aver") OR ("auer")) (-1 DET OR N OR AJ OR NUM) (0 Que) ;
+
 SELECT AV IF (-1/* DETdef + &&AcordSN) (0 AdvComp) (1 AJ + &&AcordSN OR VBpp + &&AcordSN OR N + &&AcordSN) ;	# lo mai rapide
 SELECT AV IF (-2/* DETdef + &&AcordSN) (-1 N + &&AcordSN) (0 AdvComp) (1 AJ + &&AcordSN OR VBpp + &&AcordSN) ;	# lo mainatge mai rapide
 SELECT AJ IF (-3/* DETdef + &&AcordSN) (-2 N + &&AcordSN) (-1 AdvComp) (0 AJ + &&AcordSN) ;	# los sons mai aguts
@@ -686,6 +690,7 @@ SELECT N IF (0 ("nombre") + Sg) (1 De) (2C N_AJ + Pl) ;
 SELECT AJ + MascSg IF (1 ("nombre") + Sg) (2 De) (3C N_AJ + Pl) ;
 SELECT AJ OR VBpp OR AV IF (-1 AdvComp) (0 AJ OR VBpp OR AV) (1 Que) ;	# mei leugèr que jo
 SELECT AJ OR AV IF (-1 AdvComp) (0 AJ OR VBpp OR AV) (1 Que) ;	# mei leugèr que jo
+SELECT Rel IF (-2 AdvComp) (-1 AJ OR VBpp OR AV) (0 Que) (1 Ser + P3) ;	# lo mei leugèr que sia
 SELECT Conjsub IF (-2 AdvComp) (-1 AJ OR VBpp OR AV) (0 Que) ;	# mei leugèr que jo
 SELECT Conjsub IF (-1 ("mai bon") OR ("mei bon") OR ("mai plan") OR ("mei plan")) (0 Que) ;
 SELECT Itg IF (0 Que) (1 Ser) (2 ("?")) ;
@@ -701,7 +706,10 @@ REMOVE Itg IF (-1C ("diser") OR ("díder")) (0 Que) ;	# patch
 REMOVE Itg IF (-1C ("reconéisser") OR ("reconéisher")) (0 Que) ;	# patch
 REMOVE Conjsub IF (-1 CM) (0 Que) ;
 REMOVE Conjsub IF (-1 DET) (0 Que) ;
-REMOVE Conjsub IF (-1C N) (0 Que) ;
+REMOVE Conjsub IF (-1C N) (0 Que) (NOT -1* Ne_enon OR Pas + AV) ;
+REMOVE Conjsub IF (-1C N) (0 Que) (NOT -1* Ne_enon OR Pas + AV BARRIER De) ;	# a pas dobèrt de classa que siá bilingüa
+REMOVE Conjsub IF (-1C AJ LINK -1 N_AJ) (0 Que) (NOT -1* Ne_enon OR Pas + AV BARRIER De) ;	# a pas dobèrt de classa suplementària que siá bilingüa
+REMOVE Conjsub IF (-1C AJ LINK -1 AV OR PREAV LINK -1 N_AJ) (0 Que) (NOT -1* Ne_enon OR Pas + AV BARRIER De) ;
 REMOVE Conjsub IF (-2C N) (-1 AJ) (0 Que) ;
 REMOVE Conjsub IF (-3 N) (-2 AV OR PREAV) (-1 AJ) (0 Que) ;
 REMOVE AVG IF (NOT -1 ("pas") OR ("solament")) (0 Que) ;
@@ -712,7 +720,8 @@ REMOVE Que_Itg IF (-1C N_AJ OR VBpp OR NP) ;
 REMOVE Que_Itg IF (-2C N_AJ OR VBpp OR NP) (-1 CM) ;
 REMOVE Que_Itg IF (-2C N_AJ OR VBpp OR NP) (-1 PREP) ;
 REMOVE Que_Itg IF (-3C N_AJ OR VBpp OR NP) (-2 CM) (-1 PREP) ;
-SELECT Rel OR Enon IF (-1C N_AJ OR NP) (0 Que OR Qui) (1 Vconj + P3) ;
+#SELECT Rel OR Enon IF (-1C N_AJ OR NP) (0 Que OR Qui) (1 Vconj + P3) ;
+SELECT Rel IF (-1C N_AJ OR NP) (0 Qui) (1 Vconj + P3) ;
 SELECT Rel OR Enon IF (-2C N_AJ OR NP) (-1 CM) (0 Que OR Qui) (1 Vconj + P3) ;
 SELECT Rel OR Enon IF (-1C N_AJ OR NP) (0 Que OR Qui) (1 AV) (2 Vconj + P3) ;
 SELECT Rel OR Enon IF (-2C N_AJ OR NP) (-1 CM) (0 Que OR Qui) (1 AV) (2 Vconj + P3) ;
@@ -780,20 +789,34 @@ SELECT SUB:1 ("non") + Enon IF (1C Pro OR V + Pers LINK NOT 0 VBimp) ;
 SELECT ("non") + Enon IF (1 Pro OR V + Pers) (NOT -1 DET + MascSg) ;
 SELECT ("non") + Enon IF (1 Pro OR V + Pers) (-1 ("<nat>"i)) ;
 SELECT PRON IF (0 ("<nat>"i)) (1 ("<non>"i)) ;
-REMOVE ("ne") + Enon IF (NOT 1* ("pas")) ;
-SELECT ("ne") + Enon IF (1 V) (2 ("pas")) ;
-SELECT ("ne") + Enon IF (1 V) (2 ("que")) ;
-SELECT ("ne") + Enon IF (1 V) (2 AV + AV_Pas_Neg) ;
-SELECT ("ne") + Enon IF (1 V) (2 PRON + PRON_Pas_Neg) ;
-SELECT ("ne") + Enon IF (1 V) (2 AV) (3 ("pas")) ;
-SELECT ("ne") + Enon IF (1 V) (2 AV) (3 ("que")) ;
-SELECT ("ne") + Enon IF (1 V) (2 AV) (3 AV + AV_Pas_Neg) ;
-SELECT ("ne") + Enon IF (1 V) (2 AV) (3 PRON + PRON_Pas_Neg) ;
-SELECT ("ne") + Enon IF (1 V) (1* PRON + PRON_Pas_Neg) ;
-SELECT ("ne") + Enon IF (1 V) (-1* PRON + PRON_Pas_Neg) ;
-SELECT ("ne") + Enon IF (1 V) (1* DET + DET_Pas_Neg) ;
-SELECT ("ne") + Enon IF (1 V) (-1* DET + DET_Pas_Neg) ;
-REMOVE ("ne") + Enon ;
+SELECT Ne_enon IF (-1 PRON + PRON_Pas_Neg) (1 V) ;	# nat ne manja
+SELECT Ne_enon IF (1 V) (2 PRON + PRON_Pas_Neg OR DET + DET_Pas_Neg) ;	# ne manja nat
+SELECT Ne_enon IF (-1 PRON + PRON_Pas_Neg) (1 Pro) (2 V) ;	# nat ne'n manja
+SELECT Ne_enon IF (1 Pro) (2 V) (3 PRON + PRON_Pas_Neg OR DET + DET_Pas_Neg) ;	# ne'n manja nat
+SELECT Ne_enon IF (-1 PRON + PRON_Pas_Neg) (1 Pro) (2 Pro) (3 V) ;	# nat n'i en manja
+SELECT Ne_enon IF (1 Pro) (2 Pro) (3 V) (4 PRON + PRON_Pas_Neg OR DET + DET_Pas_Neg) ;	# n'i en manja nat
+SELECT PRON IF (0 PRON + PRON_Pas_Neg) (1 ("ne")) (2 V) ;
+SELECT PRON IF (0 PRON + PRON_Pas_Neg) (1 ("ne")) (2 Pro) (3 V) ;
+SELECT PRON IF (0 PRON + PRON_Pas_Neg) (1 ("ne")) (2 Pro) (3 Pro) (3 V) ;
+SELECT PRON + PRON_Pas_Neg OR DET + DET_Pas_Neg IF (-2 ("ne")) (-1 V) (0 PRON + PRON_Pas_Neg OR DET + DET_Pas_Neg) ;
+SELECT PRON + PRON_Pas_Neg OR DET + DET_Pas_Neg IF (-2 ("ne")) (-2 V) (-1 AV) (0 PRON + PRON_Pas_Neg OR DET + DET_Pas_Neg) ;
+REMOVE Enon IF (0 Que) (-1*C V + Pers LINK -1C ("ne") + Enon) ;		# n'è cap paur que
+SELECT Conjsub IF (0 Que) (-1*C V + Pers LINK -1C ("ne") + Enon) (1*C PRS OR PIS BARRIER V) ;		# n'è cap paur que cante
+#SELECT Conjsub IF (0 Que) (-1*C V + Pers LINK -1C ("ne") + Enon) (1* PRS OR PIS BARRIER V) ;		# n'è cap paur que cante
+REMOVE Ne_enon IF (NOT 1* ("pas")) ;
+SELECT Ne_enon IF (1 V) (2 ("pas")) ;
+SELECT Ne_enon IF (1 V) (2 ("que")) ;
+SELECT Ne_enon IF (1 V) (2 AV + AV_Pas_Neg) ;
+SELECT Ne_enon IF (1 V) (2 PRON + PRON_Pas_Neg) ;
+SELECT Ne_enon IF (1 V) (2 AV) (3 ("pas")) ;
+SELECT Ne_enon IF (1 V) (2 AV) (3 ("que")) ;
+SELECT Ne_enon IF (1 V) (2 AV) (3 AV + AV_Pas_Neg) ;
+SELECT Ne_enon IF (1 V) (2 AV) (3 PRON + PRON_Pas_Neg) ;
+SELECT Ne_enon IF (1 V) (1* PRON + PRON_Pas_Neg) ;
+SELECT Ne_enon IF (1 V) (-1* PRON + PRON_Pas_Neg) ;
+SELECT Ne_enon IF (1 V) (1* DET + DET_Pas_Neg) ;
+SELECT Ne_enon IF (1 V) (-1* DET + DET_Pas_Neg) ;
+REMOVE Ne_enon ;
 SELECT Rel IF (-1 ("a cada còp"i)) (0 Que) ;
 SELECT Conjadv IF (0 ("cada còp que"i)) (1* Que) ;
 SELECT Conjadv IF (0 ("cada còp que"i)) ;	# patch
@@ -1063,6 +1086,7 @@ REMOVE DETpos IF (0 ("son")) (1C NUM) ;		# son doas causas
 # L'enonciatiu es totjorn seguit d'un vèrb o d'un proclitic
 REMOVE Enon IF (NOT 1 V OR Pro);
 REMOVE SUB:1 Enon IF (NOT 1 V OR Pro);
+SELECT V OR Pro IF (-1C Enon);	# que en manja
 
 #Una prepausicion es totjorn seguida d'un nom, pronom, adverb, numeral, infinitiu, determinant o adjectiu
 REMOVE PREP IF (NOT 1 N OR PRON OR AV OR NUM OR NP OR VBinf OR DET OR AJ OR ("de") OR unknown) (NOT 0/* PREP + DET) (NOT 0/* PREP + N) (NOT 0 ("en tot")) ;	# a luchat pendent d'annadas
