@@ -1593,6 +1593,15 @@ SELECT DET + Pos IF (-1 N) (0 AJ + Pos) (0 DET + Pos + &&AcordSN) (1 N + &&Acord
 
 REMOVE AJ (-1 N) (-1 ("<.* de>"r)) (0 DET OR N) ;	# una remesa en causa de lor poder
 
+SELECT VBinf IF (-2 ("empachar")) (-1 De) (0 N) ;	# empachar de militar
+SELECT VBinf IF (-2 ("permetre") OR ("perméter")) (-1 De) (0 N) ;
+SELECT VBinf IF (-2 ("defendre") OR ("defénder") OR ("enebir") OR ("interdire") OR ("interdíser") OR ("proïbir")) (-1 De) (0 N) ;	
+SELECT VBinf IF (-2 ("acabar") OR ("fenir") OR ("finir")) (-1 De) (0 N) ;	
+SELECT VBinf IF (-3 ("empachar")) (-2 De) (-1 Pro) (0 N) ;	# empachar de l'anular
+SELECT VBinf IF (-3 ("permetre") OR ("perméter")) (-2 De) (-1 Pro) (0 N) ;
+SELECT VBinf IF (-3 ("defendre") OR ("defénder") OR ("enebir") OR ("interdire") OR ("interdíser") OR ("proïbir")) (-2 De) (-1 Pro) (0 N) ;	
+SELECT VBinf IF (-3 ("acabar") OR ("fenir") OR ("finir")) (-2 De) (-1 Pro) (0 N) ;	
+
 SELECT N OR PRON OR NP IF (-1C PREP) (1 EOS OR Rpar) ;	# ambe fòrça. ; a res.
 SELECT N OR PRON OR NP OR VBinf IF (-1C PREP) (1C PREP) (NOT 0 ("tròp") OR ("pauc") OR ("pòc")) ;	# discors de fin d'annada
 SELECT N OR PRON OR NP OR VBinf IF (-1C PREP) (1C Rel OR Que OR Qui) ;
