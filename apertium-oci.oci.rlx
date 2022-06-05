@@ -159,6 +159,7 @@ LIST De = "de";
 LIST Ne_pron = ("ne" prn) ("en" prn) ;
 LIST Ne_conj = ("ne" cnjcoo);
 LIST Ne_enon = ("ne" enon);
+LIST Ne_adv = ("ne" adv);
 LIST Dins = "dins";
 LIST Jos = "jos";
 LIST Pendent = "pendent";
@@ -1461,6 +1462,11 @@ REMOVE Tn + Pl_strict IF (0 Tn + Sg_strict) (0 Tn + Pl_strict) (1 AV OR Pro) (2 
 REMOVE Tn + Sg_strict IF (0 Tn + Sg_strict) (0 Tn + Pl_strict) (1 AV OR Pro) (2 V + P3 + Pl) ;
 REMOVE Tn + Pl_strict IF (0 Tn + Sg_strict) (0 Tn + Pl_strict) (1 AV OR Pro) (2 AV OR Pro) (3 V + P3 + Sg) ;
 REMOVE Tn + Sg_strict IF (0 Tn + Sg_strict) (0 Tn + Pl_strict) (1 AV OR Pro) (2 AV OR Pro) (3 V + P3 + Pl) ;
+
+REMOVE ("pas nat") IF (-2 Ne_enon OR Ne_adv) (-1 V) ;
+REMOVE SUB:1 Tn IF (0 ("pas nat")) (1 N_AJ + MascSg) ;
+SELECT SUB:1 DET + MascSg IF (0 ("<pas nat>"i)) (1 N_AJ + MascSg) ;
+SELECT N_AJ + MascSg IF (0 ("<pas nat>"i)) (1 N_AJ + MascSg) ;
 
 # DET
 
