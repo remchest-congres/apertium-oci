@@ -198,7 +198,7 @@ LIST Las = "las" ;
 LIST Mai_bon = "mai bon" "mai plan" "mei bon" "mei plan" ;
 LIST Mas_cnjcoo = ("mas" cnjcoo) ("mes" cnjcoo) ("mès" cnjcoo) ("mai" cnjcoo) ;
 LIST O_cnjcoo = ("o" cnjcoo) ("ò" cnjcoo) ;
-LIST Semblar_Pareisser = "semblar" "pareisher" "paréisher" ;
+LIST Semblar_Pareisser = "semblar" "paréisser" "paréisher" ;
 LIST Devenir = "devenir" "venir" "vàder" "vénguer" "viéner" "vier" ;
 LIST Demandar = "demandar" "demanar" "interrogar" "questionar" "qüestionar" "saber" "sàber" ;
 LIST Estat = "estat" ;
@@ -696,7 +696,7 @@ SELECT Conjsub IF (-2 AdvComp) (-1 AJ OR VBpp OR AV) (0 Que) ;	# mei leugèr que
 SELECT Conjsub IF (-1 ("mai bon") OR ("mei bon") OR ("mai plan") OR ("mei plan")) (0 Que) ;
 SELECT Itg IF (0 Que) (1 Ser) (2 ("?")) ;
 SELECT Itg IF (0 Que) (1 Ser) (2 ("aquò") OR ("çò")) (1* ("?")) ;
-SELECT Rel IF (-1 ("aquò") OR ("çò")) (0 Que) ;
+SELECT Rel OR Enon IF (-1 ("aquò") OR ("çò")) (0 Que) ;
 SELECT Rel IF (-1 ("aquò") OR ("çò")) (0 Qui) ;
 REMOVE Itg IF (-1C N_AJ) (0 Que) ;
 REMOVE Itg IF (-1C ("voler")) (0 Que) ;
