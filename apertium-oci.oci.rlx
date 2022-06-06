@@ -1948,6 +1948,7 @@ SELECT PRS IF (2C PRS) (1 Conjco) (0 PRS) (0 PRI) ;
 REMOVE PRI IF (-1* ("per que") BARRIER CM) (0 PRS) ;
 REMOVE PRI (*-1 ("après que") OR ("per que") OR ("per tal que") OR ("per fin que") OR ("a fin que") OR ("afin que") OR ("malgrat que") OR ("maugrat que") OR ("encara que") OR ("abans que") OR ("avans que") OR ("après que") OR ("aprèp que") OR ("apuèi que") BARRIER Cnj_Rel_End OR CM) (0 PRS) ;
 
+REMOVE Conjadv IF (NOT 1* V + Pers) (0 PREP) (NOT 0 ("coma")) ;
 
 SELECT PREP IF (0 Dins) (1 DET + &&AcordSN) (2 N_AJ + &&AcordSN) ;
 SELECT PREP IF (0 Pendent) (1 DET + &&AcordSN) (2 N_AJ + &&AcordSN) ;
