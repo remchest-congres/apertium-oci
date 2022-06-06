@@ -1624,7 +1624,11 @@ REMOVE V + Pers IF (-4C VBaux + Pers OR VBinf OR VBger) (-3C VBpp) (-2 AV) (-1 D
 
 # N / AJ
 
-SELECT AJ IF (-1C PREP) (-1/* N + &&AcordSP) (0 AJ + &&AcordSP) ;	# de mai passat
+SELECT SUB:1 N IF (0 ("<de mai>"i)) (1 ("passat")) ;
+SELECT AJ IF (-1 ("<de mai>"i)) (0 ("passat")) ;
+SELECT SUB:1 AV IF (0 ("<de mai>"i)) (1 AJ OR VBpp OR AV) ;
+SELECT AJ OR AV IF (-1 ("<de mai>"i)) (0 AJ OR VBpp OR AV) ;
+SELECT AJ IF (-1C PREP) (-1/* N + &&AcordSP) (0 AJ + &&AcordSP) ;
 
 SELECT NP + &&AcordSN IF (-2 DET + &&AcordSN) (-1 AdjPre + &&AcordSN) (0 NP + &&AcordSN) (NOT -1 ("nau")) ;
 SELECT NP + &&AcordSN IF (-2/* DET + &&AcordSN) (-1 AdjPre + &&AcordSN) (0 NP + &&AcordSN) (NOT -1 ("nau")) ;
@@ -1767,7 +1771,8 @@ SELECT PREP IF (0 ("jos")) (1 N_AJ) ;
 SELECT PREP IF (0 ("devath")) (1 N_AJ) ;
 SELECT PREP IF (0 ("sota")) (1 N_AJ) ;
 
-REMOVE N (-1 ("de mai")) ;
+REMOVE N (-1 ("<de mai>"i)) ;
+SELECT SUB:1 N (0 ("<de mai>"i)) (1 A) (2 Nommois) ;
 
 REMOVE N IF (1C VBinf) (0 V + Pers OR VBinf OR VBger) (NOT -1 DET OR AJ) ;	# fau convéncer
 
