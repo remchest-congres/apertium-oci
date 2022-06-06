@@ -1369,6 +1369,13 @@ REMOVE Vconj IF (-3C Haver + Vconj) (-2 AV) (-1 AV) (0 VBpp) ;	# ajan pas totjor
 REMOVE AJ IF (-3C Haver) (-2 AV) (-1 AV) (0 VBpp) ;	# ai pas totjorn ascotat
 REMOVE Vconj IF (-3C Ser + Vconj + &&AcordSP) (-2 AV) (-1 AV) (0 VBpp + &&AcordSP) ;
 
+SELECT VBpp IF (-1 Haver) (0 ("far") OR ("har") OR ("hèr") OR Vdire) ;
+SELECT VBpp IF (-2 Haver) (-1 AV) (0 ("far") OR ("har") OR ("hèr") OR Vdire) ;
+SELECT VBpp IF (-3 Haver) (-2 AV) (-1 AV) (0 ("far") OR ("har") OR ("hèr") OR Vdire) ;
+REMOVE VBpp IF (-2 Haver) (-1 VBpp) ;
+REMOVE VBpp IF (-3 Haver) (-2 AV) (-1 VBpp) ;
+REMOVE VBpp IF (-4 Haver) (-1 AV) (-2 AV) (-1 VBpp) ;
+
 # VBinf
 
 SELECT VBinf IF (0 AJ) (1 ("par")) ;
