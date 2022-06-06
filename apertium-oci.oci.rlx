@@ -1785,9 +1785,9 @@ REMOVE V + Pers IF (-3C V LINK NOT 0 VBpp) (-2C AV OR PREAV OR Donc LINK NOT 0 I
 REMOVE V + Pers IF (-4C V LINK NOT 0 VBpp) (-3C AV OR PREAV OR Donc LINK NOT 0 Itg) (-2C AV OR PREAV OR Donc LINK NOT 0 Itg) (-1C AV OR PREAV OR Donc LINK NOT 0 Itg) (0 ("a")) ;	# s'expausarà pas totjorn donc a sanccions
 REMOVE V + Pers IF (NOT -1* Rel) (1C V LINK NOT 0 VBpp OR VBinf) ;
 
-REMOVE N IF (-1C PRON) (0 V) ;		# qui sap
-REMOVE V + Pers IF (-1C V + Pers) ;	# voletz ve pariar
-REMOVE V + Pers IF (1C V + Pers) ;	# voletz ve pariar
+REMOVE N IF (-1C PRON) (NOT -1 V) (NOT -1 ("<i a>"i)) (0 V) ;		# qui sap ; i a risques
+REMOVE V + Pers IF (-1C V + Pers OR ("<i a>"i)) ;	# voletz ve pariar ; i a risques
+REMOVE V + Pers IF (1C V + Pers OR ("<i a>"i)) ;	# voletz ve pariar
 
 REMOVE N IF (-1C Conjsub OR Conjadv OR Rel OR Itg) (0 V) (1C DET) ;		# quan fan un trabalh
 REMOVE N IF (-1C Conjsub OR Conjadv OR Rel OR Itg) (0 V) (1C N) ;		# quan fan un trabalh
