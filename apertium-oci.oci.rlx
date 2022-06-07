@@ -160,6 +160,7 @@ LIST Ne_pron = ("ne" prn) ("en" prn) ;
 LIST Ne_conj = ("ne" cnjcoo);
 LIST Ne_enon = ("ne" enon);
 LIST Ne_adv = ("ne" adv);
+LIST E_enon = ("e" enon);
 LIST Dins = "dins";
 LIST Jos = "jos";
 LIST Pendent = "pendent";
@@ -191,6 +192,7 @@ LIST Pel = "pel" "peu" ;
 LIST Deu = "deu" ;
 LIST Que = "que" ("<que>"i) ;
 LIST Qui = "qui" ;
+LIST Quin = "quin" ;
 LIST Que_Itg = ("qué" itg) ;
 LIST Se = "se" ;
 LIST Si = "si" ;
@@ -650,6 +652,23 @@ SELECT PREP (-4 De) (-3 NUM OR ("un")) (-2 N_AJ + &&AcordSN) (-1 N_AJ + &&AcordS
 
 SELECT SUB:1 AV (-2 ("mai")) (-1 AJ OR VBpp) (0 ("e mai")) ;
 
+SELECT DET + &&AcordSN IF (0 Quin + &&AcordSN + &&AcordSP) (1 N + &&AcordSN) (2 V + P3 + &&AcordSP) ;
+SELECT DET + &&AcordSN IF (0 Quin + &&AcordSN + &&AcordSP) (1 N_AJ + &&AcordSN) (2 N_AJ + &&AcordSN OR AV OR E_enon OR Pro) (3 V + P3 + &&AcordSP) ;
+SELECT DET + &&AcordSN IF (0 Quin + &&AcordSN + &&AcordSP) (1 N_AJ + &&AcordSN) (2 N_AJ + &&AcordSN OR AV OR E_enon OR Pro) (3 AV OR Pro) (4 V + P3 + &&AcordSP) ;
+SELECT N_AJ IF (-1C Quin + &&AcordSN + &&AcordSP) (0 N_AJ + &&AcordSN) ;
+SELECT N_AJ IF (-2C Quin + &&AcordSN + &&AcordSP) (-1 N_AJ + &&AcordSN) (0 N_AJ + &&AcordSN) ;
+
+SELECT E_enon IF (-1 Itg OR Rel) (1 Pro OR V OR unknownMinIni) ;
+SELECT E_enon IF (-2 Itg OR Rel) (-1 AV) (1 Pro OR V OR unknownMinIni) ;
+SELECT E_enon IF (-1* Itg OR Rel BARRIER V LINK NOT 0 VBpp) (1C Pro OR V OR unknownMinIni) ;
+SELECT Conjadv IF (0 ("si") LINK -1 Demandar) ;
+SELECT E_enon IF (-1 ("si") LINK -1 Demandar) (1 Pro OR V OR unknownMinIni) ;
+SELECT E_enon IF (-2 ("si") LINK -1 Demandar) (-1 AV) (1 Pro OR V OR unknownMinIni) ;
+SELECT E_enon IF (-1* ("si") BARRIER V LINK NOT 0 VBpp) (-1* ("si") LINK -1 Demandar) (1C Pro OR V OR unknownMinIni) ;
+SELECT Conjadv IF (0 ("si") LINK -1 AV LINK -1 Demandar) ;
+SELECT E_enon IF (-1 ("si") LINK -1 AV LINK -1 Demandar) (1 Pro OR V OR unknownMinIni) ;
+SELECT E_enon IF (-2 ("si") LINK -1 AV LINK -1 Demandar) (-1 AV) (1 Pro OR V OR unknownMinIni) ;
+SELECT E_enon IF (-1* ("si") BARRIER V LINK NOT 0 VBpp) (-1* ("si") LINK -1 AV LINK -1 Demandar) (1C Pro OR V OR unknownMinIni) ;
 SELECT Conjsub IF (-1C V) (0 Que) ;	# vòli que
 SELECT Conjsub IF (-2C V) (-1 AV) (NOT -1 ("e")) (0 Que) ;	# vòli pas que
 SELECT Conjsub IF (-3C V) (-2 AV) (-1 AV) (NOT -1 ("e")) (0 Que) ;	# vòli pas totjorn que
@@ -1599,6 +1618,8 @@ SELECT DET + Pos IF (-1 N) (0 AJ + Pos) (0 DET + Pos + &&AcordSN) (1 N + &&Acord
 # N
 
 REMOVE AJ (-1 N) (-1 ("<.* de>"r)) (0 DET OR N) ;	# una remesa en causa de lor poder
+
+REMOVE N (-1 ("per")) (0 ("dit")) ;
 
 SELECT VBinf IF (-2 ("empachar")) (-1 De) (0 N) ;	# empachar de militar
 SELECT VBinf IF (-2 ("permetre") OR ("perméter")) (-1 De) (0 N) ;
