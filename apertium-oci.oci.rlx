@@ -273,7 +273,7 @@ OR ("dernier") OR ("darnièr") OR ("darrièr") OR ("darrèr")
 OR NumOrd ;
 
 # adjectifs qui souvent vont devant le nom
-SET AdjPre = ("ancian") OR ("nòu") OR ("nau") OR ("novèl") OR ("navèth") OR ("futur") OR ("grand") OR ("gran") OR ("petit") OR ("pichon") OR ("pichòt") OR ("bon") OR ("mal") OR ("naut") OR ("haut") OR ("bas") OR ("baish") OR ("autre") OR ("aute") OR ("quite") OR ("quiti") OR ("mièg") OR ("miei") OR AdjOrd;
+SET AdjPre = ("ancian") OR ("nòu") OR ("nau") OR ("novèl") OR ("navèth") OR ("futur") OR ("grand") OR ("gran") OR ("petit") OR ("pichon") OR ("pichòt") OR ("bon") OR ("mal") OR ("mau") OR ("naut") OR ("haut") OR ("bas") OR ("baish") OR ("autre") OR ("aute") OR ("quite") OR ("quiti") OR ("mièg") OR ("miei") OR AdjOrd;
 
 
 SET Dignitat = ("papa") OR ("patriarca") OR ("avesque") OR ("arcavesque") OR ("archavesque") OR ("archevesque") OR ("arquevesque") OR ("sant") OR ("sant") OR ("apòstol") OR ("apostòl") OR ("emperador") OR ("emperaire") OR ("rei") OR ("tsar") OR ("vicerei") OR ("regent") OR ("prince") OR ("infant") OR ("dalfin") OR ("comte") OR ("comtessa") OR ("vescomte") OR ("vescomtessa") OR ("duc") OR ("grand-duc") OR ("arcaduc") OR ("archiduc") OR ("marqués") OR ("baron") ;
