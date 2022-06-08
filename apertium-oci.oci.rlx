@@ -92,11 +92,13 @@ LIST motsdetsg = (det sg) (pr sg);
 LIST motsdetf = (det f) (pr f);
 LIST motsdetm = (det m) (pr m);
 
+LIST Gen = m f mf nt ;
 LIST Masc = m mf ;
 LIST Fem = f mf ;
 LIST Masc_strict = m ;
 LIST Fem_strict = f ;
 
+LIST Nbr = sg pl sp ;
 LIST Sg = sg sp;
 LIST Pl = pl sp;
 LIST Sg_strict = sg ;
@@ -149,12 +151,15 @@ LIST Majusc = ("\\<[A-ZÉÈÊ][A-ZÂÉÈÊÎÔÛ]*>"r) ;
 LIST MinIni = ("\\<[a-zàáäâèéëêíïîòóöôúüûç].*\\>"r) ;
 LIST VocIni = ("\\<[aeiouàáäâèéëêíïîòóöôúüû].*\\>"r) ;
 LIST siecles_nom_romains = ("[IVX][IVX]*"r) ;
+LIST An4 = ("[1-2][0-9][0-9][0-9]"r) ;	# an (4 chiffres)
+LIST An3 = ("[1-9][0-9][0-9]"r) ;	# an (3 chiffres): atencion a "700 000" !
+LIST An2 = ("[1-9][0-9]"r) ;	# an (2 chiffres)
 LIST NumOrd = ("[1-9][0-9]en"r) ("[1-9][0-9]au"r) ;
 
 
 #Mots
 LIST A = "a";
-LIST En = "en";
+SET En = ("en") - ("<en .*>"ri) ;
 LIST De = "de";
 LIST Ne_pron = ("ne" prn) ("en" prn) ;
 LIST Ne_conj = ("ne" cnjcoo);
@@ -860,6 +865,8 @@ SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon OR V) (0 ("que"
 REMOVE Enon IF (-1C Enon) ;
 REMOVE Enon IF (-1 Enon) ;
 
+SELECT V IF (-1 BOS OR CM) (0 ("ha")) (1 N_AJ) ;
+REMOVE Acr IF (NOT -1 NUM) (0 ("ha")) ;
 SELECT IJ IF (-1 BOS) (0 N) (1 CM) (1* ("!")) ;
 SELECT IJ IF (-1 BOS OR CM) (1 ("!")) ;
 SELECT IJ IF (-1 BOS OR CM) (0 ("gràcies") OR ("de res")) ;			# COPY-PASTE
@@ -1112,6 +1119,41 @@ REMOVE DETpos IF (0 ("son")) (1C NUM) ;		# son doas causas
 REMOVE Enon IF (NOT 1 V OR Pro);
 REMOVE SUB:1 Enon IF (NOT 1 V OR Pro);
 SELECT V OR Pro IF (-1C Enon);	# que en manja
+
+#mes de mai
+SELECT SUB:1 Nm IF (0 PREP) (-1 ("mes")) (0 ("<de mai>")) ;
+SELECT SUB:1 Nm IF (0 PREP) (-1 ("fèsta") OR ("hèsta")) (0 ("<de mai>")) ;
+SELECT SUB:1 Nm IF (0 PREP) (-2 ("fèsta") OR ("hèsta")) (-1 AJ) (0 ("<de mai>")) ;
+SELECT SUB:1 Nm IF (0 PREP) (-1 ("eleccion")) (0 ("<de mai>")) ;
+SELECT SUB:1 Nm IF (0 PREP) (-2 ("eleccion")) (-1 AJ) (0 ("<de mai>")) ;
+SELECT SUB:1 Nm IF (0 PREP) (-1 ("referendum") OR ("referéndum")) (0 ("<de mai>")) ;
+SELECT SUB:1 Nm IF (0 PREP) (-2 ("referendum") OR ("referéndum")) (-1 AJ) (0 ("<de mai>")) ;
+SELECT SUB:1 Nm IF (0 PREP) (-1 Nummois) (0 ("<de mai>")) ;
+SELECT SUB:1 Nm IF (0 ("<de mai>"i)) (1 An2 OR An3 OR An4) ;
+SELECT SUB:1 Nm IF (0 ("<en mai>"i)) (1 An2 OR An3 OR An4) ;
+SELECT SUB:1 AV IF (0 ("<de mai>"i)) (1 De) (2 NUM) (3 N_AJ + Pl) ;
+SELECT SUB:1 Nm IF (0 ("<de mai>"i)) (1 De) (2 An4) ;	# de mai de 1968 ; de mai de cinc infants
+SELECT SUB:1 Nm IF (0 ("<de mai>"i)) (1 De) (2 An2 OR An3) (NOT 3 ("<[0-9]{3}>"r)) ;	# de mai de 700 000
+SELECT SUB:1 AV IF (0 ("<de mai>"i)) (1 De) ;
+SELECT SUB:1 AV IF (0 ("<en mai>"i)) (1 De) (2 NUM) (3 N_AJ + Pl) ;
+SELECT SUB:1 Nm IF (0 ("<en mai>"i)) (1 De) (2 An4) ;	# de mai de 1968 ; de mai de cinc infants
+SELECT SUB:1 Nm IF (0 ("<en mai>"i)) (1 De) (2 An2 OR An3) (NOT 3 ("<[0-9]{3}>"r)) ;	# de mai de 700 000
+SELECT ("en mai de") IF (0 ("<en mai de>"i)) (1 NUM) (2 N_AJ + Pl) ;
+SELECT SUB:1 Nm IF (0 ("<en mai de>"i)) (1 An4) ;	# en mai de 1968 ; en mai de cinc infants
+SELECT SUB:1 Nm IF (0 ("<en mai de>"i)) (1 An2 OR An3) (NOT 2 ("<[0-9]{3}>"r)) ;	# en mai de 700 000
+
+#Mes de mai
+SELECT N IF (0 ("<mai>")) (-1 ("<de>")) (-2 ("<mes>")) ; #mes de mai
+SELECT N IF (0 ("<mai>")) (-1 ("<de>")) (-2 NUM) (-3 ("lo")) ; #lo 12 de mai
+SELECT N IF (0 ("<mai>")) (-1 ("<de>")) (-2 ("<e>") OR ("<o>")) (-3 Nommois) (-4 ("<de>")) ; #d'abril o de mai
+SELECT N IF (0 ("<mai>")) (-1 ("<de>")) (1 ("<e>") OR ("<o>")) (2 ("<de>")) (3 Nommois) ; #de mai o de junh
+SELECT N IF (0 ("<mai>")) (-1 ("<de>")) (1 ("<a>")) (2 Nommois) ; #de mai a junh
+SELECT N IF (-3 ("<de>")) (-2 Nommois) (-1 ("<a>")) (0 ("<mai>")) ; #d'abril a mai
+SELECT N IF (0 ("<mai>")) (-1 ("<entre>")) (1 ("<e>")) (2 Nommois) ; #entre mai e junh
+SELECT N IF (-3 ("<entre>")) (-2 Nommois) (-1 ("<e>")) (0 ("<mai>")) ; #entre abril a mai
+REMOVE PREP IF (0 ("de mai")) ;
+REMOVE PREP IF (0 ("en mai")) ;
+REMOVE ("en") IF (0 ("en mai de")) ;
 
 #Una prepausicion es totjorn seguida d'un nom, pronom, adverb, numeral, infinitiu, determinant o adjectiu
 REMOVE PREP IF (NOT 1 N OR PRON OR AV OR NUM OR NP OR VBinf OR DET OR AJ OR ("de") OR unknown) (NOT 0/* PREP + DET) (NOT 0/* PREP + N) (NOT 0 ("en tot")) ;	# a luchat pendent d'annadas
@@ -2060,10 +2102,6 @@ REMOVE PREP IF (NOT -1 N_AJ) (0 ("de còps") OR ("a còps")) ;
 #punt de vista
 SELECT SUB:1 Nf IF (0 PREP) (-1 ("punt") OR ("ponch")) (0 ("<de vista>")) ;
 
-#mes de mai
-SELECT SUB:1 Nm IF (0 PREP) (-1 ("mes")) (0 ("<de mai>")) ;
-SELECT SUB:1 Nm IF (0 PREP) (-1 Nummois) (0 ("<de mai>")) ;
-
 #mes mois
 REMOVE AV IF (0 ("mes")) (-1 DET) (-1 MascSg) ;
 REMOVE AV IF (0 ("mes")) (-1/* PREP + DET) ;
@@ -2263,16 +2301,6 @@ REMOVE ("hèr") + (vbhaver) IF (0 ("har") + (vbhaver)) ;
 REMOVE ("hèr") + (vblex) IF (0 ("har") + (vblex)) ;
 
 SELECT VBpp IF (-1 ("còp")) (-2 ("un")) ;
-
-#Mes de mai
-SELECT N IF (0 ("<mai>")) (-1 ("<de>")) (-2 ("<mes>")) ; #mes de mai
-SELECT N IF (0 ("<mai>")) (-1 ("<de>")) (-2 NUM) (-3 ("lo")) ; #lo 12 de mai
-SELECT N IF (0 ("<mai>")) (-1 ("<de>")) (-2 ("<e>") OR ("<o>")) (-3 Nommois) (-4 ("<de>")) ; #d'abril o de mai
-SELECT N IF (0 ("<mai>")) (-1 ("<de>")) (1 ("<e>") OR ("<o>")) (2 ("<de>")) (3 Nommois) ; #de mai o de junh
-SELECT N IF (0 ("<mai>")) (-1 ("<de>")) (1 ("<a>")) (2 Nommois) ; #de mai a junh
-SELECT N IF (-3 ("<de>")) (-2 Nommois) (-1 ("<a>")) (0 ("<mai>")) ; #d'abril a mai
-SELECT N IF (0 ("<mai>")) (-1 ("<entre>")) (1 ("<e>")) (2 Nommois) ; #entre mai e junh
-SELECT N IF (-3 ("<entre>")) (-2 Nommois) (-1 ("<e>")) (0 ("<mai>")) ; #entre abril a mai
 
 #de completar : desambiguizacion present imperfait
 #Ne fonctionne pas SELECT PRI IF (0 PRI) (0 PII) (NOT 1* PII BARRIER FinFr) (NOT 1* IFI BARRIER FinFr) (NOT -1* PII BARRIER FinFr) (NOT -1* IFI BARRIER FinFr) ;
