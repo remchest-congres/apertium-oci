@@ -697,6 +697,15 @@ SELECT AV IF (0 AdvComp) (1 AJ OR VBpp OR AV) (2 Que) ;	# mei leugèr que jo
 SELECT Rel IF (-2 ("<n'i>"i) OR ("<n’i>"i)) (-1 ("aver") OR ("auer")) (0 Que) ;
 SELECT Rel IF (-3 ("<n'i>"i) OR ("<n’i>"i)) (-2 ("aver") OR ("auer")) (-1 DET OR N OR AJ OR NUM) (0 Que) ;
 
+REMOVE Vmod IF (0 ("aver# de") OR ("auer# de")) (NOT 1 VBinf OR Pro) ;
+REMOVE Vmod IF (0 ("aver# de") OR ("auer# de")) (1 Pro) (NOT 2 VBinf OR Pro) ;
+REMOVE Vmod IF (0 ("aver# de") OR ("auer# de")) (1 Pro) (2 Pro) (NOT 3 VBinf OR Pro) ;
+SELECT Vmod IF (0 ("aver# de") OR ("auer# de")) (1 Pro) (2 Pro) (3C VBinf OR Pro) ;
+SELECT Vmod IF (0 ("aver# de") OR ("auer# de")) (1 Pro) (2C VBinf OR Pro) ;
+SELECT Vmod IF (0 ("aver# de") OR ("auer# de")) (1C VBinf OR Pro) ;
+REMOVE Vmod IF (0 ("aver# de") OR ("auer# de")) (1 N_AJ OR AV OR PREAV) ;
+REMOVE ("aver# de") OR ("auer# de") IF (0 ("aver# de") OR ("auer# de")) (1 N_AJ OR AV OR PREAV) ;
+
 SELECT AV IF (-1/* DETdef + &&AcordSN) (0 AdvComp) (1 AJ + &&AcordSN OR VBpp + &&AcordSN OR N + &&AcordSN) ;	# lo mai rapide
 SELECT AV IF (-2/* DETdef + &&AcordSN) (-1 N + &&AcordSN) (0 AdvComp) (1 AJ + &&AcordSN OR VBpp + &&AcordSN) ;	# lo mainatge mai rapide
 SELECT AJ IF (-3/* DETdef + &&AcordSN) (-2 N + &&AcordSN) (-1 AdvComp) (0 AJ + &&AcordSN) ;	# los sons mai aguts
