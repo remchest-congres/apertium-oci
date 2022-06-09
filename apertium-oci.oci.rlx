@@ -708,6 +708,7 @@ SELECT Vmod IF (0 ("aver# de") OR ("auer# de")) (1 Pro) (2C VBinf OR Pro) ;
 SELECT Vmod IF (0 ("aver# de") OR ("auer# de")) (1C VBinf OR Pro) ;
 REMOVE Vmod IF (0 ("aver# de") OR ("auer# de")) (1 N_AJ OR AV OR PREAV) ;
 REMOVE ("aver# de") OR ("auer# de") IF (0 ("aver# de") OR ("auer# de")) (1 N_AJ OR AV OR PREAV) ;
+SELECT N + ("mal") IF (-1 ("aver")) (-1 ("<.* de>"ri)) (0 ("mal")) ;
 
 SELECT AV IF (-1/* DETdef + &&AcordSN) (0 AdvComp) (1 AJ + &&AcordSN OR VBpp + &&AcordSN OR N + &&AcordSN) ;	# lo mai rapide
 SELECT AV IF (-2/* DETdef + &&AcordSN) (-1 N + &&AcordSN) (0 AdvComp) (1 AJ + &&AcordSN OR VBpp + &&AcordSN) ;	# lo mainatge mai rapide
