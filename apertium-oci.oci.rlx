@@ -479,6 +479,9 @@ REMOVE Ser + Pl IF (0 ("son") + Sg) (1C N_AJ + Sg) ;
 
 SELECT N (-1 Jorns) (0 ("<matin>"i)) ;
 
+REMOVE AV (0 Conjadv) (-1 CM) (NOT 1 EOS) ;
+REMOVE V (0 ("<lavetz>"i)) (0 AV OR Conjadv) (-1 CM) ;
+
 SELECT N IF (-1/* DET + MascSg OR ("<del>"i) OR ("<al>"i)) (0 Cap); ;
 SELECT N + (mf) IF (-1 ("ex") OR ("<ex>"i)) (0 Cap) ;
 SELECT N + (mf) IF (-1 ("ex") OR ("<ex>"i)) (0 Cap_de_del) ;
