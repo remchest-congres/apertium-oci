@@ -1229,6 +1229,20 @@ SELECT V IF (0 An + MascSg) (1 VBpp + MascSg) ;
 SELECT V IF (0 An + MascSg) (1 Pas) (2 VBpp + MascSg) ;
 SELECT V IF (0 An + MascSg) (1C AV) (2 VBpp + MascSg) ;
 
+# PREP
+SELECT PREP IF (0 ("dempuèi")) (1 De) (2 N_AJ + Pl) ;	# dempuei d'ans
+SELECT PREP IF (0 ("dempuòi")) (1 De) (2 N_AJ + Pl) ;
+SELECT PREP IF (0 ("desempuèi")) (1 De) (2 N_AJ + Pl) ;
+SELECT PREP IF (0 ("desempuòi")) (1 De) (2 N_AJ + Pl) ;
+SELECT PREP IF (0 ("despuèi")) (1 De) (2 N_AJ + Pl) ;
+SELECT PREP IF (0 ("despuòi")) (1 De) (2 N_AJ + Pl) ;
+SELECT PREP IF (0 ("abans")) (1 De) (2 N_AJ + Pl) ;
+SELECT PREP IF (0 ("davant")) (1 De) (2 N_AJ + Pl) ;
+SELECT PREP IF (0 ("darrièr")) (1 De) (2 N_AJ + Pl) (NOT -1 DET) ;
+SELECT PREP IF (0 ("detràs")) (1 De) (2 N_AJ + Pl) (NOT -1 DET) ;
+SELECT PREP IF (0 ("tras")) (1 De) (2 N_AJ + Pl) (NOT -1 DET) ;
+SELECT PREP IF (0 ("defòra")) (1 De) (2 N_AJ + Pl) (NOT -1 DET) ;
+
 # NP
 
 SELECT N IF (0 ("carta")) (1 ("de")) (2 ("crèdit") OR ("credit")) ;
