@@ -1730,6 +1730,8 @@ SELECT SUB:1 AV IF (0 ("<de mai>"i)) (1 AJ OR VBpp OR AV) ;
 SELECT AJ OR AV IF (-1 ("<de mai>"i)) (0 AJ OR VBpp OR AV) ;
 SELECT AJ IF (-1C PREP) (-1/* N + &&AcordSP) (0 AJ + &&AcordSP) ;
 
+REMOVE AJ IF (-1C Verb LINK NOT 0 VBpp) (0 N) (1 Que OR Qui OR Rel) ;
+
 SELECT NP + &&AcordSN IF (-2 DET + &&AcordSN) (-1 AdjPre + &&AcordSN) (0 NP + &&AcordSN) (NOT -1 ("nau")) ;
 SELECT NP + &&AcordSN IF (-2/* DET + &&AcordSN) (-1 AdjPre + &&AcordSN) (0 NP + &&AcordSN) (NOT -1 ("nau")) ;
 SELECT N + &&AcordSN IF (-2 DET + &&AcordSN) (-1 AdjPre + &&AcordSN) (0 N + &&AcordSN) (NOT -1 ("nau")) ;
