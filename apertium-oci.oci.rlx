@@ -42,6 +42,7 @@ SET AV = (adv) - (enon) ;
 LIST AVexcl = (adv excl) ;
 LIST PREAV = preadv ;
 LIST PRONPers = (prn p1) (prn p2) (prn p3);
+LIST PRONRef = "me" "te" "se" "nos" "vos" ;
 LIST IJ = ij ;
 LIST PREDET = predet ;
 LIST Pos = pos ;
@@ -208,6 +209,7 @@ LIST O_cnjcoo = ("o" cnjcoo) ("ò" cnjcoo) ;
 LIST Semblar_Pareisser = "semblar" "paréisser" "paréisher" ;
 LIST Devenir = "devenir" "venir" "vàder" "vénguer" "viéner" "vier" ;
 LIST Demandar = "demandar" "demanar" "interrogar" "questionar" "qüestionar" "saber" "sàber" ;
+LIST Far = "far" "har" "hèr" ;
 LIST Estat = "estat" ;
 LIST Clau = "clau" ;
 LIST Calar = "calar" ;
@@ -1730,7 +1732,8 @@ SELECT SUB:1 AV IF (0 ("<de mai>"i)) (1 AJ OR VBpp OR AV) ;
 SELECT AJ OR AV IF (-1 ("<de mai>"i)) (0 AJ OR VBpp OR AV) ;
 SELECT AJ IF (-1C PREP) (-1/* N + &&AcordSP) (0 AJ + &&AcordSP) ;
 
-REMOVE AJ IF (-1C Verb LINK NOT 0 VBpp) (0 N) (1 Que OR Qui OR Rel) ;
+REMOVE AJ IF (-1C Verb LINK NOT 0 VBpp OR Semblar_Pareisser OR Devenir) (0 N) (1 Que OR Qui OR Rel) ;
+REMOVE N IF (-2 PRONRef) (-1 Far) (0 AJ) ;	# se far gran
 
 SELECT NP + &&AcordSN IF (-2 DET + &&AcordSN) (-1 AdjPre + &&AcordSN) (0 NP + &&AcordSN) (NOT -1 ("nau")) ;
 SELECT NP + &&AcordSN IF (-2/* DET + &&AcordSN) (-1 AdjPre + &&AcordSN) (0 NP + &&AcordSN) (NOT -1 ("nau")) ;
