@@ -798,6 +798,11 @@ REMOVE AJ (0 ("mai bon")) ;
 
 REMOVE VBpp IF (0 Conjadv OR PREP LINK 0 ("<.* que>"ri)) (NOT -1 Haver) (NOT -2 Haver) ;	# vist que lor manifestacion
 
+SELECT PREP IF (-1C BOS OR Conjsub OR Conjadv OR Rel) (0 ("shens")) (1C VBinf OR N_AJ) ;	# shens díser
+SELECT PREP IF (-1C BOS OR Conjsub OR Conjadv OR Rel) (0 ("shens")) (1 Pro OR AV) (2C VBinf) ;
+SELECT PREP IF (-1C BOS OR Conjsub OR Conjadv OR Rel) (0 ("shens")) (1C Pro OR AV) (2 VBinf) ;	# shens li díser
+SELECT PREP IF (-1C BOS OR Conjsub OR Conjadv OR Rel) (0 ("shens")) (1 Pro OR AV) (2 Pro OR AV) (3 VBinf) ;	# shens li'n díser
+
 SELECT Conjsub IF (-1 Mai) (0 ("que")) (NOT -2 DET OR BOS) ;
 REMOVE N_AJ IF (0 Mai) (1 ("que")) (NOT -1 DET) ;
 SELECT Conjsub IF (-2 Mai) (-1 AJ OR AV) (0 ("que")) ;
