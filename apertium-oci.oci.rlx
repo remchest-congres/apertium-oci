@@ -796,6 +796,8 @@ SELECT AJ (0 ("mai bon") + &&AcordSN) (-1 N + &&AcordSN) ;
 SELECT AJ (0 ("mai bon") + &&AcordSN) (1 N + &&AcordSN) ;
 REMOVE AJ (0 ("mai bon")) ;
 
+REMOVE VBpp IF (0 Conjadv OR PREP LINK 0 ("<.* que>"ri)) (NOT -1 Haver) (NOT -2 Haver) ;	# vist que lor manifestacion
+
 SELECT Conjsub IF (-1 Mai) (0 ("que")) (NOT -2 DET OR BOS) ;
 REMOVE N_AJ IF (0 Mai) (1 ("que")) (NOT -1 DET) ;
 SELECT Conjsub IF (-2 Mai) (-1 AJ OR AV) (0 ("que")) ;
