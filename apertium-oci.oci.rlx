@@ -2036,6 +2036,8 @@ SELECT Pro + Ref IF (0 Si) (1C Ser + P3 + Sg) (2 unknown) (2 (".*[ai]t"r) OR (".
 SELECT Pro + Ref IF (0 Si) (1C Ser + P3 + Pl) (2 unknown) (2 (".*[ai]ts"r) OR (".*[ai]das"r)) ;
 SELECT Conjadv IF (-1 BOS OR Conjsub OR Conjadv) (0 Si) (1C Ser + P3 + &&AcordSP) (NOT 2 VBpp + &&AcordSP OR AV OR PREAV) ;
 SELECT Conjadv IF (-2 BOS OR Conjsub OR Conjadv) (-1 AV) (0 Si) (1C Ser + P3 + &&AcordSP) (NOT 2 VBpp + &&AcordSP OR AV OR PREAV) ;
+SELECT Conjadv IF (-1 BOS OR Conjsub OR Conjadv) (0 Si) (1C Ser + P3 + &&AcordSP) (2 AV OR PREAV) (3 AJ + &&AcordSP LINK NOT 0 VBpp + &&AcordSP) ;	# s'es plan probable
+SELECT Conjadv IF (-1 BOS OR Conjsub OR Conjadv) (0 Si) (1C Ser + P3 + &&AcordSP) (2 AV) (3 AV OR PREAV) (4 AJ + &&AcordSP LINK NOT 0 VBpp + &&AcordSP) ;	# s'es pas plan probable
 REMOVE AV IF (0 Si) (1C V) ;
 SELECT P3 IF (-1C Se + PRON) (NOT 0 Pro) (0 V) ;		# se canti
 SELECT P3 IF (-2C Se + PRON) (-1 Pro) (NOT 0 Pro) (0 V) ;	# se li canti
