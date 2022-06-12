@@ -2355,23 +2355,25 @@ SELECT VBpp IF (-1 ("còp")) (-2 ("un")) ;
 #de completar : desambiguizacion present imperfait
 #Ne fonctionne pas SELECT PRI IF (0 PRI) (0 PII) (NOT 1* PII BARRIER FinFr) (NOT 1* IFI BARRIER FinFr) (NOT -1* PII BARRIER FinFr) (NOT -1* IFI BARRIER FinFr) ;
 
-# PRI / PII
-SELECT PRI IF (-2C PRI) (-1 Conjco) (0 PII) (0 PRI) ;
-SELECT PII IF (-2C PII) (-1 Conjco) (0 PII) (0 PRI) ;
-SELECT PRI IF (2C PRI) (1 Conjco) (0 PII) (0 PRI) ;
-SELECT PII IF (2C PII) (1 Conjco) (0 PII) (0 PRI) ;
-SELECT PRI IF (-3C PRI) (-2 Conjco) (-1 AV OR Pro) (0 PII) (0 PRI) ;
-SELECT PII IF (-3C PII) (-2 Conjco) (-1 AV OR Pro) (0 PII) (0 PRI) ;
-SELECT PRI IF (3C PRI) (2 AV OR Pro) (1 Conjco) (0 PII) (0 PRI) ;
-SELECT PII IF (3C PII) (2 AV OR Pro) (1 Conjco) (0 PII) (0 PRI) ;
-REMOVE PII (0 PRI) (1* ("uèi") OR ("uei") OR ("ué") OR ("auèi") OR ("aué") OR ("uèi lo dia") OR ("aué en dia") OR ("uèi lo jorn") OR ("ara") OR ("adara") OR ("actualament")) ;
-REMOVE PII (0 PRI) (-1* ("uèi") OR ("uei") OR ("ué") OR ("auèi") OR ("aué") OR ("uèi lo dia") OR ("aué en dia") OR ("uèi lo jorn") OR ("ara") OR ("adara") OR ("actualament")) ;
-REMOVE PRI (0 PII) (1C* PIS) (NOT 1* PRI) (NOT -1* PRI) ;
-REMOVE PRI (0 PII) (-1C* PIS) (NOT 1* PRI) (NOT -1* PRI) ;
-REMOVE PII (0 PRI LINK NOT 0 Haver) (1C* PRI LINK NOT 0 Haver) ;
-REMOVE PII (0 PRI LINK NOT 0 Haver) (-1C* PRI LINK NOT 0 Haver) ;
-REMOVE PRI (0 PII LINK NOT 0 Haver) (1C* PII LINK NOT 0 Haver) ;
-REMOVE PRI (0 PII LINK NOT 0 Haver) (-1C* PII LINK NOT 0 Haver) ;
+# PRI / PII, IFI
+SELECT PRI IF (-2C PRI) (-1 Conjco) (0 PII OR IFI) (0 PRI) ;
+SELECT PII OR IFI IF (-2C PII OR IFI) (-1 Conjco) (0 PII OR IFI) (0 PRI) ;
+SELECT PRI IF (2C PRI) (1 Conjco) (0 PII OR IFI) (0 PRI) ;
+SELECT PII OR IFI IF (2C PII OR IFI) (1 Conjco) (0 PII OR IFI) (0 PRI) ;
+SELECT PRI IF (-3C PRI) (-2 Conjco) (-1 AV OR Pro) (0 PII OR IFI) (0 PRI) ;
+SELECT PII OR IFI IF (-3C PII OR IFI) (-2 Conjco) (-1 AV OR Pro) (0 PII OR IFI) (0 PRI) ;
+SELECT PRI IF (3C PRI) (2 AV OR Pro) (1 Conjco) (0 PII OR IFI) (0 PRI) ;
+SELECT PII OR IFI IF (3C PII OR IFI) (2 AV OR Pro) (1 Conjco) (0 PII OR IFI) (0 PRI) ;
+REMOVE PII OR IFI IF (0 PRI) (1* ("uèi") OR ("uei") OR ("ué") OR ("auèi") OR ("aué") OR ("uèi lo dia") OR ("aué en dia") OR ("uèi lo jorn") OR ("ara") OR ("adara") OR ("actualament")) ;
+REMOVE PII OR IFI IF (0 PRI) (-1* ("uèi") OR ("uei") OR ("ué") OR ("auèi") OR ("aué") OR ("uèi lo dia") OR ("aué en dia") OR ("uèi lo jorn") OR ("ara") OR ("adara") OR ("actualament")) ;
+REMOVE PRI IF (0 PII) (1C* PIS) (NOT 1* PRI) (NOT -1* PRI) ;
+REMOVE PRI IF (0 PII) (-1C* PIS) (NOT 1* PRI) (NOT -1* PRI) ;
+REMOVE PII OR IFI IF (0 PRI LINK NOT 0 Haver) (1C* PRI LINK NOT 0 Haver) ;
+REMOVE PII OR IFI IF (0 PRI LINK NOT 0 Haver) (-1C* PRI LINK NOT 0 Haver) ;
+REMOVE PRI IF (0 PII LINK NOT 0 Haver) (1C* PII LINK NOT 0 Haver) ;
+REMOVE PRI IF (0 PII LINK NOT 0 Haver) (-1C* PII LINK NOT 0 Haver) ;
+REMOVE PRI IF (0 IFI LINK NOT 0 Haver) (1C* IFI LINK NOT 0 Haver) ;
+REMOVE PRI IF (0 IFI LINK NOT 0 Haver) (-1C* IFI LINK NOT 0 Haver) ;
 
 # PRI / PRS
 SELECT PRI IF (-2C PRI) (-1 Conjco) (0 PRS) (0 PRI) ;
