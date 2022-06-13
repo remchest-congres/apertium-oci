@@ -221,6 +221,9 @@ LIST Parir = "parir" ;
 LIST Parer = "pàrer" ;
 LIST Gausir = "gausir" ;
 LIST Gausar = "gausar" ;
+LIST Estar = "estar" ;
+LIST Estavanir = "estavanir" ;
+LIST Serar = "serar" ;
 LIST DetDe = ("fòrça de" det) ("bravament de" det) ("brica de" det) ("briga de" det) ("cap de" det) ("chic de" det) ("drin de" det) ("de bisçantenas de" det) ("ges de" det) ("hèra de" det) ("mai de" det) ("milantas de" det) ("pas cap de" det) ("pauc de" det) ("plan de" det) ("tant de" det) ("tròp de" det) ("ua balada de" det) ("ua horrèra de" det) ("ua parrabastèra de" det) ("ua pièla de" det) ("ua sarabantena de" det)  ("ua sòrta de" det) ("ua tropa de" det) ("ua troperada de" det) ("ua ahoalh de" det) ("un arramat de" det) ("un beròi tropèth de" det) ("un bricon de" det) ("un chic de" det) ("un chiquet de" det) ("un drin de" det) ("un escag de" det) ("un frami de" det) ("un fum de" det) ("un grand nombre de" det) ("un hardèu de" det) ("un hèish de" det) ("un hum de" det) ("un molon de" det) ("un mont de" det) ("un pauc de" det) ("un sarròt de" det) ("un tropèth de" det) ("una brica de" det) ("una brina de" det) ("una idèa de" det) ("quant de" det) ;
 LIST Ple = "ple" ;
 LIST Brau = "brau" ;
@@ -389,6 +392,7 @@ SELECT PREP IF (-2 ("<son>"i)) (-1C AV OR PREAV OR ("pas")) (0 ("coma") OR ("com
 SELECT PREP IF (-3 ("<son>"i)) (-1C AV OR PREAV OR ("pas")) (1C AV OR PREAV) (0 ("coma") OR ("com")) ;
 REMOVE N IF (NOT -1 DET) (0 ("<son>"i)) ;	# patch
 REMOVE N IF (NOT -1 DET OR NUM) (0 ("<endavant>"i)) ;	# patch
+REMOVE AV IF (-1 DET OR NUM) (0 ("<endavant>"i)) ;	# patch
 REMOVE DET + Sg IF (-1 NUM LINK NOT 0 ("1")) (0 ("<son>"i)) ;	# patch
 REMOVE Sg IF (NOT -1 DET) (0 ("<son>"i)) (1C Pl_strict) ;	# son conegudas
 REMOVE Sg IF (NOT -1 DET) (0 ("<son>"i)) (1 AV OR PREAV) (2C Pl_strict) ;	# son plan conegudas
@@ -979,6 +983,94 @@ REMOVE ("róder") IF (0 ("ròder")) ;
 # èstre e seriar (p.ex. seriam)
 REMOVE ("seriar") IF (0 ("èstre") OR ("èsser") OR ("estar")) ;
 
+# estar e estavanir
+REMOVE Estavanir IF (0 Estar) ;
+
+# estar e serar
+REMOVE Serar IF (0 Estar) ;
+
+# estar e estadir
+REMOVE ("estadir") IF (0 Estar) ;
+
+# vier et véner
+REMOVE ("vier") IF (0 ("véner")) ;
+
+# passir e passar
+REMOVE ("passir") IF (0 ("passar")) ;
+
+# veirar e veire
+REMOVE ("veirar") IF (0 ("veire")) ;
+
+# escadir e escàder
+REMOVE ("escadir") IF (0 ("escàder")) ;
+
+# apartenir, apartar, apartir
+REMOVE ("apartar") IF (0 ("apartenir") OR ("aparténer")) ;
+REMOVE ("apartir") IF (0 ("apartenir") OR ("aparténer")) ;
+
+# acabir e acabar
+REMOVE ("acabir") IF (0 ("acabar")) ;
+
+# genar e generar
+REMOVE ("genar") IF (0 ("generar")) ;
+
+# aparir e aparéisher
+REMOVE ("aparir") IF (0 ("aparéisher") OR ("aparéisser")) ;
+
+# véder e vederar
+REMOVE ("vederar") IF (0 ("véder")) ;
+
+# clavir e clavar
+REMOVE ("clavir") IF (0 ("clavar")) ;
+
+# prevedir e prevéder
+REMOVE ("prevedir") IF (0 ("prevéder")) ;
+
+# aparir e apariar
+REMOVE ("aparir") IF (0 ("apariar")) ;
+
+# horar e estar
+REMOVE ("horar") IF (0 ("estar") OR ("horat")) ;
+
+# aurir e aver
+REMOVE ("aurir") IF (0 ("aver")) ;
+
+# devénguer e dever
+REMOVE ("devénguer") IF (0 ("<dever>"i)) ;
+
+# solar e soler
+REMOVE ("solar") IF (0 ("soler")) ;
+
+# poscar e poder
+REMOVE ("poscar") IF (0 ("poder")) ;
+
+# ajar e aver
+REMOVE ("ajar") IF (0 ("aver")) ;
+
+# escotir e escotar
+REMOVE ("escotir") IF (0 ("escotar")) ;
+
+# corrir e córrer
+REMOVE ("corrir") IF (0 ("córrer")) ;
+
+# venar e venir
+REMOVE ("venar") IF (0 ("venir") OR ("véner") OR ("viéner")) ;
+
+# véner e venir, gascon
+REMOVE ("véner") IF (0 ("venir")) (1 ("de")) (2 VBinf OR Pro) ;
+REMOVE ("véner") IF (0 ("venir")) (1 ("de")) (2 Pro) (3 VBinf) ;
+REMOVE ("véner") IF (0 ("venir")) (1 AV) (2 ("de")) (3 VBinf OR Pro) ;
+REMOVE ("véner") IF (0 ("venir")) (1 AV) (2 ("de")) (3 Pro) (4 VBinf) ;
+REMOVE ("véner") IF (0 ("venir")) (0 VBimp) ;
+REMOVE ("véner") IF (0 ("venir")) (-1 ("que")) (-2 N) ;
+REMOVE ("véner") IF (0 ("<venent>")) (-1 N + MascSg) ;
+REMOVE ("venir") IF (0 ("viéner") OR ("vénguer")) ;
+REMOVE ("venir") IF (0 ("véner")) (-1 Pro) (NOT -1 ("i") OR ("en")) ;
+
+# estar vblex ou vbser
+REMOVE Verb IF (0 Ser) (0 ("estar")) ;
+
+
 
 # comprar e compréner/comprene (p.ex. "compren")
 REMOVE P3 + Sg IF (-3 N OR NP) (-2 Conjco) (-1 N OR NP) (0 V + P3 + Sg) (0 V + P3 + Pl) ;	# Marc e Aitana compren
@@ -1011,7 +1103,7 @@ SELECT NUM IF (0 ("mil")) (1 N_AJ + Pl) ;
 
 SELECT V IF (0 ("tornar")) (1C VBinf) ;
 
-SELECT N OR NP IF (-1 De) (0 ("òc")) ;
+SELECT N OR NP IF (-1 De OR En OR DET + MascSg) (0 ("òc")) ;
 
 SELECT AJ IF (0 ("marrit")) (1 ("flac")) ;	# valoracions Jornalet
 SELECT AJ IF (-1 ("marrit")) (0 ("flac")) ;	# valoracions Jornalet
@@ -2187,6 +2279,9 @@ REMOVE V IF (0 ("<idèa>") or ("<idea>")) (-1 DET + FemSg OR AJ + FemSg) ;
 REMOVE V IF (0 ("<viu>")) (-1 N + MascSg) ;
 REMOVE V IF (0 ("<viu>")) (-1 Ser) ;
 
+REMOVE V IF (0 N) (0 ("<permanenta>"i) OR ("<politica>"i)) ;
+
+
 SELECT V IF (0 ("<còsta>")) (1 ("<car>")) ;
 SELECT V IF (0 ("<còsta>")) (1 NUM) (2 ("èuro") OR ("euro") OR ("franc") OR ("dollar") OR ("dòlar")) ;
 SELECT V IF (0 ("<còsta>")) (1 NUM) (2 NUM) (3 ("èuro") OR ("euro") OR ("franc") OR ("dollar") OR ("dòlar")) ;
@@ -2210,7 +2305,27 @@ SELECT N IF (0 ("fin")) (-1 DET + FemSg) ;
 
 REMOVE Conjco IF (0 ("ne")) (1 V) ; #A affiner plus tard
 
+REMOVE PREP IF (0 ("<manca>"i)) (-1 DET + FemSg OR AJ + FemSg);
+REMOVE PREP IF (0 ("<manca>"i)) (1 ("de"));
 
+REMOVE N IF (0 ("<luènh>"i)) (NOT -1 DET + MascSg OR AJ + MascSg) ;
+
+
+REMOVE V IF (0 ("<augan>"i) OR ("<lenga>"i) OR ("<lengas>"i) OR ("<monde>"i) OR ("<haut">i) OR ("<hauta>"i) OR ("<hauts>"i) OR ("<hautas>"i) OR ("<paraula>"i) OR ("<paraulas>"i) OR ("<ara>"i) OR ("<aiga>"i) OR ("<aigas>"i) OR ("<vaca>"i) OR ("<vacas>"i) OR ("<Joan>") OR ("<pèira>"i) OR ("<pèiras>"i) OR ("<nòva>"i) OR ("<nòvas>"i) OR ("<sable>"i) OR ("<sables>"i) OR ("<granat>"i) OR ("<granats>"i) OR ("<granada>"i) OR ("<granadas>"i) OR ("<alengat>"i) OR ("<alengada>"i) OR ("<alengats>"i) OR ("<alengadas>"i) OR ("<polit>"i) OR ("<polida>"i) OR ("<polits>"i) OR ("<polidas>"i) OR ("<solide>"i) OR ("<solides>"i) OR ("<ausèra>"i) OR ("<ausèras>"i) OR ("<senat>"i) OR ("<senada>"i) OR ("<China>") OR ("<teula>"i) OR ("<teulas>"i) OR ("<hereda>"i) OR ("<heredas>"i) OR ("<linha>"i) OR ("<linhas>"i) OR ("<arromerat>"i) OR ("<arromerada>"i) OR ("<arromerats>"i) OR ("<arromeradas>"i) OR ("<sorda>"i) OR ("<sordas>"i) OR ("<i>"i) OR ("<escarpa>"i) OR ("<escarpas>"i) OR ("<vesia>"i) OR ("<vesias>"i) OR ("<lheitèra>"i) OR ("<lheitèras>"i) OR ("<hèsta>"i) OR ("<hèstas>"i) OR ("<fèsta>"i) OR ("<fèstas>"i) OR ("<amor>"i) OR ("<amors>"i) OR ("<pèrla>"i) OR ("<pèrlas>"i) OR ("<istòria>"i) OR ("<istòrias>"i) OR ("<cementèri>"i) OR ("<cementèris>"i) OR ("<camisa>"i) OR ("<camisas>"i) OR ("<istorian>"i) OR ("<istorians>"i) OR ("<boca>"i) OR ("<bocas>"i) OR ("<zòna>"i) OR ("<zònas>"i) OR ("<imatge>"i) OR ("<imatges>"i) OR ("<andada>"i) OR ("<andadas>"i) OR ("<frasa>"i) OR ("<frasas>"i) OR ("<taure>"i) OR ("<taures>"i) OR ("<tèrra>"i) OR ("<tèrras>"i) OR ("<moqueta>"i) OR ("<moquetas>"i) OR ("<renda>"i) OR ("<rendas>"i) OR ("<nòvi>"i) OR ("<nòvia>"i) OR ("<nòvias>"i) OR ("<tala>"i) OR ("<talas>"i) OR ("<biais>"i) OR ("<biaisses>"i) OR ("<membre>"i) OR ("<membres>"i) OR ("<fèsta>"i) OR ("<fèstas>"i) OR ("<aisit>"i) OR ("<aisida>"i) OR ("<aisits>"i) OR ("<aisidas>"i) OR ("<gargamèla>"i) OR ("<gargamèlas>"i) OR ("<estable>"i) OR ("<establa>"i) OR ("<estables>"i) OR ("<establas>"i) OR ("<tipe>"i) OR ("<tipes>"i) OR ("<temporada>"i) OR ("<temporadas>"i) OR ("<viste>"i) OR ("<eissit>"i) OR ("<eissida>"i) OR ("<eissits>"i) OR ("<eissidas>"i) OR ("<jaça>"i) OR ("<jaças>"i) OR ("<dotze>"i) OR ("<carrat>"i) OR ("<carrada>"i) OR ("<carrats>"i) OR ("<carradas>"i) OR ("<mot>"i) OR ("<volontat>"i) OR ("<volontats>"i) OR ("<pagina>"i) OR ("<paginas>"i) OR ("<mètge>"i) OR ("<mètges>"i) OR ("<Canada>") OR ("<pèça>"i) OR ("<pèças>"i) OR ("<facultat>"i) OR ("<facultats>"i) OR ("<singlar>"i) OR ("<òsca>"i) OR ("<Espace>") OR ("<cendre>"i) OR ("<obratge>"i) OR ("<obratges>"i) OR ("<politica>"i) OR ("<politicas>"i) OR ("<preséncia>"i) OR ("<preséncias>"i)) ;
+
+REMOVE V IF (0 ("<tara>"i)) (1 N + FemSg OR AJ + FemSg OR NP + FemSg) ; #gascon seulement
+
+REMOVE V IF (0 ("<escotisson>")) (-1 DET + FemSg OR AJ + FemSg) ;
+
+REMOVE P2 IF (0 ("<vistas>"i)) ;
+REMOVE P3 IF (0 ("<vista>"i)) ;
+
+SELECT N IF (0 ("<Senat>")) ;
+
+SELECT V IF (0 ("<veire>"i)) (-1 ("(")) ;
+
+SELECT VBpp IF (0 ("<aguda>"i) OR ("<agudas>"i)) (-1 Haver) ;
+SELECT VBpp IF (0 ("<aguda>"i) OR ("<agudas>"i)) (-1 AV) (-2 Haver) ;
 
 REMOVE N IF (0 ("<Vaduda>")) (1 ("a"));
 REMOVE V IF (0 ("<punt>"));
@@ -2315,3 +2430,4 @@ REMOVE IFI (0 PII) (-1*C PII) ;
 REMOVE IFI (0 PII) (1*C PII) ;
 REMOVE IFI (0 PII) (<-1*C PII) ;
 REMOVE IFI (0 PII) (>1*C PII) ;
+
