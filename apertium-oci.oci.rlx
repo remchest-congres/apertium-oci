@@ -585,6 +585,8 @@ SELECT AV IF (-4 Vmod) (-3 Pas) (-2 AV OR Pro) (-1 VBinf) (0 Mai OR Pus) ;	# vò
 SELECT AV IF (-5 Vmod) (-4 Pas) (-3 AV OR Pro) (-2 AV OR Pro) (-1 VBinf) (0 Mai OR Pus) ;	# vòli pas li'n dire pus
 SELECT Conjco IF (-1 EOS) (0 Mai) ;
 SELECT Conjco IF (-1 CM) (0 Mai) (NOT 1 AJ) ;
+SELECT Conjco IF (-2* V + Pers BARRIER BOS OR Conjadv OR Conjsub OR Rel) (-1C N) (0 Mai LINK NOT 0 ("<.* .*>"r)) (1C Enon OR V + Pers) ;
+SELECT Conjco IF (-1C N_AJ) (0 ("mes")) (1C Enon OR V + Pers) ;
 SELECT AV IF (-1 N + MascSg) (0 Mai) (1 AJ + MascSg) ;
 SELECT AV IF (-1 N + MascPl) (0 Mai) (1 AJ + MascPl) ;
 SELECT AV IF (-1 N + FemSg) (0 Mai) (1 AJ + FemSg) ;
