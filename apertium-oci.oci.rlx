@@ -2094,9 +2094,9 @@ REMOVE PRON IF (0 Se) (NOT 1 Pro OR V + P3 OR V + VBinf OR V + VBger OR unknownM
 REMOVE PRON IF (0 Se) (1 Pro) (NOT 2 Pro OR V + P3 OR V + VBinf OR V + VBger OR unknownMinIni) ;	# se li canti
 REMOVE PRON IF (0 Se) (1 Pro) (2 Pro) (NOT 3 Pro OR V + P3 OR V + VBinf OR V + VBger OR unknownMinIni) ;	# se li o canti
 REMOVE PRON IF (0 Se) (1 Pro) (2 Pro) (3 Pro) (4 V + P3 OR V + VBinf OR V + VBger OR unknownMinIni) ;
-REMOVE SUB:1 PRON IF (0/* Se) (NOT 1 Pro OR V + P3 OR V + VBinf OR V + VBger OR unknownMinIni) ;        # se canti
-REMOVE SUB:1 PRON IF (0/* Se) (1 Pro) (NOT 2 Pro OR V + P3 OR V + VBinf OR V + VBger OR unknownMinIni) ;	# se li canti
-REMOVE SUB:1 PRON IF (0/* Se) (1 Pro) (2 Pro) (NOT 3 Pro OR V + P3 OR V + VBinf OR V + VBger OR unknownMinIni) ;	# se li o canti
+REMOVE SUB:1 PRON IF (0/* Se) (NOT 1 Pro OR V + P3 OR V + VBinf OR V + VBger OR unknownMinIni) ;        # o se canti
+REMOVE SUB:1 PRON IF (0/* Se) (1 Pro) (NOT 2 Pro OR V + P3 OR V + VBinf OR V + VBger OR unknownMinIni) ;	# o se li canti
+REMOVE SUB:1 PRON IF (0/* Se) (1 Pro) (2 Pro) (NOT 3 Pro OR V + P3 OR V + VBinf OR V + VBger OR unknownMinIni) ;	# o se li o canti
 REMOVE SUB:1 PRON IF (0/* Se) (1 Pro) (2 Pro) (3 Pro) (4 V + P3 OR V + VBinf OR V + VBger OR unknownMinIni) ;
 SELECT Pro IF (0 Se) (1 unknownMinIni) ;
 SELECT Pro IF (0 Se) (1 Pro) (2 unknownMinIni) ;
