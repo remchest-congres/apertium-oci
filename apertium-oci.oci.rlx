@@ -599,6 +599,19 @@ SELECT VBpp IF (-2 Ser + &&AcordSP) (-1 AV OR PREAV) (0 VBpp + &&AcordSP) (NOT 0
 SELECT VBpp IF (-3 Ser + &&AcordSP) (-2 AV) (-1 AV OR PREAV) (0 VBpp + &&AcordSP) (NOT 0 N + &&AcordSP) ;
 SELECT PREAV IF (-1 Ser + &&AcordSP) (0 AV OR PREAV) (1 AJ + &&AcordSP) ;
 SELECT PREAV IF (-2 Ser + &&AcordSP) (-1 AV) (0 AV OR PREAV) (1 AJ + &&AcordSP) ;
+SELECT PREAV IF (-1 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP OR Devenir + &&AcordSP) (0 ("tant") OR ("autant")) (1 AJ + &&AcordSP OR VBpp + &&AcordSP) (2 Que) ;
+SELECT Conjsub IF (-3 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP OR Devenir + &&AcordSP) (-2 ("tant") OR ("autant")) (-1 AJ + &&AcordSP OR VBpp + &&AcordSP) (0 Que) ;
+SELECT PREAV IF (-2 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP OR Devenir + &&AcordSP) (-1 AV) (0 ("tant") OR ("autant")) (1 AJ + &&AcordSP OR VBpp + &&AcordSP) (2 Que) ;
+SELECT Conjsub IF (-4 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP OR Devenir + &&AcordSP) (-3 AV) (-2 ("tant") OR ("autant")) (-1 AJ + &&AcordSP OR VBpp + &&AcordSP) (0 Que) ;
+SELECT PREAV IF (-3 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP OR Devenir + &&AcordSP) (-2 AV) (-1 AV) (0 ("tant") OR ("autant")) (1 AJ + &&AcordSP OR VBpp + &&AcordSP) (2 Que) ;
+SELECT Conjsub IF (-5 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP OR Devenir + &&AcordSP) (-4 AV) (-3 AV) (-2 ("tant") OR ("autant")) (-1 AJ + &&AcordSP OR VBpp + &&AcordSP) (0 Que) ;
+SELECT PREAV IF (0 ("tant") OR ("autant")) (1 AJ + &&AcordSN OR VBpp + &&AcordSN) (2 N + &&AcordSN) ;
+SELECT PREAV IF (-1 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP OR Devenir + &&AcordSP) (0 ("tant") OR ("autant")) (1 AJ + &&AcordSP + &&AcordSN OR VBpp + &&AcordSP + &&AcordSN) (2 N + &&AcordSN) (3 Que) ;
+SELECT Conjsub IF (-4 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP OR Devenir + &&AcordSP) (-3 ("tant") OR ("autant")) (-2 AJ + &&AcordSP + &&AcordSN OR VBpp + &&AcordSP + &&AcordSN) (-1 N + &&AcordSN) (0 Que) ;
+SELECT PREAV IF (-2 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP OR Devenir + &&AcordSP) (-1 AV) (0 ("tant") OR ("autant")) (1 AJ + &&AcordSP + &&AcordSN OR VBpp + &&AcordSP + &&AcordSN) (2 N + &&AcordSN) (3 Que) ;
+SELECT Conjsub IF (-5 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP OR Devenir + &&AcordSP) (-4 AV) (-3 ("tant") OR ("autant")) (-2 AJ + &&AcordSP + &&AcordSN OR VBpp + &&AcordSP + &&AcordSN) (-1 N + &&AcordSN) (0 Que) ;
+SELECT PREAV IF (-3 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP OR Devenir + &&AcordSP) (-2 AV) (-1 AV) (0 ("tant") OR ("autant")) (1 AJ + &&AcordSP + &&AcordSN OR VBpp + &&AcordSP + &&AcordSN) (2 N + &&AcordSN) (3 Que) ;
+SELECT Conjsub IF (-6 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP OR Devenir + &&AcordSP) (-5 AV) (-4 AV) (-3 ("tant") OR ("autant")) (-2 AJ + &&AcordSP + &&AcordSN OR VBpp + &&AcordSP + &&AcordSN) (-1 N + &&AcordSN) (0 Que) ;
 
 SELECT AV (-1C V) (0 Melhor) ;		# parlar melhor
 SELECT AV (-2C V) (-1 AV) (0 Melhor) ;
@@ -2081,6 +2094,10 @@ REMOVE PRON IF (0 Se) (NOT 1 Pro OR V + P3 OR V + VBinf OR V + VBger OR unknownM
 REMOVE PRON IF (0 Se) (1 Pro) (NOT 2 Pro OR V + P3 OR V + VBinf OR V + VBger OR unknownMinIni) ;	# se li canti
 REMOVE PRON IF (0 Se) (1 Pro) (2 Pro) (NOT 3 Pro OR V + P3 OR V + VBinf OR V + VBger OR unknownMinIni) ;	# se li o canti
 REMOVE PRON IF (0 Se) (1 Pro) (2 Pro) (3 Pro) (4 V + P3 OR V + VBinf OR V + VBger OR unknownMinIni) ;
+REMOVE SUB:1 PRON IF (0/* Se) (NOT 1 Pro OR V + P3 OR V + VBinf OR V + VBger OR unknownMinIni) ;        # o se canti
+REMOVE SUB:1 PRON IF (0/* Se) (1 Pro) (NOT 2 Pro OR V + P3 OR V + VBinf OR V + VBger OR unknownMinIni) ;	# o se li canti
+REMOVE SUB:1 PRON IF (0/* Se) (1 Pro) (2 Pro) (NOT 3 Pro OR V + P3 OR V + VBinf OR V + VBger OR unknownMinIni) ;	# o se li o canti
+REMOVE SUB:1 PRON IF (0/* Se) (1 Pro) (2 Pro) (3 Pro) (4 V + P3 OR V + VBinf OR V + VBger OR unknownMinIni) ;
 SELECT Pro IF (0 Se) (1 unknownMinIni) ;
 SELECT Pro IF (0 Se) (1 Pro) (2 unknownMinIni) ;
 SELECT Pro IF (0 Se) (1 Pro) (2 Pro) (3 unknownMinIni) ;
