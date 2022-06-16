@@ -585,6 +585,8 @@ SELECT AV IF (-4 Vmod) (-3 Pas) (-2 AV OR Pro) (-1 VBinf) (0 Mai OR Pus) ;	# vò
 SELECT AV IF (-5 Vmod) (-4 Pas) (-3 AV OR Pro) (-2 AV OR Pro) (-1 VBinf) (0 Mai OR Pus) ;	# vòli pas li'n dire pus
 SELECT Conjco IF (-1 EOS) (0 Mai) ;
 SELECT Conjco IF (-1 CM) (0 Mai) (NOT 1 AJ) ;
+SELECT Conjco IF (-2* V + Pers BARRIER BOS OR Conjadv OR Conjsub OR Rel) (-1C N) (0 Mai LINK NOT 0 ("<.* .*>"r)) (1C Enon OR V + Pers) ;
+SELECT Conjco IF (-1C N_AJ) (0 ("mes")) (1C Enon OR V + Pers) ;
 SELECT AV IF (-1 N + MascSg) (0 Mai) (1 AJ + MascSg) ;
 SELECT AV IF (-1 N + MascPl) (0 Mai) (1 AJ + MascPl) ;
 SELECT AV IF (-1 N + FemSg) (0 Mai) (1 AJ + FemSg) ;
@@ -658,12 +660,12 @@ SELECT V OR Pro IF (-1C/* Pro) (NOT -1/* V) ;	# se'n sap
 #enclitics
 SELECT PRencl IF (0 ("nos") OR ("ve")) (-1 PRencl);
 
-REMOVE V IF (0 ("ve")) (-1 V);
-REMOVE V IF (0 ("ve")) (1 V);
-REMOVE V IF (0 ("ve")) (1 Pro) (2 V);
-REMOVE V IF (0 ("ve")) (1 Pro) (2 Pro) (3 V);
-REMOVE V IF (0 ("ve")) (-1 Pro) (-2 V);
-REMOVE V IF (0 ("ve")) (-1 Pro) (-2 Pro) (-3 V);
+REMOVE V IF (0 ("<ve>"i)) (-1 V);
+REMOVE V IF (0 ("<ve>"i)) (1 V);
+REMOVE V IF (0 ("<ve>"i)) (1 Pro) (2 V);
+REMOVE V IF (0 ("<ve>"i)) (1 Pro) (2 Pro) (3 V);
+REMOVE V IF (0 ("<ve>"i)) (-1 Pro) (-2 V);
+REMOVE V IF (0 ("<ve>"i)) (-1 Pro) (-2 Pro) (-3 V);
 
 SELECT PREP (0 ("a")) (1C Pro) ;	# a lo parlar
 SELECT PREP (0 ("a")) (1C Top OR Ant OR Cog OR Al) ;	# a Niça
@@ -955,7 +957,13 @@ SELECT AJ IF (-2C Ser) (-1 AV) (0 ("present")) ;
 
 REMOVE N IF (NOT -1 DET + Masc) (0 ("nos")) (1 Vconj OR VBinf OR VBger OR unknown) ;
 
-REMOVE Tn IF (NOT -1 Tn) (0 ("vos")) (1 Vconj) ;
+#REMOVE Tn IF (NOT -1 Tn) (0 ("vos")) (1 Vconj) ;
+REMOVE Tn IF (NOT -1 PREP) (0 ("nos")) (1C V) (NOT 1 V + P1 + Pl) ;
+REMOVE Tn IF (NOT -1 PREP) (0 ("vos")) (1C V) (NOT 1 V + P2 + Pl) ;
+REMOVE Tn IF (NOT -1 PREP) (0 ("nos")) (1 AV OR Enon OR Pro) (2C V) (NOT 2 V + P1 + Pl) ;
+REMOVE Tn IF (NOT -1 PREP) (0 ("vos")) (1 AV OR Enon OR Pro) (2C V) (NOT 2 V + P2 + Pl) ;
+REMOVE Tn IF (NOT -1 PREP) (0 ("nos")) (1 AV OR Enon OR Pro) (2 AV OR Enon OR Pro) (3C V) (NOT 3 V + P1 + Pl) ;
+REMOVE Tn IF (NOT -1 PREP) (0 ("vos")) (1 AV OR Enon OR Pro) (2 AV OR Enon OR Pro) (3C V) (NOT 3 V + P2 + Pl) ;
 
 # voler e volar (p.ex. vòli)
 SELECT Voler IF (0 Voler) (0 Volar) (1/* VBinf) ;
@@ -1960,9 +1968,9 @@ SELECT AJ IF (-3 NUM) (-2 N + FemPl) (-1 ("e")) (0 ("mièg") + FemSg OR ("miei")
 SELECT AJ IF (-3 NUM) (0 ("mièg")) (1C N);
 SELECT AV IF (-3 NUM) (0 ("mièg")) (1C AJ or AV);
 
-SELECT N IF (-2C N) (-1 Conjco) (0C N_AJ_PP) (NOT 1 N) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# une comédienne, réalisatrice, traductrice et romancière.
-SELECT N IF (NOT -1 N) (0C N_AJ_PP) (1 Conjco) (2C N) ;	# comédies, revues et opérettes ; langues anciennes et sciences naturelles
-SELECT N + &&AcordSN IF (-1/* DET + &&AcordSN) (0C N_AJ_PP) (1 Conjco) (2 DET) (3C N) ;	# les revues et les opérettes
+SELECT N IF (-2C N) (-1 Conjco LINK NOT 0 ("sia")) (0C N_AJ_PP) (NOT 1 N) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# une comédienne, réalisatrice, traductrice et romancière.
+SELECT N IF (NOT -1 N) (0C N_AJ_PP) (1 Conjco LINK NOT 0 ("sia")) (2C N) ;	# comédies, revues et opérettes ; langues anciennes et sciences naturelles
+SELECT N + &&AcordSN IF (-1/* DET + &&AcordSN) (0C N_AJ_PP) (1 Conjco LINK NOT 0 ("sia")) (2 DET) (3C N) ;	# les revues et les opérettes
 SELECT N IF (-2 N) (-1 CM) (0C N_AJ_PP) (1 Conjco OR CM) (2C N) ;	# prêtre, curé, prédicateur
 SELECT N IF (-2C N) (-1 CM) (0C N_AJ_PP) (1 Conjco OR CM) (2 N) ;
 SELECT N IF (-2C N + &&AcordSP) (-1 CM) (0 N + &&AcordSP) (1 ("e") OR ("o")) (2 N + &&AcordSP) ;	# martèths, estenalhas e alicatas
@@ -2021,9 +2029,35 @@ REMOVE VBpp IF (0 ("format")) (1 NP OR Acr) ;	# format PDF
 
 REMOVE N IF (-1 ("mas")) (0 V) (1 Que) ;		# mas sosten que
 
+REMOVE N OR AJ IF (-1C Enon OR Pro) ;
+
+REMOVE V + P1 IF (-1C Pro + Ref) ;
+REMOVE V + P2 IF (-1C Pro + Ref) ;
+REMOVE V + P1 IF (-2C Pro + Ref) (-1 Pro) ;
+REMOVE V + P2 IF (-2C Pro + Ref) (-1 Pro) ;
+REMOVE PRS OR PIS IF (NOT -1* Conjsub OR Conjadv) (NOT -1* ("per") OR ("entà") OR ("tà") LINK 1 Que OR Qui) ;
+
+REMOVE P1 IF (-2 DET + &&AcordSN) (-1 N + &&AcordSN + &&AcordSP) (0C V) (0 V + P3 + &&AcordSP) (NOT -1*C V + P1) (NOT 1*C V + P1);
+REMOVE P1 IF (-1 DET + &&AcordSN) (0 N + &&AcordSN + &&AcordSP) (1C V) (1 V + P3 + &&AcordSP) (NOT -1*C V + P1) (NOT 1*C V + P1);
+REMOVE P1 IF (-3 DET + &&AcordSN) (-2 N + &&AcordSN + &&AcordSP) (-1 AV OR Enon OR Pro) (0C V) (0 V + P3 + &&AcordSP) (NOT -1*C V + P1) (NOT 1*C V + P1);
+REMOVE P1 IF (-1 DET + &&AcordSN) (0 N + &&AcordSN + &&AcordSP) (1 AV OR Enon OR Pro) (2C V) (2 V + P3 + &&AcordSP) (NOT -1*C V + P1) (NOT 1*C V + P1);
+REMOVE P2 IF (-2 DET + &&AcordSN) (-1 N + &&AcordSN + &&AcordSP) (0C V) (0 V + P3 + &&AcordSP) (NOT -1*C V + P2) (NOT 1*C V + P2);
+REMOVE P2 IF (-1 DET + &&AcordSN) (0 N + &&AcordSN + &&AcordSP) (1C V) (1 V + P3 + &&AcordSP) (NOT -1*C V + P2) (NOT 1*C V + P2);
+REMOVE P2 IF (-3 DET + &&AcordSN) (-2 N + &&AcordSN + &&AcordSP) (-1 AV OR Enon OR Pro) (0C V) (0 V + P3 + &&AcordSP) (NOT -1*C V + P2) (NOT 1*C V + P2);
+REMOVE P2 IF (-1 DET + &&AcordSN) (0 N + &&AcordSN + &&AcordSP) (1 AV OR Enon OR Pro) (2C V) (2 V + P3 + &&AcordSP) (NOT -1*C V + P2) (NOT 1*C V + P2);
+
+REMOVE V + P1 IF (-2C N_AJ + &&AcordSP) (-1 AV OR Enon OR Pro) (0 V + P3 + &&AcordSP) (NOT -1*C V + P1) (NOT 1*C V + P1) ;
+REMOVE V + P1 IF (-3C N_AJ + &&AcordSP) (-2 AV OR Enon OR Pro) (-1 AV OR Enon OR Pro) (0 V + P3 + &&AcordSP) (NOT -1*C V + P1) (NOT 1*C V + P1) ;
+REMOVE V + P1 IF (-4C N_AJ + &&AcordSP) (-3 AV OR Enon OR Pro) (-2 AV OR Enon OR Pro) (-1 AV OR Enon OR Pro) (0 V + P3 + &&AcordSP) (NOT -1*C V + P1) (NOT 1*C V + P1) ;
+REMOVE V + P2 IF (-1C N_AJ + &&AcordSP) (0 V + P3 + &&AcordSP) (NOT -1*C V + P2) (NOT 1*C V + P2) ;
+REMOVE V + P2 IF (-2C N_AJ + &&AcordSP) (-1 AV OR Enon OR Pro) (0 V + P3 + &&AcordSP) (NOT *-1 V LINK 0C P2) (NOT *1 V LINK 0C P2) ;
+REMOVE V + P2 IF (-3C N_AJ + &&AcordSP) (-2 AV OR Enon OR Pro) (-1 AV OR Enon OR Pro) (0 V + P3 + &&AcordSP) (NOT -1*C V + P2) (NOT 1*C V + P2) ;
+REMOVE V + P2 IF (-4C N_AJ + &&AcordSP) (-3 AV OR Enon OR Pro) (-2 AV OR Enon OR Pro) (-1 AV OR Enon OR Pro) (0 V + P3 + &&AcordSP) (NOT -1*C V + P2) (NOT 1*C V + P2) ;
+
 # AJ / V
 
 SELECT AJ (0 ("liure")) (1 De) (2 VBinf) ;
+SELECT AJ (0 ("liure")) (-1 ("logicial")) ;
 SELECT AJ (-3 N_AJ + &&AcordSN) (-2 AJ + &&AcordSN) (-1 Conjco) (0 AJ + &&AcordSN) ;	# un territòri immens e voide
 SELECT AJ (-4 AJ + &&AcordSN) (-3 CM) (-2 AJ + &&AcordSN) (-1 Conjco) (0 AJ + &&AcordSN) ;	# un territòri desèrt, immense e voide
 SELECT AJ (-4 N_AJ + &&AcordSN) (-3 AJ + &&AcordSN) (-2 Conjco) (-1 AV OR PREAV) (0 AJ + &&AcordSN) ;	# un territòri immense e quasi voide
@@ -2179,8 +2213,9 @@ SELECT PRI IF (-2C PRI) (-1 Conjco) (0 PRS) (0 PRI) ; # il revoit et corrige
 SELECT PRS IF (-2C PRS) (-1 Conjco) (0 PRS) (0 PRI) ;
 SELECT PRI IF (2C PRI) (1 Conjco) (0 PRS) (0 PRI) ; # il corrige et revoit
 SELECT PRS IF (2C PRS) (1 Conjco) (0 PRS) (0 PRI) ;
-REMOVE PRI IF (-1* ("per que") BARRIER CM) (0 PRS) ;
-REMOVE PRI (*-1 ("après que") OR ("per que") OR ("per tal que") OR ("per fin que") OR ("a fin que") OR ("afin que") OR ("malgrat que") OR ("maugrat que") OR ("encara que") OR ("abans que") OR ("avans que") OR ("après que") OR ("aprèp que") OR ("apuèi que") BARRIER Cnj_Rel_End OR CM) (0 PRS) ;
+REMOVE PRI OR ("sia") IF (-1* ("per que") BARRIER CM) (0 PRS) ;
+REMOVE PRI OR ("sia") IF (-1* ("entà que") OR ("tà que") OR ("ende que") BARRIER CM) (0 PRS) ;
+REMOVE PRI OR ("sia") (*-1 ("après que") OR ("per que") OR ("per tal que") OR ("per fin que") OR ("a fin que") OR ("afin que") OR ("entà que") OR ("tà que") OR ("ende que") OR ("malgrat que") OR ("maugrat que") OR ("encara que") OR ("abans que") OR ("avans que") OR ("après que") OR ("aprèp que") OR ("apuèi que") BARRIER Cnj_Rel_End OR CM) (0 PRS) ;
 
 REMOVE Conjadv IF (NOT 1* V + Pers) (0 PREP) (NOT 0 ("coma")) ;
 
@@ -2520,6 +2555,9 @@ SELECT PRI IF (3C PRI) (2 AV OR Pro) (1 Conjco) (0 PRS) (0 PRI) ;
 SELECT PRS IF (3C PRS) (2 AV OR Pro) (1 Conjco) (0 PRS) (0 PRI) ;
 REMOVE PRS IF (0 PRI) (NOT -1* Que OR Conjadv) ;
 #REMOVE PRS IF (0 PRI) (NOT -1* Que OR (".*que"r) + Conjadv OR ("quan") + Conjadv OR ("quand") + Conjadv) ;
+
+LIST PrsNeg = "caler" "faler" "pensar" "opinar" "creire" "créder" "créser" "creir" "voler" "desirar" "delerar" "demandar" "demanar" "exigir" ; # vèrbs que exigissin PRS après negacion
+REMOVE PRI IF (-3* PrsNeg LINK 1 ("pas")) (0 PRS) ;
 
 # PII / IFI
 LIST Marca_IFI = ("ièr") ("ger") ("avant-ièr") ("davant-ger") ;
