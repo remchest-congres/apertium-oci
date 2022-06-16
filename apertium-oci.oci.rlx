@@ -2397,6 +2397,8 @@ REMOVE AV IF (0 ("<fons>")) (-1 DET) ;
 
 REMOVE AV IF (0 ("<jos>")) (1 N OR DET) ;
 
+REMOVE ("ovale") IF (0 ("oval") OR ("ovau")) ;
+
 SELECT N IF (0 ("<gents>")) (-1 DET + FemPl) ;
 SELECT N IF (0 ("<gents>")) (-1 AJ + FemPl) (-2 DET + FemPl) ;
 
