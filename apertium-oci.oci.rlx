@@ -2104,6 +2104,7 @@ SELECT Haver IF (0 A) (1C VBpp);	# a cantat
 SELECT Ser IF (-1 Ser) (0 ("estat"));	# soi estat
 SELECT Ser IF (-2 Ser) (-1 AV) (0 ("estat"));	# soi pas estat
 SELECT Ser IF (-3 Ser) (-2 AV) (-1 AV) (0 ("estat"));	# soi pas totjorn estat
+REMOVE V IF (0 ("estat")) (-1 DET + MascSg);	# l'estat
 
 SELECT PREP IF (0 A) (1 unknownMajIni) ;
 
@@ -2426,6 +2427,9 @@ SELECT V IF (0 ("<val>")) (1 ("<melhor>") OR ("<miélher>") OR ("<mélher>")) ;
 
 REMOVE N IF (0 ("<portariá>")) (NOT -1 DET + FemSg) ;
 
+REMOVE V IF (0 ("<cambra>")) (-1 DET + FemSg) ;
+REMOVE V IF (0 ("<cambras>")) (-1 DET + FemPl) ;
+
 REMOVE V IF (0 ("<idèa>") or ("<idea>")) (-1 DET + FemSg OR AJ + FemSg) ;
 
 REMOVE V IF (0 ("<viu>")) (-1 N + MascSg) ;
@@ -2465,8 +2469,12 @@ REMOVE PREP IF (0 ("<manca>"i)) (1 ("de"));
 
 REMOVE N IF (0 ("<luènh>"i)) (NOT -1 DET + MascSg OR AJ + MascSg) ;
 
+REMOVE N IF (0 ("<de>")) (NOT 1 ("de")) ;
 
-REMOVE V IF (0 ("<augan>"i) OR ("<lenga>"i) OR ("<lengas>"i) OR ("<monde>"i) OR ("<haut">i) OR ("<hauta>"i) OR ("<hauts>"i) OR ("<hautas>"i) OR ("<paraula>"i) OR ("<paraulas>"i) OR ("<ara>"i) OR ("<aiga>"i) OR ("<aigas>"i) OR ("<vaca>"i) OR ("<vacas>"i) OR ("<Joan>") OR ("<pèira>"i) OR ("<pèiras>"i) OR ("<nòva>"i) OR ("<nòvas>"i) OR ("<sable>"i) OR ("<sables>"i) OR ("<granat>"i) OR ("<granats>"i) OR ("<granada>"i) OR ("<granadas>"i) OR ("<alengat>"i) OR ("<alengada>"i) OR ("<alengats>"i) OR ("<alengadas>"i) OR ("<polit>"i) OR ("<polida>"i) OR ("<polits>"i) OR ("<polidas>"i) OR ("<solide>"i) OR ("<solides>"i) OR ("<ausèra>"i) OR ("<ausèras>"i) OR ("<senat>"i) OR ("<senada>"i) OR ("<China>") OR ("<teula>"i) OR ("<teulas>"i) OR ("<hereda>"i) OR ("<heredas>"i) OR ("<linha>"i) OR ("<linhas>"i) OR ("<arromerat>"i) OR ("<arromerada>"i) OR ("<arromerats>"i) OR ("<arromeradas>"i) OR ("<sorda>"i) OR ("<sordas>"i) OR ("<i>"i) OR ("<escarpa>"i) OR ("<escarpas>"i) OR ("<vesia>"i) OR ("<vesias>"i) OR ("<lheitèra>"i) OR ("<lheitèras>"i) OR ("<hèsta>"i) OR ("<hèstas>"i) OR ("<fèsta>"i) OR ("<fèstas>"i) OR ("<amor>"i) OR ("<amors>"i) OR ("<pèrla>"i) OR ("<pèrlas>"i) OR ("<istòria>"i) OR ("<istòrias>"i) OR ("<cementèri>"i) OR ("<cementèris>"i) OR ("<camisa>"i) OR ("<camisas>"i) OR ("<istorian>"i) OR ("<istorians>"i) OR ("<boca>"i) OR ("<bocas>"i) OR ("<zòna>"i) OR ("<zònas>"i) OR ("<imatge>"i) OR ("<imatges>"i) OR ("<andada>"i) OR ("<andadas>"i) OR ("<frasa>"i) OR ("<frasas>"i) OR ("<taure>"i) OR ("<taures>"i) OR ("<tèrra>"i) OR ("<tèrras>"i) OR ("<moqueta>"i) OR ("<moquetas>"i) OR ("<renda>"i) OR ("<rendas>"i) OR ("<nòvi>"i) OR ("<nòvia>"i) OR ("<nòvias>"i) OR ("<tala>"i) OR ("<talas>"i) OR ("<biais>"i) OR ("<biaisses>"i) OR ("<membre>"i) OR ("<membres>"i) OR ("<fèsta>"i) OR ("<fèstas>"i) OR ("<aisit>"i) OR ("<aisida>"i) OR ("<aisits>"i) OR ("<aisidas>"i) OR ("<gargamèla>"i) OR ("<gargamèlas>"i) OR ("<estable>"i) OR ("<establa>"i) OR ("<estables>"i) OR ("<establas>"i) OR ("<tipe>"i) OR ("<tipes>"i) OR ("<temporada>"i) OR ("<temporadas>"i) OR ("<viste>"i) OR ("<eissit>"i) OR ("<eissida>"i) OR ("<eissits>"i) OR ("<eissidas>"i) OR ("<jaça>"i) OR ("<jaças>"i) OR ("<dotze>"i) OR ("<carrat>"i) OR ("<carrada>"i) OR ("<carrats>"i) OR ("<carradas>"i) OR ("<mot>"i) OR ("<volontat>"i) OR ("<volontats>"i) OR ("<pagina>"i) OR ("<paginas>"i) OR ("<mètge>"i) OR ("<mètges>"i) OR ("<Canada>") OR ("<pèça>"i) OR ("<pèças>"i) OR ("<facultat>"i) OR ("<facultats>"i) OR ("<singlar>"i) OR ("<òsca>"i) OR ("<Espace>") OR ("<cendre>"i) OR ("<obratge>"i) OR ("<obratges>"i) OR ("<politica>"i) OR ("<politicas>"i) OR ("<preséncia>"i) OR ("<preséncias>"i)) ;
+REMOVE ("fraisse") IF (0 ("frais")) ;
+
+
+REMOVE V IF (0 ("<augan>"i) OR ("<lenga>"i) OR ("<lengas>"i) OR ("<monde>"i) OR ("<haut">i) OR ("<hauta>"i) OR ("<hauts>"i) OR ("<hautas>"i) OR ("<paraula>"i) OR ("<paraulas>"i) OR ("<ara>"i) OR ("<aiga>"i) OR ("<aigas>"i) OR ("<vaca>"i) OR ("<vacas>"i) OR ("<Joan>") OR ("<pèira>"i) OR ("<pèiras>"i) OR ("<nòva>"i) OR ("<nòvas>"i) OR ("<sable>"i) OR ("<sables>"i) OR ("<granat>"i) OR ("<granats>"i) OR ("<granada>"i) OR ("<granadas>"i) OR ("<alengat>"i) OR ("<alengada>"i) OR ("<alengats>"i) OR ("<alengadas>"i) OR ("<polit>"i) OR ("<polida>"i) OR ("<polits>"i) OR ("<polidas>"i) OR ("<solide>"i) OR ("<solides>"i) OR ("<ausèra>"i) OR ("<ausèras>"i) OR ("<senat>"i) OR ("<senada>"i) OR ("<China>") OR ("<teula>"i) OR ("<teulas>"i) OR ("<hereda>"i) OR ("<heredas>"i) OR ("<linha>"i) OR ("<linhas>"i) OR ("<arromerat>"i) OR ("<arromerada>"i) OR ("<arromerats>"i) OR ("<arromeradas>"i) OR ("<sorda>"i) OR ("<sordas>"i) OR ("<i>"i) OR ("<escarpa>"i) OR ("<escarpas>"i) OR ("<vesia>"i) OR ("<vesias>"i) OR ("<lheitèra>"i) OR ("<lheitèras>"i) OR ("<hèsta>"i) OR ("<hèstas>"i) OR ("<fèsta>"i) OR ("<fèstas>"i) OR ("<amor>"i) OR ("<amors>"i) OR ("<pèrla>"i) OR ("<pèrlas>"i) OR ("<istòria>"i) OR ("<istòrias>"i) OR ("<cementèri>"i) OR ("<cementèris>"i) OR ("<camisa>"i) OR ("<camisas>"i) OR ("<istorian>"i) OR ("<istorians>"i) OR ("<boca>"i) OR ("<bocas>"i) OR ("<zòna>"i) OR ("<zònas>"i) OR ("<imatge>"i) OR ("<imatges>"i) OR ("<andada>"i) OR ("<andadas>"i) OR ("<frasa>"i) OR ("<frasas>"i) OR ("<taure>"i) OR ("<taures>"i) OR ("<tèrra>"i) OR ("<tèrras>"i) OR ("<moqueta>"i) OR ("<moquetas>"i) OR ("<renda>"i) OR ("<rendas>"i) OR ("<nòvi>"i) OR ("<nòvia>"i) OR ("<nòvias>"i) OR ("<tala>"i) OR ("<talas>"i) OR ("<biais>"i) OR ("<biaisses>"i) OR ("<membre>"i) OR ("<membres>"i) OR ("<fèsta>"i) OR ("<fèstas>"i) OR ("<aisit>"i) OR ("<aisida>"i) OR ("<aisits>"i) OR ("<aisidas>"i) OR ("<gargamèla>"i) OR ("<gargamèlas>"i) OR ("<estable>"i) OR ("<establa>"i) OR ("<estables>"i) OR ("<establas>"i) OR ("<tipe>"i) OR ("<tipes>"i) OR ("<temporada>"i) OR ("<temporadas>"i) OR ("<viste>"i) OR ("<eissit>"i) OR ("<eissida>"i) OR ("<eissits>"i) OR ("<eissidas>"i) OR ("<jaça>"i) OR ("<jaças>"i) OR ("<dotze>"i) OR ("<carrat>"i) OR ("<carrada>"i) OR ("<carrats>"i) OR ("<carradas>"i) OR ("<mot>"i) OR ("<volontat>"i) OR ("<volontats>"i) OR ("<pagina>"i) OR ("<paginas>"i) OR ("<mètge>"i) OR ("<mètges>"i) OR ("<Canada>") OR ("<pèça>"i) OR ("<pèças>"i) OR ("<facultat>"i) OR ("<facultats>"i) OR ("<singlar>"i) OR ("<òsca>"i) OR ("<Espace>") OR ("<cendre>"i) OR ("<obratge>"i) OR ("<obratges>"i) OR ("<politica>"i) OR ("<politicas>"i) OR ("<preséncia>"i) OR ("<preséncias>"i) OR ("<vitamina>"i) OR ("<vitaminas>"i)) ;
 
 REMOVE V IF (0 ("<tara>"i)) (1 N + FemSg OR AJ + FemSg OR NP + FemSg) ; #gascon seulement
 
@@ -2593,16 +2601,22 @@ REMOVE AJ IF (0 Adjpos) (0 DETpos) (1 unknown) ;
 
 REMOVE AJ IF (0 ("<leur>"i)) (1 V OR Pro) ;
 
-LIST preppos = "a noste" "a nòste" "a vòste" "a lor" "a loa" "de noste" "de nòste" "de vòste" "de lor" "de loa" "per noste" "per nòste" "per vòste" "per lor" "per loa"
+LIST preppos = "a noste" "a nòste" "a vòste" "a lor" "a loa" "de noste" "de nòste" "de vòste" "de lor" "de loa" "per noste" "per nòste" "per vòste" "per lor" "per loa" "tà noste" "tà nòste" "tà vòste" "tà lor" "tà loa" "entà noste" "entà nòste" "entà vòste" "entà lor" "entà loa" "cap a noste" "cap a nòste" "cap a vòste" "cap a lor" "cap a loa" "cap tà noste" "cap tà nòste" "cap tà vòste" "cap tà lor" "cap tà loa" "de cap tà noste" "de cap tà nòste" "de cap tà vòste" "de cap tà lor" "de cap tà loa" "de cap a noste" "de cap a nòste" "de cap a vòste" "de cap a lor" "de cap a loa"
 
 # Fonciona pas ; provisòriament remplaçat per la linha çai-jos REMOVE SUB:1 PREP + DET IF (0 preppos) (NOT 1 N + MascSg OR AJ + MascSg) ;
 SELECT AV IF (0 preppos) (NOT 1 N + MascSg OR AJ + MascSg) ;
 # Fonciona pas ; provisòriament remplaçat per la linha çai-sus REMOVE SUB:1 PREP + AJ IF (0 preppos) (NOT 1 N + MascSg OR AJ + MascSg) ; ;
 REMOVE AV IF (0 preppos) (1 N + MascSg OR AJ + MascSg) ;
-REMOVE AV IF (0 ("a lor") OR ("de lor") OR ("per lor")) (1 V OR Pro) ;
-SELECT AV IF (0 ("a lor") OR ("de lor") OR ("per lor")) (NOT 1 V OR Pro) ;
-# Fonciona pas ; provisòriament remplaçat per la linha çai-sus REMOVE SUB:1 PREP + PRON IF (0 ("a lor") OR ("de lor") OR ("per lor")) (NOT 1 V OR Pro) ;
+REMOVE AV IF (0 ("a lor") OR ("de lor") OR ("per lor") OR ("tà lor") OR ("entà lor") OR ("de cap tà lor") OR ("de cap a lor") OR ("cap tà lor") OR ("cap a lor")) (1 V OR Pro) ;
+SELECT AV IF (0 ("a lor") OR ("de lor") OR ("per lor") OR ("tà lor") OR ("entà lor") OR ("de cap tà lor") OR ("de cap a lor") OR ("cap tà lor") OR ("cap a lor")) (NOT 1 V OR Pro) ;
+# Fonciona pas ; provisòriament remplaçat per la linha çai-sus REMOVE SUB:1 PREP + PRON IF (0 ("a lor") OR ("de lor") OR ("per lor") OR ("tà lor") OR ("entà lor") OR ("de cap tà lor") OR ("de cap a lor") OR ("cap tà lor") OR ("cap a lor")) (NOT 1 V OR Pro) ;
 
 
 REMOVE IJ IF (0 ("qu'es aquò") OR ("qu'ei aquò")) (1 ("que") OR ("qui")) ;
 REMOVE IJ IF (NOT 1* ("?")) ;
+
+REMOVE V IF (0 ("<cas>"i)) (-1 DET + Masc OR ("en")) ;
+
+REMOVE V IF (0 ("pas cap de")) (-1 V) ;
+REMOVE V IF (0 ("pas cap de")) (-1 AV) (-2 V) ;
+REMOVE V IF (0 ("pas cap de")) (-1 AV) (-2 PREAV) (-3 V) ;
