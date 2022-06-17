@@ -250,6 +250,7 @@ LIST Nommois = "genèr" "genièr" "janvièr" "genoier" "genier" "gèr" "janvièi
 
 LIST Vdire = "dire" "díser" "respóner" "respondre" "cridar" "confessar" "con·hessar" "declarar" "afirmar" "reafirmar" "manifestar" "contar" "raportar" "expausar" "desvelar" "informar" "explicar" "ensenhar" "enonciar" "anonciar" "comunicar" "precisar" "avançar" "afortir" "ahortir" "allegar" "explicitar" "indicar" "signalar" "significar" "escriure" "escríver" "léger" "legir" "assegurar" "jurar" "certificar" "predire" "predíser" "pensar" "enténer" "ausir" "audir" "entiéner" "entendre" "ajustar" "comentar" "denonciar" "rapelar" "raperar" "brembar" "rebrembar" "remembrar" "remombrar" "rampelar" "recordar" "rementar" "remembrar" "remembrar" "har" "far" "hèr" "concedir" "replicar" "respostir" "rebecar" "assegurar" "garantir" "guarantir" "prometre" "prométer" "insistir" "nuançar" "matisar" "pavonar" "ajustar" "apondre" "híger" "ahíger" "acusar" "reprene" "ramoncinar" "increpar" "semonsar" "conclure" "concludir" ;
 
+LIST Adjpos = "mieu" "mèn" "men" "mèn" "mieu" "tieu" "ton" "tòn" "tieu" "tòn" "sieu" "sòn" "son" "sòn" "sieu" "nòstre" "noste" "nòste" "nòste" "nòstre" "nòstre" "vòstre" "voste" "vòste" "vòste" "vòstre" "vòstre" "vòste" "lor" ;
 
 SET AdjOrd = ("primièr") OR ("primèr") OR  ("prumièr") OR ("prumèr") OR ("purmèr")
 OR ("segond") OR ("dusau")
@@ -1112,6 +1113,9 @@ REMOVE ("corrir") IF (0 ("córrer")) ;
 
 # venar e venir
 REMOVE ("venar") IF (0 ("venir") OR ("véner") OR ("viéner")) ;
+
+# aurir e aver
+REMOVE ("aurir") IF (0 ("aver")) ;
 
 # véner e venir, gascon
 REMOVE ("véner") IF (0 ("venir")) (1 ("de")) (2 VBinf OR Pro) ;
@@ -2263,6 +2267,10 @@ REMOVE V IF (0 ("<deu>")) (NOT 1 VBinf OR AV) ;
 # de las + adj
 SELECT DET IF (0 ("<la>"i) OR ("<las>"i)) (-1 ("de")) (1 AJ + Fem) ;
 
+#pera(s) -> pera / per +la(s)
+REMOVE N IF (0 ("<pera>"i)) (0/* PREP + DET) (1 N + FemSg);
+REMOVE N IF (0 ("<peras>"i)) (0/* PREP + DET) (1 N + FemPl);
+
 # la, las (det)
 SELECT DET IF (0 ("<la>"i)) (1C N_AJ + FemSg) ;
 SELECT DET IF (0 ("<las>"i)) (1C N_AJ + FemPl) ;	# atencion : las casas (np.pro vblex)
@@ -2398,6 +2406,10 @@ REMOVE N IF (0 ("<van>")) (NOT -1 DET + MascSg);
 
 REMOVE N IF (0 ("<ara>")) (NOT -1 DET + FemSg);
 
+#lengadocian sonque
+REMOVE N IF (0 ("<fan>")) (NOT -1C DET + Sg OR AJ + Sg) ;
+REMOVE N IF (0 ("<fan>")) (-1C AJ + Sg) (NOT -2C DET + Sg) ;
+
 REMOVE V IF (0 ("<fòra>")) ;
 REMOVE V IF (0 ("<aval>")) ;
 REMOVE V IF (0 ("<entre>")) (NOT -1 ("que")) ;
@@ -2440,6 +2452,7 @@ SELECT N IF (0 ("<gents>")) (-1 AJ + FemPl) (-2 DET + FemPl) ;
 SELECT NUM IF (0 ("<nòu>") OR ("<nau>")) (1 ("mes")) ;
 SELECT NUM IF (0 ("<nòu>") OR ("<nau>")) (1 N + Pl_strict) ;
 SELECT NUM IF (0 ("<nòu>") OR ("<nau>")) (1 N + Fem_strict) ;
+SELECT NUM IF (0 ("<nòu>") OR ("<nau>")) (-1 ("per")) ;
 
 REMOVE N IF (0 ("<cort>")) (-1 DET + FemSg) ;
 
@@ -2494,6 +2507,9 @@ REMOVE N IF (0 ("<pels>"i)) (NOT -2 DET + MascPl) (-1 AJ + MascPl) ;
 
 REMOVE N IF (0 ("<pel>"i)) (NOT -1 DET + MascSg OR AJ + MascSg) ;
 REMOVE N IF (0 ("<pel>"i)) (NOT -2 DET + MascSg) (-1 AJ + MascSg) ;
+
+REMOVE DET IF (0 ("<tau>"i)) (1 N + MascSg) (NOT 2 Vconj) ;
+REMOVE DET IF (0 ("<taus>"i)) (1 N + MascPl) (NOT 2 Vconj) ;
 
 SELECT DET IF (0 ("<aquel>"i) OR ("<aqueth>"i)) (1 N + MascSg OR NP + MascSg);
 SELECT DET IF (0 ("<aquel>"i) OR ("<aqueth>"i)) (1 AJ + MascSg) (2 N + MascSg OR NP + MascSg);
@@ -2568,3 +2584,25 @@ REMOVE IFI (0 PII) (1*C PII) ;
 REMOVE IFI (0 PII) (<-1*C PII) ;
 REMOVE IFI (0 PII) (>1*C PII) ;
 
+REMOVE AJ IF (0 Adjpos) (-1 ("le") OR ("lo") OR ("eth")) ;
+REMOVE AJ IF (0 Adjpos) (0 DETpos + MascSg) (1 N + MascSg OR AJ + MascSg) ;
+REMOVE AJ IF (0 Adjpos) (0 DETpos + FemSg) (1 N + FemSg OR AJ + FemSg) ;
+REMOVE AJ IF (0 Adjpos) (0 DETpos + MascPl) (1 N + MascPl OR AJ + MascPl) ;
+REMOVE AJ IF (0 Adjpos) (0 DETpos + FemPl) (1 N + FemPl OR AJ + FemPl) ;
+REMOVE AJ IF (0 Adjpos) (0 DETpos) (1 unknown) ;
+
+REMOVE AJ IF (0 ("<leur>"i)) (1 V OR Pro) ;
+
+LIST preppos = "a noste" "a nòste" "a vòste" "a lor" "a loa" "de noste" "de nòste" "de vòste" "de lor" "de loa" "per noste" "per nòste" "per vòste" "per lor" "per loa"
+
+# Fonciona pas ; provisòriament remplaçat per la linha çai-jos REMOVE SUB:1 PREP + DET IF (0 preppos) (NOT 1 N + MascSg OR AJ + MascSg) ;
+SELECT AV IF (0 preppos) (NOT 1 N + MascSg OR AJ + MascSg) ;
+# Fonciona pas ; provisòriament remplaçat per la linha çai-sus REMOVE SUB:1 PREP + AJ IF (0 preppos) (NOT 1 N + MascSg OR AJ + MascSg) ; ;
+REMOVE AV IF (0 preppos) (1 N + MascSg OR AJ + MascSg) ;
+REMOVE AV IF (0 ("a lor") OR ("de lor") OR ("per lor")) (1 V OR Pro) ;
+SELECT AV IF (0 ("a lor") OR ("de lor") OR ("per lor")) (NOT 1 V OR Pro) ;
+# Fonciona pas ; provisòriament remplaçat per la linha çai-sus REMOVE SUB:1 PREP + PRON IF (0 ("a lor") OR ("de lor") OR ("per lor")) (NOT 1 V OR Pro) ;
+
+
+REMOVE IJ IF (0 ("qu'es aquò") OR ("qu'ei aquò")) (1 ("que") OR ("qui")) ;
+REMOVE IJ IF (NOT 1* ("?")) ;
