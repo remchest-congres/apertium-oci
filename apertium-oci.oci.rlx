@@ -2613,10 +2613,16 @@ SELECT AV IF (0 ("a lor") OR ("de lor") OR ("per lor") OR ("tà lor") OR ("entà
 
 
 REMOVE IJ IF (0 ("qu'es aquò") OR ("qu'ei aquò")) (1 ("que") OR ("qui")) ;
-REMOVE IJ IF (NOT 1* ("?")) ;
+REMOVE IJ IF (0 ("qu'es aquò") OR ("qu'ei aquò")) (NOT 1* ("?")) ;
+SELECT IJ IF (0 ("qu'es aquò") OR ("qu'ei aquò")) (1* ("?")) ;
 
 REMOVE V IF (0 ("<cas>"i)) (-1 DET + Masc OR ("en")) ;
 
 REMOVE V IF (0 ("pas cap de")) (-1 V) ;
 REMOVE V IF (0 ("pas cap de")) (-1 AV) (-2 V) ;
 REMOVE V IF (0 ("pas cap de")) (-1 AV) (-2 PREAV) (-3 V) ;
+
+REMOVE N + MascSg IF (0 ("<tenor>")) (-1 DET + FemSg OR AJ + FemSg) ;
+REMOVE N + MascPl IF (0 ("<tenors>")) (-1 DET + FemPl OR AJ + FemPl) ;
+REMOVE N + FemSg IF (0 ("<tenor>")) (NOT -1 DET + FemSg OR AJ + FemSg) ;
+REMOVE N + FemPl IF (0 ("<tenors>")) (NOT -1 DET + FemPl OR AJ + FemPl) ;
