@@ -815,7 +815,6 @@
 		</p>
 		<par n="vocal_general"/>
 	</e>
-
 </pardef>
 
 <pardef n="lo_gascon_apres_cons">
@@ -839,14 +838,6 @@
 			<l><a/>lo<b/><a/>ac<b/></l>
 			<r>l'ac<b/></r>
 		</p>
-	</e>
-
-	<e>
-		<p>
-			<l><a/>lo<b/></l>
-			<r>lo<b/></r>
-		</p>
-		<par n="me_te_se_nse_vse_gascon"/>
 	</e>
 </pardef>
 
@@ -3323,12 +3314,14 @@
 		</p>
 		<par n="vocal_general"/>
 	</e>
+<!--
 	<e>
 		<p>
 			<l><a/>a<b/><a/>los<b/></l>
 			<r>als<b/></r>
 		</p>
 	</e>
+-->
 	<e>
 		<p>
 			<l><a/>a</l>
@@ -4728,6 +4721,22 @@
 
 	<e>
 		<par n="lo_gascon_apres_cons"/>
+	</e>
+
+	<e>
+		<p>
+			<l><a/>lo<b/><a/>nse<b/></l>
+			<r>lo<b/>ns'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+
+	<e>
+		<p>
+			<l><a/>lo<b/><a/>vse<b/></l>
+			<r>lo<b/>vs'</r>
+		</p>
+		<par n="vocal_general"/>
 	</e>
 
 	<e>
