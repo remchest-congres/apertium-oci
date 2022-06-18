@@ -1694,7 +1694,7 @@ REMOVE Tn + Sg_strict IF (0 Tn + Sg_strict) (0 Tn + Pl_strict) (1 AV OR Pro) (2 
 REMOVE ("pas nat") IF (-2 Ne_enon OR Ne_adv) (-1 V) ;
 REMOVE SUB:1 Tn IF (0 ("pas nat")) (1 N_AJ + MascSg) ;
 SELECT SUB:1 DET + MascSg IF (0 ("<pas nat>"i)) (1 N_AJ + MascSg) ;
-SELECT N_AJ + MascSg IF (0 ("<pas nat>"i)) (1 N_AJ + MascSg) ;
+SELECT N_AJ + MascSg IF (-1 ("<pas nat>"i)) (0 N_AJ + MascSg) ;
 
 # DET
 
@@ -2599,9 +2599,7 @@ REMOVE AJ IF (0 Adjpos) (0 DETpos + MascPl) (1 N + MascPl OR AJ + MascPl) ;
 REMOVE AJ IF (0 Adjpos) (0 DETpos + FemPl) (1 N + FemPl OR AJ + FemPl) ;
 REMOVE AJ IF (0 Adjpos) (0 DETpos) (1 unknown) ;
 
-REMOVE AJ IF (0 ("<leur>"i)) (1 V OR Pro) ;
-
-LIST preppos = "a noste" "a nòste" "a vòste" "a lor" "a loa" "de noste" "de nòste" "de vòste" "de lor" "de loa" "per noste" "per nòste" "per vòste" "per lor" "per loa" "tà noste" "tà nòste" "tà vòste" "tà lor" "tà loa" "entà noste" "entà nòste" "entà vòste" "entà lor" "entà loa" "cap a noste" "cap a nòste" "cap a vòste" "cap a lor" "cap a loa" "cap tà noste" "cap tà nòste" "cap tà vòste" "cap tà lor" "cap tà loa" "de cap tà noste" "de cap tà nòste" "de cap tà vòste" "de cap tà lor" "de cap tà loa" "de cap a noste" "de cap a nòste" "de cap a vòste" "de cap a lor" "de cap a loa"
+LIST preppos = "a noste" "a nòste" "a vòste" "a lor" "a loa" "de noste" "de nòste" "de vòste" "de lor" "de loa" "per noste" "per nòste" "per vòste" "per lor" "per loa" "tà noste" "tà nòste" "tà vòste" "tà lor" "tà loa" "entà noste" "entà nòste" "entà vòste" "entà lor" "entà loa" "cap a noste" "cap a nòste" "cap a vòste" "cap a lor" "cap a loa" "cap tà noste" "cap tà nòste" "cap tà vòste" "cap tà lor" "cap tà loa" "de cap tà noste" "de cap tà nòste" "de cap tà vòste" "de cap tà lor" "de cap tà loa" "de cap a noste" "de cap a nòste" "de cap a vòste" "de cap a lor" "de cap a loa" ;
 
 # Fonciona pas ; provisòriament remplaçat per la linha çai-jos REMOVE SUB:1 PREP + DET IF (0 preppos) (NOT 1 N + MascSg OR AJ + MascSg) ;
 SELECT AV IF (0 preppos) (NOT 1 N + MascSg OR AJ + MascSg) ;
