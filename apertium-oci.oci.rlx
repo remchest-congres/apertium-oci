@@ -2568,6 +2568,11 @@ REMOVE PRI IF (0 PII LINK NOT 0 Haver) (-1C* PII LINK NOT 0 Haver) ;
 REMOVE PRI IF (0 IFI LINK NOT 0 Haver) (1C* IFI LINK NOT 0 Haver) ;
 REMOVE PRI IF (0 IFI LINK NOT 0 Haver) (-1C* IFI LINK NOT 0 Haver) ;
 
+REMOVE IFI + P2 IF (-1 N_AJ + Sg) (0 PRI + P3 + Sg) ;	# Aquera corruda estarís e estarís
+REMOVE IFI + P2 IF (-2 N_AJ + Sg) (-1 AV OR Enon OR Pro) (0 PRI + P3 + Sg) ;	# Aquera corruda nos estarís e estarís
+REMOVE IFI + P2 IF (-3 N_AJ + Sg) (-2 AV OR Enon OR Pro) (-1 AV OR Pro) (0 PRI + P3 + Sg) ;
+REMOVE IFI + P2 IF (-4 N_AJ + Sg) (-3 AV OR Enon OR Pro) (-2 AV OR Pro) (-1 AV OR Pro) (0 PRI + P3 + Sg) ;
+
 # PRI / PRS
 SELECT PRI IF (-2C PRI) (-1 Conjco) (0 PRS) (0 PRI) ;
 SELECT PRS IF (-2C PRS) (-1 Conjco) (0 PRS) (0 PRI) ;
