@@ -1360,6 +1360,7 @@ SELECT V IF (0 An + MascSg) (1 Pas) (2 VBpp + MascSg) ;
 SELECT V IF (0 An + MascSg) (1C AV) (2 VBpp + MascSg) ;
 
 # PREP
+
 SELECT PREP IF (0 ("dempuèi")) (1 De) (2 N_AJ + Pl) ;	# dempuei d'ans
 SELECT PREP IF (0 ("dempuòi")) (1 De) (2 N_AJ + Pl) ;
 SELECT PREP IF (0 ("desempuèi")) (1 De) (2 N_AJ + Pl) ;
@@ -1372,6 +1373,14 @@ SELECT PREP IF (0 ("darrièr")) (1 De) (2 N_AJ + Pl) (NOT -1 DET) ;
 SELECT PREP IF (0 ("detràs")) (1 De) (2 N_AJ + Pl) (NOT -1 DET) ;
 SELECT PREP IF (0 ("tras")) (1 De) (2 N_AJ + Pl) (NOT -1 DET) ;
 SELECT PREP IF (0 ("defòra")) (1 De) (2 N_AJ + Pl) (NOT -1 DET) ;
+
+SELECT PREP IF (0 ("davant") OR ("darrièr") OR ("darrèr") OR ("dessús") OR ("desjós") OR ("devath")) (1 ("ièu") OR ("jo")) (NOT 2* VSg1) ;
+SELECT PREP IF (0 ("davant") OR ("darrièr") OR ("darrèr") OR ("dessús") OR ("desjós") OR ("devath")) (1 ("tu")) (NOT 2* VSg2) ;
+SELECT PREP IF (0 ("davant") OR ("darrièr") OR ("darrèr") OR ("dessús") OR ("desjós") OR ("devath")) (1 ("el") + Sg OR ("prneth") + Sg) (NOT 2* VSg3) ;
+SELECT PREP IF (0 ("davant") OR ("darrièr") OR ("darrèr") OR ("dessús") OR ("desjós") OR ("devath")) (1 ("el") + Pl OR ("prneth") + Pl) (NOT 2* VPl3) ;
+SELECT PREP IF (0 ("davant") OR ("darrièr") OR ("darrèr") OR ("dessús") OR ("desjós") OR ("devath")) (1 ("nosautres") OR ("nosauts")) (NOT 2* VPl1) ;
+SELECT PREP IF (0 ("davant") OR ("darrièr") OR ("darrèr") OR ("dessús") OR ("desjós") OR ("devath")) (1 ("vosautres") OR ("vosauts")) (NOT 2* VPl2) ;
+SELECT PREP IF (-1 ("per")) (0 ("davant") OR ("darrièr") OR ("darrèr") OR ("dessús") OR ("desjós") OR ("devath")) (1 ("ièu") OR ("jo") OR ("tu") OR ("el") OR ("prneth") OR ("nosautres") OR ("nosauts") OR ("vosautres") OR ("vosauts")) ;
 
 # NP
 
@@ -1720,8 +1729,8 @@ SELECT N IF (0 ("fòrça")) (-1 DET + FemSg) ;
 SELECT PREAV IF (-1C N_AJ + &&AcordSN) (0 ("fòrça")) (1 AJ + &&AcordSN) ;
 SELECT PREDET + &&AcordSN IF (0 ("qual que siá") + &&AcordSN) (1 DET + &&AcordSN) (2 N_AJ + &&AcordSN) ;	# qual que siá son contengut
 SELECT PREDET + &&AcordSN IF (0 ("quau que sia") + &&AcordSN) (1 DET + &&AcordSN) (2 N_AJ + &&AcordSN) ;
-SELECT DETind + &&AcordSN IF (NOT -1 DET) (0 DETind + &&AcordSN) (1 N + &&AcordSN) ;	# un enfant ; lor cap de lista
-SELECT DETind + &&AcordSN IF (NOT -1 DET) (0 DETind + &&AcordSN) (1 AJ + &&AcordSN) (NOT 0 ("força") OR ("horça")) ;	# un jaune
+SELECT DETind + &&AcordSN IF (NOT -1/* DET) (0 DETind + &&AcordSN) (1 N + &&AcordSN) ;	# un enfant ; lor cap de lista
+SELECT DETind + &&AcordSN IF (NOT -1/* DET) (0 DETind + &&AcordSN) (1 AJ + &&AcordSN) (NOT 0 ("força") OR ("horça")) ;	# un jaune
 REMOVE PRON + Pos IF (0 DETpos + &&AcordSN) (1 N + &&AcordSN) ;	# lo son torn
 REMOVE SUB:1 PRON + Pos IF (0/* DETpos + &&AcordSN) (1 N + &&AcordSN) ;	# deu son torn
 SELECT N_AJ + &&AcordSN IF (-1 DETind + &&AcordSN) (0 N_AJ + &&AcordSN) ;
