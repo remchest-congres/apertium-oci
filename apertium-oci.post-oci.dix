@@ -768,6 +768,12 @@
 	</e>
 	<e>
 		<p>
+			<l>e<b/><a/>ne<b/></l>
+			<r>e'n<b/></r>
+		</p>
+	</e>
+	<e>
+		<p>
 			<l>e<b/></l>
 			<r>'</r>
 		</p>
@@ -2864,10 +2870,19 @@
 		</p>
 		<par n="contraccio_per_aran"/>
 	</e>
+<!--
 	<e>
 		<p>
 			<l><a/>en<b/></l>
 			<r>'en</r>
+		</p>
+		<par n="contraccio_en"/>
+	</e>
+-->
+	<e>
+		<p>
+			<l><a/>en<b/></l>
+			<r>en</r>
 		</p>
 		<par n="contraccio_en"/>
 	</e>
@@ -3314,14 +3329,7 @@
 		</p>
 		<par n="vocal_general"/>
 	</e>
-<!--
-	<e>
-		<p>
-			<l><a/>a<b/><a/>los<b/></l>
-			<r>als<b/></r>
-		</p>
-	</e>
--->
+
 	<e>
 		<p>
 			<l><a/>a</l>
@@ -3530,7 +3538,7 @@
 	<e>
 		<p>
 			<l><a/>lor<b/><a/>ne<b/></l>
-			<r>lor<b/>en<b/></r>
+			<r>lor<b/>ne<b/></r>
 		</p>
 	</e>
 	<e>
@@ -4720,6 +4728,14 @@
 	</e>
 
 	<e>
+		<p>
+			<l><a/>lo<b/></l>
+			<r>lo<b/></r>
+		</p>
+		<par n="me_te_se_nse_vse_gascon"/>
+	</e>
+
+	<e>
 		<par n="lo_gascon_apres_cons"/>
 	</e>
 
@@ -4742,6 +4758,7 @@
 	<e>
 		<par n="la_gascon_apres_cons"/>
 	</e>
+
 
 	<e>
 		<p>
@@ -5320,7 +5337,7 @@
 	<e>
 		<p>
 			<l><a/>lor<b/><a/>ne<b/></l>
-			<r>lor<b/>en<b/></r>
+			<r>lor<b/>ne<b/></r>
 		</p>
 	</e>
 	<e>
@@ -5333,7 +5350,7 @@
 	<e>
 		<p>
 			<l><a/>nos<b/><a/>ne<b/></l>
-			<r>nos<b/>en<b/></r>
+			<r>nos<b/>ne<b/></r>
 		</p>
 	</e>
 	<e>
@@ -5343,14 +5360,6 @@
 		</p>
 		<par n="vocal_general"/>
 	</e>
-	<e>
-		<p>
-			<l><a/>vos<b/><a/>ne<b/></l>
-			<r>vos<b/>en<b/></r>
-		</p>
-	</e>
-	
-<!-- cv en l'ordre dels prn en oc -->
 	
 	<e>
 		<p>
@@ -5364,6 +5373,7 @@
 			<r>l'i<b/></r>
 		</p>
 	</e>
+
 <!--
 	<e>
 		<p>
@@ -5784,13 +5794,6 @@ L?objet indirect peut être: « li, lor1, me, te, se, nos, vos »-->
 			<r>a</r>
 		</p>
 		<par n="contraccio"/>
-	</e>
-	<e>
-		<p>
-			<l><a/>en<b/></l>
-			<r>en</r>
-		</p>
-		<par n="contraccio_en"/>
 	</e>
 	<e>
 		<p>
