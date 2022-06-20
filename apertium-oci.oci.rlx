@@ -838,6 +838,7 @@ REMOVE ("que") + Enon IF (-1 ("solide")) ;
 SELECT ("que") + Conjsub IF (-1 ("mei")) ;
 SELECT ("que") + Conjsub IF (-2 ("mei")) (-1 AJ OR AJ) ;
 SELECT ("que") + Enon OR ("be") + Enon OR ("non") + Enon IF (NOT -1* V + Pers) (1C Pro OR V + Pers LINK NOT 0 VBimp) (NOT 2* V + Pers) (NOT 2* ("?")) ;
+SELECT ("que") + Enon OR ("be") + Enon OR ("non") + Enon IF (NOT -1* V + Pers) (1C Pro OR V + Pers LINK NOT 0 VBimp) (NOT 2* V + Pers BARRIER Conjsub OR Conjadv OR Rel) (NOT 2* ("?")) ;
 REMOVE ("que") + Enon IF (NOT -1* V + Pers) (-1* ("e") + Enon) (2* ("?")) ;
 REMOVE ("que") + Enon IF (NOT -1* V + Pers) (-1* ("be") + Enon) (2* ("!")) ;
 REMOVE ("que") + Enon IF (-1C V + Pers OR VBinf OR VBger) ;
@@ -895,6 +896,7 @@ SELECT Enon IF (-1*C Enon) (-1C Conjco) (NOT -1* Conjsub OR Que + Rel) (0 Que OR
 SELECT Enon IF (-1*C Enon) (-1C Conjco) (NOT -1* Conjsub OR Que + Rel) (0 Que OR ("ne") OR ("non")) (1 Pro OR AV) (2 V + Pers LINK NOT 0 VBimp) ;
 SELECT Enon IF (-1*C Enon) (-1C Conjco) (NOT -1* Conjsub OR Que + Rel) (0 Que OR ("ne") OR ("non")) (1 Pro OR AV) (2 Pro) (3 V + Pers LINK NOT 0 VBimp) ;
 #REMOVE Enon IF (-1*C Verb + Pers BARRIER EOS OR Mas_cnjcoo OR O_cnjcoo) (NOT -1* Conjadv BARRIER EOS OR ("mes") + Conjco) (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon BARRIER V) ; # (1C Pro OR V + Pers LINK NOT 0 VBimp) ;
+#REMOVE Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg BARRIER BOS) (-1* V + Pers LINK -1*C Enon BARRIER BOS) (1C Pro OR V + Pers LINK NOT 0 VBimp) ;	# qu'ei un disque que
 SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon BARRIER V) (1C Pro OR V + Pers LINK NOT 0 VBimp) ;
 SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon BARRIER V) (0 ("ne") OR ("non")) (1 V + Pers LINK NOT 0 VBimp) (2 ("pas") OR ("pas nat")) ;
 SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon BARRIER V) (0 ("ne") OR ("non")) (1 Pro) (2 V + Pers LINK NOT 0 VBimp) (3 ("pas") OR ("pas nat")) ;
