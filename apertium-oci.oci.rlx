@@ -780,6 +780,16 @@ REMOVE Que_Itg IF (-1C N_AJ OR VBpp OR NP) ;
 REMOVE Que_Itg IF (-2C N_AJ OR VBpp OR NP) (-1 CM) ;
 REMOVE Que_Itg IF (-2C N_AJ OR VBpp OR NP) (-1 PREP) ;
 REMOVE Que_Itg IF (-3C N_AJ OR VBpp OR NP) (-2 CM) (-1 PREP) ;
+#SELECT Que_Itg IF (-1 BOS) (1* ("?") BARRIER (".") OR (";")) ;
+#SELECT Que_Itg IF (-2 BOS) (-1 Conjco OR IJ OR AV) (1* ("?") BARRIER (".") OR (";")) ;
+#SELECT Que_Itg IF (-2 BOS) (-1 Ant_Cog OR unknownMajIni) (1* ("?") BARRIER (".") OR (";")) ;
+#SELECT Que_Itg IF (-3 BOS) (-2 Conjco OR IJ OR AV) (-1 CM) (1* ("?") BARRIER (".") OR (";")) ;
+#SELECT Que_Itg IF (-3 BOS) (-2 Ant_Cog OR unknownMajIni) (-1 CM) (1* ("?") BARRIER (".") OR (";")) ;
+#SELECT Que_Itg IF (-2 BOS) (-1 PREP) (1* ("?") BARRIER (".") OR (";")) ;
+#SELECT Que_Itg IF (-2 BOS) (-2 Conjco OR IJ OR AV) (-1 PREP) (1* ("?") BARRIER (".") OR (";")) ;
+#SELECT Que_Itg IF (-2 BOS) (-2 Ant_Cog OR unknownMajIni) (-1 PREP) (1* ("?") BARRIER (".") OR (";")) ;
+#SELECT Que_Itg IF (-3 BOS) (-3 Conjco OR IJ OR AV) (-2 CM) (-1 PREP) (1* ("?") BARRIER (".") OR (";")) ;
+#SELECT Que_Itg IF (-3 BOS) (-3 Ant_Cog OR unknownMajIni) (-2 CM) (-1 PREP) (1* ("?") BARRIER (".") OR (";")) ;
 #SELECT Rel OR Enon IF (-1C N_AJ OR NP) (0 Que OR Qui) (1 Vconj + P3) ;
 SELECT Rel IF (-1C N_AJ OR NP) (0 Qui) (1 Vconj + P3) ;
 SELECT Rel OR Enon IF (-2C N_AJ OR NP) (-1 CM) (0 Que OR Qui) (1 Vconj + P3) ;
@@ -843,14 +853,14 @@ REMOVE ("que") + Enon IF (NOT -1* V + Pers) (-1* ("e") + Enon) (2* ("?")) ;
 REMOVE ("que") + Enon IF (NOT -1* V + Pers) (-1* ("be") + Enon) (2* ("!")) ;
 REMOVE ("que") + Enon IF (-1C V + Pers OR VBinf OR VBger) ;
 REMOVE ("que") + Enon IF (-1 AV) (-2C V + Pers OR VBinf OR VBger) ;
-REMOVE ("que") + Enon IF (-1C N_AJ OR VBpp OR NP OR unknownMajIni) (NOT 1 Pro) (2*C V + Pers OR VBinf OR VBger LINK NOT -1 Rel OR Conjsub OR Conjadv OR AV OR Pro) ;	# los amics que son bons (enon) ; los amics que son bons que son bons (que1 = rel, que2 = enon) ; Marieta que torna e que serveish
+REMOVE ("que") + Enon IF (-1C N_AJ OR VBpp OR NP OR unknownMajIni) (NOT 1 Pro) (2*C V + Pers LINK NOT -1 Rel OR Conjsub OR Conjadv OR AV OR Pro) ;	# los amics que son bons (enon) ; los amics que son bons que son bons (que1 = rel, que2 = enon) ; Marieta que torna e que serveish
 #REMOVE ("que") + Enon IF (-1C N_AJ OR VBpp OR NP OR unknownMajIni) (NOT 1 Pro) (3*C V + Pers OR VBinf OR VBger LINK -1 Pro LINK NOT -1 Rel OR Conjsub OR Conjadv OR AV OR Pro) ;
 #REMOVE ("que") + Enon IF (-1C N_AJ OR VBpp OR NP OR unknownMajIni) (NOT 1 Pro) (3*C V + Pers OR VBinf OR VBger LINK -1 AV LINK NOT -1 Rel OR Conjsub OR Conjadv) ;	# Marieta que tostemps torna e que serveish
-REMOVE ("que") + Enon IF (-1C N_AJ OR VBpp OR NP OR unknownMajIni) (1 Pro) (NOT 2 Pro) (3*C V + Pers OR VBinf OR VBger BARRIER EOS) ;	# guess
-REMOVE ("que") + Enon IF (-1C N_AJ OR VBpp OR NP OR unknownMajIni) (1 Pro) (2 Pro) (4*C V + Pers OR VBinf OR VBger BARRIER EOS) ;	# guess
-REMOVE ("que") + Enon IF (-2C N_AJ OR VBpp OR NP OR unknownMajIni) (-1 CM) (NOT 2 Pro) (3*C V + Pers OR VBinf OR VBger BARRIER EOS) ;	# guess
-REMOVE ("que") + Enon IF (-2C N_AJ OR VBpp OR NP OR unknownMajIni) (-1 CM) (2 Pro) (NOT 3 Pro) (4*C V + Pers OR VBinf OR VBger BARRIER EOS) ;	# guess
-REMOVE ("que") + Enon IF (-2C N_AJ OR VBpp OR NP OR unknownMajIni) (-1 CM) (2 Pro) (3 Pro) (5*C V + Pers OR VBinf OR VBger BARRIER EOS) ;	# guess
+REMOVE ("que") + Enon IF (-1C N_AJ OR VBpp OR NP OR unknownMajIni) (1 Pro) (NOT 2 Pro) (3*C V + Pers BARRIER EOS OR Conjsub OR Conjadv OR Rel) ;	# guess
+REMOVE ("que") + Enon IF (-1C N_AJ OR VBpp OR NP OR unknownMajIni) (1 Pro) (2 Pro) (4*C V + Pers BARRIER EOS OR Conjsub OR Conjadv OR Rel) ;	# guess
+REMOVE ("que") + Enon IF (-2C N_AJ OR VBpp OR NP OR unknownMajIni) (-1 CM) (NOT 2 Pro) (3*C V + Pers BARRIER EOS OR Conjsub OR Conjadv OR Rel) ;	# guess
+REMOVE ("que") + Enon IF (-2C N_AJ OR VBpp OR NP OR unknownMajIni) (-1 CM) (2 Pro) (NOT 3 Pro) (4*C V + Pers BARRIER EOS OR Conjsub OR Conjadv OR Rel) ;	# guess
+REMOVE ("que") + Enon IF (-2C N_AJ OR VBpp OR NP OR unknownMajIni) (-1 CM) (2 Pro) (3 Pro) (5*C V + Pers BARRIER EOS OR Conjsub OR Conjadv OR Rel) ;	# guess
 REMOVE ("non") + Enon IF (NOT 1* ("pas")) ;
 SELECT ("non") + Enon IF (1C Pro OR V + Pers LINK NOT 0 VBimp) ;
 SELECT SUB:1 ("non") + Enon IF (1C Pro OR V + Pers LINK NOT 0 VBimp) ;
