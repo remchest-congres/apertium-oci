@@ -2208,6 +2208,7 @@ SELECT Conjadv IF (0 Se) (0/* Pro) (1 ("plaire") OR ("plàser")) ;	# se'vs platz
 REMOVE Tn IF (0 Se) (1 V) (1 P3) ;
 REMOVE Tn IF (0 Se) (1 VBinf) ;
 REMOVE Tn IF (0 Se) (1 Pro) ;
+REMOVE Pro IF (0 ("<o se>"i)) (NOT 1 V + P3) ;
 SELECT Pro IF (0 Se) (1C Pro OR V + P3) ;	# patch			NE MARCHE PAS DU TOUT
 
 REMOVE P1 + Sg IF (-1 NP + Sg) (0 V + P3 + Sg) ;
