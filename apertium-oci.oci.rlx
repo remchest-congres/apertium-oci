@@ -297,8 +297,8 @@ SECTION
 
 REMOVE DET IF (0 ("<tant>"));
 
-REMOVE V IF (0 ("<minuta>")) (-1 DET + FemSg or AJ + FemSg);
-REMOVE V IF (0 ("<minutas>")) (-1 DET + FemPl or AJ + FemPl or NUM);
+REMOVE V IF (0 ("<minuta>"i)) (-1 DET + FemSg or AJ + FemSg);
+REMOVE V IF (0 ("<minutas>"i)) (-1 DET + FemPl or AJ + FemPl or NUM);
 
 REMOVE AV IF (0 ("que")) (NOT 0 Enon) ;	# patch
 REMOVE Tn IF (0 ("qui")) ;	# patch
@@ -1796,7 +1796,7 @@ SELECT AV IF (-1C V) (0 ("plan")) (NOT 1 AJ) ;	# parlar plan
 SELECT AV IF (-2C V) (-1 AV OR PREAV OR PRencl) (0 ("plan")) (NOT 1 AJ) ;	# parlar pas plan
 SELECT AV IF (-3C V) (-2 AV OR PRencl) (-1 AV OR PREAV) (0 ("plan")) (NOT 1 AJ) ;	# parlar pas hèra plan
 SELECT PREAV IF (-1C V) (0 ("plan")) (1 AJ) ;	# parlar plan fòrt
-SELECT AV IF (0 ("<plan>")) (1 VBinf) (-1 PREP) ;	# de/a/per plan parlar
+SELECT AV IF (0 ("<plan>"i)) (1 VBinf) (-1 PREP) ;	# de/a/per plan parlar
 
 SELECT AV IF (-1C Haver) (0 PREAV) (1 VBpp) ;	# ai plan ascotat
 SELECT AV IF (-2C Haver) (-1 AV) (0 PREAV) (1 VBpp) ;	# ai pas plan ascotat
@@ -2283,9 +2283,9 @@ REMOVE N IF (0 Pel) (1 unknown) ;
 
 #deu -> dever / de +lo
 LIST Deu = "deu" ;
-SELECT V IF (0 ("<deu>")) (1 SENT OR Pro) ;
-SELECT V IF (0 ("<deu>")) (1 VocIni) ;
-REMOVE V IF (0 ("<deu>")) (NOT 1 VBinf OR AV) ;
+SELECT V IF (0 ("<deu>"i)) (1 SENT OR Pro) ;
+SELECT V IF (0 ("<deu>"i)) (1 VocIni) ;
+REMOVE V IF (0 ("<deu>"i)) (NOT 1 VBinf OR AV) ;
 
 # de las + adj
 SELECT DET IF (0 ("<la>"i) OR ("<las>"i)) (-1 ("de")) (1 AJ + Fem) ;
@@ -2325,7 +2325,7 @@ SELECT AV IF (1C V) (0 ("de còps") OR ("a còps")) ;
 REMOVE PREP IF (NOT -1 N_AJ) (0 ("de còps") OR ("a còps")) ;
 
 #punt de vista
-SELECT SUB:1 Nf IF (0 PREP) (-1 ("punt") OR ("ponch")) (0 ("<de vista>")) ;
+SELECT SUB:1 Nf IF (0 PREP) (-1 ("punt") OR ("ponch")) (0 ("<de vista>"i)) ;
 
 #mes mois
 REMOVE AV IF (0 ("mes")) (-1 DET) (-1 MascSg) ;
@@ -2366,58 +2366,58 @@ REMOVE Enon IF (0 ("çò")) (1 Pro) (2 ("tornar") or Vmod or Haver) (NOT 3 Vdire
 SELECT V IF (0 Vdire) (-1 ("çò"));
 
 
-REMOVE V IF (0 ("<rason>")) (-1 Haver);
-REMOVE V IF (0 ("<rason>")) (-1 AV) (-2 Haver);
-REMOVE V IF (0 ("<rason>")) (-2 PREAV) (-2 AV) (-3 Haver);
+REMOVE V IF (0 ("<rason>"i)) (-1 Haver);
+REMOVE V IF (0 ("<rason>"i)) (-1 AV) (-2 Haver);
+REMOVE V IF (0 ("<rason>"i)) (-2 PREAV) (-2 AV) (-3 Haver);
 
-REMOVE V IF (0 ("<punt>"));
-REMOVE V IF (0 ("<punts>"));
+REMOVE V IF (0 ("<punt>"i));
+REMOVE V IF (0 ("<punts>"i));
 
 #patch per las errors de vocabulari
-REMOVE V IF (0 ("<matin>"));
+REMOVE V IF (0 ("<matin>"i));
 REMOVE N IF (0 ("<nos>"i)) (NOT -1 DET + Masc OR NUM);
 REMOVE V IF (0 ("<encara>"i));
-REMOVE V IF (0 ("<monde>") or ("<mond>"));
-REMOVE V IF (0 ("<ongan>"));
-REMOVE V IF (0 ("<mau>")); #gascon seulement
-REMOVE Ple IF (0 ("<plea>") OR ("<pleas>"));
-REMOVE AJ IF (0 ("<man>") OR ("<mans>"));
-REMOVE AJ IF (0 ("<sala>")) (-1 DET + FemSg OR AJ + FemSg);
-REMOVE AJ IF (0 ("<salas>")) (-1 DET + FemPl OR AJ + FemPl OR NUM);
-REMOVE AJ IF (0 ("<mèca>"));
-REMOVE AJ IF (0 ("<mècas>"));
-REMOVE AJ IF (0 ("<mècha>"));
-REMOVE AJ IF (0 ("<mèchas>"));
-REMOVE AJ IF (0 ("<causa>"));
-REMOVE AJ IF (0 ("<causas>"));
-REMOVE AJ IF (0 ("<convèrsa>"));
-REMOVE AJ IF (0 ("<convèrsas>"));
-REMOVE AJ IF (0 ("<sèrva>"));
-REMOVE AJ IF (0 ("<sèrvas>"));
-REMOVE AJ IF (0 ("<prima>")) (-1 DET + FemSg);
-REMOVE AJ IF (0 ("<discutida>")) (-1 DET + FemSg OR AJ + FemSg);
-REMOVE AJ IF (0 ("<discutidas>")) (-1 DET + FemPl OR AJ + FemPl OR NUM);
-REMOVE AJ IF (0 ("<traça>"));
-REMOVE AJ IF (0 ("<traças>"));
-REMOVE AJ IF (0 ("<ondada>")) (-1 DET + FemSg OR AJ + FemSg);
-REMOVE AJ IF (0 ("<ondadas>")) (-1 DET + FemPl OR AJ + FemPl OR NUM);
-REMOVE AJ IF (0 ("<temptativa>"));
-REMOVE AJ IF (0 ("<temptativas>"));
-REMOVE AJ IF (0 ("<flama>")) (-1 DET + FemSg OR AJ + FemSg);
-REMOVE AJ IF (0 ("<flamas>")) (-1 DET + FemPl OR AJ + FemPl OR NUM);
-REMOVE AJ IF (0 ("<moleta>"));
-REMOVE AJ IF (0 ("<moletas>"));
-REMOVE AJ IF (0 ("<menina>"));
-REMOVE AJ IF (0 ("<meninas>"));
-REMOVE N IF (0 ("<espia>"));
+REMOVE V IF (0 ("<monde>"i) or ("<mond>"i));
+REMOVE V IF (0 ("<ongan>"i));
+REMOVE V IF (0 ("<mau>"i)); #gascon seulement
+REMOVE Ple IF (0 ("<plea>"i) OR ("<pleas>"i));
+REMOVE AJ IF (0 ("<man>"i) OR ("<mans>"i));
+REMOVE AJ IF (0 ("<sala>"i)) (-1 DET + FemSg OR AJ + FemSg);
+REMOVE AJ IF (0 ("<salas>"i)) (-1 DET + FemPl OR AJ + FemPl OR NUM);
+REMOVE AJ IF (0 ("<mèca>"i));
+REMOVE AJ IF (0 ("<mècas>"i));
+REMOVE AJ IF (0 ("<mècha>"i));
+REMOVE AJ IF (0 ("<mèchas>"i));
+REMOVE AJ IF (0 ("<causa>"i));
+REMOVE AJ IF (0 ("<causas>"i));
+REMOVE AJ IF (0 ("<convèrsa>"i));
+REMOVE AJ IF (0 ("<convèrsas>"i));
+REMOVE AJ IF (0 ("<sèrva>"i));
+REMOVE AJ IF (0 ("<sèrvas>"i));
+REMOVE AJ IF (0 ("<prima>"i)) (-1 DET + FemSg);
+REMOVE AJ IF (0 ("<discutida>"i)) (-1 DET + FemSg OR AJ + FemSg);
+REMOVE AJ IF (0 ("<discutidas>"i)) (-1 DET + FemPl OR AJ + FemPl OR NUM);
+REMOVE AJ IF (0 ("<traça>"i));
+REMOVE AJ IF (0 ("<traças>"i));
+REMOVE AJ IF (0 ("<ondada>"i)) (-1 DET + FemSg OR AJ + FemSg);
+REMOVE AJ IF (0 ("<ondadas>"i)) (-1 DET + FemPl OR AJ + FemPl OR NUM);
+REMOVE AJ IF (0 ("<temptativa>"i));
+REMOVE AJ IF (0 ("<temptativas>"i));
+REMOVE AJ IF (0 ("<flama>"i)) (-1 DET + FemSg OR AJ + FemSg);
+REMOVE AJ IF (0 ("<flamas>"i)) (-1 DET + FemPl OR AJ + FemPl OR NUM);
+REMOVE AJ IF (0 ("<moleta>"i));
+REMOVE AJ IF (0 ("<moletas>"i));
+REMOVE AJ IF (0 ("<menina>"i));
+REMOVE AJ IF (0 ("<meninas>"i));
+REMOVE N IF (0 ("<espia>"i));
 
 REMOVE AJ IF (0 ("morisc")) (0 V);
 
 REMOVE Brau IF (0 ("brave"));
 
-REMOVE V IF (0 ("<gaug>")) (-1 DET + MascSg or AJ + MascSg);
+REMOVE V IF (0 ("<gaug>"i)) (-1 DET + MascSg or AJ + MascSg);
 
-REMOVE AV IF (0 ("<entorn>")) (-1 DET + MascSg OR AJ + MascSg);
+REMOVE AV IF (0 ("<entorn>"i)) (-1 DET + MascSg OR AJ + MascSg);
 
 REMOVE N IF (0 ("assegurat") OR ("iniciat") OR ("preferit")) (-1 ("a"));
 
@@ -2425,62 +2425,62 @@ REMOVE N IF (0 ("dant")) ((-1 ("en")) OR (-2 ("en")) OR (-3 ("en")));
 
 REMOVE V IF (0 ("dètz")) (1 unknown);
 
-REMOVE N IF (0 ("<van>")) (NOT -1 DET + MascSg);
+REMOVE N IF (0 ("<van>"i)) (NOT -1 DET + MascSg);
 
-REMOVE N IF (0 ("<ara>")) (NOT -1 DET + FemSg);
+REMOVE N IF (0 ("<ara>"i)) (NOT -1 DET + FemSg);
 
 #lengadocian sonque
-REMOVE N IF (0 ("<fan>")) (NOT -1C DET + Sg OR AJ + Sg) ;
-REMOVE N IF (0 ("<fan>")) (-1C AJ + Sg) (NOT -2C DET + Sg) ;
+REMOVE N IF (0 ("<fan>"i)) (NOT -1C DET + Sg OR AJ + Sg) ;
+REMOVE N IF (0 ("<fan>"i)) (-1C AJ + Sg) (NOT -2C DET + Sg) ;
 
-REMOVE V IF (0 ("<fòra>")) ;
-REMOVE V IF (0 ("<aval>")) ;
-REMOVE V IF (0 ("<entre>")) (NOT -1 ("que")) ;
-REMOVE V IF (0 ("<un>") OR ("<una>") or ("<unas>")) ;
-REMOVE V IF (0 ("<les>")) ;
+REMOVE V IF (0 ("<fòra>"i)) ;
+REMOVE V IF (0 ("<aval>"i)) ;
+REMOVE V IF (0 ("<entre>"i)) (NOT -1 ("que")) ;
+REMOVE V IF (0 ("<un>"i) OR ("<una>"i) or ("<unas>"i)) ;
+REMOVE V IF (0 ("<les>"i)) ;
 
-REMOVE V IF (0 ("<manca>")) (-1 ("<la>")) (1 ("de")) ;
-REMOVE Conjadv IF (0 ("<manca>")) (NOT -1 NUM OR ("<un>") OR ("<lo>")) ;
-REMOVE Conjadv IF (0 ("<manca>")) (1 ("<un>") OR ("<lo>")) (NOT 2 ("<quart>"))  ;
+REMOVE V IF (0 ("<manca>"i)) (-1 ("<la>"i)) (1 ("de")) ;
+REMOVE Conjadv IF (0 ("<manca>"i)) (NOT -1 NUM OR ("<un>"i) OR ("<lo>"i)) ;
+REMOVE Conjadv IF (0 ("<manca>"i)) (1 ("<un>"i) OR ("<lo>"i)) (NOT 2 ("<quart>"i))  ;
 
-REMOVE V IF (0 ("<amassa>")) (-1 V) ;
+REMOVE V IF (0 ("<amassa>"i)) (-1 V) ;
 
-SELECT V IF (0 ("<val>")) (1 ("<melhor>") OR ("<miélher>") OR ("<mélher>")) ;
+SELECT V IF (0 ("<val>"i)) (1 ("<melhor>"i) OR ("<miélher>"i) OR ("<mélher>"i)) ;
 
-REMOVE N IF (0 ("<portariá>")) (NOT -1 DET + FemSg) ;
+REMOVE N IF (0 ("<portariá>"i)) (NOT -1 DET + FemSg) ;
 
-REMOVE V IF (0 ("<cambra>")) (-1 DET + FemSg) ;
-REMOVE V IF (0 ("<cambras>")) (-1 DET + FemPl) ;
+REMOVE V IF (0 ("<cambra>"i)) (-1 DET + FemSg) ;
+REMOVE V IF (0 ("<cambras>"i)) (-1 DET + FemPl) ;
 
-REMOVE V IF (0 ("<idèa>") or ("<idea>")) (-1 DET + FemSg OR AJ + FemSg) ;
+REMOVE V IF (0 ("<idèa>"i) or ("<idea>"i)) (-1 DET + FemSg OR AJ + FemSg) ;
 
-REMOVE V IF (0 ("<viu>")) (-1 N + MascSg) ;
-REMOVE V IF (0 ("<viu>")) (-1 Ser) ;
+REMOVE V IF (0 ("<viu>"i)) (-1 N + MascSg) ;
+REMOVE V IF (0 ("<viu>"i)) (-1 Ser) ;
 
 REMOVE V IF (0 N) (0 ("<permanenta>"i) OR ("<politica>"i)) ;
 
 
-SELECT V IF (0 ("<còsta>")) (1 ("<car>")) ;
-SELECT V IF (0 ("<còsta>")) (1 NUM) (2 ("èuro") OR ("euro") OR ("franc") OR ("dollar") OR ("dòlar")) ;
-SELECT V IF (0 ("<còsta>")) (1 NUM) (2 NUM) (3 ("èuro") OR ("euro") OR ("franc") OR ("dollar") OR ("dòlar")) ;
-SELECT V IF (0 ("<còsta>")) (1 AV) (2 ("<car>")) ;
-SELECT V IF (0 ("<còsta>")) (1 AV OR PREAV) (1 AV) (2 ("<car>")) ;
+SELECT V IF (0 ("<còsta>"i)) (1 ("<car>"i)) ;
+SELECT V IF (0 ("<còsta>"i)) (1 NUM) (2 ("èuro") OR ("euro") OR ("franc") OR ("dollar") OR ("dòlar")) ;
+SELECT V IF (0 ("<còsta>"i)) (1 NUM) (2 NUM) (3 ("èuro") OR ("euro") OR ("franc") OR ("dollar") OR ("dòlar")) ;
+SELECT V IF (0 ("<còsta>"i)) (1 AV) (2 ("<car>"i)) ;
+SELECT V IF (0 ("<còsta>"i)) (1 AV OR PREAV) (1 AV) (2 ("<car>"i)) ;
 
-REMOVE AV IF (0 ("<fons>")) (-1 DET) ;
+REMOVE AV IF (0 ("<fons>"i)) (-1 DET) ;
 
-REMOVE AV IF (0 ("<jos>")) (1 N OR DET) ;
+REMOVE AV IF (0 ("<jos>"i)) (1 N OR DET) ;
 
 REMOVE ("ovale") IF (0 ("oval") OR ("ovau")) ;
 
-SELECT N IF (0 ("<gents>")) (-1 DET + FemPl) ;
-SELECT N IF (0 ("<gents>")) (-1 AJ + FemPl) (-2 DET + FemPl) ;
+SELECT N IF (0 ("<gents>"i)) (-1 DET + FemPl) ;
+SELECT N IF (0 ("<gents>"i)) (-1 AJ + FemPl) (-2 DET + FemPl) ;
 
-SELECT NUM IF (0 ("<nòu>") OR ("<nau>")) (1 ("mes")) ;
-SELECT NUM IF (0 ("<nòu>") OR ("<nau>")) (1 N + Pl_strict) ;
-SELECT NUM IF (0 ("<nòu>") OR ("<nau>")) (1 N + Fem_strict) ;
-SELECT NUM IF (0 ("<nòu>") OR ("<nau>")) (-1 ("per")) ;
+SELECT NUM IF (0 ("<nòu>"i) OR ("<nau>"i)) (1 ("mes")) ;
+SELECT NUM IF (0 ("<nòu>"i) OR ("<nau>"i)) (1 N + Pl_strict) ;
+SELECT NUM IF (0 ("<nòu>"i) OR ("<nau>"i)) (1 N + Fem_strict) ;
+SELECT NUM IF (0 ("<nòu>"i) OR ("<nau>"i)) (-1 ("per")) ;
 
-REMOVE N IF (0 ("<cort>")) (-1 DET + FemSg) ;
+REMOVE N IF (0 ("<cort>"i)) (-1 DET + FemSg) ;
 
 SELECT N IF (0 ("fin")) (-1 DET + FemSg) ;
 
@@ -2491,7 +2491,7 @@ REMOVE PREP IF (0 ("<manca>"i)) (1 ("de"));
 
 REMOVE N IF (0 ("<luènh>"i)) (NOT -1 DET + MascSg OR AJ + MascSg) ;
 
-REMOVE N IF (0 ("<de>")) (NOT 1 ("de")) ;
+REMOVE N IF (0 ("<de>"i)) (NOT 1 ("de")) ;
 
 REMOVE ("fraisse") IF (0 ("frais")) ;
 
@@ -2500,7 +2500,7 @@ REMOVE V IF (0 ("<augan>"i) OR ("<lenga>"i) OR ("<lengas>"i) OR ("<monde>"i) OR 
 
 REMOVE V IF (0 ("<tara>"i)) (1 N + FemSg OR AJ + FemSg OR NP + FemSg) ; #gascon seulement
 
-REMOVE V IF (0 ("<escotisson>")) (-1 DET + FemSg OR AJ + FemSg) ;
+REMOVE V IF (0 ("<escotisson>"i)) (-1 DET + FemSg OR AJ + FemSg) ;
 
 REMOVE P2 IF (0 ("<vistas>"i)) ;
 REMOVE P3 IF (0 ("<vista>"i)) ;
@@ -2513,21 +2513,21 @@ SELECT VBpp IF (0 ("<aguda>"i) OR ("<agudas>"i)) (-1 Haver) ;
 SELECT VBpp IF (0 ("<aguda>"i) OR ("<agudas>"i)) (-1 AV) (-2 Haver) ;
 
 REMOVE N IF (0 ("<Vaduda>")) (1 ("a"));
-REMOVE V IF (0 ("<punt>"));
-REMOVE V IF (0 ("<punts>"));
+REMOVE V IF (0 ("<punt>"i));
+REMOVE V IF (0 ("<punts>"i));
 REMOVE N IF (0 ("<quina>"i)) (1 N + FemSg);
 REMOVE N IF (0 ("<quinas>"i)) (1 N + FemPl);
 REMOVE N IF (0 ("<quina>"i)) (1 AJ + FemSg) (2 N + FemSg);
 REMOVE N IF (0 ("<quinas>"i)) (1 AJ + FemPl) (2 N + FemPl);
 REMOVE N IF (0 ("<quina>"i)) (1 PREAV) (2 AJ + FemSg) (3 N + FemSg);
 REMOVE N IF (0 ("<quinas>"i)) (1 PREAV) (2 AJ + FemPl) (3 N + FemPl);
-REMOVE V IF (0 ("<cas>")) (-1 DET + Masc);
-REMOVE V IF (0 ("<escolan>")) (-1 DET + Masc);
-REMOVE V IF (0 ("<brave>")) (1 N + MascSg);
-REMOVE V IF (0 ("<braves>")) (1 N + MascPl);
-REMOVE V IF (0 ("<lei>")) (-1 DET + FemSg);
-REMOVE V IF (0 ("<lei>")) (-1 AJ + FemSg) (-2 DET + FemSg);
-SELECT N IF (0 ("<lei>")) (-1 PREAV) (-2 AJ + FemSg) (-3 DET + FemSg);
+REMOVE V IF (0 ("<cas>"i)) (-1 DET + Masc);
+REMOVE V IF (0 ("<escolan>"i)) (-1 DET + Masc);
+REMOVE V IF (0 ("<brave>"i)) (1 N + MascSg);
+REMOVE V IF (0 ("<braves>"i)) (1 N + MascPl);
+REMOVE V IF (0 ("<lei>"i)) (-1 DET + FemSg);
+REMOVE V IF (0 ("<lei>"i)) (-1 AJ + FemSg) (-2 DET + FemSg);
+SELECT N IF (0 ("<lei>"i)) (-1 PREAV) (-2 AJ + FemSg) (-3 DET + FemSg);
 REMOVE V IF (0 ("<sas>"i)) (1 N + FemPl);
 REMOVE V IF (0 ("<sas>"i)) (1 AJ + FemPl) (2 N + FemPl);
 REMOVE V IF (0 ("<sas>"i)) (1 PREAV) (2 AJ + FemPl) (3 N + FemPl);
@@ -2647,7 +2647,7 @@ REMOVE V IF (0 ("pas cap de")) (-1 V) ;
 REMOVE V IF (0 ("pas cap de")) (-1 AV) (-2 V) ;
 REMOVE V IF (0 ("pas cap de")) (-1 AV) (-2 PREAV) (-3 V) ;
 
-REMOVE N + MascSg IF (0 ("<tenor>")) (-1 DET + FemSg OR AJ + FemSg) ;
-REMOVE N + MascPl IF (0 ("<tenors>")) (-1 DET + FemPl OR AJ + FemPl) ;
-REMOVE N + FemSg IF (0 ("<tenor>")) (NOT -1 DET + FemSg OR AJ + FemSg) ;
-REMOVE N + FemPl IF (0 ("<tenors>")) (NOT -1 DET + FemPl OR AJ + FemPl) ;
+REMOVE N + MascSg IF (0 ("<tenor>"i)) (-1 DET + FemSg OR AJ + FemSg) ;
+REMOVE N + MascPl IF (0 ("<tenors>"i)) (-1 DET + FemPl OR AJ + FemPl) ;
+REMOVE N + FemSg IF (0 ("<tenor>"i)) (NOT -1 DET + FemSg OR AJ + FemSg) ;
+REMOVE N + FemPl IF (0 ("<tenors>"i)) (NOT -1 DET + FemPl OR AJ + FemPl) ;
