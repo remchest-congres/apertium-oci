@@ -4756,6 +4756,14 @@
 	</e>
 
 	<e>
+		<p>
+			<l><a/>lo<b/><a/>ne<b/></l>
+			<r>lo<b/>n'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+
+	<e>
 		<par n="la_gascon_apres_cons"/>
 	</e>
 
@@ -4770,10 +4778,26 @@
 
 	<e>
 		<p>
+			<l><a/>los<b/><a/>ne<b/></l>
+			<r>los<b/>n'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+
+	<e>
+		<p>
 			<l><a/>las<b/></l>
 			<r>las<b/></r>
 		</p>
 		<par n="me_te_se_nse_vse_gascon"/>
+	</e>
+
+	<e>
+		<p>
+			<l><a/>las<b/><a/>ne<b/></l>
+			<r>las<b/>n'</r>
+		</p>
+		<par n="vocal_general"/>
 	</e>
 
 	<e>
