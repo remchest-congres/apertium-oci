@@ -39,7 +39,7 @@
 	  </e>
     </pardef>
 	 
-    <pardef n="caracter_general">
+    <pardef n="caracter_general_nonum">
       <e>
 	<i>;</i>
       </e>
@@ -113,6 +113,12 @@
       </e>
       <e>
 	<i>.</i>
+      </e>
+    </pardef>
+	 
+    <pardef n="caracter_general">
+      <e>
+	<par n="caracter_general_nonum"/>
       </e>
       <e>
 	<par n="numeros"/>
@@ -212,10 +218,392 @@
 			 <i>« #</i>
 			 <par n="vocals"/>
 		 </e>
-	<!--	 <e>
-			 <i>8</i>
-		 </e> -->
+
+		 <e>
+			<i>8<b/></i>
+		 </e>
+		 <e>
+			<i>8%</i>
+		 </e>
+		 <e>
+			<i>8</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>8en<b/></i>
+		 </e>
+		 <e>
+			<i>8en</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>8na<b/></i>
+		 </e>
+		 <e>
+			<i>8na</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>8au<b/></i>
+		 </e>
+		 <e>
+			<i>8au</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+
+		 <e>
+			<i>11<b/></i>
+		 </e>
+		 <e>
+			<i>11%</i>
+		 </e>
+		 <e>
+			<i>11</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>11en<b/></i>
+		 </e>
+		 <e>
+			<i>11en</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>11na<b/></i>
+		 </e>
+		 <e>
+			<i>11na</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>11au<b/></i>
+		 </e>
+		 <e>
+			<i>11au</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+
+		 <e>
+			<i>80<b/></i>
+		 </e>
+		 <e>
+			<i>80%</i>
+		 </e>
+		 <e>
+			<i>80</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>80en<b/></i>
+		 </e>
+		 <e>
+			<i>80en</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>80na<b/></i>
+		 </e>
+		 <e>
+			<i>80na</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>80au<b/></i>
+		 </e>
+		 <e>
+			<i>80au</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+
+		 <e>
+			<i>81<b/></i>
+		 </e>
+		 <e>
+			<i>81%</i>
+		 </e>
+		 <e>
+			<i>81</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>81en<b/></i>
+		 </e>
+		 <e>
+			<i>81en</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>81na<b/></i>
+		 </e>
+		 <e>
+			<i>81na</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>81au<b/></i>
+		 </e>
+		 <e>
+			<i>81au</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+
+		 <e>
+			<i>82<b/></i>
+		 </e>
+		 <e>
+			<i>82%</i>
+		 </e>
+		 <e>
+			<i>82</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>82en<b/></i>
+		 </e>
+		 <e>
+			<i>82en</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>82na<b/></i>
+		 </e>
+		 <e>
+			<i>82na</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>82au<b/></i>
+		 </e>
+		 <e>
+			<i>83au</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+
+		 <e>
+			<i>83<b/></i>
+		 </e>
+		 <e>
+			<i>83%</i>
+		 </e>
+		 <e>
+			<i>83</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>83en<b/></i>
+		 </e>
+		 <e>
+			<i>83en</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>83na<b/></i>
+		 </e>
+		 <e>
+			<i>83na</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>83au<b/></i>
+		 </e>
+		 <e>
+			<i>84au</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+
+		 <e>
+			<i>84<b/></i>
+		 </e>
+		 <e>
+			<i>84%</i>
+		 </e>
+		 <e>
+			<i>84</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>84en<b/></i>
+		 </e>
+		 <e>
+			<i>84en</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>84na<b/></i>
+		 </e>
+		 <e>
+			<i>84na</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>85au<b/></i>
+		 </e>
+		 <e>
+			<i>85au</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+
+		 <e>
+			<i>85<b/></i>
+		 </e>
+		 <e>
+			<i>85%</i>
+		 </e>
+		 <e>
+			<i>85</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>85en<b/></i>
+		 </e>
+		 <e>
+			<i>85en</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>85na<b/></i>
+		 </e>
+		 <e>
+			<i>85na</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>85au<b/></i>
+		 </e>
+		 <e>
+			<i>85au</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+
+		 <e>
+			<i>86<b/></i>
+		 </e>
+		 <e>
+			<i>86%</i>
+		 </e>
+		 <e>
+			<i>86</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>86en<b/></i>
+		 </e>
+		 <e>
+			<i>86en</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>86na<b/></i>
+		 </e>
+		 <e>
+			<i>86na</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>86au<b/></i>
+		 </e>
+		 <e>
+			<i>86au</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+
+		 <e>
+			<i>87<b/></i>
+		 </e>
+		 <e>
+			<i>87%</i>
+		 </e>
+		 <e>
+			<i>87</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>87en<b/></i>
+		 </e>
+		 <e>
+			<i>87en</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>87na<b/></i>
+		 </e>
+		 <e>
+			<i>87na</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>87au<b/></i>
+		 </e>
+		 <e>
+			<i>87au</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+
+		 <e>
+			<i>88<b/></i>
+		 </e>
+		 <e>
+			<i>88%</i>
+		 </e>
+		 <e>
+			<i>88</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>88en<b/></i>
+		 </e>
+		 <e>
+			<i>88en</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>88na<b/></i>
+		 </e>
+		 <e>
+			<i>88na</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>88au<b/></i>
+		 </e>
+		 <e>
+			<i>88au</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+
+		 <e>
+			<i>89<b/></i>
+		 </e>
+		 <e>
+			<i>89%</i>
+		 </e>
+		 <e>
+			<i>89</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>89en<b/></i>
+		 </e>
+		 <e>
+			<i>89en</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>89na<b/></i>
+		 </e>
+		 <e>
+			<i>89na</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
+		 <e>
+			<i>89au<b/></i>
+		 </e>
+		 <e>
+			<i>89au</i>
+			<par n="caracter_general_nonum"/>
+		 </e>
     </pardef>
+
 <!-- paradigma amb les consonants -->
 	 <pardef n="consonant">
 		 <e>
