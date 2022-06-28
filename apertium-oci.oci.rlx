@@ -2223,6 +2223,9 @@ REMOVE Tn IF (0 Se) (1 V) (1 P3) ;
 REMOVE Tn IF (0 Se) (1 VBinf) ;
 REMOVE Tn IF (0 Se) (1 Pro) ;
 REMOVE Pro IF (0 ("<o se>"i)) (NOT 1 V + P3) ;
+#SELECT Conjadv IF (-1 ("e")) (0 Se) (1C V + P3) (NOT 1 Ser) (2*C V + Pers) ;	
+#SELECT Conjadv IF (-1 ("e")) (0 Se) (1 Pro) (2 V + P3) (3*C V + Pers) ;
+#SELECT Conjadv IF (-1 ("e")) (0 Se) (1 Pro) (2 Pro) (3 V + P3) (4*C V + Pers) ;
 SELECT Pro IF (0 Se) (1C Pro OR V + P3) ;	# patch			NE MARCHE PAS DU TOUT
 
 REMOVE P1 + Sg IF (-1 NP + Sg) (0 V + P3 + Sg) ;
