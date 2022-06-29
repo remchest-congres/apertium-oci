@@ -2425,6 +2425,8 @@ REMOVE AJ IF (0 ("morisc")) (0 V);
 
 REMOVE Brau IF (0 ("brave"));
 
+REMOVE ("ga") IF (0 ("gas")) ;
+
 REMOVE V IF (0 ("<gaug>"i)) (-1 DET + MascSg or AJ + MascSg);
 
 REMOVE AV IF (0 ("<entorn>"i)) (-1 DET + MascSg OR AJ + MascSg);
