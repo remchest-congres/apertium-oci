@@ -1750,7 +1750,7 @@ REMOVE SUB:1 PRON + Pos IF (0/* DETpos + &&AcordSN) (1 AJ + &&AcordSN) (2 N + &&
 REMOVE SUB:1 PRON + Pos IF (0/* DETpos + &&AcordSN) (1 VBpp + &&AcordSN) (2 N + &&AcordSN) ;	# del sieu aimat filh
 SELECT N_AJ + &&AcordSN IF (-1 DETind + &&AcordSN) (0 N_AJ + &&AcordSN) ;
 SELECT DET IF (0 DETind) (1C V) ;
-SELECT DET IF (0 DETind) (1 unknown) ;	# guess
+SELECT DET IF (NOT -1/* DET) (0 DETind) (1 unknown) ;	# guess
 REMOVE ("unir") IF (0 Un) (1C V + Pers OR VBpp) ;	# guess
 REMOVE ("unir") IF (0 Un) (1C V + Pers OR VBpp) ;	# guess
 REMOVE ("unir") IF (0 Un + &&AcordSN) (1C N_AJ + &&AcordSN) ;	# guess
@@ -2120,8 +2120,10 @@ SELECT Mai_bon IF (0 Mai_bon) ;
 SELECT N IF (-1 DET + MascSg) (0 ("cap a")) ;
 REMOVE N IF (0 ("cap a")) ;
 
-SELECT PREP IF (0 ("<pera>"i)) (1C N + FemSg) ;
-SELECT PREP IF (0 ("<peras>"i)) (1C N + FemPl) ;
+SELECT PREP IF (0 ("<pera>"i)) (1C N + FemSg OR unknown) ;
+SELECT PREP IF (0 ("<peras>"i)) (1C N + FemPl OR unknown) ;
+REMOVE V IF (0 ("<pera>"i)) (0 PREP) ; ;
+REMOVE V IF (0 ("<peras>"i)) (0 PREP) ; ;
 
 SELECT (mf) IF (0 ("<ròms>"i)) ;
 SELECT (mf) IF (0 ("<ròm>"i)) (-1 DET + Fem_strict);
