@@ -1943,11 +1943,11 @@ SELECT N + &&AcordSN IF (-1C DET + &&AcordSN) (0 AJ) (0 N + &&AcordSN) (1C NP) ;
 SELECT N IF (-1C PREP) (1C EOS OR Rel) ;	# dels politics
 SELECT N OR VBinf IF (-1C PREP) (1C PREP) ;	# de levar d'impòstes
 SELECT N + &&AcordSN IF (-1C DET + &&AcordSN) (1C EOS OR PREP OR Rel) ;	# los politics
-REMOVE N OR V + Pers IF (-1C Semblar_Pareisser + &&AcordSP LINK NOT 0 VBpp) (0 AJ + &&AcordSP) (1C EOS OR CM OR Conjco OR PREP OR Rel) ;	# las dificultats semblan màgers
-REMOVE N OR V + Pers IF (-2 Haver + &&AcordSP) (-1 Semblar_Pareisser + VBpp) (0 AJ + &&AcordSP) (1C EOS OR CM OR Conjco OR PREP OR Rel) ;	# las dificultats an semblat màgers
-REMOVE N OR V + Pers IF (-3 Haver + &&AcordSP) (-2 AV) (-1 Semblar_Pareisser + VBpp) (0 AJ + &&AcordSP) (1C EOS OR CM OR Conjco OR PREP OR Rel) ;	# las dificultats an pas semblat màgers
-REMOVE N OR V + Pers IF (-3 Haver + &&AcordSP) (-2 Semblar_Pareisser + VBpp) (-1 AV) (0 AJ + &&AcordSP) (1C EOS OR CM OR Conjco OR PREP OR Rel) ;	# an semblat mai caras
-REMOVE N OR V + Pers IF (-4 Haver + &&AcordSP) (-3 AV) (-2 Semblar_Pareisser + VBpp) (-1 AV) (0 AJ + &&AcordSP) (1C EOS OR CM OR Conjco OR PREP OR Rel) ;	# an pas semblat mai caras
+REMOVE N OR V + Pers IF (-1C Semblar_Pareisser + &&AcordSP LINK NOT 0 VBpp) (0 AJ + &&AcordSP) (1C EOS OR CM OR Conjco OR PREP OR Rel OR ("<a>"i)) ;	# las dificultats semblan màgers
+REMOVE N OR V + Pers IF (-2 Haver + &&AcordSP) (-1 Semblar_Pareisser + VBpp) (0 AJ + &&AcordSP) (1C EOS OR CM OR Conjco OR PREP OR Rel OR ("<a>"i)) ;	# las dificultats an semblat màgers
+REMOVE N OR V + Pers IF (-3 Haver + &&AcordSP) (-2 AV) (-1 Semblar_Pareisser + VBpp) (0 AJ + &&AcordSP) (1C EOS OR CM OR Conjco OR PREP OR Rel OR ("<a>"i)) ;	# las dificultats an pas semblat màgers
+REMOVE N OR V + Pers IF (-3 Haver + &&AcordSP) (-2 Semblar_Pareisser + VBpp) (-1 AV) (0 AJ + &&AcordSP) (1C EOS OR CM OR Conjco OR PREP OR Rel OR ("<a>"i)) ;	# an semblat mai caras
+REMOVE N OR V + Pers IF (-4 Haver + &&AcordSP) (-3 AV) (-2 Semblar_Pareisser + VBpp) (-1 AV) (0 AJ + &&AcordSP) (1C EOS OR CM OR Conjco OR PREP OR Rel OR ("<a>"i)) ;	# an pas semblat mai caras
 REMOVE N OR V + Pers IF (-1C Devenir + &&AcordSP LINK NOT 0 VBpp) (0 AJ + &&AcordSP) (1C EOS OR CM OR Conjco OR PREP OR Rel) ;	# las dificultats venon màgers
 REMOVE N OR V + Pers IF (-2 Ser + &&AcordSP) (-1 Devenir + VBpp) (0 AJ + &&AcordSP) (1C EOS OR CM OR Conjco OR PREP OR Rel) ;	# las dificultats son venudas màgers
 REMOVE N OR V + Pers IF (-3 Ser + &&AcordSP) (-2 AV) (-1 Devenir + VBpp + &&AcordSP) (0 AJ + &&AcordSP) (1C EOS OR CM OR Conjco OR PREP OR Rel) ;	# las dificultats son pas venudas màgers
