@@ -1745,6 +1745,8 @@ SELECT DETind + &&AcordSN IF (NOT -1/* DET) (0 DETind + &&AcordSN) (1 N + &&Acor
 SELECT DETind + &&AcordSN IF (NOT -1/* DET) (0 DETind + &&AcordSN) (1 AJ + &&AcordSN) (NOT 0 ("força") OR ("horça")) ;	# un jaune
 REMOVE PRON + Pos IF (0 DETpos + &&AcordSN) (1 N + &&AcordSN) ;	# lo son torn
 REMOVE SUB:1 PRON + Pos IF (0/* DETpos + &&AcordSN) (1 N + &&AcordSN) ;	# deu son torn
+REMOVE SUB:1 PRON + Pos IF (0/* DETpos + &&AcordSN) (1 AJ + &&AcordSN) (2 N + &&AcordSN) ;	# del sieu polit filh
+REMOVE SUB:1 PRON + Pos IF (0/* DETpos + &&AcordSN) (1 VBpp + &&AcordSN) (2 N + &&AcordSN) ;	# del sieu aimat filh
 SELECT N_AJ + &&AcordSN IF (-1 DETind + &&AcordSN) (0 N_AJ + &&AcordSN) ;
 SELECT DET IF (0 DETind) (1C V) ;
 SELECT DET IF (0 DETind) (1 unknown) ;	# guess
