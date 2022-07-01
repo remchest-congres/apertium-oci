@@ -2585,6 +2585,16 @@ SELECT VBpp IF (-1 ("còp")) (-2 ("un")) ;
 #de completar : desambiguizacion present imperfait
 #Ne fonctionne pas SELECT PRI IF (0 PRI) (0 PII) (NOT 1* PII BARRIER FinFr) (NOT 1* IFI BARRIER FinFr) (NOT -1* PII BARRIER FinFr) (NOT -1* IFI BARRIER FinFr) ;
 
+# VBpp / IFI
+REMOVE IFI IF (-2C VBpp) (-1 Conjco) (0 IFI) (0 VBpp) ;	# èi pas jamés legit ni ausit
+SELECT IFI IF (-2C IFI) (-1 Conjco) (0 IFI) (0 VBpp) ;
+REMOVE IFI IF (2C VBpp) (1 Conjco) (0 IFI) (0 VBpp) ;
+SELECT IFI IF (2C IFI) (1 Conjco) (0 IFI) (0 VBpp) ;
+REMOVE IFI IF (-3C VBpp) (-2 Conjco) (-1 AV OR PREAV) (0 IFI) (0 VBpp) ;
+SELECT IFI IF (-3C IFI) (-2 Conjco) (-1 AV) (0 IFI) (0 VBpp) ;
+REMOVE IFI IF (3C VBpp) (2 AV) (1 Conjco) (0 IFI) (0 VBpp) ;
+SELECT IFI IF (3C IFI) (2 AV) (1 Conjco) (0 IFI) (0 VBpp) ;
+
 # PRI / PII, IFI
 SELECT PRI IF (-2C PRI) (-1 Conjco) (0 PII OR IFI) (0 PRI) ;
 SELECT PII OR IFI IF (-2C PII OR IFI) (-1 Conjco) (0 PII OR IFI) (0 PRI) ;
