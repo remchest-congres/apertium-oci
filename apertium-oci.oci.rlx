@@ -1729,6 +1729,8 @@ SELECT DET IF (-2 ("son")) (-1 AV) (0 ("lei")) (1C N + Pl_strict) ;
 REMOVE DET IF (-2 DET + &&AcordSN) (-1 AJ + &&AcordSN) (0 ("lei") + &&AcordSN) ;
 SELECT N IF (-1 De) (0 ("lei")) (NOT 1C N + Pl_strict) ;	# patch
 
+REMOVE Pro IF (-1C PREP) (0 DET) (NOT 1 VBinf OR VBger OR Pro OR unknown) ;
+
 SELECT DET + &&AcordSN IF (1 ("un") + &&AcordSN) (2 Conjco) (3 DET) (4 ("altre") OR ("aute")) ;
 SELECT Tn + &&AcordSN IF (-1C DET + &&AcordSN) (0 ("un") + &&AcordSN) ;
 REMOVE DET IF (-1C/* DET) (NOT -1 DetDe) ;	# un cèrt estacament
