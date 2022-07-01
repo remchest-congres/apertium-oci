@@ -1871,7 +1871,7 @@ SELECT N OR PRON OR NP IF (-1C PREP) (NOT -1/* N) (1 EOS OR Rpar) ;	# ambe fòr�
 SELECT N OR PRON OR NP OR VBinf IF (-1C PREP) (NOT -1/* N) (1C PREP) (NOT 0 ("tròp") OR ("pauc") OR ("pòc")) ;	# discors de fin d'annada
 SELECT N OR PRON OR NP OR VBinf IF (-1C PREP) (NOT -1/* N) (1C Rel OR Que OR Qui) ;
 SELECT N OR PRON OR NP OR VBinf IF (-1C PREP) (NOT -1/* N) (1C Conjco OR ("e") OR ("o")) ;
-SELECT N IF (-1C PREP) (NOT -1/* N) (0 N + &&AcordSP) (1 (",")) (2 N + &&AcordSP) (3 (",") OR ("e") OR ("o")) (4 N + &&AcordSP) ;
+SELECT N IF (-1C PREP) (NOT -1/* N) (0 N + &&AcordSP) (1 (",")) (2 N + &&AcordSP) (3 (",") OR ("e") OR ("o") OR ("ni")) (4 N + &&AcordSP) ;
 
 SELECT N + &&AcordSN OR NP + &&AcordSN IF (-1C/* DET OR Artcontrsg OR Artcontrpl) (0C N) (-1/* DET + &&AcordSN) ;	# los acès ; deus autobús
 SELECT N + &&AcordSN OR NP + &&AcordSN IF (0C N) (1C AJ) (1 AJ + &&AcordSN) ;	# de autobús blus
@@ -1965,12 +1965,12 @@ REMOVE N IF (-2 Haver) (-1 ("faser") + VBpp) (0 AJ) (1C EOS OR PREP OR Rel) ;	# 
 SELECT AJ OR AV IF (-1 Vener) (0 ("car")) ;
 REMOVE AJ IF (-1C Verb LINK NOT 0 VBpp) (0 N) (1C EOS OR PREP OR Rel) ;	# demani novèlas de son pair
 REMOVE AJ IF (-2 Haver) (-1C Verb + VBpp) (0 N) (1C EOS OR PREP OR Rel) ;	# an demanat novèlas de son pair
-SELECT N + &&AcordSP IF (-3C PREP) (-2 N + &&AcordSP) (-1 ("e") OR ("o")) (0C N_AJ_PP) (1C EOS OR Rel) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# dels politics e responsables
-SELECT N + &&AcordSP OR VBinf IF (-3C PREP) (-2 N + &&AcordSP) (-1 ("e") OR ("o")) (0C N_AJ_PP) (1C PREP) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# dels politics e responsables
-SELECT N + &&AcordSP IF (-3C DET + &&AcordSN) (-2 N + &&AcordSP) (-1 ("e") OR ("o")) (0C N_AJ_PP) (1C EOS OR PREP OR Rel) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# dels politics e responsables
-SELECT N + &&AcordSP IF (-5C PREP) (-4 N + &&AcordSP) (-3 (",")) (-2 N + &&AcordSP) (-1 ("e") OR ("o")) (0C N_AJ_PP) (1C EOS OR Rel) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# dels politics e responsables
-SELECT N + &&AcordSP OR VBinf IF (-5C PREP) (-4 N + &&AcordSP) (-3 (",")) (-2 N + &&AcordSP) (-1 ("e") OR ("o")) (0C N_AJ_PP) (1C PREP) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# dels politics e responsables
-SELECT N + &&AcordSP IF (-5C DET + &&AcordSN) (-4 N + &&AcordSN + &&AcordSP) (-3 (",")) (-2 N + &&AcordSP) (-1 ("e") OR ("o")) (0C N_AJ_PP) (1C EOS OR PREP OR Rel) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# dels politics e responsables
+SELECT N + &&AcordSP IF (-3C PREP) (-2 N + &&AcordSP) (-1 ("e") OR ("o") OR ("ni")) (0C N_AJ_PP) (1C EOS OR Rel) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# dels politics e responsables
+SELECT N + &&AcordSP OR VBinf IF (-3C PREP) (-2 N + &&AcordSP) (-1 ("e") OR ("o") OR ("ni")) (0C N_AJ_PP) (1C PREP) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# dels politics e responsables
+SELECT N + &&AcordSP IF (-3C DET + &&AcordSN) (-2 N + &&AcordSP) (-1 ("e") OR ("o") OR ("ni")) (0C N_AJ_PP) (1C EOS OR PREP OR Rel) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# dels politics e responsables
+SELECT N + &&AcordSP IF (-5C PREP) (-4 N + &&AcordSP) (-3 (",")) (-2 N + &&AcordSP) (-1 ("e") OR ("o") OR ("ni")) (0C N_AJ_PP) (1C EOS OR Rel) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# dels politics e responsables
+SELECT N + &&AcordSP OR VBinf IF (-5C PREP) (-4 N + &&AcordSP) (-3 (",")) (-2 N + &&AcordSP) (-1 ("e") OR ("o") OR ("ni")) (0C N_AJ_PP) (1C PREP) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# dels politics e responsables
+SELECT N + &&AcordSP IF (-5C DET + &&AcordSN) (-4 N + &&AcordSN + &&AcordSP) (-3 (",")) (-2 N + &&AcordSP) (-1 ("e") OR ("o") OR ("ni")) (0C N_AJ_PP) (1C EOS OR PREP OR Rel) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# dels politics e responsables
 
 REMOVE N OR VBpp (-1 ("trobar") OR ("considerar") OR ("jutjar")) (0 AJ) ;
 REMOVE N OR VBpp (-2 ("trobar") OR ("considerar") OR ("jutjar")) (-1 AV) (0 AJ) ;
@@ -2012,7 +2012,7 @@ SELECT N IF (NOT -1 N) (0C N_AJ_PP) (1 Conjco LINK NOT 0 ("sia")) (2C N) ;	# com
 SELECT N + &&AcordSN IF (-1/* DET + &&AcordSN) (0C N_AJ_PP) (1 Conjco LINK NOT 0 ("sia")) (2 DET) (3C N) ;	# les revues et les opérettes
 SELECT N IF (-2 N) (-1 CM) (0C N_AJ_PP) (1 Conjco OR CM) (2C N) ;	# prêtre, curé, prédicateur
 SELECT N IF (-2C N) (-1 CM) (0C N_AJ_PP) (1 Conjco OR CM) (2 N) ;
-SELECT N IF (-2C N + &&AcordSP) (-1 CM) (0 N + &&AcordSP) (1 ("e") OR ("o")) (2 N + &&AcordSP) ;	# martèths, estenalhas e alicatas
+SELECT N IF (-2C N + &&AcordSP) (-1 CM) (0 N + &&AcordSP) (1 ("e") OR ("o") OR ("ni")) (2 N + &&AcordSP) ;	# martèths, estenalhas e alicatas
 SELECT N IF (-2C N) (-1 CM) (0C N_AJ_PP) (1 CM) (2 N) ;	# prêtre, curé, prédicateur
 SELECT N IF (-4C N) (-4 N + &&AcordSP) (-3 CM) (-2C N) (-2 N + &&AcordSP) (-1 CM) (0 N + &&AcordSP) ;
 SELECT AJ + &&AcordSN IF (0 ("grand") + &&AcordSN) (1 Conjco) (2 AJ + &&AcordSN) (NOT 2 AdjPre) ;
