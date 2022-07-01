@@ -1853,6 +1853,9 @@ SELECT DET + Pos IF (-1 N) (0 AJ + Pos) (0 DET + Pos + &&AcordSN) (1 N + &&Acord
 
 REMOVE AJ (-1 N) (-1 ("<.* de>"r)) (0 DET OR N) ;	# una remesa en causa de lor poder
 
+REMOVE N (NOT -1 DET + FemSg) (0 ("fauta de")) ;
+SELECT N (-1 DET + FemSg) (0 ("fauta de")) ;
+
 REMOVE N (-1 ("per")) (0 ("dit")) ;
 
 REMOVE N (-1 ("per") OR ("tà") OR ("entà") OR ("enta") OR ("ta") OR ("ende")) (NOT -1/* DET) (0 VBinf) ;		# tà díser
