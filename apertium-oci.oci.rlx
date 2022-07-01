@@ -938,6 +938,7 @@ REMOVE IJ IF (NOT -1 CM OR BOS) (0 ("las")) ;
 REMOVE AJ (0 ("las")) (1 V OR Pro) ;
 SELECT Pro (0 ("las")) (1C V OR Pro) ;
 SELECT DET (-1 PREP) (0 ("las")) (1 De) ;
+REMOVE N (0 ("les")) (1 V OR Pro) (NOT -1 DET + Masc) ;
 
 SELECT AVexcl IF (-1 BOS) (0 AVexcl) (1 ("!")) ;
 SELECT AVexcl IF (-2 BOS) (-1 Conjco) (0 AVexcl) (1 ("!")) ;
