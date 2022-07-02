@@ -209,6 +209,7 @@ LIST O_cnjcoo = ("o" cnjcoo) ("ò" cnjcoo) ;
 LIST Semblar_Pareisser = "semblar" "paréisser" "paréisher" ;
 LIST Devenir = "devenir" "venir" "vàder" "vénguer" "viéner" "vier" ;
 LIST Demandar = "demandar" "demanar" "interrogar" "questionar" "qüestionar" "saber" "sàber" ;
+LIST VNonPron = "demorar" "abitar" "trabalhar" "tribalhar" "manjar" "beure" "béver" ;	# vèrbs non pronominals
 LIST Far = "far" "har" "hèr" ;
 LIST Estat = "estat" ;
 LIST Clau = "clau" ;
@@ -291,7 +292,7 @@ SET AdjPre = ("ancian") OR ("nòu") OR ("nau") OR ("novèl") OR ("navèth") OR (
 
 SET Dignitat = ("papa") OR ("patriarca") OR ("avesque") OR ("arcavesque") OR ("archavesque") OR ("archevesque") OR ("arquevesque") OR ("sant") OR ("sant") OR ("apòstol") OR ("apostòl") OR ("emperador") OR ("emperaire") OR ("rei") OR ("tsar") OR ("vicerei") OR ("regent") OR ("prince") OR ("infant") OR ("dalfin") OR ("comte") OR ("comtessa") OR ("vescomte") OR ("vescomtessa") OR ("duc") OR ("grand-duc") OR ("arcaduc") OR ("archiduc") OR ("marqués") OR ("baron") ;
 
-SET Lenga = ("occitan") OR ("francés") OR ("anglés") OR ("alemand") OR ("espanhòl") OR ("italian") OR ("rus") OR ("chinés") OR ("japonés") OR ("catalan") OR ("basc") OR ("basco") OR ("breton") OR ("còrse") OR ("arpitan") OR ("francoprovençal") OR ("alsacian") OR ("flamenc") ;
+SET Lenga = ("occitan") OR ("francés") OR ("anglés") OR ("alemand") OR ("espanhòl") OR ("espanhòu") OR ("italian") OR ("rus") OR ("chinés") OR ("japonés") OR ("catalan") OR ("basc") OR ("basco") OR ("breton") OR ("còrse") OR ("arpitan") OR ("francoprovençal") OR ("alsacian") OR ("flamenc") ;
 
 SECTION
 
@@ -832,6 +833,10 @@ SELECT PREP IF (-1C BOS OR Conjsub OR Conjadv OR Rel) (0 ("shens")) (1C VBinf OR
 SELECT PREP IF (-1C BOS OR Conjsub OR Conjadv OR Rel) (0 ("shens")) (1 Pro OR AV) (2C VBinf) ;
 SELECT PREP IF (-1C BOS OR Conjsub OR Conjadv OR Rel) (0 ("shens")) (1C Pro OR AV) (2 VBinf) ;	# shens li díser
 SELECT PREP IF (-1C BOS OR Conjsub OR Conjadv OR Rel) (0 ("shens")) (1 Pro OR AV) (2 Pro OR AV) (3 VBinf) ;	# shens li'n díser
+
+# eliminacion de l'enonciatiu 'que' en gascon sens enonciatius (cases particulars)
+REMOVE ("que") + Enon OR ("be") + Enon OR ("non") + Enon IF (-1*C V + Vconj_non_Imp LINK -1 BOS) ;
+REMOVE ("que") + Enon OR ("be") + Enon OR ("non") + Enon IF (-1*C V + Vconj_non_Imp LINK -1C Pro OR AV LINK -1 BOS) ;
 
 SELECT Conjsub IF (-1 Mai) (0 ("que")) (NOT -2 DET OR BOS) ;
 REMOVE N_AJ IF (0 Mai) (1 ("que")) (NOT -1 DET) ;
@@ -2245,7 +2250,12 @@ REMOVE Pro IF (0 ("<o se>"i)) (NOT 1 V + P3) ;
 #SELECT Conjadv IF (-1 ("e")) (0 Se) (1C V + P3) (NOT 1 Ser) (2*C V + Pers) ;	
 #SELECT Conjadv IF (-1 ("e")) (0 Se) (1 Pro) (2 V + P3) (3*C V + Pers) ;
 #SELECT Conjadv IF (-1 ("e")) (0 Se) (1 Pro) (2 Pro) (3 V + P3) (4*C V + Pers) ;
-SELECT Pro IF (0 Se) (1C Pro OR V + P3) ;	# patch			NE MARCHE PAS DU TOUT
+SELECT Pro IF (0 Se) (1C Pro OR V + P3) (-1 BOS) (1 ("anar")) ;	
+SELECT Pro IF (0 Se) (1C Pro OR V + P3) (-1 BOS) (2 ("anar")) ;	
+SELECT Conjadv IF (0 Se) (1C V + P3 LINK 0 VNonPron) (-1 BOS OR Conjadv OR Conjsub OR Rel) (2* V + Pers) ;
+SELECT Conjadv IF (0 Se) (1 Pro) (2C V + P3 LINK 0 VNonPron) (-1 BOS OR Conjadv OR Conjsub OR Rel) (3* V + Pers) ;
+#SELECT Conjadv IF (0 Se) (1C Pro OR V + P3) (-1 BOS) (3* V + Pers) ;
+SELECT Pro IF (0 Se) (1C Pro OR V + P3) ;	# guess			NE MARCHE PAS DU TOUT
 
 REMOVE P1 + Sg IF (-1 NP + Sg) (0 V + P3 + Sg) ;
 REMOVE P1 + Sg IF (-2 DET + MascSg) (-1 N + MascSg) (0 V + P3 + Sg) ;
