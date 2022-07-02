@@ -844,6 +844,26 @@ SELECT PREP IF (-1C BOS OR Conjsub OR Conjadv OR Rel) (0 ("shens")) (1 Pro OR AV
 REMOVE ("que") + Enon OR ("be") + Enon OR ("non") + Enon IF (-1*C V + Vconj_non_Imp LINK -1 BOS) ;
 REMOVE ("que") + Enon OR ("be") + Enon OR ("non") + Enon IF (-1*C V + Vconj_non_Imp LINK -1C Pro OR AV LINK -1 BOS) ;
 
+REMOVE ("que") + Enon IF (-2 Ser + Vconj_non_Imp) (-1 ("aquò")) ;
+REMOVE ("que") + Enon IF (-3 Ser + Vconj_non_Imp) (-2 AV) (-1 ("aquò")) ;
+REMOVE ("que") + Enon IF (-3 Ser + Vconj_non_Imp) (-2 ("aquò")) (-1 AV) ;
+REMOVE ("que") + Enon IF (-4 Ser + Vconj_non_Imp) (-3 AV) (-2 AV) (-1 ("aquò")) ;
+REMOVE ("que") + Enon IF (-3 Ser + Vconj_non_Imp) (-2 DET + &&AcordSN) (-1 N + &&AcordSN) ;
+REMOVE ("que") + Enon IF (-4 Ser + Vconj_non_Imp) (-3 AV) (-2 DET + &&AcordSN) (-1 N + &&AcordSN) ;
+REMOVE ("que") + Enon IF (-5 Ser + Vconj_non_Imp) (-4 AV) (-3 AV) (-2 DET + &&AcordSN) (-1 N + &&AcordSN) ;
+REMOVE ("que") + Enon IF (-2 Ser + Vconj_non_Imp + Pl) (-1 N_AJ + Pl) ;
+REMOVE ("que") + Enon IF (-3 Ser + Vconj_non_Imp + Pl) (-2 AV) (-1 N_AJ + Pl) ;
+REMOVE ("que") + Enon IF (-4 Ser + Vconj_non_Imp + Pl) (-3 AV) (-2 AV) (-1 N_AJ + Pl) ;
+REMOVE ("que") + Enon IF (-3 Ser + Vconj_non_Imp) (-2 DET + &&AcordSN) (-1 N + &&AcordSN) (-1 AJ + &&AcordSN) ;
+REMOVE ("que") + Enon IF (-4 Ser + Vconj_non_Imp) (-3 AV) (-2 DET + &&AcordSN) (-1 N + &&AcordSN) (-1 AJ + &&AcordSN) ;
+REMOVE ("que") + Enon IF (-5 Ser + Vconj_non_Imp) (-4 AV) (-3 AV) (-2 DET + &&AcordSN) (-1 N + &&AcordSN) (-1 AJ + &&AcordSN) ;
+REMOVE ("que") + Enon IF (-3 Ser + Vconj_non_Imp + Pl) (-2 N + Pl + &&AcordSN) (-1 AJ + &&AcordSN) ;
+REMOVE ("que") + Enon IF (-4 Ser + Vconj_non_Imp + Pl) (-3 AV) (-2 N + Pl + &&AcordSN) (-1 AJ + &&AcordSN) ;
+REMOVE ("que") + Enon IF (-5 Ser + Vconj_non_Imp + Pl) (-4 AV) (-2 AV) (-1 N + Pl + &&AcordSN) (-1 AJ + &&AcordSN) ;
+REMOVE ("que") + Enon IF (-3 Ser + Vconj_non_Imp + Pl) (-2 De) (-1 N + Pl) ;
+REMOVE ("que") + Enon IF (-4 Ser + Vconj_non_Imp + Pl) (-3 AV) (-2 De) (-1 N + Pl) ;
+REMOVE ("que") + Enon IF (-5 Ser + Vconj_non_Imp + Pl) (-4 AV) (-3 AV) (-2 De) (-1 N + Pl) ;
+
 SELECT Conjsub IF (-1 Mai) (0 ("que")) (NOT -2 DET OR BOS) ;
 REMOVE N_AJ IF (0 Mai) (1 ("que")) (NOT -1 DET) ;
 SELECT Conjsub IF (-2 Mai) (-1 AJ OR AV) (0 ("que")) ;
