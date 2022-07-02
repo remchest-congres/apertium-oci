@@ -733,6 +733,12 @@ REMOVE Vmod IF (0 ("aver# de") OR ("auer# de")) (1 N_AJ OR AV OR PREAV) ;
 REMOVE ("aver# de") OR ("auer# de") IF (0 ("aver# de") OR ("auer# de")) (1 N_AJ OR AV OR PREAV) ;
 SELECT N + ("mal") IF (-1 ("aver")) (-1 ("<.* de>"ri)) (0 ("mal")) ;
 
+SELECT SUB:1 AV IF (0 ("<los mens>"i)) (1C AJ + MascPl OR VBpp + MascPl) (NOT 1 AdjPre) ;	# los mens rapides
+#SELECT AJ + MascPl OR VBpp + MascPl IF (-1 ("<los mens>"i)) (0 AJ + MascPl OR VBpp + MascPl) (NOT 1 AJ + MascPl) ;	# los mens rapides
+REMOVE SUB:1 AV IF (0 ("<los mens>"i)) ;
+SELECT SUB:2 AV IF (0 ("<deus mens>"i)) (1C AJ + MascPl OR VBpp + MascPl) (NOT 1 AdjPre) ;	# deus mens rapides
+#SELECT AJ + MascPl OR VBpp + MascPl IF (-1 ("<deus mens>"i)) (0 AJ + MascPl OR VBpp + MascPl) (NOT 1 AJ + MascPl) ;	# deus mens rapides
+REMOVE SUB:2 AV IF (0 ("<deus mens>"i)) ;
 SELECT AV IF (-1/* DETdef + &&AcordSN) (0 AdvComp) (1 AJ + &&AcordSN OR VBpp + &&AcordSN OR N + &&AcordSN) ;	# lo mai rapide
 SELECT AV IF (-2/* DETdef + &&AcordSN) (-1 N + &&AcordSN) (0 AdvComp) (1 AJ + &&AcordSN OR VBpp + &&AcordSN) ;	# lo mainatge mai rapide
 SELECT AJ IF (-3/* DETdef + &&AcordSN) (-2 N + &&AcordSN) (-1 AdvComp) (0 AJ + &&AcordSN) ;	# los sons mai aguts
@@ -1743,6 +1749,7 @@ REMOVE DET IF (-1C/* DET) (NOT -1 DetDe) ;	# un cèrt estacament
 REMOVE DET IF (0 DET) (NOT 1 N OR AJ OR Tn OR NP OR NUM OR AV OR PREAV OR Rel OR unknown) (NOT 0 DETdef LINK 1 De) ;
 REMOVE DET + &&AcordSN IF (0 DET) (1 N_AJ OR NP OR Tn) (NOT 1 NUM OR AV OR PREAV OR Rel) (0 DET + &&AcordSN) (NOT 1 N_AJ + &&AcordSN OR NP + &&AcordSN OR Tn + &&AcordSN) ;	# Avèm entrevistat aquesta pendent la Hèsta
 REMOVE SUB:1 DET IF (0/* DET) (1C DET) ;	# en los acès
+SELECT AV IF (0 ("fòrça")) (1 AdvComp) ;
 SELECT PREAV IF (0 ("fòrça")) (1C AJ OR AV) ;
 SELECT PREAV IF (-1 N + &&AcordSN) (0 ("fòrça")) (1C AJ_PP + &&AcordSN) ;
 SELECT AV IF (0 ("fòrça")) (1C VBpp) ;
