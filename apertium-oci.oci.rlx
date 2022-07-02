@@ -1497,6 +1497,7 @@ SELECT (top) IF (0 ("Tolosa")) (NOT 1 (ant) OR (cog)) (NOT -1 (ant) OR (cog)) ;
 SELECT (top) IF (0 ("París")) (NOT 1 (ant) OR (cog)) (NOT -1 (ant) OR (cog)) ;
 SELECT (top) IF (0 ("Pamiàs")) (NOT 1 (ant) OR (cog)) (NOT -1 (ant) OR (cog)) ;
 SELECT (top) IF (0 ("Fois")) (NOT 1 (ant) OR (cog)) (NOT -1 (ant) OR (cog)) ;
+SELECT (top) IF (0 ("Navarra")) (NOT 1 (ant) OR (cog)) (NOT -1 (ant) OR (cog)) ;
 
 SELECT Ant IF (-1 ("dieu") OR ("divessa")) ;
 
