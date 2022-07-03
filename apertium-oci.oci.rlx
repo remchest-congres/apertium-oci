@@ -1291,11 +1291,14 @@ SELECT N IF (0 (META:/-/r)) (1C N) ;
 #Un nom pot pas seguir qu'un vèrbe, un adjectiu, un determinant, un numeral, una prepausicion o un pronom (levat los personals)
 #(en titolars periodístics, però, es comença sovint per un nom)
 # non : Patxi Zabaleta, actualament cap del partit
-REMOVE N IF (NOT -1 BOS OR CM OR Conjco OR V OR AJ OR AV OR DET OR NUM OR PREP OR PRON - PRONPers) (NOT -1/* ("de")) (NOT -2 CM) ;
-REMOVE N IF (NOT -1 BOS OR CM OR Conjco OR V OR AJ OR AV + Itg OR DET OR NUM OR PREP OR PRON - PRONPers) (NOT -1/* ("de")) (NOT -2 CM) (NOT -2 V LINK NOT 0 VBpp) ;
+REMOVE N IF (NOT -1 BOS OR CM OR Conjco OR Donc OR V OR AJ OR AV OR DET OR NUM OR PREP OR PRON - PRONPers) (NOT -1/* ("de")) (NOT -2 CM) ;
+REMOVE N IF (NOT -1 BOS OR CM OR Conjco OR Donc OR V OR AJ OR AV + Itg OR DET OR NUM OR PREP OR PRON - PRONPers) (NOT -1/* ("de")) (NOT -2 CM) (NOT -2 V LINK NOT 0 VBpp) ;
+REMOVE N IF (-2 Conjco) (-1 Donc) (0 V + Pers) ;
 REMOVE N IF (-2 N + &&AcordSN) (-1 AJ + &&AcordSN) (0 VBpp + &&AcordSN) ;	# lo ministre canadian encargat
 
-REMOVE AJ IF (-1C Conjsub OR Conjadv OR Rel) ;
+REMOVE AJ IF (-1C Conjsub OR Conjadv OR Rel LINK NOT 0 Donc) ;
+SELECT VBpp IF (-2C Aver + Pers) (-1 Donc) (0 VBpp + &&AcordSP) (NOT 1 AJ + &&AcordSP) ;	# a donc causit
+REMOVE N IF (-2 Ser + &&AcordSP) (-1 Donc) (0 AJ_PP + &&AcordSP) (NOT 1 AJ + &&AcordSP) ;	# es donc plasent
 
 #Un predeterminant es pas seguit que per un determinant
 REMOVE PREDET IF (NOT 1 DET);
@@ -1659,16 +1662,16 @@ SELECT VBinf IF (-1 Vmod LINK 0C V) (0 VBinf) ;	# pòdi manjar
 SELECT VBinf IF (-1 ("anar") OR ("tornar") LINK 0C V) (0 VBinf) ;	# anar estar
 SELECT Vmod IF (0 Vmod) (1C VBinf OR ("<èsser>"i) OR ("<èster>"i) OR ("<èstre>"i) OR ("<estar>"i) OR ("<far>"i) OR ("<har>"i) OR ("<hèr>"i)) (NOT 0 PREP) ;	# pòdi manjar
 SELECT Vmod IF (0 Vmod) (1C VBinf OR ("<èsser>"i) OR ("<èster>"i) OR ("<èstre>"i) OR ("<estar>"i) OR ("<far>"i) OR ("<har>"i) OR ("<hèr>"i)) (0 Artcontrsg OR Artcontrpl) ;	# deu manjar
-SELECT VBinf IF (-2 Vmod) (-1 AV OR Pro) (0 VBinf) (NOT 0 PREP) ;	# pòdi pas manjar
-SELECT Vmod IF (0 Vmod) (1 AV OR Pro) (2C VBinf) (NOT 0 PREP) ;	# pòdi pas manjar
-SELECT VBinf IF (-3 Vmod) (-2 AV OR Pro) (-1 AV OR Pro) (0 VBinf) (NOT 0 PREP) ;	# pòdi pas manjar
-SELECT Vmod IF (0 Vmod) (1 AV OR Pro) (2 AV OR Pro) (3C VBinf) (NOT 0 PREP) ;	# pòdi pas manjar
+SELECT VBinf IF (-2 Vmod) (-1 AV OR Pro OR Donc) (0 VBinf) (NOT 0 PREP) ;	# pòdi pas manjar
+SELECT Vmod IF (0 Vmod) (1 AV OR Pro OR Donc) (2C VBinf) (NOT 0 PREP) ;	# pòdi pas manjar
+SELECT VBinf IF (-3 Vmod) (-2 AV OR Pro OR Donc) (-1 AV OR Pro) (0 VBinf) (NOT 0 PREP) ;	# pòdi pas manjar
+SELECT Vmod IF (0 Vmod) (1 AV OR Pro) (2 AV OR Pro OR Donc) (3C VBinf) (NOT 0 PREP) ;	# pòdi pas manjar
 SELECT Vmod IF (0 Vmod) (1 ("tot")) (2C VBinf OR ("<èsser>"i) OR ("<èster>"i) OR ("<èstre>"i) OR ("<estar>"i) OR ("<far>"i) OR ("<har>"i) OR ("<hèr>"i)) (NOT 0 PREP) ;	# pòdi tot manjar
 SELECT Vmod IF (0 Vmod) (1 ("tot")) (2C VBinf OR ("<èsser>"i) OR ("<èster>"i) OR ("<èstre>"i) OR ("<estar>"i) OR ("<far>"i) OR ("<har>"i) OR ("<hèr>"i)) (0 Artcontrsg OR Artcontrpl) ;	# deu tot manjar
-SELECT VBinf IF (-3 Vmod) (-2 AV) (-1 ("tot")) (0 VBinf) (NOT 0 PREP) ;	# pòdi pas tot manjar
-SELECT Vmod IF (0 Vmod) (1 AV) (2 ("tot")) (3C VBinf) (NOT 0 PREP) ;	# pòdi pas tot manjar
-SELECT PRON IF (-1C Vmod) (0 ("tot")) (0C VBinf) ;	# pòdi pas tot manjar
-SELECT PRON IF (-2C Vmod) (-1 AV) (0 ("tot")) (0C VBinf) ;	# pòdi pas tot manjar
+SELECT VBinf IF (-3 Vmod) (-2 AV OR Donc) (-1 ("tot")) (0 VBinf) (NOT 0 PREP) ;	# pòdi pas tot manjar
+SELECT Vmod IF (0 Vmod) (1 AV OR Donc) (2 ("tot")) (3C VBinf) (NOT 0 PREP) ;	# pòdi pas tot manjar
+SELECT PRON IF (-1C Vmod) (0 ("tot")) (0C VBinf) ;	# pòdi tot manjar
+SELECT PRON IF (-2C Vmod) (-1 AV OR Donc) (0 ("tot")) (0C VBinf) ;	# pòdi pas tot manjar
 
 # VBmod
 
