@@ -1680,6 +1680,7 @@ SELECT Vmod IF (0 ("caler")) (-1 Itg) ;
 SELECT Vmod IF (0 ("caler")) (-1 Enon) ;
 SELECT Vmod IF (0 ("caler")) (-1 BOS) ;
 SELECT Vmod IF (0 ("caler")) (-2 BOS) (1 AV) ;
+SELECT Vmod IF (-1 ("coma") OR ("com")) (0 ("caler") + P3 + Sg) ;
 REMOVE (vbmod) IF (NOT 1 VBinf OR AV OR Pro OR Que) ;
 REMOVE (vbmod) IF (1 AV) (NOT 2 VBinf OR AV OR Pro OR Que) ;
 REMOVE (vbmod) IF (1 AV) (1 AV) (NOT 3 VBinf OR AV OR Pro OR Que) ;
