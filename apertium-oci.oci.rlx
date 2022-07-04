@@ -1903,12 +1903,12 @@ REMOVE N (-3 ("per") OR ("tà") OR ("entà") OR ("enta") OR ("ta") OR ("ende")) 
 
 SELECT VBinf IF (-2 ("empachar")) (-1 De) (0 N) ;	# empachar de militar
 SELECT VBinf IF (-2 ("permetre") OR ("perméter")) (-1 De) (0 N) ;
-SELECT VBinf IF (-2 ("defendre") OR ("defénder") OR ("enebir") OR ("interdire") OR ("interdíser") OR ("proïbir")) (-1 De) (0 N) ;	
-SELECT VBinf IF (-2 ("acabar") OR ("fenir") OR ("finir")) (-1 De) (0 N) ;	
+SELECT VBinf IF (-2 ("defendre") OR ("defénder") OR ("enebir") OR ("interdire") OR ("interdíser") OR ("proïbir")) (-1 De) (0 N) ;
+SELECT VBinf IF (-2 ("acabar") OR ("fenir") OR ("finir")) (-1 De) (0 N) ;
 SELECT VBinf IF (-3 ("empachar")) (-2 De) (-1 Pro) (0 N) ;	# empachar de l'anular
 SELECT VBinf IF (-3 ("permetre") OR ("perméter")) (-2 De) (-1 Pro) (0 N) ;
-SELECT VBinf IF (-3 ("defendre") OR ("defénder") OR ("enebir") OR ("interdire") OR ("interdíser") OR ("proïbir")) (-2 De) (-1 Pro) (0 N) ;	
-SELECT VBinf IF (-3 ("acabar") OR ("fenir") OR ("finir")) (-2 De) (-1 Pro) (0 N) ;	
+SELECT VBinf IF (-3 ("defendre") OR ("defénder") OR ("enebir") OR ("interdire") OR ("interdíser") OR ("proïbir")) (-2 De) (-1 Pro) (0 N) ;
+SELECT VBinf IF (-3 ("acabar") OR ("fenir") OR ("finir")) (-2 De) (-1 Pro) (0 N) ;
 
 SELECT N OR PRON OR NP IF (-1C PREP) (NOT -1/* N) (1 EOS OR Rpar) ;	# ambe fòrça. ; a res.
 SELECT N OR PRON OR NP OR VBinf IF (-1C PREP) (NOT -1/* N) (1C PREP) (NOT 0 ("tròp") OR ("pauc") OR ("pòc")) ;	# discors de fin d'annada
@@ -2136,6 +2136,13 @@ REMOVE V + P2 IF (-2C N_AJ + &&AcordSP) (-1 AV OR Enon OR Pro) (0 V + P3 + &&Aco
 REMOVE V + P2 IF (-3C N_AJ + &&AcordSP) (-2 AV OR Enon OR Pro) (-1 AV OR Enon OR Pro) (0 V + P3 + &&AcordSP) (NOT -1*C V + P2) (NOT 1*C V + P2) ;
 REMOVE V + P2 IF (-4C N_AJ + &&AcordSP) (-3 AV OR Enon OR Pro) (-2 AV OR Enon OR Pro) (-1 AV OR Enon OR Pro) (0 V + P3 + &&AcordSP) (NOT -1*C V + P2) (NOT 1*C V + P2) ;
 
+REMOVE N IF (-2C ("començar") OR ("acabar") OR ("finir") OR ("fenir") OR ("terminar")) (-1 ("<de>"i)) (0 VBinf) ;
+REMOVE V IF (0 N LINK NOT 0 VBpp) (1 ("<de>"i)) (2C N + Sg) (NOT 0 Far OR ("parlar") OR ("discutir") OR ("acusar")) (NOT 2 ("faiçon") OR ("façon") OR ("manièira")) (1* Enon) ;	# guida de viatge
+REMOVE V IF (0 N LINK NOT 0 VBpp) (1 ("<de>"i)) (2C N + Sg) (NOT 0 Far OR ("parlar") OR ("discutir") OR ("acusar")) (NOT 2 ("faiçon") OR ("façon") OR ("manièira")) (-1* Enon) ;
+REMOVE V IF (0 ("guida")) (1 ("<de>"i)) (2C N + Sg) (NOT 2 ("faiçon") OR ("façon") OR ("manièira")) ;
+LIST Bevenda = "aiga" "lach" "lèit" "cervesa" "bièrra" "bèra" "vin" "pomat" "cidre" ;
+REMOVE V IF (NOT -2 VVmod) (NOT -1 VVmod) (0 ("veire")) (1 ("<de>"i)) (2C Bevenda + Sg) ;	# en lengadocian pòt èsser lo vèrb, mai es pas probable
+
 # AJ / V
 
 SELECT AJ (0 ("liure")) (1 De) (2 VBinf) ;
@@ -2278,11 +2285,11 @@ REMOVE Tn IF (0 Se) (1 V) (1 P3) ;
 REMOVE Tn IF (0 Se) (1 VBinf) ;
 REMOVE Tn IF (0 Se) (1 Pro) ;
 REMOVE Pro IF (0 ("<o se>"i)) (NOT 1 V + P3) ;
-#SELECT Conjadv IF (-1 ("e")) (0 Se) (1C V + P3) (NOT 1 Ser) (2*C V + Pers) ;	
+#SELECT Conjadv IF (-1 ("e")) (0 Se) (1C V + P3) (NOT 1 Ser) (2*C V + Pers) ;
 #SELECT Conjadv IF (-1 ("e")) (0 Se) (1 Pro) (2 V + P3) (3*C V + Pers) ;
 #SELECT Conjadv IF (-1 ("e")) (0 Se) (1 Pro) (2 Pro) (3 V + P3) (4*C V + Pers) ;
-SELECT Pro IF (0 Se) (1C Pro OR V + P3) (-1 BOS) (1 ("anar")) ;	
-SELECT Pro IF (0 Se) (1C Pro OR V + P3) (-1 BOS) (2 ("anar")) ;	
+SELECT Pro IF (0 Se) (1C Pro OR V + P3) (-1 BOS) (1 ("anar")) ;
+SELECT Pro IF (0 Se) (1C Pro OR V + P3) (-1 BOS) (2 ("anar")) ;
 SELECT Conjadv IF (0 Se) (1C V + P3 LINK 0 VNonPron) (-1 BOS OR Conjadv OR Conjsub OR Rel) (2* V + Pers) ;
 SELECT Conjadv IF (0 Se) (1 Pro) (2C V + P3 LINK 0 VNonPron) (-1 BOS OR Conjadv OR Conjsub OR Rel) (3* V + Pers) ;
 #SELECT Conjadv IF (0 Se) (1C Pro OR V + P3) (-1 BOS) (3* V + Pers) ;
