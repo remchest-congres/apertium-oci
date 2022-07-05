@@ -2142,6 +2142,7 @@ REMOVE V IF (0 N LINK NOT 0 VBpp) (1 ("<de>"i)) (2C N + Sg) (NOT 0 Far OR ("parl
 REMOVE V IF (0 ("guida")) (1 ("<de>"i)) (2C N + Sg) (NOT 2 ("faiçon") OR ("façon") OR ("manièira")) ;
 LIST Bevenda = "aiga" "lach" "lèit" "cervesa" "bièrra" "bèra" "vin" "pomat" "cidre" ;
 REMOVE V IF (NOT -2 VVmod) (NOT -1 VVmod) (0 ("veire")) (1 ("<de>"i)) (2C Bevenda + Sg) ;	# en lengadocian pòt èsser lo vèrb, mai es pas probable
+SELECT V IF (-2 ("<de>"i)) (-1 ("<bon>"i)) (0 ("<veire>"i)) ;
 
 # AJ / V
 
