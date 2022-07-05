@@ -1272,7 +1272,7 @@ REMOVE Rel IF (-1C DET) (0 ("lo que") OR ("lo qui")) ;
 SELECT Rel IF (-1C DET) ;
 
 #Un imperatiu seguis pas una conjonccion, un relatiu o un pronom personal
-REMOVE VBimp IF (-1C Enon OR Conjco OR Conjsub OR Rel OR Pers);
+REMOVE VBimp IF (-1C Enon OR Conjco OR Conjsub OR Rel OR Pers LINK NOT 0 Donc OR ("e donc") OR ("e doncas") OR ("e dongas"));
 
 REMOVE VBimp IF (NOT 1* Excl) ;
 REMOVE VBimp IF (0 P3) ;
