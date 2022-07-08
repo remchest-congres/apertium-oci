@@ -5605,22 +5605,6 @@
 		</p>
 	</e>
 	<e>
-		<par n="quotes_empty"/>
-		<p>
-			<l><a/>detla<b/></l>
-			<r>l'</r>
-		</p>
-		<par n="vocal_general"/>
-	</e>
-	<e>
-		<par n="quotes_empty"/>
-		<p>
-			<l><a/>detlo<b/></l>
-			<r>l'</r>
-		</p>
-		<par n="vocal_general"/>
-	</e>
-	<e>
 		<p>
 			<l><a/>ma<b/></l>
 			<r>mon<b/></r>
@@ -6155,6 +6139,22 @@ L?objet indirect peut être: « li, lor1, me, te, se, nos, vos »-->
 </group>
 <!-- aquests són comuns -->
 			
+	<e>
+		<par n="quotes_empty"/>
+		<p>
+			<l><a/>detla<b/></l>
+			<r>l'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
+	<e>
+		<par n="quotes_empty"/>
+		<p>
+			<l><a/>detlo<b/></l>
+			<r>l'</r>
+		</p>
+		<par n="vocal_general"/>
+	</e>
 	<e>
 		<par n="quotes_empty"/>
 		<p>
