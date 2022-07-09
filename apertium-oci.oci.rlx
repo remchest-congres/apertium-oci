@@ -223,7 +223,7 @@ LIST Seire = "sèire" ;
 LIST Saber = "saber" "sàber" ;
 LIST Vengar = "vengar" ;
 LIST Vener = "véner" "vénder" "vendre";
-LIST Venir = "venir" "vier" ;
+LIST Venir = "venir" "vier" "viéner" "vénguer" ;
 LIST Pareisser = "paréisser" "paréisher" ;
 LIST Parir = "parir" ;
 LIST Parer = "pàrer" ;
@@ -1175,8 +1175,6 @@ REMOVE ("venir") IF (0 ("véner")) (-1 Pro) (NOT -1 ("i") OR ("en")) ;
 # estar vblex ou vbser
 REMOVE Verb IF (0 Ser) (0 ("estar")) ;
 
-
-
 # comprar e compréner/comprene (p.ex. "compren")
 REMOVE P3 + Sg IF (-3 N OR NP) (-2 Conjco) (-1 N OR NP) (0 V + P3 + Sg) (0 V + P3 + Pl) ;	# Marc e Aitana compren
 REMOVE P3 + Sg IF (-4 N) (-3 Conjco) (-2 DET + &&AcordSN) (-1 N + &&AcordSN) (0 V + P3 + Sg) (0 V + P3 + Pl) ;
@@ -1184,6 +1182,16 @@ REMOVE P3 + Sg IF (-5 Ser + Pl) (-4 N OR NP) (-3 Conjco) (-2 N OR NP) (-1 Que) (
 REMOVE P3 + Sg IF (-6 Ser + Pl) (-5 N) (-4 Conjco) (-3 DET + &&AcordSN) (-2 N + &&AcordSN) (-1 Que) (0 V + P3 + Sg) (0 V + P3 + Pl) ;
 REMOVE P3 + Pl IF (-1 N_AJ + Sg OR NP + Sg) (0 V + P3 + Sg) (0 V + P3 + Pl) ;
 REMOVE P3 + Sg IF (-1 N_AJ + Pl OR NP + Pl) (0 V + P3 + Sg) (0 V + P3 + Pl) ;
+
+REMOVE P3 + Sg IF (-4 N OR NP) (-3 Conjco) (-2 N OR NP) (-1 Pro) (0 V + P3 + Sg) (0 V + P3 + Pl) ;	# Marc e Aitana se compren
+REMOVE P3 + Sg IF (-5 N) (-4 Conjco) (-3 DET + &&AcordSN) (-2 N + &&AcordSN) (-1 Pro) (0 V + P3 + Sg) (0 V + P3 + Pl) ;
+REMOVE P3 + Sg IF (-6 Ser + Pl) (-5 N OR NP) (-4 Conjco) (-3 N OR NP) (-2 Que) (-1 Pro) (0 V + P3 + Sg) (0 V + P3 + Pl) ;	# Son Marc e Aitana que se compren
+REMOVE P3 + Sg IF (-7 Ser + Pl) (-6 N) (-5 Conjco) (-4 DET + &&AcordSN) (-3 N + &&AcordSN) (-2 Que) (-1 Pro) (0 V + P3 + Sg) (0 V + P3 + Pl) ;
+REMOVE P3 + Pl IF (-2 N_AJ + Sg OR NP + Sg) (-1 Pro) (0 V + P3 + Sg) (0 V + P3 + Pl) ;
+REMOVE P3 + Sg IF (-2 N_AJ + Pl OR NP + Pl) (-1 Pro) (0 V + P3 + Sg) (0 V + P3 + Pl) ;
+
+# vier e viéner (p.ex. "vien")
+SELECT ("viéner") IF (0 ("vier")) ;
 
 REMOVE NP IF (0 ("Èra")) (-1 BOS OR Lpar) ;
 
@@ -1902,10 +1910,12 @@ REMOVE N (-2 ("per") OR ("tà") OR ("entà") OR ("enta") OR ("ta") OR ("ende")) 
 REMOVE N (-3 ("per") OR ("tà") OR ("entà") OR ("enta") OR ("ta") OR ("ende")) (NOT -3/* DET) (-2 Pro) (-1 Pro) (0 VBinf) ;		# tà lo i díser
 
 SELECT VBinf IF (-2 ("empachar")) (-1 De) (0 N) ;	# empachar de militar
+SELECT VBinf IF (-2 Venir) (-1 De) (0 N) ;
 SELECT VBinf IF (-2 ("permetre") OR ("perméter")) (-1 De) (0 N) ;
 SELECT VBinf IF (-2 ("defendre") OR ("defénder") OR ("enebir") OR ("interdire") OR ("interdíser") OR ("proïbir")) (-1 De) (0 N) ;
 SELECT VBinf IF (-2 ("acabar") OR ("fenir") OR ("finir")) (-1 De) (0 N) ;
 SELECT VBinf IF (-3 ("empachar")) (-2 De) (-1 Pro) (0 N) ;	# empachar de l'anular
+SELECT VBinf IF (-3 Venir) (-2 De) (-1 Pro) (0 N) ;
 SELECT VBinf IF (-3 ("permetre") OR ("perméter")) (-2 De) (-1 Pro) (0 N) ;
 SELECT VBinf IF (-3 ("defendre") OR ("defénder") OR ("enebir") OR ("interdire") OR ("interdíser") OR ("proïbir")) (-2 De) (-1 Pro) (0 N) ;
 SELECT VBinf IF (-3 ("acabar") OR ("fenir") OR ("finir")) (-2 De) (-1 Pro) (0 N) ;
