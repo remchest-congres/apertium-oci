@@ -2148,6 +2148,9 @@ SELECT V IF (-2 ("<de>"i)) (-1 ("<bon>"i)) (0 ("<veire>"i)) ;
 
 SELECT AJ (0 ("liure")) (1 De) (2 VBinf) ;
 SELECT AJ (0 ("liure")) (-1 ("logicial")) ;
+
+SELECT AJ (-1 Nommois OR Jorns) (0 ("passat")) ;
+
 SELECT AJ (-3 N_AJ + &&AcordSN) (-2 AJ + &&AcordSN) (-1 Conjco) (0 AJ + &&AcordSN) ;	# un territòri immens e voide
 SELECT AJ (-4 AJ + &&AcordSN) (-3 CM) (-2 AJ + &&AcordSN) (-1 Conjco) (0 AJ + &&AcordSN) ;	# un territòri desèrt, immense e voide
 SELECT AJ (-4 N_AJ + &&AcordSN) (-3 AJ + &&AcordSN) (-2 Conjco) (-1 AV OR PREAV) (0 AJ + &&AcordSN) ;	# un territòri immense e quasi voide
