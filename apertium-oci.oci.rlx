@@ -2001,6 +2001,9 @@ SELECT AJ + &&AcordSN IF (-2C N + &&AcordSN) (-1 Mai OR Pus) (0 AJ + &&AcordSN) 
 
 SELECT N + &&AcordSN IF (-1C DET + &&AcordSN) (0 AJ) (0 N + &&AcordSN) (1C NP) ;	# la regente Céline Colau
 
+SELECT AJ + &&AcordSN IF (-1 DET + &&AcordSN) (0 AdjPre + &&AcordSN) (1 NUM) (2 N + &&AcordSN) ;	# aquestes darrièrs 10 ans
+SELECT N + &&AcordSN IF (-3 DET + &&AcordSN) (-2 AdjPre + &&AcordSN) (-1 NUM) (0 N + &&AcordSN) ;
+
 SELECT N IF (-1C PREP) (1C EOS OR Rel) ;	# dels politics
 SELECT N OR VBinf IF (-1C PREP) (1C PREP) ;	# de levar d'impòstes
 SELECT N + &&AcordSN IF (-1C DET + &&AcordSN) (1C EOS OR PREP OR Rel) ;	# los politics
