@@ -2508,7 +2508,9 @@ SELECT AV IF (1C V) (0 ("de còps") OR ("a còps")) ;
 REMOVE PREP IF (NOT -1 N_AJ) (0 ("de còps") OR ("a còps")) ;
 
 #punt de vista
-SELECT SUB:1 Nf IF (0 PREP) (-1 ("punt") OR ("ponch")) (0 ("<de vista>"i)) ;
+SELECT SUB:1 Nf IF (-1 ("punt") OR ("ponch")) (0 PREP) (0 ("<de vista>"i)) ;
+SELECT N IF (0 ("punt") OR ("ponch")) (1 ("<de vista>"i)) ;
+SELECT N IF (0 ("punt") OR ("ponch")) (1 De) (2 ("vista") OR ("sortida") OR ("gessuda") OR ("salhida") OR ("arribada")) ;
 
 #mes mois
 REMOVE AV IF (0 ("mes")) (-1 DET) (-1 MascSg) ;
