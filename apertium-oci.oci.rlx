@@ -4,6 +4,7 @@
 #	- an: vbhaver o nom
 #	- se: prn.pro.ref o cnjadv
 #	- es: det (aran) o vbser
+#	- o: cnjcoo o prep
 #	- que: enon, rel, cnjsub
 
 DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>" "<:>";
@@ -1785,6 +1786,15 @@ REMOVE ("pas nat") IF (-2 Ne_enon OR Ne_adv) (-1 V) ;
 REMOVE SUB:1 Tn IF (0 ("pas nat")) (1 N_AJ + MascSg) ;
 SELECT SUB:1 DET + MascSg IF (0 ("<pas nat>"i)) (1 N_AJ + MascSg) ;
 SELECT N_AJ + MascSg IF (-1 ("<pas nat>"i)) (0 N_AJ + MascSg) ;
+
+SELECT Conjco IF (0 ("o")) (1 ("encara")) ;
+SELECT Conjco IF (0 ("o")) (1 ("alara") OR ("alavetz") OR ("lavetz")) ;
+SELECT Conjco IF (-1C VBimp OR PRS) (0 ("o")) ;
+REMOVE Pro IF (0 ("o")) (1 Ser + &&AcordSP) (2 AJ + &&AcordSP) ;
+REMOVE Pro IF (0 ("o")) (1 Semblar_Pareisser + &&AcordSP) (2 AJ + &&AcordSP) ;
+REMOVE Pro IF (0 ("o")) (1 Venir + &&AcordSP) (2 AJ + &&AcordSP) ;
+REMOVE Pro IF (0 ("o")) (1 Devenir + &&AcordSP) (2 AJ + &&AcordSP) ;
+SELECT Pro IF (-1C BOS OR Conjsub OR Conjadv OR Rel OR Itg) (0 ("o")) (1 V + Vconj_non_Imp) (NOT -1* Enon) (NOT 1* Enon) ;
 
 # DET
 
