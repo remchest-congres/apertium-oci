@@ -294,6 +294,8 @@ SET Dignitat = ("papa") OR ("patriarca") OR ("avesque") OR ("arcavesque") OR ("a
 
 SET Lenga = ("occitan") OR ("francés") OR ("anglés") OR ("alemand") OR ("espanhòl") OR ("espanhòu") OR ("italian") OR ("rus") OR ("chinés") OR ("japonés") OR ("catalan") OR ("basc") OR ("basco") OR ("breton") OR ("còrse") OR ("arpitan") OR ("francoprovençal") OR ("alsacian") OR ("flamenc") ;
 
+SET Grade = ("soldat") OR ("caporal") OR ("caporau") OR ("sergent") OR ("lòctenent") OR ("capitani") OR ("capitan") OR ("coronèl") OR ("coronèu") OR ("general") OR ("generau") OR ("amiral") OR ("amirau") OR ("contra-amiral") OR ("contra-amirau") OR ("vice-amiral") OR ("vice-amirau") OR ("majoral") OR ("majorau") ;
+
 SECTION
 
 REMOVE DET IF (0 ("<tant>"));
@@ -1206,6 +1208,11 @@ REMOVE P3 + Sg IF (-2 N_AJ + Pl OR NP + Pl) (-1 Pro) (0 V + P3 + Sg) (0 V + P3 +
 # vier e viéner (p.ex. "vien")
 SELECT ("viéner") IF (0 ("vier")) ;
 
+SELECT N IF (0 ("<Majoral>")) ;
+SELECT N IF (0 ("majoral")) (1 Ant OR Cog OR unknownMajIni) ;
+SELECT N IF (0 ("majoral")) (1 De) (2 ("felibritge")) ;
+SELECT N IF (-1 ("felibre")) (0 ("majoral")) ;
+
 REMOVE NP IF (0 ("Èra")) (-1 BOS OR Lpar) ;
 
 SELECT N IF (-1 DET + &&AcordSN) (0 ("sosten") + &&AcordSN) (1 A) (2 DET) ;	# lor sosten a la lenga
@@ -1537,6 +1544,9 @@ SELECT Ant + Masc_strict IF (0 Ant) (1 DETdef + Sg + Masc) (2 N_AJ + Sg + Masc +
 SELECT Ant + Fem_strict IF (0 Ant) (1 DETdef + Sg + Fem) (2 N_AJ + Sg + Fem + MajIni) ;
 SELECT Ant + Masc_strict IF (0 Ant) (1 DETdef + Sg + Masc) (2 unknownMajIni) ;
 SELECT Ant + Masc_strict IF (0 Ant) (1 siecles_nom_romains OR ("<Ièr>")) ;              # Constance II
+
+SELECT Cog IF (-1 Grade) ;
+SELECT Ant IF (-1 Grade) ;
 
 REMOVE Ant IF (-1 ("banca")) (NOT 1 Cog OR Ant) ;
 
