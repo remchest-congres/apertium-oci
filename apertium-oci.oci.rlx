@@ -66,9 +66,9 @@ LIST Nm = (n m);
 LIST AJm = (adj m);
 LIST Nf = (n f);
 LIST AJf = (adj f);
-LIST Vconj = pri prs pii ifi pis imp fti ifi cni ;
-LIST Vconj_non_Imp = pri prs pii ifi pis fti ifi cni ;
-LIST Vconj_indic = pri pii ifi fti ifi cni ;
+LIST Vconj = pri prs pii ifi pis imp fti cni ;
+LIST Vconj_non_Imp = pri prs pii ifi pis fti cni ;
+LIST Vconj_indic = pri pii ifi fti cni ;
 LIST PRI = pri ;
 LIST PRS = prs ;
 LIST PIS = pis ;
@@ -135,6 +135,62 @@ LIST VPl2 = (vblex p2 pl) (vbser p2 pl) (vbhaver p2 pl) (vbmod p2 pl) ;
 LIST VPl3 = (vblex p3 pl) (vbser p3 pl) (vbhaver p3 pl) (vbmod p3 pl) ;
 
 SET AcordSV = Sg1 OR Sg2 OR Sg3 OR Pl1 OR Pl2 OR Pl3 ;
+
+LIST PriSg1 = (pri p1 sg) ;
+LIST PriSg2 = (pri p2 sg) ;
+LIST PriSg3 = (pri p3 sg) ;
+LIST PriPl1 = (pri p1 pl) ;
+LIST PriPl2 = (pri p2 pl) ;
+LIST PriPl3 = (pri p3 pl) ;
+LIST PiiSg1 = (pii p1 sg) ;
+LIST PiiSg2 = (pii p2 sg) ;
+LIST PiiSg3 = (pii p3 sg) ;
+LIST PiiPl1 = (pii p1 pl) ;
+LIST PiiPl2 = (pii p2 pl) ;
+LIST PiiPl3 = (pii p3 pl) ;
+LIST IfiSg1 = (ifi p1 sg) ;
+LIST IfiSg2 = (ifi p2 sg) ;
+LIST IfiSg3 = (ifi p3 sg) ;
+LIST IfiPl1 = (ifi p1 pl) ;
+LIST IfiPl2 = (ifi p2 pl) ;
+LIST IfiPl3 = (ifi p3 pl) ;
+LIST FtiSg1 = (fti p1 sg) ;
+LIST FtiSg2 = (fti p2 sg) ;
+LIST FtiSg3 = (fti p3 sg) ;
+LIST FtiPl1 = (fti p1 pl) ;
+LIST FtiPl2 = (fti p2 pl) ;
+LIST FtiPl3 = (fti p3 pl) ;
+LIST CniSg1 = (cni p1 sg) ;
+LIST CniSg2 = (cni p2 sg) ;
+LIST CniSg3 = (cni p3 sg) ;
+LIST CniPl1 = (cni p1 pl) ;
+LIST CniPl2 = (cni p2 pl) ;
+LIST CniPl3 = (cni p3 pl) ;
+LIST PrsSg1 = (prs p1 sg) ;
+LIST PrsSg2 = (prs p2 sg) ;
+LIST PrsSg3 = (prs p3 sg) ;
+LIST PrsPl1 = (prs p1 pl) ;
+LIST PrsPl2 = (prs p2 pl) ;
+LIST PrsPl3 = (prs p3 pl) ;
+LIST PisSg1 = (pis p1 sg) ;
+LIST PisSg2 = (pis p2 sg) ;
+LIST PisSg3 = (pis p3 sg) ;
+LIST PisPl1 = (pis p1 pl) ;
+LIST PisPl2 = (pis p2 pl) ;
+LIST PisPl3 = (pis p3 pl) ;
+LIST ImpSg2 = (imp p2 sg) ;
+LIST ImpPl1 = (imp p1 pl) ;
+LIST ImpPl2 = (imp p2 pl) ;
+
+SET AcordTempsPers = PriSg1 OR PriSg2 OR PriSg3 OR PriPl1 OR PriPl2 OR PriPl3
+	OR PiiSg1 OR PiiSg2 OR PiiSg3 OR PiiPl1 OR PiiPl2 OR PiiPl3
+	OR IfiSg1 OR IfiSg2 OR IfiSg3 OR IfiPl1 OR IfiPl2 OR IfiPl3
+	OR FtiSg1 OR FtiSg2 OR FtiSg3 OR FtiPl1 OR FtiPl2 OR FtiPl3
+	OR CniSg1 OR CniSg2 OR CniSg3 OR CniPl1 OR CniPl2 OR CniPl3
+	OR PrsSg1 OR PrsSg2 OR PrsSg3 OR PrsPl1 OR PrsPl2 OR PrsPl3
+	OR PisSg1 OR PisSg2 OR PisSg3 OR PisPl1 OR PisPl2 OR PisPl3
+	OR ImpSg2 OR ImpPl1 OR ImpPl2 ;
+
 
 SET CM = (cm) OR (lpar) OR (rpar) OR ("<;>") ;
 SET CM_strict = (cm) OR (lpar) - ("«") OR (rpar) - ("»") OR ("<;>") ;
@@ -1301,10 +1357,14 @@ REMOVE Rel IF (-1C DET) (0 ("lo que") OR ("lo qui")) ;
 SELECT Rel IF (-1C DET) ;
 
 #Un imperatiu seguis pas una conjonccion, un relatiu o un pronom personal
-REMOVE VBimp IF (-1C Enon OR Conjco OR Conjsub OR Rel OR Pers LINK NOT 0 Donc OR ("e donc") OR ("e doncas") OR ("e dongas"));
+REMOVE VBimp IF (-1C Enon OR Conjsub OR Rel OR Pers LINK NOT 0 Donc OR ("e donc") OR ("e doncas") OR ("e dongas"));
 
 REMOVE VBimp IF (NOT 1* Excl) ;
-REMOVE VBimp IF (0 P3) ;
+
+SELECT V + $$AcordTempsPers IF (0C V) (2C V) (0 V + $$AcordTempsPers) (1 ("e") OR O_cnjcoo OR ("ni")) (2 V + $$AcordTempsPers) ;
+SELECT V + $$AcordTempsPers IF (0C V) (-2C V) (-2 V + $$AcordTempsPers) (-1 ("e") OR O_cnjcoo OR ("ni")) (0 V + $$AcordTempsPers) ;
+
+REMOVE VBimp IF (0 P3) ;	# guess
 
 SELECT N IF (-1 ("<[a-zàáèéíòóú].*>"r)) (0 ("<Estat>") OR ("<Estats>")) ;	# "Estat" (con mayúscula) va precedido de una palabra con minúscula inicial
 SELECT AJ IF (-1C N) (0 Clau) ;
@@ -1627,8 +1687,8 @@ REMOVE V + Pers IF (-2C V + Pers OR VBinf) (-1 AV) (0 A) (0 ("<a .*>"r) + V + Pe
 REMOVE V + Pers IF (-3C V + Pers OR VBinf) (-2 AV) (-1 AV) (0 A) (0 ("<a .*>"r) + V + Pers) ;
 SELECT Haver IF (0 Haver) (NOT 0 ("<a de>"i)) (1C VBpp) ;	# a cantat
 SELECT Haver IF (0 Haver) (NOT 0 ("<a de>"i)) (1 Haver + VBpp) ;	# a cantat
-SELECT Haver IF (0 Haver) (NOT 0 ("<a de>"i)) (1 AV) (2 VBpp) ;	# a pas cantat
-SELECT Haver IF (0 Haver) (NOT 0 ("<a de>"i)) (1 AV) (2 AV) (3 VBpp) ;	# a pas totjorn cantat
+SELECT Haver IF (0 Haver) (NOT 0 ("<a de>"i)) (1 AV OR Donc) (2 VBpp) ;	# a pas cantat
+SELECT Haver IF (0 Haver) (NOT 0 ("<a de>"i)) (1 AV OR Donc) (2 AV OR Donc) (3 VBpp) ;	# a pas totjorn cantat
 REMOVE Haver IF (1C N_AJ OR DET OR NUM OR PREP) ;
 SELECT PREP IF (-1 VBpp OR VBinf) (0 ("<a de>"i)) (1 N_AJ + Pl) ;	# dobèrt a de personas ; pensar a de personas
 SELECT VBpp IF (0 VBpp) (1 ("<a de>"i)) (2C N_AJ_PP + Pl) ;	# dobèrt a de personas
@@ -2059,12 +2119,12 @@ REMOVE N IF (-2 Haver) (-1 ("faser") + VBpp) (0 AJ) (1C EOS OR PREP OR Rel) ;	# 
 SELECT AJ OR AV IF (-1 Vener) (0 ("car")) ;
 REMOVE AJ IF (-1C Verb LINK NOT 0 VBpp) (0 N) (1C EOS OR PREP OR Rel) ;	# demani novèlas de son pair
 REMOVE AJ IF (-2 Haver) (-1C Verb + VBpp) (0 N) (1C EOS OR PREP OR Rel) ;	# an demanat novèlas de son pair
-SELECT N + &&AcordSP IF (-3C PREP) (-2 N + &&AcordSP) (-1 ("e") OR ("o") OR ("ni")) (0C N_AJ_PP) (1C EOS OR Rel) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# dels politics e responsables
-SELECT N + &&AcordSP OR VBinf IF (-3C PREP) (-2 N + &&AcordSP) (-1 ("e") OR ("o") OR ("ni")) (0C N_AJ_PP) (1C PREP) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# dels politics e responsables
-SELECT N + &&AcordSP IF (-3C DET + &&AcordSN) (-2 N + &&AcordSP) (-1 ("e") OR ("o") OR ("ni")) (0C N_AJ_PP) (1C EOS OR PREP OR Rel) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# dels politics e responsables
-SELECT N + &&AcordSP IF (-5C PREP) (-4 N + &&AcordSP) (-3 (",")) (-2 N + &&AcordSP) (-1 ("e") OR ("o") OR ("ni")) (0C N_AJ_PP) (1C EOS OR Rel) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# dels politics e responsables
-SELECT N + &&AcordSP OR VBinf IF (-5C PREP) (-4 N + &&AcordSP) (-3 (",")) (-2 N + &&AcordSP) (-1 ("e") OR ("o") OR ("ni")) (0C N_AJ_PP) (1C PREP) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# dels politics e responsables
-SELECT N + &&AcordSP IF (-5C DET + &&AcordSN) (-4 N + &&AcordSN + &&AcordSP) (-3 (",")) (-2 N + &&AcordSP) (-1 ("e") OR ("o") OR ("ni")) (0C N_AJ_PP) (1C EOS OR PREP OR Rel) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# dels politics e responsables
+SELECT N + &&AcordSP IF (-3C PREP) (-2 N + &&AcordSP) (-1 ("e") OR O_cnjcoo OR ("ni")) (0C N_AJ_PP) (1C EOS OR Rel) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# dels politics e responsables
+SELECT N + &&AcordSP OR VBinf IF (-3C PREP) (-2 N + &&AcordSP) (-1 ("e") OR O_cnjcoo OR ("ni")) (0C N_AJ_PP) (1C PREP) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# dels politics e responsables
+SELECT N + &&AcordSP IF (-3C DET + &&AcordSN) (-2 N + &&AcordSP) (-1 ("e") OR O_cnjcoo OR ("ni")) (0C N_AJ_PP) (1C EOS OR PREP OR Rel) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# dels politics e responsables
+SELECT N + &&AcordSP IF (-5C PREP) (-4 N + &&AcordSP) (-3 (",")) (-2 N + &&AcordSP) (-1 ("e") OR O_cnjcoo OR ("ni")) (0C N_AJ_PP) (1C EOS OR Rel) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# dels politics e responsables
+SELECT N + &&AcordSP OR VBinf IF (-5C PREP) (-4 N + &&AcordSP) (-3 (",")) (-2 N + &&AcordSP) (-1 ("e") OR O_cnjcoo OR ("ni")) (0C N_AJ_PP) (1C PREP) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# dels politics e responsables
+SELECT N + &&AcordSP IF (-5C DET + &&AcordSN) (-4 N + &&AcordSN + &&AcordSP) (-3 (",")) (-2 N + &&AcordSP) (-1 ("e") OR O_cnjcoo OR ("ni")) (0C N_AJ_PP) (1C EOS OR PREP OR Rel) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# dels politics e responsables
 
 REMOVE N OR VBpp (-1 ("trobar") OR ("considerar") OR ("jutjar")) (0 AJ) ;
 REMOVE N OR VBpp (-2 ("trobar") OR ("considerar") OR ("jutjar")) (-1 AV) (0 AJ) ;
@@ -2106,7 +2166,7 @@ SELECT N IF (NOT -1 N) (0C N_AJ_PP) (1 Conjco LINK NOT 0 ("sia")) (2C N) ;	# com
 SELECT N + &&AcordSN IF (-1/* DET + &&AcordSN) (0C N_AJ_PP) (1 Conjco LINK NOT 0 ("sia")) (2 DET) (3C N) ;	# les revues et les opérettes
 SELECT N IF (-2 N) (-1 CM) (0C N_AJ_PP) (1 Conjco OR CM) (2C N) ;	# prêtre, curé, prédicateur
 SELECT N IF (-2C N) (-1 CM) (0C N_AJ_PP) (1 Conjco OR CM) (2 N) ;
-SELECT N IF (-2C N + &&AcordSP) (-1 CM) (0 N + &&AcordSP) (1 ("e") OR ("o") OR ("ni")) (2 N + &&AcordSP) ;	# martèths, estenalhas e alicatas
+SELECT N IF (-2C N + &&AcordSP) (-1 CM) (0 N + &&AcordSP) (1 ("e") OR O_cnjcoo OR ("ni")) (2 N + &&AcordSP) ;	# martèths, estenalhas e alicatas
 SELECT N IF (-2C N) (-1 CM) (0C N_AJ_PP) (1 CM) (2 N) ;	# prêtre, curé, prédicateur
 SELECT N IF (-4C N) (-4 N + &&AcordSP) (-3 CM) (-2C N) (-2 N + &&AcordSP) (-1 CM) (0 N + &&AcordSP) ;
 SELECT AJ + &&AcordSN IF (0 ("grand") + &&AcordSN) (1 Conjco) (2 AJ + &&AcordSN) (NOT 2 AdjPre) ;
@@ -2770,7 +2830,6 @@ REMOVE AV IF (0 preppos) (1 N + MascSg OR AJ + MascSg) ;
 REMOVE AV IF (0 ("a lor") OR ("de lor") OR ("per lor") OR ("tà lor") OR ("entà lor") OR ("de cap tà lor") OR ("de cap a lor") OR ("cap tà lor") OR ("cap a lor")) (1 V OR Pro) ;
 SELECT AV IF (0 ("a lor") OR ("de lor") OR ("per lor") OR ("tà lor") OR ("entà lor") OR ("de cap tà lor") OR ("de cap a lor") OR ("cap tà lor") OR ("cap a lor")) (NOT 1 V OR Pro) ;
 # Fonciona pas ; provisòriament remplaçat per la linha çai-sus REMOVE SUB:1 PREP + PRON IF (0 ("a lor") OR ("de lor") OR ("per lor") OR ("tà lor") OR ("entà lor") OR ("de cap tà lor") OR ("de cap a lor") OR ("cap tà lor") OR ("cap a lor")) (NOT 1 V OR Pro) ;
-
 
 REMOVE IJ IF (0 ("qu'es aquò") OR ("qu'ei aquò")) (1 ("que") OR ("qui")) ;
 REMOVE IJ IF (0 ("qu'es aquò") OR ("qu'ei aquò")) (NOT 1* ("?")) ;
