@@ -1347,6 +1347,7 @@ SELECT Pro IF (-2C PREP) (-1 Pro) (1 VBinf OR VBger) ;
 #Una conjonccion o un pronom relatiu se podon pas trobar en debuta de frasa
 #REMOVE Conjco IF (-1 BOS OR SENT);		# en realitat, òc
 REMOVE Conjco IF (1 EOS);
+REMOVE Conjco IF (-1C Conjco) (0 Conjco) ;		# e o nos ensenhèt
 SELECT Conjco IF (-1 BOS OR SENT) (0 ("<E>")) (NOT 1 CM) (NOT 1* ("?")) ;
 SELECT Conjco IF (-1 BOS OR SENT) (0 ("<E>")) (NOT 1 CM OR Pro OR V + Pers) ;
 REMOVE Conjsub IF (-1 BOS OR SENT);
@@ -1355,6 +1356,15 @@ REMOVE Rel IF (NOT -1 CM OR ("»") OR N OR NP OR AJ OR VBpp OR PRON OR DET);
 REMOVE Rel IF (NOT -2 N OR AJ OR VBpp OR PRON OR DET) (-1 CM OR ("»")) ;
 REMOVE Rel IF (-1C DET) (0 ("lo que") OR ("lo qui")) ;
 SELECT Rel IF (-1C DET) ;
+
+SELECT Conjco IF (-1C V LINK NOT 0 VBpp) (0 ("<o nos>"i) OR ("<o vos>"i)) ;
+SELECT Conjco IF (-2C V LINK NOT 0 VBpp) (-1 AV) (0 ("<o nos>"i) OR ("<o vos>"i)) ;
+SELECT Conjco IF (-2 VBaux) (-1 VBpp) (0 ("<o nos>"i) OR ("<o vos>"i)) ;
+SELECT Conjco IF (-3 VBaux) (-2 AV) (-1 VBpp) (0 ("<o nos>"i) OR ("<o vos>"i)) ;
+SELECT Conjco IF (-3 VBaux) (-2 VBpp) (-1 AV) (0 ("<o nos>"i) OR ("<o vos>"i)) ;
+SELECT Conjco IF (-4 VBaux) (-3 AV) (-2 VBpp) (-1 AV) (0 ("<o nos>"i) OR ("<o vos>"i)) ;
+SELECT Conjco IF (-4 VBaux) (-3 AV) (-2 AV) (-1 VBpp) (0 ("<o nos>"i) OR ("<o vos>"i)) ;
+REMOVE Conjco IF (0 ("<o nos>"i) OR ("<o vos>"i)) ;
 
 #Un imperatiu seguis pas una conjonccion, un relatiu o un pronom personal
 REMOVE VBimp IF (-1C Enon OR Conjsub OR Rel OR Pers LINK NOT 0 Donc OR ("e donc") OR ("e doncas") OR ("e dongas"));
