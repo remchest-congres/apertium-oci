@@ -558,6 +558,7 @@ REMOVE AV IF (-1C PREP) (0 Cap) (1C EOS OR CM OR Conjsub OR Conjadv OR Conjco) ;
 
 REMOVE DET IF (0 ("hèra")) ;
 SELECT AV IF (0 ("hèra") OR ("plan") OR ("brin")) (1 Mai OR Pus OR Mens OR Melhor) ;
+SELECT AV IF (0 Mens) (1 De) ;
 SELECT PREAV IF (-1 Ser + &&AcordSP OR Ser + VBinf OR Ser + VBger OR Ser + VBpp) (0 ("hèra")) (1 AJ + &&AcordSP OR VBpp + &&AcordSP) ;
 SELECT PREAV IF (-2 Ser + &&AcordSP OR Ser + VBinf OR Ser + VBger OR Ser + VBpp) (-1 AV OR Tn) (0 ("hèra")) (1 AJ + &&AcordSP OR VBpp + &&AcordSP) ;	# estón tots hèra urós
 SELECT PREAV IF (-3 Ser + &&AcordSP OR Ser + VBinf OR Ser + VBger OR Ser + VBpp) (-2 AV OR Tn) (-1 AV OR Tn) (0 ("hèra")) (1 AJ + &&AcordSP OR VBpp + &&AcordSP) ;
@@ -669,19 +670,31 @@ REMOVE V IF (0 ("<ve>"i)) (1 Pro) (2 Pro) (3 V);
 REMOVE V IF (0 ("<ve>"i)) (-1 Pro) (-2 V);
 REMOVE V IF (0 ("<ve>"i)) (-1 Pro) (-2 Pro) (-3 V);
 
-SELECT PREP (0 ("a")) (1C Pro) ;	# a lo parlar
-SELECT PREP (0 ("a")) (1C Top OR Ant OR Cog OR Al) ;	# a Niça
-REMOVE PREP (0 ("a")) (-1C Rel OR Conjsub) ;
-SELECT PREP (-1 ("quant")) (0 ("a")) (1 DET + Pl_strict) ;
-SELECT PREP (0 ("quant a")) (1 DET + Pl_strict) ;
-REMOVE PREP (0 ("a")) (-1C Itg LINK NOT 0 ("quant")) ;
+SELECT PREP IF (0 ("a")) (1C Pro) ;	# a lo parlar
+SELECT PREP IF (0 ("a")) (1C Top OR Ant OR Cog OR Al) ;	# a Niça
+REMOVE PREP IF (0 ("a")) (-1C Rel OR Conjsub) ;
+SELECT PREP IF (-1 ("quant")) (0 ("a")) (1 DET + Pl_strict) ;
+SELECT PREP IF (0 ("quant a")) (1 DET + Pl_strict) ;
+REMOVE PREP IF (0 ("a")) (-1C Itg LINK NOT 0 ("quant")) ;
 
-SELECT PREP (-2 De) (-1 NUM OR ("un")) (0 ("a")) (1 NUM) ;
-SELECT NUM (-1 De) (0 ("un")) (1 ("a")) (2 NUM) ;
-SELECT PREP (-3 De) (-2 NUM OR ("un")) (-1 N_AJ) (0 ("a")) (1 NUM) ;
-SELECT PREP (-4 De) (-3 NUM OR ("un")) (-2 N_AJ + &&AcordSN) (-1 N_AJ + &&AcordSN) (0 ("a")) (1 NUM) ;
+SELECT PREP IF (-2 De) (-1 NUM OR ("un")) (0 ("a")) (1 NUM) ;
+SELECT NUM IF (-1 De) (0 ("un")) (1 ("a")) (2 NUM) ;
+SELECT PREP IF (-3 De) (-2 NUM OR ("un")) (-1 N_AJ) (0 ("a")) (1 NUM) ;
+SELECT PREP IF (-4 De) (-3 NUM OR ("un")) (-2 N_AJ + &&AcordSN) (-1 N_AJ + &&AcordSN) (0 ("a")) (1 NUM) ;
 
-SELECT SUB:1 AV (-2 ("mai")) (-1 AJ OR VBpp) (0 ("e mai")) ;
+SELECT SUB:1 N IF (-1 Nommois) (0 ("e mai")) ;
+SELECT SUB:1 N IF (-2 Nommois) (-1 NUM) (0 ("e mai")) ;
+REMOVE SUB:1 N IF (0 ("e mai")) ;
+SELECT SUB:1 AV IF (0 ("e mai")) (1 EOS OR Rpar) ;
+SELECT SUB:1 AV IF (-2 ("mai")) (-1 AJ OR VBpp) (0 ("e mai")) ;
+SELECT SUB:1 AV IF (0 ("e mai")) (1C AJ OR VBpp) ;
+SELECT SUB:1 AV IF (-1 AJ) (0 ("e mai")) (1 AJ OR VBpp) ;
+SELECT SUB:1 AV IF (0 ("e mai")) (1 ("jamai")) ;
+SELECT Conjco IF (0 ("e mai")) (1 De) (2 N OR NUM) (-1* ("mai") OR ("<mai de>"i) OR ("<en mai de>"i) OR ("mens")) ;
+SELECT SUB:1 AV IF (0 ("e mai")) (1 De) (2 N OR NUM) (-1* ("mai") OR ("<mai de>"i) OR ("<en mai de>"i) OR ("mens")) ;
+SELECT Conjco IF (0 ("e mai")) (1 De) (2 AJ + &&AcordSN) (3 N + &&AcordSN) (-1* ("mai") OR ("<mai de>"i) OR ("<en mai de>"i) OR ("mens")) ;
+SELECT SUB:1 AV IF (0 ("e mai")) (1 De) (2 AJ + &&AcordSN) (3 N + &&AcordSN) (-1* ("mai") OR ("<mai de>"i) OR ("<en mai de>"i) OR ("mens")) ;
+REMOVE SUB:1 AV IF (0 ("e mai")) ;
 
 SELECT DET + &&AcordSN IF (0 Quin + &&AcordSN + &&AcordSP) (1 N + &&AcordSN) (2 V + P3 + &&AcordSP) ;
 SELECT DET + &&AcordSN IF (0 Quin + &&AcordSN + &&AcordSP) (1 N_AJ + &&AcordSN) (2 N_AJ + &&AcordSN OR AV OR E_enon OR Pro) (3 V + P3 + &&AcordSP) ;
