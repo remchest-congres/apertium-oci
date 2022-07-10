@@ -561,12 +561,12 @@ SELECT PRON IF (NOT -1/* DET OR CM) (0 Cap_de) (1 DET) ;
 SELECT PRON IF (NOT -1/* DET OR CM) (0 ("<cap del>"i) OR ("<cap dels>"i)) ;
 SELECT PRON IF (-1 EOS OR Conjsub OR Conjadv) (0 Cap) ;
 SELECT PRON IF (-2 EOS OR Conjsub) (-1 AV OR Conjadv) (0 Cap) ;
-SELECT PRON IF (-1 Pas) (0 Cap) ;	# ai pas cap
-SELECT PRON IF (-2 Pas) (-1 VBpp) (0 Cap) ;	# ai agut pas cap
-SELECT PRON IF (-3 Pas) (-2 AV) (-1 VBpp) (0 Cap) ;	# ai agut pas totjorn cap
-SELECT PRON IF (-3 Vmod) (-2 Pas) (-1 VBinf) (0 Cap) ;	# vòli pas manjar cap
-SELECT PRON IF (-4 Vmod) (-3 Pas) (-2 AV OR Pro) (-1 VBinf) (0 Cap) ;	# vòli pas ne manjar cap
-SELECT PRON IF (-5 Vmod) (-4 Pas) (-3 AV OR Pro) (-2 AV OR Pro) (-1 VBinf) (0 Cap) ;	# vòli pas li'n dire cap
+SELECT PRON IF (-1 Pas) (0 Cap OR ("ren")) ;	# ai pas cap
+SELECT PRON IF (-2 Pas) (-1 VBpp) (0 Cap OR ("ren")) ;	# ai agut pas cap
+SELECT PRON IF (-3 Pas) (-2 AV) (-1 VBpp) (0 Cap OR ("ren")) ;	# ai agut pas totjorn cap
+SELECT PRON IF (-3 Vmod) (-2 Pas) (-1 VBinf) (0 Cap OR ("ren")) ;	# vòli pas manjar cap
+SELECT PRON IF (-4 Vmod) (-3 Pas) (-2 AV OR Pro) (-1 VBinf) (0 Cap OR ("ren")) ;	# vòli pas ne manjar cap
+SELECT PRON IF (-5 Vmod) (-4 Pas) (-3 AV OR Pro) (-2 AV OR Pro) (-1 VBinf) (0 Cap OR ("ren")) ;	# vòli pas li'n dire cap
 SELECT N IF (0 Cap) (1 NP OR unknownMajIni) ;	# cap Canaveral
 SELECT N + (m) IF (0 Cap) (1 NP OR unknownMajIni) ;	# cap Canaveral
 SELECT N + (m) IF (0 Cap) (1 ("alt")) ;
