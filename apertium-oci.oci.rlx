@@ -1302,6 +1302,10 @@ SELECT AJ IF (0 ("bon")) (1 ("fabulós")) ;	# valoracions Jornalet
 
 SELECT AV IF (-1 BOS OR CM) (0 ("solide")) (1 CM) ;	# guess
 
+SELECT ("mau") + N IF (-2 Pro + Pers) (-2/* ("en")) (-1 ("saber") OR ("sàber") OR ("assaber") OR ("assàber")) (0 ("<mau>"i)) ;
+SELECT ("mau") + N IF (-3 Pro + Pers) (-3/* ("en")) (-2 ("saber") OR ("sàber") OR ("assaber") OR ("assàber")) (-1 AV) (0 ("<mau>"i)) ;
+SELECT ("mau") + N IF (-4 Pro + Pers) (-4/* ("en")) (-3 ("saber") OR ("sàber") OR ("assaber") OR ("assàber")) (-2 AV) (-1 AV) (0 ("<mau>"i)) ;
+
 #En es pas un pronom s'es abans un gerondiu (amb possibilitat de pronoms entre los dos)
 REMOVE ("en") IF (0 ("<ne>"i)) ;
 SELECT Ne_pron IF (-1C PREP) (1 VBinf) ;
