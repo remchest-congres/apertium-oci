@@ -1976,6 +1976,14 @@ SELECT PREAV IF (-2 Ser + &&AcordSP) (-1 AV) (0 AV OR ("mal")) (1 VBpp + &&Acord
 SELECT PREAV IF (-1 Ser + VBinfger OR ("mal")) (0 AV) (1 VBpp) ;
 SELECT PREAV IF (-2 Ser + VBinfger) (-1 AV) (0 AV OR ("mal")) (1 VBpp) ;
 
+# CNJADV / ADV
+
+SELECT NP OR N IF (NOT -1 BOS) (0 ("<Puèi>")) ;
+SELECT Conjadv IF (0 ("puèi") OR ("puish") LINK NOT 0 ("<puish que>"i)) (1C V + Pers) ;
+SELECT Conjadv IF (0 ("puèi") OR ("puish") LINK NOT 0 ("<puish que>"i)) (1 AV OR Pro) (2C V + Pers) ;
+SELECT Conjadv IF (0 ("puèi") OR ("puish") LINK NOT 0 ("<puish que>"i)) (1 AV OR Pro) (2 AV OR Pro) (3C V + Pers) ;
+SELECT Conjadv IF (0 ("puèi") OR ("puish") LINK NOT 0 ("<puish que>"i)) (1 AV OR Pro) (2 AV OR Pro) (3 AV OR Pro) (4C V + Pers) ;
+
 # ADJ
 
 REMOVE AJ IF (-1 ("en")) (NOT 1 Conjco OR N OR NP) ;
