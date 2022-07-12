@@ -1869,6 +1869,10 @@ REMOVE Pro IF (0 ("o")) (1 Semblar_Pareisser + &&AcordSP) (2 AJ + &&AcordSP) ;
 REMOVE Pro IF (0 ("o")) (1 Venir + &&AcordSP) (2 AJ + &&AcordSP) ;
 REMOVE Pro IF (0 ("o")) (1 Devenir + &&AcordSP) (2 AJ + &&AcordSP) ;
 SELECT Pro IF (-1C BOS OR Conjsub OR Conjadv OR Rel OR Itg) (0 ("o")) (1 V + Vconj_non_Imp) (NOT -1* Enon) (NOT 1* Enon) ;
+SELECT Pro IF (-1 N_AJ + Sg LINK NOT 0 V + P3 + Sg) (0 ("o")) (1C V + P3 + Sg) (NOT -1* Enon) (NOT 1* Enon) ;	# lo president o refusèt
+SELECT Pro IF (-1 N_AJ + Pl LINK NOT 0 V + P3 + Pl) (0 ("o")) (1C V + P3 + Pl) (NOT -1* Enon) (NOT 1* Enon) ;
+SELECT Pro IF (-1 NP + Sg LINK NOT 0 V + P3 + Sg) (0 ("o")) (1C V + P3 + Sg) (NOT -1* Enon) (NOT 1* Enon) ;	# lo president de la Generalitat o refusèt
+SELECT Pro IF (-1 NP + Pl LINK NOT 0 V + P3 + Pl) (0 ("o")) (1C V + P3 + Pl) (NOT -1* Enon) (NOT 1* Enon) ;
 
 # DET
 
