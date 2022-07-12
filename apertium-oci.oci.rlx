@@ -1884,6 +1884,12 @@ SELECT DET IF (-1 ("son")) (0 ("lei")) (1C N + Pl_strict) ;
 SELECT DET IF (-2 ("son")) (-1 AV) (0 ("lei")) (1C N + Pl_strict) ;
 REMOVE DET IF (-2 DET + &&AcordSN) (-1 AJ + &&AcordSN) (0 ("lei") + &&AcordSN) ;
 SELECT N IF (-1 De) (0 ("lei")) (NOT 1C N + Pl_strict) ;	# patch
+REMOVE Pl_strict IF (0 ("<son>"i)) (NOT 1 Pl) (1 N_AJ + Sg) (NOT 1 AV OR DET OR VBpp OR PREP) ;	# son entrevista ; son ara un contrapoder ; se son fait
+REMOVE Sg_strict IF (0 ("<son>"i)) (NOT 1 Sg) (1 N_AJ + Pl) ;
+REMOVE DET IF (0 ("<son>"i)) (1 AV) (2C DET) ;	# son ara un contrapoder
+REMOVE DET IF (0 ("<son>"i)) (1C AV OR ("pas")) (2 AV) (3C DET) ;
+REMOVE DET IF (0 ("<son>"i)) (1 AV) (2C AV) (3C DET) ;
+REMOVE V + Pers IF (-1 ("<son>"i)) ;
 
 REMOVE Pro IF (-1C PREP) (0 DET) (NOT 1 VBinf OR VBger OR Pro OR unknown) ;
 
@@ -2420,6 +2426,8 @@ REMOVE AV IF (0 Si) (1C V) ;
 SELECT P3 IF (-1C Se + PRON) (NOT 0 Pro) (0 V) ;		# se canti
 SELECT P3 IF (-2C Se + PRON) (-1 Pro) (NOT 0 Pro) (0 V) ;	# se li canti
 SELECT P3 IF (-3C Se + PRON) (-2 Pro) (-1 Pro) (NOT 0 Pro) (0 V + P3) ;	# se li o canti
+SELECT VBpp IF (-2C Se + PRON) (-1C Ser) (1 VBinf) ;		# se son fait significar ("fait" sic)
+SELECT VBpp IF (-3C Se + PRON) (-2C Ser) (-1 AV) (1 VBinf) ;	# se son pas fait significar ("fait" sic)
 SELECT Conjadv IF (0 Se) (1 Pro) (2 ("plaire") OR ("plàser")) ;
 SELECT Conjadv IF (0 Se) (0/* Pro) (1 ("plaire") OR ("plàser")) ;	# se'vs platz
 REMOVE Tn IF (0 Se) (1 V) (1 P3) ;
