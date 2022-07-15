@@ -253,6 +253,7 @@ LIST Donc = "donc" "doncas" "dongas" "pasmes" "totun" "çaquelà" "ça que la" "
 LIST Res = "res" "arren" "arrens" "ren" ;
 LIST Pel = "pel" "peu" ;
 LIST Deu = "deu" ;
+LIST ACausaDe = "a causa de" "en causa de" "pr'amor de" "per'mor de";
 LIST Que = "que" ("<que>"i) ;
 LIST Qui = "qui" ;
 LIST Quin = "quin" ;
@@ -794,6 +795,10 @@ REMOVE Conjsub IF (-1C N_AJ) (0 Que) (NOT -1* V + Pers LINK -1 Ne_enon) (NOT -1*
 SELECT AV IF (0 AdvComp) (1 AJ OR VBpp OR AV) (2 Que) ;	# mei leugèr que jo
 SELECT Rel IF (-2 ("<n'i>"i) OR ("<n’i>"i)) (-1 ("aver") OR ("auer")) (0 Que) ;
 SELECT Rel IF (-3 ("<n'i>"i) OR ("<n’i>"i)) (-2 ("aver") OR ("auer")) (-1 DET OR N OR AJ OR NUM) (0 Que) ;
+
+SELECT Conjsub (-3 Ser + P3 + Sg) (-2 ACausaDe OR ("per")) (-1 ("aquò")) (0 Que) (NOT 1* Que) ;
+SELECT Conjsub (-4 Ser + P3 + Sg) (-3 AV) (-2 ACausaDe OR ("per")) (-1 ("aquò")) (0 Que) (NOT 1* Que) ;
+SELECT Conjsub (-5 Ser + P3 + Sg) (-4 AV) (-3 AV) (-2 ACausaDe OR ("per")) (-1 ("aquò")) (0 Que) (NOT 1* Que) ;
 
 REMOVE Vmod IF (0 ("aver# de") OR ("auer# de")) (NOT 1 VBinf OR Pro) ;
 REMOVE Vmod IF (0 ("aver# de") OR ("auer# de")) (1 Pro) (NOT 2 VBinf OR Pro) ;
