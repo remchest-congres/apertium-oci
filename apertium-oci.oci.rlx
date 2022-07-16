@@ -4,8 +4,11 @@
 #	- an: vbhaver o nom
 #	- se: prn.pro.ref o cnjadv
 #	- es: det (aran) o vbser
-#	- o: cnjcoo o prep
+#	- o: cnjcoo o prn.pro
 #	- que: enon, rel, cnjsub
+#	- e: cnjcoo o enon
+#	- ne: cnjcoo o prn.pro
+#	- n': adv o prn.pro
 
 DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>" "<:>";
 SOFT-DELIMITERS = "<,>" "<;>";
