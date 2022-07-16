@@ -6,8 +6,8 @@
 #	- es: det (aran) o vbser
 #	- o: cnjcoo o prn.pro
 #	- que: enon, rel, cnjsub
-#	- e: cnjcoo o enon
-#	- ne: cnjcoo o prn.pro
+#	- ne: enon, cnjcoo, prn.pro
+#	- e: enon o cnjcoo 
 #	- n': adv o prn.pro
 
 DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>" "<:>";
@@ -1139,6 +1139,8 @@ REMOVE Venir IF (0 Vener) (1 AV) (2 ("car")) ;
 REMOVE Venir IF (0 Vener) (1 AV) (2 ("bon")) (3 ("mercat") OR ("pretz")) ;
 REMOVE Venir IF (0 Vener) (1 AV) (2 AV) (3 ("car")) ;
 REMOVE Venir IF (0 Vener) (1 AV) (2 AV) (3 ("bon")) (4 ("mercat") OR ("pretz")) ;
+REMOVE Venir IF (0 Vener) (1C N LINK NOT 0 Jorns) ;
+REMOVE Venir IF (0 Vener) (1 AV) (2C N LINK NOT 0 Jorns) ;
 
 # paréisser/paréisher e parir (p. ex. "pareish")
 REMOVE Parir IF (0 Pareisser) ;
