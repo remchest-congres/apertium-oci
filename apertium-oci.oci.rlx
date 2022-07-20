@@ -2801,6 +2801,21 @@ REMOVE ("hèr") + (vblex) IF (0 ("har") + (vblex)) ;
 
 SELECT VBpp IF (-1 ("còp")) (-2 ("un")) ;
 
+
+# N + SG OR N + PL (gascon subretot)
+
+SELECT Pl_strict IF (-1 ("<i a>"i)) (0C N) (0 N + Sg_strict) (NOT 1 AJ_PP + Sg_strict) (NOT 2 AJ_PP + Sg_strict) ;	# i a votz
+SELECT Pl_strict IF (-2 ("<i a>"i)) (-1 AV) (0C N) (0 N + Sg_strict) (NOT 1 AJ_PP + Sg_strict) (NOT 2 AJ_PP + Sg_strict) ;
+SELECT Pl_strict IF (-3 ("<i a>"i)) (-2 AV) (1 AV) (0C N) (0 N + Sg_strict) (NOT 1 AJ_PP + Sg_strict) (NOT 2 AJ_PP + Sg_strict) ;
+SELECT Pl_strict IF (-2 ("i")) (-1 Aver) (0C N) (0 N + Sg_strict) (NOT 1 AJ_PP + Sg_strict) (NOT 2 AJ_PP + Sg_strict) ;	# i a votz
+SELECT Pl_strict IF (-3 ("i")) (-2 Aver) (-1 AV) (0C N) (0 N + Sg_strict) (NOT 1 AJ_PP + Sg_strict) (NOT 2 AJ_PP + Sg_strict) ;
+SELECT Pl_strict IF (-4 ("i")) (-3 Aver) (-2 AV) (1 AV) (0C N) (0 N + Sg_strict) (NOT 1 AJ_PP + Sg_strict) (NOT 2 AJ_PP + Sg_strict) ;
+
+SELECT Pl_strict IF (-1C BOS OR Conjsub OR Conjadv OR Rel OR Que) (0C N) (0 N + Sg_strict) (1C V LINK NOT 0 VBpp) (1 V + P3 + Pl) ;	# cors començan
+SELECT Pl_strict IF (-2C BOS OR Conjsub OR Conjadv OR Rel OR Que) (-1 AV) (0C N) (0 N + Sg_strict) (1C V LINK NOT 0 VBpp) (1 V + P3 + Pl) ;
+
+
+
 #de completar : desambiguizacion present imperfait
 #Ne fonctionne pas SELECT PRI IF (0 PRI) (0 PII) (NOT 1* PII BARRIER FinFr) (NOT 1* IFI BARRIER FinFr) (NOT -1* PII BARRIER FinFr) (NOT -1* IFI BARRIER FinFr) ;
 
