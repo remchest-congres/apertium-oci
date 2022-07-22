@@ -681,6 +681,14 @@ SELECT Conjsub IF (-5 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP OR Deveni
 SELECT PREAV IF (-3 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP OR Devenir + &&AcordSP) (-2 AV) (-1 AV) (0 ("tant") OR ("autant")) (1 AJ + &&AcordSP + &&AcordSN OR VBpp + &&AcordSP + &&AcordSN) (2 N + &&AcordSN) (3 Que) ;
 SELECT Conjsub IF (-6 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP OR Devenir + &&AcordSP) (-5 AV) (-4 AV) (-3 ("tant") OR ("autant")) (-2 AJ + &&AcordSP + &&AcordSN OR VBpp + &&AcordSP + &&AcordSN) (-1 N + &&AcordSN) (0 Que) ;
 
+SELECT Conjsub IF (-3 ("non")) (-2 Ser) (-1 Pas) (0 Que) ;
+SELECT Conjsub IF (-2 ("non")) (-1 Ser) (0 Que) ;
+SELECT Conjsub IF (-3 ("non")) (-2 Ser) (-1 Pas) (0 Que) ;
+SELECT Conjsub IF (-2 ("non")) (-1 Ser) (0 Que) ;
+REMOVE V + Pers IF (-4 ("non")) (-3 Ser + &&AcordSP) (-2 Pas) (-1 Que) (0 N + &&AcordSP) ;
+REMOVE V + Pers IF (-3 ("non")) (-2 Ser + &&AcordSP) (-1 Que) (0 N + &&AcordSP) ;
+
+
 SELECT AV (-1C V) (0 Melhor) ;		# parlar melhor
 SELECT AV (-2C V) (-1 AV) (0 Melhor) ;
 SELECT AV (-2 Haver) (-1 VBpp) (0 Melhor) ;	# a parlat melhor
@@ -943,6 +951,13 @@ REMOVE ("que") + Enon IF (-5 Ser + Vconj_non_Imp + Pl) (-4 AV) (-2 AV) (-1 N + P
 REMOVE ("que") + Enon IF (-3 Ser + Vconj_non_Imp + Pl) (-2 De) (-1 N + Pl) ;
 REMOVE ("que") + Enon IF (-4 Ser + Vconj_non_Imp + Pl) (-3 AV) (-2 De) (-1 N + Pl) ;
 REMOVE ("que") + Enon IF (-5 Ser + Vconj_non_Imp + Pl) (-4 AV) (-3 AV) (-2 De) (-1 N + Pl) ;
+
+SELECT Conjsub IF (-3 ("non")) (-2 V) (-1 Pas) (0 Que) (1C N OR VBinf) ;	# non fas que minjar
+SELECT Conjsub IF (-2 ("non")) (-1 V) (0 Que) (1C N OR VBinf) ;
+SELECT Conjsub IF (-4 ("non")) (-3 Haver) (-2 VBpp) (-1 Pas) (0 Que) (1C N OR VBinf) ;	# non as fèit que minjar
+SELECT Conjsub IF (-3 ("non")) (-2 Haver) (-1 VBpp) (0 Que) (1C N OR VBinf) ;
+SELECT Conjsub IF (-4 ("non")) (-3 Vmod) (-2 VBinf) (-1 Pas) (0 Que) (1C N OR VBinf) ;	# non vòls far que minjar
+SELECT Conjsub IF (-3 ("non")) (-2 Vmod) (-1 VBinf) (0 Que) (1C N OR VBinf) ;
 
 SELECT Conjsub IF (-1 Mai) (0 ("que")) (NOT -2 DET OR BOS) ;
 REMOVE N_AJ IF (0 Mai) (1 ("que")) (NOT -1 DET) ;
