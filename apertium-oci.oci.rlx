@@ -269,7 +269,7 @@ LIST Mas_cnjcoo = ("mas" cnjcoo) ("mes" cnjcoo) ("mès" cnjcoo) ("mai" cnjcoo) ;
 LIST O_cnjcoo = ("o" cnjcoo) ("ò" cnjcoo) ;
 LIST Semblar_Pareisser = "semblar" "paréisser" "paréisher" ;
 LIST Devenir = "devenir" "venir" "vàder" "vénguer" "viéner" "vier" ;
-LIST Demandar = "demandar" "demanar" "interrogar" "questionar" "qüestionar" "saber" "sàber" ;
+LIST Demandar = "demandar" "demanar" "interrogar" "questionar" "qüestionar" "saber" "sàber" "estudiar" "cercar" "investigar" ;
 LIST VNonPron = "demorar" "abitar" "trabalhar" "tribalhar" "manjar" "beure" "béver" ;	# vèrbs non pronominals
 LIST Far = "far" "har" "hèr" ;
 LIST Estat = "estat" ;
@@ -1068,10 +1068,10 @@ SELECT Excl OR IJ IF (-1 BOS) (0C Itg OR Excl OR IJ OR Rel OR Conjsub OR Conjadv
 SELECT Excl OR IJ IF (-2 BOS) (-1 PREP) (0C Itg OR Excl OR IJ OR Rel OR Conjsub OR Conjadv) (1* ("!")) ;
 SELECT Excl OR IJ IF (-2 BOS) (-1 Conjco) (0C Itg OR Excl OR IJ OR Rel OR Conjsub OR Conjadv) (1* ("!")) ;
 SELECT Excl OR IJ IF (-3 BOS) (-1 Conjco) (-1 PREP) (0C Itg OR Excl OR IJ OR Rel OR Conjsub OR Conjadv) (1* ("!")) ;
-SELECT Itg IF (-1C Demandar LINK NOT 0 VBpp) (0C Itg OR Excl OR IJ OR Rel OR ("coma")) ;	# je me demande qui
-SELECT Itg IF (-2C Demandar LINK NOT 0 VBpp) (-1 PREP) (0C Itg OR Excl OR IJ OR Rel OR ("coma")) ;	# je demande avec qui
-SELECT Itg IF (-2C Demandar LINK NOT 0 VBpp) (-1 AV) (0C Itg OR Excl OR IJ OR Rel OR ("coma")) ;	# je ne demande pas qui
-SELECT Itg IF (-3C Demandar LINK NOT 0 VBpp) (-2 AV) (-1 PREP) (0C Itg OR Excl OR IJ OR Rel OR ("coma")) ;	# je ne demande pas avec qui
+SELECT Itg IF (-1C Demandar LINK NOT 0 VBpp) (0C Itg OR Excl OR IJ OR Rel OR ("coma") OR ("com")) ;	# je me demande qui
+SELECT Itg IF (-2C Demandar LINK NOT 0 VBpp) (-1 PREP) (0C Itg OR Excl OR IJ OR Rel) ;	# je demande avec qui
+SELECT Itg IF (-2C Demandar LINK NOT 0 VBpp) (-1 AV) (0C Itg OR Excl OR IJ OR Rel OR ("coma") OR ("com")) ;	# je ne demande pas qui
+SELECT Itg IF (-3C Demandar LINK NOT 0 VBpp) (-2 AV) (-1 PREP) (0C Itg OR Excl OR IJ OR Rel) ;	# je ne demande pas avec qui
 REMOVE AV + Excl ;
 REMOVE AV + Itg ;
 
