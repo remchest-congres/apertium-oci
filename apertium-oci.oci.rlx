@@ -621,6 +621,7 @@ REMOVE AV IF (-1C PREP) (0 Cap) (1C EOS OR CM OR Conjsub OR Conjadv OR Conjco) ;
 
 REMOVE DET IF (0 ("hèra")) ;
 SELECT AV IF (0 ("hèra") OR ("plan") OR ("brin")) (1 Mai OR Pus OR Mens OR Melhor) ;
+REMOVE DET IF (-2 DETdef + &&AcordSN) (-1 Mai OR Pus OR Mens) (0 AJ + &&AcordSN) (1 N + &&AcordSN) ;	# la mès bèra avenguda
 SELECT AV IF (0 Mens) (1 De) ;
 SELECT PREAV IF (-1 Ser + &&AcordSP OR Ser + VBinf OR Ser + VBger OR Ser + VBpp) (0 ("hèra")) (1 AJ + &&AcordSP OR VBpp + &&AcordSP) ;
 SELECT PREAV IF (-2 Ser + &&AcordSP OR Ser + VBinf OR Ser + VBger OR Ser + VBpp) (-1 AV OR Tn) (0 ("hèra")) (1 AJ + &&AcordSP OR VBpp + &&AcordSP) ;	# estón tots hèra urós
