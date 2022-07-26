@@ -1483,6 +1483,7 @@ REMOVE ("en") IF (0 ("en mai de")) ;
 
 SELECT N IF (0 ("<mes>"i)) (1 De) (2 Nommois) ;
 SELECT N IF (0 ("<president>"i)) (1 De) ;
+SELECT N IF (-1/* DET + MascSg) (0 ("<president>"i)) ;
 REMOVE N IF (0 ("<arriban>"i)) (1 ("<a>"i)) ;
 REMOVE N IF (-1C N_AJ OR NP) (0 ("<arriban>"i)) ;
 REMOVE N IF (-1 N_AJ + Pl) (0 ("<arriban>"i)) ;
@@ -1680,6 +1681,7 @@ SELECT (top) IF (0 ("Libia")) (NOT 1 (ant) OR (cog)) (NOT -1 (ant) OR (cog)) ;
 SELECT (top) IF (0 ("Siria")) (NOT 1 (ant) OR (cog)) (NOT -1 (ant) OR (cog)) ;
 SELECT (top) IF (0 ("Asia")) (NOT 1 (ant) OR (cog)) (NOT -1 (ant) OR (cog)) ;
 SELECT (top) IF (0 ("Limós")) ;
+SELECT Ant IF (0 ("Laura")) (-1 BOS) ;
 
 SELECT Ant IF (-1 ("dieu") OR ("divessa")) ;
 
@@ -1771,10 +1773,46 @@ SELECT Aver IF (-1/* Haver) (0 Aver + VBpp) ;	# a agut ; i a agut
 SELECT Aver IF (-2/* Haver) (-1 AV) (0 Aver + VBpp) ;	# a pas agut ; i a pas agut
 SELECT Aver IF (-3/* Haver) (-2 AV) (-1 AV) (0 Aver + VBpp) ;	# a pas totjorn agut ; i a pas totjorn agut
 SELECT Haver IF (0 Haver) (1 ("fait")) ;	# a fait
-SELECT Haver IF (0 A) (1 VBpp) ;	# a conegut
-SELECT Haver IF (0 A) (1 ("pas")) (2 VBpp) ;	# a pas conegut
-SELECT Haver IF (0 A) (1C AV) (2 VBpp) ;	# a totjorn conegut
-SELECT Haver IF (0 A) (1 ("pas")) (2 AV) (3 VBpp) ;	# a pas totjorn conegut
+
+SELECT PREP IF (-1C Verb) (0 ("<a>"i)) (1 N OR DET) ;	# consacrat a reviradas
+SELECT PREP IF (-1C Verb) (0 ("<a>"i)) (1 De) ;	# consacrat a de reviradas
+SELECT PREP IF (-1C Verb) (0 ("<a>"i)) (1 VBinf) ;
+SELECT PREP IF (-1C Verb) (0 ("<a>"i)) (1 AV OR Pro) (2 VBinf) ;
+SELECT PREP IF (-1C Verb) (0 ("<a>"i)) (1 AV OR Pro) (2 AV OR Pro) (3 VBinf) ;
+SELECT PREP IF (-2 N OR Verb) (-1 VBpp) (0 ("<a>"i)) (1 N OR DET) ;	# fut prise à partie
+SELECT PREP IF (-2 N OR Verb) (-1 VBpp) (0 ("<a>"i)) (1 De) ;
+SELECT PREP IF (-2 N OR Verb) (-1 VBpp) (0 ("<a>"i)) (1 VBinf) ;
+SELECT PREP IF (-2 N OR Verb) (-1 VBpp) (0 ("<a>"i)) (1 AV OR Pro) (2 VBinf) ;
+SELECT PREP IF (-2 N OR Verb) (-1 VBpp) (0 ("<a>"i)) (1 AV OR Pro) (2 AV OR Pro) (3 VBinf) ;
+SELECT PREP IF (-2 Verb) (-2 AV) (-1 VBpp) (0 ("<a>"i)) (1 N OR DET) ;	# fut pas prise à partie
+SELECT PREP IF (-3 Verb) (-2 AV) (-1 VBpp) (0 ("<a>"i)) (1 De) ;
+SELECT PREP IF (-3 N OR Verb) (-2 AV) (-1 VBpp) (0 ("<a>"i)) (1 VBinf) ;
+SELECT PREP IF (-3 N OR Verb) (-2 AV) (-1 VBpp) (0 ("<a>"i)) (1 AV OR Pro) (2 VBinf) ;
+SELECT PREP IF (-3 N OR Verb) (-2 AV) (-1 VBpp) (0 ("<a>"i)) (1 AV OR Pro) (2 AV OR Pro) (3 VBinf) ;
+SELECT PREP IF (-2 Verb) (-1 ("pas")) (0 ("<a>"i)) (1 N OR DET) ;	# se consacra pas a reviradas
+SELECT PREP IF (-2 Verb) (-1 ("pas")) (0 ("<a>"i)) (1 De) ;	# se consacra pas a de reviradas
+
+SELECT PREP IF (0 ("<a>"i)) (1C VBinf) ;
+SELECT PREP IF (0 ("<a>"i)) (1 AV OR Pro) (2C VBinf) ;
+SELECT PREP IF (0 ("<a>"i)) (1 AV OR Pro) (2 AV OR Pro) (3C VBinf) ;
+
+SELECT PREP IF (-1 Verb) (0 ("<ara>"i)) (1C N_AJ + FemSg) ;	# estacats ara tèrra
+SELECT PREP IF (-1C Verb) (0 ("<au darrèr>"i)) (1 N_AJ + FemSg) ;
+SELECT PREP IF (-1C Verb) (0 ("<a lor>"i)) (1 N_AJ + FemSg) ;
+SELECT PREP IF (-2 Verb) (-1 AV) (0 ("<au darrèr>"i)) (1 N_AJ + FemSg) ;
+SELECT PREP IF (-2 Verb) (-1 AV) (0 ("<a lor>"i)) (1 N_AJ + FemSg) ;
+SELECT PREP IF (-2 N OR Verb) (-1 VBpp) (0 ("<au darrèr>"i)) (1 N_AJ + FemSg) ;
+SELECT PREP IF (-2 N OR Verb) (-1 VBpp) (0 ("<a lor>"i)) (1 N_AJ + FemSg) ;
+SELECT PREP IF (-3 N OR Verb) (-2 AV) (-1 VBpp) (0 ("<au darrèr>"i)) (1 N_AJ + FemSg) ;
+SELECT PREP IF (-3 N OR Verb) (-2 AV) (-1 VBpp) (0 ("<a lor>"i)) (1 N_AJ + FemSg) ;
+REMOVE AV (0 ("<au darrèr>"i)) (1C N_AJ + MascSg) ;
+REMOVE AV (0 ("<a lor>"i)) (1C N_AJ + Sg) ;
+
+SELECT PREP IF (-1C Verb) (0 ("<a>"i)) (1 De) ;	# consacrat a de reviradas
+SELECT Haver IF (0 ("<a>"i)) (1 VBpp) ;	# a conegut
+SELECT Haver IF (0 ("<a>"i)) (1 ("pas")) (2 VBpp) ;	# a pas conegut
+SELECT Haver IF (0 ("<a>"i)) (1C AV) (2 VBpp) ;	# a totjorn conegut
+SELECT Haver IF (0 ("<a>"i)) (1 ("pas")) (2 AV) (3 VBpp) ;	# a pas totjorn conegut
 
 # Ser
 
