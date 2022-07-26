@@ -1771,6 +1771,10 @@ SELECT Aver IF (-1/* Haver) (0 Aver + VBpp) ;	# a agut ; i a agut
 SELECT Aver IF (-2/* Haver) (-1 AV) (0 Aver + VBpp) ;	# a pas agut ; i a pas agut
 SELECT Aver IF (-3/* Haver) (-2 AV) (-1 AV) (0 Aver + VBpp) ;	# a pas totjorn agut ; i a pas totjorn agut
 SELECT Haver IF (0 Haver) (1 ("fait")) ;	# a fait
+SELECT Haver IF (0 A) (1 VBpp) ;	# a conegut
+SELECT Haver IF (0 A) (1 ("pas")) (2 VBpp) ;	# a pas conegut
+SELECT Haver IF (0 A) (1C AV) (2 VBpp) ;	# a totjorn conegut
+SELECT Haver IF (0 A) (1 ("pas")) (2 AV) (3 VBpp) ;	# a pas totjorn conegut
 
 # Ser
 
