@@ -1482,6 +1482,7 @@ REMOVE PREP IF (0 ("en mai")) ;
 REMOVE ("en") IF (0 ("en mai de")) ;
 
 SELECT N IF (0 ("<mes>"i)) (1 De) (2 Nommois) ;
+SELECT N IF (0 ("<president>"i)) (1 De) ;
 
 SELECT N IF (-1/* DET + MascSg) (0 ("<plan de>"i)) ;
 REMOVE N IF (NOT -1/* DET + MascSg OR BOS) (0 ("<plan de>"i)) ;
