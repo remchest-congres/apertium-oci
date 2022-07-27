@@ -381,6 +381,7 @@ REMOVE N IF (0 ("<e>"i)) ;		# patch
 REMOVE N IF (0 ("<o>"i)) ;		# patch
 REMOVE N IF (NOT -1/* DET) (0 ("<res>"i)) ;		# patch
 REMOVE N IF (NOT -1/* DET) (0 ("<tròp>"i)) ;		# patch
+REMOVE DET IF (0 ("<tròp>"i)) ;		# patch
 REMOVE N IF (0 ("<la>"i)) ;		# patch
 REMOVE N IF (0 ("<las>"i)) ;		# patch
 SELECT DET IF (0 ("<las>"i)) (1C N_AJ + FemPl) ;		# patch
@@ -412,6 +413,8 @@ SELECT Ser + &&AcordSP IF (-1 ("<se>"i)) (0 Ser + &&AcordSP) (1 AV) (2 AV) (3 VB
 SELECT VBpp + &&AcordSP IF (-4 ("<se>"i)) (-3 Ser + &&AcordSP) (-2 AV) (-1 AV) (0 VBpp + &&AcordSP) ;		# patch
 SELECT PRON IF (0 ("<se>"i)) (1 VBger) (-1 ("<en>")) ;		# patch
 SELECT V IF (0 ("<son>"i)) (1 ("<pas>"i)) ;		# patch
+SELECT V IF (0 ("<son>"i)) (1 ("<solide>"i)) (2 ("<pas>"i)) ;		# patch
+SELECT V IF (0 ("<son>"i)) (1C AV OR PREAV) (2 ("<pas>"i)) ;		# patch
 SELECT N IF (-1 DET + MascSg) (0 ("<pas>"i)) ;		# un pas # patch
 SELECT DET + MascSg IF (0 DET + MascSg) (1 ("<pas>"i)) ;		# un pas # patch
 SELECT N IF (-2 DET + MascSg) (-1 AJ + MascSg) (0 ("<pas>"i)) ;		# un important pas # patch
@@ -1488,6 +1491,37 @@ REMOVE N IF (0 ("<arriban>"i)) (1 ("<a>"i)) ;
 REMOVE N IF (-1C N_AJ OR NP) (0 ("<arriban>"i)) ;
 REMOVE N IF (-1 N_AJ + Pl) (0 ("<arriban>"i)) ;
 
+SELECT AV IF (0 ("mas")) (1 AJ OR AV) (2 ("e") OR ("o")) (3 ("mas")) (4 AJ OR AV) ;
+SELECT AV IF (0 ("mes")) (1 AJ OR AV) (2 ("e") OR ("o")) (3 ("mes")) (4 AJ OR AV) ;
+SELECT AV IF (0 ("mès")) (1 AJ OR AV) (2 ("e") OR ("o")) (3 ("mès")) (4 AJ OR AV) ;
+SELECT AV IF (0 ("mai")) (1 AJ OR AV) (2 ("e") OR ("o")) (3 ("mai")) (4 AJ OR AV) ;
+SELECT AV IF (0 ("mai")) (1 AJ OR AV) (2 ("<e mai>"i)) (3 AJ OR AV) ;
+SELECT AV IF (-3 ("mas")) (-2 AJ OR AV) (-1 ("e") OR ("o")) (0 ("mas")) (1 AJ OR AV) ;
+SELECT AV IF (-3 ("mes")) (-2 AJ OR AV) (-1 ("e") OR ("o")) (0 ("mes")) (1 AJ OR AV) ;
+SELECT AV IF (-3 ("mès")) (-2 AJ OR AV) (-1 ("e") OR ("o")) (0 ("mès")) (1 AJ OR AV) ;
+SELECT AV IF (-3 ("mai")) (-2 AJ OR AV) (-1 ("e") OR ("o")) (0 ("mai")) (1 AJ OR AV) ;
+SELECT Conjco IF (-2 ("mai")) (-1 AJ OR AV) (0 ("<e mai>"i)) (1 AJ OR AV) ;
+SELECT AV IF (-1 ("mas") OR ("mes") OR ("mès") OR ("mai")) (0 AV) (1 ("e") OR ("o")) (2 ("mas") OR ("mes") OR ("mès") OR ("mai")) (3C AV) ;
+SELECT AJ + &&AcordSN IF (-1 ("mas") OR ("mes") OR ("mès") OR ("mai")) (0 AJ + &&AcordSN) (1 ("e") OR ("o")) (2 ("mas") OR ("mes") OR ("mès") OR ("mai")) (3C AJ) (3 AJ + &&AcordSN) ;
+SELECT AV IF (-4 ("mas") OR ("mes") OR ("mès") OR ("mai")) (-3C AV) (-2 ("e") OR ("o")) (-1 ("mas") OR ("mes") OR ("mès") OR ("mai")) (0 AV) ;
+SELECT AJ + &&AcordSN IF (-4 ("mas") OR ("mes") OR ("mès") OR ("mai")) (-3C AJ) (-3 AJ + &&AcordSN) (-2 ("e") OR ("o")) (-1 ("mas") OR ("mes") OR ("mès") OR ("mai")) (0 AJ + &&AcordSN) ;
+SELECT AV IF (-1 ("mai")) (0 AV) (1 ("<e mai>"i)) (2C AV) ;
+SELECT AJ + &&AcordSN IF (-1 ("mai")) (0 AJ) (1 ("<e mai>"i)) (2C AJ) (2 AJ + &&AcordSN) ;
+SELECT AV IF (-3 ("mai")) (-2C AV) (-1 ("<e mai>"i)) (0 AV) ;
+SELECT AJ + &&AcordSN IF (-3 ("mai")) (-2C AJ) (-2 AJ + &&AcordSN) (-1 ("<e mai>"i)) (0 AJ + &&AcordSN) ;
+SELECT SUB:1 AV IF (-2 ("mai")) (-1 AJ OR AV) (0 ("<e mai>"i)) (1 AJ OR AV) ;
+SELECT AV IF (0 ("mas")) (1 ("e")) (2 ("mas")) (3 AJ OR AV) ;
+SELECT AV IF (0 ("mes")) (1 ("e")) (2 ("mes")) (3 AJ OR AV) ;
+SELECT AV IF (0 ("mès")) (1 ("e")) (2 ("mès")) (3 AJ OR AV) ;
+SELECT AV IF (0 ("mai")) (1 ("e")) (2 ("mai")) (3 AJ OR AV) ;
+SELECT AV IF (0 ("mai")) (1 ("<e mai>"i)) (2 AJ OR AV) ;
+SELECT AV IF (-2 ("mas")) (-1 ("e")) (0 ("mas")) (1 AJ OR AV) ;
+SELECT AV IF (-2 ("mes")) (-1 ("e")) (0 ("mes")) (1 AJ OR AV) ;
+SELECT AV IF (-2 ("mès")) (-1 ("e")) (0 ("mès")) (1 AJ OR AV) ;
+SELECT AV IF (-2 ("mai")) (-1 ("e")) (0 ("mai")) (1 AJ OR AV) ;
+SELECT Conjco IF (-1 ("mai")) (0 ("<e mai>"i)) (1 AJ OR AV) ;
+SELECT SUB:1 AV IF (-1 ("mai")) (0 ("<e mai>"i)) (1 AJ OR AV) ;
+
 SELECT N IF (-1/* DET + MascSg) (0 ("<plan de>"i)) ;
 REMOVE N IF (NOT -1/* DET + MascSg OR BOS) (0 ("<plan de>"i)) ;
 REMOVE DET IF (0 ("<plan de>"i)) (NOT 1 N_AJ + Pl) ;
@@ -1813,6 +1847,50 @@ SELECT Haver IF (0 ("<a>"i)) (1 VBpp) ;	# a conegut
 SELECT Haver IF (0 ("<a>"i)) (1 ("pas")) (2 VBpp) ;	# a pas conegut
 SELECT Haver IF (0 ("<a>"i)) (1C AV) (2 VBpp) ;	# a totjorn conegut
 SELECT Haver IF (0 ("<a>"i)) (1 ("pas")) (2 AV) (3 VBpp) ;	# a pas totjorn conegut
+
+LIST LongDe = "<long de>"i "<long d'>"i "<long d’>"i ;
+SELECT AJ IF (-1 Ser LINK NOT 0 Pl) (0 LongDe) ;
+SELECT AJ IF (-2 Ser LINK NOT 0 Pl) (-1 AV) (0 LongDe) ;
+SELECT AJ IF (-1C PREAV OR ("fòrça") OR ("hèra") OR ("plan")) (0 LongDe) ;
+REMOVE AJ IF (0 LongDe) ;
+REMOVE AV IF (0 LongDe) ;
+
+LIST LuenhDe = "<luènh de>"i "<luènh d'>"i "<luènh d’>"i ;
+SELECT AV IF (-1 Ser) (0 LuenhDe) ;
+SELECT AV IF (-2 Ser) (-1 AV OR Donc) (0 LuenhDe) ;
+SELECT AV IF (-3 Ser) (-2 AV OR Donc) (-1 AV OR Donc) (0 LuenhDe) ;
+SELECT AV IF (-1C PREAV OR ("fòrça") OR ("hèra") OR ("plan") OR ("ben")) (0 LuenhDe) ;
+REMOVE AJ IF (0 LuenhDe) ;
+REMOVE AV IF (0 LuenhDe) ;
+
+LIST LuonhDe = "<luònh de>"i "<luònh d'>"i "<luònh d’>"i ;
+SELECT AV IF (-1 Ser) (0 LuonhDe) ;
+SELECT AV IF (-2 Ser) (-1 AV OR Donc) (0 LuonhDe) ;
+SELECT AV IF (-3 Ser) (-2 AV OR Donc) (-1 AV OR Donc) (0 LuonhDe) ;
+SELECT AV IF (-1C PREAV OR ("fòrça") OR ("hèra") OR ("plan") OR ("ben")) (0 LuonhDe) ;
+REMOVE AJ IF (0 LuonhDe) ;
+REMOVE AV IF (0 LuonhDe) ;
+
+LIST Luenh = "<luènh>"i "<luenh>"i "<luònh>"i;
+SELECT AV IF (-1 Ser) (0 Luenh) (1 De) ;
+SELECT AV IF (-2 Ser) (-1 AV OR Donc) (0 Luenh) (1 De) ;
+SELECT AV IF (-3 Ser) (-2 AV OR Donc) (-1 AV OR Donc) (0 Luenh) (1 De) ;
+SELECT AV IF (-1C PREAV OR ("fòrça") OR ("hèra") OR ("plan") OR ("ben")) (0 Luenh) (1 De) ;
+SELECT AV IF (-1 ("<de>"i)) (0 Luenh) ;
+SELECT AV IF (-1 ("<e de>"i)) (0 Luenh) ;
+SELECT AV IF (-2 ("<de>"i)) (-1C AV OR PREAV OR ("fòrça") OR ("hèra") OR ("plan") OR ("ben")) (0 Luenh) ;
+SELECT AV IF (-2 ("<e de>"i)) (-1C AV OR PREAV OR ("fòrça") OR ("hèra") OR ("plan") OR ("ben")) (0 Luenh) ;
+SELECT AV IF (-1 ("<son>"i)) (0 Luenh) ;
+SELECT AV IF (-2 ("<son>"i)) (-1 AV OR ("pas")) (0 Luenh) ;
+
+SELECT AJ IF (-1/* DET + MascSg) (0 ("<bèth tròç>"i)) ;
+SELECT PREAV IF (0 ("<bèth tròç>"i)) (1C AJ OR AV OR ("luenh") OR ("luènh")) ;	# bèth tròç luènh
+REMOVE AJ IF (0 ("<bèth tròç>"i)) ;
+REMOVE PREAV IF (0 ("<bèth tròç>"i)) ;
+
+SELECT SUB:1 PREAV IF (0 ("<de bèth tròç>"i)) (1C AJ OR AV OR ("luenh") OR ("luènh")) ;	# de bèth tròç luenh enlà
+REMOVE SUB:1 PREAV IF (0 ("<de bèth tròç>"i)) ;
+REMOVE SUB:1 AV IF (0 ("<de bèth tròç>"i)) ;
 
 # Ser
 
@@ -2414,6 +2492,13 @@ SELECT AV IF (-1 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP OR Devenir + &
 #REMOVE AV IF (NOT -2 Pro + AV OR Tn OR Conjco) (-1 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP OR Devenir + &&AcordSP) (0 AJ + &&AcordSP) (NOT 1 N_AJ_PP + &&AcordSP OR DET OR PREP OR AV) ;
 #REMOVE AV IF (NOT -3 Pro + AV OR Tn OR Conjco) (-2 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP OR Devenir + &&AcordSP) (-1 AV OR PREAV) (0 AJ + &&AcordSP) (NOT 1 N_AJ_PP + &&AcordSP OR DET OR PREP OR AV) ;
 SELECT AJ IF (-1 Ser + &&AcordSP OR Semblar_Pareisser + &&AcordSP OR Devenir + &&AcordSP) (0 ("probable") + &&AcordSP) ;
+
+REMOVE AJ + Sg IF (-1C Ser + Pl OR Semblar_Pareisser + Pl OR Devenir + Pl) (0 AV) (NOT 1 N + Masc) ;	# son bon signe
+REMOVE AJ + Pl IF (-1C Ser + Sg OR Semblar_Pareisser + Sg OR Devenir + Sg) (0 AV) ;
+REMOVE AJ + Sg IF (-2C Ser + Pl OR Semblar_Pareisser + Pl OR Devenir + Pl) (-1C ("pas") OR AV) (0 AV) (NOT 1 N + Masc) ;	# son pas bon signe
+REMOVE AJ + Pl IF (-2C Ser + Sg OR Semblar_Pareisser + Sg OR Devenir + Sg) (-1C ("pas") OR AV) (0 AV) ;
+REMOVE AJ IF (-1C V LINK NOT 0 VBpp OR Ser OR Semblar_Pareisser OR Devenir) (0 AV) (NOT 1 N) ;
+REMOVE AJ IF (-2C V LINK NOT 0 VBpp OR Ser OR Semblar_Pareisser OR Devenir) (-1C AV OR PREAV OR ("fòrça") OR ("hèra") OR ("plan") OR ("ben")) (0 AV) (NOT 1 N) ;
 
 # PR / AV
 
