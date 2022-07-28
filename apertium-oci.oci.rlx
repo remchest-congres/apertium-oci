@@ -9,6 +9,8 @@
 #	- ne: enon, cnjcoo, prn.pro
 #	- e: enon o cnjcoo 
 #	- n': adv o prn.pro
+#	- cap: n.m, n.mf, det, prn, adv, pr, vblex (!)
+#	- mai: n, cnjcoo, adv
 
 DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>" "<:>";
 SOFT-DELIMITERS = "<,>" "<;>";
@@ -778,19 +780,19 @@ SELECT NUM IF (-1 De) (0 ("un")) (1 ("a")) (2 NUM) ;
 SELECT PREP IF (-3 De) (-2 NUM OR ("un")) (-1 N_AJ) (0 ("a")) (1 NUM) ;
 SELECT PREP IF (-4 De) (-3 NUM OR ("un")) (-2 N_AJ + &&AcordSN) (-1 N_AJ + &&AcordSN) (0 ("a")) (1 NUM) ;
 
-SELECT SUB:1 N IF (-1 Nommois) (0 ("e mai")) ;
-SELECT SUB:1 N IF (-2 Nommois) (-1 NUM) (0 ("e mai")) ;
-REMOVE SUB:1 N IF (0 ("e mai")) ;
-SELECT SUB:1 AV IF (0 ("e mai")) (1 EOS OR Rpar) ;
-SELECT SUB:1 AV IF (-2 ("mai")) (-1 AJ OR VBpp) (0 ("e mai")) ;
-SELECT SUB:1 AV IF (0 ("e mai")) (1C AJ OR VBpp) ;
-SELECT SUB:1 AV IF (-1 AJ) (0 ("e mai")) (1 AJ OR VBpp) ;
-SELECT SUB:1 AV IF (0 ("e mai")) (1 ("jamai")) ;
-SELECT Conjco IF (0 ("e mai")) (1 De) (2 N OR NUM) (-1* ("mai") OR ("<mai de>"i) OR ("<en mai de>"i) OR ("mens")) ;
-SELECT SUB:1 AV IF (0 ("e mai")) (1 De) (2 N OR NUM) (-1* ("mai") OR ("<mai de>"i) OR ("<en mai de>"i) OR ("mens")) ;
-SELECT Conjco IF (0 ("e mai")) (1 De) (2 AJ + &&AcordSN) (3 N + &&AcordSN) (-1* ("mai") OR ("<mai de>"i) OR ("<en mai de>"i) OR ("mens")) ;
-SELECT SUB:1 AV IF (0 ("e mai")) (1 De) (2 AJ + &&AcordSN) (3 N + &&AcordSN) (-1* ("mai") OR ("<mai de>"i) OR ("<en mai de>"i) OR ("mens")) ;
-REMOVE SUB:1 AV IF (0 ("e mai")) ;
+SELECT SUB:1 N IF (-1 Nommois) (0 ("<e mai>"i)) ;
+SELECT SUB:1 N IF (-2 Nommois) (-1 NUM) (0 ("<e mai>"i)) ;
+REMOVE SUB:1 N IF (0 ("<e mai>"i)) ;
+SELECT SUB:1 AV IF (0 ("<e mai>"i)) (1 EOS OR Rpar) ;
+SELECT SUB:1 AV IF (-2 ("mai")) (-1 AJ OR VBpp) (0 ("<e mai>"i)) ;
+SELECT SUB:1 AV IF (0 ("<e mai>"i)) (1C AJ OR VBpp) ;
+SELECT SUB:1 AV IF (-1 AJ) (0 ("<e mai>"i)) (1 AJ OR VBpp) ;
+SELECT SUB:1 AV IF (0 ("<e mai>"i)) (1 ("jamai")) ;
+SELECT Conjco IF (0 ("<e mai>"i)) (1 De) (2 N OR NUM) (-1* ("mai") OR ("<mai de>"i) OR ("<en mai de>"i) OR ("mens")) ;
+SELECT SUB:1 AV IF (0 ("<e mai>"i)) (1 De) (2 N OR NUM) (-1* ("mai") OR ("<mai de>"i) OR ("<en mai de>"i) OR ("mens")) ;
+SELECT Conjco IF (0 ("<e mai>"i)) (1 De) (2 AJ + &&AcordSN) (3 N + &&AcordSN) (-1* ("mai") OR ("<mai de>"i) OR ("<en mai de>"i) OR ("mens")) ;
+SELECT SUB:1 AV IF (0 ("<e mai>"i)) (1 De) (2 AJ + &&AcordSN) (3 N + &&AcordSN) (-1* ("mai") OR ("<mai de>"i) OR ("<en mai de>"i) OR ("mens")) ;
+REMOVE SUB:1 AV IF (0 ("<e mai>"i)) ;
 
 SELECT DET + &&AcordSN IF (0 Quin + &&AcordSN + &&AcordSP) (1 N + &&AcordSN) (2 V + P3 + &&AcordSP) ;
 SELECT DET + &&AcordSN IF (0 Quin + &&AcordSN + &&AcordSP) (1 N_AJ + &&AcordSN) (2 N_AJ + &&AcordSN OR AV OR E_enon OR Pro) (3 V + P3 + &&AcordSP) ;
@@ -1497,6 +1499,8 @@ SELECT N IF (0 ("<mai>"i)) (-1 ("<de>"i)) (1 ("<a>"i)) (2 Nommois) ; #de mai a j
 SELECT N IF (-3 ("<de>"i)) (-2 Nommois) (-1 ("<a>"i)) (0 ("<mai>"i)) ; #d'abril a mai
 SELECT N IF (0 ("<mai>"i)) (-1 ("<entre>"i)) (1 ("<e>"i)) (2 Nommois) ; #entre mai e junh
 SELECT N IF (-3 ("<entre>"i)) (-2 Nommois) (-1 ("<e>"i)) (0 ("<mai>"i)) ; #entre abril a mai
+SELECT N IF (0 ("<mai>"i)) (1 ("<e>"i) OR ("<o>"i)) (2 Nommois) ; # mai e junh
+SELECT N IF (-2 Nommois) (-1 ("<e>"i) OR ("<o>"i)) (0 ("<mai>"i)) ; # abril a mai
 REMOVE PREP IF (0 ("de mai")) ;
 REMOVE PREP IF (0 ("en mai")) ;
 REMOVE ("en") IF (0 ("en mai de")) ;
