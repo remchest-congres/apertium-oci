@@ -1739,6 +1739,7 @@ SELECT (top) IF (0 ("Siria")) (NOT 1 (ant) OR (cog)) (NOT -1 (ant) OR (cog)) ;
 SELECT (top) IF (0 ("Asia")) (NOT 1 (ant) OR (cog)) (NOT -1 (ant) OR (cog)) ;
 SELECT (top) IF (0 ("Limós")) ;
 SELECT Ant IF (0 ("Laura")) (-1 BOS) ;
+SELECT Al IF (0 ("Nadau")) (-1 ("grop")) ;
 
 SELECT Ant IF (-1 ("dieu") OR ("divessa")) ;
 
