@@ -2339,7 +2339,7 @@ SELECT N + &&AcordSN IF (-2 DET + &&AcordSN) (-1C NUM OR ("tres")) (-1 NUM + &&A
 SELECT AJ + &&AcordSN IF (-2 DET + &&AcordSN) (-1C NUM OR ("tres")) (0 AdjPre + &&AcordSN) (1 N + &&AcordSN) ;	# las 2 primièras annadas
 SELECT N + &&AcordSN IF (-2 DET + &&AcordSN) (-1C NUM OR ("tres")) (0 N + &&AcordSN) ;
 
-SELECT AJ + &&AcordSN IF (-2 DET + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
+SELECT AJ + &&AcordSN IF (-2 DET + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0/* PREP OR VBger) ;
 SELECT AJ + &&AcordSN IF (-2/* DET + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
 SELECT AJ + &&AcordSN IF (-2 NUM + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
 
