@@ -204,6 +204,7 @@ LIST Rpar = rpar ;
 LIST Excl = "!" ;
 
 SET Cnj_Rel_End = BOS OR Conjco OR Conjsub OR Conjadv OR Rel OR VBinf ;
+SET SN_End = EOS OR PREP OR Conjsub OR Conjadv OR Rel OR V ;
 
 
 LIST unknown = ("\\*.*"r) ;
@@ -620,11 +621,17 @@ SELECT N + (mf) IF (NOT -1 BOS) (0 ("cap")) (1 De) (2 DET) (3 AJ) (4 Estat OR ("
 SELECT SUB:1 N + (mf) IF (0 ("<de cap>"i)) (1 De) (3 AJ) (4 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("partit") OR ("sindicat") OR ("oposicion") OR ("union") OR ("sindicat") OR ("politica") OR ("entrepresa") OR ("enterpresa") OR (".*ista"r) OR (".*isme"r)) ;
 SELECT SUB:1 N + (mf) IF (0 ("<de cap>"i)) (1 De) (2 DET) (3 AJ) (4 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("partit") OR ("sindicat") OR ("oposicion") OR ("union") OR ("sindicat") OR ("politica") OR ("entrepresa") OR ("enterpresa") OR (".*ista"r) OR (".*isme"r)) ;
 SELECT N + (m) IF (0 ("cap")) (1 De) (2 Bestiar OR Animal_non_bestiar OR Enfant) ;
-SELECT N + (m) IF (0 ("cap")) (1 De) (2 DET) (3 Bestiar OR Animal_non_bestiar OR Enfant) ;
+SELECT N + (m) IF (0 ("cap")) (1 De) (2 DET OR NUM OR AJ) (3 Bestiar OR Animal_non_bestiar OR Enfant) ;
+SELECT N + (m) IF (0 ("cap")) (1 De) (2 DET OR NUM) (3 AJ) (4 Bestiar OR Animal_non_bestiar OR Enfant) ;
 SELECT N + (m) IF (0 Cap_de_del) (1 Bestiar OR Animal_non_bestiar OR Enfant) ;
 SELECT N + (m) IF (0 Caps_de_del) (1 Bestiar OR Animal_non_bestiar OR Enfant) ;
+SELECT N + (m) IF (0 Cap_de) (1 DET OR NUM OR AJ) (2 Bestiar OR Animal_non_bestiar OR Enfant) ;
+SELECT N + (m) IF (0 Caps_de) (1 DET OR NUM OR AJ) (2 Bestiar OR Animal_non_bestiar OR Enfant) ;
+SELECT N + (m) IF (0 Cap_de) (1 DET OR NUM) (2 AJ) (3 Bestiar OR Animal_non_bestiar OR Enfant) ;
+SELECT N + (m) IF (0 Caps_de) (1 DET OR NUM) (2 AJ) (3 Bestiar OR Animal_non_bestiar OR Enfant) ;
 SELECT SUB:1 N + (m) IF (0 ("<de cap>"i)) (1 De) (2 Bestiar OR Animal_non_bestiar OR Enfant) ;
-SELECT SUB:1 N + (m) IF (0 ("<de cap>"i)) (1 De) (2 DET) (3 Bestiar OR Animal_non_bestiar OR Enfant) ;
+SELECT SUB:1 N + (m) IF (0 ("<de cap>"i)) (1 De) (2 DET OR NUM OR AJ) (3 Bestiar OR Animal_non_bestiar OR Enfant) ;
+SELECT SUB:1 N + (m) IF (0 ("<de cap>"i)) (1 De) (2 DET OR NUM) (3 AJ) (4 Bestiar OR Animal_non_bestiar OR Enfant) ;
 
 SELECT N + (mf) IF (NOT -1 BOS) (0 Cap_de_del) (1 Al) ;
 SELECT N + (mf) IF (NOT -1 BOS) (0 Cap_de_del) (1 Ant_Cog) ;
@@ -2305,6 +2312,12 @@ SELECT AJ IF (-1 ("<de mai>"i)) (0 ("passat")) ;
 SELECT SUB:1 AV IF (0 ("<de mai>"i)) (1 AJ OR VBpp OR AV) ;
 SELECT AJ OR AV IF (-1 ("<de mai>"i)) (0 AJ OR VBpp OR AV) ;
 SELECT AJ IF (-1C PREP) (-1/* N + &&AcordSP) (0 AJ + &&AcordSP) ;
+REMOVE AJ IF (-1C/1 PREP) (0 N + &&AcordSP LINK NOT 0 AdjPre) (1C SN_End) ; 	# un cap de can
+SELECT N + &&AcordSN IF (-1C/1 PREP) (0 N + &&AcordSN LINK NOT 0 AdjPre) (1 AJ + &&AcordSN) ;
+SELECT AJ + &&AcordSN IF (-1C/1 PREP) (0 AdjPre + &&AcordSN) (1 N + &&AcordSN) ;
+SELECT N + &&AcordSN IF (-2C/1 PREP) (-1 AdjPre + &&AcordSN) (0 N + &&AcordSN) ;
+SELECT DET + &&AcordSN IF (-1C PREP) (0 DET + &&AcordSN) (1C N_AJ + &&AcordSN) ;
+SELECT DET + &&AcordSN IF (-1C/1 PREP) (0 DET + &&AcordSN) (1 N_AJ + &&AcordSN) ;
 
 REMOVE AJ IF (-1C Verb LINK NOT 0 VBpp OR Semblar_Pareisser OR Devenir) (0 N) (1 Que OR Qui OR Rel) ;
 REMOVE N IF (-2 PRONRef) (-1 Far) (0 AJ) ;	# se far gran
@@ -3101,6 +3114,8 @@ REMOVE IFI (0 PII) (1*C PII) ;
 REMOVE IFI (0 PII) (<-1*C PII) ;
 REMOVE IFI (0 PII) (>1*C PII) ;
 
+SELECT AJ + &&AcordSN IF (-2C PREP) (-1 N + &&AcordSN) (0 Adjpos + &&AcordSN) ;	# d'escrichs seus
+SELECT AJ + &&AcordSN IF (-2C/1 PREP) (-1 N + &&AcordSN) (0 Adjpos + &&AcordSN) ;
 REMOVE AJ IF (0 Adjpos) (-1 ("le") OR ("lo") OR ("eth")) ;
 REMOVE AJ IF (0 Adjpos) (0 DETpos + MascSg) (1 N + MascSg OR AJ + MascSg) ;
 REMOVE AJ IF (0 Adjpos) (0 DETpos + FemSg) (1 N + FemSg OR AJ + FemSg) ;
