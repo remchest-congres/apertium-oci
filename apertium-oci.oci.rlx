@@ -2687,7 +2687,8 @@ SELECT PRI IF (2C PRI) (1 Conjco) (0 PRS) (0 PRI) ; # il corrige et revoit
 SELECT PRS IF (2C PRS) (1 Conjco) (0 PRS) (0 PRI) ;
 REMOVE PRI OR ("sia") IF (-1* ("per que") BARRIER CM) (0 PRS) ;
 REMOVE PRI OR ("sia") IF (-1* ("entà que") OR ("tà que") OR ("ende que") BARRIER CM) (0 PRS) ;
-REMOVE PRI OR ("sia") (*-1 ("après que") OR ("per que") OR ("per tal que") OR ("per fin que") OR ("a fin que") OR ("afin que") OR ("entà que") OR ("tà que") OR ("ende que") OR ("malgrat que") OR ("maugrat que") OR ("encara que") OR ("abans que") OR ("avans que") OR ("après que") OR ("aprèp que") OR ("apuèi que") BARRIER Cnj_Rel_End OR CM) (0 PRS) ;
+REMOVE PRI OR ("sia") IF (*-1 ("après que") OR ("per que") OR ("per tal que") OR ("per fin que") OR ("a fin que") OR ("afin que") OR ("entà que") OR ("tà que") OR ("ende que") OR ("malgrat que") OR ("maugrat que") OR ("encara que") OR ("abans que") OR ("avans que") OR ("après que") OR ("aprèp que") OR ("apuèi que") BARRIER Cnj_Rel_End OR CM) (0 PRS) ;
+REMOVE PRI + P1 IF (*-1 Conjsub OR ("après que") OR ("per que") OR ("per tal que") OR ("per fin que") OR ("a fin que") OR ("afin que") OR ("entà que") OR ("tà que") OR ("ende que") OR ("malgrat que") OR ("maugrat que") OR ("encara que") OR ("abans que") OR ("avans que") OR ("après que") OR ("aprèp que") OR ("apuèi que")) (0 PRS + P3) ;	# guess
 
 REMOVE Conjadv IF (NOT 1* V + Pers) (0 PREP) (NOT 0 ("coma")) ;
 
