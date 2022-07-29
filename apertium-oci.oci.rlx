@@ -359,6 +359,11 @@ SET Lenga = ("occitan") OR ("francés") OR ("anglés") OR ("alemand") OR ("espan
 
 SET Grade = ("soldat") OR ("caporal") OR ("caporau") OR ("sergent") OR ("lòctenent") OR ("capitani") OR ("capitan") OR ("coronèl") OR ("coronèu") OR ("general") OR ("generau") OR ("amiral") OR ("amirau") OR ("contra-amiral") OR ("contra-amirau") OR ("vice-amiral") OR ("vice-amirau") OR ("majoral") OR ("majorau") ;
 
+LIST Bestiar = "bestiar" "pol" "pret" "poleton" "poric" "gal" "gau" "galina" "garia" "piòta" "polòja" "rit" "guit" "polalha" "poralha" "feda" "aulha" "cabra" "craba" "moton" "vaca" "buòu" "bueu" "vedèl" "vedèth" "taur" "caval" "chivau" "cavala" "polin" "porin" "ase" ;
+
+LIST Animal_non_bestiar = "animal" "animau" "bèstia" "peis" "peish" "can" "gat" "conilh" "lèbre" "lèbe" "cèrvi" "mirga" "soritz" "rat" "arrat" "rainal" "vop" "lop" "leon" "elefant" "girafa" "tigre" ;
+
+
 SECTION
 
 REMOVE DET IF (0 ("<tant>"));
@@ -612,6 +617,12 @@ SELECT N + (mf) IF (NOT -1 BOS) (0 ("cap")) (1 De) (2 AJ) (3 Estat OR ("govèrn"
 SELECT N + (mf) IF (NOT -1 BOS) (0 ("cap")) (1 De) (2 DET) (3 AJ) (4 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("oposicion") OR ("partit") OR ("sindicat") OR ("union") OR ("sindicat") OR ("politica") OR ("entrepresa") OR ("enterpresa") OR (".*ista"r) OR (".*isme"r)) ;
 SELECT SUB:1 N + (mf) IF (0 ("<de cap>"i)) (1 De) (3 AJ) (4 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("partit") OR ("sindicat") OR ("oposicion") OR ("union") OR ("sindicat") OR ("politica") OR ("entrepresa") OR ("enterpresa") OR (".*ista"r) OR (".*isme"r)) ;
 SELECT SUB:1 N + (mf) IF (0 ("<de cap>"i)) (1 De) (2 DET) (3 AJ) (4 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("partit") OR ("sindicat") OR ("oposicion") OR ("union") OR ("sindicat") OR ("politica") OR ("entrepresa") OR ("enterpresa") OR (".*ista"r) OR (".*isme"r)) ;
+SELECT N + (m) IF (0 ("cap")) (1 De) (2 Bestiar OR Animal_non_bestiar) ;
+SELECT N + (m) IF (0 ("cap")) (1 De) (2 DET) (3 Bestiar OR Animal_non_bestiar) ;
+SELECT N + (m) IF (0 Cap_de_del) (1 Bestiar OR Animal_non_bestiar) ;
+SELECT N + (m) IF (0 Caps_de_del) (1 Bestiar OR Animal_non_bestiar) ;
+SELECT SUB:1 N + (m) IF (0 ("<de cap>"i)) (1 De) (2 Bestiar OR Animal_non_bestiar) ;
+SELECT SUB:1 N + (m) IF (0 ("<de cap>"i)) (1 De) (2 DET) (3 Bestiar OR Animal_non_bestiar) ;
 
 SELECT N + (mf) IF (NOT -1 BOS) (0 Cap_de_del) (1 Al) ;
 SELECT N + (mf) IF (NOT -1 BOS) (0 Cap_de_del) (1 Ant_Cog) ;
