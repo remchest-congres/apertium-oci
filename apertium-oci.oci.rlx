@@ -2167,6 +2167,8 @@ REMOVE AJ IF (0 Las) (1 NUM) (2 AJ + FemPl) (3 N + FemPl) ;	# las 200 quitas pom
 REMOVE AJ IF (0 Las) (1 AJ OR AdvComp) (2 N_AJ + FemPl) ;
 REMOVE AJ IF (0 Las) (1 De) (NOT 2 VBinf OR Pro) ;	# guess
 
+SELECT SUB:1 DET + &&AcordSN IF (0 PREP) (1C N_AJ + &&AcordSN) ;	# dei comtes
+
 # NUM
 
 SELECT NUM IF (-1 ("numero") OR ("numèro") OR ("numeró")) (0 Un);
