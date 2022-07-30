@@ -484,6 +484,8 @@ REMOVE Sg IF (NOT -1 DET) (0 ("<son>"i)) (1 AV OR PREAV) (2C Pl_strict) ;	# son 
 SELECT PREP IF (0 ("sens")) (1C VBinf OR VBger) ;
 SELECT PREP IF (0 ("sens")) (1 Pro) (2C VBinf OR VBger) ;
 SELECT PREP IF (0 ("sens")) (1 Pro) (2 Pro) (3C VBinf OR VBger) ;
+SELECT PREP IF (NOT -1 DET + &&AcordSN) (0 ("sens") + &&AcordSN) (1 Que) ;
+SELECT Conjsub IF (-1C ("sens") + PREP) (0 Que) ;
 SELECT N IF (-1 MinIni) (0 ("sap") + MajIni) ;
 SELECT N IF (0 ("sap")) (1C V + Pers) ;
 SELECT N IF (0 ("sap")) (1C AV) (2C V + Pers) ;
