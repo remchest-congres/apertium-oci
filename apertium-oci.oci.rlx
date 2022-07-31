@@ -482,8 +482,13 @@ REMOVE DET + Sg IF (-1 NUM LINK NOT 0 ("1")) (0 ("<son>"i)) ;	# patch
 REMOVE Sg IF (NOT -1 DET) (0 ("<son>"i)) (1C Pl_strict) ;	# son conegudas
 REMOVE Sg IF (NOT -1 DET) (0 ("<son>"i)) (1 AV OR PREAV) (2C Pl_strict) ;	# son plan conegudas
 SELECT PREP IF (0 ("sens")) (1C VBinf OR VBger) ;
-SELECT PREP IF (0 ("sens")) (1 Pro) (2C VBinf OR VBger) ;
-SELECT PREP IF (0 ("sens")) (1 Pro) (2 Pro) (3C VBinf OR VBger) ;
+SELECT PREP IF (0 ("sens")) (1 Pro) (2C VBinf) ;
+SELECT PREP IF (0 ("sens")) (1 Pro) (2 Pro) (3C VBinf) ;
+SELECT PREP IF (0 ("sens")) (1 Pro LINK NOT 0 ("en")) (2C VBinf OR VBger) ;
+SELECT PREP IF (0 ("sens")) (1 Pro LINK NOT 0 ("en")) (2 Pro) (3C VBinf OR VBger) ;
+SELECT PREP IF (0 ("sens")) (1 AV OR Enon) (2C VBinf OR VBger) ;	# sens ne tirar
+SELECT PREP IF (0 ("sens")) (1 AV OR Enon) (2 Pro) (3C VBinf) ;
+SELECT PREP IF (0 ("sens")) (1 AV OR Enon) (2 Pro) (3 Pro) (4C VBinf) ;
 SELECT PREP IF (NOT -1 DET + &&AcordSN) (0 ("sens") + &&AcordSN) (1 Que) ;
 SELECT Conjsub IF (-1C ("sens") + PREP) (0 Que) ;
 SELECT N IF (-1 MinIni) (0 ("sap") + MajIni) ;
