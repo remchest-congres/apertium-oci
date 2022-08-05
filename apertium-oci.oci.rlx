@@ -2479,11 +2479,16 @@ SELECT N IF (-2C N) (-1 CM) (0C N_AJ_PP) (1 Conjco OR CM) (2 N) ;
 SELECT N IF (-2C N + &&AcordSP) (-1 CM) (0 N + &&AcordSP) (1 ("e") OR O_cnjcoo OR ("ni")) (2 N + &&AcordSP) ;	# martèths, estenalhas e alicatas
 SELECT N IF (-2C N) (-1 CM) (0C N_AJ_PP) (1 CM) (2 N) ;	# prêtre, curé, prédicateur
 SELECT N IF (-4C N) (-4 N + &&AcordSP) (-3 CM) (-2C N) (-2 N + &&AcordSP) (-1 CM) (0 N + &&AcordSP) ;
+SELECT N IF (NOT -1 N) (0 N) (1 CM) (2C N) (3 Conjco OR CM) (4C N) ;    # droite, gauche ou milieu
 SELECT AJ + &&AcordSN IF (0 ("grand") + &&AcordSN) (1 Conjco) (2 AJ + &&AcordSN) (NOT 2 AdjPre) ;
 SELECT AJ + &&AcordSN IF (0 ("grand") + &&AcordSN) (1 CM) (2 AJ + &&AcordSN) (3 Conjco) (4 AJ + &&AcordSN) ;
 SELECT AJ IF (-2 AJ + &&AcordSN) (-1 CM) (0C N_AJ_PP) (0 AJ + &&AcordSN) (1 Conjco OR CM) (2C AJ) (NOT 2 AdjPre) (2 AJ + &&AcordSN) ;
 SELECT AJ IF (-2C AJ) (-2 AJ + &&AcordSN) (-1 CM) (0C N_AJ_PP) (0 AJ + &&AcordSN) (1 CM) (2 AJ + &&AcordSN) (NOT 2 AdjPre) ;
 SELECT AJ IF (-4C AJ) (-4 AJ + &&AcordSP) (-3 CM) (-2C AJ) (-2 AJ + &&AcordSP) (-1 CM) (0 AJ + &&AcordSP) (NOT 0 AdjPre) ;
+SELECT N IF (-2 Drecha + N + FemSg OR Esquerra + N + FemSg) (-1 Conjco OR CM) (0 ("centre") + MascSg) ;
+SELECT N IF (2 Drecha + N + FemSg OR Esquerra + N + FemSg) (1 Conjco OR CM) (0 ("centre") + MascSg) ;
+SELECT N IF (-3 Drecha + N + FemSg OR Esquerra + N + FemSg) (-2 Conjco OR CM) (-1 DETdef + MascSg) (0 ("centre") + MascSg) ;
+SELECT N IF (3 Drecha + N + FemSg OR Esquerra + N + FemSg) (2 DETdef + MascSg) (1 Conjco OR CM) (0 ("centre") + MascSg) ;
 
 # N / V
 
