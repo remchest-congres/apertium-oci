@@ -2119,6 +2119,15 @@ SELECT Pro IF (-1 N_AJ + Pl LINK NOT 0 V + P3 + Pl) (0 ("o")) (1C V + P3 + Pl) (
 SELECT Pro IF (-1 NP + Sg LINK NOT 0 V + P3 + Sg) (0 ("o")) (1C V + P3 + Sg) (NOT -1* Enon) (NOT 1* Enon) ;	# lo president de la Generalitat o refusèt
 SELECT Pro IF (-1 NP + Pl LINK NOT 0 V + P3 + Pl) (0 ("o")) (1C V + P3 + Pl) (NOT -1* Enon) (NOT 1* Enon) ;
 
+SELECT Pro IF (-1 ("per aquò")) (0 ("o")) (1 V) ;	# per aquò o deviá legir
+SELECT Pro IF (-2 ("per")) (-1 Tn) (0 ("o")) (1 V) ;	# per aquò o deviá legir
+SELECT Pro IF (-2 PREP) (-1 VBinf) (0 ("o")) (1 V + Pers) ;	# per saber o deviá legir
+SELECT Pro IF (-3 PREP) (-2 Pro) (-1 VBinf) (0 ("o")) (1 V + Pers) ;	# per o saber o deviá legir
+SELECT Pro IF (-4 PREP) (-3 Pro) (-2 Pro) (-1 VBinf) (0 ("o")) (1 V + Pers) ;
+SELECT Pro IF (-3 PREP) (-2 VBinf) (-1 AV) (0 ("o")) (1 V + Pers) ;
+SELECT Pro IF (-4 PREP) (-3 Pro) (-2 VBinf) (-1 AV) (0 ("o")) (1 V + Pers) ;
+SELECT Pro IF (-5 PREP) (-4 Pro) (-3 Pro) (-2 VBinf) (-1 AV) (0 ("o")) (1 V + Pers) ;
+
 # DET
 
 REMOVE ("d'unes") IF (-1C N_AJ) ;	# patch
