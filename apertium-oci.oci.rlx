@@ -369,6 +369,21 @@ LIST Enfant = "enfant" "dròlle" "mainatge" "gojat" "escolan" "eslhève" "alumne
 
 SECTION
 
+SELECT Acr IF (0 ("<A>")) (1 ("<.>")) (2>>> Cog OR unknownMajIni) ;	# A. Dupont
+SELECT N + (m) + (sp) IF (0 ("\\<[B-Z]\\>"r)) (1 ("<.>")) (2 Cog OR unknownMajIni) ;	# E. Dupont
+
+SELECT Acr IF (-1 N + MinIni) (0 ("<A>")) ;	# la letra A ; la linha A
+SELECT N + (m) + (sp) IF (-1 N + MinIni) (0 ("\\<[B-Z]\\>"r)) ;	# la letra B ; la linha B
+REMOVE N + (sp) IF (0 ("<e>")) ;
+REMOVE N + (sp) IF (0 ("\\<[io]\\>"r)) (1 Pro OR V) ;	# se la dreta i ganhèt
+SELECT N + (m) + (sp) IF (-1 ("letra") OR ("linha") OR ("ponch") OR ("punt") OR ("drecha") OR ("dreita") OR ("dreta")) (0 ("\\<[b-df-z]\\>"r)) ;	# la letra b ; la linha b
+SELECT N IF (0 ("letra") OR ("linha") OR ("ponch") OR ("punt") OR ("drecha") OR ("dreita") OR ("dreta")) (1 ("\\<[b-df-z]\\>"ir)) ;	# la drecha b
+SELECT Acr IF (0 ("<A>")) (1 Conjco + MinIni) (2 ("<B>")) ;
+SELECT Acr IF (0 ("<A>")) (1 CM) (2 ("<B>")) ;
+SELECT Acr IF (-1 PREP) (0 ("<A>")) (1 PREP + MinIni) (2 ("<B>")) ;
+REMOVE N + (sp) IF (0 ("\\<[eiou]\\>"r)) ;
+REMOVE N + (sp) IF (0 ("\\<[EIOU]\\>"r)) ;
+
 REMOVE DET IF (0 ("<tant>"));
 
 REMOVE V IF (0 ("<minuta>"i)) (-1 DET + FemSg or AJ + FemSg);
