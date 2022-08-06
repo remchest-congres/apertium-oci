@@ -1544,7 +1544,7 @@ SELECT N IF (0 ("<mai>"i)) (-1 ("<de>"i)) (-2 NUM) (-3 ("lo")) ; #lo 12 de mai
 SELECT N IF (0 ("<mai>"i)) (-1 ("<de>"i)) (-2 ("<e>"i) OR ("<o>"i)) (-3 Nommois) (-4 De) ; #d'abril o de mai
 SELECT N IF (0 ("<mai>"i)) (-1 ("<de>"i)) (1 ("<e>"i) OR ("<o>"i)) (2 De) (3 Nommois) ; #de mai o de junh
 SELECT N IF (0 ("<mai>"i)) (-1 ("<de>"i)) (1 ("<a>"i)) (2 Nommois) ; #de mai a junh
-SELECT N IF (-3 ("<de>"i)) (-2 Nommois) (-1 ("<a>"i)) (0 ("<mai>"i)) ; #d'abril a mai
+SELECT N IF (-3 ("<de>"i) OR ("<d'>"i) OR ("<d’>"i)) (-2 Nommois) (-1 ("<a>"i)) (0 ("<mai>"i)) ; #d'abril a mai
 SELECT N IF (0 ("<mai>"i)) (-1 ("<entre>"i)) (1 ("<e>"i)) (2 Nommois) ; #entre mai e junh
 SELECT N IF (-3 ("<entre>"i)) (-2 Nommois) (-1 ("<e>"i)) (0 ("<mai>"i)) ; #entre abril a mai
 SELECT N IF (0 ("<mai>"i)) (1 ("<e>"i) OR ("<o>"i)) (2 Nommois) ; # mai e junh
@@ -2675,10 +2675,10 @@ SELECT Pro IF (0 Se) (1 En) (2 ("anar")) ;
 SELECT Pro IF (0 Se) (1 En) (2 Ser) (3 ("anar") + VBpp) ;
 SELECT Pro IF (0 Se) (1 En) (2 Ser) (3 AV) (4 ("anar") + VBpp) ;
 SELECT Pro IF (0 Se) (1 En) (2 Ser) (3 AV) (4 AV) (5 ("anar") + VBpp) ;
-SELECT Pro IF (0 ("<se'n>"i)) (1 ("anar")) ;
-SELECT Pro IF (0 ("<se'n>"i)) (1 Ser) (2 ("anar") + VBpp) ;
-SELECT Pro IF (0 ("<se'n>"i)) (1 Ser) (2 AV) (3 ("anar") + VBpp) ;
-SELECT Pro IF (0 ("<se'n>"i)) (1 Ser) (2 AV) (3 AV) (4 ("anar") + VBpp) ;
+SELECT Pro IF (0 ("<se'n>"i) OR ("<se’n>"i)) (1 ("anar")) ;
+SELECT Pro IF (0 ("<se'n>"i) OR ("<se’n>"i)) (1 Ser) (2 ("anar") + VBpp) ;
+SELECT Pro IF (0 ("<se'n>"i) OR ("<se’n>"i)) (1 Ser) (2 AV) (3 ("anar") + VBpp) ;
+SELECT Pro IF (0 ("<se'n>"i) OR ("<se’n>"i)) (1 Ser) (2 AV) (3 AV) (4 ("anar") + VBpp) ;
 SELECT Pro IF (-1C Rel) (0 Se) (1 Pro OR V + P3) ;
 SELECT Pro IF (-2C Rel) (-1 AV) (0 Se) (1 Pro OR V + P3) ;
 SELECT Pro IF (-3C Rel) (-2 AV) (-1 AV) (0 Se) (1 Pro OR V + P3) ;
