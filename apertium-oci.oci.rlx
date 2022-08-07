@@ -230,7 +230,7 @@ LIST Ne_conj = ("ne" cnjcoo);
 LIST Ne_enon = ("ne" enon);
 LIST Ne_adv = ("ne" adv);
 LIST E_enon = ("e" enon);
-LIST Dins = "dins";
+LIST Dins = "dins" "dens" "hens";
 LIST Jos = "jos";
 LIST Pendent = "pendent";
 LIST Un = "un" ;
@@ -1727,7 +1727,9 @@ SELECT DET + &&AcordSN IF (0/* DET + &&AcordSN) (1 NP + &&AcordSN) (NOT 0 ("lei"
 
 REMOVE Cog IF (-1 DETdef) (0 Cog) ;
 REMOVE Cog IF (-1 DETind) (0 Cog) ;
-REMOVE Cog IF (-1 En) (0 Cog) ;
+REMOVE Cog OR Ant IF (-1 En) (0 Top) ;
+REMOVE Cog OR Ant IF (-1 Dins) (0 Top) ;
+REMOVE Cog OR Ant IF (-1 ("sus")) (0 Top) ;	# guess
 REMOVE Ant IF (-1 DETdef) (0 Ant) ;
 REMOVE Ant IF (-1 DETind) (0 Ant) ;
 REMOVE Ant IF (-1 En) (0 Ant) ;
@@ -1818,7 +1820,7 @@ SELECT Ant IF (-1 ("dieu") OR ("divessa")) ;
 
 SELECT Ant IF (-1 (";") OR (":")) (1 Ant OR Cog OR unknownMajIni) ;
 
-SELECT Top IF (-2 ("vila") OR ("vilatge") OR ("província") OR ("region") OR ("parçan") OR ("departament") OR ("comuna") OR ("municipalitat") OR ("zòna") OR ("territori") OR ("arrondiment") OR ("aeropòrt") OR ("pòrt") OR ("reialme") OR ("reiaume") OR ("principat") OR ("grand-ducat") OR ("ducat") OR ("marquesat") OR ("comtat") OR ("baroniá") OR ("baronia") OR ("senhoria") OR ("archavescat") OR ("arquevescat") OR ("avescat")) (-1 ("de")) (0 Cog OR Ant) ;
+SELECT Top IF (-2 ("vila") OR ("vilatge") OR ("província") OR ("region") OR ("parçan") OR ("departament") OR ("comuna") OR ("municipalitat") OR ("zòna") OR ("territori") OR ("arrondiment") OR ("aeropòrt") OR ("pòrt") OR ("reialme") OR ("reiaume") OR ("principat") OR ("grand-ducat") OR ("ducat") OR ("marquesat") OR ("comtat") OR ("baroniá") OR ("baronia") OR ("senhoria") OR ("archavescat") OR ("arquevescat") OR ("avescat") OR ("tèrra")) (-1 ("de")) (0 Cog OR Ant) ;
 SELECT Top IF (-2 ("republica") OR ("conquista") OR ("annexion") OR ("sèti") OR ("expedicion")) (-1 De) ;
 SELECT Top IF (-2 ("universitat")) (-1 De) ;	# université de Paris VII
 SELECT Top IF (-2 ("a l'entorn") OR ("arron") OR ("centre")) (-1 De) ;
