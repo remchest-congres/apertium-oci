@@ -1539,16 +1539,19 @@ SELECT SUB:1 Nm IF (0 ("<en mai de>"i)) (1 An4) ;	# en mai de 1968 ; en mai de c
 SELECT SUB:1 Nm IF (0 ("<en mai de>"i)) (1 An2 OR An3) (NOT 2 ("<[0-9]{3}>"r)) ;	# en mai de 700 000
 
 #Mes de mai
-SELECT N IF (0 ("<mai>"i)) (-1 ("<de>"i)) (-2 ("<mes>"i)) ; #mes de mai
-SELECT N IF (0 ("<mai>"i)) (-1 ("<de>"i)) (-2 NUM) (-3 ("lo")) ; #lo 12 de mai
-SELECT N IF (0 ("<mai>"i)) (-1 ("<de>"i)) (-2 ("<e>"i) OR ("<o>"i)) (-3 Nommois) (-4 De) ; #d'abril o de mai
-SELECT N IF (0 ("<mai>"i)) (-1 ("<de>"i)) (1 ("<e>"i) OR ("<o>"i)) (2 De) (3 Nommois) ; #de mai o de junh
-SELECT N IF (0 ("<mai>"i)) (-1 ("<de>"i)) (1 ("<a>"i)) (2 Nommois) ; #de mai a junh
-SELECT N IF (-3 ("<de>"i) OR ("<d'>"i) OR ("<d’>"i)) (-2 Nommois) (-1 ("<a>"i)) (0 ("<mai>"i)) ; #d'abril a mai
-SELECT N IF (0 ("<mai>"i)) (-1 ("<entre>"i)) (1 ("<e>"i)) (2 Nommois) ; #entre mai e junh
-SELECT N IF (-3 ("<entre>"i)) (-2 Nommois) (-1 ("<e>"i)) (0 ("<mai>"i)) ; #entre abril a mai
-SELECT N IF (0 ("<mai>"i)) (1 ("<e>"i) OR ("<o>"i)) (2 Nommois) ; # mai e junh
-SELECT N IF (-2 Nommois) (-1 ("<e>"i) OR ("<o>"i)) (0 ("<mai>"i)) ; # abril a mai
+LIST MesAmbigu = "<mai>"i "<junh>"i ;
+SELECT N IF (0 MesAmbigu) (-1 ("<de>"i)) (-2 ("<mes>"i)) ; # mes de mai
+SELECT N IF (0 MesAmbigu) (-1 ("<de>"i)) (-2 NUM) (-3 ("lo")) ; # lo 12 de mai
+SELECT N IF (0 MesAmbigu) (1 ("<de>"i)) (2 ("<[1-2][0-9][0-9][0-9]>"r)) ; # mai de 2022
+SELECT N IF (0 MesAmbigu) (1 ("<[1-2][0-9][0-9][0-9]>"r)) ; # mai 2022
+SELECT N IF (0 MesAmbigu) (-1 ("<de>"i)) (-2 ("<e>"i) OR ("<o>"i)) (-3 Nommois) (-4 De) ; # d'abril o de mai
+SELECT N IF (0 MesAmbigu) (-1 ("<de>"i)) (1 ("<e>"i) OR ("<o>"i)) (2 De) (3 Nommois) ; # de mai o de junh
+SELECT N IF (0 MesAmbigu) (-1 ("<de>"i)) (1 ("<a>"i)) (2 Nommois) ; # de mai a junh
+SELECT N IF (-3 ("<de>"i) OR ("<d'>"i) OR ("<d’>"i)) (-2 Nommois) (-1 ("<a>"i)) (0 MesAmbigu) ; # d'abril a mai
+SELECT N IF (0 MesAmbigu) (-1 ("<entre>"i)) (1 ("<e>"i)) (2 Nommois) ; # entre mai e junh
+SELECT N IF (-3 ("<entre>"i)) (-2 Nommois) (-1 ("<e>"i)) (0 MesAmbigu) ; # entre abril a mai
+SELECT N IF (0 MesAmbigu) (1 ("<e>"i) OR ("<o>"i)) (2 Nommois) ; # mai e junh
+SELECT N IF (-2 Nommois) (-1 ("<e>"i) OR ("<o>"i)) (0 MesAmbigu) ; # abril a mai
 REMOVE PREP IF (0 ("de mai")) ;
 REMOVE PREP IF (0 ("en mai")) ;
 REMOVE ("en") IF (0 ("en mai de")) ;
