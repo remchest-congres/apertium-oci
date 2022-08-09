@@ -7,7 +7,7 @@
 #	- o: cnjcoo o prn.pro
 #	- que: enon, rel, cnjsub
 #	- ne: enon, cnjcoo, prn.pro
-#	- e: enon o cnjcoo 
+#	- e: enon o cnjcoo
 #	- ne: enon, adv o prn.pro
 #	- cap: n.m, n.mf, det, prn, adv, pr, vblex (!)
 #	- mai: n, cnjcoo, adv
@@ -83,6 +83,7 @@ LIST Itg = itg ;
 LIST DETdef = (det def);
 LIST DETind = (det ind);
 LIST DETpos = (det pos);
+LIST DETdem = (det dem);
 
 SET Ant = (np ant) ;
 SET Cog = (np cog) ;
@@ -2162,6 +2163,8 @@ SELECT Pro IF (-3 PREP) (-2 VBinf) (-1 AV) (0 ("o")) (1 V + Pers) ;
 SELECT Pro IF (-4 PREP) (-3 Pro) (-2 VBinf) (-1 AV) (0 ("o")) (1 V + Pers) ;
 SELECT Pro IF (-5 PREP) (-4 Pro) (-3 Pro) (-2 VBinf) (-1 AV) (0 ("o")) (1 V + Pers) ;
 
+REMOVE Tn IF (0 DETdem + &&AcordSN) (1C N_AJ) (1 N_AJ + &&AcordSN) ;		# aqueths corredís
+
 # DET
 
 REMOVE ("d'unes") IF (-1C N_AJ) ;	# patch
@@ -2329,6 +2332,11 @@ SELECT DET + Pos IF (-1 N) (0 AJ + Pos) (0 DET + Pos + &&AcordSN) (1 N + &&Acord
 #REMOVE AJ + Pos IF (NOT -1 Ser OR ("lenga") OR ("cultura") OR ("casa")) (0 AJ + Pos) ;
 #REMOVE AJ + Pos IF (NOT -2 DETdef + FemSg) (-1 ("lenga") OR ("cultura")) (0 AJ + Pos) ;
 #SELECT AJ + Pos + &&AcordSN IF (-1 ("casa") + &&AcordSN) (0 AJ + Pos) (NOT 1 AJ + &&AcordSN) ;
+
+REMOVE N_AJ + Pl_strict IF (-1C DET + Sg_strict) (0 N_AJ + Sg) ;
+REMOVE N_AJ + Sg_strict IF (-1C DET + Pl_strict) (0 N_AJ + Pl) ;		# aqueths corredís
+REMOVE N_AJ + Fem_strict IF (-1C DET + Masc_strict) (0 N_AJ + Masc) ;
+REMOVE N_AJ + Masc_strict IF (-1C DET + Fem_strict) (0 N_AJ + Fem) ;
 
 # N
 
