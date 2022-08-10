@@ -1150,6 +1150,8 @@ SELECT Itg OR Excl OR IJ IF (-1 BOS) (0 ("qué") OR ("qui") OR ("quin") OR ("qua
 SELECT Itg OR Excl OR IJ IF (-2 BOS) (-1 PREP) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau")) ;	# A qui s'adresse
 SELECT Itg OR Excl OR IJ IF (-2 BOS) (-1 Conjco) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau")) ;	# Mais qui s'adresse
 SELECT Itg OR Excl OR IJ IF (-3 BOS) (-1 Conjco) (-1 PREP) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau")) ;	# Mais a qui s'adresse
+REMOVE Itg + AJ OR Excl + AJ IF (0 ("quin") OR ("qual") OR ("quau")) (NOT 1 N) ;	# Qual vòl venir?
+REMOVE Itg + DET OR Excl + DET IF (0 ("quin") OR ("qual") OR ("quau")) (NOT 1 N_AJ) ;	# Qual vòl venir?
 
 SELECT Itg IF (-1 BOS) (0C Itg OR Excl OR IJ OR Rel OR Conjsub OR Conjadv OR ("coma")) (1* ("?")) ;
 SELECT Itg IF (-2 BOS) (-1 PREP) (0C Itg OR Excl OR IJ OR Rel OR Conjsub OR Conjadv OR ("coma")) (1* ("?")) ;
