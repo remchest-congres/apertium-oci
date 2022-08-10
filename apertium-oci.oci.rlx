@@ -1206,6 +1206,12 @@ SELECT Voler IF (0 Voler) (0 Volar) (1 AV) (2 ("que")) ;
 SELECT Voler IF (0 Voler) (0 Volar) (1 AV) (2 AV) (3 ("que")) ;
 SELECT Voler IF (0 Voler) (0 Volar) (-1 ("què")) (NOT -2 ("en"));
 
+SELECT Voler IF (0 Voler) (0 ("vòl")) (1/* VBinf) (NOT -1/* DET + MascSg) ;
+SELECT Voler IF (0 Voler) (0 ("vòl")) (1 VBinf) (NOT -1/* DET + MascSg) ;
+SELECT Voler IF (0 Voler) (0 ("vòl")) (1 VBinf) (-1/* ("qual")) ;
+SELECT Voler IF (0 Voler) (0 ("vòl")) (1 AV) (2 VBinf) ;
+SELECT Voler IF (0 Voler) (0 ("vòl")) (1 AV) (2 AV) (3 VBinf) ;
+
 # sèire e saber/sàber (p. ex. "sèi")
 SELECT Saber IF (0 Seire) (0 Saber) (1C Itg) ;
 SELECT Saber IF (0 Seire) (0 Saber) (1 AV) (2C Itg) ;
