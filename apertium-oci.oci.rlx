@@ -1505,6 +1505,7 @@ SELECT N IF (0 (META:/-/r)) (1C N) ;
 # non : Patxi Zabaleta, actualament cap del partit
 REMOVE N IF (NOT -1 BOS OR CM OR Conjco OR Donc OR V OR AJ OR AV OR DET OR NUM OR PREP OR PRON - PRONPers) (NOT -1/* ("de")) (NOT -2 CM) ;
 REMOVE N IF (NOT -1 BOS OR CM OR Conjco OR Donc OR V OR AJ OR AV + Itg OR DET OR NUM OR PREP OR PRON - PRONPers) (NOT -1/* ("de")) (NOT -2 CM) (NOT -2 V LINK NOT 0 VBpp) ;
+REMOVE N IF (-1/* ("lo que") OR ("lo qui")) ;
 REMOVE N IF (-2 Conjco) (-1 Donc) (0 V + Pers) ;
 REMOVE N IF (-2 N + &&AcordSN) (-1 AJ + &&AcordSN) (0 VBpp + &&AcordSN) ;	# lo ministre canadian encargat
 
@@ -1634,13 +1635,13 @@ REMOVE PREP IF (0 DAutres) ;
 SELECT SUB:1 AJ + &&AcordSN IF (0 DAutres) (1 N + &&AcordSN) ;
 
 #Una prepausicion es totjorn seguida d'un nom, pronom, adverb, numeral, infinitiu, determinant o adjectiu
-REMOVE PREP IF (NOT 1 N OR PRON OR AV OR NUM OR NP OR VBinf OR DET OR AJ OR ("de") OR unknown) (NOT 0/* PREP + DET) (NOT 0/* PREP + N) (NOT 0 ("en tot")) ;	# a luchat pendent d'annadas
+REMOVE PREP IF (NOT 1 N OR PRON OR AV OR NUM OR NP OR VBinf OR DET OR AJ OR ("de") OR unknown) (NOT 0/* PREP + DET) (NOT 0/* N OR Rel OR Conjadv OR Conjsub) (NOT 0 ("en tot")) ;	# a luchat pendent d'annadas
 REMOVE PREP IF (1 ("de")) (NOT 2 N OR AJ) ;	# a luchat pendent d'annadas
 
 #Es pas un vèrbe se, dempuèi lo darrièr vèrbe conjugat, avèm pas agut de novèla proposicion
 #REMOVE Vconj IF (NOT -1* intrprop BARRIER Vconj) ;
 	# funciona pas: “Es lo primièr còp que vesi aquò”
-REMOVE Vconj IF (-1C PREP) (NOT -1 ("<de mai>"i)) ;
+REMOVE Vconj IF (-1C PREP) (NOT -1 ("<de mai>"i)) (NOT -1/* Rel OR Conjadv OR Conjsub) ;
 REMOVE Vconj IF (-2C PREP) (-1 DET + &&AcordSN) (0 N + &&AcordSN) ;	# per la planta.
 SELECT VBinf IF (-1 ("de")) (0C V) ;
 SELECT PREP IF (0 ("<de>"i) + PREP) (1C VBinf) ;
@@ -2371,10 +2372,10 @@ SELECT VBinf IF (-3 ("defendre") OR ("defénder") OR ("enebir") OR ("interdire")
 SELECT VBinf IF (-3 ("acabar") OR ("fenir") OR ("finir")) (-2 De) (-1 Pro) (0 N) ;
 
 SELECT N OR PRON OR NP IF (-1C PREP) (NOT -1/* N) (1 EOS OR Rpar) ;	# ambe fòrça. ; a res.
-SELECT N OR PRON OR NP OR VBinf IF (-1C PREP) (NOT -1/* N) (1C PREP) (NOT 0 ("tròp") OR ("pauc") OR ("pòc")) ;	# discors de fin d'annada
-SELECT N OR PRON OR NP OR VBinf IF (-1C PREP) (NOT -1/* N) (1C Rel OR Que OR Qui) ;
-SELECT N OR PRON OR NP OR VBinf IF (-1C PREP) (NOT -1/* N) (1C Conjco OR ("e") OR ("o")) ;
-SELECT N IF (-1C PREP) (NOT -1/* N) (0 N + &&AcordSP) (1 (",")) (2 N + &&AcordSP) (3 (",") OR ("e") OR ("o") OR ("ni")) (4 N + &&AcordSP) ;
+SELECT N OR PRON OR NP OR VBinf IF (-1C PREP) (NOT -1/* N OR Rel OR Conjadv OR Conjsub) (1C PREP) (NOT 0 ("tròp") OR ("pauc") OR ("pòc")) ;	# discors de fin d'annada
+SELECT N OR PRON OR NP OR VBinf IF (-1C PREP) (NOT -1/* N OR Rel OR Conjadv OR Conjsub) (1C Rel OR Que OR Qui) ;
+SELECT N OR PRON OR NP OR VBinf IF (-1C PREP) (NOT -1/* N OR Rel OR Conjadv OR Conjsub) (1C Conjco OR ("e") OR ("o")) ;
+SELECT N IF (-1C PREP) (NOT -1/* N OR Rel OR Conjadv OR Conjsub) (0 N + &&AcordSP) (1 (",")) (2 N + &&AcordSP) (3 (",") OR ("e") OR ("o") OR ("ni")) (4 N + &&AcordSP) ;
 
 SELECT N + &&AcordSN OR NP + &&AcordSN IF (-1C/* DET OR Artcontrsg OR Artcontrpl) (0C N) (-1/* DET + &&AcordSN) ;	# los acès ; deus autobús
 SELECT N + &&AcordSN OR NP + &&AcordSN IF (0C N) (1C AJ) (1 AJ + &&AcordSN) ;	# de autobús blus
@@ -2461,7 +2462,7 @@ SELECT AJ + &&AcordSN IF (-1 DET + &&AcordSN) (0 AdjPre + &&AcordSN) (1 NUM) (2 
 SELECT N + &&AcordSN IF (-3 DET + &&AcordSN) (-2 AdjPre + &&AcordSN) (-1 NUM) (0 N + &&AcordSN) ;
 
 SELECT N IF (-1C PREP) (1C EOS OR Rel) ;	# dels politics
-SELECT N OR VBinf IF (-1C PREP) (1C PREP) ;	# de levar d'impòstes
+SELECT N OR VBinf IF (-1C PREP) (NOT -1/* N OR Rel OR Conjadv OR Conjsub) (1C PREP) ;	# de levar d'impòstes
 SELECT N + &&AcordSN IF (-1C DET + &&AcordSN) (1C EOS OR PREP OR Rel) ;	# los politics
 REMOVE N OR V + Pers IF (-1C Semblar_Pareisser + &&AcordSP LINK NOT 0 VBpp) (0 AJ + &&AcordSP) (1C EOS OR CM OR Conjco OR PREP OR Rel OR ("<a>"i)) ;	# las dificultats semblan màgers
 REMOVE N OR V + Pers IF (-2 Haver + &&AcordSP) (-1 Semblar_Pareisser + VBpp) (0 AJ + &&AcordSP) (1C EOS OR CM OR Conjco OR PREP OR Rel OR ("<a>"i)) ;	# las dificultats an semblat màgers
@@ -2549,7 +2550,10 @@ REMOVE V IF (0 ("paire")) (1 unknown) (NOT -1 Pro OR Enon) ;
 REMOVE V + Sg IF (-1C NUM) ;		# vint mil legas
 REMOVE V IF (-1 CM) (0 N + &&AcordSN) (1C AJ + &&AcordSN) (NOT 0 Ser OR Semblar_Pareisser OR Devenir) ;	# lo « Poton de Tolosa », grope tradicionau
 
-REMOVE V + Pers IF (-1C PREP) ;
+REMOVE V + Pers IF (-1C PREP) (NOT -1/* N OR Rel OR Conjadv OR Conjsub) ;
+SELECT V + Pers + Sg IF (-1/* ("lo que") + Sg) (0 V + Pers + Sg) ;
+SELECT V + Pers + Pl IF (-1/* ("lo que") + Pl) (0 V + Pers + Pl) ;
+
 REMOVE V + Pers IF (-1 ("jos")) (0 N_AJ) ;
 REMOVE V + Pers IF (-1 ("devath")) (0 N_AJ) ;
 REMOVE V + Pers IF (-1 ("sota")) (0 N_AJ) ;
