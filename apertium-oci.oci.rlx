@@ -1805,6 +1805,11 @@ SELECT Ant + Fem_strict IF (0 Ant) (1 DETdef + Sg + Fem) (2 N_AJ + Sg + Fem + Ma
 SELECT Ant + Masc_strict IF (0 Ant) (1 DETdef + Sg + Masc) (2 unknownMajIni) ;
 SELECT Ant + Masc_strict IF (0 Ant) (1 siecles_nom_romains OR ("<Ièr>")) ;              # Constance II
 
+SELECT Ant + &&AcordSN IF (0 Ant + &&AcordSN) (1 DETdef + &&AcordSN) (2 AJ + MajIni + &&AcordSN) ;
+SELECT Ant + &&AcordSN IF (0 Ant + &&AcordSN) (1 DETdef + &&AcordSN) (2 unknownMajIni) ;
+SELECT AJ + &&AcordSN IF (-2 Ant + &&AcordSN) (-1 DETdef + &&AcordSN) (0 AJ + MajIni + &&AcordSN) ;	# Loís lo Grand
+
+
 SELECT Cog IF (-1 Grade) ;
 SELECT Ant IF (-1 Grade) ;
 
