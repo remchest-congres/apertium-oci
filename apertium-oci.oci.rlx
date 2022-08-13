@@ -2597,6 +2597,8 @@ REMOVE N IF (-1 ("mas")) (0 V) (1 Que) ;		# mas sosten que
 
 REMOVE N OR AJ IF (-1C Enon OR Pro) ;
 
+REMOVE V IF (-1 DET + &&AcordSN) (0 N + &&AcordSN) (1 Mai OR Pus OR Mens) (2 AJ + &&AcordSN) ;	# lo combat pus grand
+
 REMOVE V + P1 IF (-1C Pro + Ref) ;
 REMOVE V + P2 IF (-1C Pro + Ref) ;
 REMOVE V + P1 IF (-2C Pro + Ref) (-1 Pro) ;
