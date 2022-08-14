@@ -1146,12 +1146,17 @@ SELECT AVexcl IF (-1 BOS) (0 AVexcl) (1 ("!")) ;
 SELECT AVexcl IF (-2 BOS) (-1 Conjco) (0 AVexcl) (1 ("!")) ;
 REMOVE AVexcl ;
 
-SELECT Itg OR Excl OR IJ IF (-1 BOS) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau")) ;	# Qui s'adresse
-SELECT Itg OR Excl OR IJ IF (-2 BOS) (-1 PREP) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau")) ;	# A qui s'adresse
-SELECT Itg OR Excl OR IJ IF (-2 BOS) (-1 Conjco) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau")) ;	# Mais qui s'adresse
-SELECT Itg OR Excl OR IJ IF (-3 BOS) (-1 Conjco) (-1 PREP) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau")) ;	# Mais a qui s'adresse
-REMOVE Itg + AJ OR Excl + AJ IF (0 ("quin") OR ("qual") OR ("quau")) (NOT 1 N) ;	# Qual vòl venir?
-REMOVE Itg + DET OR Excl + DET IF (0 ("quin") OR ("qual") OR ("quau")) (NOT 1 N_AJ) ;	# Qual vòl venir?
+REMOVE PREP IF (0 ("quanta")) ;
+REMOVE N IF (0 ("<quanta>"i) + DET + &&AcordSN) (1 N +  &&AcordSN) ;
+SELECT PRON IF (0 ("quant"i)) (1 Ser OR Semblar_Pareisser) ;
+REMOVE PRON IF (0 ("quant"i) + DET + &&AcordSN) (1 N +  &&AcordSN) ;
+REMOVE AJ IF (0 ("quant"i) + DET + &&AcordSN) (1C N) (1 N +  &&AcordSN) ;
+SELECT Itg OR Excl OR IJ IF (-1 BOS) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("quant")) ;	# Qui s'adresse
+SELECT Itg OR Excl OR IJ IF (-2 BOS) (-1 PREP) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("quant")) ;	# A qui s'adresse
+SELECT Itg OR Excl OR IJ IF (-2 BOS) (-1 Conjco) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("quant")) ;	# Mais qui s'adresse
+SELECT Itg OR Excl OR IJ IF (-3 BOS) (-1 Conjco) (-1 PREP) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("quant")) ;	# Mais a qui s'adresse
+REMOVE Itg + AJ OR Excl + AJ IF (0 ("quin") OR ("qual") OR ("quau") OR ("quant")) (NOT 1 N) ;	# Qual vòl venir?
+REMOVE Itg + DET OR Excl + DET IF (0 ("quin") OR ("qual") OR ("quau") OR ("quant")) (NOT 1 N_AJ) ;	# Qual vòl venir?
 
 SELECT Itg IF (-1 BOS) (0C Itg OR Excl OR IJ OR Rel OR Conjsub OR Conjadv OR ("coma")) (1* ("?")) ;
 SELECT Itg IF (-2 BOS) (-1 PREP) (0C Itg OR Excl OR IJ OR Rel OR Conjsub OR Conjadv OR ("coma")) (1* ("?")) ;
@@ -1161,10 +1166,10 @@ SELECT Excl OR IJ IF (-1 BOS) (0C Itg OR Excl OR IJ OR Rel OR Conjsub OR Conjadv
 SELECT Excl OR IJ IF (-2 BOS) (-1 PREP) (0C Itg OR Excl OR IJ OR Rel OR Conjsub OR Conjadv) (1* ("!")) ;
 SELECT Excl OR IJ IF (-2 BOS) (-1 Conjco) (0C Itg OR Excl OR IJ OR Rel OR Conjsub OR Conjadv) (1* ("!")) ;
 SELECT Excl OR IJ IF (-3 BOS) (-1 Conjco) (-1 PREP) (0C Itg OR Excl OR IJ OR Rel OR Conjsub OR Conjadv) (1* ("!")) ;
-SELECT Itg IF (-1C Demandar LINK NOT 0 VBpp) (0C Itg OR Excl OR IJ OR Rel OR ("coma") OR ("com")) ;	# je me demande qui
-SELECT Itg IF (-2C Demandar LINK NOT 0 VBpp) (-1 PREP) (0C Itg OR Excl OR IJ OR Rel) ;	# je demande avec qui
-SELECT Itg IF (-2C Demandar LINK NOT 0 VBpp) (-1 AV) (0C Itg OR Excl OR IJ OR Rel OR ("coma") OR ("com")) ;	# je ne demande pas qui
-SELECT Itg IF (-3C Demandar LINK NOT 0 VBpp) (-2 AV) (-1 PREP) (0C Itg OR Excl OR IJ OR Rel) ;	# je ne demande pas avec qui
+SELECT Itg IF (-1C Demandar LINK NOT 0 VBpp) (0C Itg OR Excl OR IJ OR Rel OR ("coma") OR ("com") OR ("quant") OR ("qüantum")) ;	# je me demande qui
+SELECT Itg IF (-2C Demandar LINK NOT 0 VBpp) (-1 PREP) (0C Itg OR Excl OR IJ OR Rel OR ("quant") OR ("qüantum")) ;	# je demande avec qui
+SELECT Itg IF (-2C Demandar LINK NOT 0 VBpp) (-1 AV) (0C Itg OR Excl OR IJ OR Rel OR ("coma") OR ("com") OR ("quant") OR ("qüantum")) ;	# je ne demande pas qui
+SELECT Itg IF (-3C Demandar LINK NOT 0 VBpp) (-2 AV) (-1 PREP) (0C Itg OR Excl OR IJ OR Rel OR ("quant") OR ("qüantum")) ;	# je ne demande pas avec qui
 REMOVE AV + Excl ;
 REMOVE AV + Itg ;
 
