@@ -2584,6 +2584,8 @@ REMOVE V + Pers IF (-3C V LINK NOT 0 VBpp) (-2C AV OR PREAV OR Donc LINK NOT 0 I
 REMOVE V + Pers IF (-4C V LINK NOT 0 VBpp) (-3C AV OR PREAV OR Donc LINK NOT 0 Itg) (-2C AV OR PREAV OR Donc LINK NOT 0 Itg) (-1C AV OR PREAV OR Donc LINK NOT 0 Itg) (0 ("a")) ;	# s'expausarà pas totjorn donc a sanccions
 REMOVE V + Pers IF (NOT -1* Rel) (1C V LINK NOT 0 VBpp OR VBinf) ;
 
+SELECT PREP IF (-2C V LINK NOT 0 VBpp) (-1 Tn) (0 ("<deu>"i)) (1 N_AJ + MascSg) ;	# veiràn tot deu començar
+
 REMOVE N IF (-1C PRON) (NOT -1 V) (NOT -1 ("<i a>"i)) (0 V) ;		# qui sap ; i a risques
 REMOVE V + Pers IF (-1C V + Pers OR ("<i a>"i)) ;	# voletz ve pariar ; i a risques
 REMOVE V + Pers IF (1C V + Pers OR ("<i a>"i)) ;	# voletz ve pariar
