@@ -1639,6 +1639,9 @@ SELECT PREP IF (-3 Venir OR ("arribar")) (-2 AV) (-1 AV) (0 DAutres) ;
 REMOVE PREP IF (0 DAutres) ;
 SELECT SUB:1 AJ + &&AcordSN IF (0 DAutres) (1 N + &&AcordSN) ;
 
+SELECT SUB:1 N IF (0 ("<de biais>"i)) (1 AJ + MascSg) ;
+REMOVE SUB:1 N IF (0 ("<de biais>"i)) ;
+
 #Una prepausicion es totjorn seguida d'un nom, pronom, adverb, numeral, infinitiu, determinant o adjectiu
 REMOVE PREP IF (NOT 1 N OR PRON OR AV OR NUM OR NP OR VBinf OR DET OR AJ OR ("de") OR unknown) (NOT 0/* PREP + DET) (NOT 0/* N OR Rel OR Conjadv OR Conjsub) (NOT 0 ("en tot")) ;	# a luchat pendent d'annadas
 REMOVE PREP IF (1 ("de")) (NOT 2 N OR AJ) ;	# a luchat pendent d'annadas
