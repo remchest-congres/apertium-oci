@@ -979,6 +979,9 @@ SELECT Conjsub IF (0 Que) (1 Ser + PRS) (1* ("o"));
 SELECT Conjsub IF (0 Que) (1 Ser + PIS) (1* ("o"));
 SELECT Conjsub IF (-1C ("pensar") OR ("créder") OR ("créser") OR ("díser") OR ("imaginar") OR ("ordenar") OR ("comandar") OR ("voler") OR ("demandar") OR ("respóner") OR ("assegurar"));
 
+REMOVE N IF (NOT -1/* DET + Fem) (0 ("èra")) ;
+REMOVE N IF (-1C Itg OR Excl) (0 ("èra")) ;		# quau èra
+
 SELECT DET + &&AcordSN IF (0 ("un") + &&AcordSN) (1 N_AJ + &&AcordSN) ;	# guess (cal pels enonciatius)
 SELECT DET + &&AcordSN IF (NOT -1 PREP) (0 ("un") + &&AcordSN) (1 Top + &&AcordSN) ;	# guess (cal pels enonciatius)
 REMOVE V IF (0 ("un")) (1 Que OR Qui) ;
