@@ -1472,7 +1472,7 @@ SELECT Conjco IF (-1 BOS OR SENT) (0 ("<E>")) (NOT 1 CM) (NOT 1* ("?")) ;
 SELECT Conjco IF (-1 BOS OR SENT) (0 ("<E>")) (NOT 1 CM OR Pro OR V + Pers) ;
 REMOVE Conjsub IF (-1 BOS OR SENT);
 REMOVE Rel IF (-1 BOS OR SENT);
-REMOVE Rel IF (NOT -1 CM OR ("»") OR N OR NP OR AJ OR VBpp OR PRON OR DET);
+REMOVE Rel IF (NOT -1 CM OR ("»") OR N OR NP OR AJ OR VBpp OR PRON OR DET OR NUM);
 REMOVE Rel IF (NOT -2 N OR AJ OR VBpp OR PRON OR DET) (-1 CM OR ("»")) ;
 REMOVE Rel IF (-1C DET) (0 ("lo que") OR ("lo qui")) ;
 SELECT Rel IF (-1C DET) ;
