@@ -80,6 +80,7 @@ LIST PIS = pis ;
 LIST PII = pii ;
 LIST IFI = ifi ;
 LIST Itg = itg ;
+LIST Excl = excl ;
 LIST DETdef = (det def);
 LIST DETind = (det ind);
 LIST DETpos = (det pos);
@@ -202,7 +203,7 @@ SET CM = (cm) OR (lpar) OR (rpar) OR ("<;>") ;
 SET CM_strict = (cm) OR (lpar) - ("«") OR (rpar) - ("»") OR ("<;>") ;
 LIST Lpar = lpar ;
 LIST Rpar = rpar ;
-LIST Excl = "!" ;
+LIST ExclMark = "!" ;
 
 SET Cnj_Rel_End = BOS OR Conjco OR Conjsub OR Conjadv OR Rel OR VBinf ;
 SET SN_End = EOS OR PREP OR Conjsub OR Conjadv OR Rel OR V ;
@@ -774,20 +775,20 @@ SELECT AV (-3 Haver) (-2 VBpp) (-1 AV) (0 Melhor) ;
 
 REMOVE N IF (-1 CM OR BOS) (0 ("<tè>"i)) (1 CM OR EOS)  ;		# guess
 SELECT VBimp IF (0 ("<vejatz>"i) OR ("<vedetz>"i)) (1 (":")) ;
-REMOVE VBimp IF (NOT 1* Excl) (NOT 0 ("tiéner") OR ("tiénguer") OR ("tier")) ;
-REMOVE VBimp IF (NOT 1* Excl) (NOT -1 CM OR BOS) (0 ("tiéner") OR ("tiénguer") OR ("tier")) (NOT 1 CM OR EOS) ;
+REMOVE VBimp IF (NOT 1* ExclMark) (NOT 0 ("tiéner") OR ("tiénguer") OR ("tier")) ;
+REMOVE VBimp IF (NOT 1* ExclMark) (NOT -1 CM OR BOS) (0 ("tiéner") OR ("tiénguer") OR ("tier")) (NOT 1 CM OR EOS) ;
 REMOVE VBimp IF (-1 Ant OR Cog OR unknown) (0 P3) ;
 REMOVE VBimp IF (-2 Ant OR Cog OR unknown) (-1 AV OR Pro) (0 P3) ;
 REMOVE VBimp IF (-3 Ant OR Cog OR unknown) (-2 AV) (-1 Pro) (0 P3) ;
-SELECT VBimp IF (-1 BOS) (1 Excl) ;
-SELECT VBimp IF (-1 BOS) (1 AV) (2 Excl) ;
-SELECT VBimp IF (-2 BOS) (-1 ("be") OR ("que")) (1 Excl) ;
-SELECT VBimp IF (-2 BOS) (-1 ("be") OR ("que")) (1 AV) (2 Excl) ;
+SELECT VBimp IF (-1 BOS) (1 ExclMark) ;
+SELECT VBimp IF (-1 BOS) (1 AV) (2 ExclMark) ;
+SELECT VBimp IF (-2 BOS) (-1 ("be") OR ("que")) (1 ExclMark) ;
+SELECT VBimp IF (-2 BOS) (-1 ("be") OR ("que")) (1 AV) (2 ExclMark) ;
 REMOVE VBimp IF (-1 BOS) (0 ("un")) ;
-SELECT VBimp IF (-1 BOS) (0 P2 LINK NOT 0 ("París")) (1* Excl) ;		# guess
-SELECT VBimp IF (-1 CM) (1 Excl) ;		# guess
+SELECT VBimp IF (-1 BOS) (0 P2 LINK NOT 0 ("París")) (1* ExclMark) ;		# guess
+SELECT VBimp IF (-1 CM) (1 ExclMark) ;		# guess
 REMOVE VBimp IF (-2 BOS) (-1 ("be") OR ("que")) (0 ("un")) ;
-SELECT VBimp IF (-2 BOS) (-1 ("be") OR ("que")) (0 P2) (1* Excl) ;	# guess
+SELECT VBimp IF (-2 BOS) (-1 ("be") OR ("que")) (0 P2) (1* ExclMark) ;	# guess
 
 REMOVE NP IF (-1 BOS) (0 ("París")) (1C Conjsub) ;
 REMOVE NP IF (-1 BOS) (0 ("París")) (1 AV) (2C Conjsub) ;
@@ -1493,7 +1494,7 @@ REMOVE Conjco IF (0 ("<o nos>"i) OR ("<o vos>"i)) ;
 #Un imperatiu seguis pas una conjonccion, un relatiu o un pronom personal
 REMOVE VBimp IF (-1C Enon OR Conjsub OR Rel OR Pers LINK NOT 0 Donc OR ("e donc") OR ("e doncas") OR ("e dongas"));
 
-REMOVE VBimp IF (NOT 1* Excl) ;
+REMOVE VBimp IF (NOT 1* ExclMark) ;
 
 SELECT V + $$AcordTempsPers IF (0C V) (2C V) (0 V + $$AcordTempsPers) (1 ("e") OR O_cnjcoo OR ("ni")) (2 V + $$AcordTempsPers) ;
 SELECT V + $$AcordTempsPers IF (0C V) (-2C V) (-2 V + $$AcordTempsPers) (-1 ("e") OR O_cnjcoo OR ("ni")) (0 V + $$AcordTempsPers) ;
