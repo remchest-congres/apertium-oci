@@ -1739,6 +1739,8 @@ SELECT N IF (0 ("carta")) (1 ("de")) (2 ("crèdit") OR ("credit")) ;
 SELECT N IF (0 ("rei")) (1 ("de")) (2 Top OR unknownMajIni) ;
 SELECT N IF (0 ("marqués")) (1 ("de")) (2 Top OR unknownMajIni) ;
 SELECT N IF (0 ("Pache")) (1 ("de")) ;
+SELECT N IF (-1 DET + MascSg OR Artcontrsg) (0 ("Lac")) ;
+SELECT N IF (NOT -1 Ant) (0 ("Lac")) (1 Top OR unknownMajIni) ;
 SELECT N IF (0 ("Luna")) (NOT 1 (ant) OR (cog)) (NOT -1 (ant) OR (cog)) ;
 SELECT AJ IF (0 ("bas") + &&AcordSN + MajIni) (1 Top + &&AcordSN OR unknownMajIni) ;
 SELECT Acr IF (0 NP) ;
