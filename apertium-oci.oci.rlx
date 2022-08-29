@@ -588,6 +588,14 @@ REMOVE AJ IF (-2 ("un")) (-1 ("còp")) (0 VBpp) ;
 SELECT VBpp IF (-1 ("<un còp>"i)) (0 VBpp) (1 CM OR EOS) ;
 SELECT VBpp IF (-2 ("un")) (-1 ("còp")) (0 VBpp) (1 CM OR EOS) ;
 
+SELECT N IF (-1 DET + MascSg OR Artcontrsg) (0 ("<ton>"i)) ;
+SELECT N IF (-2 DET + MascSg OR Artcontrsg) (-1 AdjOrd + MascSg) (0 ("<ton>"i)) ;
+SELECT N IF (-2 DET + MascSg OR Artcontrsg) (-1 AdjPre + MascSg) (0 ("<ton>"i)) ;
+SELECT N IF (-2 DET + MascSg OR Artcontrsg) (-1 AJ + MascSg) (0 ("<ton>"i)) (NOT 1 N_AJ + MascSg OR ("«")) ;
+REMOVE N IF (0 ("<ton>"i)) (1 ("<sus>"i)) (2 ("<ton>"i)) ;
+REMOVE N IF (-2 ("<ton>"i)) (-1 ("<sus>"i)) (0 ("<ton>"i)) ;
+REMOVE N IF (0 ("<ton>"i)) ;
+
 SELECT Ser + Pl IF (-1C N + Pl + &&AcordSN) (0 ("<son>"i)) (1 N_AJ + Pl + &&AcordSN) ;
 SELECT Ser + Pl IF (-2 DET + Pl + &&AcordSN) (-1 N_AJ + Pl + &&AcordSN) (0 ("<son>"i)) (1 N_AJ + Pl + &&AcordSN) ;
 SELECT Ser + Pl IF (-2 N_AJ + Pl + &&AcordSN) (-1 N_AJ + Pl + &&AcordSN) (0 ("<son>"i)) (1 N_AJ + Pl + &&AcordSN) ;
