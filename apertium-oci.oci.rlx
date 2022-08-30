@@ -1848,6 +1848,11 @@ SELECT Ant + &&AcordSN IF (0 Ant + &&AcordSN) (1 DETdef + &&AcordSN) (2 AJ + Maj
 SELECT Ant + &&AcordSN IF (0 Ant + &&AcordSN) (1 DETdef + &&AcordSN) (2 unknownMajIni) ;
 SELECT AJ + &&AcordSN IF (-2 Ant + &&AcordSN) (-1 DETdef + &&AcordSN) (0 AJ + MajIni + &&AcordSN) ;	# Loís lo Grand
 
+SELECT Al IF (0 ("Artèmis")) (-1 ("programa") OR ("mission")) ;
+SELECT Al IF (0 ("Artèmis")) (1 NUM) ;
+SELECT Al IF (0 ("Artèmis")) (-1* ("Orion") OR ("NASA") OR ("mission") OR ("fusada") OR ("vòl") OR ("luna") OR ("lua") OR ("planeta") OR ("Mart") OR ("espaci") OR ("espacial") OR ("espaciau") OR ("astronauta")) ;
+SELECT Al IF (0 ("Artèmis")) (1* ("Orion") OR ("NASA") OR ("mission") OR ("fusada") OR ("vòl") OR ("luna") OR ("lua") OR ("planeta") OR ("Mart") OR ("espaci") OR ("espacial") OR ("espaciau") OR ("astronauta")) ;
+SELECT Ant IF (0 ("Artèmis")) ;
 
 SELECT Cog IF (-1 Grade) ;
 SELECT Ant IF (-1 Grade) ;
