@@ -1692,7 +1692,7 @@ SELECT N IF (-2 Aver) (-1 AV) (0 ("<afar>"i)) ;
 SELECT N IF (-1 Aver) (-2 AV) (-1 AV) (0 ("<afar>"i)) ;
 
 #Una prepausicion es totjorn seguida d'un nom, pronom, adverb, numeral, infinitiu, determinant o adjectiu
-REMOVE PREP IF (NOT 1 N OR PRON OR AV OR NUM OR NP OR VBinf OR DET OR AJ OR ("de") OR unknown) (NOT 0/* PREP + DET) (NOT 0/* N OR Rel OR Conjadv OR Conjsub) (NOT 0 ("en tot")) ;	# a luchat pendent d'annadas
+REMOVE PREP IF (NOT 1 N OR PRON OR AV OR NUM OR NP OR VBinf OR DET OR PREDET OR AJ OR ("de") OR unknown) (NOT 0/* PREP + DET) (NOT 0/* N OR Rel OR Conjadv OR Conjsub) (NOT 0 ("en tot")) ;	# a luchat pendent d'annadas
 REMOVE PREP IF (1 ("de")) (NOT 2 N OR AJ) ;	# a luchat pendent d'annadas
 
 #Es pas un vèrbe se, dempuèi lo darrièr vèrbe conjugat, avèm pas agut de novèla proposicion
@@ -2471,6 +2471,9 @@ REMOVE V + Pers IF (-2C PREP) (-1 AJ + &&AcordSN) (0 N + &&AcordSN) ;	# dins de 
 
 # N / AJ
 
+SELECT AJ IF (0 ("nòrd")) (0 (META:/-/r)) ;
+SELECT AJ IF (0 ("sud")) (0 (META:/-/r)) ;
+
 SELECT SUB:1 N IF (0 ("<de mai>"i)) (1 ("passat")) ;
 SELECT AJ IF (-1 ("<de mai>"i)) (0 ("passat")) ;
 SELECT SUB:1 AV IF (0 ("<de mai>"i)) (1 AJ OR VBpp OR AV) ;
@@ -2627,6 +2630,19 @@ SELECT N IF (-2 Drecha + N + FemSg OR Esquerra + N + FemSg) (-1 Conjco OR CM) (0
 SELECT N IF (2 Drecha + N + FemSg OR Esquerra + N + FemSg) (1 Conjco OR CM) (0 ("centre") + MascSg) ;
 SELECT N IF (-3 Drecha + N + FemSg OR Esquerra + N + FemSg) (-2 Conjco OR CM) (-1 DETdef + MascSg) (0 ("centre") + MascSg) ;
 SELECT N IF (3 Drecha + N + FemSg OR Esquerra + N + FemSg) (2 DETdef + MascSg) (1 Conjco OR CM) (0 ("centre") + MascSg) ;
+
+SELECT AJ + MascSg IF (-1 Artcontrsg) (0 AdjPre + MascSg) (1 N + MascSg) ;
+SELECT AJ + MascPl IF (-1 Artcontrpl) (0 AdjPre + MascPl) (1 N + MascPl) ;
+SELECT N + MascSg IF (-1 Artcontrsg) (0 N + MascSg) (1 AJ + MascSg) ;
+SELECT N + MascPl IF (-1 Artcontrpl) (0 N + MascPl) (1 AJ + MascPl) ;
+REMOVE AJ IF (NOT -1 DET OR Artcontrsg OR Artcontrpl OR N OR AJ OR Top) (0C N_AJ LINK NOT 0 AdjPre) (1C N_AJ) (0 N + &&AcordSN) (1 AJ + &&AcordSN) ;	# son bilingües passius
+SELECT AJ + &&AcordSN IF (NOT -1 DET OR Artcontrsg OR Artcontrpl OR N OR AJ OR Top) (0C N_AJ LINK 0 AdjPre) (1C N_AJ) (0 AJ + &&AcordSN) (1 N + &&AcordSN) ;	# son bons trabalhadors
+SELECT N + &&AcordSN IF (NOT -2 N OR AJ OR Top) (-1C AJ) (-1 AJ + &&AcordSN) (0C N_AJ) (0 N + &&AcordSN) ;	# son bons trabalhadors ; amb diferentas vilas
+SELECT AJ + &&AcordSN IF (-1C N) (-1 N + &&AcordSN) (0C N_AJ) (0 AJ + &&AcordSN) ;	# organizatritz màger
+SELECT AJ + &&AcordSN IF (-1C Top) (-1 Top + &&AcordSN) (0C N_AJ) (0 AJ + &&AcordSN) ;	# Soudan français
+SELECT AJ + &&AcordSN IF (-2C Top + &&AcordSN) (-1 AJ + &&AcordSN) (0C N_AJ) (0 AJ + &&AcordSN) ;	# Centre Dramatique Occitan
+
+SELECT PREDET + &&AcordSN IF (0 ("tot") + &&AcordSN) (1C DET) (1 DET + &&AcordSN) ;	# tot lo grop
 
 # N / V
 
