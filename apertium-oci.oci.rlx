@@ -602,7 +602,12 @@ SELECT Ser + Pl IF (-2 N_AJ + Pl + &&AcordSN) (-1 N_AJ + Pl + &&AcordSN) (0 ("<s
 SELECT Ser + Pl IF (-2 ("<de>"i)) (-1 N + Pl + &&AcordSN) (0 ("<son>"i)) (1 N_AJ + Pl + &&AcordSN) ;
 REMOVE Ser + Pl IF (0 ("son") + Sg) (1C N_AJ + Sg_strict) ;
 
-SELECT N (-1 Jorns) (0 ("<matin>"i)) ;
+LIST DeMatin = "<de matin>"i "<de ser>" i"<de sera>"i "<de nuèch>"i "<de nuòch>"i "<de jorn>"i "<de dia>"i ;
+SELECT N IF (-1 Jorns) (0 ("<matin>"i)) ;
+SELECT AV IF (NOT -1/* DET) (0 Jorns) (1 DeMatin) ;
+SELECT AV IF (-1 Jorns) (0 DeMatin) ;
+SELECT AV IF (-3 NUM) (-2 De) (-1 Nommois) (0 DeMatin) ;
+SELECT AV IF (-2 NUM) (-1 Nommois) (0 DeMatin) ;
 
 REMOVE AV (0 Conjadv) (-1 CM) (NOT 1 EOS) ;
 REMOVE V (0 ("<lavetz>"i)) (0 AV OR Conjadv) (-1 CM) ;
@@ -3025,7 +3030,9 @@ REMOVE Conjadv IF (0 ("qui")) (NOT -1 AJ OR V OR AV) ;
 REMOVE Itg IF (0 ("qui") OR ("que")) (-1C Tn OR ("jo")) ;	# jo qui’n diserèi
 
 #Lo jorn de la setmana es un nom s'es precedit d'un determinant
-REMOVE AV IF (-1 DET) (0 Jorns) ;
+REMOVE AV IF (-1/* DET) (0 Jorns) ;
+REMOVE AV IF (-1 De) (0 Jorns) ;
+REMOVE AV IF (0 Jorns) (1 NUM) (2 Nommois) ;
 
 #préner temps
 REMOVE Pl IF (-1 ("prendre") or ("prene") or ("préner")) (0 ("temps")) ;
