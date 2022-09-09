@@ -699,6 +699,13 @@ SELECT V IF (0 ("a costat de")) (1 ("desenat") OR ("detzenat") OR ("centena") OR
 REMOVE V IF (0 ("a costat de")) ;
 REMOVE V IF (0 ("a pena")) ;
 REMOVE V IF (0 ("a penas")) ;
+SELECT AV IF (-1 Verb LINK NOT 0 VBpp OR Vmod) (0 ("a cobèrt") OR ("a descobèrt")) ;
+SELECT AV IF (-2 Verb LINK NOT 0 VBpp OR Vmod) (-1 AV) (0 ("a cobèrt") OR ("a descobèrt")) ;
+SELECT AV IF (-2 VBaux) (-1 Verb LINK 0 VBpp) (0 ("a cobèrt") OR ("a descobèrt")) ;
+SELECT AV IF (-3 VBaux) (-2 Verb LINK 0 VBpp) (-1 AV) (0 ("a cobèrt") OR ("a descobèrt")) ;
+SELECT AV IF (-3 VBaux) (-2 AV) (-1 Verb LINK 0 VBpp) (0 ("a cobèrt") OR ("a descobèrt")) ;
+SELECT AV IF (-4 VBaux) (-3 AV) (-2 Verb LINK 0 VBpp) (-1 AV) (0 ("a cobèrt") OR ("a descobèrt")) ;
+REMOVE AV IF (0 ("a cobèrt") OR ("a descobèrt")) ;
 
 REMOVE PREP IF (0 A_de) (NOT 1 N_AJ OR AV OR PREAV) ;	# path
 REMOVE PREP IF (0 A_de) (1 AV OR PREAV) (NOT 2 N_AJ) ;	# path
