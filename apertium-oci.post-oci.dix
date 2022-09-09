@@ -2831,7 +2831,7 @@
 	<e>
 		<p>
 			<l><a/>vèrs<b/><a/>detla<b/></l>
-			<r>vèrs<b/>l'<b/></r>
+			<r>vèrs<b/>l'</r>
 		</p>
 		<par n="vocal_general"/>
 	</e>
@@ -2885,7 +2885,7 @@
 	<e>
 		<p>
 			<l><a/>tà<b/><a/>detla<b/></l>
-			<r>tà<b/>l'<b/></r>
+			<r>tà<b/>l'</r>
 		</p>
 		<par n="vocal_general"/>
 	</e>
@@ -2939,7 +2939,7 @@
 	<e>
 		<p>
 			<l><a/>entà<b/><a/>detla<b/></l>
-			<r>entà<b/>l'<b/></r>
+			<r>entà<b/>l'</r>
 		</p>
 		<par n="vocal_general"/>
 	</e>
@@ -2993,7 +2993,7 @@
 	<e>
 		<p>
 			<l><a/>ende<b/><a/>detla<b/></l>
-			<r>ende<b/>l'<b/></r>
+			<r>ende<b/>l'</r>
 		</p>
 		<par n="vocal_general"/>
 	</e>
@@ -3047,7 +3047,7 @@
 	<e>
 		<p>
 			<l><a/>dambe<b/><a/>detla<b/></l>
-			<r>dambe<b/>l'<b/></r>
+			<r>dambe<b/>l'</r>
 		</p>
 		<par n="vocal_general"/>
 	</e>
@@ -3610,7 +3610,7 @@
 	<e>
 		<p>
 			<l><a/>jos<b/><a/>detla<b/></l>
-			<r>jos<b/>l'<b/></r>
+			<r>jos<b/>l'</r>
 		</p>
 		<par n="vocal_general"/>
 	</e>
@@ -3697,7 +3697,7 @@
 	<e>
 		<p>
 			<l><a/>sus<b/><a/>detla<b/></l>
-			<r>sus<b/>l'<b/></r>
+			<r>sus<b/>l'</r>
 		</p>
 		<par n="vocal_general"/>
 	</e>
@@ -5529,7 +5529,7 @@
 	<e>
 		<p>
 			<l><a/>jos<b/><a/>detla<b/></l>
-			<r>jos<b/>l'<b/></r>
+			<r>jos<b/>l'</r>
 		</p>
 		<par n="vocal_general"/>
 	</e>
@@ -5574,7 +5574,7 @@
 	<e>
 		<p>
 			<l><a/>sus<b/><a/>detla<b/></l>
-			<r>sus<b/>l'<b/></r>
+			<r>sus<b/>l'</r>
 		</p>
 		<par n="vocal_general"/>
 	</e>
