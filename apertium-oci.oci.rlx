@@ -1502,6 +1502,11 @@ SELECT Ne_conj IF (-3 Ne_conj) (-2 AV) (-1 CM) (0 Ne_conj) (1 AV) ;
 SELECT Ne_conj IF (-3 Ne_conj) (-2 V) (-1 CM) (0 Ne_conj) (1 V) ;
 SELECT Ne_pron IF (1C V + Pers) (2C DETdef OR NUM) (NOT 1* Ne_conj) (NOT -1* Ne_conj) ;		# ne reclamavan la destruccion
 
+LIST NAverUnSadol = "aver un sadol" "aver un confle" "aver un sadoth" "auer un sadoth" "estar hart" "estar harta" "estar harts" "estar hartas" "aver hartèra" "auer hartèra" "aver ua hartèra" "auer ua hartèra" "aver mon confle" "aver ton confle" "aver son confle" "aver nòstre confle" "aver vòstre confle" "aver lor confle" ;
+SELECT Pro IF (0 En) (1 NAverUnSadol) ;
+SELECT Pro IF (0 En) (1 Haver) (2 NAverUnSadol) ;
+SELECT Pro IF (0 En) (1 Haver) (2 AV) (3 NAverUnSadol) ;
+SELECT Pro IF (0 En) (1 Haver) (2 AV) (3 AV) (4 NAverUnSadol) ;
 SELECT PREP IF (NOT -1 PREP) (0 En) (1 VBger) ;
 SELECT PREP IF (NOT -1 PREP) (0 En) (1C Pro) (2 VBger) ;
 SELECT PREP IF (0 En) (1 Pro) (2 Pro) (3 VBger) ;
