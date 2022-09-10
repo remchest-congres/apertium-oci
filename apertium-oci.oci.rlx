@@ -371,6 +371,7 @@ LIST Animal_non_bestiar = "animal" "animau" "bèstia" "peis" "peish" "can" "gat"
 
 LIST Enfant = "enfant" "dròlle" "mainatge" "gojat" "escolan" "eslhève" "alumne" "aprenent" "licean" ;
 
+LIST Familha = "marit" "molhèr" "pair" "paire" "mair" "maire" "maira" "mairastra" "papà" "mamà" "mamair" "maiòta" "mairastra" "filh" "hilh" "fraire" "hrair" "sòr" "sòrre" "seror" "sorastra" "sorrastra" "oncle" "onco" "oncon" "tanta" "nebot" "cosin" "cosina" "cosia" "bigal" "moissau" "grand" "gran-pair" "gran-mair" "pairan" "pairbon" "mairbona" "papet" "papeta" "pepin" "mamet" "mameta" "menina" "mairegrand" "rèiregrand" "arrèrpairan" "arrèrpairan" "rèirepepin" "rèiremenina" "repepin" "felen" "rèire-filh" "rèirefilh" "rèrhilh" "rèire-felen" "rèirefelen" ;
 
 SECTION
 
@@ -2408,6 +2409,12 @@ REMOVE AJ IF (-1 ("en")) (NOT 1 Conjco OR N OR NP) ;
 SELECT AJ + &&AcordSN IF (0 AJ + MajIni + &&AcordSN) (1 NP + &&AcordSN) ;	# en Naut Comenge
 
 REMOVE AJ IF (-1 ("de")) (0 VBinf) (1 PREP OR EOS) ;	# es riscat d'especular
+
+LIST Amic = "amic" "enemic" "vesin" "collèga" "companh" "companhon" "camarada" ;
+SELECT AJ IF (0 ("car") + Masc + &&AcordSN) (1 N + &&AcordSN) ;
+SELECT AJ IF (0 ("car") + &&AcordSN) (1 Familha + N + &&AcordSN) ;
+SELECT AJ IF (0 ("car") + &&AcordSN) (1 Amic + N + &&AcordSN) ;
+SELECT AJ IF (-1 BOS) (0 ("car") + &&AcordSN) (1 N + &&AcordSN) ;
 
 SELECT AJ IF (0 ("pauc")) (1 AdjPre + Pl + &&AcordSN) (2 N + Pl + &&AcordSN) ;	# paucs bons amics
 SELECT AJ IF (-1 ("pauc")) (0 AdjPre + Pl + &&AcordSN) (1 N + Pl + &&AcordSN) ;	# paucs bons amics
