@@ -359,11 +359,12 @@ OR NumOrd ;
 SET AdjPre = ("ancian") OR ("nòu") OR ("nau") OR ("novèl") OR ("navèth") OR ("futur") OR ("grand") OR ("gran") OR ("màger") OR ("petit") OR ("pichon") OR ("pichòt") OR ("bon") OR ("mal") OR ("mau") OR ("marrit") OR ("naut") OR ("haut") OR ("bas") OR ("baish") OR ("altre") OR ("autre") OR ("aute") OR ("meteis") OR ("medish") OR ("medeish") OR ("madeish") OR ("quite") OR ("quiti") OR ("mièg") OR ("miei") OR AdjOrd;
 
 
-SET Dignitat = ("papa") OR ("patriarca") OR ("avesque") OR ("arcavesque") OR ("archavesque") OR ("archevesque") OR ("arquevesque") OR ("sant") OR ("sant") OR ("apòstol") OR ("apostòl") OR ("emperador") OR ("emperaire") OR ("rei") OR ("tsar") OR ("vicerei") OR ("regent") OR ("prince") OR ("infant") OR ("dalfin") OR ("comte") OR ("comtessa") OR ("vescomte") OR ("vescomtessa") OR ("duc") OR ("grand-duc") OR ("arcaduc") OR ("archiduc") OR ("marqués") OR ("baron") ;
+LIST Dignitat = "papa" "patriarca" "avesque" "arcavesque" "archavesque" "archevesque" "arquevesque" "sant" "sant" "apòstol" "apostòl" "emperador" "emperaire" "rei" "tsar" "vicerei" "regent" "prince" "infant" "dalfin" "comte" "comtessa" "vescomte" "vescomtessa" "duc" "grand-duc" "arcaduc" "archiduc" "marqués" "baron" ;
 
-SET Lenga = ("occitan") OR ("francés") OR ("anglés") OR ("alemand") OR ("espanhòl") OR ("espanhòu") OR ("italian") OR ("rus") OR ("chinés") OR ("japonés") OR ("catalan") OR ("basc") OR ("basco") OR ("breton") OR ("còrse") OR ("arpitan") OR ("francoprovençal") OR ("alsacian") OR ("flamenc") ;
+LIST Lenga = "occitan" "francés" "anglés" "alemand" "espanhòl" "espanhòu" "italian" "rus" "chinés" "japonés" "catalan" "basc" "basco" "breton" "còrse" "arpitan" "francoprovençal" "alsacian" "flamenc" ;
+LIST Gentilici = "occitan" "francés" "anglés" "alemand" "espanhòl" "espanhòu" "italian" "rus" "chinés" "japonés" "catalan" "basc" "basco" "breton" "còrse" "arpitan" "francoprovençal" "alsacian" "flamenc" "american" "canadian" "canadenc" "quebequés" "cuban" "occidental" "oriental" ;
 
-SET Grade = ("soldat") OR ("caporal") OR ("caporau") OR ("sergent") OR ("lòctenent") OR ("capitani") OR ("capitan") OR ("coronèl") OR ("coronèu") OR ("general") OR ("generau") OR ("amiral") OR ("amirau") OR ("contra-amiral") OR ("contra-amirau") OR ("vice-amiral") OR ("vice-amirau") OR ("majoral") OR ("majorau") ;
+LIST Grade = "soldat" "caporal" "caporau" "sergent" "lòctenent" "capitani" "capitan" "coronèl" "coronèu" "general" "generau" "amiral" "amirau" "contra-amiral" "contra-amirau" "vice-amiral" "vice-amirau" "majoral" "majorau" ;
 
 LIST Bestiar = "bestiar" "pol" "pret" "poleton" "poric" "gal" "gau" "galina" "garia" "piòta" "polòja" "rit" "guit" "polalha" "poralha" "feda" "aulha" "cabra" "craba" "moton" "vaca" "buòu" "bueu" "vedèl" "vedèth" "taur" "caval" "chivau" "cavala" "polin" "porin" "ase" ;
 
@@ -2426,6 +2427,10 @@ SELECT NUM IF (0 NUM) (1 ("quite") + &&AcordSN) (2 N + &&AcordSN) ;	# dos quites
 SELECT NUM IF (0 NUM) (1 ("quiti") + &&AcordSN) (2 N + &&AcordSN) ;	# dos quites mainatges
 SELECT AJ IF (-1 DETdef OR NUM) (0 ("quite")) (1 unknown) ;
 SELECT AJ IF (-1 DETdef OR NUM) (0 ("brave")) (1 unknown) ;
+
+SELECT N + FemSg IF (-2 ("a") + PREP) (-1 DETdef + FemSg) (0 ("mòda")) ;
+SELECT AJ + FemSg IF (-2 ("a") + PREP) (-1 DETdef + FemSg) (0 Gentilici + FemSg) (NOT 1 AJ OR VBpp) ;	# a l'occidentala
+
 
 # ADJ POS
 
