@@ -1803,9 +1803,9 @@ SELECT N IF (0 ("Luna")) (NOT 1 (ant) OR (cog)) (NOT -1 (ant) OR (cog)) ;
 SELECT AJ IF (0 ("bas") + &&AcordSN + MajIni) (1 Top + &&AcordSN OR unknownMajIni) ;
 SELECT Acr IF (0 NP) ;
 SELECT NP OR Acr IF (NOT -1 BOS OR Lpar) (NOT -1 (META:/—/r)) (NOT -1 (META:/…/r))
-	(NOT 0 ("gran") OR ("grand") OR ("rei") OR ("marqués") OR ("internet") OR ("francés") OR ("Catalan") OR ("Gascon") OR ("Aragonés") OR ("luna") OR ("marina") OR ("nadal") OR ("Cort") OR ("justícia") OR ("Abril") OR ("Pache")) ;
+	(NOT 0 ("gran") OR ("grand") OR ("rei") OR ("marqués") OR ("internet") OR ("francés") OR ("Catalan") OR ("Gascon") OR ("Còrsa") OR ("Aragonés") OR ("luna") OR ("marina") OR ("nadal") OR ("Cort") OR ("justícia") OR ("Abril") OR ("Pache")) ;
 SELECT NP OR Acr IF (NOT -2 BOS) (-1 Lpar) (NOT -1 (META:/…/r))
-	(NOT 0 ("gran") OR ("grand") OR ("rei") OR ("marqués") OR ("internet") OR ("francés") OR ("Catalan") OR ("Gascon") OR ("Aragonés") OR ("luna") OR ("marina") OR ("nadal") OR ("Cort") OR ("justícia") OR ("Abril") OR ("Pache")) ;
+	(NOT 0 ("gran") OR ("grand") OR ("rei") OR ("marqués") OR ("internet") OR ("francés") OR ("Catalan") OR ("Gascon") OR ("Còrsa") OR ("Aragonés") OR ("luna") OR ("marina") OR ("nadal") OR ("Cort") OR ("justícia") OR ("Abril") OR ("Pache")) ;
 REMOVE N + Sg IF (-1 BOS) (0 NP) (NOT 1 CM) (1* V OR Ser BARRIER (":") OR EOS) ;	# Fred es mort ; Mair, vòs que’t haci ; Vacas e vetèths qu’arribavan
 REMOVE AJ + Sg IF (-1 BOS) (0 NP) (NOT 1 N + Sg) (NOT 1 De) (NOT 1 CM) (NOT 1* ("!")) (1* V OR Ser BARRIER (":") OR EOS) ;	# Fred es mort
 
@@ -3303,6 +3303,15 @@ SELECT Pl_strict IF (-4 ("i")) (-3 Aver) (-2 AV) (1 AV) (0C N) (0 N + Sg_strict)
 SELECT Pl_strict IF (-1C BOS OR Conjsub OR Conjadv OR Rel OR Que) (0C N) (0 N + Sg_strict) (1C V LINK NOT 0 VBpp) (1 V + P3 + Pl) ;	# cors començan
 SELECT Pl_strict IF (-2C BOS OR Conjsub OR Conjadv OR Rel OR Que) (-1 AV) (0C N) (0 N + Sg_strict) (1C V LINK NOT 0 VBpp) (1 V + P3 + Pl) ;
 
+
+REMOVE ("còrse") + N IF (0 ("còrse") + N) (0 ("còrs") + N) (1 De) (2 Ant OR Cog) ;
+REMOVE ("còrse") + N IF (0 ("còrse") + N) (0 ("còrs") + N) (1 De) (2 Dignitat OR Grade OR Enfant OR Familha) ;
+REMOVE ("còrse") + N IF (0 ("còrse") + N) (0 ("còrs") + N) (1 De) (2 DET) (3 Dignitat OR Grade OR Enfant OR Familha) ;
+REMOVE ("còrse") + N IF (0 ("còrse") + N) (0 ("còrs") + N) (1 De) (2 Animal_non_bestiar OR Bestiar) ;
+REMOVE ("còrse") + N IF (0 ("còrse") + N) (0 ("còrs") + N) (1 De) (2 DET) (3 Animal_non_bestiar OR Bestiar) ;
+REMOVE ("còrse") + N IF (0 ("còrse") + N) (0 ("còrs") + N) (1 De) (2 Gentilici + MajIni) ;
+REMOVE ("còrse") + N IF (0 ("còrse") + N) (0 ("còrs") + N) (1 De) (2 DET) (3 Gentilici + MajIni) ;
+REMOVE ("còrs") + N ;
 
 
 #de completar : desambiguizacion present imperfait
