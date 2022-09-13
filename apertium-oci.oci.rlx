@@ -359,7 +359,15 @@ OR NumOrd ;
 SET AdjPre = ("ancian") OR ("nòu") OR ("nau") OR ("novèl") OR ("navèth") OR ("futur") OR ("grand") OR ("gran") OR ("màger") OR ("petit") OR ("pichon") OR ("pichòt") OR ("bon") OR ("mal") OR ("mau") OR ("marrit") OR ("naut") OR ("haut") OR ("bas") OR ("baish") OR ("altre") OR ("autre") OR ("aute") OR ("meteis") OR ("medish") OR ("medeish") OR ("madeish") OR ("quite") OR ("quiti") OR ("mièg") OR ("miei") OR AdjOrd;
 
 
-LIST Dignitat = "papa" "patriarca" "avesque" "arcavesque" "archavesque" "archevesque" "arquevesque" "sant" "sant" "apòstol" "apostòl" "emperador" "emperaire" "rei" "tsar" "vicerei" "regent" "prince" "infant" "dalfin" "comte" "comtessa" "vescomte" "vescomtessa" "duc" "grand-duc" "arcaduc" "archiduc" "marqués" "baron" ;
+LIST Dignitat = "papa" "patriarca" "avesque" "arcavesque" "archavesque" "archevesque" "arquevesque" "sant" "sant" "apòstol" "apostòl" "emperador" "emperaire" "rei" "tsar" "vicerei" "regent" "prince" "infant" "dalfin" "comte" "comtessa" "vescomte" "vescomtessa" "duc" "grand-duc" "arcaduc" "archiduc" "marqués" "baron" "cònsol" "cònsol màger" "sénher-cònsol" "mera" "cònse" "conse" "mèra" "alcalde" ;
+
+LIST Carrera = "carrièra" "carrèra" "baloard" "avenguda" "avienguda" "plaça" "alèa" "alea" ;
+
+LIST Construccion = "glèisa" "catedrala" "catedrau" "monastèri" "monastièr" "mostièr" "mongia" "abadiá" "abadia" "priorat" "chartrosa" "parròquia" "parròpia" "castèl" "castèu" "castèth" "fortalesa" "hortalessa" "casteràs" "comuna" "mairia" "ostal# de la comuna" "ostau# de la comuna" "pont" ;
+
+LIST Comuna = "comuna" "vila" "citat" "ciutat" "borg" "vilatge" ;
+
+LIST Fiera = "fièra" "fiera" "fièira" "hèira" "fira" ;
 
 LIST Lenga = "occitan" "francés" "anglés" "alemand" "espanhòl" "espanhòu" "italian" "rus" "chinés" "japonés" "catalan" "basc" "basco" "breton" "còrse" "arpitan" "francoprovençal" "alsacian" "flamenc" ;
 LIST Gentilici = "occitan" "francés" "anglés" "alemand" "espanhòl" "espanhòu" "italian" "rus" "chinés" "japonés" "catalan" "basc" "basco" "breton" "còrse" "arpitan" "francoprovençal" "alsacian" "flamenc" "american" "canadian" "canadenc" "quebequés" "cuban" "occidental" "oriental" ;
@@ -373,6 +381,8 @@ LIST Animal_non_bestiar = "animal" "animau" "bèstia" "peis" "peish" "can" "gat"
 LIST Enfant = "enfant" "dròlle" "mainatge" "gojat" "escolan" "eslhève" "alumne" "aprenent" "licean" ;
 
 LIST Familha = "marit" "molhèr" "pair" "paire" "mair" "maire" "maira" "mairastra" "papà" "mamà" "mamair" "maiòta" "mairastra" "filh" "hilh" "fraire" "hrair" "sòr" "sòrre" "seror" "sorastra" "sorrastra" "oncle" "onco" "oncon" "tanta" "nebot" "cosin" "cosina" "cosia" "bigal" "moissau" "grand" "gran-pair" "gran-mair" "pairan" "pairbon" "mairbona" "papet" "papeta" "pepin" "mamet" "mameta" "menina" "mairegrand" "rèiregrand" "arrèrpairan" "arrèrpairan" "rèirepepin" "rèiremenina" "repepin" "felen" "rèire-filh" "rèirefilh" "rèrhilh" "rèire-felen" "rèirefelen" ;
+
+LIST VerbMoviment = "anar" "tornar" "arribar" "partir" "viatjar" ;
 
 SECTION
 
@@ -1873,6 +1883,24 @@ SELECT Fem IF (0 ("Simone")) ;
 SELECT Masc_strict IF (0 ("Cassandre")) (1* ("Macedònia") OR ("Roxana") OR ("Alexandre") OR ("Antipater") OR ("Ptolomèu") OR ("rei") + Masc OR ("diadòc")) ;
 SELECT Masc_strict IF (0 ("Cassandre")) (-1* ("Macedònia") OR ("Roxana") OR ("Alexandre") OR ("Antipater") OR ("Ptolomèu") OR ("rei") + Masc OR ("diadòc")) ;
 SELECT Fem_strict IF (0 ("Cassandre")) ;
+
+SELECT Al IF (-1 Carrera) (0 Ant) ;	# carrièra Joan Jaurès
+SELECT Ant IF (0 ("Roland Garros")) (1* ("nàisser") OR ("nàisher") OR ("morir") OR ("mòrt")) ;
+SELECT Ant IF (0 ("Roland Garros")) (-1* ("nàisser") OR ("nàisher") OR ("morir") OR ("mòrt")) ;
+SELECT Al IF (0 ("Roland Garros")) ;
+REMOVE Al IF (0 Ant) ;
+SELECT Top IF (-2 Dignitat) (-1 De) (0 NP) ;	# cònsol de Sant Martin
+SELECT Top IF (-2 ("mèste") OR ("regent") OR ("curat")) (-1 De OR A) (0 NP) ;
+SELECT Top IF (-2 Construccion) (-1 De) (0 NP) ;	# abadiá de Sant Miquel
+SELECT Top IF (-1 Construccion) (0 NP) ;	# catedrala Sant Miquel
+SELECT Top IF (-2 Comuna) (-1 De) (0 NP) ;	# citat de Sant Loís
+SELECT Top IF (-2 Fiera) (-1 De) (0 NP) ;
+SELECT Top IF (-2 ("originari") OR ("abitant")) (-1 De) (0 NP) ;	# cònsol de Sant Martin
+SELECT Top IF (-1 ("cap a") OR ("cap entà") OR ("cap enta") OR ("cap tà") OR ("de cap a") OR ("de cap entà") OR ("de cap enta") OR ("de cap tà") OR ("de caps a") OR ("vèrs") OR ("entà") OR ("enta") OR ("tà"))  (0 NP) ;
+SELECT Top IF (-2 VerbMoviment) (-1 PREP) (0 NP) ;
+SELECT Top IF (-3 VerbMoviment) (-2 AV) (-1 PREP) (0 NP) ;
+SELECT Top IF (-2 ("trabalhar") OR ("tribalhar") OR ("abitar") OR ("demorar") OR ("viure") OR ("víver") OR ("víuer") OR ("nàisser") OR ("nàisher") OR ("morir") OR Ser) (-1 A OR En OR Dins) (0 NP) ;
+SELECT Top IF (-3 ("trabalhar") OR ("tribalhar") OR ("abitar") OR ("demorar") OR ("viure") OR ("víver") OR ("víuer") OR ("nàisser") OR ("nàisher") OR ("morir") OR Ser) (-2 AV) (-1 A OR En OR Dins) (0 NP) ;
 
 SELECT Ant + Masc_strict IF (0 Ant) (1 DETdef + Sg + Masc) (2 N_AJ + Sg + Masc + MajIni) ;
 SELECT Ant + Fem_strict IF (0 Ant) (1 DETdef + Sg + Fem) (2 N_AJ + Sg + Fem + MajIni) ;
