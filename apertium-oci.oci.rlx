@@ -1582,6 +1582,7 @@ SELECT N IF (0 (META:/-/r)) (1C N) ;
 #Un nom pot pas seguir qu'un vèrbe, un adjectiu, un determinant, un numeral, una prepausicion o un pronom (levat los personals)
 #(en titolars periodístics, però, es comença sovint per un nom)
 # non : Patxi Zabaleta, actualament cap del partit
+# non : i avè tà la damisèla catalògues, prospectús e municions
 REMOVE N IF (NOT -1 BOS OR CM OR Conjco OR Donc OR V OR AJ OR AV OR DET OR NUM OR PREP OR PRON - PRONPers) (NOT -1/* ("de")) (NOT -2 CM) ;
 REMOVE N IF (NOT -1 BOS OR CM OR Conjco OR Donc OR V OR AJ OR AV + Itg OR DET OR NUM OR PREP OR PRON - PRONPers) (NOT -1/* ("de")) (NOT -2 CM) (NOT -2 V LINK NOT 0 VBpp) ;
 REMOVE N IF (-1/* ("lo que") OR ("lo qui")) ;
