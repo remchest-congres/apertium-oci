@@ -1205,6 +1205,9 @@ SELECT AVexcl IF (-1 BOS) (0 AVexcl) (1 ("!")) ;
 SELECT AVexcl IF (-2 BOS) (-1 Conjco) (0 AVexcl) (1 ("!")) ;
 REMOVE AVexcl ;
 
+SELECT N IF (-1/* DET + MascSg) (0 ("<dejà vist>"i)) ;
+REMOVE N IF (0 ("<dejà vist>"i)) ;
+
 REMOVE PREP IF (0 ("quanta")) ;
 REMOVE N IF (0 ("<quanta>"i) + DET + &&AcordSN) (1 N +  &&AcordSN) ;
 SELECT PRON IF (0 ("quant"i)) (1 Ser OR Semblar_Pareisser) ;
