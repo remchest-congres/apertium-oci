@@ -1895,6 +1895,8 @@ SELECT Masc_strict IF (0 ("Cassandre")) (-1* ("Macedònia") OR ("Roxana") OR ("A
 SELECT Fem_strict IF (0 ("Cassandre")) ;
 
 SELECT Al IF (-1 Carrera) (0 Ant) ;	# carrièra Joan Jaurès
+SELECT Al IF (-1 ("licèu") OR ("escòla")) (0 Ant) ;	# licèu Joan Jaurès
+REMOVE Al IF (0 Ant) ;	# Joan Jaurès
 SELECT Ant IF (0 ("Roland Garros")) (1* ("nàisser") OR ("nàisher") OR ("morir") OR ("mòrt")) ;
 SELECT Ant IF (0 ("Roland Garros")) (-1* ("nàisser") OR ("nàisher") OR ("morir") OR ("mòrt")) ;
 SELECT Al IF (0 ("Roland Garros")) ;
