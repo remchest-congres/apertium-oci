@@ -3450,3 +3450,6 @@ REMOVE N + MascSg IF (0 ("<tenor>"i)) (-1 DET + FemSg OR AJ + FemSg) ;
 REMOVE N + MascPl IF (0 ("<tenors>"i)) (-1 DET + FemPl OR AJ + FemPl) ;
 REMOVE N + FemSg IF (0 ("<tenor>"i)) (NOT -1 DET + FemSg OR AJ + FemSg) ;
 REMOVE N + FemPl IF (0 ("<tenors>"i)) (NOT -1 DET + FemPl OR AJ + FemPl) ;
+
+
+REMOVE NP IF (0 N) (-1 BOS) (NOT 1 NP) (NOT 1 unknownMajIni);
