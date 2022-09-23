@@ -2735,6 +2735,9 @@ REMOVE V IF (0 ("paire")) (1 unknown) (NOT -1 Pro OR Enon) ;
 
 REMOVE N IF (NOT -1 DET) (0 ("<risca>"i)) (1 De) (2 Pro OR VBinf) ;
 
+REMOVE N_AJ IF (-1 ("daissar") OR ("deishar") OR ("leishar")) (0 VBinf) ;
+REMOVE N_AJ IF (-2 ("daissar") OR ("deishar") OR ("leishar")) (-1 AV) (0 VBinf) ;
+
 SELECT VBinf (-2C N_AJ) (-1 A OR De) (0 N_AJ_PP) ;	# lo drech a aver
 SELECT VBinf (-3 Ser) (-2 AJ OR VBpp) (-1 A OR De) (0 N_AJ_PP) ;	# son autorizats a venir
 SELECT VBinf (-4 Ser) (-3 AV) (-2 AJ OR VBpp) (-1 A OR De) (0 N_AJ_PP) ;	# son pas autorizats a venir
