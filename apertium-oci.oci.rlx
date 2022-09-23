@@ -386,7 +386,7 @@ LIST VerbMoviment = "anar" "tornar" "arribar" "partir" "viatjar" ;
 
 SECTION
 
-SELECT Acr IF (0 ("<A>")) (1 ("<.>")) (2>>> Cog OR unknownMajIni) ;	# A. Dupont
+SELECT Acr IF (0 ("<A>")) (1 ("<.>")) (2 Cog OR unknownMajIni) ;	# A. Dupont
 SELECT N + (m) + (sp) IF (0 ("\\<[B-Z]\\>"r)) (1 ("<.>")) (2 Cog OR unknownMajIni) ;	# E. Dupont
 
 SELECT Acr IF (-1 N + MinIni) (0 ("<A>")) ;	# la letra A ; la linha A
