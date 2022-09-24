@@ -2020,6 +2020,13 @@ SELECT Al IF (0 Al) (1 CM) (2C Al) (3 CM) (4 Al) ;
 SELECT Top IF (-1 De) (0 Top) (1 ("a") OR ("entà") OR ("tà") OR ("enta") OR ("ta") OR ("ende") OR ("fins a") OR ("dinc a") OR ("dinca") OR ("entrò") OR ("entrò a") OR ("dusca") OR ("duscas") OR ("jusca") OR ("juscas") OR ("denquia") OR ("enquia")) (2 Top OR unknownMajIni) ;		# de Pau a Auloron
 SELECT Top IF (-3 De) (-2 Top OR unknownMajIni) (-1 ("a") OR ("entà") OR ("tà") OR ("enta") OR ("ta") OR ("ende") OR ("fins a") OR ("dinc a") OR ("dinca") OR ("entrò") OR ("entrò a") OR ("dusca") OR ("duscas") OR ("jusca") OR ("juscas") OR ("denquia") OR ("enquia")) (0 Top) ;	# de Auloron a Pau
 
+LIST N_Ini = "cabana" ;
+REMOVE NP IF (-1 BOS) (0 N) (0 N_Ini) ;
+SELECT NP IF (-1 BOS) (0 N) (1 NP OR unknownMajIni) ;
+SELECT NP IF (-1 BOS) (0 N) (1 De) (2 NP OR unknownMajIni) ;
+SELECT NP IF (-1 BOS) (0 N) (1 Lpar) (2 NP OR unknownMajIni) ;
+REMOVE NP IF (-1 BOS) (0 N) ; 
+
 # HAVER
 
 REMOVE A IF (0 ("ara")) (NOT 1 N_AJ + FemSg) ;
