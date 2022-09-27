@@ -1783,6 +1783,9 @@ REMOVE AV IF (0 ("en tot")) (1 VBger) ;
 REMOVE AV IF (0 ("en tot")) (1 Pro) (2 VBger) ;
 REMOVE AV IF (0 ("en tot")) (1 Pro) (2 Pro) (3 VBger) ;
 SELECT AV IF (0 ("en tot")) ;
+SELECT VBger IF (-1 ("<en tot>"i)) (0 VBger) ;
+SELECT VBger IF (-2 ("<en tot>"i)) (-1 Pro) (0 VBger) ;
+SELECT VBger IF (-3 ("<en tot>"i)) (-2 Pro) (-1 Pro) (0 VBger) ;
 
 #Un determinant es pas plural se lo nom/adjectiu que seguis es singular (o masculin feminin...)
 REMOVE motsdetpl IF (1C Ns OR AJs);
