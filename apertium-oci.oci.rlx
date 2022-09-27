@@ -636,8 +636,10 @@ SELECT N + (mf) IF (-1/* DET) (0 Cap_de_del) (1 Al OR Acr) ;
 SELECT N + (mf) IF (-1/* DET) (0 Caps_de_del) (1 Al OR Acr) ;
 SELECT N IF (-2 DET + MascSg OR Artcontrsg) (-1 AdjPre + MascSg) (0 Cap_de_del) ;
 SELECT N IF (-2 DET + MascPl OR Artcontrpl) (-1 AdjPre + MascPl) (0 Caps_de_del) ;
-SELECT N + (mf) IF (-1 BOS) (0 Cap_de_del) (1 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("partit") OR ("sindicat") OR ("oposicion") OR ("union") OR ("cauma") OR ("armada") OR ("marina") OR ("crosada")) ;
-SELECT N + (mf) IF (-1 BOS) (0 Caps_de_del) (1 Estat OR ("govèrn") OR ("conselh") OR ("ministèri") OR ("comission") OR ("partit") OR ("sindicat") OR ("oposicion") OR ("union") OR ("cauma") OR ("armada") OR ("marina") OR ("crosada")) ;
+LIST CapMFDe = "estat" "govèrn" "conselh" "ministèri" "comission" "partit" "sindicat" "oposicion" "inspeccion" "delegacion" "union" "blòc" "cauma" "armada" "marina" "aviacion" "crosada" ;
+SELECT N + (mf) IF (-1 BOS) (0 Cap_de_del) (1 CapMFDe) ;
+SELECT N + (mf) IF (-1 BOS) (0 Caps_de_del) (1 CapMFDe) ;
+SELECT AV IF (-1 ("pas")) (0 ("cap")) (1 VBpp) ;	# a pas cap trabalhat sul dossièr
 REMOVE PRON IF (-1 DET OR Artcontrsg) (0 ("cap")) ;
 REMOVE PRON IF (0 Cap_de_del) (1C DET OR N OR AJ OR PREDET) (NOT 1 Pl) ;
 REMOVE PRON IF (0 Cap_de_del) (1C V + Pers) ;
@@ -1845,17 +1847,21 @@ SELECT Conjco IF (-1 BOS) (0 ("Mas")) ;
 SELECT Al IF (0 ("Nadau")) (-1* ("De cap tà l'Immortèla") OR ("l'Immortèla")) ;
 SELECT Al IF (0 ("Nadau")) (1* ("De cap tà l'Immortèla") OR ("l'Immortèla")) ;
 
+SELECT N IF (-1/* DET + &&AcordSN) (0 ("rei") + &&AcordSN) ;
+SELECT N IF (-1/* DET + &&AcordSN) (0 ("marqués") + &&AcordSN) ;
+SELECT Ant + &&AcordSN IF (-2/* DET + &&AcordSN) (-1 ("rei") + &&AcordSN) ;
+SELECT Ant + &&AcordSN IF (-2/* DET + &&AcordSN) (-1 ("marqués") + &&AcordSN) ;
+
 SELECT NP + &&AcordSN OR N_AJ + &&AcordSN IF (-1/* DET + &&AcordSN) (0 NP + &&AcordSN) ;
 SELECT DET + &&AcordSN IF (0/* DET + &&AcordSN) (1 NP + &&AcordSN) (NOT 0 ("lei")) ;
 
-REMOVE Cog IF (-1 DETdef) (0 Cog) ;
-REMOVE Cog IF (-1 DETind) (0 Cog) ;
-REMOVE Cog OR Ant IF (-1 En) (0 Top) ;
+REMOVE Cog OR Ant IF (-1/* DETdef) (0 Top) (NOT 1 Cog OR Ant) ;
+REMOVE Cog OR Ant IF (NOT -2 BOS) (-1 DETdef + MajIni) ;
+REMOVE Cog OR Ant IF (-1/* DETdef) (0 N_AJ) (NOT 1 Cog OR Ant) ;	# pel Francés Fontan
+REMOVE Cog OR Ant IF (-1 DETind) ;
+REMOVE Cog OR Ant IF (-1 En) ;
 REMOVE Cog OR Ant IF (-1 Dins) (0 Top) ;
 REMOVE Cog OR Ant IF (-1 ("sus")) (0 Top) ;	# guess
-REMOVE Ant IF (-1 DETdef) (0 Ant) ;
-REMOVE Ant IF (-1 DETind) (0 Ant) ;
-REMOVE Ant IF (-1 En) (0 Ant) ;
 REMOVE Cog IF (0 ("<XI>")) ;
 
 SELECT NP IF (0 N OR NP) (1 NP) (0 (META:/-/r)) (NOT 0 ("bas") OR ("naut") OR ("haut")) ;   # Pierre-Michel
@@ -2596,6 +2602,7 @@ SELECT N + &&AcordSN IF (-2 DET + &&AcordSN) (-1 AdjPre + &&AcordSN) (0 N + &&Ac
 SELECT N + &&AcordSN IF (-2/* DET + &&AcordSN) (-1 AdjPre + &&AcordSN) (0 N + &&AcordSN) (NOT -1 ("nau")) ;
 SELECT AJ + &&AcordSN IF (-1 DET + &&AcordSN) (0 AdjPre + &&AcordSN) (1 NP + &&AcordSN) (NOT 0 ("nau")) ;
 SELECT AJ + &&AcordSN IF (-1/* DET + &&AcordSN) (0 AdjPre + &&AcordSN) (1 NP + &&AcordSN) (NOT 0 ("nau")) ;
+SELECT AJ + &&AcordSN IF (-1/* DET) (0 AdjPre) (1 Top OR Al) (NOT 0 ("nau")) ;	# el Gran Tolosa
 SELECT AJ + &&AcordSN IF (-1 DET + &&AcordSN) (0 AdjPre + &&AcordSN) (1 N + &&AcordSN) (NOT 0 ("nau")) ;
 SELECT AJ + &&AcordSN IF (-1/* DET + &&AcordSN) (0 AdjPre + &&AcordSN) (1 N + &&AcordSN) (NOT 0 ("nau")) ;
 SELECT AJ + &&AcordSN IF (-1 De) (0 AdjPre + &&AcordSN) (1 N + &&AcordSN) (NOT 0 ("nau")) ;
