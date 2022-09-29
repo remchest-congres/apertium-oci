@@ -1476,6 +1476,8 @@ REMOVE V IF (0 (<"granda">)) ;
 
 SELECT N IF (0 ("<lei>"i)) (1 ("[1-2][0-9][0-9][0-9]"r)) ;		# lei 1901
 
+SELECT Masc_strict IF (NOT -1/* Fem_strict) (0 ("pòst")) (NOT 1 Fem_strict) ;
+
 SELECT ("retirada") IF (-1 DETpos) ;
 SELECT ("retirada") IF (-2 ("sistèma")) (-1 De) ;
 SELECT ("retirada") IF (-2 ("ostal") OR ("ostau")) (-1 De) ;
