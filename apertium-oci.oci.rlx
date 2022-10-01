@@ -859,6 +859,29 @@ SELECT VBger (-3 De) (-2 DETdef + &&AcordSN) (-1 NP + &&AcordSN) (0 ("<estant>"i
 REMOVE VBger IF (NOT -1 ("en") OR ("en bèth") OR ("en tot") OR Pro OR N_AJ OR CM) ;
 REMOVE VBger IF (NOT -2 ("en") OR ("en bèth") OR ("en tot") OR Pro OR CM) (-1C Pro) ;
 
+SELECT V IF (-1 ("me")) (0 ("ac virar") + P1 + Sg) ;
+SELECT V IF (-1 ("te")) (0 ("ac virar") + P2 + Sg) ;
+SELECT V IF (-1 ("nos") OR ("mos")) (0 ("ac virar") + P1 + Pl) ;
+SELECT V IF (-1 ("vos")) (0 ("ac virar") + P2 + Pl) ;
+SELECT V IF (-1 Pro + Ref) (0 ("ac virar")) ;
+SELECT SUB:1 V IF (-1 ("me")) (0/* ("ac virar") + P1 + Sg) ;
+SELECT SUB:1 V IF (-1 ("te")) (0/* ("ac virar") + P2 + Sg) ;
+SELECT SUB:1 V IF (-1 ("nos") OR ("mos")) (0/* ("ac virar") + P1 + Pl) ;
+SELECT SUB:1 V IF (-1 ("vos")) (0/* ("ac virar") + P2 + Pl) ;
+SELECT SUB:1 V IF (-1 Pro + Ref) (0/* ("ac virar")) ;
+SELECT V IF (-2 ("me")) (-1 Ser + P1 + Sg) (0 ("ac virar") + VBpp + Sg) ;
+SELECT V IF (-2 ("te")) (-1 Ser + P2 + Sg) (0 ("ac virar") + VBpp + Sg) ;
+SELECT V IF (-2 ("nos") OR ("mos")) (-1 Ser + P1 + Pl) (0 ("ac virar") + VBpp + Pl) ;
+SELECT V IF (-2 ("vos")) (-1 Ser + P2 + Pl) (0 ("ac virar") + VBpp + Pl) ;
+SELECT V IF (-2 Pro + Ref) (-1 Ser) (0 ("ac virar") + VBpp) ;
+SELECT V IF (-3 ("me")) (-2 Ser + P1 + Sg) (-1 AV) (0 ("ac virar") + VBpp + Sg) ;
+SELECT V IF (-3 ("te")) (-2 Ser + P2 + Sg) (-1 AV) (0 ("ac virar") + VBpp + Sg) ;
+SELECT V IF (-3 ("nos") OR ("mos")) (-2 Ser + P1 + Pl) (-1 AV) (0 ("ac virar") + VBpp + Pl) ;
+SELECT V IF (-3 ("vos")) (-2 Ser + P2 + Pl) (-1 AV) (0 ("ac virar") + VBpp + Pl) ;
+SELECT V IF (-3 Pro + Ref) (-2 Ser) (-1 AV) (0 ("ac virar") + VBpp) ;
+REMOVE V IF (0 ("ac virar")) ;
+REMOVE SUB:1 V IF (0/* ("ac virar")) ;
+
 #Un pronom proclitic est totjorn davant un vèrb o un autre pronom
 REMOVE Pro IF (NOT 1 unknownMinIni OR Pro OR V - VBpp OR VBimp) (NOT -1 PRencl or VBimp or VBinf or VBger) ;
 REMOVE DET IF (1C V OR Pro) (NOT 1 VBpp) ;
