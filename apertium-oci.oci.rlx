@@ -1843,9 +1843,9 @@ SELECT N IF (0 ("Luna")) (NOT 1 (ant) OR (cog)) (NOT -1 (ant) OR (cog)) ;
 SELECT AJ IF (0 ("bas") + &&AcordSN + MajIni) (1 Top + &&AcordSN OR unknownMajIni) ;
 SELECT Acr IF (0 NP) ;
 SELECT NP OR Acr IF (NOT -1 BOS OR Lpar) (NOT -1 (META:/—/r)) (NOT -1 (META:/…/r))
-	(NOT 0 ("gran") OR ("grand") OR ("rei") OR ("marqués") OR ("internet") OR ("francés") OR ("Catalan") OR ("Gascon") OR ("Còrsa") OR ("Aragonés") OR ("luna") OR ("marina") OR ("nadal") OR ("Carta") OR ("Cort") OR ("justícia") OR ("Abril") OR ("Pache") OR ("Blanc") OR ("Blanca")) ;
+	(NOT 0 ("gran") OR ("grand") OR ("rei") OR ("marqués") OR ("corona") OR ("castèl") OR ("castèu") OR ("internet") OR ("francés") OR ("Catalan") OR ("Gascon") OR ("Còrsa") OR ("Aragonés") OR ("luna") OR ("marina") OR ("nadal") OR ("Carta") OR ("Cort") OR ("justícia") OR ("Abril") OR ("Pache") OR ("Blanc") OR ("Blanca")) ;
 SELECT NP OR Acr IF (NOT -2 BOS) (-1 Lpar) (NOT -1 (META:/…/r))
-	(NOT 0 ("gran") OR ("grand") OR ("rei") OR ("marqués") OR ("internet") OR ("francés") OR ("Catalan") OR ("Gascon") OR ("Còrsa") OR ("Aragonés") OR ("luna") OR ("marina") OR ("nadal") OR ("Cort") OR ("justícia") OR ("Abril") OR ("Pache") OR ("Blanc") OR ("Blanca")) ;
+	(NOT 0 ("gran") OR ("grand") OR ("rei") OR ("marqués") OR ("corona") OR ("castèl") OR ("castèu") OR ("internet") OR ("francés") OR ("Catalan") OR ("Gascon") OR ("Còrsa") OR ("Aragonés") OR ("luna") OR ("marina") OR ("nadal") OR ("Cort") OR ("justícia") OR ("Abril") OR ("Pache") OR ("Blanc") OR ("Blanca")) ;
 REMOVE N + Sg IF (-1 BOS) (0 NP) (NOT 1 CM) (1* V OR Ser BARRIER (":") OR EOS) ;	# Fred es mort ; Mair, vòs que’t haci ; Vacas e vetèths qu’arribavan
 REMOVE AJ + Sg IF (-1 BOS) (0 NP) (NOT 1 N + Sg) (NOT 1 De) (NOT 1 CM) (NOT 1* ("!")) (1* V OR Ser BARRIER (":") OR EOS) ;	# Fred es mort
 
