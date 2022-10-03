@@ -42,6 +42,7 @@ LIST AJ_PP = adj pp ;
 LIST DET = det ;
 LIST NUM = num ;
 LIST PREP = pr ;
+LIST Pref = pref ;
 LIST PRON = prn ;
 LIST PERS = pers ;
 SET AV = (adv) - (enon) ;
@@ -881,6 +882,10 @@ SELECT V IF (-3 ("vos")) (-2 Ser + P2 + Pl) (-1 AV) (0 ("ac virar") + VBpp + Pl)
 SELECT V IF (-3 Pro + Ref) (-2 Ser) (-1 AV) (0 ("ac virar") + VBpp) ;
 REMOVE V IF (0 ("ac virar")) ;
 REMOVE SUB:1 V IF (0/* ("ac virar")) ;
+
+SELECT N IF (0 ("radio")) (0 (META:/-/r)) (1 ("television")) ;
+SELECT Pref IF (0 Pref) (0 (META:/-/r)) (1 N OR A OR Verb) ;
+REMOVE Pref ;
 
 #Un pronom proclitic est totjorn davant un vèrb o un autre pronom
 REMOVE Pro IF (NOT 1 unknownMinIni OR Pro OR V - VBpp OR VBimp) (NOT -1 PRencl or VBimp or VBinf or VBger) ;
@@ -1771,8 +1776,8 @@ SELECT N IF (-2 Aver) (-1 AV) (0 ("<afar>"i)) ;
 SELECT N IF (-1 Aver) (-2 AV) (-1 AV) (0 ("<afar>"i)) ;
 
 #Una prepausicion es totjorn seguida d'un nom, pronom, adverb, numeral, infinitiu, determinant o adjectiu
-REMOVE PREP IF (NOT 1 N OR PRON OR AV OR NUM OR NP OR VBinf OR DET OR PREDET OR AJ OR ("de") OR unknown) (NOT 0/* PREP + DET) (NOT 0/* N OR Rel OR Conjadv OR Conjsub) (NOT 0 ("en tot")) ;	# a luchat pendent d'annadas
-REMOVE PREP IF (1 ("de")) (NOT 2 N OR AJ) ;	# a luchat pendent d'annadas
+REMOVE PREP IF (NOT 1 N OR Pref OR PRON OR AV OR NUM OR NP OR VBinf OR DET OR PREDET OR AJ OR ("de") OR unknown) (NOT 0/* PREP + DET) (NOT 0/* N OR Rel OR Conjadv OR Conjsub) (NOT 0 ("en tot")) ;	# a luchat pendent d'annadas
+REMOVE PREP IF (1 ("de")) (NOT 2 N OR AJ OR Pref) ;	# a luchat pendent d'annadas
 
 #Es pas un vèrbe se, dempuèi lo darrièr vèrbe conjugat, avèm pas agut de novèla proposicion
 #REMOVE Vconj IF (NOT -1* intrprop BARRIER Vconj) ;
