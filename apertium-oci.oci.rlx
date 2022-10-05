@@ -786,6 +786,15 @@ SELECT AV IF (-1 Ser + &&AcordSP) (0 Mai) (1 AJ + &&AcordSP) ;	# es mai calme
 REMOVE AJ IF (0 AJ) (0 VBpp) (1 ("per")) ;
 SELECT VBpp IF (-2 Ser + &&AcordSP) (-1 AV OR PREAV) (0 ("escàder") OR ("mauescàder")) ;	# s'i es pas escadut
 SELECT VBpp IF (-3 Ser + &&AcordSP) (-2 AV OR PREAV) (-1 AV OR PREAV) (0 ("escàder") OR ("mauescàder")) ;	# s'i es pas totjorn escadut
+SELECT VBpp + &&AcordSP IF (-1C Ser + &&AcordSP) (0 VBpp + &&AcordSP) (1 A OR De) ;	# soi acostumada a legir
+SELECT VBpp + &&AcordSP IF (-2C Ser + &&AcordSP) (-1 AV OR PREAV) (0 VBpp + &&AcordSP) (1 De) ;	# soi pas acostumada a legir
+SELECT VBpp + &&AcordSP IF (-3C Ser + &&AcordSP) (-2 AV OR PREAV) (-1 AV OR PREAV) (0 VBpp + &&AcordSP) (1 De) ;
+SELECT VBpp + &&AcordSP IF (-2C Ser + &&AcordSP) (-1 AV OR PREAV) (0 VBpp + &&AcordSP) (1 De OR A) (2 VBinf) ;	# soi pas acostumada a legir
+SELECT VBpp + &&AcordSP IF (-3C Ser + &&AcordSP) (-2 AV OR PREAV) (-1 AV OR PREAV) (0 VBpp + &&AcordSP) (1 De OR A) (2 VBinf) ;
+SELECT VBpp + &&AcordSP IF (-2C Ser + &&AcordSP) (-1 AV OR PREAV) (0 VBpp + &&AcordSP) (1 De OR A) (2 Pro) (3 VBinf) ;
+SELECT VBpp + &&AcordSP IF (-3C Ser + &&AcordSP) (-2 AV OR PREAV) (-1 AV OR PREAV) (0 VBpp + &&AcordSP) (1 De OR A) (2 Pro) (3 VBinf) ;
+SELECT VBpp + &&AcordSP IF (-2C Ser + &&AcordSP) (-1 AV OR PREAV) (0 VBpp + &&AcordSP) (1 De OR A) (2 Pro) (3 Pro) (4 VBinf) ;
+SELECT VBpp + &&AcordSP IF (-3C Ser + &&AcordSP) (-2 AV OR PREAV) (-1 AV OR PREAV) (0 VBpp + &&AcordSP) (1 De OR A) (2 Pro) (3 Pro) (4 VBinf) ;
 SELECT AJ OR AV IF (NOT -3 Pro + Ref) (-2C Ser + P3 + &&AcordSP) (-1 AV OR PREAV) (0 AJ + &&AcordSP) (NOT 1 AJ + &&AcordSP) ;	# es mai calme ; s'es pas engatjat
 SELECT AJ OR AV IF (NOT -3 ("me")) (-2C Ser + P1 + Sg + &&AcordSP) (-1 AV OR PREAV) (0 AJ + &&AcordSP) (NOT 1 AJ + &&AcordSP) ;
 SELECT AJ OR AV IF (NOT -3 ("te")) (-2C Ser + P2 + Sg + &&AcordSP) (-1 AV OR PREAV) (0 AJ + &&AcordSP) (NOT 1 AJ + &&AcordSP) ;
