@@ -275,7 +275,7 @@ LIST Mas_cnjcoo = ("mas" cnjcoo) ("mes" cnjcoo) ("mès" cnjcoo) ("mai" cnjcoo) ;
 LIST O_cnjcoo = ("o" cnjcoo) ("ò" cnjcoo) ;
 LIST Semblar_Pareisser = "semblar" "paréisser" "paréisher" ;
 LIST Devenir = "devenir" "venir" "vàder" "vénguer" "viéner" "vier" ;
-LIST Demandar = "demandar" "demanar" "interrogar" "questionar" "qüestionar" "saber" "sàber" "estudiar" "cercar" "investigar" ;
+LIST Demandar = "demandar" "demanar" "interrogar" "questionar" "qüestionar" "saber" "sàber" "estudiar" "cercar" "investigar" "trovar" "trapar" "explicar" "contar" "condar" "discutir" ;
 LIST VNonPron = "demorar" "abitar" "trabalhar" "tribalhar" "manjar" "beure" "béver" ;	# vèrbs non pronominals
 LIST Far = "far" "har" "hèr" ;
 LIST Estat = "estat" ;
@@ -1276,6 +1276,7 @@ SELECT SUB:1 Itg OR Excl OR IJ IF (-2 BOS) (-1 Conjco) (0 PREP) ;	# Mai a qui s'
 REMOVE Itg + AJ OR Excl + AJ IF (0 ("quin") OR ("qual") OR ("quau") OR ("quant")) (NOT 1 N) ;	# Qual vòl venir?
 REMOVE Itg + DET OR Excl + DET IF (0 ("quin") OR ("qual") OR ("quau") OR ("quant")) (NOT 1 N_AJ) ;	# Qual vòl venir?
 
+REMOVE N IF (NOT -1/* DET) (0 ("perqué")) ;
 SELECT Itg IF (-1 BOS) (0C Itg OR Excl OR IJ OR Rel OR Conjsub OR Conjadv OR ("coma")) (1* ("?")) ;
 SELECT Itg IF (-2 BOS) (-1 PREP) (0C Itg OR Excl OR IJ OR Rel OR Conjsub OR Conjadv OR ("coma")) (1* ("?")) ;
 SELECT SUB:1 Itg IF (-1 BOS) (0 PREP) (1* ("?")) ;
@@ -1288,11 +1289,11 @@ SELECT SUB:1 Excl OR IJ IF (-1 BOS) (0 PREP) (1* ("!")) ;
 SELECT Excl OR IJ IF (-2 BOS) (-1 Conjco) (0C Itg OR Excl OR IJ OR Rel OR Conjsub OR Conjadv) (1* ("!")) ;
 SELECT Excl OR IJ IF (-3 BOS) (-2 Conjco) (-1 PREP) (0C Itg OR Excl OR IJ OR Rel OR Conjsub OR Conjadv) (1* ("!")) ;
 SELECT SUB:1 Excl OR IJ IF (-2 BOS) (-1 Conjco) (0 PREP) (1* ("!")) ;
-SELECT Itg IF (-1C Demandar LINK NOT 0 VBpp) (0C Itg OR Excl OR IJ OR Rel OR ("coma") OR ("com") OR ("quant") OR ("qüantum")) ;	# je me demande qui
-SELECT Itg IF (-2C Demandar LINK NOT 0 VBpp) (-1 PREP) (0C Itg OR Excl OR IJ OR Rel OR ("quant") OR ("qüantum")) ;	# je demande avec qui
+SELECT Itg IF (-1C Demandar LINK NOT 0 VBpp) (0C Itg OR Excl OR IJ OR Rel OR ("coma") OR ("com") OR ("quant") OR ("qüantum") OR ("perqué")) ;	# je me demande qui
+SELECT Itg IF (-2C Demandar LINK NOT 0 VBpp) (-1 PREP) (0C Itg OR Excl OR IJ OR Rel OR ("quant") OR ("qüantum") OR ("perqué")) ;	# je demande avec qui
 SELECT SUB:1 Itg IF (-1C Demandar LINK NOT 0 VBpp) (0 PREP) ;	# je demande avec qui
-SELECT Itg IF (-2C Demandar LINK NOT 0 VBpp) (-1 AV) (0C Itg OR Excl OR IJ OR Rel OR ("coma") OR ("com") OR ("quant") OR ("qüantum")) ;	# je ne demande pas qui
-SELECT Itg IF (-3C Demandar LINK NOT 0 VBpp) (-2 AV) (-1 PREP) (0C Itg OR Excl OR IJ OR Rel OR ("quant") OR ("qüantum")) ;	# je ne demande pas avec qui
+SELECT Itg IF (-2C Demandar LINK NOT 0 VBpp) (-1 AV) (0C Itg OR Excl OR IJ OR Rel OR ("coma") OR ("com") OR ("quant") OR ("qüantum") OR ("perqué")) ;	# je ne demande pas qui
+SELECT Itg IF (-3C Demandar LINK NOT 0 VBpp) (-2 AV) (-1 PREP) (0C Itg OR Excl OR IJ OR Rel OR ("quant") OR ("qüantum") OR ("perqué")) ;	# je ne demande pas avec qui
 SELECT SUB:1 Itg IF (-2C Demandar LINK NOT 0 VBpp) (-1 AV) (0 PREP) ;	# je ne demande pas avec qui
 REMOVE AV + Excl ;
 REMOVE AV + Itg ;
@@ -1458,6 +1459,12 @@ REMOVE ("poscar") IF (0 ("poder")) ;
 
 # ajar e aver
 REMOVE ("ajar") IF (0 ("aver")) ;
+
+# avéder e aver
+REMOVE ("avéder") IF (0 ("aver")) ;
+
+# avénguer e aver
+REMOVE ("avénguer") IF (0 ("aver")) ;
 
 # escotir e escotar
 REMOVE ("escotir") IF (0 ("escotar")) ;
@@ -1834,6 +1841,9 @@ SELECT AV IF (0 ("en tot")) ;
 SELECT VBger IF (-1 ("<en tot>"i)) (0 VBger) ;
 SELECT VBger IF (-2 ("<en tot>"i)) (-1 Pro) (0 VBger) ;
 SELECT VBger IF (-3 ("<en tot>"i)) (-2 Pro) (-1 Pro) (0 VBger) ;
+SELECT Haver + VBinf IF (-1C Itg) (0 Aver) (1 VBpp) ;
+SELECT Haver + VBinf IF (-1C Itg) (0 Aver) (1 AV) (2 VBpp) ;
+SELECT Haver + VBinf IF (-1C Itg) (0 Aver) (1 AV) (2 AV) (3 VBpp) ;
 
 #Un determinant es pas plural se lo nom/adjectiu que seguis es singular (o masculin feminin...)
 REMOVE motsdetpl IF (1C Ns OR AJs);
