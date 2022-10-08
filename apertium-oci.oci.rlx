@@ -5,7 +5,7 @@
 #	- se: prn.pro.ref o cnjadv
 #	- es: det (aran) o vbser
 #	- o: cnjcoo o prn.pro
-#	- que: enon, rel, cnjsub
+#	- que: enon, rel, cnjsub, itg
 #	- ne: enon, cnjcoo, prn.pro
 #	- e: enon o cnjcoo
 #	- ne: enon, adv o prn.pro
@@ -408,6 +408,12 @@ REMOVE DET IF (0 ("<tant>"));
 
 REMOVE V IF (0 ("<minuta>"i)) (-1 DET + FemSg or AJ + FemSg);
 REMOVE V IF (0 ("<minutas>"i)) (-1 DET + FemPl or AJ + FemPl or NUM);
+
+LIST PolitTemps = "que hè polit temps" "que hè beròi temps" "que hè beth temps" ;
+SELECT Conjsub IF (-1 V) (0 PolitTemps) ;
+SELECT Conjsub IF (-2 V) (-1 AV) (0 PolitTemps) ;
+SELECT Conjsub IF (-3 V) (-2 AV) (-1 AV) (0 PolitTemps) ;
+REMOVE Conjsub IF (0 PolitTemps) ;
 
 REMOVE AV IF (0 ("que")) (NOT 0 Enon) ;	# patch
 REMOVE Tn IF (0 ("qui")) ;	# patch
