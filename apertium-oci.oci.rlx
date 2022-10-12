@@ -2287,6 +2287,11 @@ SELECT Vmod IF (0 Vmod) (1 AV OR Donc) (2 ("tot")) (3C VBinf) (NOT 0 PREP) ;	# p
 SELECT PRON IF (-1C Vmod) (0 ("tot")) (0C VBinf) ;	# pòdi tot manjar
 SELECT PRON IF (-2C Vmod) (-1 AV OR Donc) (0 ("tot")) (0C VBinf) ;	# pòdi pas tot manjar
 
+LIST VerbsDe = "començar" "acabar" "terminar" "pensar" ;
+REMOVE N IF (-2 VerbsDe) (-1 ("de")) (0 VBinf) ;
+REMOVE N IF (-3 VerbsDe) (-2 AV) (-1 ("de")) (0 VBinf) ;
+REMOVE N IF (-4 VerbsDe) (-3 AV) (-2 AV) (-1 ("de")) (0 VBinf) ;
+
 # VBmod
 
 SELECT Vmod IF (0 ("caler")) (1 Que) ;
