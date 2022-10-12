@@ -1367,6 +1367,9 @@ REMOVE Vengar + P2 + Sg IF (NOT -1 Pro + P2 + Sg) (0 Venir) (0 Vengar + P2 + Sg)
 REMOVE Vengar + P2 + Pl IF (NOT -1 Pro + P2 + Pl) (0 Venir) (0 Vengar + P2 + Pl) (NOT 0 Vengar + VBimp) ;	# patch
 REMOVE ("vier") IF (0 ("venir")) ;
 
+REMOVE AJ IF (0 ("<Ven>")) (-1 BOS) (1 PREP) ;
+REMOVE AJ IF (0 ("<Va>")) (-1 BOS) (1 PREP) ;
+
 # venir/véner
 REMOVE Venir IF (0 Vener) (1 ("car")) ;
 REMOVE Venir IF (0 Vener) (1 ("bon")) (2 ("mercat") OR ("pretz")) ;
