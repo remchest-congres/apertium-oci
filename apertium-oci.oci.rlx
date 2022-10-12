@@ -3177,6 +3177,11 @@ SELECT AV IF (NOT -1 N_AJ) (1 CM OR EOS) (0 ("de còps") OR ("a còps")) ;
 SELECT AV IF (1C V) (0 ("de còps") OR ("a còps")) ;
 REMOVE PREP IF (NOT -1 N_AJ) (0 ("de còps") OR ("a còps")) ;
 
+# d'esper
+SELECT PREP IF (0 ("<d'esper>"i)) (-1 AV_Pas_Neg) ;
+SELECT PREP IF (0 ("<d'esper>"i)) (-1 N) ;
+REMOVE PREP IF (0 ("<d'esper>"i)) (-1 N_AJ) ;
+
 #punt de vista
 SELECT SUB:1 Nf IF (-1 ("punt") OR ("ponch")) (0 PREP) (0 ("<de vista>"i)) ;
 SELECT N IF (0 ("punt") OR ("ponch")) (1 ("<de vista>"i)) ;
