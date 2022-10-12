@@ -2224,10 +2224,10 @@ SELECT SUB:1 PREAV IF (0 ("<de bèth tròç>"i)) (1C AJ OR AV OR ("luenh") OR ("
 REMOVE SUB:1 PREAV IF (0 ("<de bèth tròç>"i)) ;
 REMOVE SUB:1 AV IF (0 ("<de bèth tròç>"i)) ;
 
-SELECT PREP IF (-1C N_AJ) (0 ("<d'efièch>"i) OR ("<d’efièch>"i) OR ("<d'efèit>"i) OR ("<d’efèit>"i)) ;
-REMOVE PREP IF (NOT -1 N_AJ) (0 ("<d'efièch>"i) OR ("<d’efièch>"i) OR ("<d'efèit>"i) OR ("<d’efèit>"i)) ;
-SELECT PREP IF (-1 N_AJ) (0 ("<d'efièch>"i) OR ("<d’efièch>"i) OR ("<d'efèit>"i) OR ("<d’efèit>"i)) ;	# guess
-REMOVE PREP IF (0 ("<d'efièch>"i) OR ("<d’efièch>"i) OR ("<d'efèit>"i) OR ("<d’efèit>"i)) ;	# guess
+SELECT PREP IF (-1C N_AJ) (0 ("<d'efièch>"i) OR ("<d’efièch>"i) OR ("<d'efièit>"i) OR ("<d’efièit>"i) OR ("<d'efèit>"i) OR ("<d’efèit>"i)) ;
+REMOVE PREP IF (NOT -1 N_AJ) (0 ("<d'efièch>"i) OR ("<d’efièch>"i) OR ("<d'efièit>"i) OR ("<d’efièit>"i) OR ("<d'efèit>"i) OR ("<d’efèit>"i)) ;
+SELECT PREP IF (-1 N_AJ) (0 ("<d'efièch>"i) OR ("<d’efièch>"i) OR ("<d'efièit>"i) OR ("<d’efièit>"i) OR ("<d'efèit>"i) OR ("<d’efèit>"i)) ;	# guess
+REMOVE PREP IF (0 ("<d'efièch>"i) OR ("<d’efièch>"i) OR ("<d'efièit>"i) OR ("<d’efièit>"i) OR ("<d'efèit>"i) OR ("<d’efèit>"i)) ;	# guess
 
 # Ser
 
