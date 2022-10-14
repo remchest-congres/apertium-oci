@@ -2397,9 +2397,29 @@ SELECT Pro IF (-5 PREP) (-4 Pro) (-3 Pro) (-2 VBinf) (-1 AV) (0 ("o")) (1 V + Pe
 
 REMOVE Tn IF (0 DETdem + &&AcordSN) (1C N_AJ) (1 N_AJ + &&AcordSN) ;		# aqueths corredís
 
+# PREDET
+
+SELECT PREDET IF (0 PREDET + &&AcordSN) (1 ("<son>"i) + &&AcordSN) (2 N_AJ + &&AcordSN) ;	# qual que siá son contengut
+SELECT PREDET IF (0 PREDET + &&AcordSN) (1 DET + &&AcordSN) (2 N_AJ + &&AcordSN) ;	# qual que siá son contengut
+
 # DET
 
 REMOVE ("d'unes") IF (-1C N_AJ) ;	# patch
+
+REMOVE AJ IF (0 Las) (1 N + FemPl) ;	# las pomas
+REMOVE AJ IF (0 Las) (1 NP + FemPl) ;	# las Corbièras
+REMOVE AJ IF (0 Las) (1 NUM) (2 N + FemPl) ;	# las 200 pomas
+REMOVE AJ IF (0 Las) (1 NUM) (2 AJ + FemPl) (3 N + FemPl) ;	# las 200 quitas pomas
+REMOVE AJ IF (0 Las) (1 AJ OR AdvComp) (2 N_AJ + FemPl) ;
+REMOVE AJ IF (0 Las) (1 De) (NOT 2 VBinf OR Pro) ;	# guess
+SELECT DET IF (-1 ("son")) (0 ("las")) ;
+
+SELECT DET IF (NOT -1/* DET) (0 DET + &&AcordSN) (1 AdjPre + &&AcordSN) (2 N + &&AcordSN) ;	# lor darrièr disc
+
+REMOVE DET IF (-1/* DET + &&AcordSN) (0 N_AJ + &&AcordSN) ;	# las fòrças militaras
+REMOVE DET IF (-1 De) (0 N + &&AcordSN + Pl) (1 AJ + &&AcordSN) ;	# de fòrças contràrias
+REMOVE DET IF (-2/* DET + &&AcordSN) (-1 AJ + &&AcordSN) (0 N_AJ + &&AcordSN) ;	# las diferentas fòrças militaras
+REMOVE DET IF (-2 De) (-1 AJ + &&AcordSN) (0 N + &&AcordSN + Pl) (1 AJ + &&AcordSN) ;	# de diferentas fòrças contràrias
 
 REMOVE DET IF (-1 DET + &&AcordSN) (0 ("lei") + &&AcordSN) (NOT 1C N + Pl_strict) ;
 SELECT DET + &&AcordSN IF (-1 ("son")) (0 ("lei") + &&AcordSN) (1C N + Pl_strict) (1 N + &&AcordSN) ;
@@ -2493,13 +2513,6 @@ REMOVE ("corsa") OR ("corses") IF (0 ("cors")) (1 De) (2 Lenga);
 SELECT Fem IF (0 ("colèra")) (NOT -1/* Masc_strict) (NOT 1 Masc_strict) ;
 SELECT Fem IF (0 ("chantilly")) (NOT -1/* Masc_strict) (NOT 1 Masc_strict) ;
 SELECT Fem IF (0 ("pub")) (NOT -1/* Masc_strict) (NOT 1 Masc_strict) ;
-
-REMOVE AJ IF (0 Las) (1 N + FemPl) ;	# las pomas
-REMOVE AJ IF (0 Las) (1 NP + FemPl) ;	# las Corbièras
-REMOVE AJ IF (0 Las) (1 NUM) (2 N + FemPl) ;	# las 200 pomas
-REMOVE AJ IF (0 Las) (1 NUM) (2 AJ + FemPl) (3 N + FemPl) ;	# las 200 quitas pomas
-REMOVE AJ IF (0 Las) (1 AJ OR AdvComp) (2 N_AJ + FemPl) ;
-REMOVE AJ IF (0 Las) (1 De) (NOT 2 VBinf OR Pro) ;	# guess
 
 SELECT N IF (-1 PREP) (0 ("sau")) ;
 SELECT N IF (-1 DET + &&AcordSN) (0 ("sau") + &&AcordSN) ;
@@ -2827,6 +2840,9 @@ REMOVE N IF (NOT -1 DET) (0 ("<risca>"i)) (1 De) (2 Pro OR VBinf) ;
 
 REMOVE N_AJ IF (-1 ("daissar") OR ("deishar") OR ("leishar")) (0 VBinf) ;
 REMOVE N_AJ IF (-2 ("daissar") OR ("deishar") OR ("leishar")) (-1 AV) (0 VBinf) ;
+
+SELECT V IF (-2C Rel) (-1 ("lo")) (0 ("<son>"i)) ;
+SELECT V IF (-3C Rel) (-2 AV) (-1 ("lo")) (0 ("<son>"i)) ;
 
 SELECT VBinf (-2C N_AJ) (-1 A OR De) (0 N_AJ_PP) ;	# lo drech a aver
 SELECT VBinf (-3 Ser) (-2 AJ OR VBpp) (-1 A OR De) (0 N_AJ_PP) ;	# son autorizats a venir
