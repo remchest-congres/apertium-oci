@@ -366,7 +366,9 @@ LIST Dignitat = "papa" "patriarca" "avesque" "arcavesque" "archavesque" "archeve
 
 LIST Carrera = "carrièra" "carrèra" "baloard" "avenguda" "avienguda" "plaça" "alèa" "alea" ;
 
-LIST Construccion = "glèisa" "catedrala" "catedrau" "monastèri" "monastièr" "mostièr" "mongia" "abadiá" "abadia" "priorat" "chartrosa" "parròquia" "parròpia" "castèl" "castèu" "castèth" "fortalesa" "hortalessa" "casteràs" "comuna" "mairia" "ostal# de la comuna" "ostau# de la comuna" "pont" ;
+LIST ConstruccionReligiosa = "glèisa" "catedrala" "catedrau" "monastèri" "monastièr" "mostièr" "mongia" "abadiá" "abadia" "capèla" "capèra" "priorat" "chartrosa" "parròquia" "parròpia" ;
+LIST Construccion = ConstruccionReligiosa "castèl" "castèu" "castèth" "fortalesa" "hortalessa" "casteràs" "comuna" "mairia" "ostal# de la comuna" "ostau# de la comuna" "pont" ;
+LIST LuocAmbNomDePersona = "aeropòrt" "universitat" "licèu" "escòla" "carrièra" "carrèra" "plaça" "baloard" "avenguda" "avienguda" ;
 
 LIST Comuna = "comuna" "vila" "citat" "ciutat" "borg" "vilatge" ;
 
@@ -1942,7 +1944,13 @@ SELECT Top IF (-2 Ant) (-1 De) ;                                        # Louis 
 SELECT Top IF (-3 Ant) (-2 siecles_nom_romains OR ("<Ièr>")) (-1 De) ;  # Louis II de Lorraine
 SELECT Ant IF (1 De) (2 Top) ;                                          # Michel de Lorraine
 SELECT Ant IF (1 siecles_nom_romains OR ("<Ièr>")) (2 De) (3 Top) ;     # Michel II de Lorraine
-SELECT Top IF (-2 ("vila") OR ("estat") OR ("region") OR ("catedrala") OR ("glèisa") OR ("aeropòrt") OR ("pòrt")) (-1 De) ;
+SELECT Al IF (-2 ConstruccionReligiosa) (-1 De) ;
+SELECT Al IF (-3 ConstruccionReligiosa + &&AcordSN) (-2 AJ + &&AcordSN) (-1 De) ;
+SELECT Al IF (-1 ConstruccionReligiosa) ;
+SELECT Al IF (-2 ConstruccionReligiosa + &&AcordSN) (-1 De) ;
+SELECT Al IF (-1 LuocAmbNomDePersona) ;
+SELECT Al IF (-2 LuocAmbNomDePersona + &&AcordSN) (-1 De) ;
+SELECT Top IF (-2 ("vila") OR ("estat") OR ("region") OR ("catedrala") OR ("catedrau") OR ("glèisa") OR ("aeropòrt") OR ("pòrt")) (-1 De) ;
 SELECT Top IF (-2 ("concili") OR ("parlament") OR ("constitucion") OR ("tractat") OR ("declaracion")) (-1 De) ;
 SELECT Top IF (-2 ("guèrra") OR ("conquista") OR ("annexion") OR ("sèti") OR ("expedicion")) (-1 De) ;
 SELECT Ant OR Cog IF (0 Ant OR Cog) (1C Ant OR Cog) (0 (META:/-/r)) ;           # Charles-Michel
