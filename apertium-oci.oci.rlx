@@ -1243,6 +1243,7 @@ SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon OR V) (0 ("que"
 SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon OR V) (0 ("que")) (1 Pro) (2 Pro) (3 V + Pers LINK NOT 0 VBimp) (NOT 4* ("?") OR ("!")) ;
 REMOVE Enon IF (-1C Enon) ;
 REMOVE Enon IF (-1 Enon) ;
+REMOVE Enon IF (1C PRS OR PIS) ;
 
 SELECT Acr IF (-1 NUM LINK NOT 0 Gen) (0 ("ha")) ;
 REMOVE Acr IF (0 ("ha")) ;
