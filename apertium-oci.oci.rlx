@@ -2397,6 +2397,8 @@ SELECT Pro IF (-1 N_AJ + Pl LINK NOT 0 V + P3 + Pl) (0 ("o")) (1C V + P3 + Pl) (
 SELECT Pro IF (-1 NP + Sg LINK NOT 0 V + P3 + Sg) (0 ("o")) (1C V + P3 + Sg) (NOT -1* Enon) (NOT 1* Enon) ;	# lo president de la Generalitat o refusèt
 SELECT Pro IF (-1 NP + Pl LINK NOT 0 V + P3 + Pl) (0 ("o")) (1C V + P3 + Pl) (NOT -1* Enon) (NOT 1* Enon) ;
 
+SELECT Pro IF (-1 ("se")) (0 ("o")) (1 V) ;	# se o fau
+SELECT V IF (-2 ("se")) (-1 ("o")) (0 V) ;	# se o fau
 SELECT Pro IF (-1 ("per aquò")) (0 ("o")) (1 V) ;	# per aquò o deviá legir
 SELECT Pro IF (-2 ("per")) (-1 Tn) (0 ("o")) (1 V) ;	# per aquò o deviá legir
 SELECT Pro IF (-2 PREP) (-1 VBinf) (0 ("o")) (1 V + Pers) ;	# per saber o deviá legir
@@ -2886,7 +2888,7 @@ REMOVE V + Pers IF (-1C V LINK NOT 0 VBpp) (0 ("a")) ;	# s'expausarà a sanccion
 REMOVE V + Pers IF (-2C V LINK NOT 0 VBpp) (-1C AV OR PREAV OR Donc LINK NOT 0 Itg) (0 ("a")) ;	# s'expausarà donc a sanccions
 REMOVE V + Pers IF (-3C V LINK NOT 0 VBpp) (-2C AV OR PREAV OR Donc LINK NOT 0 Itg) (-1C AV OR PREAV OR Donc LINK NOT 0 Itg) (0 ("a")) ;	# s'expausarà pas donc a sanccions
 REMOVE V + Pers IF (-4C V LINK NOT 0 VBpp) (-3C AV OR PREAV OR Donc LINK NOT 0 Itg) (-2C AV OR PREAV OR Donc LINK NOT 0 Itg) (-1C AV OR PREAV OR Donc LINK NOT 0 Itg) (0 ("a")) ;	# s'expausarà pas totjorn donc a sanccions
-REMOVE V + Pers IF (NOT -1* Rel) (1C V LINK NOT 0 VBpp OR VBinf) ;
+REMOVE V + Pers IF (NOT -1* Rel OR Conjadv) (1C V LINK NOT 0 VBpp OR VBinf) ;
 
 SELECT PREP IF (-2C V LINK NOT 0 VBpp) (-1 Tn) (0 ("<deu>"i)) (1 N_AJ + MascSg) ;	# veiràn tot deu començar
 
