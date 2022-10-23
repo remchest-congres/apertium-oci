@@ -1908,6 +1908,7 @@ SELECT NP OR Acr IF (NOT -1 BOS OR Lpar) (NOT -1 (META:/—/r)) (NOT -1 (META:/�
 	(NOT 0 ("gran") OR ("grand") OR ("rei") OR ("marqués") OR ("corona") OR ("castèl") OR ("castèu") OR ("internet") OR ("francés") OR ("Catalan") OR ("Gascon") OR ("Còrsa") OR ("Aragonés") OR ("luna") OR ("marina") OR ("nadal") OR ("Carta") OR ("Cort") OR ("justícia") OR ("Abril") OR ("Pache") OR ("Blanc") OR ("Blanca")) ;
 SELECT NP OR Acr IF (NOT -2 BOS) (-1 Lpar) (NOT -1 (META:/…/r))
 	(NOT 0 ("gran") OR ("grand") OR ("rei") OR ("marqués") OR ("corona") OR ("castèl") OR ("castèu") OR ("internet") OR ("francés") OR ("Catalan") OR ("Gascon") OR ("Còrsa") OR ("Aragonés") OR ("luna") OR ("marina") OR ("nadal") OR ("Cort") OR ("justícia") OR ("Abril") OR ("Pache") OR ("Blanc") OR ("Blanca")) ;
+REMOVE NP IF (-1 BOS) (0 AJ OR V) (1 ("com") OR ("com a")) ;	# Valent com
 REMOVE N + Sg IF (-1 BOS) (0 NP) (NOT 1 CM) (1* V OR Ser BARRIER (":") OR EOS) ;	# Fred es mort ; Mair, vòs que’t haci ; Vacas e vetèths qu’arribavan
 REMOVE AJ + Sg IF (-1 BOS) (0 NP) (NOT 1 N + Sg) (NOT 1 De) (NOT 1 CM) (NOT 1* ("!")) (1* V OR Ser BARRIER (":") OR EOS) ;	# Fred es mort
 
@@ -3141,7 +3142,6 @@ REMOVE Conjadv IF (NOT 1* V + Pers) (0 PREP) (NOT 0 ("coma")) ;
 SELECT PREP IF (0 Dins) (1 DET + &&AcordSN) (2 N_AJ + &&AcordSN) ;
 SELECT PREP IF (0 Pendent) (1 DET + &&AcordSN) (2 N_AJ + &&AcordSN) ;
 SELECT PREP IF (0 Jos) (1 DET + &&AcordSN) (2 N_AJ + &&AcordSN) ;
-
 
 REMOVE NP IF (-1 BOS) (0 ("Òc")) ;
 REMOVE NP IF (-2 BOS) (-1 (META:/-/r)) (0 ("Òc")) (1 CM) ;
