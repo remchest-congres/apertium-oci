@@ -387,6 +387,8 @@ LIST Enfant = "enfant" "dròlle" "mainatge" "gojat" "escolan" "eslhève" "alumne
 
 LIST Familha = "marit" "molhèr" "pair" "paire" "mair" "maire" "maira" "mairastra" "papà" "mamà" "mamair" "maiòta" "mairastra" "filh" "hilh" "fraire" "hrair" "sòr" "sòrre" "seror" "sorastra" "sorrastra" "oncle" "onco" "oncon" "tanta" "nebot" "cosin" "cosina" "cosia" "bigal" "moissau" "grand" "gran-pair" "gran-mair" "pairan" "pairbon" "mairbona" "papet" "papeta" "pepin" "mamet" "mameta" "menina" "mairegrand" "rèiregrand" "arrèrpairan" "arrèrpairan" "rèirepepin" "rèiremenina" "repepin" "felen" "rèire-filh" "rèirefilh" "rèrhilh" "rèire-felen" "rèirefelen" ;
 
+LIST Vestit = "vestit" "vestidura" "sotavestit" "rauba" "combinason" "combinadon" "costum" "camisòt" "quessòt" "camisa" "blosa" "blodon" "descoletat" "mantèl" "mantèth" "impermeable" "levita" "requimpeta" "redingòta" "repimpeta" "requimpeta" "frac" "braga" "pantalon" "jupa" "jupeta" "naut" "haut" "tricòt" "sweater" "suetèr" "sweatshirt" "sweat-shirt" "sudadera" "susadera" "cravata" "sartre" "unifòrm" "uniforme" "gilet" "cardigan" "eslip" "calçon" "sosten" "sostien" "pòrtapopas" "shòrt" "pegós" "bas" "baish" "capèl" "capèth" "casqueta" "bonet" "eissarpa" "eisharpa" "gant" "cauceta" "cauçadura" "tenís" "basquet" "bòta" "sandala" "pendent" "baga" "anèl" "anèth" "braçalet" "luneta" "cencha" "centura" "cinta" "talhòla" "legging" "malhòt" "malhòl" "shamarreta" "camiseta" "borrassa" "malhòt# de banh" "vestit# de banh" "biquini" "bikini" "monokini" "monoquini" "camison" "bracièra" "davantal" "davantau" "capucha" ;
+
 LIST VerbMoviment = "anar" "tornar" "arribar" "partir" "viatjar" ;
 
 SECTION
@@ -2599,6 +2601,8 @@ SELECT AJ IF (-1 DETdef OR NUM) (0 ("brave")) (1 unknown) ;
 SELECT N + FemSg IF (-2 ("a") + PREP) (-1 DETdef + FemSg) (0 ("mòda")) ;
 SELECT AJ + FemSg IF (-2 ("a") + PREP) (-1 DETdef + FemSg) (0 Gentilici + FemSg) (NOT 1 AJ OR VBpp) ;	# a l'occidentala
 
+REMOVE AJ IF (-1 Vestit + &&AcordSN) (0 ("empesat") + &&AcordSN) ;	# camisa empesada
+REMOVE AJ IF (-2 Vestit + &&AcordSN) (-1 AJ + &&AcordSN) (0 ("empesat") + &&AcordSN) ;	# camisa blanca empesada
 
 # ADJ POS
 
