@@ -1804,6 +1804,10 @@ SELECT SUB:1 AJ + &&AcordSN IF (0 DAutres) (1 N + &&AcordSN) ;
 SELECT SUB:1 N IF (0 ("<de biais>"i)) (1 AJ + MascSg) ;
 REMOVE SUB:1 N IF (0 ("<de biais>"i)) ;
 
+SELECT N IF (-1/* DET + &&AcordSN) (0 ("cap e cap") + &&AcordSN) ;
+SELECT N IF (-2/* DET + &&AcordSN) (-1C AJ + &&AcordSN) (0 ("cap e cap") + &&AcordSN) ;
+REMOVE N IF (0 ("cap e cap")) ;
+
 SELECT N IF (-1 Aver) (0 ("<afar>"i)) ;
 SELECT N IF (-2 Aver) (-1 AV) (0 ("<afar>"i)) ;
 SELECT N IF (-1 Aver) (-2 AV) (-1 AV) (0 ("<afar>"i)) ;
