@@ -82,10 +82,13 @@ LIST PII = pii ;
 LIST IFI = ifi ;
 LIST Itg = itg ;
 LIST Excl = excl ;
-LIST DETdef = (det def);
-LIST DETind = (det ind);
-LIST DETpos = (det pos);
-LIST DETdem = (det dem);
+LIST DETdef = (det def) ;
+LIST DETind = (det ind) ;
+LIST DETpos = (det pos) ;
+LIST DETdem = (det dem) ;
+LIST Ind = ind 
+LIST Pos = pos ;
+LIST Dem = dem ;
 
 SET Ant = (np ant) ;
 SET Cog = (np cog) ;
@@ -475,6 +478,10 @@ SELECT DET + MascSg IF (0 DET + MascSg) (1 ("<pas>"i)) ;		# un pas # patch
 SELECT N IF (-2 DET + MascSg) (-1 AJ + MascSg) (0 ("<pas>"i)) ;		# un important pas # patch
 SELECT AJ + MascSg IF (-1 DET + MascSg) (0 AJ + MascSg) (1 ("<pas>"i)) ;		# un important pas # patch
 SELECT AV IF (-1 V) (0 ("<pas>"i)) ;		# patch
+SELECT N + &&AcordSN IF (-1C DET) (-1 DET + &&AcordSN) (1 ("<pas>"i)) (2 AJ_PP + &&AcordSN) ;
+SELECT N + &&AcordSN IF (-1 DET + Ind + &&AcordSN) (1 ("<pas>"i)) (2 AJ_PP + &&AcordSN) ;		# un resultat pas satisfasent
+SELECT N + &&AcordSN IF (-1 DET + Dem + &&AcordSN) (1 ("<pas>"i)) (2 AJ_PP + &&AcordSN) ;		# aquel resultat pas satisfasent
+
 SELECT V OR ("mes") + Conjco IF (1 ("<pas>"i)) ;		# patch
 REMOVE ("d'unes") IF (-1C N_AJ) ;
 SELECT ("d'unes") + PRON IF (1C Que OR Rel) ;
