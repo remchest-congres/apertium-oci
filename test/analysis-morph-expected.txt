@@ -4,9 +4,9 @@
 [/IrAOY7eTPa5g]
 [Muuxq8wcYBzr#0] ^(/(<lpar>$
 [/Muuxq8wcYBzr]
-[N9eE5wmBoTu5#0] ^nʼ/ne<adv><enon>/en<prn><pro><adv>$
+[N9eE5wmBoTu5#0] ^nʼ/ne<adv>/en<prn><pro><adv>$
 [/N9eE5wmBoTu5]
-[XnabiXiNVHre#0] ^s'/se<cnjadv>/se<prn><pro><ref><p3><mf><sp>$
+[XnabiXiNVHre#0] ^s'/se<cnjadv>/si<cnjadv>/se<prn><pro><ref><p3><mf><sp>$
 [/XnabiXiNVHre]
 [io3oI9XtPhJ0#0] ^?/?<sent>$
 [/io3oI9XtPhJ0]
