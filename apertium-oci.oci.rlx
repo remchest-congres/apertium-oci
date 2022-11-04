@@ -379,8 +379,8 @@ LIST Comuna = "comuna" "vila" "citat" "ciutat" "borg" "vilatge" ;
 
 LIST Fiera = "fièra" "fiera" "fièira" "hèira" "fira" ;
 
-LIST Lenga = "occitan" "francés" "anglés" "alemand" "espanhòl" "espanhòu" "italian" "rus" "chinés" "japonés" "catalan" "basc" "basco" "breton" "còrse" "arpitan" "francoprovençal" "alsacian" "flamenc" ;
-LIST Gentilici = "occitan" "francés" "anglés" "alemand" "espanhòl" "espanhòu" "italian" "rus" "chinés" "japonés" "catalan" "basc" "basco" "breton" "còrse" "arpitan" "francoprovençal" "alsacian" "flamenc" "american" "canadian" "canadenc" "quebequés" "cuban" "occidental" "oriental" ;
+LIST Lenga = "occitan" "aranés" "gascon" "provençal" "provençau" "francés" "anglés" "alemand" "espanhòl" "espanhòu" "italian" "rus" "ucraïnian" "ucraïnés" "ucraïnenc" "chinés" "japonés" "catalan" "basc" "basco" "galician" "breton" "còrse" "arpitan" "francoprovençal" "alsacian" "flamenc" "galés" "irlandés" ;
+LIST Gentilici = "occitan" "francés" "anglés" "alemand" "espanhòl" "espanhòu" "italian" "rus" "ucraïnian" "ucraïnés" "ucraïnenc" "chinés" "japonés" "catalan" "basc" "basco" "breton" "còrse" "arpitan" "francoprovençal" "alsacian" "flamenc" "galés" "escocés" "irlandés" "irlandés" "american" "canadian" "canadenc" "quebequés" "cuban" "occidental" "oriental" ;
 
 LIST Grade = "soldat" "caporal" "caporau" "sergent" "lòctenent" "capitani" "capitan" "coronèl" "coronèu" "general" "generau" "amiral" "amirau" "contra-amiral" "contra-amirau" "vice-amiral" "vice-amirau" "majoral" "majorau" ;
 
@@ -567,7 +567,10 @@ SELECT N IF (-1 DET + &&AcordSN) (0 ("lei") + MajIni + &&AcordSN) ;
 SELECT N IF (-1C DET + &&AcordSN) (0 ("partit") + &&AcordSN) ;
 SELECT N IF (-1 DET + &&AcordSN) (0 ("partit") + MajIni + &&AcordSN) ;
 SELECT DET IF (NOT -1/* DET) (0 ("lei")) (1C N + Pl_strict) ;
+SELECT DET IF (NOT -1/* DET) (0 ("lei")) (1 ("«")) (2C N + Pl_strict) ;
 SELECT N IF (0 ("lei") + &&AcordSN) (1 Cog OR unknownMajIni) ;	# lei Deixonne
+SELECT N IF (0 ("lei")) (1 De) (2 DET + MascSg) (3 Lenga) ;	# lei de l'occitan
+SELECT N IF (0 ("lei")) (1 ("<deu>")) (2 Lenga) ;	# lei deu catalan
 REMOVE N IF (0 ("<estar>"i)) (-1 PREP) ;	# patch
 REMOVE N IF (0 ("<estar>"i) OR Ser + VBinf) (-1 ("har") OR ("far") OR ("hèr")) ;
 
@@ -764,7 +767,7 @@ REMOVE SUB:1 AV IF (0 ("<de cap>"i)) (1C EOS OR CM OR Conjsub OR Conjadv OR Conj
 
 REMOVE DET IF (0 ("hèra")) ;
 SELECT AV IF (0 ("hèra") OR ("plan") OR ("brin")) (1 Mai OR Pus OR Mens OR Melhor) ;
-REMOVE DET IF (-2 DETdef + &&AcordSN) (-1 Mai OR Pus OR Mens) (0 AJ + &&AcordSN) (1 N + &&AcordSN) ;	# la mès bèra avenguda
+REMOVE DET IF (-2/* DETdef + &&AcordSN) (-1 Mai OR Pus OR Mens) (0 AJ + &&AcordSN) (1 N + &&AcordSN) ;	# la mès bèra avenguda
 SELECT AV IF (0 Mens) (1 De) ;
 SELECT PREAV IF (-1 Ser + &&AcordSP OR Ser + VBinf OR Ser + VBger OR Ser + VBpp) (0 ("hèra")) (1 AJ + &&AcordSP OR VBpp + &&AcordSP) ;
 SELECT PREAV IF (-2 Ser + &&AcordSP OR Ser + VBinf OR Ser + VBger OR Ser + VBpp) (-1 AV OR Tn) (0 ("hèra")) (1 AJ + &&AcordSP OR VBpp + &&AcordSP) ;	# estón tots hèra urós
@@ -1477,6 +1480,11 @@ REMOVE ("devénguer") IF (0 ("<dever>"i)) ;
 # solar e soler
 REMOVE ("solar") IF (0 ("soler")) ;
 
+# soler e estar/èsser
+REMOVE ("soler") IF (0 Ser) (NOT 1 VBinf) (NOT 2 VBinf) (NOT 3 VBinf) ;
+REMOVE ("soler") IF (0 Ser) (NOT 1 AV OR Pro) (NOT 2 VBinf) ;
+REMOVE ("soler") IF (0 Ser) (NOT 1 AV OR Pro) (NOT 2 AV OR Pro) (NOT 3 VBinf) ;
+
 # poscar e poder
 REMOVE ("poscar") IF (0 ("poder")) ;
 
@@ -1705,10 +1713,13 @@ SELECT VBpp IF (-2C Aver + Pers) (-1 Donc) (0 VBpp + &&AcordSP) (NOT 1 AJ + &&Ac
 REMOVE N IF (-2 Ser + &&AcordSP) (-1 Donc) (0 AJ_PP + &&AcordSP) (NOT 1 AJ + &&AcordSP) ;	# es donc plasent
 
 #Un predeterminant es pas seguit que per un determinant
-REMOVE PREDET IF (NOT 1 DET);
+REMOVE PREDET IF (NOT 1 DET OR ("«"));
+REMOVE PREDET IF (1 ("«")) (NOT 2 DET) ;
 SELECT PREDET + &&AcordSN IF (0 ("qual que siá") + &&AcordSN OR ("qual que siá") + &&AcordSN) (1 DETdef + &&AcordSN) ;
 
 #Los pronoms possessius son totjorn seguits per un nom, un adjectiu, un advèrb o un numeral
+SELECT DET + &&AcordSN IF (0 DET + &&AcordSN) (1 ("«")) (2C N_AJ + &&AcordSN) ;
+SELECT SUB:1 DET + &&AcordSN IF (0/* DET + &&AcordSN) (1 ("«")) (2C N_AJ + &&AcordSN) ;
 REMOVE DETpos IF (NOT 1 N OR AJ OR AV OR NUM OR NP OR unknown);
 REMOVE DETpos IF (0 ("son")) (1C NUM) ;		# son doas causas
 
@@ -2777,6 +2788,9 @@ SELECT AJ + &&AcordSN IF (-3C N + &&AcordSN) (-2 AJ + &&AcordSN) (-1 AJ + &&Acor
 SELECT AJ + &&AcordSN IF (-3C N + &&AcordSN) (-2 AJ + &&AcordSN) (-1 AJ + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
 
 SELECT AJ + &&AcordSN IF (-2C N + &&AcordSN) (-1 Mai OR Pus) (0 AJ + &&AcordSN) ;
+SELECT AJ + &&AcordSN IF (-2/* DETdef + &&AcordSN) (-1 Mai OR Pus OR Mens) (0 AJ + &&AcordSN) (1 N + &&AcordSN) ;
+SELECT DET + &&AcordSN IF (0 DETdef + &&AcordSN) (1 Mai OR Pus OR Mens) (2 AJ + &&AcordSN) (3 N + &&AcordSN) ;
+SELECT SUB:1 DET + &&AcordSN IF (0/* DETdef + &&AcordSN) (1 Mai OR Pus OR Mens) (2 AJ + &&AcordSN) (3 N + &&AcordSN) ;	# las 542 comunas deu mei gran departament
 
 SELECT N + &&AcordSN IF (-1C DET + &&AcordSN) (0 AJ) (0 N + &&AcordSN) (1C NP) ;	# la regente Céline Colau
 
@@ -2887,6 +2901,8 @@ REMOVE N IF (NOT -1 DET) (0 ("<risca>"i)) (1 De) (2 Pro OR VBinf) ;
 
 REMOVE N_AJ IF (-1 ("daissar") OR ("deishar") OR ("leishar")) (0 VBinf) ;
 REMOVE N_AJ IF (-2 ("daissar") OR ("deishar") OR ("leishar")) (-1 AV) (0 VBinf) ;
+
+REMOVE N IF (NOT -2/* DET) (-1 ("non")) ;
 
 SELECT V IF (-2C Rel) (-1 ("lo")) (0 ("<son>"i)) ;
 SELECT V IF (-3C Rel) (-2 AV) (-1 ("lo")) (0 ("<son>"i)) ;
@@ -3205,6 +3221,10 @@ REMOVE N IF (0 Pel) (1 unknown) ;
 SELECT V IF (0 ("<deu>"i)) (1 SENT OR Pro) ;
 SELECT V IF (0 ("<deu>"i)) (1 VocIni) ;
 REMOVE V IF (0 ("<deu>"i)) (NOT 1 VBinf OR AV) ;
+REMOVE V IF (0 ("<deu>"i)) (1 ("deguens") OR ("dehens") OR ("dehòra") OR ("defòra")) ;
+REMOVE V IF (0 ("<deu>"i)) (1C N_AJ) (1 N_AJ + MascSg) ;
+REMOVE V IF (0 ("<deu>"i)) (1 N + MascSg) (2 De) ;
+# REMOVE V IF (0 ("<deu>"i)) (-1* V + Pers BARRIER Rel OR Conjadv OR Conjsub) ;	# l'onco que hasè har lo torn deu ben ; funciona pas per gascon 00090 (en sabi pas la rason)
 
 # de las + adj
 SELECT DET IF (0 ("<la>"i) OR ("<las>"i)) (-1 ("de")) (1 AJ + Fem) ;
