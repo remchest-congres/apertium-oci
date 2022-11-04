@@ -270,6 +270,8 @@ LIST Que = "que" ("<que>"i) ;
 LIST Qui = "qui" ;
 LIST Quin = "quin" ;
 LIST Que_Itg = ("qué" itg) ;
+LIST Quan = "quan" "quand" ;
+LIST On = "on" "ont" "a on" ;
 LIST Se = "se" ;
 LIST Si = "si" ;
 LIST Las = "las" ;
@@ -1675,13 +1677,28 @@ SELECT N IF (0 (META:/-/r)) (1C N) ;
 
 #Un nom pot pas seguir qu'un vèrbe, un adjectiu, un determinant, un numeral, una prepausicion o un pronom (levat los personals)
 #(en titolars periodístics, però, es comença sovint per un nom)
+# non : Aguèron pas rason
 # non : Patxi Zabaleta, actualament cap del partit
 # non : i avè tà la damisèla catalògues, prospectús e municions
-REMOVE N IF (NOT -1 BOS OR CM OR Conjco OR Donc OR V OR AJ OR AV OR DET OR NUM OR PREP OR PRON - PRONPers) (NOT -1/* ("de")) (NOT -2 CM) ;
-REMOVE N IF (NOT -1 BOS OR CM OR Conjco OR Donc OR V OR AJ OR AV + Itg OR DET OR NUM OR PREP OR PRON - PRONPers) (NOT -1/* ("de")) (NOT -2 CM) (NOT -2 V LINK NOT 0 VBpp) ;
+#REMOVE N IF (NOT -1 BOS OR CM OR Conjco OR Donc OR V OR AJ OR AV OR DET OR NUM OR PREP OR PRON - PRONPers) (NOT -1/* ("de")) (NOT -2 CM) ;
+REMOVE N IF (NOT -1 BOS OR CM OR Conjco OR Donc OR V OR AJ OR AV OR DET OR NUM OR PREP OR PRON - PRONPers) (NOT -1/* ("de")) (NOT -2 CM) (NOT -2 V LINK NOT 0 VBpp) ;
 REMOVE N IF (-1/* ("lo que") OR ("lo qui")) ;
 REMOVE N IF (-2 Conjco) (-1 Donc) (0 V + Pers) ;
 REMOVE N IF (-2 N + &&AcordSN) (-1 AJ + &&AcordSN) (0 VBpp + &&AcordSN) ;	# lo ministre canadian encargat
+REMOVE N IF (-1 Quan OR On OR Si) (0 V + Pers) (1 Que) ;	# quan anóncia que
+REMOVE N IF (-2 Quan OR On OR Si) (-1 AV) (0 V + Pers) (1 Que) ;	# quan rapidament anóncia que
+REMOVE N IF (-1 Quan OR On OR Si) (0 V + Pers) (1 AV) (2 Que) ;	# quan anóncia rapidament que
+REMOVE N IF (-1 Quan OR On OR Si) (0 ("<pòt>"i)) ;	# quan pòt
+REMOVE N IF (-2 Quan OR On OR Si) (-1 AV) (0 ("<pòt>"i)) ;	# quan totjorn pòt
+REMOVE N IF (-1 ("tan")) (0 AJ) ;	# tan rapide
+REMOVE N IF (-1 Si) (0 V + Pers) ;	# si tròba
+REMOVE N IF (-1 Que) (0 V + Pers) ;	# que pòrta
+REMOVE N IF (-1 Qui) (0 V + Pers) ;
+REMOVE N IF (-1 Quan) (0 V + Pers) ;
+REMOVE N IF (-1 On) (0 V + Pers) ;
+REMOVE N IF (-1C Conjadv LINK NOT 0 Donc) (0 V + Pers) ;
+REMOVE N IF (NOT -2 V OR AV) (-1C AV OR PREAV LINK NOT 0 ("<i a>"i)) (0 N + &&AcordSN) (NOT 1 AJ + &&AcordSN) ;
+REMOVE N IF (NOT -3 V) (-2 AV) (-1C AV OR PREAV LINK NOT 0 ("<i a>"i)) (0 N + &&AcordSN) (NOT 1 AJ + &&AcordSN) ;
 
 REMOVE AJ IF (-1C Conjsub OR Conjadv OR Rel LINK NOT 0 Donc) ;
 SELECT VBpp IF (-2C Aver + Pers) (-1 Donc) (0 VBpp + &&AcordSP) (NOT 1 AJ + &&AcordSP) ;	# a donc causit
@@ -2328,12 +2345,12 @@ SELECT Vmod IF (0 ("caler")) (-1 Enon) ;
 SELECT Vmod IF (0 ("caler")) (-1 BOS) ;
 SELECT Vmod IF (0 ("caler")) (-2 BOS) (1 AV) ;
 SELECT Vmod IF (-1 ("coma") OR ("com")) (0 ("caler") + P3 + Sg) ;
-REMOVE (vbmod) IF (NOT 1 VBinf OR AV OR Pro OR Que) ;
-REMOVE (vbmod) IF (1 AV) (NOT 2 VBinf OR AV OR Pro OR Que) ;
-REMOVE (vbmod) IF (1 AV) (1 AV) (NOT 3 VBinf OR AV OR Pro OR Que) ;
-REMOVE (vbmod) IF (1 AV) (2 Pro) (NOT 3 VBinf OR Pro) ;
-REMOVE (vbmod) IF (1 Pro) (NOT 2 VBinf OR Pro) ;
-REMOVE (vbmod) IF (1 Pro) (2 Pro) (NOT 2 VBinf) ;
+REMOVE (vbmod) IF (0 Verb) (NOT 1 VBinf OR AV OR Pro OR Que) ;
+REMOVE (vbmod) IF (0 Verb) (1 AV) (NOT 2 VBinf OR AV OR Pro OR Que) ;
+REMOVE (vbmod) IF (0 Verb) (1 AV) (1 AV) (NOT 3 VBinf OR AV OR Pro OR Que) ;
+REMOVE (vbmod) IF (0 Verb) (1 AV) (2 Pro) (NOT 3 VBinf OR Pro) ;
+REMOVE (vbmod) IF (0 Verb) (1 Pro) (NOT 2 VBinf OR Pro) ;
+REMOVE (vbmod) IF (0 Verb) (1 Pro) (2 Pro) (NOT 2 VBinf) ;
 
 #Vb conjugat après enonciatiu
 SELECT Vconj IF (-1C Enon) (NOT 0 Pro) ;
@@ -2415,12 +2432,12 @@ SELECT Pro IF (-1 ("se")) (0 ("o")) (1 V) ;	# se o fau
 SELECT V IF (-2 ("se")) (-1 ("o")) (0 V) ;	# se o fau
 SELECT Pro IF (-1 ("per aquò")) (0 ("o")) (1 V) ;	# per aquò o deviá legir
 SELECT Pro IF (-2 ("per")) (-1 Tn) (0 ("o")) (1 V) ;	# per aquò o deviá legir
-SELECT Pro IF (-2 PREP) (-1 VBinf) (0 ("o")) (1 V + Pers) ;	# per saber o deviá legir
-SELECT Pro IF (-3 PREP) (-2 Pro) (-1 VBinf) (0 ("o")) (1 V + Pers) ;	# per o saber o deviá legir
-SELECT Pro IF (-4 PREP) (-3 Pro) (-2 Pro) (-1 VBinf) (0 ("o")) (1 V + Pers) ;
-SELECT Pro IF (-3 PREP) (-2 VBinf) (-1 AV) (0 ("o")) (1 V + Pers) ;
-SELECT Pro IF (-4 PREP) (-3 Pro) (-2 VBinf) (-1 AV) (0 ("o")) (1 V + Pers) ;
-SELECT Pro IF (-5 PREP) (-4 Pro) (-3 Pro) (-2 VBinf) (-1 AV) (0 ("o")) (1 V + Pers) ;
+SELECT Pro IF (-2 PREP) (-1 VBinf) (0 ("o")) (1 V + Pers LINK NOT 0 PREP) ;	# per saber o deviá legir
+SELECT Pro IF (-3 PREP) (-2 Pro) (-1 VBinf) (0 ("o")) (1 V + Pers LINK NOT 0 PREP) ;	# per o saber o deviá legir
+SELECT Pro IF (-4 PREP) (-3 Pro) (-2 Pro) (-1 VBinf) (0 ("o")) (1 V + Pers LINK NOT 0 PREP) ;
+SELECT Pro IF (-3 PREP) (-2 VBinf) (-1 AV) (0 ("o")) (1 V + Pers LINK NOT 0 PREP) ;
+SELECT Pro IF (-4 PREP) (-3 Pro) (-2 VBinf) (-1 AV) (0 ("o")) (1 V + Pers LINK NOT 0 PREP) ;
+SELECT Pro IF (-5 PREP) (-4 Pro) (-3 Pro) (-2 VBinf) (-1 AV) (0 ("o")) (1 V + Pers LINK NOT 0 PREP) ;
 
 REMOVE Tn IF (0 DETdem + &&AcordSN) (1C N_AJ) (1 N_AJ + &&AcordSN) ;		# aqueths corredís
 
@@ -2669,6 +2686,7 @@ SELECT N + &&AcordSN OR NP + &&AcordSN IF (0C N) (1C AJ) (1 AJ + &&AcordSN) ;	# 
 
 SELECT VBpp + &&AcordSN IF (-1C N_AJ + &&AcordSN) (0 ("dire") + &&AcordSN OR ("díder") + &&AcordSN) (1 ("«")) ;
 SELECT N + &&AcordSN OR PRON + &&AcordSN OR NP + &&AcordSN IF (-1C PREP) (0C ("dire") + VBpp + &&AcordSN OR ("díder") + VBpp + &&AcordSN) ;
+REMOVE N IF (NOT -1/* DET + MascSg) (0 ("<dire>"i)) (1 Que) ;
 
 REMOVE V + Pers IF (-2C V + Pers OR VBinf OR VBger) (-1 DET + &&AcordSN) (0 N + &&AcordSN) ;
 REMOVE V + Pers IF (-3C V + Pers OR VBinf OR VBger) (-2 AV) (-1 DET + &&AcordSN) (0 N + &&AcordSN) ;
@@ -3184,7 +3202,6 @@ REMOVE N IF (-1C V) (0 Pel) ;
 REMOVE N IF (0 Pel) (1 unknown) ;
 
 #deu -> dever / de +lo
-LIST Deu = "deu" ;
 SELECT V IF (0 ("<deu>"i)) (1 SENT OR Pro) ;
 SELECT V IF (0 ("<deu>"i)) (1 VocIni) ;
 REMOVE V IF (0 ("<deu>"i)) (NOT 1 VBinf OR AV) ;
@@ -3207,6 +3224,9 @@ SELECT DET IF (0 ("<la>"i)) (1 ("«")) (2 N_AJ + FemSg) (3 ("»")) (4 N_AJ + Fem
 SELECT DET IF (0 ("<las>"i)) (1 ("«")) (2 N_AJ + FemPl) (3 ("»")) (4 N_AJ + FemSg) ;
 SELECT DET IF (0 ("<las>"i)) (1 unknownMinIni) ;
 SELECT DET IF (0 ("<las>"i)) (1 NUM) ;
+
+SELECT DET IF (0 ("lo")) (1 De LINK NOT 0 V) ;
+SELECT PREP IF (-1 ("lo")) (0 De LINK NOT 0 V) ;
 
 #pel/peu nom o article contractat
 REMOVE N IF (1 N + MascSg) (0 ("<peu>"i) OR ("<pel>"i)) (NOT -1 DET + Sg) (NOT -1 Artcontrsg) ;
