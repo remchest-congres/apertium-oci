@@ -268,6 +268,7 @@ LIST Deu = "deu" ;
 LIST ACausaDe = "a causa de" "en causa de" "pr'amor de" "per'mor de";
 LIST Que = "que" ("<que>"i) ;
 LIST Qui = "qui" ;
+LIST Que_Qui_Rel = ("que" rel) ("qui" rel) ;
 LIST Quin = "quin" ;
 LIST Que_Itg = ("qué" itg) ;
 LIST Quan = "quan" "quand" ;
@@ -2999,6 +3000,13 @@ REMOVE V IF (0 ("guida")) (1 ("<de>"i)) (2C N + Sg) (NOT 2 ("faiçon") OR ("faç
 LIST Bevenda = "aiga" "lach" "lèit" "cervesa" "bièrra" "bèra" "vin" "pomat" "cidre" ;
 REMOVE V IF (NOT -2 VVmod) (NOT -1 VVmod) (0 ("veire")) (1 ("<de>"i)) (2C Bevenda + Sg) ;	# en lengadocian pòt èsser lo vèrb, mai es pas probable
 SELECT V IF (-2 ("<de>"i)) (-1 ("<bon>"i)) (0 ("<veire>"i)) ;
+
+# REMOVE VBpp + Pl IF (-1 Haver OR Aver) (0 N) (NOT -1 Pro + Pl) (NOT -2 Pro + Pl) (NOT -2* Que_Qui_Rel BARRIER V) ;
+# REMOVE VBpp + Fem IF (-1 Haver OR Aver) (0 N) (NOT -1 Pro + Fem) (NOT -2 Pro + Fem) (NOT -2* Que_Qui_Rel BARRIER V) ;
+
+REMOVE VBpp IF (-1 ("har") OR ("hèr")) (0 N) ;	# hasè esclassats
+REMOVE VBpp IF (-2 ("har") OR ("hèr")) (-1 AV) (0 N) ;	# hasè esclassats
+
 
 # AJ / V
 
