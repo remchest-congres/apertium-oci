@@ -1572,6 +1572,14 @@ SELECT NUM IF (-1 NUM) (0 ("mil")) ;
 SELECT NUM IF (0 ("mil")) (1 N_AJ + Pl) ;
 
 SELECT V IF (0 ("tornar")) (1C VBinf) ;
+SELECT V IF (0 ("tornar")) (1 AV) (2 VBinf) ;
+SELECT V IF (0 ("tornar")) (1 AV) (2 AV) (3 VBinf) ;
+SELECT V IF (0 ("tornar")) (1 ("a") OR ("tà") OR ("entà") OR ("enta")) ;
+SELECT V IF (0 ("tornar")) (1 AV) (2 ("a") OR ("tà") OR ("entà") OR ("enta")) ;
+SELECT V IF (0 ("tornar")) (1 AV) (2 AV) (3 ("a") OR ("tà") OR ("entà") OR ("enta")) ;
+SELECT V IF (0 ("tornar")) (1 ("a .*"r) + AV OR ("tà .*"r) + AV OR ("entà .*"r) + AV OR ("enta .*"r) + AV) ;	# díser de tornar tà casa
+SELECT V IF (0 ("tornar")) (1 AV) (2 ("a .*"r) + AV OR ("tà .*"r) + AV OR ("entà .*"r) + AV OR ("enta .*"r) + AV) ;
+SELECT V IF (0 ("tornar")) (1 AV) (2 AV) (3 ("a .*"r) + AV OR ("tà .*"r) + AV OR ("entà .*"r) + AV OR ("enta .*"r) + AV) ;
 
 SELECT N OR NP IF (-1 De OR En OR DET + MascSg) (0 ("òc")) ;
 
