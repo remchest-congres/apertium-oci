@@ -281,7 +281,7 @@ LIST Mas_cnjcoo = ("mas" cnjcoo) ("mes" cnjcoo) ("mès" cnjcoo) ("mai" cnjcoo) ;
 LIST O_cnjcoo = ("o" cnjcoo) ("ò" cnjcoo) ;
 LIST Semblar_Pareisser = "semblar" "paréisser" "paréisher" ;
 LIST Devenir = "devenir" "venir" "vàder" "vénguer" "viéner" "vier" ;
-LIST Demandar = "demandar" "demanar" "interrogar" "questionar" "qüestionar" "saber" "sàber" "estudiar" "cercar" "investigar" "trovar" "trapar" "explicar" "contar" "condar" "discutir" ;
+LIST Demandar = "demandar" "demanar" "interrogar" "questionar" "qüestionar" "saber" "sàber" "estudiar" "cercar" "investigar" "trovar" "trapar" "explicar" "contar" "condar" "discutir" "saber" "sàber" "saupre" ;
 LIST VNonPron = "demorar" "abitar" "trabalhar" "tribalhar" "manjar" "beure" "béver" ;	# vèrbs non pronominals
 LIST Far = "far" "har" "hèr" ;
 LIST Estat = "estat" ;
@@ -548,7 +548,7 @@ SELECT PREP IF (NOT -1 DET + &&AcordSN) (0 ("sens") + &&AcordSN) (1 Que) ;
 SELECT Conjsub IF (-1C ("sens") + PREP) (0 Que) ;
 SELECT N IF (-1 MinIni) (0 ("sap") + MajIni) ;
 SELECT N IF (0 ("sap")) (1C V + Pers) ;
-SELECT N IF (0 ("sap")) (1C AV) (2C V + Pers) ;
+SELECT N IF (0 ("sap")) (1C AV LINK NOT 0 Itg) (2C V + Pers) ;
 SELECT N + &&AcordSN IF (-2C V + Pers) (-1 DET + &&AcordSN) (0 ("sap") + &&AcordSN) ;
 SELECT N + MascPl IF (-2C V + Pers) (-1 De) (0 ("sap") + MascPl) ;
 SELECT N + &&AcordSN IF (-1/* DET + &&AcordSN) (0 ("sap") + &&AcordSN) (1 De) ;
