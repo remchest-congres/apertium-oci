@@ -6,9 +6,8 @@
 #	- es: det (aran) o vbser
 #	- o: cnjcoo o prn.pro
 #	- que: enon, rel, cnjsub, itg
-#	- ne: enon, cnjcoo, prn.pro
+#	- ne: enon, adv, cnjcoo, prn.pro
 #	- e: enon o cnjcoo
-#	- ne: enon, adv o prn.pro
 #	- cap: n.m, n.mf, det, prn, adv, pr, vblex (!)
 #	- mai: n, cnjcoo, adv
 
@@ -45,7 +44,7 @@ LIST PREP = pr ;
 LIST Pref = pref ;
 LIST PRON = prn ;
 LIST PERS = pers ;
-SET AV = (adv) - (enon) ;
+SET AV = (adv) - (enon) - (prn) ;
 LIST AVexcl = (adv excl) ;
 LIST PREAV = preadv ;
 LIST PRONPers = (prn p1) (prn p2) (prn p3);
@@ -234,7 +233,7 @@ LIST De = "de";
 LIST Ne_pron = ("ne" prn) ("en" prn) ;
 LIST Ne_conj = ("ne" cnjcoo);
 LIST Ne_enon = ("ne" enon);
-LIST Ne_adv = ("ne" adv);
+SET Ne_adv = ("ne" adv) - (prn pro adv) ;
 LIST E_enon = ("e" enon);
 LIST Dins = "dins" "dens" "hens";
 LIST Jos = "jos";
@@ -1235,6 +1234,20 @@ SELECT Ne_enon IF (1 V) (-1* PRON + PRON_Pas_Neg) ;
 SELECT Ne_enon IF (1 V) (1* DET + DET_Pas_Neg) ;
 SELECT Ne_enon IF (1 V) (-1* DET + DET_Pas_Neg) ;
 REMOVE Ne_enon ;
+
+
+REMOVE Ne_adv IF (0 Pro) (1 V) (2 ("pas")) ;
+REMOVE Ne_adv IF (0 Pro) (1 V) (2 ("que")) ;
+REMOVE Ne_adv IF (0 Pro) (1 V) (2 AV + AV_Pas_Neg) ;
+REMOVE Ne_adv IF (0 Pro) (1 V) (2 PRON + PRON_Pas_Neg) ;
+REMOVE Ne_adv IF (0 Pro) (1 V) (2 AV) (3 ("pas")) ;
+REMOVE Ne_adv IF (0 Pro) (1 V) (2 AV) (3 ("que")) ;
+REMOVE Ne_adv IF (0 Pro) (1 V) (2 AV) (3 AV + AV_Pas_Neg) ;
+REMOVE Ne_adv IF (0 Pro) (1 V) (2 AV) (3 PRON + PRON_Pas_Neg) ;
+REMOVE Ne_adv IF (0 Pro) (1 V) (1* PRON + PRON_Pas_Neg) ;
+REMOVE Ne_adv IF (0 Pro) (1 V) (-1* PRON + PRON_Pas_Neg) ;
+
+
 SELECT Rel IF (-1 ("a cada còp"i)) (0 Que) ;
 SELECT Conjadv IF (0 ("cada còp que"i)) (1* Que) ;
 SELECT Conjadv IF (0 ("cada còp que"i)) ;	# patch
@@ -2195,9 +2208,9 @@ SELECT VBpp IF (-2 Ser OR Semblar_Pareisser OR Devenir) (-1 AV) (0 VBpp) (1 A) (
 SELECT VBpp IF (-3 Ser OR Semblar_Pareisser OR Devenir) (-2 AV) (-1 AV) (0 VBpp) (1 A) (2 VBinf) ;	# ser pas totjorn convidat a pensar
 REMOVE V IF (0 A) (1C N_AJ OR DET OR NUM) (-1* V + Pers BARRIER Conjsub OR Conjadv OR Rel) ;
 REMOVE V IF (0 A) (1C N_AJ OR DET OR NUM) (1* V + Pers BARRIER Conjsub OR Conjadv OR Rel) ;
-SELECT Aver IF (-1/* Haver) (0 Aver + VBpp) ;	# a agut ; i a agut
-SELECT Aver IF (-2/* Haver) (-1 AV) (0 Aver + VBpp) ;	# a pas agut ; i a pas agut
-SELECT Aver IF (-3/* Haver) (-2 AV) (-1 AV) (0 Aver + VBpp) ;	# a pas totjorn agut ; i a pas totjorn agut
+SELECT Aver IF (-1/* Haver OR Aver) (0 Aver + VBpp) ;	# a agut ; i a agut
+SELECT Aver IF (-2/* Haver OR Aver) (-1 AV) (0 Aver + VBpp) ;	# a pas agut ; i a pas agut
+SELECT Aver IF (-3/* Haver OR Aver) (-2 AV) (-1 AV) (0 Aver + VBpp) ;	# a pas totjorn agut ; i a pas totjorn agut
 SELECT Haver IF (0 Haver) (1 ("fait")) ;	# a fait
 SELECT PREP IF (-1 Drech) (0 A) ;
 SELECT N IF (-1 DET + MascSg OR Artcontrsg) (0 Drech) (1 A) ;
