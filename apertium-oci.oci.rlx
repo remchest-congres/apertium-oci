@@ -1655,6 +1655,7 @@ SELECT PREP IF (0 En) (1 Pro) (2 Pro) (3 VBger) ;
 SELECT N IF (-1 En) (0 ("sovenir")) (1 De) ;
 SELECT VBger IF (NOT -2 PREP) (-1 En) (0 VBger) ;
 SELECT VBger IF (-2 En) (-1C Pro) (0 VBger) ;
+SELECT VBger IF (-2 En) (-1 ("<lor>"i)) (0 VBger) ;
 SELECT VBger IF (-3 En) (-2 Pro) (-1 Pro) (0 VBger) ;
 SELECT Pro IF (-1C PREP) (1 Pro) (2 VBinf OR VBger) ;	# de nos en rendre
 SELECT Pro IF (-2C PREP) (-1 Pro) (1 VBinf OR VBger) ;
