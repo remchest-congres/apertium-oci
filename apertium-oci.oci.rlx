@@ -692,6 +692,10 @@ SELECT SUB:1 N + (m) IF (0 ("<de cap>"i)) (1 De) (2 ("pònt") OR ("lista")) ;
 SELECT N + (m) IF (0 Caps_de) (1 ("pont") OR ("pònt") OR ("lista")) ;
 SELECT N + (m) IF (0 Cap_de) (1 Top) ;
 SELECT SUB:1 N + (m) IF (0 ("<de cap>"i)) (1 De) (2 Top) ;
+SELECT PRON IF (-1C BOS OR Conjsub OR Rel) (0 Cap) (1C V) (1 V + P3 + Sg) ;	# cap vòl
+SELECT PRON IF (-1C BOS OR Conjsub OR Rel) (0 Cap) (1 Pro) (2C V) (2 V + P3 + Sg) ;	# cap se vòl mostrar
+SELECT PRON IF (-2C BOS OR Conjsub OR Conjadv OR Rel) (-1 AV) (0 Cap) (1C V) (1 V + P3 + Sg) ;	# cap vòl
+SELECT PRON IF (-2C BOS OR Conjsub OR Conjadv OR Rel) (-1 AV) (0 Cap) (1 Pro) (2C V) (2 V + P3 + Sg) ;	# cap se vòl mostrar
 LIST Lista_Cap_de_del = "estat" "govèrn" "conselh" "ministèri" "comission" "secretariat" "departament" "departement" "grop" "partit" "sindicat" "oposicion" "fila" "union" "politica" "cauma" "caumaire" "entrepresa" "enterpresa" "armada" "marina" "estat major" "crosada" "crosat" "cultura" "sanitat" "politica" ".*ista"r ".*isme"r Gentilici ;
 SELECT N + (mf) IF (NOT -1 BOS) (0 Cap_de_del) (1 Lista_Cap_de_del OR Al OR Acr) ;
 SELECT N + (mf) IF (NOT -1 BOS) (0 Caps_de_del) (1 Lista_Cap_de_del OR Al OR Acr) ;
