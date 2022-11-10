@@ -2929,6 +2929,9 @@ REMOVE N IF (NOT -1 DET) (0 ("<risca>"i)) (1 De) (2 Pro OR VBinf) ;
 REMOVE N_AJ IF (-1 ("daissar") OR ("deishar") OR ("leishar")) (0 VBinf) ;
 REMOVE N_AJ IF (-2 ("daissar") OR ("deishar") OR ("leishar")) (-1 AV) (0 VBinf) ;
 
+REMOVE V IF (0 ("quadre")) (1 De) (1/* DET) ;
+REMOVE V IF (0 ("quadre")) (1 De) (2 DET) ;
+
 REMOVE N IF (NOT -2/* DET) (-1 ("non")) ;
 
 SELECT V IF (-2C Rel) (-1 ("lo")) (0 ("<son>"i)) ;
