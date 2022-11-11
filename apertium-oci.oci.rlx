@@ -1961,6 +1961,8 @@ SELECT PREP IF (0 ("davant") OR ("darrièr") OR ("darrèr") OR ("dessús") OR ("
 SELECT PREP IF (0 ("davant") OR ("darrièr") OR ("darrèr") OR ("dessús") OR ("desjós") OR ("devath")) (1 ("vosautres") OR ("vosauts")) (NOT 2* VPl2) ;
 SELECT PREP IF (-1 ("per")) (0 ("davant") OR ("darrièr") OR ("darrèr") OR ("dessús") OR ("desjós") OR ("devath")) (1 ("ièu") OR ("jo") OR ("tu") OR ("el") OR ("prneth") OR ("nosautres") OR ("nosauts") OR ("vosautres") OR ("vosauts")) ;
 
+SELECT PREP IF (0 ("davant")) (1 ("casa")) ;
+
 # NP
 
 SELECT N IF (0 ("carta")) (1 ("de")) (2 ("crèdit") OR ("credit")) ;
