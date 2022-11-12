@@ -1697,6 +1697,7 @@ SELECT V + $$AcordTempsPers IF (0C V) (-2C V) (-2 V + $$AcordTempsPers) (-1 ("e"
 #SELECT Conjco IF (-1* V + $$AcordTempsPers) (0 ("o")) (1 V + $$AcordTempsPers) ;
 #SELECT Conjco IF (-1* V + $$AcordTempsPers) (0 ("o")) (1 Pro) (2 V + $$AcordTempsPers) ;
 
+SELECT VBimp IF (0C V + Pers) (1 CM) (NOT 2* V + Pers LINK NOT 0 ("<agrada>"i)) (2* ExclMark) ;	# minja, aulhèr, se t’agrada !
 REMOVE VBimp IF (0 P3) ;	# guess
 
 SELECT N IF (-1 ("<[a-zàáèéíòóú].*>"r)) (0 ("<Estat>") OR ("<Estats>")) ;	# "Estat" (con mayúscula) va precedido de una palabra con minúscula inicial
@@ -1960,8 +1961,6 @@ SELECT PREP IF (0 ("davant") OR ("darrièr") OR ("darrèr") OR ("dessús") OR ("
 SELECT PREP IF (0 ("davant") OR ("darrièr") OR ("darrèr") OR ("dessús") OR ("desjós") OR ("devath")) (1 ("nosautres") OR ("nosauts")) (NOT 2* VPl1) ;
 SELECT PREP IF (0 ("davant") OR ("darrièr") OR ("darrèr") OR ("dessús") OR ("desjós") OR ("devath")) (1 ("vosautres") OR ("vosauts")) (NOT 2* VPl2) ;
 SELECT PREP IF (-1 ("per")) (0 ("davant") OR ("darrièr") OR ("darrèr") OR ("dessús") OR ("desjós") OR ("devath")) (1 ("ièu") OR ("jo") OR ("tu") OR ("el") OR ("prneth") OR ("nosautres") OR ("nosauts") OR ("vosautres") OR ("vosauts")) ;
-
-SELECT PREP IF (0 ("davant")) (1 ("casa")) ;
 
 # NP
 
@@ -2957,6 +2956,7 @@ REMOVE V + Pers IF (-1 ("sota")) (0 N_AJ) ;
 SELECT PREP IF (0 ("jos")) (1 N_AJ) ;
 SELECT PREP IF (0 ("devath")) (1 N_AJ) ;
 SELECT PREP IF (0 ("sota")) (1 N_AJ) ;
+SELECT PREP IF (0 ("davant")) (1 ("casa")) ;
 
 REMOVE N (-1 ("<de mai>"i)) ;
 SELECT SUB:1 N (0 ("<de mai>"i)) (1 A) (2 Nommois) ;
@@ -3030,6 +3030,11 @@ SELECT V IF (-2 ("<de>"i)) (-1 ("<bon>"i)) (0 ("<veire>"i)) ;
 REMOVE VBpp IF (-1 ("har") OR ("hèr")) (0 N) ;	# hasè esclassats
 REMOVE VBpp IF (-2 ("har") OR ("hèr")) (-1 AV) (0 N) ;	# hasè esclassats
 
+REMOVE N_AJ IF (-2/* DET + &&AcordSN) (-1 N + &&AcordSN) (0 VBger LINK NOT 0 N_AJ + &&AcordSN) ; # los aulhèrs demandant la captura
+SELECT VBger IF (-2/* DET + &&AcordSN) (-1 N + &&AcordSN) (0 ("pertocar") + VBger) (1 DET) (2 N_AJ OR NP) ; # sa posicion pertocant las lengas
+SELECT VBger IF (-2/* DET + &&AcordSN) (-1 N + &&AcordSN) (0 ("pertocar") + VBger) (1 NP) ; # los documents pertocant Tarn e Garona
+SELECT VBger IF (-2/* DET + &&AcordSN) (-1 N + &&AcordSN) (0 ("pertocar") + VBger) (1 De) (2 N_AJ + Pl) ;
+SELECT VBger IF (-2/* DET + &&AcordSN) (-1 N + &&AcordSN) (0 ("pertocar") + VBger) (1C N_AJ + Pl) ;
 
 # AJ / V
 
