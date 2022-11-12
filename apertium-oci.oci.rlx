@@ -866,6 +866,8 @@ SELECT AV (-3 Haver) (-2 AV) (-1 VBpp) (0 Melhor) ;	# a parlat melhor
 SELECT AV (-3 Haver) (-2 AV) (-1 VBpp) (0 Melhor) ;	# a pas parlat melhor
 SELECT AV (-3 Haver) (-2 VBpp) (-1 AV) (0 Melhor) ;
 
+REMOVE VBimp + P3 ;	# WARNING: non per l'aranés !
+
 REMOVE N IF (-1 CM OR BOS) (0 ("<tè>"i)) (1 CM OR EOS)  ;		# guess
 SELECT VBimp IF (0 ("<vejatz>"i) OR ("<vedetz>"i)) (1 (":")) ;
 REMOVE VBimp IF (NOT 1* ExclMark) (NOT 0 ("tiéner") OR ("tiénguer") OR ("tier")) ;
@@ -1697,6 +1699,11 @@ SELECT V + $$AcordTempsPers IF (0C V) (-2C V) (-2 V + $$AcordTempsPers) (-1 ("e"
 #SELECT Conjco IF (-1* V + $$AcordTempsPers) (0 ("o")) (1 V + $$AcordTempsPers) ;
 #SELECT Conjco IF (-1* V + $$AcordTempsPers) (0 ("o")) (1 Pro) (2 V + $$AcordTempsPers) ;
 
+LIST SeVosPlai = "se te plai" "en t'ac pregar" "que t'ac prèi" "se vos plai" "en v'ac pregar" "que v'ac prèi" ;
+SELECT VBimp IF (0C V + Pers) (1 CM) (2 SeVosPlai) (3 EOS) ;
+SELECT VBimp IF (-2 SeVosPlai) (-1 CM) (0C V + Pers) (1 EOS) ;
+SELECT VBimp IF (0C V + Pers) (1 CM) (2 N OR NP) (3 CM) (4 SeVosPlai) (5 EOS) ;
+SELECT VBimp IF (-4 SeVosPlai) (-3 CM) (-2 CM) (-1 N OR NP) (0C V + Pers) (1 EOS) ;
 SELECT VBimp IF (0C V + Pers) (1 CM) (NOT 2* V + Pers LINK NOT 0 ("<agrada>"i)) (2* ExclMark) ;	# minja, aulhèr, se t’agrada !
 REMOVE VBimp IF (0 P3) ;	# guess
 
@@ -2754,6 +2761,8 @@ SELECT AJ + &&AcordSN IF (-1C/1 PREP) (0 AdjPre + &&AcordSN) (1 N + &&AcordSN) ;
 SELECT N + &&AcordSN IF (-2C/1 PREP) (-1 AdjPre + &&AcordSN) (0 N + &&AcordSN) ;
 SELECT DET + &&AcordSN IF (-1C PREP) (0 DET + &&AcordSN) (1C N_AJ + &&AcordSN) ;
 SELECT DET + &&AcordSN IF (-1C/1 PREP) (0 DET + &&AcordSN) (1 N_AJ + &&AcordSN) ;
+
+SELECT N IF (-2 V LINK NOT 0 VBpp) (-1 CM) (0 ("aulhèr")) ;	# minja, aulhèr, se t’agrada !
 
 REMOVE AJ (-1C PREP LINK NOT 0 Artcontrsg OR Artcontrpl) (0 N LINK NOT 0 AdjPre) (NOT 1C N) ;
 REMOVE AJ (NOT -2 DET OR Artcontrsg OR Artcontrpl) (-1 DET + &&AcordSN) (0 N + &&AcordSN LINK NOT 0 AdjPre) (NOT 1 N) ;
