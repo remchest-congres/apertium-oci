@@ -529,7 +529,7 @@ SELECT PREP IF (0 ("coma")) (1 ("en")) ;
 SELECT PREP IF (-1 ("<son>"i)) (0 ("coma") OR ("com")) ;
 SELECT PREP IF (-2 ("<son>"i)) (-1C AV OR PREAV OR ("pas")) (0 ("coma") OR ("com")) ;
 SELECT PREP IF (-3 ("<son>"i)) (-1C AV OR PREAV OR ("pas")) (1C AV OR PREAV) (0 ("coma") OR ("com")) ;
-REMOVE N IF (NOT -1 DET) (0 ("<son>"i)) ;	# patch
+REMOVE N IF (NOT -1 DET) (NOT -1 (META:/-/r)) (0 ("<son>"i)) ;	# patch
 REMOVE N IF (NOT -1 DET OR NUM) (0 ("<endavant>"i)) ;	# patch
 REMOVE AV IF (-1 DET OR NUM) (0 ("<endavant>"i)) ;	# patch
 REMOVE DET + Sg IF (-1 NUM LINK NOT 0 ("1")) (0 ("<son>"i)) ;	# patch
@@ -923,6 +923,12 @@ REMOVE SUB:1 V IF (0/* ("ac virar")) ;
 SELECT N IF (0 ("radio")) (0 (META:/-/r)) (1 ("television")) ;
 SELECT Pref IF (0 Pref) (0 (META:/-/r)) (1 N OR A OR Verb) ;
 REMOVE Pref ;
+SELECT ("clau") IF (-1 N) (-1 (META:/-/r) LINK NOT 0 (META:/\ /r)) (0 ("clau")) ;
+SELECT N + &&AcordSN (-1C N) (-1 N + &&AcordSN) (-1 (META:/-/r) LINK NOT 0 (META:/\ /r)) (0 N + &&AcordSN) ;   # comédien-chanteur
+SELECT N + &&AcordSP (-1C N) (-1 N + &&AcordSP) (-1 (META:/-/r) LINK NOT 0 (META:/\ /r)) (0 N + &&AcordSP) ;   # bande-son
+SELECT AJ IF (0 (META:/-/r)) (1 N) (0 ("mièg") OR ("miei")) ;	# mièg-camin, mièg-temps, mièg-mandat (francisme)
+SELECT N IF (0 (META:/-/r)) (1C N) ;
+
 
 #Un pronom proclitic est totjorn davant un vèrb o un autre pronom
 REMOVE Pro IF (NOT 1 unknownMinIni OR Pro OR V - VBpp OR VBimp) (NOT -1 PRencl or VBimp or VBinf or VBger) ;
@@ -1717,11 +1723,6 @@ SELECT AJ IF (-1C N) (0 Clau) ;
 SELECT Fem IF (NOT -1/* Masc_strict) (0 Clau + Masc) (NOT 1 Masc_strict) ;
 SELECT Masc_strict IF (NOT -1/* Fem_strict) (0 ("amazigh") + Masc) (NOT 1 Fem_strict) ;
 SELECT Fem_strict IF (NOT -1/* Masc_strict) (0 ("amazigh") + Fem) (NOT 1 Masc_strict) ;
-SELECT N IF (0 ("radio")) (0 (META:/-/r)) (1 ("television")) ;
-SELECT PREP IF (0 ("jos")) (0 (META:/-/r)) ;
-SELECT N IF (-1C N) (-1 (META:/-/r)) ;
-SELECT AJ IF (0 (META:/-/r)) (1 N) (0 ("mièg") OR ("miei")) ;	# mièg-camin, mièg-temps, mièg-mandat (francisme)
-SELECT N IF (0 (META:/-/r)) (1C N) ;
 
 #Un nom pot pas seguir qu'un vèrbe, un adjectiu, un determinant, un numeral, una prepausicion o un pronom (levat los personals)
 #(en titolars periodístics, però, es comença sovint per un nom)
