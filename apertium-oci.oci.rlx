@@ -942,8 +942,13 @@ REMOVE V IF (0 ("<ve>"i)) (-1 Pro) (-2 Pro) (-3 V);
 
 REMOVE PREP IF (0 ("<ara que>"i) OR ("<ara qu'>"i) OR ("<ara qu’>"i) OR ("<ara qui>")) (NOT -1 V + Pers OR VBinf OR VBger) ;
 REMOVE PREP IF (0 ("<ara que>"i) OR ("<ara qu'>"i) OR ("<ara qu’>"i) OR ("<ara qui>")) (NOT -1 ("balhar") OR ("baliar") OR ("dar") OR ("donar")) ;	# guess
+REMOVE PREP IF (0 ("<ara>"i)) (1 DET + &&AcordSN) (2 N_AJ + &&AcordSN) ;
 SELECT PREP IF (0 ("a")) (1C Pro) ;	# a lo parlar
 SELECT PREP IF (0 ("a")) (1C Top OR Ant OR Cog OR Al) ;	# a Niça
+SELECT PREP IF (0 ("a")) (1 DET + &&AcordSN) (2 N + &&AcordSN) (3C V) (3 V + Pers) ;	# a l'escòla avián
+SELECT PREP IF (0 ("a")) (1 DET + &&AcordSN) (2 N_AJ + &&AcordSN) (3 N_AJ + &&AcordSN) (4C V) (4 V + Pers) ;	# a l'escòla publica avián
+SELECT PREP IF (0 ("a")) (1 DET + &&AcordSN) (2 N + &&AcordSN) (3 AV) (4C V OR Pro) (4 V + Pers) ;	# a l'escòla totjorn avián
+SELECT PREP IF (0 ("a")) (1 DET + &&AcordSN) (2 N_AJ + &&AcordSN) (3 N_AJ + &&AcordSN) (4 AV OR Pro) (5C V) (5 V + Pers) ;	# a l'escòla publica totjorn avián
 REMOVE PREP IF (0 ("a")) (-1C Rel OR Conjsub) ;
 SELECT PREP IF (-1 ("quant")) (0 ("a")) (1 DET + Pl_strict) ;
 SELECT PREP IF (0 ("quant a")) (1 DET + Pl_strict) ;
@@ -1988,6 +1993,7 @@ REMOVE NP IF (-1 BOS) (0 AJ OR V) (1 ("com") OR ("com a")) ;	# Valent com
 REMOVE N + Sg IF (-1 BOS) (0 NP) (NOT 1 CM) (1* V OR Ser BARRIER (":") OR EOS) ;	# Fred es mort ; Mair, vòs que’t haci ; Vacas e vetèths qu’arribavan
 REMOVE AJ + Sg IF (-1 BOS) (0 NP) (NOT 1 N + Sg) (NOT 1 De) (NOT 1 CM) (NOT 1* ("!")) (1* V OR Ser BARRIER (":") OR EOS) ;	# Fred es mort
 
+REMOVE NP IF (-1 BOS) (0 ("Ara")) ;
 SELECT Conjco IF (-1 BOS) (0 ("Mas")) ;
 SELECT Al IF (0 ("Nadau")) (-1* ("De cap tà l'Immortèla") OR ("l'Immortèla")) ;
 SELECT Al IF (0 ("Nadau")) (1* ("De cap tà l'Immortèla") OR ("l'Immortèla")) ;
