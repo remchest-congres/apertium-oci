@@ -79,6 +79,7 @@ LIST PRS = prs ;
 LIST PIS = pis ;
 LIST PII = pii ;
 LIST IFI = ifi ;
+LIST FTI = fti ;
 LIST Itg = itg ;
 LIST Excl = excl ;
 LIST DETdef = (det def) ;
@@ -279,7 +280,7 @@ LIST Mai_bon = "mai bon" "mai plan" "mei bon" "mei plan" ;
 LIST Mas_cnjcoo = ("mas" cnjcoo) ("mes" cnjcoo) ("mès" cnjcoo) ("mai" cnjcoo) ;
 LIST O_cnjcoo = ("o" cnjcoo) ("ò" cnjcoo) ;
 LIST Semblar_Pareisser = "semblar" "paréisser" "paréisher" ;
-LIST Devenir = "devenir" "venir" "vàder" "vénguer" "viéner" "vier" ;
+LIST Devenir = "devenir" "venir" "vàder" "vénguer" "viéner" "vier" "devirar" ;
 LIST Demandar = "demandar" "demanar" "interrogar" "questionar" "qüestionar" "saber" "sàber" "estudiar" "cercar" "investigar" "trovar" "trapar" "explicar" "contar" "condar" "discutir" "saber" "sàber" "saupre" ;
 LIST VNonPron = "demorar" "abitar" "trabalhar" "tribalhar" "manjar" "beure" "béver" ;	# vèrbs non pronominals
 LIST Far = "far" "har" "hèr" ;
@@ -484,7 +485,7 @@ SELECT N + &&AcordSN IF (-1C DET) (-1 DET + &&AcordSN) (1 ("<pas>"i)) (2 AJ_PP +
 SELECT N + &&AcordSN IF (-1 DET + Ind + &&AcordSN) (1 ("<pas>"i)) (2 AJ_PP + &&AcordSN) ;		# un resultat pas satisfasent
 SELECT N + &&AcordSN IF (-1 DET + Dem + &&AcordSN) (1 ("<pas>"i)) (2 AJ_PP + &&AcordSN) ;		# aquel resultat pas satisfasent
 
-SELECT V OR ("mes") + Conjco IF (1 ("<pas>"i)) ;		# patch
+SELECT V OR ("manca") + PREP OR ("mes") + Conjco IF (1 ("<pas>"i)) ;		# patch
 REMOVE ("d'unes") IF (-1C N_AJ) ;
 SELECT ("d'unes") + PRON IF (1C Que OR Rel) ;
 SELECT ("d'unes") IF (-1C BOS OR Que OR Conjadv OR Rel OR PREP) ;	# patch
@@ -1888,6 +1889,11 @@ SELECT N IF (-1 Aver) (0 ("<afar>"i)) ;
 SELECT N IF (-2 Aver) (-1 AV) (0 ("<afar>"i)) ;
 SELECT N IF (-1 Aver) (-2 AV) (-1 AV) (0 ("<afar>"i)) ;
 
+REMOVE A IF (0 ("ara")) (1 PRI OR FTI) (NOT 1 N_AJ + FemSg) ;
+REMOVE A IF (0 ("ara")) (1 Pro) (2 PRI OR FTI) ;
+REMOVE A IF (0 ("ara")) (1 Pro) (2 Pro) (3 PRI OR FTI) ;
+
+
 #Una prepausicion es totjorn seguida d'un nom, pronom, adverb, numeral, infinitiu, determinant o adjectiu
 REMOVE PREP IF (NOT 1 N OR Pref OR PRON OR AV OR NUM OR NP OR VBinf OR DET OR PREDET OR AJ OR ("de") OR unknown) (NOT 0/* PREP + DET) (NOT 0/* N OR Rel OR Conjadv OR Conjsub) (NOT 0 ("en tot")) ;	# a luchat pendent d'annadas
 REMOVE PREP IF (1 ("de")) (NOT 2 N OR AJ OR Pref) ;	# a luchat pendent d'annadas
@@ -2770,6 +2776,9 @@ SELECT DET + &&AcordSN IF (-1C PREP) (0 DET + &&AcordSN) (1C N_AJ + &&AcordSN) ;
 SELECT DET + &&AcordSN IF (-1C/1 PREP) (0 DET + &&AcordSN) (1 N_AJ + &&AcordSN) ;
 
 SELECT N IF (-2 V LINK NOT 0 VBpp) (-1 CM) (0 ("aulhèr")) ;	# minja, aulhèr, se t’agrada !
+SELECT N IF (-1 CM) (0 ("aulhèr")) (1 EOS) ;
+SELECT N IF (-1 BOS) (0 ("aulhèr")) (1 CM) ;
+SELECT N IF (NOT -2 N) (-1 CM) (0 ("aulhèr")) (1 CM) (NOT 2 N) ;	# E donc, aulhèr, quin las te deviras ?
 
 REMOVE AJ (-1C PREP LINK NOT 0 Artcontrsg OR Artcontrpl) (0 N LINK NOT 0 AdjPre) (NOT 1C N) ;
 REMOVE AJ (NOT -2 DET OR Artcontrsg OR Artcontrpl) (-1 DET + &&AcordSN) (0 N + &&AcordSN LINK NOT 0 AdjPre) (NOT 1 N) ;
@@ -2857,6 +2866,8 @@ REMOVE N OR V + Pers IF (-4 Ser + &&AcordSP) (-3 AV) (-2 Devenir + VBpp + &&Acor
 REMOVE N IF (-1C ("faser") LINK NOT 0 VBpp) (0 AJ) (1C EOS OR PREP OR Rel) ;	# las dificultats semblan màgers
 REMOVE N IF (-2 Haver) (-1 ("faser") + VBpp) (0 AJ) (1C EOS OR PREP OR Rel) ;	# las dificultats an semblat màgers
 SELECT AJ OR AV IF (-1 Vener) (0 ("car")) ;
+SELECT AV IF (-1 Vener OR ("tornar") OR ("arribar") OR ("partir")) (0 AV) (1 De) (2 Top OR unknownMajIni) ;	# ven primièr de Tolosa
+SELECT AV IF (-1 VerbMoviment) (0 AV) (1 A) (2 Top OR unknownMajIni) ;	# va primièr de Tolosa
 REMOVE AJ IF (-1C Verb LINK NOT 0 VBpp) (0 N) (1C EOS OR PREP OR Rel) ;	# demani novèlas de son pair
 REMOVE AJ IF (-2 Haver) (-1C Verb + VBpp) (0 N) (1C EOS OR PREP OR Rel) ;	# an demanat novèlas de son pair
 SELECT N + &&AcordSP IF (-3C PREP) (-2 N + &&AcordSP) (-1 ("e") OR O_cnjcoo OR ("ni")) (0C N_AJ_PP) (1C EOS OR Rel) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# dels politics e responsables
@@ -3078,6 +3089,19 @@ REMOVE AJ + Sg IF (-1C Ser + Pl OR Semblar_Pareisser + Pl OR Devenir + Pl) (0 AV
 REMOVE AJ + Pl IF (-1C Ser + Sg OR Semblar_Pareisser + Sg OR Devenir + Sg) (0 AV) ;
 REMOVE AJ + Sg IF (-2C Ser + Pl OR Semblar_Pareisser + Pl OR Devenir + Pl) (-1C ("pas") OR AV) (0 AV) (NOT 1 N + Masc) ;	# son pas bon signe
 REMOVE AJ + Pl IF (-2C Ser + Sg OR Semblar_Pareisser + Sg OR Devenir + Sg) (-1C ("pas") OR AV) (0 AV) ;
+SELECT AV IF (-1C Ser) (0 ("solide")) ;
+SELECT AV IF (-1C Ser OR Semblar_Pareisser OR Devenir) (0 ("ara")) ;
+SELECT AV IF (-2C Ser OR Semblar_Pareisser OR Devenir) (-1 AV) (0 ("ara")) ;
+SELECT AV IF (-1C Ser OR Semblar_Pareisser) (0 ("luènh")) (1 De) ;
+SELECT AV IF (-2C Ser OR Semblar_Pareisser) (-1 AV) (0 ("luènh")) (1 De) ;
+SELECT AV IF (-1C Ser OR Semblar_Pareisser) (0 ("luènh")) (NOT -2 N_AJ OR NP) ;
+SELECT AV IF (-2C Ser OR Semblar_Pareisser) (-1 AV) (0 ("luènh")) (NOT -3 N_AJ OR NP) ;
+SELECT AJ_PP + &&AcordSP IF (-1C Ser + &&AcordSP) (0 AJ_PP + &&AcordSP) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSP IF (-1C Semblar_Pareisser + &&AcordSP) (0 AJ_PP + &&AcordSP) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) (NOT 0 VBinf) ;
+SELECT AJ_PP + &&AcordSP IF (-1C Devenir + &&AcordSP) (0 AJ_PP + &&AcordSP) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) (NOT 0 VBinf) ;
+SELECT AJ_PP + &&AcordSP IF (-2C Ser + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSP IF (-2C Semblar_Pareisser + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) (NOT 0 VBinf) ;
+SELECT AJ_PP + &&AcordSP IF (-2C Devenir + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) (NOT 0 VBinf) ;
 REMOVE AJ IF (-1C V LINK NOT 0 VBpp OR Ser OR Semblar_Pareisser OR Devenir) (0 AV) (NOT 1 N) ;
 REMOVE AJ IF (-2C V LINK NOT 0 VBpp OR Ser OR Semblar_Pareisser OR Devenir) (-1C AV OR PREAV OR ("fòrça") OR ("hèra") OR ("plan") OR ("ben")) (0 AV) (NOT 1 N) ;
 
@@ -3501,6 +3525,8 @@ REMOVE Conjco IF (0 ("ne")) (1 V) ; #A affiner plus tard
 
 REMOVE PREP IF (0 ("<manca>"i)) (-1 DET + FemSg OR AJ + FemSg);
 REMOVE PREP IF (0 ("<manca>"i)) (1 ("de"));
+REMOVE PREP IF (0 ("<manca>"i)) (1 AV) (2 ("de"));
+REMOVE PREP IF (0 ("<manca>"i)) (1 AV) (2 AV) (3 ("de"));
 
 REMOVE N IF (0 ("<luènh>"i)) (NOT -1 DET + MascSg OR AJ + MascSg) ;
 
