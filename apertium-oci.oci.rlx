@@ -1287,6 +1287,9 @@ REMOVE Ne_adv IF (0 Pro) (1 V) (1* PRON + PRON_Pas_Neg) ;
 REMOVE Ne_adv IF (0 Pro) (1 V) (-1* PRON + PRON_Pas_Neg) ;
 
 
+SELECT Enon IF (-2 ("<un còp>"i)) (-1 CM) (0 Que) (1 Pro OR V + Pers) ;
+SELECT Enon IF (-3 ("<un còp>"i)) (-2 VBpp) (-1 CM) (0 Que) (1 Pro OR V + Pers) ;
+
 SELECT Rel IF (-1 ("a cada còp"i)) (0 Que) ;
 SELECT Conjadv IF (0 ("cada còp que"i)) (1* Que) ;
 SELECT Conjadv IF (0 ("cada còp que"i)) ;	# patch
