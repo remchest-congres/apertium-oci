@@ -993,6 +993,7 @@ SELECT Conjadv IF (0 ("si") LINK -1 Demandar) ;
 SELECT E_enon IF (-1 ("si") LINK -1 Demandar) (1 Pro OR V OR unknownMinIni) ;
 SELECT E_enon IF (-2 ("si") LINK -1 Demandar) (-1 AV) (1 Pro OR V OR unknownMinIni) ;
 SELECT E_enon IF (-1* ("si") BARRIER V LINK NOT 0 VBpp) (-1* ("si") LINK -1 Demandar) (1C Pro OR V OR unknownMinIni) ;
+REMOVE Conjadv IF (0 ("si")) (-1C Itg) ;
 SELECT Conjadv IF (0 ("si") LINK -1 AV LINK -1 Demandar) ;
 SELECT E_enon IF (-1 ("si") LINK -1 AV LINK -1 Demandar) (1 Pro OR V OR unknownMinIni) ;
 SELECT E_enon IF (-2 ("si") LINK -1 AV LINK -1 Demandar) (-1 AV) (1 Pro OR V OR unknownMinIni) ;
