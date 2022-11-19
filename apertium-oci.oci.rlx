@@ -44,7 +44,7 @@ LIST PREP = pr ;
 LIST Pref = pref ;
 LIST PRON = prn ;
 LIST PERS = pers ;
-SET AV = (adv) - (enon) - (prn) ;
+SET AV = (adv) - (enon) - (prn) - (itg) ;
 LIST AVexcl = (adv excl) ;
 LIST PREAV = preadv ;
 LIST PRONPers = (prn p1) (prn p2) (prn p3);
@@ -526,10 +526,29 @@ SELECT PREAV IF (0 ("tant")) (1 VBpp) (2 De) (3* ("coma") LINK 1 De) ;	# seràn 
 SELECT VBpp IF (-1 ("tant")) (0 VBpp) (1 De) ;
 SELECT PREAV IF (0 ("autant")) (1 VBpp) (2 De) (3* ("com") LINK 1 De) ;
 SELECT VBpp IF (-1 ("autant")) (0 VBpp) (1 De) ;
+SELECT PREP IF (0 ("coma") OR ("com")) (1 ("«")) ;
 SELECT PREP IF (0 ("coma")) (1 ("en")) ;
+SELECT PREP IF (0 ("coma") OR ("com")) (1C PREP) ;
+SELECT PREP IF (0 ("coma") OR ("com")) (1C N) ;		# com goja
+REMOVE Itg IF (-2 Que OR Qui) (-1 CM) (0 ("coma") OR ("com")) ;
 SELECT PREP IF (-1 ("<son>"i)) (0 ("coma") OR ("com")) ;
 SELECT PREP IF (-2 ("<son>"i)) (-1C AV OR PREAV OR ("pas")) (0 ("coma") OR ("com")) ;
 SELECT PREP IF (-3 ("<son>"i)) (-1C AV OR PREAV OR ("pas")) (1C AV OR PREAV) (0 ("coma") OR ("com")) ;
+SELECT PREP IF (-1 Ser + &&AcordSP) (0 ("coma") OR ("com")) (1 AJ + &&AcordSP OR VBpp + &&AcordSP) ;	# èram com destrigadas
+SELECT PREP IF (-2 Ser + &&AcordSP) (-1 AV) (0 ("coma") OR ("com")) (1 AJ + &&AcordSP OR VBpp + &&AcordSP) ;	# èram pas com destrigadas
+SELECT PREP IF (-3 Ser + &&AcordSP) (-2 AV) (-1 AV) (0 ("coma") OR ("com")) (1 AJ + &&AcordSP OR VBpp + &&AcordSP) ;	# èram pas tostemps com destrigadas
+REMOVE Itg IF (-1 V LINK NOT 0 Demandar) (0 ("coma") OR ("com")) (1 DET + &&AcordSN) (2 N_AJ + &&AcordSN OR NP + &&AcordSN) ;	# minja com los auts
+REMOVE Itg IF (-2 V LINK NOT 0 Demandar) (-1 AV) (0 ("coma") OR ("com")) (1 DET + &&AcordSN) (2 N_AJ + &&AcordSN OR NP + &&AcordSN) ;	# minja pas com los auts
+REMOVE Itg IF (-3 V LINK NOT 0 Demandar) (-2 AV) (-1 AV) (0 ("coma") OR ("com")) (1 DET + &&AcordSN) (2 N_AJ + &&AcordSN OR NP + &&AcordSN) ;	# minja pas tostemps com los auts
+REMOVE Itg IF (-1 V LINK NOT 0 Demandar) (0 ("coma") OR ("com")) (1 Tn OR NP) ;	# minja com Jan
+REMOVE Itg IF (-2 V LINK NOT 0 Demandar) (-1 AV) (0 ("coma") OR ("com")) (1 Tn OR NP) ;	# minja pas com Jan
+REMOVE Itg IF (-3 V LINK NOT 0 Demandar) (-2 AV) (-1 AV) (0 ("coma") OR ("com")) (1 Tn OR NP) ;	# minja pas tostemps com Jan
+REMOVE Itg IF (-4 V LINK NOT 0 Demandar) (-3 CM) (-2 Tn) (-1 CM) (0 ("coma") OR ("com")) (1 DET + &&AcordSN) (2 N_AJ + &&AcordSN OR NP + &&AcordSN) ;	# minja, eth, com los auts
+REMOVE Itg IF (-5 V LINK NOT 0 Demandar) (-4 AV) (-3 CM) (-2 Tn) (-1 CM) (0 ("coma") OR ("com")) (1 DET + &&AcordSN) (2 N_AJ + &&AcordSN OR NP + &&AcordSN) ;	# minja pas, eth, com los auts
+REMOVE Itg IF (-6 V LINK NOT 0 Demandar) (-5 AV) (-4 AV) (-3 CM) (-2 Tn) (-1 CM) (0 ("coma") OR ("com")) (1 DET + &&AcordSN) (2 N_AJ + &&AcordSN OR NP + &&AcordSN) ;	# minja pas tostemps, eth, com los auts
+REMOVE Itg IF (-5 V LINK NOT 0 Demandar) (-4 CM) (-3 Tn) (-2 AV) (-1 CM) (0 ("coma") OR ("com")) (1 DET + &&AcordSN) (2 N_AJ + &&AcordSN OR NP + &&AcordSN) ;	# minja, eth tanben, com los auts
+REMOVE Itg IF (-6 V LINK NOT 0 Demandar) (-5 AV) (-4 CM) (-3 Tn) (-2 AV) (-1 CM) (0 ("coma") OR ("com")) (1 DET + &&AcordSN) (2 N_AJ + &&AcordSN OR NP + &&AcordSN) ;	# minja pas, eth tanben, com los auts
+REMOVE Itg IF (-7 V LINK NOT 0 Demandar) (-6 AV) (-5 AV) (-4 CM) (-3 Tn) (-2 AV) (-1 CM) (0 ("coma") OR ("com")) (1 DET + &&AcordSN) (2 N_AJ + &&AcordSN OR NP + &&AcordSN) ;	# minja pas tostemps, eth tanben, com los auts
 REMOVE N IF (NOT -1 DET) (NOT -1 (META:/-/r)) (0 ("<son>"i)) ;	# patch
 REMOVE N IF (NOT -1 DET OR NUM) (0 ("<endavant>"i)) ;	# patch
 REMOVE AV IF (-1 DET OR NUM) (0 ("<endavant>"i)) ;	# patch
@@ -1321,6 +1340,9 @@ REMOVE N IF (0 ("<quanta>"i) + DET + &&AcordSN) (1 N +  &&AcordSN) ;
 SELECT PRON IF (0 ("quant"i)) (1 Ser OR Semblar_Pareisser) ;
 REMOVE PRON IF (0 ("quant"i) + DET + &&AcordSN) (1 N +  &&AcordSN) ;
 REMOVE AJ IF (0 ("quant"i) + DET + &&AcordSN) (1C N) (1 N +  &&AcordSN) ;
+REMOVE PRON IF (0 ("quin") + MascSg) (1 ("anar")) ;
+REMOVE PRON IF (0 ("quin") + MascSg) (1 Ser + Pl) ;
+REMOVE PRON IF (0 ("quin") + MascSg) (1 Semblar_Pareisser + Pl) ;
 SELECT Itg OR Excl OR IJ IF (-1 BOS) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("quant")) ;	# Qui s'adresse
 REMOVE Itg OR Excl OR IJ IF (-2 BOS) (-1 Artcontrsg OR Artcontrpl) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("quant")) ;	# A qui s'adresse
 SELECT Itg OR Excl OR IJ IF (-2 BOS) (-1 PREP) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("quant")) ;	# A qui s'adresse
@@ -3274,6 +3296,7 @@ REMOVE PRI OR ("sia") IF (*-1 ("après que") OR ("per que") OR ("per tal que") O
 REMOVE PRI + P1 IF (*-1 Conjsub OR ("après que") OR ("per que") OR ("per tal que") OR ("per fin que") OR ("a fin que") OR ("afin que") OR ("entà que") OR ("tà que") OR ("ende que") OR ("malgrat que") OR ("maugrat que") OR ("encara que") OR ("abans que") OR ("avans que") OR ("après que") OR ("aprèp que") OR ("apuèi que")) (0 PRS + P3) ;	# guess
 
 REMOVE Conjadv IF (NOT 1* V + Pers) (0 PREP) (NOT 0 ("coma")) ;
+REMOVE Itg IF (0 ("coma")) ;
 
 SELECT PREP IF (0 Dins) (1 DET + &&AcordSN) (2 N_AJ + &&AcordSN) ;
 SELECT PREP IF (0 Pendent) (1 DET + &&AcordSN) (2 N_AJ + &&AcordSN) ;
