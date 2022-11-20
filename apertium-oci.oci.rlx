@@ -1503,6 +1503,12 @@ REMOVE ("veirar") IF (0 ("veire")) ;
 # escadir e escàder
 REMOVE ("escadir") IF (0 ("escàder")) ;
 
+# hóner e honir
+REMOVE ("honir") IF (0 ("hóner")) ;
+
+# hóner e honar
+REMOVE ("honar") IF (0 ("hóner")) ;
+
 # apartenir, apartar, apartir
 REMOVE ("apartar") IF (0 ("apartenir") OR ("aparténer")) ;
 REMOVE ("apartir") IF (0 ("apartenir") OR ("aparténer")) ;
