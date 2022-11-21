@@ -484,6 +484,12 @@ SELECT AV IF (-1 V) (0 ("<pas>"i)) ;		# patch
 SELECT N + &&AcordSN IF (-1C DET) (-1 DET + &&AcordSN) (1 ("<pas>"i)) (2 AJ_PP + &&AcordSN) ;
 SELECT N + &&AcordSN IF (-1 DET + Ind + &&AcordSN) (1 ("<pas>"i)) (2 AJ_PP + &&AcordSN) ;		# un resultat pas satisfasent
 SELECT N + &&AcordSN IF (-1 DET + Dem + &&AcordSN) (1 ("<pas>"i)) (2 AJ_PP + &&AcordSN) ;		# aquel resultat pas satisfasent
+SELECT N + &&AcordSN IF (-1C DET) (-1 DET + &&AcordSN) (1 ("<pas>"i)) (2 AV OR PREAV) (3 AJ_PP + &&AcordSN) ;
+SELECT N + &&AcordSN IF (-1 DET + Ind + &&AcordSN) (1 ("<pas>"i)) (2 AV OR PREAV) (3 AJ_PP + &&AcordSN) ;		# un resultat pas totjorn satisfasent
+SELECT N + &&AcordSN IF (-1 DET + Dem + &&AcordSN) (1 ("<pas>"i)) (2 AV OR PREAV) (3 AJ_PP + &&AcordSN) ;		# aquel resultat pas totjorn satisfasent
+SELECT N + &&AcordSN IF (-1C DET) (-1 DET + &&AcordSN) (1 ("<pas>"i)) (2 AV) (3 AV OR PREAV) (4 AJ_PP + &&AcordSN) ;
+SELECT N + &&AcordSN IF (-1 DET + Ind + &&AcordSN) (1 ("<pas>"i)) (2 AV) (3 AV OR PREAV) (4 AJ_PP + &&AcordSN) ;		# un resultat pas totjorn tan satisfasent
+SELECT N + &&AcordSN IF (-1 DET + Dem + &&AcordSN) (1 ("<pas>"i)) (2 AV) (3 AV OR PREAV) (4 AJ_PP + &&AcordSN) ;		# aquel resultat pas totjorn tan satisfasent
 
 SELECT V OR ("manca") + PREP OR ("mes") + Conjco IF (1 ("<pas>"i)) ;		# patch
 REMOVE ("d'unes") IF (-1C N_AJ) ;
