@@ -3099,6 +3099,10 @@ SELECT VBger IF (-2/* DET + &&AcordSN) (-1 N + &&AcordSN) (0 ("pertocar") + VBge
 SELECT VBger IF (-2/* DET + &&AcordSN) (-1 N + &&AcordSN) (0 ("pertocar") + VBger) (1 De) (2 N_AJ + Pl) ;
 SELECT VBger IF (-2/* DET + &&AcordSN) (-1 N + &&AcordSN) (0 ("pertocar") + VBger) (1C N_AJ + Pl) ;
 
+SELECT VBpp + &&AcordSN IF (-3 Ser + &&AcordSP) (-2 VBpp + &&AcordSP + &&AcordSN) (-1 ("e") OR ("o")) (0 VBpp + &&AcordSN) ;	# seran suprimidas o demesidas
+SELECT VBpp + &&AcordSN IF (-4 Ser + &&AcordSP) (-3 AV) (-2 VBpp + &&AcordSP + &&AcordSN) (-1 ("e") OR ("o")) (0 VBpp + &&AcordSN) ;	# seran pas suprimidas o demesidas
+SELECT VBpp + &&AcordSN IF (-5 Ser + &&AcordSP) (-4 AV) (-3 AV) (-2 VBpp + &&AcordSP + &&AcordSN) (-1 ("e") OR ("o")) (0 VBpp + &&AcordSN) ;	# seran pas totjorn suprimidas o demesidas
+
 # AJ / V
 
 SELECT AJ (0 ("liure")) (1 De) (2 VBinf) ;
