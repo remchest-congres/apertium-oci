@@ -2631,7 +2631,15 @@ SELECT N_AJ + &&AcordSN IF (-1 DETind + &&AcordSN) (0 N_AJ + &&AcordSN) ;
 SELECT AV OR PREAV IF (-1 VBaux OR Semblar_Pareisser) (1C VBpp) ;
 SELECT AV OR PREAV IF (-2 VBaux OR Semblar_Pareisser) (-1 AV OR PREAV) (2C VBpp) ;
 SELECT AV OR PREAV IF (-2 VBaux OR Semblar_Pareisser) (1 AV OR PREAV) (2C VBpp) ;
-REMOVE DET IF (0 ("tot") + &&AcordSN) (1 VBpp) (NOT 1 &&AcordSN) ;
+REMOVE DET IF (0 ("tot") + &&AcordSN) (1 VBpp) (NOT 1 VBpp + &&AcordSN) ;
+SELECT VBpp IF (-2 Haver) (-1 ("tot") + &&AcordSN) (0 VBpp) ;
+SELECT VBpp IF (-2 Ser + &&AcordSP) (-1 ("tot")) (0 VBpp + &&AcordSP) ;
+SELECT VBpp IF (-3 Haver) (-2 AV) (-1 ("tot") + &&AcordSN) (0 VBpp) ;
+SELECT VBpp IF (-3 Ser + &&AcordSP) (-2 AV) (-1 ("tot")) (0 VBpp + &&AcordSP) ;
+SELECT Haver IF (0 Haver) (1 ("tot") + &&AcordSN) (2 VBpp) ;
+SELECT Ser + &&AcordSP IF (0 Ser + &&AcordSP) (1 ("tot")) (2 VBpp + &&AcordSP) ;
+SELECT Haver IF (0 Haver) (1 AV) (2 ("tot") + &&AcordSN) (3 VBpp) ;
+SELECT Ser + &&AcordSP IF (0 Ser + &&AcordSP) (1 AV) (2 ("tot")) (3 VBpp + &&AcordSP) ;
 SELECT DET IF (0 DETind) (1C V) ;
 SELECT DET IF (NOT -1/* DET) (0 DETind) (1 unknown) ;	# guess
 REMOVE ("unir") IF (0 Un) (1C V + Pers OR VBpp) ;	# guess
