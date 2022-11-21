@@ -833,6 +833,10 @@ SELECT AV IF (-1 Ser + &&AcordSP) (0 Mai) (1 AJ + &&AcordSP) ;	# es mai calme
 REMOVE AJ IF (0 AJ) (0 VBpp) (1 ("per")) ;
 SELECT VBpp IF (-2 Ser + &&AcordSP) (-1 AV OR PREAV) (0 ("escàder") OR ("mauescàder")) ;	# s'i es pas escadut
 SELECT VBpp IF (-3 Ser + &&AcordSP) (-2 AV OR PREAV) (-1 AV OR PREAV) (0 ("escàder") OR ("mauescàder")) ;	# s'i es pas totjorn escadut
+SELECT AJ (-1 Ser OR Semblar_Pareisser) (0 ("enfuronat")) ;
+SELECT AJ (-2 Ser OR Semblar_Pareisser) (-1 AV OR PREAV) (0 ("enfuronat")) ;
+SELECT AJ (-3 Ser OR Semblar_Pareisser) (-2 AV) (-1 AV OR PREAV) (0 ("enfuronat")) ;
+SELECT AJ (-1 BOS OR CM) (0 ("enfuronat")) (1 EOS OR CM) ;
 SELECT VBpp + &&AcordSP IF (-1C Ser + &&AcordSP) (0 VBpp + &&AcordSP) (1 A OR De) ;	# soi acostumada a legir
 SELECT VBpp + &&AcordSP IF (-2C Ser + &&AcordSP) (-1 AV OR PREAV) (0 VBpp + &&AcordSP) (1 De) ;	# soi pas acostumada a legir
 SELECT VBpp + &&AcordSP IF (-3C Ser + &&AcordSP) (-2 AV OR PREAV) (-1 AV OR PREAV) (0 VBpp + &&AcordSP) (1 De) ;
