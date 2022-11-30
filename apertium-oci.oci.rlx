@@ -3070,6 +3070,9 @@ SELECT AJ + &&AcordSN IF (-2C Top + &&AcordSN) (-1 AJ + &&AcordSN) (0C N_AJ) (0 
 
 SELECT PREDET + &&AcordSN IF (0 ("tot") + &&AcordSN) (1C DET) (1 DET + &&AcordSN) ;	# tot lo grop
 
+REMOVE AV IF (-1C DET) (-1 DET + &&AcordSN) (0 N_AJ_PP + &&AcordSN) ;	# l'arrièr Cedric
+REMOVE AV IF (-1C Artcontrsg OR Artcontrpl) (-1 DET + &&AcordSN) (0 N_AJ_PP + &&AcordSN) ;
+
 # N / V
 
 REMOVE V + Pers OR VBger IF (-1C DET OR Artcontrsg OR Artcontrsg) ;
