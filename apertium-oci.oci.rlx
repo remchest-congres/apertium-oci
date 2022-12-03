@@ -279,6 +279,7 @@ LIST Las = "las" ;
 LIST Mai_bon = "mai bon" "mai plan" "mei bon" "mei plan" ;
 LIST Mas_cnjcoo = ("mas" cnjcoo) ("mes" cnjcoo) ("mès" cnjcoo) ("mai" cnjcoo) ;
 LIST O_cnjcoo = ("o" cnjcoo) ("ò" cnjcoo) ;
+LIST Puei = "puèi" "apuèi" "aprèp" "puish" "apuish" ;
 LIST Semblar_Pareisser = "semblar" "paréisser" "paréisher" ;
 LIST Devenir = "devenir" "venir" "vàder" "vénguer" "viéner" "vier" "devirar" ;
 LIST Demandar = "demandar" "demanar" "interrogar" "questionar" "qüestionar" "saber" "sàber" "estudiar" "cercar" "investigar" "trovar" "trapar" "explicar" "contar" "condar" "discutir" "saber" "sàber" "saupre" "compréner" "comprene" "comprénguer" ;
@@ -1167,6 +1168,8 @@ SELECT Conjsub IF (-1C ("pensar") OR ("créder") OR ("créser") OR ("díser") OR
 
 REMOVE N IF (NOT -1/* DET + Fem) (0 ("èra")) ;
 REMOVE N IF (-1C Itg OR Excl) (0 ("èra")) ;		# quau èra
+
+SELECT Conjadv IF (0 Puei) (-1C BOS OR Conjco) (NOT 1 DET OR PREDET OR VBinf) ;
 
 SELECT DET + &&AcordSN IF (0 ("un") + &&AcordSN) (1 N_AJ + &&AcordSN) ;	# guess (cal pels enonciatius)
 SELECT DET + &&AcordSN IF (NOT -1 PREP) (0 ("un") + &&AcordSN) (1 Top + &&AcordSN) ;	# guess (cal pels enonciatius)
