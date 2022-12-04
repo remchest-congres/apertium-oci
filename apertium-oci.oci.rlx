@@ -366,7 +366,7 @@ OR ("dernier") OR ("darnièr") OR ("darrièr") OR ("darrèr")
 OR NumOrd ;
 
 # adjectifs qui souvent vont devant le nom
-SET AdjPre = ("ancian") OR ("nòu") OR ("nau") OR ("novèl") OR ("navèth") OR ("vièlh") OR ("vielh") OR ("jove") OR ("joen") OR ("joine") OR ("jovent") OR ("futur") OR ("grand") OR ("gran") OR ("màger") OR ("petit") OR ("pichon") OR ("pichòt") OR ("bon") OR ("mal") OR ("mau") OR ("marrit") OR ("naut") OR ("haut") OR ("bas") OR ("baish") OR ("altre") OR ("autre") OR ("aute") OR ("meteis") OR ("medish") OR ("medeish") OR ("madeish") OR ("quite") OR ("quiti") OR ("mièg") OR ("miei") OR AdjOrd;
+SET AdjPre = ("ancian") OR ("nòu") OR ("nau") OR ("novèl") OR ("navèth") OR ("vièlh") OR ("vielh") OR ("jove") OR ("joen") OR ("joine") OR ("jovent") OR ("futur") OR ("grand") OR ("gran") OR ("màger") OR ("petit") OR ("pichon") OR ("pichòt") OR ("bon") OR ("mal") OR ("mau") OR ("marrit") OR ("naut") OR ("haut") OR ("bas") OR ("baish") OR ("altre") OR ("autre") OR ("aute") OR ("meteis") OR ("medish") OR ("medeish") OR ("madeish") OR ("quite") OR ("quiti") OR ("mièg") OR ("miei") OR ("sant") OR ("sent") OR AdjOrd;
 
 
 LIST Dignitat = "papa" "patriarca" "avesque" "arcavesque" "archavesque" "archevesque" "arquevesque" "sant" "sant" "apòstol" "apostòl" "emperador" "emperaire" "rei" "tsar" "vicerei" "regent" "prince" "infant" "dalfin" "comte" "comtessa" "vescomte" "vescomtessa" "duc" "grand-duc" "arcaduc" "archiduc" "marqués" "baron" "cònsol" "cònsol màger" "sénher-cònsol" "mera" "cònse" "conse" "mèra" "alcalde" ;
@@ -1993,6 +1993,11 @@ SELECT N IF (-1 Aver) (-2 AV) (-1 AV) (0 ("<afar>"i)) ;
 REMOVE A IF (0 ("ara")) (1 PRI OR FTI) (NOT 1 N_AJ + FemSg) ;
 REMOVE A IF (0 ("ara")) (1 Pro) (2 PRI OR FTI) ;
 REMOVE A IF (0 ("ara")) (1 Pro) (2 Pro) (3 PRI OR FTI) ;
+REMOVE A IF (0 ("ara")) (-1C Ser + Pl) ; 
+REMOVE A IF (0 ("ara")) (-1C Semblar_Pareisser + Pl) ; 
+REMOVE A IF (0 ("ara")) (-1C Devenir + Pl) ; 
+REMOVE A IF (0 ("ara")) (-1C V) ; 
+REMOVE A IF (0 ("ara")) (-1C unknown) ; 
 
 LIST Senher = "sénher" "monsen" "monsur" "mossenh" "mossur" ;
 SELECT N + &&AcordSN IF (NOT -2/* DET) (-1 Senher + &&AcordSN) ;	# mossur curè
@@ -2119,6 +2124,9 @@ SELECT N IF (-1/* DET + &&AcordSN) (0 ("rei") + &&AcordSN) ;
 SELECT N IF (-1/* DET + &&AcordSN) (0 ("marqués") + &&AcordSN) ;
 SELECT Ant + &&AcordSN IF (-2/* DET + &&AcordSN) (-1 ("rei") + &&AcordSN) ;
 SELECT Ant + &&AcordSN IF (-2/* DET + &&AcordSN) (-1 ("marqués") + &&AcordSN) ;
+
+SELECT Ant IF (-1 ("sant") OR ("sent")) ;
+SELECT N IF (0 ("<Sent>")) (0 (META:/-/r)) (1 MajIni) ;	# Sent-Castin
 
 SELECT NP + &&AcordSN OR N_AJ + &&AcordSN IF (-1/* DET + &&AcordSN) (0 NP + &&AcordSN) ;
 SELECT DET + &&AcordSN IF (0/* DET + &&AcordSN) (1 NP + &&AcordSN) (NOT 0 ("lei")) ;
@@ -2749,6 +2757,8 @@ SELECT N IF (-1 PREP) (0 ("sau")) ;
 SELECT N IF (-1 DET + &&AcordSN) (0 ("sau") + &&AcordSN) ;
 SELECT SUB:1 DET + &&AcordSN IF (NOT -1/* PREP) (0 PREP) (1C N_AJ_PP + &&AcordSN) ;	# dei comtes
 
+SELECT DET IF (1 unknown) (NOT 0 ("<son>"i) OR ("<mas>"i)) ;	# guess
+
 # NUM
 
 SELECT NUM IF (-1 ("numero") OR ("numèro") OR ("numeró")) (0 Un);
@@ -2933,7 +2943,14 @@ SELECT AJ + &&AcordSN IF (-1 DET + &&AcordSN) (0 AdjPre + &&AcordSN) (1 N + &&Ac
 SELECT AJ + &&AcordSN IF (-1/* DET + &&AcordSN) (0 AdjPre + &&AcordSN) (1 N + &&AcordSN) (NOT 0 ("nau")) ;
 SELECT AJ + &&AcordSN IF (-1 De) (0 AdjPre + &&AcordSN) (1 N + &&AcordSN) (NOT 0 ("nau")) ;
 SELECT AJ + &&AcordSN OR AV IF (-1 CM) (0 AdjPre + &&AcordSN) (1 N + &&AcordSN) (NOT 0 ("nau")) ;
+SELECT AJ + &&AcordSN IF (-1 PREAV) (0 AdjPre + &&AcordSN) (1 N + &&AcordSN) ;	# hòrt bons estudis
+SELECT PREAV IF (0 PREAV) (1 AdjPre + &&AcordSN) (2 N + &&AcordSN) ;	# hòrt bons estudis
 SELECT AJ + &&AcordSN IF (0 ("mièg") + &&AcordSN OR ("miei") + &&AcordSN) (1C N) (0 N + &&AcordSN) ;	# mièg torn
+
+SELECT AJ + &&AcordSN IF (-2 DET + &&AcordSN) (-1 ("«")) (0 AdjPre + &&AcordSN) (1 N + &&AcordSN) ;
+SELECT N + &&AcordSN IF (-2 DET + &&AcordSN) (-1 ("«")) (0 N + &&AcordSN) ;
+SELECT AJ + &&AcordSN IF (-3 DET + &&AcordSN) (-2 ("«")) (-1 PREAV) (0 AdjPre + &&AcordSN) (1 N + &&AcordSN) ;
+SELECT N + &&AcordSN IF (-3 DET + &&AcordSN) (-2 ("«")) (-1 PREAV) (0 N + &&AcordSN) ;
 
 SELECT NP + &&AcordSN IF (-1 DET + &&AcordSN) (0 NP + &&AcordSN) (1 AJ + &&AcordSN) ;
 SELECT NP + &&AcordSN IF (-1/* DET + &&AcordSN) (0 NP + &&AcordSN) (1 AJ + &&AcordSN) ;
@@ -2994,7 +3011,7 @@ REMOVE N OR V + Pers IF (-3 Ser + &&AcordSP) (-2 Devenir + VBpp + &&AcordSN) (-1
 REMOVE N OR V + Pers IF (-4 Ser + &&AcordSP) (-3 AV) (-2 Devenir + VBpp + &&AcordSP) (-1 AV) (0 AJ + &&AcordSP) (1C EOS OR CM OR Conjco OR PREP OR Rel) ;	# son pas venudas caras
 REMOVE N IF (-1C ("faser") LINK NOT 0 VBpp) (0 AJ) (1C EOS OR PREP OR Rel) ;	# las dificultats semblan màgers
 REMOVE N IF (-2 Haver) (-1 ("faser") + VBpp) (0 AJ) (1C EOS OR PREP OR Rel) ;	# las dificultats an semblat màgers
-SELECT AJ OR AV IF (-1 Vener) (0 ("car")) ;
+SELECT AJ OR AV IF (-1 Vener OR ("crompar") OR ("comprar") OR ("pagar")) (0 ("car")) ;
 SELECT AV IF (-1 Vener OR ("tornar") OR ("arribar") OR ("partir")) (0 AV) (1 De) (2 Top OR unknownMajIni) ;	# ven primièr de Tolosa
 SELECT AV IF (-1 VerbMoviment) (0 AV) (1 A) (2 Top OR unknownMajIni) ;	# va primièr de Tolosa
 REMOVE AJ IF (-1C Verb LINK NOT 0 VBpp) (0 N) (1C EOS OR PREP OR Rel) ;	# demani novèlas de son pair
@@ -3006,9 +3023,14 @@ SELECT N + &&AcordSP IF (-5C PREP) (-4 N + &&AcordSP) (-3 (",")) (-2 N + &&Acord
 SELECT N + &&AcordSP OR VBinf IF (-5C PREP) (-4 N + &&AcordSP) (-3 (",")) (-2 N + &&AcordSP) (-1 ("e") OR O_cnjcoo OR ("ni")) (0C N_AJ_PP) (1C PREP) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# dels politics e responsables
 SELECT N + &&AcordSP IF (-5C DET + &&AcordSN) (-4 N + &&AcordSN + &&AcordSP) (-3 (",")) (-2 N + &&AcordSP) (-1 ("e") OR O_cnjcoo OR ("ni")) (0C N_AJ_PP) (1C EOS OR PREP OR Rel) (NOT 0 ("mièg") OR ("miei") OR ("quart")) (NOT -2 ("afars estrangièrs") OR ("afars exteriors")) ;	# dels politics e responsables
 
-REMOVE N OR VBpp (-1 ("trobar") OR ("considerar") OR ("jutjar")) (0 AJ) ;
-REMOVE N OR VBpp (-2 ("trobar") OR ("considerar") OR ("jutjar")) (-1 AV) (0 AJ) ;
-REMOVE N OR VBpp (-3 ("trobar") OR ("considerar") OR ("jutjar")) (-2 AV) (-1 AV) (0 AJ) ;
+
+REMOVE N OR VBpp IF (-1 ("trobar") OR ("considerar") OR ("jutjar")) (0 AJ) ;
+REMOVE N OR VBpp IF (-2 ("trobar") OR ("considerar") OR ("jutjar")) (-1 AV) (0 AJ) ;
+REMOVE N OR VBpp IF (-3 ("trobar") OR ("considerar") OR ("jutjar")) (-2 AV) (-1 AV) (0 AJ) ;
+REMOVE Itg IF (-1 ("trobar") OR ("considerar") OR ("jutjar")) (0 ("coma") OR ("com")) ;
+REMOVE N OR VBpp IF (-2 ("trobar") OR ("considerar") OR ("jutjar")) (-1 ("coma") OR ("com")) (0 AJ) ;
+REMOVE N OR VBpp IF (-3 ("trobar") OR ("considerar") OR ("jutjar")) (-2 ("coma") OR ("com")) (-1 AV) (0 AJ) ;
+REMOVE N OR VBpp IF (-4 ("trobar") OR ("considerar") OR ("jutjar")) (-3 ("coma") OR ("com")) (-2 AV) (-1 AV) (0 AJ) ;
 
 SELECT N + &&AcordSN IF (-1 AdjOrd + &&AcordSN) (0 N + &&AcordSN) (1 Mai) (2 AJ + &&AcordSN) ;	# segond club mai ancian
 SELECT AJ + &&AcordSN IF (0 AdjOrd + &&AcordSN) (1 N + &&AcordSN) (2 Mai) (3 AJ + &&AcordSN) ;	# segond club mai ancian
@@ -3073,8 +3095,17 @@ SELECT AJ + &&AcordSN IF (-2C Top + &&AcordSN) (-1 AJ + &&AcordSN) (0C N_AJ) (0 
 
 SELECT PREDET + &&AcordSN IF (0 ("tot") + &&AcordSN) (1C DET) (1 DET + &&AcordSN) ;	# tot lo grop
 
+SELECT PRON + &&AcordSP IF (0 ("tot") + &&AcordSP) (1C V + &&AcordSP) (1 V + P3) ;
+SELECT PRON + &&AcordSP IF (0 ("tot") + &&AcordSP) (1 AV OR Enon OR Pro) (2C V + &&AcordSP) (2 V + P3) ;
+SELECT PRON + &&AcordSP IF (0 ("tot") + &&AcordSP) (1 AV OR Enon OR Pro) (2 AV OR Enon OR Pro) (3C V + &&AcordSP) (3 V + P3) ;
+SELECT PRON + &&AcordSP IF (0 ("tot") + &&AcordSP) (1 AV OR Enon OR Pro) (2 AV OR Enon OR Pro) (3 AV OR Enon OR Pro) (4C V + &&AcordSP) (4 V + P3) ;
+
 REMOVE AV IF (-1C DET) (-1 DET + &&AcordSN) (0 N_AJ_PP + &&AcordSN) ;	# l'arrièr Cedric
 REMOVE AV IF (-1C Artcontrsg OR Artcontrpl) (-1 DET + &&AcordSN) (0 N_AJ_PP + &&AcordSN) ;
+
+REMOVE N IF (0 ("drin")) (1 De) ;
+SELECT AV IF (0 ("drin")) (-1C V) (NOT 1 AJ) ;
+SELECT PREAV IF (0 ("drin")) (-1C V) (1C AJ) ;
 
 # N / V
 
@@ -3199,6 +3230,17 @@ SELECT VBpp + &&AcordSN IF (-3 Ser + &&AcordSP) (-2 VBpp + &&AcordSP + &&AcordSN
 SELECT VBpp + &&AcordSN IF (-4 Ser + &&AcordSP) (-3 AV) (-2 VBpp + &&AcordSP + &&AcordSN) (-1 ("e") OR ("o")) (0 VBpp + &&AcordSN) ;	# seran pas suprimidas o demesidas
 SELECT VBpp + &&AcordSN IF (-5 Ser + &&AcordSP) (-4 AV) (-3 AV) (-2 VBpp + &&AcordSP + &&AcordSN) (-1 ("e") OR ("o")) (0 VBpp + &&AcordSN) ;	# seran pas totjorn suprimidas o demesidas
 
+SELECT VBpp + &&AcordSN IF (-2 Pro + &&AcordSN) (-1 Haver) ;
+SELECT VBpp + &&AcordSN IF (-3 Pro + &&AcordSN) (-2 Haver) (-1 AV) ;
+SELECT VBpp + &&AcordSN IF (-4 Pro + &&AcordSN) (-3 Haver) (-2 AV) (-1 AV) ;
+SELECT VBpp + MascSg IF (-1 Haver) ;
+SELECT VBpp + MascSg IF (-2 Haver) (-1 AV) ;
+SELECT VBpp + MascSg IF (-3 Haver) (-2 AV) (-1 AV) ;
+
+SELECT PRON IF (-1 BOS) (0 ("nat")) (1 CM) ;	# guess
+SELECT PRON IF (-1C V) (0 ("nat")) ;
+SELECT PRON IF (-2C V) (-1 AV) (0 ("nat")) ;
+
 # AJ / V
 
 SELECT AJ (0 ("liure")) (1 De) (2 VBinf) ;
@@ -3239,6 +3281,7 @@ SELECT AJ_PP + &&AcordSP IF (-2C Ser + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP) 
 SELECT AJ_PP + &&AcordSP IF (-2C Semblar_Pareisser + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) (NOT 0 VBinf) ;
 SELECT AJ_PP + &&AcordSP IF (-2C Devenir + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) (NOT 0 VBinf) ;
 REMOVE AJ IF (-1C V LINK NOT 0 VBpp OR Ser OR Semblar_Pareisser OR Devenir) (0 AV) (NOT 1 N) ;
+REMOVE N IF (-1C V LINK NOT 0 VBpp OR Ser OR Semblar_Pareisser OR Devenir) (0 AV) (1C DET) ;	# ajudar hòrt la lenga
 REMOVE AJ IF (-2C V LINK NOT 0 VBpp OR Ser OR Semblar_Pareisser OR Devenir) (-1C AV OR PREAV OR ("fòrça") OR ("hèra") OR ("plan") OR ("ben")) (0 AV) (NOT 1 N) ;
 
 # PR / AV
@@ -3349,18 +3392,18 @@ SELECT Conjadv IF (0 Si) (1C Ser + P3 + &&AcordSP) (2 AV) (3 Ser + VBpp + &&Acor
 SELECT Conjadv IF (0 Si) (1C Ser + P3 + &&AcordSP) (2 AV) (3 AV) (4 Ser + VBpp + &&AcordSP) ;
 SELECT Pro + Ref IF (0 Si) (1C Ser + P3 + Sg) (2 unknown) (2 (".*[ai]t"r) OR (".*[ai]da"r)) ;
 SELECT Pro + Ref IF (0 Si) (1C Ser + P3 + Pl) (2 unknown) (2 (".*[ai]ts"r) OR (".*[ai]das"r)) ;
-SELECT Conjadv IF (-1 BOS OR Conjsub OR Conjadv OR ("quitament")) (0 Si) (1C Ser + P3 + &&AcordSP) (NOT 2 VBpp + &&AcordSP OR AV OR PREAV) ;
-SELECT Conjadv IF (-2 BOS OR Conjsub OR Conjadv) (-1 AV) (0 Si) (1C Ser + P3 + &&AcordSP) (NOT 2 VBpp + &&AcordSP OR AV OR PREAV) ;
-SELECT Conjadv IF (-1 BOS OR Conjsub OR Conjadv OR ("quitament")) (0 Si) (1C Ser + P3 + &&AcordSP) (2 AV OR PREAV) (3 AJ + &&AcordSP LINK NOT 0 VBpp + &&AcordSP) ;	# s'es plan probable
-SELECT Conjadv IF (-1 BOS OR Conjsub OR Conjadv) (0 Si) (1C Ser + P3 + &&AcordSP) (2 AV) (3 AV OR PREAV) (4 AJ + &&AcordSP LINK NOT 0 VBpp + &&AcordSP) ;	# s'es pas plan probable
-SELECT Conjadv IF (-2 BOS OR Conjsub OR Conjadv) (-1 AV) (0 Si) (1C Ser + P3 + &&AcordSP) (2 AV OR PREAV) (3 AJ + &&AcordSP LINK NOT 0 VBpp + &&AcordSP) ;	# s'es plan probable
-SELECT Conjadv IF (-2 BOS OR Conjsub OR Conjadv) (-1 AV) (0 Si) (1C Ser + P3 + &&AcordSP) (2 AV) (3 AV OR PREAV) (4 AJ + &&AcordSP LINK NOT 0 VBpp + &&AcordSP) ;	# s'es pas plan probable
-SELECT Conjadv IF (-2 BOS OR Conjsub OR Conjadv OR ("quitament")) (-1 ("«")) (0 Si) (1C Ser + P3 + &&AcordSP) (NOT 2 VBpp + &&AcordSP OR AV OR PREAV) ;
-SELECT Conjadv IF (-3 BOS OR Conjsub OR Conjadv) (-2 ("«")) (-1 AV) (0 Si) (1C Ser + P3 + &&AcordSP) (NOT 2 VBpp + &&AcordSP OR AV OR PREAV) ;
-SELECT Conjadv IF (-2 BOS OR Conjsub OR Conjadv OR ("quitament")) (-1 ("«")) (0 Si) (1C Ser + P3 + &&AcordSP) (2 AV OR PREAV) (3 AJ + &&AcordSP LINK NOT 0 VBpp + &&AcordSP) ;	# s'es plan probable
-SELECT Conjadv IF (-2 BOS OR Conjsub OR Conjadv) (-1 ("«")) (0 Si) (1C Ser + P3 + &&AcordSP) (2 AV) (3 AV OR PREAV) (4 AJ + &&AcordSP LINK NOT 0 VBpp + &&AcordSP) ;	# s'es pas plan probable
-SELECT Conjadv IF (-3 BOS OR Conjsub OR Conjadv) (-2 ("«")) (-1 AV) (0 Si) (1C Ser + P3 + &&AcordSP) (2 AV OR PREAV) (3 AJ + &&AcordSP LINK NOT 0 VBpp + &&AcordSP) ;	# s'es plan probable
-SELECT Conjadv IF (-3 BOS OR Conjsub OR Conjadv) (-2 ("«")) (-1 AV) (0 Si) (1C Ser + P3 + &&AcordSP) (2 AV) (3 AV OR PREAV) (4 AJ + &&AcordSP LINK NOT 0 VBpp + &&AcordSP) ;	# s'es pas plan probable
+SELECT Conjadv IF (-1 BOS OR CM OR Conjsub OR Conjadv OR ("quitament")) (0 Si) (1C Ser + P3 + &&AcordSP) (NOT 2 VBpp + &&AcordSP OR AV OR PREAV) ;
+SELECT Conjadv IF (-2 BOS OR CM OR Conjsub OR Conjadv) (-1 AV) (0 Si) (1C Ser + P3 + &&AcordSP) (NOT 2 VBpp + &&AcordSP OR AV OR PREAV) ;
+SELECT Conjadv IF (-1 BOS OR CM OR Conjsub OR Conjadv OR ("quitament")) (0 Si) (1C Ser + P3 + &&AcordSP) (2 AV OR PREAV) (3 AJ + &&AcordSP LINK NOT 0 VBpp + &&AcordSP) ;	# s'es plan probable
+SELECT Conjadv IF (-1 BOS OR CM OR Conjsub OR Conjadv) (0 Si) (1C Ser + P3 + &&AcordSP) (2 AV) (3 AV OR PREAV) (4 AJ + &&AcordSP LINK NOT 0 VBpp + &&AcordSP) ;	# s'es pas plan probable
+SELECT Conjadv IF (-2 BOS OR CM OR Conjsub OR Conjadv) (-1 AV) (0 Si) (1C Ser + P3 + &&AcordSP) (2 AV OR PREAV) (3 AJ + &&AcordSP LINK NOT 0 VBpp + &&AcordSP) ;	# s'es plan probable
+SELECT Conjadv IF (-2 BOS OR CM OR Conjsub OR Conjadv) (-1 AV) (0 Si) (1C Ser + P3 + &&AcordSP) (2 AV) (3 AV OR PREAV) (4 AJ + &&AcordSP LINK NOT 0 VBpp + &&AcordSP) ;	# s'es pas plan probable
+SELECT Conjadv IF (-2 BOS OR CM OR Conjsub OR Conjadv OR ("quitament")) (-1 ("«")) (0 Si) (1C Ser + P3 + &&AcordSP) (NOT 2 VBpp + &&AcordSP OR AV OR PREAV) ;
+SELECT Conjadv IF (-3 BOS OR CM OR Conjsub OR Conjadv) (-2 ("«")) (-1 AV) (0 Si) (1C Ser + P3 + &&AcordSP) (NOT 2 VBpp + &&AcordSP OR AV OR PREAV) ;
+SELECT Conjadv IF (-2 BOS OR CM OR Conjsub OR Conjadv OR ("quitament")) (-1 ("«")) (0 Si) (1C Ser + P3 + &&AcordSP) (2 AV OR PREAV) (3 AJ + &&AcordSP LINK NOT 0 VBpp + &&AcordSP) ;	# s'es plan probable
+SELECT Conjadv IF (-2 BOS OR CM OR Conjsub OR Conjadv) (-1 ("«")) (0 Si) (1C Ser + P3 + &&AcordSP) (2 AV) (3 AV OR PREAV) (4 AJ + &&AcordSP LINK NOT 0 VBpp + &&AcordSP) ;	# s'es pas plan probable
+SELECT Conjadv IF (-3 BOS OR CM OR Conjsub OR Conjadv) (-2 ("«")) (-1 AV) (0 Si) (1C Ser + P3 + &&AcordSP) (2 AV OR PREAV) (3 AJ + &&AcordSP LINK NOT 0 VBpp + &&AcordSP) ;	# s'es plan probable
+SELECT Conjadv IF (-3 BOS OR CM OR Conjsub OR Conjadv) (-2 ("«")) (-1 AV) (0 Si) (1C Ser + P3 + &&AcordSP) (2 AV) (3 AV OR PREAV) (4 AJ + &&AcordSP LINK NOT 0 VBpp + &&AcordSP) ;	# s'es pas plan probable
 REMOVE AV IF (0 Si) (1C V) ;
 SELECT P3 IF (-1C Se + PRON) (NOT 0 Pro) (0 V) ;		# se canti
 SELECT P3 IF (-2C Se + PRON) (-1 Pro) (NOT 0 Pro) (0 V) ;	# se li canti
