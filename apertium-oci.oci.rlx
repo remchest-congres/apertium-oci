@@ -1993,11 +1993,11 @@ SELECT N IF (-1 Aver) (-2 AV) (-1 AV) (0 ("<afar>"i)) ;
 REMOVE A IF (0 ("ara")) (1 PRI OR FTI) (NOT 1 N_AJ + FemSg) ;
 REMOVE A IF (0 ("ara")) (1 Pro) (2 PRI OR FTI) ;
 REMOVE A IF (0 ("ara")) (1 Pro) (2 Pro) (3 PRI OR FTI) ;
-REMOVE A IF (0 ("ara")) (-1C Ser + Pl) ; 
-REMOVE A IF (0 ("ara")) (-1C Semblar_Pareisser + Pl) ; 
-REMOVE A IF (0 ("ara")) (-1C Devenir + Pl) ; 
-REMOVE A IF (0 ("ara")) (-1C V) ; 
-REMOVE A IF (0 ("ara")) (-1C unknown) ; 
+REMOVE A IF (0 ("ara")) (-1C Ser + Pl) ;
+REMOVE A IF (0 ("ara")) (-1C Semblar_Pareisser + Pl) ;
+REMOVE A IF (0 ("ara")) (-1C Devenir + Pl) ;
+REMOVE A IF (0 ("ara")) (-1C V) ;
+REMOVE A IF (0 ("ara")) (-1C unknown) ;
 
 LIST Senher = "sénher" "monsen" "monsur" "mossenh" "mossur" ;
 SELECT N + &&AcordSN IF (NOT -2/* DET) (-1 Senher + &&AcordSN) ;	# mossur curè
@@ -2320,12 +2320,12 @@ REMOVE NP IF (-1 BOS) (0 N) (0 N_Ini) ;
 SELECT NP IF (-1 BOS) (0 N) (1 NP OR unknownMajIni) ;
 SELECT NP IF (-1 BOS) (0 N) (1 De) (2 NP OR unknownMajIni) ;
 SELECT NP IF (-1 BOS) (0 N) (1 Lpar) (2 NP OR unknownMajIni) ;
-REMOVE NP IF (-1 BOS) (0 N) ; 
+REMOVE NP IF (-1 BOS) (0 N) ;
 REMOVE NP IF (-2 BOS) (-1 ("«")) (0 N) (0 N_Ini) ;
 SELECT NP IF (-2 BOS) (-1 ("«")) (0 N) (1 NP OR unknownMajIni) ;
 SELECT NP IF (-2 BOS) (-1 ("«")) (0 N) (1 De) (2 NP OR unknownMajIni) ;
 SELECT NP IF (-2 BOS) (-1 ("«")) (0 N) (1 Lpar) (2 NP OR unknownMajIni) ;
-REMOVE NP IF (-2 BOS) (-1 ("«")) (0 N) ; 
+REMOVE NP IF (-2 BOS) (-1 ("«")) (0 N) ;
 
 # HAVER
 
@@ -2872,6 +2872,12 @@ SELECT VBinf IF (-3 Venir) (-2 De) (-1 Pro) (0 N) ;
 SELECT VBinf IF (-3 ("permetre") OR ("perméter")) (-2 De) (-1 Pro) (0 N) ;
 SELECT VBinf IF (-3 ("defendre") OR ("defénder") OR ("enebir") OR ("interdire") OR ("interdíser") OR ("proïbir")) (-2 De) (-1 Pro) (0 N) ;
 SELECT VBinf IF (-3 ("acabar") OR ("fenir") OR ("finir")) (-2 De) (-1 Pro) (0 N) ;
+
+SET AdjSuperlatius = ("ancian") OR ("nòu") OR ("nau") OR ("novèl") OR ("navèth") OR ("vièlh") OR ("vielh") OR ("jove") OR ("joen") OR ("joine") OR ("jovent") OR ("grand") OR ("gran") OR ("màger") OR ("petit") OR ("pichon") OR ("pichòt") OR ("bon") OR ("mal") OR ("mau") OR ("marrit") OR ("naut") OR ("haut") OR ("bas") OR ("baish") OR ("gròs") OR ("prim") OR ("large") OR ("ample") OR ("estrech") OR ("estret") OR ("brave") ;
+SELECT N IF (-4 DET + &&AcordSN) (-3 N + &&AcordSN + Fem) (-2 ("<de>"i)) (-1 DETdef + FemPl) (0 N + FemPl LINK NOT 0 AdjPre) (1 AJ + FemPl) ;
+SELECT AJ + FemPl IF (-4 DET + &&AcordSN) (-3 N + &&AcordSN + Fem) (-2 ("<de>"i)) (-1 DETdef + FemPl) (0 AdjSuperlatius + FemPl) ;	# una plaça de las grandas
+SELECT N IF (-3 DET + &&AcordSN) (-2 N + &&AcordSN + Masc) (-1 ("<dels>"i) OR ("<deus>"i)) (0 N + MascPl LINK NOT 0 AdjPre) (1 AJ + MascPl) ;
+SELECT AJ + MascPl IF (-3 DET + &&AcordSN) (-2 N + &&AcordSN + Masc) (-1 ("<dels>"i) OR ("<deus>"i)) (0 AdjSuperlatius + MascPl) ;	# un libre dels grands
 
 SELECT N OR PRON OR NP IF (-1C PREP) (NOT -1/* N OR Itg) (1 EOS OR Rpar) ;	# ambe fòrça. ; a res.
 SELECT N OR PRON OR NP OR VBinf IF (-1C PREP) (NOT -1/* N OR Rel OR Conjadv OR Conjsub OR Itg) (1C PREP) (NOT 0 ("tròp") OR ("pauc") OR ("pòc")) ;	# discors de fin d'annada
