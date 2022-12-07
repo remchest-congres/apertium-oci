@@ -3321,6 +3321,23 @@ SELECT Ser IF (-2 Ser) (-1 AV) (0 ("estat"));	# soi pas estat
 SELECT Ser IF (-3 Ser) (-2 AV) (-1 AV) (0 ("estat"));	# soi pas totjorn estat
 REMOVE V IF (0 ("estat")) (-1 DET + MascSg);	# l'estat
 
+# de casa
+SELECT AV IF (-1C V) (0 ("de casa")) ;
+SELECT AV IF (-2C V) (-1 AV) (0 ("de casa")) ;
+SELECT AV IF (-3C V) (-2 AV) (-1 AV) (0 ("de casa")) ;
+SELECT AV IF (-2 Ser OR Haver) (-1 VBpp) (0 ("de casa")) ;
+SELECT AV IF (-3 Ser OR Haver) (-2 AV) (-1 VBpp) (0 ("de casa")) ;
+SELECT AV IF (-4 Ser OR Haver) (-3 AV) (-2 AV) (-1 VBpp) (0 ("de casa")) ;
+SELECT AV IF (-2 Vmod) (-1 VBinf) (0 ("de casa")) ;
+SELECT AV IF (-3 Vmod) (-2 AV) (-1 VBinf) (0 ("de casa")) ;
+SELECT AV IF (-4 Vmod) (-3 AV) (-2 AV) (-1 VBinf) (0 ("de casa")) ;
+SELECT AV IF (0 ("de casa")) (1 Far + VBpp) ;	# de casa hèit(a)(s)
+SELECT VBpp IF (-1 ("de casa")) (0 Far + VBpp) ;
+LIST Fenestra = "fenèstra" "finèstra" "fenestron" "finestron" "finestròt" "hièstra" "hinestron" "hinestròt" "frinèstra" "frineston" ;
+SELECT AJ IF (-1 ("pòrta") OR Fenestra OR ("lindal") OR ("lindau") OR ("camin") OR ("caminòt")) (0 ("de casa")) ;
+
+SELECT AJ IF (-1C N_AJ) (0 ("<de casa .*>"r)) ;
+
 SELECT PREP IF (0 A) (1 unknownMajIni) ;
 
 REMOVE V IF (-1C V LINK NOT 0 VBpp) (0 A) ;
@@ -3934,3 +3951,5 @@ REMOVE N + FemPl IF (0 ("<tenors>"i)) (NOT -1 DET + FemPl OR AJ + FemPl) ;
 
 REMOVE NP IF (0 N) (-1 BOS) (NOT 1 NP) (NOT 1 unknownMajIni);
 REMOVE NP IF (0 N) (-2 BOS) (-1 ("«")) (NOT 1 NP) (NOT 1 unknownMajIni);
+REMOVE AJ IF (0 ("de casa")) ;
+REMOVE AV IF (0 ("de casa")) ;
