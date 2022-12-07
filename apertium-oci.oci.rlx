@@ -280,9 +280,10 @@ LIST Mai_bon = "mai bon" "mai plan" "mei bon" "mei plan" ;
 LIST Mas_cnjcoo = ("mas" cnjcoo) ("mes" cnjcoo) ("mès" cnjcoo) ("mai" cnjcoo) ;
 LIST O_cnjcoo = ("o" cnjcoo) ("ò" cnjcoo) ;
 LIST Puei = "puèi" "apuèi" "aprèp" "puish" "apuish" ;
-LIST Semblar_Pareisser = "semblar" "paréisser" "paréisher" ;
-LIST Devenir = "devenir" "venir" "vàder" "vénguer" "viéner" "vier" "devirar" ;
-LIST Demandar = "demandar" "demanar" "interrogar" "questionar" "qüestionar" "saber" "sàber" "estudiar" "cercar" "investigar" "trovar" "trapar" "explicar" "contar" "condar" "discutir" "saber" "sàber" "saupre" "compréner" "comprene" "comprénguer" ;
+LIST Semblar_Pareisser = "semblar" "paréisser" "paréisher" "tornar# semblar" "tornar# paréisser" "tornar# paréisher" ;
+LIST Devenir = "devenir" "venir" "vàder" "vénguer" "viéner" "vier" "devirar" "tornar# devenir" "tornar# venir" "tornar# vàder" "tornar# vénguer" "tornar# viéner" "tornar# vier" "tornar# devirar" ;
+LIST Demandar = "demandar" "demanar" "interrogar" "questionar" "qüestionar" "saber" "sàber" "estudiar" "cercar" "investigar" "trovar" "trapar" "explicar" "contar" "condar" "discutir" "saber" "sàber" "saupre" "compréner" "comprene" "comprénguer" 
+"tornar# demandar" "tornar# demanar" "tornar# interrogar" "tornar# questionar" "tornar# qüestionar" "tornar# saber" "tornar# sàber" "tornar# estudiar" "tornar# cercar" "tornar# investigar" "tornar# trovar" "tornar# trapar" "tornar# explicar" "tornar# contar" "tornar# condar" "tornar# discutir" "tornar# saber" "tornar# sàber" "tornar# saupre" "tornar# compréner" "tornar# comprene" "tornar# comprénguer" ;
 LIST VNonPron = "demorar" "abitar" "trabalhar" "tribalhar" "manjar" "beure" "béver" ;	# vèrbs non pronominals
 LIST Far = "far" "har" "hèr" ;
 LIST Estat = "estat" ;
@@ -298,6 +299,7 @@ LIST Saber = "saber" "sàber" "assaber" "assàber" ;
 LIST Vengar = "vengar" ;
 LIST Vener = "véner" "vénder" "vendre";
 LIST Venir = "venir" "vier" "viéner" "vénguer" ;
+LIST TornarVenir = "tornar# venir" "tornar# vier" "tornar# viéner" "tornar# vénguer" ;
 LIST Pareisser = "paréisser" "paréisher" ;
 LIST Parir = "parir" ;
 LIST Parer = "pàrer" ;
@@ -396,7 +398,11 @@ LIST Familha = "marit" "molhèr" "pair" "paire" "mair" "maire" "maira" "mairastr
 
 LIST Vestit = "vestit" "vestidura" "sotavestit" "rauba" "combinason" "combinadon" "costum" "camisòt" "quessòt" "camisa" "blosa" "blodon" "descoletat" "mantèl" "mantèth" "impermeable" "levita" "requimpeta" "redingòta" "repimpeta" "requimpeta" "frac" "braga" "pantalon" "jupa" "jupeta" "naut" "haut" "tricòt" "sweater" "suetèr" "sweatshirt" "sweat-shirt" "sudadera" "susadera" "cravata" "sartre" "unifòrm" "uniforme" "gilet" "cardigan" "eslip" "calçon" "sosten" "sostien" "pòrtapopas" "shòrt" "pegós" "bas" "baish" "capèl" "capèth" "casqueta" "bonet" "eissarpa" "eisharpa" "gant" "cauceta" "cauçadura" "tenís" "basquet" "bòta" "sandala" "pendent" "baga" "anèl" "anèth" "braçalet" "luneta" "cencha" "centura" "cinta" "talhòla" "legging" "malhòt" "malhòl" "shamarreta" "camiseta" "borrassa" "malhòt# de banh" "vestit# de banh" "biquini" "bikini" "monokini" "monoquini" "camison" "bracièra" "davantal" "davantau" "capucha" ;
 
-LIST VerbMoviment = "anar" "tornar" "arribar" "partir" "viatjar" ;
+LIST VerbMoviment_NonTornar = "anar" Venir "tornar" "arribar" "partir" "viatjar" "sortir" "gésser" "dintrar" "entrar" "intrar" "passar" "pojar" "pujar" "davalar" "davarar" "descendre" "descéner" "devarar" "deuarar" "dauarar" ;
+LIST VerbMoviment_Tornar = "tornar# anar" TornarVenir "tornar# arribar" "tornar# partir" "tornar# viatjar" "tornar# sortir" "tornar# gésser" "tornar# dintrar" "tornar# entrar" "tornar# intrar" "tornar# passar" "tornar# pojar" "tornar# pujar" "tornar# davalar" "tornar# davarar" "tornar# descendre" "tornar# descéner" "tornar# devarar" "tornar# deuarar" "tornar# dauarar" ;
+LIST VerbMoviment = VerbMoviment_NonTornar VerbMoviment_Tornar ;
+
+LIST VerbAuxEssser = VerbMoviment_NonTornar "èsser" "estar" "nàisser" "nàisher" "nèisher" "renàisser" "renàisher" "renèisher" "morir" "vàder" "devenir" ;
 
 SECTION
 
@@ -849,6 +855,12 @@ SELECT AJ (-2 Ser OR Semblar_Pareisser) (-1 AV OR PREAV) (0 ("enfuronat")) ;
 SELECT AJ (-3 Ser OR Semblar_Pareisser) (-2 AV) (-1 AV OR PREAV) (0 ("enfuronat")) ;
 SELECT AJ (-1 BOS OR CM) (0 ("enfuronat")) (1 EOS OR CM) ;
 SELECT AJ (-2 BOS OR CM) (-1 ("«")) (0 ("enfuronat")) (1 EOS OR CM) ;
+REMOVE ("soler") IF (0 Ser) (NOT 1 VBinf) (NOT 2 VBinf) (NOT 3 VBinf) ;
+REMOVE ("soler") IF (0 Ser) (NOT 1 AV OR Pro) (NOT 2 VBinf) ;
+REMOVE ("soler") IF (0 Ser) (NOT 1 AV OR Pro) (NOT 2 AV OR Pro) (NOT 3 VBinf) ;
+SELECT VBpp + &&AcordSP IF (-1C Ser + &&AcordSP) (0 VerbAuxEssser + VBpp + &&AcordSP LINK NOT 0 ("estat") + MajIni + &&AcordSP) ;
+SELECT VBpp + &&AcordSP IF (-2C Ser + &&AcordSP) (-1 AV OR PREAV) (0 VerbAuxEssser + VBpp + &&AcordSP LINK NOT 0 ("estat") + MajIni + &&AcordSP) ;
+SELECT VBpp + &&AcordSP IF (-3C Ser + &&AcordSP) (-2 AV OR PREAV) (-1 AV OR PREAV) (0 VerbAuxEssser + VBpp + &&AcordSP LINK NOT 0 ("estat") + MajIni + &&AcordSP) ;
 SELECT VBpp + &&AcordSP IF (-1C Ser + &&AcordSP) (0 VBpp + &&AcordSP) (1 A OR De) ;	# soi acostumada a legir
 SELECT VBpp + &&AcordSP IF (-2C Ser + &&AcordSP) (-1 AV OR PREAV) (0 VBpp + &&AcordSP) (1 De) ;	# soi pas acostumada a legir
 SELECT VBpp + &&AcordSP IF (-3C Ser + &&AcordSP) (-2 AV OR PREAV) (-1 AV OR PREAV) (0 VBpp + &&AcordSP) (1 De) ;
@@ -1606,11 +1618,6 @@ REMOVE ("devénguer") IF (0 ("<dever>"i)) ;
 
 # solar e soler
 REMOVE ("solar") IF (0 ("soler")) ;
-
-# soler e estar/èsser
-REMOVE ("soler") IF (0 Ser) (NOT 1 VBinf) (NOT 2 VBinf) (NOT 3 VBinf) ;
-REMOVE ("soler") IF (0 Ser) (NOT 1 AV OR Pro) (NOT 2 VBinf) ;
-REMOVE ("soler") IF (0 Ser) (NOT 1 AV OR Pro) (NOT 2 AV OR Pro) (NOT 3 VBinf) ;
 
 # poscar e poder
 REMOVE ("poscar") IF (0 ("poder")) ;
