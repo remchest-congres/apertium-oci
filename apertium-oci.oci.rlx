@@ -1828,6 +1828,8 @@ SELECT VBimp IF (0C V + Pers) (1 CM) (NOT 2* V + Pers LINK NOT 0 ("<agrada>"i)) 
 REMOVE VBimp IF (0 P3) ;	# guess
 
 SELECT N IF (-1 ("<[a-zàáèéíòóú].*>"r)) (0 ("<Estat>") OR ("<Estats>")) ;	# "Estat" (con mayúscula) va precedido de una palabra con minúscula inicial
+SELECT N IF (-1 DET + Masc) (NOT -1 Ser) (0 Estat) ;
+SELECT N IF (0 Estat) (1 ("federat") OR ("confederat")) ;
 SELECT AJ IF (-1C N) (0 Clau) ;
 SELECT Fem IF (NOT -1/* Masc_strict) (0 Clau + Masc) (NOT 1 Masc_strict) ;
 SELECT Masc_strict IF (NOT -1/* Fem_strict) (0 ("amazigh") + Masc) (NOT 1 Fem_strict) ;
@@ -3504,7 +3506,6 @@ REMOVE NP IF (-2 BOS) (-1 (META:/-/r)) (0 ("Òc")) (1 CM) ;
 REMOVE NP IF (-3 BOS) (-2 ("«")) (-1 (META:/-/r)) (0 ("Òc")) (1 CM) ;
 REMOVE NP IF (-1 (META:/[—]/r)) (0 ("Òc")) (1 CM) ;
 
-SELECT N IF (-1 DET + Masc) (NOT -1 Ser) (0 Estat) ;
 SELECT VBpp IF (-1 Ser + Sg) (0 Estat + Sg) ;
 #SELECT VBpp IF (-1 Ser + Pl) (0 Estat + Pl) ;
 SELECT Ser IF (0 Ser + Sg) (1 Ser + VBpp + Sg) ;
