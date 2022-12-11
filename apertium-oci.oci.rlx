@@ -399,9 +399,11 @@ LIST Familha = "marit" "molhèr" "pair" "paire" "mair" "maire" "maira" "mairastr
 
 LIST Vestit = "vestit" "vestidura" "sotavestit" "rauba" "combinason" "combinadon" "costum" "camisòt" "quessòt" "camisa" "blosa" "blodon" "descoletat" "mantèl" "mantèth" "impermeable" "levita" "requimpeta" "redingòta" "repimpeta" "requimpeta" "frac" "braga" "pantalon" "jupa" "jupeta" "naut" "haut" "tricòt" "sweater" "suetèr" "sweatshirt" "sweat-shirt" "sudadera" "susadera" "cravata" "sartre" "unifòrm" "uniforme" "gilet" "cardigan" "eslip" "calçon" "sosten" "sostien" "pòrtapopas" "shòrt" "pegós" "bas" "baish" "capèl" "capèth" "casqueta" "bonet" "eissarpa" "eisharpa" "gant" "cauceta" "cauçadura" "tenís" "basquet" "bòta" "sandala" "pendent" "baga" "anèl" "anèth" "braçalet" "luneta" "cencha" "centura" "cinta" "talhòla" "legging" "malhòt" "malhòl" "shamarreta" "camiseta" "borrassa" "malhòt# de banh" "vestit# de banh" "biquini" "bikini" "monokini" "monoquini" "camison" "bracièra" "davantal" "davantau" "capucha" ;
 
-LIST VerbMoviment_NonTornar = "anar" Venir "tornar" "arribar" "partir" "viatjar" "sortir" "gésser" "dintrar" "entrar" "intrar" "passar" "pojar" "pujar" "davalar" "davarar" "descendre" "descéner" "devarar" "deuarar" "dauarar" ;
-LIST VerbMoviment_Tornar = "tornar# anar" TornarVenir "tornar# arribar" "tornar# partir" "tornar# viatjar" "tornar# sortir" "tornar# gésser" "tornar# dintrar" "tornar# entrar" "tornar# intrar" "tornar# passar" "tornar# pojar" "tornar# pujar" "tornar# davalar" "tornar# davarar" "tornar# descendre" "tornar# descéner" "tornar# devarar" "tornar# deuarar" "tornar# dauarar" ;
-LIST VerbMoviment = VerbMoviment_NonTornar VerbMoviment_Tornar ;
+#LIST VerbMoviment_NonTornar = "anar" Venir "tornar" "arribar" "partir" "viatjar" "sortir" "gésser" "dintrar" "entrar" "intrar" "passar" "pojar" "pujar" "davalar" "davarar" "descendre" "descéner" "devarar" "deuarar" "dauarar" ;
+LIST VerbMoviment_NonTornar = "anar" "venir" "vier" "viéner" "vénguer" "tornar" "arribar" "partir" "viatjar" "sortir" "gésser" "dintrar" "entrar" "intrar" "passar" "pojar" "pujar" "davalar" "davarar" "descendre" "descéner" "devarar" "deuarar" "dauarar" ;
+#LIST VerbMoviment_Tornar = "tornar# anar" TornarVenir "tornar# arribar" "tornar# partir" "tornar# viatjar" "tornar# sortir" "tornar# gésser" "tornar# dintrar" "tornar# entrar" "tornar# intrar" "tornar# passar" "tornar# pojar" "tornar# pujar" "tornar# davalar" "tornar# davarar" "tornar# descendre" "tornar# descéner" "tornar# devarar" "tornar# deuarar" "tornar# dauarar" ;
+LIST VerbMoviment_Tornar = "tornar# anar" "tornar# venir" "tornar# vier" "tornar# viéner" "tornar# vénguer" "tornar# arribar" "tornar# partir" "tornar# viatjar" "tornar# sortir" "tornar# gésser" "tornar# dintrar" "tornar# entrar" "tornar# intrar" "tornar# passar" "tornar# pojar" "tornar# pujar" "tornar# davalar" "tornar# davarar" "tornar# descendre" "tornar# descéner" "tornar# devarar" "tornar# deuarar" "tornar# dauarar" ;
+SET VerbMoviment = VerbMoviment_NonTornar OR VerbMoviment_Tornar ;
 
 LIST VerbAuxEssser = VerbMoviment_NonTornar "èsser" "estar" "nàisser" "nàisher" "nèisher" "renàisser" "renàisher" "renèisher" "morir" "vàder" "devenir" ;
 
@@ -3035,6 +3037,8 @@ REMOVE N OR V + Pers IF (-4 Ser + &&AcordSP) (-3 AV) (-2 Devenir + VBpp + &&Acor
 REMOVE N IF (-1C ("faser") LINK NOT 0 VBpp) (0 AJ) (1C EOS OR PREP OR Rel) ;	# las dificultats semblan màgers
 REMOVE N IF (-2 Haver) (-1 ("faser") + VBpp) (0 AJ) (1C EOS OR PREP OR Rel) ;	# las dificultats an semblat màgers
 SELECT AJ OR AV IF (-1 Vener OR ("crompar") OR ("comprar") OR ("pagar")) (0 ("car")) ;
+SELECT AJ IF (-1 VerbMoviment_NonTornar + &&AcordSP) (0 ("prèst") + &&AcordSP OR ("prèste") + &&AcordSP) (1 A OR ("per") OR ("tà") OR ("entà") OR ("enta")) ;
+SELECT AJ IF (-2 VerbMoviment_NonTornar + &&AcordSP) (-1 AV) (0 ("prèst") + &&AcordSP OR ("prèste") + &&AcordSP) (1 A OR ("per") OR ("tà") OR ("entà") OR ("enta")) ;
 SELECT AV IF (-1 Vener OR ("tornar") OR ("arribar") OR ("partir")) (0 AV) (1 De) (2 Top OR unknownMajIni) ;	# ven primièr de Tolosa
 SELECT AV IF (-1 VerbMoviment) (0 AV) (1 A) (2 Top OR unknownMajIni) ;	# va primièr de Tolosa
 REMOVE AJ IF (-1C Verb LINK NOT 0 VBpp) (0 N) (1C EOS OR PREP OR Rel) ;	# demani novèlas de son pair
