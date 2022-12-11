@@ -301,6 +301,7 @@ LIST Vener = "véner" "vénder" "vendre";
 LIST Venir = "venir" "vier" "viéner" "vénguer" ;
 LIST TornarVenir = "tornar# venir" "tornar# vier" "tornar# viéner" "tornar# vénguer" ;
 LIST Pareisser = "paréisser" "paréisher" ;
+LIST Apareisser = "aparéisser" "aparéisher" ;
 LIST Parir = "parir" ;
 LIST Parer = "pàrer" ;
 LIST Gausir = "gausir" ;
@@ -1401,6 +1402,10 @@ REMOVE AJ IF (0 ("quant"i) + DET + &&AcordSN) (1C N) (1 N +  &&AcordSN) ;
 REMOVE PRON IF (0 ("quin") + MascSg) (1 ("anar")) ;
 REMOVE PRON IF (0 ("quin") + MascSg) (1 Ser + Pl) ;
 REMOVE PRON IF (0 ("quin") + MascSg) (1 Semblar_Pareisser + Pl) ;
+REMOVE Itg OR Excl OR IJ IF (-1 BOS) (0 ("qué")) (1 Ser OR Venir OR TornarVenir OR Pareisser OR Apareisser OR VerbMoviment_NonTornar) (2 De) (3 DET + Pl OR PREDET + Pl OR N_AJ + Pl) ;
+REMOVE Itg OR Excl OR IJ IF (-2 BOS) (-1 ("«")) (0 ("qué")) (1 Ser OR Venir OR TornarVenir OR Pareisser OR Apareisser OR VerbMoviment_NonTornar) (2 De) (3 DET + Pl OR PREDET + Pl OR N_AJ + Pl) ;
+REMOVE Itg OR Excl OR IJ IF (-2 BOS) (-1 PREP) (0 ("qué")) (1 Ser OR Venir OR TornarVenir OR Pareisser OR Apareisser OR VerbMoviment_NonTornar) (2 De) (3 DET + Pl OR PREDET + Pl OR N_AJ + Pl) ;
+REMOVE Itg OR Excl OR IJ IF (-2 BOS) (-1 AV) (0 ("qué")) (1 Ser OR Venir OR TornarVenir OR Pareisser OR Apareisser OR VerbMoviment_NonTornar) (2 De) (3 DET + Pl OR PREDET + Pl OR N_AJ + Pl) ;
 SELECT Itg OR Excl OR IJ IF (-1 BOS) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("quant")) ;	# Qui s'adresse
 SELECT Itg OR Excl OR IJ IF (-2 BOS) (-1 ("«")) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("quant")) ;	# Qui s'adresse
 REMOVE Itg OR Excl OR IJ IF (-2 BOS) (-1 Artcontrsg OR Artcontrpl) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("quant")) ;	# A qui s'adresse
