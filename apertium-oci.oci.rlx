@@ -399,13 +399,11 @@ LIST Familha = "marit" "molhèr" "pair" "paire" "mair" "maire" "maira" "mairastr
 
 LIST Vestit = "vestit" "vestidura" "sotavestit" "rauba" "combinason" "combinadon" "costum" "camisòt" "quessòt" "camisa" "blosa" "blodon" "descoletat" "mantèl" "mantèth" "impermeable" "levita" "requimpeta" "redingòta" "repimpeta" "requimpeta" "frac" "braga" "pantalon" "jupa" "jupeta" "naut" "haut" "tricòt" "sweater" "suetèr" "sweatshirt" "sweat-shirt" "sudadera" "susadera" "cravata" "sartre" "unifòrm" "uniforme" "gilet" "cardigan" "eslip" "calçon" "sosten" "sostien" "pòrtapopas" "shòrt" "pegós" "bas" "baish" "capèl" "capèth" "casqueta" "bonet" "eissarpa" "eisharpa" "gant" "cauceta" "cauçadura" "tenís" "basquet" "bòta" "sandala" "pendent" "baga" "anèl" "anèth" "braçalet" "luneta" "cencha" "centura" "cinta" "talhòla" "legging" "malhòt" "malhòl" "shamarreta" "camiseta" "borrassa" "malhòt# de banh" "vestit# de banh" "biquini" "bikini" "monokini" "monoquini" "camison" "bracièra" "davantal" "davantau" "capucha" ;
 
-#LIST VerbMoviment_NonTornar = "anar" Venir "tornar" "arribar" "partir" "viatjar" "sortir" "gésser" "dintrar" "entrar" "intrar" "passar" "pojar" "pujar" "davalar" "davarar" "descendre" "descéner" "devarar" "deuarar" "dauarar" ;
 LIST VerbMoviment_NonTornar = "anar" "venir" "vier" "viéner" "vénguer" "tornar" "arribar" "partir" "viatjar" "sortir" "gésser" "dintrar" "entrar" "intrar" "passar" "pojar" "pujar" "davalar" "davarar" "descendre" "descéner" "devarar" "deuarar" "dauarar" ;
-#LIST VerbMoviment_Tornar = "tornar# anar" TornarVenir "tornar# arribar" "tornar# partir" "tornar# viatjar" "tornar# sortir" "tornar# gésser" "tornar# dintrar" "tornar# entrar" "tornar# intrar" "tornar# passar" "tornar# pojar" "tornar# pujar" "tornar# davalar" "tornar# davarar" "tornar# descendre" "tornar# descéner" "tornar# devarar" "tornar# deuarar" "tornar# dauarar" ;
 LIST VerbMoviment_Tornar = "tornar# anar" "tornar# venir" "tornar# vier" "tornar# viéner" "tornar# vénguer" "tornar# arribar" "tornar# partir" "tornar# viatjar" "tornar# sortir" "tornar# gésser" "tornar# dintrar" "tornar# entrar" "tornar# intrar" "tornar# passar" "tornar# pojar" "tornar# pujar" "tornar# davalar" "tornar# davarar" "tornar# descendre" "tornar# descéner" "tornar# devarar" "tornar# deuarar" "tornar# dauarar" ;
 SET VerbMoviment = VerbMoviment_NonTornar OR VerbMoviment_Tornar ;
 
-LIST VerbAuxEssser = VerbMoviment_NonTornar "èsser" "estar" "nàisser" "nàisher" "nèisher" "renàisser" "renàisher" "renèisher" "morir" "vàder" "devenir" ;
+SET VerbAuxEssser = VerbMoviment_NonTornar OR ("èsser") OR ("estar") OR ("nàisser") OR ("nàisher") OR ("nèisher") OR ("renàisser") OR ("renàisher") OR ("renèisher") OR ("morir") OR ("vàder") OR ("devenir") ;
 
 SECTION
 
@@ -863,6 +861,7 @@ SELECT AJ (-2 BOS OR CM) (-1 ("«")) (0 ("enfuronat")) (1 EOS OR CM) ;
 REMOVE ("soler") IF (0 Ser) (NOT 1 VBinf) (NOT 2 VBinf) (NOT 3 VBinf) ;
 REMOVE ("soler") IF (0 Ser) (NOT 1 AV OR Pro) (NOT 2 VBinf) ;
 REMOVE ("soler") IF (0 Ser) (NOT 1 AV OR Pro) (NOT 2 AV OR Pro) (NOT 3 VBinf) ;
+SELECT AJ (-1 Nommois OR Jorns) (0 ("passat")) ;
 SELECT VBpp + &&AcordSP IF (-1C Ser + &&AcordSP) (0 VerbAuxEssser + VBpp + &&AcordSP LINK NOT 0 ("estat") + MajIni + &&AcordSP) ;
 SELECT VBpp + &&AcordSP IF (-2C Ser + &&AcordSP) (-1 AV OR PREAV) (0 VerbAuxEssser + VBpp + &&AcordSP LINK NOT 0 ("estat") + MajIni + &&AcordSP) ;
 SELECT VBpp + &&AcordSP IF (-3C Ser + &&AcordSP) (-2 AV OR PREAV) (-1 AV OR PREAV) (0 VerbAuxEssser + VBpp + &&AcordSP LINK NOT 0 ("estat") + MajIni + &&AcordSP) ;
@@ -3276,8 +3275,6 @@ SELECT PRON IF (-2C V) (-1 AV) (0 ("nat")) ;
 
 SELECT AJ (0 ("liure")) (1 De) (2 VBinf) ;
 SELECT AJ (0 ("liure")) (-1 ("logicial")) ;
-
-SELECT AJ (-1 Nommois OR Jorns) (0 ("passat")) ;
 
 SELECT AJ (-3 N_AJ + &&AcordSN) (-2 AJ + &&AcordSN) (-1 Conjco) (0 AJ + &&AcordSN) ;	# un territòri immens e voide
 SELECT AJ (-4 AJ + &&AcordSN) (-3 CM) (-2 AJ + &&AcordSN) (-1 Conjco) (0 AJ + &&AcordSN) ;	# un territòri desèrt, immense e voide
