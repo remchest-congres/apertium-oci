@@ -384,8 +384,8 @@ LIST Comuna = "comuna" "vila" "citat" "ciutat" "borg" "vilatge" ;
 
 LIST Fiera = "fièra" "fiera" "fièira" "hèira" "fira" ;
 
-LIST Lenga = "occitan" "aranés" "gascon" "provençal" "provençau" "francés" "anglés" "alemand" "espanhòl" "espanhòu" "italian" "rus" "ucraïnian" "ucraïnés" "ucraïnenc" "chinés" "japonés" "catalan" "basc" "basco" "galician" "breton" "còrse" "arpitan" "francoprovençal" "alsacian" "flamenc" "galés" "irlandés" ;
-LIST Gentilici = "occitan" "francés" "anglés" "alemand" "espanhòl" "espanhòu" "italian" "rus" "ucraïnian" "ucraïnés" "ucraïnenc" "chinés" "japonés" "catalan" "basc" "basco" "breton" "còrse" "arpitan" "francoprovençal" "alsacian" "flamenc" "galés" "escocés" "irlandés" "irlandés" "american" "canadian" "canadenc" "quebequés" "cuban" "occidental" "oriental" ;
+LIST Lenga = "occitan" "aranés" "gascon" "lengadocian" "provençal" "provençau" "niçard" "auvernhat" "auvernhàs" "lemosin" "francés" "anglés" "alemand" "espanhòl" "espanhòu" "portugués" "italian" "romanés" "chèc" "eslovac" "polonés" "rus" "ucraïnian" "ucraïnés" "ucraïnenc" "chinés" "japonés" "catalan" "basc" "basco" "galician" "breton" "còrse" "arpitan" "francoprovençal" "alsacian" "flamenc" "galés" "irlandés" ;
+LIST Gentilici = "occitan" "aranés" "gascon" "lengadocian" "provençal" "provençau" "niçard" "auvernhat" "auvernhàs" "lemosin" "francés" "anglés" "alemand" "espanhòl" "espanhòu" "portugués" "italian" "soís" "romanés" "chèc" "polonés" "eslovac" "rus" "ucraïnian" "ucraïnés" "ucraïnenc" "chinés" "japonés" "catalan" "basc" "basco" "breton" "còrse" "arpitan" "francoprovençal" "alsacian" "flamenc" "galés" "escocés" "irlandés" "irlandés" "american" "canadian" "canadenc" "quebequés" "cuban" "occidental" "oriental" "tolosan" "bordalès" "montpelhierenc" "avinhonenc" ;
 
 LIST Grade = "soldat" "caporal" "caporau" "sergent" "lòctenent" "capitani" "capitan" "coronèl" "coronèu" "general" "generau" "amiral" "amirau" "contra-amiral" "contra-amirau" "vice-amiral" "vice-amirau" "majoral" "majorau" ;
 
@@ -3028,6 +3028,11 @@ REMOVE N OR V + Pers IF (-2 Haver + &&AcordSP) (-1 Semblar_Pareisser + VBpp) (0 
 REMOVE N OR V + Pers IF (-3 Haver + &&AcordSP) (-2 AV) (-1 Semblar_Pareisser + VBpp) (0 AJ + &&AcordSP) (1C EOS OR CM OR Conjco OR PREP OR Rel OR ("<a>"i)) ;	# las dificultats an pas semblat màgers
 REMOVE N OR V + Pers IF (-3 Haver + &&AcordSP) (-2 Semblar_Pareisser + VBpp) (-1 AV) (0 AJ + &&AcordSP) (1C EOS OR CM OR Conjco OR PREP OR Rel OR ("<a>"i)) ;	# an semblat mai caras
 REMOVE N OR V + Pers IF (-4 Haver + &&AcordSP) (-3 AV) (-2 Semblar_Pareisser + VBpp) (-1 AV) (0 AJ + &&AcordSP) (1C EOS OR CM OR Conjco OR PREP OR Rel OR ("<a>"i)) ;	# an pas semblat mai caras
+SELECT N IF (-1C Venir + &&AcordSP LINK NOT 0 VBpp) (0 Gentilici + &&AcordSP) (-1* Enon) ;	# que venguèron espanhòus, franceses
+SELECT N IF (-1C Venir + &&AcordSP LINK NOT 0 VBpp) (0 Gentilici + &&AcordSP) (1* Enon) ;
+SELECT N IF (-3C Venir + &&AcordSP LINK NOT 0 VBpp) (-2C Gentilici + N + &&AcordSP) (-1 CM OR Conjco) (0 Gentilici + &&AcordSP) ;
+SELECT N IF (-5C Venir + &&AcordSP LINK NOT 0 VBpp) (-4C Gentilici + N + &&AcordSP) (-3 CM OR Conjco) (-2 Gentilici + &&AcordSP) (-1 CM OR Conjco) (0 Gentilici + &&AcordSP) ;
+SELECT N IF (-7C Venir + &&AcordSP LINK NOT 0 VBpp) (-6C Gentilici + N + &&AcordSP) (-5 CM OR Conjco) (-4 Gentilici + &&AcordSP) (-3 CM OR Conjco) (-2 Gentilici + &&AcordSP) (-1 CM OR Conjco) (0 Gentilici + &&AcordSP) ;
 REMOVE N OR V + Pers IF (-1C Devenir + &&AcordSP LINK NOT 0 VBpp) (0 AJ + &&AcordSP) (1C EOS OR CM OR Conjco OR PREP OR Rel) ;	# las dificultats venon màgers
 REMOVE N OR V + Pers IF (-2 Ser + &&AcordSP) (-1 Devenir + VBpp) (0 AJ + &&AcordSP) (1C EOS OR CM OR Conjco OR PREP OR Rel) ;	# las dificultats son venudas màgers
 REMOVE N OR V + Pers IF (-3 Ser + &&AcordSP) (-2 AV) (-1 Devenir + VBpp + &&AcordSP) (0 AJ + &&AcordSP) (1C EOS OR CM OR Conjco OR PREP OR Rel) ;	# las dificultats son pas venudas màgers
