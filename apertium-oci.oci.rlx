@@ -385,7 +385,7 @@ LIST Comuna = "comuna" "vila" "citat" "ciutat" "borg" "vilatge" ;
 LIST Fiera = "fièra" "fiera" "fièira" "hèira" "fira" ;
 
 LIST Lenga = "occitan" "aranés" "gascon" "lengadocian" "provençal" "provençau" "niçard" "auvernhat" "auvernhàs" "lemosin" "francés" "anglés" "alemand" "espanhòl" "espanhòu" "portugués" "italian" "romanés" "chèc" "eslovac" "polonés" "rus" "ucraïnian" "ucraïnés" "ucraïnenc" "chinés" "japonés" "catalan" "basc" "basco" "galician" "breton" "còrse" "arpitan" "francoprovençal" "alsacian" "flamenc" "galés" "irlandés" ;
-LIST Gentilici = "occitan" "aranés" "gascon" "lengadocian" "provençal" "provençau" "niçard" "auvernhat" "auvernhàs" "lemosin" "francés" "anglés" "alemand" "espanhòl" "espanhòu" "portugués" "italian" "soís" "romanés" "chèc" "polonés" "eslovac" "rus" "ucraïnian" "ucraïnés" "ucraïnenc" "chinés" "japonés" "catalan" "basc" "basco" "breton" "còrse" "arpitan" "francoprovençal" "alsacian" "flamenc" "galés" "escocés" "irlandés" "irlandés" "american" "canadian" "canadenc" "quebequés" "cuban" "occidental" "oriental" "tolosan" "bordalès" "montpelhierenc" "avinhonenc" ;
+LIST Gentilici = "occitan" "aranés" "gascon" "lengadocian" "provençal" "provençau" "niçard" "auvernhat" "auvernhàs" "lemosin" "francés" "anglés" "alemand" "espanhòl" "espanhòu" "portugués" "italian" "soís" "romanés" "chèc" "polonés" "eslovac" "rus" "ucraïnian" "ucraïnés" "ucraïnenc" "chinés" "japonés" "catalan" "basc" "basco" "breton" "còrse" "arpitan" "francoprovençal" "alsacian" "flamenc" "galés" "escocés" "irlandés" "american" "canadian" "canadenc" "quebequés" "cuban" "occidental" "oriental" "tolosan" "bordalès" "montpelhierenc" "avinhonenc" "parisenc" "parisian" ;
 
 LIST Grade = "soldat" "caporal" "caporau" "sergent" "lòctenent" "capitani" "capitan" "coronèl" "coronèu" "general" "generau" "amiral" "amirau" "contra-amiral" "contra-amirau" "vice-amiral" "vice-amirau" "majoral" "majorau" ;
 
@@ -563,6 +563,7 @@ REMOVE Itg IF (-6 V LINK NOT 0 Demandar) (-5 AV) (-4 AV) (-3 CM) (-2 Tn) (-1 CM)
 REMOVE Itg IF (-5 V LINK NOT 0 Demandar) (-4 CM) (-3 Tn) (-2 AV) (-1 CM) (0 ("coma") OR ("com")) (1 DET + &&AcordSN) (2 N_AJ + &&AcordSN OR NP + &&AcordSN) ;	# minja, eth tanben, com los auts
 REMOVE Itg IF (-6 V LINK NOT 0 Demandar) (-5 AV) (-4 CM) (-3 Tn) (-2 AV) (-1 CM) (0 ("coma") OR ("com")) (1 DET + &&AcordSN) (2 N_AJ + &&AcordSN OR NP + &&AcordSN) ;	# minja pas, eth tanben, com los auts
 REMOVE Itg IF (-7 V LINK NOT 0 Demandar) (-6 AV) (-5 AV) (-4 CM) (-3 Tn) (-2 AV) (-1 CM) (0 ("coma") OR ("com")) (1 DET + &&AcordSN) (2 N_AJ + &&AcordSN OR NP + &&AcordSN) ;	# minja pas tostemps, eth tanben, com los auts
+REMOVE Itg IF (0 ("coma") OR ("com")) (1 VBpp) (NOT 1 V + Pers OR VBinf OR VBger) ;	# la veden com tocada
 REMOVE N IF (NOT -1 DET) (NOT -1 (META:/-/r)) (0 ("<son>"i)) ;	# patch
 REMOVE N IF (NOT -1 DET OR NUM) (0 ("<endavant>"i)) ;	# patch
 REMOVE AV IF (-1 DET OR NUM) (0 ("<endavant>"i)) ;	# patch
