@@ -2592,6 +2592,13 @@ SELECT P3 + Pl IF (-2 PRON + Tn + P3 + Pl) (-1 Pro OR AV) (0 V + P3 + Pl) ;
 SELECT P3 + Pl IF (-3 PRON + Tn + P3 + Pl) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P3 + Pl) ;
 SELECT P3 + Pl IF (-4 PRON + Tn + P3 + Pl) (-3 Pro OR AV) (-2 Pro OR AV) (-1 Pro OR AV) (0 V + P3 + Pl) ;
 
+SELECT P3 IF (-1C/* ("se") + Pro) (0 V + P3) ;	# que's barre
+SELECT P3 IF (-2C/* ("se") + Pro) (-1 Pro) (0 V + P3) ;
+REMOVE PRS IF (-1C ("se") + Conjadv) (0 V + PRI) ;
+REMOVE PRS IF (-2C ("se") + Conjadv) (-1 Pro) (0 V + PRI) ;
+REMOVE PRS + P1 IF (-1 ("se")) (0 V + PRI + P3) ;
+REMOVE PRS + P1 IF (-2 ("se")) (-1 Pro) (0 V + PRI + P3) ;
+
 SELECT P1 + Sg IF (NOT -1 PRON + Tn) (0 V + P1 + Sg) (1 CM) (2 PRON + Tn + P1 + Sg) (3 CM OR EOS) ;	# pensi, jo,
 
 SELECT Vconj_indic IF (-2 PRON + Tn + P1 + Sg) (-1C Enon) (0 V + P1 + Sg) ;
