@@ -618,6 +618,9 @@ SELECT Conjco (0 ("sia")) (1 V + Pers) (-2* ("sia") LINK 1 V + Pers) ;
 SELECT Conjco (0 ("sia")) (1 Que) (2 V + Pers) (3* ("sia") LINK 1 Que LINK 1 V + Pers) ;
 SELECT Conjco (0 ("sia")) (1 Que) (2 V + Pers) (-3* ("sia") LINK 1 Que LINK 1 V + Pers) ;
 
+REMOVE Conjco IF (-1 ("pas") + AV) (0 ("nimai")) ;
+SELECT Conjco IF (0 ("nimai")) ;
+
 SELECT PREP IF (0 ("entre")) (1C N_AJ OR NP) ;
 SELECT PREP IF (0 ("entre")) (0 (META:/-/r)) ;
 SELECT PREP IF (0 ("entre")) (1 unknown) ;
