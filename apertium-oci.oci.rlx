@@ -2359,6 +2359,7 @@ REMOVE A IF (0 ("ara")) (NOT 1 N_AJ + FemSg) ;
 SELECT PREP IF (-1C V + Pers OR VBinf) (0 A) (NOT 0 ("<a .*>"r) + AV) ;
 SELECT PREP IF (-2C V + Pers OR VBinf) (-1 AV) (0 A) (NOT 0 ("<a .*>"r) + AV) ;
 SELECT PREP IF (-3C V + Pers OR VBinf) (-2 AV) (-1 AV) (0 A) (NOT 0 ("<a .*>"r) + AV) ;
+SELECT PREP IF (-1C N_AJ) (0 A) (1 NUM) (1 (META:/%/r)) (NOT 2 De) ;	# un remborsament a 100 % 
 REMOVE V + Pers IF (-1C V + Pers OR VBinf) (0 A) (0 ("<a .*>"r) + V + Pers) ;
 #REMOVE V + Pers IF (-1C V + Pers OR VBinf) (0 ("<a .*>"r) + V + Pers) ;
 #REMOVE V + Pers IF (-1C V + Pers OR VBinf) (0 ("<a .*>"r)) ;
