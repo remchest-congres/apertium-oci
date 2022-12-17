@@ -3990,6 +3990,7 @@ REMOVE N + MascPl IF (0 ("<tenors>"i)) (-1 DET + FemPl OR AJ + FemPl) ;
 REMOVE N + FemSg IF (0 ("<tenor>"i)) (NOT -1 DET + FemSg OR AJ + FemSg) ;
 REMOVE N + FemPl IF (0 ("<tenors>"i)) (NOT -1 DET + FemPl OR AJ + FemPl) ;
 
+SELECT Fem IF (0C ("feminista") + N) (NOT -1/* Masc_strict) (NOT 1 Masc_strict) ;	# lei feministas
 
 REMOVE NP IF (0 N) (-1 BOS) (NOT 1 NP) (NOT 1 unknownMajIni);
 REMOVE NP IF (0 N) (-2 BOS) (-1 ("«")) (NOT 1 NP) (NOT 1 unknownMajIni);
