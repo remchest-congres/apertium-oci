@@ -378,7 +378,7 @@ LIST Carrera = "carrièra" "carrèra" "baloard" "avenguda" "avienguda" "plaça" 
 
 LIST ConstruccionReligiosa = "glèisa" "catedrala" "catedrau" "monastèri" "monastièr" "mostièr" "mongia" "abadiá" "abadia" "capèla" "capèra" "priorat" "chartrosa" "parròquia" "parròpia" ;
 LIST Construccion = ConstruccionReligiosa "castèl" "castèu" "castèth" "fortalesa" "hortalessa" "casteràs" "comuna" "mairia" "ostal# de la comuna" "ostau# de la comuna" "pont" ;
-LIST LuocAmbNomDePersona = "aeropòrt" "universitat" "licèu" "escòla" "carrièra" "carrèra" "plaça" "baloard" "avenguda" "avienguda" ;
+LIST LuocAmbNomDePersona = "aeropòrt" "universitat" "licèu" "collègi" "escòla" "biblioteca" "centre" "carrièra" "carrèra" "plaça" "baloard" "avenguda" "avienguda" ;
 
 LIST Comuna = "comuna" "vila" "citat" "ciutat" "borg" "vilatge" ;
 
