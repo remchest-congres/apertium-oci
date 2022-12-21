@@ -74,6 +74,7 @@ LIST AJf = (adj f);
 LIST Vconj = pri prs pii ifi pis imp fti cni ;
 LIST Vconj_non_Imp = pri prs pii ifi pis fti cni ;
 LIST Vconj_indic = pri pii ifi fti cni ;
+LIST Vconj_subj = prs pis ;
 LIST PRI = pri ;
 LIST PRS = prs ;
 LIST PIS = pis ;
@@ -1072,6 +1073,13 @@ SELECT E_enon IF (-2 ("si") LINK -1 AV LINK -1 Demandar) (-1 AV) (1 Pro OR V OR 
 SELECT E_enon IF (-1* ("si") BARRIER V LINK NOT 0 VBpp) (-1* ("si") LINK -1 AV LINK -1 Demandar) (1C Pro OR V OR unknownMinIni) ;
 
 
+LIST PerMai = "per mai" "per mei" "per tan" "per tant" ;
+SELECT AV IF (0 PerMai) (1 AJ + &&AcordSP) (2 Que OR Qui) (3* Ser + Vconj_subj + P3 + &&AcordSP OR Semblar_Pareisser + Vconj_subj + P3 + &&AcordSP OR Haver + Vconj_subj + P3 + &&AcordSP OR Vmod + Vconj_subj + P3 + &&AcordSP BARRIER Verb) ;	# per mai aimables que sián
+REMOVE AV IF (0 PerMai) ;
+SELECT AJ + &&AcordSP IF (-1 PerMai) (0 AJ + &&AcordSP) (1 Que OR Qui) (2* Ser + Vconj_subj + P3 + &&AcordSP OR Semblar_Pareisser + Vconj_subj + P3 + &&AcordSP OR Haver + Vconj_subj + P3 + &&AcordSP OR Vmod + Vconj_subj + P3 + &&AcordSP BARRIER Verb) ;	# per mai aimables que sián
+SELECT Conjsub IF (-2 PerMai) (-1 AJ + &&AcordSP) (0 Que OR Qui) ;	# per mai aimables que sián
+SELECT Conjadv IF (0 ("per tant")) ;
+
 SELECT Rel IF (-2 ("<n'i>"i) OR ("<n’i>"i)) (-1 ("aver") OR ("auer")) (0 Que OR Qui) ;
 SELECT Rel IF (-3 ("<n'i>"i) OR ("<n’i>"i)) (-2 ("aver") OR ("auer")) (-1 DET OR N OR AJ OR NUM) (0 Que OR Qui) ;
 SELECT Itg IF (-1 VBpp) (0 Qui) (1 Saber + PRI + P3 + Sg) ;	# es arribat qui sap d'on
@@ -1194,8 +1202,7 @@ SELECT Rel IF (-3C NP) (-2 unknownMajIni) (-1 PREP) (0 Que OR Qui) (1 Vconj + P3
 SELECT Rel IF (-4C NP) (-3 unknownMajIni) (-2 CM) (-1 PREP) (0 Que OR Qui) (1 Vconj + P3) ;
 SELECT Rel IF (-3C NP) (-2 unknownMajIni) (-1 PREP) (0 Que OR Qui) (1 AV) (2 Vconj + P3) ;
 SELECT Rel IF (-4C NP) (-3 unknownMajIni) (-2 CM) (-1 PREP) (0 Que OR Qui) (1 AV) (2 Vconj + P3) ;
-SELECT Conjsub IF (0 Que) (1 Ser + PRS) (1* ("o"));
-SELECT Conjsub IF (0 Que) (1 Ser + PIS) (1* ("o"));
+SELECT Conjsub IF (0 Que) (1 Ser + Vconj_subj) (1* ("o"));
 SELECT Conjsub IF (-1C ("pensar") OR ("créder") OR ("créser") OR ("díser") OR ("imaginar") OR ("ordenar") OR ("comandar") OR ("voler") OR ("demandar") OR ("respóner") OR ("assegurar"));
 
 REMOVE N IF (NOT -1/* DET + Fem) (0 ("èra")) ;
@@ -1319,8 +1326,8 @@ SELECT PRON IF (0 PRON + PRON_Pas_Neg) (1 ("ne")) (2 Pro) (3 Pro) (3 V) ;
 SELECT PRON + PRON_Pas_Neg OR DET + DET_Pas_Neg IF (-2 ("ne")) (-1 V) (0 PRON + PRON_Pas_Neg OR DET + DET_Pas_Neg) ;
 SELECT PRON + PRON_Pas_Neg OR DET + DET_Pas_Neg IF (-2 ("ne")) (-2 V) (-1 AV) (0 PRON + PRON_Pas_Neg OR DET + DET_Pas_Neg) ;
 REMOVE Enon IF (0 Que) (-1*C V + Pers LINK -1C ("ne") + Enon) ;		# n'è cap paur que
-SELECT Conjsub IF (0 Que) (-1*C V + Pers LINK -1C ("ne") + Enon) (1*C PRS OR PIS BARRIER V) ;		# n'è cap paur que cante
-#SELECT Conjsub IF (0 Que) (-1*C V + Pers LINK -1C ("ne") + Enon) (1* PRS OR PIS BARRIER V) ;		# n'è cap paur que cante
+SELECT Conjsub IF (0 Que) (-1*C V + Pers LINK -1C ("ne") + Enon) (1*C Vconj_subj BARRIER V) ;		# n'è cap paur que cante
+#SELECT Conjsub IF (0 Que) (-1*C V + Pers LINK -1C ("ne") + Enon) (1* Vconj_subj BARRIER V) ;		# n'è cap paur que cante
 REMOVE Ne_enon IF (NOT 1* ("pas")) ;
 SELECT Ne_enon IF (1 V) (2 ("pas")) ;
 SELECT Ne_enon IF (1 V) (2 ("que")) ;
@@ -1379,7 +1386,7 @@ SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon OR V) (0 ("que"
 SELECT Enon IF (NOT -1* Conjadv OR Conjsub OR Rel OR Itg OR Enon OR V) (0 ("que")) (1 Pro) (2 Pro) (3 V + Pers LINK NOT 0 VBimp) (NOT 4* ("?") OR ("!")) ;
 REMOVE Enon IF (-1C Enon) ;
 REMOVE Enon IF (-1 Enon) ;
-REMOVE Enon IF (1C PRS OR PIS) ;
+REMOVE Enon IF (1C Vconj_subj) ;
 
 SELECT Acr IF (-1 NUM LINK NOT 0 Gen) (0 ("ha")) ;
 REMOVE Acr IF (0 ("ha")) ;
@@ -3246,7 +3253,7 @@ REMOVE V + P1 IF (-1C Pro + Ref) ;
 REMOVE V + P2 IF (-1C Pro + Ref) ;
 REMOVE V + P1 IF (-2C Pro + Ref) (-1 Pro) ;
 REMOVE V + P2 IF (-2C Pro + Ref) (-1 Pro) ;
-REMOVE PRS OR PIS IF (NOT -1* Conjsub OR Conjadv) (NOT -1* ("per") OR ("entà") OR ("tà") LINK 1 Que OR Qui) ;
+REMOVE Vconj_subj IF (NOT -1* Conjsub OR Conjadv) (NOT -1* ("per") OR ("entà") OR ("tà") LINK 1 Que OR Qui) ;
 
 REMOVE P1 IF (-2 DET + &&AcordSN) (-1 N + &&AcordSN + &&AcordSP) (0C V) (0 V + P3 + &&AcordSP) (NOT -1*C V + P1) (NOT 1*C V + P1);
 REMOVE P1 IF (-1 DET + &&AcordSN) (0 N + &&AcordSN + &&AcordSP) (1C V) (1 V + P3 + &&AcordSP) (NOT -1*C V + P1) (NOT 1*C V + P1);
