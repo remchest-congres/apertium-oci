@@ -3030,6 +3030,10 @@ SELECT AJ + &&AcordSN IF (-2 DET + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&Acor
 SELECT AJ + &&AcordSN IF (-2/* DET + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
 SELECT AJ + &&AcordSN IF (-2 NUM + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
 
+SELECT AJ + &&AcordSN IF (-2 DET + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (1 Conjco OR CM) (2 AJ + &&AcordSN) ;
+SELECT AJ + &&AcordSN IF (-2/* DET + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (1 Conjco OR CM) (2 AJ + &&AcordSN) ;
+SELECT AJ + &&AcordSN IF (-2 NUM + &&AcordSN) (-1C N + &&AcordSN) (0 AJ + &&AcordSN) (1 Conjco OR CM) (2 AJ + &&AcordSN) ;
+
 SELECT AJ + &&AcordSN IF (-2C N + &&AcordSN) (-1 AJ + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
 SELECT AJ + &&AcordSN IF (-2C N + &&AcordSN) (-1 AJ + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
 SELECT AJ + &&AcordSN IF (-2C N + &&AcordSN) (-1 AJ + &&AcordSN) (0 AJ + &&AcordSN) (NOT 1 ("per")) (NOT 0 PREP OR VBger) ;
