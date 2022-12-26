@@ -2706,6 +2706,11 @@ SELECT PREDET IF (0 PREDET + &&AcordSN) (1 DET + &&AcordSN) (2 N_AJ + &&AcordSN)
 
 # DET
 
+REMOVE SUB:1 DET IF (1 EOS) ;	# per fòrça.
+REMOVE SUB:1 DET IF (1C DET) ;	# en los acès
+REMOVE SUB:1 DET IF (1C V - VBpp) (NOT 1 V + P2 + Sg) ;
+REMOVE SUB:1 DET IF (1C Conjsub OR Conjadv) ;
+
 REMOVE ("d'unes") IF (-1C N_AJ) ;	# patch
 
 REMOVE AJ IF (0 Las) (1 N + FemPl) ;	# las pomas
@@ -2747,7 +2752,6 @@ REMOVE DET IF (0 DetDe) (1 PREDET) (2C DET) ;
 REMOVE DET IF (0 ("pro de")) (1 DET) ;
 REMOVE DET IF (0 DET) (NOT 1 N OR AJ OR Tn OR NP OR NUM OR AV OR PREAV OR Rel OR unknown) (NOT 0 DETdef LINK 1 De) ;
 REMOVE DET + &&AcordSN IF (0 DET) (1 N_AJ OR NP OR Tn) (NOT 1 NUM OR AV OR PREAV OR Rel) (0 DET + &&AcordSN) (NOT 1 N_AJ + &&AcordSN OR NP + &&AcordSN OR Tn + &&AcordSN) ;	# Avèm entrevistat aquesta pendent la Hèsta
-REMOVE SUB:1 DET IF (0/* DET) (1C DET) ;	# en los acès
 SELECT AV IF (0 ("fòrça")) (1 AdvComp) ;
 SELECT PREAV IF (0 ("fòrça")) (1C AJ OR AV) ;
 SELECT PREAV IF (-1 N + &&AcordSN) (0 ("fòrça")) (1C AJ_PP + &&AcordSN) ;
