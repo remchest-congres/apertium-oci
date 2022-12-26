@@ -691,6 +691,19 @@ SELECT AV IF (-2 NUM) (-1 Nommois) (0 DeMatin) ;
 REMOVE AV (0 Conjadv) (-1 CM) (NOT 1 EOS) ;
 REMOVE V (0 ("<lavetz>"i)) (0 AV OR Conjadv) (-1 CM) ;
 
+SELECT N IF (0 ("format")) (1 ("<txt>"i)) ;
+SELECT N IF (0 ("format")) (1 ("<xml>"i)) ;
+SELECT N IF (0 ("format")) (1 ("<html>"i)) ;
+SELECT N IF (0 ("format")) (1 ("<cvs>"i)) ;
+SELECT N IF (0 ("format")) (1 ("<xls>"i)) ;
+SELECT N IF (0 ("format")) (1 ("<xlsx>"i)) ;
+SELECT N IF (0 ("format")) (1 ("<doc>"i)) ;
+SELECT N IF (0 ("format")) (1 ("<docx>"i)) ;
+SELECT N IF (0 ("format")) (1 ("<rtf>"i)) ;
+SELECT N IF (0 ("format")) (1 Acr) ;
+SELECT N IF (0 ("format")) (1 Al) ;
+SELECT N IF (-1 En) (0 ("format")) (1 N) ;
+ 
 SELECT PREP IF (0 ("<de cap>"i)) (1C DET) ;
 SELECT PREP IF (0 ("<de cap>"i)) (1 DET + &&AcordSN) (2 N_AJ + &&AcordSN) ;
 REMOVE PREP IF (0 ("<de cap>"i)) ;
