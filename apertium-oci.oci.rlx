@@ -2747,6 +2747,7 @@ REMOVE DET IF (0 ("<son>"i)) (1 AV) (2C DET) ;	# son ara un contrapoder
 REMOVE DET IF (0 ("<son>"i)) (1C AV OR ("pas")) (2 AV) (3C DET) ;
 REMOVE DET IF (0 ("<son>"i)) (1 AV) (2C AV) (3C DET) ;
 REMOVE V + Pers IF (-1 ("<son>"i)) ;
+SELECT V + Pers IF (0 ("<son>"i) LINK 1 AJ + Pl) (NOT -1* V + Pers) (NOT 1* V + Pers) ;
 
 REMOVE Pro IF (-1C PREP) (0 DET) (NOT 1 VBinf OR VBger OR Pro OR unknown) ;
 
@@ -3379,9 +3380,9 @@ SELECT AV IF (-2C Ser OR Semblar_Pareisser) (-1 AV) (0 ("luènh")) (NOT -3 N_AJ 
 SELECT AJ_PP + &&AcordSP IF (-1C Ser + &&AcordSP) (0 AJ_PP + &&AcordSP) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
 SELECT AJ_PP + &&AcordSP IF (-1C Semblar_Pareisser + &&AcordSP) (0 AJ_PP + &&AcordSP) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) (NOT 0 VBinf) ;
 SELECT AJ_PP + &&AcordSP IF (-1C Devenir + &&AcordSP) (0 AJ_PP + &&AcordSP) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) (NOT 0 VBinf) ;
-SELECT AJ_PP + &&AcordSP IF (-2C Ser + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
-SELECT AJ_PP + &&AcordSP IF (-2C Semblar_Pareisser + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) (NOT 0 VBinf) ;
-SELECT AJ_PP + &&AcordSP IF (-2C Devenir + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) (NOT 0 VBinf) ;
+SELECT AJ_PP + &&AcordSP IF (-2C Ser + &&AcordSP) (-1 AV OR PREAV) (0 AJ_PP + &&AcordSP) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSP IF (-2C Semblar_Pareisser + &&AcordSP) (-1 AV OR PREAV) (0 AJ_PP + &&AcordSP) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) (NOT 0 VBinf) ;
+SELECT AJ_PP + &&AcordSP IF (-2C Devenir + &&AcordSP) (-1 AV OR PREAV) (0 AJ_PP + &&AcordSP) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) (NOT 0 VBinf) ;
 REMOVE AJ IF (-1C V LINK NOT 0 VBpp OR Ser OR Semblar_Pareisser OR Devenir) (0 AV) (NOT 1 N) ;
 REMOVE N IF (-1C V LINK NOT 0 VBpp OR Ser OR Semblar_Pareisser OR Devenir) (0 AV) (1C DET) ;	# ajudar hòrt la lenga
 REMOVE AJ IF (-2C V LINK NOT 0 VBpp OR Ser OR Semblar_Pareisser OR Devenir) (-1C AV OR PREAV OR ("fòrça") OR ("hèra") OR ("plan") OR ("ben")) (0 AV) (NOT 1 N) ;
