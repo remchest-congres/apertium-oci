@@ -977,6 +977,13 @@ REMOVE NP IF (-2 BOS) (-1 ("«")) (0 ("París")) (1 AV) (2C Conjsub) ;
 REMOVE NP IF (-2 BOS) (-1 ("«")) (0 ("París")) (1 AV) (2 AV) (3C Conjsub) ;
 SELECT NP IF (-2 BOS) (-1 ("«")) (0 ("París")) ;
 
+SELECT Al IF (-1 ("grop")) (0 ("Nadau")) ;
+SELECT Al IF (-1 DETdef + MascPl) (0 ("Nadau")) ;
+SELECT Al IF (-2 DETdef + MascPl) (-1 ("«")) (0 ("Nadau")) ;
+REMOVE NP IF (-1 DET + MascSg OR AJ + MascSg) (0 ("Nadau")) ;
+REMOVE NP IF (0 ("Nadau")) (1 AJ + MascSg) ;
+REMOVE NP IF (0 ("Nadau")) ;
+
 SELECT VBger (-3 De) (-2 DETdef + &&AcordSN) (-1 N + &&AcordSN) (0 ("<estant>"i)) ;
 SELECT VBger (-2 De) (-1 NP + &&AcordSN) (0 ("<estant>"i)) ;
 SELECT VBger (-3 De) (-2 DETdef + &&AcordSN) (-1 NP + &&AcordSN) (0 ("<estant>"i)) ;
