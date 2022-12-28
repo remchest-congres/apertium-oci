@@ -680,6 +680,8 @@ SELECT Ser + Pl IF (-2 DET + Pl + &&AcordSN) (-1 N_AJ + Pl + &&AcordSN) (0 ("<so
 SELECT Ser + Pl IF (-2 N_AJ + Pl + &&AcordSN) (-1 N_AJ + Pl + &&AcordSN) (0 ("<son>"i)) (1 N_AJ + Pl + &&AcordSN) ;
 SELECT Ser + Pl IF (-2 ("<de>"i)) (-1 N + Pl + &&AcordSN) (0 ("<son>"i)) (1 N_AJ + Pl + &&AcordSN) ;
 REMOVE Ser + Pl IF (0 ("son") + Sg) (1C N_AJ + Sg_strict) ;
+REMOVE Ser + Pl IF (0 ("son") + Sg) (1C NUM) (2C N_AJ + Sg_strict) ;	# son 40 anniversaire
+SELECT DET + &&AcordSN IF (0 DETpos + &&AcordSN + Pl) (1 NUM) (2 N_AJ + &&AcordSN) ;	# sas doas lenguas
 
 LIST DeMatin = "<de matin>"i "<de ser>" i"<de sera>"i "<de nuèch>"i "<de nuòch>"i "<de jorn>"i "<de dia>"i ;
 SELECT N IF (-1 Jorns) (0 ("<matin>"i)) ;
