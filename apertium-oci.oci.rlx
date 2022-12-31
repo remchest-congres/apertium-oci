@@ -426,6 +426,9 @@ SELECT Acr IF (-1 PREP) (0 ("<A>")) (1 PREP + MinIni) (2 ("<B>")) ;
 REMOVE N + (sp) IF (0 ("\\<[eiou]\\>"r)) ;
 REMOVE N + (sp) IF (0 ("\\<[EIOU]\\>"r)) ;
 
+SELECT Acr IF (0 ("Su")) (0 (META:/-/r)) ;
+REMOVE Acr IF (0 ("Su")) ;
+
 REMOVE DET IF (0 ("<tant>"));
 
 REMOVE V IF (0 ("<minuta>"i)) (-1 DET + FemSg or AJ + FemSg);
