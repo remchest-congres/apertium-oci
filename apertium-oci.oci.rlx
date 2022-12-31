@@ -3235,6 +3235,8 @@ REMOVE N IF (NOT -1 DET) (0 ("<risca>"i)) (1 De) (2 Pro OR VBinf) ;
 REMOVE N_AJ IF (-1 ("daissar") OR ("deishar") OR ("leishar")) (0 VBinf) ;
 REMOVE N_AJ IF (-2 ("daissar") OR ("deishar") OR ("leishar")) (-1 AV) (0 VBinf) ;
 
+REMOVE N IF (0 ("<dita>"i)) (1 ("«")) ;
+
 REMOVE V IF (0 ("quadre")) (1 De) (1/* DET) ;
 REMOVE V IF (0 ("quadre")) (1 De) (2 DET) ;
 
