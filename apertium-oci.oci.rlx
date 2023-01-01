@@ -1023,7 +1023,7 @@ REMOVE V IF (0 ("ac virar")) ;
 REMOVE SUB:1 V IF (0/* ("ac virar")) ;
 
 SELECT N IF (0 ("radio")) (0 (META:/-/r)) (1 ("television")) ;
-SELECT Pref IF (0 Pref) (0 (META:/-/r)) (1 N OR A OR Verb) ;
+SELECT Pref IF (0 Pref) (0 (META:/-/r)) (1 N OR AJ OR Verb) ;
 REMOVE Pref ;
 SELECT ("clau") IF (-1 N) (-1 (META:/-/r) LINK NOT 0 (META:/\ /r)) (0 ("clau")) ;
 SELECT N + &&AcordSN (-1C N) (-1 N + &&AcordSN) (-1 (META:/-/r) LINK NOT 0 (META:/\ /r)) (0 N + &&AcordSN) ;   # comédien-chanteur
