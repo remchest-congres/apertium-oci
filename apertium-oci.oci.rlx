@@ -10,6 +10,7 @@
 #	- e: enon o cnjcoo
 #	- cap: n.m, n.mf, det, prn, adv, pr, vblex (!)
 #	- mai: n, cnjcoo, adv
+#	- causèt et sim: causir, causar
 
 DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>" "<:>";
 SOFT-DELIMITERS = "<,>" "<;>";
@@ -310,6 +311,8 @@ LIST Parir = "parir" ;
 LIST Parer = "pàrer" ;
 LIST Gausir = "gausir" ;
 LIST Gausar = "gausar" ;
+LIST Causir = "causir" ;
+LIST Causar = "causar" ;
 LIST Estar = "estar" ;
 LIST Estavanir = "estavanir" ;
 LIST Serar = "serar" ;
@@ -1615,6 +1618,17 @@ REMOVE Podar IF (0 Poder) ;
 
 # gausir e gausar
 REMOVE Gausir IF (0 Gausar) ;
+
+# causir e causar
+LIST Problemas = "problèma" "trebol" "troble" "degalh" "domau" "situacion" ;
+REMOVE Causar IF (0 Causir) (1 De) (2 VBinf) ;	# causèt de far
+REMOVE Causar IF (0 Causir) (1 De) (2C Pro) ;	# causèt de li far
+REMOVE Causir IF (0 Causar) (1 DET + &&AcordSN) (2 Problemas + &&AcordSN) ;	# causèt un problèma
+REMOVE Causir IF (0 Causar) (1 De) (2 Problemas + Pl) ;	# lengadocian	# causèt de problèmas
+REMOVE Causir IF (0 Causar) (1 Problemas + Pl) ;	# gascon	# causèt problèmas
+REMOVE Causir IF (0 Causar) (1 DET + &&AcordSN) (2 AJ + &&AcordSN) (3 Problemas + &&AcordSN) ;
+REMOVE Causir IF (0 Causar) (1 De) (2 AJ + &&AcordSN) (3 Problemas + &&AcordSN + Pl) ;	# lengadocian
+REMOVE Causir IF (0 Causar) (1 AJ + &&AcordSN) (2 Problemas + &&AcordSN + Pl) ;	# gascon
 
 # anar e valer (p.ex. "vau")
 REMOVE ("valer") IF (0 ("anar")) (1 VBinf) ;
