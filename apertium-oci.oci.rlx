@@ -1467,6 +1467,10 @@ REMOVE Itg OR Excl OR IJ IF (-1 BOS) (0 ("qué")) (1 Ser OR Venir OR TornarVenir
 REMOVE Itg OR Excl OR IJ IF (-2 BOS) (-1 ("«")) (0 ("qué")) (1 Ser OR Venir OR TornarVenir OR Pareisser OR Apareisser OR VerbMoviment_NonTornar) (2 De) (3 DET + Pl OR PREDET + Pl OR N_AJ + Pl) ;
 REMOVE Itg OR Excl OR IJ IF (-2 BOS) (-1 PREP) (0 ("qué")) (1 Ser OR Venir OR TornarVenir OR Pareisser OR Apareisser OR VerbMoviment_NonTornar) (2 De) (3 DET + Pl OR PREDET + Pl OR N_AJ + Pl) ;
 REMOVE Itg OR Excl OR IJ IF (-2 BOS) (-1 AV) (0 ("qué")) (1 Ser OR Venir OR TornarVenir OR Pareisser OR Apareisser OR VerbMoviment_NonTornar) (2 De) (3 DET + Pl OR PREDET + Pl OR N_AJ + Pl) ;
+REMOVE Itg OR Excl OR Rel IF (-1 BOS) (0 ("que")) (NOT 1* ("?") OR ("!")) ;
+REMOVE Itg OR Excl OR Rel IF (-2 BOS) (-1 ("«")) (0 ("que")) (NOT 1* ("?") OR ("!")) ;
+#REMOVE Itg OR Excl OR Rel IF (-2 BOS) (-1 PREP) (0 ("que")) (NOT 1* ("?") OR ("!")) ;
+#REMOVE Itg OR Excl OR Rel IF (-3 BOS) (-2 ("«")) (-1 PREP) (0 ("que")) (NOT 1* ("?") OR ("!")) ;
 SELECT Itg OR Excl OR IJ IF (-1 BOS) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("quant")) ;	# Qui s'adresse
 SELECT Itg OR Excl OR IJ IF (-2 BOS) (-1 ("«")) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("quant")) ;	# Qui s'adresse
 REMOVE Itg OR Excl OR IJ IF (-2 BOS) (-1 Artcontrsg OR Artcontrpl) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("quant")) ;	# A qui s'adresse
