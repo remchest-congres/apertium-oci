@@ -1471,6 +1471,7 @@ REMOVE Itg OR Excl OR Rel IF (-1 BOS) (0 ("que")) (NOT 1* ("?") OR ("!")) ;
 REMOVE Itg OR Excl OR Rel IF (-2 BOS) (-1 ("«")) (0 ("que")) (NOT 1* ("?") OR ("!")) ;
 #REMOVE Itg OR Excl OR Rel IF (-2 BOS) (-1 PREP) (0 ("que")) (NOT 1* ("?") OR ("!")) ;
 #REMOVE Itg OR Excl OR Rel IF (-3 BOS) (-2 ("«")) (-1 PREP) (0 ("que")) (NOT 1* ("?") OR ("!")) ;
+SELECT Conjsub IF (NOT -3 Demandar) (NOT -2 Demandar) (NOT -2 BOS OR ("«")) (-1C PREP) (0 Qui) (NOT 1* ("?") OR ("!")) ;
 SELECT Itg OR Excl OR IJ IF (-1 BOS) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("quant")) ;	# Qui s'adresse
 SELECT Itg OR Excl OR IJ IF (-2 BOS) (-1 ("«")) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("quant")) ;	# Qui s'adresse
 REMOVE Itg OR Excl OR IJ IF (-2 BOS) (-1 Artcontrsg OR Artcontrpl) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("quant")) ;	# A qui s'adresse
