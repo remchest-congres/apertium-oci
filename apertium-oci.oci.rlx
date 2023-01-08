@@ -37,6 +37,7 @@ LIST N = n ;
 LIST NP = np ;
 LIST AJ = adj ;
 LIST N_AJ = n adj ;
+LIST N_NP_AJ = n np adj ;
 LIST N_AJ_PP = n adj pp ;
 LIST AJ_PP = adj pp ;
 LIST DET = det ;
@@ -2432,7 +2433,9 @@ SELECT Top IF (-1 De) (0 Top) (1 ("a") OR ("entà") OR ("tà") OR ("enta") OR ("
 SELECT Top IF (-3 De) (-2 Top OR unknownMajIni) (-1 ("a") OR ("entà") OR ("tà") OR ("enta") OR ("ta") OR ("ende") OR ("fins a") OR ("dinc a") OR ("dinca") OR ("entrò") OR ("entrò a") OR ("dusca") OR ("duscas") OR ("jusca") OR ("juscas") OR ("denquia") OR ("enquia")) (0 Top) ;	# de Auloron a Pau
 
 LIST N_Ini = "cabana" ;
+LIST NP_Ini = "Jean" ;
 REMOVE NP IF (-1 BOS) (0 N) (0 N_Ini) ;
+SELECT NP IF (-1 BOS) (0 NP_Ini) ;
 SELECT NP IF (-1 BOS) (0 N) (1 NP OR unknownMajIni) ;
 SELECT NP IF (-1 BOS) (0 N) (1 De) (2 NP OR unknownMajIni) ;
 SELECT NP IF (-1 BOS) (0 N) (1 Lpar) (2 NP OR unknownMajIni) ;
@@ -3507,24 +3510,62 @@ REMOVE AJ IF (-1C V LINK NOT 0 VBpp OR Ser OR Semblar_Pareisser OR Devenir) (0 A
 REMOVE N IF (-1C V LINK NOT 0 VBpp OR Ser OR Semblar_Pareisser OR Devenir) (0 AV) (1C DET) ;	# ajudar hòrt la lenga
 REMOVE AJ IF (-2C V LINK NOT 0 VBpp OR Ser OR Semblar_Pareisser OR Devenir) (-1C AV OR PREAV OR ("fòrça") OR ("hèra") OR ("plan") OR ("ben")) (0 AV) (NOT 1 N) ;
 
-SELECT AJ_PP + &&AcordSN IF (-2C N_AJ + &&AcordSN) (-1C Ser + &&AcordSP) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;	# la lenga es naturau
-SELECT AJ_PP + &&AcordSN IF (-3C N_AJ + &&AcordSN) (-2 AV OR Enon) (-1C Ser + &&AcordSP) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;	# la lenga que es naturau
-SELECT AJ_PP + &&AcordSN IF (-3C N_AJ + &&AcordSN) (-2C Ser + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;	# la lenga es pas naturau
-SELECT AJ_PP + &&AcordSN IF (-4C N_AJ + &&AcordSN) (-3 AV OR Enon) (-2C Ser + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;	# la lenga es pas naturau
-SELECT AJ_PP + &&AcordSN IF (-4C N_AJ + &&AcordSN) (-3C Ser + &&AcordSP) (-2 AV) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;	# la lenga n'es pas tan naturau
-SELECT AJ_PP + &&AcordSN IF (-5C N_AJ + &&AcordSN) (-4 AV OR Enon) (-3C Ser + &&AcordSP) (-2 AV) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;	# la lenga n'es pas tan naturau
-SELECT AJ_PP + &&AcordSN IF (-2C N_AJ + &&AcordSN) (-1C Semblar_Pareisser + &&AcordSP) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
-SELECT AJ_PP + &&AcordSN IF (-3C N_AJ + &&AcordSN) (-2 AV OR Enon) (-1C Semblar_Pareisser + &&AcordSP) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
-SELECT AJ_PP + &&AcordSN IF (-3C N_AJ + &&AcordSN) (-2C Semblar_Pareisser + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
-SELECT AJ_PP + &&AcordSN IF (-4C N_AJ + &&AcordSN) (-3 AV OR Enon) (-2C Semblar_Pareisser + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
-SELECT AJ_PP + &&AcordSN IF (-4C N_AJ + &&AcordSN) (-3C Semblar_Pareisser + &&AcordSP) (-2 AV) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
-SELECT AJ_PP + &&AcordSN IF (-5C N_AJ + &&AcordSN) (-4 AV OR Enon) (-3C Semblar_Pareisser + &&AcordSP) (-2 AV) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
-SELECT AJ_PP + &&AcordSN IF (-2C N_AJ + &&AcordSN) (-1C Devenir + &&AcordSP) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
-SELECT AJ_PP + &&AcordSN IF (-3C N_AJ + &&AcordSN) (-2 AV OR Enon) (-1C Devenir + &&AcordSP) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
-SELECT AJ_PP + &&AcordSN IF (-3C N_AJ + &&AcordSN) (-2C Devenir + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
-SELECT AJ_PP + &&AcordSN IF (-4C N_AJ + &&AcordSN) (-3 AV OR Enon) (-2C Devenir + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
-SELECT AJ_PP + &&AcordSN IF (-4C N_AJ + &&AcordSN) (-3C Devenir + &&AcordSP) (-2 AV) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
-SELECT AJ_PP + &&AcordSN IF (-5C N_AJ + &&AcordSN) (-4 AV OR Enon) (-3C Devenir + &&AcordSP) (-2 AV) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-2C N_NP_AJ + &&AcordSN) (-1C Ser + &&AcordSP) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;	# la lenga ei naturau
+SELECT AJ_PP + &&AcordSN IF (-3C N_NP_AJ + &&AcordSN) (-2 AV OR Enon) (-1C Ser + &&AcordSP) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;	# la lenga qu'ei naturau
+SELECT AJ_PP + &&AcordSN IF (-3C N_NP_AJ + &&AcordSN) (-2C Ser + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;	# la lenga ei pas naturau
+SELECT AJ_PP + &&AcordSN IF (-4C N_NP_AJ + &&AcordSN) (-3 AV OR Enon) (-2C Ser + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;	# la lenga ei pas naturau
+SELECT AJ_PP + &&AcordSN IF (-4C N_NP_AJ + &&AcordSN) (-3C Ser + &&AcordSP) (-2 AV) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;	# la lenga n'ei pas tan naturau
+SELECT AJ_PP + &&AcordSN IF (-5C N_NP_AJ + &&AcordSN) (-4 AV OR Enon) (-3C Ser + &&AcordSP) (-2 AV) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;	# la lenga n'ei pas tan naturau
+SELECT AJ_PP + &&AcordSN IF (-2C N_NP_AJ + &&AcordSN) (-1C Semblar_Pareisser + &&AcordSP) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-3C N_NP_AJ + &&AcordSN) (-2 AV OR Enon) (-1C Semblar_Pareisser + &&AcordSP) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-3C N_NP_AJ + &&AcordSN) (-2C Semblar_Pareisser + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-4C N_NP_AJ + &&AcordSN) (-3 AV OR Enon) (-2C Semblar_Pareisser + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-4C N_NP_AJ + &&AcordSN) (-3C Semblar_Pareisser + &&AcordSP) (-2 AV) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-5C N_NP_AJ + &&AcordSN) (-4 AV OR Enon) (-3C Semblar_Pareisser + &&AcordSP) (-2 AV) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-2C N_NP_AJ + &&AcordSN) (-1C Devenir + &&AcordSP) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-3C N_NP_AJ + &&AcordSN) (-2 AV OR Enon) (-1C Devenir + &&AcordSP) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-3C N_NP_AJ + &&AcordSN) (-2C Devenir + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-4C N_NP_AJ + &&AcordSN) (-3 AV OR Enon) (-2C Devenir + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-4C N_NP_AJ + &&AcordSN) (-3C Devenir + &&AcordSP) (-2 AV) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-5C N_NP_AJ + &&AcordSN) (-4 AV OR Enon) (-3C Devenir + &&AcordSP) (-2 AV) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+
+SELECT AJ_PP + &&AcordSN IF (-3C Ant + &&AcordSN) (-2 Cog OR unknownMajIni) (-1C Ser + &&AcordSP) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;	# Jean Giono ei provençau
+SELECT AJ_PP + &&AcordSN IF (-4C Ant + &&AcordSN) (-3 Cog OR unknownMajIni) (-2 AV OR Enon) (-1C Ser + &&AcordSP) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;	# Jean Giono qu'ei provençau
+SELECT AJ_PP + &&AcordSN IF (-4C Ant + &&AcordSN) (-3 Cog OR unknownMajIni) (-2C Ser + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;	# Jean Giono ei pas provençau
+SELECT AJ_PP + &&AcordSN IF (-5C Ant + &&AcordSN) (-4 Cog OR unknownMajIni) (-3 AV OR Enon) (-2C Ser + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;	# Jean Giono ei pas provençau
+SELECT AJ_PP + &&AcordSN IF (-5C Ant + &&AcordSN) (-4 Cog OR unknownMajIni) (-3C Ser + &&AcordSP) (-2 AV) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;	# Jean Giono n'ei pas tan provençau
+SELECT AJ_PP + &&AcordSN IF (-6C Ant + &&AcordSN) (-5 Cog OR unknownMajIni) (-4 AV OR Enon) (-3C Ser + &&AcordSP) (-2 AV) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;	# Jean Giono n'ei pas tan provençau
+SELECT AJ_PP + &&AcordSN IF (-3C Ant + &&AcordSN) (-2 Cog OR unknownMajIni) (-1C Semblar_Pareisser + &&AcordSP) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-4C Ant + &&AcordSN) (-3 Cog OR unknownMajIni) (-2 AV OR Enon) (-1C Semblar_Pareisser + &&AcordSP) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-4C Ant + &&AcordSN) (-3 Cog OR unknownMajIni) (-2C Semblar_Pareisser + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-5C Ant + &&AcordSN) (-4 Cog OR unknownMajIni) (-3 AV OR Enon) (-2C Semblar_Pareisser + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-5C Ant + &&AcordSN) (-4 Cog OR unknownMajIni) (-3C Semblar_Pareisser + &&AcordSP) (-2 AV) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-6C Ant + &&AcordSN) (-5 Cog OR unknownMajIni) (-4 AV OR Enon) (-3C Semblar_Pareisser + &&AcordSP) (-2 AV) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-3C Ant + &&AcordSN) (-2 Cog OR unknownMajIni) (-1C Devenir + &&AcordSP) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-4C Ant + &&AcordSN) (-3 Cog OR unknownMajIni) (-2 AV OR Enon) (-1C Devenir + &&AcordSP) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-4C Ant + &&AcordSN) (-3 Cog OR unknownMajIni) (-2C Devenir + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-5C Ant + &&AcordSN) (-4 Cog OR unknownMajIni) (-3 AV OR Enon) (-2C Devenir + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-5C Ant + &&AcordSN) (-4 Cog OR unknownMajIni) (-3C Devenir + &&AcordSP) (-2 AV) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-6C Ant + &&AcordSN) (-5 Cog OR unknownMajIni) (-4 AV OR Enon) (-3C Devenir + &&AcordSP) (-2 AV) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+
+SELECT AJ_PP + &&AcordSN IF (-4C Ant + &&AcordSN) (-3 Cog OR unknownMajIni) (-2 Cog OR unknownMajIni) (-1C Ser + &&AcordSP) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;	# Jean Giono-Fernandez ei provençau
+SELECT AJ_PP + &&AcordSN IF (-5C Ant + &&AcordSN) (-4 Cog OR unknownMajIni) (-3 Cog OR unknownMajIni) (-2 AV OR Enon) (-1C Ser + &&AcordSP) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;	# Jean Giono-Fernandez qu'ei provençau
+SELECT AJ_PP + &&AcordSN IF (-5C Ant + &&AcordSN) (-4 Cog OR unknownMajIni) (-3 Cog OR unknownMajIni) (-2C Ser + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;	# Jean Giono-Fernandez ei pas provençau
+SELECT AJ_PP + &&AcordSN IF (-6C Ant + &&AcordSN) (-5 Cog OR unknownMajIni) (-4 Cog OR unknownMajIni) (-3 AV OR Enon) (-2C Ser + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;	# Jean Giono-Fernandez ei pas provençau
+SELECT AJ_PP + &&AcordSN IF (-6C Ant + &&AcordSN) (-5 Cog OR unknownMajIni) (-4 Cog OR unknownMajIni) (-3C Ser + &&AcordSP) (-2 AV) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;	# Jean Giono-Fernandez n'ei pas tan provençau
+SELECT AJ_PP + &&AcordSN IF (-7C Ant + &&AcordSN) (-6 Cog OR unknownMajIni) (-5 Cog OR unknownMajIni) (-4 AV OR Enon) (-3C Ser + &&AcordSP) (-2 AV) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;	# Jean Giono-Fernandez n'ei pas tan provençau
+SELECT AJ_PP + &&AcordSN IF (-4C Ant + &&AcordSN) (-3 Cog OR unknownMajIni) (-2 Cog OR unknownMajIni) (-1C Semblar_Pareisser + &&AcordSP) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-5C Ant + &&AcordSN) (-4 Cog OR unknownMajIni) (-3 Cog OR unknownMajIni) (-2 AV OR Enon) (-1C Semblar_Pareisser + &&AcordSP) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-5C Ant + &&AcordSN) (-4 Cog OR unknownMajIni) (-3 Cog OR unknownMajIni) (-2C Semblar_Pareisser + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-6C Ant + &&AcordSN) (-5 Cog OR unknownMajIni) (-4 Cog OR unknownMajIni) (-3 AV OR Enon) (-2C Semblar_Pareisser + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-6C Ant + &&AcordSN) (-5 Cog OR unknownMajIni) (-4 Cog OR unknownMajIni) (-3C Semblar_Pareisser + &&AcordSP) (-2 AV) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-7C Ant + &&AcordSN) (-6 Cog OR unknownMajIni) (-5 Cog OR unknownMajIni) (-4 AV OR Enon) (-3C Semblar_Pareisser + &&AcordSP) (-2 AV) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-4C Ant + &&AcordSN) (-3 Cog OR unknownMajIni) (-2 Cog OR unknownMajIni) (-1C Devenir + &&AcordSP) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-5C Ant + &&AcordSN) (-4 Cog OR unknownMajIni) (-3 Cog OR unknownMajIni) (-2 AV OR Enon) (-1C Devenir + &&AcordSP) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-5C Ant + &&AcordSN) (-4 Cog OR unknownMajIni) (-3 Cog OR unknownMajIni) (-2C Devenir + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-6C Ant + &&AcordSN) (-5 Cog OR unknownMajIni) (-4 Cog OR unknownMajIni) (-3 AV OR Enon) (-2C Devenir + &&AcordSP) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-6C Ant + &&AcordSN) (-5 Cog OR unknownMajIni) (-4 Cog OR unknownMajIni) (-3C Devenir + &&AcordSP) (-2 AV) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
+SELECT AJ_PP + &&AcordSN IF (-7C Ant + &&AcordSN) (-6 Cog OR unknownMajIni) (-5 Cog OR unknownMajIni) (-4 AV OR Enon) (-3C Devenir + &&AcordSP) (-2 AV) (-1 AV) (0 AJ_PP + &&AcordSP + &&AcordSN) (NOT 1 AJ_PP) (NOT 1 DET) (NOT 0 DET) ;
 
 # PR / AV
 
@@ -4086,6 +4127,18 @@ REMOVE ("còrse") + N IF (0 ("còrse") + N) (0 ("còrs") + N) (1 De) (2 Gentilic
 REMOVE ("còrse") + N IF (0 ("còrse") + N) (0 ("còrs") + N) (1 De) (2 DET) (3 Gentilici + MajIni) ;
 REMOVE ("còrs") + N ;
 
+SELECT MascSg IF (-1 Artcontrsg) (0C N_AJ_PP) ;	# deu provençau
+SELECT MascPl IF (-1 Artcontrpl) (0C N_AJ_PP) ;	# deus provençaus
+SELECT N + &&AcordSN IF (-1/* DET + &&AcordSN) (0C N_AJ_PP) (1 Ant + &&AcordSN) ;	# l'anticlericau Jean
+SELECT N_AJ_PP + &&AcordSN IF (-2 Ant + &&AcordSN) (-1 CM) (0C N_AJ_PP) (NOT 1 Masc OR Fem) ;	# Jean, provençau
+SELECT N_AJ_PP + &&AcordSN IF (-3 Ant + &&AcordSN) (-2 Cog OR unknownMajIni) (-1 CM) (0C N_AJ_PP) (NOT 1 Masc OR Fem) ;	# Jean Giono, provençau
+SELECT N_AJ_PP + &&AcordSN IF (-4 Ant + &&AcordSN) (-3 Cog OR unknownMajIni) (-2 Cog OR unknownMajIni) (-1 CM) (0C N_AJ_PP) (NOT 1 Masc OR Fem) ;	# Jean Giono-Fernandez, provençau
+REMOVE Fem_strict IF (-2C Ant + MascSg) (-1 CM) (0C N_AJ_PP) (NOT 1 Masc OR Fem) ;	# Jean, provençau
+REMOVE Fem_strict IF (-3C Ant + MascSg) (-2 Cog OR unknownMajIni) (-1 CM) (0C N_AJ_PP) (NOT 1 Masc OR Fem) ;	# Jean Giono, provençau
+REMOVE Fem_strict IF (-4C Ant + MascSg) (-3 Cog OR unknownMajIni) (-2 Cog OR unknownMajIni) (-1 CM) (0C N_AJ_PP) (NOT 1 Masc OR Fem) ;	# Jean Giono-Fernandez, provençau
+REMOVE Masc_strict IF (-2C Ant + FemSg) (-1 CM) (0C N_AJ_PP) (NOT 1 Masc OR Fem) ;	# Jeanne, provençau
+REMOVE Masc_strict IF (-3C Ant + FemSg) (-2 Cog OR unknownMajIni) (-1 CM) (0C N_AJ_PP) (NOT 1 Masc OR Fem) ;	# Jeanne Giono, provençau
+REMOVE Masc_strict IF (-4C Ant + FemSg) (-3 Cog OR unknownMajIni) (-2 Cog OR unknownMajIni) (-1 CM) (0C N_AJ_PP) (NOT 1 Masc OR Fem) ;	# Jeanne Giono-Fernandez, provençau
 
 #de completar : desambiguizacion present imperfait
 #Ne fonctionne pas SELECT PRI IF (0 PRI) (0 PII) (NOT 1* PII BARRIER FinFr) (NOT 1* IFI BARRIER FinFr) (NOT -1* PII BARRIER FinFr) (NOT -1* IFI BARRIER FinFr) ;
