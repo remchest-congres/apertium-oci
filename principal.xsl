@@ -114,32 +114,16 @@
 
 
 
-<xsl:template match="e[@lm]"> <!-- with 'lm' atribute-->
-<xsl:param name="parametro"/>
-      <xsl:value-of select="string('                        ')"/>
-      <e lm='{@lm}'>
-         <xsl:apply-templates>
-           <xsl:with-param name="parametro" select="$parametro"/>
-         </xsl:apply-templates>
-      </e>   <xsl:value-of select="string('&#xa;')"/> <!-- \n -->
-</xsl:template>
-<xsl:template match="e[@r]">  <!-- with 'r' atribute-->
-<xsl:param name="parametro"/>
-      <xsl:value-of select="string('                        ')"/>
-      <e r='{@r}'>
-         <xsl:apply-templates>
-           <xsl:with-param name="parametro" select="$parametro"/>
-         </xsl:apply-templates>
-      </e>   <xsl:value-of select="string('&#xa;')"/> <!-- \n -->
-</xsl:template>
-<xsl:template match="e[not(@*)]">
-<xsl:param name="parametro"/>
-      <xsl:value-of select="string('                        ')"/>
-      <e>
-        <xsl:apply-templates>
-           <xsl:with-param name="parametro" select="$parametro"/>
-        </xsl:apply-templates>
-      </e>   <xsl:value-of select="string('&#xa;')"/> <!-- \n -->
+<xsl:template match="e">
+  <xsl:param name="parametro"/>
+  <xsl:value-of select="string('                        ')"/>
+  <xsl:copy>
+    <xsl:copy-of select="@lm|@r|@alt"/>
+    <xsl:apply-templates>
+      <xsl:with-param name="parametro" select="$parametro"/>
+    </xsl:apply-templates>
+  </xsl:copy>
+  <xsl:value-of select="string('&#xa;')"/> <!-- \n -->
 </xsl:template>
 
 
