@@ -3333,6 +3333,9 @@ SELECT N IF (-1 DETdef) (0 ("centre")) (1 MajIni OR unknownMajIni) ;
 REMOVE V IF (-1 ("«")) (0 ("<Viatge>")) ;
 REMOVE V IF (0 ("paire")) (1 unknown) (NOT -1 Pro OR Enon) ;
 
+SELECT N IF (0 ("<meses>"i)) (1 ("e")) (2 ("<meses>"i)) ;
+SELECT N IF (-2 ("<meses>"i)) (-1 ("e")) (0 ("<meses>"i)) ;
+
 REMOVE N IF (NOT -1 DET) (0 ("<risca>"i)) (1 De) (2 Pro OR VBinf) ;
 
 REMOVE N_AJ IF (-1 ("daissar") OR ("deishar") OR ("leishar")) (0 VBinf) ;
