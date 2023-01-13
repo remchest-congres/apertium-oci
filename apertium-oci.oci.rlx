@@ -328,7 +328,7 @@ LIST Esquerra = ("esquèrra") ("quèrra") ("gaucha") ;
 LIST FinFr = "<.>" "<!>" "<?>" "<...>" "<¶>" "<:>";
 
 #List Artcontrpl = "<als>" "<aus>" "<aths>" "<as>" "<dels>" "<deus>" "<dals>" "<deths>" "<des>" "<suls>" "<suus>" "<taus>" "<taths>" "<entaus>" "<entaths>" "<entàs>" "<pels>" "<peus>" "<peths>" "<preus>" "<vèls>" "<jols>" "<enquiaths>" "<ens>" "<enes>" "<endeus>" "<dambeus>" ;
-List Artcontrpl = "<als>"i "<aus>"i "<aths>"i "<dels>"i "<deus>"i "<dals>"i "<deths>"i "<des>"i "<suls>"i "<suus>"i "<taus>"i "<taths>"i "<entaus>"i "<entaths>"i "<entàs>"i "<pels>"i "<peus>"i "<peths>"i "<preus>"i "<vèls>"i "<jols>"i "<enquiaths>"i "<ens>"i "<enes>"i "<endeus>"i "<dambeus>"i ;
+List Artcontrpl = "<als>"i "<aus>"i "<aths>"i "<dels>"i "<deus>"i "<dals>"i "<deths>"i "<des>"i "<suls>"i "<suus>"i "<taus>"i "<taths>"i "<entaus>"i "<entaths>"i "<entàs>"i "<pels>"i "<peus>"i "<peths>"i "<preus>"i "<pes>"i "<vèls>"i "<jols>"i "<enquiaths>"i "<ens>"i "<enes>"i "<endeus>"i "<dambeus>"i ;
 #List Artcontrsg = "<al>" "<au>" "<ath>" "<del>" "<deu>" "<dal>" "<deth>" "<sul>" "<suu>" "<tau>" "<tath>" "<entau>" "<entath>" "<pel>" "<peu>" "<peth>" "<preu>" "<vèl>" "<jol>" "<enquiath>" "<en>" "<ene>" "<endeu>" "<dambeu>" ;
 List Artcontrsg = "<al>"i "<au>"i "<ath>"i "<del>"i "<deu>"i "<dal>"i "<deth>"i "<sul>"i "<suu>"i "<tau>"i "<tath>"i "<entau>"i "<entath>"i "<pel>"i "<peu>"i "<peth>"i "<preu>"i "<vèl>"i "<jol>"i "<enquiath>"i "<ene>"i "<endeu>"i "<dambeu>"i ;
 LIST Jorns = "diluns" "dimars" "dimècres" "dimèrcs" "dijòus" "dijaus" "divés" "divendres" "dissabte" "dimenge" ;
@@ -1544,6 +1544,8 @@ SELECT AJ IF (-1C Ser) (0 ("present")) ;
 SELECT AJ IF (-2C Ser) (-1 AV) (0 ("present")) ;
 
 REMOVE N IF (NOT -1 DET + Masc) (0 ("nos")) (1 Vconj OR VBinf OR VBger OR unknown) ;
+
+REMOVE V + P2 + Sg IF (-1 Artcontrpl) ;
 
 #REMOVE Tn IF (NOT -1 Tn) (0 ("vos")) (1 Vconj) ;
 REMOVE Tn IF (NOT -1 PREP) (0 ("nos")) (1C V) (NOT 1 V + P1 + Pl) ;
