@@ -2531,6 +2531,7 @@ SELECT PREP IF (-3 N OR Verb) (-2 AV) (-1 VBpp) (0 ("<a lor>"i)) (1 N_AJ + FemSg
 REMOVE AV (0 ("<au darrèr>"i)) (1C N_AJ + MascSg) ;
 REMOVE AV (0 ("<a lor>"i)) (1C N_AJ + Sg) ;
 
+SELECT Haver IF (0 ("<a>"i)) (0 ("<punta>"i)) (2 De) ;
 SELECT PREP IF (-1C Verb) (0 ("<a>"i)) (1 De) ;	# consacrat a de reviradas
 SELECT Haver IF (0 ("<a>"i)) (1 VBpp) ;	# a conegut
 SELECT Haver IF (0 ("<a>"i)) (1 ("pas")) (2 VBpp) ;	# a pas conegut
