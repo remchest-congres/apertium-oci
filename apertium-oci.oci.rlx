@@ -1109,7 +1109,6 @@ SELECT E_enon IF (-1 ("si") LINK -1 AV - Itg - Excl LINK -1 Demandar) (1 Pro OR 
 SELECT E_enon IF (-2 ("si") LINK -1 AV - Itg - Excl LINK -1 Demandar) (-1 AV) (1 Pro OR V OR unknownMinIni) ;
 SELECT E_enon IF (-1* ("si") BARRIER V LINK NOT 0 VBpp) (-1* ("si") LINK -1 AV - Itg - Excl LINK -1 Demandar) (1C Pro OR V OR unknownMinIni) ;
 
-
 LIST PerMai = "per mai" "per mei" "per tan" "per tant" ;
 SELECT AV IF (0 PerMai) (1 AJ + &&AcordSP) (2 Que OR Qui) (3* Ser + Vconj_subj + P3 + &&AcordSP OR Semblar_Pareisser + Vconj_subj + P3 + &&AcordSP OR Haver + Vconj_subj + P3 + &&AcordSP OR Vmod + Vconj_subj + P3 + &&AcordSP BARRIER Verb) ;	# per mai aimables que sián
 REMOVE AV IF (0 PerMai) ;
@@ -1478,20 +1477,20 @@ REMOVE Itg OR Excl OR Rel IF (-2 BOS) (-1 ("«")) (0 ("que")) (NOT 1* ("?") OR (
 #REMOVE Itg OR Excl OR Rel IF (-2 BOS) (-1 PREP) (0 ("que")) (NOT 1* ("?") OR ("!")) ;
 #REMOVE Itg OR Excl OR Rel IF (-3 BOS) (-2 ("«")) (-1 PREP) (0 ("que")) (NOT 1* ("?") OR ("!")) ;
 SELECT Conjsub IF (NOT -3 Demandar) (NOT -2 Demandar) (NOT -2 BOS OR ("«")) (-1C PREP) (0 Qui) (NOT 1* ("?") OR ("!")) ;
-SELECT Itg OR Excl OR IJ IF (-1 BOS) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("quant")) ;	# Qui s'adresse
-SELECT Itg OR Excl OR IJ IF (-2 BOS) (-1 ("«")) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("quant")) ;	# Qui s'adresse
-REMOVE Itg OR Excl OR IJ IF (-2 BOS) (-1 Artcontrsg OR Artcontrpl) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("quant")) ;	# A qui s'adresse
-REMOVE Itg OR Excl OR IJ IF (-3 BOS) (-2 ("«")) (-1 Artcontrsg OR Artcontrpl) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("quant")) ;	# A qui s'adresse
-SELECT Itg OR Excl OR IJ IF (-2 BOS) (-1 PREP) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("quant")) ;	# A qui s'adresse
-SELECT Itg OR Excl OR IJ IF (-3 BOS) (-2 ("«")) (-1 PREP) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("quant")) ;	# A qui s'adresse
+SELECT Itg OR Excl OR IJ IF (-1 BOS) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("perqué") OR ("quant")) ;	# Qui s'adresse
+SELECT Itg OR Excl OR IJ IF (-2 BOS) (-1 ("«")) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("perqué") OR ("quant")) ;	# Qui s'adresse
+REMOVE Itg OR Excl OR IJ IF (-2 BOS) (-1 Artcontrsg OR Artcontrpl) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("perqué") OR ("quant")) ;	# A qui s'adresse
+REMOVE Itg OR Excl OR IJ IF (-3 BOS) (-2 ("«")) (-1 Artcontrsg OR Artcontrpl) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("perqué") OR ("quant")) ;	# A qui s'adresse
+SELECT Itg OR Excl OR IJ IF (-2 BOS) (-1 PREP) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("perqué") OR ("quant")) ;	# A qui s'adresse
+SELECT Itg OR Excl OR IJ IF (-3 BOS) (-2 ("«")) (-1 PREP) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("perqué") OR ("quant")) ;	# A qui s'adresse
 SELECT SUB:1 Itg OR Excl OR IJ IF (-1 BOS) (0 PREP) ;	# A qui s'adresse
 SELECT SUB:1 Itg OR Excl OR IJ IF (-2 BOS) (-1 ("«")) (0 PREP) ;	# A qui s'adresse
-SELECT Itg OR Excl OR IJ IF (-2 BOS) (-1 Conjco) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("quant")) ;	# Mais qui s'adresse
-SELECT Itg OR Excl OR IJ IF (-3 BOS) (-2 ("«")) (-1 Conjco) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("quant")) ;	# Mais qui s'adresse
-REMOVE Itg OR Excl OR IJ IF (-3 BOS) (-2 Conjco) (-1 Artcontrsg OR Artcontrpl) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("quant")) ;	# Mais a qui s'adresse
-REMOVE Itg OR Excl OR IJ IF (-4 BOS) (-3 ("«")) (-2 Conjco) (-1 Artcontrsg OR Artcontrpl) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("quant")) ;	# Mais a qui s'adresse
-SELECT Itg OR Excl OR IJ IF (-3 BOS) (-2 Conjco) (-1 PREP) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("quant")) ;	# Mais a qui s'adresse
-SELECT Itg OR Excl OR IJ IF (-4 BOS) (-3 ("«")) (-2 Conjco) (-1 PREP) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("quant")) ;	# Mais a qui s'adresse
+SELECT Itg OR Excl OR IJ IF (-2 BOS) (-1 Conjco) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("perqué") OR ("quant")) ;	# Mais qui s'adresse
+SELECT Itg OR Excl OR IJ IF (-3 BOS) (-2 ("«")) (-1 Conjco) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("perqué") OR ("quant")) ;	# Mais qui s'adresse
+REMOVE Itg OR Excl OR IJ IF (-3 BOS) (-2 Conjco) (-1 Artcontrsg OR Artcontrpl) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("perqué") OR ("quant")) ;	# Mais a qui s'adresse
+REMOVE Itg OR Excl OR IJ IF (-4 BOS) (-3 ("«")) (-2 Conjco) (-1 Artcontrsg OR Artcontrpl) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("perqué") OR ("quant")) ;	# Mais a qui s'adresse
+SELECT Itg OR Excl OR IJ IF (-3 BOS) (-2 Conjco) (-1 PREP) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("perqué") OR ("quant")) ;	# Mais a qui s'adresse
+SELECT Itg OR Excl OR IJ IF (-4 BOS) (-3 ("«")) (-2 Conjco) (-1 PREP) (0 ("qué") OR ("qui") OR ("quin") OR ("qual") OR ("quau") OR ("perqué") OR ("quant")) ;	# Mais a qui s'adresse
 SELECT SUB:1 Itg OR Excl OR IJ IF (-2 BOS) (-1 Conjco) (0 PREP) ;	# Mai a qui s'adresse
 SELECT SUB:1 Itg OR Excl OR IJ IF (-3 BOS) (-2 ("«")) (-1 Conjco) (0 PREP) ;	# Mai a qui s'adresse
 REMOVE Itg + AJ OR Excl + AJ IF (0 ("quin") OR ("qual") OR ("quau") OR ("quant")) (NOT 1 N) ;	# Qual vòl venir?
@@ -1524,14 +1523,20 @@ SELECT Excl OR IJ IF (-4 BOS) (-3 ("«")) (-2 Conjco) (-1 PREP) (0C Itg OR Excl 
 SELECT SUB:1 Excl OR IJ IF (-2 BOS) (-1 Conjco) (0 PREP) (1* ("!")) ;
 SELECT SUB:1 Excl OR IJ IF (-3 BOS) (-2 ("«")) (-1 Conjco) (0 PREP) (1* ("!")) ;
 SELECT Itg IF (-1C DemandarCort LINK NOT 0 VBpp) (0C Itg OR Excl OR IJ OR Rel OR ("coma") OR ("com") OR ("quant") OR ("qüantum") OR ("perqué")) ;	# me demandi qui
-SELECT Itg IF (-2C DemandarCort LINK NOT 0 VBpp) (-1 PREP) (0C Itg OR Excl OR IJ OR Rel OR ("quant") OR ("qüantum") OR ("perqué")) ;	# me demandi amb qui
+SELECT Itg IF (-2C DemandarCort LINK NOT 0 VBpp) (-1 PREP) (0C Itg OR Excl OR IJ OR Rel OR ("quant") OR ("qüantum")) ;	# me demandi amb qui
 SELECT Itg IF (-1C Demandar LINK NOT 0 VBpp) (0 ("coma") OR ("com")) (1 V OR Pro OR Tn OR DET OR NP) ;	# compreni coma
 SELECT Itg IF (-2C Demandar LINK NOT 0 VBpp) (-1 AV) (0 ("coma") OR ("com")) (1 V OR Pro OR Tn OR DET OR NP) ;	# compreni pas coma
 SELECT Itg IF (-3C Demandar LINK NOT 0 VBpp) (-2 AV) (-1 AV) (0 ("coma") OR ("com")) (1 V OR Pro OR Tn OR DET OR NP) ;	# compreni pas totjorn coma
 SELECT SUB:1 Itg IF (-1C DemandarCort LINK NOT 0 VBpp) (0 PREP) ;	# je demande avec qui
 SELECT Itg IF (-2C DemandarCort LINK NOT 0 VBpp) (-1 AV) (0C Itg OR Excl OR IJ OR Rel OR ("coma") OR ("com") OR ("quant") OR ("qüantum") OR ("perqué")) ;	# je ne demande pas qui
-SELECT Itg IF (-3C DemandarCort LINK NOT 0 VBpp) (-2 AV) (-1 PREP) (0C Itg OR Excl OR IJ OR Rel OR ("quant") OR ("qüantum") OR ("perqué")) ;	# je ne demande pas avec qui
+SELECT Itg IF (-3C DemandarCort LINK NOT 0 VBpp) (-2 AV) (-1 PREP) (0C Itg OR Excl OR IJ OR Rel OR ("quant") OR ("qüantum")) ;	# je ne demande pas avec qui
 SELECT SUB:1 Itg IF (-2C DemandarCort LINK NOT 0 VBpp) (-1 AV) (0 PREP) ;	# je ne demande pas avec qui
+SELECT Itg IF (-1C Demandar LINK NOT 0 VBpp) (0C ("perqué")) ;	# compreni perqué
+SELECT Itg IF (-2C Demandar LINK NOT 0 VBpp) (-1 AV) (0C ("perqué")) ;	# compreni pas perqué
+SELECT Itg IF (-3C Demandar LINK NOT 0 VBpp) (-2 AV) (-1 AV) (0C ("perqué")) ;	# compreni pas totjorn perqué
+SELECT Itg IF (-2 VBaux) (-1 Demandar + VBpp) (0C ("perqué")) ;	# ai comprés perqué
+SELECT Itg IF (-3 VBaux) (-2 AV) (-1 Demandar + VBpp) (0C ("perqué")) ;	# ai pas comprés perqué
+SELECT Itg IF (-4 VBaux) (-3 AV) (-2 AV) (-1 Demandar + VBpp) (-2 AV) (-1 AV) (0C ("perqué")) ;	# ai pas totjorn comprés perqué
 REMOVE PRON IF (0 ("quin")) (1C DET) ;
 REMOVE PRON IF (0 ("quin")) (1C PRON + Pos) ;
 SELECT AVitg IF (0 ("quin")) (1C V + Pers) ;
@@ -3407,7 +3412,7 @@ REMOVE V + Pers IF (-1C V + Pers OR ("<i a>"i)) ;	# voletz ve pariar ; i a risqu
 REMOVE V + Pers IF (1C V + Pers OR ("<i a>"i)) ;	# voletz ve pariar
 
 REMOVE N IF (-1C Conjsub OR Conjadv OR Rel OR Itg) (0 V) (1C DET) ;		# quan fan un trabalh
-REMOVE N IF (-1C Conjsub OR Conjadv OR Rel OR Itg) (0 V) (1C N) ;		# quan fan un trabalh
+REMOVE N IF (-1C Conjsub OR Conjadv OR Rel OR Itg) (0 V) (1C N) ;		# quan fan trabalhs
 REMOVE N IF (-1C Conjsub OR Conjadv OR Rel OR Itg) (0 V) (1 DET + &&AcordSN) (2 N + &&AcordSN) ;		# quan fan un trabalh
 REMOVE N IF (-2 DET + &&AcordSN) (-1 N + &&AcordSN + Pl) (0 ("<an>"i)) ;		# los participants an
 REMOVE N IF (-1 N_AJ + Pl) (0 ("<an>"i)) ;		# los participants an
