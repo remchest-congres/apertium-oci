@@ -884,6 +884,7 @@ SELECT AV IF (-1 N + MascPl) (0 Mai) (1 AJ + MascPl) ;
 SELECT AV IF (-1 N + FemSg) (0 Mai) (1 AJ + FemSg) ;
 SELECT AV IF (-1 N + FemPl) (0 Mai) (1 AJ + FemPl) ;
 SELECT AV IF (-1 Ser + &&AcordSP) (0 Mai) (1 AJ + &&AcordSP) ;	# es mai calme
+REMOVE ("ahanar") IF (0 ("ahanat")) ;
 REMOVE AJ IF (0 VBpp) (1 ("per")) ;
 REMOVE AJ IF (0 VBpp) (1 AV) (2 ("per")) ;	# prononciat tradicionalment per
 SELECT VBpp IF (-2 Ser + &&AcordSP) (-1 AV OR PREAV) (0 ("escàder") OR ("mauescàder")) ;	# s'i es pas escadut
