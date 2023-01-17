@@ -1809,6 +1809,7 @@ SELECT ("benvenguda") OR AJ IF (0 ("benvenguda") + Sg) ;
 
 SELECT NUM IF (-1 ("en")) (0 ("dos")) ;
 SELECT PREP IF (0 ("en")) (1 ("dos")) ;
+SELECT NUM IF (-1/* DETdef + Pl + &&AcordSN) (0 ("dos") + &&AcordSN) ;
 
 SELECT NUM IF (0 ("cent")) (1 ("mil")) ;
 SELECT NUM IF (0 ("cent")) (1 N_AJ + Pl) ;
