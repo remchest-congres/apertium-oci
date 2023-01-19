@@ -2486,6 +2486,17 @@ SELECT Haver IF (0 Haver) (NOT 0 ("<a de>"i)) (1 AV OR Donc) (2 AV OR Donc) (3 V
 REMOVE Haver IF (1C N_AJ OR DET OR NUM OR PREP) ;
 SELECT PREP IF (-1 VBpp OR VBinf) (0 ("<a de>"i)) (1 N_AJ + Pl) ;	# dobèrt a de personas ; pensar a de personas
 SELECT PREP IF (-2C Verb + Pers) (-1C N) (0 ("<a de>"i)) (1 N_AJ + Pl) ;	# avèm afar a de personas
+SELECT PREP IF (-3C Verb + Pers) (-2 AV) (-1C N) (0 ("<a de>"i)) (1 N_AJ + Pl) ;	# avèm pas afar a de personas
+SELECT PREP IF (-4C Verb + Pers) (-3 AV) (-2 AV) (-1C N) (0 ("<a de>"i)) (1 N_AJ + Pl) ;
+SELECT PREP IF (-3 Haver) (-2 VBpp) (-1C N) (0 ("<a de>"i)) (1 N_AJ + Pl) ;	# avèm fach apèl a de personas
+SELECT PREP IF (-4 Haver) (-3 AV) (-2 VBpp) (-1C N) (0 ("<a de>"i)) (1 N_AJ + Pl) ;	# avèm pas fach apèl a de personas
+SELECT PREP IF (-5 Haver) (-4 AV) (-3 AV) (-2 VBpp) (-1C N) (0 ("<a de>"i)) (1 N_AJ + Pl) ;
+SELECT PREP IF (-3C Verb + Pers) (-2 N_AJ + &&AcordSN) (-1 N_AJ + &&AcordSN) (0 ("<a de>"i)) (1 N_AJ + Pl) ;
+SELECT PREP IF (-4C Verb + Pers) (-3 AV) (-2 N_AJ + &&AcordSN) (-1 N_AJ + &&AcordSN)(0 ("<a de>"i)) (1 N_AJ + Pl) ;
+SELECT PREP IF (-5C Verb + Pers) (-4 AV) (-3 AV) (-2 N_AJ + &&AcordSN) (-1 N_AJ + &&AcordSN) (0 ("<a de>"i)) (1 N_AJ + Pl) ;
+SELECT PREP IF (-4 Haver) (-3 VBpp) (-2 N_AJ + &&AcordSN) (-1 N_AJ + &&AcordSN) (0 ("<a de>"i)) (1 N_AJ + Pl) ;
+SELECT PREP IF (-5 Haver) (-4 AV) (-3 VBpp) (-2 N_AJ + &&AcordSN) (-1 N_AJ + &&AcordSN) (0 ("<a de>"i)) (1 N_AJ + Pl) ;
+SELECT PREP IF (-6 Haver) (-5 AV) (-4 AV) (-3 VBpp) (-2 N_AJ + &&AcordSN) (-1 N_AJ + &&AcordSN) (0 ("<a de>"i)) (1 N_AJ + Pl) ;
 SELECT VBpp IF (0 VBpp) (1 ("<a de>"i)) (2C N_AJ_PP + Pl) ;	# dobèrt a de personas
 SELECT VBinf IF (0 VBinf) (1 ("<a de>"i)) (2C N_AJ_PP + Pl) ;	# pensar a de personas
 SELECT V IF (NOT -1 VBpp OR VBinf) (0 ("<a de>"i)) (1C N_AJ_PP + Pl) (NOT -1* V + Pers BARRIER Conjsub OR Conjadv OR Rel) ;	# a de dificultats ; pensar a de personas
