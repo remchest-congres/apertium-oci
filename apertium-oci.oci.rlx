@@ -2983,6 +2983,9 @@ SELECT AJ + FemSg IF (-2 ("a") + PREP) (-1 DETdef + FemSg) (0 Gentilici + FemSg)
 REMOVE AJ IF (-1 Vestit + &&AcordSN) (0 ("empesat") + &&AcordSN) ;	# camisa empesada
 REMOVE AJ IF (-2 Vestit + &&AcordSN) (-1 AJ + &&AcordSN) (0 ("empesat") + &&AcordSN) ;	# camisa blanca empesada
 
+SELECT AV IF (-3 ("per")) (-2 DETdef + &&AcordSN) (-1 N + &&AcordSN) (0 ("en·hòra")) ;
+SELECT AV IF (-2 ("per")) (-2/* DETdef + &&AcordSN) (-1 N + &&AcordSN) (0 ("en·hòra")) ;	# peus escalèrs en·hòra
+
 # ADJ POS
 
 REMOVE AJ + Pos IF (NOT -1 Ser OR N) (0 AJ + Pos) ;
