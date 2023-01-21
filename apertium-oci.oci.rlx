@@ -527,7 +527,7 @@ SELECT PREAV IF (-1C N + &&AcordSP) (0 ("<plan>"i)) (1 AJ + &&AcordSP) ;
 SELECT PREAV IF (-2C N + &&AcordSP) (-1 AJ + &&AcordSP) (0 ("<plan>"i)) (1 AJ + &&AcordSP) ;
 SELECT AJ IF (-1C N + &&AcordSP) (0 ("<plan>"i) + &&AcordSP) ;		# patch
 SELECT AV IF (0 ("<mai>"i)) (1 De) ;		# patch
-REMOVE N IF (-1C PREP) (0 ("<veire>"i)) ;		# patch
+REMOVE N IF (-1C PREP) (NOT -1/* DET + MascSg) (0 ("<veire>"i)) ;		# patch
 SELECT PREP IF (-1 N OR AJ) (0 ("<de mai>"i)) ;		# patch
 REMOVE N IF (NOT -1 ("mes") OR ("jorn") OR ("jornada") OR ("fèsta") OR ("hèsta")) (0 ("<de mai>"i)) ;		# patch
 REMOVE N IF (NOT -1 DET + FemSg) (0 ("<èra>"i)) ;		# patch
@@ -698,6 +698,14 @@ SELECT AV IF (NOT -1/* DET) (0 Jorns) (1 DeMatin) ;
 SELECT AV IF (-1 Jorns) (0 DeMatin) ;
 SELECT AV IF (-3 NUM) (-2 De) (-1 Nommois) (0 DeMatin) ;
 SELECT AV IF (-2 NUM) (-1 Nommois) (0 DeMatin) ;
+
+LIST AlFons = "<al fons>"i "<au fons>"i "<au hons>"i ;
+LIST Contribuir = "contribuïr" "contribuar" "contribusir" ;
+SELECT PREP IF (0 AlFons) (1 De) ;
+SELECT PREP IF (-1 VerbMoviment OR Contribuir) (0 AlFons) ;
+SELECT PREP IF (-2 VerbMoviment OR Contribuir) (-1 AV) (0 AlFons) ;
+SELECT PREP IF (-3 VerbMoviment OR Contribuir) (-2 AV) (-1 AV) (0 AlFons) ;
+SELECT AV IF (0 AlFons) ;
 
 REMOVE AV (0 Conjadv) (-1 CM) (NOT 1 EOS OR AJ) ;
 REMOVE V (0 ("<lavetz>"i)) (0 AV OR Conjadv) (-1 CM) ;
