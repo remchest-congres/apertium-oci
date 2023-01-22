@@ -666,6 +666,7 @@ REMOVE ("centen") + N IF (0 ("centena") + N) (-1 DET + FemSg) (1 De) (2 N) ;
 
 REMOVE ("aviar") IF (0 Aver) ;	# patch
 REMOVE ("averar") IF (0 Aver) ;	# patch
+REMOVE ("vanir") IF (0 ("anar")) ;	# patch
 
 REMOVE ("camèl") IF (0 ("camèra")) ;	# patch
 
