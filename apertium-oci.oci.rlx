@@ -837,7 +837,7 @@ REMOVE V IF (NOT -2 Pro) (-1 ("o")) (0 ("contra")) ;
 SELECT PREP IF (0 ("contra")) (1 De LINK 0/* DET) (2 N_AJ + Pl) ;	# lengadocian
 SELECT PREP IF (0 ("contra")) (2 N_AJ + Pl) ;	# gascon
 
-REMOVE PREP IF (0 A_de) (NOT 1 N_AJ OR AV OR PREAV) ;	# patch
+REMOVE PREP IF (0 A_de) (NOT 1 N_AJ OR AV OR PREAV OR ("un") + Pl) ;	# patch
 REMOVE PREP IF (0 A_de) (1 AV OR PREAV) (NOT 2 N_AJ) ;	# patch
 REMOVE PREP IF (0 A_de) (-1 Pro) ;	# patch
 REMOVE PREP IF (0 A_de) (-1 BOS OR CM) ;	# patch
@@ -3696,6 +3696,9 @@ REMOVE SUB:1 PRON IF (0/* Se) (NOT 1 Pro OR V + P3 OR V + VBinf OR V + VBger OR 
 REMOVE SUB:1 PRON IF (0/* Se) (1 Pro) (NOT 2 Pro OR V + P3 OR V + VBinf OR V + VBger OR unknownMinIni) ;	# o se li canti
 REMOVE SUB:1 PRON IF (0/* Se) (1 Pro) (2 Pro) (NOT 3 Pro OR V + P3 OR V + VBinf OR V + VBger OR unknownMinIni) ;	# o se li o canti
 REMOVE SUB:1 PRON IF (0/* Se) (1 Pro) (2 Pro) (3 Pro) (4 V + P3 OR V + VBinf OR V + VBger OR unknownMinIni) ;
+REMOVE PRON IF (0 Se) (1 ("<vieni>"i)) ;
+REMOVE SUB:1 PRON IF (0/* Se) (1 ("<vieni>"i)) ;
+SELECT Conjadv IF (NOT -1C* Rel OR Conjsub OR Conjadv) (0 Se) (1C V + Pers) (2C V + Pers) ;	# Se tot aquò se met en plaça serà
 SELECT Pro IF (0 Se) (1 unknownMinIni) ;
 SELECT Pro IF (0 Se) (1 Pro) (2 unknownMinIni) ;
 SELECT Pro IF (0 Se) (1 Pro) (2 Pro) (3 unknownMinIni) ;
