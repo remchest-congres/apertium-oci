@@ -292,6 +292,7 @@ LIST DemandarCort = "demandar" "demanar" "interrogar" "questionar" "qüestionar"
 "tornar# demandar" "tornar# demanar" "tornar# interrogar" "tornar# questionar" "tornar# qüestionar" "tornar# saber" "tornar# sàber" "tornar# estudiar" "tornar# cercar" "tornar# investigar" "tornar# trovar" "tornar# trapar" "tornar# explicar" "tornar# contar" "tornar# condar" "tornar# discutir" ;	# en principi, segueis Itg (tanben "que")
 LIST VNonPron = "demorar" "abitar" "trabalhar" "tribalhar" "manjar" "beure" "béver" ;	# vèrbs non pronominals
 LIST Far = "far" "har" "hèr" ;
+LIST Prene = "prene" "préner" "agarrar" "aganchar" ;
 LIST Estat = "estat" ;
 LIST Clau = "clau" ;
 LIST Calar = "calar" ;
@@ -435,6 +436,12 @@ SELECT Acr IF (0 ("Su")) (0 (META:/-/r)) ;
 REMOVE Acr IF (0 ("Su")) ;
 
 REMOVE DET IF (0 ("<tant>"));
+
+REMOVE N + Masc IF (NOT -1 DETdef + MascPl OR Artcontrpl) (0 ("part")) ;
+REMOVE AJ + ("parte") IF (NOT -1 N) ;
+REMOVE AJ + ("parte") IF (-1 AdjPre) ;
+REMOVE AJ + ("parte") IF (-1/* NUM) (0 ("part")) ;	# tres parts
+SELECT DET + Fem IF (0 ("quauque")) (1 ("part")) ;	# quauque part
 
 REMOVE V IF (0 ("<minuta>"i)) (-1 DET + FemSg or AJ + FemSg);
 REMOVE V IF (0 ("<minutas>"i)) (-1 DET + FemPl or AJ + FemPl or NUM);
@@ -3115,6 +3122,9 @@ SELECT Masc IF (-2 Quicom) (-1 De) (NOT -1/* Fem) (0 N) (NOT 1 AJ + Fem) ;	# qua
 REMOVE AJ (-1C PREP LINK NOT 0 Artcontrsg OR Artcontrpl) (0 N LINK NOT 0 AdjPre) (NOT 1C N) (1 N + &&AcordSN) ;
 
 REMOVE AJ IF (-1C Verb LINK NOT 0 VBpp OR Semblar_Pareisser OR Devenir) (0 N) (1 Que OR Qui OR Rel) ;
+SELECT N IF (-1 Far OR Prene) (0 ("part")) ;
+SELECT N IF (-2 Far OR Prene) (-1 AV) (0 ("part")) ;
+SELECT N IF (-3 Far OR Prene) (-2 AV) (-1 AV) (0 ("part")) ;
 REMOVE N IF (-2 PRONRef) (-1 Far) (0 AJ) ;	# se far gran
 
 SELECT NP + &&AcordSN IF (-2 DET + &&AcordSN) (-1 AdjPre + &&AcordSN) (0 NP + &&AcordSN) (NOT -1 ("nau")) ;
