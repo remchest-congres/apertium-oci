@@ -1308,18 +1308,20 @@ SELECT PREP IF (-1C BOS OR Conjsub OR Conjadv OR Rel) (0 ("shens")) (1 Pro OR AV
 
 SELECT Acr IF (-1 NUM LINK NOT 0 Gen) (0 ("ha")) ;
 REMOVE Acr IF (0 ("ha")) ;
-SELECT IJ IF (0 ("ha") OR ("ho")) (1* ("!")) ;
-SELECT IJ IF (0 ("ha") OR ("ho")) (1 CM) (1* ("!")) ;
-SELECT IJ IF (-1 CM) (0 ("ha") OR ("ho")) (1* ("!")) ;
+SELECT IJ IF (0 ("ha") OR ("ho") OR ("mic") OR ("miga")) (1* ("!")) ;
+SELECT IJ IF (0 ("ha") OR ("ho") OR ("mic") OR ("miga")) (1 CM) (1* ("!")) ;
+SELECT IJ IF (-1 CM) (0 ("ha") OR ("ho") OR ("mic") OR ("miga")) (1* ("!")) ;
 SELECT IJ IF (-1 BOS) (0 ("e")) (1 ("!")) ;
 SELECT IJ IF (-1 CM) (0 ("e")) (1 ("!")) ;
 REMOVE IJ IF (0 ("e")) ;
 SELECT V IF (-1 BOS OR CM) (0 ("ha")) (1 N_AJ) ;
 SELECT V IF (-2 BOS OR CM) (-1 ("«")) (0 ("ha")) (1 N_AJ) ;
-SELECT IJ IF (-1 BOS) (0 N OR ("ha") OR ("ho")) (1 CM) (1* ("!")) ;
-SELECT IJ IF (-2 BOS) (-1 ("«")) (0 N OR ("ha") OR ("ho")) (1 CM) (1* ("!")) ;
-SELECT IJ IF (-1 BOS OR CM) (NOT 0 ("ha") OR ("ho")) (1 ("!")) ;
-SELECT IJ IF (-2 BOS OR CM) (-1 ("«")) (NOT 0 ("ha") OR ("ho")) (1 ("!")) ;
+SELECT IJ IF (-1 BOS) (0 N OR ("ha") OR ("ho") OR ("mic") OR ("miga")) (1 CM) (1* ("!")) ;
+SELECT IJ IF (-2 BOS) (-1 ("«")) (0 N OR ("ha") OR ("ho") OR ("mic") OR ("miga")) (1 CM) (1* ("!")) ;
+SELECT IJ IF (-1 BOS OR CM) (NOT 0 ("ha") OR ("ho") OR ("mic") OR ("miga")) (1 ("!")) ;
+SELECT IJ IF (-2 BOS OR CM) (-1 ("«")) (NOT 0 ("ha") OR ("ho") OR ("mic") OR ("miga")) (1 ("!")) ;
+SELECT IJ IF (-1 BOS OR CM OR ("«")) (0 ("mic") OR ("miga")) (1 EOS OR CM OR ("»")) ;
+REMOVE IJ IF (0 ("mic") OR ("miga")) ;
 #SELECT IJ IF (-1 BOS OR CM) (0 ("gràcies") OR ("de res")) ;			# COPY-PASTE
 REMOVE IJ IF (NOT -1 CM OR BOS) (NOT 1 CM OR EOS) (NOT 1* ("!")) ;
 REMOVE IJ IF (NOT -1 CM OR BOS) (NOT 1 CM OR EOS) (0 ("a")) ;
