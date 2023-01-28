@@ -259,6 +259,8 @@ LIST Caps_de = ("<caps de>"i) ("<caps d'>"i) ("<caps d’>"i) ;
 LIST Cap_de_del = ("<cap de>"i) ("<cap d'>"i) ("<cap d’>"i) ("<cap del>"i) ("<cap dels>"i) ("<cap deu>"i) ("<cap deus>"i) ;
 LIST Caps_de_del = ("<caps de>"i) ("<caps d'>"i) ("<caps d’>"i) ("<caps del>"i) ("<caps dels>"i) ("<caps deu>"i) ("<caps deus>"i) ;
 LIST A_de = ("<a de>"i) ("<a d'>"i) ("<a d’>"i) ;
+LIST Gaire_de = ("<ges de>"i) ("<ges d'>"i) ("<ges d’>"i) ("<gaire de>"i) ("<gaire d'>"i) ("<gaire d’>"i) ("<guaire de>"i) ("<guaire d'>"i) ("<guaire d’>"i) ;
+LIST Gaire_del = ("<ges del>"i) ("<ges deu>"i) ("<ges dels>"i) ("<ges deus>"i) ("<gaire del>"i) ("<gaire deu>"i) ("<gaire dels>"i) ("<gaire deus>"i) ("<guaire del>"i) ("<guaire deu>"i) ("<guaire dels>"i) ("<guaire deus>"i) ;
 LIST Mai = ("mai" adv) ("mei" adv) ("mès" adv) ("mes" adv) ("fòrça mai" adv) ("un pauc mai" adv) "un chic mai" "un bricon mai" "plan mai" ;
 LIST Pus = ("pus" adv) ;
 LIST Mens = "mens" "mensh" ;
@@ -731,6 +733,15 @@ SELECT N IF (0 ("format")) (1 Acr) ;
 SELECT N IF (0 ("format")) (1 Al) ;
 SELECT N IF (-1 En) (0 ("format")) (1 N) ;
  
+SELECT AV IF (0 Gaire_de) (1C Pro OR V) ;	# vòl pas gaire de s'enanar
+SELECT AV IF (-1 V) (0 Gaire_de) (1 DET) ;
+SELECT AV IF (-2 V) (-1 AV) (0 Gaire_de) (1 DET) ;	# parli pas gaire de la situacion
+SELECT AV IF (-3 V) (-2 AV) (-1 AV) (0 Gaire_de) (1 DET) ;
+SELECT AV IF (-1 V) (0 Gaire_del) ;
+SELECT AV IF (-2 V) (-1 AV) (0 Gaire_del) ;	# parli pas gaire del cas
+SELECT AV IF (-3 V) (-2 AV) (-1 AV) (0 Gaire_del) ;
+REMOVE AV IF (0 Gaire_de) (1C N_AJ) ;
+
 SELECT PREP IF (0 ("<de cap>"i)) (1C DET) ;
 SELECT PREP IF (0 ("<de cap>"i)) (1 DET + &&AcordSN) (2 N_AJ + &&AcordSN) ;
 REMOVE PREP IF (0 ("<de cap>"i)) ;
@@ -849,6 +860,7 @@ REMOVE PREP IF (0 A_de) (1 AV OR PREAV) (NOT 2 N_AJ) ;	# patch
 REMOVE PREP IF (0 A_de) (-1 Pro) ;	# patch
 REMOVE PREP IF (0 A_de) (-1 BOS OR CM) ;	# patch
 REMOVE PREP IF (0 A_de) (-2 BOS OR CM) (-1 ("«")) ;	# patch
+REMOVE V IF (-1 Mai OR Pus OR Mens) (0 ("<a d.*>"r)) (0 AV) ;	# mai a d'aise
 
 SELECT PREP IF (0 ("levat")) (1 ("per")) ;
 
@@ -4308,3 +4320,4 @@ REMOVE NP IF (0 N) (-1 BOS) (NOT 1 NP) (NOT 1 unknownMajIni);
 REMOVE NP IF (0 N) (-2 BOS) (-1 ("«")) (NOT 1 NP) (NOT 1 unknownMajIni);
 REMOVE AJ IF (0 ("de casa")) ;
 REMOVE AV IF (0 ("de casa")) ;
+REMOVE AV IF (0 Gaire_de) ;
