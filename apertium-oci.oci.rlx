@@ -3123,6 +3123,8 @@ SELECT N IF (-1 CM) (0 ("aulhèr")) (1 EOS) ;
 SELECT N IF (-1 BOS) (0 ("aulhèr")) (1 CM) ;
 SELECT N IF (NOT -2 N) (-1 CM) (0 ("aulhèr")) (1 CM) (NOT 2 N) ;	# E donc, aulhèr, quin las te deviras ?
 
+REMOVE N IF (NOT -1/* DET) (0 ("conegut") OR ("coneishut")) ;
+
 REMOVE AJ IF (-1C PREP LINK NOT 0 Artcontrsg OR Artcontrpl) (0 N LINK NOT 0 AdjPre) (NOT 1C N) ;
 REMOVE AJ IF (NOT -2 DET OR Artcontrsg OR Artcontrpl) (-1 DET + &&AcordSN) (0 N + &&AcordSN LINK NOT 0 AdjPre) (NOT 1 N) ;
 SELECT AJ IF (NOT -2 DET OR Artcontrsg OR Artcontrpl) (-1 DET + &&AcordSN) (0 AJ + &&AcordSN) (1C N) (1 N + &&AcordSN) ;
@@ -3529,6 +3531,7 @@ SELECT VBpp + &&AcordSN IF (-4 Pro + &&AcordSN) (-3 Haver) (-2 AV) (-1 AV) ;
 SELECT VBpp + MascSg IF (-1 Haver) ;
 SELECT VBpp + MascSg IF (-2 Haver) (-1 AV) ;
 SELECT VBpp + MascSg IF (-3 Haver) (-2 AV) (-1 AV) ;
+SELECT VBpp + MascSg IF (-3 Haver) (-2 VBpp) (-1 ("e") OR ("o")) ;	# aurà comprés e coneishut
 
 SELECT PRON IF (-1 BOS) (0 ("nat")) (1 CM) ;	# guess
 SELECT PRON IF (-1C V) (0 ("nat")) ;
