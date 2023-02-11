@@ -383,7 +383,7 @@ OR NumOrd ;
 SET AdjPre = ("ancian") OR ("nòu") OR ("nau") OR ("novèl") OR ("navèth") OR ("vièlh") OR ("vielh") OR ("jove") OR ("joen") OR ("joine") OR ("jovent") OR ("futur") OR ("grand") OR ("gran") OR ("màger") OR ("petit") OR ("pichon") OR ("pichòt") OR ("bon") OR ("mal") OR ("mau") OR ("marrit") OR ("melhor") OR ("milhor") OR ("mielhor") OR ("mélher") OR ("miélher") OR ("pièger") OR ("pèger") OR ("sordeish") OR ("mai bon") OR ("mai plan") OR ("mei bon") OR ("mei plan") OR ("naut") OR ("haut") OR ("bas") OR ("baish") OR ("altre") OR ("autre") OR ("aute") OR ("meteis") OR ("medish") OR ("medeish") OR ("madeish") OR ("quite") OR ("quiti") OR ("mièg") OR ("miei") OR ("sant") OR ("sent") OR AdjOrd;
 
 
-LIST Dignitat = "papa" "patriarca" "avesque" "arcavesque" "archavesque" "archevesque" "arquevesque" "sant" "sant" "apòstol" "apostòl" "emperador" "emperaire" "rei" "tsar" "vicerei" "regent" "prince" "infant" "dalfin" "comte" "comtessa" "vescomte" "vescomtessa" "duc" "grand-duc" "arcaduc" "archiduc" "marqués" "baron" "cònsol" "cònsol màger" "sénher-cònsol" "mera" "cònse" "conse" "mèra" "alcalde" ;
+LIST Dignitat = "papa" "patriarca" "avesque" "arcavesque" "archavesque" "archevesque" "arquevesque" "sant" "sant" "apòstol" "apostòl" "emperador" "emperaire" "rei" "tsar" "vicerei" "regent" "prince" "infant" "dalfin" "comte" "comtessa" "vescomte" "vescomtessa" "duc" "grand-duc" "arcaduc" "archiduc" "marqués" "baron" "califa" "sultan" "emir" "khan" "satrapa" "cònsol" "cònsol màger" "sénher-cònsol" "mera" "cònse" "conse" "mèra" "alcalde" ;
 
 LIST Carrera = "carrièra" "carrèra" "baloard" "avenguda" "avienguda" "plaça" "alèa" "alea" ;
 
@@ -2427,7 +2427,7 @@ SELECT Ant IF (-1 ("dieu") OR ("divessa")) ;
 
 SELECT Ant IF (-1 (";") OR (":")) (1 Ant OR Cog OR unknownMajIni) ;
 
-LIST VilaTerritori = "vila" "vilatge" "província" "region" "parçan" "departament" "comuna" "municipalitat" "zòna" "territori" "arrondiment" "aeropòrt" "pòrt" "reialme" "reiaume" "principat" "grand-ducat" "ducat" "marquesat" "comtat" "baroniá" "baronia" "senhoria" "archavescat" "arquevescat" "avescat" "tèrra" "republica" "califat" "sultanat" "emirat" "khanat" ;
+LIST VilaTerritori = "vila" "vilatge" "província" "region" "parçan" "departament" "comuna" "municipalitat" "zòna" "territori" "arrondiment" "aeropòrt" "pòrt" "reialme" "reiaume" "principat" "grand-ducat" "ducat" "marquesat" "comtat" "baroniá" "baronia" "senhoria" "archavescat" "arquevescat" "avescat" "tèrra" "republica" "califat" "sultanat" "emirat" "khanat" "satrapia" ;
 SELECT Top IF (-2 VilaTerritori) (-1 ("de")) (0 Cog OR Ant) ;
 SELECT SUB:1 Top IF (-1 VilaTerritori) (0 ("de")) (0/* Cog OR Ant) ;
 SELECT Top IF (-2 ("conquista") OR ("annexion") OR ("sèti") OR ("expedicion")) (-1 De) ;
