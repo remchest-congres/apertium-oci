@@ -1008,7 +1008,7 @@ SELECT VBimp IF (-1 BOS) (0 P2 LINK NOT 0 ("París")) (1* ExclMark) ;		# guess
 SELECT VBimp IF (-2 BOS) (-1 ("«")) (0 P2 LINK NOT 0 ("París")) (1* ExclMark) ;		# guess
 SELECT VBimp IF (-1 CM) (1 ExclMark) ;		# guess
 REMOVE VBimp IF (-2 BOS) (-1 ("be") OR ("que")) (0 ("un")) ;
-SELECT VBimp IF (-2 BOS) (-1 ("be") OR ("que")) (0 P2) (1* ExclMark) ;	# guess
+SELECT VBimp IF (-2 BOS) (-1 ("be") OR ("que")) (NOT -1/* Pro + P1 OR Pro + P3) (0 P2) (1* ExclMark) ;	# guess
 REMOVE VBimp IF (-3 BOS) (-2 ("«")) (-1 ("be") OR ("que")) (0 ("un")) ;
 SELECT VBimp IF (-3 BOS) (-2 ("«")) (-1 ("be") OR ("que")) (0 P2) (1* ExclMark) ;	# guess
 
