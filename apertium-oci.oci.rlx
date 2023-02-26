@@ -1986,7 +1986,7 @@ SELECT Fem_strict IF (NOT -1/* Masc_strict) (0 ("amazigh") + Fem) (NOT 1 Masc_st
 # non : Patxi Zabaleta, actualament cap del partit
 # non : i avè tà la damisèla catalògues, prospectús e municions
 #REMOVE N IF (NOT -1 BOS OR CM OR Conjco OR Donc OR V OR AJ OR AV OR DET OR NUM OR PREP OR PRON - PRONPers) (NOT -1/* ("de")) (NOT -2 CM) ;
-REMOVE N IF (NOT -1 BOS OR CM OR Conjco OR Donc OR V OR AJ OR AV OR DET OR NUM OR PREP OR PRON - PRONPers) (NOT -1/* ("de")) (NOT -2 CM) (NOT -2 V LINK NOT 0 VBpp) ;
+REMOVE N IF (NOT -1 BOS OR CM OR Conjco OR Donc OR Rel OR V OR AJ OR AV OR DET OR NUM OR PREP OR PRON - PRONPers) (NOT -1/* ("de")) (NOT -2 CM) (NOT -2 V LINK NOT 0 VBpp) ;
 REMOVE N IF (-1/* ("lo que") OR ("lo qui")) ;
 REMOVE N IF (-2 Conjco) (-1 Donc) (0 V + Pers) ;
 REMOVE N IF (-2 N + &&AcordSN) (-1 AJ + &&AcordSN) (0 VBpp + &&AcordSN) ;	# lo ministre canadian encargat
