@@ -977,6 +977,17 @@ SELECT Conjsub IF (-2 ("non")) (-1 Ser) (0 Que) ;
 REMOVE V + Pers IF (-4 ("non")) (-3 Ser + &&AcordSP) (-2 Pas) (-1 Que) (0 N + &&AcordSP) ;
 REMOVE V + Pers IF (-3 ("non")) (-2 Ser + &&AcordSP) (-1 Que) (0 N + &&AcordSP) ;
 
+LIST Mai_Pus = ("mai" adv) ("mei" adv) ("mès" adv) ("mes" adv) ("pus" adv) ;
+LIST Disent = "disent" "ofrent" ;
+SELECT AJ IF (-2/* DETdef) (-1 Mai_Pus) (0 Disent) (1C N) ; 
+SELECT N IF (-2/* DETdef) (-1 Mai_Pus) (0 Disent) ;
+SELECT AJ IF (-2 Artcontrsg) (-1 Mai_Pus) (0 Disent + MascSg) (1C N) ; 
+SELECT N IF (-2 Artcontrsg) (-1 Mai_Pus) (0 Disent + MascSg) ;
+SELECT AJ IF (-2 Artcontrpl) (-1 Mai_Pus) (0 Disent + MascPl) (1C N) ; 
+SELECT N IF (-2 Artcontrpl) (-1 Mai_Pus) (0 Disent + MascPl) ;
+SELECT N IF (-1 Mai_Pus) (0 Disent) ;
+SELECT AV (0 Mai_Pus) (1 Disent) ;
+REMOVE N OR AJ IF (NOT -1 Mai_Pus) (0 Disent) ;
 
 SELECT AV (-1C V) (0 Melhor) ;		# parlar melhor
 SELECT AV (-2C V) (-1 AV) (0 Melhor) ;
