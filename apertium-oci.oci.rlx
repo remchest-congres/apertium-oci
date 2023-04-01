@@ -239,7 +239,8 @@ LIST Ne_pron = ("ne" prn) ("en" prn) ;
 LIST Ne_conj = ("ne" cnjcoo);
 LIST Ne_enon = ("ne" enon);
 SET Ne_adv = ("ne" adv) - (prn pro adv) ;
-LIST E_enon = ("e" enon);
+LIST E_enon = ("e" enon) ;
+LIST E_O = ("e" cnjcoo) ("o" cnjcoo) ("ni" cnjcoo) ;
 LIST Dins = "dins" "dens" "hens";
 LIST Jos = "jos";
 LIST Pendent = "pendent";
@@ -3399,6 +3400,21 @@ REMOVE AV IF (-1C Artcontrsg OR Artcontrpl) (-1 DET + &&AcordSN) (0 N_AJ_PP + &&
 REMOVE N IF (0 ("drin")) (1 De) ;
 SELECT AV IF (0 ("drin")) (-1C V) (NOT 1 AJ) ;
 SELECT PREAV IF (0 ("drin")) (-1C V) (1C AJ) ;
+
+SELECT AJ IF (-1 ("sentir")) (0 Gentilici) ;	# se senteishen catalans
+SELECT AJ IF (-2 ("sentir")) (-1 AV) (0 Gentilici) ;	# se senteishen pas catalans
+SELECT AJ IF (-3 ("sentir")) (-2 AV) (-1 AV) (0 Gentilici) ;	# se senteishen pas tostemps catalans
+REMOVE AJ OR VBpp IF (-1C Verb LINK NOT 0 Venir OR TornarVenir OR Pareisser OR Apareisser) (0 N + Pl) (1 E_O) (2 N + Pl) (NOT 3 N) ;	# informa elejuts e tecnicians de terrenh
+REMOVE AJ OR VBpp IF (-3C Verb LINK NOT 0 Venir OR TornarVenir OR Pareisser OR Apareisser) (-2 N + Pl) (-1 E_O) (0 N + Pl) (NOT 1 N) ;	# informa elejuts e tecnicians de terrenh
+
+SELECT AJ IF (0 Gentilici) (1 E_O) (2C Gentilici + AJ) ;
+SELECT N IF (0 Gentilici) (1 E_O) (2C Gentilici + N) ;
+SELECT AJ IF (-2 Gentilici + AJ) (-1 E_O) (0 Gentilici) ;
+SELECT N IF (-2 Gentilici + N) (-1 E_O) (0 Gentilici) ;
+SELECT AJ IF (0 Lenga) (1 E_O) (2C Lenga + AJ) ;
+SELECT N IF (0 Lenga) (1 E_O) (2C Lenga + N) ;
+SELECT AJ IF (-2 Lenga + AJ) (-1 E_O) (0 Lenga) ;
+SELECT N IF (-2 Lenga + N) (-1 E_O) (0 Lenga) ;
 
 # N / V
 
