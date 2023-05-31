@@ -57,7 +57,7 @@
     </pipeline>
   </mode>
 
-  <mode name="oci-spell" install="yes">
+  <mode name="oci-spell" install="no">
     <pipeline>
       <program name="hfst-ospell -S -n 10">
         <file name="oci.zhfst"/>
@@ -65,7 +65,7 @@
     </pipeline>
   </mode>
 
-  <mode name="oci-tokenise" install="yes">
+  <mode name="oci-tokenise" install="no">
     <pipeline>
       <program name="hfst-proc">
         <file name=".deps/acceptor.default.hfst"/>
