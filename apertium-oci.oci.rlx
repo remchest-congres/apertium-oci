@@ -4359,3 +4359,7 @@ REMOVE AV IF (0 ("de casa")) ;
 REMOVE AV IF (0 Gaire_de) ;
 
 REMOVE V IF (0 ("mainada")) (NOT -1 Ser) (NOT -2 Ne_pron) (NOT -3 Pro);
+
+REMOVE V IF (0 ("Reme")) (-1 ("e")) (-2 ("Romul") OR ("Romulus"));
+
+
