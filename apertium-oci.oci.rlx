@@ -4357,3 +4357,5 @@ REMOVE NP IF (0 N) (-2 BOS) (-1 ("«")) (NOT 1 NP) (NOT 1 unknownMajIni);
 REMOVE AJ IF (0 ("de casa")) ;
 REMOVE AV IF (0 ("de casa")) ;
 REMOVE AV IF (0 Gaire_de) ;
+
+REMOVE V IF (0 ("mainada")) (NOT -1 Ser) (NOT -2 Ne_pron) (NOT -3 Pro);
