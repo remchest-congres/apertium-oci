@@ -125,10 +125,11 @@
       <e><p><l></l>         <r><s n="n"/><s n="m"/></r></p><par n="p:s_plural"/></e>
     </pardef>
 
-    <!-- <pardef n="p:ue_uo">
-      <e r="LR"><p><l>uè</l><r>uè</r></p></e>
-      <e r="RL"><p><l>uò</l><r>uè</r></p><par n="v:ue_uo"/></e>
-    </pardef> -->
+    <!-- Mots lengadocians en uè/uò -->
+    <pardef n="p:ue_uo">
+      <e><p><l>uè</l>  <r>uè</r></p></e>
+      <e><p><l>uò</l>  <r>uè</r></p><par n="v:ue_uo"/></e>
+    </pardef>
 
     <!-- Mots lengadocians en ch/it -->
     <pardef n="p:ch_it">
@@ -155,24 +156,38 @@
   </pardefs>
 
   <section id="main" type="standard">
+    <!-- 3 définitions simples pour les ambiguités de nuèch/nuòch/nuèit -->
     <!-- <e lm="nuèch"><p><l>nuèch</l>   <r>nuèch<s n="n"/><s n="f"/><s n="sg"/></r></p></e> -->
     <!-- <e lm="nuèit"><p><l>nuèit</l>   <r>nuèch<s n="n"/><s n="f"/><s n="sg"/></r></p><par n="v:ch_it"/></e> -->
+    <!-- <e lm="nuòch"><p><l>nuòch</l>   <r>nuèch</r></p><par n="v:ue_uo"/><par n="p:nom_feminin"/></e> -->
 
-    <e lm="nuòch"><p><l>nuòch</l>   <r>nuèch</r></p><par n="v:ue_uo"/><par n="p:nom_feminin"/></e>
+    <!-- une définition pour l'ambiguité nuèch/nuòch -->
+    <e lm="nuòch"><i>n</i><par n="p:ue_uo"/><i>ch</i><par n="p:nom_feminin"/></e>
 
+    <!-- 2 définitions pour l'ambiguité nuèch/nuèit, la seconde utilisant un paradigme agrégé -->
+    <!-- <e lm="nuèch"><i>nuè</i><par n="p:ch_it"/><par n="p:nom_feminin"/></e> -->
     <e lm="nuèch"><i>nuè</i><par n="a:ch_it/nom_feminin"/></e>
 
-    <!-- <e lm="nuèch"><i>nuè</i><par n="p:ch_it"/><par n="p:nom_feminin"/></e> -->
-
-    <!-- 
+    <!--
+    une autre définition plus complexe pour nuèch/nuòch/nuèit 
     pas sur de la pertinence de la définition suivante car elle permet techniquement de générer une forme
-    nuòit qui n'existe pas à ma connaissance 
+    'nuòit' qui n'existe pas à ma connaissance 
     -->
     <!-- <e lm="nuèch"><i>n</i><par n="p:ue_uo"/><par n="p:ch_it"/></e> -->
 
+    <!-- une définition pour lièch/lièit -->
     <e lm="lièch"><i>liè</i><par n="p:ch_it"/><par n="p:nom_masculin"/></e>
 
+    <!-- une définition pour fuelha/huelha -->
     <e lm="fuelha"><par n="p:f_h"/><i>uelha</i><par n="p:nom_feminin"/></e>
+
+    <!-- 
+    une définition complexe permetant de reconnaitre et produire les formes
+    farina
+    harina    <- pas sur que cette forme existe
+    faria     <- pas sur que cette forme existe
+    haria
+    -->
     <e lm="farina"><par n="p:f_h"/><i>ari</i><par n="p:casuda_n"/><i>a</i><par n="p:nom_feminin"/></e>
   </section>
 </dictionary>
