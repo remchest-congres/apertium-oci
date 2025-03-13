@@ -84,7 +84,7 @@
   <!-- ************************ REGEXP DIVÈRSAS ************************ -->
 
   <!--
-  En fait comme par hasard a besoin que nos paradigmes respectent le principe de responsabilité unique.
+  En fait comme par hasard on a besoin que nos paradigmes respectent le principe de responsabilité unique.
   Pour éviter les répétitions et limiter la taille et la complexité du dico on préfèrera définir plusieurs paradigmes simples
   et les combiner ultérieurement.
 
@@ -123,7 +123,7 @@
       <e><p><l>s</l>        <r><s n="n"/><s n="f"/><s n="pl"/></r></p></e>
     </pardef>
 
-    <pardef n="nom_masculin__n">
+    <pardef n="p:nom_masculin">
       <e><p><l></l>         <r><s n="n"/><s n="m"/><s n="sg"/></r></p></e>
       <e><p><l>s</l>        <r><s n="n"/><s n="m"/><s n="pl"/></r></p></e>
     </pardef>
@@ -131,10 +131,10 @@
   Ainsi les mots lièch et nuèch seront représentés dans le dictionnaire sous la forme :
 
     <e lm="nuèch"><i>nuè</i><par n="p:ch_it"/><par n="p:nom_feminin"/></e>
-    <e lm="lièch"><i>liè</i><par n="p:ch_it"/><par n="nom_masculin__n"/></e>
+    <e lm="lièch"><i>liè</i><par n="p:ch_it"/><par n="p:nom_masculin"/></e>
 
   Si jamais la liste des paradigmes à ajouter à une entrée du dico deviens trop longue et détériore la facilité de lecture de l'entrée, ou
-  si un groupe de paradigmes sont souvent réutilisés ensemble et les alors possible de les regrouper dans un paradigme faisait office
+  si un groupe de paradigmes sont souvent réutilisés ensemble, il est alors possible de les regrouper dans un paradigme faisant office
   d'aggrégat :
 
     <pardef n="p:ch_it/nom_feminin">
