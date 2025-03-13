@@ -83,72 +83,6 @@
 
   <!-- ************************ REGEXP DIVÈRSAS ************************ -->
 
-  <!--
-  En fait comme par hasard on a besoin que nos paradigmes respectent le principe de responsabilité unique.
-  Pour éviter les répétitions et limiter la taille et la complexité du dico on préfèrera définir plusieurs paradigmes simples
-  et les combiner ultérieurement.
-
-  Par exemple : 
-
-  Tenter de définir un seul paradigme qui essaye de faire tout d'un coup (variation ch/it plus définition de la catégorie,
-  du genre et du nombre) augmente la complexité des données :
-
-    <pardef n="nuè/ch__n">
-      <e><p><l>chs</l>        <r>ch<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
-      <e><p><l>ch</l>         <r>ch<s n="n"/><s n="f"/><s n="sg"/></r></p></e>
-      <e><p><l>its</l>        <r>ch<s n="n"/><s n="f"/><s n="pl"/></r></p><par n="v:ch_it"/></e>
-      <e><p><l>it</l>         <r>ch<s n="n"/><s n="f"/><s n="sg"/></r></p><par n="v:ch_it"/></e>
-    </pardef>
-
-  De plus dans le cas ci-dessus il nous faudrait de toute façon créer un second paradigme pour les noms masculins ayant la variation ch/it :
-
-    <pardef n="liè/ch__n">
-      <e><p><l>chs</l>        <r>ch<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
-      <e><p><l>ch</l>         <r>ch<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
-      <e><p><l>its</l>        <r>ch<s n="n"/><s n="m"/><s n="pl"/></r></p><par n="v:ch_it"/></e>
-      <e><p><l>it</l>         <r>ch<s n="n"/><s n="m"/><s n="sg"/></r></p><par n="v:ch_it"/></e>
-    </pardef>
-
-  
-  On préfèrera donc définir trois paradigmes simples et précis qui pourront être réutilisés et recomposés ailleurs :
-  (Bon ici en vrai on devrais même faire un paradigme pour la gestion du singulier/pluriel mais je vais garder l'exemple simple)
-
-    <pardef n="p:ch_it">
-      <e><p><l>ch</l>         <r>ch</r></p></e>
-      <e><p><l>it</l>         <r>ch</r></p><par n="v:ch_it"/></e>
-    </pardef>
-
-    <pardef n="p:nom_feminin">
-      <e><p><l></l>         <r><s n="n"/><s n="f"/><s n="sg"/></r></p></e>
-      <e><p><l>s</l>        <r><s n="n"/><s n="f"/><s n="pl"/></r></p></e>
-    </pardef>
-
-    <pardef n="p:nom_masculin">
-      <e><p><l></l>         <r><s n="n"/><s n="m"/><s n="sg"/></r></p></e>
-      <e><p><l>s</l>        <r><s n="n"/><s n="m"/><s n="pl"/></r></p></e>
-    </pardef>
-
-  Ainsi les mots lièch et nuèch seront représentés dans le dictionnaire sous la forme :
-
-    <e lm="nuèch"><i>nuè</i><par n="p:ch_it"/><par n="p:nom_feminin"/></e>
-    <e lm="lièch"><i>liè</i><par n="p:ch_it"/><par n="p:nom_masculin"/></e>
-
-  Si jamais la liste des paradigmes à ajouter à une entrée du dico deviens trop longue et détériore la facilité de lecture de l'entrée, ou
-  si un groupe de paradigmes sont souvent réutilisés ensemble, il est alors possible de les regrouper dans un paradigme faisant office
-  d'aggrégat :
-
-    <pardef n="p:ch_it/nom_feminin">
-      <e><p><l></l>        <r></r></p><par n="p:ch_it"/><par n="p:nom_feminin"/></e>
-    </pardef>
-
-  Ainsi le mot nuèch sera représenté dans le dictionnaire sous la forme :
-
-    <e lm="nuèch"><i>nuè</i><par n="p:ch_it/nom_feminin"/></e>
-
-
-  Le monde est bien fait, vive le SRP.
-  -->
-
   <pardefs>
     <!-- ********** v: paradigmes de variations ********** -->
 
@@ -175,16 +109,20 @@
 
     <!--  ********** p: paradigmes simples ********** -->
 
+    <!-- Apond lo tag per la 's' al plural -->
+    <pardef n="p:s_plural">
+      <e><p><l></l>         <r><s n="sg"/></r></p></e>
+      <e><p><l>s</l>        <r><s n="pl"/></r></p></e>
+    </pardef>
+
     <!-- Apond los tags per un nom feminin -->
     <pardef n="p:nom_feminin">
-      <e><p><l></l>         <r><s n="n"/><s n="f"/><s n="sg"/></r></p></e>
-      <e><p><l>s</l>        <r><s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+      <e><p><l></l>         <r><s n="n"/><s n="f"/></r></p><par n="p:s_plural"/></e>
     </pardef>
 
     <!-- Apond los tags per un nom masculin -->
     <pardef n="p:nom_masculin">
-      <e><p><l></l>         <r><s n="n"/><s n="m"/><s n="sg"/></r></p></e>
-      <e><p><l>s</l>        <r><s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l></l>         <r><s n="n"/><s n="m"/></r></p><par n="p:s_plural"/></e>
     </pardef>
 
     <!-- <pardef n="p:ue_uo">
@@ -210,7 +148,7 @@
       <e><p><l></l>         <r>n</r></p><par n="v:casuda_n"/></e>
     </pardef>
 
-    <!-- ********** a: paradigme aggrégat ********** -->
+    <!-- ********** a: paradigme agrégat ********** -->
     <pardef n="a:ch_it/nom_feminin">
       <e><p><l></l>        <r></r></p><par n="p:ch_it"/><par n="p:nom_feminin"/></e>
     </pardef>
@@ -223,7 +161,13 @@
     <e lm="nuòch"><p><l>nuòch</l>   <r>nuèch</r></p><par n="v:ue_uo"/><par n="p:nom_feminin"/></e>
 
     <e lm="nuèch"><i>nuè</i><par n="a:ch_it/nom_feminin"/></e>
+
     <!-- <e lm="nuèch"><i>nuè</i><par n="p:ch_it"/><par n="p:nom_feminin"/></e> -->
+
+    <!-- 
+    pas sur de la pertinence de la définition suivante car elle permet techniquement de générer une forme
+    nuòit qui n'existe pas à ma connaissance 
+    -->
     <!-- <e lm="nuèch"><i>n</i><par n="p:ue_uo"/><par n="p:ch_it"/></e> -->
 
     <e lm="lièch"><i>liè</i><par n="p:ch_it"/><par n="p:nom_masculin"/></e>
