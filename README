@@ -1,3 +1,9 @@
+WARNING
+===============================================================================
+Please be aware that this repository is a `WORK IN PROGRESS`. The datas, paradigms and
+gramatical rules included here are only for `TEST` purposes. The output of the analysis
+are not trustworthy regarding Occitan language.
+
 Occitan (`apertium-oci`)
 ===============================================================================
 
@@ -50,17 +56,19 @@ Testing
 
 If you are in the source directory after running make, the following
 commands should work:
-```
+```sh
 $  echo "TODO: test sentence" | apertium -d . oci-morph
 TODO: test analysis result
 ```
-```
+```sh
 $ echo "TODO: test sentence" | apertium -d . oci-tagger
 TODO: test tagger result
 ```
 
 Files and data
 ===============================================================================
+
+TODO: update this list
 
 * `apertium-oci.oci.dix`            - Monolingual dictionary
 * `oci.prob`                        - Tagger model

@@ -1,7 +1,7 @@
 # les tests de moi
 # ici on met les regles de désambiguisations concernant les traits des langues
 #
-# par exemple ici la règle concerne le trait uè -> uò en languedocien (nuèch -> nuòch à montpellier)
+# par exemple ici la première règle concerne le trait uè -> uò en languedocien (nuèch -> nuòch à montpellier)
 # dans l'idée la règle dit que si la variable d'entrée de stream ue_uo a été renseignée par l'utilisateur
 # alors on désambiguise les réponses en fonction du marqueur v:ue_uo
 # sinon on désambiguise les réponses en choisissant celles qui n'ont pas le marqueur v:ue_uo
