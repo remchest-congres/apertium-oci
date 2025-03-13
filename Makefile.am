@@ -3,9 +3,11 @@
 ###############################################################################
 
 LANG1=oci
-LANG1b=oci@aran
-LANG1c=oci@gascon
 BASENAME=apertium-$(LANG1)
+
+VAR1=_gascon
+
+# CHANGES : ici on indique notre fichier de préférences dans la liste des fichiers à générer par le make
 
 TARGETS_COMMON =			\
 	$(LANG1).automorf.bin		\
@@ -13,17 +15,9 @@ TARGETS_COMMON =			\
 	$(LANG1).autogen.bin		\
 	$(LANG1).autogen.att.gz		\
 	$(LANG1).autopgen.bin		\
-	$(LANG1c).automorf.bin		\
-	$(LANG1c).automorf.att.gz	\
-	$(LANG1c).autogen.bin		\
-	$(LANG1c).autogen.att.gz		\
-	$(LANG1c).autopgen.bin		\
 	$(LANG1).rlx.bin		\
-	$(LANG1b).automorf.bin		\
-	$(LANG1b).automorf.att.gz	\
-	$(LANG1b).autogen.bin		\
-	$(LANG1b).autogen.att.gz		\
-	$(LANG1b).autopgen.bin
+	$(LANG1).prefs.rlx.bin \
+	$(LANG1)$(VAR1).prefs.rlx.bin
 
 # Use this goal for creating .deps, otherwise make -j2 will give problems:
 @ap_include@
@@ -42,26 +36,6 @@ TARGETS_COMMON =			\
 .deps/$(LANG1).post.dix: $(BASENAME).post-$(LANG1).dix .deps/.d
 	xsltproc --stringparam alt $(LANG1) alt.xsl $(BASENAME).post-$(LANG1).dix >$@
 
-.deps/$(LANG1b).metadix: $(BASENAME).$(LANG1).metadix .deps/.d
-	xsltproc --stringparam alt $(LANG1b) alt.xsl $(BASENAME).$(LANG1).metadix >$@
-
-.deps/$(LANG1b).dix: .deps/$(LANG1b).metadix .deps/.d
-	xsltproc buscaPar.xsl .deps/$(LANG1b).metadix | uniq >$$$$tmp1 && \
-	xsltproc $$$$tmp1 .deps/$(LANG1b).metadix > $@ && rm $$$$tmp1
-
-.deps/$(LANG1b).post.dix: $(BASENAME).post-$(LANG1).dix .deps/.d
-	xsltproc --stringparam alt $(LANG1b) alt.xsl $(BASENAME).post-$(LANG1).dix >$@
-
-.deps/$(LANG1c).metadix: $(BASENAME).$(LANG1).metadix .deps/.d
-	xsltproc --stringparam alt $(LANG1c) alt.xsl $(BASENAME).$(LANG1).metadix >$@
-
-.deps/$(LANG1c).dix: .deps/$(LANG1c).metadix .deps/.d
-	xsltproc buscaPar.xsl .deps/$(LANG1c).metadix | uniq >$$$$tmp1 && \
-	xsltproc $$$$tmp1 .deps/$(LANG1c).metadix > $@ && rm $$$$tmp1
-
-.deps/$(LANG1c).post.dix: $(BASENAME).post-$(LANG1).dix .deps/.d
-	xsltproc --stringparam alt $(LANG1c) alt.xsl $(BASENAME).post-$(LANG1).dix >$@
-
 ###############################################################################
 
 $(LANG1).automorf.bin: .deps/$(LANG1).dix $(BASENAME).$(LANG1).acx
@@ -79,44 +53,6 @@ $(LANG1).automorf.att.gz: $(LANG1).automorf.bin
 	lt-print $< | gzip -n -9 -c > $@
 
 $(LANG1).autopgen.bin: .deps/$(LANG1).post.dix
-	lt-comp lr $< $@
-
-###############################################################################
-
-$(LANG1b).automorf.bin: .deps/$(LANG1b).dix $(BASENAME).$(LANG1).acx
-	apertium-validate-dictionary .deps/$(LANG1b).dix
-	lt-comp lr .deps/$(LANG1b).dix $@ $(BASENAME).$(LANG1).acx
-
-$(LANG1b).autogen.bin: .deps/$(LANG1b).dix
-	apertium-validate-dictionary .deps/$(LANG1b).dix
-	lt-comp rl .deps/$(LANG1b).dix $@
-
-$(LANG1b).autogen.att.gz: $(LANG1b).autogen.bin
-	lt-print $< | gzip -n -9 -c > $@
-
-$(LANG1b).automorf.att.gz: $(LANG1b).automorf.bin
-	lt-print $< | gzip -n -9 -c > $@
-
-$(LANG1b).autopgen.bin: .deps/$(LANG1b).post.dix
-	lt-comp lr $< $@
-
-###############################################################################
-
-$(LANG1c).automorf.bin: .deps/$(LANG1c).dix $(BASENAME).$(LANG1).acx
-	apertium-validate-dictionary .deps/$(LANG1c).dix
-	lt-comp lr .deps/$(LANG1c).dix $@ $(BASENAME).$(LANG1).acx
-
-$(LANG1c).autogen.bin: .deps/$(LANG1c).dix
-	apertium-validate-dictionary .deps/$(LANG1c).dix
-	lt-comp rl .deps/$(LANG1c).dix $@
-
-$(LANG1c).autogen.att.gz: $(LANG1c).autogen.bin
-	lt-print $< | gzip -n -9 -c > $@
-
-$(LANG1c).automorf.att.gz: $(LANG1c).automorf.bin
-	lt-print $< | gzip -n -9 -c > $@
-
-$(LANG1c).autopgen.bin: .deps/$(LANG1c).post.dix
 	lt-comp lr $< $@
 
 ###############################################################################
@@ -167,6 +103,18 @@ $(LANG1).zhfst: .deps/acceptor.default.hfst .deps/errmodel.default.hfst
 ###############################################################################
 
 $(LANG1).rlx.bin: $(BASENAME).$(LANG1).rlx
+	cg-comp $< $@
+
+###############################################################################
+## Variant preferences
+###############################################################################
+
+# CHANGES : on compile le fichier de règles pour les préférences
+
+$(LANG1).prefs.rlx.bin: $(BASENAME).$(LANG1).prefs.rlx
+	cg-comp $< $@
+
+$(LANG1)$(VAR1).prefs.rlx.bin: $(BASENAME).$(LANG1)$(VAR1).prefs.rlx
 	cg-comp $< $@
 
 ###############################################################################

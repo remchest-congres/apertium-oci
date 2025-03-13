@@ -1,0 +1,27 @@
+# les tests de moi
+# ici on met les regles de désambiguisations concernant les traits des langues
+#
+# par exemple ici la règle concerne le trait uè -> uò en languedocien (nuèch -> nuòch à montpellier)
+# dans l'idée la règle dit que si la variable d'entrée de stream ue_uo a été renseignée par l'utilisateur
+# alors on désambiguise les réponses en fonction du marqueur v:ue_uo
+# sinon on désambiguise les réponses en choisissant celles qui n'ont pas le marqueur v:ue_uo
+
+DELIMITERS = ".";
+
+# on favorise les formes ayant le tag v:ue_uo si le mot actuel a un tag contenant la valeur de la variable globale VAR:ue_uo
+# si la variable VAR:ue_uo n'est pas définie alors la condition sera fausse et aucune forme n'est sélectionnée
+SELECT (v:ue_uo)      IF (0 (VAR:ue_uo)) ;
+
+# ensuite on retire toutes les formes ayant le tag v:ue_uo, à ce point les seules formes restantes avec ce tag sont celles
+# qui n'ont pas été choisies par la première règle donc on s'en débarasse
+REMOVE (v:ue_uo) ;
+
+SELECT (v:ch_it)      IF (0 (VAR:ch_it)) ;
+REMOVE (v:ch_it) ;
+
+SELECT (v:f_h)      IF (0 (VAR:f_h)) ;
+REMOVE (v:f_h) ;
+
+SELECT (v:casuda_n)      IF (0 (VAR:casuda_n)) ;
+REMOVE (v:casuda_n) ;
+

@@ -1,0 +1,32 @@
+# on hard-code des variables pour cette variété, en ignorant celles renseignées par l'utilisateur
+
+DELIMITERS = ".";
+
+# TEST : ici on essaie de voir si pour une variété on peut forcer des traits mais en laisser d'autres optionnels
+
+# règle conditionelle `ue_uo`
+SELECT (v:ue_uo)      IF (0 (VAR:ue_uo)) ;
+REMOVE (v:ue_uo) ;
+
+# REMARQUES => du coup oui on peut il faut juste faire attention à l'ordre des règles pour gérer les priorités car selon la manière dont sont définies
+# les entrées du dico, les règles de desambiguisation peuvent s'exclure l'une l'autre 
+# 
+# par exemple dans le cas présent :
+#   echo 'nuit lit farine feuille' | AP_SETVAR='ue_uo' apertium -d . fra-oci_gascon
+# donne 
+#   nuòch lièit haria huelha
+# 
+# l'ambiguité entre
+#   <e lm="nuòch"><p><l>nuòch</l>   <r>nuèch<s n="n"/><s n="f"/><s n="sg"/></r></p><par n="v:ue_uo"/></e>
+# et
+#   <e lm="nuèch"><i>nuè</i><par n="nuè/ch__n"/></e>
+# est traitée par la règle conditionelle `ue_uo` ci-dessus et donc la règle forcée `SELECT (v:ch_it) ;` ne s'applique pas car lorsqu'on arrive
+# à ce niveau l'ambiguité a déjà été levée.
+#
+# si la règle conditionelle `ue_uo` était placée après les règles forcées l'inverse se serait produit et la sortie du pipeline aurait renvoyé
+#   nuèit lièit haria huelha
+
+# règles forcées
+SELECT (v:ch_it) ;
+SELECT (v:f_h) ;
+SELECT (v:casuda_n) ;
