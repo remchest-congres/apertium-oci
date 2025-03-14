@@ -41,10 +41,32 @@ La manière la plus simple de créer une ambiguité sur un mot est de créer un 
 Par exemple pour le mot `nuèch` et ses variantes `nuèit` et `nuòch` :
 
 ```xml
-<!-- chaque forme dispose de son entrée, les formes considérés comme des variations étant identifiées par un paradigme spécifique -->
-<e lm="nuèch"><p><l>nuèch</l>   <r>nuèch<s n="n"/><s n="f"/><s n="sg"/></r></p></e>
-<e lm="nuèit"><p><l>nuèit</l>   <r>nuèch<s n="n"/><s n="f"/><s n="sg"/></r></p><par n="v:ch_it"/></e>
-<e lm="nuòch"><p><l>nuòch</l>   <r>nuèch<s n="n"/><s n="f"/><s n="sg"/></r></p><par n="v:ue_uo"/></e>
+<!-- 
+chaque forme dispose de son entrée, les formes considérés comme des variations étant identifiées par 
+un paradigme spécifique 
+-->
+<e lm="nuèch">
+    <p>
+        <l>nuèch</l>
+        <r>nuèch<s n="n"/><s n="f"/><s n="sg"/></r>
+    </p>
+</e>
+
+<e lm="nuèit">
+    <p>
+        <l>nuèit</l>
+        <r>nuèch<s n="n"/><s n="f"/><s n="sg"/></r>
+    </p>
+    <par n="v:ch_it"/>
+</e>
+
+<e lm="nuòch">
+    <p>
+        <l>nuòch</l>
+        <r>nuèch<s n="n"/><s n="f"/><s n="sg"/></r>
+    </p>
+    <par n="v:ue_uo"/>
+</e>
 ```
 ## Avantages
 
