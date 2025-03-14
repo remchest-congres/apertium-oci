@@ -91,7 +91,7 @@ En effet cette solution permet générer les formes suivantes :
 
 la forme `nuòit` pourra donc techniquement être produite (si un utilisateur entre la bonne séquence de paramètres) alors que je ne crois pas qu'elle existe en réalité.
 
-## Solution 3 : un mix des deux autres
+# Solution 3 : un mix des deux autres
 
 les deux solutions précédentes ne s'excluent pas l'une l'autre et peuvent être combinées pour
 répondre à des cas métiers précis.
