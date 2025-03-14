@@ -173,7 +173,7 @@
     pas sur de la pertinence de la définition suivante car elle permet techniquement de générer une forme
     'nuòit' qui n'existe pas à ma connaissance 
     -->
-    <!-- <e lm="nuèch"><i>n</i><par n="p:ue_uo"/><par n="p:ch_it"/></e> -->
+    <!-- <e lm="nuèch"><i>n</i><par n="p:ue_uo"/><par n="p:ch_it"/><par n="p:nom_feminin"/></e> -->
 
     <!-- une définition pour lièch/lièit -->
     <e lm="lièch"><i>liè</i><par n="p:ch_it"/><par n="p:nom_masculin"/></e>
