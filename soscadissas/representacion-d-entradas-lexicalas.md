@@ -124,7 +124,7 @@ de l'entrée avec une utilisation de paradigmes de variations pour arriver exact
 ```xml
 <!-- une définition pour l'ambiguité nuèch/nuòch -->
 <e lm="nuòch">
-    <i>n</i>                    <!-- partie du mot invariable, il commencera toujours pas un 'n' -->
+    <i>n</i>                    <!-- partie du mot invariable, il commencera toujours par un 'n' -->
     <par n="p:ue_uo"/>          <!-- ce paradigme gère la variation uè/uò-->
     <i>ch</i>                   <!-- partie du mot invariable, après 'uè' ou 'uò' on aura toujours 'ch' -->
     <par n="p:nom_feminin"/>    <!-- ce paradigme ajoute les tags propres à un nom féminin -->
@@ -132,7 +132,7 @@ de l'entrée avec une utilisation de paradigmes de variations pour arriver exact
 
 <!-- une autre définitions pour l'ambiguité nuèch/nuèit -->
 <e lm="nuèch">
-    <i>nuè</i>                  <!-- partie du mot invariable, il commencera toujours pas un 'nuè' -->
+    <i>nuè</i>                  <!-- partie du mot invariable, il commencera toujours par un 'nuè' -->
     <par n="p:ch_it"/>          <!-- ce paradigme gère la variation ch/it, après 'nuè' on autorise la variation ch/it -->
     <par n="p:nom_feminin"/>    <!-- ce paradigme ajoute les tags propres à un nom féminin -->
 </e>
