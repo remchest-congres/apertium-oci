@@ -1,6 +1,6 @@
 # Concernant la manière de représenter les mots dans notre dictionnaire...
 
-## Principe de la question des variétés
+## Principe de la gestion des variétés
 
 Pour la gestion des variations le principe est de créer une `ambiguité` dans notre dictionaire. Celle-ci sera ensuite "désambiguisée" en fonction de paramètres renseignés par l'utilisateur ou en fonction d'une liste de paramètres définis en dur pour un dialecte donné.
 
