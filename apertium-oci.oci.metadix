@@ -5741,6 +5741,16 @@
     <e r="LR"><p><l>ir</l><r>er<s n="vblex"/><s n="ger"/><j/></r></p><par n="S__cantant"/></e>
   </pardef>
 
+  <!-- Infinitiu (e gerondiu) en -ir -->
+  <pardef n="g3_inf_ir_leng__vblex">
+    <e alt="oci"><p><l>ir</l><r>er<s n="vblex"/><s n="inf"/></r></p></e>
+  </pardef>
+
+  <!-- Infinitiu (e gerondiu) en -e -->
+  <pardef n="g3_inf_e__vblex">
+    <e alt="oci"><p><l>e</l><r>er<s n="vblex"/><s n="inf"/></r></p></e>
+  </pardef>
+
   <!-- Infinitiu sens accent amb -r (+ gerondiu) -->
   <pardef n="g3_inf_noacc_r__vblex">
     <e alt="oci"><p><l>re</l><r>er<s n="vblex"/><s n="inf"/></r></p></e>
@@ -10960,8 +10970,8 @@
 
 
     <!-- infinitiu : -en -->
-    <e alt="oci"><i>é<prm/>n</i><par n="g3_inf_noacc_er_leng__vblex"/></e> <!-- amb l'accent -->
-    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_inf_ir__vblex"/></e> <!-- amb l'accent -->
+    <e alt="oci" r="LR"><i>é<prm/>n</i><par n="g3_inf_noacc_er_leng__vblex"/></e> <!-- amb l'accent -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_inf_ir_leng__vblex"/></e> <!-- amb l'accent -->
 
     <!-- infinitiu : -eng -->
     <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_inf_noacc_e__vblex"/></e> <!-- sens accent -->
@@ -10981,6 +10991,791 @@
     <!-- infinitiu : tier -->
     <e alt="oci@aran"><p><l>i</l><r>é</r></p><i><prm/></i><p><l/><r>n</r></p><par n="g3_inf_noacc_e__vblex"/></e> <!-- sens accent -->
     <e alt="oci@aran"><p><l>i</l><r>é</r></p><i><prm/></i><i><prm/></i><p><l/><r>n</r></p><par n="g3_inf_acc__vblex"/></e> <!-- amb l'accent -->
+
+  </pardef>
+
+
+  <!-- G3 : préner/prene/prendre/prénguer -->
+  <pardef n="pr/é[]ner__vblex">
+    <!-- present de l'indicatiu e imperfach de l'indicatiu : -en -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_pri_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_pri_alt_i__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_pri_alt_a__vblex"/></e> <!-- alternant en -a o u -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_pri_p3s__vblex"/></e><!-- p3s -->
+		<e alt="oci"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_pri_pii_noalt_e__vblex"/></e><!-- pas alternant en -e i -->
+
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_pri_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_pri_alt_i__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_pri_p3s__vblex"/></e><!-- p3s -->
+		<e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_pri_pii_noalt_e__vblex"/></e><!-- pas alternant en -e i -->
+
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_pri_alt_i__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_pri_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_pri_p3s__vblex"/></e><!-- p3s -->
+		<e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_pri_pii_noalt_e__vblex"/></e><!-- pas alternant en -e i -->
+
+    
+    <!-- present de l'indicatiu e imperfach de l'indicatiu : -eng -->
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_pri_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_pri_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_pri_alt_i__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_pri_alt_i__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_pri_p3s__vblex"/></e><!-- p3s -->
+    <e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_pri_p3s__vblex"/></e><!-- p3s -->
+		<e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_pri_pii_noalt_e__vblex"/></e><!-- pas alternant en -e i -->
+		<e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_pri_pii_noalt_e__vblex"/></e><!-- pas alternant en -e i -->
+
+
+    <!-- preterit e imperfach del subjonctiu en : -en -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_ifi_pis_noalt_e__vblex"/></e> <!-- en -e i -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_ifi_pis_noalt_a__vblex"/></e> <!-- en -a o u -->
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_ifi_pis_noalt_e__vblex"/></e> <!-- en -e i -->
+
+    <!-- preterit e imperfach del subjonctiu en : -eng -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_ifi_pis_noalt_e__vblex"/></e> <!-- en -e i -->
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_ifi_pis_noalt_e__vblex"/></e> <!-- en -e i -->
+    <e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_ifi_pis_noalt_e__vblex"/></e> <!-- en -e i -->
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_ifi_pis_noalt_a__vblex"/></e> <!-- en -a o u -->
+
+
+
+    <!-- futur e condicional : -en -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>nd</l><r>n</r></p><par n="g3_fti_cni_r__vblex"/></e> <!--  en r --> <!--  en r -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_fti_cni_e__vblex"/></e> <!--  en r --> 
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_fti_cni_e__vblex"/></e> <!--  en r --> <!--  en r -->
+
+    <!-- futur e condicional : -eng -->
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_fti_cni_e__vblex"/></e> <!--  en r --> 
+    <e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_fti_cni_e__vblex"/></e> <!--  en r --> <!--  en r -->
+
+
+    <!-- futur del passat : -eng -->
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_fdp__vblex"/></e>
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_fdp__vblex"/></e>
+
+
+    <!-- present del subjonctiu e imperatiu en -s : -en -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_prs_imp_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_prs_alt_a__vblex"/></e> <!-- alternant en -a o u -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_prs_noalt_a__vblex"/></e> <!-- pas alternant en -a o u -->
+
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_prs_imp_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_prs_noalt_e__vblex"/></e> <!-- pas alternant en -e i -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_imp_noalt_e__vblex"/></e> <!-- p1p gasc -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_prs_noalt_a__vblex"/></e> <!-- pas alternant en -a o u -->
+
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_prs_imp_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_prs_noalt_e__vblex"/></e> <!-- pas alternant en -e i -->
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_prs_noalt_a__vblex"/></e> <!-- pas alternant en -a o u -->
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_prs_alt_a__vblex"/></e> <!-- pas alternant en -a o u -->
+
+		<e alt="oci"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_imp_p1p_a__vblex"/></e> <!-- p1p leng -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_imp_p2s__vblex"/></e><!-- imp p2s -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_imp_p2p__vblex"/></e> <!-- imperatiu p2p -->
+
+		<e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_imp_p1p_a__vblex"/></e> <!-- p1p leng -->
+    <e alt="oci@gascon"><i>é<prm/>n</i><par n="g3_prs_acc__vblex"/></e> <!-- amb accent pas transformant -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_imp_p2s__vblex"/></e><!-- imp p2s -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_imp_p2p__vblex"/></e> <!-- imperatiu p2p -->
+
+		<e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_imp_p1p_a__vblex"/></e> <!-- p1p leng -->
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_imp_noalt_e__vblex"/></e> <!-- p1p aran -->
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_imp_p2s__vblex"/></e><!-- imp p2s -->
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_imp_p2p__vblex"/></e> <!-- imperatiu p2p -->
+
+
+    <!-- present del subjonctiu e imperatiu en -s : -eng -->
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_prs_imp_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_prs_imp_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_prs_noalt_e__vblex"/></e> <!-- pas alternant en -e i -->
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_prs_noalt_a__vblex"/></e> <!-- pas alternant en -a o u -->
+    <e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_prs_noalt_a__vblex"/></e> <!-- pas alternant en -a o u -->
+    <e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_prs_alt_a__vblex"/></e> <!-- pas alternant en -a o u -->
+    <e alt="oci@aran" r="LR"><i>é<prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_prs_acc__vblex"/></e> <!-- amb accent pas transformant -->
+    <e alt="oci@gascon" r="LR"><i>é<prm/></i><p><l>ngu</l><r>n</r></p><par n="tengu/im__vblex"/></e> <!-- amb accent pas transformant -->
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_prs_digas__vblex"/></e> <!-- amb accent pas transformant -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_prs_digam__vblex"/></e> <!-- amb accent pas transformant -->
+
+		<e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_imp_p1p_a__vblex"/></e> <!-- p1p leng -->
+		<e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_imp_p1p_a__vblex"/></e> <!-- p1p leng -->
+    <e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_imp_noalt_e__vblex"/></e> <!-- p1p aran -->
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_imp_noalt_e__vblex"/></e> <!-- p1p gasc -->
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_imp_p2s__vblex"/></e><!-- imp p2s -->
+    <e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_imp_p2s__vblex"/></e><!-- imp p2s -->
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_imp_p2p__vblex"/></e> <!-- imperatiu p2p -->
+    <e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_imp_p2p__vblex"/></e> <!-- imperatiu p2p -->
+
+
+   <!-- participi passat : -es -->
+    <e alt="oci"><p><l/><r>é</r></p><i><prm/></i><p><l/><r>n</r></p><par n="m/es__vblex"/></e>
+    <e alt="oci@gascon"><p><l/><r>é</r></p><i><prm/></i><p><l/><r>n</r></p><par n="m/es__vblex"/></e>
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_pp__vblex"/></e>
+    <e alt="oci@aran" r="LR"><p><l/><r>é</r></p><i><prm/></i><p><l/><r>n</r></p><par n="m/es__vblex"/></e>
+
+   <!-- participi passat : -eng -->
+    <e alt="oci" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_pp__vblex"/></e>
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_pp__vblex"/></e>
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_pp__vblex"/></e>
+    <e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_pp__vblex"/></e>
+
+
+    <!-- gerondiu : -en -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_ger__vblex"/></e>
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_ger__vblex"/></e>
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_ger__vblex"/></e>
+
+    <!-- gerondiu : -eng -->
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_ger__vblex"/></e>
+    <e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_ger__vblex"/></e>
+
+
+    <!-- infinitiu : -en -->
+    <e alt="oci" r="LR"><i>é<prm/>n</i><par n="g3_inf_noacc_er_leng__vblex"/></e> <!-- amb l'accent -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_inf_e__vblex"/></e> <!-- amb l'accent -->
+    <e alt="oci" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>nd</l><r>n</r></p><par n="g3_inf_noacc_r__vblex"/></e> <!-- amb l'accent -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_inf_noacc_e__vblex"/></e> <!-- sens accent -->
+    <e alt="oci@gascon"><i>é<prm/></i><i><prm/>n</i><par n="g3_inf_acc__vblex"/></e> <!-- amb l'accent -->
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_inf_noacc_e__vblex"/></e> <!-- sens accent -->
+    <e alt="oci@aran"><i>é<prm/></i><i><prm/>n</i><par n="g3_inf_acc__vblex"/></e> <!-- amb l'accent -->
+
+    <!-- infinitiu : -eng -->
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_inf_noacc_e__vblex"/></e> <!-- sens accent -->
+    <e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_inf_noacc_e__vblex"/></e> <!-- sens accent -->
+
+    <e alt="oci@gascon" r="LR"><i>é<prm/></i><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_inf_acc__vblex"/></e> <!-- amb l'accent -->
+    <e alt="oci@aran" r="LR"><i>é<prm/></i><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_inf_acc__vblex"/></e> <!-- amb l'accent -->
+
+  </pardef>
+
+
+  <!-- G3 : préner/prene/prendre/prénguer -->
+  <pardef n="compr/é[]ner__vblex">
+    <!-- present de l'indicatiu e imperfach de l'indicatiu : -en -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_pri_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_pri_alt_i__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_pri_alt_a__vblex"/></e> <!-- alternant en -a o u -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_pri_p3s__vblex"/></e><!-- p3s -->
+		<e alt="oci"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_pri_pii_noalt_e__vblex"/></e><!-- pas alternant en -e i -->
+
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_pri_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_pri_alt_i__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_pri_p3s__vblex"/></e><!-- p3s -->
+		<e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_pri_pii_noalt_e__vblex"/></e><!-- pas alternant en -e i -->
+
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_pri_alt_i__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_pri_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_pri_p3s__vblex"/></e><!-- p3s -->
+		<e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_pri_pii_noalt_e__vblex"/></e><!-- pas alternant en -e i -->
+
+    
+    <!-- present de l'indicatiu e imperfach de l'indicatiu : -eng -->
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_pri_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_pri_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_pri_alt_i__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_pri_alt_i__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_pri_p3s__vblex"/></e><!-- p3s -->
+    <e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_pri_p3s__vblex"/></e><!-- p3s -->
+		<e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_pri_pii_noalt_e__vblex"/></e><!-- pas alternant en -e i -->
+		<e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_pri_pii_noalt_e__vblex"/></e><!-- pas alternant en -e i -->
+
+
+    <!-- preterit e imperfach del subjonctiu en : -en -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_ifi_pis_noalt_e__vblex"/></e> <!-- en -e i -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_ifi_pis_noalt_a__vblex"/></e> <!-- en -a o u -->
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_ifi_pis_noalt_e__vblex"/></e> <!-- en -e i -->
+
+    <!-- preterit e imperfach del subjonctiu en : -eng -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_ifi_pis_noalt_e__vblex"/></e> <!-- en -e i -->
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_ifi_pis_noalt_e__vblex"/></e> <!-- en -e i -->
+    <e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_ifi_pis_noalt_e__vblex"/></e> <!-- en -e i -->
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_ifi_pis_noalt_a__vblex"/></e> <!-- en -a o u -->
+
+
+
+    <!-- futur e condicional : -en -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>nd</l><r>n</r></p><par n="g3_fti_cni_r__vblex"/></e> <!--  en r --> <!--  en r -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_fti_cni_e__vblex"/></e> <!--  en r --> 
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_fti_cni_e__vblex"/></e> <!--  en r --> <!--  en r -->
+
+    <!-- futur e condicional : -eng -->
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_fti_cni_e__vblex"/></e> <!--  en r --> 
+    <e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_fti_cni_e__vblex"/></e> <!--  en r --> <!--  en r -->
+
+
+    <!-- futur del passat : -eng -->
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_fdp__vblex"/></e>
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_fdp__vblex"/></e>
+
+
+    <!-- present del subjonctiu e imperatiu en -s : -en -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_prs_imp_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_prs_alt_a__vblex"/></e> <!-- alternant en -a o u -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_prs_noalt_a__vblex"/></e> <!-- pas alternant en -a o u -->
+
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_prs_imp_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_prs_noalt_e__vblex"/></e> <!-- pas alternant en -e i -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_imp_noalt_e__vblex"/></e> <!-- p1p gasc -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_prs_noalt_a__vblex"/></e> <!-- pas alternant en -a o u -->
+
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_prs_imp_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_prs_noalt_e__vblex"/></e> <!-- pas alternant en -e i -->
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_prs_noalt_a__vblex"/></e> <!-- pas alternant en -a o u -->
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_prs_alt_a__vblex"/></e> <!-- pas alternant en -a o u -->
+
+		<e alt="oci"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_imp_p1p_a__vblex"/></e> <!-- p1p leng -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_imp_p2s__vblex"/></e><!-- imp p2s -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_imp_p2p__vblex"/></e> <!-- imperatiu p2p -->
+
+		<e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_imp_p1p_a__vblex"/></e> <!-- p1p leng -->
+    <e alt="oci@gascon"><i>é<prm/>n</i><par n="g3_prs_acc__vblex"/></e> <!-- amb accent pas transformant -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_imp_p2s__vblex"/></e><!-- imp p2s -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_imp_p2p__vblex"/></e> <!-- imperatiu p2p -->
+
+		<e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_imp_p1p_a__vblex"/></e> <!-- p1p leng -->
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_imp_noalt_e__vblex"/></e> <!-- p1p aran -->
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_imp_p2s__vblex"/></e><!-- imp p2s -->
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_imp_p2p__vblex"/></e> <!-- imperatiu p2p -->
+
+
+    <!-- present del subjonctiu e imperatiu en -s : -eng -->
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_prs_imp_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_prs_imp_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_prs_noalt_e__vblex"/></e> <!-- pas alternant en -e i -->
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_prs_noalt_a__vblex"/></e> <!-- pas alternant en -a o u -->
+    <e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_prs_noalt_a__vblex"/></e> <!-- pas alternant en -a o u -->
+    <e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_prs_alt_a__vblex"/></e> <!-- pas alternant en -a o u -->
+    <e alt="oci@aran" r="LR"><i>é<prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_prs_acc__vblex"/></e> <!-- amb accent pas transformant -->
+    <e alt="oci@gascon" r="LR"><i>é<prm/></i><p><l>ngu</l><r>n</r></p><par n="tengu/im__vblex"/></e> <!-- amb accent pas transformant -->
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_prs_digas__vblex"/></e> <!-- amb accent pas transformant -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_prs_digam__vblex"/></e> <!-- amb accent pas transformant -->
+
+		<e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_imp_p1p_a__vblex"/></e> <!-- p1p leng -->
+		<e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_imp_p1p_a__vblex"/></e> <!-- p1p leng -->
+    <e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_imp_noalt_e__vblex"/></e> <!-- p1p aran -->
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_imp_noalt_e__vblex"/></e> <!-- p1p gasc -->
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_imp_p2s__vblex"/></e><!-- imp p2s -->
+    <e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_imp_p2s__vblex"/></e><!-- imp p2s -->
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_imp_p2p__vblex"/></e> <!-- imperatiu p2p -->
+    <e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_imp_p2p__vblex"/></e> <!-- imperatiu p2p -->
+
+
+   <!-- participi passat : -es -->
+    <e alt="oci"><p><l/><r>é</r></p><i><prm/></i><p><l/><r>n</r></p><par n="com/és__vblex"/></e>
+    <e alt="oci@gascon"><p><l/><r>é</r></p><i><prm/></i><p><l/><r>n</r></p><par n="com/és__vblex"/></e>
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_pp__vblex"/></e>
+    <e alt="oci@aran" r="LR"><p><l/><r>é</r></p><i><prm/></i><p><l/><r>n</r></p><par n="com/és__vblex"/></e>
+
+   <!-- participi passat : -eng -->
+    <e alt="oci" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_pp__vblex"/></e>
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_pp__vblex"/></e>
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_pp__vblex"/></e>
+    <e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>n</r></p><par n="g3_pp__vblex"/></e>
+
+
+    <!-- gerondiu : -en -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_ger__vblex"/></e>
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_ger__vblex"/></e>
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_ger__vblex"/></e>
+
+    <!-- gerondiu : -eng -->
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_ger__vblex"/></e>
+    <e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_ger__vblex"/></e>
+
+
+    <!-- infinitiu : -en -->
+    <e alt="oci" r="LR"><i>é<prm/>n</i><par n="g3_inf_noacc_er_leng__vblex"/></e> <!-- amb l'accent -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_inf_e__vblex"/></e> <!-- amb l'accent -->
+    <e alt="oci" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>nd</l><r>n</r></p><par n="g3_inf_noacc_r__vblex"/></e> <!-- amb l'accent -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_inf_noacc_e__vblex"/></e> <!-- sens accent -->
+    <e alt="oci@gascon"><i>é<prm/></i><i><prm/>n</i><par n="g3_inf_acc__vblex"/></e> <!-- amb l'accent -->
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>n</i><par n="g3_inf_noacc_e__vblex"/></e> <!-- sens accent -->
+    <e alt="oci@aran"><i>é<prm/></i><i><prm/>n</i><par n="g3_inf_acc__vblex"/></e> <!-- amb l'accent -->
+
+    <!-- infinitiu : -eng -->
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_inf_noacc_e__vblex"/></e> <!-- sens accent -->
+    <e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_inf_noacc_e__vblex"/></e> <!-- sens accent -->
+
+    <e alt="oci@gascon" r="LR"><i>é<prm/></i><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_inf_acc__vblex"/></e> <!-- amb l'accent -->
+    <e alt="oci@aran" r="LR"><i>é<prm/></i><i><prm/></i><p><l>ngu</l><r>n</r></p><par n="g3_inf_acc__vblex"/></e> <!-- amb l'accent -->
+
+  </pardef>
+
+
+  <!-- G3 : plànher/plànger -->
+  <pardef n="pl/à[]nher__vblex">
+    <!-- present de l'indicatiu e imperfach de l'indicatiu : -an -->
+    <e alt="oci"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pri_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pri_alt_i__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pri_alt_a__vblex"/></e> <!-- alternant en -a o u -->
+    <e alt="oci"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pri_p3s__vblex"/></e><!-- p3s -->
+		<e alt="oci"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pri_pii_noalt_e__vblex"/></e><!-- pas alternant en -e i -->
+
+    <e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pri_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pri_alt_i__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pri_p3s__vblex"/></e><!-- p3s -->
+		<e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pri_pii_noalt_e__vblex"/></e><!-- pas alternant en -e i -->
+
+    <e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pri_alt_i__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pri_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pri_p3s__vblex"/></e><!-- p3s -->
+		<e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pri_pii_noalt_e__vblex"/></e><!-- pas alternant en -e i -->
+
+    
+    <!-- present de l'indicatiu e imperfach de l'indicatiu : -ang -->
+    <e alt="oci" r="LR"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_pri_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci" r="LR"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_pri_alt_i__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci" r="LR"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>nj</l><r>nh</r></p><par n="g3_pri_alt_a__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci" r="LR"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_pri_p3s__vblex"/></e><!-- p3s -->
+		<e alt="oci" r="LR"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_pri_pii_noalt_e__vblex"/></e><!-- pas alternant en -e i -->
+
+
+    <!-- preterit e imperfach del subjonctiu en : -an -->
+    <e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_ifi_pis_noalt_e__vblex"/></e> <!-- en -e i -->
+    <e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_ifi_pis_noalt_a__vblex"/></e> <!-- en -a o u -->
+    <e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_ifi_pis_noalt_e__vblex"/></e> <!-- en -e i -->
+
+    <!-- preterit e imperfach del subjonctiu en : -ang -->
+    <e alt="oci"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>ngu</l><r>nh</r></p><par n="g3_ifi_pis_noalt_e__vblex"/></e> <!-- en -e i -->
+    <e alt="oci@gascon" r="LR"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>ngu</l><r>nh</r></p><par n="g3_ifi_pis_noalt_e__vblex"/></e> <!-- en -e i -->
+    <e alt="oci@aran" r="LR"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>ngu</l><r>nh</r></p><par n="g3_ifi_pis_noalt_e__vblex"/></e> <!-- en -e i -->
+    <e alt="oci@gascon" r="LR"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_ifi_pis_noalt_a__vblex"/></e> <!-- en -a o u -->
+
+
+
+    <!-- futur e condicional : -an -->
+    <e alt="oci"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_fti_cni_e__vblex"/></e> <!--  en r --> <!--  en r -->
+    <e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_fti_cni_e__vblex"/></e> <!--  en r --> 
+    <e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_fti_cni_e__vblex"/></e> <!--  en r --> <!--  en r -->
+
+    <!-- futur e condicional : -ang -->
+    <e alt="oci" r="LR"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_fti_cni_e__vblex"/></e> <!--  en r --> <!--  en r -->
+
+
+    <!-- futur del passat : -ang -->
+    <e alt="oci@gascon" r="LR"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_fdp__vblex"/></e>
+
+
+    <!-- present del subjonctiu e imperatiu en -s : -an -->
+    <e alt="oci"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>ngu</l><r>nh</r></p><par n="g3_prs_imp_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_prs_alt_a__vblex"/></e> <!-- alternant en -a o u -->
+    <e alt="oci"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_prs_noalt_a__vblex"/></e> <!-- pas alternant en -a o u -->
+
+    <e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_prs_imp_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_prs_noalt_e__vblex"/></e> <!-- pas alternant en -e i -->
+    <e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_imp_noalt_e__vblex"/></e> <!-- p1p gasc -->
+    <e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_prs_noalt_a__vblex"/></e> <!-- pas alternant en -a o u -->
+
+    <e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_prs_imp_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_prs_noalt_e__vblex"/></e> <!-- pas alternant en -e i -->
+    <e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_prs_noalt_a__vblex"/></e> <!-- pas alternant en -a o u -->
+    <e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_prs_alt_a__vblex"/></e> <!-- pas alternant en -a o u -->
+
+    <e alt="oci"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_imp_p2s__vblex"/></e><!-- imp p2s -->
+    <e alt="oci"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_imp_p2p__vblex"/></e> <!-- imperatiu p2p -->
+
+		<e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_imp_p1p_a__vblex"/></e> <!-- p1p leng -->
+    <e alt="oci@gascon"><i>à<prm/>nh</i><par n="g3_prs_acc__vblex"/></e> <!-- amb accent pas transformant -->
+    <e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_imp_p2s__vblex"/></e><!-- imp p2s -->
+    <e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_imp_p2p__vblex"/></e> <!-- imperatiu p2p -->
+
+		<e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_imp_p1p_a__vblex"/></e> <!-- p1p leng -->
+    <e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_imp_noalt_e__vblex"/></e> <!-- p1p aran -->
+    <e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_imp_p2s__vblex"/></e><!-- imp p2s -->
+    <e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_imp_p2p__vblex"/></e> <!-- imperatiu p2p -->
+
+
+    <!-- present del subjonctiu e imperatiu en -s : -ang -->
+
+    <e alt="oci" r="LR"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_imp_p2s__vblex"/></e><!-- imp p2s -->
+    <e alt="oci"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_imp_p1p_a__vblex"/></e> <!-- p1p gasc -->
+
+
+   <!-- participi passat : -an -->
+    <e alt="oci" r="LR"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pp__vblex"/></e>
+    <e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pp__vblex"/></e>
+    <e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pp__vblex"/></e>
+    <e alt="oci" r="LR"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>n</l><r>nh</r></p><par n="g3_pp_ch__vblex"/></e>
+
+   <!-- participi passat : -ang -->
+    <e alt="oci"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_pp__vblex"/></e>
+    <e alt="oci@gascon" r="LR"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_pp__vblex"/></e>
+    <e alt="oci@gascon" r="LR"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pp__vblex"/></e>
+    <e alt="oci@aran" r="LR"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_pp__vblex"/></e>
+
+
+    <!-- gerondiu : -an -->
+    <e alt="oci"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_ger__vblex"/></e>
+    <e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_ger__vblex"/></e>
+    <e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_ger__vblex"/></e>
+
+    <!-- gerondiu : -ang -->
+    <e alt="oci" r="LR"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_ger__vblex"/></e>
+
+
+    <!-- infinitiu : -an -->
+    <e alt="oci"><i>à<prm/>nh</i><par n="g3_inf_noacc_er_leng__vblex"/></e> <!-- amb l'accent -->
+    <e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_inf_noacc_e__vblex"/></e> <!-- sens accent -->
+    <e alt="oci@gascon"><i>à<prm/></i><i><prm/>nh</i><par n="g3_inf_acc__vblex"/></e> <!-- amb l'accent -->
+    <e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_inf_noacc_e__vblex"/></e> <!-- sens accent -->
+    <e alt="oci@aran"><i>à<prm/></i><i><prm/>nh</i><par n="g3_inf_acc__vblex"/></e> <!-- amb l'accent -->
+
+    <!-- infinitiu : -ang -->
+    <e alt="oci" r="LR"><i>à<prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_inf_noacc_er_leng__vblex"/></e> <!-- amb l'accent -->
+
+  </pardef>
+
+
+  <!-- G3 : plànher/plànger -->
+  <pardef n="t/à[]nher__vblex">
+    <!-- present de l'indicatiu e imperfach de l'indicatiu : -an -->
+    <e alt="oci"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pri_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pri_alt_i__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pri_alt_a__vblex"/></e> <!-- alternant en -a o u -->
+    <e alt="oci"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pri_p3s__vblex"/></e><!-- p3s -->
+		<e alt="oci"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pri_pii_noalt_e__vblex"/></e><!-- pas alternant en -e i -->
+
+    <e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pri_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pri_alt_i__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pri_p3s__vblex"/></e><!-- p3s -->
+		<e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pri_pii_noalt_e__vblex"/></e><!-- pas alternant en -e i -->
+
+    <e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pri_alt_i__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pri_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pri_p3s__vblex"/></e><!-- p3s -->
+		<e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pri_pii_noalt_e__vblex"/></e><!-- pas alternant en -e i -->
+
+    
+    <!-- present de l'indicatiu e imperfach de l'indicatiu : -ang -->
+    <e alt="oci" r="LR"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_pri_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci" r="LR"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_pri_alt_i__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci" r="LR"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>nj</l><r>nh</r></p><par n="g3_pri_alt_a__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci" r="LR"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_pri_p3s__vblex"/></e><!-- p3s -->
+		<e alt="oci" r="LR"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_pri_pii_noalt_e__vblex"/></e><!-- pas alternant en -e i -->
+
+
+    <!-- preterit e imperfach del subjonctiu en : -an -->
+    <e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_ifi_pis_noalt_e__vblex"/></e> <!-- en -e i -->
+    <e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_ifi_pis_noalt_a__vblex"/></e> <!-- en -a o u -->
+    <e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_ifi_pis_noalt_e__vblex"/></e> <!-- en -e i -->
+
+    <!-- preterit e imperfach del subjonctiu en : -ang -->
+    <e alt="oci"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>ngu</l><r>nh</r></p><par n="g3_ifi_pis_noalt_e__vblex"/></e> <!-- en -e i -->
+
+
+
+    <!-- futur e condicional : -an -->
+    <e alt="oci"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_fti_cni_e__vblex"/></e> <!--  en r --> <!--  en r -->
+    <e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_fti_cni_e__vblex"/></e> <!--  en r --> 
+    <e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_fti_cni_e__vblex"/></e> <!--  en r --> <!--  en r -->
+
+    <!-- futur e condicional : -ang -->
+    <e alt="oci" r="LR"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_fti_cni_e__vblex"/></e> <!--  en r --> <!--  en r -->
+
+
+    <!-- futur del passat : -ang -->
+    <e alt="oci@gascon" r="LR"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_fdp__vblex"/></e>
+
+
+    <!-- present del subjonctiu e imperatiu en -s : -an -->
+    <e alt="oci"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>ngu</l><r>nh</r></p><par n="g3_prs_imp_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_prs_alt_a__vblex"/></e> <!-- alternant en -a o u -->
+    <e alt="oci"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_prs_noalt_a__vblex"/></e> <!-- pas alternant en -a o u -->
+
+    <e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_prs_imp_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_prs_noalt_e__vblex"/></e> <!-- pas alternant en -e i -->
+    <e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_imp_noalt_e__vblex"/></e> <!-- p1p gasc -->
+    <e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_prs_noalt_a__vblex"/></e> <!-- pas alternant en -a o u -->
+
+    <e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_prs_imp_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_prs_noalt_e__vblex"/></e> <!-- pas alternant en -e i -->
+    <e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_prs_noalt_a__vblex"/></e> <!-- pas alternant en -a o u -->
+    <e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_prs_alt_a__vblex"/></e> <!-- pas alternant en -a o u -->
+
+    <e alt="oci"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_imp_p2s__vblex"/></e><!-- imp p2s -->
+    <e alt="oci"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_imp_p2p__vblex"/></e> <!-- imperatiu p2p -->
+
+		<e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_imp_p1p_a__vblex"/></e> <!-- p1p leng -->
+    <e alt="oci@gascon"><i>à<prm/>nh</i><par n="g3_prs_acc__vblex"/></e> <!-- amb accent pas transformant -->
+    <e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_imp_p2s__vblex"/></e><!-- imp p2s -->
+    <e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_imp_p2p__vblex"/></e> <!-- imperatiu p2p -->
+
+		<e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_imp_p1p_a__vblex"/></e> <!-- p1p leng -->
+    <e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_imp_noalt_e__vblex"/></e> <!-- p1p aran -->
+    <e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_imp_p2s__vblex"/></e><!-- imp p2s -->
+    <e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_imp_p2p__vblex"/></e> <!-- imperatiu p2p -->
+
+
+    <!-- present del subjonctiu e imperatiu en -s : -ang -->
+
+    <e alt="oci" r="LR"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_imp_p2s__vblex"/></e><!-- imp p2s -->
+    <e alt="oci"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_imp_p1p_a__vblex"/></e> <!-- p1p gasc -->
+
+
+   <!-- participi passat : -an -->
+    <e alt="oci" r="LR"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pp__vblex"/></e>
+    <e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pp__vblex"/></e>
+    <e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_pp__vblex"/></e>
+
+   <!-- participi passat : -ang -->
+    <e alt="oci"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_pp__vblex"/></e>
+    <e alt="oci@aran" r="LR"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_pp__vblex"/></e>
+
+
+    <!-- gerondiu : -an -->
+    <e alt="oci"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_ger__vblex"/></e>
+    <e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_ger__vblex"/></e>
+    <e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_ger__vblex"/></e>
+
+    <!-- gerondiu : -ang -->
+    <e alt="oci" r="LR"><p><l>a</l><r>à</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_ger__vblex"/></e>
+
+
+    <!-- infinitiu : -an -->
+    <e alt="oci"><i>à<prm/>nh</i><par n="g3_inf_noacc_er_leng__vblex"/></e> <!-- amb l'accent -->
+    <e alt="oci@gascon"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_inf_noacc_e__vblex"/></e> <!-- sens accent -->
+    <e alt="oci@gascon"><i>à<prm/></i><i><prm/>nh</i><par n="g3_inf_acc__vblex"/></e> <!-- amb l'accent -->
+    <e alt="oci@aran"><p><l>a</l><r>à</r></p><i><prm/>nh</i><par n="g3_inf_noacc_e__vblex"/></e> <!-- sens accent -->
+    <e alt="oci@aran"><i>à<prm/></i><i><prm/>nh</i><par n="g3_inf_acc__vblex"/></e> <!-- amb l'accent -->
+
+    <!-- infinitiu : -ang -->
+    <e alt="oci" r="LR"><i>à<prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_inf_noacc_er_leng__vblex"/></e> <!-- amb l'accent -->
+
+  </pardef>
+
+  <!-- G3 : cénher/cénger -->
+  <pardef n="c/é[]nher__vblex">
+    <!-- present de l'indicatiu e imperfach de l'indicatiu : -an -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_pri_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_pri_alt_i__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_pri_alt_a__vblex"/></e> <!-- alternant en -a o u -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_pri_p3s__vblex"/></e><!-- p3s -->
+		<e alt="oci"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_pri_pii_noalt_e__vblex"/></e><!-- pas alternant en -e i -->
+
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_pri_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_pri_alt_i__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_pri_p3s__vblex"/></e><!-- p3s -->
+		<e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_pri_pii_noalt_e__vblex"/></e><!-- pas alternant en -e i -->
+
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_pri_alt_i__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_pri_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_pri_p3s__vblex"/></e><!-- p3s -->
+		<e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_pri_pii_noalt_e__vblex"/></e><!-- pas alternant en -e i -->
+
+    
+    <!-- present de l'indicatiu e imperfach de l'indicatiu : -ang -->
+    <e alt="oci" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_pri_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_pri_alt_i__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>nj</l><r>nh</r></p><par n="g3_pri_alt_a__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_pri_p3s__vblex"/></e><!-- p3s -->
+		<e alt="oci" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_pri_pii_noalt_e__vblex"/></e><!-- pas alternant en -e i -->
+
+
+    <!-- preterit e imperfach del subjonctiu en : -an -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_ifi_pis_noalt_e__vblex"/></e> <!-- en -e i -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_ifi_pis_noalt_a__vblex"/></e> <!-- en -a o u -->
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_ifi_pis_noalt_e__vblex"/></e> <!-- en -e i -->
+
+    <!-- preterit e imperfach del subjonctiu en : -ang -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>nh</r></p><par n="g3_ifi_pis_noalt_e__vblex"/></e> <!-- en -e i -->
+
+
+
+    <!-- futur e condicional : -an -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_fti_cni_e__vblex"/></e> <!--  en r --> <!--  en r -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_fti_cni_e__vblex"/></e> <!--  en r --> 
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_fti_cni_e__vblex"/></e> <!--  en r --> <!--  en r -->
+
+    <!-- futur e condicional : -ang -->
+    <e alt="oci" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_fti_cni_e__vblex"/></e> <!--  en r --> <!--  en r -->
+
+
+    <!-- futur del passat : -ang -->
+    <e alt="oci@gascon" r="LR"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_fdp__vblex"/></e>
+
+
+    <!-- present del subjonctiu e imperatiu en -s : -an -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ngu</l><r>nh</r></p><par n="g3_prs_imp_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_prs_alt_a__vblex"/></e> <!-- alternant en -a o u -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_prs_noalt_a__vblex"/></e> <!-- pas alternant en -a o u -->
+
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_prs_imp_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_prs_noalt_e__vblex"/></e> <!-- pas alternant en -e i -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_imp_noalt_e__vblex"/></e> <!-- p1p gasc -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_prs_noalt_a__vblex"/></e> <!-- pas alternant en -a o u -->
+
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_prs_imp_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_prs_noalt_e__vblex"/></e> <!-- pas alternant en -e i -->
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_prs_noalt_a__vblex"/></e> <!-- pas alternant en -a o u -->
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_prs_alt_a__vblex"/></e> <!-- pas alternant en -a o u -->
+
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_imp_p2s__vblex"/></e><!-- imp p2s -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_imp_p2p__vblex"/></e> <!-- imperatiu p2p -->
+
+		<e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_imp_p1p_a__vblex"/></e> <!-- p1p leng -->
+    <e alt="oci@gascon"><i>é<prm/>nh</i><par n="g3_prs_acc__vblex"/></e> <!-- amb accent pas transformant -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_imp_p2s__vblex"/></e><!-- imp p2s -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_imp_p2p__vblex"/></e> <!-- imperatiu p2p -->
+
+		<e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_imp_p1p_a__vblex"/></e> <!-- p1p leng -->
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_imp_noalt_e__vblex"/></e> <!-- p1p aran -->
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_imp_p2s__vblex"/></e><!-- imp p2s -->
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_imp_p2p__vblex"/></e> <!-- imperatiu p2p -->
+
+
+    <!-- present del subjonctiu e imperatiu en -s : -ang -->
+
+    <e alt="oci" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_imp_p2s__vblex"/></e><!-- imp p2s -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_imp_p1p_a__vblex"/></e> <!-- p1p gasc -->
+
+
+   <!-- participi passat : -an -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>n</l><r>nh</r></p><par n="g3_pp_ch__vblex"/></e>
+    <e alt="oci" r="LR"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_pp__vblex"/></e>
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_pp__vblex"/></e>
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_pp__vblex"/></e>
+
+   <!-- participi passat : -ang -->
+    <e alt="oci" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_pp__vblex"/></e>
+    <e alt="oci@aran" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_pp__vblex"/></e>
+
+
+    <!-- gerondiu : -an -->
+    <e alt="oci"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_ger__vblex"/></e>
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_ger__vblex"/></e>
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_ger__vblex"/></e>
+
+    <!-- gerondiu : -ang -->
+    <e alt="oci" r="LR"><p><l>e</l><r>é</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_ger__vblex"/></e>
+
+
+    <!-- infinitiu : -an -->
+    <e alt="oci"><i>é<prm/>nh</i><par n="g3_inf_noacc_er_leng__vblex"/></e> <!-- amb l'accent -->
+    <e alt="oci@gascon"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_inf_noacc_e__vblex"/></e> <!-- sens accent -->
+    <e alt="oci@gascon"><i>é<prm/></i><i><prm/>nh</i><par n="g3_inf_acc__vblex"/></e> <!-- amb l'accent -->
+    <e alt="oci@aran"><p><l>e</l><r>é</r></p><i><prm/>nh</i><par n="g3_inf_noacc_e__vblex"/></e> <!-- sens accent -->
+    <e alt="oci@aran"><i>é<prm/></i><i><prm/>nh</i><par n="g3_inf_acc__vblex"/></e> <!-- amb l'accent -->
+
+    <!-- infinitiu : -ang -->
+    <e alt="oci" r="LR"><i>é<prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_inf_noacc_er_leng__vblex"/></e> <!-- amb l'accent -->
+
+  </pardef>
+
+  <!-- G3 : pónher/pónger -->
+  <pardef n="p/ó[]nher__vblex">
+    <!-- present de l'indicatiu e imperfach de l'indicatiu : -an -->
+    <e alt="oci"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_pri_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_pri_alt_i__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_pri_alt_a__vblex"/></e> <!-- alternant en -a o u -->
+    <e alt="oci"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_pri_p3s__vblex"/></e><!-- p3s -->
+		<e alt="oci"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_pri_pii_noalt_e__vblex"/></e><!-- pas alternant en -e i -->
+
+    <e alt="oci@gascon"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_pri_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@gascon"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_pri_alt_i__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@gascon"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_pri_p3s__vblex"/></e><!-- p3s -->
+		<e alt="oci@gascon"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_pri_pii_noalt_e__vblex"/></e><!-- pas alternant en -e i -->
+
+    <e alt="oci@aran"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_pri_alt_i__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@aran"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_pri_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@aran"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_pri_p3s__vblex"/></e><!-- p3s -->
+		<e alt="oci@aran"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_pri_pii_noalt_e__vblex"/></e><!-- pas alternant en -e i -->
+
+    
+    <!-- present de l'indicatiu e imperfach de l'indicatiu : -ang -->
+    <e alt="oci" r="LR"><p><l>o</l><r>ó</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_pri_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci" r="LR"><p><l>o</l><r>ó</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_pri_alt_i__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci" r="LR"><p><l>o</l><r>ó</r></p><i><prm/></i><p><l>nj</l><r>nh</r></p><par n="g3_pri_alt_a__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci" r="LR"><p><l>o</l><r>ó</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_pri_p3s__vblex"/></e><!-- p3s -->
+		<e alt="oci" r="LR"><p><l>o</l><r>ó</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_pri_pii_noalt_e__vblex"/></e><!-- pas alternant en -e i -->
+
+
+    <!-- preterit e imperfach del subjonctiu en : -an -->
+    <e alt="oci@gascon"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_ifi_pis_noalt_e__vblex"/></e> <!-- en -e i -->
+    <e alt="oci@gascon"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_ifi_pis_noalt_a__vblex"/></e> <!-- en -a o u -->
+    <e alt="oci@aran"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_ifi_pis_noalt_e__vblex"/></e> <!-- en -e i -->
+
+    <!-- preterit e imperfach del subjonctiu en : -ang -->
+    <e alt="oci"><p><l>o</l><r>ó</r></p><i><prm/></i><p><l>ngu</l><r>nh</r></p><par n="g3_ifi_pis_noalt_e__vblex"/></e> <!-- en -e i -->
+
+
+
+    <!-- futur e condicional : -an -->
+    <e alt="oci"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_fti_cni_e__vblex"/></e> <!--  en r --> <!--  en r -->
+    <e alt="oci@gascon"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_fti_cni_e__vblex"/></e> <!--  en r --> 
+    <e alt="oci@aran"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_fti_cni_e__vblex"/></e> <!--  en r --> <!--  en r -->
+
+    <!-- futur e condicional : -ang -->
+    <e alt="oci" r="LR"><p><l>o</l><r>ó</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_fti_cni_e__vblex"/></e> <!--  en r --> <!--  en r -->
+
+
+    <!-- futur del passat : -ang -->
+    <e alt="oci@gascon" r="LR"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_fdp__vblex"/></e>
+
+
+    <!-- present del subjonctiu e imperatiu en -s : -an -->
+    <e alt="oci"><p><l>o</l><r>ó</r></p><i><prm/></i><p><l>ngu</l><r>nh</r></p><par n="g3_prs_imp_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci"><p><l>o</l><r>ó</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_prs_alt_a__vblex"/></e> <!-- alternant en -a o u -->
+    <e alt="oci"><p><l>o</l><r>ó</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_prs_noalt_a__vblex"/></e> <!-- pas alternant en -a o u -->
+
+    <e alt="oci@gascon"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_prs_imp_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@gascon"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_prs_noalt_e__vblex"/></e> <!-- pas alternant en -e i -->
+    <e alt="oci@gascon"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_imp_noalt_e__vblex"/></e> <!-- p1p gasc -->
+    <e alt="oci@gascon"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_prs_noalt_a__vblex"/></e> <!-- pas alternant en -a o u -->
+
+    <e alt="oci@aran"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_prs_imp_alt_e__vblex"/></e> <!-- alternant en -e i -->
+    <e alt="oci@aran"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_prs_noalt_e__vblex"/></e> <!-- pas alternant en -e i -->
+    <e alt="oci@aran"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_prs_noalt_a__vblex"/></e> <!-- pas alternant en -a o u -->
+    <e alt="oci@aran"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_prs_alt_a__vblex"/></e> <!-- pas alternant en -a o u -->
+
+    <e alt="oci"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_imp_p2s__vblex"/></e><!-- imp p2s -->
+    <e alt="oci"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_imp_p2p__vblex"/></e> <!-- imperatiu p2p -->
+
+		<e alt="oci@gascon"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_imp_p1p_a__vblex"/></e> <!-- p1p leng -->
+    <e alt="oci@gascon"><i>ó<prm/>nh</i><par n="g3_prs_acc__vblex"/></e> <!-- amb accent pas transformant -->
+    <e alt="oci@gascon"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_imp_p2s__vblex"/></e><!-- imp p2s -->
+    <e alt="oci@gascon"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_imp_p2p__vblex"/></e> <!-- imperatiu p2p -->
+
+		<e alt="oci@aran"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_imp_p1p_a__vblex"/></e> <!-- p1p leng -->
+    <e alt="oci@aran"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_imp_noalt_e__vblex"/></e> <!-- p1p aran -->
+    <e alt="oci@aran"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_imp_p2s__vblex"/></e><!-- imp p2s -->
+    <e alt="oci@aran"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_imp_p2p__vblex"/></e> <!-- imperatiu p2p -->
+
+
+    <!-- present del subjonctiu e imperatiu en -s : -ang -->
+
+    <e alt="oci" r="LR"><p><l>o</l><r>ó</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_imp_p2s__vblex"/></e><!-- imp p2s -->
+    <e alt="oci"><p><l>o</l><r>ó</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_imp_p1p_a__vblex"/></e> <!-- p1p gasc -->
+
+
+   <!-- participi passat : -an -->
+    <e alt="oci"><p><l>o</l><r>ó</r></p><i><prm/></i><p><l>n</l><r>nh</r></p><par n="g3_pp_ch__vblex"/></e>
+    <e alt="oci@gascon"><p><l>u</l><r>ó</r></p><i><prm/></i><p><l>n</l><r>nh</r></p><par n="g3_pp_t__vblex"/></e>
+    <e alt="oci@aran"><p><l>u</l><r>ó</r></p><i><prm/></i><p><l>n</l><r>nh</r></p><par n="g3_pp_t__vblex"/></e>
+    <e alt="oci" r="LR"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_pp__vblex"/></e>
+    <e alt="oci@gascon" r="LR"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_pp__vblex"/></e>
+    <e alt="oci@aran" r="LR"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_pp__vblex"/></e>
+
+   <!-- participi passat : -ang -->
+    <e alt="oci" r="LR"><p><l>o</l><r>ó</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_pp__vblex"/></e>
+
+
+    <!-- gerondiu : -an -->
+    <e alt="oci"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_ger__vblex"/></e>
+    <e alt="oci@gascon"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_ger__vblex"/></e>
+    <e alt="oci@aran"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_ger__vblex"/></e>
+
+    <!-- gerondiu : -ang -->
+    <e alt="oci" r="LR"><p><l>o</l><r>ó</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_ger__vblex"/></e>
+
+
+    <!-- infinitiu : -an -->
+    <e alt="oci"><i>ó<prm/>nh</i><par n="g3_inf_noacc_er_leng__vblex"/></e> <!-- amb l'accent -->
+    <e alt="oci@gascon"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_inf_noacc_e__vblex"/></e> <!-- sens accent -->
+    <e alt="oci@gascon"><i>ó<prm/></i><i><prm/>nh</i><par n="g3_inf_acc__vblex"/></e> <!-- amb l'accent -->
+    <e alt="oci@aran"><p><l>o</l><r>ó</r></p><i><prm/>nh</i><par n="g3_inf_noacc_e__vblex"/></e> <!-- sens accent -->
+    <e alt="oci@aran"><i>ó<prm/></i><i><prm/>nh</i><par n="g3_inf_acc__vblex"/></e> <!-- amb l'accent -->
+
+    <!-- infinitiu : -ang -->
+    <e alt="oci" r="LR"><i>ó<prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_inf_noacc_er_leng__vblex"/></e> <!-- amb l'accent -->
 
   </pardef>
 
@@ -11135,6 +11930,13 @@
 <e lm="redémer"><i>red</i><par n="red/é[M]er__vblex" prm="m"/></e>
 <e lm="rèimer"><i>r</i><par n="r/è[IM]er__vblex" prm="im"/></e>
 <e lm="téner"><i>t</i><par n="t/é[]ner__vblex" prm=""/></e>
+<e lm="préner"><i>pr</i><par n="pr/é[]ner__vblex" prm=""/></e>
+<e lm="compréner"><i>compr</i><par n="compr/é[]ner__vblex" prm=""/></e>
+<e lm="cèrner"><i>c</i><par n="r/è[IM]er__vblex" prm="rn"/></e>
+<e lm="plànher"><i>pl</i><par n="pl/à[]nher__vblex" prm=""/></e>
+<e lm="tànher"><i>t</i><par n="t/à[]nher__vblex" prm=""/></e>
+<e lm="cénher"><i>c</i><par n="c/é[]nher__vblex" prm=""/></e>
+<e lm="pónher"><i>p</i><par n="p/ó[]nher__vblex" prm=""/></e>
 
 
 </section>
