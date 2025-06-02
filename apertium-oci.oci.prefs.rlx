@@ -25,3 +25,5 @@ REMOVE (v:f_h) ;
 SELECT (v:casuda_n)      IF (0 (VAR:casuda_n)) ;
 REMOVE (v:casuda_n) ;
 
+SELECT (v:ul_uu)      IF (0 (VAR:ul_uu)) ;
+REMOVE (v:ul_uu) ;

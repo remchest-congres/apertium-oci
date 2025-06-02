@@ -79,6 +79,8 @@
     <sdef n="v:ch_it"  c="Variant: nuèch -> nuèit" />
     <sdef n="v:f_h"    c="Variant: femna -> hemna" />
     <sdef n="v:casuda_n"    c="Variant: casuda de la 'n' intervocalica" />
+    <sdef n="v:al_au"    c="Variant: portal -> portau" />
+    <sdef n="v:ul_uu"    c="Variant: sul -> suu" />
   </sdefs>
 
   <!-- ************************ REGEXP DIVÈRSAS ************************ -->
@@ -104,6 +106,16 @@
     <pardef n="v:casuda_n">
       <e r="LR"><p><l></l><r></r></p></e>
       <e r="RL"><p><l><s n="v:casuda_n"/></l><r></r></p></e>
+    </pardef>
+
+    <pardef n="v:al_au">
+      <e r="LR"><p><l></l><r></r></p></e>
+      <e r="RL"><p><l><s n="v:al_au"/></l><r></r></p></e>
+    </pardef>
+
+    <pardef n="v:ul_uu">
+      <e r="LR"><p><l></l><r></r></p></e>
+      <e r="RL"><p><l><s n="v:ul_uu"/></l><r></r></p></e>
     </pardef>
 
 
@@ -144,6 +156,12 @@
       <e><p><l></l>         <r>b</r></p><par n="v:casuda_n"/></e>
     </pardef>
 
+    <!-- Mots en al/au (portal/portau) -->
+    <pardef n="p:al_au">
+      <e><p><l>al</l>        <r>al</r></p></e>
+      <e><p><l>au</l>        <r>al</r></p><par n="v:al_au"/></e>
+    </pardef>
+
 
     <!--  ********** t: paradigmes que fan sonque apondre de tags ********** -->
 
@@ -168,6 +186,14 @@
     <pardef n="a:nom_M/F_amb_la_terminasion_A_al_feminin">
       <e><p><l></l>         <r></r></p><par n="t:nom_masculin"/></e>
       <e><p><l>a</l>        <r></r></p><par n="t:nom_feminin"/></e>
+    </pardef>
+
+    <!-- ********** pg: paradigme post generacion ********** -->
+
+    <!-- Alternancia ul/uu dins los determinents -->
+    <pardef n="pg:ul_uu">
+      <e><p><l></l>           <r></r></p></e>
+      <e><p><l>_uu</l>        <r></r></p><par n="v:ul_uu"/></e>
     </pardef>
   </pardefs>
 
@@ -208,6 +234,26 @@
 	  <e lm="en·horcar"><i>en·horcar</i></e>
 	  <e lm="encambar"><i>encam</i><par n="p:casuda_b"/><i>ar</i></e>
     <e lem="un"><p><l>un</l>  <r>un<s n="det"/><s n="ind"/><s n="m"/><s n="sg"/></r></p></e>
-    <e lem="velo"><p><l>velo</l>  <r>velo<s n="n"/><s n="m"/></r></p></e>
+    <e lem="velo"><p><l>velo</l>  <r>velo<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+
+    <!-- ************ TEST POUR LA POST GÉNÉRATION ************ -->
+    <!--
+    fr : 	sur le portail
+    basique : 
+      gasc : sus lo portau
+      lang : sus lo portal
+
+    apres post gen :
+      gasc :	suu portau
+      lang :	sul portal
+    -->
+    <e lm="sus"><p><l>sus</l><r>sus<s n="pr"/></r></p></e>
+
+    <!-- 
+    IDEE: Est ce que là on pourrait pas marque l'etiquette detlo en fonction d'un paradigme de variante ? 
+    Genre si v:ul_uu alors detlo_uu sinon detlo_ul
+    -->
+    <e lm="lo"><p><l><a/>detlo</l> <r>lo<s n="det"/><s n="def"/><s n="m"/><s n="sg"/></r></p><par n="pg:ul_uu"/></e>
+    <e lm="portal"><i>port</i><par n="p:al_au"/><par n="t:nom_masculin"/></e>
   </section>
 </dictionary>

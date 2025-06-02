@@ -30,3 +30,5 @@ REMOVE (v:ue_uo) ;
 SELECT (v:ch_it) ;
 SELECT (v:f_h) ;
 SELECT (v:casuda_n) ;
+SELECT (v:al_au) ;
+SELECT (v:ul_uu) ;
