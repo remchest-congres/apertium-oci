@@ -195,6 +195,35 @@
       <e><p><l></l>           <r></r></p></e>
       <e><p><l>_uu</l>        <r></r></p><par n="v:ul_uu"/></e>
     </pardef>
+
+    <!--  ********** v: paradigmes de verbès ********** -->
+
+    <!-- <pardef n="v:èsser__vbser">
+      <e><p><l>soi</l><r>èsser<s n="vbser" /><s n="pri" /><s n="p1" /><s n="sg" /></r></p></e>
+      <e><p><l>ès</l><r>èsser<s n="vbser" /><s n="pri" /><s n="p2" /><s n="sg" /></r></p></e>
+      <e r="LR"><p><l>siás</l><r>èsser<s n="vbser" /><s n="pri" /><s n="p2" /><s n="sg" /></r></p></e>
+      <e r="LR"><p><l>sès</l><r>èsser<s n="vbser" /><s n="pri" /><s n="p2" /><s n="sg" /></r></p></e>
+      <e><p><l>es</l><r>èsser<s n="vbser" /><s n="pri" /><s n="p3" /><s n="sg" /></r></p></e>
+      <e><p><l>sèm</l><r>èsser<s n="vbser" /><s n="pri" /><s n="p1" /><s n="pl" /></r></p></e>
+      <e r="LR"><p><l>èm</l><r>èsser<s n="vbser" /><s n="pri" /><s n="p1" /><s n="pl" /></r></p></e>
+      <e><p><l>sètz</l><r>èsser<s n="vbser" /><s n="pri" /><s n="p2" /><s n="pl" /></r></p></e>
+      <e r="LR"><p><l>ètz</l><r>èsser<s n="vbser" /><s n="pri" /><s n="p2" /><s n="pl" /></r></p></e>
+      <e><p><l>son</l><r>èsser<s n="vbser" /><s n="pri" /><s n="p3" /><s n="pl" /></r></p></e>
+    </pardef>
+
+    <pardef n="v:estar__vbser">
+      <e><p><l>soi</l><r>estar<s n="vbser"/><s n="pri"/><s n="p1"/><s n="sg"/></r></p></e>
+      <e r="LR"><p><l>sòi</l><r>estar<s n="vbser"/><s n="pri"/><s n="p1"/><s n="sg"/></r></p></e>
+      <e r="LR"><p><l>sò</l><r>estar<s n="vbser"/><s n="pri"/><s n="p1"/><s n="sg"/></r></p></e>
+      <e r="LR"><p><l>sui</l><r>estar<s n="vbser"/><s n="pri"/><s n="p1"/><s n="sg"/></r></p></e>
+      <e><p><l>ès</l><r>estar<s n="vbser"/><s n="pri"/><s n="p2"/><s n="sg"/></r></p></e>
+      <e><p><l>ei</l><r>estar<s n="vbser"/><s n="pri"/><s n="p3"/><s n="sg"/></r></p></e>
+      <e r="LR"><p><l>es</l><r>estar<s n="vbser"/><s n="pri"/><s n="p3"/><s n="sg"/></r></p></e>
+      <e><p><l>èm</l><r>estar<s n="vbser"/><s n="pri"/><s n="p1"/><s n="pl"/></r></p></e>
+      <e r="LR"><p><l>som</l><r>estar<s n="vbser"/><s n="pri"/><s n="p1"/><s n="pl"/></r></p></e>
+      <e><p><l>ètz</l><r>estar<s n="vbser"/><s n="pri"/><s n="p2"/><s n="pl"/></r></p></e>
+      <e><p><l>son</l><r>estar<s n="vbser"/><s n="pri"/><s n="p3"/><s n="pl"/></r></p></e>
+    </pardef> -->
   </pardefs>
 
   <section id="main" type="standard">
@@ -255,5 +284,10 @@
     -->
     <e lm="lo"><p><l><a/>detlo</l> <r>lo<s n="det"/><s n="def"/><s n="m"/><s n="sg"/></r></p><par n="pg:ul_uu"/></e>
     <e lm="portal"><i>port</i><par n="p:al_au"/><par n="t:nom_masculin"/></e>
+
+    <!-- TEST POUR LA FRAGMENTATION (.t1x)-->
+    
+    <!-- <e lm="èsser"><i></i><par n="v:èsser__vbser"/></e>
+    <e lm="estar"><i></i><par n="v:estar__vbser"/></e> -->
   </section>
 </dictionary>
