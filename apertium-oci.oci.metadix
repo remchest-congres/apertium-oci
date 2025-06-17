@@ -79,6 +79,7 @@
     <sdef n="v:ch_it"  c="Variant: nuèch -> nuèit" />
     <sdef n="v:f_h"    c="Variant: femna -> hemna" />
     <sdef n="v:casuda_n"    c="Variant: casuda de la 'n' intervocalica" />
+    <sdef n="v:casuda_b"    c="Variant: casuda de la 'b' intervocalica" />
     <sdef n="v:al_au"    c="Variant: portal -> portau" />
     <sdef n="v:ul_uu"    c="Variant: sul -> suu" />
   </sdefs>
@@ -106,6 +107,11 @@
     <pardef n="v:casuda_n">
       <e r="LR"><p><l></l><r></r></p></e>
       <e r="RL"><p><l><s n="v:casuda_n"/></l><r></r></p></e>
+    </pardef>
+
+    <pardef n="v:casuda_b">
+      <e r="LR"><p><l></l><r></r></p></e>
+      <e r="RL"><p><l><s n="v:casuda_b"/></l><r></r></p></e>
     </pardef>
 
     <pardef n="v:al_au">
@@ -151,9 +157,10 @@
       <e><p><l></l>         <r>n</r></p><par n="v:casuda_n"/></e>
     </pardef>
 
+    <!-- Gascon : casuda de la b intervocalica -->
     <pardef n="p:casuda_b">
       <e><p><l>b</l>        <r>b</r></p></e>
-      <e><p><l></l>         <r>b</r></p><par n="v:casuda_n"/></e>
+      <e><p><l></l>         <r>b</r></p><par n="v:casuda_b"/></e>
     </pardef>
 
     <!-- Mots en al/au (portal/portau) -->
@@ -162,6 +169,10 @@
       <e><p><l>au</l>        <r>al</r></p><par n="v:al_au"/></e>
     </pardef>
 
+    <pardef n="p:terminason_a_al_feminin">
+      <e><p><l></l>         <r><s n="m"/></r></p></e>
+      <e><p><l>a</l>        <r><s n="f"/></r></p></e>
+    </pardef>
 
     <!--  ********** t: paradigmes que fan sonque apondre de tags ********** -->
 
@@ -198,7 +209,7 @@
 
     <!--  ********** v: paradigmes de verbès ********** -->
 
-    <!-- <pardef n="v:èsser__vbser">
+    <pardef n="v:èsser__vbser">
       <e><p><l>soi</l><r>èsser<s n="vbser" /><s n="pri" /><s n="p1" /><s n="sg" /></r></p></e>
       <e><p><l>ès</l><r>èsser<s n="vbser" /><s n="pri" /><s n="p2" /><s n="sg" /></r></p></e>
       <e r="LR"><p><l>siás</l><r>èsser<s n="vbser" /><s n="pri" /><s n="p2" /><s n="sg" /></r></p></e>
@@ -223,7 +234,7 @@
       <e r="LR"><p><l>som</l><r>estar<s n="vbser"/><s n="pri"/><s n="p1"/><s n="pl"/></r></p></e>
       <e><p><l>ètz</l><r>estar<s n="vbser"/><s n="pri"/><s n="p2"/><s n="pl"/></r></p></e>
       <e><p><l>son</l><r>estar<s n="vbser"/><s n="pri"/><s n="p3"/><s n="pl"/></r></p></e>
-    </pardef> -->
+    </pardef>
   </pardefs>
 
   <section id="main" type="standard">
@@ -262,7 +273,7 @@
     <e lm="enforcar"><i>enforcar</i></e>
 	  <e lm="en·horcar"><i>en·horcar</i></e>
 	  <e lm="encambar"><i>encam</i><par n="p:casuda_b"/><i>ar</i></e>
-    <e lem="un"><p><l>un</l>  <r>un<s n="det"/><s n="ind"/><s n="m"/><s n="sg"/></r></p></e>
+    <e lem="un"><p><l>un</l>  <r>un<s n="det"/><s n="ind"/></r></p><par n="p:terminason_a_al_feminin"/><par n="p:s_plural"/></e>
     <e lem="velo"><p><l>velo</l>  <r>velo<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
 
     <!-- ************ TEST POUR LA POST GÉNÉRATION ************ -->
@@ -287,7 +298,8 @@
 
     <!-- TEST POUR LA FRAGMENTATION (.t1x)-->
     
-    <!-- <e lm="èsser"><i></i><par n="v:èsser__vbser"/></e>
-    <e lm="estar"><i></i><par n="v:estar__vbser"/></e> -->
+    <e lm="èsser"><i></i><par n="v:èsser__vbser"/></e>
+    <e lm="estar"><i></i><par n="v:estar__vbser"/></e>
+    <e lem="ora"><p><l>ora</l>  <r>heure</r></p><par n="t:nom_feminin"/></e>
   </section>
 </dictionary>
