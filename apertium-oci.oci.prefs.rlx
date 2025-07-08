@@ -30,3 +30,6 @@ REMOVE (v:casuda_b) ;
 
 SELECT (v:ul_uu)      IF (0 (VAR:ul_uu)) ;
 REMOVE (v:ul_uu) ;
+
+SELECT (v:o_o-greu)      IF (0 (VAR:o_o-greu)) ;
+REMOVE (v:o_o-greu) ;

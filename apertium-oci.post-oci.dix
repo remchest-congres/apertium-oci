@@ -6030,5 +6030,19 @@
       </p>
       <par n="detlo_marks" />
     </e>
+
+    <e>
+      <p>
+        <l><a/>detla<b/></l>
+        <r>l'</r>
+      </p>
+      <par n="vocal_general"/>
+    </e>
+    <e>
+      <p>
+        <l><a/>detla</l>
+        <r>la</r>
+      </p>
+    </e>
   </section>
 </dictionary>

@@ -82,6 +82,7 @@
     <sdef n="v:casuda_b"    c="Variant: casuda de la 'b' intervocalica" />
     <sdef n="v:al_au"    c="Variant: portal -> portau" />
     <sdef n="v:ul_uu"    c="Variant: sul -> suu" />
+    <sdef n="v:o_o-greu"    c="Variant: o -> ò" />
   </sdefs>
 
   <!-- ************************ REGEXP DIVÈRSAS ************************ -->
@@ -124,6 +125,10 @@
       <e r="RL"><p><l><s n="v:ul_uu"/></l><r></r></p></e>
     </pardef>
 
+    <pardef n="v:o_o-greu">
+      <e r="LR"><p><l></l><r></r></p></e>
+      <e r="RL"><p><l><s n="v:o_o-greu"/></l><r></r></p></e>
+    </pardef>
 
     <!--  ********** p: paradigmes simples ********** -->
 
@@ -169,9 +174,23 @@
       <e><p><l>au</l>        <r>al</r></p><par n="v:al_au"/></e>
     </pardef>
 
+    <!-- variacion o -> ò -->
+    <pardef n="p:o_o-greu">
+      <e><p><l>o</l>        <r>o</r></p></e>
+      <e><p><l>ò</l>        <r>o</r></p><par n="v:o_o-greu"/></e>
+    </pardef>
+
     <pardef n="p:terminason_a_al_feminin">
       <e><p><l></l>         <r><s n="m"/></r></p></e>
       <e><p><l>a</l>        <r><s n="f"/></r></p></e>
+    </pardef>
+
+    <pardef n="p:pronom_el">
+      <e><p><l>as</l>           <r><s n="prn"/><s n="tn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+      <e><p><l>a</l>            <r><s n="prn"/><s n="tn"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+      <e><p><l>es</l>           <r><s n="prn"/><s n="tn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+      <e r="LR"><p><l>s</l>     <r><s n="prn"/><s n="tn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l/>                <r><s n="prn"/><s n="tn"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
     </pardef>
 
     <!--  ********** t: paradigmes que fan sonque apondre de tags ********** -->
@@ -191,12 +210,22 @@
 			<e><p><l></l>         <r><s n="adv"/></r></p></e>
 		</pardef>
 
+    <pardef n="t:det_ind">
+      <e><p><l><s n="det"/><s n="ind"/></l>         <r><s n="det"/><s n="ind"/></r></p></e>
+    </pardef>
+
     <!-- ********** a: paradigme agrégat ********** -->
 
     <!-- Mots masculins/feminins que s'acaban per una 'a' al feminin -->
     <pardef n="a:nom_M/F_amb_la_terminasion_A_al_feminin">
       <e><p><l></l>         <r></r></p><par n="t:nom_masculin"/></e>
       <e><p><l>a</l>        <r></r></p><par n="t:nom_feminin"/></e>
+    </pardef>
+
+    <pardef n="a:det_ind_casuda_n_al_feminin">
+      <e><i>n</i><par n="t:det_ind"/><i><s n="m"/><s n="sg"/></i></e>
+      <e><i>n</i><par n="t:det_ind"/><par n="p:terminason_a_al_feminin"/><i><s n="sg"/></i></e>
+      <e><p><l>a</l>     <r></r></p><par n="p:casuda_n"/><par n="t:det_ind"/><i><s n="f"/><s n="sg"/></i></e>
     </pardef>
 
     <!-- ********** pg: paradigme post generacion ********** -->
@@ -238,11 +267,8 @@
   </pardefs>
 
   <section id="main" type="standard">
-    <!-- une définition pour l'ambiguité nuèch/nuòch -->
-    <e lm="nuòch"><i>n</i><par n="p:ue_uo"/><i>ch</i><par n="t:nom_feminin"/></e>
-
-    <!-- une définition pour l'ambiguité nuèch/nuèit -->
-    <e lm="nuèch"><i>nuè</i><par n="p:ch_it"/><par n="t:nom_feminin"/></e>
+    <!-- une définition pour l'ambiguité nuèch/nuòch/nuèit -->
+    <e lm="nuòch"><i>n</i><par n="p:ue_uo"/><par n="p:ch_it"/><par n="t:nom_feminin"/></e>
 
     <!-- une définition pour lièch/lièit -->
     <e lm="lièch"><i>liè</i><par n="p:ch_it"/><par n="t:nom_masculin"/></e>
@@ -259,7 +285,6 @@
     -->
     <e lm="farina"><par n="p:f_h"/><i>ari</i><par n="p:casuda_n"/><i>a</i><par n="t:nom_feminin"/></e>
 
-
     <!-- ************ TEST POUR LA DÉSAMBIGUISATION COTÉ DICO BILINGUE ************ -->
 
     <e lm="masc"><i>masc</i><par n="a:nom_M/F_amb_la_terminasion_A_al_feminin"/></e>
@@ -273,7 +298,7 @@
     <e lm="enforcar"><i>enforcar</i></e>
 	  <e lm="en·horcar"><i>en·horcar</i></e>
 	  <e lm="encambar"><i>encam</i><par n="p:casuda_b"/><i>ar</i></e>
-    <e lem="un"><p><l>un</l>  <r>un<s n="det"/><s n="ind"/></r></p><par n="p:terminason_a_al_feminin"/><par n="p:s_plural"/></e>
+    <e lem="un"><i>u</i><par n="a:det_ind_casuda_n_al_feminin"/></e>
     <e lem="velo"><p><l>velo</l>  <r>velo<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
 
     <!-- ************ TEST POUR LA POST GÉNÉRATION ************ -->
@@ -294,12 +319,14 @@
     Genre si v:ul_uu alors detlo_uu sinon detlo_ul
     -->
     <e lm="lo"><p><l><a/>detlo</l> <r>lo<s n="det"/><s n="def"/><s n="m"/><s n="sg"/></r></p><par n="pg:ul_uu"/></e>
+    <e lm="lo"><p><l><a/>detla</l> <r>lo<s n="det"/><s n="def"/><s n="f"/><s n="sg"/></r></p></e>
     <e lm="portal"><i>port</i><par n="p:al_au"/><par n="t:nom_masculin"/></e>
 
     <!-- TEST POUR LA FRAGMENTATION (.t1x)-->
     
     <e lm="èsser"><i></i><par n="v:èsser__vbser"/></e>
     <e lm="estar"><i></i><par n="v:estar__vbser"/></e>
-    <e lem="ora"><p><l>ora</l>  <r>heure</r></p><par n="t:nom_feminin"/></e>
+    <e lem="ora"><par n="p:o_o-greu"/><i>ra</i><par n="t:nom_feminin"/></e>
+    <e lm="el"><i>el</i><par n="p:pronom_el"/></e>
   </section>
 </dictionary>

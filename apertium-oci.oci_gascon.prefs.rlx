@@ -33,3 +33,4 @@ SELECT (v:casuda_n) ;
 SELECT (v:casuda_b) ;
 SELECT (v:al_au) ;
 SELECT (v:ul_uu) ;
+SELECT (v:o_o-greu);
