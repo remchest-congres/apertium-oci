@@ -26,7 +26,7 @@ LIST Ser = vbser ;
 LIST Haver = vbhaver ;
 LIST Aver = "aver" "auer" ;
 LIST VBaux = vbser vbhaver ;
-SET VVmod = ("voler") OR ("faler") OR ("dever") OR ("déuer") OR ("dever") OR ("soler") OR ("sòler") OR ("saber") OR ("sàber") ;
+SET VVmod = ("voler") OR ("vòler") OR ("faler") OR ("fàler") OR ("dever") OR ("déuer") OR ("dever") OR ("soler") OR ("sòler") OR ("saber") OR ("sàber") ;
 SET Vmod = (vbmod) OR (vblex) + VVmod ;
 LIST Conjco = cnjcoo ;
 LIST Conjsub = cnjsub ;
@@ -288,7 +288,7 @@ LIST Mas_cnjcoo = ("mas" cnjcoo) ("mes" cnjcoo) ("mès" cnjcoo) ("mai" cnjcoo) ;
 LIST O_cnjcoo = ("o" cnjcoo) ("ò" cnjcoo) ;
 LIST Puei = "puèi" "apuèi" "aprèp" "puish" "apuish" ;
 LIST Semblar_Pareisser = "semblar" "paréisser" "paréisher" "tornar# semblar" "tornar# paréisser" "tornar# paréisher" ;
-LIST Devenir = "devenir" "venir" "vàder" "vénguer" "viéner" "vier" "devirar" "tornar# devenir" "tornar# venir" "tornar# vàder" "tornar# vénguer" "tornar# viéner" "tornar# vier" "tornar# devirar" ;
+LIST Devenir = "devenir" "venir" "vàder" "vàser" "vénguer" "viéner" "vier" "deviéner" "devirar" "tornar# devenir" "tornar# venir" "tornar# deviéner" "tornar# viéner" "tornar# vàder""tornar# vàser"  "tornar# vénguer" "tornar# viéner" "tornar# vier" "tornar# devirar" ;
 LIST Demandar = "demandar" "demanar" "interrogar" "questionar" "qüestionar" "estudiar" "cercar" "investigar" "trovar" "trapar" "explicar" "contar" "condar" "discutir" "saber" "sàber" "saupre" "compréner" "comprene" "comprénguer" 
 "tornar# demandar" "tornar# demanar" "tornar# interrogar" "tornar# questionar" "tornar# qüestionar" "tornar# saber" "tornar# sàber" "tornar# estudiar" "tornar# cercar" "tornar# investigar" "tornar# trovar" "tornar# trapar" "tornar# explicar" "tornar# contar" "tornar# condar" "tornar# discutir" "tornar# saber" "tornar# sàber" "tornar# saupre" "tornar# compréner" "tornar# comprene" "tornar# comprénguer" ;
 LIST DemandarCort = "demandar" "demanar" "interrogar" "questionar" "qüestionar" "estudiar" "cercar" "investigar" "trovar" "trapar" "explicar" "contar" "condar" "discutir"
@@ -299,12 +299,12 @@ LIST Prene = "prene" "préner" "agarrar" "aganchar" ;
 LIST Estat = "estat" ;
 LIST Clau = "clau" ;
 LIST Calar = "calar" ;
-LIST Caler = "caler" ;
+LIST Caler = ("caler") ("càler") ;
 LIST Volar = "volar" ;
-LIST Voler = "voler" ;
+LIST Voler = "voler" "vòler" ;
 LIST Podar = "podar" ;
 LIST Poder = "poder" ;
-LIST Seire = "sèire" ;
+LIST Seire = "sèire" "sèser" "sèder" "séser" "séder" ;
 LIST Saber = "saber" "sàber" "assaber" "assàber" ;
 LIST Vengar = "vengar" ;
 LIST Vener = "véner" "vénder" "vendre";
@@ -318,7 +318,7 @@ LIST Gausir = "gausir" ;
 LIST Gausar = "gausar" ;
 LIST Causir = "causir" ;
 LIST Causar = "causar" ;
-LIST Estar = "estar" ;
+LIST Estar = "estar" "èsser" ;
 LIST Estavanir = "estavanir" ;
 LIST Serar = "serar" ;
 LIST DetDe = ("fòrça de" det) ("bravament de" det) ("brica de" det) ("briga de" det) ("cap de" det) ("chic de" det) ("drin de" det) ("de bisçantenas de" det) ("ges de" det) ("hèra de" det) ("mai de" det) ("milantas de" det) ("pas cap de" det) ("pauc de" det) ("plan de" det) ("tant de" det) ("tròp de" det) ("ua balada de" det) ("ua horrèra de" det) ("ua parrabastèra de" det) ("ua pièla de" det) ("ua sarabantena de" det)  ("ua sòrta de" det) ("ua tropa de" det) ("ua troperada de" det) ("ua ahoalh de" det) ("un arramat de" det) ("un beròi tropèth de" det) ("un bricon de" det) ("un chic de" det) ("un chiquet de" det) ("un drin de" det) ("un escag de" det) ("un frami de" det) ("un fum de" det) ("un grand nombre de" det) ("un hardèu de" det) ("un hèish de" det) ("un hum de" det) ("un molon de" det) ("un mont de" det) ("un pauc de" det) ("un sarròt de" det) ("un tropèth de" det) ("una brica de" det) ("una brina de" det) ("una idèa de" det) ("quant de" det) ("pro de" det) ;
@@ -343,7 +343,7 @@ List Nummois = "1" "1èr" "1ièr" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12"
 
 LIST Nommois = "genèr" "genièr" "janvièr" "genoier" "genier" "gèr" "janvièir" "janvier" "genovier" "febrièr" "feurèir" "heurèr" "herevèr" "hrevèr" "hervèr" "feurier" "febrier" "hiurèr" "març" "abriu" "abril" "abrial" "abriau" "abrieu" "mai" "junh" "juin" "gulh" "julh" "julhet" "gulhet" "junhsèga" "agost" "aost" "avost" "ost" "seteme" "setembre" "octobre" "octòbre" "noveme" "novembre" "deceme" "decembre" "desembre" ;
 
-LIST Vdire = "dire" "díser" "respóner" "respondre" "cridar" "confessar" "con·hessar" "declarar" "afirmar" "reafirmar" "manifestar" "contar" "raportar" "expausar" "desvelar" "informar" "explicar" "ensenhar" "enonciar" "anonciar" "comunicar" "precisar" "avançar" "afortir" "ahortir" "allegar" "explicitar" "indicar" "signalar" "significar" "escriure" "escríver" "léger" "legir" "assegurar" "jurar" "certificar" "predire" "predíser" "pensar" "enténer" "ausir" "audir" "entiéner" "entendre" "ajustar" "comentar" "denonciar" "rapelar" "raperar" "brembar" "rebrembar" "remembrar" "remombrar" "rampelar" "recordar" "rementar" "remembrar" "remembrar" "har" "far" "hèr" "concedir" "replicar" "respostir" "rebecar" "assegurar" "garantir" "guarantir" "prometre" "prométer" "insistir" "nuançar" "matisar" "pavonar" "ajustar" "apondre" "híger" "ahíger" "acusar" "reprene" "ramoncinar" "increpar" "semonsar" "conclure" "concludir" ;
+LIST Vdire = "dire" "díser" "díder" "respóner" "respondre" "respónder" "cridar" "confessar" "con·hessar" "declarar" "afirmar" "reafirmar" "manifestar" "contar" "raportar" "expausar" "desvelar" "informar" "explicar" "ensenhar" "enonciar" "anonciar" "comunicar" "precisar" "avançar" "afortir" "ahortir" "allegar" "explicitar" "indicar" "signalar" "significar" "escriure" "escríver" "léger" "legir" "assegurar" "jurar" "certificar" "predire" "predíser" "predíder" "pensar" "enténer" "enténder" "ausir" "audir" "entiéner" "entendre" "enténder" "ajustar" "comentar" "denonciar" "rapelar" "raperar" "brembar" "rebrembar" "remembrar" "remombrar" "rampelar" "recordar" "rementar" "remembrar" "remembrar" "har" "far" "hèr" "concedir" "replicar" "respostir" "rebecar" "assegurar" "garantir" "guarantir" "prometre" "prométer" "insistir" "nuançar" "matisar" "pavonar" "ajustar" "apónder" "apondre" "híger" "ahíger" "acusar" "reprene" "ramoncinar" "increpar" "semonsar" "conclure" "conclúser" "concludir" ;
 
 LIST Adjpos = "mieu" "mèn" "men" "mèn" "mieu" "tieu" "ton" "tòn" "tieu" "tòn" "sieu" "sòn" "son" "sòn" "sieu" "nòstre" "noste" "nòste" "nòste" "nòstre" "nòstre" "vòstre" "voste" "vòste" "vòste" "vòstre" "vòstre" "vòste" "lor" ;
 
@@ -411,11 +411,11 @@ LIST Familha = "marit" "molhèr" "pair" "paire" "mair" "maire" "maira" "mairastr
 
 LIST Vestit = "vestit" "vestidura" "sotavestit" "rauba" "combinason" "combinadon" "costum" "camisòt" "quessòt" "camisa" "blosa" "blodon" "descoletat" "mantèl" "mantèth" "impermeable" "levita" "requimpeta" "redingòta" "repimpeta" "requimpeta" "frac" "braga" "pantalon" "jupa" "jupeta" "naut" "haut" "tricòt" "sweater" "suetèr" "sweatshirt" "sweat-shirt" "sudadera" "susadera" "cravata" "sartre" "unifòrm" "uniforme" "gilet" "cardigan" "eslip" "calçon" "sosten" "sostien" "pòrtapopas" "shòrt" "pegós" "bas" "baish" "capèl" "capèth" "casqueta" "bonet" "eissarpa" "eisharpa" "gant" "cauceta" "cauçadura" "tenís" "basquet" "bòta" "sandala" "pendent" "baga" "anèl" "anèth" "braçalet" "luneta" "cencha" "centura" "cinta" "talhòla" "legging" "malhòt" "malhòl" "shamarreta" "camiseta" "borrassa" "malhòt# de banh" "vestit# de banh" "biquini" "bikini" "monokini" "monoquini" "camison" "bracièra" "davantal" "davantau" "capucha" ;
 
-LIST VerbMoviment_NonTornar = "anar" "venir" "vier" "viéner" "vénguer" "tornar" "arribar" "partir" "viatjar" "sortir" "gésser" "dintrar" "entrar" "intrar" "passar" "pojar" "pujar" "davalar" "davarar" "descendre" "descéner" "devarar" "deuarar" "dauarar" ;
-LIST VerbMoviment_Tornar = "tornar# anar" "tornar# venir" "tornar# vier" "tornar# viéner" "tornar# vénguer" "tornar# arribar" "tornar# partir" "tornar# viatjar" "tornar# sortir" "tornar# gésser" "tornar# dintrar" "tornar# entrar" "tornar# intrar" "tornar# passar" "tornar# pojar" "tornar# pujar" "tornar# davalar" "tornar# davarar" "tornar# descendre" "tornar# descéner" "tornar# devarar" "tornar# deuarar" "tornar# dauarar" ;
+LIST VerbMoviment_NonTornar = "anar" "venir" "vier" "viéner" "vénguer" "tornar" "arribar" "partir" "viatjar" "sortir" "gésser" "dintrar" "entrar" "intrar" "passar" "pojar" "pujar" "davalar" "davarar" "descendre" "descénder" "descéner" "devarar" "deuarar" "dauarar" ;
+LIST VerbMoviment_Tornar = "tornar# anar" "tornar# venir" "tornar# vier" "tornar# viéner" "tornar# vénguer" "tornar# arribar" "tornar# partir" "tornar# viatjar" "tornar# sortir" "tornar# gésser" "tornar# dintrar" "tornar# entrar" "tornar# intrar" "tornar# passar" "tornar# pojar" "tornar# pujar" "tornar# davalar" "tornar# davarar" "tornar# descendre" "tornar# descéner" "tornar# descénder" "tornar# devarar" "tornar# deuarar" "tornar# dauarar" ;
 SET VerbMoviment = VerbMoviment_NonTornar OR VerbMoviment_Tornar ;
 
-SET VerbAuxEssser = VerbMoviment_NonTornar OR ("èsser") OR ("estar") OR ("nàisser") OR ("nàisher") OR ("nèisher") OR ("renàisser") OR ("renàisher") OR ("renèisher") OR ("morir") OR ("vàder") OR ("devenir") ;
+SET VerbAuxEssser = VerbMoviment_NonTornar OR ("èsser") OR ("estar") OR ("nàisser") OR ("nàisher") OR ("nèisher") OR ("renàisser") OR ("renàisher") OR ("renèisher") OR ("morir") OR ("vàder") OR ("vàser") OR ("devenir") OR ("deviéner") ;
 
 SECTION
 
@@ -502,7 +502,7 @@ SELECT VBpp + &&AcordSP IF (-3 ("<se>"i)) (-2 Ser + &&AcordSP) (-1 AV) (0 VBpp +
 SELECT PRON IF (0 ("<se>"i)) (1 Ser + &&AcordSP) (2 AV) (3 AV) (4 VBpp + &&AcordSP) ;		# patch
 SELECT Ser + &&AcordSP IF (-1 ("<se>"i)) (0 Ser + &&AcordSP) (1 AV) (2 AV) (3 VBpp + &&AcordSP) ;		# patch
 SELECT VBpp + &&AcordSP IF (-4 ("<se>"i)) (-3 Ser + &&AcordSP) (-2 AV) (-1 AV) (0 VBpp + &&AcordSP) ;		# patch
-SELECT PRON IF (0 ("<se>"i)) (1 VBger) (-1 ("<en>")) ;		# patch
+SELECT Pro IF (0 ("<se>"i)) (1 VBger) (-1 ("<en>") or ("<En>")) ;		# patch
 SELECT V IF (0 ("<son>"i)) (1 ("<pas>"i)) ;		# patch
 SELECT V IF (0 ("<son>"i)) (1 ("<solide>"i)) (2 ("<pas>"i)) ;		# patch
 SELECT V IF (0 ("<son>"i)) (1C AV OR PREAV) (2 ("<pas>"i)) ;		# patch
@@ -521,6 +521,8 @@ SELECT N + &&AcordSN IF (-1C DET) (-1 DET + &&AcordSN) (1 ("<pas>"i)) (2 AV) (3 
 SELECT N + &&AcordSN IF (-1 DET + Ind + &&AcordSN) (1 ("<pas>"i)) (2 AV) (3 AV OR PREAV) (4 AJ_PP + &&AcordSN) ;		# un resultat pas totjorn tan satisfasent
 SELECT N + &&AcordSN IF (-1 DET + Dem + &&AcordSN) (1 ("<pas>"i)) (2 AV) (3 AV OR PREAV) (4 AJ_PP + &&AcordSN) ;		# aquel resultat pas totjorn tan satisfasent
 
+REMOVE ("tràser") IF (0 ("tres")) ;
+
 SELECT V OR ("manca") + PREP OR ("mes") + Conjco IF (1 ("<pas>"i)) ;		# patch
 REMOVE ("d'unes") IF (-1C N_AJ) ;
 SELECT ("d'unes") + PRON IF (1C Que OR Rel) ;
@@ -529,15 +531,15 @@ SELECT ("d'unes") IF (-1 CM) ;	# patch
 SELECT ("d'unes") IF (-2 BOS OR CM) (-1 PREP) ;	# patch
 SELECT PREAV IF (0 ("<plan>"i)) (1C AJ OR AV) ;		# patch
 REMOVE N IF (-1C V) (0 ("<plan>"i)) ;		# patch
-SELECT AV IF (-1 Ser + &&AcordSP) (0 AV OR PREAV) (1 ("escàder") OR ("mauescàder")) ;	# s'i es plan escadut
-SELECT AV IF (-2 Ser + &&AcordSP) (-1 AV OR PREAV) (0 AV OR PREAV) (1 ("escàder") OR ("mauescàder")) ;	# s'i es pas plan escadut
+SELECT AV IF (-1 Ser + &&AcordSP) (0 AV OR PREAV) (1 ("escàser") OR ("mauescàser")) ;	# s'i es plan escadut
+SELECT AV IF (-2 Ser + &&AcordSP) (-1 AV OR PREAV) (0 AV OR PREAV) (1 ("escàser") OR ("mauescàser")) ;	# s'i es pas plan escadut
 SELECT PREAV IF (-1 Ser + &&AcordSP) (0 ("<plan>"i)) (1 AJ + &&AcordSP) ;		# patch
 SELECT PREAV IF (-2 Ser + &&AcordSP) (-1 AV) (0 ("<plan>"i)) (1 AJ + &&AcordSP) ;		# patch
 SELECT PREAV IF (-1C N + &&AcordSP) (0 ("<plan>"i)) (1 AJ + &&AcordSP) ;
 SELECT PREAV IF (-2C N + &&AcordSP) (-1 AJ + &&AcordSP) (0 ("<plan>"i)) (1 AJ + &&AcordSP) ;
 SELECT AJ IF (-1C N + &&AcordSP) (0 ("<plan>"i) + &&AcordSP) ;		# patch
 SELECT AV IF (0 ("<mai>"i)) (1 De) ;		# patch
-REMOVE N IF (-1C PREP) (NOT -1/* DET + MascSg) (0 ("<veire>"i)) ;		# patch
+REMOVE N IF (-1C PREP) (NOT -1/* DET + MascSg) (0 ("<veire>"i) OR ("<véser>"i)) ;		# patch
 SELECT PREP IF (-1 N OR AJ) (0 ("<de mai>"i)) ;		# patch
 REMOVE N IF (NOT -1 ("mes") OR ("jorn") OR ("jornada") OR ("fèsta") OR ("hèsta")) (0 ("<de mai>"i)) ;		# patch
 REMOVE N IF (NOT -1 DET + FemSg) (0 ("<èra>"i)) ;		# patch
@@ -628,7 +630,7 @@ SELECT DET IF (NOT -1/* DET) (0 ("lei")) (1 ("«")) (2C N + Pl_strict) ;
 SELECT N IF (0 ("lei") + &&AcordSN) (1 Cog OR unknownMajIni) ;	# lei Deixonne
 SELECT N IF (0 ("lei")) (1 De) (2 DET + MascSg) (3 Lenga) ;	# lei de l'occitan
 SELECT N IF (0 ("lei")) (1 ("<deu>")) (2 Lenga) ;	# lei deu catalan
-REMOVE N IF (0 ("<estar>"i)) (-1 PREP) ;	# patch
+REMOVE N IF (0 ("<estar>"i) OR ("<èsser>"i)) (-1 PREP) ;	# patch
 REMOVE N IF (0 ("<estar>"i) OR Ser + VBinf) (-1 ("har") OR ("far") OR ("hèr")) ;
 
 SELECT Itg IF (1 Que) (2 Ser + PRS + P3) ;	# on que sian
@@ -917,8 +919,8 @@ REMOVE ("ahanar") IF (0 ("ahanat")) ;
 SELECT AJ (0 ("aisit")) ;
 REMOVE AJ IF (0 VBpp) (1 ("per")) ;
 REMOVE AJ IF (0 VBpp) (1 AV) (2 ("per")) ;	# prononciat tradicionalment per
-SELECT VBpp IF (-2 Ser + &&AcordSP) (-1 AV OR PREAV) (0 ("escàder") OR ("mauescàder")) ;	# s'i es pas escadut
-SELECT VBpp IF (-3 Ser + &&AcordSP) (-2 AV OR PREAV) (-1 AV OR PREAV) (0 ("escàder") OR ("mauescàder")) ;	# s'i es pas totjorn escadut
+SELECT VBpp IF (-2 Ser + &&AcordSP) (-1 AV OR PREAV) (0 ("escàser") OR ("mauescàser")) ;	# s'i es pas escadut
+SELECT VBpp IF (-3 Ser + &&AcordSP) (-2 AV OR PREAV) (-1 AV OR PREAV) (0 ("escàser") OR ("mauescàser")) ;	# s'i es pas totjorn escadut
 SELECT AJ (-1 Ser OR Semblar_Pareisser) (0 ("enfuronat")) ;
 SELECT AJ (-2 Ser OR Semblar_Pareisser) (-1 AV OR PREAV) (0 ("enfuronat")) ;
 SELECT AJ (-3 Ser OR Semblar_Pareisser) (-2 AV) (-1 AV OR PREAV) (0 ("enfuronat")) ;
@@ -1231,7 +1233,7 @@ SELECT SUB:1 Itg IF (0 De) (1 Ser) (2 ("aquò") OR ("çò")) (1* ("?")) ;
 SELECT Rel OR Enon IF (-1 ("aquò") OR ("çò")) (0 Que) ;
 SELECT Rel IF (-1 ("aquò") OR ("çò")) (0 Qui) ;
 REMOVE Itg IF (-1C N_AJ) (0 Que) ;
-REMOVE Itg IF (-1C ("voler")) (0 Que) ;
+REMOVE Itg IF (-1C Voler) (0 Que) ;
 REMOVE Itg IF (-1C Saber) (0 Que) ;	# patch
 REMOVE Itg IF (-1C ("pensar")) (0 Que) ;	# patch
 REMOVE Itg IF (-1C ("creire") OR ("créder") OR ("créser") OR ("creir")) (0 Que) ;	# patch
@@ -1282,7 +1284,7 @@ SELECT Rel IF (-4C NP) (-3 unknownMajIni) (-2 CM) (-1 PREP) (0 Que OR Qui) (1 Vc
 SELECT Rel IF (-3C NP) (-2 unknownMajIni) (-1 PREP) (0 Que OR Qui) (1 AV) (2 Vconj + P3) ;
 SELECT Rel IF (-4C NP) (-3 unknownMajIni) (-2 CM) (-1 PREP) (0 Que OR Qui) (1 AV) (2 Vconj + P3) ;
 SELECT Conjsub IF (0 Que) (1 Ser + Vconj_subj) (1* ("o"));
-SELECT Conjsub IF (-1C ("pensar") OR ("créder") OR ("créser") OR ("díser") OR ("imaginar") OR ("ordenar") OR ("comandar") OR ("voler") OR ("demandar") OR ("respóner") OR ("assegurar"));
+SELECT Conjsub IF (-1C ("pensar") OR ("créder") OR ("créser") OR ("díser") OR ("imaginar") OR ("ordenar") OR ("comandar") OR Voler OR ("demandar") OR ("respóner") OR ("respónder")  OR ("assegurar"));
 
 REMOVE N IF (NOT -1/* DET + Fem) (0 ("èra")) ;
 REMOVE N IF (-1C Itg OR Excl) (0 ("èra")) ;		# quau èra
@@ -1651,7 +1653,7 @@ REMOVE Vengar + P1 + Sg IF (NOT -1 Pro + P1 + Sg) (0 Venir) (0 Vengar + P1 + Sg)
 REMOVE Vengar + P1 + Pl IF (NOT -1 Pro + P1 + Pl) (0 Venir) (0 Vengar + P1 + Pl) (NOT 0 Vengar + VBimp) ;	# patch
 REMOVE Vengar + P2 + Sg IF (NOT -1 Pro + P2 + Sg) (0 Venir) (0 Vengar + P2 + Sg) (NOT 0 Vengar + VBimp) ;	# patch
 REMOVE Vengar + P2 + Pl IF (NOT -1 Pro + P2 + Pl) (0 Venir) (0 Vengar + P2 + Pl) (NOT 0 Vengar + VBimp) ;	# patch
-REMOVE ("vier") IF (0 ("venir")) ;
+REMOVE ("vier") IF (0 ("venir") OR ("viéner")) ;
 
 REMOVE AJ IF (0 ("<Ven>")) (-1 BOS) (1 PREP) ;
 REMOVE AJ IF (0 ("<Va>")) (-1 BOS) (1 PREP) ;
@@ -1694,9 +1696,10 @@ REMOVE Causir IF (0 Causar) (1 AJ + &&AcordSN) (2 Problemas + &&AcordSN + Pl) ;	
 
 # anar e valer (p.ex. "vau")
 REMOVE ("valer") IF (0 ("anar")) (1 VBinf) ;
+REMOVE ("vàler") IF (0 ("anar")) (1 VBinf) ;
 
 # estarir e estar (p.ex. "estar")
-REMOVE ("estarir") IF (0 ("estar")) ;
+REMOVE ("estarir") IF (0 ("estar") OR ("èsser")) ;
 
 # ròder e róder (p.ex. "rodut")
 REMOVE ("róder") IF (0 ("ròder")) ;
@@ -1720,20 +1723,20 @@ REMOVE ("vier") IF (0 ("véner")) ;
 REMOVE ("passir") IF (0 ("passar")) ;
 
 # veirar e veire
-REMOVE ("veirar") IF (0 ("veire")) ;
+REMOVE ("veirar") IF (0 ("veire") OR ("véser")) ;
 
-# escadir e escàder
-REMOVE ("escadir") IF (0 ("escàder")) ;
+# escadir e escàser
+REMOVE ("escadir") IF (0 ("escàser")) ;
 
 # hóner e honir
-REMOVE ("honir") IF (0 ("hóner")) ;
+REMOVE ("honir") IF (0 ("hónder")) ;
 
 # hóner e honar
-REMOVE ("honar") IF (0 ("hóner")) ;
+REMOVE ("honar") IF (0 ("hónder")) ;
 
 # apartenir, apartar, apartir
-REMOVE ("apartar") IF (0 ("apartenir") OR ("aparténer")) ;
-REMOVE ("apartir") IF (0 ("apartenir") OR ("aparténer")) ;
+REMOVE ("apartar") IF (0 ("apartenir") OR ("aparténer") OR ("apartiéner")) ;
+REMOVE ("apartir") IF (0 ("apartenir") OR ("aparténer") OR ("apartiéner")) ;
 
 # acabir e acabar
 REMOVE ("acabir") IF (0 ("acabar")) ;
@@ -1745,25 +1748,26 @@ REMOVE ("genar") IF (0 ("generar")) ;
 REMOVE ("aparir") IF (0 ("aparéisher") OR ("aparéisser")) ;
 
 # véder e vederar
-REMOVE ("vederar") IF (0 ("véder")) ;
+REMOVE ("vederar") IF (0 ("véder") OR ("véser")) ;
 
 # clavir e clavar
 REMOVE ("clavir") IF (0 ("clavar")) ;
 
 # prevedir e prevéder
-REMOVE ("prevedir") IF (0 ("prevéder")) ;
+REMOVE ("prevedir") IF (0 ("prevéder") OR ("prevéser")) ;
 
 # aparir e apariar
 REMOVE ("aparir") IF (0 ("apariar")) ;
 
 # horar e estar
-REMOVE ("horar") IF (0 ("estar") OR ("horat")) ;
+REMOVE ("horar") IF (0 ("estar") OR ("èsser") OR ("horat")) ;
 
 # aurir e aver
 REMOVE ("aurir") IF (0 ("aver")) ;
 
 # devénguer e dever
 REMOVE ("devénguer") IF (0 ("<dever>"i)) ;
+REMOVE ("deviéner") IF (0 ("<dever>"i)) ;
 
 # solar e soler
 REMOVE ("solar") IF (0 ("soler")) ;
@@ -1776,9 +1780,11 @@ REMOVE ("ajar") IF (0 ("aver")) ;
 
 # avéder e aver
 REMOVE ("avéder") IF (0 ("aver")) ;
+REMOVE ("avéser") IF (0 ("aver")) ;
 
 # avénguer e aver
 REMOVE ("avénguer") IF (0 ("aver")) ;
+REMOVE ("aviéner") IF (0 ("aver")) ;
 
 # escotir e escotar
 REMOVE ("escotir") IF (0 ("escotar")) ;
@@ -1793,12 +1799,12 @@ REMOVE ("venar") IF (0 ("venir") OR ("véner") OR ("viéner")) ;
 REMOVE ("aurir") IF (0 ("aver")) ;
 
 # véner e venir, gascon
-REMOVE ("véner") IF (0 ("venir")) (1 ("de")) (2 VBinf OR Pro) ;
-REMOVE ("véner") IF (0 ("venir")) (1 ("de")) (2 Pro) (3 VBinf) ;
-REMOVE ("véner") IF (0 ("venir")) (1 AV) (2 ("de")) (3 VBinf OR Pro) ;
-REMOVE ("véner") IF (0 ("venir")) (1 AV) (2 ("de")) (3 Pro) (4 VBinf) ;
-REMOVE ("véner") IF (0 ("venir")) (0 VBimp) ;
-REMOVE ("véner") IF (0 ("venir")) (-1 ("que")) (-2 N) ;
+REMOVE ("véner") IF (0 ("venir") OR ("viéner")) (1 ("de")) (2 VBinf OR Pro) ;
+REMOVE ("véner") IF (0 ("venir") OR ("viéner")) (1 ("de")) (2 Pro) (3 VBinf) ;
+REMOVE ("véner") IF (0 ("venir") OR ("viéner")) (1 AV) (2 ("de")) (3 VBinf OR Pro) ;
+REMOVE ("véner") IF (0 ("venir") OR ("viéner")) (1 AV) (2 ("de")) (3 Pro) (4 VBinf) ;
+REMOVE ("véner") IF (0 ("venir") OR ("viéner")) (0 VBimp) ;
+REMOVE ("véner") IF (0 ("venir") OR ("viéner")) (-1 ("que")) (-2 N) ;
 REMOVE ("véner") IF (0 ("<venent>")) (-1 N + MascSg) ;
 REMOVE ("venir") IF (0 ("viéner") OR ("vénguer")) ;
 REMOVE ("venir") IF (0 ("véner")) (-1 Pro) (NOT -1 ("i") OR ("en")) ;
@@ -1920,7 +1926,7 @@ SELECT Ne_conj IF (-3 Ne_conj) (-2 AV) (-1 CM) (0 Ne_conj) (1 AV) ;
 SELECT Ne_conj IF (-3 Ne_conj) (-2 V) (-1 CM) (0 Ne_conj) (1 V) ;
 SELECT Ne_pron IF (1C V + Pers) (2C DETdef OR NUM) (NOT 1* Ne_conj) (NOT -1* Ne_conj) ;		# ne reclamavan la destruccion
 
-LIST NAverUnSadol = "aver un sadol" "aver un confle" "aver un sadoth" "auer un sadoth" "estar hart" "estar harta" "estar harts" "estar hartas" "aver hartèra" "auer hartèra" "aver ua hartèra" "auer ua hartèra" "aver mon confle" "aver ton confle" "aver son confle" "aver nòstre confle" "aver vòstre confle" "aver lor confle" ;
+LIST NAverUnSadol = "aver un sadol" "aver un confle" "aver un sadoth" "auer un sadoth" "estar hart" "estar harta" "estar harts" "estar hartas"  "èsser hart" "èsser harta" "èsser harts" "èsser hartas" "aver hartèra" "auer hartèra" "aver ua hartèra" "auer ua hartèra" "aver mon confle" "aver ton confle" "aver son confle" "aver nòstre confle" "aver vòstre confle" "aver lor confle" ;
 SELECT Pro IF (0 En) (1 NAverUnSadol) ;
 SELECT Pro IF (0 En) (1 Haver) (2 NAverUnSadol) ;
 SELECT Pro IF (0 En) (1 Haver) (2 AV) (3 NAverUnSadol) ;
@@ -1929,10 +1935,11 @@ SELECT PREP IF (NOT -1 PREP) (0 En) (1 VBger) ;
 SELECT PREP IF (NOT -1 PREP) (0 En) (1C Pro) (2 VBger) ;
 SELECT PREP IF (0 En) (1 Pro) (2 Pro) (3 VBger) ;
 SELECT N IF (-1 En) (0 ("sovenir")) (1 De) ;
-SELECT VBger IF (NOT -2 PREP) (-1 En) (0 VBger) ;
-SELECT VBger IF (-2 En) (-1C Pro) (0 VBger) ;
-SELECT VBger IF (-2 En) (-1 ("<lor>"i)) (0 VBger) ;
-SELECT VBger IF (-3 En) (-2 Pro) (-1 Pro) (0 VBger) ;
+SELECT VBger IF (NOT -2 PREP or ("consistir")) (-1 ("<en>") OR ("<En>")) (0 VBger) ;
+#SELECT VBger IF (-1 ("<en>"i) + PREP) (0C V) ;
+SELECT VBger IF (-2 ("<en>") OR ("<En>")) (-1C Pro) (0 VBger) ;
+SELECT VBger IF (-2 ("<en>") OR ("<En>")) (-1 ("<lor>"i)) (0 VBger) ;
+SELECT VBger IF (-3 ("<en>") OR ("<En>")) (-2 Pro) (-1 Pro) (0 VBger) ;
 SELECT Pro IF (-1C PREP) (1 Pro) (2 VBinf OR VBger) ;	# de nos en rendre
 SELECT Pro IF (-2C PREP) (-1 Pro) (1 VBinf OR VBger) ;
 
@@ -2184,7 +2191,6 @@ SELECT VBinf IF (-1 ("de")) (0C V) ;
 SELECT PREP IF (0 ("<de>"i) + PREP) (1C VBinf) ;
 SELECT VBinf IF (-1 ("a") + PREP) (0C V) ;
 SELECT PREP IF (0 ("<a>"i) + PREP) (1C VBinf) ;
-SELECT VBger IF (-1 ("<en>"i) + PREP) (0C V) ;
 SELECT PREP IF (0 ("en") + PREP) (1C VBger) ;
 SELECT VBger IF (-1 ("en bèth") + PREP) (0C V) ;
 SELECT VBger IF (-1 ("<en tot>"i) + PREP) (0C V OR N) ;
@@ -2717,17 +2723,17 @@ REMOVE N IF (-4 VerbsDe) (-3 AV) (-2 AV) (-1 ("de")) (0 VBinf) ;
 
 # VBmod
 
-SELECT Vmod IF (0 ("caler")) (1 Que) ;
-SELECT Vmod IF (0 ("caler")) (1 AV) (2 Que) ;
-SELECT Vmod IF (0 ("caler")) (1 AV) (2 AV) (3 Que) ;
-SELECT Vmod IF (0 ("caler")) (-1/* Pro) ;
-SELECT Vmod IF (0 ("caler")) (-1 Itg) ;
-SELECT Vmod IF (0 ("caler")) (-1 Enon) ;
-SELECT Vmod IF (0 ("caler")) (-1 BOS) ;
-SELECT Vmod IF (0 ("caler")) (-2 BOS) (-1 ("«")) ;
-SELECT Vmod IF (0 ("caler")) (-2 BOS) (1 AV) ;
-SELECT Vmod IF (0 ("caler")) (-3 BOS) (-2 ("«")) (1 AV) ;
-SELECT Vmod IF (-1 ("coma") OR ("com")) (0 ("caler") + P3 + Sg) ;
+SELECT Vmod IF (0 Caler) (1 Que) ;
+SELECT Vmod IF (0 Caler) (1 AV) (2 Que) ;
+SELECT Vmod IF (0 Caler) (1 AV) (2 AV) (3 Que) ;
+SELECT Vmod IF (0 Caler) (-1/* Pro) ;
+SELECT Vmod IF (0 Caler) (-1 Itg) ;
+SELECT Vmod IF (0 Caler) (-1 Enon) ;
+SELECT Vmod IF (0 Caler) (-1 BOS) ;
+SELECT Vmod IF (0 Caler) (-2 BOS) (-1 ("«")) ;
+SELECT Vmod IF (0 Caler) (-2 BOS) (1 AV) ;
+SELECT Vmod IF (0 Caler) (-3 BOS) (-2 ("«")) (1 AV) ;
+SELECT Vmod IF (-1 ("coma") OR ("com")) (0 Caler + P3 + Sg) ;
 REMOVE (vbmod) IF (0 Verb) (NOT 1 VBinf OR AV OR Pro OR Que) ;
 REMOVE (vbmod) IF (0 Verb) (1 AV) (NOT 2 VBinf OR AV OR Pro OR Que) ;
 REMOVE (vbmod) IF (0 Verb) (1 AV) (1 AV) (NOT 3 VBinf OR AV OR Pro OR Que) ;
@@ -2800,7 +2806,7 @@ REMOVE Tn + Sg_strict IF (0 Tn + Sg_strict) (0 Tn + Pl_strict) (1 AV OR Pro) (2 
 REMOVE Tn + Pl_strict IF (0 Tn + Sg_strict) (0 Tn + Pl_strict) (1 AV OR Pro) (2 AV OR Pro) (3 V + P3 + Sg) ;
 REMOVE Tn + Sg_strict IF (0 Tn + Sg_strict) (0 Tn + Pl_strict) (1 AV OR Pro) (2 AV OR Pro) (3 V + P3 + Pl) ;
 
-REMOVE ("pas nat") IF (-2 Ne_enon OR Ne_adv) (-1 V) ;
+SELECT ("pas nat") IF (-2 Ne_enon OR Ne_adv) (-1 V) ;
 REMOVE SUB:1 Tn IF (0 ("pas nat")) (1 N_AJ + MascSg) ;
 SELECT SUB:1 DET + MascSg IF (0 ("<pas nat>"i)) (1 N_AJ + MascSg) ;
 SELECT N_AJ + MascSg IF (-1 ("<pas nat>"i)) (0 N_AJ + MascSg) ;
@@ -3101,9 +3107,9 @@ SELECT N IF (-1C PREP) (NOT -1/* N OR Rel OR Conjadv OR Conjsub OR Itg) (0 N + &
 SELECT N + &&AcordSN OR NP + &&AcordSN IF (-1C/* DET OR Artcontrsg OR Artcontrpl) (0C N) (-1/* DET + &&AcordSN) ;	# los acès ; deus autobús
 SELECT N + &&AcordSN OR NP + &&AcordSN IF (0C N) (1C AJ) (1 AJ + &&AcordSN) ;	# de autobús blus
 
-SELECT VBpp + &&AcordSN IF (-1C N_AJ + &&AcordSN) (0 ("dire") + &&AcordSN OR ("díder") + &&AcordSN) (1 ("«")) ;
-SELECT N + &&AcordSN OR PRON + &&AcordSN OR NP + &&AcordSN IF (-1C PREP) (0C ("dire") + VBpp + &&AcordSN OR ("díder") + VBpp + &&AcordSN) ;
-REMOVE N IF (NOT -1/* DET + MascSg) (0 ("<dire>"i)) (1 Que) ;
+SELECT VBpp + &&AcordSN IF (-1C N_AJ + &&AcordSN) (0 ("dire") + &&AcordSN OR ("díder") + &&AcordSN OR ("díser") + &&AcordSN) (1 ("«")) ;
+SELECT N + &&AcordSN OR PRON + &&AcordSN OR NP + &&AcordSN IF (-1C PREP) (0C ("dire") + VBpp + &&AcordSN OR ("díder") + VBpp + &&AcordSN OR ("díser") + VBpp + &&AcordSN) ;
+REMOVE N IF (NOT -1/* DET + MascSg) (0 ("<dire>"i) OR ("<díser>"i)) (1 Que) ;
 
 REMOVE V + Pers IF (-2C V + Pers OR VBinf OR VBger) (-1 DET + &&AcordSN) (0 N + &&AcordSN) ;
 REMOVE V + Pers IF (-3C V + Pers OR VBinf OR VBger) (-2 AV) (-1 DET + &&AcordSN) (0 N + &&AcordSN) ;
@@ -3536,8 +3542,8 @@ REMOVE V IF (0 N LINK NOT 0 VBpp) (1 ("<de>"i)) (2C N + Sg) (NOT 0 Far OR ("parl
 REMOVE V IF (0 N LINK NOT 0 VBpp) (1 ("<de>"i)) (2C N + Sg) (NOT 0 Far OR ("parlar") OR ("discutir") OR ("acusar")) (NOT 2 ("faiçon") OR ("façon") OR ("manièira")) (-1* Enon) ;
 REMOVE V IF (0 ("guida")) (1 ("<de>"i)) (2C N + Sg) (NOT 2 ("faiçon") OR ("façon") OR ("manièira")) ;
 LIST Bevenda = "aiga" "lach" "lèit" "cervesa" "bièrra" "bèra" "vin" "pomat" "cidre" ;
-REMOVE V IF (NOT -2 VVmod) (NOT -1 VVmod) (0 ("veire")) (1 ("<de>"i)) (2C Bevenda + Sg) ;	# en lengadocian pòt èsser lo vèrb, mai es pas probable
-SELECT V IF (-2 ("<de>"i)) (-1 ("<bon>"i)) (0 ("<veire>"i)) ;
+REMOVE V IF (NOT -2 VVmod) (NOT -1 VVmod) (0 ("veire") OR ("véser")) (1 ("<de>"i)) (2C Bevenda + Sg) ;	# en lengadocian pòt èsser lo vèrb, mai es pas probable
+SELECT V IF (-2 ("<de>"i)) (-1 ("<bon>"i)) (0 ("<veire>"i) OR ("<véser>"i)) ;
 
 # REMOVE VBpp + Pl IF (-1 Haver OR Aver) (0 N) (NOT -1 Pro + Pl) (NOT -2 Pro + Pl) (NOT -2* Que_Qui_Rel BARRIER V) ;
 # REMOVE VBpp + Fem IF (-1 Haver OR Aver) (0 N) (NOT -1 Pro + Fem) (NOT -2 Pro + Fem) (NOT -2* Que_Qui_Rel BARRIER V) ;
@@ -3566,6 +3572,7 @@ SELECT VBpp + MascSg IF (-3 Haver) (-2 VBpp) (-1 ("e") OR ("o")) ;	# aurà compr
 SELECT PRON IF (-1 BOS) (0 ("nat")) (1 CM) ;	# guess
 SELECT PRON IF (-1C V) (0 ("nat")) ;
 SELECT PRON IF (-2C V) (-1 AV) (0 ("nat")) ;
+SELECT PRON IF (-1 ("pas")) (0 ("nat")) ;
 
 # AJ / V
 
@@ -4154,7 +4161,7 @@ REMOVE P3 IF (0 ("<vista>"i)) ;
 
 SELECT N IF (0 ("<Senat>")) ;
 
-SELECT V IF (0 ("<veire>"i)) (-1 ("(")) ;
+SELECT V IF (0 ("<veire>"i) OR ("<véser>"i) OR ("<véder>"i)) (-1 ("(")) ;
 
 SELECT VBpp IF (0 ("<aguda>"i) OR ("<agudas>"i)) (-1 Haver) ;
 SELECT VBpp IF (0 ("<aguda>"i) OR ("<agudas>"i)) (-1 AV) (-2 Haver) ;
@@ -4304,7 +4311,7 @@ SELECT PRS IF (3C PRS) (2 AV OR Pro) (1 Conjco) (0 PRS) (0 PRI) ;
 REMOVE PRS IF (0 PRI) (NOT -1* Que OR Conjadv) ;
 #REMOVE PRS IF (0 PRI) (NOT -1* Que OR (".*que"r) + Conjadv OR ("quan") + Conjadv OR ("quand") + Conjadv) ;
 
-LIST PrsNeg = "caler" "faler" "pensar" "opinar" "creire" "créder" "créser" "creir" "voler" "desirar" "delerar" "demandar" "demanar" "exigir" ; # vèrbs que exigissin PRS après negacion
+LIST PrsNeg = "caler" "càler" "faler" "fàler" "pensar" "opinar" "creire" "créder" "créser" "creir" "voler" "vòler" "desirar" "delerar" "demandar" "demanar" "exigir" ; # vèrbs que exigissin PRS après negacion
 REMOVE PRI IF (-3* PrsNeg LINK 1 ("pas")) (0 PRS) ;
 
 # PII / IFI
@@ -4364,4 +4371,28 @@ REMOVE V IF (0 ("Reme")) (-1 ("e")) (-2 ("Romul") OR ("Romulus"));
 
 # Vèrbes fòrça rares vs noms fòrça frequents
 REMOVE V IF (0 ("lenga") OR ("musica") OR ("arrèrhilha") OR ("dia"));
+
+REMOVE AJ IF (0 ("<cau>"i)) (-1 ("non")) ;
+
+REMOVE N IF (0 V) (-1 ("de")) (-2 ("aimar")) ;
+
+
+REMOVE ("vénder") IF (0 ("viéner")) (NOT 0 ("<véner">)) (1 ("de")) (2 VBinf) ;
+REMOVE ("vénder") IF (0 ("viéner")) (NOT 0 ("<véner">)) (1 ("de")) (2 PERS) ;
+REMOVE ("viéner") IF (0 ("<véner>")) ;
+REMOVE ("viéner") IF (0 ("vénder")) (NOT 1 ("de")) (NOT 2 VBinf OR PERS) ;
+
+REMOVE ("sòler") IF (0 ("èsser")) ;
+REMOVE ("entravar") IF (0 ("entrar")) ;
+REMOVE ("prestir") IF (0 ("prestar")) ;
+REMOVE ("pàrer") IF (0 ("parar")) ;
+REMOVE ("pàrer") IF (0 ("paréisser")) ;
+REMOVE ("presar") IF (0 ("préner")) ;
+REMOVE ("fòser") IF (0 ("èsser")) ;
+REMOVE ("ténher") IF (0 ("tiéner")) ;
+REMOVE ("vengar") IF (0 ("viéner")) ;
+
+REMOVE ("vénder") IF (0 ("viéner")) (0 ("<vendrai>") or ("<vendràs>") or ("<vendrà>") or ("<vendrem>") or ("<vendretz>") or ("<vendràn>")) ;
+
+REMOVE V IF (0 ("<de>")) ;
 
