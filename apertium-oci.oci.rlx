@@ -4385,6 +4385,8 @@ REMOVE ("vénder") IF (0 ("viéner")) (NOT 0 ("<véner">)) (1 ("de")) (2 PERS) ;
 REMOVE ("viéner") IF (0 ("<véner>")) ;
 REMOVE ("viéner") IF (0 ("vénder")) (NOT 1 ("de")) (NOT 2 VBinf OR PERS) ;
 
+REMOVE ("ténder") IF (0 ("tiéner")) (0 ("<tendrai>") OR ("<tendràs>") OR ("<tendrà>") OR ("<tendrem>") OR ("<tendretz>")  OR ("<tendràn>"));
+
 REMOVE ("sòler") IF (0 ("èsser")) ;
 REMOVE ("entravar") IF (0 ("entrar")) ;
 REMOVE ("prestir") IF (0 ("prestar")) ;
