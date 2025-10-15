@@ -1,6 +1,5 @@
 "<Un>"
 	"un" det ind m sg
-	"un tal" prn tn m sg
 "<acid>"
 	"acide" n m sg
 "<nucleïc>"
@@ -8,7 +7,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<ua>"
 	"un" det ind f sg
 "<macromolecula>"
@@ -57,7 +56,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<de segur>"
 	"de segur" adv
 "<l'>"
@@ -77,13 +76,13 @@
 "<b'>"
 	"be" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<codificada>"
 	"codificar" vblex pp f sg
 "<e>"
 	"e" cnjcoo
 "<transmesa>"
-	"transmetre" vblex pp f sg
+	"transméter" vblex pp f sg
 "<l'>"
 	"lo" det def mf sg
 "<informacion>"
@@ -129,7 +128,7 @@
 "<n'>"
 	"ne" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<pas>"
 	"pas" adv
 "<lo>"
@@ -157,7 +156,7 @@
 "<que>"
 	"que" adv enon
 "<son>"
-	"estar" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 "<a>"
 	"a" pr
 "<las>"
@@ -189,7 +188,7 @@
 "<puish que>"
 	"puish que" cnjadv
 "<son>"
-	"estar" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 "<a>"
 	"a" pr
 "<l'>"
@@ -259,7 +258,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<compausat>"
 	"compausar" vblex pp m sg
 "<de>"
@@ -380,7 +379,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<una>"
 	"una" n f sg
 "<ribòsa>"
@@ -412,7 +411,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<l'>"
 	"lo" det def mf sg
 "<encausa>"
@@ -506,7 +505,7 @@
 "<que>"
 	"que" adv enon
 "<son>"
-	"estar" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 "<cadenas>"
 	"cadena" n f pl
 "<(>"
@@ -543,7 +542,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<ua>"
 	"un" det ind f sg
 "<ribòsa>"
@@ -614,7 +613,7 @@
 "<be>"
 	"be" adv enon
 "<son>"
-	"estar" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 "<de>"
 	"de" pr
 "<tres>"
@@ -644,7 +643,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<ua>"
 	"un" det ind f sg
 "<copia>"
@@ -696,7 +695,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<apuish>"
 	"apuish" cnjadv
 "<lejut>"
@@ -782,7 +781,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<ua>"
 	"un" det ind f sg
 "<molecula>"
@@ -804,7 +803,7 @@
 "<de>"
 	"de" pr
 "<reconéisher>"
-	"arreconéisher" vblex inf
+	"arreconéisser" vblex inf
 "<un>"
 	"un" det ind m sg
 "<codon>"
@@ -848,7 +847,6 @@
 	"aminoacide" n m sg
 "<particular>"
 	"particular" adj m sg
-	"particular" n m sg
 "<de>"
 	"de" pr
 "<la>"
@@ -869,7 +867,7 @@
 	"e" cnjcoo
 		"de" pr
 "<reconéisher>"
-	"arreconéisher" vblex inf
+	"arreconéisser" vblex inf
 "<e>"
 	"e" cnjcoo
 "<carrejar>"
@@ -906,7 +904,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<un>"
 	"un" det ind mf pl
 "<ARN>"
@@ -1052,7 +1050,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<la>"
 	"lo" det def f sg
 "<macromolecula>"
@@ -1078,7 +1076,7 @@
 "<b'>"
 	"be" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<transcrivuda>"
 	"transcríver" vblex pp f sg
 "<suber>"
@@ -1187,7 +1185,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<hèra>"
 	"hèra" preadv
 "<mei>"
@@ -1207,7 +1205,7 @@
 "<non>"
 	"non" adv enon
 "<son>"
-	"estar" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 "<pas>"
 	"pas" adv
 "<sonque>"
@@ -1266,7 +1264,7 @@
 "<que>"
 	"que" adv enon
 "<son>"
-	"estar" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 "<los>"
 	"lo" det def m pl
 "<medishs>"

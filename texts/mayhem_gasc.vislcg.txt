@@ -3,7 +3,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<un>"
 	"un" det ind m sg
 "<grop>"
@@ -24,7 +24,7 @@
 "<Qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<un>"
 	"un" prn tn m sg
 "<deus>"
@@ -109,7 +109,7 @@
 "<n'>"
 	"en" prn pro adv
 "<estón>"
-	"estar" vbser ifi p3 pl
+	"èsser" vbser ifi p3 pl
 "<Destructor>"
 	"Destructor" np ant m sg
 "<(>"
@@ -203,7 +203,7 @@
 "<Qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<dab>"
 	"dab" pr
 "<aquera>"
@@ -289,7 +289,7 @@
 "<qu'>"
 	"que" adv enon
 "<èra>"
-	"estar" vbser pii p3 sg
+	"èsser" vbser pii p3 sg
 "<limitat>"
 	"limitat" adj m sg
 "<a>"
@@ -325,7 +325,7 @@
 "<qu'>"
 	"que" adv enon
 "<èra>"
-	"estar" vbser pii p3 sg
+	"èsser" vbser pii p3 sg
 "<ua>"
 	"un" det ind f sg
 "<mena>"
@@ -472,7 +472,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<internat>"
 	"internar" vblex pp m sg
 "<dens>"
@@ -505,7 +505,7 @@
 "<Que>"
 	"que" adv enon
 "<son>"
-	"estar" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 "<remplaçats>"
 	"remplaçar" vblex pp m pl
 "<per>"
@@ -555,7 +555,7 @@
 "<Qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<dab>"
 	"dab" pr
 "<aquera>"
@@ -789,7 +789,7 @@
 "<qu'>"
 	"que" adv enon
 "<estó>"
-	"estar" vbser ifi p3 sg
+	"èsser" vbser ifi p3 sg
 "<enregistrada>"
 	"enregistrar" vblex pp f sg
 "<per>"
@@ -898,7 +898,7 @@
 "<qu'>"
 	"que" adv enon
 "<estó>"
-	"estar" vbser ifi p3 sg
+	"èsser" vbser ifi p3 sg
 "<donc>"
 	"donc" cnjadv
 "<un>"
@@ -938,7 +938,7 @@
 "<n'>"
 	"en" prn pro adv
 "<èra>"
-	"estar" vbser pii p3 sg
+	"èsser" vbser pii p3 sg
 "<l'>"
 	"lo" det def mf sg
 "<auna>"
@@ -1218,7 +1218,7 @@
 "<qu'>"
 	"que" adv enon
 "<estó>"
-	"estar" vbser ifi p3 sg
+	"èsser" vbser ifi p3 sg
 "<realizat>"
 	"realizar" vblex pp m sg
 "<per>"
@@ -1524,7 +1524,7 @@
 	"que" adv enon
 		"se" prn pro ref p3 mf sp
 "<pareish>"
-	"paréisher" vblex pri p3 sg
+	"paréisser" vblex pri p3 sg
 "<tanben>"
 	"tanben" adv
 "<que>"
@@ -1582,7 +1582,7 @@
 "<Qu'>"
 	"que" adv enon
 "<èra>"
-	"estar" vbser pii p3 sg
+	"èsser" vbser pii p3 sg
 "<esquisofrène>"
 	"esquisofrène" adj m sg
 "<.>"
@@ -1605,7 +1605,7 @@
 "<que>"
 	"que" adv enon
 "<serén>"
-	"estar" vbser cni p3 pl
+	"èsser" vbser cni p3 pl
 "<un>"
 	"un" det ind m sg
 "<present>"
@@ -1635,7 +1635,7 @@
 "<qu'>"
 	"que" adv enon
 "<èran>"
-	"estar" vbser pii p3 pl
+	"èsser" vbser pii p3 pl
 "<caçaires>"
 	"caçaire" n m pl
 "<)>"
@@ -1650,7 +1650,7 @@
 "<que>"
 	"que" adv enon
 "<seré>"
-	"estar" vbser cni p3 sg
+	"èsser" vbser cni p3 sg
 "<donc>"
 	"donc" cnjadv
 "<responsable>"
@@ -1691,11 +1691,11 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<qu'>"
 	"que" cnjsub
 "<estó>"
-	"estar" vbser ifi p3 sg
+	"èsser" vbser ifi p3 sg
 "<eth>"
 	"prneth" prn tn p3 m sg
 "<qui>"
@@ -1735,7 +1735,7 @@
 "<qu'>"
 	"que" adv enon
 "<estó>"
-	"estar" vbser ifi p3 sg
+	"èsser" vbser ifi p3 sg
 "<eth>"
 	"prneth" prn tn p3 m sg
 "<qui>"
@@ -1762,7 +1762,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<que>"
 	"que" cnjsub
 "<hasó>"
@@ -1870,7 +1870,7 @@
 "<e>"
 	"e" adv enon
 "<cau>"
-	"caler" vbmod pri p3 sg
+	"càler" vbmod pri p3 sg
 "<créder>"
 	"créder" vblex inf
 "<que>"
@@ -1929,7 +1929,7 @@
 "<E>"
 	"e" adv enon
 "<cau>"
-	"caler" vbmod pri p3 sg
+	"càler" vbmod pri p3 sg
 "<créder>"
 	"créder" vblex inf
 "<que>"
@@ -1973,7 +1973,7 @@
 "<qu'>"
 	"que" adv enon
 "<estó>"
-	"estar" vbser ifi p3 sg
+	"èsser" vbser ifi p3 sg
 "<suspectat>"
 	"suspectar" vblex pp m sg
 "<de>"
@@ -2088,7 +2088,7 @@
 "<qu'>"
 	"que" cnjsub
 "<èra>"
-	"estar" vbser pii p3 sg
+	"èsser" vbser pii p3 sg
 "<ua>"
 	"un" det ind f sg
 "<error>"
@@ -2102,7 +2102,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<content>"
 	"content" adj m sg
 "<que>"
@@ -2135,7 +2135,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<glossofòbe>"
 	"glossofòbe" adj m sg
 "<.>"
@@ -2207,9 +2207,9 @@
 "<e>"
 	"e" adv enon
 "<seré>"
-	"estar" vbser cni p3 sg
+	"èsser" vbser cni p3 sg
 "<estat>"
-	"estar" vbser pp m sg
+	"èsser" vbser pp m sg
 "<incapable>"
 	"incapable" adj m sg
 "<de's>"
@@ -2303,7 +2303,7 @@
 "<n'>"
 	"ne" adv enon
 "<apareish>"
-	"aparéisher" vblex pri p3 sg
+	"aparéisser" vblex pri p3 sg
 "<pas>"
 	"pas" adv
 "<que>"

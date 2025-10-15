@@ -33,7 +33,7 @@
 "<que>"
 	"que" adv enon
 "<ho>"
-	"estar" vbser ifi p3 sg
+	"èsser" vbser ifi p3 sg
 "<un>"
 	"un" det ind m sg
 "<militar>"
@@ -159,7 +159,7 @@
 "<non>"
 	"non" adv enon
 "<ho>"
-	"estar" vbser ifi p3 sg
+	"èsser" vbser ifi p3 sg
 "<que>"
 	"que" adv
 "<chic de>"
@@ -223,7 +223,7 @@
 "<ne>"
 	"ne" adv enon
 "<ho>"
-	"estar" vbser ifi p3 sg
+	"èsser" vbser ifi p3 sg
 "<victima>"
 	"victima" n f sg
 "<,>"
@@ -277,7 +277,7 @@
 "<e>"
 	"e" adv enon
 "<ho>"
-	"estar" vbser ifi p3 sg
+	"èsser" vbser ifi p3 sg
 "<jutjat>"
 	"jutjar" vblex pp m sg
 "<.>"
@@ -571,7 +571,7 @@
 "<que>"
 	"que" adv enon
 "<ho>"
-	"estar" vbser ifi p3 sg
+	"èsser" vbser ifi p3 sg
 "<cap>"
 	"cap" n mf sg
 "<deu>"
@@ -605,7 +605,7 @@
 "<que>"
 	"que" adv enon
 "<ho>"
-	"estar" vbser ifi p3 sg
+	"èsser" vbser ifi p3 sg
 "<mandat>"
 	"mandar" vblex pp m sg
 "<com>"
@@ -655,7 +655,7 @@
 "<per'mor d'>"
 	"per'mor de" pr
 "<estar>"
-	"estar" vbser inf
+	"èsser" vbser inf
 "<nomat>"
 	"nomar" vblex pp m sg
 "<susdirector>"
@@ -744,7 +744,7 @@
 "<que>"
 	"que" adv enon
 "<ho>"
-	"estar" vbser ifi p3 sg
+	"èsser" vbser ifi p3 sg
 "<ligat>"
 	"ligar" vblex pp m sg
 "<au còp>"
@@ -833,7 +833,7 @@
 "<que>"
 	"que" adv enon
 "<ho>"
-	"estar" vbser ifi p3 sg
+	"èsser" vbser ifi p3 sg
 "<nomat>"
 	"nomar" vblex pp m sg
 "<cap>"
@@ -1040,7 +1040,7 @@
 "<e>"
 	"e" adv enon
 "<ho>"
-	"estar" vbser ifi p3 sg
+	"èsser" vbser ifi p3 sg
 "<au son>"
 	"a" pr
 		"lo son" det pos m sg
@@ -1535,7 +1535,7 @@
 "<que>"
 	"que" adv enon
 "<ho>"
-	"estar" vbser ifi p3 sg
+	"èsser" vbser ifi p3 sg
 "<elejut>"
 	"eléger" vblex pp m sg
 "<president>"

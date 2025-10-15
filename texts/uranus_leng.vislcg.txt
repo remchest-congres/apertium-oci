@@ -69,7 +69,7 @@
 	"." sent
 
 "<Tèn>"
-	"tenir" vblex pri p3 sg
+	"tiéner" vblex pri p3 sg
 "<donc>"
 	"donc" cnjadv
 "<la>"
@@ -150,7 +150,7 @@
 "<Uranus>"
 	"Uranus" np top m sg
 "<tèn>"
-	"tenir" vblex pri p3 sg
+	"tiéner" vblex pri p3 sg
 "<un>"
 	"un" det ind m sg 
 "<sistèma>"
@@ -251,7 +251,7 @@
 "<que>"
 	"que" cnjsub 
 "<tèn>"
-	"tenir" vblex pri p3 sg
+	"tiéner" vblex pri p3 sg
 "<Uranus>"
 	"Uranus" np top m sg
 "<.>"
@@ -366,7 +366,7 @@
 "<pòdon>"
 	"poder" vbmod pri p3 pl
 "<veire>"
-	"veire" vblex inf
+	"véser" vblex inf
 "<de>"
 	"de" pr
 "<detalhs>"
@@ -1335,7 +1335,7 @@
 "<Neptun>"
 	"Neptun" np top m sg
 "<emet>"
-	"emetre" vblex pri p3 sg
+	"eméter" vblex pri p3 sg
 "<un>"
 	"un" det ind m sg
 "<flux>"
@@ -1387,7 +1387,7 @@
 "<Uranus>"
 	"Uranus" np top m sg
 "<emet>"
-	"emetre" vblex pri p3 sg
+	"eméter" vblex pri p3 sg
 "<solament>"
 	"solament" adv
 "<1,08>"
@@ -1578,7 +1578,7 @@
 "<,>"
 	"," cm
 "<tenent>"
-	"téner" vblex ger
+	"tiéner" vblex ger
 "<principalament>"
 	"principalament" adv
 "<d'>"
@@ -1696,8 +1696,8 @@
 	"scientific" adj m pl
 "<pòdon>"
 	"poder" vbmod pri p3 pl
-"<obtenir>"
-	"obténer" vblex inf
+"<obtiéner>"
+	"obtiéner" vblex inf
 "<de>"
 	"de" pr
 "<mesuras>"
@@ -1933,7 +1933,7 @@
 "<Uranus>"
 	"Uranus" np top m sg
 "<tèn>"
-	"tenir" vblex pri p3 sg
+	"tiéner" vblex pri p3 sg
 "<tanben>"
 	"tanben" adv
 "<una>"
@@ -2611,7 +2611,7 @@
 "<jaç>"
 	"jaç" n m sg
 "<dich>"
-	"dire" vblex pp m sg
+	"díser" vblex pp m sg
 "<corona>"
 	"corona" n f sg
 "<.>"
@@ -3033,7 +3033,7 @@
 "<principalament>"
 	"principalament" adv
 "<sostenguda>"
-	"sosténer" vblex pp f sg
+	"sostiéner" vblex pp f sg
 "<per>"
 	"per" pr
 "<lei>"
@@ -3239,7 +3239,7 @@
 "<,>"
 	"," cm
 "<dicha>"
-	"dire" vblex pp f sg
+	"díser" vblex pp f sg
 "<còl>"
 	"còl" n m sg
 "<polar>"
@@ -3266,7 +3266,7 @@
 "<polars>"
 	"polar" adj m pl
 "<tènon>"
-	"tenir" vblex pri p3 pl
+	"tiéner" vblex pri p3 pl
 "<de>"
 	"de" pr
 "<nívols>"
@@ -3333,7 +3333,7 @@
 "<2>"
 	"2" num
 "<vetz>"
-	"veire" vblex pri p3 sg
+	"véser" vblex pri p3 sg
 "<tanben>"
 	"tanben" adv
 "<de>"
@@ -3389,7 +3389,7 @@
 "<mai>"
 	"mai" pr
 "<permetèron>"
-	"permetre" vblex ifi p3 pl
+	"perméter" vblex ifi p3 pl
 "<de>"
 	"de" pr
 "<definir>"
@@ -3545,8 +3545,8 @@
 ° 
 "<per>"
 	"per" pr
-"<venir>"
-	"venir" vblex inf
+"<viéner>"
+	"viéner" vblex inf
 "<nulla>"
 	"nul" adj f sg
 "<au>"
@@ -3812,7 +3812,7 @@
 "<Uranus>"
 	"Uranus" np top m sg
 "<deu>"
-	"deure" vbmod pri p3 sg
+	"déver" vbmod pri p3 sg
 "<subir>"
 	"subir" vblex inf
 "<de>"
@@ -4575,7 +4575,6 @@
 	"a" pr
 		"lo" det def m sg
 "<nòrd>"
-	"nòrd" adj mf sp
 	"nòrd" n m sg
 "<.>"
 	"." sent
@@ -4764,7 +4763,7 @@
 "<magnetic>"
 	"magnetic" adj m sg
 "<vèn>"
-	"venir" vblex pri p3 sg
+	"viéner" vblex pri p3 sg
 "<feble>"
 	"feble" adj m sg
 "<e>"
@@ -5189,7 +5188,7 @@
 "<Uranus>"
 	"Uranus" np top m sg
 "<vist>"
-	"veire" vblex pp m sg
+	"véser" vblex pp m sg
 "<per>"
 	"per" pr
 "<lo>"
@@ -5219,7 +5218,7 @@
 "<coneguts>"
 	"conegut" adj m pl
 "<dichs>"
-	"dire" vblex pp m pl
+	"díser" vblex pp m pl
 "<segon>"
 	"segon" adv
 "<de>"
@@ -5242,7 +5241,6 @@
 	"." sent
 
 "<Son>"
-	"èster" vbser pri p3 pl
 	"èsser" vbser pri p3 pl
 "<devesits>"
 	"devesit" vblex pp m pl
@@ -5402,7 +5400,7 @@
 "<es>"
 	"èsser" vbser pri p3 sg
 "<dich>"
-	"dire" vblex pp m sg
+	"díser" vblex pp m sg
 "<Puck>"
 	"Puck" np ant m sg
 "<amb>"
@@ -6013,8 +6011,8 @@
 	"podriá" vblex cni p3 sg
 "<tanben>"
 	"tanben" adv
-"<tenir>"
-	"téner" vblex inf
+"<tiéner>"
+	"tiéner" vblex inf
 "<de>"
 	"de" pr
 "<percentatges>"
@@ -6225,7 +6223,7 @@
 "<son>"
 	"èsser" vbser pri p3 pl
 "<comprés>"
-	"comprene" vblex pp m sg
+	"compréner" vblex pp m sg
 "<entre>"
 	"entre" pr
 "<1,4>"
@@ -6363,7 +6361,7 @@
 "<satellits>"
 	"satellit" n m pl
 "<dichs>"
-	"dire" vblex pp m pl
+	"díser" vblex pp m pl
 "<irregulars>"
 	"irregular" adj m pl
 "<a>"
@@ -6662,7 +6660,7 @@
 "<,>"
 	"," cm
 "<vèn>"
-	"venir" vblex pri p3 sg
+	"viéner" vblex pri p3 sg
 "<una>"
 	"un" det ind f sg 
 "<buta>"
@@ -6921,7 +6919,7 @@
 "<la>"
 	"lo" prn pro p3 f sg 
 "<veguèt>"
-	"veire" vblex ifi p3 sg
+	"véser" vblex ifi p3 sg
 "<tanben>"
 	"tanben" adv
 "<dotze>"
@@ -6962,7 +6960,7 @@
 "<que>"
 	"que" rel an mf sp 
 "<comprenguèt>"
-	"comprene" vblex ifi p3 sg
+	"compréner" vblex ifi p3 sg
 "<qu'>"
 	"que" cnjsub 
 "<Uranus>"
@@ -6989,7 +6987,7 @@
 "<que>"
 	"que" cnjsub
 "<vesiá>"
-	"veire" vblex pii p3 sg
+	"véser" vblex pii p3 sg
 "<una>"
 	"un" det ind f sg 
 "<cometa>"
@@ -7075,7 +7073,7 @@
 "<e>"
 	"e" cnjcoo
 "<concluguèron>"
-	"conclure" vblex ifi p3 pl
+	"conclúser" vblex ifi p3 pl
 "<que>"
 	"que" cnjsub
 "<se>"
@@ -7314,7 +7312,7 @@
 "<nom>"
 	"nom" n m sg
 "<venguèt>"
-	"venir" vblex ifi p3 sg
+	"viéner" vblex ifi p3 sg
 "<pauc a pauc>"
 	"pauc a pauc" adv
 "<lo>"
@@ -7891,7 +7889,7 @@
 "<,>"
 	"," cm
 "<somés>"
-	"sometre" vblex pp m sg
+	"sométer" vblex pp m sg
 "<a>"
 	"a" pr
 "<de>"

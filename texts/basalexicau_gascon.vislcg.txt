@@ -74,7 +74,7 @@
 "<d’>"
 	"de" pr
 "<estar>"
-	"estar" vbser inf
+	"èsser" vbser inf
 "<un>"
 	"un" det ind m sg
 "<diccionari>"
@@ -116,7 +116,7 @@
 "<Que>"
 	"que" adv enon
 "<serà>"
-	"estar" vbser fti p3 sg
+	"èsser" vbser fti p3 sg
 "<aisidament>"
 	"aisidament" adv
 "<consultader>"
@@ -177,7 +177,7 @@
 "<Que>"
 	"que" adv enon
 "<serà>"
-	"estar" vbser fti p3 sg
+	"èsser" vbser fti p3 sg
 "<un>"
 	"un" det ind m sg SELECT:524
 "<còrpus>"
@@ -249,7 +249,7 @@
 "<que>"
 	"que" adv enon
 "<serà>"
-	"estar" vbser fti p3 sg
+	"èsser" vbser fti p3 sg
 "<miat>"
 	"miar" vblex pp m sg
 "<en>"
@@ -281,7 +281,7 @@
 "<qui>"
 	"qui" rel mf sp
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<operator>"
 	"operator" n m sg
 "<de>"

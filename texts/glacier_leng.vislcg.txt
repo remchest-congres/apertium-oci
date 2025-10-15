@@ -148,7 +148,7 @@
 "<es>"
 	"èsser" vbser pri p3 sg
 "<constituït>"
-	"constituir" vblex pp m sg
+	"constituïr" vblex pp m sg
 "<de>"
 	"de" pr
 "<doas>"
@@ -229,7 +229,7 @@
 "<glacièr>"
 	"glacièr" n m sg
 "<produtz>"
-	"produire" vblex pri p3 sg
+	"prodúser" vblex pri p3 sg
 "<de>"
 	"de" pr
 "<glaç>"
@@ -376,7 +376,7 @@
 "<linha>"
 	"linha" n f sg
 "<dita>"
-	"dire" vblex pp f sg
+	"díser" vblex pp f sg
 "<linha>"
 	"linha" n f sg
 "<d'>"
@@ -386,7 +386,7 @@
 "<que>"
 	"que" rel an mf sp
 "<correspond>"
-	"correspondre" vblex pri p3 sg
+	"correspónder" vblex pri p3 sg
 "<aperaquí>"
 	"aperaquí" adv
 "<al>"
@@ -496,7 +496,7 @@
 "<,>"
 	"," cm
 "<cal>"
-	"caler" vbmod pri p3 sg
+	"càler" vbmod pri p3 sg
 "<generalament>"
 	"generalament" adv
 "<que>"
@@ -605,7 +605,7 @@
 "<uèlh>"
 	"uèlh" n m sg
 "<veiriá>"
-	"veire" vblex cni p3 sg
+	"véser" vblex cni p3 sg
 "<.>"
 	"." sent
 
@@ -698,7 +698,7 @@
 "<se>"
 	"se" prn pro ref p3 mf sp
 "<fond>"
-	"fondre" vblex pri p3 sg
+	"fónder" vblex pri p3 sg
 "<en estiu>"
 	"en estiu" adv
 "<.>"
@@ -817,7 +817,7 @@
 "<se>"
 	"se" prn pro ref p3 mf sp
 "<mantenon>"
-	"manténer" vblex pri p3 pl
+	"mantiéner" vblex pri p3 pl
 "<jos>"
 	"jos" pr
 "<lo>"
@@ -960,7 +960,7 @@
 "<son>"
 	"èsser" vbser pri p3 pl
 "<somés>"
-	"sometre" vblex pp m sg
+	"sométer" vblex pp m sg
 "<a>"
 	"a" pr
 "<de>"
@@ -992,7 +992,7 @@
 "<nèu>"
 	"nèu" n f sg
 "<tenon>"
-	"téner" vblex pri p3 pl
+	"tiéner" vblex pri p3 pl
 "<una>"
 	"un" det ind f sg 
 "<espessor>"
@@ -1018,12 +1018,9 @@
 "<es>"
 	"èsser" vbser pri p3 sg
 "<tal>"
-	"tal" adv
 	"tal" adj m sg
 "<que>"
-	"que" cnjadv
 	"que" cnjsub
-	"que" rel an mf sp
 "<la>"
 	"lo" det def f sg
 "<neviza>"
@@ -1033,7 +1030,7 @@
 "<de>"
 	"de" pr
 "<produire>"
-	"produire" vblex inf
+	"prodúser" vblex inf
 "<de>"
 	"de" pr
 "<cristals>"
@@ -1152,7 +1149,7 @@
 "<(>"
 	"(" lpar
 "<inclús>"
-	"inclure" vblex pp m sg
+	"inclúser" vblex pp m sg
 "<en estiu>"
 	"en estiu" adv
 "<)>"
@@ -1288,7 +1285,7 @@
 "<glacièrs>"
 	"glacièr" n m pl
 "<depend>"
-	"dependre" vblex pri p3 sg
+	"depénder" vblex pri p3 sg
 "<del>"
 	"de" pr
 		"lo" det def m sg
@@ -1337,7 +1334,7 @@
 "<çò que>"
 	"lo que" rel nn nt
 "<fond>"
-	"fondre" vblex pri p3 sg
+	"fónder" vblex pri p3 sg
 "<dins>"
 	"dins" pr
 "<la>"
@@ -1394,7 +1391,7 @@
 "<que>"
 	"que" rel an mf sp
 "<vendràn>"
-	"venir" vblex fti p3 pl
+	"viéner" vblex fti p3 pl
 "<la>"
 	"lo" det def f sg
 "<zòna>"
@@ -1461,7 +1458,6 @@
 "<glacièr>"
 	"glacièr" n m sg
 "<mas>"
-	"mas" adv
 	"mas" cnjcoo
 "<es>"
 	"èsser" vbser pri p3 sg
@@ -2292,7 +2288,7 @@
 "<que>"
 	"que" rel an mf sp
 "<ten>"
-	"téner" vblex pri p3 sg
+	"tiéner" vblex pri p3 sg
 "<una>"
 	"un" det ind f sg
 "<mena>"
@@ -2303,12 +2299,8 @@
 	"limit" n m sg
 "<determinat>"
 	"determinar" vblex pp m sg
-"<al dessús del>"
-	"al dessús de" pr
-		"lo" det def m sg
-"<qual>"
-	"qual" prn itg m sg
-	"qual" adj itg m sg
+"<al dessús del qual>"
+	"al dessús del qual" rel an m sg
 "<se>"
 	"se" prn pro ref p3 mf sp
 "<pòt>"
@@ -2340,7 +2332,7 @@
 "<aiga>"
 	"aiga" n f sg
 "<contenguda>"
-	"conténer" vblex pp f sg
+	"contiéner" vblex pp f sg
 "<dins>"
 	"dins" pr
 "<l'>"
@@ -2935,7 +2927,6 @@
 "<:>"
 	":" sent
 "<demest>"
-	"demest" adv
 	"demest" pr
 "<los>"
 	"lo" det def m pl
@@ -3094,7 +3085,7 @@
 "<amor que>"
 	"amor que"  barb
 "<cal>"
-	"caler" vbmod pri p3 sg
+	"càler" vbmod pri p3 sg
 "<una>"
 	"un" det ind f sg 
 "<temperatura>"
@@ -3265,7 +3256,7 @@
 "<es>"
 	"èsser" vbser pri p3 sg
 "<mendre>"
-	"mendre" adj mf sg
+	"ménder" adj mf sg
 "<.>"
 	"." sent
 
@@ -3297,7 +3288,7 @@
 "<regions>"
 	"region" n f pl
 "<contenon>"
-	"contenir" vblex pri p3 pl
+	"contiéner" vblex pri p3 pl
 "<de>"
 	"de" pr
 "<grandas>"
@@ -3336,7 +3327,7 @@
 "<se>"
 	"se" prn pro ref p3 mf sp
 "<fondiá>"
-	"fondre" vblex pii p3 sg
+	"fónder" vblex pii p3 sg
 "<,>"
 	"," cm
 "<lo>"
@@ -3377,7 +3368,7 @@
 "<que>"
 	"que" rel an mf sp
 "<fondiá>"
-	"fondre" vblex pii p3 sg
+	"fónder" vblex pii p3 sg
 "<,>"
 	"," cm
 "<l'>"
@@ -3648,7 +3639,7 @@
 "<es>"
 	"èsser" vbser pri p3 sg
 "<constituit>"
-	"constituir" vblex pp m sg
+	"constituïr" vblex pp m sg
 "<de>"
 	"de" pr
 "<jaces>"
@@ -3722,7 +3713,7 @@
 "<pression>"
 	"pression" n f sg
 "<ven>"
-	"venir" vblex pri p3 sg
+	"viéner" vblex pri p3 sg
 "<superiora>"
 	"superior" adj f sg
 "<a>"
@@ -3739,7 +3730,7 @@
 "<que>"
 	"que" rel an mf sp
 "<mantenon>"
-	"manténer" vblex pri p3 pl
+	"mantiéner" vblex pri p3 pl
 "<los>"
 	"lo" det def m pl
 "<jaces>"
@@ -3843,7 +3834,7 @@
 "<fonda>"
 	"fonda" n f sg
 "<contribuís>"
-	"contribuir" vblex pri p3 sg
+	"contribuïr" vblex pri p3 sg
 "<al>"
 	"a" pr
 		"lo" det def m sg
@@ -3945,7 +3936,7 @@
 "<calor>"
 	"calor" n f sg
 "<provenent de>"
-	"provenir# de" vblex ger
+	"proviéner# de" vblex ger
 "<la>"
 	"lo" det def f sg
 "<Tèrra>"
@@ -4235,7 +4226,7 @@
 "<,>"
 	"," cm
 "<ten>"
-	"téner" vblex pri p3 sg
+	"tiéner" vblex pri p3 sg
 "<una>"
 	"un" det ind f sg 
 "<direccion>"
@@ -5151,8 +5142,8 @@
 	"dintrar" vblex pri p3 pl
 "<per>"
 	"per" pr
-"<venir>"
-	"venir" vblex inf
+"<viéner>"
+	"viéner" vblex inf
 "<formar>"
 	"formar" vblex inf
 "<una>"
@@ -5185,7 +5176,7 @@
 "<se>"
 	"se" prn pro ref p3 mf sp
 "<produtz>"
-	"produire" vblex pri p3 sg
+	"prodúser" vblex pri p3 sg
 "<quand>"
 	"quand" rel adv
 "<lo>"
@@ -5227,8 +5218,8 @@
 	"papièr" n m sg
 "<de>"
 	"de" pr
-"<veire>"
-	"veire" n m sg
+"<véser>"
+	"véser" n m sg
 "<qu'>"
 	"que" rel an mf sp
 "<alisa>"
@@ -5257,7 +5248,7 @@
 "<abrasion>"
 	"abrasion" n f sg
 "<recep>"
-	"recebre" vblex pri p3 sg
+	"recéber" vblex pri p3 sg
 "<lo>"
 	"lo" det def m sg
 "<nom>"
@@ -5353,7 +5344,7 @@
 "<fonda>"
 	"fonda" n f sg
 "<prenon>"
-	"prendre" vblex pri p3 pl
+	"prénder" vblex pri p3 pl
 "<una>"
 	"un" det ind f sg
 "<color>"
@@ -5412,7 +5403,7 @@
 "<fonda>"
 	"fonda" n f sg
 "<conten>"
-	"conténer" vblex pri p3 sg
+	"contiéner" vblex pri p3 sg
 "<de>"
 	"de" pr
 "<grands>"
@@ -5455,7 +5446,7 @@
 "<pòt>"
 	"poder" vbmod pri p3 sg
 "<permetre>"
-	"permetre" vblex inf
+	"perméter" vblex inf
 "<de>"
 	"de" pr
 "<determinar>"
@@ -5607,7 +5598,7 @@
 "<ròca>"
 	"ròca" n f sg
 "<contenguts>"
-	"conténer" vblex pp m pl
+	"contiéner" vblex pp m pl
 "<dins>"
 	"dins" pr
 "<lo>"
@@ -5733,7 +5724,7 @@
 "<glacièrs>"
 	"glacièr" n m pl
 "<recebon>"
-	"recebre" vblex pri p3 pl
+	"recéber" vblex pri p3 pl
 "<lo>"
 	"lo" det def m sg
 "<nom>"
@@ -5982,11 +5973,11 @@
 "<litologic>"
 	"litologic" adj m sg
 "<permet>"
-	"permetre" vblex pri p3 sg
+	"perméter" vblex pri p3 sg
 "<de>"
 	"de" pr
 "<comprene>"
-	"comprene" vblex inf
+	"compréner" vblex inf
 "<la>"
 	"lo" det def f sg
 "<trajectòria>"
@@ -6197,7 +6188,7 @@
 "<tèrme>"
 	"tèrme" n m sg
 "<ten>"
-	"téner" vblex pri p3 sg
+	"tiéner" vblex pri p3 sg
 "<un>"
 	"un" det ind m sg
 "<sens>"
@@ -6326,7 +6317,7 @@
 "<es>"
 	"èsser" vbser pri p3 sg
 "<fondut>"
-	"fondre" vblex pp m sg
+	"fónder" vblex pp m sg
 "<e>"
 	"e" cnjcoo
 "<evaporat>"
@@ -6444,7 +6435,7 @@
 "<ablacion>"
 	"ablacion" n f sg
 "<ven>"
-	"venir" vblex pri p3 sg
+	"viéner" vblex pri p3 sg
 "<superiora>"
 	"superior" adj f sg
 "<a>"
@@ -7068,7 +7059,7 @@
 "<,>"
 	"," cm
 "<deguts>"
-	"deure" vblex pp m pl
+	"déver" vblex pp m pl
 "<a>"
 	"a" pr
 "<çò que>"
@@ -7154,7 +7145,7 @@
 "<glacièrs>"
 	"glacièr" n m pl
 "<suspenduts>"
-	"suspendre" vblex pp m pl
+	"suspénder" vblex pp m pl
 "<.>"
 	"." sent
 
@@ -7258,7 +7249,7 @@
 "<que>"
 	"que" rel an mf sp
 "<ten>"
-	"téner" vblex pri p3 sg
+	"tiéner" vblex pri p3 sg
 "<la>"
 	"lo" det def f sg
 "<forma>"
@@ -7383,7 +7374,7 @@
 "<se>"
 	"se" prn pro ref p3 mf sp
 "<fond>"
-	"fondre" vblex pri p3 sg
+	"fónder" vblex pri p3 sg
 "<,>"
 	"," cm
 "<aquestes>"
@@ -7689,7 +7680,7 @@
 "<que>"
 	"que" rel an mf sp
 "<recebon>"
-	"recebre" vblex pri p3 pl
+	"recéber" vblex pri p3 pl
 "<lo>"
 	"lo" det def m sg
 
@@ -8016,7 +8007,7 @@
 "<tipe>"
 	"tipe" n m sg
 "<recep>"
-	"recebre" vblex pri p3 sg
+	"recéber" vblex pri p3 sg
 "<lo>"
 	"lo" det def m sg
 "<nom>"
@@ -8454,7 +8445,7 @@
 "<que>"
 	"que" cnjsub 
 "<conten>"
-	"conténer" vblex pri p3 sg
+	"contiéner" vblex pri p3 sg
 "<qualques>"
 	"qualque" det ind mf pl
 "<10>"
@@ -8672,7 +8663,7 @@
 "<sediments>"
 	"sediment" n m pl
 "<contenguts>"
-	"conténer" vblex pp m pl
+	"contiéner" vblex pp m pl
 "<començan>"
 	"començar" vblex pri p3 pl
 "<de>"
@@ -8733,7 +8724,7 @@
 "<,>"
 	"," cm
 "<recep>"
-	"recebre" vblex pri p3 sg
+	"recéber" vblex pri p3 sg
 "<lo>"
 	"lo" det def m sg
 "<nom>"
@@ -8997,7 +8988,7 @@
 "<èsser>"
 	"èsser" vbser inf
 "<fonduts>"
-	"fondre" vblex pp m pl
+	"fónder" vblex pp m pl
 "<daissan>"
 	"daissar" vblex pri p3 pl
 "<de>"
@@ -9064,7 +9055,7 @@
 "<parallèlas>"
 	"parallèl" adj f pl
 "<an>"
-	"auer" vblex pri p3 pl
+	"aver" vblex pri p3 pl
 "<una>"
 	"un" det ind f sg 
 "<direccion>"
@@ -9394,8 +9385,8 @@
 	"se" prn pro ref p3 mf sp
 "<va>"
 	"anar" vblex pri p3 sg
-"<fondre>"
-	"fondre" vblex inf
+"<fónder>"
+	"fónder" vblex inf
 "<,>"
 	"," cm
 "<va>"
@@ -9763,7 +9754,7 @@
 "<rius>"
 	"riu" n m pl
 "<recebon>"
-	"recebre" vblex pri p3 pl
+	"recéber" vblex pri p3 pl
 "<las>"
 	"lo" det def f pl
 "<aigas>"
@@ -9830,7 +9821,7 @@
 "<es>"
 	"èsser" vbser pri p3 sg
 "<deguda>"
-	"deure" vblex pp f sg
+	"déver" vblex pp f sg
 "<a>"
 	"a" pr
 "<las>"
@@ -10286,7 +10277,7 @@
 "<se>"
 	"se" prn pro ref p3 mf sp 
 "<comprenguèt>"
-	"comprene" vblex ifi p3 sg
+	"compréner" vblex ifi p3 sg
 "<que>"
 	"que" cnjsub
 "<i>"
@@ -10973,7 +10964,7 @@
 "<se>"
 	"se" prn pro ref p3 mf sp
 "<vegèron>"
-	"veire" vblex ifi p3 pl
+	"véser" vblex ifi p3 pl
 "<obligadas>"
 	"obligar" vblex pp f pl
 "<d'>"
@@ -11109,7 +11100,7 @@
 "<teoria>"
 	"teoria" n f sg
 "<sosten>"
-	"sosténer" vblex pri p3 sg
+	"sostiéner" vblex pri p3 sg
 "<que>"
 	"que" cnjsub 
 "<quand>"
@@ -11169,7 +11160,7 @@
 "<se>"
 	"se" prn pro ref p3 mf sp
 "<fond>"
-	"fondre" vblex pri p3 sg
+	"fónder" vblex pri p3 sg
 "<,>"
 	"," cm
 "<la>"
@@ -11197,7 +11188,7 @@
 "<,>"
 	"," cm
 "<es a dire>"
-	"es a dire" adv
+	"es a díser" adv
 "<,>"
 	"," cm
 "<a>"
@@ -11752,7 +11743,7 @@
 "<es>"
 	"èsser" vbser pri p3 sg
 "<deguda>"
-	"deure" vblex pp f sg
+	"déver" vblex pp f sg
 "<a>"
 	"a" pr
 "<l'>"
@@ -12393,7 +12384,7 @@
 "<scientifics>"
 	"scientific" n m pl
 "<creson>"
-	"creire" vblex pri p3 pl
+	"créser" vblex pri p3 pl
 "<que>"
 	"que" cnjsub 
 "<las>"
@@ -12408,7 +12399,7 @@
 "<Pleïstocèn>"
 	"Pleïstocèn" n m sg
 "<devon>"
-	"deure" vbmod pri p3 pl
+	"déver" vbmod pri p3 pl
 "<èsser>"
 	"èsser" vbser inf
 "<ligadas>"
@@ -12472,7 +12463,7 @@
 "<dintrantas>"
 	"dintrant" adj f pl
 "<constituisson>"
-	"constituir" vblex pri p3 pl
+	"constituïr" vblex pri p3 pl
 "<un>"
 	"un" det ind m sg 
 "<factor>"
@@ -12721,7 +12712,7 @@
 "<que>"
 	"que" rel an mf sp
 "<contenián>"
-	"conténer" vblex pii p3 pl
+	"contiéner" vblex pii p3 pl
 "<unes>"
 	"un" det ind m pl
 "<microorganismes>"
@@ -12958,9 +12949,9 @@
 "<,>"
 	"," cm
 "<cal>"
-	"caler" vbmod pri p3 sg
-"<prene en compte>"
-	"prene# en compte" vblex inf
+	"càler" vbmod pri p3 sg
+"<préner en compte>"
+	"préner# en compte" vblex inf
 "<qu'>"
 	"que" cnjsub
 "<aquelas>"

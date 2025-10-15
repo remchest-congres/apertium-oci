@@ -38,7 +38,7 @@
 "<tanben>"
 	"tanben" adv
 "<aurà>"
-	"auer" vbhaver fti p3 sg
+	"aver" vbhaver fti p3 sg
 "<sessions>"
 	"session" n f pl
 "<d’>"
@@ -276,7 +276,7 @@
 "<,>"
 	"," cm
 "<seràn>"
-	"èster" vbser fti p3 pl
+	"èsser" vbser fti p3 pl
 "<quauqui uns>"
 	"quauqu'un" prn tn m pl
 "<des>"
@@ -309,7 +309,7 @@
 "<tanben>"
 	"tanben" adv
 "<aurà>"
-	"auer" vblex fti p3 sg
+	"aver" vblex fti p3 sg
 "<sessions>"
 	"session" n f pl
 "<d’>"
@@ -336,7 +336,7 @@
 "<,>"
 	"," cm
 "<aurà>"
-	"auer" vbhaver fti p3 sg
+	"aver" vbhaver fti p3 sg
 "<lòc>"
 	"lòc" n m sg
 "<ua>"
@@ -524,7 +524,7 @@
 "<redona>"
 	"redon" adj f sg
 "<serà>"
-	"èster" vbser fti p3 sg
+	"èsser" vbser fti p3 sg
 "<retransmetuda>"
 	"retransméter" vblex pp f sg
 "<per>"
@@ -536,7 +536,7 @@
 "<e>"
 	"e" cnjcoo
 "<serà>"
-	"èster" vbser fti p3 sg
+	"èsser" vbser fti p3 sg
 "<moderada>"
 	"moderar" vblex pp f sg
 "<pera>"
@@ -563,7 +563,7 @@
 "<cors>"
 	"cors" n m sg
 "<ei>"
-	"èster" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<de>"
 	"de" pr
 "<200>"
@@ -632,13 +632,13 @@
 "<places>"
 	"plaça" n f pl
 "<son>"
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 "<limitades>"
 	"limitat" adj f pl
 "<e>"
 	"e" cnjcoo
 "<ei>"
-	"èster" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<imprescindible>"
 	"imprescindible" adj m sg
 "<,>"
@@ -660,7 +660,7 @@
 "<d’>"
 	"de" pr
 "<auer>"
-	"auer" vblex inf
+	"aver" vblex inf
 "<un>"
 	"un" det ind m sg 
 "<ordenador>"
@@ -690,7 +690,7 @@
 "<cors>"
 	"cors" n m sg
 "<serà>"
-	"èster" vbser fti p3 sg
+	"èsser" vbser fti p3 sg
 "<dat>"
 	"dar" vblex pp m sg
 "<per>"
@@ -708,7 +708,7 @@
 "<e>"
 	"e" cnjcoo
 "<aurà>"
-	"auer" vblex fti p3 sg
+	"aver" vblex fti p3 sg
 "<lòc>"
 	"lòc" n m sg
 "<ena>"

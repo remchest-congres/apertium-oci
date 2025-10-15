@@ -10,7 +10,7 @@
 	"que" adv enon
 		"se" prn pro ref p3 mf sp
 "<deven>"
-	"dever" vbmod pri p3 pl
+	"déver" vbmod pri p3 pl
 "<pausar>"
 	"pausar" vblex inf
 "<questions>"
@@ -59,7 +59,7 @@
 	":" sent
 
 "<èm>"
-	"estar" vbser pri p1 pl
+	"èsser" vbser pri p1 pl
 "<responsables>"
 	"responsable" adj m pl
 "<de>"
@@ -101,7 +101,7 @@
 "<scientificas>"
 	"scientific" adj f pl
 "<son>"
-	"estar" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 "<defintivas>"
 	"defintiu" adj f pl
 "<?>"
@@ -160,7 +160,7 @@
 "<d’>"
 	"de" pr
 "<estar>"
-	"estar" vbser inf
+	"èsser" vbser inf
 "<liures>"
 	"liure" adj m pl
 "<?>"
@@ -201,7 +201,7 @@
 "<Que>"
 	"que" adv enon
 "<cau>"
-	"caler" vbmod pri p3 sg
+	"càler" vbmod pri p3 sg
 "<trobar>"
 	"trobar" vblex inf
 "<ua>"
@@ -296,7 +296,7 @@
 "<quan>"
 	"quan" cnjadv
 "<serén>"
-	"estar" vbser cni p3 pl
+	"èsser" vbser cni p3 pl
 "<hèra>"
 	"hèra" adv
 "<joens>"
@@ -315,7 +315,7 @@
 "<que>"
 	"que" adv enon
 "<son>"
-	"estar" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 "<perduts>"
 	"perdut" adj m pl
 "<,>"
@@ -345,7 +345,7 @@
 "<Qu’>"
 	"que" prn itg mf sg
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<la>"
 	"lo" det def f sg
 "<vida>"
@@ -356,7 +356,7 @@
 "<Qu’>"
 	"que" prn itg mf sg
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<la>"
 	"lo" det def f sg
 "<ploja>"
@@ -406,7 +406,7 @@
 "<nuèit>"
 	"nuèch" n f sg
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<escura>"
 	"escur" adj f sg
 "<?>"
@@ -473,7 +473,7 @@
 "<qu’>"
 	"que" adv enon
 "<èm>"
-	"estar" vbser pri p1 pl
+	"èsser" vbser pri p1 pl
 "<prés>"
 	"prés" adj m sg
 "<per>"
@@ -502,7 +502,7 @@
 "<que>"
 	"que" adv enon
 "<son>"
-	"estar" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 "<filosòfes>"
 	"filosòfe" adj m pl
 "<.>"
@@ -521,7 +521,7 @@
 "<que>"
 	"que" adv enon
 "<son>"
-	"estar" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 "<dificilas>"
 	"dificile" adj f pl
 "<.>"
@@ -572,7 +572,7 @@
 "<Qu’>"
 	"que" adv enon
 "<apareishen>"
-	"aparéisher" vblex pri p3 pl
+	"aparéisser" vblex pri p3 pl
 "<sovent>"
 	"sovent" adv
 "<quan>"
@@ -598,14 +598,14 @@
 "<on>"
 	"on" rel adv
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<mammy>"
 	"mammy" n f sg
 "<?>"
 	"?" sent
 
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<au>"
 	"a" pr
 		"lo" det def m sg
@@ -645,7 +645,7 @@
 	"que" cnjsub
 		"me" prn pro p1 mf sg
 "<soi>"
-	"estar" vbser pri p1 sg
+	"èsser" vbser pri p1 sg
 "<desmbrombat>"
 	"desmbrombat" vblex pp m sg
 "<LA>"

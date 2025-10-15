@@ -5,7 +5,7 @@
 "<qu'>"
 	"que" adv enon
 "<èra>"
-	"estar" vbser pii p3 sg
+	"èsser" vbser pii p3 sg
 "<un>"
 	"un" det ind m sg
 "<mètge>"
@@ -51,7 +51,7 @@
 "<Qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<autor>"
 	"autor" n m sg
 "<,>"
@@ -182,7 +182,7 @@
 "<on>"
 	"on" rel adv
 "<ho>"
-	"estar" vbser ifi p3 sg
+	"èsser" vbser ifi p3 sg
 "<membre>"
 	"membre" n m sg
 "<(>"
@@ -377,7 +377,7 @@
 "<que>"
 	"que" adv enon
 "<pareishó>"
-	"paréisher" vblex ifi p3 sg
+	"paréisser" vblex ifi p3 sg
 "<en>"
 	"en" pr
 "<1610>"
@@ -508,7 +508,7 @@
 "<Qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<ua>"
 	"un" det ind f sg
 "<colleccion>"
@@ -558,7 +558,7 @@
 "<non>"
 	"non" adv enon
 "<soi>"
-	"estar" vbser pri p1 sg
+	"èsser" vbser pri p1 sg
 "<a>"
 	"a" pr
 "<ta>"
@@ -626,7 +626,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<vodada>"
 	"vodar" vblex pp f sg
 "<a>"

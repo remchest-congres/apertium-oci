@@ -117,7 +117,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<l'>"
 	"lo" det def mf sg
 "<utís>"
@@ -214,7 +214,7 @@
 "<que>"
 	"que" adv enon
 "<son>"
-	"estar" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 "<enjòcs>"
 	"enjòc" n m pl
 "<màgers>"
@@ -282,7 +282,7 @@
 "<qu’>"
 	"que" adv enon
 "<estó>"
-	"estar" vbser ifi p3 sg
+	"èsser" vbser ifi p3 sg
 "<hèit>"
 	"har" vblex pp m sg
 "<mercés au>"
@@ -375,7 +375,7 @@
 "<Qu’>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<hargada>"
 	"hargar" vblex pp f sg
 "<Votz>"
@@ -438,14 +438,13 @@
 "<qu’>"
 	"que" adv enon
 "<estón>"
-	"estar" vbser ifi p3 pl
+	"èsser" vbser ifi p3 pl
 "<d’aulhors>"
 	"d'aulhors" cnjadv
 "<premiats>"
 	"premiar" vblex pp m pl
 "<per>"
 	"per" pr
-	"perir" vblex pri p3 sg
 "<la>"
 	"lo" det def f sg
 "<publicacion>"

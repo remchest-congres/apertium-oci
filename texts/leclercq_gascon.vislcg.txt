@@ -5,7 +5,7 @@
 "<vos>"
 	"vos" prn pro p2 mf pl
 "<disètz>"
-	"dire" vblex pri p2 pl
+	"díser" vblex pri p2 pl
 "<qu’>"
 	"que" cnjsub
 "<es>"
@@ -84,7 +84,7 @@
 "<vs>"
 	"vs" prn pro p2 mf pl
 "<díser>"
-	"dire" vblex inf
+	"díser" vblex inf
 "<qu’>"
 	"que" cnjsub 
 "<es>"
@@ -169,7 +169,7 @@
 "<a>"
 	"a" pr
 "<díser>"
-	"dire" vblex inf
+	"díser" vblex inf
 "<reportatges>"
 	"reportatge" n m pl
 "<innocents>"
@@ -191,7 +191,7 @@
 "<que>"
 	"que" rel an mf sp
 "<creish>"
-	"créisher" vblex pri p3 sg
+	"créisser" vblex pri p3 sg
 ” 
 "<o>"
 	"o" cnjcoo
@@ -450,7 +450,7 @@
 "<hèr>"
 	"hèr" vblex inf
 "<valer>"
-	"valer" vblex inf
+	"vàler" vblex inf
 "<qu’>"
 	"que" cnjsub
 "<i a>"
@@ -504,7 +504,7 @@
 "<que>"
 	"que" cnjsub 
 "<sostengueratz>"
-	"sosténguer" vblex fti p2 pl
+	"sostiéner" vblex fti p2 pl
 "<França>"
 	"França" np top f sg
 "<lo>"
@@ -736,7 +736,7 @@
 "<de>"
 	"de" pr
 "<véser>"
-	"veire" vblex inf
+	"véser" vblex inf
 "<que>"
 	"que" cnjsub
 "<demoratz>"
@@ -779,7 +779,7 @@
 	"." sent
 
 "<Sufís>"
-	"sufire" vblex pri p3 sg
+	"sufíser" vblex pri p3 sg
 "<pas>"
 	"pas" adv
 "<que>"
@@ -791,7 +791,7 @@
 "<tornar>"
 	"tornar" vblex inf
 "<díser>"
-	"dire" vblex inf
+	"díser" vblex inf
 "<cinquanta>"
 	"cinquanta" num mf sp
 "<còps>"
@@ -1159,7 +1159,7 @@
 "<en>"
 	"en" prn pro adv
 "<fot>"
-	"fotre" vblex pri p3 sg
+	"fóter" vblex pri p3 sg
 "<(>"
 	"(" lpar
 "<sense>"
@@ -1287,7 +1287,7 @@
 "<totis>"
 	"tot" prn tn m pl
 "<disen>"
-	"dire" vblex pri p3 pl
+	"díser" vblex pri p3 pl
  “
 "<Es>"
 	"èsser" vbser pri p3 sg
@@ -1467,7 +1467,7 @@
 "<poden>"
 	"poder" vblex cni p3 pl
 "<díser>"
-	"dire" vblex inf
+	"díser" vblex inf
 "<los>"
 	"lo" det def m pl
 "<formators>"
@@ -1550,7 +1550,7 @@
 "<i>"
 	"i" prn pro adv
 "<seratz>"
-	"èster" vbser fti p2 pl
+	"èsser" vbser fti p2 pl
 "<a>"
 	"a" pr
 
@@ -1612,7 +1612,7 @@
 "<e>"
 	"e" cnjcoo
 "<atenguètz>"
-	"atendre" vblex pri p2 pl
+	"aténder" vblex pri p2 pl
 "<lo>"
 	"lo" det def m sg
 "<16>"

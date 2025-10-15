@@ -20,7 +20,7 @@
 "<que>"
 	"que" adv enon
 "<son>"
-	"estar" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 "<ubèrtas>"
 	"ubèrt" adj f pl
 "<!>"
@@ -44,7 +44,6 @@
 	"," cm
 "<la>"
 	"lo" det def f sg
-	"lo" prn pro p3 f sg
 "<Delegacion>"
 	"delegacion" n f sg
 "<Academica>"
@@ -128,7 +127,7 @@
 "<que>"
 	"que" adv enon
 "<son>"
-	"estar" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 "<ubèrtas>"
 	"ubèrt" adj f pl
 "<dinc au>"
@@ -171,7 +170,7 @@
 "<qu’>"
 	"que" adv enon
 "<estón>"
-	"estar" vbser ifi p3 pl
+	"èsser" vbser ifi p3 pl
 "<hicats>"
 	"hicat" adj m pl
 "<en plaça>"
@@ -354,7 +353,7 @@
 "<S’>"
 	"si" cnjadv
 "<ètz>"
-	"estar" vbser pri p2 pl
+	"èsser" vbser pri p2 pl
 "<ensenhaire>"
 	"ensenhaire" n m sg
 "<deu>"
@@ -511,7 +510,7 @@
 	"ne" adv enon
 		"vos" prn pro p2 mf pl
 "<sia>"
-	"estar" vbser prs p3 sg
+	"èsser" vbser prs p3 sg
 "<grèu>"
 	"grèu" adv
 "<de>"

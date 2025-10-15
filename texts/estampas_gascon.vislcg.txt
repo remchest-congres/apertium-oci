@@ -64,7 +64,7 @@
 "<i>"
 	"i" prn pro adv
 "<coneish>"
-	"conéisher" vblex pri p3 sg
+	"conéisser" vblex pri p3 sg
 "<!>"
 	"!" sent
  – 
@@ -273,7 +273,6 @@
 	"paisan" n m pl
 "<o>"
 	"o" cnjcoo
-	"o" prn pro p3 nt
 "<personatges>"
 	"personatge" n m pl
 "<dont>"
@@ -312,14 +311,12 @@
 	"Montanha Deu temps" np al f sg
 "<on>"
 	"on" rel adv
-	"on" adv itg
 "<lo>"
 	"lo" det def m sg
-	"lo" prn pro p3 m sg
 "<Pedemai>"
 	"Pedemai" np cog mf sp
 "<es>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<mainat>"
 	"mainat" n m sg
 "<,>"
@@ -514,7 +511,7 @@
 "<qu’>"
 	"que" adv enon
 "<es>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<un>"
 	"un" det ind m sg
 "<petit>"
@@ -851,7 +848,7 @@
 "<qui>"
 	"qui" rel mf sp
 "<son>"
-	"estar" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 "<a>"
 	"a" pr
 "<pausar>"
@@ -867,7 +864,7 @@
 "<,>"
 	"," cm
 "<son>"
-	"estar" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 "<gahadas>"
 	"gahar" vblex pp f pl
 "<per>"
@@ -1028,7 +1025,7 @@
 "<Charles>"
 	"Charles" np ant m sg
 "<es>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<un>"
 	"un" det ind m sg
 "<d’>"
@@ -1325,7 +1322,7 @@
 "<o>"
 	"o" rel mf sp
 "<creishen>"
-	"créisher" vblex pri p3 pl
+	"créisser" vblex pri p3 pl
 "<las>"
 	"lo" det def f pl
 "<sescas>"
@@ -1457,7 +1454,7 @@
 "<bestiar>"
 	"bestiar" n m sg
 "<es>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<embarrat>"
 	"embarrar" vblex pp m sg
 "<sus>"
@@ -1524,7 +1521,7 @@
 "<que>"
 	"que" adv enon
 "<son>"
-	"estar" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 "<de>"
 	"de" pr
 "<qualitat>"
@@ -1594,7 +1591,7 @@
 "<hèit>"
 	"har" vblex pp m sg
 "<coneisher>"
-	"conéisher" vblex inf
+	"conéisser" vblex inf
 "<.>"
 	"." sent
 

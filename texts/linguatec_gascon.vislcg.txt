@@ -243,9 +243,9 @@
 "<que>"
 	"que" adv enon
 "<deurén>"
-	"dever" vbmod cni p3 pl
+	"déver" vbmod cni p3 pl
 "<estar>"
-	"estar" vbser ger
+	"èsser" vbser ger
 "<acabats>"
 	"acabar" vblex pp m pl
 "<en>"
@@ -296,7 +296,7 @@
 "<qu'>"
 	"que" adv enon
 "<estó>"
-	"estar" vbser ifi p3 sg
+	"èsser" vbser ifi p3 sg
 "<dedicada>"
 	"dedicar" vblex pp f sg
 "<a>"

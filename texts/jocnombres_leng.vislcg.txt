@@ -5,7 +5,7 @@
 "<a>"
 	"aver" vbhaver pri p3 sg
 "<mes en plaça>"
-	"metre# en plaça" vblex pp m sg
+	"méter# en plaça" vblex pp m sg
 "<un>"
 	"un" det ind m sg
 "<pichon>"
@@ -39,9 +39,9 @@
 "<Vos>"
 	"vos" prn pro p2 mf pl
 "<cal>"
-	"caler" vbmod pri p3 sg
+	"càler" vbmod pri p3 sg
 "<escriure>"
-	"escriure" vblex inf
+	"escríver" vblex inf
 "<de>"
 	"un" det ind mf pl
 "<nombres>"
@@ -65,11 +65,11 @@
 "<a>"
 	"aver" vbhaver pri p3 sg
 "<comprés>"
-	"comprene" vblex pp m sg
+	"compréner" vblex pp m sg
 "<coma>"
 	"coma" cnjadv
 "<cal>"
-	"caler" vbmod pri p3 sg
+	"càler" vbmod pri p3 sg
 "<.>"
 	"." sent
 
@@ -138,7 +138,7 @@
 "<nombres>"
 	"nombre" n m pl
 "<escriuts>"
-	"escriure" vblex pp m pl
+	"escríver" vblex pp m pl
 "<en>"
 	"en" pr
 "<tota>"
@@ -239,7 +239,7 @@
 "<d'>"
 	"de" pr
 "<escriure>"
-	"escriure" vblex inf
+	"escríver" vblex inf
 "<nombres>"
 	"nombre" n m pl
 "<en>"
@@ -272,7 +272,6 @@
 	"lo" det def m sg
 "<nombre>"
 	"nombre" n m sg
-	"nombrar" vblex imp p3 sg
 "<en>"
 	"en" pr
 "<chifras>"
@@ -290,7 +289,7 @@
 "<nivèls>"
 	"nivèl" n m pl
 "<son>"
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 "<a>"
 	"a" pr
 "<disposicion>"

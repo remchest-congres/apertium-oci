@@ -9,7 +9,7 @@
 "<que>"
 	"que" adv enon
 "<serà>"
-	"estar" vbser fti p3 sg
+	"èsser" vbser fti p3 sg
 "<ubèrta>"
 	"ubèrt" adj f sg
 "<tà>"
@@ -145,9 +145,9 @@
 "<qu'>"
 	"que" adv enon
 "<èran>"
-	"estar" vbser pii p3 pl
+	"èsser" vbser pii p3 pl
 "<estadas>"
-	"estar" vbser pp f pl
+	"èsser" vbser pp f pl
 "<ubèrtas>"
 	"ubèrt" adj f pl
 "<sonque>"
@@ -185,7 +185,7 @@
 "<que>"
 	"que" adv enon
 "<son>"
-	"estar" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 "<diferentas>"
 	"diferent" adj f pl
 "<e>"
@@ -226,7 +226,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<tanben>"
 	"tanben" adv
 "<ua>"
@@ -345,7 +345,7 @@
 "<Qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<ua>"
 	"un" det ind f sg
 "<de>"
@@ -390,7 +390,7 @@
 "<Qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<atau>"
 	"atal" adv
 "<l'>"
@@ -604,9 +604,9 @@
 "<que>"
 	"que" adv enon
 "<cau>"
-	"caler" vbmod pri p3 sg
+	"càler" vbmod pri p3 sg
 "<díser>"
-	"dire" vblex inf
+	"díser" vblex inf
 "<l'>"
 	"lo" det def mf sg
 "<environament>"
@@ -614,7 +614,7 @@
 "<qu’>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<pro>"
 	"pro" adv
 "<favorable>"
@@ -652,7 +652,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<enqüèra>"
 	"enqüèra" adv
 "<plan>"
@@ -665,9 +665,7 @@
 
 
 "<De mei>"
-	"de mei" adv
 	"de mei" cnjadv
-	"de mei" n m sp
 "<,>"
 	"," cm
 "<en>"
@@ -752,7 +750,7 @@
 "<s'>"
 	"se" prn pro ref p3 mf sp
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<hèita>"
 	"har" vblex pp f sg
 "<de>"
@@ -901,7 +899,7 @@
 "<n'>"
 	"ne" adv enon
 "<èm>"
-	"estar" vbser pri p1 pl
+	"èsser" vbser pri p1 pl
 "<pas>"
 	"pas" adv
 "<enqüèra>"

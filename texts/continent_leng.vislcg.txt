@@ -5,7 +5,7 @@
 "<continent>"
 	"continent" n m sg
 "<ven>"
-	"venir" vblex pri p3 sg
+	"viéner" vblex pri p3 sg
 "<del>"
 	"de" pr
 		"lo" det def m sg
@@ -18,7 +18,7 @@
 "<«>"
 	"«" lpar
 "<tenir>"
-	"tenir" vblex inf
+	"tiéner" vblex inf
 "<ensemble>"
 	"ensemble" adv
 "<»>"
@@ -124,7 +124,7 @@
 "<pòt>"
 	"poder" vbmod pri p3 sg
 "<veire>"
-	"veire" vblex inf
+	"véser" vblex inf
 "<atal>"
 	"atal" adv
 "<de>"
@@ -281,7 +281,7 @@
 "<continentala>"
 	"continental" adj f sg
 "<inclutz>"
-	"inclure" vblex pri p3 sg
+	"inclúser" vblex pri p3 sg
 "<tanben>"
 	"tanben" adv
 "<las>"
@@ -346,7 +346,7 @@
 "<continents>"
 	"continent" n m pl
 "<incluson>"
-	"inclure" vblex pri p3 pl
+	"inclúser" vblex pri p3 pl
 "<tanben>"
 	"tanben" adv
 "<las>"
@@ -409,7 +409,7 @@
 "<Estrabon>"
 	"Estrabon" n
 "<tenent>"
-	"téner" vblex ger
+	"tiéner" vblex ger
 "<un>"
 	"un" det ind m sg
 "<glòbe>"
@@ -618,7 +618,7 @@
 "<se>"
 	"se" prn pro ref p3 mf sp
 "<deuriá>"
-	"deure" vbmod cni p3 sg
+	"déver" vbmod cni p3 sg
 "<considerar>"
 	"considerar" vblex inf
 "<coma>"
@@ -987,7 +987,6 @@
 	"de" pr
 "<çò>"
 	"çò" prn tn nt
-	"çò" prn tn p3 nt
 "<qu'>"
 	"que" rel an mf sp
 "<es>"
@@ -1100,9 +1099,7 @@
 "<notèt>"
 	"notar" vblex ifi p3 sg
 "<que>"
-	"que" cnjadv
 	"que" cnjsub
-	"que" rel an mf sp
 "<qualques>"
 	"qualque" det ind mf pl
 "<geografs>"
@@ -1299,7 +1296,7 @@
 "<autors>"
 	"autor" n m pl
 "<prenguèron>"
-	"prendre" vblex ifi p3 pl
+	"prénder" vblex ifi p3 pl
 "<l'>"
 	"lo" det def mf sg
 "<istme>"
@@ -1729,9 +1726,12 @@
 "<.>"
 	"." sent
 
-"<Quin que siá>"
-	"quin# que siá" prn tn m sg
-	"quin# que siá" det ind m sg
+"<Quin>"
+	"quin" rel an m sg
+"<que>"
+	"que" rel an mf sp
+"<siá>"
+	"èsser" vbser prs p3 sg
 "<l'>"
 	"lo" det def mf sg
 "<autor>"
@@ -2052,7 +2052,6 @@
 	"de" pr
 "<aiga>"
 	"aiga" n f sg
-	"aigua" n f sg
 "<.>"
 	"." sent
 
@@ -2516,7 +2515,7 @@
 "<massa>"
 	"massa" n f sg
 "<deuriá>"
-	"deure" vbmod cni p3 sg
+	"déver" vbmod cni p3 sg
 "<èsser>"
 	"èsser" vbser inf
 "<dividida>"
@@ -2550,7 +2549,7 @@
 "<Heylin>"
 	"Heylin" np cog mf sp
 "<escriguèt>"
-	"escriure" vblex ifi p3 sg
+	"escríver" vblex ifi p3 sg
 "<dins>"
 	"dins" pr
 "<sa>"
@@ -2653,7 +2652,7 @@
 "<Chambers>"
 	"Chambers" np cog mf sp
 "<escriguèt>"
-	"escriure" vblex ifi p3 sg
+	"escríver" vblex ifi p3 sg
 "<dins>"
 	"dins" pr
 "<son>"
@@ -2747,7 +2746,7 @@
 "<fèrma>"
 	"fèrm" adj f sg
 "<contenent>"
-	"conténer" vblex ger
+	"contiéner" vblex ger
 "<fòrça>"
 	"fòrça" det ind mf sp
 "<païses>"
@@ -2997,7 +2996,7 @@
 "<foguèt>"
 	"èsser" vbser ifi p3 sg
 "<vista>"
-	"veire" vblex pp f sg
+	"véser" vblex pp f sg
 "<coma>"
 	"coma" adv
 "<una>"
@@ -3045,7 +3044,6 @@
 "<çò que>"
 	"lo que" rel nn nt
 "<ne>"
-	"ne" cnjcoo
 	"en" prn pro adv
 "<fa>"
 	"far" vblex pri p3 sg
@@ -3095,7 +3093,7 @@
 "<Butler>"
 	"Butler" np cog mf sp
 "<escriguèt>"
-	"escriure" vblex ifi p3 sg
+	"escríver" vblex ifi p3 sg
 "<sus>"
 	"sus" pr
 "<Austràlia>"
@@ -3176,7 +3174,7 @@
 "<foguèt>"
 	"èsser" vbser ifi p3 sg
 "<apercebuda>"
-	"apercebre" vblex pp f sg
+	"apercéber" vblex pp f sg
 "<en>"
 	"en" pr
 "<1820>"
@@ -3186,7 +3184,7 @@
 "<foguèt>"
 	"èsser" vbser ifi p3 sg
 "<descricha>"
-	"descriure" vblex pp f sg
+	"descríver" vblex pp f sg
 "<coma>"
 	"coma" adv
 "<un>"
@@ -3267,7 +3265,7 @@
 "<,>"
 	"," cm
 "<concebuda>"
-	"concebre" vblex pp f sg
+	"concéber" vblex pp f sg
 "<en>"
 	"en" pr
 "<1913>"
@@ -3664,7 +3662,7 @@
 "<continent>"
 	"continent" n m sg
 "<deu>"
-	"deure" vbmod pri p3 sg
+	"déver" vbmod pri p3 sg
 "<èsser>"
 	"èsser" vbser inf
 "<una>"
@@ -3771,7 +3769,7 @@
 "<correntament>"
 	"correntament" adv
 "<entenduts>"
-	"entendre" vblex pp m pl
+	"enténder" vblex pp m pl
 "<,>"
 	"," cm
 "<sols>"
@@ -3903,7 +3901,7 @@
 "<America del Sud>"
 	"America del Sud" np top f sg
 "<correspond a>"
-	"correspondre# a" vblex pri p3 sg
+	"correspónder# a" vblex pri p3 sg
 "<l'>"
 	"lo" det def mf sg
 "<istme>"
@@ -3964,9 +3962,8 @@
 	";" sent
 "<aquò>"
 	"aquò" prn tn nt
-	"aquò" prn tn p3 nt
 "<exclutz>"
-	"exclure" vblex pri p3 sg
+	"exclúser" vblex pri p3 sg
 "<lo>"
 	"lo" det def m sg
 "<Sinai>"
@@ -4294,7 +4291,7 @@
 "<volrián>"
 	"voler" vbmod cni p3 pl
 "<inclure>"
-	"inclure" vblex inf
+	"inclúser" vblex inf
 "<tota>"
 	"tot" predet f sg
 "<Indonesia>"
@@ -4456,7 +4453,6 @@
 	"." sent
 
 "<Al>"
-	"Al" np ant m sg
 	"a" pr
 		"lo" det def m sg
 "<sègle>"
@@ -4531,7 +4527,7 @@
 "<Caucàs>"
 	"Caucàs" np top m sg
 "<constituiscan>"
-	"constituir" vblex prs p3 pl
+	"constituïr" vblex prs p3 pl
 "<la>"
 	"lo" det def f sg
 "<frontièra>"
@@ -4557,7 +4553,7 @@
 "<qu'>"
 	"que" rel an mf sp
 "<inclusiá>"
-	"inclure" vblex pii p3 sg
+	"inclúser" vblex pii p3 sg
 "<alara>"
 	"alara" adv
 "<Russia>"
@@ -4678,7 +4674,7 @@
 "<per>"
 	"per" pr
 "<inclure>"
-	"inclure" vblex inf
+	"inclúser" vblex inf
 "<Armenia>"
 	"Armenia" np top f sg
 "<e>"
@@ -4693,10 +4689,9 @@
 	"." sent
 
 "<D'>"
-	"de" pr
+	"de" det indef mf pl
 "<autres>"
 	"autre" n m pl
-	"autre" adj ind m pl
 "<,>"
 	"," cm
 "<al>"
@@ -4709,7 +4704,7 @@
 "<volrián>"
 	"voler" vbmod cni p3 pl
 "<veire>"
-	"veire" vblex inf
+	"véser" vblex inf
 "<aquela>"
 	"aquel" det dem f sg
 "<frontièra>"
@@ -4743,7 +4738,7 @@
 "<per>"
 	"per" pr
 "<inclure>"
-	"inclure" vblex inf
+	"inclúser" vblex inf
 "<los>"
 	"lo" det def m pl
 "<pòbles>"
@@ -4835,7 +4830,7 @@
 "<monde>"
 	"monde" n m sg
 "<contenon>"
-	"conténer" vblex pri p3 pl
+	"contiéner" vblex pri p3 pl
 "<totas>"
 	"tot" predet f pl
 "<las>"
@@ -4922,7 +4917,7 @@
 "<coma>"
 	"coma" adv
 "<apertenent>"
-	"aperténer" vblex ger
+	"apertiéner" vblex ger
 "<al>"
 	"a" pr
 		"lo" det def m sg
@@ -4985,7 +4980,7 @@
 "<Pacific>"
 	"Pacific" np top m sg
 "<apartenon>"
-	"apartenir" vblex pri p3 pl
+	"apartiéner" vblex pri p3 pl
 "<a>"
 	"a" pr
 "<Oceania>"
@@ -4998,7 +4993,6 @@
 "<parièr>"
 	"parièr" adj m sg
 "<per>"
-	"per" adv
 	"per" pr
 "<l'>"
 	"lo" det def mf sg
@@ -5524,7 +5518,7 @@
 "<nom>"
 	"nom" n m sg
 "<vendriá>"
-	"venir" vblex cni p3 sg
+	"viéner" vblex cni p3 sg
 "<de>"
 	"de" pr
 "<l'>"
@@ -5601,7 +5595,7 @@
 "<Oceania>"
 	"Oceania" np top f sg
 "<ven>"
-	"venir" vblex pri p3 sg
+	"viéner" vblex pri p3 sg
 "<del>"
 	"de" pr
 		"lo" det def m sg
@@ -5912,7 +5906,7 @@
 "<son>"
 	"èsser" vbser pri p3 pl
 "<constituits>"
-	"constituir" vblex pp m pl
+	"constituïr" vblex pp m pl
 "<en>"
 	"en" pr
 "<Asia>"
@@ -6678,7 +6672,7 @@
 "<Chineses>"
 	"chinés" n m pl
 "<vivon>"
-	"viure" vblex pri p3 pl
+	"víver" vblex pri p3 pl
 "<en>"
 	"en" pr
 "<mejana>"
@@ -6853,7 +6847,7 @@
 "<es>"
 	"èsser" vbser pri p3 sg
 "<percebuda>"
-	"percebre" vblex pp f sg
+	"percéber" vblex pp f sg
 "<coma>"
 	"coma" adv
 "<un>"
@@ -7042,7 +7036,7 @@
 "<se>"
 	"se" prn pro ref p3 mf sp
 "<rompèron>"
-	"rompre" vblex ifi p3 pl
+	"rómper" vblex ifi p3 pl
 "<e>"
 	"e" cnjcoo
 "<derivèron>"
@@ -7142,7 +7136,7 @@
 "<ja>"
 	"ja" adv
 "<descrit>"
-	"descriure" vblex pp m sg
+	"descríver" vblex pp m sg
 "<coma>"
 	"coma" adv
 "<«>"
@@ -7592,7 +7586,7 @@
 "<avián>"
 	"aver" vbhaver pii p3 pl
 "<vist>"
-	"veire" vblex pp m sg
+	"véser" vblex pp m sg
 "<,>"
 	"," cm
 "<mas>"
@@ -7831,7 +7825,7 @@
 "<se>"
 	"se" prn pro ref p3 mf sp
 "<constituís>"
-	"constituir" vblex pri p3 sg
+	"constituïr" vblex pri p3 sg
 "<de>"
 	"de" pr
 "<sèt>"
@@ -8018,7 +8012,7 @@
 "<»>"
 	"»" rpar
 "<deuriá>"
-	"deure" vbmod cni p3 sg
+	"déver" vbmod cni p3 sg
 "<aparéisser>"
 	"aparéisser" vblex inf
 "<dins>"

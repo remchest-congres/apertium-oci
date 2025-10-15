@@ -12,7 +12,7 @@
 "<)>"
 	")" rpar
 "<èra>"
-	"estar" vbser pii p3 sg
+	"èsser" vbser pii p3 sg
 "<un>"
 	"un" det ind m sg
 "<lingüista>"
@@ -63,7 +63,7 @@
 "<,>"
 	"," cm
 "<neishut>"
-	"nèisher" vblex pp m sg
+	"nàisser" vblex pp m sg
 "<a>"
 	"a" pr
 "<Bordèu>"
@@ -129,7 +129,7 @@
 "<,>"
 	"," cm
 "<èra>"
-	"estar" vbser pii p3 sg
+	"èsser" vbser pii p3 sg
 "<d'>"
 	"de" pr
 "<una>"
@@ -155,7 +155,7 @@
 "<,>"
 	"," cm
 "<neishuda>"
-	"nèisher" vblex pp f sg
+	"nàisser" vblex pp f sg
 "<Lauga>"
 	"Lauga" np cog mf sp
 "<,>"
@@ -237,7 +237,7 @@
 
 
 "<Vengut>"
-	"vénguer" vblex pp m sg
+	"viéner" vblex pp m sg
 "<professor>"
 	"professor" n m sg
 "<d'>"
@@ -292,7 +292,7 @@
 "<per>"
 	"per" pr
 "<venir>"
-	"venir" vblex inf
+	"viéner" vblex inf
 "<au còp>"
 	"au còp" adv
 "<cargat>"
@@ -523,7 +523,7 @@
 "<que>"
 	"que" adv
 "<furen>"
-	"estar" vbser ifi p3 pl
+	"èsser" vbser ifi p3 pl
 "<sovent>"
 	"sovent" adv
 "<trobats>"
@@ -685,13 +685,11 @@
 	"per" pr
 "<J>"
 	"j" n f sp
-	"j" n m sp
 "<.>"
 	"." sent
 
 "<B>"
 	"b" n f sp
-	"b" n m sp
 "<.>"
 	"." sent
 ***"
@@ -740,7 +738,7 @@
 "<,>"
 	"," cm
 "<vengut>"
-	"venir" vblex pp m sg
+	"viéner" vblex pp m sg
 "<amic>"
 	"amic" n m sg
 "<de>"
@@ -787,7 +785,7 @@
 
 
 "<Fut>"
-	"estar" vbser ifi p3 sg
+	"èsser" vbser ifi p3 sg
 "<Secretari>"
 	"secretari" n m sg
 "<generau>"
@@ -1008,7 +1006,7 @@
 "<,>"
 	"," cm
 "<vengut>"
-	"venir" vblex pp m sg
+	"viéner" vblex pp m sg
 "<adara>"
 	"adara" adv
 "<lo>"

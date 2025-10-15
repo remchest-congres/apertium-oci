@@ -102,7 +102,7 @@
 	"son" n m sg
 	"son" det pos f sg
 	"èsser" vbser pri p3 pl
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 ;	"son" det pos m sg REMOVE:144
 "<estructura>"
 	"estructura" n f sg
@@ -134,8 +134,8 @@
 "<qu>"
 	"*qu"
 "<sigue>"
-	"èster" vbser prs p3 sg
-;	"èster" vbser imp p3 sg REMOVE:117
+	"èsser" vbser prs p3 sg
+;	"èsser" vbser imp p3 sg REMOVE:117
 "<similara>"
 	"similar" adj f sg
 	"similar" n f sg
@@ -143,8 +143,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<aquela>"
 	"aquel" prn tn f sg
 	"aquel" det dem f sg
@@ -235,7 +235,7 @@
 "<son>"
 	"èsser" vbser pri p3 pl
 	"son" det pos f sg
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 ;	"son" n m sg REMOVE:122
 ;	"son" det pos m sg REMOVE:144
 "<atmosfèra>"
@@ -337,7 +337,7 @@
 	"màger part" n f sg
 "<son>"
 	"èsser" vbser pri p3 pl
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 ;	"son" n m sg REMOVE:122
 ;	"son" det pos m sg REMOVE:144
 ;	"son" det pos f sg REMOVE:128
@@ -367,8 +367,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<un>"
 	"un" det ind m sg SELECT:156
 ;	"un" num m sp SELECT:156
@@ -385,8 +385,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<2>"
 	"2" num
 "<700>"
@@ -471,8 +471,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<una>"
 	"un" det ind f sg SELECT:157
 ;	"un" num f sp SELECT:157
@@ -497,10 +497,10 @@
 	"quilomètre" n m pl
 	"quilometrar" vblex prs p2 sg
 "<a>"
-	"auer" vblex pri p3 sg
+	"aver" vblex pri p3 sg
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
+	"aver" vbhaver pri p3 sg
 ;	"a" pr REMOVE:134
 "<respèct>"
 	"*respèct"
@@ -517,7 +517,7 @@
 	"son" n m sg
 	"son" det pos f sg
 	"èsser" vbser pri p3 pl
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 ;	"son" det pos m sg REMOVE:144
 "<observacion>"
 	"observacion" n f sg
@@ -544,7 +544,7 @@
 	"son" n m sg
 	"son" det pos f sg
 	"èsser" vbser pri p3 pl
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 ;	"son" det pos m sg REMOVE:144
 "<lei>"
 	"lei" n f sg
@@ -590,7 +590,7 @@
 	"èsser" vbser pri p3 pl
 	"son" det pos f sg
 	"son" det pos m sg
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 ;	"son" n m sg REMOVE:122
 "<encara>"
 	"encara" adv
@@ -638,7 +638,7 @@
 "<mission>"
 	"mission" n f sg
 "<èra>"
-	"èster" vbser pii p1 sg
+	"èsser" vbser pii p1 sg
 	"èsser" vbser pii p3 sg
 ;	"èra" n f sg REMOVE:122
 "<la>"
@@ -773,8 +773,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<17,1>"
 	"17,1" num
 "<còps>"
@@ -819,7 +819,7 @@
 	"mai" n m sg
 "<son>"
 	"èsser" vbser pri p3 pl
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 	"son" det pos m sg
 ;	"son" n m sg REMOVE:122
 ;	"son" det pos f sg REMOVE:143
@@ -1027,7 +1027,7 @@
 		"de" pr
 "<metan>"
 	"méter" vblex prs p3 pl
-	"metre" vblex prs p3 pl
+	"méter" vblex prs p3 pl
 ;	"metan" n m sg REMOVE:122
 "<.>"
 	"." sent
@@ -1064,7 +1064,7 @@
 		"de" pr
 "<metan>"
 	"méter" vblex prs p3 pl
-	"metre" vblex prs p3 pl
+	"méter" vblex prs p3 pl
 ;	"metan" n m sg REMOVE:122
 "<.>"
 	"." sent
@@ -1158,8 +1158,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<aquela>"
 	"aquel" prn tn f sg
 	"aquel" det dem f sg
@@ -1220,7 +1220,7 @@
 	"de" pr
 "<metan>"
 	"metan" n m sg
-	"metre" vblex prs p3 pl
+	"méter" vblex prs p3 pl
 	"méter" vblex prs p3 pl
 "<,>"
 	"," cm
@@ -1322,7 +1322,7 @@
 	"èsser" vbser pri p3 pl
 	"son" det pos f sg
 	"son" det pos m sg
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 ;	"son" n m sg REMOVE:122
 "<relativament>"
 	"relativament" adv
@@ -1331,10 +1331,10 @@
 	"feblir" vblex prs p2 sg
 ;	"feble" n f pl REMOVE:122
 "<a>"
-	"auer" vblex pri p3 sg
+	"aver" vblex pri p3 sg
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
+	"aver" vbhaver pri p3 sg
 ;	"a" pr REMOVE:134
 "<respèct>"
 	"*respèct"
@@ -1407,8 +1407,8 @@
 	"se" cnjadv
 ;	"se" prn pro ref p3 mf sp REMOVE:202
 "<estend>"
-	"estendre" vblex pri p3 sg
-;	"estendre" vblex imp p2 sg REMOVE:115
+	"esténder" vblex pri p3 sg
+;	"esténder" vblex imp p2 sg REMOVE:115
 "<probablament>"
 	"probablament" adv
 "<sus>"
@@ -1431,8 +1431,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<10>"
 	"10" num
 "<o>"
@@ -1512,7 +1512,7 @@
 	"de" pr
 "<metan>"
 	"metan" n m sg
-	"metre" vblex prs p3 pl
+	"méter" vblex prs p3 pl
 	"méter" vblex prs p3 pl
 "<e d'>"
 	"e" cnjcoo
@@ -1539,8 +1539,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<5>"
 	"5" num
 "<000>"
@@ -1560,7 +1560,7 @@
 "<nuclèu>"
 	"nuclèu" n m sg
 "<auriá>"
-	"auer" vblex cni p3 sg
+	"aver" vblex cni p3 sg
 	"aver" vbhaver cni p3 sg
 	"aver" vblex cni p3 sg
 "<una>"
@@ -1666,10 +1666,10 @@
 
 
 "<A>"
-	"auer" vblex pri p3 sg
+	"aver" vblex pri p3 sg
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
+	"aver" vbhaver pri p3 sg
 ;	"a" pr REMOVE:134
 "<respèct>"
 	"*respèct"
@@ -1762,7 +1762,7 @@
 	"son" n m sg
 	"son" det pos f sg
 	"son" det pos m sg
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 	"èsser" vbser pri p3 pl
 "<principalament>"
 	"principalament" adv
@@ -1772,7 +1772,7 @@
 	"de" pr
 "<metan>"
 	"metan" n m sg
-	"metre" vblex prs p3 pl
+	"méter" vblex prs p3 pl
 	"méter" vblex prs p3 pl
 "<.>"
 	"." sent
@@ -1808,7 +1808,7 @@
 	"èsser" vbser pri p3 pl
 	"son" det pos f sg
 	"son" det pos m sg
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 ;	"son" n m sg REMOVE:122
 "<tanben>"
 	"tanben" adv
@@ -2095,8 +2095,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<1>"
 	"1" num
 "<bar>"
@@ -2108,7 +2108,7 @@
 	"lo" prn pro p3 m sg
 "<metan>"
 	"metan" n m sg
-	"metre" vblex prs p3 pl
+	"méter" vblex prs p3 pl
 	"méter" vblex prs p3 pl
 "<condensat>"
 	"condensar" vblex pp m sg
@@ -2246,8 +2246,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<0,1>"
 	"0,1" num
 "<bar>"
@@ -2286,7 +2286,7 @@
 	"de" pr
 "<metan>"
 	"metan" n m sg
-	"metre" vblex prs p3 pl
+	"méter" vblex prs p3 pl
 	"méter" vblex prs p3 pl
 "<entraïnadas>"
 	"*entraïnadas"
@@ -2352,8 +2352,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<aquela>"
 	"aquel" prn tn f sg
 	"aquel" det dem f sg
@@ -2417,7 +2417,7 @@
 	"son" n m sg
 	"èsser" vbser pri p3 pl
 	"son" det pos m sg
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 ;	"son" det pos f sg REMOVE:143
 "<foncionament>"
 	"foncionament" n m sg
@@ -2469,10 +2469,10 @@
 "<importanta>"
 	"important" adj f sg
 "<a>"
-	"auer" vblex pri p3 sg
+	"aver" vblex pri p3 sg
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
+	"aver" vbhaver pri p3 sg
 ;	"a" pr REMOVE:134
 "<respèct>"
 	"*respèct"
@@ -2646,8 +2646,8 @@
 	"se" cnjadv
 ;	"se" prn pro ref p3 mf sp REMOVE:202
 "<estend>"
-	"estendre" vblex pri p3 sg
-;	"estendre" vblex imp p2 sg REMOVE:115
+	"esténder" vblex pri p3 sg
+;	"esténder" vblex imp p2 sg REMOVE:115
 "<a l'entorn>"
 	"a l'entorn" adv
 "<dei>"
@@ -2705,7 +2705,7 @@
 	"atmosfèra" n f sg
 "<son>"
 	"èsser" vbser pri p3 pl
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 ;	"son" n m sg REMOVE:122
 ;	"son" det pos m sg REMOVE:144
 ;	"son" det pos f sg REMOVE:128
@@ -2808,7 +2808,7 @@
 	"son" n m sg
 	"son" det pos f sg
 	"èsser" vbser pri p3 pl
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 ;	"son" det pos m sg REMOVE:144
 "<atmosfèra>"
 	"atmosfèra" n f sg
@@ -2827,7 +2827,7 @@
 ;	"conegut" n m pl REMOVE:122
 "<son>"
 	"son" n m sg
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 	"èsser" vbser pri p3 pl
 ;	"son" det pos f sg REMOVE:128
 ;	"son" det pos m sg REMOVE:128
@@ -3018,8 +3018,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<la>"
 	"lo" det def f sg
 ;	"lo" prn pro p3 f sg REMOVE:104
@@ -3069,8 +3069,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<13>"
 	"13" num
 "<000>"
@@ -3140,7 +3140,7 @@
 "<aviá>"
 	"aver" vbhaver pii p3 sg
 	"aver" vblex pii p3 sg
-	"auer" vblex pii p3 sg
+	"aver" vblex pii p3 sg
 "<luòc>"
 	"luòc" n m sg
 "<dins>"
@@ -3183,7 +3183,7 @@
 "<,>"
 	"," cm
 "<dicha>"
-	"dire" vblex pp f sg
+	"díser" vblex pp f sg
 ;	"dicha" n f sg REMOVE:122
 "<la>"
 	"lo" det def f sg
@@ -3301,7 +3301,7 @@
 	"present" adj m sg
 	"present" n m sg
 "<ai>"
-	"auer" vblex pri p1 sg
+	"aver" vblex pri p1 sg
 	"aver" vbhaver pri p1 sg
 	"aver" vblex pri p1 sg
 "<latituds>"
@@ -3354,9 +3354,9 @@
 	"Neptun" np top m sg
 "<vist>"
 	"veir" vblex pp m sg
-	"veire" vblex pp f sg
-	"veire" vblex pp f pl
-	"veire" vblex pp m sg
+	"véser" vblex pp f sg
+	"véser" vblex pp f pl
+	"véser" vblex pp m sg
 "<per>"
 	"per" adv
 	"per" pr
@@ -3450,10 +3450,10 @@
 "<especialament>"
 	"especialament" adv
 "<a>"
-	"auer" vblex pri p3 sg
+	"aver" vblex pri p3 sg
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
+	"aver" vbhaver pri p3 sg
 ;	"a" pr REMOVE:134
 "<respèct>"
 	"*respèct"
@@ -3510,8 +3510,8 @@
 
 "<An>"
 	"an" n m sg
-	"auer" vbhaver pri p3 pl
-	"auer" vblex pri p3 pl
+	"aver" vbhaver pri p3 pl
+	"aver" vblex pri p3 pl
 	"aver" vbhaver pri p3 pl
 	"aver" vblex pri p3 pl
 "<lo>"
@@ -3598,7 +3598,7 @@
 ;	"eth" det def f pl REMOVE:143
 "<dich>"
 	"dich" n m sg
-	"dire" vblex pp m sg
+	"díser" vblex pp m sg
 "<Adams>"
 	"Adams" np cog mf sp
 "<.>"
@@ -3683,7 +3683,7 @@
 	"son" n m sg
 	"son" det pos f sg
 	"èsser" vbser pri p3 pl
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 ;	"son" det pos m sg REMOVE:144
 "<espessor>"
 	"espessor" n f sg
@@ -3794,12 +3794,12 @@
 ;	"interior" n m pl REMOVE:122
 "<son>"
 	"son" n m sg
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 	"èsser" vbser pri p3 pl
 ;	"son" det pos f sg REMOVE:128
 ;	"son" det pos m sg REMOVE:128
 "<dichs>"
-	"dire" vblex pp m pl
+	"díser" vblex pp m pl
 "<Galle>"
 	"*Galle"
 "<,>"
@@ -3900,7 +3900,7 @@
 	"son" n m sg
 	"èsser" vbser pri p3 pl
 	"son" det pos m sg
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 ;	"son" det pos f sg REMOVE:143
 "<element>"
 	"element" n m sg
@@ -3987,8 +3987,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<113>"
 	"113" num
 "<km>"
@@ -4085,8 +4085,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<40%>"
 	"40%" num percent
 "<de>"
@@ -4099,8 +4099,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<una>"
 	"un" det ind f sg SELECT:157
 ;	"un" num f sp SELECT:157
@@ -4156,8 +4156,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<57>"
 	"57" num
 "<200>"
@@ -4253,7 +4253,7 @@
 	"e" cnjcoo
 "<son>"
 	"èsser" vbser pri p3 pl
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 	"son" det pos m sg
 ;	"son" n m sg REMOVE:122
 ;	"son" det pos f sg REMOVE:143
@@ -4274,8 +4274,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<13>"
 	"13" num
 "<500>"
@@ -4384,8 +4384,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<una>"
 	"un" det ind f sg SELECT:157
 ;	"un" num f sp SELECT:157
@@ -4405,8 +4405,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<0,14>"
 	"0,14" num
  µ
@@ -4521,8 +4521,8 @@
 "<la>"
 	"lo" det def f sg
 ;	"lo" prn pro p3 f sg REMOVE:104
-"<direccion>"
-	"direccion" n f sg
+"<díserccion>"
+	"díserccion" n f sg
 "<opausada>"
 	"opausat" adj f sg
 	"opausar" vblex pp f sg
@@ -4537,8 +4537,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<una>"
 	"un" det ind f sg SELECT:157
 ;	"un" num f sp SELECT:157
@@ -4647,8 +4647,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<4,5>"
 	"4,5" num
 "<miliards>"
@@ -4703,10 +4703,10 @@
 	"1,77" num
 ° 
 "<a>"
-	"auer" vblex pri p3 sg
+	"aver" vblex pri p3 sg
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
+	"aver" vbhaver pri p3 sg
 ;	"a" pr REMOVE:134
 "<respèct>"
 	"*respèct"
@@ -4724,7 +4724,7 @@
 	"son" n m sg
 	"son" det pos f sg
 	"èsser" vbser pri p3 pl
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 ;	"son" det pos m sg REMOVE:144
 "<excentricitat>"
 	"excentricitat" n f sg
@@ -4741,8 +4741,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<0,011>"
 	"0,011" num
 "<entraïnant>"
@@ -4814,8 +4814,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<28,32>"
 	"28,32" num
 ° 
@@ -4854,8 +4854,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<la>"
 	"lo" det def f sg
 ;	"lo" prn pro p3 f sg REMOVE:104
@@ -4875,8 +4875,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<Mart>"
 	"Mart" np al
 	"Mart" np top m sg
@@ -4939,7 +4939,7 @@
 	"son" n m sg
 	"èsser" vbser pri p3 pl
 	"son" det pos m sg
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 ;	"son" det pos f sg REMOVE:143
 "<periòde>"
 	"periòde" n m sg
@@ -5036,8 +5036,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<una>"
 	"un" det ind f sg SELECT:157
 ;	"un" num f sp SELECT:157
@@ -5082,7 +5082,7 @@
 
 "<Son>"
 	"son" n m sg
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 	"èsser" vbser pri p3 pl
 ;	"son" det pos f sg REMOVE:142
 ;	"son" det pos m sg REMOVE:142
@@ -5115,7 +5115,7 @@
 	"e" cnjcoo
 "<son>"
 	"èsser" vbser pri p3 pl
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 ;	"son" n m sg REMOVE:122
 ;	"son" det pos f sg REMOVE:142
 ;	"son" det pos m sg REMOVE:142
@@ -5165,7 +5165,7 @@
 	"semblar" vblex ger
 	"semblant" adj m sg
 "<ai>"
-	"auer" vblex pri p1 sg
+	"aver" vblex pri p1 sg
 	"aver" vbhaver pri p1 sg
 	"aver" vblex pri p1 sg
 "<relacions>"
@@ -5274,7 +5274,7 @@
 	"son" n m sg
 	"èsser" vbser pri p3 pl
 	"son" det pos m sg
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 ;	"son" det pos f sg REMOVE:143
 "<pas>"
 	"pas" adv
@@ -5298,7 +5298,7 @@
 	"i" prn pro adv
 		"aver" vbhaver pri p3 sg
 	"i" prn pro adv
-		"auer" vbhaver pri p3 sg
+		"aver" vbhaver pri p3 sg
 "<un>"
 	"un" det ind m sg SELECT:156
 ;	"un" num m sp SELECT:156
@@ -5365,7 +5365,7 @@
 	"son" n m sg
 	"son" det pos f sg
 	"èsser" vbser pri p3 pl
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 ;	"son" det pos m sg REMOVE:144
 "<lei>"
 	"lei" n f sg
@@ -5440,7 +5440,7 @@
 "<troians>"
 	"troian" adj m pl
 "<ai>"
-	"auer" vblex pri p1 sg
+	"aver" vblex pri p1 sg
 	"aver" vbhaver pri p1 sg
 	"aver" vblex pri p1 sg
 "<ponchs>"
@@ -5467,7 +5467,7 @@
 	"son" n m sg
 	"son" det pos f sg
 	"èsser" vbser pri p3 pl
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 ;	"son" det pos m sg REMOVE:144
 "<orbita>"
 	"orbita" n f sg
@@ -5482,7 +5482,7 @@
 	"troian" adj m pl
 "<son>"
 	"son" n m sg
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 	"èsser" vbser pri p3 pl
 ;	"son" det pos m sg REMOVE:144
 ;	"son" det pos f sg REMOVE:128
@@ -5642,12 +5642,12 @@
 	"e" cnjcoo
 "<son>"
 	"èsser" vbser pri p3 pl
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 ;	"son" n m sg REMOVE:122
 ;	"son" det pos f sg REMOVE:128
 ;	"son" det pos m sg REMOVE:128
 "<dichs>"
-	"dire" vblex pp m pl
+	"díser" vblex pp m pl
 "<regulars>"
 	"regular" adj m pl
 	"regular" n m pl
@@ -5716,9 +5716,9 @@
 	"Larissa" np top f sg
 "<vist>"
 	"veir" vblex pp m sg
-	"veire" vblex pp f sg
-	"veire" vblex pp f pl
-	"veire" vblex pp m sg
+	"véser" vblex pp f sg
+	"véser" vblex pp f pl
+	"véser" vblex pp m sg
 "<per>"
 	"per" adv
 	"per" pr
@@ -5819,7 +5819,7 @@
 	"luna" n f pl
 "<son>"
 	"èsser" vbser pri p3 pl
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 ;	"son" n m sg REMOVE:122
 ;	"son" det pos f sg REMOVE:142
 ;	"son" det pos m sg REMOVE:142
@@ -5843,12 +5843,12 @@
 
 "<Son>"
 	"son" n m sg
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 	"èsser" vbser pri p3 pl
 ;	"son" det pos f sg REMOVE:128
 ;	"son" det pos m sg REMOVE:128
 "<dichs>"
-	"dire" vblex pp m pl
+	"díser" vblex pp m pl
 "<Naiada>"
 	"*Naiada"
 "<,>"
@@ -6018,7 +6018,7 @@
 	"Neptun" np top m sg
 "<son>"
 	"èsser" vbser pri p3 pl
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 ;	"son" n m sg REMOVE:122
 ;	"son" det pos f sg REMOVE:128
 ;	"son" det pos m sg REMOVE:128
@@ -6090,7 +6090,7 @@
 	"èsser" vbser pri p3 pl
 	"son" det pos f sg
 	"son" det pos m sg
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 ;	"son" n m sg REMOVE:122
 "<sèt>"
 	"sèt" num mf sp
@@ -6099,8 +6099,8 @@
 
 "<An>"
 	"an" n m sg
-	"auer" vbhaver pri p3 pl
-	"auer" vblex pri p3 pl
+	"aver" vbhaver pri p3 pl
+	"aver" vblex pri p3 pl
 	"aver" vbhaver pri p3 pl
 	"aver" vblex pri p3 pl
 "<d'>"
@@ -6151,7 +6151,7 @@
 ;	"que" rel an mf sp SELECT:190
 "<son>"
 	"èsser" vbser pri p3 pl
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 	"son" det pos m sg
 ;	"son" n m sg REMOVE:122
 ;	"son" det pos f sg REMOVE:143
@@ -6228,8 +6228,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<pas encara>"
 	"pas encara" adv
 "<de>"
@@ -6265,9 +6265,9 @@
 	"," cm
 "<vist>"
 	"veir" vblex pp m sg
-	"veire" vblex pp f sg
-	"veire" vblex pp f pl
-	"veire" vblex pp m sg
+	"véser" vblex pp f sg
+	"véser" vblex pp f pl
+	"véser" vblex pp m sg
 "<per>"
 	"per" adv
 	"per" pr
@@ -6435,8 +6435,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<1>"
 	"1" num
 "<353>"
@@ -6611,7 +6611,7 @@
 	"son" n m sg
 	"son" det pos f sg
 	"èsser" vbser pri p3 pl
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 ;	"son" det pos m sg REMOVE:144
 "<orbita>"
 	"orbita" n f sg
@@ -6831,7 +6831,7 @@
 	"son" n m sg
 	"son" det pos f sg
 	"èsser" vbser pri p3 pl
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 ;	"son" det pos m sg REMOVE:144
 "<orbita>"
 	"orbita" n f sg
@@ -6849,8 +6849,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<una>"
 	"un" det ind f sg SELECT:157
 ;	"un" num f sp SELECT:157
@@ -6944,8 +6944,8 @@
 	"mesura" n f pl
 	"mesurar" vblex pri p2 sg
 "<an>"
-	"auer" vbhaver pri p3 pl SELECT:149
-	"auer" vblex pri p3 pl SELECT:149
+	"aver" vbhaver pri p3 pl SELECT:149
+	"aver" vblex pri p3 pl SELECT:149
 	"aver" vbhaver pri p3 pl SELECT:149
 	"aver" vblex pri p3 pl SELECT:149
 ;	"an" n m sg SELECT:149
@@ -6971,8 +6971,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<sa>"
 	"sa" det pos mf sg
 	"son" det pos f sg
@@ -7021,12 +7021,12 @@
 ;	"exterior" n m pl REMOVE:122
 "<son>"
 	"son" n m sg
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 	"èsser" vbser pri p3 pl
 ;	"son" det pos f sg REMOVE:128
 ;	"son" det pos m sg REMOVE:128
 "<dichs>"
-	"dire" vblex pp m pl
+	"díser" vblex pp m pl
 "<Halimedes>"
 	"*Halimedes"
 "<,>"
@@ -7059,8 +7059,8 @@
 	"*Laomedeia"
 "<an>"
 	"aver" vblex pri p3 pl
-	"auer" vbhaver pri p3 pl
-	"auer" vblex pri p3 pl
+	"aver" vbhaver pri p3 pl
+	"aver" vblex pri p3 pl
 	"aver" vbhaver pri p3 pl
 ;	"an" n m sg REMOVE:122
 "<d'>"
@@ -7074,7 +7074,7 @@
 
 "<Son>"
 	"son" n m sg
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 	"èsser" vbser pri p3 pl
 ;	"son" det pos f sg REMOVE:128
 ;	"son" det pos m sg REMOVE:128
@@ -7102,8 +7102,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<70>"
 	"70" num
 "<km>"
@@ -7126,8 +7126,8 @@
 	"*Neso"
 "<an>"
 	"aver" vblex pri p3 pl
-	"auer" vbhaver pri p3 pl
-	"auer" vblex pri p3 pl
+	"aver" vbhaver pri p3 pl
+	"aver" vblex pri p3 pl
 	"aver" vbhaver pri p3 pl
 ;	"an" n m sg REMOVE:122
 "<tanben>"
@@ -7351,7 +7351,7 @@
 	"son" n m sg
 	"èsser" vbser pri p3 pl
 	"son" det pos m sg
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 ;	"son" det pos f sg REMOVE:143
 "<pus>"
 	"pus" adv
@@ -7431,7 +7431,7 @@
 	"son" n m sg
 	"son" det pos f sg
 	"èsser" vbser pri p3 pl
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 ;	"son" det pos m sg REMOVE:144
 "<observacion>"
 	"observacion" n f sg
@@ -7571,14 +7571,14 @@
 	"a l'entorn de" adv
 "<son>"
 	"èsser" vbser pri p3 pl
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 	"son" det pos m sg
 ;	"son" n m sg REMOVE:122
 ;	"son" det pos f sg REMOVE:143
 "<axe>"
 	"axe" n m sg
 "<èra>"
-	"èster" vbser pii p1 sg
+	"èsser" vbser pii p1 sg
 	"èsser" vbser pii p3 sg
 ;	"èra" n f sg REMOVE:122
 "<desconegut>"
@@ -7774,14 +7774,14 @@
 ;	"que" rel an mf sp SELECT:190
 "<son>"
 	"èsser" vbser pri p3 pl
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 	"son" det pos m sg
 ;	"son" n m sg REMOVE:122
 ;	"son" det pos f sg REMOVE:143
 "<movement>"
 	"movement" n m sg
 "<èra>"
-	"èster" vbser pii p1 sg
+	"èsser" vbser pii p1 sg
 	"èsser" vbser pii p3 sg
 ;	"èra" n f sg REMOVE:122
 "<perturbat>"
@@ -7962,7 +7962,7 @@
 	"son" n m sg
 	"èsser" vbser pri p3 pl
 	"son" det pos m sg
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 ;	"son" det pos f sg REMOVE:143
 "<caire>"
 	"caire" n m sg
@@ -7990,8 +7990,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<Johann>"
 	"Johann" np ant m sg
 "<Gottfried>"
@@ -8047,8 +8047,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<1>"
 	"1" num
 ° 
@@ -8120,7 +8120,7 @@
 	"per" adv
 	"per" pr
 "<obtenir>"
-	"obténer" vblex inf
+	"obtiéner" vblex inf
 "<lo>"
 	"lo" det def m sg
 ;	"lo" prn pro p3 m sg REMOVE:104
@@ -8172,7 +8172,7 @@
 	"*puei"
 "<son>"
 	"èsser" vbser pri p3 pl
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 	"son" det pos m sg
 ;	"son" n m sg REMOVE:122
 ;	"son" det pos f sg REMOVE:143
@@ -8410,7 +8410,7 @@
 	"mejan" n m pl
 "<son>"
 	"son" n m sg
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 	"èsser" vbser pri p3 pl
 ;	"son" det pos f sg REMOVE:128
 ;	"son" det pos m sg REMOVE:128
@@ -8420,7 +8420,7 @@
 	"limitat" adj m pl
 	"limitar" vblex pp m pl
 "<ai>"
-	"auer" vblex pri p1 sg
+	"aver" vblex pri p1 sg
 	"aver" vbhaver pri p1 sg
 	"aver" vblex pri p1 sg
 "<telescòpis>"
@@ -8441,8 +8441,8 @@
 	"a" pr
 	"aver" vbhaver pri p3 sg
 	"aver" vblex pri p3 sg
-	"auer" vbhaver pri p3 sg
-	"auer" vblex pri p3 sg
+	"aver" vbhaver pri p3 sg
+	"aver" vblex pri p3 sg
 "<una>"
 	"un" det ind f sg SELECT:157
 ;	"un" num f sp SELECT:157
@@ -8545,7 +8545,7 @@
 	"son" n m sg
 	"son" det pos f sg
 	"son" det pos m sg
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 	"èsser" vbser pri p3 pl
 "<totjorn>"
 	"totjorn" adv
@@ -8553,7 +8553,7 @@
 	"*aquelei"
 "<obtengudas>"
 	"obtier" vblex pp f pl
-	"obténer" vblex pp f pl
+	"obtiéner" vblex pp f pl
 "<pendent>"
 	"pendent" pr
 	"pendent" adj m sg
@@ -8624,7 +8624,7 @@
 	"grand" adj f sg
 "<dicha>"
 	"dicha" n f sg
-	"dire" vblex pp f sg
+	"díser" vblex pp f sg
 "<«>"
 	"«" lpar
 "<la>"

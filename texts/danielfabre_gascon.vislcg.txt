@@ -376,7 +376,7 @@
 "<qu'>"
 	"que" adv enon
 "<apareish>"
-	"aparéisher" vblex pri p3 sg
+	"aparéisser" vblex pri p3 sg
 "<:>"
 	":" sent
 
@@ -477,7 +477,7 @@
 "<qu'>"
 	"que" adv enon
 "<estó>"
-	"estar" vbser ifi p3 sg
+	"èsser" vbser ifi p3 sg
 "<tanben>"
 	"tanben" adv
 "<lo>"
@@ -691,7 +691,7 @@
 "<Qu'>"
 	"que" adv enon
 "<estó>"
-	"estar" vbser ifi p3 sg
+	"èsser" vbser ifi p3 sg
 "<tanben>"
 	"tanben" adv
 "<au>"
@@ -796,7 +796,7 @@
 "<,>"
 	"," cm
 "<estosse>"
-	"estar" vbser pis p3 sg
+	"èsser" vbser pis p3 sg
 "<minoritària>"
 	"minoritari" adj f sg
 "<o>"
@@ -856,7 +856,7 @@
 "<despartits>"
 	"despartits" n m pl
 "<son>"
-	"estar" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 "<las>"
 	"lo" det def f pl
 "<dolors>"
