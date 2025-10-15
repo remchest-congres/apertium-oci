@@ -24,7 +24,7 @@ LIST V = vblex vbser vbhaver vbmod ;
 LIST Verb = vblex ;
 LIST Ser = vbser ;
 LIST Haver = vbhaver ;
-LIST Aver = "aver" "auer" ;
+LIST Aver = ("aver") ("auer") ;
 LIST VBaux = vbser vbhaver ;
 SET VVmod = ("voler") OR ("vòler") OR ("faler") OR ("fàler") OR ("dever") OR ("déuer") OR ("dever") OR ("soler") OR ("sòler") OR ("saber") OR ("sàber") ;
 SET Vmod = (vbmod) OR (vblex) + VVmod ;
@@ -51,7 +51,7 @@ LIST AVitg = (adv itg) ;
 LIST AVexcl = (adv excl) ;
 LIST PREAV = preadv ;
 LIST PRONPers = (prn p1) (prn p2) (prn p3);
-LIST PRONRef = "me" "te" "se" "nos" "vos" ;
+LIST PRONRef = ("me") ("te") ("se") ("nos") ("vos") ;
 LIST IJ = ij ;
 LIST PREDET = predet ;
 LIST Pos = pos ;
@@ -241,18 +241,18 @@ LIST Ne_enon = ("ne" enon);
 SET Ne_adv = ("ne" adv) - (prn pro adv) ;
 LIST E_enon = ("e" enon) ;
 LIST E_O = ("e" cnjcoo) ("o" cnjcoo) ("ni" cnjcoo) ;
-LIST Dins = "dins" "dens" "hens";
+LIST Dins = ("dins") ("dens") ("hens");
 LIST Jos = "jos";
 LIST Pendent = "pendent";
 LIST Un = "un" ;
 LIST An = "an" ;
 LIST Eth = "<eth>i" ;
-LIST Nostre = "nòstre" "nòste" ;
-LIST Vostre = "vòstre" "vòste" ;
+LIST Nostre = ("nòstre") ("nòste") ;
+LIST Vostre = ("vòstre") ("vòste") ;
 LIST Pas = "pas" ;
-LIST AV_Pas_Neg = "pas" "jamai" "jamei" "jamèi" "jamès" "jamés" "jamai pus" "mei jamei" "tanpauc" "tampòc" "tanpòc" "aintanpauc" "atanpauc" "enlòc" "enluòc" "ges" "cap" "briga" "brica" "veta" "gota" "cap mai" "cap mei" "cap pus" "cap mès" "nullament" "aucunament" "alcunament" "degunament" "gaire" "guaire" ;
-LIST PRON_Pas_Neg = "cap" "nat" "minga" "narma" "degun" "arrés" "arrís" "digun" "digús" "persona" "res" "arren" "arrens" "ren" "res pus" ;
-LIST DET_Pas_Neg = "cap" "cap de" "nat" "brica de" "briga de" "ges de" ;
+LIST AV_Pas_Neg = ("pas") ("jamai") ("jamei") ("jamèi") ("jamès") ("jamés") ("jamai pus") ("mei jamei") ("tanpauc") ("tampòc") ("tanpòc") ("aintanpauc") ("atanpauc") ("enlòc") ("enluòc") ("ges") ("cap") ("briga") ("brica") ("veta") ("gota") ("cap mai") ("cap mei") ("cap pus") ("cap mès") ("nullament") ("aucunament") ("alcunament") ("degunament") ("gaire") ("guaire") ;
+LIST PRON_Pas_Neg = ("cap") ("nat") ("minga") ("narma") ("degun") ("arrés") ("arrís") ("digun") ("digús") ("persona") ("res") ("arren") ("arrens") ("ren") ("res pus") ;
+LIST DET_Pas_Neg = ("cap") ("cap de") ("nat") ("brica de") ("briga de") ("ges de") ;
 LIST Cap = ("<cap>"i) ;
 LIST Caps = ("<caps>"i) ;
 LIST Cap_de = ("<cap de>"i) ("<cap d'>"i) ("<cap d’>"i) ;
@@ -262,24 +262,24 @@ LIST Caps_de_del = ("<caps de>"i) ("<caps d'>"i) ("<caps d’>"i) ("<caps del>"i
 LIST A_de = ("<a de>"i) ("<a d'>"i) ("<a d’>"i) ;
 LIST Gaire_de = ("<ges de>"i) ("<ges d'>"i) ("<ges d’>"i) ("<gaire de>"i) ("<gaire d'>"i) ("<gaire d’>"i) ("<guaire de>"i) ("<guaire d'>"i) ("<guaire d’>"i) ;
 LIST Gaire_del = ("<ges del>"i) ("<ges deu>"i) ("<ges dels>"i) ("<ges deus>"i) ("<gaire del>"i) ("<gaire deu>"i) ("<gaire dels>"i) ("<gaire deus>"i) ("<guaire del>"i) ("<guaire deu>"i) ("<guaire dels>"i) ("<guaire deus>"i) ;
-LIST Mai = ("mai" adv) ("mei" adv) ("mès" adv) ("mes" adv) ("fòrça mai" adv) ("un pauc mai" adv) "un chic mai" "un bricon mai" "plan mai" ;
+LIST Mai = ("mai" adv) ("mei" adv) ("mès" adv) ("mes" adv) ("fòrça mai" adv) ("un pauc mai" adv) ("un chic mai") ("un bricon mai") ("plan mai") ;
 LIST Pus = ("pus" adv) ;
-LIST Mens = "mens" "mensh" ;
-LIST Melhor = "melhor" "mielhor" "mélher" "miélher" ;
-LIST Peger = "péger" "piéger" ;
-LIST AdvComp = ("mai" adv) ("mei" adv) ("mès" adv) ("mes" adv) ("pus" adv) ("fòrça mai" adv) ("un pauc mai" adv) "un pè mes" "drin mei" "un chic mai" "un chic mei" "un bricon mei" "plan mai" "hèra mei" "fòrt mei" "mens" "mensh" "fòrça mens" "plan mens" "hèra mensh" "fòrt mensh" "drin mensh" "un chic mens" "un bricon mens" "un chic mensh" ;
-LIST Donc = "donc" "doncas" "dongas" "pasmes" "totun" "çaquelà" "ça que la" "emès" "pr'aquò" ;
-LIST Res = "res" "arren" "arrens" "ren" ;
-LIST Pel = "pel" "peu" ;
+LIST Mens = ("mens") ("mensh") ;
+LIST Melhor = ("melhor") ("mielhor") ("mélher") ("miélher") ;
+LIST Peger = ("péger") ("piéger") ;
+LIST AdvComp = ("mai" adv) ("mei" adv) ("mès" adv) ("mes" adv) ("pus" adv) ("fòrça mai" adv) ("un pauc mai" adv) ("un pè mes") ("drin mei") ("un chic mai") ("un chic mei") ("un bricon mei") ("plan mai") ("hèra mei") ("fòrt mei") ("mens") ("mensh") ("fòrça mens") ("plan mens") ("hèra mensh") ("fòrt mensh") ("drin mensh") ("un chic mens") ("un bricon mens") ("un chic mensh") ;
+LIST Donc = ("donc") ("doncas") ("dongas") ("pasmes") ("totun") ("çaquelà") ("ça que la") ("emès") ("pr'aquò") ;
+LIST Res = ("res") ("arren") ("arrens") ("ren") ;
+LIST Pel = ("pel") ("peu") ;
 LIST Deu = "deu" ;
-LIST ACausaDe = "a causa de" "en causa de" "pr'amor de" "per'mor de";
+LIST ACausaDe = ("a causa de") ("en causa de") ("pr'amor de") ("per'mor de");
 LIST Que = "que" ("<que>"i) ;
 LIST Qui = "qui" ;
 LIST Que_Qui_Rel = ("que" rel) ("qui" rel) ;
 LIST Quin = "quin" ;
 LIST Que_Itg = ("qué" itg) ;
-LIST Quan = "quan" "quand" ;
-LIST On = "on" "ont" "a on" ;
+LIST Quan = ("quan") ("quand") ;
+LIST On = ("on") ("ont") ("a on") ;
 LIST Se = "se" ;
 LIST Si = "si" ;
 LIST Las = "las" ;
@@ -2519,6 +2519,8 @@ REMOVE NP IF (-2 BOS) (-1 ("«")) (0 N) ;
 
 # HAVER
 
+REMOVE ("aver") IF (0 ("<a de>"i)) (1 N) (NOT 1 V) (NOT -1 PRON) ; # avèm a far a de personas
+
 REMOVE A IF (0 ("ara")) (NOT 1 N_AJ + FemSg) ;
 SELECT PREP IF (-1C V + Pers OR VBinf) (0 A) (NOT 0 ("<a .*>"r) + AV) ;
 SELECT PREP IF (-2C V + Pers OR VBinf) (-1 AV) (0 A) (NOT 0 ("<a .*>"r) + AV) ;
@@ -2699,6 +2701,7 @@ REMOVE VBpp IF (-4 Haver) (-1 AV) (-2 AV) (-1 VBpp) ;
 
 # VBinf
 
+REMOVE (vbmod) IF (0 ("aver")) (NOT 1 ("de")) ;
 SELECT VBinf IF (0 AJ) (1 ("par")) ;
 SELECT AV IF (-1 Vmod) (0 ("<tornar>"i)) (1 VBinf) ;	# pòdi tornar manjar
 SELECT VBinf IF (-1 Vmod LINK 0C V) (0 VBinf) ;	# pòdi manjar
@@ -4395,4 +4398,3 @@ REMOVE ("vengar") IF (0 ("viéner")) ;
 REMOVE ("vénder") IF (0 ("viéner")) (0 ("<vendrai>") or ("<vendràs>") or ("<vendrà>") or ("<vendrem>") or ("<vendretz>") or ("<vendràn>")) ;
 
 REMOVE V IF (0 ("<de>")) ;
-
