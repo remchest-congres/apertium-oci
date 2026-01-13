@@ -35,4 +35,7 @@ DELIMITERS = ".";
 # SELECT (v:ul_uu) ;
 # SELECT (v:o_o-greu);
 
+SELECT (v:as_es)      IF (0 (VAR:as_es)) ;
+REMOVE (v:as_es) ;
+
 IFF (d:gascon);
