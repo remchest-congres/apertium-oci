@@ -1,0 +1,7 @@
+# WIP l'aranes n'a pas encore de mode associé
+
+DELIMITERS = ".";
+
+SELECT (v:as_es);
+
+IFF (d:gascon);
