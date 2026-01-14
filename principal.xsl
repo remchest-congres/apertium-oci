@@ -116,14 +116,36 @@
 
 <xsl:template match="e">
   <xsl:param name="parametro"/>
-  <xsl:value-of select="string('                        ')"/>
-  <xsl:copy>
-    <xsl:copy-of select="@lm|@r|@alt"/>
-    <xsl:apply-templates>
-      <xsl:with-param name="parametro" select="$parametro"/>
-    </xsl:apply-templates>
-  </xsl:copy>
-  <xsl:value-of select="string('&#xa;')"/> <!-- \n -->
+  <xsl:variable name="parent" select="."/>
+  <xsl:variable name="pars" select="par[@n[starts-with(., 'd:')]]"/>
+  <xsl:choose>
+    <xsl:when test="count($pars) &gt; 0">
+      <xsl:for-each select="$pars">
+        <xsl:variable name="currentpar" select="."/>
+        <xsl:value-of select="string('                        ')"/>
+        <xsl:element name="{name($parent)}">
+          <xsl:copy-of select="$parent/@lm|$parent/@r|$parent/@alt"/>
+          <xsl:apply-templates select="$parent/node()[not(self::par[@n[starts-with(., 'd:')]])]">
+            <xsl:with-param name="parametro" select="$parametro"/>
+          </xsl:apply-templates>
+          <xsl:copy-of select="$currentpar"/>
+        </xsl:element>
+        <xsl:value-of select="string('&#xa;')"/> <!-- \n -->
+      </xsl:for-each>
+    </xsl:when>
+    
+    <xsl:otherwise>
+      <xsl:value-of select="string('                        ')"/>
+      <xsl:copy>
+        <xsl:copy-of select="@lm|@r|@alt"/>
+        <xsl:apply-templates>
+          <xsl:with-param name="parametro" select="$parametro"/>
+          <xsl:with-param name="currentpar" select="''"/>
+        </xsl:apply-templates>
+      </xsl:copy>
+      <xsl:value-of select="string('&#xa;')"/> <!-- \n -->
+    </xsl:otherwise>
+  </xsl:choose>
 </xsl:template>
 
 
