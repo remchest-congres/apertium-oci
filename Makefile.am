@@ -13,6 +13,7 @@ TARGETS_COMMON =			\
 	$(LANG1).autogen.bin		\
 	$(LANG1).autogen.att.gz		\
 	$(LANG1).autopgen.bin		\
+	$(LANG1)$(VAR1).autopgen.bin		\
 	$(LANG1).rlx.bin \
 	$(LANG1).prefs.rlx.bin \
 	$(LANG1)$(VAR1).prefs.rlx.bin
@@ -34,6 +35,9 @@ TARGETS_COMMON =			\
 .deps/$(LANG1).post.dix: $(BASENAME).post-$(LANG1).dix .deps/.d
 	xsltproc --stringparam alt $(LANG1) alt.xsl $(BASENAME).post-$(LANG1).dix >$@
 
+.deps/$(LANG1)$(VAR1).post.dix: $(BASENAME).post-$(LANG1)$(VAR1).dix .deps/.d
+	xsltproc --stringparam alt $(LANG1) alt.xsl $(BASENAME).post-$(LANG1)$(VAR1).dix >$@
+
 ###############################################################################
 
 $(LANG1).automorf.bin: .deps/$(LANG1).dix $(BASENAME).$(LANG1).acx
@@ -51,6 +55,9 @@ $(LANG1).automorf.att.gz: $(LANG1).automorf.bin
 	lt-print $< | gzip -n -9 -c > $@
 
 $(LANG1).autopgen.bin: .deps/$(LANG1).post.dix
+	lt-comp lr $< $@
+
+$(LANG1)$(VAR1).autopgen.bin: .deps/$(LANG1)$(VAR1).post.dix
 	lt-comp lr $< $@
 
 ###############################################################################
@@ -122,6 +129,7 @@ EXTRA_DIST=$(BASENAME).$(LANG1).metadix		\
 		$(BASENAME).$(LANG1).acx	\
 		$(BASENAME).$(LANG1).rlx	\
 		$(BASENAME).post-$(LANG1).dix	\
+		$(BASENAME).post-$(LANG1)$(VAR1).dix	\
 		$(LANG1).prob			\
 		modes.xml \
 		alt.xsl \
