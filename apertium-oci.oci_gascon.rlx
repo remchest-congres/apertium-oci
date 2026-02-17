@@ -1,0 +1,8 @@
+# gascon specific rules
+
+DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>" "<:>";
+SOFT-DELIMITERS = "<,>" "<;>";
+SUBREADINGS = LTR ; # Alternate, left-to-right (main reading on the left)
+
+LIST BOS = >>> sent ;
+LIST EOS = <<< sent ;

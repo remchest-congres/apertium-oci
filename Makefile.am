@@ -6,6 +6,8 @@ LANG1=oci
 BASENAME=apertium-$(LANG1)
 
 VAR1=_gascon
+VAR2=_lang
+VAR3=_aranes
 
 TARGETS_COMMON =			\
 	$(LANG1).automorf.bin		\
@@ -15,6 +17,9 @@ TARGETS_COMMON =			\
 	$(LANG1).autopgen.bin		\
 	$(LANG1)$(VAR1).autopgen.bin		\
 	$(LANG1).rlx.bin \
+	$(LANG1)$(VAR1).rlx.bin \
+	$(LANG1)$(VAR2).rlx.bin \
+	$(LANG1)$(VAR3).rlx.bin \
 	$(LANG1).prefs.rlx.bin \
 	$(LANG1)$(VAR1).prefs.rlx.bin
 
@@ -110,6 +115,15 @@ $(LANG1).zhfst: .deps/acceptor.default.hfst .deps/errmodel.default.hfst
 $(LANG1).rlx.bin: $(BASENAME).$(LANG1).rlx
 	cg-comp $< $@
 
+$(LANG1)$(VAR1).rlx.bin: $(BASENAME).$(LANG1)$(VAR1).rlx
+	cg-comp $< $@
+
+$(LANG1)$(VAR2).rlx.bin: $(BASENAME).$(LANG1)$(VAR2).rlx
+	cg-comp $< $@
+
+$(LANG1)$(VAR3).rlx.bin: $(BASENAME).$(LANG1)$(VAR3).rlx
+	cg-comp $< $@
+
 ###############################################################################
 ## Variant preferences
 ###############################################################################
@@ -128,6 +142,9 @@ $(LANG1)$(VAR1).prefs.rlx.bin: $(BASENAME).$(LANG1)$(VAR1).prefs.rlx
 EXTRA_DIST=$(BASENAME).$(LANG1).metadix		\
 		$(BASENAME).$(LANG1).acx	\
 		$(BASENAME).$(LANG1).rlx	\
+		$(BASENAME).$(LANG1)$(VAR1).rlx	\
+		$(BASENAME).$(LANG1)$(VAR2).rlx	\
+		$(BASENAME).$(LANG1)$(VAR3).rlx	\
 		$(BASENAME).post-$(LANG1).dix	\
 		$(BASENAME).post-$(LANG1)$(VAR1).dix	\
 		$(LANG1).prob			\
@@ -169,6 +186,9 @@ install-data-local: install-modes
 	test -d $(DESTDIR)$(apertium_oci_srcdir) || mkdir -p $(DESTDIR)$(apertium_oci_srcdir)
 	$(INSTALL_DATA) $(BASENAME).$(LANG1).metadix $(DESTDIR)$(apertium_oci_srcdir)
 	$(INSTALL_DATA) $(BASENAME).$(LANG1).rlx $(DESTDIR)$(apertium_oci_srcdir)
+	$(INSTALL_DATA) $(BASENAME).$(LANG1)$(VAR1).rlx $(DESTDIR)$(apertium_oci_srcdir)
+	$(INSTALL_DATA) $(BASENAME).$(LANG1)$(VAR2).rlx $(DESTDIR)$(apertium_oci_srcdir)
+	$(INSTALL_DATA) $(BASENAME).$(LANG1)$(VAR3).rlx $(DESTDIR)$(apertium_oci_srcdir)
 	$(INSTALL_DATA) $(BASENAME).post-$(LANG1).dix $(DESTDIR)$(apertium_oci_srcdir)
 
 CLEANFILES = $(TARGETS_COMMON)

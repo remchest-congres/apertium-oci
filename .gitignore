@@ -20,7 +20,7 @@
 /oci_gascon.autopgen.bin
 /oci.prefs.rlx.bin
 /oci_gascon.prefs.rlx.bin
-/oci.rlx.bin
+/*.rlx.bin
 /oci.zhfst
 /*.hfst
 /.DS_Store

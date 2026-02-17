@@ -23,6 +23,9 @@
         <file name="oci.automorf.bin"/>
       </program>
       <program name="cg-proc -w">
+        <file name="oci_lang.rlx.bin"/>
+      </program>
+      <program name="cg-proc -w">
         <file name="oci.rlx.bin"/>
       </program>
       <program name="apertium-tagger -g $2">
@@ -35,6 +38,9 @@
     <pipeline>
       <program name="lt-proc -w">
         <file name="oci.automorf.bin"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="oci_lang.rlx.bin"/>
       </program>
       <program name="cg-proc -w">
         <file name="oci.rlx.bin"/>
@@ -99,6 +105,9 @@
         <file name="oci@aran.automorf.bin"/>
       </program>
       <program name="cg-proc -w">
+        <file name="oci_aranes.rlx.bin"/>
+      </program>
+      <program name="cg-proc -w">
         <file name="oci.rlx.bin"/>
       </program>
       <program name="apertium-tagger -g $2">
@@ -143,6 +152,9 @@
         <file name="oci@gascon.automorf.bin"/>
       </program>
       <program name="cg-proc -w">
+        <file name="oci_gascon.rlx.bin"/>
+      </program>
+      <program name="cg-proc -w">
         <file name="oci.rlx.bin"/>
       </program>
       <program name="apertium-tagger -g $2">
@@ -155,6 +167,9 @@
     <pipeline>
       <program name="lt-proc -w">
         <file name="oci@gascon.automorf.bin"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="oci_gascon.rlx.bin"/>
       </program>
       <program name="cg-proc -w">
         <file name="oci.rlx.bin"/>
