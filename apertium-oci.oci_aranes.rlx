@@ -6,3 +6,251 @@ SUBREADINGS = LTR ; # Alternate, left-to-right (main reading on the left)
 
 LIST BOS = >>> sent ;
 LIST EOS = <<< sent ;
+
+
+#Categorias
+LIST V = vblex vbser vbhaver vbmod ;
+LIST Verb = vblex ;
+LIST Ser = vbser ;
+LIST Haver = vbhaver ;
+LIST Aver = ("aver") ("auer") ;
+LIST VBaux = vbser vbhaver ;
+SET VVmod = ("voler") OR ("vòler") OR ("faler") OR ("fàler") OR ("dever") OR ("déuer") OR ("dever") OR ("soler") OR ("sòler") OR ("saber") OR ("sàber") ;
+SET Vmod = (vbmod) OR (vblex) + VVmod ;
+LIST Conjco = cnjcoo ;
+LIST Conjsub = cnjsub ;
+LIST Conjadv = cnjadv ;
+LIST Enon = enon ;
+LIST Rel = rel ;
+LIST N = n ;
+LIST NP = np ;
+LIST AJ = adj ;
+LIST N_AJ = n adj ;
+LIST N_NP_AJ = n np adj ;
+LIST N_AJ_PP = n adj pp ;
+LIST AJ_PP = adj pp ;
+LIST DET = det ;
+LIST NUM = num ;
+LIST PREP = pr ;
+LIST Pref = pref ;
+LIST PRON = prn ;
+LIST PERS = pers ;
+SET AV = (adv) - (enon) - (prn) - (itg) - (excl) ;
+LIST AVitg = (adv itg) ;
+LIST AVexcl = (adv excl) ;
+LIST PREAV = preadv ;
+LIST PRONPers = (prn p1) (prn p2) (prn p3);
+LIST PRONRef = ("me") ("te") ("se") ("nos") ("vos") ;
+LIST IJ = ij ;
+LIST PREDET = predet ;
+LIST Pos = pos ;
+LIST SENT = sent ;
+#Jos=categorias
+LIST VBger = ger ;
+LIST VBinf = inf ;
+LIST VBinfger = inf ger ;
+LIST VBimp = imp ;
+LIST Pro = pro ;
+LIST Tn = tn ;
+LIST Ref = ref ;
+LIST PRencl = enc ;
+LIST VBpp = pp ;
+LIST Npl = (n pl);
+LIST AJpl = (adj pl);
+LIST Ns = (n s);
+LIST AJs = (adj s);
+LIST Nm = (n m);
+LIST AJm = (adj m);
+LIST Nf = (n f);
+LIST AJf = (adj f);
+LIST Vconj = pri prs pii ifi pis imp fti cni ;
+LIST Vconj_non_Imp = pri prs pii ifi pis fti cni ;
+LIST Vconj_indic = pri pii ifi fti cni ;
+LIST Vconj_subj = prs pis ;
+LIST PRI = pri ;
+LIST PRS = prs ;
+LIST PIS = pis ;
+LIST PII = pii ;
+LIST IFI = ifi ;
+LIST FTI = fti ;
+LIST Itg = itg ;
+LIST Excl = excl ;
+LIST DETdef = (det def) ;
+LIST DETind = (det ind) ;
+LIST DETpos = (det pos) ;
+LIST DETdem = (det dem) ;
+LIST Ind = ind 
+LIST Pos = pos ;
+LIST Dem = dem ;
+
+SET Ant = (np ant) ;
+SET Cog = (np cog) ;
+SET Ant_Cog = Ant OR Cog ;
+SET Top = (np top) ;
+SET Al = (al) ;
+SET Acr = (acr) ;
+SET AVG = AV - Enon ;
+
+#Listas
+SET intrprop = Conjco OR Itg ; #cnjcoo cnjsub rel itg "," ";" sent adv;
+LIST motsdetpl = (det pl) (pr pl);
+LIST motsdetsg = (det sg) (pr sg);
+LIST motsdetf = (det f) (pr f);
+LIST motsdetm = (det m) (pr m);
+
+LIST Gen = m f mf nt ;
+LIST Masc = m mf ;
+LIST Fem = f mf ;
+LIST Masc_strict = m ;
+LIST Fem_strict = f ;
+
+LIST Nbr = sg pl sp ;
+LIST Sg = sg sp;
+LIST Pl = pl sp;
+LIST Sg_strict = sg ;
+LIST Pl_strict = pl ;
+
+
+SET MascSg = (m sg) OR (m sp) OR (mf sg) OR (mf sp) ;
+SET MascPl = (m pl) OR (m sp) OR (mf pl) OR (mf sp) ;
+SET FemSg = (f sg) OR (f sp) OR (mf sg) OR (mf sp) ;
+SET FemPl = (f pl) OR (f sp) OR (mf pl) OR (mf sp) ;
+
+SET AcordSN = MascSg OR MascPl OR FemSg OR FemPl ;
+
+SET AcordSP = Sg OR Pl ;
+
+LIST P1 = p1 ;
+LIST P2 = p2 ;
+LIST P3 = p3 ;
+LIST Pers = p1 p2 p3 ;
+
+SET Sg1 = (p1 sg) OR (p1 m sg) OR (p1 f sg) OR (p1 mf sg) ;
+SET Sg2 = (p2 sg) OR (p2 m sg) OR (p2 f sg) OR (p2 mf sg) ;
+SET Sg3 = (p3 sg) OR (p3 m sg) OR (p3 f sg) OR (p3 mf sg) ;
+SET Pl1 = (p1 pl) OR (p1 m pl) OR (p1 f pl) OR (p1 mf pl) ;
+SET Pl2 = (p2 pl) OR (p2 m pl) OR (p2 f pl) OR (p2 mf pl) ;
+SET Pl3 = (p3 pl) OR (p3 m pl) OR (p3 f pl) OR (p3 mf pl) ;
+LIST VSg1 = (vblex p1 sg) (vbser p1 sg) (vbhaver p1 sg) (vbmod p1 sg) ;
+LIST VSg2 = (vblex p2 sg) (vbser p2 sg) (vbhaver p2 sg) (vbmod p2 sg) ;
+LIST VSg3 = (vblex p3 sg) (vbser p3 sg) (vbhaver p3 sg) (vbmod p3 sg) ;
+LIST VPl1 = (vblex p1 pl) (vbser p1 pl) (vbhaver p1 pl) (vbmod p1 pl) ;
+LIST VPl2 = (vblex p2 pl) (vbser p2 pl) (vbhaver p2 pl) (vbmod p2 pl) ;
+LIST VPl3 = (vblex p3 pl) (vbser p3 pl) (vbhaver p3 pl) (vbmod p3 pl) ;
+
+SET AcordSV = Sg1 OR Sg2 OR Sg3 OR Pl1 OR Pl2 OR Pl3 ;
+
+LIST PriSg1 = (pri p1 sg) ;
+LIST PriSg2 = (pri p2 sg) ;
+LIST PriSg3 = (pri p3 sg) ;
+LIST PriPl1 = (pri p1 pl) ;
+LIST PriPl2 = (pri p2 pl) ;
+LIST PriPl3 = (pri p3 pl) ;
+LIST PiiSg1 = (pii p1 sg) ;
+LIST PiiSg2 = (pii p2 sg) ;
+LIST PiiSg3 = (pii p3 sg) ;
+LIST PiiPl1 = (pii p1 pl) ;
+LIST PiiPl2 = (pii p2 pl) ;
+LIST PiiPl3 = (pii p3 pl) ;
+LIST IfiSg1 = (ifi p1 sg) ;
+LIST IfiSg2 = (ifi p2 sg) ;
+LIST IfiSg3 = (ifi p3 sg) ;
+LIST IfiPl1 = (ifi p1 pl) ;
+LIST IfiPl2 = (ifi p2 pl) ;
+LIST IfiPl3 = (ifi p3 pl) ;
+LIST FtiSg1 = (fti p1 sg) ;
+LIST FtiSg2 = (fti p2 sg) ;
+LIST FtiSg3 = (fti p3 sg) ;
+LIST FtiPl1 = (fti p1 pl) ;
+LIST FtiPl2 = (fti p2 pl) ;
+LIST FtiPl3 = (fti p3 pl) ;
+LIST CniSg1 = (cni p1 sg) ;
+LIST CniSg2 = (cni p2 sg) ;
+LIST CniSg3 = (cni p3 sg) ;
+LIST CniPl1 = (cni p1 pl) ;
+LIST CniPl2 = (cni p2 pl) ;
+LIST CniPl3 = (cni p3 pl) ;
+LIST PrsSg1 = (prs p1 sg) ;
+LIST PrsSg2 = (prs p2 sg) ;
+LIST PrsSg3 = (prs p3 sg) ;
+LIST PrsPl1 = (prs p1 pl) ;
+LIST PrsPl2 = (prs p2 pl) ;
+LIST PrsPl3 = (prs p3 pl) ;
+LIST PisSg1 = (pis p1 sg) ;
+LIST PisSg2 = (pis p2 sg) ;
+LIST PisSg3 = (pis p3 sg) ;
+LIST PisPl1 = (pis p1 pl) ;
+LIST PisPl2 = (pis p2 pl) ;
+LIST PisPl3 = (pis p3 pl) ;
+LIST ImpSg2 = (imp p2 sg) ;
+LIST ImpPl1 = (imp p1 pl) ;
+LIST ImpPl2 = (imp p2 pl) ;
+
+SET AcordTempsPers = PriSg1 OR PriSg2 OR PriSg3 OR PriPl1 OR PriPl2 OR PriPl3
+	OR PiiSg1 OR PiiSg2 OR PiiSg3 OR PiiPl1 OR PiiPl2 OR PiiPl3
+	OR IfiSg1 OR IfiSg2 OR IfiSg3 OR IfiPl1 OR IfiPl2 OR IfiPl3
+	OR FtiSg1 OR FtiSg2 OR FtiSg3 OR FtiPl1 OR FtiPl2 OR FtiPl3
+	OR CniSg1 OR CniSg2 OR CniSg3 OR CniPl1 OR CniPl2 OR CniPl3
+	OR PrsSg1 OR PrsSg2 OR PrsSg3 OR PrsPl1 OR PrsPl2 OR PrsPl3
+	OR PisSg1 OR PisSg2 OR PisSg3 OR PisPl1 OR PisPl2 OR PisPl3
+	OR ImpSg2 OR ImpPl1 OR ImpPl2 ;
+
+
+SET CM = (cm) OR (lpar) OR (rpar) OR ("<;>") ;
+SET CM_strict = (cm) OR (lpar) - ("«") OR (rpar) - ("»") OR ("<;>") ;
+LIST Lpar = lpar ;
+LIST Rpar = rpar ;
+LIST ExclMark = "!" ;
+
+SET Cnj_Rel_End = BOS OR Conjco OR Conjsub OR Conjadv OR Rel OR VBinf ;
+SET SN_End = EOS OR PREP OR Conjsub OR Conjadv OR Rel OR V ;
+
+
+LIST unknown = ("\\*.*"r) ;
+LIST unknownMajIni = ("\\*[A-ZÀÁÈÉíÒÓÚÜÇ].*"r) ;
+LIST unknownMinIni = ("\\*[a-zàáäâèéëêíïîòóöôúüûç].*"r) ;
+LIST MajIni = ("\\<[A-ZÀÁÄÂÈÉËÊÍÏÎÒÓÖÔÚÜÛÇ].*\\>"r) ;
+LIST Majusc = ("\\<[A-ZÉÈÊ][A-ZÂÉÈÊÎÔÛ]*>"r) ;
+LIST MinIni = ("\\<[a-zàáäâèéëêíïîòóöôúüûç].*\\>"r) ;
+LIST VocIni = ("\\<[aeiouàáäâèéëêíïîòóöôúüû].*\\>"r) ;
+LIST siecles_nom_romains = ("[IVX][IVX]*"r) ;
+LIST An4 = ("[1-2][0-9][0-9][0-9]"r) ;	# an (4 chiffres)
+LIST An3 = ("[1-9][0-9][0-9]"r) ;	# an (3 chiffres): atencion a "700 000" !
+LIST An2 = ("[1-9][0-9]"r) ;	# an (2 chiffres)
+LIST NumOrd = ("[1-9][0-9]en"r) ("[1-9][0-9]au"r) ;
+
+
+
+
+LIST Causir = "causir" ;
+LIST Causar = "causar" ;
+LIST Voler = "voler" "vòler" ;
+LIST Volar = "volar" ;
+LIST De = "de";
+LIST Problemas = "problèma" "trebol" "troble" "degalh" "domau" "situacion" ;
+
+
+SELECT PREP IF (0 ("contra")) (2 N_AJ + Pl) ;	# gascon
+
+SELECT Voler IF (0 Voler) (0 Volar) (1 N_AJ OR NP OR unknown) ; 		# pas de partitiu en gascon
+SELECT Voler IF (0 Voler) (0 Volar) (1 AV) (2 N_AJ OR NP OR unknown) ; 		# pas de partitiu en gascon
+SELECT Voler IF (0 Voler) (0 Volar) (1 AV) (2 AV) (3 N_AJ OR NP OR unknown) ; 	# pas de partitiu en gascon
+
+
+REMOVE Causir IF (0 Causar) (1 Problemas + Pl) ;	# gascon	# causèt problèmas
+REMOVE Causir IF (0 Causar) (1 AJ + &&AcordSN) (2 Problemas + &&AcordSN + Pl) ;	# gascon
+
+# véner e venir, gascon
+REMOVE ("véner") IF (0 ("venir") OR ("viéner")) (1 ("de")) (2 VBinf OR Pro) ;
+REMOVE ("véner") IF (0 ("venir") OR ("viéner")) (1 ("de")) (2 Pro) (3 VBinf) ;
+REMOVE ("véner") IF (0 ("venir") OR ("viéner")) (1 AV) (2 ("de")) (3 VBinf OR Pro) ;
+REMOVE ("véner") IF (0 ("venir") OR ("viéner")) (1 AV) (2 ("de")) (3 Pro) (4 VBinf) ;
+REMOVE ("véner") IF (0 ("venir") OR ("viéner")) (0 VBimp) ;
+REMOVE ("véner") IF (0 ("venir") OR ("viéner")) (-1 ("que")) (-2 N) ;
+REMOVE ("véner") IF (0 ("<venent>")) (-1 N + MascSg) ;
+REMOVE ("venir") IF (0 ("viéner") OR ("vénguer")) ;
+REMOVE ("venir") IF (0 ("véner")) (-1 Pro) (NOT -1 ("i") OR ("en")) ;
+
+REMOVE V IF (0 ("<mau>"i)); #gascon seulement
+
+REMOVE V IF (0 ("<tara>"i)) (1 N + FemSg OR AJ + FemSg OR NP + FemSg) ; #gascon seulement
