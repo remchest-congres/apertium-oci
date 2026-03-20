@@ -243,3 +243,7 @@ REMOVE N IF (0 ("<fan>"i)) (NOT -1C DET + Sg OR AJ + Sg) ;
 REMOVE N IF (0 ("<fan>"i)) (-1C AJ + Sg) (NOT -2C DET + Sg) ;
 
 REMOVE Enon IF (0 Enon) ;
+
+REMOVE V IF (0 ("<dau>"i)) ;
+
+
