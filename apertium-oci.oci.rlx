@@ -20,6 +20,10 @@ LIST BOS = >>> sent ;
 LIST EOS = <<< sent ;
 
 #Categorias
+LIST noGasc = nd:gascon ;
+LIST noLeng = nd:lengadocian ;
+LIST noAran = nd:aranes ;
+
 LIST V = vblex vbser vbhaver vbmod ;
 LIST Verb = vblex ;
 LIST Ser = vbser ;
@@ -418,6 +422,9 @@ SET VerbMoviment = VerbMoviment_NonTornar OR VerbMoviment_Tornar ;
 SET VerbAuxEssser = VerbMoviment_NonTornar OR ("èsser") OR ("estar") OR ("nàisser") OR ("nàisher") OR ("nèisher") OR ("renàisser") OR ("renàisher") OR ("renèisher") OR ("morir") OR ("vàder") OR ("vàser") OR ("devenir") OR ("deviéner") ;
 
 SECTION
+
+REMOVE noLeng IF (0 noLeng);
+
 
 SELECT Acr IF (0 ("<A>")) (1 ("<.>")) (2 Cog OR unknownMajIni) ;	# A. Dupont
 SELECT N + (m) + (sp) IF (0 ("\\<[B-Z]\\>"r)) (1 ("<.>")) (2 Cog OR unknownMajIni) ;	# E. Dupont
@@ -4346,3 +4353,4 @@ REMOVE ("vengar") IF (0 ("viéner")) ;
 REMOVE ("vénder") IF (0 ("viéner")) (0 ("<vendrai>") or ("<vendràs>") or ("<vendrà>") or ("<vendrem>") or ("<vendretz>") or ("<vendràn>")) ;
 
 REMOVE V IF (0 ("<de>")) ;
+

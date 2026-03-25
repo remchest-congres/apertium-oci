@@ -9,6 +9,10 @@ LIST EOS = <<< sent ;
 
 
 #Categorias
+LIST noGasc = nd:gascon ;
+LIST noLeng = nd:lengadocian ;
+LIST noAran = nd:aranes ;
+
 LIST V = vblex vbser vbhaver vbmod ;
 LIST Verb = vblex ;
 LIST Ser = vbser ;
@@ -228,6 +232,11 @@ LIST Voler = "voler" "vòler" ;
 LIST Volar = "volar" ;
 LIST De = "de";
 LIST Problemas = "problèma" "trebol" "troble" "degalh" "domau" "situacion" ;
+
+SECTION
+
+REMOVE noAran IF (0 noAran);
+
 
 
 SELECT PREP IF (0 ("contra")) (2 N_AJ + Pl) ;	# gascon
