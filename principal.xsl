@@ -125,7 +125,7 @@
         <xsl:value-of select="string('                        ')"/>
         <xsl:element name="{name($parent)}">
           <xsl:copy-of select="$parent/@lm|$parent/@r|$parent/@alt"/>
-          <xsl:apply-templates select="$parent/node()[not(self::par[@n[starts-with(., 'd:')]]) and not(self::par[@n[starts-with(., 'nd:')]])]">
+          <xsl:apply-templates select="$parent/node()[not(self::par[@n[starts-with(., 'd:')]])]">
             <xsl:with-param name="parametro" select="$parametro"/>
           </xsl:apply-templates>
           <xsl:copy-of select="$currentpar"/>
