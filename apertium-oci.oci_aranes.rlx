@@ -236,6 +236,7 @@ LIST Problemas = "problèma" "trebol" "troble" "degalh" "domau" "situacion" ;
 SECTION
 
 REMOVE noAran IF (0 noAran);
+REMOVE SUB:1 noAran IF (0/* noAran) ;
 
 
 

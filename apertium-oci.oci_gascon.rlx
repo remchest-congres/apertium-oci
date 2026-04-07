@@ -234,6 +234,7 @@ LIST Problemas = "problèma" "trebol" "troble" "degalh" "domau" "situacion" ;
 SECTION
 
 REMOVE noGasc IF (0 noGasc );
+REMOVE SUB:1 noGasc IF (0/* noGasc) ;
 
 
 SELECT PREP IF (0 ("contra")) (2 N_AJ + Pl) ;	# gascon

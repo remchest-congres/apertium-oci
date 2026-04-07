@@ -10,6 +10,10 @@ LIST EOS = <<< sent ;
 
 
 #Categorias
+LIST noGasc = nd:gascon ;
+LIST noLeng = nd:lengadocian ;
+LIST noAran = nd:aranes ;
+
 LIST V = vblex vbser vbhaver vbmod ;
 LIST Verb = vblex ;
 LIST Ser = vbser ;
@@ -229,6 +233,14 @@ LIST De = "de";
 LIST Problemas = "problèma" "trebol" "troble" "degalh" "domau" "situacion" ;
 
 
+SECTION
+
+REMOVE noLeng IF (0 noLeng);
+REMOVE SUB:1 noLeng IF (0/* noLeng) ;
+
+
+
+
 SELECT PREP IF (0 ("contra")) (1 De LINK 0/* DET) (2 N_AJ + Pl) ;	# lengadocian
 
 SELECT Voler IF (0 Voler) (0 Volar) (1 De) (2 N_AJ OR unknown) ; 			# partitiu lengadocian
@@ -242,7 +254,7 @@ REMOVE Causir IF (0 Causar) (1 De) (2 Problemas + Pl) ;	# lengadocian	# causèt 
 REMOVE N IF (0 ("<fan>"i)) (NOT -1C DET + Sg OR AJ + Sg) ;
 REMOVE N IF (0 ("<fan>"i)) (-1C AJ + Sg) (NOT -2C DET + Sg) ;
 
-REMOVE Enon IF (0 Enon) ;
+REMOVE Enon IF (0 Enon) (NOT 0 ("çò")) ;
 
 REMOVE V IF (0 ("<dau>"i)) ;
 

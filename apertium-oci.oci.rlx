@@ -423,7 +423,12 @@ SET VerbAuxEssser = VerbMoviment_NonTornar OR ("èsser") OR ("estar") OR ("nàis
 
 SECTION
 
-REMOVE noLeng IF (0 noLeng);
+
+REMOVE AJ IF (0 ("son")) (1 ("a")) (2 VBinf);
+REMOVE AJ IF (0 ("son")) (1 ("a")) (2 PRONPers) (3 VBinf);
+REMOVE AJ IF (0 ("son")) (1 ("a")) (2 PRONPers) (3 PRONPers) (4 VBinf);
+
+REMOVE AJ IF (0 ("son")) (NOT -1 N);
 
 
 SELECT Acr IF (0 ("<A>")) (1 ("<.>")) (2 Cog OR unknownMajIni) ;	# A. Dupont
@@ -1300,19 +1305,21 @@ SELECT DET + &&AcordSN IF (0 ("un") + &&AcordSN) (1 N_AJ + &&AcordSN) ;	# guess 
 SELECT DET + &&AcordSN IF (NOT -1 PREP) (0 ("un") + &&AcordSN) (1 Top + &&AcordSN) ;	# guess (cal pels enonciatius)
 REMOVE V IF (0 ("un")) (1 Que OR Qui) ;
 
-SELECT ("çò") + Enon IF (1 Vdire + Pers) ;
-SELECT ("çò") + Enon IF (1 Pro OR AV) (2 Vdire + Pers) ;
-SELECT ("çò") + Enon IF (1 Pro OR AV) (2 Pro) (3 Vdire + Pers) ;
-SELECT ("çò") + Enon IF (1 Haver + Pers) (2 Vdire + VBpp) ;
-SELECT ("çò") + Enon IF (1 Pro OR AV) (2 Haver + Pers) (3 Vdire + VBpp) ;
-SELECT ("çò") + Enon IF (1 Pro OR AV) (2 Pro) (3 Haver + Pers) (4 Vdire + VBpp) ;
-SELECT ("çò") + Enon IF (1 Haver + Pers) (2 AV) (3 Vdire + VBpp) ;
-SELECT ("çò") + Enon IF (1 Pro OR AV) (2 Haver + Pers) (3 AV) (4 Vdire + VBpp) ;
-SELECT ("çò") + Enon IF (1 Pro OR AV) (2 Pro) (3 Haver + Pers) (4 AV) (5 Vdire + VBpp) ;
-SELECT ("çò") + Enon IF (1 Haver + Pers) (2 AV) (3 AV) (4 Vdire + VBpp) ;
-SELECT ("çò") + Enon IF (1 Pro OR AV) (2 Haver + Pers) (3 AV) (4 AV) (5 Vdire + VBpp) ;
-SELECT ("çò") + Enon IF (1 Pro OR AV) (2 Pro) (3 Haver + Pers) (4 AV) (5 AV) (6 Vdire + VBpp) ;
-REMOVE ("çò") + Enon ;
+SELECT Enon IF (0 ("çò")) (1 Vdire + Pers) ;
+SELECT Enon IF (0 ("çò")) (1 Pro OR AV) (2 Vdire + Pers) ;
+SELECT Enon IF (0 ("çò")) (1 Pro OR AV) (2 Pro) (3 Vdire + Pers) ;
+SELECT Enon IF (0 ("çò")) (1 Haver + Pers) (2 Vdire + VBpp) ;
+SELECT Enon IF (0 ("çò")) (1 Pro OR AV) (2 Haver + Pers) (3 Vdire + VBpp) ;
+SELECT Enon IF (0 ("çò")) (1 Pro OR AV) (2 Pro) (3 Haver + Pers) (4 Vdire + VBpp) ;
+SELECT Enon IF (0 ("çò")) (1 Haver + Pers) (2 AV) (3 Vdire + VBpp) ;
+SELECT Enon IF (0 ("çò")) (1 Pro OR AV) (2 Haver + Pers) (3 AV) (4 Vdire + VBpp) ;
+SELECT Enon IF (0 ("çò")) (1 Pro OR AV) (2 Pro) (3 Haver + Pers) (4 AV) (5 Vdire + VBpp) ;
+SELECT Enon IF (0 ("çò")) (1 Haver + Pers) (2 AV) (3 AV) (4 Vdire + VBpp) ;
+SELECT Enon IF (0 ("çò")) (1 Pro OR AV) (2 Haver + Pers) (3 AV) (4 AV) (5 Vdire + VBpp) ;
+SELECT Enon IF (0 ("çò")) (1 Pro OR AV) (2 Pro) (3 Haver + Pers) (4 AV) (5 AV) (6 Vdire + VBpp) ;
+REMOVE Enon IF (0 ("çò")) ;
+
+
 
 SELECT AJ (0 ("mai bon") + &&AcordSN) (-1 DET + &&AcordSN) ;
 SELECT AJ (0 ("mai bon") + &&AcordSN) (-1 N + &&AcordSN) ;
@@ -2082,6 +2089,8 @@ SELECT AV IF (-2 ("mès")) (-1 ("e")) (0 ("mès")) (1 AJ OR AV) ;
 SELECT AV IF (-2 ("mai")) (-1 ("e")) (0 ("mai")) (1 AJ OR AV) ;
 SELECT Conjco IF (-1 ("mai")) (0 ("<e mai>"i)) (1 AJ OR AV) ;
 SELECT SUB:1 AV IF (-1 ("mai")) (0 ("<e mai>"i)) (1 AJ OR AV) ;
+REMOVE AV IF (0 ("mas")) (NOT 1 ("que")) (NOT 2 ("que")) (0 AV) (NOT -1 Conjco) ;
+REMOVE AV IF (0 ("mas")) (1 ("que")) (2 V) ;
 
 SELECT N IF (-1/* DET + MascSg) (0 ("<plan de>"i) OR ("<plan d'>") OR ("<plan d’>"i)) ;
 REMOVE N IF (NOT -1/* DET + MascSg OR BOS) (0 ("<plan de>"i) OR ("<plan d'>") OR ("<plan d’>"i)) ;
@@ -2139,7 +2148,7 @@ SELECT N + &&AcordSN IF (NOT -2/* DET) (-1 Senher + &&AcordSN) ;	# mossur curè
 REMOVE Cog IF (0 ("<de .*>"r)) (NOT -1 Ant OR Cog OR unknownMajIni) (0/* Top OR Ant) ;	# la ciutat de Luca
 
 #Una prepausicion es totjorn seguida d'un nom, pronom, adverb, numeral, infinitiu, determinant o adjectiu
-REMOVE PREP IF (NOT 1 N OR Pref OR PRON OR AV OR NUM OR NP OR VBinf OR DET OR PREDET OR AJ OR ("de") OR unknown) (NOT 0/* PREP + DET) (NOT 0/* N OR Rel OR Conjadv OR Conjsub) (NOT 0 ("en tot")) ;	# a luchat pendent d'annadas
+REMOVE PREP IF (NOT 1 N OR Pref OR PRON OR Rel OR AV OR NUM OR NP OR VBinf OR DET OR PREDET OR AJ OR ("de") OR unknown) (NOT 0/* PREP + DET) (NOT 0/* N OR Rel OR Conjadv OR Conjsub) (NOT 0 ("en tot")) ;	# a luchat pendent d'annadas
 REMOVE PREP IF (1 ("de")) (NOT 2 N OR AJ OR Pref) ;	# a luchat pendent d'annadas
 
 #Es pas un vèrbe se, dempuèi lo darrièr vèrbe conjugat, avèm pas agut de novèla proposicion
@@ -4353,4 +4362,3 @@ REMOVE ("vengar") IF (0 ("viéner")) ;
 REMOVE ("vénder") IF (0 ("viéner")) (0 ("<vendrai>") or ("<vendràs>") or ("<vendrà>") or ("<vendrem>") or ("<vendretz>") or ("<vendràn>")) ;
 
 REMOVE V IF (0 ("<de>")) ;
-
