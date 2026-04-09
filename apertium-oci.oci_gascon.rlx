@@ -228,8 +228,13 @@ LIST Causir = "causir" ;
 LIST Causar = "causar" ;
 LIST Voler = "voler" "vòler" ;
 LIST Volar = "volar" ;
+LIST Vener = "véner" "vénder" "vendre";
+LIST Venir = "venir" "vier" "viéner" "vénguer" ;
 LIST De = "de";
 LIST Problemas = "problèma" "trebol" "troble" "degalh" "domau" "situacion" ;
+
+
+LIST Jorns = "diluns" "dimars" "dimècres" "dimèrcs" "dijòus" "dijaus" "divés" "divendres" "dissabte" "dimenge" ;
 
 SECTION
 
@@ -272,6 +277,15 @@ REMOVE Causir IF (0 Causar) (1 Problemas + Pl) ;	# gascon	# causèt problèmas
 REMOVE Causir IF (0 Causar) (1 AJ + &&AcordSN) (2 Problemas + &&AcordSN + Pl) ;	# gascon
 
 # véner e venir, gascon
+REMOVE Venir IF (0 Vener) (1 ("car")) ;
+REMOVE Venir IF (0 Vener) (1 ("bon")) (2 ("mercat") OR ("pretz")) ;
+REMOVE Venir IF (0 Vener) (1 AV) (2 ("car")) ;
+REMOVE Venir IF (0 Vener) (1 AV) (2 ("bon")) (3 ("mercat") OR ("pretz")) ;
+REMOVE Venir IF (0 Vener) (1 AV) (2 AV) (3 ("car")) ;
+REMOVE Venir IF (0 Vener) (1 AV) (2 AV) (3 ("bon")) (4 ("mercat") OR ("pretz")) ;
+REMOVE Venir IF (0 Vener) (1C N LINK NOT 0 Jorns) ;
+REMOVE Venir IF (0 Vener) (1 AV) (2C N LINK NOT 0 Jorns) ;
+
 REMOVE ("véner") IF (0 ("venir") OR ("viéner")) (1 ("de")) (2 VBinf OR Pro) ;
 REMOVE ("véner") IF (0 ("venir") OR ("viéner")) (1 ("de")) (2 Pro) (3 VBinf) ;
 REMOVE ("véner") IF (0 ("venir") OR ("viéner")) (1 AV) (2 ("de")) (3 VBinf OR Pro) ;
@@ -285,3 +299,4 @@ REMOVE ("venir") IF (0 ("véner")) (-1 Pro) (NOT -1 ("i") OR ("en")) ;
 REMOVE V IF (0 ("<mau>"i)); #gascon seulement
 
 REMOVE V IF (0 ("<tara>"i)) (1 N + FemSg OR AJ + FemSg OR NP + FemSg) ; #gascon seulement
+

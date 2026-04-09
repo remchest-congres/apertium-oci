@@ -258,4 +258,4 @@ REMOVE Enon IF (0 Enon) (NOT 0 ("çò")) ;
 
 REMOVE V IF (0 ("<dau>"i)) ;
 
-
+REMOVE ("véner") IF (0 ("venir") OR ("viéner"))
