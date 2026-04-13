@@ -29,7 +29,9 @@ LIST Enon = enon ;
 LIST Rel = rel ;
 LIST N = n ;
 LIST NP = np ;
-LIST AJ = adj ;
+LIST Pos = pos ;
+LIST ADJ = adj  ;
+SET AJ = ADJ - Pos ;
 LIST N_AJ = n adj ;
 LIST N_NP_AJ = n np adj ;
 LIST N_AJ_PP = n adj pp ;
@@ -48,7 +50,6 @@ LIST PRONPers = (prn p1) (prn p2) (prn p3);
 LIST PRONRef = ("me") ("te") ("se") ("nos") ("vos") ;
 LIST IJ = ij ;
 LIST PREDET = predet ;
-LIST Pos = pos ;
 LIST SENT = sent ;
 #Jos=categorias
 LIST VBger = ger ;
@@ -258,4 +259,15 @@ REMOVE Enon IF (0 Enon) (NOT 0 ("çò")) ;
 
 REMOVE V IF (0 ("<dau>"i)) ;
 
-REMOVE ("véner") IF (0 ("venir") OR ("viéner"))
+REMOVE ("vénder") IF (0 ("venir") OR ("viéner"))
+
+REMOVE ("aviar") IF (0 ("aver"))
+
+REMOVE ("volar") IF (0 ("volèm"))
+
+REMOVE ("dar") IF (0 ("<dos>"i))
+
+REMOVE V IF (0 ("<bèlas>"i)) (-1 Fem + Pl) ;
+REMOVE V IF (0 ("<bèlas>"i)) (-1 AV) (-2 Fem + Pl) ;
+REMOVE V IF (0 ("<bèla>"i)) (-1 Fem + Sg) ;
+REMOVE V IF (0 ("<bèla>"i)) (-1 AV) (-2 Fem + Sg) ;

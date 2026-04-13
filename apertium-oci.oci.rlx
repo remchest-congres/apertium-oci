@@ -39,7 +39,9 @@ LIST Enon = enon ;
 LIST Rel = rel ;
 LIST N = n ;
 LIST NP = np ;
-LIST AJ = adj ;
+LIST Pos = pos ;
+LIST ADJ = adj  ;
+SET AJ = ADJ - Pos ;
 LIST N_AJ = n adj ;
 LIST N_NP_AJ = n np adj ;
 LIST N_AJ_PP = n adj pp ;
@@ -58,7 +60,6 @@ LIST PRONPers = (prn p1) (prn p2) (prn p3);
 LIST PRONRef = ("me") ("te") ("se") ("nos") ("vos") ;
 LIST IJ = ij ;
 LIST PREDET = predet ;
-LIST Pos = pos ;
 LIST SENT = sent ;
 #Jos=categorias
 LIST VBger = ger ;
@@ -1908,8 +1909,8 @@ SELECT Conjco IF (-1 BOS OR SENT) (0 ("<E>")) (NOT 1 CM) (NOT 1* ("?")) ;
 SELECT Conjco IF (-2 BOS OR SENT) (-1 ("«")) (0 ("<E>")) (NOT 1 CM OR Pro OR V + Pers) ;
 SELECT Conjco IF (-2 BOS OR SENT) (0 ("<E>")) (NOT 1 CM) (NOT 1* ("?")) ;
 SELECT Conjco IF (-3 BOS OR SENT) (-2 ("«")) (0 ("<E>")) (NOT 1 CM OR Pro OR V + Pers) ;
-REMOVE Conjsub IF (-1 BOS OR SENT);
-REMOVE Conjsub IF (-2 BOS OR SENT) (-1 ("«"));
+REMOVE Conjsub IF (-1 BOS OR SENT) (NOT 0 ("que"));
+REMOVE Conjsub IF (-2 BOS OR SENT) (-1 ("«")) (NOT 0 ("que"));
 REMOVE Rel IF (-1 BOS OR SENT);
 REMOVE Rel IF (-2 BOS OR SENT) (-1 ("«"));
 SELECT Rel IF (-1C Conjco OR ("mas")) (0 Que) (-2*C Que + Rel) ;
@@ -2049,8 +2050,8 @@ REMOVE N IF (0 ("<arriban>"i)) (1 ("<a>"i)) ;
 REMOVE N IF (-1C N_AJ OR NP) (0 ("<arriban>"i)) ;
 REMOVE N IF (-1 N_AJ + Pl) (0 ("<arriban>"i)) ;
 
-REMOVE AV IF (0 ("mas")) (NOT 1 ("que")) (NOT 2 ("que")) (0 AV) (NOT -1 Conjco) ;
-REMOVE AV IF (0 ("mas")) (1 ("que")) (2 V) ;
+REMOVE AV IF (0 ("mas")) (NOT 1 ("que")) (NOT 2 ("que")) (0 AV) (NOT -1 Conjco) (NOT -1 ("vàler")) ;
+REMOVE AV IF (0 ("mas")) (1 ("que")) (2 V) (NOT -1 ("vàler")) ;
 SELECT AV IF (0 ("mas")) (1 AJ OR AV) (2 ("e") OR ("o")) (3 ("mas")) (4 AJ OR AV) ;
 SELECT AV IF (0 ("mes")) (1 AJ OR AV) (2 ("e") OR ("o")) (3 ("mes")) (4 AJ OR AV) ;
 SELECT AV IF (0 ("mès")) (1 AJ OR AV) (2 ("e") OR ("o")) (3 ("mès")) (4 AJ OR AV) ;
@@ -2846,7 +2847,7 @@ REMOVE Pro IF (-1C PREP) (0 DET) (NOT 1 VBinf OR VBger OR Pro OR unknown) ;
 
 SELECT DET + &&AcordSN IF (1 ("un") + &&AcordSN) (2 Conjco) (3 DET) (4 ("altre") OR ("aute")) ;
 SELECT Tn + &&AcordSN IF (-1C DET + &&AcordSN) (0 ("un") + &&AcordSN) ;
-REMOVE DET IF (-1C/* DET) (NOT -1 DetDe) ;	# un cèrt estacament
+REMOVE DET IF (-1C/* DET) (NOT -1 DetDe) (NOT -1 ("de")) ;	# un cèrt estacament
 REMOVE DET IF (0 DetDe) (1C DET) ;
 REMOVE DET IF (0 DetDe) (1C PREDET) ;
 REMOVE DET IF (0 DetDe) (1 PREDET) (2C DET) ;
@@ -3693,6 +3694,7 @@ SELECT AJ IF (-1 ("pòrta") OR Fenestra OR ("lindal") OR ("lindau") OR ("camin")
 SELECT AJ IF (-1C N_AJ) (0 ("<de casa .*>"r)) ;
 
 SELECT PREP IF (0 A) (1 unknownMajIni) ;
+SELECT PREP IF (0 A) (1 DET OR NP) ;
 
 REMOVE V IF (-1C V LINK NOT 0 VBpp) (0 A) ;
 REMOVE V IF (-2C V LINK NOT 0 VBpp) (-1C AV OR PREAV) (0 A) ;
@@ -3867,6 +3869,7 @@ SELECT Ser IF (0 Ser + Sg) (1 AV) (2 Ser + VBpp + Sg) ;
 SELECT Ser IF (0 Ser + Pl) (1 AV) (2 Ser + VBpp + Pl) ;
 SELECT N IF (-1 ("vila") OR ("ciutat")) (0 Estat) ;	# vila estat
 SELECT N IF (-1 AdjPre + &&AcordSN) (0 Estat + &&AcordSN) ;	# en marrit estat
+SELECT N IF (0 Estat) (1/* PREP + DET) (2 NP);
 
 SELECT Conjco IF (0 Mas_cnjcoo) (-1 CM) ;
 SELECT Conjco IF (0 Mas_cnjcoo) (-1 BOS) ;
@@ -4332,11 +4335,6 @@ REMOVE AJ IF (0 ("<cau>"i)) (-1 ("non")) ;
 REMOVE N IF (0 V) (-1 ("de")) (-2 ("aimar")) ;
 
 
-REMOVE ("vénder") IF (0 ("viéner")) (NOT 0 ("<véner">)) (1 ("de")) (2 VBinf) ;
-REMOVE ("vénder") IF (0 ("viéner")) (NOT 0 ("<véner">)) (1 ("de")) (2 PERS) ;
-REMOVE ("viéner") IF (0 ("<véner>")) ;
-REMOVE ("viéner") IF (0 ("vénder")) (NOT 1 ("de")) (NOT 2 VBinf OR PERS) ;
-
 REMOVE ("ténder") IF (0 ("tiéner")) (0 ("<tendrai>") OR ("<tendràs>") OR ("<tendrà>") OR ("<tendrem>") OR ("<tendretz>")  OR ("<tendràn>"));
 
 REMOVE ("sòler") IF (0 Ser) ;
@@ -4346,15 +4344,40 @@ REMOVE ("pàrer") IF (0 ("parar")) ;
 REMOVE ("pàrer") IF (0 ("paréisser")) ;
 REMOVE ("presar") IF (0 ("préner")) ;
 REMOVE ("fòser") IF (0 Ser) ;
+REMOVE ("Fòser") IF (0 Ser) ;
 REMOVE ("ténher") IF (0 ("tiéner")) ;
 REMOVE ("vengar") IF (0 ("viéner")) ;
-
-REMOVE ("vénder") IF (0 ("viéner")) (0 ("<vendrai>") or ("<vendràs>") or ("<vendrà>") or ("<vendrem>") or ("<vendretz>") or ("<vendràn>")) ;
+REMOVE ("sostar") IF (0 ("sostiéner")) ;
+REMOVE ("vàser") IF (0 ("anar")) ;
+REMOVE ("véser") IF (0 ("viéner")) ;
+REMOVE ("comprar") IF (0 ("compréner")) ;
 
 REMOVE V IF (0 ("<de>")) ;
 
 REMOVE PRON IF (0 Se) (1 Ser + VSg3) (2 AJ) (NOT 2 VBpp) ;
 
-# REMOVE AV IF (0 Dins) (NOT 1 sent) ;
+SELECT V IF (0 ("<còsta>")) (-1 PERS OR Rel OR Enon) ;
+SELECT V IF (0 ("<còsta>")) (1 NUM OR ("<moneda>") OR ("<car>")) ;
+SELECT V IF (0 ("<còsta>")) (1 AV) (2 ("<moneda>") OR ("<car>")) ;
+SELECT PREP IF (0 ("<còsta>")) (1 PREP) ;
+SELECT AV IF (0 ("<còsta>")) (1 PREP) ;
 
-# REMOVE IJ IF (0 ("<e>"i)) (0 Conjco) (NOT 1* ExclMark) ;
+REMOVE IJ IF (0 ("<e>"i)) (NOT 1 ExclMark) ;
+
+SELECT Conjadv IF (0 ("<si>")) (-1 ("coma") OR ("com") OR ("quitament")) ;
+
+SELECT Conjadv IF (0 ("<si>")) (-1 ("mai")) (-2 ("a")) ;
+
+SELECT PREP IF (0 ("a costat de")) (NOT 1 ("<moneda>") OR ("sòu") OR ("argent")) ;
+REMOVE PREP IF (0 ("a costat de")) (1 ("<moneda>") OR ("sòu") OR ("argent")) ;
+
+
+
+
+AFTER-SECTIONS
+
+REMOVE AJ IF (0 ("<las>"i)) (0 DETdef) (1 FemPl) ;
+
+"<dins>"i REMOVE:default AV ; 
+"<mas>"i REMOVE:default AV ; 
+"<mes>"i REMOVE:default AV ; 

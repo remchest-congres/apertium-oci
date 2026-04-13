@@ -28,7 +28,9 @@ LIST Enon = enon ;
 LIST Rel = rel ;
 LIST N = n ;
 LIST NP = np ;
-LIST AJ = adj ;
+LIST Pos = pos ;
+LIST ADJ = adj  ;
+SET AJ = ADJ - Pos ;
 LIST N_AJ = n adj ;
 LIST N_NP_AJ = n np adj ;
 LIST N_AJ_PP = n adj pp ;
@@ -47,7 +49,6 @@ LIST PRONPers = (prn p1) (prn p2) (prn p3);
 LIST PRONRef = ("me") ("te") ("se") ("nos") ("vos") ;
 LIST IJ = ij ;
 LIST PREDET = predet ;
-LIST Pos = pos ;
 LIST SENT = sent ;
 #Jos=categorias
 LIST VBger = ger ;
@@ -286,6 +287,11 @@ REMOVE Venir IF (0 Vener) (1 AV) (2 AV) (3 ("bon")) (4 ("mercat") OR ("pretz")) 
 REMOVE Venir IF (0 Vener) (1C N LINK NOT 0 Jorns) ;
 REMOVE Venir IF (0 Vener) (1 AV) (2C N LINK NOT 0 Jorns) ;
 
+
+REMOVE ("vénder") IF (0 ("viéner")) (NOT 0 ("<véner">)) (1 ("de")) (2 VBinf) ;
+REMOVE ("vénder") IF (0 ("viéner")) (NOT 0 ("<véner">)) (1 ("de")) (2 PERS) ;
+REMOVE ("viéner") IF (0 ("<véner>")) ;
+REMOVE ("viéner") IF (0 ("vénder")) (NOT 1 ("de")) (NOT 2 VBinf OR PERS) ;
 REMOVE ("véner") IF (0 ("venir") OR ("viéner")) (1 ("de")) (2 VBinf OR Pro) ;
 REMOVE ("véner") IF (0 ("venir") OR ("viéner")) (1 ("de")) (2 Pro) (3 VBinf) ;
 REMOVE ("véner") IF (0 ("venir") OR ("viéner")) (1 AV) (2 ("de")) (3 VBinf OR Pro) ;
@@ -295,8 +301,18 @@ REMOVE ("véner") IF (0 ("venir") OR ("viéner")) (-1 ("que")) (-2 N) ;
 REMOVE ("véner") IF (0 ("<venent>")) (-1 N + MascSg) ;
 REMOVE ("venir") IF (0 ("viéner") OR ("vénguer")) ;
 REMOVE ("venir") IF (0 ("véner")) (-1 Pro) (NOT -1 ("i") OR ("en")) ;
+REMOVE ("vénder") IF (0 ("viéner")) (0 ("<vendrai>") or ("<vendràs>") or ("<vendrà>") or ("<vendrem>") or ("<vendretz>") or ("<vendràn>")) ;
 
 REMOVE V IF (0 ("<mau>"i)); #gascon seulement
 
 REMOVE V IF (0 ("<tara>"i)) (1 N + FemSg OR AJ + FemSg OR NP + FemSg) ; #gascon seulement
 
+
+
+AFTER-SECTIONS
+
+REMOVE (N) IF (0 ("mes")) (NOT -1 DET + Masc) ;
+
+REMOVE Itg IF (0 Enon);
+
+"<jo>"i REMOVE:default N ; 
