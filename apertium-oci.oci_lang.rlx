@@ -259,13 +259,13 @@ REMOVE Enon IF (0 Enon) (NOT 0 ("çò")) ;
 
 REMOVE V IF (0 ("<dau>"i)) ;
 
-REMOVE ("vénder") IF (0 ("venir") OR ("viéner"))
+REMOVE ("vénder") IF (0 ("venir") OR ("viéner")) ;
 
-REMOVE ("aviar") IF (0 ("aver"))
+REMOVE ("aviar") IF (0 ("aver")) ;
 
-REMOVE ("volar") IF (0 ("volèm"))
+REMOVE ("volar") IF (0 ("volèm")) ;
 
-REMOVE ("dar") IF (0 ("<dos>"i))
+REMOVE ("dar") IF (0 ("<dos>"i)) ;
 
 REMOVE V IF (0 ("<bèlas>"i)) (-1 Fem + Pl) ;
 REMOVE V IF (0 ("<bèlas>"i)) (-1 AV) (-2 Fem + Pl) ;
