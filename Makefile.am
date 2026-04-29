@@ -21,7 +21,8 @@ TARGETS_COMMON =			\
 	$(LANG1)$(VAR2).rlx.bin \
 	$(LANG1)$(VAR3).rlx.bin \
 	$(LANG1).prefs.rlx.bin \
-	$(LANG1)$(VAR1).prefs.rlx.bin
+	$(LANG1)$(VAR1).prefs.rlx.bin \
+	$(LANG1).cleantags.rlx.bin
 
 # Use this goal for creating .deps, otherwise make -j2 will give problems:
 @ap_include@
@@ -124,6 +125,9 @@ $(LANG1)$(VAR2).rlx.bin: $(BASENAME).$(LANG1)$(VAR2).rlx
 $(LANG1)$(VAR3).rlx.bin: $(BASENAME).$(LANG1)$(VAR3).rlx
 	cg-comp $< $@
 
+$(LANG1).cleantags.rlx.bin: $(BASENAME).$(LANG1).cleantags.rlx
+	cg-comp $< $@
+
 ###############################################################################
 ## Variant preferences
 ###############################################################################
@@ -142,6 +146,7 @@ $(LANG1)$(VAR1).prefs.rlx.bin: $(BASENAME).$(LANG1)$(VAR1).prefs.rlx
 EXTRA_DIST=$(BASENAME).$(LANG1).metadix		\
 		$(BASENAME).$(LANG1).acx	\
 		$(BASENAME).$(LANG1).rlx	\
+		$(BASENAME).$(LANG1).cleantags.rlx	\
 		$(BASENAME).$(LANG1)$(VAR1).rlx	\
 		$(BASENAME).$(LANG1)$(VAR2).rlx	\
 		$(BASENAME).$(LANG1)$(VAR3).rlx	\
@@ -186,6 +191,7 @@ install-data-local: install-modes
 	test -d $(DESTDIR)$(apertium_oci_srcdir) || mkdir -p $(DESTDIR)$(apertium_oci_srcdir)
 	$(INSTALL_DATA) $(BASENAME).$(LANG1).metadix $(DESTDIR)$(apertium_oci_srcdir)
 	$(INSTALL_DATA) $(BASENAME).$(LANG1).rlx $(DESTDIR)$(apertium_oci_srcdir)
+	$(INSTALL_DATA) $(BASENAME).$(LANG1).cleantags.rlx $(DESTDIR)$(apertium_oci_srcdir)
 	$(INSTALL_DATA) $(BASENAME).$(LANG1)$(VAR1).rlx $(DESTDIR)$(apertium_oci_srcdir)
 	$(INSTALL_DATA) $(BASENAME).$(LANG1)$(VAR2).rlx $(DESTDIR)$(apertium_oci_srcdir)
 	$(INSTALL_DATA) $(BASENAME).$(LANG1)$(VAR3).rlx $(DESTDIR)$(apertium_oci_srcdir)

@@ -1,0 +1,9 @@
+# ndTags are used to mark some entries as "not to be produced" in specific variants
+# their utility is only limited to the monolingual dictionary and should not be passed to the bilingual dictionary
+# this rule aims to remove those tags from the stream before the transfer stage
+
+DELIMITERS = "<.>";
+
+LIST ndTags = nd:gascon nd:lengadocian nd:aranes ;
+
+SUBSTITUTE ndTags (""r) TARGET ("<(.*)>"r) ;
