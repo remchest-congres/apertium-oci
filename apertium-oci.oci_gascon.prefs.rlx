@@ -25,7 +25,18 @@ REMOVE (v:ièr_èr_èir:ièr) ;
 
 REMOVE (v:ièra_ièira:ièira) ;
 
+REMOVE (v:ariá_aria_eria:aria) ;
+REMOVE (v:ariá_aria_eria:ariá) ;
 
+SELECT (v:f_h:f)      IF (0 (VAR:f_h:f)) ;
+REMOVE (v:f_h:f) ;
+
+SELECT (v:r_arr:r)      IF (0 (VAR:r_arr:r)) ;
+REMOVE (v:r_arr:r) ;
+
+REMOVE (v:esosten:X) ;
+
+REMOVE (v:plursens:es) ;
 
 REMOVE (d:lengadocian) ;
 REMOVE (d:aranes) ;

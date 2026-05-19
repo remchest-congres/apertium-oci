@@ -3,7 +3,7 @@ DELIMITERS = ".";
 SELECT (v:as_es)      IF (0 (VAR:as_es)) ;
 REMOVE (v:as_es) ;
 
-SELECT (v:ch_it:it)      IF (0 (VAR:v:ch_it:it)) ;
+SELECT (v:ch_it:it)      IF (0 (VAR:ch_it:it)) ;
 REMOVE (v:ch_it:it) ;
 
 REMOVE (v:l_u:u) ;
@@ -20,8 +20,22 @@ REMOVE (v:n_intervoc:X) ;
 REMOVE (v:ièr_èr_èir:èr) ;
 REMOVE (v:ièr_èr_èir:èir) ;
 
-SELECT (v:ièra_ièira:ièira)      IF (0 (VAR:v:ièra_ièira:ièira)) ;
+SELECT (v:ièra_ièira:ièira)      IF (0 (VAR:ièra_ièira:ièira)) ;
 REMOVE (v:ièra_ièira:ièira) ;
+
+REMOVE (v:ariá_aria_eria:aria) ;
+REMOVE (v:ariá_aria_eria:eria) ;
+
+REMOVE (v:f_h:h) ;
+
+REMOVE (v:r_arr:arr) ;
+
+SELECT (v:esosten:X)      IF (0 (VAR:esosten:X)) ;
+REMOVE (v:esosten:X) ;
+
+SELECT (v:plursens:es)      IF (0 (VAR:plursens:es)) ;
+REMOVE (v:plursens:es) ;
+
 
 REMOVE (d:aranes) ;
 REMOVE (d:gascon) ;
