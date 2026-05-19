@@ -3,6 +3,26 @@ DELIMITERS = ".";
 SELECT (v:as_es)      IF (0 (VAR:as_es)) ;
 REMOVE (v:as_es) ;
 
+SELECT (v:ch_it:it)      IF (0 (VAR:v:ch_it:it)) ;
+REMOVE (v:ch_it:it) ;
+
+REMOVE (v:l_u:u) ;
+
+REMOVE (v:ala_au:au) ;
+
+REMOVE (v:l_th_u:u) ;
+REMOVE (v:l_th_u:th) ;
+
+REMOVE (v:ment_ments:ments) ;
+
+REMOVE (v:n_intervoc:X) ;
+
+REMOVE (v:ièr_èr_èir:èr) ;
+REMOVE (v:ièr_èr_èir:èir) ;
+
+SELECT (v:ièra_ièira:ièira)      IF (0 (VAR:v:ièra_ièira:ièira)) ;
+REMOVE (v:ièra_ièira:ièira) ;
+
 REMOVE (d:aranes) ;
 REMOVE (d:gascon) ;
 SELECT (d:lengadocian) ;

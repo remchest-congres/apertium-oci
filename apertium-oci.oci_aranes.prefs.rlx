@@ -4,6 +4,8 @@ DELIMITERS = ".";
 
 SELECT (v:as_es);
 
+REMOVE (v:l_u:l) ;
+
 REMOVE (d:gascon) ;
 REMOVE (d:lengadocian) ;
 SELECT (d:gascon);
