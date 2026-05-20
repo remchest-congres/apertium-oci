@@ -36,6 +36,8 @@ REMOVE (v:esosten:X) ;
 SELECT (v:plursens:es)      IF (0 (VAR:plursens:es)) ;
 REMOVE (v:plursens:es) ;
 
+REMOVE (v:o_au:o) ;
+
 
 REMOVE (d:aranes) ;
 REMOVE (d:gascon) ;

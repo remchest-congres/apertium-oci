@@ -34,6 +34,9 @@ REMOVE (v:f_h:f) ;
 SELECT (v:r_arr:r)      IF (0 (VAR:r_arr:r)) ;
 REMOVE (v:r_arr:r) ;
 
+SELECT (v:o_au:o)      IF (0 (VAR:o_au:o)) ;
+REMOVE (v:o_au:o) ;
+
 REMOVE (v:esosten:X) ;
 
 REMOVE (v:plursens:es) ;
