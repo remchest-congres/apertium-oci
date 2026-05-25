@@ -55,6 +55,10 @@ REMOVE (v:entà_tà_ende:ende) ;
 
 SELECT (v:amb:dab) ;
 
+REMOVE (v:v_u:u) ;
+
+REMOVE (v:r_X:r) ;
+
 
 
 REMOVE (d:lengadocian) ;

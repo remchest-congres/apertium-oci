@@ -44,6 +44,10 @@ REMOVE (v:lo_le_eth:eth) ;
 
 SELECT (v:amb:amb) ;
 
+REMOVE (v:v_u:u) ;
+
+REMOVE (v:r_X:X) ;
+
 
 REMOVE (d:aranes) ;
 REMOVE (d:gascon) ;
