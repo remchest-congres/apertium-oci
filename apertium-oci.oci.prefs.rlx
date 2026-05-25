@@ -38,6 +38,12 @@ REMOVE (v:plursens:es) ;
 
 REMOVE (v:o_au:o) ;
 
+SELECT (v:lo_le_eth:le)      IF (0 (VAR:lo_le_eth:le)) ;
+REMOVE (v:lo_le_eth:le) ;
+REMOVE (v:lo_le_eth:eth) ;
+
+SELECT (v:amb:amb) ;
+
 
 REMOVE (d:aranes) ;
 REMOVE (d:gascon) ;

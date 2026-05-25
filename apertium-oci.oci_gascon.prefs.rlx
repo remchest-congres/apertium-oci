@@ -34,12 +34,28 @@ REMOVE (v:f_h:f) ;
 SELECT (v:r_arr:r)      IF (0 (VAR:r_arr:r)) ;
 REMOVE (v:r_arr:r) ;
 
-SELECT (v:o_au:o)      IF (0 (VAR:o_au:o)) ;
-REMOVE (v:o_au:o) ;
-
 REMOVE (v:esosten:X) ;
 
 REMOVE (v:plursens:es) ;
+
+SELECT (v:o_au:o)      IF (0 (VAR:o_au:o)) ;
+REMOVE (v:o_au:o) ;
+
+SELECT (v:lo_le_eth:eth)      IF (0 (VAR:lo_le_eth:eth)) ;
+REMOVE (v:lo_le_eth:eth) ;
+REMOVE (v:lo_le_eth:le) ;
+
+SELECT (v:entà_tà_ende:tà)      IF (0 (VAR:entà_tà_ende:tà)) ;
+REMOVE (v:entà_tà_ende:entà)      IF (0 (VAR:entà_tà_ende:tà)) ;
+REMOVE (v:entà_tà_ende:tà) ;
+SELECT (v:entà_tà_ende:ende)      IF (0 (VAR:entà_tà_ende:ende)) ;
+REMOVE (v:entà_tà_ende:entà)      IF (0 (VAR:entà_tà_ende:ende)) ;
+REMOVE (v:entà_tà_ende:ende) ;
+
+
+SELECT (v:amb:dab) ;
+
+
 
 REMOVE (d:lengadocian) ;
 REMOVE (d:aranes) ;
