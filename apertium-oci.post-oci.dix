@@ -1089,7 +1089,19 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>ne<b/><a/>le<b/></l>
+					<r>ne'u<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><a/>ne<b/><a/>los<b/></l>
+					<r>ne'us<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><a/>ne<b/><a/>les<b/></l>
 					<r>ne'us<b/></r>
 				</p>
 			</e>
@@ -1125,6 +1137,12 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>ne<b/><a/>le<b/><a/>ac<b/></l>
+					<r>ne<b/>l'ac<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><a/>ne<b/><a/>la<b/><a/>ac<b/></l>
 					<r>ne<b/>l'ac<b/></r>
 				</p>
@@ -1141,13 +1159,32 @@
 				</e>
 				<e>
 					<p>
+						<l>e<b/><a/>le<b/></l>
+						<r>e'u<b/></r>
+					</p>
+				</e>
+				<e>
+					<p>
 						<l>e<b/><a/>los<b/></l>
 						<r>e'us<b/></r>
 					</p>
 				</e>
 				<e>
 					<p>
+						<l>e<b/><a/>les<b/></l>
+						<r>e'us<b/></r>
+					</p>
+				</e>
+				<e>
+					<p>
 						<l>e<b/><a/>lo<b/></l>
+						<r>e<b/>l'</r>
+					</p>
+					<par n="vocal_general"/>
+				</e>
+				<e>
+					<p>
+						<l>e<b/><a/>le<b/></l>
 						<r>e<b/>l'</r>
 					</p>
 					<par n="vocal_general"/>
@@ -1243,6 +1280,13 @@
 				</p>
 				<par n="vocal_general"/>
 			</e>
+			<e>
+				<p>
+					<l><a/>le<b/></l>
+					<r>l'</r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
 
 			<e>
 				<p>
@@ -1250,10 +1294,22 @@
 					<r>l'i<b/></r>
 				</p>
 			</e>
+			<e>
+				<p>
+					<l><a/>le<b/><a/>i<b/></l>
+					<r>l'i<b/></r>
+				</p>
+			</e>
 
 			<e>
 				<p>
 					<l><a/>lo<b/><a/>ac<b/></l>
+					<r>l'ac<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><a/>le<b/><a/>ac<b/></l>
 					<r>l'ac<b/></r>
 				</p>
 			</e>
@@ -1394,6 +1450,12 @@
 			</e>
 			<e>
 				<p>
+					<l><b/><a/>le</l>
+					<r><b/>le</r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><b/><a/>la</l>
 					<r><b/>la</r>
 				</p>
@@ -1401,6 +1463,13 @@
 			<e>
 				<p>
 					<l><b/><a/>lo<b/></l>
+					<r><b/>l'</r>
+				</p>
+					<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
+					<l><b/><a/>le<b/></l>
 					<r><b/>l'</r>
 				</p>
 					<par n="vocal_general"/>
@@ -1460,7 +1529,20 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>detle<b/></l>
+					<r>le<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><a/>detlo<b/></l>
+					<r>l'</r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
+					<l><a/>detle<b/></l>
 					<r>l'</r>
 				</p>
 				<par n="vocal_general"/>
@@ -1481,6 +1563,12 @@
 			<e>
 				<p>
 					<l><a/>detlos<b/></l>
+					<r>els<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><a/>detles<b/></l>
 					<r>els<b/></r>
 				</p>
 			</e>
@@ -1600,13 +1688,32 @@
 			</e>
 			<e>
 				<p>
+					<l>detle<b/></l>
+					<r>r<b/>l'</r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
 					<l>detlo<b/></l>
 					<r>l<b/></r>
 				</p>
 			</e>
 			<e>
 				<p>
+					<l>detle<b/></l>
+					<r>l<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l>detlos<b/></l>
+					<r>ls<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l>detles<b/></l>
 					<r>ls<b/></r>
 				</p>
 			</e>
@@ -1643,7 +1750,20 @@
 			</e>
 			<e>
 				<p>
+					<l>detle<b/></l>
+					<r>r<b/>l'</r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
 					<l>detlo<b/></l>
+					<r>u<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l>detle<b/></l>
 					<r>u<b/></r>
 				</p>
 			</e>
@@ -1653,10 +1773,23 @@
 					<r>us<b/></r>
 				</p>
 			</e>
+			<e>
+				<p>
+					<l>detles<b/></l>
+					<r>us<b/></r>
+				</p>
+			</e>
 
 			<e>
 				<p>
 					<l>lo<b/></l>
+					<r>r<b/>l'</r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
+					<l>le<b/></l>
 					<r>r<b/>l'</r>
 				</p>
 				<par n="vocal_general"/>
@@ -1700,13 +1833,32 @@
 			</e>
 			<e>
 				<p>
+					<l>detle<b/></l>
+					<r>r<b/>l'</r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
 					<l>detlo<b/></l>
 					<r>u<b/></r>
 				</p>
 			</e>
 			<e>
 				<p>
+					<l>detle<b/></l>
+					<r>u<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l>detlos<b/></l>
+					<r>us<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l>detles<b/></l>
 					<r>us<b/></r>
 				</p>
 			</e>
@@ -1801,6 +1953,12 @@
 			<e>
 				<p>
 					<l>lo<b/></l>
+					<r>ac<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l>le<b/></l>
 					<r>ac<b/></r>
 				</p>
 			</e>
@@ -2049,7 +2207,20 @@
 			</e>
 			<e>
 				<p>
+					<l><b/><a/>detle<b/></l>
+					<r>del<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><b/><a/>detlo<b/></l>
+					<r>de<b/>l'</r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
+					<l><b/><a/>detle<b/></l>
 					<r>de<b/>l'</r>
 				</p>
 				<par n="vocal_general"/>
@@ -2075,6 +2246,12 @@
 			</e>
 			<e>
 				<p>
+					<l><b/><a/>detles<b/></l>
+					<r>dels<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><b/><a/>detlas<b/></l>
 					<r>de<b/>las<b/></r>
 				</p>
@@ -2082,6 +2259,13 @@
 			<e>
 				<p>
 					<l><b/><a/>detlo</l>
+					<r>del</r>
+				</p>
+				<par n="caracter_general"/>
+			</e>
+			<e>
+				<p>
+					<l><b/><a/>detle</l>
 					<r>del</r>
 				</p>
 				<par n="caracter_general"/>
@@ -2096,6 +2280,13 @@
 			<e>
 				<p>
 					<l><b/><a/>detlos</l>
+					<r>dels</r>
+				</p>
+				<par n="caracter_general"/>
+			</e>
+			<e>
+				<p>
+					<l><b/><a/>detles</l>
 					<r>dels</r>
 				</p>
 				<par n="caracter_general"/>
@@ -2160,6 +2351,12 @@
 			</e>
 			<e>
 				<p>
+					<l><b/><a/>le<b/><a/>i<b/></l>
+					<r>de<b/>l'i<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><b/><a/>la<b/><a/>i<b/></l>
 					<r>de<b/>l'i<b/></r>
 				</p>
@@ -2167,6 +2364,20 @@
 			<e>
 				<p>
 					<l><b/><a/>lo<b/></l>
+					<r>de<b/>l'</r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
+					<l><b/><a/>le<b/></l>
+					<r>de<b/>l'</r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
+					<l><b/><a/>le<b/></l>
 					<r>de<b/>l'</r>
 				</p>
 				<par n="vocal_general"/>
@@ -2267,7 +2478,20 @@
 			</e>
 			<e>
 				<p>
+					<l><b/><a/>detle<b/></l>
+					<r>deu<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><b/><a/>detlo<b/></l>
+					<r>de<b/>l'</r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
+					<l><b/><a/>detle<b/></l>
 					<r>de<b/>l'</r>
 				</p>
 				<par n="vocal_general"/>
@@ -2293,6 +2517,12 @@
 			</e>
 			<e>
 				<p>
+					<l><b/><a/>detles<b/></l>
+					<r>deus<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><b/><a/>detlas<b/></l>
 					<r>de<b/>las<b/></r>
 				</p>
@@ -2300,6 +2530,13 @@
 			<e>
 				<p>
 					<l><b/><a/>detlo</l>
+					<r>deu</r>
+				</p>
+				<par n="caracter_general"/>
+			</e>
+			<e>
+				<p>
+					<l><b/><a/>detle</l>
 					<r>deu</r>
 				</p>
 				<par n="caracter_general"/>
@@ -2314,6 +2551,13 @@
 			<e>
 				<p>
 					<l><b/><a/>detlos</l>
+					<r>deus</r>
+				</p>
+				<par n="caracter_general"/>
+			</e>
+			<e>
+				<p>
+					<l><b/><a/>detles</l>
 					<r>deus</r>
 				</p>
 				<par n="caracter_general"/>
@@ -2407,7 +2651,20 @@
 			</e>
 			<e>
 				<p>
+					<l><b/><a/>le<b/></l>
+					<r>de'u<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><b/><a/>lo<b/></l>
+					<r>de<b/>l'</r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
+					<l><b/><a/>le<b/></l>
 					<r>de<b/>l'</r>
 				</p>
 				<par n="vocal_general"/>
@@ -2422,6 +2679,12 @@
 			<e>
 				<p>
 					<l><b/><a/>los<b/></l>
+					<r>de'us<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><b/><a/>les<b/></l>
 					<r>de'us<b/></r>
 				</p>
 			</e>
@@ -2519,6 +2782,12 @@
 			</e>
 			<e>
 				<p>
+					<l><b/><a/>le<b/><a/>i<b/></l>
+					<r>de<b/>l'i<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><b/><a/>la<b/><a/>i<b/></l>
 					<r>de<b/>l'i<b/></r>
 				</p>
@@ -2526,6 +2795,13 @@
 			<e>
 				<p>
 					<l><b/><a/>lo<b/></l>
+					<r>de<b/>l'</r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
+					<l><b/><a/>le<b/></l>
 					<r>de<b/>l'</r>
 				</p>
 				<par n="vocal_general"/>
@@ -2737,6 +3013,12 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>detle<b/></l>
+					<r>le<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><a/>detlas<b/></l>
 					<r>las<b/></r>
 				</p>
@@ -2745,6 +3027,12 @@
 				<p>
 					<l><a/>detlos<b/></l>
 					<r>los<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><a/>detles<b/></l>
+					<r>les<b/></r>
 				</p>
 			</e>
 			<e>
@@ -2763,6 +3051,13 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>detle</l>
+					<r>le</r>
+				</p>
+				<par n="caracter_general"/>
+			</e>
+			<e>
+				<p>
 					<l><a/>detlas</l>
 					<r>las</r>
 				</p>
@@ -2772,6 +3067,13 @@
 				<p>
 					<l><a/>detlos</l>
 					<r>los</r>
+				</p>
+				<par n="caracter_general"/>
+			</e>
+			<e>
+				<p>
+					<l><a/>detles</l>
+					<r>les</r>
 				</p>
 				<par n="caracter_general"/>
 			</e>
@@ -2817,7 +3119,19 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>vèrs<b/><a/>detle<b/></l>
+					<r>vèl<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><a/>vèrs<b/><a/>detlos<b/></l>
+					<r>vèls<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><a/>vèrs<b/><a/>detles<b/></l>
 					<r>vèls<b/></r>
 				</p>
 			</e>
@@ -2849,6 +3163,13 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>vèrs<b/><a/>detle<b/></l>
+					<r>vèrs<b/>l'</r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
 					<l><a/>vèrs<b/><a/>cnjse</l>
 					<r>vèrs<b/>s</r>
 				</p>
@@ -2871,7 +3192,19 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>tà<b/><a/>detle<b/></l>
+					<r>tau<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><a/>tà<b/><a/>detlos<b/></l>
+					<r>taus<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><a/>tà<b/><a/>detles<b/></l>
 					<r>taus<b/></r>
 				</p>
 			</e>
@@ -2903,6 +3236,13 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>tà<b/><a/>detle<b/></l>
+					<r>tà<b/>l'</r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
 					<l><a/>tà<b/><a/>cnjse</l>
 					<r>tà<b/>s</r>
 				</p>
@@ -2925,7 +3265,19 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>entà<b/><a/>detle<b/></l>
+					<r>entau<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><a/>entà<b/><a/>detlos<b/></l>
+					<r>entaus<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><a/>entà<b/><a/>detles<b/></l>
 					<r>entaus<b/></r>
 				</p>
 			</e>
@@ -2957,6 +3309,13 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>entà<b/><a/>detle<b/></l>
+					<r>entà<b/>l'</r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
 					<l><a/>entà<b/><a/>cnjse</l>
 					<r>entà<b/>s</r>
 				</p>
@@ -2979,7 +3338,19 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>ende<b/><a/>detle<b/></l>
+					<r>endeu<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><a/>ende<b/><a/>detlos<b/></l>
+					<r>endeus<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><a/>ende<b/><a/>detles<b/></l>
 					<r>endeus<b/></r>
 				</p>
 			</e>
@@ -3011,6 +3382,13 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>ende<b/><a/>detle<b/></l>
+					<r>ende<b/>l'</r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
 					<l><a/>ende<b/><a/>cnjse</l>
 					<r>ende<b/>s</r>
 				</p>
@@ -3033,7 +3411,19 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>dambe<b/><a/>detle<b/></l>
+					<r>dambeu<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><a/>dambe<b/><a/>detlos<b/></l>
+					<r>dambeus<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><a/>dambe<b/><a/>detles<b/></l>
 					<r>dambeus<b/></r>
 				</p>
 			</e>
@@ -3059,6 +3449,13 @@
 			<e>
 				<p>
 					<l><a/>dambe<b/><a/>detlo<b/></l>
+					<r>dambe<b/>l'</r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
+					<l><a/>dambe<b/><a/>detle<b/></l>
 					<r>dambe<b/>l'</r>
 				</p>
 				<par n="vocal_general"/>
@@ -3121,13 +3518,32 @@
 		</e>
 		<e>
 			<p>
+				<l><a/>que<b/><a/>detle<b/></l>
+				<r>que<b/>le<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
 				<l><a/>que<b/><a/>detlos<b/></l>
 				<r>que<b/>los<b/></r>
 			</p>
 		</e>
 		<e>
 			<p>
+				<l><a/>que<b/><a/>detles<b/></l>
+				<r>que<b/>les<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
 				<l><a/>que<b/><a/>detlo<b/></l>
+				<r>que<b/>l'</r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>que<b/><a/>detle<b/></l>
 				<r>que<b/>l'</r>
 			</p>
 			<par n="vocal_general"/>
@@ -3159,13 +3575,32 @@
 		</e>
 		<e>
 			<p>
+				<l><a/>que<b/><a/>a<b/><a/>detle<b/></l>
+				<r>qu'al<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
 				<l><a/>que<b/><a/>a<b/><a/>detlos<b/></l>
 				<r>qu'als<b/></r>
 			</p>
 		</e>
 		<e>
 			<p>
+				<l><a/>que<b/><a/>a<b/><a/>detles<b/></l>
+				<r>qu'als<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
 				<l><a/>que<b/><a/>a<b/><a/>detlo<b/></l>
+				<r>qu'a<b/>l'</r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>que<b/><a/>a<b/><a/>detle<b/></l>
 				<r>qu'a<b/>l'</r>
 			</p>
 			<par n="vocal_general"/>
@@ -3180,14 +3615,33 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>que<b/><a/>le<b/></l>
+					<r>que<b/>le<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><a/>que<b/><a/>los<b/></l>
 					<r>que<b/>los<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><a/>que<b/><a/>les<b/></l>
+					<r>que<b/>les<b/></r>
 				</p>
 			</e>
 		-->
 		<e>
 			<p>
 				<l><a/>que<b/><a/>lo<b/></l>
+				<r>que<b/>l'</r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>que<b/><a/>le<b/></l>
 				<r>que<b/>l'</r>
 			</p>
 			<par n="vocal_general"/>
@@ -3229,13 +3683,39 @@
 		</e>
 		<e>
 			<p>
+				<l><a/>le<b/><a/>ne<b/></l>
+				<r>le</r>
+			</p>
+			<par n="en_apostrofat"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>le<b/><a/>ne<b/></l>
+				<r>le</r>
+			</p>
+			<par n="en_apostrofat"/>
+		</e>
+		<e>
+			<p>
 				<l><a/>a<b/><a/>detlo<b/></l>
 				<r>al<b/></r>
 			</p>
 		</e>
 		<e>
 			<p>
+				<l><a/>a<b/><a/>detle<b/></l>
+				<r>al<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
 				<l><a/>a<b/><a/>detlos<b/></l>
+				<r>als<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
+				<l><a/>a<b/><a/>detles<b/></l>
 				<r>als<b/></r>
 			</p>
 		</e>
@@ -3248,13 +3728,32 @@
 		</e>
 		<e>
 			<p>
+				<l><a/>a<b/><a/>detle<b/></l>
+				<r>a<b/>l'</r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
 				<l><a/>jos<b/><a/>detlo<b/></l>
 				<r>jol<b/></r>
 			</p>
 		</e>
 		<e>
 			<p>
+				<l><a/>jos<b/><a/>detle<b/></l>
+				<r>jol<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
 				<l><a/>jos<b/><a/>detlos<b/></l>
+				<r>jols<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
+				<l><a/>jos<b/><a/>detles<b/></l>
 				<r>jols<b/></r>
 			</p>
 		</e>
@@ -3286,6 +3785,13 @@
 		</e>
 		<e>
 			<p>
+				<l><a/>jos<b/><a/>detle<b/></l>
+				<r>jos<b/>l'</r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
 				<l><a/>jos<b/><a/>cnjse</l>
 				<r>jos<b/>s</r>
 			</p>
@@ -3300,6 +3806,12 @@
 		<e>
 			<p>
 				<l><a/>sus<b/><a/>detlo<b/></l>
+				<r>sul<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
+				<l><a/>sus<b/><a/>detle<b/></l>
 				<r>sul<b/></r>
 			</p>
 		</e>
@@ -3330,7 +3842,20 @@
 		</e>
 		<e>
 			<p>
+				<l><a/>sus<b/><a/>detles<b/></l>
+				<r>suls<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
 				<l><a/>sus<b/><a/>detlo<b/></l>
+				<r>sus<b/>l'</r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>sus<b/><a/>detle<b/></l>
 				<r>sus<b/>l'</r>
 			</p>
 			<par n="vocal_general"/>
@@ -3527,6 +4052,12 @@
 		</e>
 		<e>
 			<p>
+				<l><a/>le<b/><a/>i<b/></l>
+				<r>l'i<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
 				<l><a/>la<b/><a/>i<b/></l>
 				<r>l'i<b/></r>
 			</p>
@@ -3542,6 +4073,13 @@
 		</e>
 		<e>
 			<p>
+				<l><a/>me<b/><a/>le<b/></l>
+				<r>le<b/>m</r>
+			</p>
+			<par n="pronoms_aprost_oc"/>
+		</e>
+		<e>
+			<p>
 				<l><a/>me<b/><a/>o<b/></l>
 				<r>o<b/>m</r>
 			</p>
@@ -3551,6 +4089,13 @@
 			<p>
 				<l><a/>me<b/><a/>los<b/></l>
 				<r>los<b/>m</r>
+			</p>
+			<par n="pronoms_aprost_oc"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>me<b/><a/>les<b/></l>
+				<r>les<b/>m</r>
 			</p>
 			<par n="pronoms_aprost_oc"/>
 		</e>
@@ -3572,6 +4117,13 @@
 		<e>
 			<p>
 				<l><a/>me<b/><a/>lo<b/></l>
+				<r>me<b/>l'</r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>me<b/><a/>le<b/></l>
 				<r>me<b/>l'</r>
 			</p>
 			<par n="vocal_general"/>
@@ -3605,6 +4157,13 @@
 		</e>
 		<e>
 			<p>
+				<l><a/>te<b/><a/>le<b/></l>
+				<r>le<b/>t</r>
+			</p>
+			<par n="pronoms_aprost_oc"/>
+		</e>
+		<e>
+			<p>
 				<l><a/>te<b/><a/>o<b/></l>
 				<r>o<b/>t</r>
 			</p>
@@ -3614,6 +4173,13 @@
 			<p>
 				<l><a/>te<b/><a/>los<b/></l>
 				<r>los<b/>t</r>
+			</p>
+			<par n="pronoms_aprost_oc"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>te<b/><a/>les<b/></l>
+				<r>les<b/>t</r>
 			</p>
 			<par n="pronoms_aprost_oc"/>
 		</e>
@@ -3635,6 +4201,13 @@
 		<e>
 			<p>
 				<l><a/>te<b/><a/>lo<b/></l>
+				<r>te<b/>l'</r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>te<b/><a/>le<b/></l>
 				<r>te<b/>l'</r>
 			</p>
 			<par n="vocal_general"/>
@@ -3676,8 +4249,22 @@
 		<!--
 		<e>
 			<p>
+				<l><a/>se<b/><a/>le<b/></l>
+				<r>le<b/>s</r>
+			</p>
+			<par n="pronoms_aprost_oc"/>
+		</e>
+		<e>
+			<p>
 				<l><a/>se<b/><a/>lo<b/></l>
 				<r>lo<b/>s</r>
+			</p>
+			<par n="pronoms_aprost_oc"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>se<b/><a/>les<b/></l>
+				<r>les<b/>s</r>
 			</p>
 			<par n="pronoms_aprost_oc"/>
 		</e>
@@ -3712,6 +4299,13 @@
 		</e>
 		<e>
 			<p>
+				<l><a/>se<b/><a/>le<b/></l>
+				<r>se<b/>l'</r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
 				<l><a/>se<b/><a/>la<b/></l>
 				<r>se<b/>l'</r>
 			</p>
@@ -3737,6 +4331,12 @@
 		</e>
 		<e>
 			<p>
+				<l><a/>nos<b/><a/>le<b/></l>
+				<r>le<b/>nos<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
 				<l><a/>nos<b/><a/>o<b/></l>
 				<r>o<b/>nos<b/></r>
 			</p>
@@ -3745,6 +4345,12 @@
 			<p>
 				<l><a/>nos<b/><a/>los<b/></l>
 				<r>los<b/>nos<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
+				<l><a/>nos<b/><a/>les<b/></l>
+				<r>les<b/>nos<b/></r>
 			</p>
 		</e>
 		<e>
@@ -3767,6 +4373,12 @@
 		</e>
 		<e>
 			<p>
+				<l><a/>vos<b/><a/>le<b/></l>
+				<r>le<b/>vos<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
 				<l><a/>vos<b/><a/>o<b/></l>
 				<r>o<b/>vos<b/></r>
 			</p>
@@ -3775,6 +4387,12 @@
 			<p>
 				<l><a/>vos<b/><a/>los<b/></l>
 				<r>los<b/>vos<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
+				<l><a/>vos<b/><a/>les<b/></l>
+				<r>les<b/>vos<b/></r>
 			</p>
 		</e>
 		<e>
@@ -3797,6 +4415,12 @@
 		</e>
 		<e>
 			<p>
+				<l><a/>li<b/><a/>le<b/></l>
+				<r>le<b/>li<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
 				<l><a/>li<b/><a/>o<b/></l>
 				<r>o<b/>li<b/></r>
 			</p>
@@ -3805,6 +4429,12 @@
 			<p>
 				<l><a/>li<b/><a/>los<b/></l>
 				<r>los<b/>li<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
+				<l><a/>li<b/><a/>les<b/></l>
+				<r>les<b/>li<b/></r>
 			</p>
 		</e>
 		<e>
@@ -3827,6 +4457,12 @@
 		</e>
 		<e>
 			<p>
+				<l><a/>lor<b/><a/>le<b/></l>
+				<r>le<b/>lor<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
 				<l><a/>lor<b/><a/>o<b/></l>
 				<r>o<b/>lor<b/></r>
 			</p>
@@ -3835,6 +4471,12 @@
 			<p>
 				<l><a/>lor<b/><a/>los<b/></l>
 				<r>los<b/>lor<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
+				<l><a/>lor<b/><a/>les<b/></l>
+				<r>les<b/>lor<b/></r>
 			</p>
 		</e>
 		<e>
@@ -3895,6 +4537,14 @@
 			<par n="quotes_empty"/>
 			<p>
 				<l><a/>detlo<b/></l>
+				<r>l'</r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<par n="quotes_empty"/>
+			<p>
+				<l><a/>detle<b/></l>
 				<r>l'</r>
 			</p>
 			<par n="vocal_general"/>
@@ -3978,6 +4628,13 @@
 		</e>
 		<e>
 			<p>
+				<l><a/>le<b/></l>
+				<r>l'</r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
 				<l><a/>la<b/></l>
 				<r>l'</r>
 			</p>
@@ -3993,6 +4650,13 @@
 		<e>
 			<p>
 				<l><a/>que<b/><a/>lo<b/></l>
+				<r>que<b/>l'</r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>que<b/><a/>le<b/></l>
 				<r>que<b/>l'</r>
 			</p>
 			<par n="vocal_general"/>
@@ -4014,6 +4678,13 @@
 		<e>
 			<par n="quotes_empty"/>
 			<p>
+				<l><a/>detle</l>
+				<r>le</r>
+			</p>
+		</e>
+		<e>
+			<par n="quotes_empty"/>
+			<p>
 				<l><a/>detlas</l>
 				<r>las</r>
 			</p>
@@ -4025,6 +4696,14 @@
 				<r>los</r>
 			</p>
 		</e>
+		<e>
+			<par n="quotes_empty"/>
+			<p>
+				<l><a/>detles</l>
+				<r>les</r>
+			</p>
+		</e>
+
 
 		<e>
 			<p>
@@ -4046,6 +4725,18 @@
 			<par n="quotes"/>
 			<p>
 				<l><a/>detlo<b/></l>
+				<r>l'</r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>de<b/></l>
+				<r>de<b/></r>
+			</p>
+			<par n="quotes"/>
+			<p>
+				<l><a/>detle<b/></l>
 				<r>l'</r>
 			</p>
 			<par n="vocal_general"/>
