@@ -735,25 +735,25 @@
 		<pardef n="ad_aran">
 			<e>
 				<p>
-					<l><b/><a/>prneth<b/></l>
+					<l><b/><a/>eth<b/></l>
 					<r>da<b/>eth<b/></r>
 				</p>
 			</e>
 			<e>
 				<p>
-					<l><b/><a/>prnera<b/></l> 
+					<l><b/><a/>era<b/></l> 
 					<r>da<b/>era<b/></r>
 				</p>
 			</e>
 			<e>
 				<p>
-					<l><b/><a/>prneri<b/></l>
+					<l><b/><a/>eri<b/></l>
 					<r>da<b/>eri<b/></r>
 				</p>
 			</e>
 			<e>
 				<p>
-					<l><b/><a/>prneres<b/></l> 
+					<l><b/><a/>eres<b/></l> 
 					<r>da<b/>eres<b/></r>
 				</p>
 			</e>
@@ -774,25 +774,25 @@
 		<pardef n="ad_gascon">
 			<e>
 				<p>
-					<l><b/><a/>prneth<b/></l>
+					<l><b/><a/>eth<b/></l>
 					<r>d<b/>eth<b/></r>
 				</p>
 			</e>
 			<e>
 				<p>
-					<l><b/><a/>prnera<b/></l> 
+					<l><b/><a/>era<b/></l> 
 					<r>d<b/>era<b/></r>
 				</p>
 			</e>
 			<e>
 				<p>
-					<l><b/><a/>prneths<b/></l>
+					<l><b/><a/>eths<b/></l>
 					<r>d<b/>eths<b/></r>
 				</p>
 			</e>
 			<e>
 				<p>
-					<l><b/><a/>prneras<b/></l> 
+					<l><b/><a/>eras<b/></l> 
 					<r>d<b/>eras<b/></r>
 				</p>
 			</e>
@@ -1611,32 +1611,32 @@
 			</e>
 			<e>
 				<p>
-					<l>th<b/><a/>de<b/><a/>eth</l>
+					<l>th<b/><a/>de<b/><a/>deteth</l>
 					<r>th<b/>deth</r>
 				</p>
 			</e>
 			<e>
 				<p>
-					<l>th<b/><a/>de<b/><a/>era</l>
+					<l>th<b/><a/>de<b/><a/>detera</l>
 					<r>th<b/>dera</r>
 				</p>
 			</e>
 			<e>
 				<p>
-					<l>th<b/><a/>de<b/><a/>es</l>
+					<l>th<b/><a/>de<b/><a/>detes</l>
 					<r>th<b/>des</r>
 				</p>
 			</e>
 			<e>
 				<p>
-					<l>th<b/><a/>de<b/><a/>eth<b/></l>
+					<l>th<b/><a/>de<b/><a/>deteth<b/></l>
 					<r>th<b/>der<b/></r>
 				</p>
 				<par n="vocal_general"/>
 			</e>
 			<e>
 				<p>
-					<l>th<b/><a/>de<b/><a/>eth<b/><a/></l>
+					<l>th<b/><a/>de<b/><a/>deteth<b/><a/></l>
 					<r>th<b/>der<b/><a/></r>
 				</p>
 				<par n="vocal_general"/>
@@ -2021,7 +2021,7 @@
 		<pardef n="contraccio_en">
 			<e>
 				<p>
-					<l><a/>eth<b/></l>
+					<l><a/>deteth<b/></l>
 					<r><b/></r>
 				</p>
 			</e>
@@ -2033,13 +2033,13 @@
 			</e>-->
 			<e>
 				<p>
-					<l><a/>era</l>
+					<l><a/>detera</l>
 					<r>a</r>
 				</p>
 			</e>
 			<e>
 				<p>
-					<l><a/>es</l>
+					<l><a/>detes</l>
 					<r>es</r>
 				</p>
 			</e>
@@ -2419,37 +2419,37 @@
 			</e>
 			<e>
 				<p>
-					<l><b/><a/>prnera</l>
+					<l><b/><a/>era</l>
 					<r>d'era</r>
 				</p>
 			</e>
 			<e>
 				<p>
-					<l><b/><a/>prneth</l>
+					<l><b/><a/>eth</l>
 					<r>d'eth</r>
 				</p>
 			</e>
 			<e>
 				<p>
-					<l><b/><a/>prneras</l>
+					<l><b/><a/>eras</l>
 					<r>d'eras</r>
 				</p>
 			</e>
 			<e>
 				<p>
-					<l><b/><a/>prneths</l>
+					<l><b/><a/>eths</l>
 					<r>d'eths</r>
 				</p>
 			</e>
 			<e>
 				<p>
-					<l><b/><a/>prneres</l>
+					<l><b/><a/>eres</l>
 					<r>d'eres</r>
 				</p>
 			</e>
 			<e>
 				<p>
-					<l><b/><a/>prneri</l>
+					<l><b/><a/>eri</l>
 					<r>d'eri</r>
 				</p>
 			</e>
@@ -2843,37 +2843,37 @@
 			</e>
 			<e>
 				<p>
-					<l><b/><a/>prnera</l>
+					<l><b/><a/>era</l>
 					<r>d'era</r>
 				</p>
 			</e>
 			<e>
 				<p>
-					<l><b/><a/>prneth</l>
+					<l><b/><a/>eth</l>
 					<r>d'eth</r>
 				</p>
 			</e>
 			<e>
 				<p>
-					<l><b/><a/>prneras</l>
+					<l><b/><a/>eras</l>
 					<r>d'eras</r>
 				</p>
 			</e>
 			<e>
 				<p>
-					<l><b/><a/>prneths</l>
+					<l><b/><a/>eths</l>
 					<r>d'eths</r>
 				</p>
 			</e>
 			<e>
 				<p>
-					<l><b/><a/>prneres</l>
+					<l><b/><a/>eres</l>
 					<r>d'eres</r>
 				</p>
 			</e>
 			<e>
 				<p>
-					<l><b/><a/>prneri</l>
+					<l><b/><a/>eri</l>
 					<r>d'eri</r>
 				</p>
 			</e>
@@ -2889,55 +2889,55 @@
 		<pardef n="contraccioenta">
 			<e>
 				<p>
-					<l><b/><a/>eth</l>
+					<l><b/><a/>deteth</l>
 					<r>ath<b/></r>
 				</p>
 				<par n="no_contrac"/>
 			</e>
 			<e>
 				<p>
-					<l><b/><a/>eth<b/></l>
+					<l><b/><a/>deteth<b/></l>
 					<r>ath<b/></r>
 				</p>
 				<par n="no_contrac"/>
 			</e>
 			<e>
 				<p>
-					<l><b/><a/>eth<b/><a/></l>
+					<l><b/><a/>deteth<b/><a/></l>
 					<r>ath<b/></r>
 				</p>
 				<par n="no_contrac"/>
 			</e>
 				<e>
 				<p>
-					<l><b/><a/>eth<b/></l>
+					<l><b/><a/>deteth<b/></l>
 					<r>ad<b/></r>
 				</p>
 				<par n="vocal_general"/>
 			</e>
 			<e>
 				<p>
-					<l><b/><a/>eth<b/><a/></l>
+					<l><b/><a/>deteth<b/><a/></l>
 					<r>ad<b/><a/></r>
 				</p>
 				<par n="vocal_general"/>
 			</e>
 			<e>
 				<p>
-					<l><b/>eth</l>
+					<l><b/>deteth</l>
 					<r>ad<b/>eth</r>
 				</p>
 				<par n="caracter_general"/>
 			</e>
 			<e>
 				<p>
-					<l><b/><a/>es</l>
+					<l><b/><a/>detes</l>
 					<r>às</r>
 				</p>
 			</e>
 			<e>
 				<p>
-					<l><b/><a/>era</l>
+					<l><b/><a/>detera</l>
 					<r>ara</r>
 				</p>
 			</e>
@@ -3083,28 +3083,28 @@
 			<e>
 				<par n="quotes_empty"/>
 				<p>
-					<l><a/>prnera</l>
+					<l><a/>era</l>
 					<r>era</r>
 				</p>
 			</e>
 			<e>
 				<par n="quotes_empty"/>
 				<p>
-					<l><a/>prneth</l>
+					<l><a/>eth</l>
 					<r>eth</r>
 				</p>
 			</e>
 			<e>
 				<par n="quotes_empty"/>
 				<p>
-					<l><a/>prneras</l>
+					<l><a/>eras</l>
 					<r>eras</r>
 				</p>
 			</e>
 			<e>
 				<par n="quotes_empty"/>
 				<p>
-					<l><a/>prneths</l>
+					<l><a/>eths</l>
 					<r>eths</r>
 				</p>
 			</e>
