@@ -48,6 +48,37 @@ REMOVE (v:v_u:u) ;
 
 REMOVE (v:r_X:X) ;
 
+REMOVE (v:ora/ritz:ora) ;
+
+REMOVE (v:qui_que:qui) ;
+
+REMOVE (v:mai_mei_mes_mès:mei) ;
+REMOVE (v:mai_mei_mes_mès:mes) ;
+REMOVE (v:mai_mei_mes_mès:mès) ;
+
+SELECT (v:detposs:compausat)      IF (0 (VAR:detposs:compausat)) ;
+REMOVE (v:detposs:compausat) ;
+
+SELECT (v:poss_sg:meu_meuna_teu_teuna)      IF (0 (VAR:poss_sg:meu_meuna_teu_teuna)) ;
+REMOVE (v:poss_sg:meu_meuna_teu_teuna) ;
+SELECT (v:poss_sg:mieu_mia_tieu_tia)      IF (0 (VAR:poss_sg:mieu_mia_tieu_tia)) ;
+REMOVE (v:poss_sg:mieu_mia_tieu_tia) ;
+REMOVE (v:poss_sg:men_mea_ton_toa) ;
+REMOVE (v:poss_sg:men_mia_ton_toa) ;
+REMOVE (v:poss_sg:men_mia_ton_tua) ;
+REMOVE (v:poss_sg:mié_mia_tué_tua) ;
+REMOVE (v:poss_sg:mèn_mia_tòn_tua) ;
+REMOVE (v:poss_sg:mieu_mia_tieu_tia) ;
+
+REMOVE (v:poss_1pl:noste_voste) ;
+REMOVE (v:poss_1pl:noste_vòste) ;
+REMOVE (v:poss_1pl:nòste_vòste) ;
+
+REMOVE (v:poss_3pl:lor_loa) ;
+REMOVE (v:poss_3pl:loé_loa) ;
+
+REMOVE (v:poss_3plsg:3pl_3sg) ;
+
 
 REMOVE (d:aranes) ;
 REMOVE (d:gascon) ;

@@ -1538,6 +1538,11 @@
 					<l><a/>detle<b/></l>
 					<r>le<b/></r>
 				</p>
+			</e><e>
+				<p>
+					<l><a/>deteth<b/></l>
+					<r>eth<b/></r>
+				</p>
 			</e>
 			<e>
 				<p>
@@ -1568,6 +1573,12 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>detera<b/></l>
+					<r>era<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><a/>detlos<b/></l>
 					<r>els<b/></r>
 				</p>
@@ -1580,8 +1591,26 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>deteths<b/></l>
+					<r>eths<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><a/>detes<b/></l>
+					<r>es<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><a/>detlas<b/></l>
 					<r>las<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><a/>deteras<b/></l>
+					<r>eras<b/></r>
 				</p>
 			</e>-->
 		</pardef>
@@ -1701,6 +1730,13 @@
 			</e>
 			<e>
 				<p>
+					<l>deteth<b/></l>
+					<r>r</r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
 					<l>detlo<b/></l>
 					<r>l<b/></r>
 				</p>
@@ -1713,6 +1749,12 @@
 			</e>
 			<e>
 				<p>
+					<l>detle<b/></l>
+					<r>th<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l>detlos<b/></l>
 					<r>ls<b/></r>
 				</p>
@@ -1721,6 +1763,18 @@
 				<p>
 					<l>detles<b/></l>
 					<r>ls<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l>deteths<b/></l>
+					<r>ths<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l>detes<b/></l>
+					<r>s<b/></r>
 				</p>
 			</e>
 		</pardef>
@@ -1763,6 +1817,13 @@
 			</e>
 			<e>
 				<p>
+					<l>deteth<b/></l>
+					<r>r</r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
 					<l>detlo<b/></l>
 					<r>u<b/></r>
 				</p>
@@ -1775,6 +1836,12 @@
 			</e>
 			<e>
 				<p>
+					<l>deteth<b/></l>
+					<r>th<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l>detlos<b/></l>
 					<r>us<b/></r>
 				</p>
@@ -1783,6 +1850,18 @@
 				<p>
 					<l>detles<b/></l>
 					<r>us<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l>deteths<b/></l>
+					<r>ths<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l>detes<b/></l>
+					<r>s<b/></r>
 				</p>
 			</e>
 
@@ -1846,6 +1925,13 @@
 			</e>
 			<e>
 				<p>
+					<l>deteth<b/></l>
+					<r>r</r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
 					<l>detlo<b/></l>
 					<r>u<b/></r>
 				</p>
@@ -1858,8 +1944,26 @@
 			</e>
 			<e>
 				<p>
+					<l>deteth<b/></l>
+					<r>th<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l>detlos<b/></l>
 					<r>us<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l>deteths<b/></l>
+					<r>ths<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l>detes<b/></l>
+					<r>s<b/></r>
 				</p>
 			</e>
 			<e>
@@ -2219,6 +2323,12 @@
 			</e>
 			<e>
 				<p>
+					<l><b/><a/>deteth<b/></l>
+					<r>deth<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><b/><a/>detlo<b/></l>
 					<r>de<b/>l'</r>
 				</p>
@@ -2233,6 +2343,13 @@
 			</e>
 			<e>
 				<p>
+					<l><b/><a/>deteth<b/></l>
+					<r>der</r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
 					<l><b/><a/>detla<b/></l>
 					<r>de<b/>l'</r>
 				</p>
@@ -2240,8 +2357,21 @@
 			</e>
 			<e>
 				<p>
+					<l><b/><a/>detera<b/></l>
+					<r>dera<b/></r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
 					<l><b/><a/>detla<b/></l>
 					<r>de<b/>la<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><b/><a/>detera<b/></l>
+					<r>d'era<b/></r>
 				</p>
 			</e>
 			<e>
@@ -2258,8 +2388,26 @@
 			</e>
 			<e>
 				<p>
+					<l><b/><a/>deteths<b/></l>
+					<r>deths<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><b/><a/>detes<b/></l>
+					<r>des<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><b/><a/>detlas<b/></l>
 					<r>de<b/>las<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><b/><a/>deteras<b/></l>
+					<r>deras<b/></r>
 				</p>
 			</e>
 			<e>
@@ -2278,6 +2426,13 @@
 			</e>
 			<e>
 				<p>
+					<l><b/><a/>deteth</l>
+					<r>deth</r>
+				</p>
+				<par n="caracter_general"/>
+			</e>
+			<e>
+				<p>
 					<l><b/><a/>detla</l>
 					<r>de<b/>la</r>
 				</p>
@@ -2285,8 +2440,29 @@
 			</e>
 			<e>
 				<p>
+					<l><b/><a/>detera</l>
+					<r>dera</r>
+				</p>
+				<par n="caracter_general"/>
+			</e>
+			<e>
+				<p>
 					<l><b/><a/>detlos</l>
 					<r>dels</r>
+				</p>
+				<par n="caracter_general"/>
+			</e>
+			<e>
+				<p>
+					<l><b/><a/>deteths</l>
+					<r>deths</r>
+				</p>
+				<par n="caracter_general"/>
+			</e>
+			<e>
+				<p>
+					<l><b/><a/>detes</l>
+					<r>des</r>
 				</p>
 				<par n="caracter_general"/>
 			</e>
@@ -2301,6 +2477,13 @@
 				<p>
 					<l><b/><a/>detlas</l>
 					<r>de<b/>las</r>
+				</p>
+				<par n="caracter_general"/>
+			</e>
+			<e>
+				<p>
+					<l><b/><a/>deteras</l>
+					<r>deras</r>
 				</p>
 				<par n="caracter_general"/>
 			</e>
@@ -2418,6 +2601,13 @@
 			</e>
 			<e>
 				<p>
+					<l><b/><a/>detera<b/></l>
+					<r>dera<b/></r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
 					<l><b/><a/>era</l>
 					<r>d'era</r>
 				</p>
@@ -2483,6 +2673,12 @@
 			</e>
 			<e>
 				<p>
+					<l><b/><a/>deteth<b/></l>
+					<r>deth<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><b/><a/>detlo<b/></l>
 					<r>de<b/>l'</r>
 				</p>
@@ -2497,6 +2693,13 @@
 			</e>
 			<e>
 				<p>
+					<l><b/><a/>deteth<b/></l>
+					<r>der</r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
 					<l><b/><a/>detla<b/></l>
 					<r>de<b/>l'</r>
 				</p>
@@ -2504,8 +2707,21 @@
 			</e>
 			<e>
 				<p>
+					<l><b/><a/>detera<b/></l>
+					<r>dera<b/></r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
 					<l><b/><a/>detla<b/></l>
 					<r>de<b/>la<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><b/><a/>detera<b/></l>
+					<r>dera<b/></r>
 				</p>
 			</e>
 			<e>
@@ -2522,8 +2738,26 @@
 			</e>
 			<e>
 				<p>
+					<l><b/><a/>deteths<b/></l>
+					<r>deths<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><b/><a/>detes<b/></l>
+					<r>des<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><b/><a/>detlas<b/></l>
 					<r>de<b/>las<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><b/><a/>deteras<b/></l>
+					<r>deras<b/></r>
 				</p>
 			</e>
 			<e>
@@ -2542,8 +2776,22 @@
 			</e>
 			<e>
 				<p>
+					<l><b/><a/>deteth</l>
+					<r>deth</r>
+				</p>
+				<par n="caracter_general"/>
+			</e>
+			<e>
+				<p>
 					<l><b/><a/>detla</l>
 					<r>de<b/>la</r>
+				</p>
+				<par n="caracter_general"/>
+			</e>
+			<e>
+				<p>
+					<l><b/><a/>detera</l>
+					<r>dera</r>
 				</p>
 				<par n="caracter_general"/>
 			</e>
@@ -2563,8 +2811,29 @@
 			</e>
 			<e>
 				<p>
+					<l><b/><a/>deteths</l>
+					<r>deths</r>
+				</p>
+				<par n="caracter_general"/>
+			</e>
+			<e>
+				<p>
+					<l><b/><a/>detes</l>
+					<r>des</r>
+				</p>
+				<par n="caracter_general"/>
+			</e>
+			<e>
+				<p>
 					<l><b/><a/>detlas</l>
 					<r>de<b/>las</r>
+				</p>
+				<par n="caracter_general"/>
+			</e>
+			<e>
+				<p>
+					<l><b/><a/>deteras</l>
+					<r>deras</r>
 				</p>
 				<par n="caracter_general"/>
 			</e>
@@ -2842,6 +3111,13 @@
 			</e>
 			<e>
 				<p>
+					<l><b/><a/>detera<b/></l>
+					<r>dera<b/></r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
 					<l><b/><a/>era</l>
 					<r>d'era</r>
 				</p>
@@ -3006,6 +3282,12 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>detera<b/></l>
+					<r>era<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><a/>detlo<b/></l>
 					<r>lo<b/></r>
 				</p>
@@ -3018,8 +3300,20 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>deteth<b/></l>
+					<r>eth<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><a/>detlas<b/></l>
 					<r>las<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><a/>deteras<b/></l>
+					<r>eras<b/></r>
 				</p>
 			</e>
 			<e>
@@ -3036,8 +3330,27 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>deteths<b/></l>
+					<r>eths<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><a/>detes<b/></l>
+					<r>es<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><a/>detla</l>
 					<r>la</r>
+				</p>
+				<par n="caracter_general"/>
+			</e>
+			<e>
+				<p>
+					<l><a/>detera</l>
+					<r>era</r>
 				</p>
 				<par n="caracter_general"/>
 			</e>
@@ -3057,8 +3370,22 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>deteth</l>
+					<r>eth</r>
+				</p>
+				<par n="caracter_general"/>
+			</e>
+			<e>
+				<p>
 					<l><a/>detlas</l>
 					<r>las</r>
+				</p>
+				<par n="caracter_general"/>
+			</e>
+			<e>
+				<p>
+					<l><a/>deteras</l>
+					<r>eras</r>
 				</p>
 				<par n="caracter_general"/>
 			</e>
@@ -3073,6 +3400,20 @@
 				<p>
 					<l><a/>detles</l>
 					<r>les</r>
+				</p>
+				<par n="caracter_general"/>
+			</e>
+			<e>
+				<p>
+					<l><a/>deteths</l>
+					<r>eths</r>
+				</p>
+				<par n="caracter_general"/>
+			</e>
+			<e>
+				<p>
+					<l><a/>detes</l>
+					<r>es</r>
 				</p>
 				<par n="caracter_general"/>
 			</e>
@@ -3197,6 +3538,12 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>tà<b/><a/>deteth<b/></l>
+					<r>tath<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><a/>tà<b/><a/>detlos<b/></l>
 					<r>taus<b/></r>
 				</p>
@@ -3209,8 +3556,26 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>tà<b/><a/>deteths<b/></l>
+					<r>taths<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><a/>tà<b/><a/>detes<b/></l>
+					<r>tàs<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><a/>tà<b/><a/>detla<b/></l>
 					<r>tà<b/>la<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><a/>tà<b/><a/>detera<b/></l>
+					<r>tara<b/></r>
 				</p>
 			</e>
 			<e>
@@ -3221,8 +3586,21 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>tà<b/><a/>deteras<b/></l>
+					<r>taras<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><a/>tà<b/><a/>detla<b/></l>
 					<r>tà<b/>l'</r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
+					<l><a/>tà<b/><a/>detera<b/></l>
+					<r>tara<b/></r>
 				</p>
 				<par n="vocal_general"/>
 			</e>
@@ -3237,6 +3615,13 @@
 				<p>
 					<l><a/>tà<b/><a/>detle<b/></l>
 					<r>tà<b/>l'</r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
+					<l><a/>tà<b/><a/>deteth<b/></l>
+					<r>tar</r>
 				</p>
 				<par n="vocal_general"/>
 			</e>
@@ -3270,6 +3655,12 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>entà<b/><a/>deteth<b/></l>
+					<r>entath<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><a/>entà<b/><a/>detlos<b/></l>
 					<r>entaus<b/></r>
 				</p>
@@ -3282,8 +3673,26 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>entà<b/><a/>deteths<b/></l>
+					<r>entaths<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><a/>entà<b/><a/>detes<b/></l>
+					<r>entàs<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><a/>entà<b/><a/>detla<b/></l>
 					<r>entà<b/>la<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><a/>entà<b/><a/>detera<b/></l>
+					<r>entara<b/></r>
 				</p>
 			</e>
 			<e>
@@ -3294,8 +3703,21 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>entà<b/><a/>deteras<b/></l>
+					<r>entaras<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><a/>entà<b/><a/>detla<b/></l>
 					<r>entà<b/>l'</r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
+					<l><a/>entà<b/><a/>detera<b/></l>
+					<r>entara<b/></r>
 				</p>
 				<par n="vocal_general"/>
 			</e>
@@ -3310,6 +3732,13 @@
 				<p>
 					<l><a/>entà<b/><a/>detle<b/></l>
 					<r>entà<b/>l'</r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
+					<l><a/>entà<b/><a/>deteth<b/></l>
+					<r>entar</r>
 				</p>
 				<par n="vocal_general"/>
 			</e>
@@ -3343,6 +3772,12 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>ende<b/><a/>deteth<b/></l>
+					<r>endeth<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><a/>ende<b/><a/>detlos<b/></l>
 					<r>endeus<b/></r>
 				</p>
@@ -3355,8 +3790,26 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>ende<b/><a/>deteths<b/></l>
+					<r>endeths<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><a/>ende<b/><a/>detes<b/></l>
+					<r>endes<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><a/>ende<b/><a/>detla<b/></l>
 					<r>ende<b/>la<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><a/>ende<b/><a/>detera<b/></l>
+					<r>endera<b/></r>
 				</p>
 			</e>
 			<e>
@@ -3367,8 +3820,21 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>ende<b/><a/>deteras<b/></l>
+					<r>enderas<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><a/>ende<b/><a/>detla<b/></l>
 					<r>ende<b/>l'</r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
+					<l><a/>ende<b/><a/>detera<b/></l>
+					<r>endera<b/></r>
 				</p>
 				<par n="vocal_general"/>
 			</e>
@@ -3383,6 +3849,13 @@
 				<p>
 					<l><a/>ende<b/><a/>detle<b/></l>
 					<r>ende<b/>l'</r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
+					<l><a/>ende<b/><a/>deteth<b/></l>
+					<r>ender</r>
 				</p>
 				<par n="vocal_general"/>
 			</e>
@@ -3416,6 +3889,12 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>dambe<b/><a/>deteth<b/></l>
+					<r>dambeth<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><a/>dambe<b/><a/>detlos<b/></l>
 					<r>dambeus<b/></r>
 				</p>
@@ -3428,14 +3907,38 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>dambe<b/><a/>deteths<b/></l>
+					<r>dambeths<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><a/>dambe<b/><a/>detes<b/></l>
+					<r>dambes<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><a/>dambe<b/><a/>detla<b/></l>
 					<r>dambe<b/>la<b/></r>
 				</p>
 			</e>
 			<e>
 				<p>
+					<l><a/>dambe<b/><a/>detera<b/></l>
+					<r>dambera<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l><a/>dambe<b/><a/>detlas<b/></l>
 					<r>dambe<b/>las<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><a/>dambe<b/><a/>deteras<b/></l>
+					<r>damberas<b/></r>
 				</p>
 			</e>
 			<e>
@@ -3447,8 +3950,22 @@
 			</e>
 			<e>
 				<p>
+					<l><a/>dambe<b/><a/>detera<b/></l>
+					<r>dambera<b/></r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
 					<l><a/>dambe<b/><a/>detlo<b/></l>
 					<r>dambe<b/>l'</r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
+					<l><a/>dambe<b/><a/>deteth<b/></l>
+					<r>dambeth</r>
 				</p>
 				<par n="vocal_general"/>
 			</e>
@@ -3518,8 +4035,22 @@
 		</e>
 		<e>
 			<p>
+				<l><a/>detera<b/></l>
+				<r>era<b/></r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
 				<l><a/>detlo<b/></l>
 				<r>l'</r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>deteth<b/></l>
+				<r>er<b/></r>
 			</p>
 			<par n="vocal_general"/>
 		</e>
@@ -3544,6 +4075,12 @@
 		</e>
 		<e>
 			<p>
+				<l><a/>que<b/><a/>deteth<b/></l>
+				<r>qu'eth<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
 				<l><a/>que<b/><a/>detlos<b/></l>
 				<r>que<b/>los<b/></r>
 			</p>
@@ -3556,8 +4093,27 @@
 		</e>
 		<e>
 			<p>
+				<l><a/>que<b/><a/>deteths<b/></l>
+				<r>que'eths<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
+				<l><a/>que<b/><a/>detes<b/></l>
+				<r>que'es<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
 				<l><a/>que<b/><a/>detlo<b/></l>
 				<r>que<b/>l'</r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>que<b/><a/>deteth<b/></l>
+				<r>qu'er</r>
 			</p>
 			<par n="vocal_general"/>
 		</e>
@@ -3576,8 +4132,20 @@
 		</e>
 		<e>
 			<p>
+				<l><a/>que<b/><a/>detera<b/></l>
+				<r>qu'era<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
 				<l><a/>que<b/><a/>detlas<b/></l>
 				<r>que<b/>las<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
+				<l><a/>que<b/><a/>deteras<b/></l>
+				<r>qu'eras<b/></r>
 			</p>
 		</e>
 		<e>
@@ -3589,7 +4157,20 @@
 		</e>
 		<e>
 			<p>
+				<l><a/>que<b/><a/>detera<b/></l>
+				<r>qu'era<b/></r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
 				<l><a/>que<b/><a/>a<b/><a/>detlo<b/></l>
+				<r>qu'au<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
+				<l><a/>que<b/><a/>a<b/><a/>detle<b/></l>
 				<r>qu'au<b/></r>
 			</p>
 		</e>
@@ -3602,6 +4183,13 @@
 		<e>
 			<p>
 				<l><a/>que<b/><a/>a<b/><a/>detlo<b/></l>
+				<r>qu'a<b/>l'</r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>que<b/><a/>a<b/><a/>detle<b/></l>
 				<r>qu'a<b/>l'</r>
 			</p>
 			<par n="vocal_general"/>
@@ -3641,6 +4229,12 @@
 		</e>
 		<e>
 			<p>
+				<l><a/>qui<b/><a/>detle<b/></l>
+				<r>qui<b/>le<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
 				<l><a/>qui<b/><a/>detlos<b/></l>
 				<r>qui<b/>los<b/></r>
 			</p>
@@ -3648,6 +4242,13 @@
 		<e>
 			<p>
 				<l><a/>qui<b/><a/>detlo<b/></l>
+				<r>qui<b/>l'</r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>qui<b/><a/>detle<b/></l>
 				<r>qui<b/>l'</r>
 			</p>
 			<par n="vocal_general"/>
@@ -3686,6 +4287,12 @@
 		</e>
 		<e>
 			<p>
+				<l><a/>qui<b/><a/>deteras<b/></l>
+				<r>qui<b/>eras<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
 				<l><a/>qui<b/><a/>detla<b/></l>
 				<r>qui<b/>l'</r>
 			</p>
@@ -3699,6 +4306,18 @@
 		</e>
 		<e>
 			<p>
+				<l><a/>qui<b/><a/>a<b/><a/>detle<b/></l>
+				<r>qui<b/>au<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
+				<l><a/>qui<b/><a/>a<b/><a/>deteth<b/></l>
+				<r>qui<b/>ayh<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
 				<l><a/>qui<b/><a/>a<b/><a/>detlos<b/></l>
 				<r>qui<b/>aus<b/></r>
 			</p>
@@ -3706,6 +4325,13 @@
 		<e>
 			<p>
 				<l><a/>qui<b/><a/>a<b/><a/>detlo<b/></l>
+				<r>qui<b/>a<b/>l'</r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>qui<b/><a/>a<b/><a/>detle<b/></l>
 				<r>qui<b/>a<b/>l'</r>
 			</p>
 			<par n="vocal_general"/>
@@ -3745,6 +4371,12 @@
 		</e>
 		<e>
 			<p>
+				<l><a/>si<b/><a/>detle<b/></l>
+				<r>si<b/>le<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
 				<l><a/>si<b/><a/>detlos<b/></l>
 				<r>si<b/>los<b/></r>
 			</p>
@@ -3752,6 +4384,13 @@
 		<e>
 			<p>
 				<l><a/>si<b/><a/>detlo<b/></l>
+				<r>si<b/>l'</r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>si<b/><a/>detle<b/></l>
 				<r>si<b/>l'</r>
 			</p>
 			<par n="vocal_general"/>
@@ -3856,14 +4495,58 @@
 		</e>
 		<e>
 			<p>
+				<l><a/>a<b/><a/>detle<b/></l>
+				<r>au<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
+				<l><a/>a<b/><a/>deteth<b/></l>
+				<r>ath<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
 				<l><a/>a<b/><a/>detlos<b/></l>
 				<r>aus<b/></r>
 			</p>
 		</e>
 		<e>
 			<p>
+				<l><a/>a<b/><a/>detles<b/></l>
+				<r>aus<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
+				<l><a/>a<b/><a/>deteths<b/></l>
+				<r>aths<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
+				<l><a/>a<b/><a/>detes<b/></l>
+				<r>as<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
 				<l><a/>a<b/><a/>detlo<b/></l>
 				<r>a<b/>l'</r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>a<b/><a/>detlo<b/></l>
+				<r>a<b/>l'</r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>a<b/><a/>deteth<b/></l>
+				<r>ar</r>
 			</p>
 			<par n="vocal_general"/>
 		</e>
@@ -3914,6 +4597,18 @@
 		</e>
 		<e>
 			<p>
+				<l><a/>jos<b/><a/>detle<b/></l>
+				<r>jol<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
+				<l><a/>jos<b/><a/>detlos<b/></l>
+				<r>jols<b/></r>
+			</p>
+		</e>
+		<e>
+			<p>
 				<l><a/>jos<b/><a/>detlos<b/></l>
 				<r>jols<b/></r>
 			</p>
@@ -3952,6 +4647,13 @@
 		<e>
 			<p>
 				<l><a/>jos<b/><a/>detlo<b/></l>
+				<r>jos<b/>l'</r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>jos<b/><a/>detle<b/></l>
 				<r>jos<b/>l'</r>
 			</p>
 			<par n="vocal_general"/>
@@ -4183,6 +4885,13 @@
 		</e>
 		<e>
 			<p>
+				<l><a/>detera<b/></l>
+				<r>era<b/></r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
 				<l><a/>detlo<b/></l>
 				<r>l'</r>
 			</p>
@@ -4192,6 +4901,13 @@
 			<p>
 				<l><a/>detle<b/></l>
 				<r>l'</r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>deteth<b/></l>
+				<r>er<b/></r>
 			</p>
 			<par n="vocal_general"/>
 		</e>
@@ -5965,6 +6681,14 @@
 		<e>
 			<par n="quotes_empty"/>
 			<p>
+				<l><a/>detera<b/></l>
+				<r>era<b/></r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<par n="quotes_empty"/>
+			<p>
 				<l><a/>detlo<b/></l>
 				<r>l'</r>
 			</p>
@@ -5975,6 +6699,14 @@
 			<p>
 				<l><a/>detle<b/></l>
 				<r>l'</r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<par n="quotes_empty"/>
+			<p>
+				<l><a/>deteth<b/></l>
+				<r>er<b/></r>
 			</p>
 			<par n="vocal_general"/>
 		</e>
@@ -6100,6 +6832,13 @@
 		<e>
 			<par n="quotes_empty"/>
 			<p>
+				<l><a/>detera</l>
+				<r>era</r>
+			</p>
+		</e>
+		<e>
+			<par n="quotes_empty"/>
+			<p>
 				<l><a/>detlo</l>
 				<r>lo</r>
 			</p>
@@ -6114,8 +6853,22 @@
 		<e>
 			<par n="quotes_empty"/>
 			<p>
+				<l><a/>deteth</l>
+				<r>eth</r>
+			</p>
+		</e>
+		<e>
+			<par n="quotes_empty"/>
+			<p>
 				<l><a/>detlas</l>
 				<r>las</r>
+			</p>
+		</e>
+		<e>
+			<par n="quotes_empty"/>
+			<p>
+				<l><a/>deteras</l>
+				<r>eras</r>
 			</p>
 		</e>
 		<e>
@@ -6132,6 +6885,20 @@
 				<r>les</r>
 			</p>
 		</e>
+		<e>
+			<par n="quotes_empty"/>
+			<p>
+				<l><a/>deteths</l>
+				<r>eths</r>
+			</p>
+		</e>
+		<e>
+			<par n="quotes_empty"/>
+			<p>
+				<l><a/>detes</l>
+				<r>es</r>
+			</p>
+		</e>
 
 		<e>
 			<p>
@@ -6142,6 +6909,18 @@
 			<p>
 				<l><a/>detla<b/></l>
 				<r>l'</r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>de<b/></l>
+				<r>de<b/></r>
+			</p>
+			<par n="quotes"/>
+			<p>
+				<l><a/>detera<b/></l>
+				<r>era<b/></r>
 			</p>
 			<par n="vocal_general"/>
 		</e>
@@ -6166,6 +6945,18 @@
 			<p>
 				<l><a/>detle<b/></l>
 				<r>l'</r>
+			</p>
+			<par n="vocal_general"/>
+		</e>
+		<e>
+			<p>
+				<l><a/>de<b/></l>
+				<r>de<b/></r>
+			</p>
+			<par n="quotes"/>
+			<p>
+				<l><a/>deteth<b/></l>
+				<r>er<b/></r>
 			</p>
 			<par n="vocal_general"/>
 		</e>

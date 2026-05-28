@@ -59,6 +59,42 @@ REMOVE (v:v_u:u) ;
 
 REMOVE (v:r_X:r) ;
 
+REMOVE (v:ora/ritz:ritz) ;
+
+SELECT (v:qui_que:que)      IF (0 (VAR:qui_que:que)) ;
+REMOVE (v:qui_que:que) ;
+
+SELECT (v:mai_mei_mes_mès:mes)      IF (0 (VAR:mai_mei_mes_mès:mes)) ;
+REMOVE (v:mai_mei_mes_mès:mes) ;
+REMOVE (v:mai_mei_mes_mès:mai) ;
+REMOVE (v:mai_mei_mes_mès:mès) ;
+
+REMOVE (v:detposs:simple) ;
+
+SELECT (v:poss_sg:men_mia_ton_toa)      IF (0 (VAR:poss_sg:men_mia_ton_toa)) ;
+REMOVE (v:poss_sg:men_mia_ton_toa) ;
+SELECT (v:poss_sg:men_mia_ton_tua)      IF (0 (VAR:men_mia_ton_tua:meu_meuna_teu_teuna)) ;
+REMOVE (v:poss_sg:men_mia_ton_tua) ;
+SELECT (v:poss_sg:mié_mia_tué_tua)      IF (0 (VAR:mié_mia_tué_tua:meu_meuna_teu_teuna)) ;
+REMOVE (v:poss_sg:mié_mia_tué_tua) ;
+REMOVE (v:poss_sg:mèn_mia_tòn_tua) ;
+REMOVE (v:poss_sg:mieu_mieuna_tieu_tieuna) ;
+REMOVE (v:poss_sg:meu_meuna_teu_teuna) ;
+REMOVE (v:poss_sg:mieu_mia_tieu_tia) ;
+
+SELECT (v:poss_1pl:nòste_vòste)      IF (0 (VAR:poss_1pl:nòste_vòste)) ;
+REMOVE (v:poss_1pl:nòste_vòste) ;
+REMOVE (v:poss_1pl:noste_voste) ;
+REMOVE (v:poss_1pl:nòstre_vòstre) ;
+
+SELECT (v:poss_3pl:lor_loa)      IF (0 (VAR:poss_3pl:lor_loa)) ;
+REMOVE (v:poss_3pl:lor_loa) ;
+SELECT (v:poss_3pl:loé_loa)      IF (0 (VAR:poss_3pl:loé_loa)) ;
+REMOVE (v:poss_3pl:loé_loa) ;
+
+SELECT (v:poss_3plsg:3pl_3sg)      IF (0 (VAR:poss_3plsg:3pl_3sg)) ;
+REMOVE (v:poss_3plsg:3pl_3sg) ;
+
 
 
 REMOVE (d:lengadocian) ;
