@@ -73,9 +73,9 @@ REMOVE (v:detposs:simple) ;
 
 SELECT (v:poss_sg:men_mia_ton_toa)      IF (0 (VAR:poss_sg:men_mia_ton_toa)) ;
 REMOVE (v:poss_sg:men_mia_ton_toa) ;
-SELECT (v:poss_sg:men_mia_ton_tua)      IF (0 (VAR:men_mia_ton_tua:meu_meuna_teu_teuna)) ;
+SELECT (v:poss_sg:men_mia_ton_tua)      IF (0 (VAR:poss_sg:men_mia_ton_tua)) ;
 REMOVE (v:poss_sg:men_mia_ton_tua) ;
-SELECT (v:poss_sg:mié_mia_tué_tua)      IF (0 (VAR:mié_mia_tué_tua:meu_meuna_teu_teuna)) ;
+SELECT (v:poss_sg:mié_mia_tué_tua)      IF (0 (VAR:poss_sg:mié_mia_tué_tua)) ;
 REMOVE (v:poss_sg:mié_mia_tué_tua) ;
 REMOVE (v:poss_sg:mèn_mia_tòn_tua) ;
 REMOVE (v:poss_sg:mieu_mieuna_tieu_tieuna) ;
