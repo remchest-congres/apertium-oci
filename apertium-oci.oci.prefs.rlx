@@ -42,7 +42,12 @@ SELECT (v:lo_le_eth:le)      IF (0 (VAR:lo_le_eth:le)) ;
 REMOVE (v:lo_le_eth:le) ;
 REMOVE (v:lo_le_eth:eth) ;
 
-SELECT (v:amb:amb) ;
+REMOVE (v:amb:dab) ;
+REMOVE (v:amb:damb) ;
+REMOVE (v:amb:ambe) ;
+REMOVE (v:amb:emb) ;
+REMOVE (v:amb:embe) ;
+REMOVE (v:amb:dambe) ;
 
 REMOVE (v:v_u:u) ;
 
@@ -58,6 +63,8 @@ REMOVE (v:mai_mei_mes_mès:mès) ;
 
 SELECT (v:detposs:compausat)      IF (0 (VAR:detposs:compausat)) ;
 REMOVE (v:detposs:compausat) ;
+
+REMOVE (v:poss_3plsg:3pl_3sg) ;
 
 SELECT (v:poss_sg:meu_meuna_teu_teuna)      IF (0 (VAR:poss_sg:meu_meuna_teu_teuna)) ;
 REMOVE (v:poss_sg:meu_meuna_teu_teuna) ;
@@ -77,7 +84,23 @@ REMOVE (v:poss_1pl:nòste_vòste) ;
 REMOVE (v:poss_3pl:lor_loa) ;
 REMOVE (v:poss_3pl:loé_loa) ;
 
-REMOVE (v:poss_3plsg:3pl_3sg) ;
+REMOVE (v:p3s_esser:ei) ;
+
+REMOVE (v:p1s_esser:sui) ;
+
+SELECT (v:har_hèr_faire:faire)      IF (0 (VAR:har_hèr_faire:faire)) ;
+REMOVE (v:har_hèr_faire:faire) ;
+REMOVE (v:har_hèr_faire:hèr) ;
+
+REMOVE (v:p12p_aver:am) ;
+
+REMOVE (v:tenir:ténguer) ;
+
+
+SELECT (v:ger_r_nt:r)      IF (0 (VAR:ger_r_nt:r)) ;
+REMOVE (v:ger_r_nt:r) ;
+
+REMOVE (v:subj:i) ;
 
 
 REMOVE (d:aranes) ;

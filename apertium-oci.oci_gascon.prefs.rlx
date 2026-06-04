@@ -53,7 +53,12 @@ REMOVE (v:entà_tà_ende:entà)      IF (0 (VAR:entà_tà_ende:ende)) ;
 REMOVE (v:entà_tà_ende:ende) ;
 
 
-SELECT (v:amb:dab) ;
+REMOVE (v:amb:amb) ;
+REMOVE (v:amb:damb) ;
+REMOVE (v:amb:ambe) ;
+REMOVE (v:amb:emb) ;
+REMOVE (v:amb:embe) ;
+REMOVE (v:amb:dambe) ;
 
 REMOVE (v:v_u:u) ;
 
@@ -69,7 +74,12 @@ REMOVE (v:mai_mei_mes_mès:mes) ;
 REMOVE (v:mai_mei_mes_mès:mai) ;
 REMOVE (v:mai_mei_mes_mès:mès) ;
 
+
+
 REMOVE (v:detposs:simple) ;
+
+SELECT (v:poss_3plsg:3pl_3sg)      IF (0 (VAR:poss_3plsg:3pl_3sg)) ;
+REMOVE (v:poss_3plsg:3pl_3sg) ;
 
 SELECT (v:poss_sg:men_mia_ton_toa)      IF (0 (VAR:poss_sg:men_mia_ton_toa)) ;
 REMOVE (v:poss_sg:men_mia_ton_toa) ;
@@ -92,8 +102,36 @@ REMOVE (v:poss_3pl:lor_loa) ;
 SELECT (v:poss_3pl:loé_loa)      IF (0 (VAR:poss_3pl:loé_loa)) ;
 REMOVE (v:poss_3pl:loé_loa) ;
 
-SELECT (v:poss_3plsg:3pl_3sg)      IF (0 (VAR:poss_3plsg:3pl_3sg)) ;
-REMOVE (v:poss_3plsg:3pl_3sg) ;
+
+SELECT (v:p3s_esser:es)      IF (0 (VAR:p3s_esser:es)) ;
+REMOVE (v:p3s_esser:es) ;
+
+SELECT (v:p1s_esser:sui)      IF (0 (VAR:p1s_esser:sui)) ;
+REMOVE (v:p1s_esser:sui) ;
+
+SELECT (v:har_hèr_faire:hèr)      IF (0 (VAR:har_hèr_faire:hèr)) ;
+REMOVE (v:har_hèr_faire:hèr) ;
+REMOVE (v:har_hèr_faire:faire) ;
+
+SELECT (v:p12p_aver:am)      IF (0 (VAR:p12p_aver:am)) ;
+REMOVE (v:p12p_aver:am) ;
+
+SELECT (v:tenir:ténguer)      IF (0 (VAR:tenir:ténguer)) ;
+REMOVE (v:tenir:ténguer) ;
+
+
+SELECT (v:ger_r_nt:r)      IF (0 (VAR:ger_r_nt:r)) ;
+REMOVE (v:ger_r_nt:r) ;
+
+SELECT (v:subj:i)      IF (0 (VAR:subj:i)) ;
+REMOVE (v:subj:i) ;
+
+SELECT (v:preterit:èri_iri_ori)      IF (0 (VAR:preterit:èri_iri_ori)) ;
+REMOVE (v:preterit:èri_iri_ori) ;
+REMOVE (v:preterit:èi_ii_oi)      IF (0 (VAR:preterit:èri_iri_ori)) ;
+SELECT (v:preterit:èri_iri_uri)      IF (0 (VAR:preterit:èri_iri_uri)) ;
+REMOVE (v:preterit:èri_iri_uri) ;
+REMOVE (v:preterit:èi_ii_oi)      IF (0 (VAR:preterit:èri_iri_uri)) ;
 
 
 

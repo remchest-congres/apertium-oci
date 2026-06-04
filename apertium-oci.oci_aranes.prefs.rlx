@@ -2,12 +2,66 @@
 
 DELIMITERS = ".";
 
-SELECT (v:as_es);
+REMOVE (v:ch_it:ch) ;
 
 REMOVE (v:l_u:l) ;
 
+REMOVE (v:l_th_u:l) ;
+REMOVE (v:l_th_u:u) ;
+
+REMOVE (v:ala_au:ala) ;
+
+SELECT (v:ment_ments:ment)      IF (0 (VAR:ment_ments:ment)) ;
+REMOVE (v:ment_ments:ment) ;
+
+REMOVE (v:á_a:á) ;
+
+REMOVE (v:n_intervoc:n) ;
+
+REMOVE (v:ièr_èr_èir:ièr) ;
+REMOVE (v:ièr_èr_èir:èir) ;
+
+REMOVE (v:ièra_ièira:ièira) ;
+
+SELECT (v:ariá_aria_eria:aria)      IF (0 (VAR:ariá_aria_eria:aria)) ;
+REMOVE (v:ariá_aria_eria:aria) ;
+REMOVE (v:ariá_aria_eria:ariá) ;
+
+REMOVE (v:f_h:f) ;
+
+SELECT (v:r_arr:r)      IF (0 (VAR:r_arr:r)) ;
+REMOVE (v:r_arr:r) ;
+
+REMOVE (v:esosten:e) ;
+
+REMOVE (v:plursens:es) ;
+
+REMOVE (v:o_au:o) ;
+
+REMOVE (v:lo_le_eth:lo) ;
+REMOVE (v:lo_le_eth:le) ;
+
+REMOVE (v:amb:dab) ;
+REMOVE (v:amb:amb) ;
+REMOVE (v:amb:ambe) ;
+REMOVE (v:amb:emb) ;
+REMOVE (v:amb:embe) ;
+REMOVE (v:amb:dambe) ;
+
+SELECT (v:v_u:v)      IF (0 (VAR:v_u:v)) ;
+REMOVE (v:v_u:v) ;
+
+REMOVE (v:r_X:X) ;
+
+SELECT (v:ora/ritz:ritz)      IF (0 (VAR:ora/ritz:ritz)) ;
+REMOVE (v:ora/ritz:ritz) ;
+
+REMOVE (v:mai_mei_mes_mès:mai) ;
+REMOVE (v:mai_mei_mes_mès:mei) ;
+REMOVE (v:mai_mei_mes_mès:mes) ;
 
 
+REMOVE (v:detposs:simple) ;
 
 REMOVE (v:poss_sg:men_mea_ton_toa) ;
 REMOVE (v:poss_sg:men_mia_ton_toa) ;
@@ -24,7 +78,28 @@ REMOVE (v:poss_1pl:nòstre_vòstre) ;
 REMOVE (v:poss_3pl:lor_lor) ;
 REMOVE (v:poss_3pl:lor_loa) ;
 
-REMOVE (v:poss_3plsg:3pl_3pl") ;
+REMOVE (v:poss_3plsg:3pl_3pl) ;
+
+
+REMOVE (v:p3s_esser:es) ;
+
+REMOVE (v:p1s_esser:sui) ;
+
+REMOVE (v:har_hèr_faire:har) ;
+REMOVE (v:har_hèr_faire:faire) ;
+
+REMOVE (v:tenir:ténguer) ;
+
+REMOVE (v:p12p_aver:am) ;
+
+
+SELECT (v:ger_r_nt:r)      IF (0 (VAR:ger_r_nt:r)) ;
+REMOVE (v:ger_r_nt:r) ;
+
+REMOVE (v:subj:i) ;
+
+
+
 
 
 REMOVE (d:gascon) ;
