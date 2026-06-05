@@ -96,6 +96,12 @@ REMOVE (v:p12p_aver:am) ;
 
 REMOVE (v:tenir:ténguer) ;
 
+SELECT (v:vbser:èstre)      IF (0 (VAR:vbser:èstre)) ;
+REMOVE (v:vbser:èstre) ;
+
+SELECT (v:conéisser:o)      IF (0 (VAR:conéisser:o)) ;
+REMOVE (v:conéisser:o) ;
+
 
 SELECT (v:ger_r_nt:r)      IF (0 (VAR:ger_r_nt:r)) ;
 REMOVE (v:ger_r_nt:r) ;

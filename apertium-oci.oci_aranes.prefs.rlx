@@ -92,6 +92,8 @@ REMOVE (v:tenir:ténguer) ;
 
 REMOVE (v:p12p_aver:am) ;
 
+REMOVE (v:conéisser:o) ;
+
 
 SELECT (v:ger_r_nt:r)      IF (0 (VAR:ger_r_nt:r)) ;
 REMOVE (v:ger_r_nt:r) ;
