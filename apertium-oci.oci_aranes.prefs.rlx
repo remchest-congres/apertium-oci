@@ -88,8 +88,6 @@ REMOVE (v:p1s_esser:sui) ;
 REMOVE (v:har_hèr_faire:har) ;
 REMOVE (v:har_hèr_faire:faire) ;
 
-REMOVE (v:tenir:ténguer) ;
-
 REMOVE (v:p12p_aver:am) ;
 
 REMOVE (v:conéisser:o) ;

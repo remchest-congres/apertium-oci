@@ -94,8 +94,6 @@ REMOVE (v:har_hèr_faire:hèr) ;
 
 REMOVE (v:p12p_aver:am) ;
 
-REMOVE (v:tenir:ténguer) ;
-
 SELECT (v:vbser:èstre)      IF (0 (VAR:vbser:èstre)) ;
 REMOVE (v:vbser:èstre) ;
 
