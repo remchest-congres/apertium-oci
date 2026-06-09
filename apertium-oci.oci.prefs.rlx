@@ -42,6 +42,9 @@ SELECT (v:lo_le_eth:le)      IF (0 (VAR:lo_le_eth:le)) ;
 REMOVE (v:lo_le_eth:le) ;
 REMOVE (v:lo_le_eth:eth) ;
 
+REMOVE (v:pron_lo_le:lo) ;
+REMOVE (v:pron_lo_le:le) ;
+
 REMOVE (v:amb:dab) ;
 REMOVE (v:amb:damb) ;
 REMOVE (v:amb:ambe) ;
@@ -105,6 +108,9 @@ SELECT (v:ger_r_nt:r)      IF (0 (VAR:ger_r_nt:r)) ;
 REMOVE (v:ger_r_nt:r) ;
 
 REMOVE (v:subj:i) ;
+
+SELECT (v:p3s_subimp:ès)      IF (0 (VAR:p3s_subimp:ès)) ;
+REMOVE (v:p3s_subimp:ès) ;
 
 
 REMOVE (d:aranes) ;
