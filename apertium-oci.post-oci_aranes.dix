@@ -1625,6 +1625,12 @@
 			</e>
 			<e>
 				<p>
+					<l>th<b/><a/>de<b/><a/>deter</l>
+					<r>th<b/>deth</r>
+				</p>
+			</e>
+			<e>
+				<p>
 					<l>th<b/><a/>de<b/><a/>detera</l>
 					<r>th<b/>dera</r>
 				</p>
@@ -1637,15 +1643,29 @@
 			</e>
 			<e>
 				<p>
-					<l>th<b/><a/>de<b/><a/>deteth<b/></l>
+					<l>th<b/><a/>de<b/><a/>deter<b/></l>
 					<r>th<b/>der<b/></r>
 				</p>
 				<par n="vocal_general"/>
 			</e>
 			<e>
 				<p>
-					<l>th<b/><a/>de<b/><a/>deteth<b/><a/></l>
+					<l>th<b/><a/>de<b/><a/>deteth<b/></l>
+					<r>th<b/>deth<b/></r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
+					<l>th<b/><a/>de<b/><a/>deter<b/><a/></l>
 					<r>th<b/>der<b/><a/></r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
+					<l>th<b/><a/>de<b/><a/>deteth<b/><a/></l>
+					<r>th<b/>deth<b/><a/></r>
 				</p>
 				<par n="vocal_general"/>
 			</e>
@@ -2030,6 +2050,12 @@
 			<e>
 				<p>
 					<l><a/>deteth<b/></l>
+					<r><b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><a/>deter<b/></l>
 					<r><b/></r>
 				</p>
 			</e>
@@ -2890,6 +2916,13 @@
 		<pardef n="contraccioenta">
 			<e>
 				<p>
+					<l><b/><a/>deter</l>
+					<r>ath<b/></r>
+				</p>
+				<par n="no_contrac"/>
+			</e>
+			<e>
+				<p>
 					<l><b/><a/>deteth</l>
 					<r>ath<b/></r>
 				</p>
@@ -2897,7 +2930,21 @@
 			</e>
 			<e>
 				<p>
+					<l><b/><a/>deter<b/></l>
+					<r>ath<b/></r>
+				</p>
+				<par n="no_contrac"/>
+			</e>
+			<e>
+				<p>
 					<l><b/><a/>deteth<b/></l>
+					<r>ath<b/></r>
+				</p>
+				<par n="no_contrac"/>
+			</e>
+			<e>
+				<p>
+					<l><b/><a/>deter<b/><a/></l>
 					<r>ath<b/></r>
 				</p>
 				<par n="no_contrac"/>
@@ -2911,17 +2958,38 @@
 			</e>
 				<e>
 				<p>
+					<l><b/><a/>deter<b/></l>
+					<r>ar<b/></r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+				<e>
+				<p>
 					<l><b/><a/>deteth<b/></l>
-					<r>ad<b/></r>
+					<r>ath<b/></r>
+				</p>
+				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
+					<l><b/><a/>deter<b/><a/></l>
+					<r>ar<b/><a/></r>
 				</p>
 				<par n="vocal_general"/>
 			</e>
 			<e>
 				<p>
 					<l><b/><a/>deteth<b/><a/></l>
-					<r>ad<b/><a/></r>
+					<r>ath<b/><a/></r>
 				</p>
 				<par n="vocal_general"/>
+			</e>
+			<e>
+				<p>
+					<l><b/>deter</l>
+					<r>ad<b/>eth</r>
+				</p>
+				<par n="caracter_general"/>
 			</e>
 			<e>
 				<p>

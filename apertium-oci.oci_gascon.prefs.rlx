@@ -44,6 +44,7 @@ REMOVE (v:o_au:o) ;
 SELECT (v:lo_le_eth:eth)      IF (0 (VAR:lo_le_eth:eth)) ;
 REMOVE (v:lo_le_eth:eth) ;
 REMOVE (v:lo_le_eth:le) ;
+REMOVE (v:lo_le_eth:er) ;
 
 REMOVE (v:pron_lo_le:lo) ;
 REMOVE (v:pron_lo_le:le) ;
@@ -76,6 +77,9 @@ SELECT (v:mai_mei_mes_mès:mes)      IF (0 (VAR:mai_mei_mes_mès:mes)) ;
 REMOVE (v:mai_mei_mes_mès:mes) ;
 REMOVE (v:mai_mei_mes_mès:mai) ;
 REMOVE (v:mai_mei_mes_mès:mès) ;
+
+REMOVE (v:fem_aire:airitz) ;
+REMOVE (v:fem_aire:arèla) ;
 
 
 
@@ -146,6 +150,14 @@ REMOVE (v:futur:contractat) ;
 
 REMOVE (v:p3s_subimp:ès) ;
 
+REMOVE (v:p12s_ind:e) ;
+
+SELECT (v:incoativitat:iss)      IF (0 (VAR:incoativitat:iss)) ;
+REMOVE (v:incoativitat:iss) ;
+REMOVE (v:incoativitat:eish)      IF (0 (VAR:incoativitat:iss)) ;
+SELECT (v:incoativitat:ish)      IF (0 (VAR:incoativitat:ishi)) ;
+REMOVE (v:incoativitat:ish) ;
+REMOVE (v:incoativitat:eish)      IF (0 (VAR:incoativitat:ish)) ;
 
 
 REMOVE (d:lengadocian) ;
