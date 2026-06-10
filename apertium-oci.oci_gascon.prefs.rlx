@@ -41,10 +41,10 @@ REMOVE (v:plursens:es) ;
 SELECT (v:o_au:o)      IF (0 (VAR:o_au:o)) ;
 REMOVE (v:o_au:o) ;
 
-SELECT (v:lo_le_eth:eth)      IF (0 (VAR:lo_le_eth:eth)) ;
-REMOVE (v:lo_le_eth:eth) ;
-REMOVE (v:lo_le_eth:le) ;
+SELECT (v:lo_le_eth:er)      IF (0 (VAR:lo_le_eth:er)) ;
 REMOVE (v:lo_le_eth:er) ;
+REMOVE (v:lo_le_eth:le) ;
+REMOVE (v:lo_le_eth:eth) ;
 
 REMOVE (v:pron_lo_le:lo) ;
 REMOVE (v:pron_lo_le:le) ;
