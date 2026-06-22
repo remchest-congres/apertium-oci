@@ -109,6 +109,12 @@ REMOVE (v:subj:i) ;
 
 REMOVE (v:p3s_subimp:ès) ;
 
+SELECT (v:imp_a_v:v)      IF (0 (VAR:imp_a_v:v)) ;
+REMOVE (v:imp_a_v:v) ;
+
+SELECT (v:p2s_pret:ès)      IF (0 (VAR:p2s_pret:ès)) ;
+REMOVE (v:p2s_pret:ès) ;
+
 
 
 
