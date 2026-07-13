@@ -11226,6 +11226,14 @@
     <pardef n="Nacions_Unidas__np">
       <e> <p><l/> <r><s n="np"/><s n="al"/><s n="f"/><s n="pl"/></r></p></e>
     </pardef>
+    <pardef n="Bressol/as__np">
+      <e> <p><l>as</l> <r>as<s n="np"/><s n="al"/><s n="f"/><s n="pl"/></r></p><par n="d:lengadocian"/><par n="d:gascon"/></e>
+      <e> <p><l>es</l> <r>as<s n="np"/><s n="al"/><s n="f"/><s n="pl"/></r></p><par n="d:aranes"/><par n="nd:lengadocian"/><par n="nd:gascon"/></e>
+    </pardef>
+    <pardef n="Pas/cas__np">
+      <e> <p><l>cas</l> <r>cas<s n="np"/><s n="al"/><s n="f"/><s n="pl"/></r></p><par n="d:lengadocian"/><par n="d:gascon"/></e>
+      <e> <p><l>ques</l> <r>cas<s n="np"/><s n="al"/><s n="f"/><s n="pl"/></r></p><par n="d:aranes"/><par n="nd:lengadocian"/><par n="nd:gascon"/></e>
+    </pardef>
     <!-- ****** Antonimes ****** -->
     <!-- Genre pas conegut -->
     <pardef n="Abad__np">
@@ -11280,6 +11288,18 @@
     <!-- Feminin plural -->
     <pardef n="Bahamas__np">
       <e> <p><l/> <r><s n="np"/><s n="top"/><s n="f"/><s n="pl"/></r></p></e>
+    </pardef>
+    <pardef n="Ameri/cas__np">
+      <e> <p><l>cas</l> <r>cas<s n="np"/><s n="al"/><s n="f"/><s n="pl"/></r></p><par n="d:lengadocian"/><par n="d:gascon"/></e>
+      <e> <p><l>ques</l> <r>cas<s n="np"/><s n="al"/><s n="f"/><s n="pl"/></r></p><par n="d:aranes"/><par n="nd:lengadocian"/><par n="nd:gascon"/></e>
+    </pardef>
+    <pardef n="Balan/ças__np">
+      <e> <p><l>ças</l> <r>ças<s n="np"/><s n="al"/><s n="f"/><s n="pl"/></r></p><par n="d:lengadocian"/><par n="d:gascon"/></e>
+      <e> <p><l>ces</l> <r>ças<s n="np"/><s n="al"/><s n="f"/><s n="pl"/></r></p><par n="d:aranes"/><par n="nd:lengadocian"/><par n="nd:gascon"/></e>
+    </pardef>
+    <pardef n="Antilh/as__np">
+      <e> <p><l>as</l> <r>as<s n="np"/><s n="al"/><s n="f"/><s n="pl"/></r></p><par n="d:lengadocian"/><par n="d:gascon"/></e>
+      <e> <p><l>es</l> <r>as<s n="np"/><s n="al"/><s n="f"/><s n="pl"/></r></p><par n="d:aranes"/><par n="nd:lengadocian"/><par n="nd:gascon"/></e>
     </pardef>
     <!-- Masculin singular -->
     <pardef n="Iran__np">
@@ -143420,7 +143440,7 @@
 <e lm="Ackerman"><i>Ackerman</i><par n="Saussure__np"/></e>
 <e lm="Aconcagua" a="dsumien"><i>Aconcagua</i><par n="Iran__np"/></e>
 <e lm="Acone" a="hector"><i>Acone</i><par n="Saussure__np"/></e>
-<e lm="Açòras" a="Congrès"><i>Açòras</i><par n="Bahamas__np"/><par n="d:gascon"/></e>
+<e lm="Açòras" a="Congrès"><i>Açòr</i><par n="Antilh/as__np"/><par n="d:gascon"/></e>
 <e lm="Acòrd generau sus las tarifas doanièras e lo comerci" a="Congrès"><i>Acòrd<b/>generau<b/>sus<b/></i><par n="las/eras/es"/><i><b/>tarifas<b/>doanièras<b/>e<b/></i><par n="lo/le/eth"/><i><b/>comerci</i><par n="Linux__np"/><par n="d:gascon"/></e>
 <e lm="Açòres" a="Congrès EN|dsumien"><i>Açòres</i><par n="Bahamas__np"/></e>
 <e lm="Açòres" a="dsumien" r="LR"><i>Açòres</i><par n="Estats_Units__np"/></e>
@@ -144364,7 +144384,7 @@
 <e lm="Alet"><i>Alet</i><par n="Iran__np"/></e>
 <e lm="Àleu" a="Congrès"><i>Àleu</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Aleu"><i>Aleu</i><par n="Saussure__np"/></e>
-<e lm="Aleutianas"><i>Aleutianas</i><par n="Bahamas__np"/></e>
+<e lm="Aleutianas"><i>Aleutian</i><par n="Antilh/as__np"/></e>
 <e lm="Alexa" a="capsot"><i>Alexa</i><par n="ABC__np"/></e>
 <e lm="Alexa" a="hector"><i>Alexa</i><par n="Aitana__np"/></e>
 <e lm="Alexa" a="hector"><i>Alexa</i><par n="Saussure__np"/></e>
@@ -144950,7 +144970,7 @@
 <e lm="America Latina"><i>America<b/>Latina</i><par n="Bulgaria__np"/></e>
 <e lm="American Airlines" a="hector"><i>American<b/>Airlines</i><par n="Wikipedia__np"/></e>
 <e lm="American Express" a="hector"><i>American<b/>Express</i><par n="Wikipedia__np"/></e>
-<e lm="Americas"><i>Americas</i><par n="Bahamas__np"/></e>
+<e lm="Americas"><i>Ameri</i><par n="Ameri/cas__np"/></e>
 <e lm="Amerio" a="hector"><i>Amerio</i><par n="Saussure__np"/></e>
 <e lm="Ameskoa"><i>Ameskoa</i><par n="Saussure__np"/></e>
 <e lm="Amesse"><i>Amesse</i><par n="Saussure__np"/></e>
@@ -145486,8 +145506,7 @@
 <e lm="Antigòna" a="capsot"><i>Antigòna</i><par n="Aitana__np"/></e>
 <e lm="Antigua" a="capsot"><i>Antigua</i><par n="Bulgaria__np"/></e>
 <e lm="Antigua e Barbuda" a="dgimeno|dsumien"><i>Antigua<b/>e<b/>Barbuda</i><par n="Bulgaria__np"/></e>
-<e lm="Antilhas" a="dsumien"><i>Antilhas</i><par n="Bahamas__np"/></e>
-<e lm="Antilhes" a="dgimeno"><i>Antilhes</i><par n="Bahamas__np"/></e>
+<e lm="Antilhas" a="dsumien"><i>Antilh</i><par n="Antilh/as__np"/></e>
 <e lm="Antin" a="Congrès"><i>Antin</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Antinhac" a="Congrès"><i>Antinhac</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Antinoro" a="hector"><i>Antinoro</i><par n="Saussure__np"/></e>
@@ -145786,7 +145805,7 @@
 <e lm="Arcambald" a="Congrès"><i>Arcambald</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Arcand"><i>Arcand</i><par n="Saussure__np"/></e>
 <e lm="Arcarons"><i>Arcarons</i><par n="Saussure__np"/></e>
-<e lm="Arcas"><i>Arcas</i><par n="Bahamas__np"/></e>
+<e lm="Arcas"><i>Ar</i><par n="Ameri/cas__np"/></e>
 <e lm="Arcas"><i>Arcas</i><par n="Bulgaria__np"/></e>
 <e lm="Arcas"><i>Arcas</i><par n="Saussure__np"/></e>
 <e lm="Arcaute" a="hector"><i>Arcaute</i><par n="Saussure__np"/></e>
@@ -145826,7 +145845,7 @@
 <e lm="Ardeleanu" a="hector"><i>Ardeleanu</i><par n="Saussure__np"/></e>
 <e lm="Ardena" a="dsumien"><i>Ardena</i><par n="Bulgaria__np"/></e>
 <e lm="Ardenac" a="Congrès"><i>Ardenac</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
-<e lm="Ardenas"><i>Ardenas</i><par n="Bahamas__np"/></e>
+<e lm="Ardenas"><i>Arden</i><par n="Antilh/as__np"/></e>
 <e lm="Ardengòst" a="Congrès"><i>Ardengòst</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Arderiu"><i>Arderiu</i><par n="Saussure__np"/></e>
 <e lm="Ardèvol" a="hector"><i>Ardèvol</i><par n="Saussure__np"/></e>
@@ -146478,7 +146497,7 @@
 <e lm="Astruc" a="Congrès"><i>Astruc</i><par n="Saussure__np"/></e>
 <e lm="Astudillo"><i>Astudillo</i><par n="Saussure__np"/></e>
 <e lm="Astuga" a="Congrès"><i>Astuga</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
-<e lm="Asturias" a="Congrès"><i>Asturias</i><par n="Bahamas__np"/></e>
+<e lm="Asturias" a="Congrès"><i>Asturi</i><par n="Antilh/as__np"/></e>
 <e lm="Astúrias" a="dsumien"><i>Astúrias</i><par n="Iran__np"/></e>
 <e lm="Asuelh" a="Congrès EN"><i>Asuelh</i><par n="Linux__np"/></e>
 <e lm="Asun" a="Congrès"><i>Asun</i><par n="Iran__np"/><par n="d:gascon"/></e>
@@ -146718,7 +146737,7 @@
 <e lm="Aup d'Ueis" a="hector"><i>Aup<b/>d'Ueis</i><par n="Iran__np"/></e>
 <e lm="Aupetit"><i>Aupetit</i><par n="Saussure__np"/></e>
 <e lm="Aupian" a="Congrès"><i>Aupian</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
-<e lm="Aupilhas" a="hector"><i>Aupilhas</i><par n="Bahamas__np"/></e>
+<e lm="Aupilhas" a="hector"><i>Aupilh</i><par n="Antilh/as__np"/></e>
 <e lm="Aupin"><i>Aupin</i><par n="Saussure__np"/></e>
 <e lm="Aups" a="carmentano"><i>Aups</i><par n="Estats_Units__np"/></e>
 <e lm="Aups d'Auta Provença" a="capsot"><i>Aups<b/>d'Auta<b/>Provença</i><par n="Estats_Units__np"/></e>
@@ -147327,7 +147346,7 @@
 <e lm="Balañá"><i>Balañá</i><par n="Saussure__np"/></e>
 <e lm="Balança" a="Congrès EN"><i>Balança</i><par n="Wikipedia__np"/></e>
 <e lm="Balança" a="Congrès"><i>Balança</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
-<e lm="Balanças" a="Congrès"><i>Balanças</i><par n="Bahamas__np"/><par n="d:gascon"/></e>
+<e lm="Balanças" a="Congrès"><i>Balan</i><par n="Balan/ças__np"/><par n="d:gascon"/></e>
 <e lm="Balan"><i>Balan</i><par n="Saussure__np"/></e>
 <e lm="Balart"><i>Balart</i><par n="Saussure__np"/></e>
 <e lm="Balasch"><i>Balasch</i><par n="Saussure__np"/></e>
@@ -147377,7 +147396,7 @@
 <e lm="Baldwin"><i>Baldwin</i><par n="Saussure__np"/></e>
 <e lm="Baldy" a="hector"><i>Baldy</i><par n="Saussure__np"/></e>
 <e lm="Bale" a="hector"><i>Bale</i><par n="Saussure__np"/></e>
-<e lm="Balearas"><i>Balearas</i><par n="Bahamas__np"/></e>
+<e lm="Balearas"><i>Balear</i><par n="Antilh/as__np"/></e>
 <e lm="Baleeiro" a="hector"><i>Baleeiro</i><par n="Saussure__np"/></e>
 <e lm="Balèish" a="Congrès"><i>Balèish</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Balèix" a="Congrès"><i>Balèix</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
@@ -147685,7 +147704,7 @@
 <e lm="Barcunhan" a="Congrès"><i>Barcunhan</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Barda" a="Congrès"><i>Barda</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Bardají"><i>Bardají</i><par n="Saussure__np"/></e>
-<e lm="Bardas" a="Congrès"><i>Bardas</i><par n="Bahamas__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
+<e lm="Bardas" a="Congrès"><i>Bard</i><par n="Antilh/as__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Bardeen"><i>Bardeen</i><par n="Saussure__np"/></e>
 <e lm="Bardella" a="hector"><i>Bardella</i><par n="Saussure__np"/></e>
 <e lm="Bardem" a="carmentano"><i>Bardem</i><par n="Saussure__np"/></e>
@@ -147777,7 +147796,7 @@
 <e lm="Barón Crespo" a="hector"><i>Barón<b/>Crespo</i><par n="Saussure__np"/></e>
 <e lm="Barone"><i>Barone</i><par n="Saussure__np"/></e>
 <e lm="Baroni" a="hector"><i>Baroni</i><par n="Saussure__np"/></e>
-<e lm="Baronias" a="Congrès"><i>Baronias</i><par n="Bahamas__np"/><par n="d:gascon"/></e>
+<e lm="Baronias" a="Congrès"><i>Baroni</i><par n="Antilh/as__np"/><par n="d:gascon"/></e>
 <e lm="Baron"><i>Baron</i><par n="Saussure__np"/></e>
 <e lm="Barón"><i>Barón</i><par n="Saussure__np"/></e>
 <e lm="Baroschi" a="hector"><i>Baroschi</i><par n="Saussure__np"/></e>
@@ -147789,7 +147808,7 @@
 <e lm="Barrabé" a="hector"><i>Barrabé</i><par n="Saussure__np"/></e>
 <e lm="Barrabés"><i>Barrabés</i><par n="Saussure__np"/></e>
 <e lm="Barraca de Fraisse" a="Congrès"><i>Barraca<b/>de<b/>Fraisse</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
-<e lm="Barracas" a="hector"><i>Barracas</i><par n="Bahamas__np"/></e>
+<e lm="Barracas" a="hector"><i>Barra</i><par n="Ameri/cas__np"/></e>
 <e lm="Barracciu" a="hector"><i>Barracciu</i><par n="Saussure__np"/></e>
 <e lm="Barrachina"><i>Barrachina</i><par n="Saussure__np"/></e>
 <e lm="Barraco"><i>Barraco</i><par n="Saussure__np"/></e>
@@ -148878,7 +148897,7 @@
 <e lm="Bermell"><i>Bermell</i><par n="Saussure__np"/></e>
 <e lm="Bermeo"><i>Bermeo</i><par n="Saussure__np"/></e>
 <e lm="Bermodes" a="dgimeno"><i>Bermodes</i><par n="Bahamas__np"/></e>
-<e lm="Bermudas"><i>Bermudas</i><par n="Bahamas__np"/></e>
+<e lm="Bermudas"><i>Bermud</i><par n="Antilh/as__np"/></e>
 <e lm="Bermudez" a="hector"><i>Bermudez</i><par n="Saussure__np"/></e>
 <e lm="Bermúdez"><i>Bermúdez</i><par n="Saussure__np"/></e>
 <e lm="Bermudo"><i>Bermudo</i><par n="Saussure__np"/></e>
@@ -150148,7 +150167,7 @@
 <e lm="Botarell" a="hector"><i>Botarell</i><par n="Iran__np"/></e>
 <e lm="Botariá" a="Congrès"><i>Botariá</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Boté"><i>Boté</i><par n="Saussure__np"/></e>
-<e lm="Botèiras" a="hector"><i>Botèiras</i><par n="Bahamas__np"/></e>
+<e lm="Botèiras" a="hector"><i>Botèir</i><par n="Antilh/as__np"/></e>
 <e lm="Botelho"><i>Botelho</i><par n="Saussure__np"/></e>
 <e lm="Botella"><i>Botella</i><par n="Saussure__np"/></e>
 <e lm="Botello"><i>Botello</i><par n="Saussure__np"/></e>
@@ -150504,8 +150523,7 @@
 <e lm="Bresse"><i>Bresse</i><par n="Saussure__np"/></e>
 <e lm="Bresso" a="hector"><i>Bresso</i><par n="Saussure__np"/></e>
 <e lm="Bressola"><i>Bressola</i><par n="Wikipedia__np"/></e>
-<e lm="Bressolas"><i>Bressolas</i><par n="Nacions_Unidas__np"/></e>
-<e lm="Bressoles" a="hector"><i>Bressoles</i><par n="Nacions_Unidas__np"/></e>
+<e lm="Bressolas"><i>Bressol</i><par n="Bressol/as__np"/></e>
 <e lm="Bressòls" a="Congrès"><i>Bressòls</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Brest" a="Congrès"><i>Brest</i><par n="Iran__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Brèst"><i>Brèst</i><par n="Iran__np"/></e>
@@ -150604,7 +150622,7 @@
 <e lm="Bristol" a="capsot"><i>Bristol</i><par n="Iran__np"/></e>
 <e lm="Brit Air" a="Congrès EN"><i>Brit<b/>Air</i><par n="Linux__np"/></e>
 <e lm="Britània"><i>Britània</i><par n="Bulgaria__np"/></e>
-<e lm="Britanicas" a="Congrès"><i>Britanicas</i><par n="Bahamas__np"/><par n="d:gascon"/></e>
+<e lm="Britanicas" a="Congrès"><i>Britani</i><par n="Ameri/cas__np"/><par n="d:gascon"/></e>
 <e lm="Brites" a="hector"><i>Brites</i><par n="Saussure__np"/></e>
 <e lm="Britèsta" a="Congrès"><i>Britèsta</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="British Airways" a="hector"><i>British<b/>Airways</i><par n="Wikipedia__np"/></e>
@@ -151069,7 +151087,7 @@
 <e lm="Cabanac e Vilagrans" a="hector"><i>Cabanac<b/>e<b/>Vilagrans</i><par n="Iran__np"/></e>
 <e lm="Cabanac e Villagrans" a="Congrès"><i>Cabanac<b/>e<b/>Villagrans</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Cabana"><i>Cabana</i><par n="Saussure__np"/></e>
-<e lm="Cabanas"><i>Cabanas</i><par n="Bahamas__np"/></e>
+<e lm="Cabanas"><i>Caban</i><par n="Antilh/as__np"/></e>
 <e lm="Cabanas"><i>Cabanas</i><par n="Bulgaria__np"/></e>
 <e lm="Cabanas"><i>Cabanas</i><par n="Saussure__np"/></e>
 <e lm="Cabañas"><i>Cabañas</i><par n="Saussure__np"/></e>
@@ -151346,7 +151364,7 @@
 <e lm="Calen" a="Congrès"><i>Calen</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Calenda" a="hector"><i>Calenda</i><par n="Saussure__np"/></e>
 <e lm="Calendal" a="Congrès EN"><i>Calendal</i><par n="Antòni__np"/></e>
-<e lm="Calendas" a="Congrès"><i>Calendas</i><par n="Nacions_Unidas__np"/><par n="d:lengadocian"/></e>
+<e lm="Calendas" a="Congrès"><i>Calend</i><par n="Bressol/as__np"/><par n="d:lengadocian"/></e>
 <e lm="Calendau" a="Congrès"><i>Calendau</i><par n="Antòni__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Caleo" a="hector"><i>Caleo</i><par n="Saussure__np"/></e>
 <e lm="Calera"><i>Calera</i><par n="Saussure__np"/></e>
@@ -151676,9 +151694,8 @@
 <e lm="Cananzi" a="hector"><i>Cananzi</i><par n="Saussure__np"/></e>
 <e lm="Canape"><i>Canape</i><par n="Saussure__np"/></e>
 <e lm="Canaquia"><i>Canaquia</i><par n="Bulgaria__np"/></e>
-<e lm="Canarias" a="Congrès"><i>Canarias</i><par n="Bahamas__np"/><par n="d:gascon"/></e>
-<e lm="Canàrias"><i>Canàrias</i><par n="Bahamas__np"/></e>
-<e lm="Canàries"><i>Canàries</i><par n="Bahamas__np"/></e>
+<e lm="Canarias" a="Congrès"><i>Canari</i><par n="Antilh/as__np"/><par n="d:gascon"/></e>
+<e lm="Canàrias"><i>Canàri</i><par n="Antilh/as__np"/></e>
 <e lm="Canas" a="capsot"><i>Canas</i><par n="Bulgaria__np"/></e>
 <e lm="Canas"><i>Canas</i><par n="Saussure__np"/></e>
 <e lm="Cañas"><i>Cañas</i><par n="Saussure__np"/></e>
@@ -151729,7 +151746,7 @@
 <e lm="Cándida" a="hector"><i>Cándida</i><par n="Aitana__np"/></e>
 <e lm="Candide" a="Congrès"><i>Candide</i><par n="Antòni__np"/></e>
 <e lm="Cándido" a="carmentano"><i>Cándido</i><par n="Antòni__np"/></e>
-<e lm="Candolièiras" a="Congrès"><i>Candolièiras</i><par n="Bahamas__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
+<e lm="Candolièiras" a="Congrès"><i>Candolièir</i><par n="Antilh/as__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Candressa" a="Congrès"><i>Candressa</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Candy" a="capsot"><i>Candy</i><par n="Linux__np"/></e>
 <e lm="Candy"><i>Candy</i><par n="Aitana__np"/></e>
@@ -152083,7 +152100,7 @@
 <e lm="Cària" a="hector"><i>Cària</i><par n="Bulgaria__np"/></e>
 <e lm="Caria" a="hector"><i>Caria</i><par n="Saussure__np"/></e>
 <e lm="Cariba"><i>Cariba</i><par n="Bulgaria__np"/></e>
-<e lm="Caribas" a="hector"><i>Caribas</i><par n="Bahamas__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
+<e lm="Caribas" a="hector"><i>Carib</i><par n="Antilh/as__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Caribde" a="Congrès"><i>Caribde</i><par n="Antòni__np"/><par n="d:lengadocian"/></e>
 <e lm="Caribèrt" a="hector"><i>Caribèrt</i><par n="Antòni__np"/></e>
 <e lm="Caribes" a="Congrès"><i>Caribes</i><par n="Estats_Units__np"/><par n="d:gascon"/></e>
@@ -152216,7 +152233,7 @@
 <e lm="Carolina del Nòrd"><i>Carolina<b/></i><par n="del/deu/deth"/><i><b/>Nòrd</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Carolina del Sud"><i>Carolina<b/></i><par n="del/deu/deth"/><i><b/>Sud</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Carolina"><i>Carolina</i><par n="Aitana__np"/></e>
-<e lm="Carolinas"><i>Carolinas</i><par n="Bahamas__np"/></e>
+<e lm="Carolinas"><i>Carolin</i><par n="Antilh/as__np"/></e>
 <e lm="Caroline" a="capsot"><i>Caroline</i><par n="Aitana__np"/></e>
 <e lm="Carolis" a="capsot"><i>Carolis</i><par n="Antòni__np"/></e>
 <e lm="Carolis" a="hector"><i>Carolis</i><par n="Saussure__np"/></e>
@@ -153271,7 +153288,7 @@
 <e lm="Cevallos"><i>Cevallos</i><par n="Saussure__np"/></e>
 <e lm="Cevalte"><i>Cevalte</i><par n="Saussure__np"/></e>
 <e lm="Cevena" a="hector" r="LR"><i>Cevena</i><par n="Bulgaria__np"/></e>
-<e lm="Cevenas" a="Congrès"><i>Cevenas</i><par n="Bahamas__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
+<e lm="Cevenas" a="Congrès"><i>Ceven</i><par n="Antilh/as__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Cevenini" a="hector"><i>Cevenini</i><par n="Saussure__np"/></e>
 <e lm="Cézanne"><i>Cézanne</i><par n="Saussure__np"/></e>
 <e lm="CFDT" a="Congrès"><i>CFDT</i><par n="Wikipedia__np"/></e>
@@ -153405,7 +153422,7 @@
 <e lm="Char" a="hector"><i>Char</i><par n="Saussure__np"/></e>
 <e lm="Charanta"><i>Charanta</i><par n="Bulgaria__np"/></e>
 <e lm="Charanta Maritima" a="capsot"><i>Charanta<b/>Maritima</i><par n="Bulgaria__np"/></e>
-<e lm="Charantas"><i>Charantas</i><par n="Bahamas__np"/></e>
+<e lm="Charantas"><i>Charant</i><par n="Antilh/as__np"/></e>
 <e lm="Charasse" a="hector"><i>Charasse</i><par n="Saussure__np"/></e>
 <e lm="Charbonneau"><i>Charbonneau</i><par n="Saussure__np"/></e>
 <e lm="Charbonnier" a="Congrès"><i>Charbonnier</i><par n="Saussure__np"/></e>
@@ -153821,7 +153838,7 @@
 <e lm="Ciceron" a="capsot"><i>Ciceron</i><par n="Antòni__np"/></e>
 <e lm="Cichon"><i>Cichon</i><par n="Saussure__np"/></e>
 <e lm="Ciciaronu" a="hector"><i>Ciciaronu</i><par n="Saussure__np"/></e>
-<e lm="Cicladas"><i>Cicladas</i><par n="Bahamas__np"/></e>
+<e lm="Cicladas"><i>Ciclad</i><par n="Antilh/as__np"/></e>
 <e lm="Cicolani" a="hector"><i>Cicolani</i><par n="Saussure__np"/></e>
 <e lm="Ciconte" a="hector"><i>Ciconte</i><par n="Saussure__np"/></e>
 <e lm="Cicu" a="hector"><i>Cicu</i><par n="Saussure__np"/></e>
@@ -154069,7 +154086,7 @@
 <e lm="Clavell"><i>Clavell</i><par n="Saussure__np"/></e>
 <e lm="Clavello"><i>Clavello</i><par n="Saussure__np"/></e>
 <e lm="Claveria"><i>Claveria</i><par n="Saussure__np"/></e>
-<e lm="Claverias" a="Congrès"><i>Claverias</i><par n="Bahamas__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
+<e lm="Claverias" a="Congrès"><i>Claveri</i><par n="Antilh/as__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Claverias" a="hector"><i>Claverias</i><par n="Saussure__np"/></e>
 <e lm="Claver"><i>Claver</i><par n="Saussure__np"/></e>
 <e lm="Claverie" a="hector"><i>Claverie</i><par n="Saussure__np"/></e>
@@ -154487,7 +154504,7 @@
 <e lm="Comnèn" a="hector"><i>Comnèn</i><par n="Saussure__np"/></e>
 <e lm="Comnèns" a="hector"><i>Comnèns</i><par n="Saussure__np"/></e>
 <e lm="Comolli"><i>Comolli</i><par n="Saussure__np"/></e>
-<e lm="Comòras"><i>Comòras</i><par n="Bahamas__np"/></e>
+<e lm="Comòras"><i>Comòr</i><par n="Antilh/as__np"/></e>
 <e lm="Comores" a="dgimeno"><i>Comores</i><par n="Bahamas__np"/></e>
 <e lm="Compagna" a="hector"><i>Compagna</i><par n="Saussure__np"/></e>
 <e lm="Compagnat"><i>Compagnat</i><par n="Saussure__np"/></e>
@@ -154728,7 +154745,7 @@
 <e lm="Corbetta" a="hector"><i>Corbetta</i><par n="Saussure__np"/></e>
 <e lm="Corbett"><i>Corbett</i><par n="Saussure__np"/></e>
 <e lm="Corbiac" a="Congrès"><i>Corbiac</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
-<e lm="Corbièras" a="Congrès"><i>Corbièras</i><par n="Bahamas__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
+<e lm="Corbièras" a="Congrès"><i>Corbièr</i><par n="Antilh/as__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Corbière"><i>Corbière</i><par n="Saussure__np"/></e>
 <e lm="Corbi"><i>Corbi</i><par n="Saussure__np"/></e>
 <e lm="Corbí"><i>Corbí</i><par n="Saussure__np"/></e>
@@ -154776,8 +154793,7 @@
 <e lm="Corèa" a="carmentano"><i>Corèa</i><par n="Bulgaria__np"/></e>
 <e lm="Corèa del Nòrd"><i>Corèa<b/></i><par n="del/deu/deth"/><i><b/>Nòrd</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Corèa del Sud"><i>Corèa<b/></i><par n="del/deu/deth"/><i><b/>Sud</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
-<e lm="Corèas" a="hector"><i>Corèas</i><par n="Bahamas__np"/><par n="d:lengadocian"/><par n="d:gascon"/></e>
-<e lm="Corèes" a="hector"><i>Corèes</i><par n="Bahamas__np"/><par n="d:aranes"/></e>
+<e lm="Corèas" a="hector"><i>Corè</i><par n="Antilh/as__np"/><par n="d:lengadocian"/><par n="d:gascon"/><par n="d:aranes"/></e>
 <e lm="Corella"><i>Corella</i><par n="Saussure__np"/></e>
 <e lm="Corelli" a="hector"><i>Corelli</i><par n="Saussure__np"/></e>
 <e lm="Coreth" a="Congrès"><i>Coreth</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
@@ -157047,7 +157063,7 @@
 <e lm="Dolenz"><i>Dolenz</i><par n="Saussure__np"/></e>
 <e lm="Doleson" a="Congrès"><i>Doleson</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Dolly"><i>Dolly</i><par n="Aitana__np"/></e>
-<e lm="Dolomitas"><i>Dolomitas</i><par n="Bahamas__np"/></e>
+<e lm="Dolomitas"><i>Dolomit</i><par n="Antilh/as__np"/></e>
 <e lm="Dolomites" a="Congrès"><i>Dolomites</i><par n="Estats_Units__np"/><par n="d:gascon"/></e>
 <e lm="Dolores" a="carmentano"><i>Dolores</i><par n="Aitana__np"/></e>
 <e lm="Dolores" a="hector"><i>Dolores</i><par n="Iran__np"/></e>
@@ -157651,7 +157667,7 @@
 <e lm="Ebre" a="carmentano"><i>Ebre</i><par n="Iran__np"/></e>
 <e lm="Èbre" a="Congrès EN"><i>Èbre</i><par n="Iran__np"/></e>
 <e lm="Ebrèus" a="Congrès"><i>Ebrèus</i><par n="Jeux_olympiques__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
-<e lm="Ebridas"><i>Ebridas</i><par n="Bahamas__np"/></e>
+<e lm="Ebridas"><i>Ebrid</i><par n="Antilh/as__np"/></e>
 <e lm="Ebron" a="hector"><i>Ebron</i><par n="Iran__np"/></e>
 <e lm="Eça" a="hector"><i>Eça</i><par n="Saussure__np"/></e>
 <e lm="Ecbatana" a="hector"><i>Ecbatana</i><par n="Bulgaria__np"/></e>
@@ -158199,7 +158215,7 @@
 <e lm="Enríquez"><i>Enríquez</i><par n="Saussure__np"/></e>
 <e lm="Ens" a="Congrès"><i>Ens</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Enseñat"><i>Enseñat</i><par n="Saussure__np"/></e>
-<e lm="Ensenhas" a="Congrès"><i>Ensenhas</i><par n="Nacions_Unidas__np"/><par n="d:lengadocian"/></e>
+<e lm="Ensenhas" a="Congrès"><i>Ensenh</i><par n="Bressol/as__np"/><par n="d:lengadocian"/></e>
 <e lm="Ensenyat" a="hector"><i>Ensenyat</i><par n="Saussure__np"/></e>
 <e lm="Enseruna" a="Congrès"><i>Enseruna</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Ensslin" a="hector"><i>Ensslin</i><par n="Saussure__np"/></e>
@@ -158598,7 +158614,7 @@
 <e lm="Espon" a="Congrès"><i>Espon</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Espona"><i>Espona</i><par n="Saussure__np"/></e>
 <e lm="Esponellà" a="hector"><i>Esponellà</i><par n="Iran__np"/></e>
-<e lm="Esporadas"><i>Esporadas</i><par n="Bahamas__np"/></e>
+<e lm="Esporadas"><i>Esporad</i><par n="Antilh/as__np"/></e>
 <e lm="Esposito"><i>Esposito</i><par n="Saussure__np"/></e>
 <e lm="Esposto" a="hector"><i>Esposto</i><par n="Saussure__np"/></e>
 <e lm="Espot" a="hector"><i>Espot</i><par n="Iran__np"/></e>
@@ -159126,7 +159142,7 @@
 <e lm="Falgás"><i>Falgás</i><par n="Saussure__np"/></e>
 <e lm="Falguera"><i>Falguera</i><par n="Saussure__np"/></e>
 <e lm="Falgueras"><i>Falgueras</i><par n="Saussure__np"/></e>
-<e lm="Falhadas" a="Congrès"><i>Falhadas</i><par n="Bahamas__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
+<e lm="Falhadas" a="Congrès"><i>Falhad</i><par n="Antilh/as__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Falibèrt" a="Congrès"><i>Falibèrt</i><par n="Antòni__np"/></e>
 <e lm="Falip"><i>Falip</i><par n="Saussure__np"/></e>
 <e lm="Falkland" a="dgimeno"><i>Falkland</i><par n="Bahamas__np"/></e>
@@ -159666,7 +159682,7 @@
 <e lm="Filadèlfia"><i>Filadèlfia</i><par n="Bulgaria__np"/></e>
 <e lm="Filali"><i>Filali</i><par n="Saussure__np"/></e>
 <e lm="Filàndia" a="Congrès"><i>Filàndia</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
-<e lm="Filandoiras" a="Congrès"><i>Filandoiras</i><par n="Bahamas__np"/><par n="d:lengadocian"/></e>
+<e lm="Filandoiras" a="Congrès"><i>Filandoir</i><par n="Antilh/as__np"/><par n="d:lengadocian"/></e>
 <e lm="Filella"><i>Filella</i><par n="Saussure__np"/></e>
 <e lm="Filemona" a="Congrès"><i>Filemona</i><par n="Aitana__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Filemon" a="Congrès"><i>Filemon</i><par n="Antòni__np"/></e>
@@ -159678,8 +159694,7 @@
 <e lm="Filip" a="capsot"><i>Filip</i><par n="Antòni__np"/></e>
 <e lm="Filipacchi"><i>Filipacchi</i><par n="Saussure__np"/></e>
 <e lm="Filip" a="hector"><i>Filip</i><par n="Saussure__np"/></e>
-<e lm="Filipinas" a="dgimeno"><i>Filipinas</i><par n="Bahamas__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
-<e lm="Filipines" a="dgimeno"><i>Filipines</i><par n="Bahamas__np"/><par n="d:aranes"/></e>
+<e lm="Filipinas" a="dgimeno"><i>Filipin</i><par n="Antilh/as__np"/><par n="d:gascon"/><par n="d:lengadocian"/><par n="d:aranes"/></e>
 <e lm="Filipo" a="hector"><i>Filipo</i><par n="Antòni__np"/></e>
 <e lm="Filippelli" a="hector"><i>Filippelli</i><par n="Saussure__np"/></e>
 <e lm="Filippeschi" a="hector"><i>Filippeschi</i><par n="Saussure__np"/></e>
@@ -160863,7 +160878,7 @@
 <e lm="Gallardo"><i>Gallardo</i><par n="Saussure__np"/></e>
 <e lm="Gallardón"><i>Gallardón</i><par n="Saussure__np"/></e>
 <e lm="Gallart"><i>Gallart</i><par n="Saussure__np"/></e>
-<e lm="Gallas" a="Congrès"><i>Gallas</i><par n="Bahamas__np"/></e>
+<e lm="Gallas" a="Congrès"><i>Gall</i><par n="Antilh/as__np"/></e>
 <e lm="Gallego" a="carmentano"><i>Gallego</i><par n="Saussure__np"/></e>
 <e lm="Gállego"><i>Gállego</i><par n="Iran__np"/></e>
 <e lm="Gallegos"><i>Gallegos</i><par n="Saussure__np"/></e>
@@ -160875,7 +160890,7 @@
 <e lm="Gallet" a="hector"><i>Gallet</i><par n="Saussure__np"/></e>
 <e lm="Galletti" a="hector"><i>Galletti</i><par n="Saussure__np"/></e>
 <e lm="Gàllia"><i>Gàllia</i><par n="Bulgaria__np"/></e>
-<e lm="Gàllias" a="Congrès"><i>Gàllias</i><par n="Bahamas__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
+<e lm="Gàllias" a="Congrès"><i>Gàlli</i><par n="Antilh/as__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Gallichan"><i>Gallichan</i><par n="Saussure__np"/></e>
 <e lm="Gallien" a="hector"><i>Gallien</i><par n="Antòni__np"/></e>
 <e lm="Gallieni" a="hector"><i>Gallieni</i><par n="Saussure__np"/></e>
@@ -162489,7 +162504,7 @@
 <e lm="Grau Seminario"><i>Grau<b/>Seminario</i><par n="Saussure__np"/></e>
 <e lm="Graus"><i>Graus</i><par n="Saussure__np"/></e>
 <e lm="Grava" a="Congrès"><i>Grava</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
-<e lm="Gravas" a="Congrès"><i>Gravas</i><par n="Bahamas__np"/><par n="d:gascon"/></e>
+<e lm="Gravas" a="Congrès"><i>Grav</i><par n="Antilh/as__np"/><par n="d:gascon"/></e>
 <e lm="Gravé"><i>Gravé</i><par n="Saussure__np"/></e>
 <e lm="Gravel"><i>Gravel</i><par n="Saussure__np"/></e>
 <e lm="Graveline"><i>Graveline</i><par n="Saussure__np"/></e>
@@ -162694,7 +162709,7 @@
 <e lm="Guaiana francesa" a="Congrès"><i>G</i><par n="u/ü"/><i>aiana<b/>francesa</i><par n="Bulgaria__np"/></e>
 <e lm="Guaiana francesa" r="LR"><p><l>Guaiana<b/>Francesa</l><r>Guaiana<b/>francesa</r></p><par n="Bulgaria__np"/></e>
 <e lm="Guaiana francesa" r="LR"><p><l>Güaiana<b/>Francesa</l><r>Guaiana<b/>francesa</r></p><par n="Bulgaria__np"/></e>
-<e lm="Guaianas"><i>G</i><par n="u/ü"/><i>aianas</i><par n="Bahamas__np"/></e>
+<e lm="Guaianas"><i>G</i><par n="u/ü"/><i>aian</i><par n="Antilh/as__np"/></e>
 <e lm="Guaidó" a="hector"><i>Guaidó</i><par n="Saussure__np"/></e>
 <e lm="Gualada" a="Congrès"><i>Gualada</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Gualba" a="hector"><i>Gualba</i><par n="Bulgaria__np"/></e>
@@ -163395,7 +163410,7 @@
 <e lm="Hébert"><i>Hébert</i><par n="Saussure__np"/></e>
 <e lm="Hébrard" a="hector"><i>Hébrard</i><par n="Saussure__np"/></e>
 <e lm="Hébras" a="Congrès"><i>Hébras</i><par n="Saussure__np"/></e>
-<e lm="Hebridas" a="Congrès"><i>Hebridas</i><par n="Bahamas__np"/><par n="d:gascon"/></e>
+<e lm="Hebridas" a="Congrès"><i>Hebrid</i><par n="Antilh/as__np"/><par n="d:gascon"/></e>
 <e lm="Hebron" a="hector"><i>Hebron</i><par n="Iran__np"/></e>
 <e lm="Hecht"><i>Hecht</i><par n="Saussure__np"/></e>
 <e lm="Hecilia" a="hector"><i>Hecilia</i><par n="Aitana__np"/></e>
@@ -164366,7 +164381,7 @@
 <e lm="Indianapolis" a="hector"><i>Indianapolis</i><par n="Iran__np"/></e>
 <e lm="Indianapòlis"><i>Indianapòlis</i><par n="Iran__np"/></e>
 <e lm="Indiano"><i>Indiano</i><par n="Saussure__np"/></e>
-<e lm="Índias"><i>Índias</i><par n="Bahamas__np"/></e>
+<e lm="Índias"><i>Índi</i><par n="Antilh/as__np"/></e>
 <e lm="Indira"><i>Indira</i><par n="Aitana__np"/></e>
 <e lm="Inditex" a="Congrès EN"><i>Inditex</i><par n="Linux__np"/></e>
 <e lm="Indochina"><i>Indochina</i><par n="Bulgaria__np"/></e>
@@ -164789,7 +164804,7 @@
 <e lm="Ivars"><i>Ivars</i><par n="Saussure__np"/></e>
 <e lm="Ivașcu" a="hector"><i>Ivașcu</i><par n="Saussure__np"/></e>
 <e lm="Ivelina" a="hector" r="LR"><i>Ivelina</i><par n="Bulgaria__np"/></e>
-<e lm="Ivelinas" a="hector"><i>Ivelinas</i><par n="Bahamas__np"/></e>
+<e lm="Ivelinas" a="hector"><i>Ivelin</i><par n="Antilh/as__np"/></e>
 <e lm="Iverna" a="hector"><i>Iverna</i><par n="Aitana__np"/></e>
 <e lm="Ivern"><i>Ivern</i><par n="Saussure__np"/></e>
 <e lm="Ives" a="capsot"><i>Ives</i><par n="Antòni__np"/></e>
@@ -165285,7 +165300,7 @@
 <e lm="Joan Francés" a="capsot"><i>Joan<b/>Francés</i><par n="Antòni__np"/></e>
 <e lm="Joan Geraut d'Astròs" a="hector"><i>Joan<b/>Geraut<b/>d'Astròs</i><par n="Antòni__np"/></e>
 <e lm="Joan Giraud d'Astròs" a="hector"><i>Joan<b/>Giraud<b/>d'Astròs</i><par n="Antòni__np"/></e>
-<e lm="Joanias" a="Congrès"><i>Joanias</i><par n="Bahamas__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
+<e lm="Joanias" a="Congrès"><i>Joani</i><par n="Antilh/as__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Joanicòta" a="Congrès"><i>Joanicòta</i><par n="Aitana__np"/></e>
 <e lm="Joanicòt" a="Congrès"><i>Joanicòt</i><par n="Antòni__np"/></e>
 <e lm="Joan"><i>Joan</i><par n="Antòni__np"/></e>
@@ -167030,7 +167045,7 @@
 <e lm="Lanapatz" a="Congrès"><i>Lanapatz</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Lanaplaà" a="Congrès"><i>Lanaplaà</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Lanaplan" a="Congrès"><i>Lanaplan</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
-<e lm="Lanas"><i>Lanas</i><par n="Bahamas__np"/></e>
+<e lm="Lanas"><i>Lan</i><par n="Antilh/as__np"/></e>
 <e lm="Lana Sobiran" a="Congrès"><i>Lana<b/>Sobiran</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Lanau"><i>Lanau</i><par n="Saussure__np"/></e>
 <e lm="Lançac" a="Congrès"><i>Lançac</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
@@ -167053,7 +167068,7 @@
 <e lm="Landa de Fronçac" a="Congrès"><i>Landa<b/>de<b/>Fronçac</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Landa Granda" a="Congrès"><i>Landa<b/>Granda</i><par n="Bulgaria__np"/><par n="d:gascon"/></e>
 <e lm="Landa"><i>Landa</i><par n="Saussure__np"/></e>
-<e lm="Landas" a="Congrès"><i>Landas</i><par n="Bahamas__np"/></e>
+<e lm="Landas" a="Congrès"><i>Land</i><par n="Antilh/as__np"/></e>
 <e lm="Landau"><i>Landau</i><par n="Saussure__np"/></e>
 <e lm="Landelina" a="hector"><i>Landelina</i><par n="Aitana__np"/></e>
 <e lm="Landella" a="hector"><i>Landella</i><par n="Saussure__np"/></e>
@@ -167361,8 +167376,8 @@
 <e lm="La Salvetat Sent Gili" a="Congrès EN|topoc"><par n="la/era_maj"/><i><b/>Sa</i><par n="l/u"/><i>vetat<b/>Sent<b/>Gili</i><par n="Bulgaria__np"/></e>
 <e lm="la Salzadella" a="hector"><par n="la/era_maj"/><i><b/>Salzadella</i><par n="Bulgaria__np"/></e>
 <e lm="La Sanha" a="Congrès EN"><par n="la/era_maj"/><i><b/>Sanha</i><par n="Bulgaria__np"/></e>
-<e lm="Las Arcas" a="topoc"><par n="las/eras/es_maj"/><i><b/>Arcas</i><par n="Bahamas__np"/></e>
-<e lm="las Ardenas"><par n="las/eras/es_maj"/><i><b/>Ardenas</i><par n="Bahamas__np"/></e>
+<e lm="Las Arcas" a="topoc"><par n="las/eras/es_maj"/><i><b/>Ar</i><par n="Ameri/cas__np"/></e>
+<e lm="las Ardenas"><par n="las/eras/es_maj"/><i><b/>Arden</i><par n="Antilh/as__np"/></e>
 <e lm="Lasarte" a="hector"><i>Lasarte</i><par n="Iran__np"/></e>
 <e lm="Lasarte"><i>Lasarte</i><par n="Saussure__np"/></e>
 <e lm="La Sausièra" a="topoc"><par n="la/era_maj"/><i><b/>Sausièra</i><par n="Bulgaria__np"/></e>
@@ -167376,7 +167391,7 @@
 <e lm="Las Bartas" a="topoc"><par n="las/eras/es_maj"/><i><b/>Bartas</i><par n="Bahamas__np"/></e>
 <e lm="Las Bòrdas d'Arisa" a="topoc"><par n="las/eras/es_maj"/><i><b/>Bòrdas<b/>d'Arisa</i><par n="Bahamas__np"/></e>
 <e lm="Las Cabanas" a="topoc"><par n="las/eras/es_maj"/><i><b/>Cabanas</i><par n="Bahamas__np"/></e>
-<e lm="Las Candolièiras" a="topoc"><par n="las/eras/es_maj"/><i><b/>Candolièiras</i><par n="Bahamas__np"/></e>
+<e lm="Las Candolièiras" a="topoc"><par n="las/eras/es_maj"/><i><b/>Candolièir</i><par n="Antilh/as__np"/></e>
 <e lm="Lascăr" a="hector"><i>Lascăr</i><par n="Saussure__np"/></e>
 <e lm="Lascasèras" a="Congrès"><i>Lascasèras</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Las Caums" a="hector"><par n="las/eras/es_maj"/><i><b/>Caums</i><par n="Iran__np"/></e>
@@ -170078,8 +170093,7 @@
 <e lm="Maldà" a="hector"><i>Maldà</i><par n="Iran__np"/></e>
 <e lm="Maldaner" a="hector"><i>Maldaner</i><par n="Saussure__np"/></e>
 <e lm="Maldini" a="hector"><i>Maldini</i><par n="Saussure__np"/></e>
-<e lm="Maldivas" a="dgimeno"><i>Maldivas</i><par n="Bahamas__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
-<e lm="Maldives" a="dgimeno"><i>Maldives</i><par n="Bahamas__np"/><par n="d:aranes"/><par n="d:gascon"/></e>
+<e lm="Maldivas" a="dgimeno"><i>Maldiv</i><par n="Antilh/as__np"/><par n="d:gascon"/><par n="d:lengadocian"/><par n="d:aranes"/></e>
 <e lm="Maldonado"><i>Maldonado</i><par n="Iran__np"/></e>
 <e lm="Maldonado"><i>Maldonado</i><par n="Saussure__np"/></e>
 <e lm="Maleah" a="hector"><i>Maleah</i><par n="Aitana__np"/></e>
@@ -170176,8 +170190,7 @@
 <e lm="Malvano" a="hector"><i>Malvano</i><par n="Saussure__np"/></e>
 <e lm="Malvesin" a="Congrès"><i>Malvesin</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Malvestio" a="hector"><i>Malvestio</i><par n="Saussure__np"/></e>
-<e lm="Malvinas" a="Congrès EN"><i>Malvinas</i><par n="Bahamas__np"/></e>
-<e lm="Malvines" a="dgimeno"><i>Malvines</i><par n="Bahamas__np"/></e>
+<e lm="Malvinas" a="Congrès EN"><i>Malvin</i><par n="Antilh/as__np"/></e>
 <e lm="Malvolia" a="hector"><i>Malvolia</i><par n="Aitana__np"/></e>
 <e lm="Malvy"><i>Malvy</i><par n="Saussure__np"/></e>
 <e lm="Malyar"><i>Malyar</i><par n="Saussure__np"/></e>
@@ -170529,7 +170542,7 @@
 <e lm="Marchant" a="Congrès"><i>Marchant</i><par n="Saussure__np"/></e>
 <e lm="Marchante"><i>Marchante</i><par n="Saussure__np"/></e>
 <e lm="Marcha Prima" a="Congrès"><i>Marcha<b/>Prima</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
-<e lm="Marchas"><i>Marchas</i><par n="Bahamas__np"/></e>
+<e lm="Marchas"><i>March</i><par n="Antilh/as__np"/></e>
 <e lm="Marchena"><i>Marchena</i><par n="Saussure__np"/></e>
 <e lm="Marchesi" a="hector"><i>Marchesi</i><par n="Saussure__np"/></e>
 <e lm="Marchesini" a="hector"><i>Marchesini</i><par n="Saussure__np"/></e>
@@ -170737,9 +170750,8 @@
 <e lm="Marian"><i>Marian</i><par n="Aitana__np"/></e>
 <e lm="Marian"><i>Marian</i><par n="Antòni__np"/></e>
 <e lm="Marianna" a="Congrès"><i>Marianna</i><par n="Aitana__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
-<e lm="Mariannas"><i>Mariannas</i><par n="Bahamas__np"/></e>
+<e lm="Mariannas"><i>Mariann</i><par n="Antilh/as__np"/></e>
 <e lm="Marianne" a="capsot"><i>Marianne</i><par n="Aitana__np"/></e>
-<e lm="Mariannes" a="hector"><i>Mariannes</i><par n="Bahamas__np"/></e>
 <e lm="Mariano" a="hector"><i>Mariano</i><par n="Saussure__np"/></e>
 <e lm="Mariano"><i>Mariano</i><par n="Antòni__np"/></e>
 <e lm="Mariano Rajoy" a="capsot"><i>Mariano<b/>Rajoy</i><par n="Antòni__np"/></e>
@@ -170909,7 +170921,7 @@
 <e lm="Marqueria" a="Congrès"><i>Marqueria</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Marquès" a="hector"><i>Marquès</i><par n="Saussure__np"/></e>
 <e lm="Marquês" a="hector"><i>Marquês</i><par n="Saussure__np"/></e>
-<e lm="Marquesas"><i>Marquesas</i><par n="Bahamas__np"/></e>
+<e lm="Marquesas"><i>Marques</i><par n="Antilh/as__np"/></e>
 <e lm="Marques"><i>Marques</i><par n="Saussure__np"/></e>
 <e lm="Marqués"><i>Marqués</i><par n="Saussure__np"/></e>
 <e lm="Marquet" a="Congrès"><i>Marquet</i><par n="Antòni__np"/></e>
@@ -172799,7 +172811,7 @@
 <e lm="Molotov"><i>Molotov</i><par n="Saussure__np"/></e>
 <e lm="Molteni" a="hector"><i>Molteni</i><par n="Saussure__np"/></e>
 <e lm="Moltó"><i>Moltó</i><par n="Saussure__np"/></e>
-<e lm="Molucas"><i>Molucas</i><par n="Bahamas__np"/></e>
+<e lm="Molucas"><i>Molu</i><par n="Ameri/cas__np"/></e>
 <e lm="Moluques" a="hector"><i>Moluques</i><par n="Bahamas__np"/></e>
 <e lm="Molyneux" a="Congrès"><i>Molyneux</i><par n="Saussure__np"/></e>
 <e lm="Mombrier" a="Congrès"><i>Mombrier</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
@@ -173883,7 +173895,7 @@
 <e lm="Naccarato" a="hector"><i>Naccarato</i><par n="Saussure__np"/></e>
 <e lm="Nácher"><i>Nácher</i><par n="Saussure__np"/></e>
 <e lm="Nacho"><i>Nacho</i><par n="Antòni__np"/></e>
-<e lm="Nacions Unidas" a="Congrès EN|capsot"><i>Nacions<b/>Unidas</i><par n="Nacions_Unidas__np"/></e>
+<e lm="Nacions Unidas" a="Congrès EN|capsot"><i>Nacions<b/>Unid</i><par n="Bressol/as__np"/></e>
 <e lm="Nada"><i>Nada</i><par n="Aitana__np"/></e>
 <e lm="Nadala" a="Congrès"><i>Nadala</i><par n="Aitana__np"/></e>
 <e lm="Nadal" a="Congrès EN"><i>Nadal</i><par n="Antòni__np"/></e>
@@ -175415,7 +175427,7 @@
 <e lm="Orbessan" a="Congrès"><i>Orbessan</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Orbison"><i>Orbison</i><par n="Saussure__np"/></e>
 <e lm="Orcadas del Sud"><i>Orcadas<b/></i><par n="del/deu/deth"/><i><b/>Sud</i><par n="Bahamas__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
-<e lm="Orcadas"><i>Orcadas</i><par n="Bahamas__np"/></e>
+<e lm="Orcadas"><i>Orcad</i><par n="Antilh/as__np"/></e>
 <e lm="Orchestra" a="hector"><i>Orchestra</i><par n="Linux__np"/></e>
 <e lm="Orciari" a="hector"><i>Orciari</i><par n="Saussure__np"/></e>
 <e lm="Òrcs" a="Congrès"><i>Òrcs</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
@@ -175986,7 +175998,7 @@
 <e lm="Palhars Sobeiran"><i>Palhars<b/>Sobeiran</i><par n="Iran__np"/></e>
 <e lm="Palhèrs" a="Congrès"><i>Palhèrs</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Palhet" a="Congrès"><i>Palhet</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
-<e lm="Palhòlas" a="Congrès"><i>Palhòlas</i><par n="Bahamas__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
+<e lm="Palhòlas" a="Congrès"><i>Palhòl</i><par n="Antilh/as__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Palin"><i>Palin</i><par n="Saussure__np"/></e>
 <e lm="Paliotti"><i>Paliotti</i><par n="Saussure__np"/></e>
 <e lm="Pal"><i>Pal</i><par n="Saussure__np"/></e>
@@ -176232,7 +176244,7 @@
 <e lm="Paray" a="hector"><i>Paray</i><par n="Saussure__np"/></e>
 <e lm="Parca" a="hector"><i>Parca</i><par n="Aitana__np"/></e>
 <e lm="Parcak" a="hector"><i>Parcak</i><par n="Saussure__np"/></e>
-<e lm="Parcas" a="Congrès"><i>Parcas</i><par n="Nacions_Unidas__np"/><par n="d:lengadocian"/></e>
+<e lm="Parcas" a="Congrès"><i>Par</i><par n="Pas/cas__np"/><par n="d:lengadocian"/></e>
 <e lm="Parcent" a="hector"><i>Parcent</i><par n="Iran__np"/></e>
 <e lm="Parcerisa"><i>Parcerisa</i><par n="Saussure__np"/></e>
 <e lm="Parcerisas"><i>Parcerisas</i><par n="Saussure__np"/></e>
@@ -176376,9 +176388,9 @@
 <e lm="Pascalin" a="Congrès"><i>Pascalin</i><par n="Antòni__np"/></e>
 <e lm="Pascaline" a="hector"><i>Pascaline</i><par n="Aitana__np"/></e>
 <e lm="Pascarella" a="hector"><i>Pascarella</i><par n="Saussure__np"/></e>
-<e lm="Pascas" a="Congrès"><i>Pascas</i><par n="Nacions_Unidas__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
+<e lm="Pascas" a="Congrès"><i>Pas</i><par n="Pas/cas__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Pascau" a="Congrès EN|capsot"><i>Pascau</i><par n="Antòni__np"/></e>
-<e lm="Pascoas" a="Congrès"><i>Pascoas</i><par n="Nacions_Unidas__np"/><par n="d:gascon"/></e>
+<e lm="Pascoas" a="Congrès"><i>Pasco</i><par n="Bressol/as__np"/><par n="d:gascon"/></e>
 <e lm="Pascos" a="Congrès"><i>Pascos</i><par n="Jeux_olympiques__np"/><par n="d:gascon"/></e>
 <e lm="Pascotto" a="hector"><i>Pascotto</i><par n="Saussure__np"/></e>
 <e lm="Pascua" a="hector"><i>Pascua</i><par n="Aitana__np"/></e>
@@ -176404,7 +176416,7 @@
 <e lm="Pasqual"><i>Pasqual</i><par n="Antòni__np"/></e>
 <e lm="Pasqual"><i>Pasqual</i><par n="Saussure__np"/></e>
 <e lm="Pasquau" a="Congrès EN"><i>Pasquau</i><par n="Antòni__np"/></e>
-<e lm="Pasqüetas" a="Congrès"><i>Pasq</i><par n="u/ü"/><i>etas</i><par n="Nacions_Unidas__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
+<e lm="Pasqüetas" a="Congrès"><i>Pasq</i><par n="u/ü"/><i>et</i><par n="Bressol/as__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Pasquier" a="Congrès"><i>Pasquier</i><par n="Saussure__np"/></e>
 <e lm="Pasquini" a="hector"><i>Pasquini</i><par n="Saussure__np"/></e>
 <e lm="Pasquino" a="hector"><i>Pasquino</i><par n="Saussure__np"/></e>
@@ -176544,7 +176556,7 @@
 <e lm="Pavia" a="hector"><i>Pavia</i><par n="Saussure__np"/></e>
 <e lm="Pavia"><i>Pavia</i><par n="Bulgaria__np"/></e>
 <e lm="Pavía"><i>Pavía</i><par n="Saussure__np"/></e>
-<e lm="Pavías" a="hector"><i>Pavías</i><par n="Bahamas__np"/></e>
+<e lm="Pavías" a="hector"><i>Paví</i><par n="Antilh/as__np"/></e>
 <e lm="Pavie" a="hector"><i>Pavie</i><par n="Saussure__np"/></e>
 <e lm="Pavlenski" a="hector"><i>Pavlenski</i><par n="Saussure__np"/></e>
 <e lm="Pavlović" a="hector"><i>Pavlović</i><par n="Saussure__np"/></e>
@@ -177054,8 +177066,7 @@
 <e lm="Persaud"><i>Persaud</i><par n="Saussure__np"/></e>
 <e lm="Persechino"><i>Persechino</i><par n="Saussure__np"/></e>
 <e lm="Persefòne" a="hector"><i>Persefòne</i><par n="Aitana__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
-<e lm="Perseïdas" a="Congrès EN"><i>Perseïdas</i><par n="Nacions_Unidas__np"/><par n="d:gascon"/></e>
-<e lm="Perseïdas" a="hector"><i>Perse</i><par n="ï/i"/><i>das</i><par n="Nacions_Unidas__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
+<e lm="Perseïdas" a="hector"><i>Perse</i><par n="ï/i"/><i>d</i><par n="Bressol/as__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Perseis" a="hector"><i>Perseis</i><par n="Aitana__np"/></e>
 <e lm="Persepòli" a="hector"><i>Persepòli</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Persèu" a="hector"><i>Persèu</i><par n="Antòni__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
@@ -177562,7 +177573,7 @@
 <e lm="Piredda" a="hector"><i>Piredda</i><par n="Saussure__np"/></e>
 <e lm="Pirena"><i>Pirena</i><par n="Aitana__np"/></e>
 <e lm="Pirenèas Hautas" a="Congrès" r="LR"><i>Pirenèas<b/>Hautas</i><par n="Bahamas__np"/><par n="d:gascon"/></e>
-<e lm="Pirenèas"><i>Pirenèas</i><par n="Bahamas__np"/></e>
+<e lm="Pirenèas"><i>Pirenè</i><par n="Antilh/as__np"/></e>
 <e lm="Pirenèu"><i>Pirenèu</i><par n="Iran__np"/></e>
 <e lm="Pirenèus Atlantics" a="capsot"><i>Pirenèus<b/>Atlantics</i><par n="Estats_Units__np"/></e>
 <e lm="Pirenèus Hauts" a="capsot"><i>Pirenèus<b/>Hauts</i><par n="Estats_Units__np"/><par n="d:gascon"/></e>
@@ -177745,7 +177756,7 @@
 <e lm="Pleiada" a="Congrès EN"><i>Pleiada</i><par n="Bahamas__np"/><par n="d:gascon"/></e>
 <e lm="Pleiada" a="Congrès EN"><i>Pleiada</i><par n="Wikipedia__np"/><par n="d:gascon"/></e>
 <e lm="Pleiada" a="Congrès"><i>Pleiada</i><par n="Bulgaria__np"/><par n="d:gascon"/></e>
-<e lm="Pleiadas" a="Congrès"><i>Pleiadas</i><par n="Bahamas__np"/><par n="d:lengadocian"/></e>
+<e lm="Pleiadas" a="Congrès"><i>Pleiad</i><par n="Antilh/as__np"/><par n="d:lengadocian"/></e>
 <e lm="Pleimelding" a="Congrès"><i>Pleimelding</i><par n="Saussure__np"/></e>
 <e lm="Plessis" a="Congrès"><i>Plessis</i><par n="Saussure__np"/></e>
 <e lm="Pleta" a="carmentano"><i>Pleta</i><par n="Bulgaria__np"/></e>
@@ -177867,7 +177878,7 @@
 <e lm="Pòl Europèu de Desvolopament" a="Congrès"><i>Pòl<b/>Europèu<b/>de<b/>Desvolopament</i><par n="Linux__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Polgár" a="hector"><i>Polgár</i><par n="Saussure__np"/></e>
 <e lm="Polha"><i>Polha</i><par n="Bulgaria__np"/></e>
-<e lm="Polhas" a="Congrès EN"><i>Polhas</i><par n="Bahamas__np"/></e>
+<e lm="Polhas" a="Congrès EN"><i>Polh</i><par n="Antilh/as__np"/></e>
 <e lm="Polhon" a="Congrès"><i>Polhon</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Polia" a="hector"><i>Polia</i><par n="Aitana__np"/></e>
 <e lm="Poliac" a="Congrès"><i>Poliac</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
@@ -180091,7 +180102,7 @@
 <e lm="Rocard"><i>Rocard</i><par n="Saussure__np"/></e>
 <e lm="Ròcas" a="Congrès"><i>Ròcas</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Ròca Sent Sarnin" a="Congrès"><i>Ròca<b/>Sent<b/>Sarnin</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
-<e lm="Rocassosas" a="Congrès"><i>Rocassosas</i><par n="Bahamas__np"/><par n="d:gascon"/></e>
+<e lm="Rocassosas" a="Congrès"><i>Rocassos</i><par n="Antilh/as__np"/><par n="d:gascon"/></e>
 <e lm="Ròca Timbaud" a="Congrès"><i>Ròca<b/>Timbaud</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Ròcavidal" a="Congrès"><i>Ròcavidal</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Roccella" a="hector"><i>Roccella</i><par n="Saussure__np"/></e>
@@ -180131,7 +180142,7 @@
 <e lm="Rockefeller"><i>Rockefeller</i><par n="Saussure__np"/></e>
 <e lm="Rockne"><i>Rockne</i><par n="Saussure__np"/></e>
 <e lm="Rocon" a="Congrès"><i>Rocon</i><par n="Antòni__np"/></e>
-<e lm="Rocosas"><i>Rocosas</i><par n="Bahamas__np"/></e>
+<e lm="Rocosas"><i>Rocos</i><par n="Antilh/as__np"/></e>
 <e lm="Rod" a="capsot"><i>Rod</i><par n="Antòni__np"/></e>
 <e lm="Roda de Barà" a="carmentano"><i>Roda<b/>de<b/>Barà</i><par n="Bulgaria__np"/></e>
 <e lm="Roda de Berà" a="hector"><i>Roda<b/>de<b/>Berà</i><par n="Bulgaria__np"/></e>
@@ -182702,7 +182713,7 @@
 <e lm="Séguy" a="Congrès"><i>Séguy</i><par n="Saussure__np"/></e>
 <e lm="Segway" a="capsot"><i>Segway</i><par n="Linux__np"/></e>
 <e lm="Seiblitz" a="hector"><i>Seiblitz</i><par n="Saussure__np"/></e>
-<e lm="Seichèlas" a="dgimeno"><i>Seichèlas</i><par n="Bahamas__np"/></e>
+<e lm="Seichèlas" a="dgimeno"><i>Seichèl</i><par n="Antilh/as__np"/></e>
 <e lm="Seignolle" a="hector"><i>Seignolle</i><par n="Saussure__np"/></e>
 <e lm="Seijas"><i>Seijas</i><par n="Saussure__np"/></e>
 <e lm="Seijo"><i>Seijo</i><par n="Saussure__np"/></e>
@@ -182717,7 +182728,7 @@
 <e lm="Sèish" a="Congrès"><i>Sèish</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Seishan" a="Congrès"><i>Seishan</i><par n="Bulgaria__np"/><par n="d:gascon"/></e>
 <e lm="Sèishas" a="Congrès"><i>Sèishas</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
-<e lm="Seishèlas" a="Congrès"><i>Seishèlas</i><par n="Bahamas__np"/><par n="d:gascon"/></e>
+<e lm="Seishèlas" a="Congrès"><i>Seishèl</i><par n="Antilh/as__np"/><par n="d:gascon"/></e>
 <e lm="Seishes" a="Congrès"><i>Seishes</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Sèishes" a="Congrès"><i>Sèishes</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Seix Barral" a="hector"><i>Seix<b/>Barral</i><par n="Wikipedia__np"/></e>
@@ -182987,7 +182998,7 @@
 <e lm="Sent Arroma" a="Congrès"><i>Sent<b/>Arroma</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Sent Arroman" a="Congrès"><i>Sent<b/>Arroman</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Sent Arromèc" a="Congrès"><i>Sent<b/>Arromèc</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
-<e lm="Sentas" a="Congrès"><i>Sentas</i><par n="Bahamas__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
+<e lm="Sentas" a="Congrès"><i>Sent</i><par n="Antilh/as__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Senta Sèda" a="Congrès"><i>Senta<b/>Sèda</i><par n="Bulgaria__np"/><par n="d:gascon"/></e>
 <e lm="Senta Sofia" a="Congrès"><i>Senta<b/>Sofia</i><par n="Bulgaria__np"/><par n="d:gascon"/></e>
 <e lm="Sent Astier" a="Congrès"><i>Sent<b/>Astier</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
@@ -183671,7 +183682,7 @@
 <e lm="Sèt" a="Congrès"><i>Sèt</i><par n="Antòni__np"/><par n="d:gascon"/></e>
 <e lm="Seta"><i>Seta</i><par n="Bulgaria__np"/></e>
 <e lm="Setcases" a="hector"><i>Setcases</i><par n="Iran__np"/></e>
-<e lm="Sèt Crabèras" a="Congrès"><i>Sèt<b/>Crabèras</i><par n="Bahamas__np"/><par n="d:gascon"/></e>
+<e lm="Sèt Crabèras" a="Congrès"><i>Sèt<b/>Crabèr</i><par n="Antilh/as__np"/><par n="d:gascon"/></e>
 <e lm="Sèt Estèus" a="Congrès EN"><i>Sèt<b/>Estèus</i><par n="Estats_Units__np"/><par n="d:gascon"/></e>
 <e lm="Sèt Estèus" a="Congrès"><i>Sèt<b/>Estèus</i><par n="Jeux_olympiques__np"/><par n="d:gascon"/></e>
 <e lm="Sètfonts" a="Congrès"><i>Sètfonts</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
@@ -184099,7 +184110,7 @@
 <e lm="Sinai" a="Congrès EN"><i>Sinai</i><par n="Iran__np"/></e>
 <e lm="Sinai" a="hector"><i>Sinai</i><par n="Aitana__np"/></e>
 <e lm="Sinaí"><i>Sinaí</i><par n="Iran__np"/></e>
-<e lm="Sinarcas" a="hector"><i>Sinarcas</i><par n="Bahamas__np"/></e>
+<e lm="Sinarcas" a="hector"><i>Sinar</i><par n="Ameri/cas__np"/></e>
 <e lm="Sinatra"><i>Sinatra</i><par n="Saussure__np"/></e>
 <e lm="Sincennes"><i>Sincennes</i><par n="Saussure__np"/></e>
 <e lm="Sinclair"><i>Sinclair</i><par n="Saussure__np"/></e>
@@ -185625,7 +185636,7 @@
 <e lm="Tempette" a="Congrès"><i>Tempette</i><par n="Saussure__np"/></e>
 <e lm="Temple" a="Congrès"><i>Temple</i><par n="Iran__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Temple d'Òut" a="Congrès"><i>Temple<b/>d'Òut</i><par n="Iran__np"/><par n="d:lengadocian"/></e>
-<e lm="Temporas" a="Congrès"><i>Temporas</i><par n="Nacions_Unidas__np"/><par n="d:lengadocian"/></e>
+<e lm="Temporas" a="Congrès"><i>Tempor</i><par n="Bressol/as__np"/><par n="d:lengadocian"/></e>
 <e lm="Tempses modèrnes" a="Congrès"><i>Tempses<b/>modèrnes</i><par n="Jeux_olympiques__np"/><par n="d:lengadocian"/></e>
 <e lm="Temps modèrnes" a="Congrès"><i>Temps<b/>modèrnes</i><par n="Jeux_olympiques__np"/><par n="d:gascon"/></e>
 <e lm="Temujin" a="hector"><i>Temujin</i><par n="Antòni__np"/></e>
@@ -185722,7 +185733,7 @@
 <e lm="Terminator" a="Congrès"><i>Terminator</i><par n="Antòni__np"/></e>
 <e lm="Tèrmis d'Armanhac" a="Congrès"><i>Tèrmis<b/>d'Armanhac</i><par n="Bulgaria__np"/></e>
 <e lm="tèrm'òc" a="Congrès EN"><i>tèrm'òc</i><par n="Linux__np"/></e>
-<e lm="Termopilas" a="hector"><i>Termopilas</i><par n="Bahamas__np"/></e>
+<e lm="Termopilas" a="hector"><i>Termopil</i><par n="Antilh/as__np"/></e>
 <e lm="Ternòpil" a="hector"><i>Ternòpil</i><par n="Iran__np"/></e>
 <e lm="Teròl" a="Congrès EN"><i>Teròl</i><par n="Iran__np"/></e>
 <e lm="Terol"><i>Terol</i><par n="Saussure__np"/></e>
@@ -186367,7 +186378,7 @@
 <e lm="Torrejón"><i>Torrejón</i><par n="Saussure__np"/></e>
 <e lm="Torrelameu" a="hector"><i>Torrelameu</i><par n="Iran__np"/></e>
 <e lm="Torrelavit" a="hector"><i>Torrelavit</i><par n="Iran__np"/></e>
-<e lm="Torrelhas" a="Congrès"><i>Torrelhas</i><par n="Bahamas__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
+<e lm="Torrelhas" a="Congrès"><i>Torrelh</i><par n="Antilh/as__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Torrella" a="hector"><i>Torrella</i><par n="Bulgaria__np"/></e>
 <e lm="Torrella"><i>Torrella</i><par n="Saussure__np"/></e>
 <e lm="Torrellas"><i>Torrellas</i><par n="Saussure__np"/></e>
@@ -186622,7 +186633,7 @@
 <e lm="Trensac" a="Congrès"><i>Trensac</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Trenta" a="hector"><i>Trenta</i><par n="Saussure__np"/></e>
 <e lm="Trentacoste" a="hector"><i>Trentacoste</i><par n="Saussure__np"/></e>
-<e lm="Trenta Gloriosas" a="Congrès"><i>Trenta<b/>Gloriosas</i><par n="Nacions_Unidas__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
+<e lm="Trenta Gloriosas" a="Congrès"><i>Trenta<b/>Glorios</i><par n="Bressol/as__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Trentel" a="Congrès"><i>Trentel</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Trentin" a="hector"><i>Trentin</i><par n="Saussure__np"/></e>
 <e lm="Trentin Aut Adige"><i>Trentin<b/>Aut<b/>Adige</i><par n="Iran__np"/></e>
@@ -186636,7 +186647,7 @@
 <e lm="Trepiccione" a="hector"><i>Trepiccione</i><par n="Saussure__np"/></e>
 <e lm="Tres Avescats" a="capsot"><i>Tres<b/>Avescats</i><par n="Estats_Units__np"/></e>
 <e lm="Tres Bordons" a="Congrès"><i>Tres<b/>Bordons</i><par n="Jeux_olympiques__np"/><par n="d:gascon"/></e>
-<e lm="Tres Estelas" a="Congrès"><i>Tres<b/>Estelas</i><par n="Bahamas__np"/><par n="d:gascon"/></e>
+<e lm="Tres Estelas" a="Congrès"><i>Tres<b/>Estel</i><par n="Antilh/as__np"/><par n="d:gascon"/></e>
 <e lm="Tres fustets" a="Congrès"><i>Tres<b/>fustets</i><par n="Jeux_olympiques__np"/><par n="d:lengadocian"/></e>
 <e lm="Tres i Quatre" a="hector"><i>Tres<b/>i<b/>Quat</i><par n="r/X"/><i>e</i><par n="Wikipedia__np"/></e>
 <e lm="Tresna" a="Congrès"><i>Tresna</i><par n="Bulgaria__np"/><par n="d:gascon"/></e>
@@ -187484,7 +187495,7 @@
 <e lm="Val Pò" a="hector" r="LR"><i>Va</i><par n="l/th/u"/><i><b/>Pò</i><par n="Iran__np"/></e>
 <e lm="Valprigonda" a="Congrès"><i>Valprigonda</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Valquiria" a="hector"><i>Valquiria</i><par n="Aitana__np"/></e>
-<e lm="Valquirias" a="Congrès"><i>Valquirias</i><par n="Nacions_Unidas__np"/><par n="d:gascon"/></e>
+<e lm="Valquirias" a="Congrès"><i>Valquiri</i><par n="Bressol/as__np"/><par n="d:gascon"/></e>
 <e lm="Valrofièr" a="Congrès"><i>Valrofièr</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Vals" a="Congrès"><i>Vals</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Val Tàner" a="hector"><i>Va</i><par n="l/th/u"/><i><b/>Tàner</i><par n="Bulgaria__np"/></e>
@@ -187577,7 +187588,7 @@
 <e lm="Varelhas" a="Congrès"><i>Varelhas</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Varella" a="hector"><i>Varella</i><par n="Saussure__np"/></e>
 <e lm="Varen" a="hector"><i>Varen</i><par n="Saussure__np"/></e>
-<e lm="Varenas" a="Congrès"><i>Varenas</i><par n="Bahamas__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
+<e lm="Varenas" a="Congrès"><i>Varen</i><par n="Antilh/as__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Varenas" a="Congrès"><i>Varenas</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Varenh" a="Congrès"><i>Varenh</i><par n="Bulgaria__np"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
 <e lm="Varennes"><i>Varennes</i><par n="Saussure__np"/></e>
