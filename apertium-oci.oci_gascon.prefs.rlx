@@ -1,8 +1,5 @@
 DELIMITERS = ".";
 
-SELECT (v:as_es)      IF (0 (VAR:as_es)) ;
-REMOVE (v:as_es) ;
-
 REMOVE (v:ch_it:ch) ;
 
 REMOVE (v:l_u:l) ;
@@ -15,6 +12,8 @@ REMOVE (v:l_th_u:u) ;
 
 SELECT (v:ment_ments:ments)      IF (0 (VAR:ment_ments:ments)) ;
 REMOVE (v:ment_ments:ments) ;
+
+REMOVE (v:á_a:á) ;
 
 SELECT (v:n_intervoc:n)      IF (0 (VAR:n_intervoc:n)) ;
 REMOVE (v:n_intervoc:n) ;
@@ -63,12 +62,13 @@ REMOVE (v:amb:ambe) ;
 REMOVE (v:amb:emb) ;
 REMOVE (v:amb:embe) ;
 REMOVE (v:amb:dambe) ;
+REMOVE (v:amb:tamb) ;
 
 REMOVE (v:v_u:u) ;
 
 REMOVE (v:r_X:r) ;
 
-REMOVE (v:ora/ritz:ritz) ;
+REMOVE (v:ora_ritz:ritz) ;
 
 SELECT (v:qui_que:que)      IF (0 (VAR:qui_que:que)) ;
 REMOVE (v:qui_que:que) ;

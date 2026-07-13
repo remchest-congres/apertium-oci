@@ -46,6 +46,9 @@ REMOVE (v:lo_le_eth:le) ;
 SELECT (v:pron_lo_le:le)      IF (0 (VAR:pron_lo_le:le)) ;
 REMOVE (v:pron_lo_le:le) ;
 
+
+SELECT (v:amb:tamb)      IF (0 (VAR:amb:tamb)) ;
+REMOVE (v:amb:tamb) ;
 REMOVE (v:amb:dab) ;
 REMOVE (v:amb:amb) ;
 REMOVE (v:amb:ambe) ;
@@ -58,8 +61,10 @@ REMOVE (v:v_u:v) ;
 
 REMOVE (v:r_X:X) ;
 
-SELECT (v:ora/ritz:ritz)      IF (0 (VAR:ora/ritz:ritz)) ;
-REMOVE (v:ora/ritz:ritz) ;
+SELECT (v:ora_ritz:ritz)      IF (0 (VAR:ora/ritz:ritz)) ;
+REMOVE (v:ora_ritz:ritz) ;
+
+REMOVE (v:qui_que:qui) ;
 
 REMOVE (v:mai_mei_mes_mès:mai) ;
 REMOVE (v:mai_mei_mes_mès:mei) ;

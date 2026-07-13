@@ -1,8 +1,5 @@
 DELIMITERS = ".";
 
-SELECT (v:as_es)      IF (0 (VAR:as_es)) ;
-REMOVE (v:as_es) ;
-
 SELECT (v:ch_it:it)      IF (0 (VAR:ch_it:it)) ;
 REMOVE (v:ch_it:it) ;
 
@@ -14,6 +11,8 @@ REMOVE (v:l_th_u:u) ;
 REMOVE (v:l_th_u:th) ;
 
 REMOVE (v:ment_ments:ments) ;
+
+REMOVE (v:á_a:a) ;
 
 REMOVE (v:n_intervoc:X) ;
 
@@ -30,17 +29,18 @@ REMOVE (v:f_h:h) ;
 
 REMOVE (v:r_arr:arr) ;
 
-SELECT (v:esosten:X)      IF (0 (VAR:esosten:X)) ;
-REMOVE (v:esosten:X) ;
+SELECT (v:esosten:e)      IF (0 (VAR:esosten:e)) ;
+REMOVE (v:esosten:e) ;
 
-SELECT (v:plursens:es)      IF (0 (VAR:plursens:es)) ;
-REMOVE (v:plursens:es) ;
+SELECT (v:plursens:s)      IF (0 (VAR:plursens:s)) ;
+REMOVE (v:plursens:s) ;
 
 REMOVE (v:o_au:o) ;
 
 SELECT (v:lo_le_eth:le)      IF (0 (VAR:lo_le_eth:le)) ;
 REMOVE (v:lo_le_eth:le) ;
 REMOVE (v:lo_le_eth:er) ;
+REMOVE (v:lo_le_eth:eth) ;
 
 REMOVE (v:pron_lo_le:lo) ;
 REMOVE (v:pron_lo_le:le) ;
@@ -52,12 +52,13 @@ REMOVE (v:amb:ambe) ;
 REMOVE (v:amb:emb) ;
 REMOVE (v:amb:embe) ;
 REMOVE (v:amb:dambe) ;
+REMOVE (v:amb:tamb) ;
 
 REMOVE (v:v_u:u) ;
 
 REMOVE (v:r_X:X) ;
 
-REMOVE (v:ora/ritz:ora) ;
+REMOVE (v:ora_ritz:ora) ;
 
 REMOVE (v:qui_que:qui) ;
 
@@ -106,6 +107,9 @@ REMOVE (v:p12p_aver:am) ;
 
 SELECT (v:vbser:èstre)      IF (0 (VAR:vbser:èstre)) ;
 REMOVE (v:vbser:èstre) ;
+
+SELECT (v:prendre:prendre)      IF (0 (VAR:prendre:prendre)) ;
+REMOVE (v:prendre:prendre) ;
 
 SELECT (v:conéisser:o)      IF (0 (VAR:conéisser:o)) ;
 REMOVE (v:conéisser:o) ;
