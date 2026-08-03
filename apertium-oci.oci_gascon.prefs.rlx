@@ -1,5 +1,8 @@
 DELIMITERS = ".";
 
+REMOVE (d:lengadocian) ;
+REMOVE (d:aranes) ;
+
 REMOVE (v:ch_it:ch) ;
 
 REMOVE (v:l_u:l) ;

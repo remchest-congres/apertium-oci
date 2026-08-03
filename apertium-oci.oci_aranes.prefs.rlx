@@ -2,6 +2,9 @@
 
 DELIMITERS = ".";
 
+REMOVE (d:gascon) ;
+REMOVE (d:lengadocian) ;
+
 REMOVE (v:ch_it:ch) ;
 
 REMOVE (v:l_u:l) ;

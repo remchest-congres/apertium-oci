@@ -1,5 +1,8 @@
 DELIMITERS = ".";
 
+REMOVE (d:gascon) ;
+REMOVE (d:aranes) ;
+
 SELECT (v:ch_it:it)      IF (0 (VAR:ch_it:it)) ;
 REMOVE (v:ch_it:it) ;
 
