@@ -267,6 +267,13 @@ REMOVE ("volar") IF (0 ("volèm")) ;
 
 REMOVE ("dar") IF (0 ("<dos>"i)) ;
 
+REMOVE ("li") IF (0 ("<-lo>"i)) ;
+REMOVE ("li") IF (0 ("<-los>"i)) ;
+REMOVE ("li") IF (0 ("<-le>"i)) ;
+REMOVE ("li") IF (0 ("<-les>"i)) ;
+REMOVE ("li") IF (0 ("<-la>"i)) ;
+REMOVE ("li") IF (0 ("<-las>"i)) ;
+
 REMOVE V IF (0 ("<bèlas>"i)) (-1 Fem + Pl) ;
 REMOVE V IF (0 ("<bèlas>"i)) (-1 AV) (-2 Fem + Pl) ;
 REMOVE V IF (0 ("<bèla>"i)) (-1 Fem + Sg) ;

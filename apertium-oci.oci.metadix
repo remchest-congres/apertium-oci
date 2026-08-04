@@ -208452,6 +208452,18 @@ xxxxxxxxxx
     <e lm="vòra de" r="LR"><p><l>vòra<b/>d'</l><r>vòra<b/>de</r></p><par n="a__pr"/></e>
 
     <!-- *** Pronoms *** -->
+    <e lm="mos" r="LR"><p><l>mo'</l><r>nos<s n="prn"/><s n="pro"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e lm="vo'" r="LR"><p><l>vo'</l><r>vos<s n="prn"/><s n="pro"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e lm="me" r="LR"><p><l>m'</l><r>me<s n="prn"/><s n="pro"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e lm="te" r="LR"><p><l>t'</l><r>te<s n="prn"/><s n="pro"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e lm="en" r="LR"><p><l>n'</l><r>en</r></p><par n="en__prn"/></e>
+    <e lm="lo" r="LR"><p><l>l'</l><r>lo<s n="prn"/><s n="pro"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+    <e lm="lo" r="LR"><p><l>l'</l><r>lo<s n="prn"/><s n="pro"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+    <e lm="se" r="LR"><p><l>s'</l><r>se<s n="prn"/><s n="pro"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sp"/></r></p></e>
+    <e lm="nos" r="LR"><p><l>ns'</l><r>nos<s n="prn"/><s n="pro"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p><par n="d:gascon"/></e>
+    <e lm="vos" r="LR"><p><l>vs'</l><r>vos<s n="prn"/><s n="pro"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p><par n="d:gascon"/></e>
+    <e lm="vos" r="LR"><p><l>v'</l><r>vos<s n="prn"/><s n="pro"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p><par n="d:gascon"/></e>
+
     <e lm="mos" r="LR"><p><l>mo'</l><r>mos</r></p><par n="mos__prn"/><par n="d:aranes"/></e>
     <e lm="mos" r="LR"><p><l>mo'</l><r>nos</r></p><par n="mos__prn"/><par n="d:gascon"/></e>
     <e lm="vo'" r="LR"><p><l>vo'</l><r/></p><par n="/vos__prn"/><par n="d:aranes"/></e>
@@ -208679,6 +208691,23 @@ xxxxxxxxxx
     <e lm="en" r="LR"><p><l>'n</l><r>en</r></p><par n="en__prn"/></e>
     <e lm="i" r="LR"><p><l>'i</l><r>i</r></p><par n="en__prn"/></e>
     <e lm="ac" r="LR"><p><l>'c</l><r>ac</r></p><par n="ac__prn"/></e>
+    <e lm="ac" r="LR"><p><l>'ac</l><r>ac</r></p><par n="ac__prn"/></e>
+
+    <e lm="me" r="LR"><p><l>'m</l><r>me<s n="prn"/><s n="enc"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e lm="te" r="LR"><p><l>'t</l><r>te<s n="prn"/><s n="enc"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e lm="lo" r="LR"><p><l>'u</l><r>lo<s n="prn"/><s n="enc"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+    <e lm="lo" r="LR"><p><l>'u</l><r>lo<s n="prn"/><s n="enc"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+    <e lm="se" r="LR"><p><l>'s</l><r>se<s n="prn"/><s n="enc"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sp"/></r></p></e>
+    <e lm="nos" r="LR"><p><l>'ns</l><r>nos<s n="prn"/><s n="enc"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e lm="nos" r="LR"><p><l>'nse</l><r>nos<s n="prn"/><s n="enc"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e lm="vos" r="LR"><p><l>'vs</l><r>vos<s n="prn"/><s n="enc"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e lm="vos" r="LR"><p><l>'vse</l><r>vos<s n="prn"/><s n="enc"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e lm="lo" r="LR"><p><l>'us</l><r>lo<s n="prn"/><s n="enc"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+    <e lm="lo" r="LR"><p><l>'us</l><r>lo<s n="prn"/><s n="enc"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+    <e lm="en" r="LR"><p><l>'n</l><r>en<s n="prn"/><s n="enc"/><s n="adv"/></r></p></e>
+    <e lm="i" r="LR"><p><l>'i</l><r>i<s n="prn"/><s n="enc"/><s n="adv"/></r></p></e>
+    <e lm="ac" r="LR"><p><l>'c</l><r>ac<s n="prn"/><s n="enc"/><s n="p3"/><s n="nt"/></r></p></e>
+    <e lm="ac" r="LR"><p><l>'ac</l><r>ac<s n="prn"/><s n="enc"/><s n="p3"/><s n="nt"/></r></p></e>
   </section>
 
   <section id="final" type="inconditional">
