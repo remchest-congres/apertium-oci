@@ -1014,8 +1014,8 @@ REMOVE VBimp + P3 ;	# WARNING: non per l'aranés !
 
 REMOVE N IF (-1 CM OR BOS) (0 ("<tè>"i)) (1 CM OR EOS)  ;		# guess
 SELECT VBimp IF (0 ("<vejatz>"i) OR ("<vedetz>"i)) (1 (":")) ;
-REMOVE VBimp IF (NOT 1* ExclMark) (NOT 0 ("tiéner") OR ("tiénguer") OR ("tier")) ;
-REMOVE VBimp IF (NOT 1* ExclMark) (NOT -1 CM OR BOS) (0 ("tiéner") OR ("tiénguer") OR ("tier")) (NOT 1 CM OR EOS) ;
+REMOVE VBimp IF (NOT 1* ExclMark) (NOT 0 ("tiéner") OR ("tiénguer") OR ("tier")) (NOT 1 PRencl) ;
+REMOVE VBimp IF (NOT 1* ExclMark) (NOT -1 CM OR BOS) (0 ("tiéner") OR ("tiénguer") OR ("tier")) (NOT 1 CM OR EOS OR PRencl) ;
 REMOVE VBimp IF (-1 Ant OR Cog OR unknown) (0 P3) ;
 REMOVE VBimp IF (-2 Ant OR Cog OR unknown) (-1 AV OR Pro) (0 P3) ;
 REMOVE VBimp IF (-3 Ant OR Cog OR unknown) (-2 AV) (-1 Pro) (0 P3) ;
@@ -1095,6 +1095,8 @@ SELECT N IF (0 (META:/-/r)) (1C N) ;
 
 #Un pronom proclitic est totjorn davant un vèrb o un autre pronom
 REMOVE Pro IF (NOT 1 unknownMinIni OR Pro OR V - VBpp OR VBimp) (NOT -1 PRencl or VBimp or VBinf or VBger) ;
+REMOVE Pro IF (0 PRencl) (-1 VBimp) ;
+REMOVE Pro IF (0 PRencl) (-1 PRencl) (-2 VBimp) ;
 REMOVE DET IF (1C V OR Pro) (NOT 1 VBpp) ;
 SELECT V OR Pro IF (-1C Pro) (NOT -1/* V) ;	# i a un ; i aviá un
 SELECT V OR Pro IF (-1C/* Pro) (NOT -1/* V) ;	# se'n sap
@@ -1933,7 +1935,7 @@ REMOVE Conjco IF (0 ("<o nos>"i) OR ("<o vos>"i)) ;
 #Un imperatiu seguis pas una conjonccion, un relatiu o un pronom personal
 REMOVE VBimp IF (-1C Enon OR Conjsub OR Rel OR Pers LINK NOT 0 Donc OR ("e donc") OR ("e doncas") OR ("e dongas"));
 
-REMOVE VBimp IF (NOT 1* ExclMark) ;
+REMOVE VBimp IF (NOT 1* ExclMark) (NOT 1 PRencl) ;
 
 SELECT V + $$AcordTempsPers IF (0C V) (2C V) (0 V + $$AcordTempsPers) (1 ("e") OR O_cnjcoo OR ("ni")) (2 V + $$AcordTempsPers) ;
 SELECT V + $$AcordTempsPers IF (0C V) (-2C V) (-2 V + $$AcordTempsPers) (-1 ("e") OR O_cnjcoo OR ("ni")) (0 V + $$AcordTempsPers) ;
@@ -1947,7 +1949,7 @@ SELECT VBimp IF (-2 SeVosPlai) (-1 CM) (0C V + Pers) (1 EOS) ;
 SELECT VBimp IF (0C V + Pers) (1 CM) (2 N OR NP) (3 CM) (4 SeVosPlai) (5 EOS) ;
 SELECT VBimp IF (-4 SeVosPlai) (-3 CM) (-2 CM) (-1 N OR NP) (0C V + Pers) (1 EOS) ;
 SELECT VBimp IF (0C V + Pers) (1 CM) (NOT 2* V + Pers LINK NOT 0 ("<agrada>"i)) (2* ExclMark) ;	# minja, aulhèr, se t’agrada !
-REMOVE VBimp IF (0 P3) ;	# guess
+REMOVE VBimp IF (0 P3) (NOT 1 PRencl) ;	# guess
 
 SELECT N IF (-1 ("<[a-zàáèéíòóú].*>"r)) (0 ("<Estat>") OR ("<Estats>")) ;	# "Estat" (con mayúscula) va precedido de una palabra con minúscula inicial
 SELECT N IF (-1 DET + Masc) (NOT -1 Ser) (0 Estat) ;
@@ -4351,6 +4353,7 @@ REMOVE ("sostar") IF (0 ("sostiéner")) ;
 REMOVE ("vàser") IF (0 ("anar")) ;
 REMOVE ("véser") IF (0 ("viéner")) ;
 REMOVE ("comprar") IF (0 ("compréner")) ;
+REMOVE ("mamar") IF (0 ("<mamà>"i)) ;
 
 REMOVE V IF (0 ("<de>")) ;
 
@@ -4371,8 +4374,7 @@ SELECT Conjadv IF (0 ("<si>")) (-1 ("mai")) (-2 ("a")) ;
 SELECT PREP IF (0 ("a costat de")) (NOT 1 ("<moneda>") OR ("sòu") OR ("argent")) ;
 REMOVE PREP IF (0 ("a costat de")) (1 ("<moneda>") OR ("sòu") OR ("argent")) ;
 
-
-
+REMOVE PRI IF (0 VBimp) (1 PRencl) ;
 
 AFTER-SECTIONS
 

@@ -307,6 +307,13 @@ REMOVE V IF (0 ("<mau>"i)); #gascon seulement
 
 REMOVE V IF (0 ("<tara>"i)) (1 N + FemSg OR AJ + FemSg OR NP + FemSg) ; #gascon seulement
 
+REMOVE Conjadv IF (0 ("<-se>")) ;
+
+REMOVE ("mamar") IF (0 ("<mamà>"i)) ;
+
+REMOVE VBinf IF (0 ("<hè>"i)) (NOT 1 PRencl) ;
+
+REMOVE ("li") IF (0 ("lo")) (NOT 1 PRencl) (NOT -1 PRencl) ;
 
 
 AFTER-SECTIONS
