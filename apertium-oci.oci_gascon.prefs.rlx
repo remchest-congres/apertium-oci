@@ -138,6 +138,9 @@ REMOVE (v:ger_r_nt:r) ;
 SELECT (v:subj:i)      IF (0 (VAR:subj:i)) ;
 REMOVE (v:subj:i) ;
 
+SELECT (v:indimp:evi)      IF (0 (VAR:indimp:evi)) ;
+REMOVE (v:indimp:evi) ;
+
 SELECT (v:preterit:èri_iri_ori)      IF (0 (VAR:preterit:èri_iri_ori)) ;
 REMOVE (v:preterit:èri_iri_ori) ;
 REMOVE (v:preterit:èi_ii_oi)      IF (0 (VAR:preterit:èri_iri_ori)) ;

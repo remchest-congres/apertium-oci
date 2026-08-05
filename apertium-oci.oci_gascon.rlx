@@ -315,6 +315,10 @@ REMOVE VBinf IF (0 ("<hè>"i)) (NOT 1 PRencl) ;
 
 REMOVE ("li") IF (0 ("lo")) (NOT 1 PRencl) (NOT -1 PRencl) ;
 
+REMOVE Pos IF (0 ("<sia>")) (NOT (1 Vconj)) ;
+
+REMOVE AJ IF (0 ("<dens>"i));
+
 
 AFTER-SECTIONS
 
