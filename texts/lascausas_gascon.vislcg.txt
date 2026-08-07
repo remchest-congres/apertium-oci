@@ -116,6 +116,7 @@
 	"un" det ind m sg
 "<navèth>"
 	"navèth" adj m sg
+"<capdau>"
 	"capdau" n mf sg
 "<.>"
 	"." sent
@@ -180,7 +181,7 @@
 "<n’>"
 	"ne" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<pas>"
 	"pas" adv
 "<de>"
@@ -211,7 +212,7 @@
 "<Gaston Febus>"
 	"Gaston Febus" np ant m sg
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<propietària>"
 	"propietària" n f sg
 "<deu>"
@@ -228,7 +229,7 @@
 "<l’>"
 	"lo" prn pro p3 f sg
 "<estó>"
-	"estar" vbser ifi p3 sg
+	"èsser" vbser ifi p3 sg
 "<balhat>"
 	"balhar" vblex pp m sg
 "<per>"
@@ -256,7 +257,7 @@
 "<qu’>"
 	"que" adv enon
 "<estón>"
-	"estar" vbser ifi p3 pl
+	"èsser" vbser ifi p3 pl
 "<enterprés>"
 	"enterpréner" vblex pp m pl
 "<en>"
@@ -316,7 +317,7 @@
 "<qu’>"
 	"que" adv enon
 "<estón>"
-	"estar" vbser ifi p3 pl
+	"èsser" vbser ifi p3 pl
 "<hèits>"
 	"har" vblex pp m pl
 "<per>"
@@ -461,7 +462,7 @@
 "<va>"
 	"anar" vblex pri p3 sg
 "<caler>"
-	"caler" vbmod inf
+	"càler" vbmod inf
 "<aviar>"
 	"aviar" vblex inf
 "<per>"
@@ -508,7 +509,7 @@
 "<que>"
 	"que" adv enon
 "<seré>"
-	"estar" vbser cni p3 sg
+	"èsser" vbser cni p3 sg
 "<ua>"
 	"un" det ind f sg
 "<temptativa>"
@@ -590,7 +591,7 @@
 "<qu’>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<d’>"
 	"de" pr
 "<amalgamar>"
@@ -632,7 +633,7 @@
 "<qui>"
 	"qui" cnjadv
 "<èra>"
-	"estar" vbser pii p3 sg
+	"èsser" vbser pii p3 sg
 "<enter>"
 	"enter" pr
 "<centenats d’>"
@@ -690,7 +691,7 @@
 "<qu’>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<rassegurant>"
 	"rassegurant" adj m sg
 "<d’>"
@@ -715,7 +716,7 @@
 "<Qu’>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<plan>"
 	"plan" preadv
 "<evident>"
@@ -729,7 +730,7 @@
 "<n’>"
 	"ne" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<pas>"
 	"pas" adv
 "<un>"
@@ -799,7 +800,7 @@
 "<n’>"
 	"ne" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<pas>"
 	"pas" adv
 "<Hitler>"
@@ -807,7 +808,7 @@
 "<qui>"
 	"qui" rel mf sp
 "<estó>"
-	"estar" vbser ifi p3 sg
+	"èsser" vbser ifi p3 sg
 "<,>"
 	"," cm
 "<hens>"
@@ -875,7 +876,7 @@
 "<que>"
 	"que" adv enon
 "<cau>"
-	"caler" vbmod pri p3 sg
+	"càler" vbmod pri p3 sg
 "<,>"
 	"," cm
 "<hens>"
@@ -906,7 +907,7 @@
 "<qu’>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<grana>"
 	"gran" adj f sg
 "<de>"
@@ -971,7 +972,7 @@
 "<ﬁn ﬁnala>"
 	"ﬁn ﬁnala" adv
 "<pareishen>"
-	"paréisher" vblex pri p3 pl
+	"paréisser" vblex pri p3 pl
 "<sus>"
 	"sus" pr
 "<l’>"
@@ -1043,7 +1044,7 @@
 "<qu’>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<autan>"
 	"autan" preadv
 "<parciau>"
@@ -1103,7 +1104,7 @@
 "<que>"
 	"que" adv enon
 "<cau>"
-	"caler" vbmod pri p3 sg
+	"càler" vbmod pri p3 sg
 "<donc>"
 	"donc" cnjadv
 "<precisar>"
@@ -1141,7 +1142,7 @@
 "<s’>"
 	"se" prn pro ref p3 mf sp
 "<èra>"
-	"estar" vbser pii p3 sg
+	"èsser" vbser pii p3 sg
 "<installada>"
 	"installar" vblex pp f sg
 "<en>"
@@ -1377,9 +1378,9 @@
 "<qui>"
 	"qui" rel mf sp
 "<seré>"
-	"estar" vbser cni p3 sg
+	"èsser" vbser cni p3 sg
 "<estat>"
-	"estar" vbser pp m sg
+	"èsser" vbser pp m sg
 "<possible>"
 	"possible" adj m sg
 "<sovent>"
@@ -1455,7 +1456,7 @@
 "<que>"
 	"que" cnjsub
 "<cau>"
-	"caler" vbmod pri p3 sg
+	"càler" vbmod pri p3 sg
 "<har>"
 	"har" vblex inf
 "<interviéner>"
@@ -1478,7 +1479,7 @@
 "<qu’>"
 	"que" adv enon
 "<estó>"
-	"estar" vbser ifi p3 sg
+	"èsser" vbser ifi p3 sg
 "<la>"
 	"lo" det def f sg
 "<persona>"
@@ -1516,25 +1517,21 @@
 	"," cm
 "<n>"
 	"n" n f sp
-	"n" n m sp
 "<.>"
 	"." sent
 
 "<d>"
 	"d" n f sp
-	"d" n m sp
 "<.>"
 	"." sent
 
 "<l>"
 	"l" n f sp
-	"l" n m sp
 "<.>"
 	"." sent
 
 "<r>"
 	"r" n f sp
-	"r" n m sp
 "<.>"
 	"." sent
 
@@ -1654,7 +1651,7 @@
 "<qu’>"
 	"que" cnjsub
 "<èra>"
-	"estar" vbser pii p3 sg
+	"èsser" vbser pii p3 sg
 "<hòu>"
 	"hòl" adj m sg
 "<:>"
@@ -1767,7 +1764,7 @@
 "<qu’>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<probable>"
 	"probable" adj m sg
 "<que>"
@@ -1777,7 +1774,7 @@
 "<fracàs>"
 	"fracàs" n m sg
 "<seré>"
-	"estar" vbser cni p3 sg
+	"èsser" vbser cni p3 sg
 "<aparit>"
 	"aparir" vblex pp m sg
 "<abans>"

@@ -52,7 +52,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<un>"
 	"un" det ind m sg
 "<país>"
@@ -147,7 +147,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<Sucre>"
 	"Sucre" np top m sg
 "<.>"
@@ -160,7 +160,7 @@
 "<gentilici>"
 	"gentilici" n m sg
 "<es>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<bolivian>"
 	"bolivian" adj m sg
 "<,>"
@@ -225,7 +225,7 @@
 "<que>"
 	"que" adv enon
 "<ho>"
-	"estar" vbser ifi p3 sg
+	"èsser" vbser ifi p3 sg
 "<la>"
 	"lo" det def f sg
 "<civilizacion>"
@@ -306,12 +306,11 @@
 "<que>"
 	"que" adv enon
 "<ho>"
-	"estar" vbser ifi p3 sg
+	"èsser" vbser ifi p3 sg
 "<denominada>"
 	"denominar" vblex pp f sg
 "<Haut Peró>"
 	"Haut Peró" np top m sg
-	"hautir" vblex pri p3 sg
 "<o>"
 	"o" cnjcoo
 "<Audiencia Reiau de Charcas>"
@@ -378,11 +377,9 @@
 "<abans de>"
 	"abans de" pr
 "<estar>"
-	"estar" vbser inf
+	"èsser" vbser inf
 "<inclús>"
-	"inclús" adj m sg
-	"inclús" adj m pl
-	"inclure" vblex pp m sg
+	"inclúser" vblex pp m sg
 "<dehens>"
 	"dehens" pr
 "<la>"
@@ -435,7 +432,7 @@
 "<que>"
 	"que" adv enon
 "<ho>"
-	"estar" vbser ifi p3 sg
+	"èsser" vbser ifi p3 sg
 "<batejada>"
 	"batejar" vblex pp f sg
 "<en>"
@@ -648,7 +645,7 @@
 "<que>"
 	"que" adv enon
 "<conegó>"
-	"conéisher" vblex ifi p3 sg
+	"conéisser" vblex ifi p3 sg
 "<ua>"
 	"un" det ind f sg
 "<instabilitat>"
@@ -694,7 +691,7 @@
 "<que>"
 	"que" adv enon
 "<ho>"
-	"estar" vbser ifi p3 sg
+	"èsser" vbser ifi p3 sg
 "<lo>"
 	"lo" det def m sg
 "<purmèr>"

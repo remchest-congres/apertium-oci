@@ -404,7 +404,7 @@
 "<qu’>"
 	"que" adv enon
 "<èra>"
-	"estar" vbser pii p3 sg
+	"èsser" vbser pii p3 sg
 "<hèita>"
 	"har" vblex pp f sg
 "<per>"

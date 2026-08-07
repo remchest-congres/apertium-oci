@@ -110,7 +110,7 @@
 "<n’>"
 	"en" prn pro adv
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<de>"
 	"de" pr
 "<«>"
@@ -118,7 +118,7 @@
 "<har>"
 	"har" vblex inf
 "<créisher>"
-	"créisher" vblex inf
+	"créisser" vblex inf
 "<lo>"
 	"lo" det def m sg
 "<nombre>"
@@ -146,7 +146,7 @@
 "<n’>"
 	"ne" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<pas>"
 	"pas" adv
 "<de rèsta>"
@@ -253,7 +253,7 @@
 "<qu’>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<un>"
 	"un" det ind m sg
 "<mejan>"
@@ -325,7 +325,7 @@
 "<que>"
 	"que" adv enon
 "<seràn>"
-	"estar" vbser fti p3 pl
+	"èsser" vbser fti p3 pl
 "<respectivament>"
 	"respectivament" adv
 "<francés>"
@@ -362,7 +362,7 @@
 "<que>"
 	"que" adv enon
 "<serà>"
-	"estar" vbser fti p3 sg
+	"èsser" vbser fti p3 sg
 "<integrat>"
 	"integrar" vblex pp m sg
 "<deu>"
@@ -431,7 +431,7 @@
 "<que>"
 	"que" adv enon
 "<son>"
-	"estar" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 "<ja>"
 	"ja" adv
 "<entenederas>"
@@ -464,7 +464,7 @@
 "<qu’>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<l’>"
 	"lo" det def mf sg
 "<organisme>"

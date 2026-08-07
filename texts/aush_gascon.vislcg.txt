@@ -15,7 +15,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<ua>"
 	"un" det ind f sg
 "<vila>"
@@ -29,10 +29,9 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<la>"
 	"lo" det def f sg
-	"lo" prn pro p3 f sg
 "<capitala>"
 	"capitala" n f sg
 "<istorica>"
@@ -96,7 +95,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<aushés>"
 	"aushés" n m sg
 "<,>"
@@ -117,7 +116,7 @@
 "<vila>"
 	"vila" n f sg
 "<es>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<situada>"
 	"situar" vblex pp f sg
 "<au ras de>"
@@ -136,6 +135,7 @@
 	"getar" vblex pri p3 sg
 "<dens>"
 	"dens" pr
+"<Garona>"
 	"Garona" np top f sg
 "<.>"
 	"." sent
@@ -151,7 +151,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<lo>"
 	"lo" det def m sg
 "<capluòc>"

@@ -1,35 +1,139 @@
-# les tests de moi
-# ici on met les regles de désambiguisations concernant les traits des langues
-#
-# par exemple ici la première règle concerne le trait uè -> uò en languedocien (nuèch -> nuòch à montpellier)
-# dans l'idée la règle dit que si la variable d'entrée de stream ue_uo a été renseignée par l'utilisateur
-# alors on désambiguise les réponses en fonction du marqueur v:ue_uo
-# sinon on désambiguise les réponses en choisissant celles qui n'ont pas le marqueur v:ue_uo
-
 DELIMITERS = ".";
 
-# on favorise les formes ayant le tag v:ue_uo si le mot actuel a un tag contenant la valeur de la variable globale VAR:ue_uo
-# si la variable VAR:ue_uo n'est pas définie alors la condition sera fausse et aucune forme n'est sélectionnée
-SELECT (v:ue_uo)      IF (0 (VAR:ue_uo)) ;
+REMOVE (d:gascon) ;
+REMOVE (d:aranes) ;
 
-# ensuite on retire toutes les formes ayant le tag v:ue_uo, à ce point les seules formes restantes avec ce tag sont celles
-# qui n'ont pas été choisies par la première règle donc on s'en débarasse
-REMOVE (v:ue_uo) ;
+SELECT (v:ch_it:it)      IF (0 (VAR:ch_it:it)) ;
+REMOVE (v:ch_it:it) ;
 
-SELECT (v:ch_it)      IF (0 (VAR:ch_it)) ;
-REMOVE (v:ch_it) ;
+REMOVE (v:l_u:u) ;
 
-SELECT (v:f_h)      IF (0 (VAR:f_h)) ;
-REMOVE (v:f_h) ;
+REMOVE (v:ala_au:au) ;
 
-SELECT (v:casuda_n)      IF (0 (VAR:casuda_n)) ;
-REMOVE (v:casuda_n) ;
+REMOVE (v:l_th_u:u) ;
+REMOVE (v:l_th_u:th) ;
 
-SELECT (v:casuda_b)      IF (0 (VAR:casuda_b)) ;
-REMOVE (v:casuda_b) ;
+REMOVE (v:ment_ments:ments) ;
 
-SELECT (v:ul_uu)      IF (0 (VAR:ul_uu)) ;
-REMOVE (v:ul_uu) ;
+REMOVE (v:á_a:a) ;
 
-SELECT (v:o_o-greu)      IF (0 (VAR:o_o-greu)) ;
-REMOVE (v:o_o-greu) ;
+REMOVE (v:n_intervoc:X) ;
+
+REMOVE (v:ièr_èr_èir:èr) ;
+REMOVE (v:ièr_èr_èir:èir) ;
+
+SELECT (v:ièra_ièira:ièira)      IF (0 (VAR:ièra_ièira:ièira)) ;
+REMOVE (v:ièra_ièira:ièira) ;
+
+REMOVE (v:ariá_aria_eria:aria) ;
+REMOVE (v:ariá_aria_eria:eria) ;
+
+REMOVE (v:f_h:h) ;
+
+REMOVE (v:r_arr:arr) ;
+
+SELECT (v:esosten:e)      IF (0 (VAR:esosten:e)) ;
+REMOVE (v:esosten:e) ;
+
+SELECT (v:plursens:s)      IF (0 (VAR:plursens:s)) ;
+REMOVE (v:plursens:s) ;
+
+REMOVE (v:o_au:o) ;
+
+SELECT (v:lo_le_eth:le)      IF (0 (VAR:lo_le_eth:le)) ;
+REMOVE (v:lo_le_eth:le) ;
+REMOVE (v:lo_le_eth:er) ;
+REMOVE (v:lo_le_eth:eth) ;
+
+REMOVE (v:pron_lo_le:lo) ;
+REMOVE (v:pron_lo_le:le) ;
+REMOVE (v:pron_lo_le:le) ;
+
+REMOVE (v:amb:dab) ;
+REMOVE (v:amb:damb) ;
+REMOVE (v:amb:ambe) ;
+REMOVE (v:amb:emb) ;
+REMOVE (v:amb:embe) ;
+REMOVE (v:amb:dambe) ;
+REMOVE (v:amb:tamb) ;
+
+REMOVE (v:v_u:u) ;
+
+REMOVE (v:r_X:X) ;
+
+REMOVE (v:ora_ritz:ora) ;
+
+REMOVE (v:qui_que:qui) ;
+
+REMOVE (v:mai_mei_mes_mès:mei) ;
+REMOVE (v:mai_mei_mes_mès:mes) ;
+REMOVE (v:mai_mei_mes_mès:mès) ;
+
+REMOVE (v:fem_aire:airitz) ;
+REMOVE (v:fem_aire:arèla) ;
+
+
+
+
+SELECT (v:detposs:compausat)      IF (0 (VAR:detposs:compausat)) ;
+REMOVE (v:detposs:compausat) ;
+
+REMOVE (v:poss_3plsg:3pl_3sg) ;
+
+SELECT (v:poss_sg:meu_meuna_teu_teuna)      IF (0 (VAR:poss_sg:meu_meuna_teu_teuna)) ;
+REMOVE (v:poss_sg:meu_meuna_teu_teuna) ;
+SELECT (v:poss_sg:mieu_mia_tieu_tia)      IF (0 (VAR:poss_sg:mieu_mia_tieu_tia)) ;
+REMOVE (v:poss_sg:mieu_mia_tieu_tia) ;
+REMOVE (v:poss_sg:men_mea_ton_toa) ;
+REMOVE (v:poss_sg:men_mia_ton_toa) ;
+REMOVE (v:poss_sg:men_mia_ton_tua) ;
+REMOVE (v:poss_sg:mié_mia_tué_tua) ;
+REMOVE (v:poss_sg:mèn_mia_tòn_tua) ;
+REMOVE (v:poss_sg:mieu_mia_tieu_tia) ;
+
+REMOVE (v:poss_1pl:noste_voste) ;
+REMOVE (v:poss_1pl:noste_vòste) ;
+REMOVE (v:poss_1pl:nòste_vòste) ;
+
+REMOVE (v:poss_3pl:lor_loa) ;
+REMOVE (v:poss_3pl:loé_loa) ;
+
+REMOVE (v:p3s_esser:ei) ;
+
+REMOVE (v:p1s_esser:sui) ;
+
+SELECT (v:har_hèr_faire:faire)      IF (0 (VAR:har_hèr_faire:faire)) ;
+REMOVE (v:har_hèr_faire:faire) ;
+REMOVE (v:har_hèr_faire:hèr) ;
+
+REMOVE (v:p12p_aver:am) ;
+
+SELECT (v:vbser:èstre)      IF (0 (VAR:vbser:èstre)) ;
+REMOVE (v:vbser:èstre) ;
+
+SELECT (v:prendre:prendre)      IF (0 (VAR:prendre:prendre)) ;
+REMOVE (v:prendre:prendre) ;
+
+SELECT (v:conéisser:o)      IF (0 (VAR:conéisser:o)) ;
+REMOVE (v:conéisser:o) ;
+
+
+SELECT (v:ger_r_nt:r)      IF (0 (VAR:ger_r_nt:r)) ;
+REMOVE (v:ger_r_nt:r) ;
+
+REMOVE (v:subj:i) ;
+
+SELECT (v:p3s_subimp:ès)      IF (0 (VAR:p3s_subimp:ès)) ;
+REMOVE (v:p3s_subimp:ès) ;
+
+SELECT (v:p12s_ind:e)      IF (0 (VAR:p12s_ind:e)) ;
+REMOVE (v:p12s_ind:e) ;
+
+REMOVE (v:p3s_subimp:ès) ;
+
+REMOVE (v:p12s_ind:e) ;
+
+
+REMOVE (d:aranes) ;
+REMOVE (d:gascon) ;
+SELECT (d:lengadocian) ;

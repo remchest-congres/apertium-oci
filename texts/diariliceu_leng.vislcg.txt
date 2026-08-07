@@ -274,7 +274,7 @@
 "<a>"
 	"a" pr
 "<respondre>"
-	"respondre" vblex inf
+	"respónder" vblex inf
 "<atal>"
 	"atal" cnjadv
 "<a>"
@@ -471,7 +471,7 @@
 "<de>"
 	"de" pr
 "<veire>"
-	"veire" vblex inf
+	"véser" vblex inf
 "<en>"
 	"en" pr
 "<streaming>"
@@ -655,7 +655,7 @@
 "<èsser>"
 	"èsser" vbser inf
 "<reconducha>"
-	"reconduire" vblex pp f sg
+	"recondúser" vblex pp f sg
 "<a>"
 	"a" pr
 "<cada>"

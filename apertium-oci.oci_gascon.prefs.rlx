@@ -1,36 +1,171 @@
-# on hard-code des variables pour cette variété, en ignorant celles renseignées par l'utilisateur
-
 DELIMITERS = ".";
 
-# TEST : ici on essaie de voir si pour une variété on peut forcer des traits mais en laisser d'autres optionnels
+REMOVE (d:lengadocian) ;
+REMOVE (d:aranes) ;
 
-# règle conditionelle `ue_uo`
-SELECT (v:ue_uo)      IF (0 (VAR:ue_uo)) ;
-REMOVE (v:ue_uo) ;
+REMOVE (v:ch_it:ch) ;
 
-# REMARQUES => du coup oui on peut il faut juste faire attention à l'ordre des règles pour gérer les priorités car selon la manière dont sont définies
-# les entrées du dico, les règles de desambiguisation peuvent s'exclure l'une l'autre 
-# 
-# par exemple dans le cas présent :
-#   echo 'nuit lit farine feuille' | AP_SETVAR='ue_uo' apertium -d . fra-oci_gascon
-# donne 
-#   nuòch lièit haria huelha
-# 
-# l'ambiguité entre
-#   <e lm="nuòch"><p><l>nuòch</l>   <r>nuèch<s n="n"/><s n="f"/><s n="sg"/></r></p><par n="v:ue_uo"/></e>
-# et
-#   <e lm="nuèch"><i>nuè</i><par n="nuè/ch__n"/></e>
-# est traitée par la règle conditionelle `ue_uo` ci-dessus et donc la règle forcée `SELECT (v:ch_it) ;` ne s'applique pas car lorsqu'on arrive
-# à ce niveau l'ambiguité a déjà été levée.
-#
-# si la règle conditionelle `ue_uo` était placée après les règles forcées l'inverse se serait produit et la sortie du pipeline aurait renvoyé
-#   nuèit lièit haria huelha
+REMOVE (v:l_u:l) ;
 
-# règles forcées
-SELECT (v:ch_it) ;
-SELECT (v:f_h) ;
-SELECT (v:casuda_n) ;
-SELECT (v:casuda_b) ;
-SELECT (v:al_au) ;
-SELECT (v:ul_uu) ;
-SELECT (v:o_o-greu);
+SELECT (v:ala_au:ala)      IF (0 (VAR:ala_au:ala)) ;
+REMOVE (v:ala_au:ala) ;
+
+REMOVE (v:l_th_u:l) ;
+REMOVE (v:l_th_u:u) ;
+
+SELECT (v:ment_ments:ments)      IF (0 (VAR:ment_ments:ments)) ;
+REMOVE (v:ment_ments:ments) ;
+
+REMOVE (v:á_a:á) ;
+
+SELECT (v:n_intervoc:n)      IF (0 (VAR:n_intervoc:n)) ;
+REMOVE (v:n_intervoc:n) ;
+
+SELECT (v:ièr_èr_èir:èir)      IF (0 (VAR:èr_èir:èir)) ;
+REMOVE (v:ièr_èr_èir:èir) ;
+REMOVE (v:ièr_èr_èir:ièr) ;
+
+REMOVE (v:ièra_ièira:ièira) ;
+
+REMOVE (v:ariá_aria_eria:aria) ;
+REMOVE (v:ariá_aria_eria:ariá) ;
+
+SELECT (v:f_h:f)      IF (0 (VAR:f_h:f)) ;
+REMOVE (v:f_h:f) ;
+
+SELECT (v:r_arr:r)      IF (0 (VAR:r_arr:r)) ;
+REMOVE (v:r_arr:r) ;
+
+REMOVE (v:esosten:X) ;
+
+REMOVE (v:plursens:es) ;
+
+SELECT (v:o_au:o)      IF (0 (VAR:o_au:o)) ;
+REMOVE (v:o_au:o) ;
+
+SELECT (v:lo_le_eth:er)      IF (0 (VAR:lo_le_eth:er)) ;
+REMOVE (v:lo_le_eth:er) ;
+REMOVE (v:lo_le_eth:le) ;
+REMOVE (v:lo_le_eth:eth) ;
+
+REMOVE (v:pron_lo_le:lo) ;
+REMOVE (v:pron_lo_le:le) ;
+
+SELECT (v:entà_tà_ende:tà)      IF (0 (VAR:entà_tà_ende:tà)) ;
+REMOVE (v:entà_tà_ende:entà)      IF (0 (VAR:entà_tà_ende:tà)) ;
+REMOVE (v:entà_tà_ende:tà) ;
+SELECT (v:entà_tà_ende:ende)      IF (0 (VAR:entà_tà_ende:ende)) ;
+REMOVE (v:entà_tà_ende:entà)      IF (0 (VAR:entà_tà_ende:ende)) ;
+REMOVE (v:entà_tà_ende:ende) ;
+
+
+REMOVE (v:amb:amb) ;
+REMOVE (v:amb:damb) ;
+REMOVE (v:amb:ambe) ;
+REMOVE (v:amb:emb) ;
+REMOVE (v:amb:embe) ;
+REMOVE (v:amb:dambe) ;
+REMOVE (v:amb:tamb) ;
+
+REMOVE (v:v_u:u) ;
+
+REMOVE (v:r_X:r) ;
+
+REMOVE (v:ora_ritz:ritz) ;
+
+SELECT (v:qui_que:que)      IF (0 (VAR:qui_que:que)) ;
+REMOVE (v:qui_que:que) ;
+
+SELECT (v:mai_mei_mes_mès:mes)      IF (0 (VAR:mai_mei_mes_mès:mes)) ;
+REMOVE (v:mai_mei_mes_mès:mes) ;
+REMOVE (v:mai_mei_mes_mès:mai) ;
+REMOVE (v:mai_mei_mes_mès:mès) ;
+
+REMOVE (v:fem_aire:airitz) ;
+REMOVE (v:fem_aire:arèla) ;
+
+
+
+REMOVE (v:detposs:simple) ;
+
+SELECT (v:poss_3plsg:3pl_3sg)      IF (0 (VAR:poss_3plsg:3pl_3sg)) ;
+REMOVE (v:poss_3plsg:3pl_3sg) ;
+
+SELECT (v:poss_sg:men_mia_ton_toa)      IF (0 (VAR:poss_sg:men_mia_ton_toa)) ;
+REMOVE (v:poss_sg:men_mia_ton_toa) ;
+SELECT (v:poss_sg:men_mia_ton_tua)      IF (0 (VAR:poss_sg:men_mia_ton_tua)) ;
+REMOVE (v:poss_sg:men_mia_ton_tua) ;
+SELECT (v:poss_sg:mié_mia_tué_tua)      IF (0 (VAR:poss_sg:mié_mia_tué_tua)) ;
+REMOVE (v:poss_sg:mié_mia_tué_tua) ;
+REMOVE (v:poss_sg:mèn_mia_tòn_tua) ;
+REMOVE (v:poss_sg:mieu_mieuna_tieu_tieuna) ;
+REMOVE (v:poss_sg:meu_meuna_teu_teuna) ;
+REMOVE (v:poss_sg:mieu_mia_tieu_tia) ;
+
+SELECT (v:poss_1pl:nòste_vòste)      IF (0 (VAR:poss_1pl:nòste_vòste)) ;
+REMOVE (v:poss_1pl:nòste_vòste) ;
+REMOVE (v:poss_1pl:noste_voste) ;
+REMOVE (v:poss_1pl:nòstre_vòstre) ;
+
+SELECT (v:poss_3pl:lor_loa)      IF (0 (VAR:poss_3pl:lor_loa)) ;
+REMOVE (v:poss_3pl:lor_loa) ;
+SELECT (v:poss_3pl:loé_loa)      IF (0 (VAR:poss_3pl:loé_loa)) ;
+REMOVE (v:poss_3pl:loé_loa) ;
+
+
+SELECT (v:p3s_esser:es)      IF (0 (VAR:p3s_esser:es)) ;
+REMOVE (v:p3s_esser:es) ;
+
+SELECT (v:p1s_esser:sui)      IF (0 (VAR:p1s_esser:sui)) ;
+REMOVE (v:p1s_esser:sui) ;
+
+SELECT (v:har_hèr_faire:hèr)      IF (0 (VAR:har_hèr_faire:hèr)) ;
+REMOVE (v:har_hèr_faire:hèr) ;
+REMOVE (v:har_hèr_faire:faire) ;
+
+SELECT (v:p12p_aver:am)      IF (0 (VAR:p12p_aver:am)) ;
+REMOVE (v:p12p_aver:am) ;
+
+SELECT (v:tenir:ténguer)      IF (0 (VAR:tenir:ténguer)) ;
+REMOVE (v:tenir:ténguer) ;
+
+REMOVE (v:conéisser:o) ;
+
+
+SELECT (v:ger_r_nt:r)      IF (0 (VAR:ger_r_nt:r)) ;
+REMOVE (v:ger_r_nt:r) ;
+
+SELECT (v:subj:i)      IF (0 (VAR:subj:i)) ;
+REMOVE (v:subj:i) ;
+
+SELECT (v:indimp:evi)      IF (0 (VAR:indimp:evi)) ;
+REMOVE (v:indimp:evi) ;
+
+SELECT (v:preterit:èri_iri_ori)      IF (0 (VAR:preterit:èri_iri_ori)) ;
+REMOVE (v:preterit:èri_iri_ori) ;
+REMOVE (v:preterit:èi_ii_oi)      IF (0 (VAR:preterit:èri_iri_ori)) ;
+SELECT (v:preterit:èri_iri_uri)      IF (0 (VAR:preterit:èri_iri_uri)) ;
+REMOVE (v:preterit:èri_iri_uri) ;
+REMOVE (v:preterit:èi_ii_oi)      IF (0 (VAR:preterit:èri_iri_uri)) ;
+
+SELECT (v:p3s_pret:c)      IF (0 (VAR:p3s_pret:c)) ;
+REMOVE (v:p3s_pret:c) ;
+
+SELECT (v:futur:contractat)      IF (0 (VAR:futur:contractat)) ;
+REMOVE (v:futur:contractat) ;
+
+REMOVE (v:p3s_subimp:ès) ;
+
+REMOVE (v:p12s_ind:e) ;
+
+SELECT (v:incoativitat:iss)      IF (0 (VAR:incoativitat:iss)) ;
+REMOVE (v:incoativitat:iss) ;
+REMOVE (v:incoativitat:eish)      IF (0 (VAR:incoativitat:iss)) ;
+SELECT (v:incoativitat:ish)      IF (0 (VAR:incoativitat:ishi)) ;
+REMOVE (v:incoativitat:ish) ;
+REMOVE (v:incoativitat:eish)      IF (0 (VAR:incoativitat:ish)) ;
+
+
+REMOVE (d:lengadocian) ;
+REMOVE (d:aranes) ;
+SELECT (d:gascon);

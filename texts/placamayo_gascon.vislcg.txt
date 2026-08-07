@@ -30,7 +30,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<un>"
 	"un" det ind m sg
 "<lòc>"
@@ -132,7 +132,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<un>"
 	"un" det ind m sg
 "<lòc>"
@@ -239,7 +239,7 @@
 "<qu'>"
 	"que" rel mf sp
 "<èran>"
-	"estar" vbser pii p3 pl
+	"èsser" vbser pii p3 pl
 "<vaduts>"
 	"vàder" vblex pp m pl
 "<los lors>"
@@ -247,7 +247,7 @@
 "<hilhs>"
 	"hilh" n m pl
 "<desapareishuts>"
-	"desaparéisher" vblex pp m pl
+	"desaparéisser" vblex pp m pl
 "<.>"
 	"." sent
 
@@ -282,7 +282,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<pintrat>"
 	"pintrar" vblex pp m sg
 "<mantun>"
@@ -341,7 +341,7 @@
 "<que>"
 	"que" adv enon
 "<hon>"
-	"estar" vbser ifi p3 pl
+	"èsser" vbser ifi p3 pl
 "<lo>"
 	"lo" det def m sg
 "<17>"
@@ -471,7 +471,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<lo>"
 	"lo" det def m sg
 "<lòc>"
@@ -479,7 +479,7 @@
 "<on>"
 	"on" rel adv
 "<ho>"
-	"estar" vbser ifi p3 sg
+	"èsser" vbser ifi p3 sg
 "<fondada>"
 	"fondar" vblex pp f sg
 "<la>"
@@ -493,7 +493,7 @@
 "<que>"
 	"que" adv enon
 "<ho>"
-	"estar" vbser ifi p3 sg
+	"èsser" vbser ifi p3 sg
 "<creada>"
 	"crear" vblex pp f sg
 "<en>"
@@ -653,7 +653,7 @@
 "<d'>"
 	"de" pr
 "<arreconéisher>"
-	"reconéisher" vblex inf
+	"reconéisser" vblex inf
 "<l'>"
 	"lo" det def mf sg
 "<autoritat>"
@@ -826,7 +826,7 @@
 "<que>"
 	"que" adv enon
 "<hon>"
-	"estar" vbser ifi p3 pl
+	"èsser" vbser ifi p3 pl
 "<traucadas>"
 	"traucar" vblex pp f pl
 "<dens>"
@@ -886,7 +886,7 @@
 "<Qu'>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<tanben>"
 	"tanben" adv
 "<lo>"

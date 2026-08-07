@@ -37,7 +37,7 @@
 "<qu’>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<possible>"
 	"possible" adj m sg
 "<sonque>"
@@ -243,7 +243,7 @@
 "<Qu’>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<atau>"
 	"atau" adv
 "<qui>"
@@ -335,7 +335,7 @@
 "<qu’>"
 	"que" adv enon
 "<èm>"
-	"estar" vbser pri p1 pl
+	"èsser" vbser pri p1 pl
 "<urós>"
 	"urós" adj m pl
 "<de>"
@@ -487,7 +487,7 @@
 "<n’>"
 	"en" prn pro adv
 "<èm>"
-	"estar" vbser pri p1 pl
+	"èsser" vbser pri p1 pl
 "<uei lo dia>"
 	"uei lo dia" adv
 "<a>"
@@ -591,7 +591,7 @@
 	"be" adv enon
 		"en" prn pro adv
 "<son>"
-	"estar" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 "<representadas>"
 	"arrepresentar" vblex pp f pl
 "<,>"
@@ -666,7 +666,7 @@
 "<ara que>"
 	"ara que" cnjadv
 "<son>"
-	"estar" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 "<de>"
 	"de" pr
 "<:>"
@@ -751,7 +751,7 @@
 "<n’>"
 	"en" prn pro adv
 "<èm>"
-	"estar" vbser pri p1 pl
+	"èsser" vbser pri p1 pl
 "<peu moment>"
 	"peu moment" adv
 "<a>"
@@ -847,7 +847,7 @@
 	"que" adv enon
 		"en" prn pro adv
 "<son>"
-	"estar" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 "<planviengudas>"
 	"planviengut" n f pl
 "<,>"
@@ -861,7 +861,7 @@
 "<qu’>"
 	"que" adv enon
 "<ei>"
-	"estar" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<ja>"
 	"ja" adv
 "<entinoat>"
@@ -997,9 +997,9 @@
 "<que>"
 	"que" adv enon
 "<son>"
-	"estar" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 "<estats>"
-	"estar" vbser pp m pl
+	"èsser" vbser pp m pl
 "<nombrós>"
 	"nombrós" adj m pl
 "<a>"
@@ -1025,11 +1025,11 @@
 "<non>"
 	"non" adv enon
 "<seré>"
-	"estar" vbser cni p3 sg
+	"èsser" vbser cni p3 sg
 "<pas>"
 	"pas" adv
 "<estat>"
-	"estar" vbser pp m sg
+	"èsser" vbser pp m sg
 "<possible>"
 	"possible" adj m sg
 "<.>"

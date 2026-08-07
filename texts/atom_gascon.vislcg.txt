@@ -59,7 +59,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"èster" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<l'>"
 	"lo" det def mf sg
 "<unitat>"
@@ -410,7 +410,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"èster" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<mei que mei>"
 	"mei que mei" adv
 "<compausat>"
@@ -467,7 +467,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"èster" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<lo>"
 	"lo" det def m sg
 "<nombre>"
@@ -630,7 +630,7 @@
 "<b'>"
 	"be" adv enon
 "<ei>"
-	"èster" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<fixe>"
 	"fixe" adj m sg
 "<e>"
@@ -723,7 +723,7 @@
 "<que>"
 	"que" rel an mf sp
 "<constitueishen>"
-	"constituir" vblex pri p3 pl
+	"constituïr" vblex pri p3 pl
 "<dus>"
 	"dus" num m sp
 "<isotòps>"
@@ -944,11 +944,11 @@
 "<vòu>"
 	"voler" vbmod pri p3 sg
 "<díser>"
-	"dire" vblex inf
+	"díser" vblex inf
 "<qu'>"
 	"que" rel adv
 "<ei>"
-	"èster" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<compausat>"
 	"compausar" vblex pp m sg
 "<d'>"
@@ -1125,7 +1125,7 @@
 "<vau>"
 	"anar" vblex pri p1 sg
 "<díser>"
-	"dire" vblex inf
+	"díser" vblex inf
 "<que>"
 	"que" cnjsub
 "<dens>"
@@ -1152,7 +1152,7 @@
 "<qu'>"
 	"que" adv enon
 "<ei>"
-	"èster" vbser pri p3 sg
+	"èsser" vbser pri p3 sg
 "<egala>"
 	"egal" adj f sg
 "<a>"
@@ -1786,7 +1786,7 @@
 "<be>"
 	"be" adv enon
 "<son>"
-	"èster" vbser pri p3 pl
+	"èsser" vbser pri p3 pl
 "<situats>"
 	"situar" vblex pp m pl
 "<sus>"
@@ -1977,7 +1977,7 @@
 "<,>"
 	"," cm
 "<estant>"
-	"èster" vbser ger
+	"èsser" vbser ger
 "<l'>"
 	"lo" det def mf sg
 "<electron>"

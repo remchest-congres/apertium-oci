@@ -6,8 +6,8 @@ LANG1=oci
 BASENAME=apertium-$(LANG1)
 
 VAR1=_gascon
-
-# CHANGES : ici on indique notre fichier de préférences dans la liste des fichiers à générer par le make
+VAR2=_lang
+VAR3=_aranes
 
 TARGETS_COMMON =			\
 	$(LANG1).automorf.bin		\
@@ -15,9 +15,14 @@ TARGETS_COMMON =			\
 	$(LANG1).autogen.bin		\
 	$(LANG1).autogen.att.gz		\
 	$(LANG1).autopgen.bin		\
-	$(LANG1).rlx.bin		\
+	$(LANG1)$(VAR1).autopgen.bin		\
+	$(LANG1).rlx.bin \
+	$(LANG1)$(VAR1).rlx.bin \
+	$(LANG1)$(VAR2).rlx.bin \
+	$(LANG1)$(VAR3).rlx.bin \
 	$(LANG1).prefs.rlx.bin \
-	$(LANG1)$(VAR1).prefs.rlx.bin
+	$(LANG1)$(VAR1).prefs.rlx.bin \
+	$(LANG1).cleantags.rlx.bin
 
 # Use this goal for creating .deps, otherwise make -j2 will give problems:
 @ap_include@
@@ -36,6 +41,9 @@ TARGETS_COMMON =			\
 .deps/$(LANG1).post.dix: $(BASENAME).post-$(LANG1).dix .deps/.d
 	xsltproc --stringparam alt $(LANG1) alt.xsl $(BASENAME).post-$(LANG1).dix >$@
 
+.deps/$(LANG1)$(VAR1).post.dix: $(BASENAME).post-$(LANG1)$(VAR1).dix .deps/.d
+	xsltproc --stringparam alt $(LANG1) alt.xsl $(BASENAME).post-$(LANG1)$(VAR1).dix >$@
+
 ###############################################################################
 
 $(LANG1).automorf.bin: .deps/$(LANG1).dix $(BASENAME).$(LANG1).acx
@@ -53,6 +61,9 @@ $(LANG1).automorf.att.gz: $(LANG1).automorf.bin
 	lt-print $< | gzip -n -9 -c > $@
 
 $(LANG1).autopgen.bin: .deps/$(LANG1).post.dix
+	lt-comp lr $< $@
+
+$(LANG1)$(VAR1).autopgen.bin: .deps/$(LANG1)$(VAR1).post.dix
 	lt-comp lr $< $@
 
 ###############################################################################
@@ -105,6 +116,30 @@ $(LANG1).zhfst: .deps/acceptor.default.hfst .deps/errmodel.default.hfst
 $(LANG1).rlx.bin: $(BASENAME).$(LANG1).rlx
 	cg-comp $< $@
 
+$(LANG1)$(VAR1).rlx.bin: $(BASENAME).$(LANG1)$(VAR1).rlx
+	cg-comp $< $@
+
+$(LANG1)$(VAR2).rlx.bin: $(BASENAME).$(LANG1)$(VAR2).rlx
+	cg-comp $< $@
+
+$(LANG1)$(VAR3).rlx.bin: $(BASENAME).$(LANG1)$(VAR3).rlx
+	cg-comp $< $@
+
+$(LANG1).cleantags.rlx.bin: $(BASENAME).$(LANG1).cleantags.rlx
+	cg-comp $< $@
+
+###############################################################################
+## Variant preferences
+###############################################################################
+
+# CHANGES : on compile le fichier de règles pour les préférences
+
+$(LANG1).prefs.rlx.bin: $(BASENAME).$(LANG1).prefs.rlx
+	cg-comp $< $@
+
+$(LANG1)$(VAR1).prefs.rlx.bin: $(BASENAME).$(LANG1)$(VAR1).prefs.rlx
+	cg-comp $< $@
+
 ###############################################################################
 ## Variant preferences
 ###############################################################################
@@ -123,7 +158,12 @@ $(LANG1)$(VAR1).prefs.rlx.bin: $(BASENAME).$(LANG1)$(VAR1).prefs.rlx
 EXTRA_DIST=$(BASENAME).$(LANG1).metadix		\
 		$(BASENAME).$(LANG1).acx	\
 		$(BASENAME).$(LANG1).rlx	\
+		$(BASENAME).$(LANG1).cleantags.rlx	\
+		$(BASENAME).$(LANG1)$(VAR1).rlx	\
+		$(BASENAME).$(LANG1)$(VAR2).rlx	\
+		$(BASENAME).$(LANG1)$(VAR3).rlx	\
 		$(BASENAME).post-$(LANG1).dix	\
+		$(BASENAME).post-$(LANG1)$(VAR1).dix	\
 		$(LANG1).prob			\
 		modes.xml \
 		alt.xsl \
@@ -163,6 +203,10 @@ install-data-local: install-modes
 	test -d $(DESTDIR)$(apertium_oci_srcdir) || mkdir -p $(DESTDIR)$(apertium_oci_srcdir)
 	$(INSTALL_DATA) $(BASENAME).$(LANG1).metadix $(DESTDIR)$(apertium_oci_srcdir)
 	$(INSTALL_DATA) $(BASENAME).$(LANG1).rlx $(DESTDIR)$(apertium_oci_srcdir)
+	$(INSTALL_DATA) $(BASENAME).$(LANG1).cleantags.rlx $(DESTDIR)$(apertium_oci_srcdir)
+	$(INSTALL_DATA) $(BASENAME).$(LANG1)$(VAR1).rlx $(DESTDIR)$(apertium_oci_srcdir)
+	$(INSTALL_DATA) $(BASENAME).$(LANG1)$(VAR2).rlx $(DESTDIR)$(apertium_oci_srcdir)
+	$(INSTALL_DATA) $(BASENAME).$(LANG1)$(VAR3).rlx $(DESTDIR)$(apertium_oci_srcdir)
 	$(INSTALL_DATA) $(BASENAME).post-$(LANG1).dix $(DESTDIR)$(apertium_oci_srcdir)
 
 CLEANFILES = $(TARGETS_COMMON)
