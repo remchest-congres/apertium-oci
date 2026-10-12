@@ -3754,115 +3754,71 @@
 		<pardef n="enta_detlo_gascon">
 			<e>
 				<p>
-					<l>entà<b/><a/>detlo<b/></l>
+					<l><a/>entà<b/><a/>detlo<b/></l>
 					<r>entau<b/></r>
 				</p>
 			</e>
 			<e>
 				<p>
-					<l>entà<b/><a/>detle<b/></l>
+					<l><a/>entà<b/><a/>detle<b/></l>
 					<r>entau<b/></r>
 				</p>
 			</e>
 			<e>
 				<p>
-					<l>entà<b/><a/>deteth<b/></l>
-					<r>entath<b/></r>
-				</p>
-			</e>
-			<e>
-				<p>
-					<l>entà<b/><a/>detlos<b/></l>
+					<l><a/>entà<b/><a/>detlos<b/></l>
 					<r>entaus<b/></r>
 				</p>
 			</e>
 			<e>
 				<p>
-					<l>entà<b/><a/>detles<b/></l>
+					<l><a/>entà<b/><a/>detles<b/></l>
 					<r>entaus<b/></r>
 				</p>
 			</e>
 			<e>
 				<p>
-					<l>entà<b/><a/>deteths<b/></l>
-					<r>entaths<b/></r>
-				</p>
-			</e>
-			<e>
-				<p>
-					<l>entà<b/><a/>detes<b/></l>
-					<r>entàs<b/></r>
-				</p>
-			</e>
-			<e>
-				<p>
-					<l>entà<b/><a/>detla<b/></l>
+					<l><a/>entà<b/><a/>detla<b/></l>
 					<r>entà<b/>la<b/></r>
 				</p>
 			</e>
 			<e>
 				<p>
-					<l>entà<b/><a/>detera<b/></l>
-					<r>entara<b/></r>
-				</p>
-			</e>
-			<e>
-				<p>
-					<l>entà<b/><a/>detlas<b/></l>
+					<l><a/>entà<b/><a/>detlas<b/></l>
 					<r>entà<b/>las<b/></r>
 				</p>
 			</e>
 			<e>
 				<p>
-					<l>entà<b/><a/>deteras<b/></l>
-					<r>entaras<b/></r>
-				</p>
-			</e>
-			<e>
-				<p>
-					<l>entà<b/><a/>detla<b/></l>
+					<l><a/>entà<b/><a/>detla<b/></l>
 					<r>entà<b/>l'</r>
 				</p>
 				<par n="vocal_general"/>
 			</e>
 			<e>
 				<p>
-					<l>entà<b/><a/>detera<b/></l>
-					<r>entara<b/></r>
-				</p>
-				<par n="vocal_general"/>
-			</e>
-			<e>
-				<p>
-					<l>entà<b/><a/>detlo<b/></l>
+					<l><a/>entà<b/><a/>detlo<b/></l>
 					<r>entà<b/>l'</r>
 				</p>
 				<par n="vocal_general"/>
 			</e>
 			<e>
 				<p>
-					<l>entà<b/><a/>detle<b/></l>
+					<l><a/>entà<b/><a/>detle<b/></l>
 					<r>entà<b/>l'</r>
 				</p>
 				<par n="vocal_general"/>
 			</e>
 			<e>
 				<p>
-					<l>entà<b/><a/>deteth<b/></l>
-					<r>entar</r>
-				</p>
-				<par n="vocal_general"/>
-			</e>
-			<e>
-				<p>
-					<l>entà<b/><a/>cnjse</l>
+					<l><a/>entà<b/><a/>cnjse</l>
 					<r>entà<b/>s</r>
 				</p>
 				<par n="apostrof_e"/>
 			</e>
 			<e>
 				<p>
-					<l>entà<b/><a/>cnjse</l>
+					<l><a/>entà<b/><a/>cnjse</l>
 					<r>entà<b/>se</r>
 				</p>
 			</e>
@@ -5964,6 +5920,9 @@
 			<par n="ad_gascon"/>
 		</e>
 		<e>
+			<par n="enta_detlo_gascon"/>
+		</e>
+		<e>
 			<p>
 				<l><a/>entà</l>
 				<r>enta</r>
@@ -5982,9 +5941,6 @@
 				<r>entà</r>
 			</p>
 			<par n="caracter_general"/>
-		</e>
-		<e>
-			<par n="enta_detlo_gascon"/>
 		</e>
 
 		<e>
@@ -7806,6 +7762,12 @@
 
 
 		<!-- aquests són comuns -->	
+		<e>
+			<p>
+				<l>pas<b/><a/>shens<b/><a/>que</l>
+				<r>shens<b/><a/>que</r>
+			</p>
+		</e>
 		<e>
 			<par n="quotes_empty"/>
 			<p>

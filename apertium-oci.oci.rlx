@@ -498,6 +498,10 @@ REMOVE N + ("tau") IF (0 ("tau")) ;		# patch
 SELECT PREP IF (-1 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sortir") OR ("gésser")) (0 ("tau")) ;
 SELECT PREP IF (-2 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sortir") OR ("gésser")) (-1 AV) (0 ("tau")) ;
 SELECT PREP IF (-3 ("anar") OR ("viatjar") OR ("arribar") OR ("partir") OR ("sortir") OR ("gésser")) (-2 AV) (-1 AV) (0 ("tau")) ;
+SELECT PREP IF (0 ("<taus>")) (-1 (>>>)) (1 N + MascPl) ;
+SELECT PREP IF (0 ("<taus>")) (-1 (>>>)) (1 N + MascSg) ;
+SELECT PREP IF (0 ("<taus>")) (-1 CM) (1 N + MascPl) ;
+SELECT PREP IF (0 ("<taus>")) (-1 CM) (1 N + MascSg) ;
 REMOVE SUB:1 DET IF (0 ("<en>"i)) ;		# patch
 REMOVE ("taus") IF (-2 DET + MascPl) (-1 N + MascPl) (0 ("taus")) (1 ("com")) ;		# los fèits taus com s’èran passats
 REMOVE N IF (NOT -1 DET + MascSg) (0 ("<com>"i)) ;		# patch
@@ -745,10 +749,14 @@ SELECT N IF (0 ("format")) (1 ("<xlsx>"i)) ;
 SELECT N IF (0 ("format")) (1 ("<doc>"i)) ;
 SELECT N IF (0 ("format")) (1 ("<docx>"i)) ;
 SELECT N IF (0 ("format")) (1 ("<rtf>"i)) ;
+REMOVE VBpp IF (0 ("format")) (1 NP OR Acr) ;	# format PDF
 SELECT N IF (0 ("format")) (1 Acr) ;
 SELECT N IF (0 ("format")) (1 Al) ;
 SELECT N IF (-1 En) (0 ("format")) (1 N) ;
- 
+SELECT N IF (0 ("format")) (-1/* DET + MascSg) ;
+SELECT N IF (0 ("format")) (-1/* ("al")) ;
+SELECT N IF (0 ("format")) (-1 ("al")) ;
+
 SELECT AV IF (0 Gaire_de) (1C Pro OR V) ;	# vòl pas gaire de s'enanar
 SELECT AV IF (-1 V) (0 Gaire_de) (1 DET) ;
 SELECT AV IF (-2 V) (-1 AV) (0 Gaire_de) (1 DET) ;	# parli pas gaire de la situacion
@@ -3471,8 +3479,6 @@ REMOVE N IF (-2 DET + &&AcordSN) (-1 N + &&AcordSN + Pl) (0 ("<an>"i)) ;		# los 
 REMOVE N IF (-1 N_AJ + Pl) (0 ("<an>"i)) ;		# los participants an
 
 REMOVE VBpp IF (-1C DET + &&AcordSN OR Pro) (0 N + &&AcordSN) ;		# lo resultat
-REMOVE VBpp IF (0 ("format")) (1 NP OR Acr) ;	# format PDF
-
 REMOVE N IF (-1 ("mas")) (0 V) (1 Que) ;		# mas sosten que
 
 REMOVE N OR AJ IF (-1C Enon OR Pro) ;
@@ -4375,6 +4381,15 @@ SELECT PREP IF (0 ("a costat de")) (NOT 1 ("<moneda>") OR ("sòu") OR ("argent")
 REMOVE PREP IF (0 ("a costat de")) (1 ("<moneda>") OR ("sòu") OR ("argent")) ;
 
 REMOVE PRI IF (0 VBimp) (1 PRencl) ;
+
+REMOVE IFI IF (0 PRI) (NOT 0 Far);
+
+REMOVE V IF (0 ("<espaci>"i)) (1 ("<premsa>") OR ("<pressa>") OR ("<Schengen>") OR AJ OR ("<de>")) ;
+
+REMOVE V IF (0 ("<contracte>"i)) (1 AJ OR ("<de>")) ;
+
+
+
 
 AFTER-SECTIONS
 

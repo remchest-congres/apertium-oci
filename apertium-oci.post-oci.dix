@@ -3081,87 +3081,6 @@
 		</e>
 		</pardef>
 
-		<pardef n="det_simple">
-			<e>
-				<p>
-					<l><a/>detla<b/></l>
-					<r>la<b/></r>
-				</p>
-			</e>
-			<e>
-				<p>
-					<l><a/>detlo<b/></l>
-					<r>lo<b/></r>
-				</p>
-			</e>
-			<e>
-				<p>
-					<l><a/>detle<b/></l>
-					<r>le<b/></r>
-				</p>
-			</e>
-			<e>
-				<p>
-					<l><a/>detlas<b/></l>
-					<r>las<b/></r>
-				</p>
-			</e>
-			<e>
-				<p>
-					<l><a/>detlos<b/></l>
-					<r>los<b/></r>
-				</p>
-			</e>
-			<e>
-				<p>
-					<l><a/>detles<b/></l>
-					<r>les<b/></r>
-				</p>
-			</e>
-			<e>
-				<p>
-					<l><a/>detla</l>
-					<r>la</r>
-				</p>
-				<par n="caracter_general"/>
-			</e>
-			<e>
-				<p>
-					<l><a/>detlo</l>
-					<r>lo</r>
-				</p>
-				<par n="caracter_general"/>
-			</e>
-			<e>
-				<p>
-					<l><a/>detle</l>
-					<r>le</r>
-				</p>
-				<par n="caracter_general"/>
-			</e>
-			<e>
-				<p>
-					<l><a/>detlas</l>
-					<r>las</r>
-				</p>
-				<par n="caracter_general"/>
-			</e>
-			<e>
-				<p>
-					<l><a/>detlos</l>
-					<r>los</r>
-				</p>
-				<par n="caracter_general"/>
-			</e>
-			<e>
-				<p>
-					<l><a/>detles</l>
-					<r>les</r>
-				</p>
-				<par n="caracter_general"/>
-			</e>
-		</pardef>
-
 		<pardef n="prneth_simple">
 			<e>
 				<par n="quotes_empty"/>
@@ -3842,6 +3761,87 @@
 			<e><i>i</i></e>
 			<e><i>o</i></e>
 			<e><i>ac</i></e>
+		</pardef>
+
+		<pardef n="det_simple">
+			<e>
+				<p>
+					<l><a/>detla<b/></l>
+					<r>la<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><a/>detlo<b/></l>
+					<r>lo<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><a/>detle<b/></l>
+					<r>le<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><a/>detlas<b/></l>
+					<r>las<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><a/>detlos<b/></l>
+					<r>los<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><a/>detles<b/></l>
+					<r>les<b/></r>
+				</p>
+			</e>
+			<e>
+				<p>
+					<l><a/>detla</l>
+					<r>la</r>
+				</p>
+				<par n="caracter_general"/>
+			</e>
+			<e>
+				<p>
+					<l><a/>detlo</l>
+					<r>lo</r>
+				</p>
+				<par n="caracter_general"/>
+			</e>
+			<e>
+				<p>
+					<l><a/>detle</l>
+					<r>le</r>
+				</p>
+				<par n="caracter_general"/>
+			</e>
+			<e>
+				<p>
+					<l><a/>detlas</l>
+					<r>las</r>
+				</p>
+				<par n="caracter_general"/>
+			</e>
+			<e>
+				<p>
+					<l><a/>detlos</l>
+					<r>los</r>
+				</p>
+				<par n="caracter_general"/>
+			</e>
+			<e>
+				<p>
+					<l><a/>detles</l>
+					<r>les</r>
+				</p>
+				<par n="caracter_general"/>
+			</e>
 		</pardef>
 
 	</pardefs>
@@ -4972,6 +4972,12 @@
 
 
 		<!-- aquests són comuns -->	
+		<e>
+			<p>
+				<l>pas<b/><a/>mai<b/><a/>que</l>
+				<r>mai<b/><a/>que</r>
+			</p>
+		</e>
 		<e>
 			<par n="quotes_empty"/>
 			<p>
