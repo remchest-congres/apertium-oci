@@ -132,20 +132,6 @@ $(LANG1).cleantags.rlx.bin: $(BASENAME).$(LANG1).cleantags.rlx
 ## Variant preferences
 ###############################################################################
 
-# CHANGES : on compile le fichier de règles pour les préférences
-
-$(LANG1).prefs.rlx.bin: $(BASENAME).$(LANG1).prefs.rlx
-	cg-comp $< $@
-
-$(LANG1)$(VAR1).prefs.rlx.bin: $(BASENAME).$(LANG1)$(VAR1).prefs.rlx
-	cg-comp $< $@
-
-###############################################################################
-## Variant preferences
-###############################################################################
-
-# CHANGES : on compile le fichier de règles pour les préférences
-
 $(LANG1).prefs.rlx.bin: $(BASENAME).$(LANG1).prefs.rlx
 	cg-comp $< $@
 
