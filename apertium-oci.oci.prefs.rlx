@@ -49,9 +49,11 @@ REMOVE (v:pron_lo_le:lo) ;
 REMOVE (v:pron_lo_le:le) ;
 REMOVE (v:pron_lo_le:le) ;
 
+
+SELECT (v:amb:ambe)      IF (0 (VAR:amb:ambe)) ;
+REMOVE (v:amb:ambe) ;
 REMOVE (v:amb:dab) ;
 REMOVE (v:amb:damb) ;
-REMOVE (v:amb:ambe) ;
 REMOVE (v:amb:emb) ;
 REMOVE (v:amb:embe) ;
 REMOVE (v:amb:dambe) ;

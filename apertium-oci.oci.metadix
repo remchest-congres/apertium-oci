@@ -12159,9 +12159,9 @@
     <pardef n="cre/ï__vblex">
 
       <!-- Present de l'indicatiu -->
-      <e><p><l>ï</l><r>ar<s n="vblex"/><s n="pri"/><s n="p1"/><s n="sg"/></r></p><par n="v:p12s_ind:i"/><par n="d:gascon"/><par n="d:lengadocian"/></e>
+      <e><p><l>ï</l><r>ar<s n="vblex"/><s n="pri"/><s n="p1"/><s n="sg"/></r></p><par n="v:p12s_ind:i"/></e>
       <e><p><l>e</l><r>ar<s n="vblex"/><s n="pri"/><s n="p1"/><s n="sg"/></r></p><par n="v:p12s_ind:e"/><par n="d:lengadocian"/><par n="nd:aranes"/><par n="nd:gascon"/></e>
-      <e><p><l>i</l><r>ar<s n="vblex"/><s n="pri"/><s n="p1"/><s n="sg"/></r></p><par n="d:aranes"/><par n="nd:gascon"/><par n="nd:lengadocian"/></e>
+      <e r="LR"><p><l>i</l><r>ar<s n="vblex"/><s n="pri"/><s n="p1"/><s n="sg"/></r></p><par n="d:aranes"/><par n="nd:gascon"/><par n="nd:lengadocian"/></e>
       <e><p><l>es</l><r>ar<s n="vblex"/><s n="pri"/><s n="p2"/><s n="sg"/></r></p><par n="d:aranes"/><par n="nd:lengadocian"/><par n="nd:gascon"/></e>
       <e><p><l>e</l><r>ar<s n="vblex"/><s n="pri"/><s n="p3"/><s n="sg"/></r></p><par n="d:aranes"/><par n="nd:lengadocian"/><par n="nd:gascon"/></e>
       <e><p><l>en</l><r>ar<s n="vblex"/><s n="pri"/><s n="p3"/><s n="pl"/></r></p><par n="d:aranes"/><par n="nd:lengadocian"/><par n="nd:gascon"/></e>
@@ -12624,6 +12624,23 @@
       <e><i>a<prm/>gu</i><par n="parl/as__vblex"/></e>									                                                  <!-- term. pas accentuadas -a -o -u -->
       <e><p><l>à</l><r>a</r></p><i><prm/></i><p><l>gü</l><r>gu</r></p><par n="pàrl/im__vblex"/><par n="d:gascon"/></e>		<!-- term. accent pas transformant -i -->
       <e><i>a</i><i><prm/></i><p><l>gü</l><r>gu</r></p><par n="parl/iga__vblex"/><par n="d:aranes"/></e>									<!-- term. accentuadas -i -->
+    </pardef>
+
+
+    <!-- gu/gü, accent tonic transformant (alternànica è e), radical en -e -->
+    <pardef n="l/e[N]guar__vblex">
+      <e><i>e<prm/></i><p><l>gü</l><r>gu</r></p><par n="parl/èri__vblex"/></e>								                            <!-- term. accentuadas -e -->
+      <e><i>e<prm/>gu</i><par n="parl/am__vblex"/></e>									                                                  <!-- term. accentuadas -a -o -u -->
+      <e><p><l>è</l><r>e</r></p><i><prm/></i><p><l>gü</l><r>gu</r></p><par n="parl/i__vblex"/></e>									      <!-- term. pas accentuadas -i -->
+      <e><p><l>è</l><r>e</r></p><i><prm/></i><p><l>gü</l><r>gu</r></p><par n="parl/e__vblex"/></e>									      <!-- term. pas accentuadas -e -->
+      <e><p><l>è</l><r>e</r></p><i><prm/>gu</i><par n="parl/as__vblex"/></e>									                            <!-- term. pas accentuadas -a -o -u -->
+      <e><p><l>è</l><r>e</r></p><i><prm/></i><p><l>gü</l><r>gu</r></p><par n="pàrl/im__vblex"/><par n="d:gascon"/></e>		<!-- term. accent pas transformant -i -->
+      <e><i>e</i><i><prm/></i><p><l>gü</l><r>gu</r></p><par n="parl/iga__vblex"/><par n="d:aranes"/></e>									<!-- term. accentuadas -i -->
+      <!-- per reconéisser las nombrosas fautas d'ortografia -->
+      <e r="LR"><i>e<prm/></i><p><l>gü</l><r>gu</r></p><par n="parl/i__vblex"/></e>									                            <!-- term. pas accentuadas -i -->
+      <e r="LR"><i>e<prm/></i><p><l>gü</l><r>gu</r></p><par n="parl/e__vblex"/></e>									                            <!-- term. pas accentuadas -e -->
+      <e r="LR"><i>e<prm/>gu</i><par n="parl/as__vblex"/></e>									                                                  <!-- term. pas accentuadas -a -o -u -->
+      <e r="LR"><p><l>é</l><r>é</r></p><i><prm/></i><p><l>gü</l><r>gu</r></p><par n="pàrl/im__vblex"/><par n="d:gascon"/></e>		<!-- term. accent pas transformant -i -->
     </pardef>
 
 
@@ -13959,8 +13976,10 @@
       <!-- Participi passat -->
       <e><p><l>èrt</l><r>r<s n="vblex"/><s n="pp"/><s n="m"/><s n="sg"/></r></p></e>
       <e><p><l>èrta</l><r>r<s n="vblex"/><s n="pp"/><s n="f"/><s n="sg"/></r></p></e>
-      <e><p><l>èrts</l><r>r<s n="vblex"/><s n="pp"/><s n="m"/><s n="pl"/></r></p></e>
-      <e><p><l>èrtas</l><r>r<s n="vblex"/><s n="pp"/><s n="f"/><s n="pl"/></r></p></e>
+      <e><p><l>èrts</l><r>r<s n="vblex"/><s n="pp"/><s n="m"/><s n="pl"/></r></p><par n="d:lengadocian"/><par n="d:gascon"/></e>
+      <e><p><l>èrti</l><r>r<s n="vblex"/><s n="pp"/><s n="m"/><s n="pl"/></r></p><par n="d:aranes"/></e>
+      <e><p><l>èrtas</l><r>r<s n="vblex"/><s n="pp"/><s n="f"/><s n="pl"/></r></p><par n="d:lengadocian"/><par n="d:gascon"/></e>
+      <e><p><l>èrtes</l><r>r<s n="vblex"/><s n="pp"/><s n="f"/><s n="pl"/></r></p><par n="d:aranes"/><par n="nd:gascon"/><par n="nd:lengadocian"/></e>
     </pardef>
 
 
@@ -16412,11 +16431,11 @@
 
       <!-- pòt, podem, pogatz (aranes) -->
       <e><p><l>ò</l><r>o</r></p><i><prm/></i><p><l>t</l><r>d</r></p><p><l/><r>er<s n="vblex"/><s n="imp"/><s n="p2"/><s n="sg"/></r></p><par n="d:aranes"/></e>
-      <e><i>o<prm/>d</i><p><l>em</l><r>er<s n="vblex"/><s n="imp"/><s n="p1"/><s n="pl"/></r></p><par n="d:aranes"/></e>
+      <e r="LR"><i>o<prm/>d</i><p><l>em</l><r>er<s n="vblex"/><s n="imp"/><s n="p1"/><s n="pl"/></r></p><par n="d:aranes"/></e>
       <e><i>o<prm/></i><p><l>g</l><r>d</r></p><p><l>atz</l><r>er<s n="vblex"/><s n="imp"/><s n="p2"/><s n="pl"/></r></p><par n="d:aranes"/></e>
 
       <!--  pogam -->
-      <e r="LR"><i>o<prm/></i><p><l>g</l><r>d</r></p><p><l>am</l><r>er<s n="vblex"/><s n="imp"/><s n="p1"/><s n="pl"/></r></p><par n="d:aranes"/></e>
+      <e><i>o<prm/></i><p><l>g</l><r>d</r></p><p><l>am</l><r>er<s n="vblex"/><s n="imp"/><s n="p1"/><s n="pl"/></r></p><par n="d:aranes"/></e>
 
       <!--  podam -->
       <e r="LR"><i>o<prm/>d</i><p><l>am</l><r>er<s n="vblex"/><s n="imp"/><s n="p1"/><s n="pl"/></r></p><par n="d:lengadocian"/></e>
@@ -20852,6 +20871,69 @@
     </pardef>
 
 
+    <!-- G3 : tínher -->
+    <pardef n="t/í[]nher__vblex">
+
+
+      <!-- present de l'indicatiu e imperfach de l'indicatiu-->
+      <e><p><l>i</l><r>í</r></p><i><prm/>nh</i><par n="g3_pri_alt_i__vblex"/></e> <!-- -i-->
+      <e><p><l>i</l><r>í</r></p><i><prm/>nh</i><par n="g3_pri_alt_e__vblex"/></e> <!-- -es, -en -->
+      <e><p><l>i</l><r>í</r></p><i><prm/>nh</i><par n="g3_pri_p3s__vblex"/></e> <!-- vuèg -->
+      <e><p><l>i</l><r>í</r></p><i><prm/>nh</i><par n="g3_pri_pii_noalt_e__vblex"/></e> <!-- -èm, -ètz, -em, -etz + pii -->
+      <e><p><l>i</l><r>í</r></p><i><prm/>nh</i><par n="g3_imp_v_aran__vblex"/><par n="d:aranes"/></e> <!--  -eva, -eves, -eve, -évem, -évetz, -even -->
+      <e><p><l>i</l><r>í</r></p><i><prm/>nh</i><par n="g3_pri_alt_o__vblex"/><par n="d:lengadocian"/></e> <!-- -on -->
+
+
+      <!-- preterit e imperfach del subjonctiu -->
+      <e><p><l>i</l><r>í</r></p><i><prm/>nh</i><par n="g3_ifi_pis_noalt_e__vblex"/></e> <!-- en -e -->
+      <e><p><l>i</l><r>í</r></p><i><prm/>nh</i><par n="g3_ifi_pis_noalt_o__vblex"/><par n="d:gascon"/></e> <!-- en -o -->
+
+      <e r="LR"><p><l>i</l><r>í</r></p><i><prm/></i><p><l>ngu</l><r>nh</r></p><par n="g3_ifi_pis_noalt_e__vblex"/></e> <!-- en -ng- en -e -->
+
+
+      <!-- futur e condicional -->
+      <e><p><l>i</l><r>í</r></p><i><prm/>nh</i><par n="g3_fti_cni_e__vblex"/></e>
+
+
+     <!-- futur del passat-->
+      <e><p><l>i</l><r>í</r></p><i><prm/>nh</i><par n="g3_fdp__vblex"/><par n="d:gascon"/></e>
+
+
+     <!-- present del subjonctiu -->
+      <e><p><l>i</l><r>í</r></p><i><prm/>nh</i><par n="g3_prs_imp_alt_e__vblex"/></e>  <!-- -i, -es, -e, -en (-is, -in) -->
+      <!-- alternant en -e (aran e p3), -i (gascon) -->
+      <e><p><l>i</l><r>í</r></p><i><prm/>nh</i><par n="g3_prs_alt_a__vblex"/><par n="d:lengadocian"/><par n="d:aranes"/></e>  <!-- -a, -as, -a, -an -->
+      <e><p><l>i</l><r>í</r></p><i><prm/>nh</i><par n="g3_prs_noalt_a__vblex"/></e> <!-- -am, -atz -->
+      <e><i>í<prm/>nh</i><par n="g3_prs_acc__vblex"/><par n="d:gascon"/></e> <!-- -ias, -ia, -ian -->
+      <e><p><l>i</l><r>í</r></p><i><prm/>nh</i><par n="g3_prs_noalt_e__vblex"/><par n="d:gascon"/></e>  <!-- -iam, -iatz (+ aran en -eg-, -esqu-) -->
+
+
+     <!-- imperatiu -->
+      <e><p><l>i</l><r>í</r></p><i><prm/>nh</i><p><l/><r>er<s n="vblex"/><s n="imp"/><s n="p2"/><s n="sg"/></r></p></e>
+      
+      <e><p><l>i</l><r>í</r></p><i><prm/>nh</i><p><l>am</l><r>er<s n="vblex"/><s n="imp"/><s n="p1"/><s n="pl"/></r></p><par n="d:lengadocian"/></e>
+      <e><p><l>i</l><r>í</r></p><i><prm/>nh</i><p><l>em</l><r>er<s n="vblex"/><s n="imp"/><s n="p1"/><s n="pl"/></r></p><par n="d:aranes"/><par n="d:gascon"/></e>
+
+      <e><p><l>i</l><r>í</r></p><i><prm/>nh</i><p><l>ètz</l><r>er<s n="vblex"/><s n="imp"/><s n="p2"/><s n="pl"/></r></p><par n="d:lengadocian"/><par n="nd:gascon"/><par n="nd:aranes"/></e>
+      <e><p><l>i</l><r>í</r></p><i><prm/>nh</i><p><l>etz</l><r>er<s n="vblex"/><s n="imp"/><s n="p2"/><s n="pl"/></r></p><par n="d:aranes"/><par n="d:gascon"/></e>
+
+
+      <!-- participi passat -->
+      <e><p><l>i</l><r>í</r></p><i><prm/>nh</i><par n="g3_pp__vblex"/></e> <!--  classic -->
+      <e r="LR"><p><l>i</l><r>í</r></p><i><prm/></i><p><l>ng</l><r>nh</r></p><par n="g3_pp__vblex"/></e> <!--  tingut -->
+
+
+      <!-- gerondiu -->
+      <e><p><l>i</l><r>í</r></p><i><prm/>nh</i><par n="g3_ger__vblex"/></e>
+
+
+      <!-- infinitiu -->
+      <e><i>í<prm/>nh</i><par n="g3_inf_acc__vblex"/></e> <!-- tínher -->
+      <e><i>í<prm/>nh</i><par n="g3_inf_noacc_er_leng__vblex"/><par n="d:lengadocian"/></e> <!-- tínher -->
+      <e><p><l>i</l><r>í</r></p><i><prm/>nh</i><par n="g3_inf_noacc_e__vblex"/><par n="d:aranes"/><par n="d:gascon"/></e> <!-- tinhe -->
+    </pardef>
+
+
     <!-- G3 : rèimer -->
     <pardef n="r/è[IM]er__vblex">
 
@@ -22169,7 +22251,8 @@
       <e><i>ò<prm/>l</i><par n="g3_pri_alt_i__vblex"/><par n="d:lengadocian"/><par n="d:gascon"/></e> <!-- -i-->
       <e><i>ò<prm/>l</i><par n="g3_pri_alt_e__vblex"/><par n="d:lengadocian"/><par n="d:gascon"/></e> <!-- -es, -en -->
       <e><i>ò<prm/>l</i><par n="g3_pri_p3s__vblex"/><par n="d:lengadocian"/></e> <!-- vòl -->
-      <e><i>ò<prm/></i><p><l>u</l><r>l</r></p><par n="g3_pri_p3s__vblex"/><par n="d:aranes"/><par n="d:gascon"/></e> <!-- vòu -->
+      <e><i>ò<prm/></i><p><l>u</l><r>l</r></p><par n="g3_pri_p3s__vblex"/><par n="d:gascon"/></e> <!-- vòu -->
+      <e><i>ò<prm/></i><p><l/><r>l</r></p><par n="g3_pri_p3s__vblex"/><par n="d:aranes"/></e> <!-- vò -->
       <e><p><l>o</l><r>ò</r></p><i><prm/>l</i><par n="g3_pri_pii_noalt_e__vblex"/></e> <!-- -èm, -ètz, -em, -etz + pii -->
       <e><p><l>o</l><r>ò</r></p><i><prm/>l</i><par n="g3_imp_a_aran__vblex"/><par n="d:aranes"/></e> <!--  -eva, -eves, -eve, -évem, -évetz, -even -->
       <e><i>ò<prm/>l</i><par n="g3_pri_alt_o__vblex"/><par n="d:lengadocian"/></e> <!-- -on -->
@@ -25010,10 +25093,10 @@
       <e><p><l>ò</l><r>o</r></p><i><prm/></i><p><l>t</l><r>d</r></p><p><l/><r>er<s n="vbmod"/><s n="imp"/><s n="p2"/><s n="sg"/></r></p><par n="d:aranes"/></e>
 
       <e r="LR"><i>o<prm/>d</i><p><l>am</l><r>er<s n="vbmod"/><s n="imp"/><s n="p1"/><s n="pl"/></r></p><par n="d:lengadocian"/></e>
-      <e><i>o<prm/>d</i><p><l>em</l><r>er<s n="vbmod"/><s n="imp"/><s n="p1"/><s n="pl"/></r></p><par n="d:aranes"/></e>
+      <e r="LR"><i>o<prm/>d</i><p><l>em</l><r>er<s n="vbmod"/><s n="imp"/><s n="p1"/><s n="pl"/></r></p><par n="d:aranes"/></e>
 
      <!-- en -òg- -->
-      <e r="LR"><i>o<prm/></i><p><l>g</l><r>d</r></p><p><l>am</l><r>er<s n="vbmod"/><s n="imp"/><s n="p1"/><s n="pl"/></r></p><par n="d:aranes"/></e>
+      <e><i>o<prm/></i><p><l>g</l><r>d</r></p><p><l>am</l><r>er<s n="vbmod"/><s n="imp"/><s n="p1"/><s n="pl"/></r></p><par n="d:aranes"/></e>
 
       <e><i>o<prm/></i><p><l>g</l><r>d</r></p><p><l>atz</l><r>er<s n="vbmod"/><s n="imp"/><s n="p2"/><s n="pl"/></r></p><par n="d:aranes"/></e>
 
@@ -25042,7 +25125,8 @@
       <e><i>ò<prm/>l</i><par n="g3_pri_alt_i__vbmod"/><par n="d:lengadocian"/><par n="d:gascon"/></e> <!-- i -->
       <e><i>ò<prm/>l</i><par n="g3_pri_alt_e__vbmod"/><par n="d:lengadocian"/><par n="d:gascon"/></e> <!-- es, en -->
       <e><i>ò<prm/>l</i><par n="g3_pri_p3s__vbmod"/><par n="d:lengadocian"/></e> <!-- vòl -->
-      <e><i>ò<prm/></i><p><l>u</l><r>l</r></p><par n="g3_pri_p3s__vbmod"/><par n="d:aranes"/><par n="d:gascon"/></e> <!-- vòu -->
+      <e><i>ò<prm/></i><p><l>u</l><r>l</r></p><par n="g3_pri_p3s__vbmod"/><par n="d:gascon"/></e> <!-- vòu -->
+      <e><i>ò<prm/></i><p><l/><r>l</r></p><par n="g3_pri_p3s__vbmod"/><par n="d:aranes"/></e> <!-- vò -->
       <e><p><l>o</l><r>ò</r></p><i><prm/>l</i><par n="g3_pri_pii_noalt_e__vbmod"/></e> <!-- -èm, -ètz + pii -->
       <e><p><l>o</l><r>ò</r></p><i><prm/>l</i><par n="g3_imp_a_aran__vbmod"/><par n="d:aranes"/></e> <!-- -eva, -eves, -eve, -évem, -évetz, -even -->
       <e><i>ò<prm/>l</i><par n="g3_pri_alt_a__vbmod"/><par n="d:lengadocian"/></e> <!-- on -->
@@ -25141,7 +25225,8 @@
 
 
       <!-- present de l'indicatiu e imperfach de l'indicatiu -->
-      <e><p><l>a</l><r>à</r></p><i><prm/>l</i><par n="g3_pri_alt_i__vbmod"/></e> <!-- i -->
+      <e><p><l>a</l><r>à</r></p><i><prm/>l</i><par n="g3_pri_alt_i__vbmod"/><par n="d:lengadocian"/><par n="d:gascon"/></e> <!-- i -->
+      <e><p><l>a</l><r>à</r></p><i><prm/></i><p><l>lgu</l><r>l</r></p><par n="g3_pri_alt_i__vbmod"/><par n="d:aranes"/></e> <!-- calgui -->
       <e><p><l>a</l><r>à</r></p><i><prm/>l</i><par n="g3_pri_alt_e__vbmod"/></e> <!-- es, en -->
       <e><p><l>a</l><r>à</r></p><i><prm/>l</i><par n="g3_pri_p3s__vbmod"/><par n="d:lengadocian"/><par n="nd:aranes"/></e> <!-- cal -->
       <e><p><l>a</l><r>à</r></p><i><prm/></i><p><l>u</l><r>l</r></p><par n="g3_pri_p3s__vbmod"/><par n="d:aranes"/><par n="d:gascon"/></e> <!-- cau -->
@@ -25169,9 +25254,9 @@
 
      <!-- present del subjonctiu-->
        <!--  lg -->
-      <e><p><l>a</l><r>à</r></p><i><prm/></i><p><l>lgu</l><r>l</r></p><par n="g3_prs_imp_alt_e__vbmod"/><par n="d:lengadocian"/></e> <!-- -i, -es, -e, -en -->
-      <e><p><l>a</l><r>à</r></p><i><prm/></i><p><l>lg</l><r>l</r></p><par n="g3_prs_alt_a__vbmod"/><par n="d:lengadocian"/></e> <!-- -a, -as, -a, -an -->
-      <e><p><l>a</l><r>à</r></p><i><prm/></i><p><l>lg</l><r>l</r></p><par n="g3_prs_noalt_a__vbmod"/><par n="d:lengadocian"/></e> <!-- -am, -atz -->
+      <e><p><l>a</l><r>à</r></p><i><prm/></i><p><l>lgu</l><r>l</r></p><par n="g3_prs_imp_alt_e__vbmod"/><par n="d:aranes"/><par n="d:lengadocian"/></e> <!-- -i, -es, -e, -en -->
+      <e><p><l>a</l><r>à</r></p><i><prm/></i><p><l>lg</l><r>l</r></p><par n="g3_prs_alt_a__vbmod"/><par n="d:lengadocian"/><par n="d:aranes"/></e> <!-- -a, -as, -a, -an -->
+      <e><p><l>a</l><r>à</r></p><i><prm/></i><p><l>lg</l><r>l</r></p><par n="g3_prs_noalt_a__vbmod"/><par n="d:lengadocian"/><par n="d:aranes"/></e> <!-- -am, -atz -->
 
        <!--  lh -->
       <e><p><l>a</l><r>à</r></p><i><prm/></i><p><l>lh</l><r>l</r></p><par n="g3_prs_imp_alt_e__vbmod"/><par n="d:gascon"/></e> <!-- -i, -es, -e, -en -->
@@ -25181,11 +25266,8 @@
       <e><i>à<prm/></i><p><l>lh</l><r>l</r></p><par n="tengu/im__vbmod"/><par n="d:gascon"/></e> <!-- -im, -itz -->
 
        <!--  l -->
-      <e><p><l>a</l><r>à</r></p><i><prm/>l</i><par n="g3_prs_imp_alt_e__vbmod"/><par n="d:aranes"/><par n="nd:gascon"/><par n="nd:lengadocian"/></e> <!-- -i, -es, -e, -en -->
       <e r="LR"><i>à<prm/>l</i><par n="g3_prs_acc__vbmod"/><par n="d:gascon"/></e> <!-- -ias, -ia, -ian -->
       <e r="LR"><p><l>a</l><r>à</r></p><i><prm/>l</i><par n="g3_prs_noalt_e__vblex"/><par n="d:aranes"/></e> <!-- -iam, -iatz -->
-      <e><p><l>a</l><r>à</r></p><i><prm/>l</i><par n="g3_prs_noalt_a__vbmod"/><par n="d:aranes"/></e> <!-- -am, -atz -->
-      <e><p><l>a</l><r>à</r></p><i><prm/>l</i><par n="g3_prs_alt_a__vbmod"/><par n="d:aranes"/></e> <!-- -a, -as, -a, -an -->
 
 
      <!-- imperatiu-->
@@ -26244,7 +26326,6 @@
       <e><p><l>íretz</l><r>ar<s n="vblex"/><s n="ifi"/><s n="p2"/><s n="pl"/></r></p><par n="v:preterit:èri_iri_uri"/><par n="d:gascon"/></e>
       <e><p><l>iren</l><r>ar<s n="vblex"/><s n="ifi"/><s n="p3"/><s n="pl"/></r></p><par n="v:preterit:èri_iri_uri"/><par n="d:gascon"/></e>
 
-      <e><p><l>í</l><r>ar<s n="vblex"/><s n="ifi"/><s n="p1"/><s n="sg"/></r></p><par n="d:aranes"/></e>
       <e><p><l>eres</l><r>ar<s n="vblex"/><s n="ifi"/><s n="p2"/><s n="sg"/></r></p><par n="v:p2s_pret:ères"/><par n="d:aranes"/><par n="nd:gascon"/></e>
       <e><p><l>is</l><r>ar<s n="vblex"/><s n="ifi"/><s n="p2"/><s n="sg"/></r></p><par n="v:p2s_pret:ès"/><par n="d:aranes"/></e>
       <e><p><l>ec</l><r>ar<s n="vblex"/><s n="ifi"/><s n="p3"/><s n="sg"/></r></p><par n="d:aranes"/></e>
@@ -26605,6 +26686,8 @@
       <e r="LR"><p><l>e</l><r>ar<s n="vblex"/><s n="ifi"/><s n="p3"/><s n="sg"/></r></p><par n="d:gascon"/><par n="nd:aranes"/></e>
       <e r="LR"><p><l>en</l><r>ar<s n="vblex"/><s n="ifi"/><s n="p3"/><s n="pl"/></r></p><par n="d:gascon"/></e>
 
+      <e><p><l>i</l><r>ar<s n="vblex"/><s n="ifi"/><s n="p1"/><s n="sg"/></r></p><par n="d:aranes"/></e>
+
       <e><par n="contraf/ar__vblex"/></e>
     </pardef>
 
@@ -26621,6 +26704,8 @@
       <e r="LR"><p><l>es</l><r>ar<s n="vblex"/><s n="ifi"/><s n="p2"/><s n="sg"/></r></p><par n="d:gascon"/></e>
       <e r="LR"><p><l>e</l><r>ar<s n="vblex"/><s n="ifi"/><s n="p3"/><s n="sg"/></r></p><par n="d:gascon"/><par n="nd:aranes"/></e>
       <e r="LR"><p><l>en</l><r>ar<s n="vblex"/><s n="ifi"/><s n="p3"/><s n="pl"/></r></p><par n="d:gascon"/></e>
+
+      <e><p><l>í</l><r>ar<s n="vblex"/><s n="ifi"/><s n="p1"/><s n="sg"/></r></p><par n="d:aranes"/></e>
 
       <e><par n="contraf/ar__vblex"/></e>
     </pardef>

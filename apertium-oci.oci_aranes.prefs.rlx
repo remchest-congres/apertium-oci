@@ -124,6 +124,15 @@ SELECT (v:p2s_pret:ès)      IF (0 (VAR:p2s_pret:ès)) ;
 REMOVE (v:p2s_pret:ès) ;
 
 
+SELECT (v:tenir:ténguer/p2s_pret:ès)      IF (0 (VAR:tenir:ténguer/p2s_pret:ès)) ;
+REMOVE (v:tenir:ténguer/p2s_pret:ès) ;
+
+
+SELECT (v:tenir:ténguer/p2s_pret:ès)      IF (0 (VAR:tenir:ténguer/p2s_pret:ès)) ;
+REMOVE (v:tenir:ténguer/p2s_pret:ès) ;
+
+SELECT (v:p12s_ind:e)      IF (0 (VAR:p12s_ind:e)) ;
+REMOVE (v:p12s_ind:e) ;
 
 
 
